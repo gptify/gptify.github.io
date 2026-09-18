@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="uz" class="dark">
+<html lang="uz" class="dark scroll-smooth" style="scroll-padding-top: 5.5rem;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoPro²⁴ — Interaktiv Porsche Taqdimot (AvtoPro Oil & Usta Qahramon)</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>AutoPro²⁴ — Avtomoyka, Moy Markazlari va Avtoservislar Uchun Yangi Avlod AI CRM & Telegram POS</title>
+  <meta name="description" content="AutoPro²⁴ — 0 so'm uskuna xarajati. Kompyuter va 1C shart emas. Ustalar telefonida 5 soniyada chek chiqaradi, ovoz bilan yozadi, qarzlar va omborni 100% nazorat qiladi.">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -15,1305 +15,1854 @@
         extend: {
           colors: {
             brand: {
+              50: '#EFF6FF',
+              100: '#DBEAFE',
               400: '#60A5FA',
               500: '#3B82F6',
               600: '#2563EB',
               700: '#1D4ED8',
+              800: '#1E40AF',
+              900: '#1E3A8A',
             },
             accent: {
               emerald: '#10B981',
               amber: '#F59E0B',
               cyan: '#06B6D4',
+            },
+            dark: {
+              bg: '#070A12',
+              card: '#0E1526',
+              border: '#1C2842',
+              input: '#151F33',
             }
           }
         }
       }
     }
   </script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --bg: #05070D;
-      --card-bg: rgba(10, 16, 30, 0.90);
-      --card-border: rgba(255, 255, 255, 0.12);
-      --accent: #2563EB;
-      --accent-glow: rgba(37, 99, 235, 0.45);
-      --emerald: #10B981;
-      --cyan: #06B6D4;
-      --text: #F8FAFC;
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #070A12; }
+    
+    .glow-radial {
+      background: radial-gradient(circle at 50% -10%, rgba(37, 99, 235, 0.28) 0%, rgba(6, 182, 212, 0.1) 40%, rgba(7, 10, 18, 0) 75%);
+    }
+    .glass-card {
+      background: rgba(14, 21, 38, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+    input[type=range] {
+      accent-color: #2563EB;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      user-select: none;
+    /* 3D Car Stage Styling */
+    .car-stage-wrapper {
+      perspective: 1200px;
+    }
+    .car-3d-scene {
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    /* Photographic Backdrop Transitions */
-    .car-backdrop {
+    /* Telemetry pulse pins */
+    .pulse-pin {
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s;
+    }
+    .pulse-pin:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+    @keyframes radarPulse {
+      0% { transform: scale(0.9); opacity: 0.9; }
+      50% { transform: scale(1.8); opacity: 0; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+    .radar-ring {
+      animation: radarPulse 2s infinite ease-out;
     }
 
-    .car-backdrop.active {
-      opacity: 1;
-      transform: scale(1);
-      filter: brightness(0.65) contrast(1.10);
+    /* Accordion FAQ */
+    details summary::-webkit-details-marker {
+      display: none;
     }
-
-    .car-backdrop.inactive {
-      opacity: 0;
-      transform: scale(1.06);
-      filter: brightness(0.45) contrast(1.05);
-    }
-
-    /* Glassmorphic Cards (Higher Contrast & Visibility) */
-    .glass-panel {
-      background: var(--card-bg);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--card-border);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 45px rgba(37, 99, 235, 0.15);
-    }
-
-    .glass-panel-glow {
-      background: rgba(12, 19, 36, 0.94);
-      backdrop-filter: blur(22px);
-      -webkit-backdrop-filter: blur(22px);
-      border: 1px solid rgba(96, 165, 250, 0.4);
-      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.75), 0 0 55px rgba(37, 99, 235, 0.32);
-    }
-
-    /* Slide Switcher Animations */
-    .slide-view {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 32px 80px 32px;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(22px) scale(0.98);
-      transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 10;
-    }
-
-    .slide-view.active {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0) scale(1);
-    }
-
-    /* Glowing tags & badges */
-    .tech-tag {
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-    }
-
-    /* Progress bar smooth track */
-    .progress-pill {
-      transition: all 0.3s ease;
-    }
-    .progress-pill.active {
-      background: #3B82F6;
-      box-shadow: 0 0 14px rgba(59, 130, 246, 0.85);
-      width: 36px;
-    }
-
-    /* Custom scrollbar for inner scroll if needed */
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 5px; }
   </style>
 </head>
-<body>
+<body class="bg-dark-bg text-slate-100 min-h-screen antialiased selection:bg-brand-600 selection:text-white">
 
   <!-- =============================================================== -->
-  <!-- PHOTOGRAPHIC PORSCHE BACKDROP LAYERS (4 STAGES)                 -->
+  <!-- NAVBAR -->
   <!-- =============================================================== -->
-  <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none select-none">
-    <!-- Stage 1: Porsche 911 GT Showroom / 360 Exterior -->
-    <img id="carBackdrop1" src="assets/stage1_exterior.jpg" alt="Porsche 911 Exterior" class="car-backdrop active">
-    <!-- Stage 2: Porsche Cockpit / Driver Door Open -->
-    <img id="carBackdrop2" src="assets/stage2_cockpit.jpg" alt="Porsche Cockpit Open Door" class="car-backdrop inactive">
-    <!-- Stage 3: Porsche Engine Bay / Hood Open -->
-    <img id="carBackdrop3" src="assets/stage3_hood.jpg" alt="Porsche Engine Hood Open" class="car-backdrop inactive">
-    <!-- Stage 4: Porsche Engine Macro / Telemetry -->
-    <img id="carBackdrop4" src="assets/stage4_engine.jpg" alt="Porsche Macro Engine Telemetry" class="car-backdrop inactive">
-
-    <!-- Cinematic Vignette & Studio Lighting Gradients -->
-    <div class="absolute inset-0 bg-gradient-to-t from-[#05070D] via-[#05070D]/45 to-[#05070D]/85"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#05070D]/40 to-[#05070D]/90"></div>
-    <div class="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#05070D] to-transparent"></div>
-    <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-[#05070D] to-transparent"></div>
-  </div>
-
-  <!-- =============================================================== -->
-  <!-- TOP TELEMETRY HUD BAR                                           -->
-  <!-- =============================================================== -->
-  <header class="fixed top-0 inset-x-0 z-50 h-16 bg-[#05070D]/85 backdrop-blur-xl border-b border-white/10 px-4 sm:px-8 flex items-center justify-between">
-    <!-- Left: Brand -->
-    <div class="flex items-center gap-3.5">
-      <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 via-indigo-600 to-accent-cyan flex items-center justify-center font-black text-white text-lg shadow-lg shadow-brand-600/40">
-        A<sup class="text-[11px] -ml-0.5">24</sup>
-      </div>
-      <div>
-        <div class="flex items-center gap-2">
-          <span class="text-lg font-black tracking-tight text-white font-['Space_Grotesk']">
-            AutoPro<sup class="text-brand-400 font-bold">24</sup>
-          </span>
-          <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-xs font-bold text-emerald-400">
-            JONLI MIJOZ TAQDIMOTI
-          </span>
+  <nav class="fixed top-0 inset-x-0 z-50 bg-[#05070D]/85 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo: AutoPro24 -->
+      <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" class="flex items-center space-x-3 group cursor-pointer">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 via-indigo-600 to-accent-cyan flex items-center justify-center font-black text-white text-2xl shadow-lg shadow-brand-600/30 group-hover:scale-105 transition">
+          A<sup class="text-sm font-extrabold -ml-0.5">24</sup>
         </div>
-        <span class="block text-xs text-slate-300 font-medium">AvtoPro Oil • Usta Qahramon & O'ktam Adhamov</span>
-      </div>
-    </div>
-
-    <!-- Center: Porsche 4-Stage Direct Switcher -->
-    <div class="hidden md:flex items-center gap-2 bg-slate-950/80 border border-slate-800 rounded-2xl p-1.5 backdrop-blur-md">
-      <button id="carNav1" onclick="setCarStage(1, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-brand-600 text-white shadow-md">
-        <i class="fa-solid fa-car-side text-xs"></i> 1. Tashqi (360°)
-      </button>
-      <button id="carNav2" onclick="setCarStage(2, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2">
-        <i class="fa-solid fa-door-open text-xs text-amber-400"></i> 2. Eshik (POS)
-      </button>
-      <button id="carNav3" onclick="setCarStage(3, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2">
-        <i class="fa-solid fa-gears text-xs text-emerald-400"></i> 3. Kapot (Ombor)
-      </button>
-      <button id="carNav4" onclick="setCarStage(4, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2">
-        <i class="fa-solid fa-microchip text-xs text-cyan-400"></i> 4. Telemetriya
-      </button>
-    </div>
-
-    <!-- Right: Slide Count & Controls -->
-    <div class="flex items-center gap-3.5">
-      <a href="presentation.html" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-200 hover:text-white text-xs font-bold transition">
-        <i class="fa-regular fa-file-lines text-brand-400"></i> Klassik Deck
+        <div>
+          <span class="text-xl font-black tracking-tight text-white flex items-center gap-1">
+            AutoPro<sup class="text-brand-400 font-black text-xs">24</sup>
+          </span>
+          <span class="block text-[10px] text-slate-400 font-semibold tracking-wider uppercase">Automotive Operating System</span>
+        </div>
       </a>
-      <div class="text-right hidden sm:block">
-        <div id="slideCounter" class="text-sm font-extrabold text-white font-mono">1 / 9</div>
-        <div id="carStageBadge" class="text-xs text-brand-400 font-bold uppercase tracking-wider">Porsche 911 GT Showroom</div>
+
+      <!-- Navigation links -->
+      <div class="hidden lg:flex items-center space-x-6 text-xs xl:text-sm font-medium text-slate-300">
+        <button onclick="jumpToCarStage(1)" class="hover:text-white transition flex items-center gap-1.5 text-accent-cyan font-bold cursor-pointer">
+          <i class="fa-solid fa-cube text-xs"></i> 3D Ko'rik
+        </button>
+        <a href="#how-it-works" class="hover:text-white transition">Qanday Ishlaydi?</a>
+        <a href="#niches" class="hover:text-white transition">Sohalar</a>
+        <a href="#features" class="hover:text-white transition">Xususiyatlar</a>
+        <a href="#calculator" class="hover:text-white transition">Kalkulyator</a>
+        <a href="#pricing" class="hover:text-white transition text-amber-400 font-bold">Tariflar</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
       </div>
-      <button onclick="toggleAudio()" id="audioBtn" title="Ovoz effektlari" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-sm transition">
-        <i id="audioIcon" class="fa-solid fa-volume-high"></i>
-      </button>
-      <button onclick="toggleFullScreen()" title="To'liq ekran (F11)" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-sm transition">
-        <i class="fa-solid fa-expand"></i>
-      </button>
-    </div>
-  </header>
 
-  <!-- =============================================================== -->
-  <!-- MAIN SLIDES CONTAINER                                           -->
-  <!-- =============================================================== -->
-  <main class="relative flex-1 w-full h-full overflow-hidden">
-
-    <!-- ============================================================= -->
-    <!-- SLIDE 1: INTRO / PORSCHE GT SHOWROOM                          -->
-    <!-- ============================================================= -->
-    <div class="slide-view active" id="slide1">
-      <div class="max-w-4xl w-full mx-auto text-center space-y-8">
-        <!-- Floating Badge -->
-        <div class="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-brand-950/90 border border-brand-500/50 text-brand-300 text-sm font-bold backdrop-blur-md shadow-xl shadow-brand-500/25">
-          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-          AutoPro²⁴ • GPTify Muhandisligi
-        </div>
-
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.15]">
-          Avtoservislar Uchun <br>
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400">
-            AI CRM Tizimi
-          </span>
-        </h1>
-
-        <p class="text-lg sm:text-2xl text-slate-200 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-medium">
-          Tezkor kassa, avtomatik ombor va moliyaviy hisobot.
-        </p>
-
-        <!-- Proof Metrics Glass Cards (Super Clean & Spacious) -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto pt-2">
-          <div class="glass-panel p-6 rounded-3xl text-left border-t-4 border-t-brand-500 space-y-1">
-            <div class="text-3xl sm:text-4xl font-black text-white font-['Space_Grotesk']">5 soniya</div>
-            <div class="text-sm text-slate-200 font-semibold leading-snug">Mijozni qabul qilish & avto-chek</div>
-          </div>
-          <div class="glass-panel p-6 rounded-3xl text-left border-t-4 border-t-emerald-500 space-y-1">
-            <div class="text-3xl sm:text-4xl font-black text-emerald-400 font-['Space_Grotesk']">100%</div>
-            <div class="text-sm text-slate-200 font-semibold leading-snug">Jonli ombor va moylar hisobi</div>
-          </div>
-          <div class="glass-panel p-6 rounded-3xl text-left border-t-4 border-t-cyan-500 space-y-1">
-            <div class="text-3xl sm:text-4xl font-black text-cyan-300 font-['Space_Grotesk']">Telegram</div>
-            <div class="text-sm text-slate-200 font-semibold leading-snug">Qo'shimcha uskunalarsiz POS</div>
-          </div>
-        </div>
-
-        <!-- Action Row -->
-        <div class="flex items-center justify-center gap-4 pt-3">
-          <button onclick="goToSlide(2)" class="px-9 py-4 rounded-2xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-extrabold text-base shadow-2xl shadow-brand-600/40 transition active:scale-95 flex items-center gap-3">
-            <i class="fa-solid fa-play"></i> Porsche 3D Ko'rikni Boshlash &rarr;
-          </button>
-        </div>
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-3">
+        <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-dark-card border border-dark-border hover:border-brand-500 text-slate-200 text-xs font-semibold transition">
+          <i class="fa-brands fa-telegram text-sky-400 text-sm"></i> @AvtoPro_CRM_bot
+        </a>
+        <a href="#consultation" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white text-xs font-bold shadow-lg shadow-brand-600/25 transition active:scale-95">
+          <i class="fa-solid fa-phone"></i> 7 Kun Bepul Sinash
+        </a>
       </div>
     </div>
+  </nav>
 
-    <!-- ============================================================= -->
-    <!-- SLIDE 2: PROBLEM & SOLUTION COMPARISON TABLE                 -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide2">
-      <div class="max-w-6xl w-full mx-auto space-y-6">
-        <div class="text-center space-y-2">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-950/90 border border-brand-500/40 text-brand-300 text-xs sm:text-sm font-bold">
-            <i class="fa-solid fa-chart-simple text-brand-400"></i> Taqqoslash & Samaradorlik
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">
-            Hozirgi Ish Oqimi va AutoPro²⁴ Yechimi
-          </h2>
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
-            Mijozingizning do'konida uchraydigan kundalik qiyinchiliklar va ularning avtomatlashgan yechimi:
-          </p>
-        </div>
+  <!-- =============================================================== -->
+  <!-- SECTION: UNIFIED HERO & 3D CAR INSPECTION SCROLLYTELLING -->
+  <!-- =============================================================== -->
+  <section id="car-inspection" class="relative min-h-[320vh] bg-[#05070D]">
+    
+    <!-- Fullscreen Sticky Container -->
+    <div class="sticky top-0 h-screen h-[100dvh] w-full overflow-hidden flex flex-col justify-between z-20 select-none">
+      
+      <!-- FULL-SCREEN PHOTOGRAPHIC CAR BACKGROUND LAYERS -->
+      <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img id="carImg1" src="assets/stage1_exterior.jpg" alt="Porsche 911 Showroom" class="car-stage-img absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ease-out opacity-100 scale-100 filter brightness-[0.70] contrast-105">
+        <img id="carImg2" src="assets/stage2_cockpit.jpg" alt="Porsche Cockpit Open Door" class="car-stage-img absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ease-out opacity-0 scale-105 filter brightness-[0.70] contrast-105">
+        <img id="carImg3" src="assets/stage3_hood.jpg" alt="Porsche Engine Bay" class="car-stage-img absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ease-out opacity-0 scale-105 filter brightness-[0.70] contrast-105">
+        <img id="carImg4" src="assets/stage4_engine.jpg" alt="Porsche Engine Telemetry Macro" class="car-stage-img absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ease-out opacity-0 scale-105 filter brightness-[0.70] contrast-105">
+        
+        <!-- Cinematic Dark Vignette & Studio Lighting Overlays -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#05070D] via-[#05070D]/40 to-[#05070D]/90"></div>
+        <div class="absolute inset-0 bg-radial-gradient from-transparent via-[#05070D]/30 to-[#05070D]/80"></div>
+      </div>
 
-        <!-- Comparison Table Card (High-Contrast & Large) -->
-        <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border border-white/15 shadow-2xl">
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm sm:text-base">
-              <thead>
-                <tr class="border-b border-white/15 text-slate-400 text-xs sm:text-sm uppercase tracking-wider font-bold">
-                  <th class="py-3.5 px-4">Jarayon</th>
-                  <th class="py-3.5 px-4 text-red-400">Hozirgi Holat (Qo'lda)</th>
-                  <th class="py-3.5 px-4 text-emerald-400">AutoPro²⁴ Bilan (Avtomatik)</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-white/5">
-                <tr class="hover:bg-white/[0.02] transition">
-                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
-                    <i class="fa-solid fa-user-gear text-amber-400 mr-2"></i> Usta hisoboti
-                  </td>
-                  <td class="py-4 px-4 text-red-300">
-                    Telegramga qisqa yoziladi, kassa bilan solishtirilmaydi, tushum yo'qolishi mumkin
-                  </td>
-                  <td class="py-4 px-4 text-emerald-300 font-semibold">
-                    ✅ 1 soniyada avto-chek chiqadi va kassa jurnali to'liq to'ldiriladi
-                  </td>
-                </tr>
-                <tr class="hover:bg-white/[0.02] transition">
-                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
-                    <i class="fa-solid fa-boxes-stacked text-cyan-400 mr-2"></i> Ombor zaxirasi
-                  </td>
-                  <td class="py-4 px-4 text-red-300">
-                    119 xil moy va filtrni har kuni qo'lda sanash imkonsiz, kamomadlar yuzaga keladi
-                  </td>
-                  <td class="py-4 px-4 text-emerald-300 font-semibold">
-                    ✅ Har bir mashinadan keyin barcha tovarlar va moy litrlari avtomatik ayiriladi
-                  </td>
-                </tr>
-                <tr class="hover:bg-white/[0.02] transition">
-                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
-                    <i class="fa-solid fa-truck-ramp-box text-blue-400 mr-2"></i> Dilerdan yuk kelishi
-                  </td>
-                  <td class="py-4 px-4 text-red-300">
-                    Excel hisob-fakturalardagi tovarlarni daftarga bittalab ko'chirib chiqish kerak
-                  </td>
-                  <td class="py-4 px-4 text-emerald-300 font-semibold">
-                    ✅ Faylni botga tashlash bilan 1 soniyada avtomat kirim bo'ladi va kurs hisoblanadi
-                  </td>
-                </tr>
-                <tr class="hover:bg-white/[0.02] transition">
-                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
-                    <i class="fa-solid fa-receipt text-purple-400 mr-2"></i> Kechki hisob-kitob
-                  </td>
-                  <td class="py-4 px-4 text-red-300">
-                    Tushum va ombor qoldig'i to'g'ri keladimi-yo'qmi noaniq, hisob-kitob soatlab cho'ziladi
-                  </td>
-                  <td class="py-4 px-4 text-emerald-300 font-semibold">
-                    ✅ /kun_yopish orqali kassa, qoldiqlar, atrobotka va sof foyda solishtiriladi
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-3 text-xs sm:text-sm border-t border-white/10">
-            <span class="text-slate-200 flex items-center gap-2 font-medium">
-              <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
-              Usta uchun 0 daqiqa ortiqcha vaqt, do'kon egasi uchun 100% shaffof nazorat.
+      <!-- TOP BAR HUD INSIDE STICKY (Stage title & Direct Switchers) -->
+      <div class="relative z-10 pt-20 px-4 sm:px-8 max-w-7xl mx-auto w-full">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 py-2 border-b border-slate-800/80 backdrop-blur-md bg-slate-950/40 rounded-2xl px-4">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span id="carStageTitle" class="text-xs sm:text-sm font-bold tracking-wide text-slate-200">
+              Porsche 911 GT Showroom • 360° Tashqi Korpus
             </span>
-            <button onclick="goToSlide(3)" class="text-cyan-400 font-bold hover:underline flex items-center gap-1.5 text-sm">
-              3-Slayd: Porsche 3D Ko'rikka O'tish &rarr;
+          </div>
+          
+          <!-- 4 Direct Stage Buttons -->
+          <div class="flex items-center gap-1.5 sm:gap-2">
+            <button id="btnStage1" onclick="jumpToCarStage(1)" class="stage-nav-btn active px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-bold transition bg-brand-600 text-white shadow-lg">
+              1. Tashqi
+            </button>
+            <button id="btnStage2" onclick="jumpToCarStage(2)" class="stage-nav-btn px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 border border-slate-800 transition">
+              2. Eshik (POS)
+            </button>
+            <button id="btnStage3" onclick="jumpToCarStage(3)" class="stage-nav-btn px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 border border-slate-800 transition">
+              3. Kapot (Ombor)
+            </button>
+            <button id="btnStage4" onclick="jumpToCarStage(4)" class="stage-nav-btn px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 border border-slate-800 transition">
+              4. Detallar
             </button>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ============================================================= -->
-    <!-- SLIDE 3: INTERACTIVE 3D CAR INSPECTION (ALL 4 STAGES)          -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide3">
-      <div class="max-w-6xl w-full mx-auto flex flex-col justify-between h-full py-3 space-y-4">
+      <!-- MIDDLE CONTENT CONTAINER -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 w-full flex-1 flex flex-col justify-center">
         
-        <!-- Header of Stage -->
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 glass-panel px-6 py-3.5 rounded-2xl border border-white/15">
-          <div class="flex items-center gap-3">
-            <span class="w-3.5 h-3.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-sm sm:text-base font-black text-white font-['Space_Grotesk'] uppercase tracking-wide" id="inspectionStageName">
-              1-Bosqich: Avtomobil Raqamini Aniqlash & 360° Tashqi Ko'rik
-            </span>
+        <!-- PHASE A: HERO VIEW (Visible at the very top scroll 0-15%) -->
+        <div id="viewHero" class="transition-all duration-700 max-w-3xl mx-auto text-center space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-900/60 border border-brand-500/30 text-brand-300 text-xs font-bold backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-accent-cyan animate-ping"></span>
+            AutoPro²⁴ — O'zbekiston Avtoservislari Uchun Yangi Avlod AI CRM
           </div>
-          <div class="flex items-center gap-2">
-            <button onclick="switchInspectSubStage(1)" id="subBtn1" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-600 text-white transition shadow-md">Tashqi</button>
-            <button onclick="switchInspectSubStage(2)" id="subBtn2" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition">Eshik (POS)</button>
-            <button onclick="switchInspectSubStage(3)" id="subBtn3" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition">Kapot (Ombor)</button>
-            <button onclick="switchInspectSubStage(4)" id="subBtn4" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition">Detallar</button>
+          
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+            Kompyutersiz va 1C siz <br>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-400 via-indigo-300 to-accent-cyan">
+              5 Soniyada Telegram POS Kassasi
+            </span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            Ustalar telefonida ovoz bilan yozadi, har safar moy quyilganda ombordagi qoldiq avtomatik kamayadi va har bir chek real-vaqtda Telegram guruhingizga tushadi.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <a href="#consultation" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-extrabold text-sm shadow-xl shadow-brand-600/30 transition active:scale-95 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-rocket"></i> 7 Kunlik Bepul Sinov
+            </a>
+            <button onclick="jumpToCarStage(2)" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 hover:border-brand-500 text-slate-200 font-bold text-sm backdrop-blur-md transition flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-play text-brand-400"></i> 3D Car & Telemetriya &darr;
+            </button>
+          </div>
+
+          <!-- Proof Metrics -->
+          <div class="grid grid-cols-3 gap-2 sm:gap-4 max-w-xl mx-auto pt-4 border-t border-slate-800/80">
+            <div>
+              <div class="text-lg sm:text-2xl font-black text-white">0 so'm</div>
+              <div class="text-[10px] sm:text-xs text-slate-400">Uskunalar xarajati</div>
+            </div>
+            <div>
+              <div class="text-lg sm:text-2xl font-black text-accent-emerald">5 soniya</div>
+              <div class="text-[10px] sm:text-xs text-slate-400">Mijozni qabul qilish</div>
+            </div>
+            <div>
+              <div class="text-lg sm:text-2xl font-black text-accent-cyan">100%</div>
+              <div class="text-[10px] sm:text-xs text-slate-400">O'g'irlikka qarshi nazorat</div>
+            </div>
           </div>
         </div>
 
-        <!-- Substage Dynamic Content Box -->
-        <div class="my-auto w-full">
-
-          <!-- Substage 1: Exterior Plate & Recognition -->
-          <div id="subView1" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div class="md:col-span-6 space-y-4">
-              <div class="tech-tag text-sm text-brand-400 font-bold">Mijoz Kelishi Bilan</div>
-              <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
-                Avtomobil Kirdi — <br><span class="text-brand-400">5 Soniyada Qabul Qilish</span>
-              </h2>
-              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
-                Usta Qahramon avtomobil raqamini kiritishi bilanoq, tizim uning avval qaysi moy quyganligi, kilometraji va filtr turlarini bir zumda chiqaradi.
-              </p>
-              <div class="flex flex-wrap gap-2.5 pt-1 text-xs sm:text-sm">
-                <span class="glass-panel px-4 py-2 rounded-xl text-slate-200 font-medium"><i class="fa-solid fa-history text-cyan-400 mr-2"></i> Tashriflar tarixi & Qarz nazorati</span>
-                <span class="glass-panel px-4 py-2 rounded-xl text-slate-200 font-medium"><i class="fa-solid fa-bell text-amber-400 mr-2"></i> Moy eslatmasi</span>
-              </div>
-            </div>
-
-            <div class="md:col-span-6 flex justify-center">
-              <div class="w-full max-w-md glass-panel-glow p-6 sm:p-7 rounded-3xl space-y-4 border border-brand-500/40">
-                <div class="flex justify-between items-center text-xs sm:text-sm border-b border-white/10 pb-2.5">
-                  <span class="text-slate-300 font-semibold">Avtoraqamni Aniqlash Tizimi:</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-mono text-xs font-bold">FAOL • 0.3s</span>
+        <!-- PHASE B: 3D CAR INSPECTION HUD STAGES (Visible during scroll) -->
+        <div id="viewInspectionHUD" class="hidden transition-all duration-700 w-full">
+          
+          <!-- ============================================== -->
+          <!-- STAGE 1: EXTERIOR 360 & VEHICLE IDENTIFICATION -->
+          <!-- ============================================== -->
+          <div id="viewStage1" class="car-view w-full flex flex-col justify-center py-2 transition-all duration-700">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center w-full max-w-5xl mx-auto">
+              
+              <!-- Left Car Info Badge -->
+              <div class="md:col-span-6 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-brand-500/40 text-brand-300 text-xs font-bold backdrop-blur-md">
+                  <i class="fa-solid fa-camera text-brand-400"></i> AI Nomer Aniqlash & 360° Ko'rik
                 </div>
-                <!-- Simulated Plate -->
-                <div class="bg-white text-slate-900 font-mono font-black text-center py-3 rounded-2xl text-2xl tracking-widest shadow-inner flex items-center justify-center gap-3">
-                  <span class="text-sm bg-blue-600 text-white px-2 py-0.5 rounded">01</span>
-                  <span>777 PAA</span>
-                  <span class="text-xs text-slate-500 font-bold">UZ</span>
-                </div>
-                <div class="space-y-2 text-xs sm:text-sm text-slate-200">
-                  <div class="flex justify-between py-1 border-b border-white/5">
-                    <span class="text-slate-400">Avtomobil modeli:</span>
-                    <span class="font-bold text-white">Porsche 911 / Cobalt / Gentra</span>
-                  </div>
-                  <div class="flex justify-between py-1 border-b border-white/5">
-                    <span class="text-slate-400">Oldingi tashrif:</span>
-                    <span class="font-semibold text-emerald-400">12.07.2026 (7,400 km oldin)</span>
-                  </div>
-                  <div class="flex justify-between py-1">
-                    <span class="text-slate-400">Tavsiya etilgan moy va sig'im:</span>
-                    <span class="font-bold text-cyan-300">Mobil 1 Super 0W-40 (8.0L)</span>
-                  </div>
+                <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+                  Mijoz Kelishi Bilan <br>
+                  <span class="text-brand-400">5 Soniyada Qabul</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  Avtomobil servisingizga kirishi bilanoq usta telefonida raqamini kiritadi yoki fotosini oladi. Tizim avtomobilning avvalgi moy turi, kilometraj tarixi va qarzlari bor-yo'qligini bir zumda chiqaradi.
+                </p>
+                <div class="flex items-center gap-3 pt-1">
+                  <button onclick="jumpToCarStage(2)" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs shadow-lg transition">
+                    Keyingi: Haydovchi Eshigi (POS) &rarr;
+                  </button>
                 </div>
               </div>
+
+              <!-- Right Car Simulated Plate Card -->
+              <div class="md:col-span-6 flex justify-center">
+                <div class="w-full max-w-sm backdrop-blur-xl bg-slate-950/85 border border-slate-700/80 rounded-3xl p-5 shadow-2xl space-y-3">
+                  <div class="flex justify-between items-center text-xs border-b border-slate-800 pb-2">
+                    <span class="text-slate-400">Avto Taniqlash Tizimi:</span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 font-mono text-[10px] font-bold">FAOL</span>
+                  </div>
+                  <!-- Plate -->
+                  <div class="bg-white text-slate-900 font-mono font-black text-center py-2 rounded-xl text-lg sm:text-xl tracking-wider shadow-inner border-2 border-slate-300 flex items-center justify-center gap-2">
+                    <span class="text-xs bg-blue-600 text-white px-1.5 py-0.5 rounded">01</span>
+                    <span>777 PAA</span>
+                    <span class="text-[10px] text-slate-500">UZ</span>
+                  </div>
+                  <div class="space-y-1.5 text-xs text-slate-300">
+                    <div class="flex justify-between">
+                      <span class="text-slate-400">Model:</span>
+                      <span class="font-bold text-white">Porsche 911 GT3 (yoki Cobalt / Gentra)</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-400">Tashrif tarixi:</span>
+                      <span class="font-semibold text-emerald-400">3-marta kelishi (Doimiy mijoz)</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-400">Tavsiya moy:</span>
+                      <span class="font-semibold text-cyan-300">Mobil 1 Super 0W-40 (8.0L)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Substage 2: Cockpit POS & Door Opens -->
-          <div id="subView2" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div class="md:col-span-6 flex justify-center">
-              <div class="w-full max-w-md glass-panel-glow p-6 sm:p-7 rounded-3xl space-y-4 border border-amber-500/40">
-                <div class="flex justify-between items-center border-b border-white/10 pb-2.5">
-                  <span class="text-sm font-black text-white flex items-center gap-2">
-                    <i class="fa-solid fa-mobile-screen-button text-amber-400"></i> KABINA TELEGRAM POS
-                  </span>
-                  <span class="text-xs bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full font-mono font-bold">
-                    🚪 ESHIK OCHILDI
-                  </span>
-                </div>
-                <div class="bg-slate-950/80 p-4 rounded-2xl border border-white/5 space-y-2.5">
-                  <div class="flex items-center justify-between text-xs">
-                    <span class="text-slate-400 font-bold uppercase">Gemini 2.5 Flash Ovoz</span>
-                    <span class="text-emerald-400 font-mono flex items-center gap-1.5 font-bold">
-                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> 0.4s
+          <!-- ============================================== -->
+          <!-- STAGE 2: DRIVER DOOR OPENS (MOBILE COCKPIT POS) -->
+          <!-- ============================================== -->
+          <div id="viewStage2" class="car-view hidden w-full flex flex-col justify-center py-2 transition-all duration-700">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center w-full max-w-5xl mx-auto">
+              
+              <!-- Left Cockpit POS Card -->
+              <div class="md:col-span-6 flex justify-center">
+                <div class="w-full max-w-sm backdrop-blur-xl bg-slate-950/90 border border-brand-500/50 rounded-3xl p-4 sm:p-5 shadow-[0_0_50px_rgba(37,99,235,0.25)] space-y-3">
+                  <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                    <div class="flex items-center gap-2">
+                      <div class="w-6 h-6 rounded-lg bg-brand-600 flex items-center justify-center text-white text-[10px] font-black">POS</div>
+                      <span class="text-xs font-black text-white">PORSCHE COCKPIT • SMART KASSA</span>
+                    </div>
+                    <span class="text-[9px] bg-brand-950 text-brand-300 border border-brand-500/40 px-2 py-0.5 rounded-md font-mono font-bold">
+                      🚪 ESHIK OCHILDI
                     </span>
                   </div>
-                  <div class="p-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-emerald-300 font-mono italic">
-                    "Micking 10-40 3.5 litr, Moy f, Voz f, Mator flush, Kobalt 390 000"
+
+                  <!-- Voice Simulation -->
+                  <div class="bg-dark-bg/80 p-3 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="text-[10px] text-slate-400 font-bold uppercase">Gemini 2.5 Flash Ovoz</span>
+                      <span class="text-[9px] text-emerald-400 font-mono flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> 0.4s
+                      </span>
+                    </div>
+                    <div class="p-2 rounded-xl bg-slate-900 border border-slate-700/60 text-[11px] text-emerald-300 font-mono italic">
+                      "Porschega 8 litr Mobil 1 quydik, moy filtri yangilandi, Click to'ladi"
+                    </div>
+                  </div>
+
+                  <!-- Quick receipt -->
+                  <div class="space-y-1 text-xs">
+                    <div class="flex justify-between text-slate-300">
+                      <span>Mobil 1 0W-40 (8.0L)</span>
+                      <span class="font-bold text-white">1,040,000 UZS</span>
+                    </div>
+                    <div class="flex justify-between text-slate-300">
+                      <span>Moy filtri & Xizmat haqi</span>
+                      <span class="font-bold text-white">120,000 UZS</span>
+                    </div>
+                    <div class="flex justify-between pt-1 border-t border-slate-800 font-bold text-emerald-400">
+                      <span>Jami Chek:</span>
+                      <span class="text-sm font-black">1,160,000 UZS (Click)</span>
+                    </div>
                   </div>
                 </div>
-                <div class="space-y-2 text-xs sm:text-sm text-slate-200">
-                  <div class="flex justify-between"><span>Micking 10W-40 (3.5L):</span><span class="font-bold text-white">210,000 UZS</span></div>
-                  <div class="flex justify-between"><span>Cobalt Moy + Havo filtri:</span><span class="font-bold text-white">95,000 UZS</span></div>
-                  <div class="flex justify-between"><span>Engine Flush (Promivka):</span><span class="font-bold text-white">55,000 UZS</span></div>
-                  <div class="flex justify-between pt-2 border-t border-white/10 font-black text-emerald-400 text-base">
-                    <span>Jami Chek Summasi:</span>
-                    <span>390,000 UZS (Naqd)</span>
-                  </div>
-                </div>
               </div>
-            </div>
 
-            <div class="md:col-span-6 space-y-4">
-              <div class="tech-tag text-sm text-amber-400 font-bold">Usta Joyidan Qimirlamaydi</div>
-              <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
-                Haydovchi Eshigida <br><span class="text-amber-400">5 Soniyada Chek Uradi</span>
-              </h2>
-              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
-                Usta Qahramonga kompyuter yoki kassa oldiga yugurish shart emas. Mashina oldida turib, telefonidagi Telegram guruhga bitta audio yoki qisqa xabar yuboradi — qolganini bot o'zi bajaradi.
-              </p>
-              <div class="pt-2">
-                <button onclick="switchInspectSubStage(3)" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-lg transition">
-                  3-Bosqich: Kapotni Ochish &rarr;
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Substage 3: Engine Hood & Auto Stock Deduction -->
-          <div id="subView3" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            <div class="md:col-span-6 space-y-4">
-              <div class="tech-tag text-sm text-emerald-400 font-bold">Avtomatik Ombor Nazorati</div>
-              <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
-                Kapot Ochildi: <br><span class="text-emerald-400">Moy & Filtrlar Yechiladi</span>
-              </h2>
-              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
-                Har bir quyilgan moy litri va almashtirilgan filtrlar zaxiradan 1 soniyada avtomatik ayriladi. Kam qolgan tovarlar bo'yicha bot o'zi ogohlantiradi.
-              </p>
-              <div class="pt-2">
-                <button onclick="switchInspectSubStage(4)" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm shadow-lg transition">
-                  4-Bosqich: Telemetriya Tugmalari &rarr;
-                </button>
-              </div>
-            </div>
-
-            <div class="md:col-span-6 flex justify-center">
-              <div class="w-full max-w-md glass-panel-glow p-6 sm:p-7 rounded-3xl space-y-4 border border-emerald-500/40">
-                <div class="flex justify-between items-center border-b border-white/10 pb-2.5">
-                  <span class="text-sm font-black text-white">DVIGATEL OMBOR TELEMETRIYASI</span>
-                  <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-mono font-bold">
-                    ⚙️ KAPOT OCHIQ
+              <!-- Right Description -->
+              <div class="md:col-span-6 space-y-3 backdrop-blur-md bg-slate-950/85 p-5 sm:p-6 rounded-3xl border border-slate-800 shadow-2xl">
+                <div class="text-xs font-black text-brand-400 uppercase tracking-wider">Usta POS Interfeysi</div>
+                <h3 class="text-xl sm:text-2xl font-black text-white leading-snug">Ustalar Kabinada O'tirib Ham 5 Soniyada Chek Yozadi</h3>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  Hech qanday og'ir kompyuter kassaga borish shart emas. Haydovchi eshigini ochgan usta telefonining o'zida Telegram orqali mijozni kutib oladi va chek chiqaradi.
+                </p>
+                <div class="pt-1 flex flex-wrap gap-2 text-xs">
+                  <span class="bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                    <i class="fa-solid fa-bolt text-amber-400 mr-1"></i> 5 soniyada qabul
+                  </span>
+                  <span class="bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                    <i class="fa-solid fa-qrcode text-cyan-400 mr-1"></i> Click / Payme / Uzum / Nasiya
                   </span>
                 </div>
-                <!-- Animated Gauge -->
-                <div class="bg-slate-950/80 p-4 rounded-2xl border border-white/5 space-y-2.5">
-                  <div class="flex justify-between text-xs sm:text-sm font-bold">
-                    <span class="text-slate-200">Micking 10W-40 Bochka:</span>
-                    <span class="text-emerald-400 font-mono">-3.5L Yechildi</span>
-                  </div>
-                  <div class="w-full bg-slate-900 h-3.5 rounded-full overflow-hidden border border-slate-700/60 p-0.5">
-                    <div class="bg-gradient-to-r from-amber-500 to-emerald-400 h-full rounded-full transition-all duration-1000 w-[78%]"></div>
-                  </div>
-                  <div class="flex justify-between text-xs text-slate-300 font-mono">
-                    <span>Avvalgi qoldiq: 23.0L</span>
-                    <span class="text-emerald-300 font-bold">Yangi qoldiq: 19.5 Litr</span>
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm">
-                  <div class="glass-panel p-3 rounded-xl border border-white/5 space-y-1">
-                    <span class="text-slate-400 text-xs block">Cobalt Moy Filtri:</span>
-                    <span class="font-bold text-white text-sm">26 ➔ 25 dona (-1)</span>
-                  </div>
-                  <div class="glass-panel p-3 rounded-xl border border-white/5 space-y-1">
-                    <span class="text-slate-400 text-xs block">Cobalt Havo Filtri:</span>
-                    <span class="font-bold text-white text-sm">6 ➔ 5 dona (-1)</span>
-                  </div>
-                </div>
               </div>
+
             </div>
           </div>
 
-          <!-- Substage 4: Interactive Matrix Telemetry Pins -->
-          <div id="subView4" class="hidden flex flex-col justify-center space-y-5">
-            <div class="text-center">
-              <span class="text-xs sm:text-sm font-black text-cyan-400 uppercase tracking-widest glass-panel px-5 py-2 rounded-full border border-cyan-500/40">
+          <!-- ============================================== -->
+          <!-- STAGE 3: ENGINE HOOD OPENS (AUTO INVENTORY DEDUCTION) -->
+          <!-- ============================================== -->
+          <div id="viewStage3" class="car-view hidden w-full flex flex-col justify-center py-2 transition-all duration-700">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center w-full max-w-5xl mx-auto">
+              
+              <!-- Left Engine Telemetry Gauge -->
+              <div class="md:col-span-6 flex justify-center">
+                <div class="w-full max-w-sm backdrop-blur-xl bg-slate-950/90 border border-emerald-500/60 rounded-3xl p-5 shadow-[0_0_50px_rgba(16,185,129,0.3)] space-y-3">
+                  <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                    <span class="text-xs font-black text-white">PORSCHE 911 GT • ENGINE BAY</span>
+                    <span class="text-[9px] bg-emerald-950 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded-md font-mono font-bold">
+                      ⚙️ KAPOT KO'TARILDI
+                    </span>
+                  </div>
+
+                  <!-- Real-time Oil Stock Gauge Progress -->
+                  <div class="bg-dark-bg/80 p-3 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="flex justify-between items-center text-xs font-bold">
+                      <span class="text-slate-300">MOBIL 1 SUPER 0W-40:</span>
+                      <span class="text-emerald-400 font-mono">8.0 L Sarflandi</span>
+                    </div>
+                    <div class="w-full bg-slate-900 h-3 rounded-full overflow-hidden border border-slate-700">
+                      <div class="bg-gradient-to-r from-amber-500 via-emerald-400 to-emerald-500 h-full w-[76%] animate-pulse"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-slate-400">
+                      <span>Joriy Ombor Zaxirasi</span>
+                      <span class="text-emerald-300 font-semibold font-mono">Qoldiq: 64.0 L (Yetarli)</span>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="bg-dark-bg/80 p-2.5 rounded-xl border border-slate-800">
+                      <span class="text-slate-400 text-[10px] block">Moy Filtri:</span>
+                      <span class="font-bold text-white">✅ Yangi (+85k)</span>
+                    </div>
+                    <div class="bg-dark-bg/80 p-2.5 rounded-xl border border-slate-800">
+                      <span class="text-slate-400 text-[10px] block">Freon / Suyuqlik:</span>
+                      <span class="font-bold text-cyan-400">450g (+180k)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Description -->
+              <div class="md:col-span-6 space-y-3 backdrop-blur-md bg-slate-950/85 p-5 sm:p-6 rounded-3xl border border-slate-800 shadow-2xl">
+                <div class="text-xs font-black text-accent-emerald uppercase tracking-wider">Avtomat Ombor Nazorati</div>
+                <h3 class="text-xl sm:text-2xl font-black text-white leading-snug">Har Safar Moy Quyilganda Ombor Avtomatik Kamayadi</h3>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  Mijozga moy quyilganda yoki xizmat sarflanganda, tizim uni ombordagi zaxiradan bir zumda avtomatik ayirib boradi. Natijada servis egasi barcha moy turlari qoldiqlarini doimo to'liq nazorat qilib turadi hamda nima tugayotgani, dilerga qachon yangi zakaz berish kerakligini aniq biladi.
+                </p>
+                <div class="pt-1 flex flex-wrap gap-2 text-xs">
+                  <span class="bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                    <i class="fa-solid fa-calculator text-emerald-400 mr-1"></i> Avtomatik hisob-kitob
+                  </span>
+                  <span class="bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                    <i class="fa-solid fa-cart-flatbed text-blue-400 mr-1"></i> Dilerga o'z vaqtida buyurtma
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ============================================== -->
+          <!-- STAGE 4: MACRO ENGINE PARTS & INTERACTIVE PINS -->
+          <!-- ============================================== -->
+          <div id="viewStage4" class="car-view hidden w-full flex flex-col justify-between py-2 transition-all duration-700">
+            <div class="text-center mb-2">
+              <span class="text-xs font-black text-cyan-400 uppercase tracking-widest bg-cyan-950/90 px-3.5 py-1.5 rounded-full border border-cyan-500/40 backdrop-blur-md shadow-lg">
                 🔍 6 ta Soha Bo'yicha Telemetriya Tugmachalarini Bosing
               </span>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 max-w-5xl mx-auto w-full">
-              <div onclick="selectPin('oil')" class="pin-card glass-panel p-3.5 rounded-2xl border-2 border-brand-500 cursor-pointer transition text-center space-y-1.5 shadow-lg">
-                <div class="text-3xl">🛢️</div>
-                <div class="font-bold text-white text-sm">Moy Markazi</div>
-                <div class="text-xs text-slate-400">Bochka litrlari</div>
+            <!-- Interactive Diagnostic Matrix Pins -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3 max-w-5xl mx-auto w-full my-auto">
+              
+              <!-- Pin 1: Engine Oil -->
+              <div onclick="selectPin('oil')" class="pin-card active backdrop-blur-xl bg-slate-950/90 p-2.5 rounded-2xl border-2 border-brand-500 hover:border-brand-400 cursor-pointer transition shadow-xl space-y-1">
+                <div class="text-xl">🛢️</div>
+                <div class="font-bold text-white text-xs">Moy Zaxirasi</div>
+                <div class="text-[10px] text-slate-400">Avto-chiqarish</div>
               </div>
-              <div onclick="selectPin('motor')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
-                <div class="text-3xl">⚙️</div>
-                <div class="font-bold text-white text-sm">Motor & Svecha</div>
-                <div class="text-xs text-slate-400">Ta'mir naryadi</div>
+
+              <!-- Pin 2: Motor -->
+              <div onclick="selectPin('motor')" class="pin-card backdrop-blur-xl bg-slate-950/90 p-2.5 rounded-2xl border border-slate-700 hover:border-brand-400 cursor-pointer transition shadow-xl space-y-1">
+                <div class="text-xl">⚙️</div>
+                <div class="font-bold text-white text-xs">Motor & Svecha</div>
+                <div class="text-[10px] text-slate-400">Ta'mirlash naryadi</div>
               </div>
-              <div onclick="selectPin('wheels')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
-                <div class="text-3xl">🛞</div>
-                <div class="font-bold text-white text-sm">G'ildirak & Razval</div>
-                <div class="text-xs text-slate-400">Balansirovka</div>
+
+              <!-- Pin 3: Wheels -->
+              <div onclick="selectPin('wheels')" class="pin-card backdrop-blur-xl bg-slate-950/90 p-2.5 rounded-2xl border border-slate-700 hover:border-brand-400 cursor-pointer transition shadow-xl space-y-1">
+                <div class="text-xl">🛞</div>
+                <div class="font-bold text-white text-xs">G'ildirak & Razval</div>
+                <div class="text-[10px] text-slate-400">Balansirovka</div>
               </div>
-              <div onclick="selectPin('wash')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
-                <div class="text-3xl">🧼</div>
-                <div class="font-bold text-white text-sm">Avtomoyka</div>
-                <div class="text-xs text-slate-400">Boks navbati</div>
+
+              <!-- Pin 4: Carwash -->
+              <div onclick="selectPin('carwash')" class="pin-card backdrop-blur-xl bg-slate-950/90 p-2.5 rounded-2xl border border-slate-700 hover:border-brand-400 cursor-pointer transition shadow-xl space-y-1">
+                <div class="text-xl">🧼</div>
+                <div class="font-bold text-white text-xs">Avtomoyka</div>
+                <div class="text-[10px] text-slate-400">Kuzov & Ximchistka</div>
               </div>
-              <div onclick="selectPin('brake')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
-                <div class="text-3xl">🛑</div>
-                <div class="font-bold text-white text-sm">Tormoz & Xodovoy</div>
-                <div class="text-xs text-slate-400">Kolodka hisobi</div>
+
+              <!-- Pin 5: Brake -->
+              <div onclick="selectPin('brake')" class="pin-card backdrop-blur-xl bg-slate-950/90 p-2.5 rounded-2xl border border-slate-700 hover:border-brand-400 cursor-pointer transition shadow-xl space-y-1">
+                <div class="text-xl">🛑</div>
+                <div class="font-bold text-white text-xs">Tormoz & Xodovoy</div>
+                <div class="text-[10px] text-slate-400">Kolodka almashtirish</div>
               </div>
-              <div onclick="selectPin('diag')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
-                <div class="text-3xl">💻</div>
-                <div class="font-bold text-white text-sm">Diagnostika</div>
-                <div class="text-xs text-slate-400">Freon & Datchik</div>
+
+              <!-- Pin 6: OBD2 -->
+              <div onclick="selectPin('diag')" class="pin-card backdrop-blur-xl bg-slate-950/90 p-2.5 rounded-2xl border border-slate-700 hover:border-brand-400 cursor-pointer transition shadow-xl space-y-1">
+                <div class="text-xl">💻</div>
+                <div class="font-bold text-white text-xs">Diagnostika</div>
+                <div class="text-[10px] text-slate-400">Datchik & Freon</div>
               </div>
+
             </div>
 
-            <!-- Dynamic Pin Explanation Box (Large & Readable) -->
-            <div class="glass-panel-glow p-5 sm:p-6 rounded-3xl max-w-4xl mx-auto w-full flex items-center justify-between gap-5 border border-cyan-500/40 shadow-2xl">
-              <div class="flex items-center gap-4">
-                <span class="text-4xl" id="pinIcon">🛢️</span>
-                <div class="space-y-1">
-                  <span class="font-black text-white text-base sm:text-lg block" id="pinTitle">Dvigatel & Transmissiya Moyi Telemetriyasi:</span>
-                  <span class="text-slate-200 text-xs sm:text-sm leading-relaxed block" id="pinText">
-                    Barcha 63 xil moy va filtrlar sig'imi avtomobil markasi bo'yicha avtomatik yechiladi. Bochkadagi litrlar doimo aniq nazoratda bo'ladi va dilerga qachon buyurtma berishni tizim o'zi aytadi.
-                  </span>
+            <!-- Dynamic Telemetry Detail Box -->
+            <div id="pinDetailCard" class="mt-3 backdrop-blur-xl bg-slate-950/90 border border-slate-800 rounded-2xl p-3 sm:p-4 max-w-4xl mx-auto w-full flex items-center justify-between gap-3 shadow-2xl">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl flex-shrink-0" id="pinIcon">🛢️</span>
+                <div>
+                  <span class="font-bold text-white block text-xs sm:text-sm" id="pinTitle">Dvigatel & Transmissiya Moyi:</span>
+                  <span class="text-slate-300 text-xs line-clamp-2" id="pinText">Har bir avtomobil markasi uchun moy va filtrlar sig'imi avtomatik hisoblanadi. Mijozga moy quyilishi bilan ombordan avtomatik yechiladi va do'kon egasi barcha moy qoldiqlarini real-vaqtda ko'radi.</span>
                 </div>
               </div>
+              <a href="#consultation" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs flex-shrink-0 transition shadow-lg shadow-brand-600/30">
+                O'rnatish &rarr;
+              </a>
             </div>
+
           </div>
 
         </div>
 
-        <!-- Substage Guider Bar -->
-        <div class="flex justify-between items-center text-xs sm:text-sm text-slate-400 border-t border-white/10 pt-2.5">
-          <span>💡 Tepada joylashgan 4 ta tugma orqali mashinaning barcha qismlarini ko'zdan kechiring</span>
-          <button onclick="goToSlide(4)" class="text-cyan-400 font-bold hover:underline flex items-center gap-1.5 text-sm">
-            4-Slayd: Usta Qahramon Ish Rejimiga O'tish &rarr;
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- SLIDE 4: USTA QAHRAMON SLANG & VOICE DEMO (COCKPIT BACKDROP)  -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide4">
-      <div class="max-w-6xl w-full mx-auto space-y-7">
-        <div class="text-center space-y-2">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-sm font-bold">
-            <i class="fa-solid fa-door-open"></i> Porsche Cockpit • Ochiq Eshik Rejimi
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">
-            Usta Qahramon Hech Narsani O'zgartirmaydi
-          </h2>
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
-            Usta avval qanday yozgan bo'lsa, xuddi shunday davom ettiradi. Bot barcha qisqartmalarni tushunadi.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 items-stretch">
-          <!-- Left: Real WhatsApp / Telegram Slang -->
-          <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-5 border-l-4 border-l-amber-500">
-            <div class="flex items-center justify-between border-b border-white/10 pb-3">
-              <span class="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-wider">Ustaning Haqiqiy Xabari:</span>
-              <span class="text-xs bg-slate-900 text-amber-400 px-2.5 py-1 rounded font-mono font-bold">18:14:51</span>
-            </div>
-
-            <div class="bg-slate-950/90 p-5 rounded-2xl border border-white/10 font-mono text-sm sm:text-base text-amber-200 leading-loose space-y-1.5 shadow-inner">
-              <div>Micking 10-40 3.5 litr</div>
-              <div>Moy f</div>
-              <div>Voz f</div>
-              <div>Mator flush</div>
-              <div>Gidrilika moy 300 gram</div>
-              <div>Atrobotka 20 litr 100 000</div>
-              <div class="text-white font-bold pt-2 border-t border-white/10">Kobalt 390 000</div>
-            </div>
-
-            <div class="text-xs sm:text-sm text-slate-200 space-y-2">
-              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Moy f / Mou f</b> — Moy filtri</div>
-              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Voz f</b> — Havo (Vozdux) filtri</div>
-              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Mator flush</b> — Engine Flush (Dvigatel yuvish suyuqligi)</div>
-              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Atrobotka 100 000</b> — Ishlatilgan moy sotuvidan daromad</div>
-            </div>
-          </div>
-
-          <!-- Right: 1-Second Bot Receipt -->
-          <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border-l-4 border-l-emerald-500">
-            <div class="flex items-center justify-between border-b border-white/10 pb-3">
-              <span class="text-xs sm:text-sm font-bold text-emerald-400 flex items-center gap-2">
-                <i class="fa-solid fa-receipt text-base"></i> 1 SONIYADA BOT CHEKI:
-              </span>
-              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded font-mono font-bold">Guruhga tushdi</span>
-            </div>
-
-            <div class="bg-slate-950/90 p-5 rounded-2xl border border-white/10 font-mono text-xs sm:text-sm space-y-2.5 text-slate-200 shadow-inner">
-              <div class="text-emerald-400 font-bold text-sm sm:text-base">✅ Chek #8 — Cobalt (01 777 PAA)</div>
-              <div class="border-t border-dashed border-slate-700 pt-2 space-y-1.5">
-                <div class="flex justify-between"><span>• Micking 10W-40 (3.5L):</span><span class="font-bold text-white">210,000 UZS</span></div>
-                <div class="flex justify-between"><span>• Cobalt Moy filtri:</span><span class="font-bold text-white">35,000 UZS</span></div>
-                <div class="flex justify-between"><span>• Cobalt Havo filtri:</span><span class="font-bold text-white">60,000 UZS</span></div>
-                <div class="flex justify-between"><span>• Engine Flush:</span><span class="font-bold text-white">55,000 UZS</span></div>
-                <div class="flex justify-between"><span>• Gidravlika moyi (0.3L):</span><span class="font-bold text-white">30,000 UZS</span></div>
-                <div class="flex justify-between text-cyan-300"><span>• Atrobotka daromadi:</span><span class="font-bold">+100,000 UZS</span></div>
-              </div>
-              <div class="border-t border-white/10 pt-2.5 flex justify-between font-black text-base sm:text-lg text-emerald-400">
-                <span>JAMI SUMMA:</span>
-                <span>390,000 UZS (Naqd)</span>
-              </div>
-            </div>
-
-            <div class="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-xs sm:text-sm text-emerald-300 flex items-center gap-3">
-              <i class="fa-solid fa-shield-halved text-xl flex-shrink-0"></i>
-              <span>O'ktam Adhamovning telefoniga har bir chek real-vaqtda tushadi.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- SLIDE 5: ENGINE HOOD • MULTI-ITEM STOCK DEDUCTION             -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide5">
-      <div class="max-w-6xl w-full mx-auto space-y-7">
-        <div class="text-center space-y-2">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-sm font-bold">
-            <i class="fa-solid fa-gears"></i> Porsche Engine Bay • Kapot Ko'tarildi
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">
-            Bitta Xabar Bilan 5 Xil Tovar Ombordan Yechiladi
-          </h2>
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
-            Qog'oz daftarga yozish shart emas. Tizim har bir tovarni avtomatik topadi va omborni yangilaydi.
-          </p>
-        </div>
-
-        <!-- Stock Deduction Matrix Table Card -->
-        <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border border-emerald-500/30">
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm sm:text-base">
-              <thead>
-                <tr class="border-b border-white/10 text-slate-400 text-xs sm:text-sm uppercase tracking-wider font-bold">
-                  <th class="py-3 px-3">Tovar Nomi</th>
-                  <th class="py-3 px-3">Ustaning Slengi</th>
-                  <th class="py-3 px-3 text-right">Avvalgi Qoldiq</th>
-                  <th class="py-3 px-3 text-center">Sarflanish</th>
-                  <th class="py-3 px-3 text-right text-emerald-400">Yangi Qoldiq</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-white/5 font-mono">
-                <tr>
-                  <td class="py-3.5 px-3 font-bold text-white">Micking 10W-40 (Bochka)</td>
-                  <td class="py-3.5 px-3 text-amber-300">3.5 litr</td>
-                  <td class="py-3.5 px-3 text-right text-slate-400">23.0 L</td>
-                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-3.5 L</td>
-                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">19.5 L</td>
-                </tr>
-                <tr>
-                  <td class="py-3.5 px-3 font-bold text-white">Cobalt Moy Filtri</td>
-                  <td class="py-3.5 px-3 text-amber-300">Moy f (Kobalt)</td>
-                  <td class="py-3.5 px-3 text-right text-slate-400">26 dona</td>
-                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-1 dona</td>
-                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">25 dona</td>
-                </tr>
-                <tr>
-                  <td class="py-3.5 px-3 font-bold text-white">Cobalt Havo Filtri</td>
-                  <td class="py-3.5 px-3 text-amber-300">Voz f (Kobalt)</td>
-                  <td class="py-3.5 px-3 text-right text-slate-400">6 dona</td>
-                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-1 dona</td>
-                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">5 dona</td>
-                </tr>
-                <tr>
-                  <td class="py-3.5 px-3 font-bold text-white">Engine Flush (Promivka)</td>
-                  <td class="py-3.5 px-3 text-amber-300">Mator flush</td>
-                  <td class="py-3.5 px-3 text-right text-slate-400">19 dona</td>
-                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-1 dona</td>
-                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">18 dona</td>
-                </tr>
-                <tr>
-                  <td class="py-3.5 px-3 font-bold text-white">Power Steering (Gidravlika)</td>
-                  <td class="py-3.5 px-3 text-amber-300">Gidrilika 300g</td>
-                  <td class="py-3.5 px-3 text-right text-slate-400">29.7 L</td>
-                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-0.3 L</td>
-                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">29.4 L</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-3 text-xs sm:text-sm border-t border-white/10">
-            <span class="text-slate-200 flex items-center gap-2 font-medium">
-              <i class="fa-solid fa-triangle-exclamation text-amber-400 text-base"></i>
-              Cobalt Havo filtri 5 donaga tushdi — bot kechqurun avtomatik eslatadi.
+        <!-- BOTTOM SCROLL GUIDER & PROGRESS TRACK -->
+        <div class="relative z-10 max-w-xl mx-auto w-full px-4 pb-2 flex flex-col items-center gap-1.5">
+          <div class="flex items-center justify-between w-full text-xs font-semibold text-slate-400">
+            <span class="flex items-center gap-1.5 text-cyan-300">
+              <i class="fa-solid fa-angles-down animate-bounce"></i> Pastga aylantiring (yoki tugmalarni bosing)
             </span>
-            <span class="text-cyan-300 font-bold font-mono text-sm">
-              Ombor holati: 100% Sinxron
+            <a href="#how-it-works" class="text-slate-300 hover:text-white underline flex items-center gap-1 transition">
+              <span>Keyingi bo'limga o'tish</span> &darr;
+            </a>
+          </div>
+          <!-- 4-Segment Progress Track -->
+          <div class="w-full h-1.5 bg-slate-800/80 rounded-full overflow-hidden flex gap-1 p-0.5 border border-slate-700/60 backdrop-blur-md">
+            <div id="progSeg1" class="h-full flex-1 rounded-full bg-brand-500 transition-all duration-300"></div>
+            <div id="progSeg2" class="h-full flex-1 rounded-full bg-slate-700 transition-all duration-300"></div>
+            <div id="progSeg3" class="h-full flex-1 rounded-full bg-slate-700 transition-all duration-300"></div>
+            <div id="progSeg4" class="h-full flex-1 rounded-full bg-slate-700 transition-all duration-300"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: "QANDAY ISHLAYDI?" (3-STEP VISUAL WORKFLOW) -->
+  <!-- =============================================================== -->
+  <section id="how-it-works" class="py-24 border-t border-dark-border bg-gradient-to-b from-[#05070D] to-dark-card/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-accent-cyan uppercase bg-cyan-950/60 border border-cyan-500/30 px-3.5 py-1.5 rounded-full">
+          ⚡ 3 Oddiy Qadamda To'liq Nazorat
+        </span>
+        <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white">AutoPro²⁴ Qanday Ishlaydi?</h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">
+          Murakkab qoidalar yoki kompyuter o'rnatish shart emas. Har qanday usta 10 daqiqada o'rganib oladi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- Step 1 -->
+        <div class="glass-card rounded-3xl p-8 space-y-5 border border-slate-800 relative hover:border-brand-500 transition group">
+          <div class="flex items-center justify-between">
+            <span class="w-12 h-12 rounded-2xl bg-brand-600/20 border border-brand-500/40 text-brand-400 flex items-center justify-center font-black text-xl group-hover:scale-110 transition">
+              1
+            </span>
+            <span class="text-xs font-mono text-slate-400 bg-dark-bg px-2.5 py-1 rounded-lg border border-slate-800">
+              5 soniya
             </span>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- SLIDE 6: DEALER INVOICE RESTOCK (PORSCHE PARTS BACKDROP)      -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide6">
-      <div class="max-w-6xl w-full mx-auto space-y-7">
-        <div class="text-center space-y-2">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-sm font-bold">
-            <i class="fa-solid fa-file-excel"></i> Porsche Telemetriya • Diler Kirimi
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-white">5 Soniyada Qabul (Telegram yoki Ovoz)</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Usta shaxsiy telefonida Telegram orqali bitta tugma bilan POS ochadi. Yoki shunchaki 3 soniya audio yozadi: <i>"Cobaltga 4L Shell, moy filtri, naqd"</i>. Gemini 2.5 Flash avtomatik chek tuzadi.
+            </p>
           </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">
-            1-Soniyali Tovarlar Kirimi (Excel Orqali)
-          </h2>
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
-            Diler tashlagan yangi partiya hisob-fakturasini qo'lda kiritish shart emas.
-          </p>
+          <div class="p-3 rounded-2xl bg-dark-bg/90 border border-slate-800 text-xs text-slate-300 font-mono flex items-center gap-2">
+            <i class="fa-solid fa-microphone text-emerald-400"></i>
+            <span>O'zbekcha ovozni 100% tushunadi</span>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 items-stretch">
-          <!-- Left: Dealer File Flow -->
-          <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-5">
-            <div class="flex items-center gap-4">
-              <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-3xl">
-                <i class="fa-solid fa-file-excel"></i>
-              </div>
-              <div>
-                <h3 class="font-bold text-white text-lg sm:text-xl">AvtoPro_Oil_Tovarlar.xlsx</h3>
-                <span class="text-xs sm:text-sm text-slate-300 font-medium">Diler hisob-fakturasi (14.09.2026)</span>
-              </div>
-            </div>
+        <!-- Step 2 -->
+        <div class="glass-card rounded-3xl p-8 space-y-5 border border-slate-800 relative hover:border-accent-emerald transition group">
+          <div class="flex items-center justify-between">
+            <span class="w-12 h-12 rounded-2xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center font-black text-xl group-hover:scale-110 transition">
+              2
+            </span>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded-lg border border-emerald-800/40">
+              Avtomatik
+            </span>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-white">Ombordan Yechish & Guruhga Chek</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Quyilgan moy zaxiradan darhol ayiriladi. To'lov turi (Click, Payme, Naqd yoki Nasiya) qayd etiladi va servis egasining Telegram guruhiga kvitansiya tushadi. Usta pul yashirolmaydi.
+            </p>
+          </div>
+          <div class="p-3 rounded-2xl bg-dark-bg/90 border border-slate-800 text-xs text-slate-300 font-mono flex items-center gap-2">
+            <i class="fa-solid fa-shield-halved text-amber-400"></i>
+            <span>O'g'irlikka qarshi 100% himoya</span>
+          </div>
+        </div>
 
-            <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
-              Diler qog'oz yoki Excel jo'natganda, fayl shunchaki Telegram guruhiga tashlanadi. Bot 1 soniyada:
+        <!-- Step 3 -->
+        <div class="glass-card rounded-3xl p-8 space-y-5 border border-slate-800 relative hover:border-accent-cyan transition group">
+          <div class="flex items-center justify-between">
+            <span class="w-12 h-12 rounded-2xl bg-cyan-600/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center font-black text-xl group-hover:scale-110 transition">
+              3
+            </span>
+            <span class="text-xs font-mono text-cyan-400 bg-cyan-950/40 px-2.5 py-1 rounded-lg border border-cyan-800/40">
+              +35% Daromad
+            </span>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-xl font-bold text-white">5,000 km Avtomat Recall Eslatmasi</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Har bir xizmatdan keyin mijozning keyingi moy almashtirish yoki texnik ko'rik vaqti hisoblanadi. Tizim avtomatik eslatma yuboradi va mijozlar raqobatchilarga ketib qolmaydi.
+            </p>
+          </div>
+          <div class="p-3 rounded-2xl bg-dark-bg/90 border border-slate-800 text-xs text-slate-300 font-mono flex items-center gap-2">
+            <i class="fa-solid fa-arrows-rotate text-cyan-400"></i>
+            <span>Doimiy mijozlar bazasi avto-shakllanadi</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: MULTI-NICHE CUSTOMIZER (AVTOBIZNES SOHALARI) -->
+  <!-- =============================================================== -->
+  <section id="niches" class="py-20 border-t border-dark-border bg-dark-card/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold tracking-widest text-brand-400 uppercase">Moslashuvchan Arxitektura</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-black text-white">Har Qanday Avtobiznesga 1 Kunda Moslashadi</p>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">
+          AutoPro²⁴ bir xil qolip emas. Quyidagi sohangizni bosing va tizim aynan sizning biznesingizga qanday moslashishini ko'ring:
+        </p>
+      </div>
+
+      <!-- Niche Tabs -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10" id="nicheTabs">
+        <button onclick="switchNiche('oil')" class="niche-tab active px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition flex items-center gap-2.5 bg-brand-600 text-white shadow-lg shadow-brand-600/30" data-niche="oil">
+          <span>🛢️</span> Moy Almashtirish & Ekspress
+        </button>
+        <button onclick="switchNiche('wash')" class="niche-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition flex items-center gap-2.5 bg-dark-card border border-dark-border text-slate-300 hover:text-white hover:border-slate-600" data-niche="wash">
+          <span>🚗</span> Avtomoyka & Detailing
+        </button>
+        <button onclick="switchNiche('repair')" class="niche-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition flex items-center gap-2.5 bg-dark-card border border-dark-border text-slate-300 hover:text-white hover:border-slate-600" data-niche="repair">
+          <span>🔧</span> Avtoservis & Usta Markazi (STO)
+        </button>
+        <button onclick="switchNiche('tire')" class="niche-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition flex items-center gap-2.5 bg-dark-card border border-dark-border text-slate-300 hover:text-white hover:border-slate-600" data-niche="tire">
+          <span>🛞</span> Vulkanizatsiya & Balansirovka
+        </button>
+      </div>
+
+      <!-- Dynamic Niche Showcase Panel -->
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-700/80 shadow-2xl relative overflow-hidden" id="nichePanel">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left: Description & Specific Modules -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-900/40 text-brand-300 border border-brand-500/20 text-xs font-semibold" id="nicheBadge">
+              Moy Markazlari Uchun Maxsus Profil
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-black text-white" id="nicheTitle">
+              Bochka Telemetriyasi, Moy Litrlari va Kilometraj Eslatmasi
+            </h3>
+            
+            <p class="text-slate-300 text-sm leading-relaxed" id="nicheDesc">
+              Dvigatel moyini almashtirish markazlarida eng katta yo'qotish — bochkadagi moyning noaniq sarflanishi va mijozlar keyingi moy almashtirish vaqtini unutishidir. AutoPro²⁴ har bir quyilgan litrni hisoblaydi va avtomatik ravishda mijozga eslatma yuboradi.
             </p>
 
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-200 font-medium">
-              <li class="flex items-start gap-3">
-                <i class="fa-solid fa-check-double text-emerald-400 mt-1 text-base"></i>
-                <span>Dollardagi ($) diler narxlarini <b>11 900 UZS</b> kursi bilan avtomat so'mga aylantiradi.</span>
+            <!-- Specific Capabilities Checklist -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2" id="nicheFeatures">
+              <div class="flex items-start gap-2.5 text-xs text-slate-200">
+                <i class="fa-solid fa-circle-check text-accent-emerald mt-0.5"></i>
+                <span>Har safar moy quyilganda ombordagi qoldiqni avtomatik kamaytirish</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs text-slate-200">
+                <i class="fa-solid fa-circle-check text-accent-emerald mt-0.5"></i>
+                <span>Avtomobil modeliga qarab standart moy litrini avto-to'ldirish</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs text-slate-200">
+                <i class="fa-solid fa-circle-check text-accent-emerald mt-0.5"></i>
+                <span>Moy, havo va salon filtrlari narxini bir zumda hisoblash</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs text-slate-200">
+                <i class="fa-solid fa-circle-check text-accent-emerald mt-0.5"></i>
+                <span>Freon zapravka (grammlar bo'yicha kalkulyatsiya)</span>
+              </div>
+            </div>
+
+            <!-- Niche ROI highlight -->
+            <div class="p-4 rounded-2xl bg-brand-950/40 border border-brand-800/40 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-slate-400 block font-medium">Ushbu sohada oylik o'rtacha saqlab qolinadigan foyda:</span>
+                <span class="text-lg font-black text-accent-emerald" id="nicheSavings">+6,500,000 so'm / oy</span>
+              </div>
+              <a href="#consultation" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold transition">
+                O'rnatib berish &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Live Simulation Box -->
+          <div class="lg:col-span-5 bg-dark-bg/90 rounded-2xl border border-slate-700 p-5 space-y-4 shadow-inner">
+            <div class="flex items-center justify-between pb-3 border-b border-dark-border text-xs">
+              <span class="font-bold text-white flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Mobil POS Interfeysi
+              </span>
+              <span class="text-slate-400 font-mono">AutoPro²⁴ TMA</span>
+            </div>
+
+            <!-- Interactive Sample UI -->
+            <div class="space-y-3 text-xs" id="nichePreviewCard">
+              <div class="bg-dark-card p-3 rounded-xl border border-slate-700/60">
+                <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Tanlangan Xizmat</div>
+                <div class="text-white font-bold text-sm" id="prevService">Shell Helix Ultra 5W-30 (3.75 L)</div>
+                <div class="text-slate-400 text-[11px] mt-0.5" id="prevDetail">Cobalt • 01 A 777 AA • Moy filtri + Havo filtri</div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <div class="bg-dark-card p-2.5 rounded-xl border border-slate-700/60">
+                  <span class="text-[10px] text-slate-400 block">Kassa usuli:</span>
+                  <span class="font-bold text-white text-xs" id="prevPay">Click (487,500 so'm)</span>
+                </div>
+                <div class="bg-dark-card p-2.5 rounded-xl border border-slate-700/60">
+                  <span class="text-[10px] text-slate-400 block">Bajaruvchi:</span>
+                  <span class="font-bold text-sky-400 text-xs" id="prevWorker">👨‍🔧 Sherzod (Moy ustasi)</span>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-emerald-950/30 border border-emerald-800/40 text-[11px] text-emerald-300 flex items-center gap-2">
+                <i class="fa-solid fa-bolt text-emerald-400"></i>
+                <span id="prevBroadcast">Chek real-vaqtda "AvtoServis Boshqaruv" Telegram guruhiga jo'natildi!</span>
+              </div>
+            </div>
+
+            <div class="pt-2 flex justify-between items-center text-[11px] text-slate-400">
+              <span>⏱ Rasmiylashtirish: <b>3.8 soniya</b></span>
+              <span class="text-brand-400 font-semibold">100% Avtomatik</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: CORE ARCHITECTURE & BENTO GRID -->
+  <!-- =============================================================== -->
+  <section id="features" class="py-20 border-t border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold tracking-widest text-brand-400 uppercase">Ekosistema Tarkibi</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-black text-white">Nega AutoPro²⁴ Barcha Qog'oz va Dasturlarni Yengadi?</p>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">
+          Oddiy ustalar kompyuterda o'tirmaydi. AutoPro²⁴ ustalar ishlaydigan joyda — ularning telefonidagi Telegramda yashaydi.
+        </p>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1: TMA POS -->
+        <div class="glass-card p-7 rounded-3xl space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-blue-600/20 text-brand-400 border border-blue-500/30 flex items-center justify-center text-xl">
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">1-Teginishli Telegram Mini App</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Ilova yuklab olish, login yoki parollar yo'q. Usta o'zining shaxsiy Telegramida bitta tugma bilan POS kassani ochadi va 5 soniyada chek yozadi.
+          </p>
+          <div class="pt-2 text-xs font-semibold text-brand-400 flex items-center gap-1">
+            <span>iOS & Android moslashuvchan</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Card 2: Voice AI -->
+        <div class="glass-card p-7 rounded-3xl space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Gemini 2.5 Flash Ovozli Kassa</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Ustaning qo'li moy yoki band bo'lsa: <i>"Cobaltga 4 litr Shell quydik, moy filtri almashdi, naqd to'ladi"</i> deb 3 soniyalik ovoz yuboradi. AI o'zi hamma xizmatlarni ajratib chek tuzadi.
+          </p>
+          <div class="pt-2 text-xs font-semibold text-emerald-400 flex items-center gap-1">
+            <span>100% O'zbek tili va jargonlarni tushunadi</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Card 3: Group Anti-Theft -->
+        <div class="glass-card p-7 rounded-3xl space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-amber-600/20 text-amber-400 border border-amber-500/30 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">O'g'irlikka Qarshi Guruh Nazorati</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Har bir kassa amaliyoti real-vaqtda xo'jayinning Telegram guruhiga chiroyli kvitansiya ko'rinishida tushadi. Usta pulni mijozdan olib, yashira olmaydi.
+          </p>
+          <div class="pt-2 text-xs font-semibold text-amber-400 flex items-center gap-1">
+            <span>Mulkdor uchun xotirjamlik</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Card 4: Local-First Web Cockpit -->
+        <div class="glass-card p-7 rounded-3xl space-y-4 border-indigo-500/30">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-600/20 text-indigo-400 border border-indigo-500/30 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <div class="flex items-center gap-2">
+            <h3 class="text-lg font-bold text-white">Lokal Web Cockpit (100% Maxfiy)</h3>
+            <span class="px-2 py-0.5 text-[9px] font-bold rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">0 SO'M SERVER</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Dastur to'g'ridan-to'g'ri <b>sizning ofis kompyuteringizda</b> lokal ishlaydi. Hech qanday oylik qimmat server to'lovlarisiz! Barcha kassa tushumlari faqat o'zingizda saqlanadi, internet uzilib qolsa ham kassa to'xtovsiz ishlayveradi (Offline-ready).
+          </p>
+          <div class="pt-2 text-xs font-semibold text-indigo-400 flex items-center gap-1">
+            <span>To'liq ma'lumotlar daxlsizligi & Telemetriya</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Card 5: Inventory & Barrel -->
+        <div class="glass-card p-7 rounded-3xl space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-600/20 text-cyan-400 border border-cyan-500/30 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-boxes-stacked"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Ombor & Moy Qoldiqlari Nazorati</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Har safar mijozga moy quyilishi bilan ombordagi zaxiradan avtomatik ayirib boriladi. Servis egasi barcha moy turlari qoldig'ini real vaqtda ko'rib turadi va dilerga yangi partiya buyurtma qilishni o'z vaqtida biladi.
+          </p>
+          <div class="pt-2 text-xs font-semibold text-cyan-400 flex items-center gap-1">
+            <span>Yetishmovchiliklarga barham berish</span> &rarr;
+          </div>
+        </div>
+
+        <!-- Card 6: Sheets Sync -->
+        <div class="glass-card p-7 rounded-3xl space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-teal-600/20 text-teal-400 border border-teal-500/30 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Excel & Google Sheets Avto-Sinxron</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Barcha savdolar, ustalar hisobi va mijozlar bazasi avtomatik ravishda ko'p varaqli (multi-sheet) Excel fayliga va Google Sheets jadvaliga yoziladi.
+          </p>
+          <div class="pt-2 text-xs font-semibold text-teal-400 flex items-center gap-1">
+            <span>Buxgalteriya bir zumda tayyor</span> &rarr;
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: INTERACTIVE ROI / FOYDA KALKULYATORI -->
+  <!-- =============================================================== -->
+  <section id="calculator" class="py-20 border-t border-dark-border bg-dark-card/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-xs font-bold tracking-widest text-accent-emerald uppercase">Interaktiv Hisob-Kitob</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-black text-white">AutoPro²⁴ Biznesingizga Qancha Pul Saqlab Qoladi?</p>
+        <p class="mt-3 text-slate-400 text-sm">
+          Unutilgan qarzlar, qog'ozdagi noaniqliklar va ustalar pul yashirishi tufayli qancha yo'qotayotganingizni hisoblang:
+        </p>
+      </div>
+
+      <div class="glass-card max-w-4xl mx-auto rounded-3xl p-6 sm:p-10 border border-slate-700">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Sliders -->
+          <div class="md:col-span-7 space-y-6">
+            
+            <!-- Slider 1 -->
+            <div>
+              <div class="flex justify-between items-center text-xs font-semibold mb-2">
+                <span class="text-slate-300">Kuniga o'rtacha xizmat ko'rsatiladigan avtomobillar soni:</span>
+                <span class="text-brand-400 font-bold text-sm" id="valCars">25 ta</span>
+              </div>
+              <input type="range" id="rangeCars" min="5" max="100" value="25" class="w-full h-2 bg-dark-border rounded-lg cursor-pointer" oninput="calculateROI()">
+              <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                <span>5 ta (Kichik usta)</span>
+                <span>50 ta</span>
+                <span>100 ta (Katta markaz)</span>
+              </div>
+            </div>
+
+            <!-- Slider 2 -->
+            <div>
+              <div class="flex justify-between items-center text-xs font-semibold mb-2">
+                <span class="text-slate-300">O'rtacha bitta chek summasi:</span>
+                <span class="text-accent-emerald font-bold text-sm" id="valCheck">350,000 so'm</span>
+              </div>
+              <input type="range" id="rangeCheck" min="50000" max="1500000" step="25000" value="350000" class="w-full h-2 bg-dark-border rounded-lg cursor-pointer" oninput="calculateROI()">
+              <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                <span>50,000 (Moyka)</span>
+                <span>500,000 (Moy)</span>
+                <span>1,500,000 (STO)</span>
+              </div>
+            </div>
+
+            <!-- Slider 3 -->
+            <div>
+              <div class="flex justify-between items-center text-xs font-semibold mb-2">
+                <span class="text-slate-300">Nazoratsizlik va unutilgan qarzlar darajasi:</span>
+                <span class="text-amber-400 font-bold text-sm" id="valLoss">10%</span>
+              </div>
+              <input type="range" id="rangeLoss" min="3" max="20" value="10" class="w-full h-2 bg-dark-border rounded-lg cursor-pointer" oninput="calculateROI()">
+              <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+                <span>3% (Yaxshi nazorat)</span>
+                <span>10% (O'rtacha bozor)</span>
+                <span>20% (Qog'oz daftar)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Result Card -->
+          <div class="md:col-span-5 bg-gradient-to-br from-brand-950/60 to-dark-card rounded-2xl border border-brand-800/50 p-6 text-center space-y-4">
+            <span class="text-xs text-slate-400 font-medium uppercase tracking-wider block">Oylik Jami Aylanma:</span>
+            <div class="text-2xl font-black text-white" id="resRevenue">262,500,000 so'm</div>
+
+            <div class="py-3 border-y border-dark-border space-y-1">
+              <span class="text-[11px] text-rose-400 block font-semibold">Hozirgi oylik yo'qotishlaringiz:</span>
+              <div class="text-lg font-extrabold text-rose-400" id="resLoss">26,250,000 so'm</div>
+            </div>
+
+            <div>
+              <span class="text-xs text-emerald-400 block font-bold uppercase tracking-wider">AutoPro²⁴ bilan saqlanadigan oylik foyda:</span>
+              <div class="text-3xl font-black text-accent-emerald mt-1" id="resSaved">+23,625,000 so'm</div>
+              <span class="text-[10px] text-slate-400 block mt-1">Yiliga: <b class="text-white" id="resYearly">+283,500,000 so'm</b></span>
+            </div>
+
+            <a href="#consultation" class="block w-full py-3 rounded-xl bg-accent-emerald hover:bg-emerald-600 text-slate-950 font-black text-xs transition shadow-lg shadow-emerald-500/20">
+              Ushbu Foydani Saqlab Qolish &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: COMPARISON (AUTOPRO24 VS QOG'OZ VS 1C) -->
+  <!-- =============================================================== -->
+  <section id="comparison" class="py-20 border-t border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-xs font-bold tracking-widest text-brand-400 uppercase">Haqiqiy Taqqoslash</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-black text-white">Nega Boshqa Usullar Ishlamaydi?</p>
+      </div>
+
+      <div class="glass-card rounded-3xl overflow-hidden border border-slate-700 max-w-4xl mx-auto">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead>
+              <tr class="border-b border-dark-border bg-dark-card/80 text-slate-400">
+                <th class="p-4 sm:p-5 font-bold">Xususiyat</th>
+                <th class="p-4 sm:p-5 font-bold text-rose-400">Eski Qog'oz Daftar</th>
+                <th class="p-4 sm:p-5 font-bold text-amber-400">1C / iiko / Poster</th>
+                <th class="p-4 sm:p-5 font-black text-accent-cyan bg-brand-950/40">AutoPro²⁴ AI CRM</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-dark-border text-slate-300">
+              <tr>
+                <td class="p-4 sm:p-5 font-semibold text-white">Uskunalar xarajati</td>
+                <td class="p-4 sm:p-5 text-slate-400">0 UZS (lekin xavfli)</td>
+                <td class="p-4 sm:p-5 text-rose-400">5,000,000 - 15,000,000 UZS (Kompyuter, POS)</td>
+                <td class="p-4 sm:p-5 text-emerald-400 font-bold bg-brand-950/20">0 UZS (Mavjud telefonlar)</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-semibold text-white">O'rganish vaqt va qulaylik</td>
+                <td class="p-4 sm:p-5 text-slate-400">Oddiy, lekin chalkash</td>
+                <td class="p-4 sm:p-5 text-rose-400">2-3 hafta (Ustalar qiynaladi)</td>
+                <td class="p-4 sm:p-5 text-emerald-400 font-bold bg-brand-950/20">10 daqiqa (Telegram orqali)</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-semibold text-white">Ovoz bilan kassa kiritish</td>
+                <td class="p-4 sm:p-5 text-rose-400">❌ Yo'q</td>
+                <td class="p-4 sm:p-5 text-rose-400">❌ Yo'q</td>
+                <td class="p-4 sm:p-5 text-emerald-400 font-bold bg-brand-950/20">✅ Ha (O'zbekcha AI)</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-semibold text-white">Telegram guruhga jonli chek</td>
+                <td class="p-4 sm:p-5 text-rose-400">❌ Yo'q</td>
+                <td class="p-4 sm:p-5 text-rose-400">❌ Yo'q</td>
+                <td class="p-4 sm:p-5 text-emerald-400 font-bold bg-brand-950/20">✅ Har bir savdo guruhda</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-semibold text-white">Moy bochkasi / Qoldiq nazorati</td>
+                <td class="p-4 sm:p-5 text-rose-400">❌ O'g'irlikka ochiq</td>
+                <td class="p-4 sm:p-5 text-amber-400">⚠️ Faqat kechqurun</td>
+                <td class="p-4 sm:p-5 text-emerald-400 font-bold bg-brand-950/20">✅ Real-vaqt telemetriya</td>
+              </tr>
+              <tr>
+                <td class="p-4 sm:p-5 font-semibold text-white">Qarzdorlar daftari</td>
+                <td class="p-4 sm:p-5 text-rose-400">Yirtiladi, unutiladi</td>
+                <td class="p-4 sm:p-5 text-amber-400">Murakkab modul</td>
+                <td class="p-4 sm:p-5 text-emerald-400 font-bold bg-brand-950/20">✅ 1-bosishda status va eslatma</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: PRICING PLANS (TARIFLAR) -->
+  <!-- =============================================================== -->
+  <section id="pricing" class="py-24 border-t border-dark-border bg-gradient-to-b from-[#05070D] via-dark-card/20 to-[#05070D]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-amber-400 uppercase bg-amber-950/60 border border-amber-500/30 px-3.5 py-1.5 rounded-full">
+          💎 Shaffof va Moslashuvchan Tariflar
+        </span>
+        <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white">Biznesingizga Mos Tarifni Tanlang</h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">
+          Yashirin to'lovlar yoki qimmat kompyuterlar shart emas. Barcha tariflar <b>7 kunlik bepul sinov</b> bilan taqdim etiladi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch max-w-7xl mx-auto">
+        
+        <!-- Plan 1: Mini (Yakkaxon Usta) -->
+        <div class="glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-800 hover:border-slate-600 transition">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[11px] font-black uppercase tracking-wider text-slate-400">Yakkaxon Usta</span>
+              <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded-full font-bold">1 Yama / Boks</span>
+            </div>
+            <h3 class="text-xl font-black text-white">Mini</h3>
+            <p class="text-slate-400 text-xs mt-1">Kuniga 1–10 ta mashina. Kichik moyxonalar, vulkanizatsiyalar va yakka ustalar uchun.</p>
+            
+            <div class="mt-5 mb-5">
+              <span class="text-3xl font-black text-white">190,000</span>
+              <span class="text-xs text-slate-400 font-semibold"> so'm / oy</span>
+              <div class="text-[10px] text-emerald-400 font-bold mt-1">7 kunlik bepul sinov</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-300 border-t border-slate-800/80 pt-5">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Cheksiz Telegram TMA POS cheklari</span>
               </li>
-              <li class="flex items-start gap-3">
-                <i class="fa-solid fa-check-double text-emerald-400 mt-1 text-base"></i>
-                <span>Ombordagi mavjud 119 ta tovar soniga yangi partiyani qo'shadi.</span>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Telegram guruhga jonli kvitansiyalar</span>
               </li>
-              <li class="flex items-start gap-3">
-                <i class="fa-solid fa-check-double text-emerald-400 mt-1 text-base"></i>
-                <span>Tannarx va sof foyda hisobini avtomatik qayta kalibrovka qiladi.</span>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Kunlik kassa & tushum hisoboti</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Qarzdorlar daftari (Nasiya nazorati)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Click, Payme, Uzum, Naqd to'lov</span>
+              </li>
+              <li class="flex items-center gap-2 text-slate-500">
+                <i class="fa-solid fa-xmark text-slate-600 text-xs"></i>
+                <span>Gemini 2.5 Flash Ovozli Kassa</span>
+              </li>
+              <li class="flex items-center gap-2 text-slate-500">
+                <i class="fa-solid fa-xmark text-slate-600 text-xs"></i>
+                <span>Avtomat Ombor & Telemetriya</span>
               </li>
             </ul>
           </div>
 
-          <!-- Right: Instant Restock Card -->
-          <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border border-cyan-500/40 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex justify-between items-center border-b border-white/10 pb-3">
-                <span class="text-xs sm:text-sm font-bold text-cyan-300">BOTNING JAVOBI:</span>
-                <span class="text-xs bg-cyan-500/20 text-cyan-300 px-2.5 py-1 rounded font-mono font-bold">1.1 soniya</span>
-              </div>
-
-              <div class="p-5 rounded-2xl bg-slate-950/90 border border-white/10 font-mono text-xs sm:text-sm text-slate-200 space-y-2 shadow-inner">
-                <div class="text-emerald-400 font-bold text-sm sm:text-base">📦 Tovarlar Kirimi Muvaffaqiyatli!</div>
-                <div>• Yangilangan tovarlar: <b class="text-white">16 ta pozitsiya</b></div>
-                <div>• Qabul qilingan summa: <b class="text-white">1,348.50 $ (16,047,150 UZS)</b></div>
-                <div>• Valyuta kursi: <b class="text-cyan-300">1$ = 11 900 UZS</b></div>
-                <div class="text-emerald-300 text-xs sm:text-sm pt-2 border-t border-white/10">
-                  Ombor zaxiralari to'liq yangilandi.
-                </div>
-              </div>
-            </div>
-
-            <div class="text-xs sm:text-sm text-slate-300 bg-slate-900/80 p-4 rounded-2xl border border-white/10">
-              Do'kon egasi kompyuterda soatlab hisob yozishdan butunlay xalos bo'ladi.
-            </div>
+          <div class="pt-6">
+            <a href="#consultation" class="block w-full py-3 rounded-xl bg-dark-card border border-slate-700 hover:border-brand-500 text-white font-bold text-xs text-center transition">
+              Mini Bilan Sinash
+            </a>
           </div>
         </div>
+
+        <!-- Plan 2: Standart (Moy Markazi & STO) - POPULAR -->
+        <div class="relative glass-card rounded-3xl p-6 flex flex-col justify-between border-2 border-brand-500 shadow-[0_0_35px_rgba(37,99,235,0.25)] scale-[1.02] z-10 bg-slate-950/95">
+          <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-brand-600 to-indigo-600 text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+            🔥 Eng Ko'p Tanlanadigan
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-3 pt-1">
+              <span class="text-[11px] font-black uppercase tracking-wider text-brand-400">Moy Markazi & STO</span>
+              <span class="text-[10px] bg-brand-950 text-brand-300 border border-brand-500/40 px-2 py-0.5 rounded-full font-bold">2–3 Yama / Boks</span>
+            </div>
+            <h3 class="text-xl font-black text-white">Standart</h3>
+            <p class="text-slate-400 text-xs mt-1">Kuniga 10–30 ta mashina. Faol moy markazlari, avtoservislar va detailing uchun.</p>
+            
+            <div class="mt-5 mb-5">
+              <span class="text-3xl font-black text-white">490,000</span>
+              <span class="text-xs text-slate-400 font-semibold"> so'm / oy</span>
+              <div class="text-[10px] text-accent-emerald font-bold mt-1">7 kunlik bepul sinov + Bepul sozlash</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-200 border-t border-slate-800/80 pt-5">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-white">Mini'dagi barcha imkoniyatlar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-cyan-300">Gemini 2.5 Flash Ovozli Kassa</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-white">Avtomat Ombordan Moy & Filtr Yechish</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Ustalar ulushini (50/50, 40/60) hisoblash</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Web CRM Boshqaruv Cockpit</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Multi-Sheet Excel & Sheets sinxron</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a href="#consultation" class="block w-full py-3 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-extrabold text-xs text-center shadow-lg shadow-brand-600/30 transition">
+              Standart Sinov (7 Kun Bepul) &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 3: Pro Max (Katta Markaz) -->
+        <div class="glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-800 hover:border-slate-600 transition">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[11px] font-black uppercase tracking-wider text-slate-400">Katta Markaz</span>
+              <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded-full font-bold">3–5 Yama / STO</span>
+            </div>
+            <h3 class="text-xl font-black text-white">Pro Max</h3>
+            <p class="text-slate-400 text-xs mt-1">Kuniga 30–60 ta mashina. 2–4 filialli yoki ko'p boksli yirik avtomarkazlar uchun.</p>
+            
+            <div class="mt-5 mb-5">
+              <span class="text-3xl font-black text-white">890,000</span>
+              <span class="text-xs text-slate-400 font-semibold"> so'm / oy</span>
+              <div class="text-[10px] text-accent-cyan font-bold mt-1">7 kunlik bepul sinov + VIP yordam</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-300 border-t border-slate-800/80 pt-5">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-white">Standart'dagi barcha imkoniyatlar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-emerald-400">5,000 km Avtomat Recall (+35% mijoz)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Filiallararo taqqoslash & telemetriya</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Doimiy mijozlar sodiqlik dasturi (Cashback)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Shaxsiy menejer & ustaxonada sozlash</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Prioritet 24/7 texnik qo'llab-quvvatlash</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a href="#consultation" class="block w-full py-3 rounded-xl bg-dark-card border border-slate-700 hover:border-brand-500 text-white font-bold text-xs text-center transition">
+              Pro Max Sinovni Boshlash
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 4: Enterprise (10+ Filiallar & Multiservis) -->
+        <div class="glass-card rounded-3xl p-6 flex flex-col justify-between border border-indigo-500/40 hover:border-indigo-400 transition relative overflow-hidden bg-slate-950/80">
+          <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+            🏢 Yirik Tarmoqlar
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-3 pt-1">
+              <span class="text-[11px] font-black uppercase tracking-wider text-purple-400">Tarmoq & Majmualar</span>
+              <span class="text-[10px] bg-purple-950 text-purple-300 border border-purple-500/40 px-2 py-0.5 rounded-full font-bold">10+ Filial</span>
+            </div>
+            <h3 class="text-xl font-black text-white">Enterprise</h3>
+            <p class="text-slate-400 text-xs mt-1">10+ filialli tarmoqlar, dilerlik servislari va multiservis majmualar (Moyka+Moy+STO+Do'kon).</p>
+            
+            <div class="mt-5 mb-5">
+              <span class="text-3xl font-black text-white">1,890,000</span>
+              <span class="text-xs text-slate-400 font-semibold"> so'm / oydan</span>
+              <div class="text-[10px] text-purple-300 font-bold mt-1">Markaziy Boshqaruv & ERP API</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-300 border-t border-slate-800/80 pt-5">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-white">Pro Max'dagi barcha imkoniyatlar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span class="font-bold text-purple-300">Cheksiz filiallar & Markaziy Dashboard</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>1C Enterprise, iiko va ERP API integratsiyasi</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Alohida ajratilgan Cloud server (Dedicated)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Barcha filial xodimlariga joyida VIP trening</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-emerald-400 text-xs"></i>
+                <span>Rasmiy korporativ shartnoma & SLA 99.9%</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6">
+            <a href="#consultation" class="block w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-extrabold text-xs text-center shadow-lg shadow-purple-600/30 transition">
+              Enterprise Bo'yicha Bog'lanish
+            </a>
+          </div>
+        </div>
+
       </div>
+
     </div>
+  </section>
 
-    <!-- ============================================================= -->
-    <!-- SLIDE 7: EVENING RECONCILIATION & EXCEL AUDIT                 -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide7">
-      <div class="max-w-6xl w-full mx-auto space-y-7">
-        <div class="text-center space-y-2">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-sm font-bold">
-            <i class="fa-solid fa-moon"></i> Kechki Audit & 5-Varaqli Excel
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">
-            Kechki Hisobot & Kun Yopish
-          </h2>
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
-            Kunning oxirida bitta buyruq orqali kassa, ombor va kam qolgan tovarlar ro'yxatini olasiz.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div class="glass-panel p-6 rounded-3xl space-y-2 text-center border-t-4 border-t-emerald-500">
-            <div class="text-xs sm:text-sm font-bold text-slate-300">Bugungi Jami Savdo</div>
-            <div class="text-3xl sm:text-4xl font-black text-white font-['Space_Grotesk']">3,450,000</div>
-            <div class="text-xs sm:text-sm text-emerald-400 font-semibold">Naqd: 2.1M | Karta/Click: 1.35M</div>
-          </div>
-          <div class="glass-panel p-6 rounded-3xl space-y-2 text-center border-t-4 border-t-cyan-500">
-            <div class="text-xs sm:text-sm font-bold text-slate-300">Atrobotka Tushumi</div>
-            <div class="text-3xl sm:text-4xl font-black text-cyan-300 font-['Space_Grotesk']">100,000</div>
-            <div class="text-xs sm:text-sm text-slate-200">20 litr eski moy sotildi</div>
-          </div>
-          <div class="glass-panel p-6 rounded-3xl space-y-2 text-center border-t-4 border-t-amber-500">
-            <div class="text-xs sm:text-sm font-bold text-slate-300">Tugayotgan Zaxira</div>
-            <div class="text-3xl sm:text-4xl font-black text-amber-400 font-['Space_Grotesk']">3 ta tovar</div>
-            <div class="text-xs sm:text-sm text-slate-200">Dilerga tayyor buyurtma xati</div>
-          </div>
-        </div>
-
-        <div class="glass-panel-glow p-6 sm:p-7 rounded-3xl border border-white/15 flex flex-col sm:flex-row items-center justify-between gap-5">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-brand-600/25 border border-brand-500/40 flex items-center justify-center text-brand-400 text-2xl">
-              <i class="fa-solid fa-file-arrow-down"></i>
-            </div>
-            <div>
-              <span class="font-bold text-white block text-base sm:text-lg">AvtoPro_Oil_Ombori.xlsx fayli telefonga yuklanadi</span>
-              <span class="text-xs sm:text-sm text-slate-300 font-medium">5 varaq: Ombor Qoldig'i, Savdolar Tarixi, Diler Narxlari, Atrobotka va Kunlik Audit.</span>
-            </div>
-          </div>
-          <span class="px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-200 font-mono font-bold">
-            /excel yoki /kun_yopish
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- SLIDE 8: EXECUTIVE ANALYTICS & ADVANCED FEATURES             -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide8">
-      <div class="max-w-6xl w-full mx-auto space-y-6">
-        <div class="text-center space-y-2">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-sm font-bold">
-            <i class="fa-solid fa-chart-line text-cyan-400"></i> Biznes Boshqaruvi & Daromad O'sishi
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">
-            Rahbar Analitikasi & Kengaytirilgan Imkoniyatlar
-          </h2>
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
-            Faqat kassa emas — do'kon egasiga biznesni kengaytirish va mijozlarni saqlab qolish uchun to'liq qurollar:
-          </p>
-        </div>
-
-        <!-- 4 Grid Feature Cards (Spacious, Clear & High Contrast) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <!-- Feature 1: Net Profit & Margins -->
-          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-emerald-500/30">
-            <div class="flex items-center justify-between">
-              <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-2xl">
-                <i class="fa-solid fa-sack-dollar"></i>
-              </div>
-              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Moliya & Foyda</span>
-            </div>
-            <h3 class="text-xl font-bold text-white">Sof Marja & Foyda Hisobi</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Diler bergan tannarx bilan sotilgan narx o'rtasidagi sof foyda (marja) avtomatik hisoblanadi. Do'kon egasi qaysi moy eng ko'p sof daromad keltirayotganini aniq ko'radi.
-            </p>
-            <div class="text-xs text-emerald-400 font-mono font-semibold pt-1 border-t border-white/10">
-              📈 Har bir chekdan sof daromad ajratib boriladi
-            </div>
-          </div>
-
-          <!-- Feature 2: Customer Retention & Auto Reminders -->
-          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-brand-500/30">
-            <div class="flex items-center justify-between">
-              <div class="w-12 h-12 rounded-2xl bg-brand-600/20 border border-brand-500/40 flex items-center justify-center text-brand-400 text-2xl">
-                <i class="fa-solid fa-clock-rotate-left"></i>
-              </div>
-              <span class="text-xs bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Mijozlar Bazasi</span>
-            </div>
-            <h3 class="text-xl font-bold text-white">Avtomatik Kilometraj Eslatmasi</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Moy almashtirgan mijozga 7,000 km yoki 90 kundan so'ng Telegram/SMS orqali avtomat xabar boradi: <i>«Hurmatli mijoz, moy almashtirish vaqti bo'ldi»</i>. Mijozlar boshqa servisga ketmaydi!
-            </p>
-            <div class="text-xs text-brand-300 font-mono font-semibold pt-1 border-t border-white/10">
-              🔄 Doimiy mijozlar qaytishi +35% ga oshadi
-            </div>
-          </div>
-
-          <!-- Feature 3: Worker Commission & KPI -->
-          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-amber-500/30">
-            <div class="flex items-center justify-between">
-              <div class="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl">
-                <i class="fa-solid fa-users-gear"></i>
-              </div>
-              <span class="text-xs bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Usta Ulushi (KPI)</span>
-            </div>
-            <h3 class="text-xl font-bold text-white">Usta Qahramon Ulushini Hisoblash</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Xizmat haqi (moy almashtirish 30,000 so'm, filtr qo'yish) va mahsulot sotuvidan usta ulushini (50/50 yoki foiz stavkasi) tizim avtomat ajratib, oylik hisobotda ko'rsatadi.
-            </p>
-            <div class="text-xs text-amber-300 font-mono font-semibold pt-1 border-t border-white/10">
-              🤝 Usta va rahbar o'rtasida 100% shaffoflik
-            </div>
-          </div>
-
-          <!-- Feature 4: Debt Ledger (Nasiya) & Vehicle Passport -->
-          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-cyan-500/30">
-            <div class="flex items-center justify-between">
-              <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-2xl">
-                <i class="fa-solid fa-address-book"></i>
-              </div>
-              <span class="text-xs bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Nasiya & Pasport</span>
-            </div>
-            <h3 class="text-xl font-bold text-white">Nasiya Daftari & Avtomobil Pasporti</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Qarzga moy olganlar daftari va avtomobil raqami bo'yicha to'liq servis kartochkasi: qachon qaysi moy quyilgani, filtr o'lchami va qancha to'langanligi 1 soniyada ochiladi.
-            </p>
-            <div class="text-xs text-cyan-300 font-mono font-semibold pt-1 border-t border-white/10">
-              📋 Qarzlar va mijozlar tarixi doimo nazoratda
-            </div>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs sm:text-sm text-slate-400">
-          <span>💡 Rahbar uchun qulay: mobil telefonda ham, kompyuterda ham to'liq boshqaruv.</span>
-          <button onclick="goToSlide(9)" class="text-cyan-400 font-bold hover:underline flex items-center gap-1.5 text-sm">
-            9-Slayd: Sinovni Boshlash Rejasiga O'tish &rarr;
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================================================= -->
-    <!-- SLIDE 9: PILOT LAUNCH ACTION PLAN                             -->
-    <!-- ============================================================= -->
-    <div class="slide-view" id="slide9">
-      <div class="max-w-5xl w-full mx-auto text-center space-y-7">
-        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-sm font-bold">
-          <i class="fa-solid fa-flag-checkered"></i> Sinovni Boshlash Bosqichlari
-        </div>
-
-        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight">
-          Pilot Guruhni Qanday Boshlaymiz?
-        </h1>
-
-        <p class="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-medium">
-          Tizim mijozingizning barcha 119 ta tovarlari va real diler narxlari bilan 100% yuklangan va tayyor.
+  <!-- =============================================================== -->
+  <!-- SECTION: FAQ (KO'P BERILADIGAN SAVOLLAR) -->
+  <!-- =============================================================== -->
+  <section id="faq" class="py-20 border-t border-dark-border bg-dark-card/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-xs font-bold tracking-widest text-brand-400 uppercase">Savol & Javob</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-black text-white">Ko'p Beriladigan Savollar</p>
+        <p class="mt-3 text-slate-400 text-sm">
+          AutoPro²⁴ ga o'tishdan oldin egalari eng ko'p so'raydigan amaliy savollar:
         </p>
+      </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-left">
-          <div class="glass-panel p-6 sm:p-7 rounded-3xl border-t-4 border-t-brand-500 space-y-2.5">
-            <div class="text-2xl font-black text-brand-400 font-['Space_Grotesk']">01</div>
-            <h3 class="font-bold text-white text-base sm:text-lg">Sinov Guruhini Ochish</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">O'ktam, Usta Qahramon va @AvtoPro_CRM_bot bo'lgan bitta Telegram guruh ochiladi.</p>
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden" open>
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span>Bizga maxsus kompyuter, planshet yoki POS apparat sotib olish kerakmi?</span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            <b>Mutlaqo yo'q!</b> 0 so'm uskuna xarajati. Siz va ustalaringiz hozir cho'ntagingizdagi oddiy smartfondan (iPhone yoki Android) Telegram orqali tizimni boshqarasiz. Boshliq esa xohlasa kompyuterdan, xohlasa telefondan onlayn kuzatadi.
           </div>
-          <div class="glass-panel-glow p-6 sm:p-7 rounded-3xl border-t-4 border-t-emerald-500 space-y-2.5">
-            <div class="text-2xl font-black text-emerald-400 font-['Space_Grotesk']">02</div>
-            <h3 class="font-bold text-white text-base sm:text-lg">Birinchi Sinov Cheki</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">Usta o'zining odatiy 4 qatorli xabarini yozadi va 1 soniyada chek hosil bo'lishini ko'radi.</p>
+        </details>
+
+        <!-- FAQ: Data Privacy & Local-First -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span>Moliyaviy ma'lumotlarimiz maxfiymi? Dasturni o'z kompyuterimizda offline ishlata olamizmi?</span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            <b>100% Ha!</b> AutoPro²⁴ gibrid arxitekturada qurilgan: uning to'liq Web CRM boshqaruv paneli bevosita sizning ofis kompyuteringizda (lokal tarzda) ishlaydi. Barcha tushumlar, foyda, qarzdorlik va mijozlar ma'lumotlari faqat sizning kompyuteringizda saqlanadi va begona serverlarga chiqmaydi. Internet o'chib qolsa ham kassa to'xtovsiz ishlayveradi. Mijozlaringizga esa Telegram orqali 24/7 avtomatik chek va Raqamli Avto-Pasport boradi.
           </div>
-          <div class="glass-panel p-6 sm:p-7 rounded-3xl border-t-4 border-t-amber-500 space-y-2.5">
-            <div class="text-2xl font-black text-amber-400 font-['Space_Grotesk']">03</div>
-            <h3 class="font-bold text-white text-base sm:text-lg">Diler Hisob-Fakturasi</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">AvtoPro_Oil_Tovarlar.xlsx faylini guruhga tashlab, ombor yangilanishi sinab ko'riladi.</p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span>Ustalarim ruscha yoki o'zbekcha shevada gapirsa, ovozli kassa tushunadimi?</span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            <b>Ha, to'liq tushunadi!</b> Biz Gemini 2.5 Flash eng so'nggi ovoz modelini O'zbekistondagi servis jargonlariga (moy, kolodka, razval, svecha, karter, filtir, naryad) moslashtirganmiz. Toshkent, Samarqand, Farg'ona, Xorazm shevalari va rus-o'zbek aralash nutqni sekundiga tahlil qilib chek chiqaradi.
+          </div>
+        </details>
+
+        <!-- FAQ: AI Mistakes & Anti-Hallucination Insurance -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span class="flex items-center gap-2">
+              <span class="text-emerald-400 font-black"><i class="fa-solid fa-shield-halved"></i></span>
+              <span>Sun'iy intellekt (AI) adashib ketsa yoki usta xato qilsa nima bo'ladi? Xatolarga qarshi kafolat bormi?</span>
+            </span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3 space-y-2">
+            <p>
+              <b>AutoPro²⁴ da xatolarga qarshi 5 bosqichli "Temir Sug'urta" (Guardrails) mexanizmi o'rnatilgan:</b>
+            </p>
+            <ul class="space-y-1.5 list-disc list-inside text-slate-300 text-xs sm:text-[13px]">
+              <li><b>1. AI o'zidan ma'lumot to'qimaydi (Catalog Anchoring):</b> AI har qanday ovozni taniy oladi, ammo xizmat faqat sizning omboringizdagi real bochkalar va filtrlar katalogiga bog'lanadi. Noma'lum moy yoki soxta tovar chekka kiritilmaydi.</li>
+              <li><b>2. Suhbatlar filtri:</b> Ustalar guruhdagi oddiy gaplashuvlari (<i>"Oshga boramizmi?", "Salom usta"</i>) chek deb qabul qilinmaydi va 100% filtrlanadi.</li>
+              <li><b>3. Qo'lda tahrirlash (Draft Mode):</b> TMA ovozli kassa avval qoralama ko'rinishida ko'rsatiladi, usta xohlasa 1 soniyada litr yoki summani barmoq bilan to'g'rilab tasdiqlaydi.</li>
+              <li><b>4. 1-Tugmali Qaytarish (Rollback):</b> Agar usta adashib chek chiqarsa, chek ostidagi qizil <b>[❌ Bekor Qilish]</b> tugmasi bosilishi bilan sotuv bekor bo'ladi va sarflangan moy bochkaga to'liq qaytariladi.</li>
+              <li><b>5. Rahbar PIN-kodi (7777):</b> Sof foyda, kassa tushumi va diler narxlari maxfiy PIN bilan qulflangan bo'lib, xodimlar uni buza olmaydi.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span>Moy bochkasidan o'g'rilik va yetishmovchilik qanday to'xtatiladi?</span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Har safar usta chek yozganda (masalan, Cobaltga 3.75 litr Mobil 1), ombordagi 208 litrlik bochkadan avtomatik 3.75 litr kamayadi va xo'jayinning Telegram guruhiga darhol: <i>"Cobalt 01 A777AA ga 3.75L quyildi, omborda 44.5L qoldi"</i> deb xabar boradi. Usta cheksiz moy quya olmaydi, chunki mijoz chek so'raydi.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span>Internet uzilib qolsa yoki sekinlashsa nima bo'ladi?</span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Telegram Mini App kesh xotirasi bilan jihozlangan. Hatto mobil internet sekinlashganda ham interfeys bir zumda ochiladi va kiritilgan ma'lumotlar saqlanib, aloqa barqarorlashgach markaziy bazaga uzatiladi.
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="group glass-card rounded-2xl border border-slate-800 overflow-hidden">
+          <summary class="flex justify-between items-center p-5 cursor-pointer font-bold text-white text-sm sm:text-base list-none">
+            <span>Tizimni o'rnatish qancha vaqt oladi va sinash bepulmi?</span>
+            <span class="text-brand-400 group-open:rotate-180 transition transform text-sm">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            O'rnatish va ustalarni ulash bor-yo'g'i <b>15 daqiqa</b> vaqt oladi. Sizga <b>7 kunlik to'liq bepul sinov davri</b> beriladi. Biz barcha xizmatlaringiz, narxlaringiz va moy markalaringizni kiritib beramiz. Ma'qul kelsa keyin to'laysiz!
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: LEAD CAPTURE & CONSULTATION FORM (#consultation) -->
+  <!-- =============================================================== -->
+  <section id="consultation" class="py-24 border-t border-dark-border relative overflow-hidden bg-gradient-to-t from-[#05070D] to-dark-card/40">
+    <div class="absolute inset-0 glow-radial pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase bg-emerald-950/60 border border-emerald-500/30 px-3.5 py-1.5 rounded-full">
+          🎁 7 Kunlik Bepul Sinov & Shaxsiy Taqdimot
+        </span>
+        <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white">Servisingizni Yangi Bosqichga Olib Chiqing</h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base">
+          Formani to'ldiring yoki to'g'ridan-to'g'ri Telegram orqali yozing. Biz 15 daqiqada sizga shaxsiy demo bot va hisob-kitobni ochib beramiz.
+        </p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-2xl">
+        <form onsubmit="handleFormSubmit(event)" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            
+            <!-- Name -->
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Ismingiz:</label>
+              <input type="text" id="formName" required placeholder="Masalan: Sardor" class="w-full bg-dark-input border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition">
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Telefon raqamingiz:</label>
+              <input type="tel" id="formPhone" required placeholder="+998 90 123 45 67" class="w-full bg-dark-input border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition">
+            </div>
+
+            <!-- Shop name -->
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Shoxobcha yoki Servis nomi:</label>
+              <input type="text" id="formShop" required placeholder="Masalan: AvtoLider Express" class="w-full bg-dark-input border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition">
+            </div>
+
+            <!-- Niche select -->
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">Asosiy Faoliyat Turi:</label>
+              <select id="formNiche" class="w-full bg-dark-input border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500 transition">
+                <option value="Moy Almashtirish Markazi">Moy Almashtirish & Ekspress Servis</option>
+                <option value="Avtomoyka va Detailing">Avtomoyka & Detailing</option>
+                <option value="Avtoservis (STO)">Avtoservis & Usta Markazi (STO)</option>
+                <option value="Vulkanizatsiya & Shinomontaj">Vulkanizatsiya & Shinomontaj</option>
+                <option value="Yirik Tarmoq (10+ Filial)">Yirik Tarmoq & Multiservis (10+ Filial)</option>
+                <option value="Boshqa Avto Biznes">Boshqa Avto Biznes</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="pt-3">
+            <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-indigo-600 to-accent-emerald hover:from-brand-500 hover:to-emerald-500 text-white font-black text-sm tracking-wide shadow-xl shadow-brand-600/30 transition active:scale-95 flex items-center justify-center gap-2">
+              <i class="fa-brands fa-telegram text-lg"></i> 7 Kunlik Bepul Sinovni Boshlash &rarr;
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-lock text-emerald-400"></i>
+            <span>Ma'lumotlaringiz 100% himoyalangan va begonalarga berilmaydi.</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="https://t.me/shukhrat_gptify" target="_blank" class="text-brand-400 hover:text-white transition font-semibold flex items-center gap-1">
+              <i class="fa-brands fa-telegram"></i> @shukhrat_gptify ga yozish
+            </a>
+            <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="text-cyan-400 hover:text-white transition font-semibold flex items-center gap-1">
+              <i class="fa-solid fa-robot"></i> Botni sinash
+            </a>
           </div>
         </div>
 
-        <div class="flex items-center justify-center gap-4 pt-3">
-          <button onclick="goToSlide(1)" class="px-7 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-bold text-sm transition">
-            🔄 Boshidan Ko'rish
-          </button>
-          <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="px-8 py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-500 text-white font-extrabold text-sm shadow-xl shadow-brand-600/40 transition flex items-center gap-2.5">
-            <i class="fa-brands fa-telegram text-lg"></i> @AvtoPro_CRM_bot ni Ochish
-          </a>
-        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- FOOTER -->
+  <!-- =============================================================== -->
+  <footer class="py-12 border-t border-dark-border bg-dark-bg text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div class="flex items-center justify-center space-x-2 font-bold text-slate-300 text-sm">
+        <span>AutoPro²⁴</span>
+        <span>•</span>
+        <span>Made by GPTify Team in Berlin</span>
+      </div>
+      <p class="max-w-xl mx-auto text-slate-400 text-[11px] leading-relaxed">
+        AutoPro²⁴ — O'zbekistondagi avtoservislar, moy almashtirish shoxobchalari, avtomoykalar va ustaxonalar uchun amaliy B2B AI operatsion tizimi. 
+        Asoschisi: Shukhrat Iskandarov (founder at GPTify.co & co-founder at Cubeo.ai).
+      </p>
+      <div class="pt-2 text-[10px] text-slate-600">
+        © 2026 AutoPro²⁴ • Barcha huquqlar himoyalangan.
       </div>
     </div>
-
-  </main>
-
-  <!-- =============================================================== -->
-  <!-- BOTTOM NAVIGATION DOCK & PROGRESS BAR                           -->
-  <!-- =============================================================== -->
-  <footer class="fixed bottom-0 inset-x-0 z-50 h-16 bg-[#05070D]/90 backdrop-blur-xl border-t border-white/10 px-4 sm:px-8 flex items-center justify-between">
-    <!-- Prev Button -->
-    <button id="btnPrev" onclick="changeSlide(-1)" class="px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-brand-500 text-slate-200 font-bold text-xs sm:text-sm transition flex items-center gap-2">
-      <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Oldingi</span>
-    </button>
-
-    <!-- Slide Indicators -->
-    <div class="flex items-center gap-2.5" id="slideDots">
-      <div onclick="goToSlide(1)" class="progress-pill active h-2.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(2)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(3)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(4)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(5)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(6)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(7)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(8)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-      <div onclick="goToSlide(9)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
-    </div>
-
-    <!-- Next Button -->
-    <button id="btnNext" onclick="changeSlide(1)" class="px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-brand-600/35 transition flex items-center gap-2">
-      <span class="hidden sm:inline">Keyingi</span> <i class="fa-solid fa-arrow-right"></i>
-    </button>
   </footer>
 
   <!-- =============================================================== -->
-  <!-- JAVASCRIPT CONTROLLER                                           -->
+  <!-- JAVASCRIPT: CAR STAGE CONTROLLER, NICHES, & CALCULATOR -->
   <!-- =============================================================== -->
   <script>
-    let currentSlide = 1;
-    const totalSlides = 9;
+    // 3D Car Inspection Stages
+    const STAGE_CONFIG = {
+      1: {
+        title: "Porsche 911 GT Showroom • 360° Tashqi Korpus",
+        viewId: "viewStage1"
+      },
+      2: {
+        title: "Haydovchi Eshigi Ochildi • Smart Cockpit POS",
+        viewId: "viewStage2"
+      },
+      3: {
+        title: "Dvigatel Kapoti Ko'tarildi • Twin-Turbo & Ombor",
+        viewId: "viewStage3"
+      },
+      4: {
+        title: "Yaqin Telemetriya • Dvigatel Moyi, Filtr & Detallar",
+        viewId: "viewStage4"
+      }
+    };
+
     let currentCarStage = 1;
-    let audioEnabled = true;
+    let isInspectionMode = false;
+    let isManualClick = false;
+    let manualTimeout = null;
 
-    // Slide <-> Car Stage Mapping
-    const slideToCarStage = {
-      1: 1, // Exterior Showroom (Intro)
-      2: 1, // Exterior Showroom (Hozirgi Ish Oqimi vs AutoPro24 Taqqoslash)
-      3: 1, // 3D Inspection (Dinamik o'zgaradi)
-      4: 2, // Cockpit / Open Door (Usta Qahramon)
-      5: 3, // Engine Bay / Hood Open (Ombor Chiqimi)
-      6: 4, // Macro Engine / Telemetry (Diler Kirimi)
-      7: 1, // Exterior Night (Kechki Hisobot)
-      8: 4, // Macro Engine / Telemetry (Rahbar Analitikasi & Kengaytirilgan Imkoniyatlar)
-      9: 1  // Exterior Showroom (Sinov Rejasi)
-    };
-
-    const carStageMeta = {
-      1: { name: "Porsche 911 GT Showroom • 360° Tashqi Ko'rik", inspectName: "1-Bosqich: Avtomobil Raqamini Aniqlash & 360° Tashqi Ko'rik" },
-      2: { name: "Haydovchi Eshigi Ochildi • Mobil Telegram POS", inspectName: "2-Bosqich: Haydovchi Eshigi (Mobil Kassa POS)" },
-      3: { name: "Dvigatel Kapoti Ochildi • Avtomatik Ombor Chiqimi", inspectName: "3-Bosqich: Dvigatel Kapoti (Ombor Chiqimi)" },
-      4: { name: "Dvigatel Telemetriyasi • Asosiy Qismlar & Moylar Nazorati", inspectName: "4-Bosqich: Telemetriya & Detallar Nazorati" }
-    };
-
-    // Web Audio Synthesizer for high-tech clicks
-    let audioCtx = null;
-    function playChirp(freq = 600, type = 'sine', duration = 0.08) {
-      if (!audioEnabled) return;
-      try {
-        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
-        osc.type = type;
-        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
-        osc.start();
-        osc.stop(audioCtx.currentTime + duration);
-      } catch (e) {}
-    }
-
-    function toggleAudio() {
-      audioEnabled = !audioEnabled;
-      const icon = document.getElementById("audioIcon");
-      if (audioEnabled) {
-        icon.className = "fa-solid fa-volume-high";
-        playChirp(800, 'sine', 0.1);
+    function setInspectionMode(active) {
+      if (isInspectionMode === active) return;
+      isInspectionMode = active;
+      const heroView = document.getElementById("viewHero");
+      const hudView = document.getElementById("viewInspectionHUD");
+      
+      if (active) {
+        if (heroView) {
+          heroView.classList.remove("opacity-100", "scale-100", "pointer-events-auto");
+          heroView.classList.add("opacity-0", "scale-95", "pointer-events-none");
+          setTimeout(() => { if (isInspectionMode) heroView.classList.add("hidden"); }, 500);
+        }
+        if (hudView) {
+          hudView.classList.remove("hidden");
+          setTimeout(() => {
+            hudView.classList.remove("opacity-0", "scale-105", "pointer-events-none");
+            hudView.classList.add("opacity-100", "scale-100", "pointer-events-auto");
+          }, 50);
+        }
       } else {
-        icon.className = "fa-solid fa-volume-xmark text-slate-500";
+        if (heroView) {
+          heroView.classList.remove("hidden");
+          setTimeout(() => {
+            heroView.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+            heroView.classList.add("opacity-100", "scale-100", "pointer-events-auto");
+          }, 50);
+        }
+        if (hudView) {
+          hudView.classList.remove("opacity-100", "scale-100", "pointer-events-auto");
+          hudView.classList.add("opacity-0", "scale-105", "pointer-events-none");
+          setTimeout(() => { if (!isInspectionMode) hudView.classList.add("hidden"); }, 500);
+        }
+        setCarStage(1);
       }
     }
 
-    function toggleFullScreen() {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen().catch(() => {});
-      } else {
-        document.exitFullscreen().catch(() => {});
+    function jumpToCarStage(stageNum) {
+      const section = document.getElementById("car-inspection");
+      if (!section) {
+        setInspectionMode(true);
+        setCarStage(stageNum, true);
+        return;
       }
+      const sectionTop = section.offsetTop;
+      const scrollable = section.offsetHeight - window.innerHeight;
+      const stageTargets = { 1: 0.22, 2: 0.48, 3: 0.72, 4: 0.93 };
+      const targetP = stageTargets[stageNum] || 0.22;
+      
+      isManualClick = true;
+      clearTimeout(manualTimeout);
+      manualTimeout = setTimeout(() => { isManualClick = false; }, 1800);
+      
+      setInspectionMode(true);
+      setCarStage(stageNum);
+      window.scrollTo({
+        top: sectionTop + targetP * scrollable,
+        behavior: 'smooth'
+      });
     }
 
-    // Set Car Stage Visual Backdrop
     function setCarStage(stageNum, manual = false) {
+      if (manual) {
+        isManualClick = true;
+        clearTimeout(manualTimeout);
+        manualTimeout = setTimeout(() => { isManualClick = false; }, 2000);
+      }
       currentCarStage = stageNum;
       
-      // Update Backdrop Images
+      // Update Buttons
       for (let i = 1; i <= 4; i++) {
-        const img = document.getElementById(`carBackdrop${i}`);
+        const btn = document.getElementById(`btnStage${i}`);
+        if (btn) {
+          const isActive = (i === stageNum);
+          btn.classList.toggle("bg-brand-600", isActive);
+          btn.classList.toggle("text-white", isActive);
+          btn.classList.toggle("shadow-lg", isActive);
+          btn.classList.toggle("bg-slate-900/80", !isActive);
+          btn.classList.toggle("border", !isActive);
+          btn.classList.toggle("text-slate-300", !isActive);
+        }
+      }
+
+      // Update Real Photographic Backdrop Cross-Fade
+      for (let i = 1; i <= 4; i++) {
+        const img = document.getElementById(`carImg${i}`);
         if (img) {
           if (i === stageNum) {
-            img.classList.remove("inactive");
-            img.classList.add("active");
+            img.classList.remove("opacity-0", "scale-105");
+            img.classList.add("opacity-100", "scale-100");
           } else {
-            img.classList.remove("active");
-            img.classList.add("inactive");
+            img.classList.remove("opacity-100", "scale-100");
+            img.classList.add("opacity-0", "scale-105");
           }
         }
       }
 
-      // Update Nav Buttons
+      // Update View Visibility
       for (let i = 1; i <= 4; i++) {
-        const nav = document.getElementById(`carNav${i}`);
-        if (nav) {
-          const isActive = (i === stageNum);
-          nav.className = isActive 
-            ? "px-3.5 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-brand-600 text-white shadow-md"
-            : "px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2";
+        const view = document.getElementById(`viewStage${i}`);
+        if (view) {
+          view.classList.toggle("hidden", i !== stageNum);
         }
       }
 
-      // Update Meta Badge
-      const badge = document.getElementById("carStageBadge");
-      if (badge && carStageMeta[stageNum]) {
-        badge.innerText = carStageMeta[stageNum].name;
+      // Update Title
+      const titleEl = document.getElementById("carStageTitle");
+      if (titleEl && STAGE_CONFIG[stageNum]) {
+        titleEl.innerText = STAGE_CONFIG[stageNum].title;
       }
 
-      if (manual) playChirp(900, 'triangle', 0.07);
-    }
-
-    // Slide Controller
-    function updateSlideUI() {
-      document.querySelectorAll('.slide-view').forEach((s, idx) => {
-        s.classList.toggle('active', (idx + 1) === currentSlide);
-      });
-
-      // Update Dots
-      const dots = document.querySelectorAll('#slideDots .progress-pill');
-      dots.forEach((d, idx) => {
-        const isActive = (idx + 1) === currentSlide;
-        d.className = isActive 
-          ? "progress-pill active h-2.5 rounded-full cursor-pointer" 
-          : "progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer";
-      });
-
-      // Update Counter
-      document.getElementById('slideCounter').innerText = `${currentSlide} / ${totalSlides}`;
-
-      // Update Buttons
-      document.getElementById('btnPrev').style.visibility = currentSlide === 1 ? 'hidden' : 'visible';
-      document.getElementById('btnNext').innerHTML = currentSlide === totalSlides 
-        ? `Tugatish <i class="fa-solid fa-check ml-1.5"></i>` 
-        : `Keyingi <i class="fa-solid fa-arrow-right ml-1.5"></i>`;
-
-      // Auto-align Car Backdrop with Slide theme
-      const targetStage = slideToCarStage[currentSlide] || 1;
-      setCarStage(targetStage);
-    }
-
-    function changeSlide(delta) {
-      const prev = currentSlide;
-      currentSlide = Math.max(1, Math.min(totalSlides, currentSlide + delta));
-      if (prev !== currentSlide) {
-        playChirp(delta > 0 ? 700 : 500, 'sine', 0.08);
-        updateSlideUI();
-      }
-    }
-
-    function goToSlide(n) {
-      if (n !== currentSlide) {
-        currentSlide = n;
-        playChirp(650, 'sine', 0.08);
-        updateSlideUI();
-      }
-    }
-
-    // Sub-stage Controller inside Slide 2 (Car Inspection)
-    function switchInspectSubStage(stageNum) {
-      setCarStage(stageNum);
-      
-      // Update subBtns
+      // Update 4-Segment Progress Track
       for (let i = 1; i <= 4; i++) {
-        const btn = document.getElementById(`subBtn${i}`);
-        if (btn) {
-          const isActive = (i === stageNum);
-          btn.className = isActive 
-            ? "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-600 text-white transition shadow-md" 
-            : "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition";
+        const seg = document.getElementById(`progSeg${i}`);
+        if (seg) {
+          if (i <= stageNum) {
+            seg.className = "h-full flex-1 rounded-full bg-brand-500 transition-all duration-300";
+          } else {
+            seg.className = "h-full flex-1 rounded-full bg-slate-700 transition-all duration-300";
+          }
         }
-        const view = document.getElementById(`subView${i}`);
-        if (view) view.classList.toggle('hidden', i !== stageNum);
       }
-
-      const nameEl = document.getElementById("inspectionStageName");
-      if (nameEl && carStageMeta[stageNum]) {
-        nameEl.innerText = carStageMeta[stageNum].inspectName;
-      }
-      playChirp(850, 'triangle', 0.06);
     }
 
-    // Diagnostic Pin Information Map
+    // Scroll-triggered Hero and Car Stage updates
+    window.addEventListener("scroll", () => {
+      if (isManualClick) return;
+      const section = document.getElementById("car-inspection");
+      if (!section) return;
+      const rect = section.getBoundingClientRect();
+      const scrollable = section.offsetHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+
+      // When inside sticky section
+      if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
+        const progress = Math.max(0, Math.min(1, (-rect.top) / scrollable));
+
+        // When in Hero phase (first 16% of sticky scroll span)
+        if (progress < 0.16) {
+          setInspectionMode(false);
+        } else {
+          setInspectionMode(true);
+
+          let targetStage = 1;
+          if (progress < 0.40) {
+            targetStage = 1;
+          } else if (progress < 0.65) {
+            targetStage = 2;
+          } else if (progress < 0.88) {
+            targetStage = 3;
+          } else {
+            targetStage = 4;
+          }
+
+          if (currentCarStage !== targetStage) {
+            setCarStage(targetStage);
+          }
+        }
+      } else if (rect.top > 0) {
+        // At the very top
+        setInspectionMode(false);
+      }
+    }, { passive: true });
+
+    // Telemetry Pin Selector
     const PIN_INFO = {
       oil: {
         icon: "🛢️",
-        title: "Dvigatel & Transmissiya Moyi Telemetriyasi:",
-        text: "Barcha 63 xil moy va filtrlar sig'imi avtomobil markasi bo'yicha avtomatik yechiladi. Bochkadagi litrlar doimo aniq nazoratda bo'ladi va dilerga qachon buyurtma berishni tizim o'zi aytadi."
+        title: "Dvigatel & Transmissiya Moyi:",
+        text: "Har bir avtomobilning dvigatel sig'imi avtomatik hisoblanadi. Mijozga moy quyilishi bilan ombordan avtomatik yechiladi va do'kon egasi barcha moy qoldiqlarini real-vaqtda ko'radi hamda dilerga qachon zakaz berishni aniq biladi."
       },
       motor: {
         icon: "⚙️",
-        title: "Motor, Svecha & Agregatlar Ta'miri:",
-        text: "Dvigatel diagnostikasi, remen va svecha almashtirish xizmatlari va ehtiyot qismlar kvitansiyada 100% shaffof hisoblanadi."
+        title: "Motor & Dvigatel Detallari Ta'miri:",
+        text: "Dvigatel diagnostikasi, GRM remen, svecha almashtirish, klapan sozlash, qistirmalar va agregatlar ta'miri. Bajarilgan ishlar va ishlatilgan ehtiyot qismlar chekda aniq hisoblanadi."
       },
       wheels: {
         icon: "🛞",
-        title: "G'ildirak, Shina Montaj & 3D Razval:",
-        text: "Balansirovka, diska to'g'rilash va yamoq qo'yish narxlari usta ulushi (50/50) bilan bir zumda kassa chekiga kiritiladi."
+        title: "G'ildirak, Shina Montaji & 3D Razval:",
+        text: "Vulkanizatsiya, shina almashtirish, g'ildirak balansirovkasi va 3D razval-sxojdeniye geometriyasi. Usta ulushi va xizmat narxi 5 soniyada kvitansiyaga kiritiladi."
       },
-      wash: {
+      carwash: {
         icon: "🧼",
         title: "Avtomoyka & Detailing Markazi:",
-        text: "Kuzov, salon, motor yuvish va ximchistka xizmatlari. Moykachilar ulushi va kunlik tushum 100% shaffof nazoratda."
+        text: "Kuzov yuvish, salonni quruq kimyoviy tozalash (ximchistka), motor yuvish va polirovka xizmatlari. Moyka navbati, xodimlar va kassa tushumi 100% shaffof nazoratda bo'ladi."
       },
       brake: {
         icon: "🛑",
         title: "Tormoz Tizimi & Xodovoy Sozlash:",
-        text: "Kolodka, disk va amortizatorlarni almashtirish. Servis kafolati va mijoz tarixi tizimda saqlanadi."
+        text: "Tormoz kolodkalari, tormoz disklari, amortizator va xodovoy richaglarini almashtirish. Ehtiyot qismlar ombori va servis kafolati bir tizimda boshqariladi."
       },
       diag: {
         icon: "💻",
-        title: "OBD2 Kompyuter Diagnostika & Freon:",
-        text: "Datchik nosozliklarini tekshirish va yozgi mavsumda konditsioner freonini grammlar bo'yicha to'ldirish."
+        title: "Kompyuter Diagnostika & Konditsioner (Freon):",
+        text: "OBD2 skaner orqali datchik xatolarini tekshirish, elektronika nosozliklarini aniqlash va yozgi mavsumda R134a freonini avtomat stansiyada to'ldirish."
       }
     };
 
     function selectPin(pinKey) {
       document.querySelectorAll(".pin-card").forEach(c => {
         c.classList.remove("border-brand-500", "border-2");
-        c.classList.add("border-white/10");
+        c.classList.add("border-slate-700");
       });
       event.currentTarget.classList.add("border-brand-500", "border-2");
-      event.currentTarget.classList.remove("border-white/10");
+      event.currentTarget.classList.remove("border-slate-700");
 
       const info = PIN_INFO[pinKey];
       if (info) {
         document.getElementById("pinIcon").innerText = info.icon;
         document.getElementById("pinTitle").innerText = info.title;
         document.getElementById("pinText").innerText = info.text;
-        playChirp(1000, 'sine', 0.05);
       }
     }
 
-    // Keyboard Navigation
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight' || e.key === ' ') {
-        changeSlide(1);
-      } else if (e.key === 'ArrowLeft') {
-        changeSlide(-1);
-      } else if (e.key === '1') {
-        setCarStage(1, true);
-      } else if (e.key === '2') {
-        setCarStage(2, true);
-      } else if (e.key === '3') {
-        setCarStage(3, true);
-      } else if (e.key === '4') {
-        setCarStage(4, true);
-      } else if (e.key === 'f' || e.key === 'F') {
-        toggleFullScreen();
+    // Niche Data Configuration
+    const NICHES = {
+      oil: {
+        badge: "Moy Markazlari Uchun Maxsus Profil",
+        title: "Bochka Telemetriyasi, Moy Litrlari va Kilometraj Eslatmasi",
+        desc: "Dvigatel moyini almashtirish markazlarida eng katta yo'qotish — bochkadagi moyning noaniq sarflanishi va mijozlar keyingi moy almashtirish vaqtini unutishidir. AutoPro²⁴ har bir quyilgan litrni hisoblaydi va avtomatik ravishda mijozga eslatma yuboradi.",
+        savings: "+6,500,000 so'm / oy",
+        features: [
+          "Har safar moy quyilganda ombordagi qoldiqni avtomatik kamaytirish",
+          "Avtomobil modeliga qarab standart moy litrini avto-to'ldirish",
+          "Moy, havo va salon filtrlari narxini bir zumda hisoblash",
+          "Freon zapravka (grammlar bo'yicha kalkulyatsiya)"
+        ],
+        service: "Shell Helix Ultra 5W-30 (3.75 L)",
+        detail: "Cobalt • 01 A 777 AA • Moy filtri + Havo filtri",
+        pay: "Click (487,500 so'm)",
+        worker: "👨‍🔧 Sherzod (Moy ustasi)",
+        broadcast: "Chek real-vaqtda 'AvtoServis Boshqaruv' guruhiga jo'natildi!"
+      },
+      wash: {
+        badge: "Avtomoyka & Detailing Uchun Maxsus Profil",
+        title: "Kuzov, Salon, Qoraytirish va Boks Navbatlari Nazorati",
+        desc: "Avtomoykalarda ma'murlar va yuvuvchilar qo'shimcha xizmatlar (qoraytirish, motor yuvish, ximchistka) pullarini cho'ntakka solishi ko'p uchraydi. AutoPro²⁴ bilan har bir mashina toifasi (Sedan/SUV) va xizmat paketi 1-teginishda qayd etiladi.",
+        savings: "+8,200,000 so'm / oy",
+        features: [
+          "Mashina toifasi (Sedan, Krossover, D-klass, SUV) bo'yicha tariflar",
+          "Kompleks, Ekspress, Ximchistka va Polirovka paketlari",
+          "Har bir moykachi/bokser ulushini kunlik avto-hisoblash",
+          "Navbatdagi mashinalar va bo'sh bokslar telemetriyasi"
+        ],
+        service: "Kompleks Yuvish + Motor + Qoraytirish",
+        detail: "BYD Song Plus • 01 777 VAA • 3-Boks",
+        pay: "Payme (140,000 so'm)",
+        worker: "🧽 Jamshid (2-yuvuvchi)",
+        broadcast: "Moyka cheki avtomatik 'Moyka Nazorat' Telegram guruhiga tushdi!"
+      },
+      repair: {
+        badge: "Avtoservis & Usta Markazi (STO) Maxsus Profil",
+        title: "Diagnostika, Ehtiyot Qismlar va Usta Ulushi (50/50) Hisobi",
+        desc: "Murakkab ta'mirlash ishlarida qaysi ehtiyot qism do'kondan qanchaga olindi, mijozga necha pulga qo'yildi va usta haqi qancha bo'lgani qog'ozda chalkashib ketadi. AutoPro²⁴ shaffof buyurtma-naryad tuzadi.",
+        savings: "+11,500,000 so'm / oy",
+        features: [
+          "Xodovoy, Motor, Elektr va Diagnostika ishlarining aniq kalkulyatsiyasi",
+          "Ehtiyot qismlar ustama marjasi va servis foydasi nazorati",
+          "Usta ish haqi foizini (50/50, 40/60) bir zumda ajratish",
+          "Mijozning to'liq ta'mirlash tarixi va kafolat muddati"
+        ],
+        service: "Old xodovoy qismini ta'mirlash + Amortizator",
+        detail: "Gentra • 01 B 123 CD • Ehtiyot qism: 850k, Ish haqi: 350k",
+        pay: "Naqd (1,200,000 so'm)",
+        worker: "🔧 Azizbek (Bosh usta)",
+        broadcast: "Ta'mirlash naryadi guruhga va mijoz botiga yuborildi!"
+      },
+      tire: {
+        badge: "Vulkanizatsiya & Shinomontaj Maxsus Profil",
+        title: "Balansirovka, Yamash va Diska To'g'rilashning Tezkor Kassasi",
+        desc: "Mavsumiy g'ildirak almashtirish paytida vulkanizatsiyada uzun navbatlar yuzaga keladi. Ustalar shoshilib hisob-kitobni unutadi. AutoPro²⁴ 3 soniyada g'ildirak soni va diska diametri bo'yicha chek tuzadi.",
+        savings: "+4,800,000 so'm / oy",
+        features: [
+          "R13 dan R22 gacha diska diametrlari bo'yicha tezkor tariflar",
+          "Balansirovka, yamoq qo'yish va kordonni tuzatish hisobi",
+          "Mavsumiy saqlash (g'ildiraklar ombori) kartochkalari",
+          "Yuk avtomobillari va yengil mashinalar alohida kassa bo'limi"
+        ],
+        service: "4 ta g'ildirak balansirovka + 1 ta yamoq (R17)",
+        detail: "Tracker 2 • 01 T 888 TT • Germetik qo'shildi",
+        pay: "Uzum Bank (160,000 so'm)",
+        worker: "🛞 Farhod (Usta)",
+        broadcast: "Shinomontaj cheki 'Vulkanizatsiya Kassa' guruhiga yuborildi!"
       }
-    });
+    };
 
-    // Initialize
-    updateSlideUI();
+    function switchNiche(nicheKey) {
+      const data = NICHES[nicheKey];
+      if (!data) return;
+
+      // Update Tabs active class
+      document.querySelectorAll(".niche-tab").forEach(tab => {
+        const isActive = tab.getAttribute("data-niche") === nicheKey;
+        tab.classList.toggle("bg-brand-600", isActive);
+        tab.classList.toggle("text-white", isActive);
+        tab.classList.toggle("shadow-lg", isActive);
+        tab.classList.toggle("bg-dark-card", !isActive);
+        tab.classList.toggle("border", !isActive);
+        tab.classList.toggle("text-slate-300", !isActive);
+      });
+
+      // Update Panel Content
+      document.getElementById("nicheBadge").innerText = data.badge;
+      document.getElementById("nicheTitle").innerText = data.title;
+      document.getElementById("nicheDesc").innerText = data.desc;
+      document.getElementById("nicheSavings").innerText = data.savings;
+
+      // Features list
+      const featsContainer = document.getElementById("nicheFeatures");
+      featsContainer.innerHTML = data.features.map(f => `
+        <div class="flex items-start gap-2.5 text-xs text-slate-200">
+          <i class="fa-solid fa-circle-check text-accent-emerald mt-0.5"></i>
+          <span>${f}</span>
+        </div>
+      `).join("");
+
+      // Simulation Card
+      document.getElementById("prevService").innerText = data.service;
+      document.getElementById("prevDetail").innerText = data.detail;
+      document.getElementById("prevPay").innerText = data.pay;
+      document.getElementById("prevWorker").innerText = data.worker;
+      document.getElementById("prevBroadcast").innerText = data.broadcast;
+    }
+
+    // ROI Calculator Function
+    function calculateROI() {
+      const cars = parseInt(document.getElementById("rangeCars").value);
+      const check = parseInt(document.getElementById("rangeCheck").value);
+      const lossPct = parseInt(document.getElementById("rangeLoss").value);
+
+      document.getElementById("valCars").innerText = `${cars} ta`;
+      document.getElementById("valCheck").innerText = `${check.toLocaleString()} so'm`;
+      document.getElementById("valLoss").innerText = `${lossPct}%`;
+
+      const monthlyRevenue = cars * check * 30;
+      const monthlyLoss = monthlyRevenue * (lossPct / 100);
+      const monthlySaved = monthlyLoss * 0.90; // AutoPro recovers 90% of leakages
+      const yearlySaved = monthlySaved * 12;
+
+      document.getElementById("resRevenue").innerText = `${Math.round(monthlyRevenue).toLocaleString()} so'm`;
+      document.getElementById("resLoss").innerText = `${Math.round(monthlyLoss).toLocaleString()} so'm`;
+      document.getElementById("resSaved").innerText = `+${Math.round(monthlySaved).toLocaleString()} so'm`;
+      document.getElementById("resYearly").innerText = `+${Math.round(yearlySaved).toLocaleString()} so'm`;
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById("formName").value;
+      const phone = document.getElementById("formPhone").value;
+      const shop = document.getElementById("formShop").value;
+      const niche = document.getElementById("formNiche").value;
+
+      const text = encodeURIComponent(`Assalomu alaykum Shukhrat aka! AutoPro24 bo'yicha 7 kunlik bepul sinov olmoqchiman:\n\n👤 Ism: ${name}\n📞 Tel: ${phone}\n🏢 Shoxobcha: ${shop}\n⚙️ Soha: ${niche}`);
+      window.open(`https://t.me/shukhrat_gptify?text=${text}`, '_blank');
+    }
+
+    // Initial run
+    calculateROI();
   </script>
+
 </body>
 </html>
