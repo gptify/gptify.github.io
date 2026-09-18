@@ -116,24 +116,21 @@
 
       <!-- Navigation links -->
       <div class="hidden lg:flex items-center space-x-6 text-xs xl:text-sm font-medium text-slate-300">
-        <button onclick="jumpToCarStage(1)" class="hover:text-white transition flex items-center gap-1.5 text-accent-cyan font-bold cursor-pointer">
-          <i class="fa-solid fa-cube text-xs"></i> 3D Ko'rik
-        </button>
         <a href="#how-it-works" class="hover:text-white transition">Qanday Ishlaydi?</a>
-        <a href="#niches" class="hover:text-white transition">Sohalar</a>
-        <a href="#features" class="hover:text-white transition">Xususiyatlar</a>
+        <a href="#features" class="hover:text-white transition">Imkoniyatlar</a>
         <a href="#calculator" class="hover:text-white transition">Kalkulyator</a>
         <a href="#pricing" class="hover:text-white transition text-amber-400 font-bold">Tariflar</a>
+        <a href="#about-us" class="hover:text-white transition">Muassis Haqida</a>
         <a href="#faq" class="hover:text-white transition">FAQ</a>
       </div>
 
       <!-- Action Buttons -->
       <div class="flex items-center space-x-3">
-        <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-dark-card border border-dark-border hover:border-brand-500 text-slate-200 text-xs font-semibold transition">
-          <i class="fa-brands fa-telegram text-sky-400 text-sm"></i> @AvtoPro_CRM_bot
+        <a href="https://t.me/GPTify_uz_bot" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-dark-card border border-dark-border hover:border-brand-500 text-slate-200 text-xs font-semibold transition">
+          <i class="fa-solid fa-paper-plane text-brand-400 text-xs"></i> Bog'lanish
         </a>
-        <a href="#consultation" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white text-xs font-bold shadow-lg shadow-brand-600/25 transition active:scale-95">
-          <i class="fa-solid fa-phone"></i> 7 Kun Bepul Sinash
+        <a href="#consultation" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold shadow-lg shadow-emerald-600/25 transition active:scale-95">
+          <i class="fa-solid fa-gift"></i> 1 Oy Bepul Sinash
         </a>
       </div>
     </div>
@@ -161,27 +158,27 @@
 
       <!-- TOP BAR HUD INSIDE STICKY (Stage title & Direct Switchers) -->
       <div class="relative z-10 pt-20 px-4 sm:px-8 max-w-7xl mx-auto w-full">
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 py-2 border-b border-slate-800/80 backdrop-blur-md bg-slate-950/40 rounded-2xl px-4">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-3 py-2 border-b border-slate-800/80 backdrop-blur-md bg-slate-950/60 rounded-2xl px-4">
           <div class="flex items-center gap-2">
             <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
             <span id="carStageTitle" class="text-xs sm:text-sm font-bold tracking-wide text-slate-200">
-              Porsche 911 GT Showroom • 360° Tashqi Korpus
+              1. Qabul Jarayoni • AI Avtoraqam & Mijoz Tarixi
             </span>
           </div>
           
           <!-- 4 Direct Stage Buttons -->
           <div class="flex items-center gap-1.5 sm:gap-2">
             <button id="btnStage1" onclick="jumpToCarStage(1)" class="stage-nav-btn active px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-bold transition bg-brand-600 text-white shadow-lg">
-              1. Tashqi
+              1. Qabul
             </button>
             <button id="btnStage2" onclick="jumpToCarStage(2)" class="stage-nav-btn px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 border border-slate-800 transition">
-              2. Eshik (POS)
+              2. POS Chek
             </button>
             <button id="btnStage3" onclick="jumpToCarStage(3)" class="stage-nav-btn px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 border border-slate-800 transition">
-              3. Kapot (Ombor)
+              3. Avtomat Ombor
             </button>
             <button id="btnStage4" onclick="jumpToCarStage(4)" class="stage-nav-btn px-2.5 py-1 sm:px-3 sm:py-1 rounded-lg text-[10px] sm:text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/80 border border-slate-800 transition">
-              4. Detallar
+              4. Telemetriya
             </button>
           </div>
         </div>
@@ -209,11 +206,14 @@
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-            <a href="#consultation" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-extrabold text-sm shadow-xl shadow-brand-600/30 transition active:scale-95 flex items-center justify-center gap-2">
-              <i class="fa-solid fa-rocket"></i> 7 Kunlik Bepul Sinov
+            <a href="#consultation" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-sm shadow-xl shadow-emerald-600/30 transition active:scale-95 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-gift text-base"></i> 1 Oy Bepul Sinash &rarr;
             </a>
-            <button onclick="jumpToCarStage(2)" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 hover:border-brand-500 text-slate-200 font-bold text-sm backdrop-blur-md transition flex items-center justify-center gap-2 cursor-pointer">
-              <i class="fa-solid fa-play text-brand-400"></i> 3D Car & Telemetriya &darr;
+            <a href="https://t.me/GPTify_uz_bot" target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 hover:border-brand-500 text-slate-200 font-bold text-sm backdrop-blur-md transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane text-brand-400"></i> Bog'lanish
+            </a>
+            <button onclick="jumpToCarStage(2)" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-slate-900/90 border border-slate-700 hover:border-brand-500 text-slate-200 font-bold text-sm backdrop-blur-md transition flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-play text-brand-400"></i> 3D Ko'rik &darr;
             </button>
           </div>
 
@@ -278,7 +278,7 @@
                   <div class="space-y-1.5 text-xs text-slate-300">
                     <div class="flex justify-between">
                       <span class="text-slate-400">Model:</span>
-                      <span class="font-bold text-white">Porsche 911 GT3 (yoki Cobalt / Gentra)</span>
+                      <span class="font-bold text-white">Chevrolet Gentra / Cobalt</span>
                     </div>
                     <div class="flex justify-between">
                       <span class="text-slate-400">Tashrif tarixi:</span>
@@ -286,7 +286,7 @@
                     </div>
                     <div class="flex justify-between">
                       <span class="text-slate-400">Tavsiya moy:</span>
-                      <span class="font-semibold text-cyan-300">Mobil 1 Super 0W-40 (8.0L)</span>
+                      <span class="font-semibold text-cyan-300">Castrol Magnatec 5W-30 (4.0L)</span>
                     </div>
                   </div>
                 </div>
@@ -307,10 +307,10 @@
                   <div class="flex justify-between items-center border-b border-slate-800 pb-2">
                     <div class="flex items-center gap-2">
                       <div class="w-6 h-6 rounded-lg bg-brand-600 flex items-center justify-center text-white text-[10px] font-black">POS</div>
-                      <span class="text-xs font-black text-white">PORSCHE COCKPIT • SMART KASSA</span>
+                      <span class="text-xs font-black text-white">TELEGRAM POS • SMART KASSA</span>
                     </div>
                     <span class="text-[9px] bg-brand-950 text-brand-300 border border-brand-500/40 px-2 py-0.5 rounded-md font-mono font-bold">
-                      🚪 ESHIK OCHILDI
+                      🧾 CHECK #1042
                     </span>
                   </div>
 
@@ -323,23 +323,23 @@
                       </span>
                     </div>
                     <div class="p-2 rounded-xl bg-slate-900 border border-slate-700/60 text-[11px] text-emerald-300 font-mono italic">
-                      "Porschega 8 litr Mobil 1 quydik, moy filtri yangilandi, Click to'ladi"
+                      "Gentraga 4 litr Castrol 5W-30 quydik, moy filtri yangilandi, Click to'ladi"
                     </div>
                   </div>
 
                   <!-- Quick receipt -->
                   <div class="space-y-1 text-xs">
                     <div class="flex justify-between text-slate-300">
-                      <span>Mobil 1 0W-40 (8.0L)</span>
-                      <span class="font-bold text-white">1,040,000 UZS</span>
+                      <span>Castrol Magnatec 5W-30 (4.0L)</span>
+                      <span class="font-bold text-white">480,000 UZS</span>
                     </div>
                     <div class="flex justify-between text-slate-300">
                       <span>Moy filtri & Xizmat haqi</span>
-                      <span class="font-bold text-white">120,000 UZS</span>
+                      <span class="font-bold text-white">60,000 UZS</span>
                     </div>
                     <div class="flex justify-between pt-1 border-t border-slate-800 font-bold text-emerald-400">
                       <span>Jami Chek:</span>
-                      <span class="text-sm font-black">1,160,000 UZS (Click)</span>
+                      <span class="text-sm font-black">540,000 UZS (Click)</span>
                     </div>
                   </div>
                 </div>
@@ -348,9 +348,9 @@
               <!-- Right Description -->
               <div class="md:col-span-6 space-y-3 backdrop-blur-md bg-slate-950/85 p-5 sm:p-6 rounded-3xl border border-slate-800 shadow-2xl">
                 <div class="text-xs font-black text-brand-400 uppercase tracking-wider">Usta POS Interfeysi</div>
-                <h3 class="text-xl sm:text-2xl font-black text-white leading-snug">Ustalar Kabinada O'tirib Ham 5 Soniyada Chek Yozadi</h3>
+                <h3 class="text-xl sm:text-2xl font-black text-white leading-snug">Ustalar Telefonida 5 Soniyada Chek Yozadi</h3>
                 <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Hech qanday og'ir kompyuter kassaga borish shart emas. Haydovchi eshigini ochgan usta telefonining o'zida Telegram orqali mijozni kutib oladi va chek chiqaradi.
+                  Hech qanday og'ir kompyuter kassaga borish shart emas. Mashina oldida turgan usta telefonining o'zida Telegram orqali mijozni kutib oladi va chek chiqaradi.
                 </p>
                 <div class="pt-1 flex flex-wrap gap-2 text-xs">
                   <span class="bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
@@ -375,9 +375,9 @@
               <div class="md:col-span-6 flex justify-center">
                 <div class="w-full max-w-sm backdrop-blur-xl bg-slate-950/90 border border-emerald-500/60 rounded-3xl p-5 shadow-[0_0_50px_rgba(16,185,129,0.3)] space-y-3">
                   <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                    <span class="text-xs font-black text-white">PORSCHE 911 GT • ENGINE BAY</span>
+                    <span class="text-xs font-black text-white">AVTOMAT OMBOR • TELEMETRIYA</span>
                     <span class="text-[9px] bg-emerald-950 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded-md font-mono font-bold">
-                      ⚙️ KAPOT KO'TARILDI
+                      ⚙️ OMBORDAN YECHILDI
                     </span>
                   </div>
 
@@ -1023,7 +1023,7 @@
         </span>
         <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white">Biznesingizga Mos Tarifni Tanlang</h2>
         <p class="mt-3 text-slate-400 text-sm sm:text-base">
-          Yashirin to'lovlar yoki qimmat kompyuterlar shart emas. Barcha tariflar <b>7 kunlik bepul sinov</b> bilan taqdim etiladi.
+          Yashirin to'lovlar yoki qimmat kompyuterlar shart emas. Barcha tariflar <b>1 oylik to'liq bepul sinov</b> bilan taqdim etiladi.
         </p>
       </div>
 
@@ -1042,7 +1042,7 @@
             <div class="mt-5 mb-5">
               <span class="text-3xl font-black text-white">190,000</span>
               <span class="text-xs text-slate-400 font-semibold"> so'm / oy</span>
-              <div class="text-[10px] text-emerald-400 font-bold mt-1">7 kunlik bepul sinov</div>
+              <div class="text-[10px] text-emerald-400 font-bold mt-1">1 oy bepul sinov</div>
             </div>
 
             <ul class="space-y-2.5 text-xs text-slate-300 border-t border-slate-800/80 pt-5">
@@ -1079,7 +1079,7 @@
 
           <div class="pt-6">
             <a href="#consultation" class="block w-full py-3 rounded-xl bg-dark-card border border-slate-700 hover:border-brand-500 text-white font-bold text-xs text-center transition">
-              Mini Bilan Sinash
+              Mini Bilan Sinash (1 Oy Bepul)
             </a>
           </div>
         </div>
@@ -1101,7 +1101,7 @@
             <div class="mt-5 mb-5">
               <span class="text-3xl font-black text-white">490,000</span>
               <span class="text-xs text-slate-400 font-semibold"> so'm / oy</span>
-              <div class="text-[10px] text-accent-emerald font-bold mt-1">7 kunlik bepul sinov + Bepul sozlash</div>
+              <div class="text-[10px] text-accent-emerald font-bold mt-1">1 oy bepul sinov + Bepul sozlash</div>
             </div>
 
             <ul class="space-y-2.5 text-xs text-slate-200 border-t border-slate-800/80 pt-5">
@@ -1134,7 +1134,7 @@
 
           <div class="pt-6">
             <a href="#consultation" class="block w-full py-3 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-extrabold text-xs text-center shadow-lg shadow-brand-600/30 transition">
-              Standart Sinov (7 Kun Bepul) &rarr;
+              Standart Sinov (1 Oy Bepul) &rarr;
             </a>
           </div>
         </div>
@@ -1152,7 +1152,7 @@
             <div class="mt-5 mb-5">
               <span class="text-3xl font-black text-white">890,000</span>
               <span class="text-xs text-slate-400 font-semibold"> so'm / oy</span>
-              <div class="text-[10px] text-accent-cyan font-bold mt-1">7 kunlik bepul sinov + VIP yordam</div>
+              <div class="text-[10px] text-accent-cyan font-bold mt-1">1 oy bepul sinov + VIP yordam</div>
             </div>
 
             <ul class="space-y-2.5 text-xs text-slate-300 border-t border-slate-800/80 pt-5">
@@ -1325,7 +1325,7 @@
               <li><b>2. Suhbatlar filtri:</b> Ustalar guruhdagi oddiy gaplashuvlari (<i>"Oshga boramizmi?", "Salom usta"</i>) chek deb qabul qilinmaydi va 100% filtrlanadi.</li>
               <li><b>3. Qo'lda tahrirlash (Draft Mode):</b> TMA ovozli kassa avval qoralama ko'rinishida ko'rsatiladi, usta xohlasa 1 soniyada litr yoki summani barmoq bilan to'g'rilab tasdiqlaydi.</li>
               <li><b>4. 1-Tugmali Qaytarish (Rollback):</b> Agar usta adashib chek chiqarsa, chek ostidagi qizil <b>[❌ Bekor Qilish]</b> tugmasi bosilishi bilan sotuv bekor bo'ladi va sarflangan moy bochkaga to'liq qaytariladi.</li>
-              <li><b>5. Rahbar PIN-kodi (7777):</b> Sof foyda, kassa tushumi va diler narxlari maxfiy PIN bilan qulflangan bo'lib, xodimlar uni buza olmaydi.</li>
+              <li><b>5. Rahbar PIN-kodi:</b> Sof foyda, kassa tushumi va diler narxlari maxfiy PIN bilan qulflangan bo'lib, xodimlar uni buza olmaydi.</li>
             </ul>
           </div>
         </details>
@@ -1365,10 +1365,126 @@
             </span>
           </summary>
           <div class="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
-            O'rnatish va ustalarni ulash bor-yo'g'i <b>15 daqiqa</b> vaqt oladi. Sizga <b>7 kunlik to'liq bepul sinov davri</b> beriladi. Biz barcha xizmatlaringiz, narxlaringiz va moy markalaringizni kiritib beramiz. Ma'qul kelsa keyin to'laysiz!
+            O'rnatish va ustalarni ulash bor-yo'g'i <b>15 daqiqa</b> vaqt oladi. Sizga <b>1 oylik to'liq bepul sinov davri</b> beriladi. Biz barcha xizmatlaringiz, narxlaringiz va moy markalaringizni kiritib beramiz. Ma'qul kelsa keyin to'laysiz!
           </div>
         </details>
 
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================================== -->
+  <!-- SECTION: ABOUT FOUNDER & SYSTEM GUARANTEE (#about-us) -->
+  <!-- =============================================================== -->
+  <section id="about-us" class="py-20 border-t border-dark-border relative overflow-hidden bg-dark-bg">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-widest text-brand-400 uppercase bg-brand-950/60 border border-brand-500/30 px-3.5 py-1.5 rounded-full">
+          🛡️ Ishonch, Xavfsizlik & Kafolat
+        </span>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-black text-white">
+          AutoPro²⁴ Orqasida Kim Turibdi?
+        </h2>
+        <p class="mt-3 text-slate-400 text-sm sm:text-base leading-relaxed">
+          Biz shunchaki anonim dastur emasmiz. Har bir avtoservis va moy almashtirish shoxobchasi egasiga tizim barqarorligi va ma'lumotlar xavfsizligi bo'yicha shaxsiy muassis kafolatini beramiz.
+        </p>
+      </div>
+
+      <!-- Founder & Architecture Card -->
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-700/80 bg-gradient-to-br from-dark-card/90 via-dark-card/60 to-dark-bg shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Founder Profile Column -->
+          <div class="lg:col-span-5 flex flex-col items-center text-center sm:items-start sm:text-left border-b lg:border-b-0 lg:border-r border-slate-800 pb-8 lg:pb-0 lg:pr-8">
+            <div class="relative mb-5">
+              <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-gradient-to-tr from-brand-600 via-indigo-600 to-accent-cyan p-1 shadow-xl shadow-brand-600/30">
+                <div class="w-full h-full rounded-[22px] bg-dark-bg flex items-center justify-center font-black text-3xl sm:text-4xl text-white">
+                  SI
+                </div>
+              </div>
+              <span class="absolute -bottom-2 -right-2 px-2.5 py-1 bg-emerald-500 text-dark-bg text-[10px] font-black rounded-full shadow flex items-center gap-1">
+                <i class="fa-solid fa-shield-halved"></i> Verified
+              </span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-black text-white">Shukhrat Iskandarov</h3>
+            <p class="text-xs sm:text-sm font-semibold text-brand-400 mt-1">
+              Founder at GPTify.co & Co-founder at Cubeo.ai
+            </p>
+            <p class="mt-3 text-xs text-slate-400 leading-relaxed">
+              B2B biznes operatsiyalarini avtomatlashtirish, amaliy AI ish oqimlari va mijozlar oqimini tartibga soluvchi boshqaruv tizimlari me'mori.
+            </p>
+
+            <!-- Quick Contact & Direct Action -->
+            <div class="mt-5 w-full space-y-3">
+              <div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+                <a href="https://t.me/GPTify_uz_bot" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white shadow-lg shadow-brand-600/30 transition text-xs font-bold active:scale-95">
+                  <i class="fa-solid fa-paper-plane text-xs"></i> Bog'lanish
+                </a>
+                <a href="https://gptify.co/uz/" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-800/60 border border-slate-700/60 text-slate-300 hover:text-white hover:border-brand-500/50 transition text-xs font-medium">
+                  <i class="fa-solid fa-globe text-accent-cyan"></i> gptify.co/uz
+                </a>
+              </div>
+
+              <!-- Mini Quick Contact Form -->
+              <div class="pt-2">
+                <form onsubmit="handleQuickContactSubmit(event)" class="flex flex-col sm:flex-row gap-2">
+                  <input type="tel" id="quickPhone" required placeholder="Telefon raqamingiz..." class="flex-1 bg-dark-input/80 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition">
+                  <button type="submit" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition active:scale-95 shrink-0 flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-phone"></i> Raqam qoldirish
+                  </button>
+                </form>
+                <span id="quickContactMsg" class="hidden text-[11px] text-emerald-400 mt-1.5 items-center gap-1 font-medium">
+                  <i class="fa-solid fa-check-circle"></i> Qabul qilindi! Tez orada bog'lanamiz.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Value Pillars Column -->
+          <div class="lg:col-span-7 space-y-4">
+            
+            <div class="p-4 rounded-2xl bg-dark-input/50 border border-slate-800/80 hover:border-brand-500/40 transition flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-brand-950/80 border border-brand-500/30 flex items-center justify-center text-brand-400 text-base shrink-0 mt-0.5">
+                <i class="fa-solid fa-shield-check"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">100% Ma'lumotlar Maxfiyligi & Shaxsiy Nazorat</h4>
+                <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                  Mijozlaringiz bazasi, xizmat narxlari, kunlik kassa va usta maoshlari faqat sizga tegishli bo'ladi. Hech qanday uchinchi tomon yoki raqobatchilar bu ma'lumotlarni ko'ra olmaydi.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-dark-input/50 border border-slate-800/80 hover:border-emerald-500/40 transition flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-base shrink-0 mt-0.5">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">15 Daqiqada To'liq Moslashtirish & Ishga Tushirish</h4>
+                <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                  Qimmatbaho kompyuter yoki uzoq treninglar kerak emas. GPTify jamoasi sizning shoxobchangiz uchun barcha moy turlari va xizmatlarni 15 daqiqada kiritib, ustalaringizga Telegram'da o'rgatadi.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-dark-input/50 border border-slate-800/80 hover:border-accent-cyan/40 transition flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-base shrink-0 mt-0.5">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Doimiy Aloqa & Shaxsiy Texnik Yordam</h4>
+                <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                  Siz bot yoki murakkab menyular bilan yolg'iz qolmaysiz. Har bir servis egasiga shaxsiy aloqa menejeri va to'g'ridan-to'g'ri Telegram orqali operativ yordam biriktiriladi.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
     </div>
@@ -1384,11 +1500,11 @@
       
       <div class="text-center max-w-2xl mx-auto mb-12">
         <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase bg-emerald-950/60 border border-emerald-500/30 px-3.5 py-1.5 rounded-full">
-          🎁 7 Kunlik Bepul Sinov & Shaxsiy Taqdimot
+          🎁 1 Oylik Bepul Sinov & Shaxsiy Taqdimot
         </span>
         <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white">Servisingizni Yangi Bosqichga Olib Chiqing</h2>
         <p class="mt-3 text-slate-400 text-sm sm:text-base">
-          Formani to'ldiring yoki to'g'ridan-to'g'ri Telegram orqali yozing. Biz 15 daqiqada sizga shaxsiy demo bot va hisob-kitobni ochib beramiz.
+          Formani to'ldiring yoki to'g'ridan-to'g'ri Telegram orqali bog'laning. Biz 15 daqiqada sizga shaxsiy tizim va hisob-kitobni ochib beramiz.
         </p>
       </div>
 
@@ -1430,8 +1546,8 @@
           </div>
 
           <div class="pt-3">
-            <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-indigo-600 to-accent-emerald hover:from-brand-500 hover:to-emerald-500 text-white font-black text-sm tracking-wide shadow-xl shadow-brand-600/30 transition active:scale-95 flex items-center justify-center gap-2">
-              <i class="fa-brands fa-telegram text-lg"></i> 7 Kunlik Bepul Sinovni Boshlash &rarr;
+            <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-brand-600 hover:from-emerald-500 hover:to-brand-500 text-white font-black text-sm tracking-wide shadow-xl shadow-emerald-600/30 transition active:scale-95 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-gift text-lg"></i> 1 Oylik Bepul Sinovni Boshlash &rarr;
             </button>
           </div>
         </form>
@@ -1441,12 +1557,12 @@
             <i class="fa-solid fa-lock text-emerald-400"></i>
             <span>Ma'lumotlaringiz 100% himoyalangan va begonalarga berilmaydi.</span>
           </div>
-          <div class="flex items-center gap-4">
-            <a href="https://t.me/shukhrat_gptify" target="_blank" class="text-brand-400 hover:text-white transition font-semibold flex items-center gap-1">
-              <i class="fa-brands fa-telegram"></i> @shukhrat_gptify ga yozish
+          <div class="flex items-center gap-3">
+            <a href="https://t.me/GPTify_uz_bot" target="_blank" class="px-4 py-2 rounded-xl bg-dark-card border border-slate-700 hover:border-brand-500 text-brand-400 hover:text-white transition font-semibold flex items-center gap-2">
+              <i class="fa-solid fa-paper-plane text-xs"></i> Bog'lanish
             </a>
-            <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="text-cyan-400 hover:text-white transition font-semibold flex items-center gap-1">
-              <i class="fa-solid fa-robot"></i> Botni sinash
+            <a href="https://gptify.co/uz/" target="_blank" class="px-4 py-2 rounded-xl bg-dark-card border border-slate-700 hover:border-brand-500 text-slate-300 hover:text-white transition font-semibold flex items-center gap-1.5">
+              <i class="fa-solid fa-globe text-accent-cyan text-xs"></i> gptify.co/uz
             </a>
           </div>
         </div>
@@ -1461,17 +1577,17 @@
   <!-- =============================================================== -->
   <footer class="py-12 border-t border-dark-border bg-dark-bg text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <div class="flex items-center justify-center space-x-2 font-bold text-slate-300 text-sm">
+      <div class="flex flex-wrap items-center justify-center gap-2 font-bold text-slate-300 text-sm">
         <span>AutoPro²⁴</span>
         <span>•</span>
-        <span>Made by GPTify Team in Berlin</span>
+        <a href="https://gptify.co/uz/" target="_blank" class="text-brand-400 hover:text-white transition font-semibold">Tizim arxitekturasi GPTify.co tomonidan ishlab chiqilgan</a>
       </div>
-      <p class="max-w-xl mx-auto text-slate-400 text-[11px] leading-relaxed">
-        AutoPro²⁴ — O'zbekistondagi avtoservislar, moy almashtirish shoxobchalari, avtomoykalar va ustaxonalar uchun amaliy B2B AI operatsion tizimi. 
-        Asoschisi: Shukhrat Iskandarov (founder at GPTify.co & co-founder at Cubeo.ai).
+      <p class="max-w-2xl mx-auto text-slate-400 text-[11px] leading-relaxed">
+        AutoPro²⁴ — O'zbekistondagi avtoservislar, moy almashtirish shoxobchalari, avtomoykalar va ustaxonalar uchun amaliy B2B operatsion tizimi. 
+        Asoschisi: <b>Shukhrat Iskandarov</b> (founder at GPTify.co & co-founder at Cubeo.ai).
       </p>
       <div class="pt-2 text-[10px] text-slate-600">
-        © 2026 AutoPro²⁴ • Barcha huquqlar himoyalangan.
+        © 2026 AutoPro²⁴ • GPTify amaliy B2B tizimlari ekotizimi. Barcha huquqlar himoyalangan.
       </div>
     </div>
   </footer>
@@ -1483,19 +1599,19 @@
     // 3D Car Inspection Stages
     const STAGE_CONFIG = {
       1: {
-        title: "Porsche 911 GT Showroom • 360° Tashqi Korpus",
+        title: "1. Qabul Jarayoni • AI Avtoraqam & Mijoz Tarixi",
         viewId: "viewStage1"
       },
       2: {
-        title: "Haydovchi Eshigi Ochildi • Smart Cockpit POS",
+        title: "2. Smart POS Kassasi • Ovozli Kvitansiya & Usta Ulushi",
         viewId: "viewStage2"
       },
       3: {
-        title: "Dvigatel Kapoti Ko'tarildi • Twin-Turbo & Ombor",
+        title: "3. Avtomat Ombor • Moy, Filtr & Qoldiqlar Nazorati",
         viewId: "viewStage3"
       },
       4: {
-        title: "Yaqin Telemetriya • Dvigatel Moyi, Filtr & Detallar",
+        title: "4. Servis Telemetriyasi • Diagnostika, Xodovoy & Mavsumiy Xizmat",
         viewId: "viewStage4"
       }
     };
@@ -1856,8 +1972,51 @@
       const shop = document.getElementById("formShop").value;
       const niche = document.getElementById("formNiche").value;
 
-      const text = encodeURIComponent(`Assalomu alaykum Shukhrat aka! AutoPro24 bo'yicha 7 kunlik bepul sinov olmoqchiman:\n\n👤 Ism: ${name}\n📞 Tel: ${phone}\n🏢 Shoxobcha: ${shop}\n⚙️ Soha: ${niche}`);
-      window.open(`https://t.me/shukhrat_gptify?text=${text}`, '_blank');
+      // Fon rejimida serverga (SQLite bazaga) saqlash
+      try {
+        fetch("/api/lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: name,
+            phone: phone,
+            shop_name: shop,
+            niche: niche,
+            source: "LANDING_FORM"
+          })
+        }).catch(() => {});
+      } catch (err) {}
+
+      // Telegramda to'g'ridan-to'g'ri bot orqali suhbat ochish
+      const text = encodeURIComponent(`Assalomu alaykum! AutoPro24 bo'yicha 1 oylik bepul sinov olmoqchiman:\n\n👤 Ism: ${name}\n📞 Tel: ${phone}\n🏢 Shoxobcha: ${shop}\n⚙️ Soha: ${niche}`);
+      window.open(`https://t.me/GPTify_uz_bot?start=${text}`, '_blank');
+    }
+
+    // Quick Contact Form Handler
+    function handleQuickContactSubmit(e) {
+      e.preventDefault();
+      const phone = document.getElementById("quickPhone").value;
+      if (!phone) return;
+
+      try {
+        fetch("/api/lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            phone: phone,
+            source: "QUICK_CONTACT_FOUNDER"
+          })
+        }).catch(() => {});
+      } catch (err) {}
+
+      const msgEl = document.getElementById("quickContactMsg");
+      if (msgEl) {
+        msgEl.classList.remove("hidden");
+        msgEl.classList.add("flex");
+      }
+
+      const text = encodeURIComponent(`Assalomu alaykum! AutoPro24 bo'yicha bog'lanmoqchiman:\n📞 Telefon raqamim: ${phone}`);
+      window.open(`https://t.me/GPTify_uz_bot?start=${text}`, '_blank');
     }
 
     // Initial run
