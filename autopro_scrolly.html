@@ -127,20 +127,6 @@
       z-index: 30;
       pointer-events: none;
     }
-    .header-hud {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 50;
-      pointer-events: none;
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
-      will-change: transform, opacity;
-    }
-    .header-hidden {
-      transform: translateY(-120%);
-      opacity: 0;
-    }
     .hud-interactive {
       pointer-events: auto;
     }
@@ -184,38 +170,38 @@
   </div>
 
   <!-- =============================================================== -->
-  <!-- 2. HUD HEADER (LARGE, CLEAN & SMART AUTO-HIDE) -->
+  <!-- 2. HUD HEADER (LARGE, CLEAN & ACCESSIBLE) -->
   <!-- =============================================================== -->
-  <header id="mainHeader" class="header-hud flex justify-between items-start p-3.5 sm:p-5 lg:px-10">
-    <div class="hud-interactive flex items-center space-x-3 bg-slate-950/80 border border-slate-800/90 px-4 py-2.5 rounded-2xl backdrop-blur-xl shadow-2xl">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 text-slate-950 font-black flex items-center justify-center text-sm shadow-lg shadow-amber-500/30">
+  <header class="hud-layer flex justify-between items-start p-4 sm:p-8 lg:px-14">
+    <div class="hud-interactive flex items-center space-x-3.5 bg-slate-950/80 border border-slate-800/90 px-5 py-3 rounded-2xl backdrop-blur-xl shadow-2xl">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 text-slate-950 font-black flex items-center justify-center text-base shadow-lg shadow-amber-500/30">
         A²⁴
       </div>
       <div>
         <div class="flex items-center space-x-2">
-          <span class="font-extrabold text-sm sm:text-base tracking-tight text-white">AutoPro<sup class="text-amber-400 font-black">24</sup></span>
+          <span class="font-extrabold text-base tracking-tight text-white">AutoPro<sup class="text-amber-400 font-black">24</sup></span>
           <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full font-mono uppercase font-bold">Porsche 911 Edition</span>
         </div>
-        <span class="text-[11px] text-slate-400 font-mono">Shukhrat Iskandarov | GPTify.co</span>
+        <span class="text-xs text-slate-400 font-mono">Shukhrat Iskandarov | GPTify.co</span>
       </div>
     </div>
 
     <!-- Navigation Chapters Bar -->
-    <div class="hud-interactive flex items-center space-x-2.5">
-      <div class="hidden lg:flex items-center space-x-1.5 bg-slate-950/80 border border-slate-800/90 p-1.5 rounded-2xl backdrop-blur-xl font-mono text-xs">
-        <button onclick="jumpToSection(0)" id="navDot0" class="nav-btn px-3.5 py-1.5 rounded-xl text-amber-400 font-bold bg-amber-500/20 shadow-lg">01 Tashqi Korpus</button>
-        <button onclick="jumpToSection(1)" id="navDot1" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">02 Qahramon Usta Muloqoti</button>
-        <button onclick="jumpToSection(2)" id="navDot2" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">03 Yuklangan Avto-Baza</button>
-        <button onclick="jumpToSection(3)" id="navDot3" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">04 Ombor & Bochka</button>
-        <button onclick="jumpToSection(4)" id="navDot4" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">05 Katta ROI Hisobi</button>
+    <div class="hud-interactive flex items-center space-x-3">
+      <div class="hidden lg:flex items-center space-x-2 bg-slate-950/80 border border-slate-800/90 p-2 rounded-2xl backdrop-blur-xl font-mono text-xs">
+        <button onclick="jumpToSection(0)" id="navDot0" class="nav-btn px-4 py-2 rounded-xl text-amber-400 font-bold bg-amber-500/20 shadow-lg">01 Tashqi Korpus</button>
+        <button onclick="jumpToSection(1)" id="navDot1" class="nav-btn px-4 py-2 rounded-xl text-slate-300 hover:text-white">02 Qahramon Usta Muloqoti</button>
+        <button onclick="jumpToSection(2)" id="navDot2" class="nav-btn px-4 py-2 rounded-xl text-slate-300 hover:text-white">03 Yuklangan Avto-Baza</button>
+        <button onclick="jumpToSection(3)" id="navDot3" class="nav-btn px-4 py-2 rounded-xl text-slate-300 hover:text-white">04 Ombor & Bochka</button>
+        <button onclick="jumpToSection(4)" id="navDot4" class="nav-btn px-4 py-2 rounded-xl text-slate-300 hover:text-white">05 Katta ROI Hisobi</button>
       </div>
 
-      <button onclick="toggleFullscreen()" title="To'liq Ekran Rejimi (F klavishi)" class="px-3.5 py-2.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-bold font-mono transition flex items-center gap-2 shadow-lg cursor-pointer">
+      <button onclick="toggleFullscreen()" title="To'liq Ekran Rejimi (F klavishi)" class="px-4 py-3 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-bold font-mono transition flex items-center gap-2 shadow-lg cursor-pointer">
         <i class="fa-solid fa-expand text-amber-400 text-sm" id="fullscreenIcon"></i>
         <span id="fullscreenText" class="hidden sm:inline">To'liq Ekran</span>
       </button>
 
-      <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-black font-mono transition shadow-xl shadow-amber-500/30 flex items-center gap-2">
+      <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-black font-mono transition shadow-xl shadow-amber-500/30 flex items-center gap-2">
         <i class="fa-brands fa-telegram text-base"></i>
         <span>@AvtoPro_CRM_bot</span>
       </a>
@@ -561,48 +547,20 @@
         const btn = document.getElementById(`navDot${i}`);
         if (btn) {
           if (i === secIdx) {
-            btn.className = 'nav-btn px-3.5 py-1.5 rounded-xl text-amber-400 font-bold bg-amber-500/20 shadow-lg';
+            btn.className = 'nav-btn px-4 py-2 rounded-xl text-amber-400 font-bold bg-amber-500/20 shadow-lg';
           } else {
-            btn.className = 'nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white';
+            btn.className = 'nav-btn px-4 py-2 rounded-xl text-slate-300 hover:text-white';
           }
         }
       }
-
-      // Smart Header Visibility
-      if (headerEl) {
-        if (scrollTop < 80) {
-          headerEl.classList.remove('header-hidden');
-        } else if (scrollTop > lastScrollTop + 6 && scrollTop > 120) {
-          headerEl.classList.add('header-hidden');
-        } else if (scrollTop < lastScrollTop - 6) {
-          headerEl.classList.remove('header-hidden');
-        }
-      }
-      lastScrollTop = scrollTop;
     }
 
-    let lastScrollTop = window.scrollY;
-    const headerEl = document.getElementById('mainHeader');
-
-    window.addEventListener('mousemove', (e) => {
-      if (e.clientY < 75 && headerEl) {
-        headerEl.classList.remove('header-hidden');
-      }
-    });
-
-    window.addEventListener('scroll', onScrollScrolly, { passive: true });
+    window.addEventListener('scroll', onScrollScrolly);
 
     function jumpToSection(idx) {
-      if (idx === 0) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        if (headerEl) headerEl.classList.remove('header-hidden');
-      } else if (idx === 4) {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-      } else {
-        const el = document.getElementById(`section-${idx}`);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+      const el = document.getElementById(`section-${idx}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
       }
     }
 

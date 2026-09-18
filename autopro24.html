@@ -201,39 +201,19 @@
       </button>
     </div>
 
-    <!-- Right: Live Demo Links, Slide Count & Controls -->
-    <div class="flex items-center gap-2 sm:gap-3">
-      <!-- 1. Web CRM Demo Quick Link -->
-      <a href="/crm" target="_blank" rel="noopener noreferrer" id="headerCrmLink"
-         title="AutoPro²⁴ Katta Ekranli Web CRM Cockpit (Streamlit, Port 8501)"
-         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold transition shadow-lg shadow-blue-600/30 border border-blue-400/40 active:scale-95">
-        <i class="fa-solid fa-desktop text-xs text-cyan-300"></i>
-        <span class="hidden md:inline">Web CRM Demo</span>
-        <span class="md:hidden">CRM Demo</span>
+    <!-- Right: Slide Count & Controls -->
+    <div class="flex items-center gap-3.5">
+      <a href="presentation.html" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-200 hover:text-white text-xs font-bold transition">
+        <i class="fa-regular fa-file-lines text-brand-400"></i> Klassik Deck
       </a>
-
-      <!-- 2. Telegram App Demo Quick Link -->
-      <a href="/" target="_blank" rel="noopener noreferrer" id="headerTmaLink"
-         title="AutoPro²⁴ Telegram Mini App (TMA) Mobil Kassa POS (Port 8507)"
-         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-cyan-500/40 text-cyan-300 hover:text-white text-xs font-bold transition shadow-lg shadow-cyan-600/20 active:scale-95">
-        <i class="fa-brands fa-telegram text-xs text-cyan-400"></i>
-        <span class="hidden md:inline">Telegram App Demo</span>
-        <span class="md:hidden">Telegram POS</span>
-      </a>
-
-      <!-- 3. Classic Deck Switcher -->
-      <a href="presentation.html" class="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white text-xs font-semibold transition">
-        <i class="fa-regular fa-file-lines text-brand-400"></i> Klassik
-      </a>
-
       <div class="text-right hidden sm:block">
         <div id="slideCounter" class="text-sm font-extrabold text-white font-mono">1 / 9</div>
         <div id="carStageBadge" class="text-xs text-brand-400 font-bold uppercase tracking-wider">Porsche 911 GT Showroom</div>
       </div>
-      <button onclick="toggleAudio()" id="audioBtn" title="Ovoz effektlari" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-xs sm:text-sm transition">
+      <button onclick="toggleAudio()" id="audioBtn" title="Ovoz effektlari" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-sm transition">
         <i id="audioIcon" class="fa-solid fa-volume-high"></i>
       </button>
-      <button onclick="toggleFullScreen()" title="To'liq ekran (F11)" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-xs sm:text-sm transition">
+      <button onclick="toggleFullScreen()" title="To'liq ekran (F11)" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-sm transition">
         <i class="fa-solid fa-expand"></i>
       </button>
     </div>
@@ -933,37 +913,37 @@
 
         <!-- 4 Grid Feature Cards (Spacious, Clear & High Contrast) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <!-- Feature 1: Oil Spent Analysis & Stock Mismatch Audit -->
+          <!-- Feature 1: Net Profit & Margins -->
           <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-emerald-500/30">
             <div class="flex items-center justify-between">
               <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-2xl">
-                <i class="fa-solid fa-scale-balanced"></i>
+                <i class="fa-solid fa-sack-dollar"></i>
               </div>
-              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Audit & Tafovut</span>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Moliya & Foyda</span>
             </div>
-            <h3 class="text-xl font-bold text-white">Kunlik/Haftalik Moy Sarfi & Tafovut Auditi</h3>
+            <h3 class="text-xl font-bold text-white">Sof Marja & Foyda Hisobi</h3>
             <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Har bir moy markasi bo'yicha kunlik, haftalik va oylik sarf tahlili. Usta kiritgan sarf bilan bochkadagi jismoniy qoldiq kamayishi avtomat solishtirilib, kamomad va tafovut (<b>MISMATCH</b>) darhol ekranda qizil bilan ogohlantiriladi.
+              Diler bergan tannarx bilan sotilgan narx o'rtasidagi sof foyda (marja) avtomatik hisoblanadi. Do'kon egasi qaysi moy eng ko'p sof daromad keltirayotganini aniq ko'radi.
             </p>
             <div class="text-xs text-emerald-400 font-mono font-semibold pt-1 border-t border-white/10">
-              🔍 Usta va ombor o'rtasidagi har bir litr 100% shaffof nazoratda
+              📈 Har bir chekdan sof daromad ajratib boriladi
             </div>
           </div>
 
-          <!-- Feature 2: 5th Visit Free Gift Bonus & Auto Thank You SMS -->
+          <!-- Feature 2: Customer Retention & Auto Reminders -->
           <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-brand-500/30">
             <div class="flex items-center justify-between">
               <div class="w-12 h-12 rounded-2xl bg-brand-600/20 border border-brand-500/40 flex items-center justify-center text-brand-400 text-2xl">
-                <i class="fa-solid fa-gift"></i>
+                <i class="fa-solid fa-clock-rotate-left"></i>
               </div>
-              <span class="text-xs bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Sodiqlik & LTV</span>
+              <span class="text-xs bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Mijozlar Bazasi</span>
             </div>
-            <h3 class="text-xl font-bold text-white">5-Tashrif Bepul Sovg'a & Rahmat SMS</h3>
+            <h3 class="text-xl font-bold text-white">Avtomatik Kilometraj Eslatmasi</h3>
             <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Mashina raqami bo'yicha har bir tashrif avtomat sanaladi. Xizmat tugashi bilan mijozga Rahmat SMS boradi: navbatdagi moy sanasi (+90 kun / 7,000 km) hamda <b>5-moyda BEPUL moy filtri</b> sovg'asi holati (masalan: <i>3/5 tashrif</i>).
+              Moy almashtirgan mijozga 7,000 km yoki 90 kundan so'ng Telegram/SMS orqali avtomat xabar boradi: <i>«Hurmatli mijoz, moy almashtirish vaqti bo'ldi»</i>. Mijozlar boshqa servisga ketmaydi!
             </p>
             <div class="text-xs text-brand-300 font-mono font-semibold pt-1 border-t border-white/10">
-              🎁 5-tashrifdagi sovg'a sabab mijozlar 100% sizning do'konga qaytadi
+              🔄 Doimiy mijozlar qaytishi +35% ga oshadi
             </div>
           </div>
 
@@ -975,29 +955,29 @@
               </div>
               <span class="text-xs bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Usta Ulushi (KPI)</span>
             </div>
-            <h3 class="text-xl font-bold text-white">Usta Qahramon Ulushi & Sof Marja</h3>
+            <h3 class="text-xl font-bold text-white">Usta Qahramon Ulushini Hisoblash</h3>
             <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Xizmat haqi (moy almashtirish 30,000 so'm, filtr qo'yish) va mahsulot sotuvidan usta ulushini (50/50 yoki foiz stavkasi) tizim avtomat ajratib, diler tannarxi bo'yicha sof foyda marjasini aniq hisoblaydi.
+              Xizmat haqi (moy almashtirish 30,000 so'm, filtr qo'yish) va mahsulot sotuvidan usta ulushini (50/50 yoki foiz stavkasi) tizim avtomat ajratib, oylik hisobotda ko'rsatadi.
             </p>
             <div class="text-xs text-amber-300 font-mono font-semibold pt-1 border-t border-white/10">
-              🤝 Usta va rahbar o'rtasida 100% adolatli, nizosiz hisob-kitob
+              🤝 Usta va rahbar o'rtasida 100% shaffoflik
             </div>
           </div>
 
-          <!-- Feature 4: Debt Ledger (Nasiya) & Vehicle Digital Passport -->
+          <!-- Feature 4: Debt Ledger (Nasiya) & Vehicle Passport -->
           <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-cyan-500/30">
             <div class="flex items-center justify-between">
               <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-2xl">
                 <i class="fa-solid fa-address-book"></i>
               </div>
-              <span class="text-xs bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Pasport & Nasiya</span>
+              <span class="text-xs bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Nasiya & Pasport</span>
             </div>
-            <h3 class="text-xl font-bold text-white">Raqamli Servis Pasporti & Nasiya Daftari</h3>
+            <h3 class="text-xl font-bold text-white">Nasiya Daftari & Avtomobil Pasporti</h3>
             <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Har bir avtomobil uchun QR/havola orqali ochiladigan Raqamli Pasport: barcha almashtirilgan moylar, zavod tavsiyalari va 5-tashrif sovg'a progressi. Shuningdek, nasiyaga moy olganlar to'liq ro'yxati.
+              Qarzga moy olganlar daftari va avtomobil raqami bo'yicha to'liq servis kartochkasi: qachon qaysi moy quyilgani, filtr o'lchami va qancha to'langanligi 1 soniyada ochiladi.
             </p>
             <div class="text-xs text-cyan-300 font-mono font-semibold pt-1 border-t border-white/10">
-              📱 Mijoz o'z avtomobili pasportini Telegram orqali doim ko'rib turadi
+              📋 Qarzlar va mijozlar tarixi doimo nazoratda
             </div>
           </div>
         </div>
@@ -1331,27 +1311,6 @@
         toggleFullScreen();
       }
     });
-
-    // Dynamic Host-aware demo links
-    (function initDemoLinks() {
-      const host = window.location.hostname || 'localhost';
-      const crmLink = document.getElementById('headerCrmLink');
-      const tmaLink = document.getElementById('headerTmaLink');
-      if (crmLink) {
-        if (window.location.protocol === 'file:' || host === 'localhost' || host === '127.0.0.1') {
-          crmLink.href = 'http://localhost:8501';
-        } else {
-          crmLink.href = `http://${host}:8501`;
-        }
-      }
-      if (tmaLink) {
-        if (window.location.protocol === 'file:') {
-          tmaLink.href = 'http://localhost:8507/';
-        } else {
-          tmaLink.href = `http://${host}:8507/`;
-        }
-      }
-    })();
 
     // Initialize
     updateSlideUI();
