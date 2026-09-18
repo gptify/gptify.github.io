@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPro²⁴ & Thompson School — Porsche-Style Scrollytelling Taqdimot | AI-Enabled Ta'lim CRM</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #030712;
+      color: #f8fafc;
+      overflow-x: hidden;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Fixed Photographic Background Stage */
+    #photo-stage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      overflow: hidden;
+      background-color: #030712;
+    }
+
+    .school-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      filter: brightness(0.55) contrast(1.18);
+      transform: scale(1);
+    }
+    .school-photo.active {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+    .school-photo.inactive {
+      opacity: 0;
+      transform: scale(1.08);
+      pointer-events: none;
+    }
+
+    /* Studio Lighting & Educational Vignettes */
+    .studio-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(3, 7, 18, 0.25) 0%, rgba(3, 7, 18, 0.78) 70%, rgba(3, 7, 18, 0.98) 100%);
+      pointer-events: none;
+    }
+    .top-bottom-shadows {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(3,7,18,0.95) 0%, transparent 15%, transparent 80%, rgba(3,7,18,0.98) 100%);
+      pointer-events: none;
+    }
+
+    /* Large Glassmorphism Scrollytelling Panels */
+    .scrolly-section {
+      position: relative;
+      z-index: 10;
+      min-height: 130vh;
+      display: flex;
+      align-items: center;
+      padding: 6.5rem 2rem;
+      pointer-events: none;
+    }
+    .story-panel-lg {
+      pointer-events: auto;
+      background: rgba(8, 14, 28, 0.92);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1.5px solid rgba(255, 255, 255, 0.14);
+      border-radius: 2rem;
+      padding: 2.25rem 2.5rem;
+      max-width: 46rem;
+      width: 100%;
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.92), 0 0 50px rgba(37, 99, 235, 0.18);
+      transition: all 0.4s ease-out;
+    }
+
+    /* High-contrast text overrides for clinical/executive clarity */
+    .text-slate-400 { color: #cbd5e1 !important; }
+    .text-slate-500 { color: #94a3b8 !important; }
+
+    /* HUD Overlay Layers */
+    .hud-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      pointer-events: none;
+    }
+    .header-hud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      pointer-events: none;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      will-change: transform, opacity;
+    }
+    .header-hidden {
+      transform: translateY(-120%);
+      opacity: 0;
+    }
+    .hud-interactive {
+      pointer-events: auto;
+    }
+
+    /* Custom range slider */
+    input[type=range] {
+      accent-color: #38bdf8;
+      height: 8px;
+    }
+
+    /* Pulse Glow */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.08); }
+    }
+    .glow-pulse {
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white">
+
+  <!-- 1. FIXED PHOTOGRAPHIC BACKGROUND STAGE (5 STAGES) -->
+  <div id="photo-stage">
+    <img id="stage-img-1" src="assets/thompson_stage1_exterior_hd.jpg" alt="Thompson School Tashkent Campus" class="school-photo active">
+    <img id="stage-img-2" src="assets/thompson_stage2_classroom_hd.jpg" alt="Thompson School IELTS Classroom" class="school-photo inactive">
+    <img id="stage-img-3" src="assets/thompson_stage3_mocklab_hd.jpg" alt="Thompson Computer-Delivered IELTS Lab" class="school-photo inactive">
+    <img id="stage-img-4" src="assets/thompson_stage4_tablet_qr_hd.jpg" alt="Thompson School Smart Tablet & QR Check-In" class="school-photo inactive">
+    <img id="stage-img-5" src="assets/thompson_stage5_executive_hd.jpg" alt="Thompson School Leadership Boardroom" class="school-photo inactive">
+
+    <div class="studio-vignette"></div>
+    <div class="top-bottom-shadows"></div>
+  </div>
+
+  <!-- 2. TOP HUD: CO-BRANDED NAVIGATION HEADER (SMART AUTO-HIDE) -->
+  <header id="mainHeader" class="header-hud p-4 sm:p-5 flex items-center justify-between">
+    <!-- Left: Co-Branding Brand Lockup -->
+    <div class="hud-interactive flex items-center space-x-3 bg-slate-900/85 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-slate-700/60 shadow-xl">
+      <div class="flex items-center space-x-2.5">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 via-indigo-800 to-amber-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-blue-600/30 border border-amber-400/40 shrink-0">
+          <span>T</span>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="font-extrabold text-sm text-white tracking-wide">THOMPSON SCHOOL</span>
+            <span class="text-[10px] bg-amber-500/20 text-amber-300 font-bold px-1.5 py-0.5 rounded border border-amber-500/30">IELTS PARTNER</span>
+          </div>
+          <p class="text-[11px] text-slate-300 font-mono">Harry Thompson • Tashkent, Uzbekistan</p>
+        </div>
+      </div>
+
+      <div class="h-6 w-px bg-slate-700 hidden sm:block"></div>
+
+      <div class="hidden sm:flex items-center space-x-2">
+        <div class="flex items-center space-x-1.5">
+          <span class="font-black text-sm text-white tracking-tight">EduPro<sup class="text-blue-400 text-xs font-bold">24</sup></span>
+          <span class="text-[10px] font-bold bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded border border-blue-500/30">CRM OS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center: Interactive Chapter Pills -->
+    <nav class="hud-interactive hidden xl:flex items-center space-x-1 bg-slate-900/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-slate-700/60 shadow-xl text-xs font-mono">
+      <button onclick="scrollToChapter(1)" id="pill-1" class="px-3.5 py-1.5 rounded-full text-blue-400 bg-blue-500/20 font-bold transition">01 Markaz & Missiya</button>
+      <button onclick="scrollToChapter(2)" id="pill-2" class="px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white transition">02 AI Speed-to-Lead</button>
+      <button onclick="scrollToChapter(3)" id="pill-3" class="px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white transition">03 IELTS Mock & Xaritalar</button>
+      <button onclick="scrollToChapter(4)" id="pill-4" class="px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white transition">04 Smart Planshet & QR</button>
+      <button onclick="scrollToChapter(5)" id="pill-5" class="px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white transition">05 Moliyaviy ROI</button>
+    </nav>
+
+    <!-- Right: Quick Actions -->
+    <div class="hud-interactive flex items-center space-x-2.5">
+      <button onclick="toggleFullscreen()" class="bg-slate-900/80 hover:bg-slate-800 text-slate-200 px-3.5 py-2 rounded-xl text-xs font-bold border border-slate-700/60 shadow-lg flex items-center space-x-1.5 transition">
+        <i class="fa-solid fa-expand text-blue-400"></i>
+        <span class="hidden sm:inline">To'liq Ekran</span>
+      </button>
+
+      <a href="edupro24_executive_onepager_noprice.html" target="_blank" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-blue-600/30 flex items-center space-x-1.5 transition">
+        <i class="fa-solid fa-cubes"></i>
+        <span>EduPro²⁴ Pasporti &rarr;</span>
+      </a>
+
+      <a href="https://t.me/shukhrat_ai" target="_blank" class="bg-slate-900/80 hover:bg-slate-800 text-cyan-400 px-3.5 py-2 rounded-xl text-xs font-bold border border-cyan-500/30 shadow-lg flex items-center space-x-1.5 transition">
+        <i class="fa-brands fa-telegram"></i>
+        <span class="hidden md:inline">@shukhrat_ai</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 3. SCROLLYTELLING CONTAINER WITH 5 SECTIONS -->
+  <main class="relative z-10">
+
+    <!-- CHAPTER 01: CAMPUS, BRAND & VISION -->
+    <section id="chapter-1" class="scrolly-section justify-start lg:pl-16">
+      <div class="story-panel-lg space-y-6">
+        <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold tracking-wider text-blue-400 bg-blue-500/15 px-3 py-1.5 rounded-full border border-blue-500/30">
+          <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+          <span>01 / 05 • BRITISH COUNCIL IELTS HAMKORI & XALQARO TA'LIM TIZIMI</span>
+        </div>
+
+        <div class="space-y-3">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+            Thompson School & EduPro²⁴ — <br>
+            <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">IELTS va Ta'limda Yangi Davr Boshqaruvi.</span>
+          </h1>
+          <p class="text-base text-slate-200 leading-relaxed font-normal">
+            <strong>Thompson School</strong> (asoschisi <strong>Harry Thompson</strong>) — Toshkentdagi eng nufuzli ingliz tili va rasmiy IELTS tayyorlov markazlaridan biri. Har oy minglab o'quvchilar, filiallar, sinov darslari va to'lovlar oqimini eski passiv CRMlar (Modme, AlfaCRM) bilan emas, balki <strong>EduPro²⁴ AI-Enabled CRM</strong> bilan boshqarish orqali 100% tartib o'rnatiladi.
+          </p>
+        </div>
+
+        <!-- Official Campus Proof Card -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center space-x-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl shrink-0">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-xs font-mono text-amber-400 font-bold block uppercase tracking-wider">RASMIY TA'LIM BAZASI</span>
+            <h4 class="text-sm font-bold text-white">Thompson School Tashkent • Furqat ko'chasi & Filiallar</h4>
+            <p class="text-xs text-slate-300">General English, IELTS Speed Up, IELTS 7+, Mock Testing & Kids Education</p>
+          </div>
+        </div>
+
+        <!-- 3 Core Business Metrics -->
+        <div class="grid grid-cols-3 gap-3 pt-1">
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 text-center">
+            <span class="text-xs font-mono text-slate-400 block uppercase font-bold">Speed-to-Lead</span>
+            <span class="text-2xl sm:text-3xl font-black text-cyan-400 mt-1 block">8 Soniya</span>
+            <span class="text-[11px] text-slate-300">Reelsdan sinov darsiga</span>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 text-center">
+            <span class="text-xs font-mono text-slate-400 block uppercase font-bold">No-Show Qisqarishi</span>
+            <span class="text-2xl sm:text-3xl font-black text-emerald-400 mt-1 block">45% &rarr; 6%</span>
+            <span class="text-[11px] text-slate-300">Telegram 24h eslatma</span>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 text-center">
+            <span class="text-xs font-mono text-slate-400 block uppercase font-bold">Qarz Qalqoni</span>
+            <span class="text-2xl sm:text-3xl font-black text-amber-400 mt-1 block">98% Tushum</span>
+            <span class="text-[11px] text-slate-300">Smart Planshet & Click havolasi</span>
+          </div>
+        </div>
+
+        <!-- Scroll CTA -->
+        <div class="pt-2 flex items-center justify-between">
+          <button onclick="scrollToChapter(2)" class="px-5 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm flex items-center space-x-2 transition shadow-lg shadow-blue-600/30">
+            <span>AI Qabul Konversiyasini Ko'rish</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <span class="text-xs font-mono text-slate-400 hidden sm:inline">Pastga aylantiring &darr; (yoki F bosing)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 02: AI SPEED-TO-LEAD & ADMISSIONS -->
+    <section id="chapter-2" class="scrolly-section justify-end lg:pr-16">
+      <div class="story-panel-lg space-y-6">
+        <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold tracking-wider text-cyan-400 bg-cyan-500/15 px-3 py-1.5 rounded-full border border-cyan-500/30">
+          <i class="fa-solid fa-bolt text-cyan-400"></i>
+          <span>02 / 05 • REELS, TIKTOK VA TELEGRAM LIDLARINI 100% ILG'ASH</span>
+        </div>
+
+        <div class="space-y-3">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+            Eski CRM'larda 45% Lid Yo'qotilar Edi. <br>
+            <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">EduPro²⁴ Talabani 8 Soniyada Sinov Darsiga Yozadi.</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+            Harry Thompson videolari ostida va Telegram botda kuniga yuzlab o'quvchilar izoh qoldiradi. Agar admin 3 soatdan keyin qo'ng'iroq qilsa — lid soviydi. <strong>EduPro²⁴ Speed-to-Lead AI</strong> soniyalar ichida o'quvchining hozirgi darajasini (B1/B2) aniqlab, Furqat yoki Chilonzor filialidagi bo'sh joyga sinov darsi talonini beradi.
+          </p>
+        </div>
+
+        <!-- Interactive Speed-to-Lead Simulator -->
+        <div class="p-5 rounded-2xl bg-slate-900/95 border border-cyan-500/30 space-y-4">
+          <div class="flex items-center justify-between pb-2 border-b border-slate-800">
+            <span class="text-xs font-mono text-cyan-400 font-bold uppercase tracking-wide flex items-center gap-1.5">
+              <i class="fa-brands fa-instagram text-pink-400"></i>
+              Jonli Simulyatsiya: Instagram Reels Murojaati
+            </span>
+            <span class="text-[11px] font-mono bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded font-bold">8 soniya tezlik</span>
+          </div>
+
+          <!-- Chat Stream Box -->
+          <div id="demoChatStream" class="space-y-2.5 max-h-48 overflow-y-auto pr-1 text-xs">
+            <div class="p-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-slate-200">
+              <div class="flex justify-between text-[11px] text-pink-400 font-bold mb-1">
+                <span>@jasur_ielts (Instagram DM)</span>
+                <span class="text-slate-400 font-mono">14:20:01</span>
+              </div>
+              <p>"Assalomu alaykum! Harry Thompsonning IELTS 7+ intensiv kursi qachon boshlanadi? Dars qayerda bo'ladi?"</p>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-blue-600/20 border border-blue-500/40 text-blue-100">
+              <div class="flex justify-between text-[11px] text-cyan-300 font-bold mb-1">
+                <span>EduPro²⁴ AI Qabul Agenti</span>
+                <span class="text-slate-400 font-mono">14:20:09 (+8 soniya)</span>
+              </div>
+              <p>"Assalomu alaykum Jasur! Thompson School Furqat filialida IELTS 7+ guruhimiz seshanba-payshanba soat 16:00 da boshlanadi. Dastlab darajangizni aniqlash uchun bepul Mock-testga yozib qo'yaymi? Telefon raqamingizni qoldiring."</p>
+            </div>
+          </div>
+
+          <!-- Interactive Action Button -->
+          <div class="pt-2 flex flex-wrap items-center justify-between gap-2 border-t border-slate-800">
+            <button onclick="runSpeedToLeadDemo()" class="px-4 py-2 bg-gradient-to-r from-pink-600 to-purple-600 hover:opacity-90 text-white font-bold rounded-xl text-xs flex items-center space-x-2 transition shadow-lg shadow-pink-600/20">
+              <i class="fa-solid fa-play"></i>
+              <span>Yangi Instagram Lidini Sinash</span>
+            </button>
+            <span class="text-[11px] text-slate-400 font-mono">Natija: 0 daqiqa yo'qotish, 100% CRMga tushdi</span>
+          </div>
+        </div>
+
+        <!-- Lead Management Kanban Voronka -->
+        <div class="p-4 rounded-2xl bg-slate-900/95 border border-blue-500/30 space-y-3">
+          <div class="flex items-center justify-between pb-2 border-b border-slate-800">
+            <span class="text-xs font-mono text-blue-400 font-bold uppercase tracking-wide flex items-center gap-1.5">
+              <i class="fa-solid fa-filter-circle-dollar"></i>
+              To'laqonli Lead Management & Kanban Voronka
+            </span>
+            <span class="text-[11px] font-mono bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-bold">No-Lead-Left-Behind</span>
+          </div>
+
+          <div class="grid grid-cols-4 gap-2 text-center text-xs">
+            <div class="p-2 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-[10px] text-slate-400 block uppercase font-mono">1. Yangi Lidlar</span>
+              <span class="text-sm font-bold text-blue-400 mt-0.5 block">18 ta</span>
+              <span class="text-[10px] text-slate-300">Omnichannel</span>
+            </div>
+            <div class="p-2 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-[10px] text-slate-400 block uppercase font-mono">2. AI Saralagan</span>
+              <span class="text-sm font-bold text-cyan-400 mt-0.5 block">34 ta</span>
+              <span class="text-[10px] text-slate-300">Daraja & Sinov</span>
+            </div>
+            <div class="p-2 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-[10px] text-amber-300 block uppercase font-mono">3. Sinovga Keldi</span>
+              <span class="text-sm font-bold text-amber-400 mt-0.5 block">22 ta</span>
+              <span class="text-[10px] text-slate-300">Mock & Audit</span>
+            </div>
+            <div class="p-2 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-[10px] text-emerald-300 block uppercase font-mono">4. To'lov / Guruh</span>
+              <span class="text-sm font-bold text-emerald-400 mt-0.5 block">16 ta</span>
+              <span class="text-[10px] text-slate-300">Click & Guruh</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-300">
+            <div class="flex items-center gap-1.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              <i class="fa-solid fa-bell text-amber-400"></i>
+              <span><strong>15 daqiqalik SLA:</strong> Kechikkan lidda rahbar ogohlantiriladi</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-slate-950/60 p-2 rounded-lg border border-slate-800/80">
+              <i class="fa-solid fa-recycle text-emerald-400"></i>
+              <span><strong>AI Retargeting:</strong> 3,000+ eski bazani 0 UZSga uyg'otish</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <div class="pt-2">
+          <button onclick="scrollToChapter(3)" class="px-5 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm flex items-center space-x-2 transition shadow-lg shadow-blue-600/30">
+            <span>IELTS Mock & Dars Jadvallarini Ko'rish</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 03: IELTS MOCK & CLASSROOM GRID -->
+    <section id="chapter-3" class="scrolly-section justify-start lg:pl-16">
+      <div class="story-panel-lg space-y-6">
+        <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold tracking-wider text-indigo-400 bg-indigo-500/15 px-3 py-1.5 rounded-full border border-indigo-500/30">
+          <i class="fa-solid fa-table-cells text-indigo-400"></i>
+          <span>03 / 05 • XONALAR BANDLIGI & IELTS MOCK EXAM NAZORATI</span>
+        </div>
+
+        <div class="space-y-3">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+            Xonalar Xaritasi, O'qituvchilar Jadvali va <br>
+            <span class="bg-gradient-to-r from-indigo-400 via-blue-400 to-teal-300 bg-clip-text text-transparent">IELTS Mock Testlarini Avtomat Taqsimlash.</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+            Thompson School filiallarida har hafta oxiri yuzlab o'quvchilar IELTS Mock imtihonlariga kiradi. <strong>EduPro²⁴ Smart Grid</strong> xonalarning sig'imini (capacity) real vaqtda ko'rsatadi, test audio stansiyalarini taqsimlaydi va <strong>Listening, Reading, Writing, Speaking</strong> bo'yicha Band Score ballarini avtomatik hisoblab chiqadi.
+          </p>
+        </div>
+
+        <!-- Interactive IELTS Mock Band Score Preview Card -->
+        <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div class="flex items-center space-x-3">
+              <span class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm border border-amber-500/30">
+                <i class="fa-solid fa-award"></i>
+              </span>
+              <div>
+                <h4 class="text-sm font-bold text-white">Thompson IELTS Mock Exam #182 • CD-IELTS Lab</h4>
+                <p class="text-xs text-slate-300">O'quvchi: <strong>Malika Rustamova</strong> • Examiner: <strong>Mr. Thompson</strong></p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-slate-400 block font-mono">Umumiy Natija:</span>
+              <span class="text-xl font-black text-emerald-400">Band 8.0</span>
+            </div>
+          </div>
+
+          <!-- 4 Skill Section Scores -->
+          <div class="grid grid-cols-4 gap-2 text-center text-xs font-mono">
+            <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-slate-400 block text-[11px]">Listening</span>
+              <span class="text-base font-bold text-cyan-400 mt-0.5 block">8.5</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-slate-400 block text-[11px]">Reading</span>
+              <span class="text-base font-bold text-blue-400 mt-0.5 block">8.0</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-slate-400 block text-[11px]">Writing</span>
+              <span class="text-base font-bold text-amber-400 mt-0.5 block">7.5</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-slate-400 block text-[11px]">Speaking</span>
+              <span class="text-base font-bold text-emerald-400 mt-0.5 block">7.5</span>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-300">
+            ✓ Natija avtomatik ravishda o'quvchi va ota-onaning <strong>Telegram botiga PDF sertifikat</strong> shaklida yuborildi.
+          </p>
+        </div>
+
+        <!-- Next Button -->
+        <div class="pt-2">
+          <button onclick="scrollToChapter(4)" class="px-5 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm flex items-center space-x-2 transition shadow-lg shadow-blue-600/30">
+            <span>Smart Planshet & QR Davomatini Ko'rish</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 04: SMART TABLET & WALL QR CHECK-IN & TELEGRAM TMA -->
+    <section id="chapter-4" class="scrolly-section justify-end lg:pr-16">
+      <div class="story-panel-lg space-y-6">
+        <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold tracking-wider text-emerald-400 bg-emerald-500/15 px-3 py-1.5 rounded-full border border-emerald-500/30">
+          <i class="fa-solid fa-tablet-screen-button text-emerald-400"></i>
+          <span>04 / 05 • SMART PLANSHET & DEVORDAGI QR: 0 UZS USKUNA XARAJATI</span>
+        </div>
+
+        <div class="space-y-3">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+            Devordagi QR-Kod & Smart Planshet: <br>
+            <span class="bg-gradient-to-r from-emerald-400 to-cyan-300 bg-clip-text text-transparent">Qimmat Turniketsiz 100% Avtomat Davomat.</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+            30–50 million so'mlik og'ir temir turniketlar, bino devorlarini buzish yoki o'quvchilarni tirbandlikda kutdirish shart emas. <strong>Devorga o'rnatilgan ixcham planshet yoki QR-stend</strong> orqali o'quvchi 1 soniyada ro'yxatdan o'tadi — ota-onaga esa Telegram Mini App orqali lahzali bildirishnoma boradi.
+          </p>
+        </div>
+
+        <!-- Smart Check-In & Qarz Qalqoni Explanation Card -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs">
+          <!-- Flow 1: Tablet / QR Attendance -->
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2">
+            <div class="flex items-center space-x-2 text-cyan-400 font-bold">
+              <i class="fa-solid fa-qrcode text-base"></i>
+              <span>Smart Planshet & Devordagi QR:</span>
+            </div>
+            <p class="text-slate-300 text-xs">
+              O'quvchi Telegram Mini App'dagi shaxsiy QR taloni bilan devordagi planshet kamerasiga yaqinlashadi yoki devor QR-kodini skanerlaydi. Davomat bir zumda tizimga tushadi.
+            </p>
+            <div class="p-2 rounded-xl bg-slate-800/80 border border-slate-700 text-[11px] text-emerald-300">
+              Telegram bildirish: <em>"Farzandingiz Sardor soat 08:52 da Furqat filialiga kirdi ✅"</em>
+            </div>
+          </div>
+
+          <!-- Flow 2: No-Friction Qarz Qalqoni -->
+          <div class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2">
+            <div class="flex items-center space-x-2 text-amber-400 font-bold">
+              <i class="fa-solid fa-hand-holding-dollar text-base"></i>
+              <span>Yumshoq Qarz Qalqoni (Uyaltirmasdan):</span>
+            </div>
+            <p class="text-slate-300 text-xs">
+              O'quvchini eshik oldida yoki guruhda to'xtatib uyaltirish kerak emas. To'lov muddati o'tgan bo'lsa, tizim ota-onaning shaxsiy Telegramiga avtomatik muloyim Click/Payme to'lov havolasini yuboradi.
+            </p>
+            <div class="p-2 rounded-xl bg-slate-800/80 border border-slate-700 text-[11px] text-cyan-300">
+              Avtomat to'lov: <em>"Aprel oyi to'lovi uchun [ Click orqali to'lash 💳 ]"</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Button -->
+        <div class="pt-2">
+          <button onclick="scrollToChapter(5)" class="px-5 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm flex items-center space-x-2 transition shadow-lg shadow-blue-600/30">
+            <span>Moliyaviy ROI Kalkulyatorini Hisoblash</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 05: STRATEGIC ROI & LIVE SYSTEM CTA -->
+    <section id="chapter-5" class="scrolly-section justify-start lg:pl-16">
+      <div class="story-panel-lg space-y-6">
+        <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold tracking-wider text-amber-400 bg-amber-500/15 px-3 py-1.5 rounded-full border border-amber-500/30">
+          <i class="fa-solid fa-chart-line text-amber-400"></i>
+          <span>05 / 05 • STRATEGIK BIZNES KO'RSATKICHLARI & HAMKORLIK</span>
+        </div>
+
+        <div class="space-y-3">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+            Harry Thompson va Rahbariyat Uchun <br>
+            <span class="bg-gradient-to-r from-amber-400 via-emerald-300 to-cyan-300 bg-clip-text text-transparent">Shaffof Moliyaviy Foyda (ROI).</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+            EduPro²⁴ shunchaki xarajat emas — bu markazning har oy boy berayotgan <strong>30–80 million so'm</strong> yo'qotishlarini qaytaruvchi investitsiya. O'quvchilar sonini tanlang va markazingiz uchun oylik qaytadigan summani ko'ring:
+          </p>
+        </div>
+
+        <!-- Dynamic ROI Calculator Widget -->
+        <div class="p-5 rounded-2xl bg-slate-900/95 border border-amber-500/40 space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-mono text-slate-300 font-bold uppercase">Markazdagi Jami O'quvchilar Soni:</span>
+            <span class="text-lg font-black text-amber-400 font-mono" id="displayStudentCount">1,200 nafar</span>
+          </div>
+
+          <!-- Slider -->
+          <input type="range" id="studentSlider" min="300" max="3500" step="50" value="1200" oninput="updateEduROI(this.value)" class="w-full cursor-pointer">
+
+          <!-- Calculated ROI Results Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-[11px] text-slate-400 block font-bold uppercase">No-Show Qisqarishidan Saqlangan Daromad:</span>
+              <span class="text-xl sm:text-2xl font-black text-emerald-400 mt-1 block" id="calcNoShowRecovered">18,400,000 UZS</span>
+              <span class="text-[11px] text-slate-300">Sinov darslariga kelish 45% ga ortadi</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-[11px] text-slate-400 block font-bold uppercase">Smart Check-In Qarz Qalqonidan Undirilgan Mablag':</span>
+              <span class="text-xl sm:text-2xl font-black text-cyan-400 mt-1 block" id="calcDebtRecovered">36,000,000 UZS</span>
+              <span class="text-[11px] text-slate-300">O'z vaqtida Click/Payme to'lovlari</span>
+            </div>
+          </div>
+
+          <!-- Total Bottom-Line Highlight -->
+          <div class="p-3.5 rounded-xl bg-gradient-to-r from-blue-600/30 via-indigo-600/30 to-emerald-600/30 border border-blue-500/40 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold text-white uppercase tracking-wide block">Jami Oylik Qaytarilgan Foyda:</span>
+              <span class="text-xs text-slate-300">Yillik samara: <strong class="text-emerald-300" id="calcAnnualRoi">652,800,000 UZS</strong></span>
+            </div>
+            <span class="text-2xl sm:text-3xl font-black text-emerald-400" id="calcTotalMonthlyRoi">54,400,000 UZS</span>
+          </div>
+        </div>
+
+        <!-- Implementation Roadmap & Guarantees with 1 Month Test -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-white block uppercase tracking-wide">Thompson School Uchun 1 Kunda Joriy Etish & Kafolat:</span>
+            <span class="text-[10.5px] bg-emerald-500/20 text-emerald-300 font-bold px-2 py-0.5 rounded border border-emerald-500/30">1 Oylik Bepul Sinov</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-slate-300 text-[11.5px]">
+            <div>• <strong>2 Soatda Ko'chirish:</strong> Guruhlar va o'quvchilar bazasi xatosiz o'tkaziladi.</div>
+            <div>• <strong>0 To'xtalish:</strong> Darslar va jadvallar bir soniyaga ham to'xtatilmaydi.</div>
+            <div>• <strong>1 Oylik Bepul Pilot:</strong> Filialingizda 30 kun xavf-xatarsiz to'liq sinov.</div>
+          </div>
+        </div>
+
+        <!-- Leadership Team Card -->
+        <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2 text-xs">
+          <span class="text-xs font-bold text-slate-300 uppercase tracking-wide block">Loyiha Yetakchilari & Mas'ul Jamoa:</span>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-[11px]">
+            <div class="p-2 rounded-xl bg-slate-900/90 border border-slate-800">
+              <span class="font-extrabold text-white block">Shukhrat Iskandarov</span>
+              <span class="text-[10px] text-blue-400 block mb-1">GPTify.co Asoschisi • Bosh Arxitektor</span>
+              <span class="text-slate-400 text-[10px]">12+ yillik B2B & AI tajribasi (Berlin & Toshkent).</span>
+            </div>
+            <div class="p-2 rounded-xl bg-slate-900/90 border border-slate-800">
+              <span class="font-extrabold text-white block">George Calcea</span>
+              <span class="text-[10px] text-indigo-400 block mb-1">Cubeo.ai Asoschisi • Xalqaro Hamkor</span>
+              <span class="text-slate-400 text-[10px]">10+ yillik SaaS & AI tizimlari eksperti (Ruminiya).</span>
+            </div>
+            <div class="p-2 rounded-xl bg-slate-900/90 border border-slate-800">
+              <span class="font-extrabold text-white block">Davlatbek Iskandarov</span>
+              <span class="text-[10px] text-emerald-400 block mb-1">PhD • Joriy Etish & Ta'lim Rahbari</span>
+              <span class="text-slate-400 text-[10px]">10+ yillik akademik boshqaruv & xodimlarni o'qitish.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+          <a href="edupro24_executive_onepager_noprice.html" target="_blank" class="flex-1 py-3.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-2xl text-center text-sm shadow-xl shadow-blue-600/30 transition flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>EduPro²⁴ To'liq Pasportini Ochish &rarr;</span>
+          </a>
+
+          <a href="https://t.me/shukhrat_ai" target="_blank" class="py-3.5 px-6 bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/40 font-bold rounded-2xl text-center text-sm transition flex items-center justify-center space-x-2">
+            <i class="fa-brands fa-telegram text-base"></i>
+            <span>Shukhrat Iskandarov bilan Bog'lanish</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. BOTTOM STATUS BAR HUD -->
+  <footer class="fixed bottom-4 left-4 right-4 z-40 pointer-events-none flex items-center justify-between text-xs font-mono text-slate-400">
+    <div class="hud-interactive bg-slate-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-700/60 shadow-lg flex items-center space-x-2">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="font-bold text-slate-200">THOMPSON SCHOOL</span>
+      <span class="text-slate-500">|</span>
+      <span>EDUPRO²⁴ CONNECTED</span>
+    </div>
+
+    <div class="hud-interactive hidden sm:flex items-center space-x-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-700/60 shadow-lg">
+      <span>Klaviatura:</span>
+      <kbd class="px-1.5 py-0.5 bg-slate-800 rounded text-slate-200 border border-slate-700">&darr;</kbd>
+      <kbd class="px-1.5 py-0.5 bg-slate-800 rounded text-slate-200 border border-slate-700">&uarr;</kbd>
+      <span class="text-slate-500">|</span>
+      <kbd class="px-1.5 py-0.5 bg-slate-800 rounded text-slate-200 border border-slate-700">F</kbd>
+      <span>To'liq ekran</span>
+    </div>
+  </footer>
+
+  <!-- 5. INTERACTIVE JAVASCRIPT CONTROLLER -->
+  <script>
+    function playChime() {
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(587.33, now); // D5
+        osc.frequency.exponentialRampToValueAtTime(880, now + 0.3); // A5
+        gain.gain.setValueAtTime(0.15, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.6);
+      } catch (e) {}
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    function scrollToChapter(chNum) {
+      const target = document.getElementById('chapter-' + chNum);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        playChime();
+      }
+    }
+
+    let lastScrollY = window.scrollY;
+    const headerEl = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > 120 && currentScrollY > lastScrollY) {
+        headerEl.classList.add('header-hidden');
+      } else {
+        headerEl.classList.remove('header-hidden');
+      }
+      lastScrollY = currentScrollY;
+    }, { passive: true });
+
+    window.addEventListener('mousemove', (e) => {
+      if (e.clientY < 80) {
+        headerEl.classList.remove('header-hidden');
+      }
+    });
+
+    const chapters = [1, 2, 3, 4, 5];
+    let currentChapter = 1;
+
+    function setStage(num) {
+      if (currentChapter === num) return;
+      currentChapter = num;
+
+      for (let i = 1; i <= 5; i++) {
+        const img = document.getElementById('stage-img-' + i);
+        if (img) {
+          if (i === num) {
+            img.classList.remove('inactive');
+            img.classList.add('active');
+          } else {
+            img.classList.remove('active');
+            img.classList.add('inactive');
+          }
+        }
+      }
+
+      for (let i = 1; i <= 5; i++) {
+        const pill = document.getElementById('pill-' + i);
+        if (pill) {
+          if (i === num) {
+            pill.className = 'px-3.5 py-1.5 rounded-full text-blue-400 bg-blue-500/20 font-bold transition';
+          } else {
+            pill.className = 'px-3.5 py-1.5 rounded-full text-slate-300 hover:text-white transition';
+          }
+        }
+      }
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          const num = parseInt(id.replace('chapter-', ''));
+          if (num) setStage(num);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.35
+    });
+
+    document.querySelectorAll('.scrolly-section').forEach(sec => observer.observe(sec));
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+        if (currentChapter < 5) {
+          e.preventDefault();
+          scrollToChapter(currentChapter + 1);
+        }
+      } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+        if (currentChapter > 1) {
+          e.preventDefault();
+          scrollToChapter(currentChapter - 1);
+        }
+      }
+    });
+
+    function updateEduROI(studentCount) {
+      const count = parseInt(studentCount);
+      document.getElementById('displayStudentCount').innerText = count.toLocaleString('uz-UZ') + ' nafar';
+
+      const noShowRecovered = Math.round(count * 15333);
+      const debtRecovered = Math.round(count * 30000);
+      const totalMonthly = noShowRecovered + debtRecovered;
+      const totalAnnual = totalMonthly * 12;
+
+      document.getElementById('calcNoShowRecovered').innerText = noShowRecovered.toLocaleString('uz-UZ') + ' UZS';
+      document.getElementById('calcDebtRecovered').innerText = debtRecovered.toLocaleString('uz-UZ') + ' UZS';
+      document.getElementById('calcTotalMonthlyRoi').innerText = totalMonthly.toLocaleString('uz-UZ') + ' UZS';
+      document.getElementById('calcAnnualRoi').innerText = totalAnnual.toLocaleString('uz-UZ') + ' UZS';
+    }
+
+    const sampleLeads = [
+      {
+        user: '@nodir_ielts8',
+        time: '14:24:10',
+        message: 'Assalomu alaykum! Chilonzor filialingizda shanba kuni IELTS Mock testga yozilsa bo\'ladimi?',
+        aiReply: 'Assalomu alaykum Nodir! Shanba kuni soat 10:00 da Chilonzor filialida CD-IELTS Mock testimizda 4 ta bo\'sh o\'rin bor. Qatnashish uchun telefon raqamingizni qoldiring.'
+      },
+      {
+        user: '@shaxzoda_english',
+        time: '14:28:45',
+        message: 'General English kursingiz narxi qancha va haftada necha kun bo\'ladi?',
+        aiReply: 'Assalomu alaykum Shaxzoda! General English darslarimiz haftada 3 kun 1.5 soatdan bo\'ladi. Bepul sinov darsi uchun bugun soat 17:00 ga Furqat filialiga yozib qo\'yaymi?'
+      }
+    ];
+    let leadIndex = 0;
+
+    function runSpeedToLeadDemo() {
+      const stream = document.getElementById('demoChatStream');
+      const lead = sampleLeads[leadIndex % sampleLeads.length];
+      leadIndex++;
+
+      playChime();
+
+      const userEl = document.createElement('div');
+      userEl.className = 'p-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-slate-200 transform translate-y-2 opacity-0 transition duration-300';
+      userEl.innerHTML = `
+        <div class="flex justify-between text-[11px] text-pink-400 font-bold mb-1">
+          <span>${lead.user} (Instagram DM)</span>
+          <span class="text-slate-400 font-mono">${lead.time}</span>
+        </div>
+        <p>"${lead.message}"</p>
+      `;
+      stream.appendChild(userEl);
+
+      setTimeout(() => {
+        userEl.classList.remove('translate-y-2', 'opacity-0');
+        stream.scrollTop = stream.scrollHeight;
+      }, 50);
+
+      setTimeout(() => {
+        playChime();
+        const aiEl = document.createElement('div');
+        aiEl.className = 'p-2.5 rounded-xl bg-blue-600/20 border border-blue-500/40 text-blue-100 transform translate-y-2 opacity-0 transition duration-300';
+        aiEl.innerHTML = `
+          <div class="flex justify-between text-[11px] text-cyan-300 font-bold mb-1">
+            <span>EduPro²⁴ AI Qabul Agenti</span>
+            <span class="text-slate-400 font-mono">Hozirgina (+8 soniya)</span>
+          </div>
+          <p>"${lead.aiReply}"</p>
+        `;
+        stream.appendChild(aiEl);
+        setTimeout(() => {
+          aiEl.classList.remove('translate-y-2', 'opacity-0');
+          stream.scrollTop = stream.scrollHeight;
+        }, 50);
+      }, 800);
+    }
+  </script>
+</body>
+</html>

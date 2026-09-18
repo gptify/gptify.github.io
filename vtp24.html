@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPro²⁴ — Interaktiv Porsche Taqdimot (AvtoPro Oil & Usta Qahramon)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              400: '#60A5FA',
+              500: '#3B82F6',
+              600: '#2563EB',
+              700: '#1D4ED8',
+            },
+            accent: {
+              emerald: '#10B981',
+              amber: '#F59E0B',
+              cyan: '#06B6D4',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg: #05070D;
+      --card-bg: rgba(10, 16, 30, 0.90);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --accent: #2563EB;
+      --accent-glow: rgba(37, 99, 235, 0.45);
+      --emerald: #10B981;
+      --cyan: #06B6D4;
+      --text: #F8FAFC;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    /* Photographic Backdrop Transitions */
+    .car-backdrop {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    .car-backdrop.active {
+      opacity: 1;
+      transform: scale(1);
+      filter: brightness(0.65) contrast(1.10);
+    }
+
+    .car-backdrop.inactive {
+      opacity: 0;
+      transform: scale(1.06);
+      filter: brightness(0.45) contrast(1.05);
+    }
+
+    /* Glassmorphic Cards (Higher Contrast & Visibility) */
+    .glass-panel {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 45px rgba(37, 99, 235, 0.15);
+    }
+
+    .glass-panel-glow {
+      background: rgba(12, 19, 36, 0.94);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid rgba(96, 165, 250, 0.4);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.75), 0 0 55px rgba(37, 99, 235, 0.32);
+    }
+
+    /* Slide Switcher Animations */
+    .slide-view {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 32px 80px 32px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(22px) scale(0.98);
+      transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 10;
+    }
+
+    .slide-view.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Glowing tags & badges */
+    .tech-tag {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    /* Progress bar smooth track */
+    .progress-pill {
+      transition: all 0.3s ease;
+    }
+    .progress-pill.active {
+      background: #3B82F6;
+      box-shadow: 0 0 14px rgba(59, 130, 246, 0.85);
+      width: 36px;
+    }
+
+    /* Custom scrollbar for inner scroll if needed */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================================== -->
+  <!-- PHOTOGRAPHIC PORSCHE BACKDROP LAYERS (4 STAGES)                 -->
+  <!-- =============================================================== -->
+  <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none select-none">
+    <!-- Stage 1: Porsche 911 GT Showroom / 360 Exterior -->
+    <img id="carBackdrop1" src="assets/stage1_exterior.jpg" alt="Porsche 911 Exterior" class="car-backdrop active">
+    <!-- Stage 2: Porsche Cockpit / Driver Door Open -->
+    <img id="carBackdrop2" src="assets/stage2_cockpit.jpg" alt="Porsche Cockpit Open Door" class="car-backdrop inactive">
+    <!-- Stage 3: Porsche Engine Bay / Hood Open -->
+    <img id="carBackdrop3" src="assets/stage3_hood.jpg" alt="Porsche Engine Hood Open" class="car-backdrop inactive">
+    <!-- Stage 4: Porsche Engine Macro / Telemetry -->
+    <img id="carBackdrop4" src="assets/stage4_engine.jpg" alt="Porsche Macro Engine Telemetry" class="car-backdrop inactive">
+
+    <!-- Cinematic Vignette & Studio Lighting Gradients -->
+    <div class="absolute inset-0 bg-gradient-to-t from-[#05070D] via-[#05070D]/45 to-[#05070D]/85"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#05070D]/40 to-[#05070D]/90"></div>
+    <div class="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#05070D] to-transparent"></div>
+    <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-[#05070D] to-transparent"></div>
+  </div>
+
+  <!-- =============================================================== -->
+  <!-- TOP TELEMETRY HUD BAR                                           -->
+  <!-- =============================================================== -->
+  <header class="fixed top-0 inset-x-0 z-50 h-16 bg-[#05070D]/85 backdrop-blur-xl border-b border-white/10 px-4 sm:px-8 flex items-center justify-between">
+    <!-- Left: Brand -->
+    <div class="flex items-center gap-3.5">
+      <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 via-indigo-600 to-accent-cyan flex items-center justify-center font-black text-white text-lg shadow-lg shadow-brand-600/40">
+        A<sup class="text-[11px] -ml-0.5">24</sup>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-lg font-black tracking-tight text-white font-['Space_Grotesk']">
+            AutoPro<sup class="text-brand-400 font-bold">24</sup>
+          </span>
+          <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-xs font-bold text-emerald-400">
+            JONLI MIJOZ TAQDIMOTI
+          </span>
+        </div>
+        <span class="block text-xs text-slate-300 font-medium">AvtoPro Oil • Usta Qahramon & O'ktam Adhamov</span>
+      </div>
+    </div>
+
+    <!-- Center: Porsche 4-Stage Direct Switcher -->
+    <div class="hidden md:flex items-center gap-2 bg-slate-950/80 border border-slate-800 rounded-2xl p-1.5 backdrop-blur-md">
+      <button id="carNav1" onclick="setCarStage(1, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-brand-600 text-white shadow-md">
+        <i class="fa-solid fa-car-side text-xs"></i> 1. Tashqi (360°)
+      </button>
+      <button id="carNav2" onclick="setCarStage(2, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2">
+        <i class="fa-solid fa-door-open text-xs text-amber-400"></i> 2. Eshik (POS)
+      </button>
+      <button id="carNav3" onclick="setCarStage(3, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2">
+        <i class="fa-solid fa-gears text-xs text-emerald-400"></i> 3. Kapot (Ombor)
+      </button>
+      <button id="carNav4" onclick="setCarStage(4, true)" class="px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2">
+        <i class="fa-solid fa-microchip text-xs text-cyan-400"></i> 4. Telemetriya
+      </button>
+    </div>
+
+    <!-- Right: Live Demo Links, Slide Count & Controls -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- 1. Web CRM Demo Quick Link -->
+      <a href="/crm" target="_blank" rel="noopener noreferrer" id="headerCrmLink"
+         title="AutoPro²⁴ Katta Ekranli Web CRM Cockpit (Streamlit, Port 8501)"
+         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold transition shadow-lg shadow-blue-600/30 border border-blue-400/40 active:scale-95">
+        <i class="fa-solid fa-desktop text-xs text-cyan-300"></i>
+        <span class="hidden md:inline">Web CRM Demo</span>
+        <span class="md:hidden">CRM Demo</span>
+      </a>
+
+      <!-- 2. Telegram App Demo Quick Link -->
+      <a href="/" target="_blank" rel="noopener noreferrer" id="headerTmaLink"
+         title="AutoPro²⁴ Telegram Mini App (TMA) Mobil Kassa POS (Port 8507)"
+         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-cyan-500/40 text-cyan-300 hover:text-white text-xs font-bold transition shadow-lg shadow-cyan-600/20 active:scale-95">
+        <i class="fa-brands fa-telegram text-xs text-cyan-400"></i>
+        <span class="hidden md:inline">Telegram App Demo</span>
+        <span class="md:hidden">Telegram POS</span>
+      </a>
+
+      <!-- 3. Classic Deck Switcher -->
+      <a href="presentation.html" class="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white text-xs font-semibold transition">
+        <i class="fa-regular fa-file-lines text-brand-400"></i> Klassik
+      </a>
+
+      <div class="text-right hidden sm:block">
+        <div id="slideCounter" class="text-sm font-extrabold text-white font-mono">1 / 9</div>
+        <div id="carStageBadge" class="text-xs text-brand-400 font-bold uppercase tracking-wider">Porsche 911 GT Showroom</div>
+      </div>
+      <button onclick="toggleAudio()" id="audioBtn" title="Ovoz effektlari" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-xs sm:text-sm transition">
+        <i id="audioIcon" class="fa-solid fa-volume-high"></i>
+      </button>
+      <button onclick="toggleFullScreen()" title="To'liq ekran (F11)" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-slate-900 border border-slate-700/80 hover:border-brand-500 text-slate-300 hover:text-white flex items-center justify-center text-xs sm:text-sm transition">
+        <i class="fa-solid fa-expand"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- =============================================================== -->
+  <!-- MAIN SLIDES CONTAINER                                           -->
+  <!-- =============================================================== -->
+  <main class="relative flex-1 w-full h-full overflow-hidden">
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 1: INTRO / PORSCHE GT SHOWROOM                          -->
+    <!-- ============================================================= -->
+    <div class="slide-view active" id="slide1">
+      <div class="max-w-4xl w-full mx-auto text-center space-y-8">
+        <!-- Floating Badge -->
+        <div class="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-brand-950/90 border border-brand-500/50 text-brand-300 text-sm font-bold backdrop-blur-md shadow-xl shadow-brand-500/25">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+          AutoPro²⁴ • GPTify Muhandisligi
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.15]">
+          Avtoservislar Uchun <br>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400">
+            AI CRM Tizimi
+          </span>
+        </h1>
+
+        <p class="text-lg sm:text-2xl text-slate-200 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-medium">
+          Tezkor kassa, avtomatik ombor va moliyaviy hisobot.
+        </p>
+
+        <!-- Proof Metrics Glass Cards (Super Clean & Spacious) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto pt-2">
+          <div class="glass-panel p-6 rounded-3xl text-left border-t-4 border-t-brand-500 space-y-1">
+            <div class="text-3xl sm:text-4xl font-black text-white font-['Space_Grotesk']">5 soniya</div>
+            <div class="text-sm text-slate-200 font-semibold leading-snug">Mijozni qabul qilish & avto-chek</div>
+          </div>
+          <div class="glass-panel p-6 rounded-3xl text-left border-t-4 border-t-emerald-500 space-y-1">
+            <div class="text-3xl sm:text-4xl font-black text-emerald-400 font-['Space_Grotesk']">100%</div>
+            <div class="text-sm text-slate-200 font-semibold leading-snug">Jonli ombor va moylar hisobi</div>
+          </div>
+          <div class="glass-panel p-6 rounded-3xl text-left border-t-4 border-t-cyan-500 space-y-1">
+            <div class="text-3xl sm:text-4xl font-black text-cyan-300 font-['Space_Grotesk']">Telegram</div>
+            <div class="text-sm text-slate-200 font-semibold leading-snug">Qo'shimcha uskunalarsiz POS</div>
+          </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="flex items-center justify-center gap-4 pt-3">
+          <button onclick="goToSlide(2)" class="px-9 py-4 rounded-2xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white font-extrabold text-base shadow-2xl shadow-brand-600/40 transition active:scale-95 flex items-center gap-3">
+            <i class="fa-solid fa-play"></i> Porsche 3D Ko'rikni Boshlash &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 2: PROBLEM & SOLUTION COMPARISON TABLE                 -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide2">
+      <div class="max-w-6xl w-full mx-auto space-y-6">
+        <div class="text-center space-y-2">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-950/90 border border-brand-500/40 text-brand-300 text-xs sm:text-sm font-bold">
+            <i class="fa-solid fa-chart-simple text-brand-400"></i> Taqqoslash & Samaradorlik
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">
+            Hozirgi Ish Oqimi va AutoPro²⁴ Yechimi
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
+            Mijozingizning do'konida uchraydigan kundalik qiyinchiliklar va ularning avtomatlashgan yechimi:
+          </p>
+        </div>
+
+        <!-- Comparison Table Card (High-Contrast & Large) -->
+        <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border border-white/15 shadow-2xl">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm sm:text-base">
+              <thead>
+                <tr class="border-b border-white/15 text-slate-400 text-xs sm:text-sm uppercase tracking-wider font-bold">
+                  <th class="py-3.5 px-4">Jarayon</th>
+                  <th class="py-3.5 px-4 text-red-400">Hozirgi Holat (Qo'lda)</th>
+                  <th class="py-3.5 px-4 text-emerald-400">AutoPro²⁴ Bilan (Avtomatik)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
+                    <i class="fa-solid fa-user-gear text-amber-400 mr-2"></i> Usta hisoboti
+                  </td>
+                  <td class="py-4 px-4 text-red-300">
+                    Telegramga qisqa yoziladi, kassa bilan solishtirilmaydi, tushum yo'qolishi mumkin
+                  </td>
+                  <td class="py-4 px-4 text-emerald-300 font-semibold">
+                    ✅ 1 soniyada avto-chek chiqadi va kassa jurnali to'liq to'ldiriladi
+                  </td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
+                    <i class="fa-solid fa-boxes-stacked text-cyan-400 mr-2"></i> Ombor zaxirasi
+                  </td>
+                  <td class="py-4 px-4 text-red-300">
+                    119 xil moy va filtrni har kuni qo'lda sanash imkonsiz, kamomadlar yuzaga keladi
+                  </td>
+                  <td class="py-4 px-4 text-emerald-300 font-semibold">
+                    ✅ Har bir mashinadan keyin barcha tovarlar va moy litrlari avtomatik ayiriladi
+                  </td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
+                    <i class="fa-solid fa-truck-ramp-box text-blue-400 mr-2"></i> Dilerdan yuk kelishi
+                  </td>
+                  <td class="py-4 px-4 text-red-300">
+                    Excel hisob-fakturalardagi tovarlarni daftarga bittalab ko'chirib chiqish kerak
+                  </td>
+                  <td class="py-4 px-4 text-emerald-300 font-semibold">
+                    ✅ Faylni botga tashlash bilan 1 soniyada avtomat kirim bo'ladi va kurs hisoblanadi
+                  </td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="py-4 px-4 font-bold text-white whitespace-nowrap">
+                    <i class="fa-solid fa-receipt text-purple-400 mr-2"></i> Kechki hisob-kitob
+                  </td>
+                  <td class="py-4 px-4 text-red-300">
+                    Tushum va ombor qoldig'i to'g'ri keladimi-yo'qmi noaniq, hisob-kitob soatlab cho'ziladi
+                  </td>
+                  <td class="py-4 px-4 text-emerald-300 font-semibold">
+                    ✅ /kun_yopish orqali kassa, qoldiqlar, atrobotka va sof foyda solishtiriladi
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-3 text-xs sm:text-sm border-t border-white/10">
+            <span class="text-slate-200 flex items-center gap-2 font-medium">
+              <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+              Usta uchun 0 daqiqa ortiqcha vaqt, do'kon egasi uchun 100% shaffof nazorat.
+            </span>
+            <button onclick="goToSlide(3)" class="text-cyan-400 font-bold hover:underline flex items-center gap-1.5 text-sm">
+              3-Slayd: Porsche 3D Ko'rikka O'tish &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 3: INTERACTIVE 3D CAR INSPECTION (ALL 4 STAGES)          -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide3">
+      <div class="max-w-6xl w-full mx-auto flex flex-col justify-between h-full py-3 space-y-4">
+        
+        <!-- Header of Stage -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 glass-panel px-6 py-3.5 rounded-2xl border border-white/15">
+          <div class="flex items-center gap-3">
+            <span class="w-3.5 h-3.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-sm sm:text-base font-black text-white font-['Space_Grotesk'] uppercase tracking-wide" id="inspectionStageName">
+              1-Bosqich: Avtomobil Raqamini Aniqlash & 360° Tashqi Ko'rik
+            </span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="switchInspectSubStage(1)" id="subBtn1" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-600 text-white transition shadow-md">Tashqi</button>
+            <button onclick="switchInspectSubStage(2)" id="subBtn2" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition">Eshik (POS)</button>
+            <button onclick="switchInspectSubStage(3)" id="subBtn3" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition">Kapot (Ombor)</button>
+            <button onclick="switchInspectSubStage(4)" id="subBtn4" class="px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition">Detallar</button>
+          </div>
+        </div>
+
+        <!-- Substage Dynamic Content Box -->
+        <div class="my-auto w-full">
+
+          <!-- Substage 1: Exterior Plate & Recognition -->
+          <div id="subView1" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-6 space-y-4">
+              <div class="tech-tag text-sm text-brand-400 font-bold">Mijoz Kelishi Bilan</div>
+              <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+                Avtomobil Kirdi — <br><span class="text-brand-400">5 Soniyada Qabul Qilish</span>
+              </h2>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+                Usta Qahramon avtomobil raqamini kiritishi bilanoq, tizim uning avval qaysi moy quyganligi, kilometraji va filtr turlarini bir zumda chiqaradi.
+              </p>
+              <div class="flex flex-wrap gap-2.5 pt-1 text-xs sm:text-sm">
+                <span class="glass-panel px-4 py-2 rounded-xl text-slate-200 font-medium"><i class="fa-solid fa-history text-cyan-400 mr-2"></i> Tashriflar tarixi & Qarz nazorati</span>
+                <span class="glass-panel px-4 py-2 rounded-xl text-slate-200 font-medium"><i class="fa-solid fa-bell text-amber-400 mr-2"></i> Moy eslatmasi</span>
+              </div>
+            </div>
+
+            <div class="md:col-span-6 flex justify-center">
+              <div class="w-full max-w-md glass-panel-glow p-6 sm:p-7 rounded-3xl space-y-4 border border-brand-500/40">
+                <div class="flex justify-between items-center text-xs sm:text-sm border-b border-white/10 pb-2.5">
+                  <span class="text-slate-300 font-semibold">Avtoraqamni Aniqlash Tizimi:</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-mono text-xs font-bold">FAOL • 0.3s</span>
+                </div>
+                <!-- Simulated Plate -->
+                <div class="bg-white text-slate-900 font-mono font-black text-center py-3 rounded-2xl text-2xl tracking-widest shadow-inner flex items-center justify-center gap-3">
+                  <span class="text-sm bg-blue-600 text-white px-2 py-0.5 rounded">01</span>
+                  <span>777 PAA</span>
+                  <span class="text-xs text-slate-500 font-bold">UZ</span>
+                </div>
+                <div class="space-y-2 text-xs sm:text-sm text-slate-200">
+                  <div class="flex justify-between py-1 border-b border-white/5">
+                    <span class="text-slate-400">Avtomobil modeli:</span>
+                    <span class="font-bold text-white">Porsche 911 / Cobalt / Gentra</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-white/5">
+                    <span class="text-slate-400">Oldingi tashrif:</span>
+                    <span class="font-semibold text-emerald-400">12.07.2026 (7,400 km oldin)</span>
+                  </div>
+                  <div class="flex justify-between py-1">
+                    <span class="text-slate-400">Tavsiya etilgan moy va sig'im:</span>
+                    <span class="font-bold text-cyan-300">Mobil 1 Super 0W-40 (8.0L)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Substage 2: Cockpit POS & Door Opens -->
+          <div id="subView2" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-6 flex justify-center">
+              <div class="w-full max-w-md glass-panel-glow p-6 sm:p-7 rounded-3xl space-y-4 border border-amber-500/40">
+                <div class="flex justify-between items-center border-b border-white/10 pb-2.5">
+                  <span class="text-sm font-black text-white flex items-center gap-2">
+                    <i class="fa-solid fa-mobile-screen-button text-amber-400"></i> KABINA TELEGRAM POS
+                  </span>
+                  <span class="text-xs bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full font-mono font-bold">
+                    🚪 ESHIK OCHILDI
+                  </span>
+                </div>
+                <div class="bg-slate-950/80 p-4 rounded-2xl border border-white/5 space-y-2.5">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-400 font-bold uppercase">Gemini 2.5 Flash Ovoz</span>
+                    <span class="text-emerald-400 font-mono flex items-center gap-1.5 font-bold">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> 0.4s
+                    </span>
+                  </div>
+                  <div class="p-3 rounded-xl bg-slate-900 border border-slate-700 text-sm text-emerald-300 font-mono italic">
+                    "Micking 10-40 3.5 litr, Moy f, Voz f, Mator flush, Kobalt 390 000"
+                  </div>
+                </div>
+                <div class="space-y-2 text-xs sm:text-sm text-slate-200">
+                  <div class="flex justify-between"><span>Micking 10W-40 (3.5L):</span><span class="font-bold text-white">210,000 UZS</span></div>
+                  <div class="flex justify-between"><span>Cobalt Moy + Havo filtri:</span><span class="font-bold text-white">95,000 UZS</span></div>
+                  <div class="flex justify-between"><span>Engine Flush (Promivka):</span><span class="font-bold text-white">55,000 UZS</span></div>
+                  <div class="flex justify-between pt-2 border-t border-white/10 font-black text-emerald-400 text-base">
+                    <span>Jami Chek Summasi:</span>
+                    <span>390,000 UZS (Naqd)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-6 space-y-4">
+              <div class="tech-tag text-sm text-amber-400 font-bold">Usta Joyidan Qimirlamaydi</div>
+              <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+                Haydovchi Eshigida <br><span class="text-amber-400">5 Soniyada Chek Uradi</span>
+              </h2>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+                Usta Qahramonga kompyuter yoki kassa oldiga yugurish shart emas. Mashina oldida turib, telefonidagi Telegram guruhga bitta audio yoki qisqa xabar yuboradi — qolganini bot o'zi bajaradi.
+              </p>
+              <div class="pt-2">
+                <button onclick="switchInspectSubStage(3)" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-lg transition">
+                  3-Bosqich: Kapotni Ochish &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Substage 3: Engine Hood & Auto Stock Deduction -->
+          <div id="subView3" class="hidden grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-6 space-y-4">
+              <div class="tech-tag text-sm text-emerald-400 font-bold">Avtomatik Ombor Nazorati</div>
+              <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+                Kapot Ochildi: <br><span class="text-emerald-400">Moy & Filtrlar Yechiladi</span>
+              </h2>
+              <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+                Har bir quyilgan moy litri va almashtirilgan filtrlar zaxiradan 1 soniyada avtomatik ayriladi. Kam qolgan tovarlar bo'yicha bot o'zi ogohlantiradi.
+              </p>
+              <div class="pt-2">
+                <button onclick="switchInspectSubStage(4)" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm shadow-lg transition">
+                  4-Bosqich: Telemetriya Tugmalari &rarr;
+                </button>
+              </div>
+            </div>
+
+            <div class="md:col-span-6 flex justify-center">
+              <div class="w-full max-w-md glass-panel-glow p-6 sm:p-7 rounded-3xl space-y-4 border border-emerald-500/40">
+                <div class="flex justify-between items-center border-b border-white/10 pb-2.5">
+                  <span class="text-sm font-black text-white">DVIGATEL OMBOR TELEMETRIYASI</span>
+                  <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full font-mono font-bold">
+                    ⚙️ KAPOT OCHIQ
+                  </span>
+                </div>
+                <!-- Animated Gauge -->
+                <div class="bg-slate-950/80 p-4 rounded-2xl border border-white/5 space-y-2.5">
+                  <div class="flex justify-between text-xs sm:text-sm font-bold">
+                    <span class="text-slate-200">Micking 10W-40 Bochka:</span>
+                    <span class="text-emerald-400 font-mono">-3.5L Yechildi</span>
+                  </div>
+                  <div class="w-full bg-slate-900 h-3.5 rounded-full overflow-hidden border border-slate-700/60 p-0.5">
+                    <div class="bg-gradient-to-r from-amber-500 to-emerald-400 h-full rounded-full transition-all duration-1000 w-[78%]"></div>
+                  </div>
+                  <div class="flex justify-between text-xs text-slate-300 font-mono">
+                    <span>Avvalgi qoldiq: 23.0L</span>
+                    <span class="text-emerald-300 font-bold">Yangi qoldiq: 19.5 Litr</span>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm">
+                  <div class="glass-panel p-3 rounded-xl border border-white/5 space-y-1">
+                    <span class="text-slate-400 text-xs block">Cobalt Moy Filtri:</span>
+                    <span class="font-bold text-white text-sm">26 ➔ 25 dona (-1)</span>
+                  </div>
+                  <div class="glass-panel p-3 rounded-xl border border-white/5 space-y-1">
+                    <span class="text-slate-400 text-xs block">Cobalt Havo Filtri:</span>
+                    <span class="font-bold text-white text-sm">6 ➔ 5 dona (-1)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Substage 4: Interactive Matrix Telemetry Pins -->
+          <div id="subView4" class="hidden flex flex-col justify-center space-y-5">
+            <div class="text-center">
+              <span class="text-xs sm:text-sm font-black text-cyan-400 uppercase tracking-widest glass-panel px-5 py-2 rounded-full border border-cyan-500/40">
+                🔍 6 ta Soha Bo'yicha Telemetriya Tugmachalarini Bosing
+              </span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 max-w-5xl mx-auto w-full">
+              <div onclick="selectPin('oil')" class="pin-card glass-panel p-3.5 rounded-2xl border-2 border-brand-500 cursor-pointer transition text-center space-y-1.5 shadow-lg">
+                <div class="text-3xl">🛢️</div>
+                <div class="font-bold text-white text-sm">Moy Markazi</div>
+                <div class="text-xs text-slate-400">Bochka litrlari</div>
+              </div>
+              <div onclick="selectPin('motor')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
+                <div class="text-3xl">⚙️</div>
+                <div class="font-bold text-white text-sm">Motor & Svecha</div>
+                <div class="text-xs text-slate-400">Ta'mir naryadi</div>
+              </div>
+              <div onclick="selectPin('wheels')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
+                <div class="text-3xl">🛞</div>
+                <div class="font-bold text-white text-sm">G'ildirak & Razval</div>
+                <div class="text-xs text-slate-400">Balansirovka</div>
+              </div>
+              <div onclick="selectPin('wash')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
+                <div class="text-3xl">🧼</div>
+                <div class="font-bold text-white text-sm">Avtomoyka</div>
+                <div class="text-xs text-slate-400">Boks navbati</div>
+              </div>
+              <div onclick="selectPin('brake')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
+                <div class="text-3xl">🛑</div>
+                <div class="font-bold text-white text-sm">Tormoz & Xodovoy</div>
+                <div class="text-xs text-slate-400">Kolodka hisobi</div>
+              </div>
+              <div onclick="selectPin('diag')" class="pin-card glass-panel p-3.5 rounded-2xl border border-white/10 hover:border-brand-400 cursor-pointer transition text-center space-y-1.5 shadow-lg">
+                <div class="text-3xl">💻</div>
+                <div class="font-bold text-white text-sm">Diagnostika</div>
+                <div class="text-xs text-slate-400">Freon & Datchik</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Pin Explanation Box (Large & Readable) -->
+            <div class="glass-panel-glow p-5 sm:p-6 rounded-3xl max-w-4xl mx-auto w-full flex items-center justify-between gap-5 border border-cyan-500/40 shadow-2xl">
+              <div class="flex items-center gap-4">
+                <span class="text-4xl" id="pinIcon">🛢️</span>
+                <div class="space-y-1">
+                  <span class="font-black text-white text-base sm:text-lg block" id="pinTitle">Dvigatel & Transmissiya Moyi Telemetriyasi:</span>
+                  <span class="text-slate-200 text-xs sm:text-sm leading-relaxed block" id="pinText">
+                    Barcha 63 xil moy va filtrlar sig'imi avtomobil markasi bo'yicha avtomatik yechiladi. Bochkadagi litrlar doimo aniq nazoratda bo'ladi va dilerga qachon buyurtma berishni tizim o'zi aytadi.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Substage Guider Bar -->
+        <div class="flex justify-between items-center text-xs sm:text-sm text-slate-400 border-t border-white/10 pt-2.5">
+          <span>💡 Tepada joylashgan 4 ta tugma orqali mashinaning barcha qismlarini ko'zdan kechiring</span>
+          <button onclick="goToSlide(4)" class="text-cyan-400 font-bold hover:underline flex items-center gap-1.5 text-sm">
+            4-Slayd: Usta Qahramon Ish Rejimiga O'tish &rarr;
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 4: USTA QAHRAMON SLANG & VOICE DEMO (COCKPIT BACKDROP)  -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide4">
+      <div class="max-w-6xl w-full mx-auto space-y-7">
+        <div class="text-center space-y-2">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-sm font-bold">
+            <i class="fa-solid fa-door-open"></i> Porsche Cockpit • Ochiq Eshik Rejimi
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">
+            Usta Qahramon Hech Narsani O'zgartirmaydi
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
+            Usta avval qanday yozgan bo'lsa, xuddi shunday davom ettiradi. Bot barcha qisqartmalarni tushunadi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 items-stretch">
+          <!-- Left: Real WhatsApp / Telegram Slang -->
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-5 border-l-4 border-l-amber-500">
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+              <span class="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-wider">Ustaning Haqiqiy Xabari:</span>
+              <span class="text-xs bg-slate-900 text-amber-400 px-2.5 py-1 rounded font-mono font-bold">18:14:51</span>
+            </div>
+
+            <div class="bg-slate-950/90 p-5 rounded-2xl border border-white/10 font-mono text-sm sm:text-base text-amber-200 leading-loose space-y-1.5 shadow-inner">
+              <div>Micking 10-40 3.5 litr</div>
+              <div>Moy f</div>
+              <div>Voz f</div>
+              <div>Mator flush</div>
+              <div>Gidrilika moy 300 gram</div>
+              <div>Atrobotka 20 litr 100 000</div>
+              <div class="text-white font-bold pt-2 border-t border-white/10">Kobalt 390 000</div>
+            </div>
+
+            <div class="text-xs sm:text-sm text-slate-200 space-y-2">
+              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Moy f / Mou f</b> — Moy filtri</div>
+              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Voz f</b> — Havo (Vozdux) filtri</div>
+              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Mator flush</b> — Engine Flush (Dvigatel yuvish suyuqligi)</div>
+              <div class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400 text-sm"></i> <b>Atrobotka 100 000</b> — Ishlatilgan moy sotuvidan daromad</div>
+            </div>
+          </div>
+
+          <!-- Right: 1-Second Bot Receipt -->
+          <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border-l-4 border-l-emerald-500">
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+              <span class="text-xs sm:text-sm font-bold text-emerald-400 flex items-center gap-2">
+                <i class="fa-solid fa-receipt text-base"></i> 1 SONIYADA BOT CHEKI:
+              </span>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded font-mono font-bold">Guruhga tushdi</span>
+            </div>
+
+            <div class="bg-slate-950/90 p-5 rounded-2xl border border-white/10 font-mono text-xs sm:text-sm space-y-2.5 text-slate-200 shadow-inner">
+              <div class="text-emerald-400 font-bold text-sm sm:text-base">✅ Chek #8 — Cobalt (01 777 PAA)</div>
+              <div class="border-t border-dashed border-slate-700 pt-2 space-y-1.5">
+                <div class="flex justify-between"><span>• Micking 10W-40 (3.5L):</span><span class="font-bold text-white">210,000 UZS</span></div>
+                <div class="flex justify-between"><span>• Cobalt Moy filtri:</span><span class="font-bold text-white">35,000 UZS</span></div>
+                <div class="flex justify-between"><span>• Cobalt Havo filtri:</span><span class="font-bold text-white">60,000 UZS</span></div>
+                <div class="flex justify-between"><span>• Engine Flush:</span><span class="font-bold text-white">55,000 UZS</span></div>
+                <div class="flex justify-between"><span>• Gidravlika moyi (0.3L):</span><span class="font-bold text-white">30,000 UZS</span></div>
+                <div class="flex justify-between text-cyan-300"><span>• Atrobotka daromadi:</span><span class="font-bold">+100,000 UZS</span></div>
+              </div>
+              <div class="border-t border-white/10 pt-2.5 flex justify-between font-black text-base sm:text-lg text-emerald-400">
+                <span>JAMI SUMMA:</span>
+                <span>390,000 UZS (Naqd)</span>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-xs sm:text-sm text-emerald-300 flex items-center gap-3">
+              <i class="fa-solid fa-shield-halved text-xl flex-shrink-0"></i>
+              <span>O'ktam Adhamovning telefoniga har bir chek real-vaqtda tushadi.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 5: ENGINE HOOD • MULTI-ITEM STOCK DEDUCTION             -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide5">
+      <div class="max-w-6xl w-full mx-auto space-y-7">
+        <div class="text-center space-y-2">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-sm font-bold">
+            <i class="fa-solid fa-gears"></i> Porsche Engine Bay • Kapot Ko'tarildi
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">
+            Bitta Xabar Bilan 5 Xil Tovar Ombordan Yechiladi
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
+            Qog'oz daftarga yozish shart emas. Tizim har bir tovarni avtomatik topadi va omborni yangilaydi.
+          </p>
+        </div>
+
+        <!-- Stock Deduction Matrix Table Card -->
+        <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border border-emerald-500/30">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm sm:text-base">
+              <thead>
+                <tr class="border-b border-white/10 text-slate-400 text-xs sm:text-sm uppercase tracking-wider font-bold">
+                  <th class="py-3 px-3">Tovar Nomi</th>
+                  <th class="py-3 px-3">Ustaning Slengi</th>
+                  <th class="py-3 px-3 text-right">Avvalgi Qoldiq</th>
+                  <th class="py-3 px-3 text-center">Sarflanish</th>
+                  <th class="py-3 px-3 text-right text-emerald-400">Yangi Qoldiq</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5 font-mono">
+                <tr>
+                  <td class="py-3.5 px-3 font-bold text-white">Micking 10W-40 (Bochka)</td>
+                  <td class="py-3.5 px-3 text-amber-300">3.5 litr</td>
+                  <td class="py-3.5 px-3 text-right text-slate-400">23.0 L</td>
+                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-3.5 L</td>
+                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">19.5 L</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-3 font-bold text-white">Cobalt Moy Filtri</td>
+                  <td class="py-3.5 px-3 text-amber-300">Moy f (Kobalt)</td>
+                  <td class="py-3.5 px-3 text-right text-slate-400">26 dona</td>
+                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-1 dona</td>
+                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">25 dona</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-3 font-bold text-white">Cobalt Havo Filtri</td>
+                  <td class="py-3.5 px-3 text-amber-300">Voz f (Kobalt)</td>
+                  <td class="py-3.5 px-3 text-right text-slate-400">6 dona</td>
+                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-1 dona</td>
+                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">5 dona</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-3 font-bold text-white">Engine Flush (Promivka)</td>
+                  <td class="py-3.5 px-3 text-amber-300">Mator flush</td>
+                  <td class="py-3.5 px-3 text-right text-slate-400">19 dona</td>
+                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-1 dona</td>
+                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">18 dona</td>
+                </tr>
+                <tr>
+                  <td class="py-3.5 px-3 font-bold text-white">Power Steering (Gidravlika)</td>
+                  <td class="py-3.5 px-3 text-amber-300">Gidrilika 300g</td>
+                  <td class="py-3.5 px-3 text-right text-slate-400">29.7 L</td>
+                  <td class="py-3.5 px-3 text-center text-red-400 font-bold">-0.3 L</td>
+                  <td class="py-3.5 px-3 text-right font-bold text-emerald-400">29.4 L</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-3 text-xs sm:text-sm border-t border-white/10">
+            <span class="text-slate-200 flex items-center gap-2 font-medium">
+              <i class="fa-solid fa-triangle-exclamation text-amber-400 text-base"></i>
+              Cobalt Havo filtri 5 donaga tushdi — bot kechqurun avtomatik eslatadi.
+            </span>
+            <span class="text-cyan-300 font-bold font-mono text-sm">
+              Ombor holati: 100% Sinxron
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 6: DEALER INVOICE RESTOCK (PORSCHE PARTS BACKDROP)      -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide6">
+      <div class="max-w-6xl w-full mx-auto space-y-7">
+        <div class="text-center space-y-2">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-sm font-bold">
+            <i class="fa-solid fa-file-excel"></i> Porsche Telemetriya • Diler Kirimi
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">
+            1-Soniyali Tovarlar Kirimi (Excel Orqali)
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
+            Diler tashlagan yangi partiya hisob-fakturasini qo'lda kiritish shart emas.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 items-stretch">
+          <!-- Left: Dealer File Flow -->
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-5">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-3xl">
+                <i class="fa-solid fa-file-excel"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-white text-lg sm:text-xl">AvtoPro_Oil_Tovarlar.xlsx</h3>
+                <span class="text-xs sm:text-sm text-slate-300 font-medium">Diler hisob-fakturasi (14.09.2026)</span>
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
+              Diler qog'oz yoki Excel jo'natganda, fayl shunchaki Telegram guruhiga tashlanadi. Bot 1 soniyada:
+            </p>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-200 font-medium">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-check-double text-emerald-400 mt-1 text-base"></i>
+                <span>Dollardagi ($) diler narxlarini <b>11 900 UZS</b> kursi bilan avtomat so'mga aylantiradi.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-check-double text-emerald-400 mt-1 text-base"></i>
+                <span>Ombordagi mavjud 119 ta tovar soniga yangi partiyani qo'shadi.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-check-double text-emerald-400 mt-1 text-base"></i>
+                <span>Tannarx va sof foyda hisobini avtomatik qayta kalibrovka qiladi.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Instant Restock Card -->
+          <div class="glass-panel-glow p-6 sm:p-8 rounded-3xl space-y-5 border border-cyan-500/40 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center border-b border-white/10 pb-3">
+                <span class="text-xs sm:text-sm font-bold text-cyan-300">BOTNING JAVOBI:</span>
+                <span class="text-xs bg-cyan-500/20 text-cyan-300 px-2.5 py-1 rounded font-mono font-bold">1.1 soniya</span>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-950/90 border border-white/10 font-mono text-xs sm:text-sm text-slate-200 space-y-2 shadow-inner">
+                <div class="text-emerald-400 font-bold text-sm sm:text-base">📦 Tovarlar Kirimi Muvaffaqiyatli!</div>
+                <div>• Yangilangan tovarlar: <b class="text-white">16 ta pozitsiya</b></div>
+                <div>• Qabul qilingan summa: <b class="text-white">1,348.50 $ (16,047,150 UZS)</b></div>
+                <div>• Valyuta kursi: <b class="text-cyan-300">1$ = 11 900 UZS</b></div>
+                <div class="text-emerald-300 text-xs sm:text-sm pt-2 border-t border-white/10">
+                  Ombor zaxiralari to'liq yangilandi.
+                </div>
+              </div>
+            </div>
+
+            <div class="text-xs sm:text-sm text-slate-300 bg-slate-900/80 p-4 rounded-2xl border border-white/10">
+              Do'kon egasi kompyuterda soatlab hisob yozishdan butunlay xalos bo'ladi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 7: EVENING RECONCILIATION & EXCEL AUDIT                 -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide7">
+      <div class="max-w-6xl w-full mx-auto space-y-7">
+        <div class="text-center space-y-2">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-sm font-bold">
+            <i class="fa-solid fa-moon"></i> Kechki Audit & 5-Varaqli Excel
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">
+            Kechki Hisobot & Kun Yopish
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
+            Kunning oxirida bitta buyruq orqali kassa, ombor va kam qolgan tovarlar ro'yxatini olasiz.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="glass-panel p-6 rounded-3xl space-y-2 text-center border-t-4 border-t-emerald-500">
+            <div class="text-xs sm:text-sm font-bold text-slate-300">Bugungi Jami Savdo</div>
+            <div class="text-3xl sm:text-4xl font-black text-white font-['Space_Grotesk']">3,450,000</div>
+            <div class="text-xs sm:text-sm text-emerald-400 font-semibold">Naqd: 2.1M | Karta/Click: 1.35M</div>
+          </div>
+          <div class="glass-panel p-6 rounded-3xl space-y-2 text-center border-t-4 border-t-cyan-500">
+            <div class="text-xs sm:text-sm font-bold text-slate-300">Atrobotka Tushumi</div>
+            <div class="text-3xl sm:text-4xl font-black text-cyan-300 font-['Space_Grotesk']">100,000</div>
+            <div class="text-xs sm:text-sm text-slate-200">20 litr eski moy sotildi</div>
+          </div>
+          <div class="glass-panel p-6 rounded-3xl space-y-2 text-center border-t-4 border-t-amber-500">
+            <div class="text-xs sm:text-sm font-bold text-slate-300">Tugayotgan Zaxira</div>
+            <div class="text-3xl sm:text-4xl font-black text-amber-400 font-['Space_Grotesk']">3 ta tovar</div>
+            <div class="text-xs sm:text-sm text-slate-200">Dilerga tayyor buyurtma xati</div>
+          </div>
+        </div>
+
+        <div class="glass-panel-glow p-6 sm:p-7 rounded-3xl border border-white/15 flex flex-col sm:flex-row items-center justify-between gap-5">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-600/25 border border-brand-500/40 flex items-center justify-center text-brand-400 text-2xl">
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </div>
+            <div>
+              <span class="font-bold text-white block text-base sm:text-lg">AvtoPro_Oil_Ombori.xlsx fayli telefonga yuklanadi</span>
+              <span class="text-xs sm:text-sm text-slate-300 font-medium">5 varaq: Ombor Qoldig'i, Savdolar Tarixi, Diler Narxlari, Atrobotka va Kunlik Audit.</span>
+            </div>
+          </div>
+          <span class="px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-slate-200 font-mono font-bold">
+            /excel yoki /kun_yopish
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 8: EXECUTIVE ANALYTICS & ADVANCED FEATURES             -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide8">
+      <div class="max-w-6xl w-full mx-auto space-y-6">
+        <div class="text-center space-y-2">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 text-sm font-bold">
+            <i class="fa-solid fa-chart-line text-cyan-400"></i> Biznes Boshqaruvi & Daromad O'sishi
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-white">
+            Rahbar Analitikasi & Kengaytirilgan Imkoniyatlar
+          </h2>
+          <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto font-medium">
+            Faqat kassa emas — do'kon egasiga biznesni kengaytirish va mijozlarni saqlab qolish uchun to'liq qurollar:
+          </p>
+        </div>
+
+        <!-- 4 Grid Feature Cards (Spacious, Clear & High Contrast) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- Feature 1: Oil Spent Analysis & Stock Mismatch Audit -->
+          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-emerald-500/30">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-2xl">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Audit & Tafovut</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Kunlik/Haftalik Moy Sarfi & Tafovut Auditi</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Har bir moy markasi bo'yicha kunlik, haftalik va oylik sarf tahlili. Usta kiritgan sarf bilan bochkadagi jismoniy qoldiq kamayishi avtomat solishtirilib, kamomad va tafovut (<b>MISMATCH</b>) darhol ekranda qizil bilan ogohlantiriladi.
+            </p>
+            <div class="text-xs text-emerald-400 font-mono font-semibold pt-1 border-t border-white/10">
+              🔍 Usta va ombor o'rtasidagi har bir litr 100% shaffof nazoratda
+            </div>
+          </div>
+
+          <!-- Feature 2: 5th Visit Free Gift Bonus & Auto Thank You SMS -->
+          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-brand-500/30">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-brand-600/20 border border-brand-500/40 flex items-center justify-center text-brand-400 text-2xl">
+                <i class="fa-solid fa-gift"></i>
+              </div>
+              <span class="text-xs bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Sodiqlik & LTV</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">5-Tashrif Bepul Sovg'a & Rahmat SMS</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Mashina raqami bo'yicha har bir tashrif avtomat sanaladi. Xizmat tugashi bilan mijozga Rahmat SMS boradi: navbatdagi moy sanasi (+90 kun / 7,000 km) hamda <b>5-moyda BEPUL moy filtri</b> sovg'asi holati (masalan: <i>3/5 tashrif</i>).
+            </p>
+            <div class="text-xs text-brand-300 font-mono font-semibold pt-1 border-t border-white/10">
+              🎁 5-tashrifdagi sovg'a sabab mijozlar 100% sizning do'konga qaytadi
+            </div>
+          </div>
+
+          <!-- Feature 3: Worker Commission & KPI -->
+          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-amber-500/30">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-2xl">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <span class="text-xs bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Usta Ulushi (KPI)</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Usta Qahramon Ulushi & Sof Marja</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Xizmat haqi (moy almashtirish 30,000 so'm, filtr qo'yish) va mahsulot sotuvidan usta ulushini (50/50 yoki foiz stavkasi) tizim avtomat ajratib, diler tannarxi bo'yicha sof foyda marjasini aniq hisoblaydi.
+            </p>
+            <div class="text-xs text-amber-300 font-mono font-semibold pt-1 border-t border-white/10">
+              🤝 Usta va rahbar o'rtasida 100% adolatli, nizosiz hisob-kitob
+            </div>
+          </div>
+
+          <!-- Feature 4: Debt Ledger (Nasiya) & Vehicle Digital Passport -->
+          <div class="glass-panel-glow p-6 rounded-3xl space-y-3 border border-cyan-500/30">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-2xl">
+                <i class="fa-solid fa-address-book"></i>
+              </div>
+              <span class="text-xs bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full font-bold uppercase tracking-wider">Pasport & Nasiya</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Raqamli Servis Pasporti & Nasiya Daftari</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Har bir avtomobil uchun QR/havola orqali ochiladigan Raqamli Pasport: barcha almashtirilgan moylar, zavod tavsiyalari va 5-tashrif sovg'a progressi. Shuningdek, nasiyaga moy olganlar to'liq ro'yxati.
+            </p>
+            <div class="text-xs text-cyan-300 font-mono font-semibold pt-1 border-t border-white/10">
+              📱 Mijoz o'z avtomobili pasportini Telegram orqali doim ko'rib turadi
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs sm:text-sm text-slate-400">
+          <span>💡 Rahbar uchun qulay: mobil telefonda ham, kompyuterda ham to'liq boshqaruv.</span>
+          <button onclick="goToSlide(9)" class="text-cyan-400 font-bold hover:underline flex items-center gap-1.5 text-sm">
+            9-Slayd: Sinovni Boshlash Rejasiga O'tish &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- SLIDE 9: PILOT LAUNCH ACTION PLAN                             -->
+    <!-- ============================================================= -->
+    <div class="slide-view" id="slide9">
+      <div class="max-w-5xl w-full mx-auto text-center space-y-7">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-sm font-bold">
+          <i class="fa-solid fa-flag-checkered"></i> Sinovni Boshlash Bosqichlari
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight">
+          Pilot Guruhni Qanday Boshlaymiz?
+        </h1>
+
+        <p class="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-medium">
+          Tizim mijozingizning barcha 119 ta tovarlari va real diler narxlari bilan 100% yuklangan va tayyor.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-left">
+          <div class="glass-panel p-6 sm:p-7 rounded-3xl border-t-4 border-t-brand-500 space-y-2.5">
+            <div class="text-2xl font-black text-brand-400 font-['Space_Grotesk']">01</div>
+            <h3 class="font-bold text-white text-base sm:text-lg">Sinov Guruhini Ochish</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">O'ktam, Usta Qahramon va @AvtoPro_CRM_bot bo'lgan bitta Telegram guruh ochiladi.</p>
+          </div>
+          <div class="glass-panel-glow p-6 sm:p-7 rounded-3xl border-t-4 border-t-emerald-500 space-y-2.5">
+            <div class="text-2xl font-black text-emerald-400 font-['Space_Grotesk']">02</div>
+            <h3 class="font-bold text-white text-base sm:text-lg">Birinchi Sinov Cheki</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">Usta o'zining odatiy 4 qatorli xabarini yozadi va 1 soniyada chek hosil bo'lishini ko'radi.</p>
+          </div>
+          <div class="glass-panel p-6 sm:p-7 rounded-3xl border-t-4 border-t-amber-500 space-y-2.5">
+            <div class="text-2xl font-black text-amber-400 font-['Space_Grotesk']">03</div>
+            <h3 class="font-bold text-white text-base sm:text-lg">Diler Hisob-Fakturasi</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">AvtoPro_Oil_Tovarlar.xlsx faylini guruhga tashlab, ombor yangilanishi sinab ko'riladi.</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-4 pt-3">
+          <button onclick="goToSlide(1)" class="px-7 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-bold text-sm transition">
+            🔄 Boshidan Ko'rish
+          </button>
+          <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="px-8 py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-500 text-white font-extrabold text-sm shadow-xl shadow-brand-600/40 transition flex items-center gap-2.5">
+            <i class="fa-brands fa-telegram text-lg"></i> @AvtoPro_CRM_bot ni Ochish
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =============================================================== -->
+  <!-- BOTTOM NAVIGATION DOCK & PROGRESS BAR                           -->
+  <!-- =============================================================== -->
+  <footer class="fixed bottom-0 inset-x-0 z-50 h-16 bg-[#05070D]/90 backdrop-blur-xl border-t border-white/10 px-4 sm:px-8 flex items-center justify-between">
+    <!-- Prev Button -->
+    <button id="btnPrev" onclick="changeSlide(-1)" class="px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-brand-500 text-slate-200 font-bold text-xs sm:text-sm transition flex items-center gap-2">
+      <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Oldingi</span>
+    </button>
+
+    <!-- Slide Indicators -->
+    <div class="flex items-center gap-2.5" id="slideDots">
+      <div onclick="goToSlide(1)" class="progress-pill active h-2.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(2)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(3)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(4)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(5)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(6)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(7)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(8)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(9)" class="progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer"></div>
+    </div>
+
+    <!-- Next Button -->
+    <button id="btnNext" onclick="changeSlide(1)" class="px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-brand-600/35 transition flex items-center gap-2">
+      <span class="hidden sm:inline">Keyingi</span> <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </footer>
+
+  <!-- =============================================================== -->
+  <!-- JAVASCRIPT CONTROLLER                                           -->
+  <!-- =============================================================== -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 9;
+    let currentCarStage = 1;
+    let audioEnabled = true;
+
+    // Slide <-> Car Stage Mapping
+    const slideToCarStage = {
+      1: 1, // Exterior Showroom (Intro)
+      2: 1, // Exterior Showroom (Hozirgi Ish Oqimi vs AutoPro24 Taqqoslash)
+      3: 1, // 3D Inspection (Dinamik o'zgaradi)
+      4: 2, // Cockpit / Open Door (Usta Qahramon)
+      5: 3, // Engine Bay / Hood Open (Ombor Chiqimi)
+      6: 4, // Macro Engine / Telemetry (Diler Kirimi)
+      7: 1, // Exterior Night (Kechki Hisobot)
+      8: 4, // Macro Engine / Telemetry (Rahbar Analitikasi & Kengaytirilgan Imkoniyatlar)
+      9: 1  // Exterior Showroom (Sinov Rejasi)
+    };
+
+    const carStageMeta = {
+      1: { name: "Porsche 911 GT Showroom • 360° Tashqi Ko'rik", inspectName: "1-Bosqich: Avtomobil Raqamini Aniqlash & 360° Tashqi Ko'rik" },
+      2: { name: "Haydovchi Eshigi Ochildi • Mobil Telegram POS", inspectName: "2-Bosqich: Haydovchi Eshigi (Mobil Kassa POS)" },
+      3: { name: "Dvigatel Kapoti Ochildi • Avtomatik Ombor Chiqimi", inspectName: "3-Bosqich: Dvigatel Kapoti (Ombor Chiqimi)" },
+      4: { name: "Dvigatel Telemetriyasi • Asosiy Qismlar & Moylar Nazorati", inspectName: "4-Bosqich: Telemetriya & Detallar Nazorati" }
+    };
+
+    // Web Audio Synthesizer for high-tech clicks
+    let audioCtx = null;
+    function playChirp(freq = 600, type = 'sine', duration = 0.08) {
+      if (!audioEnabled) return;
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function toggleAudio() {
+      audioEnabled = !audioEnabled;
+      const icon = document.getElementById("audioIcon");
+      if (audioEnabled) {
+        icon.className = "fa-solid fa-volume-high";
+        playChirp(800, 'sine', 0.1);
+      } else {
+        icon.className = "fa-solid fa-volume-xmark text-slate-500";
+      }
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+
+    // Set Car Stage Visual Backdrop
+    function setCarStage(stageNum, manual = false) {
+      currentCarStage = stageNum;
+      
+      // Update Backdrop Images
+      for (let i = 1; i <= 4; i++) {
+        const img = document.getElementById(`carBackdrop${i}`);
+        if (img) {
+          if (i === stageNum) {
+            img.classList.remove("inactive");
+            img.classList.add("active");
+          } else {
+            img.classList.remove("active");
+            img.classList.add("inactive");
+          }
+        }
+      }
+
+      // Update Nav Buttons
+      for (let i = 1; i <= 4; i++) {
+        const nav = document.getElementById(`carNav${i}`);
+        if (nav) {
+          const isActive = (i === stageNum);
+          nav.className = isActive 
+            ? "px-3.5 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-2 bg-brand-600 text-white shadow-md"
+            : "px-3.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white transition flex items-center gap-2";
+        }
+      }
+
+      // Update Meta Badge
+      const badge = document.getElementById("carStageBadge");
+      if (badge && carStageMeta[stageNum]) {
+        badge.innerText = carStageMeta[stageNum].name;
+      }
+
+      if (manual) playChirp(900, 'triangle', 0.07);
+    }
+
+    // Slide Controller
+    function updateSlideUI() {
+      document.querySelectorAll('.slide-view').forEach((s, idx) => {
+        s.classList.toggle('active', (idx + 1) === currentSlide);
+      });
+
+      // Update Dots
+      const dots = document.querySelectorAll('#slideDots .progress-pill');
+      dots.forEach((d, idx) => {
+        const isActive = (idx + 1) === currentSlide;
+        d.className = isActive 
+          ? "progress-pill active h-2.5 rounded-full cursor-pointer" 
+          : "progress-pill bg-slate-700 h-2.5 w-3.5 rounded-full cursor-pointer";
+      });
+
+      // Update Counter
+      document.getElementById('slideCounter').innerText = `${currentSlide} / ${totalSlides}`;
+
+      // Update Buttons
+      document.getElementById('btnPrev').style.visibility = currentSlide === 1 ? 'hidden' : 'visible';
+      document.getElementById('btnNext').innerHTML = currentSlide === totalSlides 
+        ? `Tugatish <i class="fa-solid fa-check ml-1.5"></i>` 
+        : `Keyingi <i class="fa-solid fa-arrow-right ml-1.5"></i>`;
+
+      // Auto-align Car Backdrop with Slide theme
+      const targetStage = slideToCarStage[currentSlide] || 1;
+      setCarStage(targetStage);
+    }
+
+    function changeSlide(delta) {
+      const prev = currentSlide;
+      currentSlide = Math.max(1, Math.min(totalSlides, currentSlide + delta));
+      if (prev !== currentSlide) {
+        playChirp(delta > 0 ? 700 : 500, 'sine', 0.08);
+        updateSlideUI();
+      }
+    }
+
+    function goToSlide(n) {
+      if (n !== currentSlide) {
+        currentSlide = n;
+        playChirp(650, 'sine', 0.08);
+        updateSlideUI();
+      }
+    }
+
+    // Sub-stage Controller inside Slide 2 (Car Inspection)
+    function switchInspectSubStage(stageNum) {
+      setCarStage(stageNum);
+      
+      // Update subBtns
+      for (let i = 1; i <= 4; i++) {
+        const btn = document.getElementById(`subBtn${i}`);
+        if (btn) {
+          const isActive = (i === stageNum);
+          btn.className = isActive 
+            ? "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-600 text-white transition shadow-md" 
+            : "px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 border border-slate-700 hover:text-white transition";
+        }
+        const view = document.getElementById(`subView${i}`);
+        if (view) view.classList.toggle('hidden', i !== stageNum);
+      }
+
+      const nameEl = document.getElementById("inspectionStageName");
+      if (nameEl && carStageMeta[stageNum]) {
+        nameEl.innerText = carStageMeta[stageNum].inspectName;
+      }
+      playChirp(850, 'triangle', 0.06);
+    }
+
+    // Diagnostic Pin Information Map
+    const PIN_INFO = {
+      oil: {
+        icon: "🛢️",
+        title: "Dvigatel & Transmissiya Moyi Telemetriyasi:",
+        text: "Barcha 63 xil moy va filtrlar sig'imi avtomobil markasi bo'yicha avtomatik yechiladi. Bochkadagi litrlar doimo aniq nazoratda bo'ladi va dilerga qachon buyurtma berishni tizim o'zi aytadi."
+      },
+      motor: {
+        icon: "⚙️",
+        title: "Motor, Svecha & Agregatlar Ta'miri:",
+        text: "Dvigatel diagnostikasi, remen va svecha almashtirish xizmatlari va ehtiyot qismlar kvitansiyada 100% shaffof hisoblanadi."
+      },
+      wheels: {
+        icon: "🛞",
+        title: "G'ildirak, Shina Montaj & 3D Razval:",
+        text: "Balansirovka, diska to'g'rilash va yamoq qo'yish narxlari usta ulushi (50/50) bilan bir zumda kassa chekiga kiritiladi."
+      },
+      wash: {
+        icon: "🧼",
+        title: "Avtomoyka & Detailing Markazi:",
+        text: "Kuzov, salon, motor yuvish va ximchistka xizmatlari. Moykachilar ulushi va kunlik tushum 100% shaffof nazoratda."
+      },
+      brake: {
+        icon: "🛑",
+        title: "Tormoz Tizimi & Xodovoy Sozlash:",
+        text: "Kolodka, disk va amortizatorlarni almashtirish. Servis kafolati va mijoz tarixi tizimda saqlanadi."
+      },
+      diag: {
+        icon: "💻",
+        title: "OBD2 Kompyuter Diagnostika & Freon:",
+        text: "Datchik nosozliklarini tekshirish va yozgi mavsumda konditsioner freonini grammlar bo'yicha to'ldirish."
+      }
+    };
+
+    function selectPin(pinKey) {
+      document.querySelectorAll(".pin-card").forEach(c => {
+        c.classList.remove("border-brand-500", "border-2");
+        c.classList.add("border-white/10");
+      });
+      event.currentTarget.classList.add("border-brand-500", "border-2");
+      event.currentTarget.classList.remove("border-white/10");
+
+      const info = PIN_INFO[pinKey];
+      if (info) {
+        document.getElementById("pinIcon").innerText = info.icon;
+        document.getElementById("pinTitle").innerText = info.title;
+        document.getElementById("pinText").innerText = info.text;
+        playChirp(1000, 'sine', 0.05);
+      }
+    }
+
+    // Keyboard Navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        changeSlide(1);
+      } else if (e.key === 'ArrowLeft') {
+        changeSlide(-1);
+      } else if (e.key === '1') {
+        setCarStage(1, true);
+      } else if (e.key === '2') {
+        setCarStage(2, true);
+      } else if (e.key === '3') {
+        setCarStage(3, true);
+      } else if (e.key === '4') {
+        setCarStage(4, true);
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullScreen();
+      }
+    });
+
+    // Dynamic Host-aware demo links
+    (function initDemoLinks() {
+      const host = window.location.hostname || 'localhost';
+      const crmLink = document.getElementById('headerCrmLink');
+      const tmaLink = document.getElementById('headerTmaLink');
+      if (crmLink) {
+        if (window.location.protocol === 'file:' || host === 'localhost' || host === '127.0.0.1') {
+          crmLink.href = 'http://localhost:8501';
+        } else {
+          crmLink.href = `http://${host}:8501`;
+        }
+      }
+      if (tmaLink) {
+        if (window.location.protocol === 'file:') {
+          tmaLink.href = 'http://localhost:8507/';
+        } else {
+          tmaLink.href = `http://${host}:8507/`;
+        }
+      }
+    })();
+
+    // Initialize
+    updateSlideUI();
+  </script>
+</body>
+</html>

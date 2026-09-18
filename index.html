@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify — B2B AI Autonomous Systems & Interactive Showcases</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #030712;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(59, 130, 246, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 30px rgba(59, 130, 246, 0.2);
+    }
+    .grid-bg {
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+<body class="grid-bg min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-white/5 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-blue-500/30">⚡</div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-white">GPTify<span class="text-blue-500">.co</span></span>
+          <span class="block text-[10px] uppercase font-mono tracking-widest text-slate-400">B2B AI Autonomous Systems</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://t.me/shukhrat_ai" target="_blank" class="text-xs font-semibold px-4 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-md shadow-blue-600/20 flex items-center gap-2">
+          <i class="fa-brands fa-telegram"></i>
+          <span>Konsultatsiya Olish</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="max-w-7xl mx-auto px-6 py-16 flex-1 w-full">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+        INTERACTIVE CLIENT SHOWCASES • TIZIMLAR NAMUNALARI
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight mb-6">
+        Biznesingiz uchun <br/><span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-teal-300 bg-clip-text text-transparent">24/7 Avtonom AI Tizimlar</span>
+      </h1>
+      <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+        Statik prezentatsiyalar o'tmishda qoldi. Quyidagi sohaviy yechimlarimizni telefoningiz yoki kompyuteringizda jonli interaktiv formatda sinab ko'ring:
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Card 1: AutoPro24 -->
+      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group">
+        <div class="absolute -right-12 -top-12 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-amber-500/20 transition-all"></div>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-car-rear"></i>
+          </div>
+          <div class="inline-block text-[11px] font-mono uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-md mb-3">
+            Avtoservis & Sotuv
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">AutoPro²⁴</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Porsche 911 GT3 uslubidagi scrollytelling. Kechki va tungi paytda mijozlar narx so'raganda ularni yo'qotmasdan, avtomat usta qabuliga yozuvchi AI-menejer.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 mb-8 font-mono">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Porsche 911 Hotspot interaktiv xaritasi</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Usta qabuliga 5 soniyada yozish</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Real SQLite/Postgres integratsiyasi</li>
+          </ul>
+        </div>
+        <a href="autopro24.html" class="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-center text-sm transition-all shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
+          <span>Namoyishni Ochish</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Card 2: MedPro24 -->
+      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group">
+        <div class="absolute -right-12 -top-12 w-40 h-40 bg-teal-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-teal-500/20 transition-all"></div>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="inline-block text-[11px] font-mono uppercase tracking-wider text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded-md mb-3">
+            Klinika & Tibbiyot
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">MedPro²⁴</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Chinobod Fayz neyrojarrohlik va fizioterapiya klinikasi keysi. Bemorlarga xushmuomala maslahat beruvchi va shifokorlar jadvalini to'ldiruvchi AI-konsyerj.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 mb-8 font-mono">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Neyrojarrohlik & Umurtqa bo'limi</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Bemor bilan muloyim "Siz" muloqoti</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Oylik yo'qotilayotgan daromad kalkulyatori</li>
+          </ul>
+        </div>
+        <a href="medpro24.html" class="w-full py-3.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-center text-sm transition-all shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2">
+          <span>Namoyishni Ochish</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Card 3: EduPro24 -->
+      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group">
+        <div class="absolute -right-12 -top-12 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/20 transition-all"></div>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="inline-block text-[11px] font-mono uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md mb-3">
+            Ta'lim & O'quv Markazlari
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">EduPro²⁴</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Thompson School xususiy maktabi va o'quv markazlari uchun. Qabul komissiyasini 24/7 avtomatlashtirish va ota-onalar bilan saralash suhbati.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 mb-8 font-mono">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> IELTS & IT kurslar qabul konveyeri</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Birinchi darsga avto-ro'yxatga olish</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Turnstile & O'quvchi boshqaruv ekrani</li>
+          </ul>
+        </div>
+        <a href="edupro24.html" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-center text-sm transition-all shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2">
+          <span>Namoyishni Ochish</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Authority Footer Callout -->
+    <div class="mt-16 p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h4 class="text-xl font-bold text-white mb-2">O'z biznesingizda 14 kunlik sinovni boshlamoqchimisiz?</h4>
+        <p class="text-slate-400 text-sm">GPTify har bir biznes uchun individual sozlanadigan avtonom sotuv va konsyerj tizimlarini taqdim etadi.</p>
+      </div>
+      <a href="https://t.me/shukhrat_ai" target="_blank" class="whitespace-nowrap px-6 py-3.5 rounded-xl bg-white text-slate-950 hover:bg-slate-200 font-extrabold text-sm transition-all shadow-xl">
+        Shukhrat Iskandarov Bilan Bog'lanish ➔
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8 text-center text-xs text-slate-500 font-mono">
+    <p>© 2026 GPTify.co • B2B AI Workflow Consultancy & Systems Builder. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+</body>
+</html>

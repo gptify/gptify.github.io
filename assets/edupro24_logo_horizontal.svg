@@ -1,0 +1,18 @@
+<svg width="600" height="140" viewBox="0 0 600 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Badge -->
+  <rect x="10" y="10" width="120" height="120" rx="32" fill="url(#hGrad)"/>
+  <rect x="12" y="12" width="116" height="116" rx="30" stroke="#60a5fa" stroke-width="2" stroke-opacity="0.3"/>
+  <text x="44" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="56" fill="#ffffff">E</text>
+  <text x="81" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="28" fill="#38bdf8">24</text>
+  
+  <!-- Brand Wordmark -->
+  <text x="155" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="52" fill="#ffffff" letter-spacing="-1">EduPro<tspan fill="#38bdf8">²⁴</tspan></text>
+  <text x="157" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" fill="#94a3b8" letter-spacing="2">ALL-IN-ONE CRM &amp; TELEGRAM OS</text>
+  
+  <defs>
+    <linearGradient id="hGrad" x1="10" y1="10" x2="130" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+</svg>

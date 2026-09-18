@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPro²⁴ — Porsche 911 GT3 Scrollytelling Taqdimot | Qahramon Usta & Real Baza</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #030712;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Fixed Photographic Background Stage */
+    #photo-stage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      overflow: hidden;
+      background-color: #030712;
+    }
+
+    .car-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      filter: brightness(0.62) contrast(1.15);
+      transform: scale(1);
+    }
+    .car-photo.active {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+    .car-photo.inactive {
+      opacity: 0;
+      transform: scale(1.08);
+      pointer-events: none;
+    }
+
+    /* Studio Lighting & Vignettes */
+    .studio-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(3, 7, 18, 0.15) 0%, rgba(3, 7, 18, 0.75) 70%, rgba(3, 7, 18, 0.98) 100%);
+      pointer-events: none;
+    }
+    .top-bottom-shadows {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(3,7,18,0.95) 0%, transparent 15%, transparent 80%, rgba(3,7,18,0.98) 100%);
+      pointer-events: none;
+    }
+
+    /* Large Glassmorphism Scrollytelling Panels */
+    .scrolly-section {
+      position: relative;
+      z-index: 10;
+      min-height: 130vh;
+      display: flex;
+      align-items: center;
+      padding: 6rem 2rem;
+      pointer-events: none;
+    }
+    .story-panel-lg {
+      pointer-events: auto;
+      background: rgba(8, 14, 28, 0.88);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1.5px solid rgba(255, 255, 255, 0.14);
+      border-radius: 2rem;
+      padding: 2.75rem sm:padding: 3.5rem;
+      max-width: 44rem;
+      width: 100%;
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.92), 0 0 50px rgba(245, 158, 11, 0.15);
+      transition: all 0.4s ease-out;
+    }
+    .story-panel-lg:hover {
+      border-color: rgba(245, 158, 11, 0.55);
+      box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.98), 0 0 60px rgba(245, 158, 11, 0.28);
+    }
+
+    /* Interactive Hotspot Pins */
+    .hotspot-pin {
+      position: absolute;
+      z-index: 3;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .hotspot-pulse {
+      animation: hotspotWave 2s infinite ease-out;
+    }
+    @keyframes hotspotWave {
+      0% { transform: scale(0.9); opacity: 0.9; }
+      50% { transform: scale(2.2); opacity: 0; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+
+    /* HUD overlay */
+    .hud-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      pointer-events: none;
+    }
+    .header-hud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      pointer-events: none;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      will-change: transform, opacity;
+    }
+    .header-hidden {
+      transform: translateY(-120%);
+      opacity: 0;
+    }
+    .hud-interactive {
+      pointer-events: auto;
+    }
+
+    /* Sliders */
+    input[type=range] {
+      accent-color: #f59e0b;
+      height: 8px;
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- =============================================================== -->
+  <!-- 1. FULL-SCREEN REAL PHOTOGRAPHIC STAGE (PORSCHE 911 GT3) -->
+  <!-- =============================================================== -->
+  <div id="photo-stage">
+    <!-- Stage 1: Exterior Real Porsche 911 GT3 in Studio -->
+    <img id="photo-1" src="assets/stage1_exterior.jpg" alt="Porsche 911 GT3 Exterior" class="car-photo active">
+    
+    <!-- Stage 2: Cockpit Open Door Real Porsche Interior -->
+    <img id="photo-2" src="assets/stage2_cockpit.jpg" alt="Porsche 911 Cockpit Interior" class="car-photo inactive">
+    
+    <!-- Stage 3: Real Engine Bay & Hood Lifted -->
+    <img id="photo-3" src="assets/stage3_hood.jpg" alt="Porsche 911 Engine Bay" class="car-photo inactive">
+    
+    <!-- Stage 4: Real Engine Telemetry Macro Close-up -->
+    <img id="photo-4" src="assets/stage4_engine.jpg" alt="Porsche 911 Engine Powertrain" class="car-photo inactive">
+
+    <!-- Cinematic Overlays -->
+    <div class="studio-vignette"></div>
+    <div class="top-bottom-shadows"></div>
+
+    <!-- Hotspots -->
+    <div id="hotspotChassis" class="hotspot-pin left-[40%] top-[58%]" onclick="alert('🚗 Avtomobil Aniqlash Tizimi:\nO\'zbekistondagi 24+ modellar (Cobalt, Gentra, Tracker, BYD, Porsche) bazasi to\'liq sinxronlangan!')">
+      <div class="relative flex items-center justify-center">
+        <span class="absolute w-10 h-10 rounded-full bg-amber-500/40 hotspot-pulse"></span>
+        <span class="w-4 h-4 rounded-full bg-amber-400 border-2 border-white shadow-lg shadow-amber-500/60"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================================================== -->
+  <!-- 2. HUD HEADER (LARGE, CLEAN & SMART AUTO-HIDE) -->
+  <!-- =============================================================== -->
+  <header id="mainHeader" class="header-hud flex justify-between items-start p-3.5 sm:p-5 lg:px-10">
+    <div class="hud-interactive flex items-center space-x-3 bg-slate-950/80 border border-slate-800/90 px-4 py-2.5 rounded-2xl backdrop-blur-xl shadow-2xl">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 text-slate-950 font-black flex items-center justify-center text-sm shadow-lg shadow-amber-500/30">
+        A²⁴
+      </div>
+      <div>
+        <div class="flex items-center space-x-2">
+          <span class="font-extrabold text-sm sm:text-base tracking-tight text-white">AutoPro<sup class="text-amber-400 font-black">24</sup></span>
+          <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full font-mono uppercase font-bold">Porsche 911 Edition</span>
+        </div>
+        <span class="text-[11px] text-slate-400 font-mono">Shukhrat Iskandarov | GPTify.co</span>
+      </div>
+    </div>
+
+    <!-- Navigation Chapters Bar -->
+    <div class="hud-interactive flex items-center space-x-2.5">
+      <div class="hidden lg:flex items-center space-x-1.5 bg-slate-950/80 border border-slate-800/90 p-1.5 rounded-2xl backdrop-blur-xl font-mono text-xs">
+        <button onclick="jumpToSection(0)" id="navDot0" class="nav-btn px-3.5 py-1.5 rounded-xl text-amber-400 font-bold bg-amber-500/20 shadow-lg">01 Tashqi Korpus</button>
+        <button onclick="jumpToSection(1)" id="navDot1" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">02 Qahramon Usta Muloqoti</button>
+        <button onclick="jumpToSection(2)" id="navDot2" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">03 Yuklangan Avto-Baza</button>
+        <button onclick="jumpToSection(3)" id="navDot3" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">04 Ombor & Bochka</button>
+        <button onclick="jumpToSection(4)" id="navDot4" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">05 Katta ROI Hisobi</button>
+      </div>
+
+      <button onclick="toggleFullscreen()" title="To'liq Ekran Rejimi (F klavishi)" class="px-3.5 py-2.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-bold font-mono transition flex items-center gap-2 shadow-lg cursor-pointer">
+        <i class="fa-solid fa-expand text-amber-400 text-sm" id="fullscreenIcon"></i>
+        <span id="fullscreenText" class="hidden sm:inline">To'liq Ekran</span>
+      </button>
+
+      <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-black font-mono transition shadow-xl shadow-amber-500/30 flex items-center gap-2">
+        <i class="fa-brands fa-telegram text-base"></i>
+        <span>@AvtoPro_CRM_bot</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Progress Bar -->
+  <div class="hud-layer pointer-events-none">
+    <div id="scrollProgressBar" class="h-1.5 bg-gradient-to-r from-amber-500 via-orange-500 to-emerald-400 transition-all duration-150" style="width: 20%;"></div>
+  </div>
+
+  <!-- Telemetry HUD Footer -->
+  <footer class="hud-layer flex justify-between items-end p-4 sm:p-8 lg:px-14">
+    <div class="hud-interactive flex items-center space-x-3 text-xs sm:text-sm font-mono text-slate-300 bg-slate-950/80 border border-slate-800/90 px-5 py-2.5 rounded-xl backdrop-blur-xl">
+      <div class="flex items-center space-x-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-white font-bold text-xs sm:text-sm" id="liveStageLabel">PORSCHE 911 GT3 • 360° SHOWROOM</span>
+      </div>
+      <span class="text-slate-600">|</span>
+      <span>MOY ANIQLIGI: <b class="text-emerald-400">99.8%</b></span>
+    </div>
+
+    <div class="text-right text-xs font-mono text-slate-400 bg-slate-950/80 border border-slate-800/90 px-4 py-2 rounded-xl backdrop-blur-xl">
+      Pastga aylantiring &darr;
+    </div>
+  </footer>
+
+  <!-- =============================================================== -->
+  <!-- 3. SCROLLYTELLING CHAPTERS (LARGER WORDS, BIGGER PANELS) -->
+  <!-- =============================================================== -->
+  <main class="relative z-10">
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 1: REAL PORSCHE 911 SHOWROOM & MISSION -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-start" id="section-0">
+      <div class="story-panel-lg ml-0 lg:ml-12 border-amber-500/40 p-8 sm:p-12">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-amber-400 mb-4 bg-amber-500/10 px-3.5 py-1.5 rounded-full border border-amber-500/20 font-bold">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
+          <span>01 / 05 • HAQIQIY AVTOMOBIL EKOTIZIMI</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight tracking-tight">
+          Har bir mashinaga <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-emerald-400">
+            Porsche Aniqligida
+          </span> Xizmat.
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-200 mt-4 leading-relaxed font-normal">
+          Orqada haqiqiy <strong>Porsche 911 GT3</strong> studiya fotosurati. AutoPro²⁴ servisingizga kirgan istalgan avtomobilni — <em>Cobalt, Gentra, BYD Song Plus yoki Malibu</em> — bir zumda aniqlaydi va nehisob kamomadni to'xtatadi.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-slate-800 text-xs sm:text-sm font-mono">
+          <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-xs block">Moy Hisobi Aniqligi:</span>
+            <span class="text-emerald-400 font-black text-lg sm:text-xl">99.8% Raqamli</span>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1">
+            <span class="text-slate-400 text-xs block">Tayyor Yuklangan Baza:</span>
+            <span class="text-amber-400 font-black text-lg sm:text-xl">24+ Mahalliy Model</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 2: REAL LIFE EXAMPLE OF QAHRAMON USTA & O'KTAM AKA -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-end" id="section-1">
+      <div class="story-panel-lg mr-0 lg:ml-auto lg:mr-12 border-cyan-500/40 p-8 sm:p-12">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-cyan-400 mb-4 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20 font-bold">
+          <i class="fa-solid fa-microphone"></i>
+          <span>02 / 05 • JONLI REALLIK: QAHRAMON USTA MISOLLARI</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Qahramon usta moyli qo'l bilan qanday yozadi?
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-200 mt-3 leading-relaxed">
+          Kamera haqiqiy Porsche kokpitiga kirdi. Usta hech qachon murakkab 1C yoki kompyuterga kirmaydi. <strong>Qahramon usta</strong> Telegram guruhiga shunchaki o'z tilida yozadi:
+        </p>
+
+        <!-- The Exact Mechanic Message from Codebase -->
+        <div class="mt-4 p-4 sm:p-5 rounded-2xl bg-slate-950/95 border border-slate-800 font-mono text-xs sm:text-sm space-y-1 text-slate-300">
+          <div class="text-amber-400 text-xs font-bold border-b border-slate-800 pb-1.5 flex justify-between">
+            <span>💬 Usta (Qahramon) yuborgan xabar:</span>
+            <span class="text-slate-500">Telegram Guruh</span>
+          </div>
+          <div class="pt-1.5 text-slate-100 font-bold">Kobalt</div>
+          <div class="text-slate-300">Micking 10w40</div>
+          <div class="text-slate-300">Moy 3.5litr</div>
+          <div class="text-cyan-300">Moy f • Voz f</div>
+          <div class="text-slate-400">Mator flush</div>
+          <div class="text-slate-400">Gidrilika moy 300 gram</div>
+          <div class="text-amber-400 font-black text-sm pt-1">390 000 Click</div>
+        </div>
+
+        <!-- How AI Instantly Understands and Parses -->
+        <div class="mt-4 p-4 sm:p-5 rounded-2xl bg-emerald-950/40 border border-emerald-500/40 font-mono text-xs sm:text-sm text-slate-200 space-y-1.5">
+          <div class="text-emerald-400 font-bold text-xs flex justify-between items-center border-b border-emerald-900/60 pb-1.5">
+            <span>🤖 AI Buxgalter tushundi va tasdiqladi:</span>
+            <span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[10px]">1 soniyada</span>
+          </div>
+          <div class="flex justify-between"><span>• Mashina:</span> <strong class="text-white">Cobalt 1.5L</strong></div>
+          <div class="flex justify-between"><span>• Moy:</span> <strong class="text-cyan-300">Micking 10W-40 (3.5 Litr)</strong></div>
+          <div class="flex justify-between"><span>• Filtrlar:</span> <strong class="text-white">Moy filtri + Havo (Vozdux) filtri</strong></div>
+          <div class="flex justify-between"><span>• Qo'shimcha:</span> <strong class="text-slate-300">Dvigatel yuvish (Flush) + Gidravlika 300g</strong></div>
+          <div class="flex justify-between border-t border-emerald-900/60 pt-1.5">
+            <span>• O'ktam aka (Do'kon egasi) kassa holati:</span>
+            <strong class="text-amber-400 font-bold">390,000 UZS (Click)</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 3: REAL UPLOADED DATABASE & FACTORY OEM SPECS -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-start" id="section-2">
+      <div class="story-panel-lg ml-0 lg:ml-12 border-orange-500/40 p-8 sm:p-12">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-orange-400 mb-4 bg-orange-500/10 px-3.5 py-1.5 rounded-full border border-orange-500/20 font-bold">
+          <i class="fa-solid fa-database"></i>
+          <span>03 / 05 • TIZIMGA YUKLANGAN RASMIY BAZA</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          O'zbekistondagi 24+ avtomobil va zavod moylari bazasi.
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-200 mt-3 leading-relaxed">
+          Kamera Porsche dvigatel xonasini ochdi. Tizimga yuklangan rasmiy katalog bo'yicha har bir dvigatelning aniq sig'imi va zavod tolerantligi darhol ko'rsatiladi:
+        </p>
+
+        <!-- Real Database Specs Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-5 text-xs sm:text-sm font-mono">
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1">
+            <span class="text-amber-400 font-bold block">🚗 Cobalt & Gentra 1.5L</span>
+            <span class="text-slate-300">• Sig'im: <strong>3.75 Litr</strong></span>
+            <span class="text-slate-400 block">• Tavsiya: 5W-30 Dexos1 Gen3</span>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1">
+            <span class="text-cyan-400 font-bold block">🚗 Tracker 1.2T & Onix</span>
+            <span class="text-slate-300">• Sig'im: <strong>4.0 Litr</strong></span>
+            <span class="text-slate-400 block">• Tavsiya: 0W-20 Dexos1 Gen3</span>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1">
+            <span class="text-emerald-400 font-bold block">🚗 BYD Song Plus DM-i</span>
+            <span class="text-slate-300">• Sig'im: <strong>3.3 Litr</strong></span>
+            <span class="text-slate-400 block">• Tavsiya: 0W-16 / 0W-20 SP</span>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1">
+            <span class="text-orange-400 font-bold block">🚗 Porsche 911 GT3</span>
+            <span class="text-slate-300">• Sig'im: <strong>4.1 Litr</strong></span>
+            <span class="text-slate-400 block">• Tavsiya: 0W-40 Porsche A40</span>
+          </div>
+        </div>
+
+        <div class="mt-4 p-3.5 rounded-xl bg-blue-950/30 border border-blue-500/30 text-xs sm:text-sm font-mono text-blue-200">
+          ✓ Dilerlik moylari: <strong>Shell, Motul, ZIC, Micking, Castrol, Hyundai XTeer</strong> to'liq integratsiya qilingan.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 4: BARREL INVENTORY, LEAKAGE & /ZAKAZ -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-end" id="section-3">
+      <div class="story-panel-lg mr-0 lg:ml-auto lg:mr-12 border-emerald-500/40 p-8 sm:p-12">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-emerald-400 mb-4 bg-emerald-500/10 px-3.5 py-1.5 rounded-full border border-emerald-500/20 font-bold">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          <span>04 / 05 • BOCHKALARDAN AVTOMAT AYIRISH</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          208 litrlik bochkada bir tomchi ham kamomad bo'lmaydi.
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-200 mt-3 leading-relaxed">
+          Kamera dvigatel detallariga yaqinlashdi. Qahramon usta chek yozishi bilan bochkadagi litr avtomatik kamayadi va O'ktam akaning <strong>5-varaqli Google Sheets</strong> hisobotiga tushadi:
+        </p>
+
+        <!-- Live Barrel Level Meters -->
+        <div class="mt-5 space-y-3 font-mono text-xs sm:text-sm">
+          <div class="p-3.5 rounded-xl bg-slate-950/90 border border-slate-800">
+            <div class="flex justify-between mb-1.5">
+              <span class="text-white font-bold">Shell Helix Ultra 5W-30:</span>
+              <span class="text-emerald-400 font-bold">164.25 L / 208 L</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-3 overflow-hidden border border-slate-800">
+              <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-3 rounded-full" style="width: 78%;"></div>
+            </div>
+            <span class="text-[11px] text-slate-400 mt-1 block">Zaxira: ~43 ta mashinaga yetadi</span>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-red-950/30 border border-red-500/40">
+            <div class="flex justify-between mb-1.5">
+              <span class="text-white font-bold">Castrol EDGE 0W-20:</span>
+              <span class="text-red-400 font-bold">18.5 L / 208 L</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-3 overflow-hidden border border-slate-800">
+              <div class="bg-red-500 h-3 rounded-full" style="width: 9%;"></div>
+            </div>
+            <div class="flex justify-between items-center mt-2">
+              <span class="text-[11px] text-red-300 font-bold">⚠️ Tugamoqda: Zakaz berish kerak!</span>
+              <button onclick="alert('Dilerga tayyor buyurtma xati shakllantirildi:\n\nCastrol Dileriga:\n- 1 bochka Castrol EDGE 0W-20\n- 20 ta Cobalt moy filtri\n\nTelegram orqali dilerga 1-klikda yuborildi!')" class="px-3 py-1 rounded bg-red-600 hover:bg-red-500 text-white text-[11px] font-bold transition">
+                /zakaz — Dilerga Xat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 5: LARGE FINANCIAL ROI & RECALL REVENUE -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-center text-center" id="section-4">
+      <div class="story-panel-lg max-w-3xl border-amber-500/60 mx-auto p-8 sm:p-14">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-amber-400 mb-4 bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 font-bold">
+          <i class="fa-solid fa-chart-line-up"></i>
+          <span>05 / 05 • AVTOSERVISINGIZ OYLIK FOYDA HISOBI</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+          1 Oyda Servisingizga Qancha Pul Qoladi?
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-200 mt-3 max-w-xl mx-auto">
+          Mijoz probegi 7,000 km ga yetganda avtomat taklifnoma boradi. Mijozlarning qaytishi 25% dan <strong>65% ga</strong> chiqadi. O'zingiz hisoblab ko'ring:
+        </p>
+
+        <!-- Large ROI Sliders -->
+        <div class="mt-8 text-left space-y-6 p-6 sm:p-8 rounded-3xl bg-slate-950/95 border border-slate-800">
+          <div>
+            <div class="flex justify-between text-sm sm:text-base font-mono mb-2">
+              <span class="text-slate-200 font-semibold">Kunlik Moy Almashtiradigan Mashinalar:</span>
+              <span id="carsBigVal" class="text-amber-400 font-bold text-lg">20 ta / kun</span>
+            </div>
+            <input type="range" id="carsBigInput" min="5" max="60" value="20" oninput="calculateBigROI()" class="w-full cursor-pointer">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm sm:text-base font-mono mb-2">
+              <span class="text-slate-200 font-semibold">O'rtacha Chek (Moy + Filtr + Xizmat):</span>
+              <span id="checkBigVal" class="text-emerald-400 font-bold text-lg">500,000 UZS</span>
+            </div>
+            <input type="range" id="checkBigInput" min="200000" max="1500000" step="50000" value="500000" oninput="calculateBigROI()" class="w-full cursor-pointer">
+          </div>
+
+          <!-- Calculated Big Number -->
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/50 via-slate-900 to-slate-950 border border-emerald-500/50 text-center space-y-2">
+            <span class="text-xs sm:text-sm font-mono text-slate-400 uppercase tracking-wider block">Oylik Saqlab Qolinadigan Qo'shimcha Daromad:</span>
+            <div class="text-4xl sm:text-6xl font-black text-emerald-400 font-mono tracking-tight" id="roiBigOutput">+31,200,000 UZS</div>
+            <span class="text-xs text-slate-400 block mt-2">Standart tarif to'lovi (490,000 UZS) atigi <strong>1 ta mashinada</strong> to'liq o'zini qoplaydi.</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="https://t.me/AvtoPro_CRM_bot" target="_blank" class="flex-1 py-5 px-8 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-sm sm:text-base font-mono uppercase tracking-wider transition shadow-2xl shadow-amber-500/40 flex items-center justify-center gap-3">
+            <i class="fa-brands fa-telegram text-xl"></i>
+            <span>@AvtoPro_CRM_bot ni Ishga Tushirish</span>
+          </a>
+          <a href="https://t.me/shukhrat_ai" target="_blank" class="py-5 px-8 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-sm sm:text-base font-mono border border-slate-700 transition flex items-center justify-center gap-3">
+            <i class="fa-solid fa-phone text-emerald-400"></i>
+            <span>@shukhrat_ai</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================================== -->
+  <!-- 4. JAVASCRIPT SCROLL CONTROLLER -->
+  <!-- =============================================================== -->
+  <script>
+    const photos = [
+      document.getElementById('photo-1'),
+      document.getElementById('photo-2'),
+      document.getElementById('photo-3'),
+      document.getElementById('photo-4')
+    ];
+
+    const stageTitles = [
+      "PORSCHE 911 GT3 • 360° SHOWROOM",
+      "QAHRAMON USTA VA TELEGRAM KASSA MULOQOTI",
+      "YUKLANGAN BAZA • 24+ AVTO VA ZAVOD MOYLARI",
+      "OMBOR & BOCHKALARDAN AVTOMAT AYIRISH",
+      "RECALL VA OYLIK FOYDA HISOBI"
+    ];
+
+    let currentPhotoIdx = 0;
+
+    function onScrollScrolly() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPct = Math.max(0, Math.min(1, scrollTop / docHeight));
+
+      // Progress bar
+      document.getElementById('scrollProgressBar').style.width = `${scrollPct * 100}%`;
+
+      // Determine active section (0 to 4)
+      const secCount = 5;
+      const secIdx = Math.min(secCount - 1, Math.floor(scrollPct * secCount));
+
+      // Map sections to photos:
+      // Sec 0 -> Photo 1 (Exterior)
+      // Sec 1 -> Photo 2 (Cockpit)
+      // Sec 2 -> Photo 3 (Hood)
+      // Sec 3 -> Photo 4 (Engine Macro)
+      // Sec 4 -> Photo 4 (Macro / Final ROI)
+      let photoTarget = Math.min(3, secIdx);
+
+      if (photoTarget !== currentPhotoIdx) {
+        photos[currentPhotoIdx].classList.remove('active');
+        photos[currentPhotoIdx].classList.add('inactive');
+
+        photos[photoTarget].classList.remove('inactive');
+        photos[photoTarget].classList.add('active');
+
+        currentPhotoIdx = photoTarget;
+      }
+
+      // Hotspot visibility
+      const hsChassis = document.getElementById('hotspotChassis');
+      if (hsChassis) {
+        if (photoTarget === 0) {
+          hsChassis.classList.remove('hidden');
+        } else {
+          hsChassis.classList.add('hidden');
+        }
+      }
+
+      // Update Nav Dots & Footer
+      document.getElementById('liveStageLabel').innerText = stageTitles[secIdx];
+      for (let i = 0; i < secCount; i++) {
+        const btn = document.getElementById(`navDot${i}`);
+        if (btn) {
+          if (i === secIdx) {
+            btn.className = 'nav-btn px-3.5 py-1.5 rounded-xl text-amber-400 font-bold bg-amber-500/20 shadow-lg';
+          } else {
+            btn.className = 'nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white';
+          }
+        }
+      }
+
+      // Smart Header Visibility
+      if (headerEl) {
+        if (scrollTop < 80) {
+          headerEl.classList.remove('header-hidden');
+        } else if (scrollTop > lastScrollTop + 6 && scrollTop > 120) {
+          headerEl.classList.add('header-hidden');
+        } else if (scrollTop < lastScrollTop - 6) {
+          headerEl.classList.remove('header-hidden');
+        }
+      }
+      lastScrollTop = scrollTop;
+    }
+
+    let lastScrollTop = window.scrollY;
+    const headerEl = document.getElementById('mainHeader');
+
+    window.addEventListener('mousemove', (e) => {
+      if (e.clientY < 75 && headerEl) {
+        headerEl.classList.remove('header-hidden');
+      }
+    });
+
+    window.addEventListener('scroll', onScrollScrolly, { passive: true });
+
+    function jumpToSection(idx) {
+      if (idx === 0) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (headerEl) headerEl.classList.remove('header-hidden');
+      } else if (idx === 4) {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      } else {
+        const el = document.getElementById(`section-${idx}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    }
+
+    // ROI Calculator Function
+    function calculateBigROI() {
+      const cars = parseInt(document.getElementById('carsBigInput').value);
+      const check = parseInt(document.getElementById('checkBigInput').value);
+
+      document.getElementById('carsBigVal').innerText = `${cars} ta / kun`;
+      document.getElementById('checkBigVal').innerText = `${check.toLocaleString()} UZS`;
+
+      const monthlyCars = cars * 26;
+      // ~0.5L unrecorded oil saved per car = 10,000 UZS avg
+      const leakageSavings = monthlyCars * 10000;
+      // 20% returning customers who wouldn't return otherwise
+      const retentionProfit = Math.round(monthlyCars * 0.20) * check;
+      const total = leakageSavings + retentionProfit;
+
+      document.getElementById('roiBigOutput').innerText = `+${total.toLocaleString()} UZS`;
+    }
+
+    // Fullscreen Toggle
+    function toggleFullscreen() {
+      const doc = document.documentElement;
+      const icon = document.getElementById('fullscreenIcon');
+      const text = document.getElementById('fullscreenText');
+
+      if (!document.fullscreenElement) {
+        if (doc.requestFullscreen) {
+          doc.requestFullscreen();
+        } else if (doc.webkitRequestFullscreen) {
+          doc.webkitRequestFullscreen();
+        } else if (doc.msRequestFullscreen) {
+          doc.msRequestFullscreen();
+        }
+        if (icon) icon.className = 'fa-solid fa-compress text-amber-400 text-sm';
+        if (text) text.innerText = 'Chiqish';
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+        if (icon) icon.className = 'fa-solid fa-expand text-amber-400 text-sm';
+        if (text) text.innerText = 'To\'liq Ekran';
+      }
+    }
+
+    // Keyboard controls (F for fullscreen, arrows for chapter navigation)
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        const nextIdx = Math.min(4, currentPhotoIdx + 1);
+        jumpToSection(nextIdx);
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const prevIdx = Math.max(0, currentPhotoIdx - 1);
+        jumpToSection(prevIdx);
+      }
+    });
+
+    // Double click on car stage to toggle fullscreen
+    const stageEl = document.getElementById('photo-stage');
+    if (stageEl) {
+      stageEl.addEventListener('dblclick', toggleFullscreen);
+    }
+
+    // Init on load
+    onScrollScrolly();
+    calculateBigROI();
+  </script>
+</body>
+</html>

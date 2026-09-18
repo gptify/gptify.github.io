@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedPro²⁴ — Chinobod Fayz Scrollytelling Taqdimot | Neyrojarrohlik & Umurtqa CRM</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #030712;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Fixed Photographic Background Stage */
+    #photo-stage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      overflow: hidden;
+      background-color: #030712;
+    }
+
+    .clinic-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      filter: brightness(0.60) contrast(1.15);
+      transform: scale(1);
+    }
+    .clinic-photo.active {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+    .clinic-photo.inactive {
+      opacity: 0;
+      transform: scale(1.08);
+      pointer-events: none;
+    }
+
+    /* Studio Lighting & Clinical Vignettes */
+    .studio-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(3, 7, 18, 0.2) 0%, rgba(3, 7, 18, 0.78) 70%, rgba(3, 7, 18, 0.98) 100%);
+      pointer-events: none;
+    }
+    .top-bottom-shadows {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(3,7,18,0.95) 0%, transparent 15%, transparent 80%, rgba(3,7,18,0.98) 100%);
+      pointer-events: none;
+    }
+
+    /* Large Glassmorphism Scrollytelling Panels */
+    .scrolly-section {
+      position: relative;
+      z-index: 10;
+      min-height: 130vh;
+      display: flex;
+      align-items: center;
+      padding: 6rem 2rem;
+      pointer-events: none;
+    }
+    .story-panel-lg {
+      pointer-events: auto;
+      background: rgba(8, 14, 28, 0.90);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1.5px solid rgba(255, 255, 255, 0.14);
+      border-radius: 2rem;
+      padding: 2.25rem 2.5rem;
+      max-width: 44rem;
+      width: 100%;
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.92), 0 0 50px rgba(6, 182, 212, 0.15);
+      transition: all 0.4s ease-out;
+    }
+
+    /* HUD Overlay Layers */
+    .hud-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      pointer-events: none;
+    }
+    .header-hud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      pointer-events: none;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      will-change: transform, opacity;
+    }
+    .header-hidden {
+      transform: translateY(-120%);
+      opacity: 0;
+    }
+    .hud-interactive {
+      pointer-events: auto;
+    }
+
+    /* Pulse animations */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.08); }
+    }
+    .glow-pulse {
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+
+    /* Custom range slider */
+    input[type=range] {
+      accent-color: #06b6d4;
+      height: 8px;
+    }
+  </style>
+</head>
+<body class="selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- =============================================================== -->
+  <!-- 1. FULL-SCREEN CINEMATIC PHOTOGRAPHIC STAGE (CHINOBOD FAYZ) -->
+  <!-- =============================================================== -->
+  <div id="photo-stage">
+    <!-- Stage 1: Ultra-High-Res Hospital Facade (Clean Architectural Illumination) -->
+    <img id="photo-1" src="assets/chinobod_stage1_exterior_hd.jpg" alt="Chinobod Fayz Plus Markazi" class="clinic-photo active">
+    
+    <!-- Stage 2: High-Field Siemens Magnetom Skyra MRI Diagnostic Suite -->
+    <img id="photo-2" src="assets/chinobod_stage2_mri_hd.jpg" alt="Chinobod Fayz MRI Suite" class="clinic-photo inactive">
+    
+    <!-- Stage 3: Real Neurosurgeon in Operating Theater (Clean Feathered HD Composition) -->
+    <img id="photo-3" src="assets/chinobod_stage_surgeon_clean.jpg" alt="Chinobod Fayz Plus Neyrojarrohi Operatsiya Xonasida" class="clinic-photo inactive">
+    
+    <!-- Stage 4: Real Doctor & Patient in Ward (Clean Feathered HD Composition) -->
+    <img id="photo-4" src="assets/chinobod_stage_doctor_patient_clean.jpg" alt="Chinobod Fayz Plus Shifokor va Bemor Muloqoti" class="clinic-photo inactive">
+
+    <!-- Cinematic Overlays -->
+    <div class="studio-vignette"></div>
+    <div class="top-bottom-shadows"></div>
+
+    <!-- Hotspot Pin (Interactive on Entrance Signage) -->
+    <div id="hotspotClinic" class="hotspot-pin absolute left-[62%] top-[54%] cursor-pointer z-20" onclick="alert('🏥 Chinobod Fayz Plus:\nXususiy neyrojarrohlik va umurtqa kasalliklari klinikasi\nAndijon, Baliqchi | Tel: +998-90-573-0083')">
+      <div class="relative flex items-center justify-center">
+        <span class="absolute w-10 h-10 rounded-full bg-cyan-500/40 animate-ping"></span>
+        <span class="w-4 h-4 rounded-full bg-cyan-400 border-2 border-white shadow-lg shadow-cyan-500/60"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================================================== -->
+  <!-- 2. HUD HEADER (LARGE, CLEAN & SMART AUTO-HIDE) -->
+  <!-- =============================================================== -->
+  <header id="mainHeader" class="header-hud flex justify-between items-start p-3.5 sm:p-5 lg:px-10">
+    <div class="hud-interactive flex items-center space-x-3 bg-slate-950/85 border border-slate-800/90 px-4 py-2.5 rounded-2xl backdrop-blur-xl shadow-2xl">
+      <div class="flex items-center space-x-2">
+        <img src="assets/medpro24_logo.jpg" alt="MedPro24 Logo" class="w-9 h-9 rounded-xl object-cover shadow-lg shadow-cyan-500/30 shrink-0">
+        <img src="assets/chinobod_fayz_logo_crop.png" alt="Chinobod Fayz Logo" class="h-8 rounded-lg object-contain bg-white/95 px-1 py-0.5 shadow-md shrink-0">
+      </div>
+      <div>
+        <div class="flex items-center space-x-2">
+          <span class="font-extrabold text-sm sm:text-base tracking-tight text-white">MedPro<sup class="text-cyan-400 font-black">24</sup></span>
+          <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full font-mono uppercase font-bold">Chinobod Fayz Plus</span>
+        </div>
+        <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5">
+          <span>Shukhrat Iskandarov</span>
+          <span class="text-slate-600">•</span>
+          <span class="text-emerald-400 font-bold">+998 90 573 0083</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Chapters Bar -->
+    <div class="hud-interactive flex items-center space-x-2.5">
+      <div class="hidden lg:flex items-center space-x-1.5 bg-slate-950/85 border border-slate-800/90 p-1.5 rounded-2xl backdrop-blur-xl font-mono text-xs">
+        <button onclick="jumpToSection(0)" id="navDot0" class="nav-btn px-3.5 py-1.5 rounded-xl text-cyan-400 font-bold bg-cyan-500/20 shadow-lg">01 Markaz & Missiya</button>
+        <button onclick="jumpToSection(1)" id="navDot1" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">02 Bemor Muloqoti & AI</button>
+        <button onclick="jumpToSection(2)" id="navDot2" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">03 MRT & Ovozli EMR</button>
+        <button onclick="jumpToSection(3)" id="navDot3" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">04 Statsionar & Palatalar</button>
+        <button onclick="jumpToSection(4)" id="navDot4" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">05 Moliyaviy ROI</button>
+      </div>
+
+      <button onclick="toggleFullscreen()" title="To'liq Ekran Rejimi (F klavishi)" class="px-3.5 py-2.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-bold font-mono transition flex items-center gap-2 shadow-lg cursor-pointer">
+        <i class="fa-solid fa-expand text-cyan-400 text-sm" id="fullscreenIcon"></i>
+        <span id="fullscreenText" class="hidden sm:inline">To'liq Ekran</span>
+      </button>
+
+      <a href="02_commercial_clients/medpro24/app.html" target="_blank" title="MedPro24 Jonli CRM Tizimini Ochish" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 text-xs font-black font-mono transition shadow-xl shadow-emerald-500/30 flex items-center gap-2">
+        <i class="fa-solid fa-laptop-medical text-base"></i>
+        <span>Jonli CRM &rarr;</span>
+      </a>
+
+      <a href="https://t.me/shukhrat_ai" target="_blank" class="px-4 py-2.5 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-cyan-500/40 text-cyan-300 text-xs font-black font-mono transition shadow-lg flex items-center gap-2">
+        <i class="fa-brands fa-telegram text-base text-cyan-400"></i>
+        <span>@shukhrat_ai</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Progress Bar -->
+  <div class="hud-layer pointer-events-none">
+    <div id="scrollProgressBar" class="h-1.5 bg-gradient-to-r from-cyan-500 via-teal-400 to-emerald-400 transition-all duration-150" style="width: 20%;"></div>
+  </div>
+
+  <!-- Telemetry HUD Footer -->
+  <footer class="hud-layer flex justify-between items-end p-4 sm:p-8 lg:px-14">
+    <div class="hud-interactive flex items-center space-x-3 text-xs sm:text-sm font-mono text-slate-300 bg-slate-950/85 border border-slate-800/90 px-5 py-2.5 rounded-xl backdrop-blur-xl">
+      <div class="flex items-center space-x-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-white font-bold text-xs sm:text-sm" id="liveStageLabel">CHINOBOD FAYZ PLUS • NEYROJARROHLIK BAZASI</span>
+      </div>
+      <span class="text-slate-600">|</span>
+      <span>MRT & DIAPAZON ANIQLIGI: <b class="text-emerald-400">99.4%</b></span>
+    </div>
+
+    <div class="text-right text-xs font-mono text-slate-400 bg-slate-950/85 border border-slate-800/90 px-4 py-2 rounded-xl backdrop-blur-xl">
+      Pastga aylantiring &darr; (yoki F bosing)
+    </div>
+  </footer>
+
+  <!-- =============================================================== -->
+  <!-- 3. SCROLLYTELLING CHAPTERS (HIGH IMPACT, IMMERSIVE CLINIC EXPERIENCE) -->
+  <!-- =============================================================== -->
+  <main class="relative z-10">
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 1: REAL CLINIC FACADE & OPERATIONAL REALITY -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-start" id="section-0">
+      <div class="story-panel-lg ml-0 lg:ml-12 border-cyan-500/40 p-6 sm:p-9">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-cyan-400 mb-4 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20 font-bold">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+          <span>01 / 05 • ENDOSKOPIK NEYROJARROHLIK KLINIKASI</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight tracking-tight">
+          Chinobod Fayz Plus <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400">
+            Endoskopik Neyrojarrohlik
+          </span> <br>
+          va Raqamli Boshqaruv.
+        </h1>
+
+        <p class="text-slate-300 mt-4 text-xs sm:text-base leading-relaxed">
+          <strong>Chinobod Fayz Plus</strong> — Andijon viloyati, Baliqchi tumanidagi ixtisoslashtirilgan umurtqa pog'onasi endoskopik neyrojarrohligi klinikasi. Vodiy va butun respublikadan kelayotgan bemorlar oqimi bir zumda tizimlashtiriladi.
+        </p>
+
+        <!-- Real Clinic Proof Card -->
+        <div class="mt-4 flex items-center space-x-3.5 p-3 rounded-2xl bg-slate-900/85 border border-slate-800 backdrop-blur-md">
+          <img src="assets/chinobod_real_exterior.png" alt="Chinobod Fayz Plus Haqiqiy Binosi" class="w-20 h-14 rounded-xl object-cover border border-cyan-500/40 shadow-md shrink-0">
+          <div>
+            <div class="text-[10px] text-cyan-400 font-mono font-bold uppercase tracking-wider">Haqiqiy Klinika Binosi</div>
+            <div class="text-xs text-white font-bold">Andijon, Baliqchi • Chinobod Fayz Plus</div>
+            <div class="text-[11px] text-slate-400 font-mono">Umurtqa Pog'onasi Endoskopik Neyrojarrohligi</div>
+          </div>
+        </div>
+
+        <!-- Dynamic Value Metrics -->
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <span class="text-[11px] font-mono text-slate-400 block uppercase">Koll-markaz Reaksiyasi</span>
+            <span class="text-2xl sm:text-3xl font-black text-cyan-400 font-mono mt-1 block">4 Soniyada</span>
+            <span class="text-[11px] text-slate-400 mt-1 block">24/7 AI saralash & MRT qabul</span>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <span class="text-[11px] font-mono text-slate-400 block uppercase">No-Show Kamayishi</span>
+            <span class="text-2xl sm:text-3xl font-black text-emerald-400 font-mono mt-1 block">35% &rarr; 4%</span>
+            <span class="text-[11px] text-slate-400 mt-1 block">Viloyatlararo avtomat tasdiqlash</span>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <button onclick="jumpToSection(1)" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-black text-xs font-mono uppercase tracking-wider transition shadow-xl shadow-cyan-500/25 flex items-center gap-2">
+            <span>Bemor Oqimini Ko'rish</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+          <span class="text-xs font-mono text-slate-400">Klaviatura dagi &darr; tugmasi bilan ham o'tishingiz mumkin</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 2: REAL PATIENT INQUIRY & AI SPEED-TO-LEAD -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-end" id="section-1">
+      <div class="story-panel-lg mr-0 lg:mr-12 border-emerald-500/40 p-6 sm:p-9">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-emerald-400 mb-4 bg-emerald-500/10 px-3.5 py-1.5 rounded-full border border-emerald-500/20 font-bold">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>02 / 05 • REALLIK NAMOYISHI: KECHKI SOAT 22:15</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Buxorodan Og'ir Bemor Yozganda, <br>
+          <span class="text-emerald-400">MedPro²⁴ AI 4 Soniyada</span> Saralaydi.
+        </h2>
+
+        <p class="text-slate-300 mt-4 text-xs sm:text-sm leading-relaxed">
+          Klinika administratorlari uyda dam olayotgan vaqtda Instagram Direct yoki Telegramga kelgan so'rov yo'qolib ketmaydi. Bemorning ahvoli, MRT natijasi va Andijonga kelish vaqti avtomatik belgilanadi:
+        </p>
+
+        <!-- Simulated Dialogue Component -->
+        <div class="mt-6 p-5 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-3 font-mono text-xs">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <span class="text-slate-400 font-bold">📲 Instagram Direct (@chinobod_fayz)</span>
+            <span class="text-[10px] text-emerald-400">22:15 • Jonli Murojaat</span>
+          </div>
+
+          <!-- Patient Message -->
+          <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200">
+            <span class="text-[10px] text-cyan-400 block font-bold mb-1">Bemor (Buxoro viloyatidan):</span>
+            "Assalomu alaykum. Dadamning belida 9 mm L5-S1 grijasi bor ekan, o'ng oyog'i tortishib qoldi, yura olmayaptilar. MRT rasmimiz bor. Endoskopik usulda operatsiya qilasizlarmi? Qachon qabulga borsak bo'ladi?"
+          </div>
+
+          <!-- AI Doctor-Dispatcher Action -->
+          <div class="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-500/40 text-emerald-200">
+            <span class="text-[10px] text-emerald-400 font-bold block mb-1 flex items-center justify-between">
+              <span>MedPro²⁴ AI Tahlili (3 soniyada):</span>
+              <span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-[9px] uppercase font-bold">Shoshilinch (Urgent)</span>
+            </span>
+            <ul class="space-y-1 text-slate-300 text-[11px]">
+              <li>• <strong>Diagnoz ehtimoli:</strong> Kompression radikulopatiya (L5-S1 disk churrasi).</li>
+              <li>• <strong>Ko'rik vaqti:</strong> Ertaga soat 11:00 (Dr. Hurshidbek Rayimjonov qabuli band qilindi).</li>
+              <li>• <strong>Statsionar palata:</strong> 2-bino, 3-qavat VIP palata zaxiraga olindi.</li>
+              <li>• <strong>Yo'nalish xaritasi:</strong> Buxoro-Andijon poyezd/taksi lokatsiyasi va tayyorgarlik eslatmasi bemorga yuborildi.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-4 text-[11px] font-mono text-slate-400 flex justify-between">
+          <span>✓ CRM voronkasiga kiritildi</span>
+          <span>✓ Resepshn kompyuteriga signal tushdi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 3: REAL SURGEON IN OR & DOCTOR VOICE EMR -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-start" id="section-2">
+      <div class="story-panel-lg ml-0 lg:ml-12 border-cyan-500/40 p-6 sm:p-9">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-cyan-400 mb-4 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20 font-bold">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+          <span>03 / 05 • ENDOSKOPIK OPERATSIYA & OVOZLI EMR</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Neyrojarroh Qog'ozga Vaqt Sarflamaydi. <br>
+          <span class="text-cyan-400">Ovozli Diktant & Endoskopik EMR.</span>
+        </h2>
+
+        <p class="text-slate-300 mt-4 text-xs sm:text-sm leading-relaxed">
+          Orqada <strong>Chinobod Fayz Plus</strong> operatsiya xonasida haqiqiy endoskopik jarrohlik jarayoni. Shifokor operatsiyadan so'ng 20 daqiqa qog'oz to'ldirib o'tirmaydi. Ovoz bilan diktovka qilingan tashxis bir zumda rasmiy tibbiy kartaga (EMR) aylanadi:
+        </p>
+
+        <!-- Real Surgeon Proof Card -->
+        <div class="mt-4 flex items-center space-x-3.5 p-3 rounded-2xl bg-slate-900/85 border border-cyan-500/40 backdrop-blur-md">
+          <img src="assets/chinobod_real_surgeon_or.png" alt="Chinobod Fayz Plus Neyrojarrohi" class="w-16 h-20 rounded-xl object-cover border border-cyan-400/60 shadow-md shrink-0">
+          <div>
+            <div class="text-[10px] text-cyan-400 font-mono font-bold uppercase tracking-wider">Haqiqiy Jarrohlik Jarayoni</div>
+            <div class="text-xs text-white font-bold">Dr. Hurshidbek Rayimjonov</div>
+            <div class="text-[10px] text-cyan-300 font-mono">Bosh shifokor, Endoskopik Neyrojarroh</div>
+            <div class="text-[11px] text-slate-300 font-mono">Endoskopik mikrojarrohlik & diskektomiya</div>
+            <div class="text-[10px] text-emerald-400 font-mono mt-0.5">✓ Steril operatsiya xonasidan jonli kadr</div>
+          </div>
+        </div>
+
+        <!-- Simulated Voice Dictation Engine -->
+        <div class="mt-6 p-5 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+              <span class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></span>
+              <span class="text-xs font-mono text-slate-300 font-bold">Shifokor Diktanti (Jonli Yozuv):</span>
+            </div>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded">Groq Whisper ASR</span>
+          </div>
+
+          <!-- Doctor Audio Raw Transcript -->
+          <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 font-mono text-xs text-slate-300 italic">
+            "Bemor Xolmatov, 54 yosh. L5-S1 disk churrasi bo'yicha endoskopik mikrojarrohlik dekompressiyasi o'tkazildi. Nerv ildizi bo'shatildi, gemostaz stabil. Postoperatsion reabilitatsiya va 2 kunlik statsionar nazorat..."
+          </div>
+
+          <!-- AI Structuring -->
+          <div class="p-3.5 rounded-xl bg-cyan-950/30 border border-cyan-500/40 text-xs font-mono text-slate-200 space-y-1">
+            <div class="text-[10px] text-cyan-400 font-bold mb-1">MedPro²⁴ Avtomat Tibbiy Karta (EMR):</div>
+            <div>• <strong>Operatsiya turi:</strong> Endoskopik diskektomiya (L5-S1)</div>
+            <div>• <strong>Asoratlar:</strong> Kuzatilmadi (Gemostaz stabil)</div>
+            <div>• <strong>Palata rejimi:</strong> 2 kunlik statsionar nazorat</div>
+            <div>• <strong>Dori-darmon kassa hisobi:</strong> 1,450,000 UZS (Avtomat kvitansiya)</div>
+          </div>
+        </div>
+
+        <div class="mt-4 flex items-center justify-between text-[11px] font-mono text-slate-400">
+          <span>✓ DICOM / MRT suratlari profilga bog'landi</span>
+          <span>✓ Ota-onaga/qarindoshlarga Telegram xabarnoma ketdi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 4: DOCTOR-PATIENT INTERACTION & WARD CONTROL -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-end" id="section-3">
+      <div class="story-panel-lg mr-0 lg:mr-12 border-teal-500/40 p-6 sm:p-9">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-teal-400 mb-4 bg-teal-500/10 px-3.5 py-1.5 rounded-full border border-teal-500/20 font-bold">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-400 animate-pulse"></span>
+          <span>04 / 05 • SHIFOKOR-BEMOR MULOQOTI & STATSIONAR</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Bemorlar Ishonchi va Kassa <br>
+          <span class="text-teal-400">100% Shaffof & Nazoratda.</span>
+        </h2>
+
+        <p class="text-slate-300 mt-4 text-xs sm:text-sm leading-relaxed">
+          Orqada <strong>Chinobod Fayz Plus</strong> palatasida shifokor va bemorning samimiy suhbati. Klinika rahbari palatalar bandligini, kassa tushumini va har bir bemorning tiklanishini smartfonida real vaqtda ko'rib turadi:
+        </p>
+
+        <!-- Real Doctor & Patient Proof Card -->
+        <div class="mt-4 flex items-center space-x-3.5 p-3 rounded-2xl bg-slate-900/85 border border-emerald-500/40 backdrop-blur-md">
+          <img src="assets/chinobod_real_doctor_patient.png" alt="Chinobod Fayz Plus Shifokor va Bemor" class="w-20 h-14 rounded-xl object-cover border border-emerald-400/60 shadow-md shrink-0">
+          <div>
+            <div class="text-[10px] text-emerald-400 font-mono font-bold uppercase tracking-wider">Haqiqiy Muloqot & Ishonch</div>
+            <div class="text-xs text-white font-bold">Dr. Hurshidbek Rayimjonov va Bemor</div>
+            <div class="text-[11px] text-slate-300 font-mono">Bemor bilan operatsiyadan keyingi ko'rik</div>
+            <div class="text-[10px] text-emerald-400 font-mono mt-0.5">✓ Rasmiy aloqa: +998-90-573-0083</div>
+          </div>
+        </div>
+
+        <!-- Ward Grid Preview -->
+        <div class="grid grid-cols-3 gap-2.5 mt-6 text-xs font-mono">
+          <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/40">
+            <div class="text-[10px] text-emerald-400 font-bold">101-VIP Palata</div>
+            <div class="text-white font-bold mt-1">Band (Buxoro)</div>
+            <div class="text-[10px] text-slate-400">2-kun / Chiqish: Ertaga</div>
+          </div>
+          <div class="p-3 rounded-xl bg-cyan-950/40 border border-cyan-500/40">
+            <div class="text-[10px] text-cyan-400 font-bold">102-Standart</div>
+            <div class="text-white font-bold mt-1">Band (Qo'qon)</div>
+            <div class="text-[10px] text-slate-400">Operatsiyadan so'ng</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900 border border-slate-700">
+            <div class="text-[10px] text-slate-400 font-bold">103-VIP Palata</div>
+            <div class="text-emerald-400 font-bold mt-1">BO'SH (Tayyor)</div>
+            <div class="text-[10px] text-slate-500">Dezinfeksiya qilindi</div>
+          </div>
+        </div>
+
+        <!-- Telegram Mini App Benefit -->
+        <div class="mt-6 p-4 rounded-2xl bg-slate-950 border border-slate-800 flex items-start space-x-3.5">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg font-bold shrink-0 mt-0.5">
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white font-mono">0 MB Bemor Pasporti & Telefon: +998 90 573 0083</div>
+            <p class="text-[11px] text-slate-400 mt-1 leading-normal">
+              Bemor va uning oilasi og'ir ilovalarni yuklamaydi. Telegram ichida MRT xulosasi, palata hisobi, Click/Payme to'lov kvitansiyasi va shifokor tavsiyanomasi saqlanadi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CHAPTER 5: INTERACTIVE FINANCIAL ROI & PILOT IMPLEMENTATION -->
+    <!-- ============================================================= -->
+    <section class="scrolly-section justify-center min-h-screen py-16" id="section-4">
+      <div class="story-panel-lg border-cyan-500/60 p-5 sm:p-8 max-w-3xl text-center">
+        <div class="inline-flex items-center space-x-2 text-xs sm:text-sm font-mono text-cyan-400 mb-3 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20 font-bold">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+          <span>05 / 05 • CHINOBOD FAYZ UCHUN ANIQ FOYDA HISOBLAGICHI</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Klinikangiz Oyiga Qancha <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400">
+            Qo'shimcha Daromad Oladi?
+          </span>
+        </h2>
+
+        <p class="text-slate-300 mt-2.5 text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
+          Koll-markazning kechikkan javoblari va no-show sabab har bir xususiy klinika oyiga <strong>30-80 million so'm</strong> yo'qotadi. Quyidagi interaktiv slayderda klinikangiz ko'rsatkichini o'zgartirib ko'ring:
+        </p>
+
+        <!-- Interactive ROI Simulator Component -->
+        <div class="mt-5 p-5 rounded-2xl bg-slate-950/95 border border-slate-800 text-left font-mono">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3">
+            <span class="text-xs font-bold text-slate-300">Bir oylik bemorlar qabuli:</span>
+            <div class="text-cyan-400 font-black text-base sm:text-lg">
+              <span id="patientCountDisplay">850</span> ta bemor / oy
+            </div>
+          </div>
+
+          <input type="range" id="patientSlider" min="200" max="2500" value="850" step="50" class="w-full cursor-pointer" oninput="recalcRoi()">
+
+          <div class="flex justify-between text-[10px] text-slate-500 mt-1.5">
+            <span>200 ta</span>
+            <span>850 ta (Standart)</span>
+            <span>2,500+ ta</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 pt-4 border-t border-slate-800">
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="text-[11px] text-slate-400">Saqlab qolingan Bemorlar:</div>
+              <div class="text-xl font-black text-emerald-400 mt-0.5 font-mono" id="savedPatientsDisplay">+128 ta bemor</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">No-show 35% dan 4% ga tushishi evaziga</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-cyan-950/40 border border-cyan-500/40">
+              <div class="text-[11px] text-cyan-300">Oylik Qo'shimcha Sof Foyda:</div>
+              <div class="text-xl font-black text-white mt-0.5 font-mono" id="extraRevenueDisplay">+57,600,000 UZS</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Koll-markaz + statsionar to'liq bandligi</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1 Day Onboarding Guarantee -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-4 text-left font-mono text-xs">
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+            <div class="text-cyan-400 font-bold text-[11px]">1. 0 UZS Uskuna</div>
+            <div class="text-slate-400 text-[10px] mt-0.5">Yangi server yoki qimmat kompyuter sotib olinmaydi.</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+            <div class="text-teal-400 font-bold text-[11px]">2. 1 Kunda O'rnatish</div>
+            <div class="text-slate-400 text-[10px] mt-0.5">Shifokorlar va resepshn 15 daqiqada o'rganib oladi.</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
+            <div class="text-emerald-400 font-bold text-[11px]">3. 7 Kunlik Pilot</div>
+            <div class="text-slate-400 text-[10px] mt-0.5">Klinikada to'liq sinab ko'rasiz, natija ma'qul kelsa boshlanadi.</div>
+          </div>
+        </div>
+
+        <!-- Bottom Action CTA -->
+        <div class="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="02_commercial_clients/medpro24/app.html" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-black text-xs font-mono uppercase tracking-wider transition shadow-2xl shadow-emerald-500/30 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-laptop-medical text-base"></i>
+            <span>MedPro²⁴ Jonli CRM Ishchi Stoliga Kirish &rarr;</span>
+          </a>
+          <a href="02_commercial_clients/medpro24/tma.html" target="_blank" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-cyan-300 font-bold text-xs font-mono border border-cyan-500/40 transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-telegram text-emerald-400 text-base"></i>
+            <span>Bemor TMA (Mini App)</span>
+          </a>
+          <a href="https://t.me/shukhrat_ai" target="_blank" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs font-mono border border-slate-700 transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone text-emerald-400"></i>
+            <span>@shukhrat_ai</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================================== -->
+  <!-- 4. JAVASCRIPT: SCROLL OBSERVER & TELEMETRY CONTROLS -->
+  <!-- =============================================================== -->
+  <script>
+    const stages = [
+      { id: 'photo-1', title: 'CHINOBOD FAYZ PLUS • NEYROJARROHLIK BAZASI (ANDIJON, BALIQCHI)', metric: '99.4%' },
+      { id: 'photo-2', title: 'BUXORO-ANDIJON BEMOR OQIMI • 24/7 AI TEZKOR SARALASH', metric: '4 SONIYA' },
+      { id: 'photo-3', title: 'CHINOBOD FAYZ PLUS • NEYROJARROH JONLI OPERATSIYADA & OVOZLI EMR', metric: '100% DICOM' },
+      { id: 'photo-4', title: 'CHINOBOD FAYZ PLUS • SHIFOKOR VA BEMORNING SAMIMIY MULOQOTI', metric: '100% ISHONCH' },
+      { id: 'photo-1', title: 'MOLIYAVIY ROI & 7 KUNLIK XAVFSIZ PILOT', metric: '+57.6M UZS' }
+    ];
+
+    let currentSectionIndex = 0;
+
+    const headerEl = document.getElementById('mainHeader');
+
+    function jumpToSection(idx) {
+      if (idx === 0) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (headerEl) headerEl.classList.remove('header-hidden');
+      } else if (idx === 4) {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      } else {
+        const target = document.getElementById(`section-${idx}`);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    }
+
+    function updateStageVisuals(idx) {
+      currentSectionIndex = idx;
+
+      // Update background photos
+      const photoElements = ['photo-1', 'photo-2', 'photo-3', 'photo-4'];
+      const activePhotoId = stages[idx].id;
+
+      photoElements.forEach(pId => {
+        const el = document.getElementById(pId);
+        if (el) {
+          if (pId === activePhotoId) {
+            el.classList.remove('inactive');
+            el.classList.add('active');
+          } else {
+            el.classList.remove('active');
+            el.classList.add('inactive');
+          }
+        }
+      });
+
+      // Hotspot pin visibility: only show on exterior facade (idx === 0)
+      const hotspot = document.getElementById('hotspotClinic');
+      if (hotspot) {
+        hotspot.style.display = (idx === 0) ? 'block' : 'none';
+      }
+
+      // Update Nav Buttons
+      for (let i = 0; i < 5; i++) {
+        const dot = document.getElementById(`navDot${i}`);
+        if (dot) {
+          if (i === idx) {
+            dot.className = 'nav-btn px-3.5 py-1.5 rounded-xl text-cyan-400 font-bold bg-cyan-500/20 shadow-lg';
+          } else {
+            dot.className = 'nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white';
+          }
+        }
+      }
+
+      // Update HUD Footer text
+      const liveLabel = document.getElementById('liveStageLabel');
+      if (liveLabel) {
+        liveLabel.innerText = stages[idx].title;
+      }
+
+      // Update Progress Bar
+      const pBar = document.getElementById('scrollProgressBar');
+      if (pBar) {
+        pBar.style.width = `${((idx + 1) / 5) * 100}%`;
+      }
+    }
+
+    // Smart Header Auto-Hide on Scroll Down & Reveal on Scroll Up / Top Hover
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('mousemove', (e) => {
+      if (e.clientY < 75 && headerEl) {
+        headerEl.classList.remove('header-hidden');
+      }
+    });
+
+    // Scroll Position & Header Observer
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight - windowHeight;
+
+      // Smart Header Visibility:
+      if (headerEl) {
+        if (scrollY < 80) {
+          headerEl.classList.remove('header-hidden');
+        } else if (scrollY > lastScrollY + 6 && scrollY > 120) {
+          headerEl.classList.add('header-hidden');
+        } else if (scrollY < lastScrollY - 6) {
+          headerEl.classList.remove('header-hidden');
+        }
+      }
+      lastScrollY = scrollY;
+
+      const scrollPercent = docHeight > 0 ? scrollY / docHeight : 0;
+      let newIdx = Math.min(4, Math.floor(scrollPercent * 5));
+
+      if (newIdx !== currentSectionIndex) {
+        updateStageVisuals(newIdx);
+      }
+    }, { passive: true });
+
+    // Fullscreen Toggle (F Key Support)
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+          console.warn('Fullscreen request failed:', err);
+        });
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    document.addEventListener('fullscreenchange', () => {
+      const fsIcon = document.getElementById('fullscreenIcon');
+      const fsText = document.getElementById('fullscreenText');
+      if (document.fullscreenElement) {
+        if (fsIcon) fsIcon.className = 'fa-solid fa-compress text-cyan-400 text-sm';
+        if (fsText) fsText.innerText = 'Chiqish';
+      } else {
+        if (fsIcon) fsIcon.className = 'fa-solid fa-expand text-cyan-400 text-sm';
+        if (fsText) fsText.innerText = 'To\'liq Ekran';
+      }
+    });
+
+    // Keyboard navigation (Arrow keys & F)
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+        if (currentSectionIndex < 4) {
+          e.preventDefault();
+          jumpToSection(currentSectionIndex + 1);
+        }
+      } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+        if (currentSectionIndex > 0) {
+          e.preventDefault();
+          jumpToSection(currentSectionIndex - 1);
+        }
+      }
+    });
+
+    // Interactive ROI Calculator Logic
+    function recalcRoi() {
+      const slider = document.getElementById('patientSlider');
+      const val = parseInt(slider.value, 10);
+
+      document.getElementById('patientCountDisplay').innerText = val.toLocaleString();
+
+      // Calculation:
+      // ~15% extra patients saved from no-show (35% -> 4%)
+      const savedPatients = Math.round(val * 0.15);
+      // Average revenue per neurosurgery/spinal consultation + MRT + procedure: ~450,000 UZS
+      const extraRev = savedPatients * 450000;
+
+      document.getElementById('savedPatientsDisplay').innerText = `+${savedPatients} ta bemor`;
+      document.getElementById('extraRevenueDisplay').innerText = `+${extraRev.toLocaleString()} UZS`;
+    }
+
+    // Initialize on load
+    updateStageVisuals(0);
+    recalcRoi();
+  </script>
+
+</body>
+</html>
