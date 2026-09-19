@@ -417,6 +417,50 @@
     </div>
   </section>
 
+  <!-- ================= USE CASES / SOHAVIY YECHIMLAR (#yechimlar) ================= -->
+  <section id="yechimlar" class="py-20 sm:py-24 bg-white border-b border-slate-100 scroll-mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-coral bg-rose-50 px-3.5 py-1.5 rounded-full border border-rose-100">
+          SOHAVIY YECHIMLAR
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-brand-navy tracking-tight mt-4 mb-4">
+          Har bir soha uchun maxsus sozlangan AI ssenariylari
+        </h2>
+        <p class="text-base sm:text-lg text-slate-600">
+          Sizning biznesingiz kiyim sotadimi, kurs o‘tadimi, bemorlarni qabul qiladimi yoki millionlab muxlisga egami — AILO har bir sohaning o‘z tili va qoidalari bilan muloqot qiladi.
+        </p>
+      </div>
+
+      <!-- Industry Tabs Navigation (Horizontal Scrollable on Mobile) -->
+      <div class="flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar">
+        <button onclick="switchUseCaseTab('creator')" id="tab-btn-creator" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-brand-navy text-white shadow-xs">
+          <span>🎬</span> Blogerlar & San’atkorlar
+        </button>
+        <button onclick="switchUseCaseTab('education')" id="tab-btn-education" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200/80">
+          <span>🎓</span> Ta’lim & Kurslar
+        </button>
+        <button onclick="switchUseCaseTab('clinic')" id="tab-btn-clinic" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200/80">
+          <span>🏥</span> Klinika & Tibbiyot
+        </button>
+        <button onclick="switchUseCaseTab('retail')" id="tab-btn-retail" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200/80">
+          <span>🛍️</span> Do‘konlar & Retail
+        </button>
+        <button onclick="switchUseCaseTab('services')" id="tab-btn-services" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200/80">
+          <span>🛋️</span> Xizmatlar & B2B
+        </button>
+      </div>
+
+      <!-- Dynamic Content Card Container -->
+      <div id="usecase-content-container" class="bg-[#FAFAFC] rounded-[32px] p-6 sm:p-10 border border-slate-200/80 shadow-xs">
+        <!-- Rendered dynamically by switchUseCaseTab() -->
+      </div>
+
+    </div>
+  </section>
+
   <!-- ================= INTERACTIVE SIMULATOR (JONLI SINOV) ================= -->
   <section id="simulyator" class="py-20 sm:py-24 bg-[#FAFAFC] border-b border-slate-100 scroll-mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1245,6 +1289,277 @@
   <!-- ================= JAVASCRIPT ENGINES ================= -->
   <script>
     /* -------------------------------------------------------------
+     * 0. USE CASES / SOHAVIY YECHIMLAR DATA & LOGIC
+     * ------------------------------------------------------------- */
+    const useCaseData = {
+      creator: {
+        emoji: '🎬',
+        badge: 'Blogerlar, San’atkorlar & Ekspertlar',
+        title: 'Muxlislar oqimini tartibli natijaga aylantiring',
+        description: 'Reels ostida 10,000 lab izoh qoldiradigan auditoriyani boy bermang. AILO har bir muxlisga 8 soniyada javob qaytarib, konsert chiptasi, yangi trek, backstage video yoki homiylik havolalarini shaxsiy Direct orqali yetkazadi.',
+        triggers: ['BILET', 'HAVOLA', 'TREK', 'VIDEO', 'CHIPTA', '+'],
+        benefits: [
+          '100k+ izohga 0 daqiqa qo‘l mehnati bilan 100% tezkor javob',
+          'Direct xabarlariga ko‘milmasdan, faqat muhim hamkorliklarga e’tibor qaratish',
+          'Konsert, spektakl yoki mahsulot savdosini 3-5 barobargacha oshirish',
+          'Obunachilar bilan iliq, insoniy va hurmatli ohangda muloqot'
+        ],
+        metric: '100% javob berish tezligi',
+        simScenario: 'retail',
+        chat: {
+          postTitle: 'Yangi konsert dasturi e’loni va maxsus chegirma',
+          userComment: 'Konsertga bilet qayerdan olsak bo‘ladi?',
+          ailoReply: 'Assalomu alaykum! 25-oktabr Xalqlar Do‘stligidagi konsertimiz chiptalari Direct’ingizga yuborildi 🎟️👇',
+          directMessages: [
+            { role: 'user', text: 'Salom! Chipta narxlari qancha va qayerdan xarid qilsam bo‘ladi?' },
+            { role: 'ailo', text: 'Salom! Konsertimiz 25-oktabr soat 19:00 da Xalqlar Do‘stligi saroyida bo‘lib o‘tadi. Chiptalar 120 000 so‘mdan boshlanadi. Rasmiy iTicket havolasi orqali navbatsiz joy tanlashingiz mumkin: [iticket havolasi] 🎟️ Qaysi qatordan joy qidiryapsiz?' },
+            { role: 'user', text: 'Parterdan 2 ta joy kerak edi.' },
+            { role: 'ailo', text: 'Ajoyib! Parter 5-qator 14-15 o‘rinlar ayni damda bo‘sh. Ularni bron qilish uchun havolani oching yoki telefon raqamingizni qoldirsangiz, ma’murlarimiz yordam berishadi!' }
+          ]
+        }
+      },
+      education: {
+        emoji: '🎓',
+        badge: 'O‘quv Markazlari & Kurslar',
+        title: 'Har bir "KURS" izohidan tayyor o‘quvchi yig‘ing',
+        description: 'Target reklamasiga katta byudjet sarflab, Direct’da lidlarni sovitib yubormang. AILO talabaning darajasini aniqlaydi, bepul sinov darsiga ro‘yxatdan o‘tkazadi va telefon raqamini bir zumda CRM tizimingizga uzatadi.',
+        triggers: ['KURS', 'TEST', 'GRANT', 'NARX', 'DARSLIK'],
+        benefits: [
+          'Reklama byudjetining zoe ketishini oldini oladi (kechasi ham ishlaydi)',
+          'Darajani (Beginner, IELTS, IT) chatning o‘zida aniqlab saralaydi',
+          'Bepul ochiq darsga avtomatik yozib, telefon raqam oladi',
+          'amoCRM, Bitrix24 yoki Telegram guruhga tayyor lid qilib uzatadi'
+        ],
+        metric: '+42% ro‘yxatdan o‘tish konversiyasi',
+        simScenario: 'course',
+        chat: {
+          postTitle: 'IELTS 8.0 intensiv kursi uchun qabul boshlandi',
+          userComment: 'KURS',
+          ailoReply: 'Assalomu alaykum! Kurs dasturi va bepul kirish darsi Direct’ingizga yuborildi 📚👇',
+          directMessages: [
+            { role: 'user', text: 'Ingliz tili kursingiz narxi qancha va darslar qachon?' },
+            { role: 'ailo', text: 'Assalomu alaykum! Bizda Beginner dan IELTS 8.5 gacha guruhlar mavjud. Narxlar oyiga 650 000 so‘mdan boshlanadi. Siz avval ingliz tilini o‘rganganmisiz yoki noldan boshlaysizmi?' },
+            { role: 'user', text: 'Noldan. Kechki soat 18:30 dagi guruh kerak.' },
+            { role: 'ailo', text: 'Aynan siz aytgan kechki guruhda hozir 3 ta bo‘sh joy bor. Shanba kuni soat 18:30 da 1-bepul sinov darsimizga yozib qo‘yishim uchun telefon raqamingizni qoldirasizmi?' }
+          ]
+        }
+      },
+      clinic: {
+        emoji: '🏥',
+        badge: 'Klinika, Stomatologiya & Tibbiyot',
+        title: 'Bemorlarni kechasi va dam olish kunlarida ham qabulga yozing',
+        description: 'Odamlarda tish yoki sog‘liq muammosi ko‘pincha kechki payt esga tushadi. AILO bemorning shikoyatini aniqlaydi, shifokor qabuli vaqtini taklif qiladi, klinika manzili va lokatsiyasini yuboradi.',
+        triggers: ['QABUL', 'DOKTOR', 'BREKET', 'NARX', 'LOKATSIYA'],
+        benefits: [
+          'Kechasi va dam olish kunlarida 100% uzluksiz qabulga yozish',
+          'Shikoyatni aniqlab, to‘g‘ri mutaxassisga yo‘naltirish',
+          'Manzil, lokatsiya va tahlillar narxini darhol berish',
+          'Klinika ma’murlariga faqat tayyor jadvalni ko‘rish qoladi'
+        ],
+        metric: '0 ta boy berilgan bemor',
+        simScenario: 'clinic',
+        chat: {
+          postTitle: 'Tishlarni og‘riqsiz davolash va breket o‘rnatish',
+          userComment: 'Breket narxi qancha?',
+          ailoReply: 'Assalomu alaykum! Breket turlari va bepul diagnostika bo‘yicha ma’lumot Direct’ingizda 👇',
+          directMessages: [
+            { role: 'user', text: 'Breket qo‘ymoqchi edim, narxi qanchadan boshlanadi?' },
+            { role: 'ailo', text: 'Assalomu alaykum! Klinikada dastlabki shifokor ko‘rigi va 3D rentgen to‘liq bepul. Metall va keramik breketlarimiz 2.5 mln so‘mdan boshlanadi. Ertaga soat 14:00 yoki 17:00 da ortodont qabuliga yozib qo‘yaylikmi?' },
+            { role: 'user', text: 'Ertaga 17:00 to‘g‘ri keladi.' },
+            { role: 'ailo', text: 'Katta rahmat! Qabulni tasdiqlash uchun ismingiz va telefon raqamingizni yozib yuborsangiz, ma’murimiz sizga SMS-eslatma va klinika lokatsiyasini yuboradi.' }
+          ]
+        }
+      },
+      retail: {
+        emoji: '🛍️',
+        badge: 'Onlayn Do‘konlar, Kiyim & Retail',
+        title: 'Izohdan to to‘lovgacha: 24/7 savdoni yopuvchi sotuvchi',
+        description: 'Mijoz post ostida "NARX" deb yozishi bilan AILO Direct ochadi, o‘lcham va rangni aniqlaydi, mahsulot tavsiya kartasini chiqaradi va manzilu telefon raqamni olib, tayyor buyurtmani yig‘adi.',
+        triggers: ['NARX', 'RAZMER', 'KATALOG', 'SKIDKA', 'BUYURTMA'],
+        benefits: [
+          '8 soniyada javob — mijoz raqobatchiga o‘tib ketishga ulgurmaydi',
+          'Insondek samimiy muloqot, sleng va o‘lcham maslahati',
+          'Tovarni fotolari va rasmiy narxi bilan chiroyli karta shaklida tavsiya qilish',
+          'Mijozning telefon raqami va manzilini olib CRM/Telegramga jo‘natish'
+        ],
+        metric: '+28% o‘rtacha savdo cheki',
+        simScenario: 'retail',
+        chat: {
+          postTitle: 'Yangi bahorgi kolleksiya: Essential qora ko‘ylak',
+          userComment: 'NARX',
+          ailoReply: 'Assalomu alaykum! Direct’ingizga to‘liq ma’lumot va o‘lchamlarni yubordim 👇',
+          directMessages: [
+            { role: 'user', text: 'Salom, qora rangdagi M o‘lcham bormi?' },
+            { role: 'ailo', text: 'Salom! Ha, qora rangdagi M o‘lcham mavjud. Sizga kundalik yoki klassik model kerakmi?' },
+            { role: 'user', text: 'Kundalik. Toshkentga yetkazish bormi?' },
+            { role: 'ailo', text: 'Albatta! Toshkent bo‘ylab yetkazib berish bepul va bugunoq yetkazamiz. Essential qora ko‘ylak narxi: 349,000 so‘m. Buyurtmani rasmiylashtirish uchun telefon raqamingizni yuborasizmi?' }
+          ]
+        }
+      },
+      services: {
+        emoji: '🛋️',
+        badge: 'Xizmatlar, Go‘zallik Salonlari & B2B',
+        title: 'Kvalifikatsiyalangan issiq lidlar va uchrashuvlar',
+        description: 'Mebel, interyer dizayn, avtotyuning yoki go‘zallik xizmatlarida mijozlar uzoq o‘ylanadi. AILO ularning ehtiyojini aniqlaydi, so‘nggi ishlar portfoliosini ko‘rsatadi va mutaxassis bilan uchrashuv belgilaydi.',
+        triggers: ['XIZMAT', 'SMETA', 'PORTFOLIO', 'LOKATSIYA', 'USTA'],
+        benefits: [
+          'Bajarilgan ishlar portfoliosi va taxminiy narx kalkulyatsiyasi',
+          'Keraksiz so‘rovlarni filtrlab, faqat xaridga tayyor mijozlarni uzatish',
+          'Go‘zallik saloni yoki ustaxona vaqtini navbatsiz band qilish',
+          'Mijoz talablari va smetasini CRM’ga to‘liq yozib topshirish'
+        ],
+        metric: '85%+ issiq xaridorlar ulushi',
+        simScenario: 'price_objection',
+        chat: {
+          postTitle: 'Zamonaviy oshxona mebellari: Akril va MDF loyihalar',
+          userComment: 'Oshxona mebeli 1 metri qanchadan?',
+          ailoReply: 'Assalomu alaykum! Mebel narxlari va 20 ta tayyor loyihamiz Direct’ingizda 👇',
+          directMessages: [
+            { role: 'user', text: 'Assalomu alaykum, akril fasadli oshxona mebeli buyurtma qilmoqchi edik.' },
+            { role: 'ailo', text: 'Assalomu alaykum! Akril fasadli loyihalarimiz pogon metri 1.8 mln so‘mdan boshlanadi. Bizda 20 dan ortiq tayyor dizaynlar bor. Toshkent bo‘ylab usta o‘lchashi va 3D dizayn loyihasini chizib berish mutlaqo bepul. Qaysi tumandansiz?' },
+            { role: 'user', text: 'Chilonzor tumani.' },
+            { role: 'ailo', text: 'Juda yaxshi! Ertaga dizaynerimiz bepul o‘lchab loyiha chizib berishi uchun telefon raqamingiz va aniq manzilingizni qoldirasizmi?' }
+          ]
+        }
+      }
+    };
+
+    function switchUseCaseTab(tabKey) {
+      const tabs = ['creator', 'education', 'clinic', 'retail', 'services'];
+      tabs.forEach(t => {
+        const btn = document.getElementById('tab-btn-' + t);
+        if (btn) {
+          if (t === tabKey) {
+            btn.className = "usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-brand-navy text-white shadow-xs";
+          } else {
+            btn.className = "usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200/80";
+          }
+        }
+      });
+
+      const d = useCaseData[tabKey];
+      if (!d) return;
+
+      const container = document.getElementById('usecase-content-container');
+      if (!container) return;
+
+      const triggersHtml = d.triggers.map(tr => `<span class="px-2.5 py-1 rounded-lg text-xs font-black bg-rose-50 text-brand-coral border border-rose-100">${tr}</span>`).join('');
+      const benefitsHtml = d.benefits.map(b => `
+        <li class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+          <svg class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          <span>${b}</span>
+        </li>
+      `).join('');
+
+      const msgsHtml = d.chat.directMessages.map(m => {
+        if (m.role === 'user') {
+          return `
+            <div class="flex justify-end">
+              <div class="bg-brand-navy text-white font-medium px-3.5 py-2 rounded-2xl rounded-tr-xs max-w-[85%] text-xs shadow-xs">
+                ${m.text}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="flex flex-col items-start gap-1">
+              <span class="text-[9px] font-bold tracking-wider text-purple-600 uppercase ml-1">AILO</span>
+              <div class="bg-slate-50 border border-slate-200 text-slate-800 px-3.5 py-2 rounded-2xl rounded-tl-xs max-w-[90%] text-xs leading-relaxed chat-bubble-shadow">
+                ${m.text}
+              </div>
+            </div>
+          `;
+        }
+      }).join('');
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left: Strategy & Value -->
+          <div class="lg:col-span-6 xl:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold text-slate-700 shadow-xs">
+              <span>${d.emoji}</span>
+              <span>${d.badge}</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-black text-brand-navy tracking-tight leading-tight">
+              ${d.title}
+            </h3>
+
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+              ${d.description}
+            </p>
+
+            <!-- Triggers -->
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Reels va Post triggerlari:</div>
+              <div class="flex flex-wrap gap-2">
+                ${triggersHtml}
+              </div>
+            </div>
+
+            <!-- Benefits List -->
+            <ul class="space-y-2.5 pt-2">
+              ${benefitsHtml}
+            </ul>
+
+            <!-- Metric & CTA -->
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+              <div class="px-4 py-2 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs sm:text-sm font-bold flex items-center gap-2">
+                <span>🎯</span>
+                <span>${d.metric}</span>
+              </div>
+              <a href="#simulyator" onclick="switchSimScenario('${d.simScenario}')" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-purple-700 hover:text-purple-900 bg-purple-50 hover:bg-purple-100 px-4 py-2 rounded-xl transition-colors">
+                <span>Simulyatorda sinab ko‘rish</span>
+                <span>↓</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Chat Mockup -->
+          <div class="lg:col-span-6 xl:col-span-5">
+            <div class="bg-white rounded-3xl p-5 shadow-card-float border border-slate-200/80 max-w-sm mx-auto">
+              
+              <!-- Reels Comment Trigger Header -->
+              <div class="mb-3.5 pb-3 border-b border-slate-100">
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <div class="flex items-center gap-1.5 text-xs font-bold text-slate-800 truncate">
+                    <span class="text-rose-500">▶</span>
+                    <span class="truncate">${d.chat.postTitle}</span>
+                  </div>
+                  <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full shrink-0">8s javob</span>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-2 border border-slate-200/70 text-[11px] space-y-1">
+                  <div class="text-slate-800"><b>@mijoz:</b> "${d.chat.userComment}"</div>
+                  <div class="text-purple-700 pl-2 border-l-2 border-purple-400"><b>@ailo:</b> ${d.chat.ailoReply}</div>
+                </div>
+                <div class="text-[10px] text-center font-bold text-slate-400 mt-2 uppercase tracking-wider">
+                  ↓ Shaxsiy Direct savdosi ochildi
+                </div>
+              </div>
+
+              <!-- Direct Messages -->
+              <div class="space-y-3">
+                ${msgsHtml}
+              </div>
+
+              <!-- CRM Push Footer -->
+              <div class="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[10px]">
+                <div class="flex items-center gap-1.5 text-emerald-600 font-bold">
+                  <span>✓</span>
+                  <span>CRM & Telegramga uzatildi</span>
+                </div>
+                <span class="text-slate-400 font-semibold">hozir</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      `;
+    }
+
+    /* -------------------------------------------------------------
      * 1. SIMULATOR SCENARIOS DATA & GIBRID LOGIC
      * ------------------------------------------------------------- */
     const simScenarios = {
@@ -1597,6 +1912,9 @@
         document.getElementById('modal-phone').value = '';
       }, 2000);
     }
+
+    // Initialize Default Use Case
+    switchUseCaseTab('creator');
   </script>
 </body>
 </html>
