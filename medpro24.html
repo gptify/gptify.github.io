@@ -186,7 +186,7 @@
           <span class="text-[10px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full font-mono uppercase font-bold">Chinobod Fayz Plus</span>
         </div>
         <div class="text-[11px] text-slate-400 font-mono flex items-center gap-1.5">
-          <span>Shukhrat Iskandarov</span>
+          <span>GPTify • Shukhrat Iskandarov</span>
           <span class="text-slate-600">•</span>
           <span class="text-emerald-400 font-bold">+998 90 573 0083</span>
         </div>
@@ -198,7 +198,7 @@
       <div class="hidden lg:flex items-center space-x-1.5 bg-slate-950/85 border border-slate-800/90 p-1.5 rounded-2xl backdrop-blur-xl font-mono text-xs">
         <button onclick="jumpToSection(0)" id="navDot0" class="nav-btn px-3.5 py-1.5 rounded-xl text-cyan-400 font-bold bg-cyan-500/20 shadow-lg">01 Markaz & Missiya</button>
         <button onclick="jumpToSection(1)" id="navDot1" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">02 Bemor Muloqoti & AI</button>
-        <button onclick="jumpToSection(2)" id="navDot2" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">03 MRT & Ovozli EMR</button>
+        <button onclick="jumpToSection(2)" id="navDot2" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">03 MRT & Klinik EMR</button>
         <button onclick="jumpToSection(3)" id="navDot3" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">04 Statsionar & Palatalar</button>
         <button onclick="jumpToSection(4)" id="navDot4" class="nav-btn px-3.5 py-1.5 rounded-xl text-slate-300 hover:text-white">05 Moliyaviy ROI</button>
       </div>
@@ -208,7 +208,12 @@
         <span id="fullscreenText" class="hidden sm:inline">To'liq Ekran</span>
       </button>
 
-      <a href="02_commercial_clients/medpro24/app.html" target="_blank" title="MedPro24 Jonli CRM Tizimini Ochish" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 text-xs font-black font-mono transition shadow-xl shadow-emerald-500/30 flex items-center gap-2">
+      <a href="/presentation" target="_blank" title="10-Slaydli Rasmiy Tijoriy Taqdimot" class="px-3.5 py-2.5 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-cyan-500/50 text-cyan-300 text-xs font-bold font-mono transition shadow-lg flex items-center gap-1.5">
+        <i class="fa-solid fa-file-powerpoint text-cyan-400"></i>
+        <span class="hidden sm:inline">Tijoriy Taqdimot</span>
+      </a>
+
+      <a href="/crm" target="_blank" title="MedPro24 Jonli CRM Tizimini Ochish" class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 text-xs font-black font-mono transition shadow-xl shadow-emerald-500/30 flex items-center gap-2">
         <i class="fa-solid fa-laptop-medical text-base"></i>
         <span>Jonli CRM &rarr;</span>
       </a>
@@ -350,6 +355,27 @@
           </div>
         </div>
 
+        <!-- Real Audio ASR & Intake Card -->
+        <div class="mt-4 p-4 rounded-2xl bg-cyan-950/40 border border-cyan-500/40 space-y-2.5 font-mono text-xs">
+          <div class="flex items-center justify-between">
+            <span class="text-cyan-300 font-bold flex items-center gap-1.5">
+              <i class="fa-solid fa-microphone-lines text-cyan-400"></i>
+              <span>Yangi: 100% Faktik Ovozli Tahlil (Whisper ASR + Guardrail)</span>
+            </span>
+            <span class="text-[9px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded font-bold uppercase">Zero-Hallucination</span>
+          </div>
+          <p class="text-slate-300 text-[11px] font-sans leading-relaxed">
+            Resepshn xodimi yoki bemor ovozli yozuvni yuklaganda, sun'iy intellekt o'zbek tilidagi shevalar va terminlarni 100% aniqlikda transkripsiya qiladi, faqat audioda aytilgan shikoyatni ajratib oladi va neyrojarroh qabuliga biriktiradi.
+          </p>
+          <div class="pt-1 flex items-center justify-between">
+            <span class="text-[10px] text-emerald-400">✓ 5 yillik anamnez, to'qima simptomlarsiz</span>
+            <a href="/crm" target="_blank" class="px-2.5 py-1 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-[10px] transition flex items-center gap-1">
+              <span>CRMda Sinab Ko'rish</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
         <div class="mt-4 text-[11px] font-mono text-slate-400 flex justify-between">
           <span>✓ CRM voronkasiga kiritildi</span>
           <span>✓ Resepshn kompyuteriga signal tushdi</span>
@@ -388,14 +414,32 @@
           </div>
         </div>
 
+        <!-- 1-Click Clinical Macros (Fast, Zero Typing) -->
+        <div class="mt-4 p-4 rounded-2xl bg-slate-950/90 border border-teal-500/30 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-teal-300 font-bold flex items-center gap-1.5">
+              <i class="fa-solid fa-bolt text-teal-400"></i>
+              <span>1-Klikli Tezkor Klinik Makroslar (0 Matn Terish):</span>
+            </span>
+            <span class="text-[9px] font-mono bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded font-bold uppercase">1 Soniyada</span>
+          </div>
+          <div class="grid grid-cols-2 gap-1.5 text-[11px] font-mono">
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-teal-300">🧠 L5-S1 churrasi (M51.1)</div>
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-teal-300">🩺 Gipertenziya II bosqich (I10)</div>
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-teal-300">🩻 MRT bel qismi o'zgarishsiz</div>
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300">🟢 Profilaktik me'yorda</div>
+          </div>
+          <p class="text-[10px] text-slate-400">Shifokor bitta tugmani bosadi — to'liq rasmiy epikriz 1 soniyada tayyor bo'ladi.</p>
+        </div>
+
         <!-- Simulated Voice Dictation Engine -->
-        <div class="mt-6 p-5 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-4">
+        <div class="mt-4 p-5 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2.5">
               <span class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></span>
-              <span class="text-xs font-mono text-slate-300 font-bold">Shifokor Diktanti (Jonli Yozuv):</span>
+              <span class="text-xs font-mono text-slate-300 font-bold">Ovozli Diktovka (Qo'shimcha Qulaylik):</span>
             </div>
-            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded">Groq Whisper ASR</span>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded">O'zbekcha / Ruscha ASR</span>
           </div>
 
           <!-- Doctor Audio Raw Transcript -->
@@ -553,17 +597,67 @@
           </div>
         </div>
 
+        <!-- FAQ Accordion: Storage, Migration, Excel/Bitrix -->
+        <div class="mt-6 p-5 rounded-2xl bg-slate-950/95 border border-slate-800 text-left space-y-3 font-sans">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+            <h3 class="text-xs sm:text-sm font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-circle-question text-cyan-400"></i>
+              <span>Klinika Rahbariyati Uchun Eng Muhim Savollar (FAQ)</span>
+            </h3>
+            <span class="text-[10px] text-cyan-300 font-mono">Xavfsizlik & Migratsiya</span>
+          </div>
+
+          <div class="space-y-2.5 text-xs">
+            <!-- Q1: Storage -->
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
+              <p class="font-bold text-slate-100 flex items-center gap-2 text-xs">
+                <span class="w-5 h-5 rounded-lg bg-cyan-500/20 text-cyan-400 text-[11px] font-mono flex items-center justify-center font-bold">1</span>
+                <span>Bemorlarimiz va kassa ma'lumotlari qayerda saqlanadi?</span>
+              </p>
+              <p class="text-slate-300 text-[11px] leading-relaxed pl-7">
+                <strong>Klinikaning o'z kompyuterida (On-Premise) yoki O'zbekistondagi litsenziyalangan serverda saqlanadi.</strong> Internet butunlay uzilib qolsa ham, klinika ichki Wi-Fi tarmog'ida to'xtovsiz ishlaydi. Bemorlarning tibbiy siri klinika binosidan tashqariga umuman chiqmaydi (O'zbekiston O'RQ-547 qonuniga 100% muvofiq).
+              </p>
+            </div>
+
+            <!-- Q2: Migration -->
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
+              <p class="font-bold text-slate-100 flex items-center gap-2 text-xs">
+                <span class="w-5 h-5 rounded-lg bg-emerald-500/20 text-emerald-400 text-[11px] font-mono flex items-center justify-center font-bold">2</span>
+                <span>amoCRM, Bitrix24 yoki Excel'dan qanday qilib o'tamiz?</span>
+              </p>
+              <p class="text-slate-300 text-[11px] leading-relaxed pl-7">
+                <strong>1 kunda, klinika ishini 1 daqiqa ham to'xtatmasdan ko'chirib beramiz.</strong> Mavjud Excel yoki amoCRM/Bitrix faylingizdagi bemorlar ismi, telefoni va kasallik tarixi avtomatik import qilinadi. Hech qanday raqam yoki tarix yo'qolmaydi.
+              </p>
+            </div>
+
+            <!-- Q3: Excel vs MedPro24 -->
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
+              <p class="font-bold text-slate-100 flex items-center gap-2 text-xs">
+                <span class="w-5 h-5 rounded-lg bg-amber-500/20 text-amber-400 text-[11px] font-mono flex items-center justify-center font-bold">3</span>
+                <span>"Biz Excel yoki bepul umumiy CRM ishlatamiz, nega MedPro²⁴ kerak?"</span>
+              </p>
+              <p class="text-slate-300 text-[11px] leading-relaxed pl-7">
+                Excel bemorga ertaga MRTsi borligini eslatmaydi — natijada <strong>30-35% bemor kelmay qoladi</strong> (har bir bo'sh slot = 350,000–700,000 UZS ziyon). MedPro²⁴ Telegram eslatmalari orqali kelmaslikni 4% ga tushiradi, Telegram Mini App orqali bemorga tahlil yuboradi va shifokorlarga 1 soniyada xulosa yozish imkonini beradi. Tizim atigi <strong>2 ta kelmay qoladigan bemorni qaytarishi bilan o'z pulini to'liq oqlaydi!</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-- Bottom Action CTA -->
-        <div class="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a href="02_commercial_clients/medpro24/app.html" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-black text-xs font-mono uppercase tracking-wider transition shadow-2xl shadow-emerald-500/30 flex items-center justify-center gap-2">
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <a href="/crm" target="_blank" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-black text-xs font-mono uppercase tracking-wider transition shadow-2xl shadow-emerald-500/30 flex items-center justify-center gap-2">
             <i class="fa-solid fa-laptop-medical text-base"></i>
-            <span>MedPro²⁴ Jonli CRM Ishchi Stoliga Kirish &rarr;</span>
+            <span>Jonli CRM Tizimi &rarr;</span>
           </a>
-          <a href="02_commercial_clients/medpro24/tma.html" target="_blank" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-cyan-300 font-bold text-xs font-mono border border-cyan-500/40 transition flex items-center justify-center gap-2">
+          <a href="/presentation" target="_blank" class="px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-mono border border-cyan-500/50 transition flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-solid fa-file-powerpoint text-cyan-400 text-base"></i>
+            <span>Tijoriy Taqdimot (10 Slayd)</span>
+          </a>
+          <a href="/tma" target="_blank" class="px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-cyan-300 font-bold text-xs font-mono border border-cyan-500/40 transition flex items-center justify-center gap-2">
             <i class="fa-brands fa-telegram text-emerald-400 text-base"></i>
-            <span>Bemor TMA (Mini App)</span>
+            <span>Bemor TMA</span>
           </a>
-          <a href="https://t.me/shukhrat_ai" target="_blank" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs font-mono border border-slate-700 transition flex items-center justify-center gap-2">
+          <a href="https://t.me/shukhrat_ai" target="_blank" class="px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold text-xs font-mono border border-slate-700 transition flex items-center justify-center gap-2">
             <i class="fa-solid fa-phone text-emerald-400"></i>
             <span>@shukhrat_ai</span>
           </a>
