@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Thompson School x EduPro²⁴ — Taqdimot | Strategik Hamkorlik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #020617;
+      color: #f8fafc;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+    @page {
+      size: 297mm 210mm landscape;
+      margin: 0;
+    }
+
+    .slide {
+      width: 297mm;
+      height: 210mm;
+      page-break-after: always;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 13mm 17mm;
+      background-color: #020617;
+    }
+
+    .slide-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: brightness(0.38) contrast(1.15);
+    }
+
+    .slide-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(2, 6, 23, 0.96) 0%, rgba(15, 23, 42, 0.92) 50%, rgba(15, 23, 42, 0.88) 100%);
+      z-index: 1;
+    }
+
+    .slide-content {
+      position: relative;
+      z-index: 10;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Solid, High-Contrast Card */
+    .sharp-card {
+      background-color: #090d16;
+      border: 1px solid #1e293b;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== SLIDE 1: MUQOVA VA STRATEGIK HAMKORLIK ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage1_exterior_hd.jpg" class="slide-bg" alt="Thompson School Campus">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Top Bar -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <div class="flex items-center space-x-3.5">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-700 via-indigo-800 to-amber-500 flex items-center justify-center text-white font-black text-xl border border-amber-400/50 shadow-lg">
+            T
+          </div>
+          <div>
+            <div class="flex items-center space-x-2.5">
+              <span class="font-extrabold text-base text-white tracking-wide">THOMPSON SCHOOL</span>
+              <span class="text-xs bg-amber-500/25 text-amber-300 font-bold px-2.5 py-0.5 rounded-full border border-amber-500/40">IELTS HAMKORI</span>
+            </div>
+            <p class="text-xs text-slate-300 font-mono mt-0.5">Asoschi: Harry Thompson • Toshkent, O'zbekiston</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <span class="text-xs font-mono text-slate-300">Texnologik hamkor:</span>
+          <div class="flex items-center space-x-2 px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-700 shadow-md">
+            <span class="font-black text-base text-white">EduPro<sup class="text-blue-400 font-bold">24</sup></span>
+            <span class="text-[11px] bg-blue-500/30 text-blue-300 px-1.5 py-0.5 rounded font-mono font-bold">CRM OS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Center Block -->
+      <div class="max-w-3xl space-y-4 my-auto">
+        <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-blue-300 bg-blue-500/20 px-3.5 py-1.5 rounded-full border border-blue-500/40">
+          <i class="fa-solid fa-sparkles text-blue-400"></i>
+          <span>01 / 07 • STRATEGIK BRIEFING 2026</span>
+        </div>
+
+        <h1 class="text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+          Thompson School O'quv Markazini <br>
+          <span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
+            AI Asosidagi Yangi Avlod Ekosistemasiga Aylantirish.
+          </span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-100 leading-relaxed max-w-2xl font-normal">
+          Yetakchi IELTS akademiyalari uchun maxsus ishlab chiqilgan yaxlit boshqaruv tizimi: <strong class="text-cyan-300 font-bold">To'liq Lead Management & 8 soniyalik AI Speed-to-Lead</strong>, to'liq avtomatlashgan <strong class="text-indigo-300 font-bold">CD-IELTS Mock imtihonlari</strong> va <strong class="text-emerald-300 font-bold">qimmat turniketsiz smart planshet davomati</strong>.
+        </p>
+
+        <!-- 3 Pillars -->
+        <div class="grid grid-cols-3 gap-4 pt-2">
+          <div class="p-4 rounded-2xl sharp-card text-center space-y-1">
+            <span class="text-xs font-mono text-slate-300 block uppercase font-bold tracking-wider">Speed-to-Lead</span>
+            <span class="text-3xl font-black text-cyan-400 block">8 Soniya</span>
+            <span class="text-xs text-slate-200">Reelsdan sinov darsiga yozish</span>
+          </div>
+
+          <div class="p-4 rounded-2xl sharp-card text-center space-y-1">
+            <span class="text-xs font-mono text-slate-300 block uppercase font-bold tracking-wider">Kelmaslik Qisqarishi</span>
+            <span class="text-3xl font-black text-emerald-400 block">45% &rarr; 6%</span>
+            <span class="text-xs text-slate-200">Telegram 24h avtomat eslatma</span>
+          </div>
+
+          <div class="p-4 rounded-2xl sharp-card text-center space-y-1">
+            <span class="text-xs font-mono text-slate-300 block uppercase font-bold tracking-wider">O'z Vaqtida Tushum</span>
+            <span class="text-3xl font-black text-amber-400 block">98% Tushum</span>
+            <span class="text-xs text-slate-200">Planshet davomat & Click qalqoni</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Status -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span>Maxfiy • Harry Thompson va Rahbariyat Kengashi Uchun</span>
+        <span>GPTify.co & Cubeo.ai Ekotizimi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 2: AI SPEED-TO-LEAD ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage2_classroom_hd.jpg" class="slide-bg" alt="Thompson School Classroom">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <span class="text-xs font-mono font-bold text-cyan-400 tracking-wider">02 / 07 • QABUL TEZLIGI VA KONVERSIYA</span>
+        <span class="text-xs font-mono text-slate-300">Thompson School x EduPro²⁴</span>
+      </div>
+
+      <!-- Body -->
+      <div class="grid grid-cols-12 gap-8 my-auto items-center">
+        <div class="col-span-7 space-y-4">
+          <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-cyan-300 bg-cyan-500/20 px-3.5 py-1.5 rounded-full border border-cyan-500/40">
+            <i class="fa-solid fa-bolt text-cyan-400"></i>
+            <span>8 SONIYA QOIDASI (AI SPEED-TO-LEAD)</span>
+          </div>
+
+          <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight">
+            Kechikkan Javob Tufayli Murojaatlarning <br>
+            <span class="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
+              50% ini Yo'qotishni To'xtatamiz.
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-100 leading-relaxed font-normal">
+            Bo'lajak IELTS o'quvchisi soat 23:00 da Instagram Reels yoki reklama orqali yozganda, unga bir necha daqiqa ichida javob kerak. EduPro²⁴ ning sun'iy intellekt agenti <strong class="text-cyan-300 font-bold">8 soniya ichida</strong> o'quvchi darajasini aniqlaydi va bo'sh o'ringa moslab sinov darsiga yozib qo'yadi.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3.5 pt-1">
+            <div class="p-3.5 rounded-2xl sharp-card space-y-1.5">
+              <div class="text-xs font-bold text-rose-300 flex items-center gap-1.5 uppercase">
+                <i class="fa-solid fa-clock-rotate-left text-rose-400"></i>
+                <span>Eski Model: 4–6 Soat Kechikish</span>
+              </div>
+              <p class="text-xs text-slate-200 leading-relaxed">Administratorlar ulgurmaydi, lidlar soviydi yoki raqobatchi markazlarga ketadi.</p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl sharp-card space-y-1.5">
+              <div class="text-xs font-bold text-emerald-300 flex items-center gap-1.5 uppercase">
+                <i class="fa-solid fa-check-double text-emerald-400"></i>
+                <span>EduPro²⁴: 8 Soniyada Yozish</span>
+              </div>
+              <p class="text-xs text-slate-200 leading-relaxed">24/7 rejimida avtomatik saralash va to'g'ridan-to'g'ri Thompson School dars jadvaliga kiritish.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Simulator Preview Card -->
+        <div class="col-span-5">
+          <div class="sharp-card rounded-2xl p-5 space-y-3.5">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2.5">
+              <span class="font-extrabold text-sm text-white">Jonli AI Saralash va Yozish</span>
+              <span class="text-emerald-400 font-mono text-xs font-bold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Faol Tizim
+              </span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="p-3 rounded-xl bg-slate-900 border border-slate-700">
+                <div class="flex justify-between text-xs text-pink-400 font-bold mb-1">
+                  <span>@nodir_ielts8 (Instagram DM)</span>
+                  <span class="text-slate-400 font-mono">14:24</span>
+                </div>
+                <p class="text-slate-100 text-xs">"Assalomu alaykum! Chilonzor filialingizda shanba kuni IELTS Mock test bormi?"</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-blue-600/25 border border-blue-500/50 text-blue-50">
+                <div class="flex justify-between text-xs text-cyan-300 font-bold mb-1">
+                  <span>EduPro²⁴ AI Agent</span>
+                  <span class="text-cyan-200 font-mono font-bold">+8 soniya</span>
+                </div>
+                <p class="text-xs text-slate-100 leading-relaxed">"Assalomu alaykum Nodir! Shanba 10:00 da Chilonzorda 4 ta o'rin bor. Qatnashish uchun telefon raqamingizni qoldiring."</p>
+              </div>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-xs text-emerald-200 text-center font-bold">
+              ✓ Natija: Murojaat 1 daqiqa ichida sinov darsiga yozildi.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span>Thompson School O'sish Mexanizmi</span>
+        <span>02-Bo'lim • AI Lid Saralash & Sinov Darsi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 3: TO'LAQONLI LEAD MANAGEMENT & KANBAN VORONKA ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage2_classroom_hd.jpg" class="slide-bg" alt="Thompson School Operations">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <span class="text-xs font-mono font-bold text-blue-400 tracking-wider">03 / 07 • TO'LAQONLI LEAD MANAGEMENT & CRM VORONKA</span>
+        <span class="text-xs font-mono text-slate-300">Thompson School x EduPro²⁴</span>
+      </div>
+
+      <!-- Body -->
+      <div class="grid grid-cols-12 gap-7 my-auto items-center">
+        <!-- Left: 3 Core Pillars of Lead Management -->
+        <div class="col-span-6 space-y-3.5">
+          <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-blue-300 bg-blue-500/20 px-3.5 py-1.5 rounded-full border border-blue-500/40">
+            <i class="fa-solid fa-filter-circle-dollar text-blue-400"></i>
+            <span>NO-LEAD-LEFT-BEHIND (BITTA HAM LID UNUTILMAYDI)</span>
+          </div>
+
+          <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight">
+            Barcha Reklama Manbalari va <br>
+            <span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
+              Lidlar Oqimi Bitta Markaziy Voronkada.
+            </span>
+          </h2>
+
+          <p class="text-sm text-slate-100 leading-relaxed font-normal">
+            Instagram Direct, Facebook, Telegram bot, sayt va qo'ng'iroqlar — har bir murojaat avtomatik tarzda markaziy CRM voronkasiga tushadi. Rahbariyat har bir filial (Furqat, Chilonzor) bo'yicha qancha lid kelayotgani va qaysi biri to'lovga yetib borganini real vaqtda ko'radi.
+          </p>
+
+          <!-- 3 Lead Features -->
+          <div class="space-y-2.5 pt-1 text-xs">
+            <div class="p-2.5 rounded-xl sharp-card flex items-start space-x-2.5">
+              <i class="fa-solid fa-diagram-project text-blue-400 text-sm mt-0.5 shrink-0"></i>
+              <div>
+                <strong class="text-white text-xs block">1. Omnichannel Avtomat Taqsimlash:</strong>
+                <span class="text-slate-300 text-[11.5px] leading-snug">Yangi lidlar administratorlar o'rtasida teng bo'linadi yoki AI tomonidan bir zumda qabul qilinadi.</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 rounded-xl sharp-card flex items-start space-x-2.5">
+              <i class="fa-solid fa-bell text-amber-400 text-sm mt-0.5 shrink-0"></i>
+              <div>
+                <strong class="text-white text-xs block">2. Qat'iy SLA & Unutilgan Lidlar Signali:</strong>
+                <span class="text-slate-300 text-[11.5px] leading-snug">Agar xodim 15 daqiqada lidga javob bermasa — tizim rahbar va bosh menejerga qizil ogohlantirish beradi.</span>
+              </div>
+            </div>
+
+            <div class="p-2.5 rounded-xl sharp-card flex items-start space-x-2.5">
+              <i class="fa-solid fa-recycle text-emerald-400 text-sm mt-0.5 shrink-0"></i>
+              <div>
+                <strong class="text-white text-xs block">3. Eski Bazani Qayta Uyg'otish (AI Retargeting):</strong>
+                <span class="text-slate-300 text-[11.5px] leading-snug">Sinovga kelmagan 3,000+ eski lidlar bazasiga AI avtomat yangi guruhlar taklifini yuborib, 0 UZS reklama bilan yangi guruhlarni to'ldiradi.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Kanban Pipeline Simulator -->
+        <div class="col-span-6">
+          <div class="sharp-card rounded-2xl p-4 space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2">
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-table-columns text-blue-400"></i>
+                <span class="font-extrabold text-sm text-white">EduPro²⁴ Jonli CRM Kanban Voronkasi</span>
+              </div>
+              <span class="text-cyan-300 font-mono text-xs font-bold bg-blue-500/20 px-2 py-0.5 rounded border border-blue-500/30">Furqat & Chilonzor</span>
+            </div>
+
+            <!-- 4 Kanban Columns with clean spacing -->
+            <div class="grid grid-cols-4 gap-2.5 text-xs">
+              <!-- Stage 1 -->
+              <div class="bg-slate-900 rounded-xl p-2.5 border border-slate-800 space-y-2">
+                <div class="flex justify-between items-center text-xs font-bold text-slate-300 border-b border-slate-800 pb-1.5">
+                  <span>Yangi Lidlar</span>
+                  <span class="bg-blue-500/30 text-blue-300 px-1.5 py-0.5 rounded font-mono text-[11px]">18</span>
+                </div>
+                <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 space-y-1">
+                  <span class="text-[10px] text-pink-400 font-mono font-bold block uppercase">Instagram Reels</span>
+                  <div class="font-bold text-white text-xs">Javohir T.</div>
+                  <span class="text-[11px] text-cyan-300 block">IELTS 7.5 Mock</span>
+                </div>
+              </div>
+
+              <!-- Stage 2 -->
+              <div class="bg-slate-900 rounded-xl p-2.5 border border-slate-800 space-y-2">
+                <div class="flex justify-between items-center text-xs font-bold text-cyan-300 border-b border-slate-800 pb-1.5">
+                  <span>AI Saralagan</span>
+                  <span class="bg-cyan-500/30 text-cyan-300 px-1.5 py-0.5 rounded font-mono text-[11px]">34</span>
+                </div>
+                <div class="p-2.5 rounded-lg bg-blue-950/40 border border-blue-500/30 space-y-1">
+                  <span class="text-[10px] text-emerald-400 font-mono font-bold block uppercase">Sinovga Yozildi ✓</span>
+                  <div class="font-bold text-white text-xs">Malika R.</div>
+                  <span class="text-[11px] text-slate-200 block">Shanba 11:00</span>
+                </div>
+              </div>
+
+              <!-- Stage 3 -->
+              <div class="bg-slate-900 rounded-xl p-2.5 border border-slate-800 space-y-2">
+                <div class="flex justify-between items-center text-xs font-bold text-amber-300 border-b border-slate-800 pb-1.5">
+                  <span>Sinovga Keldi</span>
+                  <span class="bg-amber-500/30 text-amber-300 px-1.5 py-0.5 rounded font-mono text-[11px]">22</span>
+                </div>
+                <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 space-y-1">
+                  <span class="text-[10px] text-amber-400 font-mono font-bold block uppercase">Chilonzor Filiali</span>
+                  <div class="font-bold text-white text-xs">Sardor A.</div>
+                  <span class="text-[11px] text-emerald-300 block">Band 8.0 Mock</span>
+                </div>
+              </div>
+
+              <!-- Stage 4 -->
+              <div class="bg-slate-900 rounded-xl p-2.5 border border-slate-800 space-y-2">
+                <div class="flex justify-between items-center text-xs font-bold text-emerald-300 border-b border-slate-800 pb-1.5">
+                  <span>To'lov / Guruh</span>
+                  <span class="bg-emerald-500/30 text-emerald-300 px-1.5 py-0.5 rounded font-mono text-[11px]">16</span>
+                </div>
+                <div class="p-2.5 rounded-lg bg-emerald-950/40 border border-emerald-500/40 space-y-1">
+                  <span class="text-[10px] text-emerald-300 font-mono font-bold block uppercase">Click To'lov 💳</span>
+                  <div class="font-bold text-white text-xs">Aziza K.</div>
+                  <span class="text-[11px] text-emerald-200 font-bold block">1,400,000 UZS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Marketing ROI banner -->
+            <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-700 flex items-center justify-between text-xs whitespace-nowrap">
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-chart-pie text-cyan-400"></i>
+                <span class="text-slate-200 font-medium">Marketing ROI Tahlili:</span>
+              </div>
+              <span class="text-emerald-300 font-bold font-mono">Reels: 62% Konversiya • Target: 3.4x Daromad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span class="whitespace-nowrap">Thompson School Sotuv Ekosistemasi</span>
+        <span class="whitespace-nowrap">03-Bo'lim • To'liq Lead Management & Kanban Voronkasi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 4: IELTS MOCK & XONALAR XARITASI ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage3_mocklab_hd.jpg" class="slide-bg" alt="Thompson School CD-IELTS Lab">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <span class="text-xs font-mono font-bold text-indigo-400 tracking-wider">04 / 07 • AKADEMIK SIFAT VA IMTIHON ZALLARI</span>
+        <span class="text-xs font-mono text-slate-300">Thompson School x EduPro²⁴</span>
+      </div>
+
+      <!-- Body -->
+      <div class="grid grid-cols-12 gap-8 my-auto items-center">
+        <div class="col-span-7 space-y-4">
+          <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-indigo-300 bg-indigo-500/20 px-3.5 py-1.5 rounded-full border border-indigo-500/40">
+            <i class="fa-solid fa-graduation-cap text-indigo-400"></i>
+            <span>COMPUTER-DELIVERED IELTS MOCK & XONALAR XARITASI</span>
+          </div>
+
+          <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight">
+            To'qnashuvlarsiz Mock Imtihonlari va <br>
+            <span class="bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+              Avtomat Band Score Baholash Tizimi.
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-100 leading-relaxed font-normal">
+            British Council'ning rasmiy hamkori sifatida Thompson School har hafta yuzlab nomzodlarni qabul qiladi. EduPro²⁴ kompyuter zallari bandligini Furqat va Chilonzor filiallari bo'yicha to'qnashuvlarsiz rejalashtiradi, umumiy Band Score ballarini hisoblaydi va o'quvchining shaxsiy Telegramiga rasmiy PDF shaklida yuboradi.
+          </p>
+
+          <div class="space-y-2.5 pt-1 text-xs">
+            <div class="flex items-start space-x-2.5 text-slate-100">
+              <i class="fa-solid fa-circle-check text-emerald-400 text-sm mt-0.5"></i>
+              <span><strong class="text-white">100% To'qnashuvsiz Bandlik:</strong> Kompyuter laboratoriyalaridagi har bir o'rinni real vaqtda nazorat qilish.</span>
+            </div>
+            <div class="flex items-start space-x-2.5 text-slate-100">
+              <i class="fa-solid fa-circle-check text-emerald-400 text-sm mt-0.5"></i>
+              <span><strong class="text-white">Bir Zumda Ball Hisoblash:</strong> Listening, Reading, Writing va Speaking ballarini avtomatik jamlash.</span>
+            </div>
+            <div class="flex items-start space-x-2.5 text-slate-100">
+              <i class="fa-solid fa-circle-check text-emerald-400 text-sm mt-0.5"></i>
+              <span><strong class="text-white">Shaxsiy Natija Sertifikati:</strong> Ekspert tavsiyalari bilan rasmiy PDF taloni Telegramga boradi.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IELTS Band Score Card -->
+        <div class="col-span-5">
+          <div class="sharp-card rounded-2xl p-5 space-y-3.5">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2.5">
+              <div>
+                <span class="text-sm font-extrabold text-white block">Rasmiy CD-IELTS Mock Natijasi</span>
+                <span class="text-xs text-slate-300 font-mono">Nomzod: Sardor Aliyev • Chilonzor Lab</span>
+              </div>
+              <div class="text-right">
+                <span class="text-3xl font-black text-amber-400">8.0</span>
+                <span class="text-[10px] text-slate-300 block font-mono font-bold">OVERALL BAND</span>
+              </div>
+            </div>
+
+            <!-- Score breakdown -->
+            <div class="grid grid-cols-4 gap-2 text-center text-xs">
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700">
+                <span class="text-[11px] text-slate-300 block font-mono">Listening</span>
+                <span class="font-black text-emerald-400 text-base">8.5</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700">
+                <span class="text-[11px] text-slate-300 block font-mono">Reading</span>
+                <span class="font-black text-emerald-400 text-base">8.0</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700">
+                <span class="text-[11px] text-slate-300 block font-mono">Writing</span>
+                <span class="font-black text-cyan-400 text-base">7.5</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700">
+                <span class="text-[11px] text-slate-300 block font-mono">Speaking</span>
+                <span class="font-black text-cyan-400 text-base">7.5</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-indigo-500/20 border border-indigo-500/40 text-xs text-indigo-200 flex items-center justify-between font-bold">
+              <span>Avtomat Telegram Sertifikati & PDF</span>
+              <i class="fa-solid fa-file-arrow-down text-base text-indigo-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span>Thompson Akademik Amaliyot</span>
+        <span>04-Bo'lim • IELTS Mock Imtihon Mexanizmi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 5: SMART PLANSHET & QR DAVOMAT ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage4_tablet_qr_hd.jpg" class="slide-bg" alt="Thompson School Tablet Check-In">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <span class="text-xs font-mono font-bold text-emerald-400 tracking-wider">05 / 07 • SMART DAVOMAT VA MOLIYAVIY XAVFSIZLIK</span>
+        <span class="text-xs font-mono text-slate-300">Thompson School x EduPro²⁴</span>
+      </div>
+
+      <!-- Body -->
+      <div class="grid grid-cols-12 gap-8 my-auto items-center">
+        <div class="col-span-7 space-y-4">
+          <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-emerald-300 bg-emerald-500/20 px-3.5 py-1.5 rounded-full border border-emerald-500/40">
+            <i class="fa-solid fa-tablet-screen-button text-emerald-400"></i>
+            <span>0 UZS USKUNA XARAJATI • QIMMAT TURNIKETSIZ</span>
+          </div>
+
+          <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight">
+            Devordagi Smart Planshet & QR: <br>
+            <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300 bg-clip-text text-transparent">
+              Tezkor Davomat va Uyaltirmasdan Qarz Qalqoni.
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-100 leading-relaxed font-normal">
+            30–50 million so'mlik og'ir temir turniketlar, bino devorlarini buzish yoki lobbida tirbandlik hosil qilish shart emas. Devorga o'rnatilgan ixcham planshet yoki QR-stend orqali o'quvchi <strong class="text-emerald-300 font-bold">1 soniyada</strong> check-in qiladi — ota-onaga esa Telegram Mini App orqali lahzali bildirishnoma boradi.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3.5 pt-1">
+            <div class="p-3.5 rounded-2xl sharp-card space-y-1.5">
+              <div class="text-xs font-bold text-cyan-300 flex items-center gap-1.5 uppercase">
+                <i class="fa-solid fa-qrcode text-cyan-400"></i>
+                <span>1 Soniyalik Check-In</span>
+              </div>
+              <p class="text-xs text-slate-200 leading-relaxed">O'quvchi shaxsiy QR taloni bilan planshet kamerasiga yaqinlashadi. Ota-onaga kelganlik xabari boradi.</p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl sharp-card space-y-1.5">
+              <div class="text-xs font-bold text-amber-300 flex items-center gap-1.5 uppercase">
+                <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                <span>Yumshoq Qarz Qalqoni</span>
+              </div>
+              <p class="text-xs text-slate-200 leading-relaxed">O'quvchini eshikda to'xtatib uyaltirish kerak emas. To'lov muddati o'tsa, ota-onaga muloyim Click to'lov havolasi boradi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telegram Mini App Graphic -->
+        <div class="col-span-5">
+          <div class="sharp-card rounded-2xl p-5 space-y-3.5">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-2.5">
+              <span class="font-extrabold text-sm text-white">0 MB Telegram Ota-ona Ilovasi</span>
+              <span class="text-emerald-400 font-mono text-xs font-bold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Real Vaqtda
+              </span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <!-- Check-In Alert -->
+              <div class="p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-100">
+                <div class="text-xs text-emerald-300 font-bold mb-1 uppercase tracking-wider">TELEGRAM BILDIRISHNOMA</div>
+                <p class="text-xs leading-relaxed">"Farzandingiz Sardor soat 08:52 da Furqat filialiga kirdi ✅"</p>
+              </div>
+
+              <!-- Payment Link -->
+              <div class="p-3 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-100">
+                <div class="text-xs text-amber-300 font-bold mb-1 uppercase tracking-wider">MULOYIM TO'LOV BILDIRISHNOMASI</div>
+                <p class="text-xs leading-relaxed">"Hurmatli ota-ona! Aprel oyi to'lovi uchun qulay havola: [ Click orqali to'lash 💳 ]"</p>
+              </div>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-blue-500/20 border border-blue-500/40 text-xs text-blue-200 text-center font-bold">
+              ✓ Qo'ng'iroqlarsiz 98% o'z vaqtida tushum yig'ish.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span>Yengil Davomat Arxitekturasi</span>
+        <span>05-Bo'lim • Planshet Check-In & Telegram TMA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 6: MOLIYAVIY SAMARA VA 1 OYLIK SINOV ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage5_executive_hd.jpg" class="slide-bg" alt="Thompson School Boardroom">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <span class="text-xs font-mono font-bold text-amber-400 tracking-wider">06 / 07 • MOLIYAVIY SAMARA VA 1 OYLIK BEPUL SINOV</span>
+        <span class="text-xs font-mono text-slate-300">Thompson School x EduPro²⁴</span>
+      </div>
+
+      <!-- Body -->
+      <div class="grid grid-cols-12 gap-8 my-auto items-center">
+        <div class="col-span-7 space-y-4">
+          <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-amber-300 bg-amber-500/20 px-3.5 py-1.5 rounded-full border border-amber-500/40">
+            <i class="fa-solid fa-chart-line text-amber-400"></i>
+            <span>MOLIYAVIY SAMARA VA BIZNES FOYDA</span>
+          </div>
+
+          <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight">
+            Oyiga 54,000,000+ UZS Qaytarilgan Tushum, <br>
+            <span class="bg-gradient-to-r from-amber-300 via-orange-300 to-emerald-400 bg-clip-text text-transparent">
+              Darslarni Bir Daqiqa Ham To'xtatmasdan.
+            </span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-100 leading-relaxed font-normal">
+            1,200+ o'quvchiga ega premium akademiya uchun EduPro²⁴ kelmaslik (no-show) va unutilgan to'lovlar tufayli yuzaga keladigan yo'qotishlarni to'liq bartaraf etadi. Tajribali jamoamiz mavjud tizim va bazalarni <strong class="text-amber-300 font-bold">2 soatda xatosiz</strong> ko'chirib beradi.
+          </p>
+
+          <!-- 3 Guarantees with 1 Month Test -->
+          <div class="grid grid-cols-3 gap-3 pt-1 text-xs">
+            <div class="p-3 rounded-2xl sharp-card text-center">
+              <span class="text-emerald-400 font-bold block mb-1 text-sm">2 Soatda Ko'chirish</span>
+              <span class="text-xs text-slate-200">O'quvchilar bazasi xatosiz o'tkaziladi</span>
+            </div>
+            <div class="p-3 rounded-2xl sharp-card text-center">
+              <span class="text-cyan-400 font-bold block mb-1 text-sm">0 To'xtalish</span>
+              <span class="text-xs text-slate-200">Darslar va jadvallar to'xtamaydi</span>
+            </div>
+            <div class="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-500/60 text-center">
+              <span class="text-emerald-300 font-black block mb-1 text-sm">1 Oylik Bepul Sinov</span>
+              <span class="text-xs text-emerald-100 font-bold">30 kun 100% bepul pilot</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROI Summary Card -->
+        <div class="col-span-5 space-y-3.5">
+          <div class="sharp-card rounded-2xl p-5 space-y-3.5">
+            <div class="text-xs font-bold text-slate-200 uppercase tracking-wide border-b border-slate-700 pb-2.5">
+              Oylik Moliyaviy Model (1,200 O'quvchi Hisobida)
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex justify-between items-center p-2.5 rounded-xl bg-slate-900 border border-slate-700">
+                <span class="text-slate-200 font-medium">Kelmaslik Qisqarishi Hisobiga:</span>
+                <span class="font-mono font-bold text-emerald-400 text-sm">+18,400,000 UZS</span>
+              </div>
+
+              <div class="flex justify-between items-center p-2.5 rounded-xl bg-slate-900 border border-slate-700">
+                <span class="text-slate-200 font-medium">Qarz Qalqonidan Undirish:</span>
+                <span class="font-mono font-bold text-cyan-400 text-sm">+36,000,000 UZS</span>
+              </div>
+
+              <div class="flex justify-between items-center p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/50">
+                <span class="font-bold text-white text-sm">Jami Oylik Qo'shimcha Foyda:</span>
+                <span class="font-mono font-black text-emerald-300 text-lg">54,400,000 UZS</span>
+              </div>
+            </div>
+
+            <!-- Risk-Free Guarantee Banner -->
+            <div class="p-3 rounded-xl bg-blue-950/50 border border-blue-500/50 text-xs text-slate-100 space-y-1">
+              <div class="font-bold text-blue-300 flex items-center gap-1.5 text-xs uppercase">
+                <i class="fa-solid fa-shield-check text-blue-400"></i>
+                <span>100% Xavfsiz Hamkorlik Kafolati:</span>
+              </div>
+              <p class="text-slate-200 text-xs leading-relaxed">
+                1 oy davomida tizimni real filialingizda sinab ko'ring. Agar siz kutgan natijani bermasa — hech qanday moliyaviy to'lov talab qilinmaydi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span>Thompson School Boshqaruv Taqdimoti</span>
+        <span>06-Bo'lim • Moliyaviy Model & Kafolatlar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 7: BIZNING JAMOA VA HAMKORLIK ==================== -->
+  <section class="slide">
+    <img src="assets/thompson_stage5_executive_hd.jpg" class="slide-bg" alt="Thompson School Strategic Boardroom">
+    <div class="slide-overlay"></div>
+
+    <div class="slide-content">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b border-slate-700/80 pb-3">
+        <span class="text-xs font-mono font-bold text-blue-400 tracking-wider">07 / 07 • BIZNING JAMOA & HAMKORLIK SHARTLARI</span>
+        <span class="text-xs font-mono text-slate-300">Thompson School x EduPro²⁴</span>
+      </div>
+
+      <!-- Main Body: Team Showcase -->
+      <div class="my-auto space-y-4">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-xs font-mono font-bold text-blue-300 bg-blue-500/20 px-3.5 py-1.5 rounded-full border border-blue-500/40 mb-1.5">
+            <i class="fa-solid fa-users text-blue-400"></i>
+            <span>EKSPERTLAR JAMOYASI VA XALQARO TAJRIBA</span>
+          </div>
+          <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight">
+            Kuchli Muhandislik va Akademik Tajriba Birlashmasi.
+          </h2>
+          <p class="text-sm text-slate-200 max-w-3xl mt-1 leading-relaxed">
+            Tizim muvaffaqiyatini faqat texnologiya emas, balki uni joriy etuvchi xalqaro tajribaga ega mas'ul jamoamiz to'liq kafolatlaydi.
+          </p>
+        </div>
+
+        <!-- 3 Team Profiles Grid -->
+        <div class="grid grid-cols-3 gap-4 pt-1">
+          <!-- Leader 1: Shukhrat Iskandarov -->
+          <div class="p-4 rounded-2xl sharp-card space-y-2.5">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-2xl bg-blue-600/35 border border-blue-400/60 flex items-center justify-center text-blue-200 font-black text-lg shrink-0 shadow-md">
+                SI
+              </div>
+              <div>
+                <h3 class="font-extrabold text-base text-white">Shukhrat Iskandarov</h3>
+                <span class="text-xs text-blue-300 font-mono font-bold block">Bosh Arxitektor & Tizim Muallifi</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-200 leading-relaxed">
+              <strong class="text-white">GPTify.co</strong> asoschisi, <strong class="text-white">Cubeo.ai</strong> hammuassisi. 12+ yillik B2B korporativ CRM va amaliy AI tizimlarini qurish tajribasi (Berlin & Toshkent).
+            </p>
+            <div class="text-xs text-slate-300 pt-2 border-t border-slate-700 font-medium">
+              Mas'ul: AI Speed-to-Lead, Lead Management va tizim integratsiyasi.
+            </div>
+          </div>
+
+          <!-- Leader 2: George Calcea -->
+          <div class="p-4 rounded-2xl sharp-card space-y-2.5">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-2xl bg-indigo-600/35 border border-indigo-400/60 flex items-center justify-center text-indigo-200 font-black text-lg shrink-0 shadow-md">
+                GC
+              </div>
+              <div>
+                <h3 class="font-extrabold text-base text-white">George Calcea</h3>
+                <span class="text-xs text-indigo-300 font-mono font-bold block">Xalqaro Texnologik Hamkor</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-200 leading-relaxed">
+              <strong class="text-white">Cubeo.ai</strong> asoschisi (Ruminiya / Yevropa). 10+ yillik xalqaro SaaS va AI agent tizimlari eksperti. Yuqori yuklamali bulutli infratuzilma me'mori.
+            </p>
+            <div class="text-xs text-slate-300 pt-2 border-t border-slate-700 font-medium">
+              Mas'ul: Xalqaro xavfsizlik standartlari va server barqarorligi.
+            </div>
+          </div>
+
+          <!-- Leader 3: Davlatbek Iskandarov -->
+          <div class="p-4 rounded-2xl sharp-card space-y-2.5">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-600/35 border border-emerald-400/60 flex items-center justify-center text-emerald-200 font-black text-lg shrink-0 shadow-md">
+                DI
+              </div>
+              <div>
+                <h3 class="font-extrabold text-base text-white">Davlatbek Iskandarov</h3>
+                <span class="text-xs text-emerald-300 font-mono font-bold block">Joriy Etish & Ta'lim Rahbari</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-200 leading-relaxed">
+              <strong class="text-white">PhD</strong>, dotsent. 10+ yillik ilmiy va pedagogik boshqaruv tajribasi. Ta'lim jarayonlarini raqamlashtirish va o'qituvchilar bilan ishlash bo'yicha ekspert.
+            </p>
+            <div class="text-xs text-slate-300 pt-2 border-t border-slate-700 font-medium">
+              Mas'ul: Xodimlarni o'qitish, bazani ko'chirish va 24/7 qo'llab-quvvatlash.
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Steps Banner with Direct CTA -->
+        <div class="p-3.5 rounded-2xl bg-gradient-to-r from-blue-900/60 via-indigo-900/60 to-slate-900/90 border border-blue-400/50 flex items-center justify-between shadow-xl">
+          <div class="space-y-0.5">
+            <div class="text-sm font-bold text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Keyingi Qadam: 15 Daqiqalik Jonli Taqdimot & 1 Oylik Bepul Sinovni Boshlash</span>
+            </div>
+            <p class="text-xs text-slate-200">
+              Filiallaringiz (Furqat, Chilonzor) xonalari va mock imtihonlari jadvaliga moslashtirilgan ko'rsatuv.
+            </p>
+          </div>
+
+          <div class="text-right">
+            <div class="text-sm font-mono font-bold text-cyan-300">Telegram: @shukhrat_ai</div>
+            <div class="text-xs text-slate-300">Shukhrat Iskandarov bilan to'g'ridan-to'g'ri aloqa</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-between items-center text-xs font-mono text-slate-300 border-t border-slate-700/80 pt-3">
+        <span>Thompson School x EduPro²⁴ • Hamkorlik Dasturi</span>
+        <span>07-Bo'lim • Jamoa & Keyingi Qadamlar</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
