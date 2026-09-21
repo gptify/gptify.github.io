@@ -1,459 +1,433 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="uz">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="AiNoma — O‘zbekiston va jahonning eng sara AI vositalari katalogi. Mahalliy dasturchilar mahsulotlari va global yetakchi servislar.">
-  <title>AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://ainoma.uz/vositalar.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="AiNoma">
-  <meta property="og:title" content="AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma">
-  <meta property="og:description" content="O‘zbekiston dasturchilari yaratgan milliy AI servislar hamda jahonning eng samarali, tasdiqlangan sun’iy intellekt vositalari katalogi.">
-  <meta property="og:url" content="https://ainoma.uz/vositalar.html">
-  <meta property="og:image" content="https://ainoma.uz/assets/ai_network.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma">
-  <meta name="twitter:description" content="O‘zbekiston dasturchilari yaratgan milliy AI servislar hamda jahonning eng samarali, tasdiqlangan sun’iy intellekt vositalari katalogi.">
-  <meta name="twitter:image" content="https://ainoma.uz/assets/ai_network.jpg">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="alternate icon" href="favicon.ico">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="AiNoma — O‘zbekiston va jahonning eng sara AI vositalari katalogi. Mahalliy dasturchilar mahsulotlari va global yetakchi servislar." name="description"/>
+<title>AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://ainoma.uz/vositalar.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="AiNoma" property="og:site_name"/>
+<meta content="AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma" property="og:title"/>
+<meta content="O‘zbekiston dasturchilari yaratgan milliy AI servislar hamda jahonning eng samarali, tasdiqlangan sun’iy intellekt vositalari katalogi." property="og:description"/>
+<meta content="https://ainoma.uz/vositalar.html" property="og:url"/>
+<meta content="https://ainoma.uz/assets/ai_network.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma" name="twitter:title"/>
+<meta content="O‘zbekiston dasturchilari yaratgan milliy AI servislar hamda jahonning eng samarali, tasdiqlangan sun’iy intellekt vositalari katalogi." name="twitter:description"/>
+<meta content="https://ainoma.uz/assets/ai_network.jpg" name="twitter:image"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="favicon.ico" rel="alternate icon"/>
 </head>
 <body>
-  <header>
-    <div class="container navbar">
-      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
-        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
-      </a>
-      <nav class="navlinks">
-        <a href="yangiliklar.html">Yangiliklar</a>
-        <a class="active" href="vositalar.html">AI vositalar</a>
-        <a href="qollanmalar.html">Qo‘llanmalar</a>
-        <a href="hikoyalar.html">Hikoyalar</a>
-      </nav>
-      <div class="navtools">
-        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv">⌕</button>
-        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu">◐</button>
-        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
-          <span>Kanal</span> @gptifyuz
+<header>
+<div class="container navbar">
+<a aria-label="AiNoma Bosh Sahifa" class="logo" href="index.html">
+<img alt="AiNoma" class="brand-logo-img" src="assets/logo.svg"/>
+</a>
+<nav class="navlinks">
+<a href="yangiliklar.html">Yangiliklar</a>
+<a class="active" href="vositalar.html">AI vositalar</a>
+<a href="qollanmalar.html">Qo‘llanmalar</a>
+<a href="hikoyalar.html">Hikoyalar</a>
+</nav>
+<div class="navtools">
+<button aria-label="Qidiruv" class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)">⌕</button>
+<button aria-label="Mavzu" class="iconbtn" id="theme" title="Mavzuni o‘zgartirish">◐</button>
+<a class="btn-tg-nav" href="https://t.me/gptifyuz" rel="noopener" target="_blank">
+<span>Kanal</span> @gptifyuz
         </a>
-        <button class="iconbtn hamb" id="hamb" aria-label="Menyu">☰</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Search Modal -->
-  <div class="searchbox" id="searchbox">
-    <div class="searchinner">
-      <input id="siteSearch" placeholder="Vositalarni qidiring (masalan: Gamma, MindStudio, Maya, Apollo, Descript)…" autocomplete="off">
-      <button class="btn" id="closeSearch">Yopish (Esc)</button>
-      <div class="search-results" id="searchResults"></div>
-    </div>
-  </div>
-
-  <main class="container">
-    <div class="pagehero" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
-      <div>
-        <div class="kicker">AiNoma / Vositalar Katalogi</div>
-        <h1>AI Vositalar Katalogi</h1>
-        <p style="margin-bottom:0;">O‘zbekiston dasturchilari tomonidan yaratilgan milliy sun’iy intellekt mahsulotlari hamda jahonning eng samarali, sinovdan o‘tgan global vositalari bitta joyda.</p>
-      </div>
-      <div>
-        <a class="btn primary" href="#submit-tool" style="background:#059669; color:#ffffff; font-weight:700; white-space:nowrap; padding:10px 18px;">
+<button aria-label="Menyu" class="iconbtn hamb" id="hamb">☰</button>
+</div>
+</div>
+</header>
+<!-- Search Modal -->
+<div class="searchbox" id="searchbox">
+<div class="searchinner">
+<input autocomplete="off" id="siteSearch" placeholder="Vositalarni qidiring (masalan: Gamma, MindStudio, Maya, Apollo, Descript)…"/>
+<button class="btn" id="closeSearch">Yopish (Esc)</button>
+<div class="search-results" id="searchResults"></div>
+</div>
+</div>
+<main class="container">
+<div class="pagehero" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+<div>
+<div class="kicker">AiNoma / Vositalar Katalogi</div>
+<h1>AI Vositalar Katalogi</h1>
+<p style="margin-bottom:0;">O‘zbekiston dasturchilari tomonidan yaratilgan milliy sun’iy intellekt mahsulotlari hamda jahonning eng samarali, sinovdan o‘tgan global vositalari bitta joyda.</p>
+</div>
+<div>
+<a class="btn primary" href="#submit-tool" style="background:#059669; color:#ffffff; font-weight:700; white-space:nowrap; padding:10px 18px;">
           + O‘z vositangizni qo‘shing
         </a>
-      </div>
-    </div>
-
-    <!-- Main Segment Filters -->
-    <div class="filters" style="margin-bottom:24px;">
-      <button class="filter active" data-filter="all">Barchasi</button>
-      <button class="filter" data-filter="uzbekistan" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;">🇺🇿 O‘zbekiston vositalari</button>
-      <button class="filter" data-filter="global" style="background:#ecfdf5; color:#047857; border-color:#a7f3d0;">🌐 Jahon vositalari</button>
-      <button class="filter" data-filter="prezentatsiya">Prezentatsiya</button>
-      <button class="filter" data-filter="sotuv">Sotuv & Chatbot</button>
-      <button class="filter" data-filter="lead">B2B Lead & Outreach</button>
-      <button class="filter" data-filter="video">Video & Ovoz</button>
-    </div>
-
-    <!-- ================================================================= -->
-    <!-- SECTION 1: O'ZBEKISTON DASTURCHILARI YARATGAN AI VOSITALAR         -->
-    <!-- ================================================================= -->
-    <div id="section-uzbekistan" style="margin-bottom:50px;">
-      <div class="section-banner banner-uz">
-        <div>
-          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-            <span style="font-size:24px;">🇺🇿</span>
-            <h2 style="font-size:22px; font-weight:800; color:#1e3a8a; margin:0; font-family:'Space Grotesk',sans-serif;">
+</div>
+</div>
+<!-- Main Segment Filters -->
+<div class="filters" style="margin-bottom:24px;">
+<button class="filter active" data-filter="all">Barchasi</button>
+<button class="filter" data-filter="uzbekistan" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;">🇺🇿 O‘zbekiston vositalari</button>
+<button class="filter" data-filter="global" style="background:#ecfdf5; color:#047857; border-color:#a7f3d0;">🌐 Jahon vositalari</button>
+<button class="filter" data-filter="prezentatsiya">Prezentatsiya</button>
+<button class="filter" data-filter="sotuv">Sotuv &amp; Chatbot</button>
+<button class="filter" data-filter="lead">B2B Lead &amp; Outreach</button>
+<button class="filter" data-filter="video">Video &amp; Ovoz</button>
+</div>
+<!-- ================================================================= -->
+<!-- SECTION 1: O'ZBEKISTON DASTURCHILARI YARATGAN AI VOSITALAR         -->
+<!-- ================================================================= -->
+<div id="section-uzbekistan" style="margin-bottom:50px;">
+<div class="section-banner banner-uz">
+<div>
+<div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+<span style="font-size:24px;">🇺🇿</span>
+<h2 style="font-size:22px; font-weight:800; color:#1e3a8a; margin:0; font-family:'Space Grotesk',sans-serif;">
               O‘zbekiston Dasturchilari Yaratgan AI Vositalar
             </h2>
-          </div>
-          <p style="margin:0; font-size:14px; color:#1e40af;">
+</div>
+<p style="margin:0; font-size:14px; color:#1e40af;">
             Mahalliy mutaxassislar va startaplar tomonidan o‘zbek tili, mahalliy qonunchilik va biznes ehtiyojlariga moslashtirilgan servislar.
           </p>
-        </div>
-        <span style="background:#1d4ed8; color:#ffffff; font-weight:700; font-size:12px; padding:6px 14px; border-radius:999px;">
+</div>
+<span style="background:#1d4ed8; color:#ffffff; font-weight:700; font-size:12px; padding:6px 14px; border-radius:999px;">
           6 ta Mahalliy Loyiha
         </span>
-      </div>
-
-      <div class="pagegrid">
-        <!-- 1: Maya AI -->
-        <article class="card filter-card" data-cat="uzbekistan" data-search="Maya AI o‘zbekiston matn tahrir ovoz transkripsiya">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#059669">M</div>
-            <span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
-          </div>
-          <div class="card-meta">O‘ZBEK TILI & MATN</div>
-          <h3>Maya AI</h3>
-          <p>O‘zbek tilining grammatikasi va madaniy nozikliklarini yaxshi biluvchi milliy model. Matnlarni tahrirlash, stilistika va audio transkripsiya.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=maya">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://maya.uz" target="_blank" rel="noopener">Saytga o‘tish ↗</a>
-          </div>
-        </article>
-
-        <!-- 2: Mohirdev Muxlisa AI -->
-        <article class="card filter-card" data-cat="uzbekistan" data-search="Mohirdev Muxlisa AI nutq stt tts ovoz o‘zbek tili">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#0284c7">Mx</div>
-            <span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
-          </div>
-          <div class="card-meta">NUTQ & TRANSKRIPSIYA (STT/TTS)</div>
-          <h3>Muxlisa AI (Mohirdev)</h3>
-          <p>O‘zbekcha jonli nutqni aniq matnga aylantirish va matnni tabiiy o‘zbek ovozida o‘qib berish bo‘yicha yetakchi mahalliy neyrotarmoq.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=muxlisa">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://mohir.ai" target="_blank" rel="noopener">Saytga o‘tish ↗</a>
-          </div>
-        </article>
-
-        <!-- 3: Billz AI -->
-        <article class="card filter-card" data-cat="uzbekistan" data-search="Billz AI kassa do‘kon savdo riteyl inventar tahlil">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#4f46e5">B</div>
-            <span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
-          </div>
-          <div class="card-meta">RITEYL & SAVDO TAHLILI</div>
-          <h3>Billz AI</h3>
-          <p>Savdo tarmoqlari va chakana do‘konlar uchun intellektual tahlil. Qaysi tovarlar yaxshi ketishini bashoratlaydi va inventar yo‘qotilishini kamaytiradi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=billz">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://billz.io" target="_blank" rel="noopener">Saytga o‘tish ↗</a>
-          </div>
-        </article>
-
-        <!-- 4: Dastyor AI -->
-        <article class="card filter-card" data-cat="uzbekistan" data-search="Dastyor AI soliq buxgalteriya hisob qonun fintex">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#0d9488">D</div>
-            <span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
-          </div>
-          <div class="card-meta">BUXGALTERIYA & FINTECH</div>
-          <h3>Dastyor AI</h3>
-          <p>O‘zbekiston soliq kodeksi va buxgalteriya me’yorlariga moslashtirilgan ixtisoslashgan yordamchi. Hisobotlarni tekshiradi va soliq xatolaridan asraydi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=dastyor">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://dastyor.uz" target="_blank" rel="noopener">Saytga o‘tish ↗</a>
-          </div>
-        </article>
-
-        <!-- 5: Yuridik AI (Didox) -->
-        <article class="card filter-card" data-cat="uzbekistan" data-search="Yuridik AI shartnoma tekshirish xatar didox qonun">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#3b82f6">Y</div>
-            <span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
-          </div>
-          <div class="card-meta">YURIDIK AUDIT & HUQUQ</div>
-          <h3>Yuridik AI (Didox)</h3>
-          <p>Kompaniyalarning o‘nlab sahifali shartnomalarini soniyalar ichida tekshirib, jarima va moliyaviy xatarlarni aniq ko‘rsatib beruvchi tizim.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=yuridik">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://didox.uz" target="_blank" rel="noopener">Saytga o‘tish ↗</a>
-          </div>
-        </article>
-
-        <!-- 6: Uzum Copilot -->
-        <article class="card filter-card" data-cat="uzbekistan" data-search="Uzum Copilot marketpleys sotuvchi kartochka tavsif narx">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#8b5cf6">U</div>
-            <span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
-          </div>
-          <div class="card-meta">E-COMMERCE & MARKETPLEYSLAR</div>
-          <h3>Uzum AI Copilot</h3>
-          <p>Uzum Market sotuvchilari uchun tovar tavsiflarini yozish, narxlarni optimallashtirish va sotuv konversiyasini oshirish bo‘yicha yordamchi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=uzum">Tahlilni o‘qish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://uzum.uz" target="_blank" rel="noopener">Saytga o‘tish ↗</a>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- ================================================================= -->
-    <!-- SECTION 2: JAHONNING YETAKCHI AI VOSITALARI (GLOBAL TOP TOOLS)    -->
-    <!-- ================================================================= -->
-    <div id="section-global" style="margin-bottom:50px;">
-      <div class="section-banner banner-global">
-        <div>
-          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-            <span style="font-size:24px;">🌐</span>
-            <h2 style="font-size:22px; font-weight:800; color:#064e3b; margin:0; font-family:'Space Grotesk',sans-serif;">
+</div>
+<div class="pagegrid">
+<!-- 1: Maya AI -->
+<article class="card filter-card" data-cat="uzbekistan uzbekistan audio video" data-search="Maya AI o‘zbekiston matn tahrir ovoz transkripsiya">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#059669">M</div>
+<span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
+</div>
+<div class="card-meta">O‘ZBEK TILI &amp; MATN</div>
+<h3>Maya AI</h3>
+<p>O‘zbek tilining grammatikasi va madaniy nozikliklarini yaxshi biluvchi milliy model. Matnlarni tahrirlash, stilistika va audio transkripsiya.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=maya" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://maya.uz" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 2: Mohirdev Muxlisa AI -->
+<article class="card filter-card" data-cat="uzbekistan uzbekistan audio video" data-search="Mohirdev Muxlisa AI nutq stt tts ovoz o‘zbek tili">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#0284c7">Mx</div>
+<span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
+</div>
+<div class="card-meta">NUTQ &amp; TRANSKRIPSIYA (STT/TTS)</div>
+<h3>Muxlisa AI (Mohirdev)</h3>
+<p>O‘zbekcha jonli nutqni aniq matnga aylantirish va matnni tabiiy o‘zbek ovozida o‘qib berish bo‘yicha yetakchi mahalliy neyrotarmoq.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=muxlisa" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://mohir.ai" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 3: Billz AI -->
+<article class="card filter-card" data-cat="uzbekistan uzbekistan sotuv" data-search="Billz AI kassa do‘kon savdo riteyl inventar tahlil">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#4f46e5">B</div>
+<span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
+</div>
+<div class="card-meta">RITEYL &amp; SAVDO TAHLILI</div>
+<h3>Billz AI</h3>
+<p>Savdo tarmoqlari va chakana do‘konlar uchun intellektual tahlil. Qaysi tovarlar yaxshi ketishini bashoratlaydi va inventar yo‘qotilishini kamaytiradi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=billz" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://billz.io" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 4: Dastyor AI -->
+<article class="card filter-card" data-cat="uzbekistan" data-search="Dastyor AI soliq buxgalteriya hisob qonun fintex">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#0d9488">D</div>
+<span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
+</div>
+<div class="card-meta">BUXGALTERIYA &amp; FINTECH</div>
+<h3>Dastyor AI</h3>
+<p>O‘zbekiston soliq kodeksi va buxgalteriya me’yorlariga moslashtirilgan ixtisoslashgan yordamchi. Hisobotlarni tekshiradi va soliq xatolaridan asraydi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=dastyor" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://dastyor.uz" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 5: Yuridik AI (Didox) -->
+<article class="card filter-card" data-cat="uzbekistan" data-search="Yuridik AI shartnoma tekshirish xatar didox qonun">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#3b82f6">Y</div>
+<span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
+</div>
+<div class="card-meta">YURIDIK AUDIT &amp; HUQUQ</div>
+<h3>Yuridik AI (Didox)</h3>
+<p>Kompaniyalarning o‘nlab sahifali shartnomalarini soniyalar ichida tekshirib, jarima va moliyaviy xatarlarni aniq ko‘rsatib beruvchi tizim.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=yuridik" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://didox.uz" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 6: Uzum Copilot -->
+<article class="card filter-card" data-cat="uzbekistan" data-search="Uzum Copilot marketpleys sotuvchi kartochka tavsif narx">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#8b5cf6">U</div>
+<span class="badge badge-uz">🇺🇿 O‘zbekiston</span>
+</div>
+<div class="card-meta">E-COMMERCE &amp; MARKETPLEYSLAR</div>
+<h3>Uzum AI Copilot</h3>
+<p>Uzum Market sotuvchilari uchun tovar tavsiflarini yozish, narxlarni optimallashtirish va sotuv konversiyasini oshirish bo‘yicha yordamchi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=uzum" style="font-size:12px; padding:8px 14px;">Tahlilni o‘qish →</a>
+<a class="btn" href="https://uzum.uz" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+</div>
+</div>
+<!-- ================================================================= -->
+<!-- SECTION 2: JAHONNING YETAKCHI AI VOSITALARI (GLOBAL TOP TOOLS)    -->
+<!-- ================================================================= -->
+<div id="section-global" style="margin-bottom:50px;">
+<div class="section-banner banner-global">
+<div>
+<div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+<span style="font-size:24px;">🌐</span>
+<h2 style="font-size:22px; font-weight:800; color:#064e3b; margin:0; font-family:'Space Grotesk',sans-serif;">
               Jahonning Yetakchi AI Vositalari (Global Tools)
             </h2>
-          </div>
-          <p style="margin:0; font-size:14px; color:#065f46;">
+</div>
+<p style="margin:0; font-size:14px; color:#065f46;">
             Dunyo bo‘ylab millionlab bizneslar tomonidan tasdiqlangan, amaliy samaradorlikka ega professional servislar.
           </p>
-        </div>
-        <span style="background:#059669; color:#ffffff; font-weight:700; font-size:12px; padding:6px 14px; border-radius:999px;">
+</div>
+<span style="background:#059669; color:#ffffff; font-weight:700; font-size:12px; padding:6px 14px; border-radius:999px;">
           14 ta Tekshirilgan Servis
         </span>
-      </div>
-
-      <div class="pagegrid">
-        <!-- 1: Gamma AI -->
-        <article class="card filter-card" data-cat="global prezentatsiya" data-search="Gamma AI taqdimot slayd veb sayt dizayn">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#7c3aed">G</div>
-            <span class="badge badge-global">🌐 Global · Tavsiya</span>
-          </div>
-          <div class="card-meta">PREZENTATSIYA & SLAYDLAR</div>
-          <h3>Gamma AI</h3>
-          <p>Slayd tayyorlashga soatlab vaqt sarflamang. 1 ta mavzudan to‘liq slaydlar, chiroyli dizayn va interaktiv veb-hujjat tayyorlaydi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=gamma">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://try.gamma.app/phx9znt88tpu" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 2: Apollo.io -->
-        <article class="card filter-card" data-cat="global lead" data-search="Apollo io b2b lead direktori xarid eksport email baza">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#f59e0b">A</div>
-            <span class="badge badge-global">🌐 Global · Eksport</span>
-          </div>
-          <div class="card-meta">B2B LEAD GENERATION</div>
-          <h3>Apollo.io</h3>
-          <p>Dunyo bo‘ylab 275+ million tekshirilgan korporativ kontaktlar bazasi. Eksportchilar va xorijga xizmat sotuvchilar uchun ajralmas vosita.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=apollo">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://get.apollo.io/yy5q6cfw7xi5" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 3: Manychat -->
-        <article class="card filter-card" data-cat="global sotuv" data-search="Manychat instagram direct telegram chatbot savdo avtomatlashtirish sotuv">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#0084ff">MC</div>
-            <span class="badge badge-global">🌐 Global · Sotuv</span>
-          </div>
-          <div class="card-meta">SOTUV & INSTAGRAM CHATBOT</div>
-          <h3>Manychat</h3>
-          <p>Instagram Direct va Telegram'da mijozlarga 24/7 avtomatik javob berish, izohlardan lead yig‘ish va savdoni avtomatlashtirish platformasi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=manychat">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://manychat.partnerlinks.io/gopygbhk9cau" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 4: Descript -->
-        <article class="card filter-card" data-cat="global video" data-search="Descript video montaj ovoz tozalash reels podcast">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#10b981">D</div>
-            <span class="badge badge-global">🌐 Global · Kreativ</span>
-          </div>
-          <div class="card-meta">VIDEO & OVOZ MONTAJI</div>
-          <h3>Descript</h3>
-          <p>Videoni Word matnidek oson montaj qiling. Matndagi ortiqcha so‘zni o‘chirsangiz, video avtomatik qirqiladi. Ovozni studiya sifatiga keltiradi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=descript">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://get.descript.com/turigheoz1eq" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 5: Lemlist -->
-        <article class="card filter-card" data-cat="global lead" data-search="Lemlist email outreach sovuq xatlar mijoz topish">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#ec4899">L</div>
-            <span class="badge badge-global">🌐 Global · Outreach</span>
-          </div>
-          <div class="card-meta">EMAIL OUTREACH & SOTUV</div>
-          <h3>Lemlist</h3>
-          <p>Har bir mijoz uchun AI yordamida chuqur shaxsiylashtirilgan xatlar jo‘natish. Spamga tushmaslikni ta’minlovchi va javoblar foizini oshiruvchi platforma.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=lemlist">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://get.lemlist.com/9wfnrv5mceyj" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 6: MeetGeek -->
-        <article class="card filter-card" data-cat="global" data-search="MeetGeek uchrashuv yozib olish bayonnoma zoom google meet">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#6366f1">MG</div>
-            <span class="badge badge-global">🌐 Global · Uchrashuv</span>
-          </div>
-          <div class="card-meta">UCHRASHUV VA MAJLISLAR AI</div>
-          <h3>MeetGeek</h3>
-          <p>Zoom, Google Meet va Teams uchrashuvlarini yozib oladi, nutqni matnga o‘giradi va 1 daqiqada asosiy vazifalar (action items) bayonnomasini chiqaradi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=meetgeek">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://get.meetgeek.ai/uy8dxc8l9prm" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 7: Instantly -->
-        <article class="card filter-card" data-cat="global lead" data-search="Instantly mass email warming lead gen outreach">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#2563eb">IN</div>
-            <span class="badge badge-global">🌐 Global · Mass Email</span>
-          </div>
-          <div class="card-meta">KORPORATIV EMAIL SCALE</div>
-          <h3>Instantly</h3>
-          <p>Katta hajmdagi B2B sovuq email kampaniyalarini xavfsiz boshqarish, pochtalarni isitish (warm-up) va mijozlar javoblarini AI orqali saralash.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=instantly">Ko‘rish →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://refer.instantly.ai/7pwwq1hkoudw" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 8: MindStudio -->
-        <article class="card filter-card" data-cat="global" data-search="Mindstudio no code ai agent ilova bot dastur">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#09090b">MS</div>
-            <span class="badge badge-global">🌐 Global · No-Code</span>
-          </div>
-          <div class="card-meta">NO-CODE AI AGENTLAR</div>
-          <h3>MindStudio</h3>
-          <p>Dasturlashni bilmasdan turib kompaniyangiz uchun ichki AI ilovalar, bilimlar bazasi va mijozlar bilan muloqot qiluvchi maxsus agentlar yasang.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=mindstudio">Batafsil →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://get.mindstudio.ai/1eqeupsiig0i" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 9: Seamless.ai -->
-        <article class="card filter-card" data-cat="global lead" data-search="Seamless ai b2b kontakt qidiruv telefon raqam">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#0284c7">S</div>
-            <span class="badge badge-global">🌐 Global · B2B Lead</span>
-          </div>
-          <div class="card-meta">REAL-TIME KONTAKT QIDIRUVI</div>
-          <h3>Seamless.ai</h3>
-          <p>Dunyo bo‘yicha kerakli sohadagi mas’ul shaxslarning to‘g‘ridan-to‘g‘ri mobil telefonlari va korporativ pochtalarini real vaqtda topib beradi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=seamless">Batafsil →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://get.seamless.ai/wxur32uh7xzb" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 10: Lindy.ai -->
-        <article class="card filter-card" data-cat="global" data-search="Lindy ai shaxsiy assistent xat yozish taqvim uchrashuv">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#ea580c">L</div>
-            <span class="badge badge-global">🌐 Global · AI Assistent</span>
-          </div>
-          <div class="card-meta">AVTONOM SHAXSIY YORDAMCHI</div>
-          <h3>Lindy</h3>
-          <p>Kundalik vazifalarni bajaruvchi avtonom kotib: pochtani tekshiradi, uchrashuvlarni taqvimga kiritadi va takroriy ishlarni mustaqil hal qiladi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=lindy">Batafsil →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://try.lindy.ai/9jnuq63xr11e" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 11: AdCreative.ai -->
-        <article class="card filter-card" data-cat="global" data-search="AdCreative ai reklama banner kreativi target instagram">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#e11d48">AC</div>
-            <span class="badge badge-global">🌐 Global · Reklama</span>
-          </div>
-          <div class="card-meta">REKLAMA BANNERLARI & KREATIV</div>
-          <h3>AdCreative.ai</h3>
-          <p>Instagram, Facebook va Google reklamalari uchun konversiyasi yuqori bo‘lgan bannerlar va matnlarni sun’iy intellekt orqali daqiqalarda yasang.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=adcreative">Batafsil →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://free-trial.adcreative.ai/jb870cr6hwhe" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 12: Beautiful.ai -->
-        <article class="card filter-card" data-cat="global prezentatsiya" data-search="Beautiful ai taqdimot dizayn avtomat slayd">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#0ea5e9">B</div>
-            <span class="badge badge-global">🌐 Global · Taqdimot</span>
-          </div>
-          <div class="card-meta">AQLLI TAQDIMOT DIZAYNI</div>
-          <h3>Beautiful.ai</h3>
-          <p>Har bir slaydda elementlarni avtomatik proporsiyaga solib turuvchi, professional taqdimotlar tayyorlash uchun intellektual dizayn servisi.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=beautifulai">Batafsil →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://beautifulai.partnerlinks.io/rvvr8zuu35ig" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-
-        <!-- 13: Calilio -->
-        <article class="card filter-card" data-cat="global" data-search="Calilio voip qo‘ng‘iroq ai tahlil aloqa operator">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-            <div class="tool-logo" style="background:#6d28d9">C</div>
-            <span class="badge badge-global">🌐 Global · Telefoniya</span>
-          </div>
-          <div class="card-meta">AI BULUTLI TELEFONIYA</div>
-          <h3>Calilio</h3>
-          <p>Biznesingiz uchun xalqaro virtual raqamlar, AI asosidagi qo‘ng‘iroqlar tahlili va ovozli yordamchilarni oson sozlash imkoni.</p>
-          <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-            <a class="btn primary" style="font-size:12px; padding:8px 14px;" href="vosita.html?id=calilio">Batafsil →</a>
-            <a class="btn" style="font-size:12px; padding:8px 14px;" href="https://try.calilio.com/yvlkop2jok4w" target="_blank" rel="noopener">Bepul sinash ↗</a>
-          </div>
-        </article>
-      </div>
-    <!-- Creator CTA: Submit Tool to AiNoma Directory -->
-    <div id="submit-tool" class="newsletter" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(4, 120, 87, 0.92)), url('assets/ai_network.jpg') center/cover; color:#ffffff; margin: 40px 0; border: none; box-shadow: var(--shadow);">
-      <div>
-        <span class="badge" style="background:#10b981; color:#ffffff; font-size:11px; padding:4px 10px; border-radius:6px; font-weight:700; display:inline-block; margin-bottom:10px;">STARTAPLAR VA ISHLAB CHIQARUVCHILAR UCHUN</span>
-        <h2 style="color:#ffffff; margin:0 0 10px; font-size:24px;">O‘z AI vositangiz bormi? Uni AiNoma katalogiga qo‘shing!</h2>
-        <p style="color:#e2ece7; margin:0; max-width:640px; font-size:14px; line-height:1.6;">
+</div>
+<div class="pagegrid">
+<!-- 1: Gamma AI -->
+<article class="card filter-card" data-cat="global prezentatsiya" data-search="Gamma AI taqdimot slayd veb sayt dizayn">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#7c3aed">G</div>
+<span class="badge badge-global">🌐 Global · Tavsiya</span>
+</div>
+<div class="card-meta">PREZENTATSIYA &amp; SLAYDLAR</div>
+<h3>Gamma AI</h3>
+<p>Slayd tayyorlashga soatlab vaqt sarflamang. 1 ta mavzudan to‘liq slaydlar, chiroyli dizayn va interaktiv veb-hujjat tayyorlaydi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=gamma" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://try.gamma.app/phx9znt88tpu" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 2: Apollo.io -->
+<article class="card filter-card" data-cat="global lead" data-search="Apollo io b2b lead direktori xarid eksport email baza">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#f59e0b">A</div>
+<span class="badge badge-global">🌐 Global · Eksport</span>
+</div>
+<div class="card-meta">B2B LEAD GENERATION</div>
+<h3>Apollo.io</h3>
+<p>Dunyo bo‘ylab 275+ million tekshirilgan korporativ kontaktlar bazasi. Eksportchilar va xorijga xizmat sotuvchilar uchun ajralmas vosita.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=apollo" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://get.apollo.io/yy5q6cfw7xi5" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 3: Manychat -->
+<article class="card filter-card" data-cat="global sotuv" data-search="Manychat instagram direct telegram chatbot savdo avtomatlashtirish sotuv">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#0084ff">MC</div>
+<span class="badge badge-global">🌐 Global · Sotuv</span>
+</div>
+<div class="card-meta">SOTUV &amp; INSTAGRAM CHATBOT</div>
+<h3>Manychat</h3>
+<p>Instagram Direct va Telegram'da mijozlarga 24/7 avtomatik javob berish, izohlardan lead yig‘ish va savdoni avtomatlashtirish platformasi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=manychat" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://manychat.partnerlinks.io/gopygbhk9cau" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 4: Descript -->
+<article class="card filter-card" data-cat="global video" data-search="Descript video montaj ovoz tozalash reels podcast">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#10b981">D</div>
+<span class="badge badge-global">🌐 Global · Kreativ</span>
+</div>
+<div class="card-meta">VIDEO &amp; OVOZ MONTAJI</div>
+<h3>Descript</h3>
+<p>Videoni Word matnidek oson montaj qiling. Matndagi ortiqcha so‘zni o‘chirsangiz, video avtomatik qirqiladi. Ovozni studiya sifatiga keltiradi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=descript" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://get.descript.com/turigheoz1eq" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 5: Lemlist -->
+<article class="card filter-card" data-cat="global lead" data-search="Lemlist email outreach sovuq xatlar mijoz topish">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#ec4899">L</div>
+<span class="badge badge-global">🌐 Global · Outreach</span>
+</div>
+<div class="card-meta">EMAIL OUTREACH &amp; SOTUV</div>
+<h3>Lemlist</h3>
+<p>Har bir mijoz uchun AI yordamida chuqur shaxsiylashtirilgan xatlar jo‘natish. Spamga tushmaslikni ta’minlovchi va javoblar foizini oshiruvchi platforma.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=lemlist" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://get.lemlist.com/9wfnrv5mceyj" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 6: MeetGeek -->
+<article class="card filter-card" data-cat="global global video audio" data-search="MeetGeek uchrashuv yozib olish bayonnoma zoom google meet">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#6366f1">MG</div>
+<span class="badge badge-global">🌐 Global · Uchrashuv</span>
+</div>
+<div class="card-meta">UCHRASHUV VA MAJLISLAR AI</div>
+<h3>MeetGeek</h3>
+<p>Zoom, Google Meet va Teams uchrashuvlarini yozib oladi, nutqni matnga o‘giradi va 1 daqiqada asosiy vazifalar (action items) bayonnomasini chiqaradi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=meetgeek" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://get.meetgeek.ai/uy8dxc8l9prm" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 7: Instantly -->
+<article class="card filter-card" data-cat="global lead" data-search="Instantly mass email warming lead gen outreach">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#2563eb">IN</div>
+<span class="badge badge-global">🌐 Global · Mass Email</span>
+</div>
+<div class="card-meta">KORPORATIV EMAIL SCALE</div>
+<h3>Instantly</h3>
+<p>Katta hajmdagi B2B sovuq email kampaniyalarini xavfsiz boshqarish, pochtalarni isitish (warm-up) va mijozlar javoblarini AI orqali saralash.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=instantly" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://refer.instantly.ai/7pwwq1hkoudw" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 8: MindStudio -->
+<article class="card filter-card" data-cat="global global sotuv lead" data-search="Mindstudio no code ai agent ilova bot dastur">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#09090b">MS</div>
+<span class="badge badge-global">🌐 Global · No-Code</span>
+</div>
+<div class="card-meta">NO-CODE AI AGENTLAR</div>
+<h3>MindStudio</h3>
+<p>Dasturlashni bilmasdan turib kompaniyangiz uchun ichki AI ilovalar, bilimlar bazasi va mijozlar bilan muloqot qiluvchi maxsus agentlar yasang.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=mindstudio" style="font-size:12px; padding:8px 14px;">Batafsil →</a>
+<a class="btn" href="https://get.mindstudio.ai/1eqeupsiig0i" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 9: Seamless.ai -->
+<article class="card filter-card" data-cat="global lead" data-search="Seamless ai b2b kontakt qidiruv telefon raqam">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#0284c7">S</div>
+<span class="badge badge-global">🌐 Global · B2B Lead</span>
+</div>
+<div class="card-meta">REAL-TIME KONTAKT QIDIRUVI</div>
+<h3>Seamless.ai</h3>
+<p>Dunyo bo‘yicha kerakli sohadagi mas’ul shaxslarning to‘g‘ridan-to‘g‘ri mobil telefonlari va korporativ pochtalarini real vaqtda topib beradi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=seamless" style="font-size:12px; padding:8px 14px;">Batafsil →</a>
+<a class="btn" href="https://get.seamless.ai/wxur32uh7xzb" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 10: Lindy.ai -->
+<article class="card filter-card" data-cat="global global lead sotuv" data-search="Lindy ai shaxsiy assistent xat yozish taqvim uchrashuv">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#ea580c">L</div>
+<span class="badge badge-global">🌐 Global · AI Assistent</span>
+</div>
+<div class="card-meta">AVTONOM SHAXSIY YORDAMCHI</div>
+<h3>Lindy</h3>
+<p>Kundalik vazifalarni bajaruvchi avtonom kotib: pochtani tekshiradi, uchrashuvlarni taqvimga kiritadi va takroriy ishlarni mustaqil hal qiladi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=lindy" style="font-size:12px; padding:8px 14px;">Batafsil →</a>
+<a class="btn" href="https://try.lindy.ai/9jnuq63xr11e" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 11: AdCreative.ai -->
+<article class="card filter-card" data-cat="global global prezentatsiya sotuv" data-search="AdCreative ai reklama banner kreativi target instagram">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#e11d48">AC</div>
+<span class="badge badge-global">🌐 Global · Reklama</span>
+</div>
+<div class="card-meta">REKLAMA BANNERLARI &amp; KREATIV</div>
+<h3>AdCreative.ai</h3>
+<p>Instagram, Facebook va Google reklamalari uchun konversiyasi yuqori bo‘lgan bannerlar va matnlarni sun’iy intellekt orqali daqiqalarda yasang.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=adcreative" style="font-size:12px; padding:8px 14px;">Batafsil →</a>
+<a class="btn" href="https://free-trial.adcreative.ai/jb870cr6hwhe" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 12: Beautiful.ai -->
+<article class="card filter-card" data-cat="global prezentatsiya" data-search="Beautiful ai taqdimot dizayn avtomat slayd">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#0ea5e9">B</div>
+<span class="badge badge-global">🌐 Global · Taqdimot</span>
+</div>
+<div class="card-meta">AQLLI TAQDIMOT DIZAYNI</div>
+<h3>Beautiful.ai</h3>
+<p>Har bir slaydda elementlarni avtomatik proporsiyaga solib turuvchi, professional taqdimotlar tayyorlash uchun intellektual dizayn servisi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=beautifulai" style="font-size:12px; padding:8px 14px;">Batafsil →</a>
+<a class="btn" href="https://beautifulai.partnerlinks.io/rvvr8zuu35ig" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+<!-- 13: Calilio -->
+<article class="card filter-card" data-cat="global global sotuv audio" data-search="Calilio voip qo‘ng‘iroq ai tahlil aloqa operator">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#6d28d9">C</div>
+<span class="badge badge-global">🌐 Global · Telefoniya</span>
+</div>
+<div class="card-meta">AI BULUTLI TELEFONIYA</div>
+<h3>Calilio</h3>
+<p>Biznesingiz uchun xalqaro virtual raqamlar, AI asosidagi qo‘ng‘iroqlar tahlili va ovozli yordamchilarni oson sozlash imkoni.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=calilio" style="font-size:12px; padding:8px 14px;">Batafsil →</a>
+<a class="btn" href="https://try.calilio.com/yvlkop2jok4w" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
+</div>
+</article>
+</div>
+<!-- Creator CTA: Submit Tool to AiNoma Directory -->
+<div class="newsletter" id="submit-tool" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(4, 120, 87, 0.92)), url('assets/ai_network.jpg') center/cover; color:#ffffff; margin: 40px 0; border: none; box-shadow: var(--shadow);">
+<div>
+<span class="badge" style="background:#10b981; color:#ffffff; font-size:11px; padding:4px 10px; border-radius:6px; font-weight:700; display:inline-block; margin-bottom:10px;">STARTAPLAR VA ISHLAB CHIQARUVCHILAR UCHUN</span>
+<h2 style="color:#ffffff; margin:0 0 10px; font-size:24px;">O‘z AI vositangiz bormi? Uni AiNoma katalogiga qo‘shing!</h2>
+<p style="color:#e2ece7; margin:0; max-width:640px; font-size:14px; line-height:1.6;">
           O‘zbekistonda yoki xorijda sun’iy intellektga asoslangan servis (SaaS, Telegram bot, ovozli yordamchi, B2B tizim) yaratdingizmi? Loyihangizni AiNoma katalogiga bepul qo‘shing va auditoriyaga taqdim eting.
         </p>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-start;">
-        <a class="btn-tg-large" style="background:#ffffff; color:#064e3b; font-weight:700;" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+</div>
+<div style="display:flex; flex-direction:column; gap:8px; align-items:flex-start;">
+<a class="btn-tg-large" href="https://t.me/gptifyuz" rel="noopener" style="background:#ffffff; color:#064e3b; font-weight:700;" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"></path></svg>
           Vositani ro‘yxatga qo‘shish (@gptifyuz)
         </a>
-        <small style="color:#a7f3d0; font-size:12px;">Ariza 24 soat ichida ko‘rib chiqiladi · 100% Bepul</small>
-      </div>
-    </div>
-
-    <!-- Telegram-First Community Banner -->
-    <div class="newsletter">
-      <div>
-        <h2>Siz qaysi vositadan foydalanasiz?</h2>
-        <p>Telegram (@gptifyuz) kanalimizda har juma yangi vositalar tahlili, obunachilarimiz uchun eksklyuziv chegirmalar va promokodlar ulashiladi.</p>
-      </div>
-      <a class="btn-tg-large" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+<small style="color:#a7f3d0; font-size:12px;">Ariza 24 soat ichida ko‘rib chiqiladi · 100% Bepul</small>
+</div>
+</div>
+<!-- Telegram-First Community Banner -->
+<div class="newsletter">
+<div>
+<h2>Siz qaysi vositadan foydalanasiz?</h2>
+<p>Telegram (@gptifyuz) kanalimizda har juma yangi vositalar tahlili, obunachilarimiz uchun eksklyuziv chegirmalar va promokodlar ulashiladi.</p>
+</div>
+<a class="btn-tg-large" href="https://t.me/gptifyuz" rel="noopener" target="_blank">
         Kanalga ulanish (@gptifyuz)
       </a>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container footer">
-      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
-        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
-      </a>
-      <div class="footerlinks">
-        <a href="yangiliklar.html">Yangiliklar</a>
-        <a href="vositalar.html">AI vositalar</a>
-        <a href="qollanmalar.html">Qo‘llanmalar</a>
-        <a href="hikoyalar.html">Hikoyalar</a>
-        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
-        <span>© 2026 AiNoma · O‘zbekistonda sun’iy intellekt nashri</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
+</div>
+</div></main>
+<footer>
+<div class="container footer">
+<a aria-label="AiNoma Bosh Sahifa" class="logo" href="index.html">
+<img alt="AiNoma" class="brand-logo-img" src="assets/logo.svg"/>
+</a>
+<div class="footerlinks">
+<a href="yangiliklar.html">Yangiliklar</a>
+<a href="vositalar.html">AI vositalar</a>
+<a href="qollanmalar.html">Qo‘llanmalar</a>
+<a href="hikoyalar.html">Hikoyalar</a>
+<a href="https://t.me/gptifyuz" rel="noopener" target="_blank">Telegram (@gptifyuz)</a>
+<span>© 2026 AiNoma · O‘zbekistonda sun’iy intellekt nashri</span>
+</div>
+</div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>

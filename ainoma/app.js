@@ -101,6 +101,9 @@ document.addEventListener("keydown", (e) => {
 
 // Comprehensive Real Search Index
 const searchIndex = [
+  // Loyiha haqida
+  { t: "AiNoma Haqida: Missiya, tahririyat tamoyillari va B2B ekspertiza", u: "haqida.html", k: "ainoma haqida loyiha missiya gptify shukhratbek iskandarov b2b konsalting aloqa tahririyat" },
+
   // Yangiliklar & Maqolalar
   { t: "Google Gemini 2.5 Enterprise API: 150ms jonli audio va video oqim", u: "maqola.html?id=gemini-enterprise", k: "google gemini 2.5 enterprise api audio video multimodal real-time call center" },
   { t: "Markaziy Bank bank va fintexlarda AI skoringi qo‘llash reglamenti", u: "maqola.html?id=cbu-ai-skoring", k: "o'zbekiston markaziy bank cbu kredit skoring fintex algoritm xavfsizlik" },
