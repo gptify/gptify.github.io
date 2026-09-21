@@ -663,7 +663,7 @@
       <!-- Industry Tabs Navigation (Horizontal Scrollable on Mobile) -->
       <div class="flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar">
         <button onclick="switchUseCaseTab('creator')" id="tab-btn-creator" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-brand-navy text-white shadow-xs">
-          <span>🎙️</span> Blogerlar & Ekspertlar (AI Egizak)
+          <span>🎙️</span> Blogerlar & Ekspertlar
         </button>
         <button onclick="switchUseCaseTab('education')" id="tab-btn-education" class="usecase-tab px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm whitespace-nowrap transition-all flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200/80">
           <span>🎓</span> Ta’lim & Kurslar
@@ -768,10 +768,10 @@
 
           <button onclick="switchSimScenario('link_dropper')" id="chip-link_dropper" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">8. 🎙️ Shaxsiy Ohang & Auto-DM (Blogerlar)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">8. ⚡ Auto-DM & Shaxsiy uslub (Blogerlar)</div>
               <div class="text-xs text-slate-500 mt-0.5">Robot emas, aynan sizdek samimiy gapirib havola ochish</div>
             </div>
-            <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">AI Egizak</span>
+            <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">Auto-DM</span>
           </button>
         </div>
 
@@ -1588,7 +1588,7 @@
             <span id="faq-icon-7" class="text-slate-400 text-xl font-normal">+</span>
           </button>
           <div id="faq-ans-7" class="hidden mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
-            Mutlaqo yo‘q. Blogerlar, ekspertlar va shaxsiy brend egalarining eng katta xavotiri ham aynan shunda. AILO oddiy qolipli chatbot emas — u sizning oldingi postlaringiz, xarakteringiz, sevimli iboralaringiz va emojilaringiz asosida maxsus o‘qitiladi (Digital Twin). Muxlislaringiz quruq robotni emas, aynan sizning shaxsiy samimiyatingiz, ohangingiz va g‘amxo‘rligingizni his qilishadi.
+            Mutlaqo yo‘q. Blogerlar, ekspertlar va shaxsiy brend egalarining eng katta xavotiri ham aynan shunda. AILO oddiy qolipli chatbot emas — u sizning oldingi postlaringiz, xarakteringiz, sevimli iboralaringiz va emojilaringiz asosida siz bilan birga o‘qitiladi. Muxlislaringiz quruq robotni emas, aynan sizning shaxsiy samimiyatingiz, ohangingiz va g‘amxo‘rligingizni his qilishadi.
           </div>
         </div>
 
@@ -1866,9 +1866,9 @@
     const useCaseData = {
       creator: {
         emoji: '🎙️',
-        badge: 'Blogerlar, Ekspertlar & Shaxsiy AI Egizak',
+        badge: 'Blogerlar & Ekspertlar',
         title: 'Robot emas, aynan sizdek gapiradi: Shaxsiy uslubingizda (Tone of Voice) o‘qitilgan AI',
-        description: 'Bloger va ekspertlarning eng katta xavotiri — auditoriyasiga jonsiz, qotib qolgan robot javob berishi. AILO sizning oldingi postlaringiz, izohlarga javoblaringiz, sevimli iboralaringiz va emojilaringiz asosida maxsus o‘qitiladi (Digital Twin). Har bir kuzatuvchi sizning shaxsiy samimiyatingiz va ohangingizni his qiladi.',
+        description: 'Bloger va ekspertlarning eng katta xavotiri — auditoriyasiga jonsiz, qotib qolgan robot javob berishi. AILO sizning oldingi postlaringiz, izohlarga javoblaringiz, sevimli iboralaringiz va emojilaringiz asosida siz bilan birga o‘qitiladi. Har bir kuzatuvchi sizning shaxsiy samimiyatingiz va ohangingizni his qiladi.',
         creatorHighlight: {
           title: '🎙️ Shaxsiy Ohang Kafolati (Tone of Voice)',
           desc: 'Biz sizning leksikangiz, so‘zlashuv uslubingiz va xarakteringizni o‘rganib, AI’ni xuddi sizning ovozingizdek javob beradigan qilib sozlaymiz. Quruq corporate shablonlar yo‘q!'
@@ -1884,14 +1884,14 @@
         simScenario: 'link_dropper',
         chat: {
           brandHandle: '@shukhrat_ai',
-          sender: 'Shukhrat (AI Egizak)',
+          sender: 'Shukhrat',
           userHandle: '@bobur_alimov',
           postTitle: 'Biznes egalari uchun 50 ta B2B AI Prompts to‘plami',
           userComment: 'KITOB',
           ailoReply: 'Salom Bobur! 🔥 "Biznesda AI" qo‘llanmasi Direct’ingizda, o‘qib chiqing 👇',
           directMessages: [
             { role: 'user', text: 'KITOB' },
-            { role: 'ailo', text: 'Salom Bobur! 🔥 "Biznesda AI va Avtomatizatsiya" qo‘llanmasini so‘raganingizdan xursandman. Men Shukhrat nomidan sizga havola ochdim: 👉 [yuklab olish havolasi]\n\nAyniqsa 3-bobdagi 10 ta amaliy B2B promptlar sizga yoqadi deb o‘ylayman 😉' },
+            { role: 'ailo', text: 'Salom Bobur! 🔥 "Biznesda AI va Avtomatizatsiya" qo‘llanmasini so‘raganingizdan xursandman. Siz so‘ragan havolani ochib berdim: 👉 [yuklab olish havolasi]\n\nAyniqsa 3-bobdagi 10 ta amaliy B2B promptlar sizga yoqadi deb o‘ylayman 😉' },
             { role: 'user', text: 'Katta rahmat! Aynan shu kerak edi.' },
             { role: 'ailo', text: 'Arzimaydi! O‘qib chiqing, natijalar bo‘yicha fikringizni yozing. Omad tilayman! 🚀' }
           ]
@@ -2221,11 +2221,11 @@
         ]
       },
       link_dropper: {
-        badge: '🎙️ Shaxsiy Ohang (Bloger & Creator)',
-        brandTitle: 'Shukhrat Iskandarov (AI Egizak)',
+        badge: '⚡ Auto-DM (Bloger & Creator)',
+        brandTitle: 'Shukhrat Iskandarov',
         brandHandle: '@shukhrat_ai',
         avatarText: 'S',
-        sender: 'Shukhrat (AI Egizak)',
+        sender: 'Shukhrat',
         clientName: 'Bobur Alimov',
         clientHandle: '@bobur_alimov',
         clientAvatar: 'B',
@@ -2233,7 +2233,7 @@
         reelsReply: 'Salom Bobur! 🔥 Kitob Direct’ingizga yetib bordi, o‘qib chiqing 🚀',
         messages: [
           { role: 'user', text: 'KITOB' },
-          { role: 'ailo', text: 'Salom Bobur! 🔥 "Biznesda AI va Avtomatizatsiya" qo‘llanmasini so‘raganingizdan xursandman. Men Shukhrat nomidan sizga maxsus havola ochdim: 👉 [yuklab olish havolasi]\n\nAyniqsa 3-bobdagi 10 ta amaliy B2B promptlar sizga yoqadi deb o‘ylayman 😉' },
+          { role: 'ailo', text: 'Salom Bobur! 🔥 "Biznesda AI va Avtomatizatsiya" qo‘llanmasini so‘raganingizdan xursandman. Siz so‘ragan havolani ochib berdim: 👉 [yuklab olish havolasi]\n\nAyniqsa 3-bobdagi 10 ta amaliy B2B promptlar sizga yoqadi deb o‘ylayman 😉' },
           { role: 'user', text: 'Katta rahmat! Aynan shu kerak edi.' },
           { role: 'ailo', text: 'Arzimaydi! O‘qib chiqing, amalda sinab ko‘rib natijalarni yozing. Omad tilayman! 🚀' }
         ]
