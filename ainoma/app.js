@@ -101,7 +101,8 @@ document.addEventListener("keydown", (e) => {
 
 // Comprehensive Real Search Index
 const searchIndex = [
-  // Loyiha haqida
+  // Loyiha haqida va Imkoniyatlar
+  { t: "O‘zbekistonda AI Imkoniyatlari: Qonunchilik, IT Park 0% Soliq va GPU Grantlari", u: "imkoniyatlar.html", k: "o'zbekiston imkoniyatlar qonun soliq it park 0% sandbox pq-358 strategiya 2030 gpu grant superkompyuter etika startap" },
   { t: "AiNoma Haqida: Missiya, tahririyat tamoyillari va B2B ekspertiza", u: "haqida.html", k: "ainoma haqida loyiha missiya gptify shukhratbek iskandarov b2b konsalting aloqa tahririyat" },
 
   // Yangiliklar & Maqolalar
