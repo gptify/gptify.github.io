@@ -699,7 +699,7 @@
           AILO qanday muloqot qilishini hoziroq o‘zingiz sinab ko‘ring
         </h2>
         <p class="text-base sm:text-lg text-slate-600">
-          Toshkent slengi, qimmat degan e’tiroz, negativ sharh yoki klinika so‘rovi — ssenariyni tanlang yoki o‘z savolingizni yozib ko‘ring.
+          Jonli muloqot, qimmat degan e’tiroz, negativ sharh yoki klinika so‘rovi — ssenariyni tanlang yoki o‘z savolingizni yozib ko‘ring.
         </p>
       </div>
 
@@ -720,10 +720,10 @@
 
           <button onclick="switchSimScenario('uz_slang')" id="chip-uz_slang" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">2. Toshkent slengi (Erkin gaplashish)</div>
-              <div class="text-xs text-slate-500 mt-0.5">"Aka bitta razmer kattasi bomi, dostavka bormi?"</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">2. Jonli & Norasmiy muloqot (Erkin so‘zlashuv)</div>
+              <div class="text-xs text-slate-500 mt-0.5">"Salom, 42-si bormi? Bugunga dostavka qberolisizmi?"</div>
             </div>
-            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Sleng</span>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Erkin til</span>
           </button>
 
           <button onclick="switchSimScenario('price_objection')" id="chip-price_objection" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
@@ -889,7 +889,7 @@
           <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xl mb-6">
             🇺🇿
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-2">Mahalliy sleng va shevalar</h3>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Jonli til va mahalliy so‘zlashuv</h3>
           <p class="text-sm text-slate-600 leading-relaxed">
             Toshkent, Samarqand, Farg‘ona vodiysi so‘zlashuv uslublari, qisqartmalar va lotin/kirill imlolari bilan erkin va tushunarli muloqot olib boradi.
           </p>
@@ -1323,7 +1323,7 @@
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-emerald-500 font-bold shrink-0">✓</span>
-                <span><b>Dialekt, sleng va e’tirozlarni ("qimmat-ku") yopish</b></span>
+                <span><b>Jonli til, erkin so‘zlashuv va e’tirozlarni ("qimmat-ku") yopish</b></span>
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-emerald-500 font-bold shrink-0">✓</span>
@@ -1969,7 +1969,7 @@
         },
         benefits: [
           '8 soniyada javob — mijoz raqobatchiga o‘tib ketishga ulgurmaydi',
-          'Insondek samimiy muloqot, sleng va o‘lcham maslahati',
+          'Insondek samimiy muloqot, erkin so‘zlashuv va o‘lcham maslahati',
           'Tovarni fotolari va rasmiy narxi bilan chiroyli karta shaklida tavsiya qilish',
           'Mijozning telefon raqami va manzilini olib CRM/Telegramga jo‘natish'
         ],
@@ -2239,7 +2239,7 @@
         ]
       },
       uz_slang: {
-        badge: 'Toshkent slengi',
+        badge: 'Jonli & Norasmiy muloqot',
         brandTitle: 'Sneaker Hub (Shohruh)',
         brandHandle: '@sneaker_hub_uz',
         avatarText: 'S',
@@ -2247,13 +2247,15 @@
         clientName: 'Jasur Qodirov',
         clientHandle: '@jasur_qodirov',
         clientAvatar: 'J',
-        reelsComment: 'bitta razmer kattasi bomi?',
-        reelsReply: 'Assalomu alaykum! Shohruhman. Ha, bor, Direct\'ingizga to‘liq yozdim 🚀',
+        reelsComment: '42-si bormi?',
+        reelsReply: 'Assalomu alaykum! Shohruhman. Ha, bor, Direct\'ingizga yozdim 🚀',
         messages: [
-          { role: 'user', text: 'Aka bitta razmer kattasi bomi, dostavka bormi?' },
-          { role: 'ailo', text: 'Assalomu alaykum! Ha, albatta, L va XL o‘lchamlari ham hozir skladimizda bor. Toshkent bo‘yicha dostavkamiz 2-3 soatda olib boradi 🚀' },
-          { role: 'user', text: 'Qancha bular narxi?' },
-          { role: 'ailo', text: 'Narxi 450,000 so‘m, original sifat. Qaysi rangini olib boraylik?' }
+          { role: 'user', text: 'Salom, 42-si bormi? Bugunga dostavka qberolisizmi?' },
+          { role: 'ailo', text: 'Assalomu alaykum! Ha, 42 razmeri skladimizda bor. Toshkent bo‘ylab bugun kechgacha yetkazib beramiz 🚀' },
+          { role: 'user', text: 'Nechpul bo‘ladi o‘zi? Skidka bormi?' },
+          { role: 'card', title: 'Original Sneaker Classic', meta: '42 razmer · Sklad mavjud', price: '450 000 so‘m' },
+          { role: 'ailo', text: 'Narxi 450,000 so‘m, original sifat. 2 ta olsangiz dostavkasi mutlaqo bepul bo‘ladi. Qaysi tumanga tashlab beraylik?' },
+          { role: 'user', text: 'Chilonzor 9 ga. Ovolaman unda' }
         ]
       },
       price_objection: {
