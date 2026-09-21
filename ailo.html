@@ -710,9 +710,17 @@
         <div class="lg:col-span-5 space-y-3">
           <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Haqiqiy Mahalliy Ssenariylar:</div>
           
-          <button onclick="switchSimScenario('retail')" id="chip-retail" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group ring-2 ring-purple-500 bg-purple-50/50 border-purple-300">
+          <button onclick="switchSimScenario('clinic')" id="chip-clinic" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group ring-2 ring-purple-500 bg-purple-50/50 border-purple-300">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">1. Kiyim do‘koni (O‘lcham & Yetkazish)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">1. Chinobod Fayz Plus (Umurtqa & Bel og‘rig‘i)</div>
+              <div class="text-xs text-slate-500 mt-0.5">"Belim qattiq og‘riyapti, oyog‘imga uryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?"</div>
+            </div>
+            <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2.5 py-1 rounded-full">Klinika</span>
+          </button>
+
+          <button onclick="switchSimScenario('retail')" id="chip-retail" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
+            <div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">2. Kiyim do‘koni (O‘lcham & Yetkazish)</div>
               <div class="text-xs text-slate-500 mt-0.5">"Salom, qora rangdagi M o‘lcham bormi?"</div>
             </div>
             <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">Kiyim</span>
@@ -720,7 +728,7 @@
 
           <button onclick="switchSimScenario('uz_slang')" id="chip-uz_slang" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">2. Jonli & Norasmiy muloqot (Erkin so‘zlashuv)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">3. Jonli & Norasmiy muloqot (Erkin so‘zlashuv)</div>
               <div class="text-xs text-slate-500 mt-0.5">"Salom, 42-si bormi? Bugunga dostavka qberolisizmi?"</div>
             </div>
             <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Erkin til</span>
@@ -728,7 +736,7 @@
 
           <button onclick="switchSimScenario('price_objection')" id="chip-price_objection" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">3. Narxga e’tiroz (Chegirma so‘rash)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">4. Narxga e’tiroz (Chegirma so‘rash)</div>
               <div class="text-xs text-slate-500 mt-0.5">"349 ming juda qimmat-ku, arzonrog‘i yo‘qmi?"</div>
             </div>
             <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">E’tiroz</span>
@@ -736,7 +744,7 @@
 
           <button onclick="switchSimScenario('criticism')" id="chip-criticism" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">4. Tanqid & Negativ (Mijoz shikoyati)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">5. Tanqid & Negativ (Mijoz shikoyati)</div>
               <div class="text-xs text-slate-500 mt-0.5">"Kecha zakaz qildim hali ham javob yo‘q!"</div>
             </div>
             <span class="text-xs font-bold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full">Shikoyat</span>
@@ -744,18 +752,10 @@
 
           <button onclick="switchSimScenario('course')" id="chip-course" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">5. Kichik biznes & Kurs (Trigger)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">6. Kichik biznes & Kurs (Trigger)</div>
               <div class="text-xs text-slate-500 mt-0.5">"KURS" so‘zini yozib ro‘yxatdan o‘tish</div>
             </div>
             <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Trigger</span>
-          </button>
-
-          <button onclick="switchSimScenario('clinic')" id="chip-clinic" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
-            <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">6. Tibbiyot / Klinika (Qabulga yozilish)</div>
-              <div class="text-xs text-slate-500 mt-0.5">"Ertaga shifokor qabuliga yozilsa bo‘ladimi?"</div>
-            </div>
-            <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2.5 py-1 rounded-full">Klinika</span>
           </button>
 
           <button onclick="switchSimScenario('russian')" id="chip-russian" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
@@ -782,17 +782,17 @@
             <!-- Simulator Window Top Header -->
             <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-2">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-navy text-white flex items-center justify-center font-black text-lg" id="sim-brand-avatar">M</div>
+                <div class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-black text-sm" id="sim-brand-avatar">CF</div>
                 <div>
-                  <div class="font-bold text-sm text-slate-900" id="sim-brand-title">Madina Boutique (Kamola)</div>
+                  <div class="font-bold text-sm text-slate-900" id="sim-brand-title">Chinobod Fayz Plus (Neyrojarrohlik)</div>
                   <div class="flex items-center gap-1.5 mt-0.5">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span class="text-[11px] font-medium text-slate-500" id="sim-brand-handle">@madina_boutique · Rasmiy profil nomidan</span>
+                    <span class="text-[11px] font-medium text-slate-500" id="sim-brand-handle">@chinobod_fayz · Rasmiy profil nomidan</span>
                   </div>
                 </div>
               </div>
-              <span id="sim-scenario-badge" class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full border border-purple-100">
-                Kiyim do‘koni
+              <span id="sim-scenario-badge" class="text-xs font-bold text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-100">
+                Klinika / Neyrojarrohlik
               </span>
             </div>
 
@@ -2201,6 +2201,25 @@
      * 1. SIMULATOR SCENARIOS DATA & GIBRID LOGIC
      * ------------------------------------------------------------- */
     const simScenarios = {
+      clinic: {
+        badge: 'Klinika / Neyrojarrohlik',
+        brandTitle: 'Chinobod Fayz Plus (Neyrojarrohlik)',
+        brandHandle: '@chinobod_fayz',
+        avatarText: 'CF',
+        sender: 'Malika (Qabul bo‘limi)',
+        clientName: 'Zilola Rahimova',
+        clientHandle: '@zilola_rahimova',
+        clientAvatar: 'Z',
+        reelsComment: 'Assalomu alaykum, belim qattiq og‘riyapti, oyog‘imga tortib beryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?',
+        reelsReply: 'Assalomu alaykum! Bel og‘rig‘i bo‘yicha neyrojarroh-vertebrolog qabuliga yozilish va maslahat ma’lumotlarini Direct’ingizga yubordik 🩺',
+        messages: [
+          { role: 'user', text: 'Assalomu alaykum, 2 haftadan beri belim qattiq og‘riyapti, o‘ng oyog‘imga tortib beryapti. Qaysi shifokorga ko‘rinishim kerak va qabul qachon?' },
+          { role: 'ailo', text: 'Assalomu alaykum! Bel og‘rig‘ining oyoqqa tortib berishi ko‘pincha umurtqa diski (grija) yoki asab ildizi qisilishidan darak berishi mumkin. Chinobod Fayz Plus markazimizda oliy toifali neyrojarroh-vertebrolog ko‘rigi va yuqori aniqlikdagi MRT tekshiruvi mavjud.\n\nSizga eng yaqin qabul vaqtlari:\n🗓 Ertaga (Seshanba): 10:30 yoki 14:00\n📍 Chinobod Fayz Plus — Andijon, Baliqchi tumani\n\nQaysi vaqt sizga qulay bo‘ladi?' },
+          { role: 'user', text: 'Ertaga 10:30 ga yozib qo‘ying, iltimos. MRT qog‘ozlarimni ham olib boraymi?' },
+          { role: 'card', title: 'Neyrojarroh qabuli (Bosh shifokor ko‘rigi)', meta: 'Ertaga 10:30 · Baliqchi, Andijon · MRT bilan birga', price: 'Qabul band qilindi' },
+          { role: 'ailo', text: 'Ajoyib! Ertaga 10:30 ga neyrojarroh qabuliga band qildik. Albatta, avval tushgan barcha MRT yoki rentgen xulosalaringizni o‘zingiz bilan oling — shifokorimiz joyida ko‘rib, aniq tashxis qo‘yadi.\n\nQabulni rasmiylashtirish uchun ism-familiyangiz va aloqa raqamingizni yozib yuborasizmi?' }
+        ]
+      },
       retail: {
         badge: 'Kiyim do‘koni',
         brandTitle: 'Madina Boutique (Kamola)',
@@ -2308,24 +2327,6 @@
           { role: 'ailo', text: 'To‘liq silabus va 3 ta bepul kirish darsini Telegram orqali ochib beraman. Qaysi raqamda Telegram ishlatasiz?' }
         ]
       },
-      clinic: {
-        badge: 'Klinika / Qabul',
-        brandTitle: 'Chinobod Fayz (Malika)',
-        brandHandle: '@chinobod_fayz',
-        avatarText: 'C',
-        sender: 'Malika (Qabul bo‘limi)',
-        clientName: 'Zilola Rahimova',
-        clientHandle: '@zilola_rahimova',
-        clientAvatar: 'Z',
-        reelsComment: 'qabulga yozilish',
-        reelsReply: 'Assalomu alaykum! Malikaman. Shifokor bo‘sh vaqtlarini Direct\'ingizga yubordim 🩺',
-        messages: [
-          { role: 'user', text: 'Ertaga stomatolog ko‘rigiga yozilsa bo‘ladimi?' },
-          { role: 'ailo', text: 'Assalomu alaykum! Ha, ertaga soat 14:00 va 17:30 da tajribali bosh shifokorimiz qabulida bo‘sh vaqtlar bor. Sizga qaysi vaqt qulayroq?' },
-          { role: 'user', text: '17:30 ma’qul' },
-          { role: 'ailo', text: 'Ajoyib, soat 17:30 ga band qilib qo‘yaman. Ism-familiyangiz va aloqa raqamingizni yozib yuboring iltimos.' }
-        ]
-      },
       russian: {
         badge: 'Bilingval muloqot',
         brandTitle: 'Madina Boutique (Диана)',
@@ -2346,7 +2347,7 @@
       }
     };
 
-    let currentSimScenario = 'retail';
+    let currentSimScenario = 'clinic';
     let currentSimTab = 'direct';
 
     function toggleSimTab(tab) {
@@ -2508,7 +2509,9 @@
         let response = "Assalomu alaykum! Savolingiz uchun tashakkur. Biz sizning do‘koningiz uchun mahsulotlar katalogi, narxlar va yetkazib berish qoidalarini AILO'ga kiritib, 8 soniyada aniq va xushmuomala sotadigan tizim o‘rnatib beramiz 🤝";
         
         const lower = val.toLowerCase();
-        if (lower.includes('narx') || lower.includes('qancha') || lower.includes('pul') || lower.includes('skidka') || lower.includes('skidk')) {
+        if (lower.includes('bel') || lower.includes('og\'riq') || lower.includes('ogriq') || lower.includes('grija') || lower.includes('shifokor') || lower.includes('vrach') || lower.includes('neyrojarroh') || lower.includes('doktor')) {
+          response = "Assalomu alaykum! Umurtqa va bel og‘rig‘i bo‘yicha Chinobod Fayz Plus markazimizda oliy toifali neyrojarrohlarimiz qabul qiladi. Qabulga yozilish uchun telefon raqamingizni yozib yuboring 🩺";
+        } else if (lower.includes('narx') || lower.includes('qancha') || lower.includes('pul') || lower.includes('skidka') || lower.includes('skidk')) {
           response = "Tariflarimiz oyiga 390,000 so‘mdan boshlanadi. Har bir tarifda cheksiz kalit so‘zlar va barcha postlar qamrovi mavjud! Birinchi 14 kun ichida 100% pulni qaytarish kafolati bor.";
         } else if (lower.includes('rus') || lower.includes('privet') || lower.includes('cena')) {
           response = "Здравствуйте! Стоимость подключения AILO начинается от 390 000 сум в месяц. Включены неограниченные ключевые слова и полная интеграция с CRM.";
@@ -2526,7 +2529,7 @@
     }
 
     // Initialize Simulator
-    renderSimChat('retail');
+    renderSimChat('clinic');
 
     /* -------------------------------------------------------------
      * 2. CALCULATOR ENGINE
