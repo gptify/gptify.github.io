@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AI bilan to‘g‘ri ishlashni boshlash: amaliy yo‘riqnoma va prompt yozish qoidalari — AiNoma">
+  <title>AI bilan ishlashni boshlash: amaliy qo‘llanma — AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a class="active" href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv">⌕</button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu">◐</button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Qo‘llanma · Boshlang‘ich daraja</div>
+      <h1>AI bilan ishlashni boshlash: amaliy qo‘llanma</h1>
+      <p class="article-deck">Birinchi promptdan real biznes natijagacha — ortiqcha texnik atamalarsiz, aniq va tushunarli qo‘llanma.</p>
+      
+      <div class="byline">
+        <div class="avatar">ShI</div>
+        <div>
+          <b>Shukhratbek Iskandarov</b><br>
+          <span style="color:var(--muted)">B2B AI tizimlar mutaxassisi · 4 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="assets/coding_workspace.jpg" alt="AI bilan ishlash bo'yicha amaliy qo'llanma">
+    </div>
+
+    <article class="article-shell article-body">
+      <p>Ko‘pchilik sun’iy intellektdan umumiy va noaniq javoblar olayotganidan shikoyat qiladi. Buning sababi ko‘pincha modelning o‘zida emas, balki unga berilayotgan topshiriq (prompt)ning tuzilishidadir. AI — bu sizning fikringizni o‘qiydigan sehrgar emas, balki aniq ko‘rsatmaga muhtoj bo‘lgan iqtidorli assistentdir.</p>
+
+      <h2>Samarali prompt yozishning 4 qoidasi</h2>
+
+      <div class="guide-step">
+        <div class="stepnum">1</div>
+        <div>
+          <h3>1. Aniq rolni belgilang (Persona)</h3>
+          <p>AI’ga kim bo‘lib javob berishi kerakligini ayting. Masalan: <em>"Sen O‘zbekistondagi B2B kompaniyalar uchun yuridik shartnomalarni tekshiruvchi mutaxassissan."</em> Bu modelning diqqatini tegishli ma’lumotlar qatlamiga qaratadi.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="stepnum">2</div>
+        <div>
+          <h3>2. Kontekst va chegaralarni bering (Context & Constraints)</h3>
+          <p>Kompaniyangiz, maqsadli auditoriyangiz, taklif etilayotgan xizmat va mavjud cheklovlarni yozing. <em>"Auditoriya — Toshkentdagi ishlab chiqarish korxonalari rahbarlari. Ular uchun asosiy masala — xarajatlarni qisqartirish."</em></p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="stepnum">3</div>
+        <div>
+          <h3>3. Kutilayotgan formatni aniqlang (Output Format)</h3>
+          <p>Javob shunchaki uzun matn emas, balki jadval, punktlangan ro‘yxat yoki 3 ta asosiy xulosa shaklida bo‘lishini belgilang. Masalan: <em>"Javobni 3 ustunli jadval qilib ber: Muammo, Sabab, Tavsiya."</em></p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="stepnum">4</div>
+        <div>
+          <h3>4. Birinchi javob bilan cheklanmang (Iteratsiya)</h3>
+          <p>Birinchi chiqqan javob odatda qoralamadir. <em>"2-punktni soddaroq tilda tushuntir"</em> yoki <em>"Bunga yana ikkita amaliy misol qo‘sh"</em> deb muloqotni davom ettiring.</p>
+        </div>
+      </div>
+
+      <h2>Ishga tayyor misol:</h2>
+      <div class="prompt-card">
+        <div class="prompt-meta">
+          <span>Tayyor Shablon Prompt</span>
+          <button class="copy-btn">Nusxa olish</button>
+        </div>
+        <pre class="prompt-code">"Sen O‘zbekiston bozori uchun B2B savdo bo‘yicha ekspertisan.
+Mavzu: Biz Toshkentdagi do‘konlarga ombor hisobini avtomatlashtiruvchi dastur taklif qilamiz.
+Vazifa: Do‘kon egasiga yuborish uchun 100 so‘zdan oshmagan, hurmatli ('Siz' ohangida) qisqa taklif yoz.
+Qoidalar:
+- Bo‘sh maqtov so‘zlardan foydalanma.
+- Dastur ularga haftasiga 8 soat vaqt va 3% inventar yo‘qotishini tejashini ko‘rsat.
+- Yakunda 15 daqiqalik bepul demo taqdimot taklif qil."</pre>
+      </div>
+
+      <!-- Telegram Sharing Bar -->
+      <div class="share-bar">
+        <span class="share-label">Qo‘llanmani ulashing:</span>
+        <a class="btn telegram" href="https://t.me/share/url?url=https://ainoma.uz/qollanma.html&text=AI%20bilan%20ishlashni%20boshlash%20qollanmasi" target="_blank" rel="noopener">
+          Telegram’da ulashish
+        </a>
+        <button class="btn copy-btn" onclick="navigator.clipboard.writeText(window.location.href); window.showToast('Havola nusxalandi!');">
+          Havolani nusxalash
+        </button>
+      </div>
+
+      <!-- Telegram Banner -->
+      <div class="newsletter" style="margin-top:40px;">
+        <div>
+          <h2>Har haftada 1 ta chuqur tahliliy qo‘llanma</h2>
+          <p>Telegram (@gptifyuz) kanalimizda real kompaniyalar jarayonlari asosidagi masterklasslar va promptlar e’lon qilinadi.</p>
+        </div>
+        <a class="btn-tg-large" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          Kanalga qo‘shilish (@gptifyuz)
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class="footerlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · O‘zbekistonda sun’iy intellekt nashri</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

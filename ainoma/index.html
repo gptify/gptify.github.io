@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AiNoma — O‘zbekistonda sun’iy intellekt bo‘yicha mustaqil nashr va amaliy bilimlar markazi.">
+  <title>AiNoma — O‘rgan. Qo‘lla. Qur. | AI sodda tilda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv">⌕</button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu">◐</button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring (masalan: Gamma, B2B prompt, Agents API)…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="kicker">O‘rgan. Qo‘lla. Qur.</div>
+        <h1>AI haqida.<br><span class="green">Sodda</span> tilda.</h1>
+        <p class="lead">Sun’iy intellekt bo‘yicha eng sara tahlillar, O‘zbekiston biznesi uchun amaliy vositalar va ishlab chiqarish promptlari — ortiqcha murakkabliklarsiz.</p>
+        <div class="actions">
+          <a class="btn primary" href="yangiliklar.html">Yangiliklarni o‘qish →</a>
+          <a class="btn" href="vositalar.html">AI vositalar katalogi</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <b>0% Hype</b>
+            <small>Faqat amaliyot</small>
+          </div>
+          <div class="stat">
+            <b>Har tong</b>
+            <small>Telegram Dayjest</small>
+          </div>
+          <div class="stat">
+            <b>Amaliy AI</b>
+            <small>Yechimlar</small>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero-card" href="maqola.html">
+        <img src="assets/ai_network.jpg" alt="OpenAI Agents API va Sun'iy Intellekt">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <div class="label">BOSH MAQOLA · TEXNOLOGIYA & BIZNES</div>
+          <h2>OpenAI Agents API va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</h2>
+          <p>Endi sun’iy intellekt faqat matn yozib beruvchi chat emas, balki 24 soat davomida CRM, savdo va analitikani boshqaruvchi avtonom xodimga aylanmoqda.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Quick Portal Links -->
+    <div class="portals">
+      <a class="portal" href="yangiliklar.html">
+        <div class="portal-icon">N</div>
+        <div>
+          <b>Yangiliklar</b>
+          <small>Global va O‘zbekiston AI voqealari</small>
+        </div>
+      </a>
+      <a class="portal" href="hikoyalar.html">
+        <div class="portal-icon">H</div>
+        <div>
+          <b>Hikoyalar</b>
+          <small>Ekotizim va keyslar</small>
+        </div>
+      </a>
+      <a class="portal" href="qollanmalar.html">
+        <div class="portal-icon">Q</div>
+        <div>
+          <b>Qo‘llanmalar</b>
+          <small>Ishga tayyor master promptlar</small>
+        </div>
+      </a>
+      <a class="portal" href="vositalar.html">
+        <div class="portal-icon">AI</div>
+        <div>
+          <b>AI vositalar</b>
+          <small>Tekshirilgan servislar katalogi</small>
+        </div>
+      </a>
+      <a class="portal" href="instagram_ai_sales.html" style="border: 1px solid rgba(225, 48, 108, 0.4); background: rgba(225, 48, 108, 0.05);">
+        <div class="portal-icon" style="background: linear-gradient(135deg, #F56040, #E1306C); color:#ffffff;">AI</div>
+        <div>
+          <b>Instagram AI Sotuvchi</b>
+          <small>ManyChat o‘rniga avtonom agent</small>
+        </div>
+      </a>
+    </div>
+
+    <!-- Latest News -->
+    <section>
+      <div class="section-head">
+        <h2 class="section-title">So‘nggi yangiliklar</h2>
+        <a class="more" href="yangiliklar.html">Barchasini ko‘rish →</a>
+      </div>
+      <div class="news-layout">
+        <div class="cards">
+          <article class="card">
+            <div class="thumb"><img src="assets/ai_network.jpg" alt="Anthropic Claude 3.7"></div>
+            <div class="card-meta">16-SENTABR, 2026 · FRONTIER LABS · DUNYO</div>
+            <h3><a href="yangiliklar.html">Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur</a></h3>
+            <p>Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Foydalanuvchi qidiruvda model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.</p>
+            <div class="card-source">
+              <span class="source-info">Manba: <b>Anthropic / VentureBeat</b></span>
+              <a href="yangiliklar.html">Batafsil ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb"><img src="assets/gpu_datacenter.jpg" alt="O'zbekiston AI Klasteri GPU"></div>
+            <div class="card-meta">12-SENTABR, 2026 · O‘ZBEKISTON · DAVLAT</div>
+            <h3><a href="yangiliklar.html">IT Park AI startaplar uchun GPU hisoblash grantlarini e’lon qildi</a></h3>
+            <p>Mahalliy sun’iy intellekt loyihalarini qo‘llab-quvvatlash uchun yuqori quvvatli server va klaster infratuzilmasiga bepul kirish imkoniyati beriladi.</p>
+            <div class="card-source">
+              <span class="source-info">Manba: <b>IT Park Uzbekistan</b></span>
+              <a href="https://it-park.uz" target="_blank" rel="noopener">Asl manba ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb"><img src="assets/ai_agents.jpg" alt="OpenAI Agents API"></div>
+            <div class="card-meta">10-SENTABR, 2026 · OPENAI API · DUNYO</div>
+            <h3><a href="maqola.html">OpenAI "Agents API"ni taqdim etdi: 24 soatlik avtonom sessiyalar</a></h3>
+            <p>Codex arxitekturasi bazasida yaratilgan yangi API murakkab ko‘p bosqichli ish jarayonlarini inson aralashuvisiz bajarishga imkon beradi.</p>
+            <div class="card-source">
+              <span class="source-info">Manba: <b>OpenAI Blog</b></span>
+              <a href="https://openai.com/news/" target="_blank" rel="noopener">Asl manba ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb"><img src="assets/ai_network.jpg" alt="OpenAI GPT-6 Astra"></div>
+            <div class="card-meta">3-SENTABR, 2026 · FRONTIER LABS · ASOSIY RELIZ</div>
+            <h3><a href="maqola-gpt6-astra.html">OpenAI rasman GPT-6 Astra modelini taqdim etdi: Yangi avlod imkoniyatlari</a></h3>
+            <p>Tafakkur zanjiri (reasoning), cheksiz korporativ xotira va 24 soatlik avtonom agentlik sessiyalari. O‘zbekiston biznesi uchun to‘liq tahlil.</p>
+            <div class="card-source">
+              <span class="source-info">Manba: <b>OpenAI Research</b></span>
+              <a href="https://openai.com/research/" target="_blank" rel="noopener">Asl manba ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="special" style="background: linear-gradient(rgba(4, 120, 87, 0.88), rgba(6, 78, 59, 0.95)), url('assets/registan.jpg') center/cover; color:#ffffff;">
+          <div class="label" style="color:#6ee7b7">MAXSUS LOYIHA · TEZ KUNDA</div>
+          <h3 style="color:#ffffff;">O‘zbekiston AI Ekotizimi</h3>
+          <p style="color:#e2ece7;">Mahalliy AI startap asoschilari, tizim muhandislari va biznesida AI vositalarni joriy qilgan jamoalar haqida eksklyuziv keyslar tayyorlanmoqda.</p>
+          <a class="btn primary" style="background:#ffffff; color:#064e3b; border-color:#ffffff;" href="hikoyalar.html">Keys yuborish →</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Guides & Masterclasses Section -->
+    <section>
+      <div class="section-head">
+        <h2 class="section-title">Amaliy Qo‘llanmalar & Masterklasslar</h2>
+        <a class="more" href="qollanmalar.html">Barcha qo‘llanmalarni ko‘rish →</a>
+      </div>
+      <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <article class="card">
+          <div class="thumb"><img src="assets/b2b_sales.jpg" alt="B2B Outreach Masterklassi"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">📘 MASTERKLASS · B2B SAVDO</div>
+          <h3><a href="qollanma-b2b.html">B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma</a></h3>
+          <p>Apollo, Lemlist va sun’iy intellekt orqali eksport va mahalliy korporativ mijozlar bazasini qurish, sovuq xatlar va savdo voronkasi.</p>
+          <div class="card-source">
+            <span class="source-info">Muallif: <b>Shukhratbek Iskandarov</b></span>
+            <a href="qollanma-b2b.html">Qo‘llanmaga o‘tish →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="assets/coding_workspace.jpg" alt="GPT-6 Astra Master Promptlari"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">⚡ PROMPT TO‘PLAMI · BIZNES</div>
+          <h3><a href="qollanmalar.html">GPT-6 Astra va LLMlar uchun Ishga Tayyor Master Promptlar To‘plami</a></h3>
+          <p>B2B savdo, marketing, yuridik shartnomalar tahlili va kod optimallashtirish bo‘yicha sinovdan o‘tgan 10 ta professional prompt andozasi.</p>
+          <div class="card-source">
+            <span class="source-info">Manba: <b>AiNoma Qo‘llanmalar Kutubxonasi</b></span>
+            <a href="qollanmalar.html">Promptlarni ko‘rish →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="assets/robot_assist.jpg" alt="AI Boshlang'ich Qo'llanma"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">📖 BAZAVIY YO‘RIQNOMA</div>
+          <h3><a href="qollanma.html">AI bilan to‘g‘ri ishlash: Birinchi promptdan natijagacha</a></h3>
+          <p>ChatGPT, Claude va Gemini kabi LLM modellaridan aniq biznes natijalar olish uchun tizimli ko‘rsatmalar berish metodikasi.</p>
+          <div class="card-source">
+            <span class="source-info">Manba: <b>AiNoma Tahririyati</b></span>
+            <a href="qollanma.html">O‘qish →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Important Topics -->
+    <section>
+      <div class="section-head">
+        <h2 class="section-title">Muhim yo‘nalishlar</h2>
+      </div>
+      <div class="topics">
+        <a class="topic" href="yangiliklar.html"><span>◉</span>Ta’lim</a>
+        <a class="topic" href="yangiliklar.html"><span>↗</span>Biznes & Savdo</a>
+        <a class="topic" href="yangiliklar.html"><span>⌂</span>Davlat & Qonun</a>
+        <a class="topic" href="hikoyalar.html"><span>✦</span>Startaplar</a>
+        <a class="topic" href="qollanmalar.html"><span>▣</span>Promptlar</a>
+        <a class="topic" href="vositalar.html"><span>⌘</span>AI Vositalar</a>
+        <a class="topic" href="yangiliklar.html"><span>◎</span>Marketing</a>
+        <a class="topic" href="yangiliklar.html"><span>⊕</span>Global Trendlar</a>
+      </div>
+    </section>
+
+    <!-- Recommendation & Tools -->
+    <section>
+      <div class="reco">
+        <div>
+          <div class="section-head">
+            <h2 class="section-title">Tavsiya etilgan tahlil</h2>
+          </div>
+          <div class="mainstory">
+            <div class="thumb"><img src="assets/b2b_sales.jpg" alt="O'zbekiston AI Ekotizimi"></div>
+            <div>
+              <div class="card-meta" style="color:var(--green); font-weight:700;">MAXSUS LOYIHA · TEZ KUNDA</div>
+              <h3 class="story-title">O‘zbekiston AI Ekotizimi: Eksklyuziv Hikoyalar va Amaliy Keyslar</h3>
+              <p class="lead" style="font-size:13px; margin-bottom:14px;">Biz mahalliy AI startap asoschilari, tizim muhandislari va biznesida AI vositalarni muvaffaqiyatli joriy qilgan kompaniyalar bilan tahliliy suhbatlar tayyorlamoqdamiz.</p>
+              <a class="more" href="hikoyalar.html">Loyiha haqida bilish / Keys yuborish →</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-head">
+            <h2 class="section-title">Eng ommabop AI vositalar</h2>
+            <a class="more" href="vositalar.html">Barchasi →</a>
+          </div>
+          <div class="tools-list">
+            <a class="tool" href="vosita.html?id=gamma">
+              <div class="tool-logo" style="background:#7c3aed">G</div>
+              <div>
+                <b>Gamma AI</b>
+                <small>1 daqiqada taqdimot va slayd tayyorlash</small>
+              </div>
+              <span class="type">Prezentatsiya</span>
+            </a>
+
+            <a class="tool" href="vosita.html?id=mindstudio">
+              <div class="tool-logo" style="background:#4f46e5">M</div>
+              <div>
+                <b>MindStudio</b>
+                <small>Kodsiz shaxsiy AI agentlar va botlar yaratish</small>
+              </div>
+              <span class="type">AI Agentlar</span>
+            </a>
+
+            <a class="tool" href="vosita.html?id=descript">
+              <div class="tool-logo" style="background:#10b981">D</div>
+              <div>
+                <b>Descript</b>
+                <small>Videoni Word matnidek oson montaj qilish</small>
+              </div>
+              <span class="type">Video & Ovoz</span>
+            </a>
+
+            <a class="tool" href="vosita.html?id=apollo">
+              <div class="tool-logo" style="background:#f59e0b">A</div>
+              <div>
+                <b>Apollo.io</b>
+                <small>275M+ B2B xorijiy mijozlar bazasi</small>
+              </div>
+              <span class="type">Eksport & Lead</span>
+            </a>
+
+            <a class="tool" href="vositalar.html">
+              <div class="tool-logo" style="background:#059669">🇺🇿</div>
+              <div>
+                <b>Maya & Mohir AI</b>
+                <small>O‘zbek tilida nutq va matn yordamchilari</small>
+              </div>
+              <span class="type">O‘zbekiston</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telegram-First Community Banner (Replaces Email) -->
+    <div class="newsletter">
+      <div>
+        <h2>AiNoma Telegram kanaliga ulaning</h2>
+        <p>O‘zbekistonda elektron pochtani kamdan-kam odam ochadi. Shu bois eng qaynoq yangiliklar, foydali promptlar va vositalar sharhi to‘g‘ridan-to‘g‘ri bizning Telegram kanalimizda chiqadi.</p>
+      </div>
+      <a class="btn-tg-large" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+        Telegram’da qo‘shilish (@gptifyuz)
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class="footerlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · O‘zbekistonda sun’iy intellekt nashri</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

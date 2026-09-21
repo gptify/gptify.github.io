@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AINOMA — O'zbekistondagi Birinchi Sun'iy Intellekt Portali va Dayjesti</title>
+  <meta name="description" content="Sun'iy intellekt davrining eng muhim global va mahalliy yangiliklari, chuqur tahlillar, AI vositalari va amaliy promptlar — o'zbek tilida.">
+  <meta name="keywords" content="AINOMA, Sun'iy Intellekt, AI yangiliklari, ChatGPT, O'zbekiston AI, Claude, LLM, Promptlar, IT Park, Texnologiya">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AINOMA — Sun'iy Intellekt Yangiliklari va Tahlillari">
+  <meta property="og:description" content="AI olamidagi shovqinni saralab, eng muhim yangilik va amaliy bilimlarni taqdim etamiz.">
+  <meta property="og:site_name" content="AINOMA">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ==========================================================================
+       1. CRISP LIGHT DESIGN SYSTEM (Matching ainoma_tools.html)
+       ========================================================================== */
+    :root {
+      --bg-page: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-surface-secondary: #f1f5f9;
+      --bg-card: #ffffff;
+      
+      --border-subtle: #e2e8f0;
+      --border-medium: #cbd5e1;
+      --border-focus: #10b981;
+      
+      --text-main: #0f172a;       /* Slate 900 */
+      --text-body: #334155;       /* Slate 700 */
+      --text-muted: #64748b;      /* Slate 500 */
+      --text-light: #94a3b8;      /* Slate 400 */
+      
+      --brand-emerald: #059669;
+      --brand-emerald-light: #ecfdf5;
+      --brand-emerald-border: #a7f3d0;
+      
+      --brand-blue: #2563eb;
+      --brand-blue-light: #eff6ff;
+      --brand-blue-border: #bfdbfe;
+      
+      --brand-amber: #d97706;
+      --brand-purple: #7c3aed;
+      --brand-purple-light: #f5f3ff;
+      --brand-tg: #0284c7;
+      --brand-tg-light: #f0f9ff;
+      --brand-kashf: #ea580c;
+      --brand-kashf-light: #fff7ed;
+      
+      --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+      --shadow-lg: 0 12px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --container-max: 1240px;
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; transition: var(--transition); }
+    button, input { font-family: inherit; border: none; outline: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 24px; }
+
+    /* ==========================================================================
+       2. TOP BREAKING BAR & TICKER
+       ========================================================================== */
+    .top-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      padding: 9px 0;
+    }
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .ticker-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+      flex: 1;
+    }
+    .ticker-badge {
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald);
+      border: 1px solid var(--brand-emerald-border);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .ticker-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--brand-emerald);
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+    .ticker-text {
+      color: var(--text-muted);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .ticker-text strong { color: var(--text-main); }
+    .top-bar-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       3. SITE HEADER & NAVIGATION
+       ========================================================================== */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      gap: 24px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+    }
+    .brand-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--text-main);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.1rem;
+    }
+    .brand-logo span.tag {
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald);
+      border: 1px solid var(--brand-emerald-border);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-left: -2px;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-link {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.925rem;
+      padding: 6px 0;
+      position: relative;
+    }
+    .nav-link:hover { color: var(--text-main); }
+    .nav-link.active {
+      color: var(--brand-emerald);
+    }
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--brand-emerald);
+      border-radius: 2px;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-tools-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--text-main);
+      color: #ffffff;
+      padding: 9px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow-xs);
+    }
+    .btn-tools-nav:hover {
+      background: #1e293b;
+      transform: translateY(-1px);
+    }
+    .btn-tg-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--brand-tg-light);
+      color: var(--brand-tg);
+      border: 1px solid #bae6fd;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    .btn-tg-header:hover {
+      background: var(--brand-tg);
+      color: #ffffff;
+    }
+
+    /* ==========================================================================
+       4. HERO SECTION: EDITORIAL BENCHMARK
+       ========================================================================== */
+    .hero-section {
+      padding: 36px 0 28px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.65fr 1fr;
+      gap: 28px;
+    }
+
+    /* Featured Headline Card (Clean White with resilient Visual) */
+    .featured-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      position: relative;
+    }
+    .featured-card:hover {
+      border-color: var(--border-medium);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .featured-visual-box {
+      width: 100%;
+      height: 220px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #059669 0%, #0284c7 100%);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+    .featured-visual-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .featured-card:hover .featured-visual-box img {
+      transform: scale(1.03);
+    }
+    .featured-fallback-art {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+      padding: 20px;
+    }
+    .featured-fallback-art i { font-size: 3.5rem; opacity: 0.9; }
+
+    .badge-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .badge-primary {
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald);
+      border: 1px solid var(--brand-emerald-border);
+    }
+    .badge-gray {
+      background: var(--bg-surface-secondary);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .featured-title {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+    }
+    .featured-title a:hover { color: var(--brand-emerald); }
+    .featured-desc {
+      color: var(--text-body);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 16px;
+    }
+    .author-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .author-avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    /* Right Column: Digest Box & Fast Stories */
+    .hero-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .digest-box {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-top: 4px solid var(--brand-emerald);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .digest-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .digest-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--brand-emerald-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brand-emerald);
+      font-size: 1.2rem;
+    }
+    .digest-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .digest-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .digest-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .digest-input {
+      background: #ffffff;
+      border: 1.5px solid var(--border-medium);
+      color: var(--text-main);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      width: 100%;
+      transition: var(--transition);
+    }
+    .digest-input:focus {
+      border-color: var(--brand-emerald);
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
+    }
+    .btn-submit-digest {
+      background: var(--brand-emerald);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    .btn-submit-digest:hover {
+      background: #047857;
+    }
+
+    /* Mini Story Card */
+    .mini-story-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow-xs);
+    }
+    .mini-story-card:hover {
+      border-color: var(--border-medium);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    .mini-story-icon-box {
+      width: 68px;
+      height: 68px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface-secondary);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--brand-blue);
+      font-size: 1.5rem;
+    }
+    .mini-story-info { flex: 1; }
+    .mini-category {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--brand-emerald);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .mini-story-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .mini-story-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       5. CONTENT FEED & SIDEBAR LAYOUT
+       ========================================================================== */
+    .content-section {
+      padding: 32px 0 60px;
+    }
+    .section-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .section-heading-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-icon {
+      color: var(--brand-emerald);
+      font-size: 1.3rem;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+      color: var(--text-main);
+      letter-spacing: -0.4px;
+    }
+    .filter-tabs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .filter-btn {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .filter-btn:hover { color: var(--text-main); border-color: var(--border-medium); }
+    .filter-btn.active {
+      background: var(--text-main);
+      color: #ffffff;
+      border-color: var(--text-main);
+    }
+
+    /* 2-Column Main Feed Layout */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 36px;
+    }
+
+    /* Article Feed Grid */
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .article-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: var(--shadow-xs);
+    }
+    .article-card:hover {
+      border-color: var(--border-medium);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .article-visual-wrap {
+      position: relative;
+      height: 170px;
+      background: var(--bg-surface-secondary);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .article-visual-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .article-badge-pos {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+    .btn-bookmark {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+    .btn-bookmark:hover, .btn-bookmark.active {
+      color: #f59e0b;
+      background: #ffffff;
+    }
+
+    .article-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .article-meta-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .article-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      color: var(--text-main);
+      letter-spacing: -0.2px;
+    }
+    .article-card:hover .article-title {
+      color: var(--brand-emerald);
+    }
+    .article-excerpt {
+      font-size: 0.875rem;
+      color: var(--text-body);
+      line-height: 1.55;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+    }
+    .article-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .read-more-link {
+      color: var(--brand-emerald);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ==========================================================================
+       6. SIDEBAR WIDGETS
+       ========================================================================== */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .widget-box {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-xs);
+    }
+    .widget-title-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .widget-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Prompt of the Week Widget */
+    .prompt-category {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      color: var(--brand-purple);
+      background: var(--brand-purple-light);
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .prompt-box {
+      background: var(--bg-surface-secondary);
+      border: 1px dashed var(--border-medium);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      font-family: var(--font-mono);
+      font-size: 0.825rem;
+      color: var(--text-main);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    .btn-copy-prompt {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.825rem;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      transition: var(--transition);
+    }
+    .btn-copy-prompt:hover {
+      background: var(--brand-emerald-light);
+      border-color: var(--brand-emerald-border);
+      color: var(--brand-emerald);
+    }
+
+    /* Telegram Widget */
+    .tg-widget {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--brand-tg);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-xs);
+    }
+    .btn-tg-join {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--brand-tg);
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: var(--radius-sm);
+      width: 100%;
+      margin-top: 14px;
+      transition: var(--transition);
+    }
+    .btn-tg-join:hover {
+      background: #0369a1;
+    }
+
+    /* ==========================================================================
+       7. UZBEKISTAN AI SPOTLIGHT & BANNER
+       ========================================================================== */
+    .uzbek-ai-section {
+      padding: 20px 0 50px;
+    }
+    .uzbek-ai-banner {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--brand-emerald);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 36px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .uzbek-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 8px 0 10px;
+      letter-spacing: -0.4px;
+    }
+    .uzbek-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .uzbek-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .stat-card {
+      background: var(--bg-surface-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 18px 14px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 1.6rem;
+      font-weight: 800;
+      font-family: var(--font-display);
+      color: var(--brand-emerald);
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       8. TOAST & FOOTER
+       ========================================================================== */
+    .toast-tray {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+    }
+    .toast-msg {
+      background: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--brand-emerald);
+      padding: 14px 20px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-md);
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast-msg.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--border-subtle);
+      background: #ffffff;
+      padding: 40px 0 24px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .main-layout { grid-template-columns: 1fr; }
+      .uzbek-ai-banner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .header-inner { height: 60px; }
+      .nav-menu { display: none; }
+      .article-grid { grid-template-columns: 1fr; }
+      .top-bar-meta { display: none; }
+      .featured-title { font-size: 1.5rem; }
+      .uzbek-stats-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Top News Ticker -->
+  <aside class="top-bar" aria-label="Tezkor xabarlar">
+    <div class="container top-bar-inner">
+      <div class="ticker-wrap">
+        <span class="ticker-badge"><i class="fa-solid fa-bolt"></i> Jonli yangiliklar</span>
+        <p class="ticker-text" id="liveTickerText">
+          <strong>TechCrunch AI:</strong> OpenAI, Anthropic va Google AI xavfsizligi bo'yicha muzokaralarda &bull; 
+          <strong>Meta:</strong> WhatsApp Business uchun avtonom AI agentlar taqdim etildi &bull; 
+          <strong>Nvidia:</strong> Jensen Huang yangi AI xavfsizlik arxitekturasi haqida gapirdi
+        </p>
+      </div>
+      <div class="top-bar-meta">
+        <span><i class="fa-regular fa-calendar"></i> Bugun: 2026-yil, 16-sentyabr</span>
+        <span>|</span>
+        <span><i class="fa-solid fa-chart-line" style="color: var(--brand-emerald)"></i> AI Indeks: <strong>+14.8%</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. Clean White Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="ainoma_portal.html" class="brand-logo" aria-label="AINOMA Bosh sahifa">
+        <img src="assets/logo.svg" alt="AiNoma" style="height: 32px; width: auto;">
+        <span class="tag">AI OAV</span>
+      </a>
+
+      <nav aria-label="Asosiy menyu">
+        <ul class="nav-menu">
+          <li><a href="ainoma_portal.html" class="nav-link active">Yangiliklar</a></li>
+          <li><a href="vositalar.html" class="nav-link">AI Vositalar</a></li>
+          <li><a href="qollanmalar.html" class="nav-link">Promptlar Kutubxonasi</a></li>
+          <li><a href="yangiliklar.html" class="nav-link">O'zbekiston AI</a></li>
+          <li><a href="hikoyalar.html" class="nav-link">Haftalik Dayjest</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-search-nav" onclick="openSearchModal()" title="Qidiruv (Ctrl+K)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Qidiruv</span>
+          <kbd>⌘K</kbd>
+        </button>
+        <a href="vositalar.html" class="btn-tools-nav">
+          <i class="fa-solid fa-layer-group"></i> Vositalar
+        </a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener noreferrer" class="btn-tg-header">
+          <i class="fa-brands fa-telegram"></i> Kanal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Editorial Hero Benchmark (Real Live News) -->
+  <main class="container">
+    <section class="hero-section">
+      <div class="hero-grid">
+        
+        <!-- Left: Headline Story Card (Real September 15 & 16, 2026 Story) -->
+        <article class="featured-card" id="featuredStoryCard">
+          <div>
+            <div class="featured-visual-box" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #059669 100%);">
+              <div class="featured-fallback-art" style="display: flex;">
+                <i class="fa-solid fa-shield-halved" style="color: #10b981;"></i>
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff;">Global AI Xavfsizlik Standartlari &bull; 2026</h3>
+              </div>
+            </div>
+
+            <div class="badge-row">
+              <span class="badge badge-primary">Jonli Yangilik</span>
+              <span class="badge badge-gray">Xavfsizlik & Standartlar</span>
+              <span style="font-size: 0.75rem; color: var(--brand-emerald); font-weight: 700;"><i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> 15-sentyabr, 2026</span>
+            </div>
+
+            <h1 class="featured-title">
+              <a href="maqola.html">
+                OpenAI, Anthropic va Google bir necha haftadan beri AI xavfsizligi bo'yicha maxfiy muzokaralar olib bormoqda
+              </a>
+            </h1>
+
+            <p class="featured-desc">
+              Frontier AI modellari to'liq avtonom agentlik darajasiga yetishi ortidan, jahonning uchta eng yirik laboratoriyasi (OpenAI, Anthropic va Google DeepMind) xavfsizlik protokollari, avtonom kod auditlari va kibermakon himoyasi bo'yicha umumiy standartlarni birlashtirishga kelishmoqda.
+            </p>
+          </div>
+
+          <div class="meta-row">
+            <div class="author-badge">
+              <div class="author-avatar">Sh</div>
+              <strong style="color: var(--text-main);">Shuhratbek Iskandarov</strong> &bull; AINOMA tahlilchisi
+            </div>
+            <span><i class="fa-regular fa-clock"></i> 4 daqiqa o'qish &bull; Manba: TechCrunch AI</span>
+          </div>
+        </article>
+
+        <!-- Right: Subscription & Mini Digest Stories -->
+        <aside class="hero-sidebar">
+          
+          <!-- Telegram-First Fast Digest Box -->
+          <div class="digest-box" id="dayjest" style="border-top-color: var(--brand-tg);">
+            <div class="digest-header">
+              <div class="digest-icon" style="background: #f0f9ff; color: #0284c7;">
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+              <div>
+                <h2 class="digest-title">Telegram AI Dayjest</h2>
+                <p class="digest-subtitle">Har dushanba ertalab Telegram orqali</p>
+              </div>
+            </div>
+
+            <p style="font-size: 0.875rem; color: var(--text-body); margin-bottom: 14px; line-height: 1.55;">
+              Elektron pochta tekshirib o'tirmaysiz. Eng muhim AI yangiliklari, amaliy promptlar va vositalar sharhini to'g'ridan-to'g'ri Telegramda o'qing.
+            </p>
+
+            <a href="https://t.me/gptifyuz" target="_blank" rel="noopener noreferrer" class="btn-submit-digest" style="background: var(--brand-tg); text-align: center; text-decoration: none;">
+              <i class="fa-brands fa-telegram"></i> Telegramda Obuna Bo'lish &rarr;
+            </a>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; font-size: 0.78rem; color: var(--text-muted);">
+              <i class="fa-solid fa-bolt" style="color: #059669;"></i>
+              <span>12,000+ o'quvchiga qo'shiling &bull; 100% bepul</span>
+            </div>
+          </div>
+
+          <!-- Mini Trending Story 1 (Real 16-Sep-2026) -->
+          <article class="mini-story-card">
+            <div class="mini-story-icon-box" style="background: #eff6ff; color: #2563eb;">
+              <i class="fa-solid fa-earth-asia"></i>
+            </div>
+            <div class="mini-story-info">
+              <span class="mini-category">Global Bozor</span>
+              <h3 class="mini-story-title">
+                <a href="https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/" target="_blank" rel="noopener noreferrer">
+                  Amazon Hindistonda hind tilini qo'llab-quvvatlovchi yangi Alexa+ AI tizimini chiqardi
+                </a>
+              </h3>
+              <span class="mini-story-time"><i class="fa-regular fa-clock"></i> Bugun, 16-sentyabr</span>
+            </div>
+          </article>
+
+          <!-- Mini Trending Story 2 (Real 15-Sep-2026) -->
+          <article class="mini-story-card">
+            <div class="mini-story-icon-box" style="background: #ecfdf5; color: #059669;">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="mini-story-info">
+              <span class="mini-category">Avtonom Agentlar</span>
+              <h3 class="mini-story-title">
+                <a href="https://openai.com/index/fyxer" target="_blank" rel="noopener noreferrer">
+                  OpenAI korxonalarda ishonchli AI ijrochi kotib tizimlari integratsiyasini e'lon qildi
+                </a>
+              </h3>
+              <span class="mini-story-time"><i class="fa-regular fa-clock"></i> Kecha, 15-sentyabr</span>
+            </div>
+          </article>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- 4. Content Feed & Sidebar -->
+    <section class="content-section" id="yangiliklar">
+      <div class="section-header-bar">
+        <div class="section-heading-group">
+          <i class="fa-solid fa-newspaper section-icon"></i>
+          <h2 class="section-title">So'nggi Yangiliklar va Tahlillar</h2>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-btn active" onclick="filterArticles('all', this)">Barchasi</button>
+          <button class="filter-btn" onclick="filterArticles('llm', this)">LLM & Modellar</button>
+          <button class="filter-btn" onclick="filterArticles('uzb', this)">Mahalliy AI</button>
+          <button class="filter-btn" onclick="filterArticles('biznes', this)">Biznes & CRM</button>
+        </div>
+      </div>
+
+      <div class="main-layout">
+        
+        <!-- Left: News Grid -->
+        <div class="article-grid" id="articleGrid">
+          
+          <!-- Article 1: Meta WhatsApp AI Agents -->
+          <article class="article-card" data-category="biznes">
+            <div class="article-visual-wrap" style="background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 100%); color: #059669;">
+              <i class="fa-brands fa-whatsapp" style="font-size: 3rem;"></i>
+              <span class="badge badge-primary article-badge-pos">Biznes & CRM</span>
+              <button class="btn-bookmark" onclick="toggleBookmarkBtn(this)" title="Saqlab qo'yish">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="article-body">
+              <div class="article-meta-header">
+                <span><i class="fa-regular fa-calendar"></i> 15-sentyabr, 2026</span>
+                <span>3 daqiqa</span>
+              </div>
+              <h3 class="article-title">
+                <a href="https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                  Meta WhatsApp Business uchun avtonom AI agentlarni ishga tushirdi
+                </a>
+              </h3>
+              <p class="article-excerpt">
+                WhatsApp orqali savdo qiluvchi bizneslar uchun tovar katalogini yig'ish, mijozlar buyurtmalarini qabul qilish va CRM integratsiyasi to'liq sun'iy intellektga topshirildi.
+              </p>
+              <div class="article-footer">
+                <span>TechCrunch AI</span>
+                <a href="https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/" target="_blank" rel="noopener noreferrer" class="read-more-link">O'qish &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2: Nvidia Jensen Huang -->
+          <article class="article-card" data-category="llm">
+            <div class="article-visual-wrap" style="background: linear-gradient(135deg, #eff6ff 0%, #bfdbfe 100%); color: #2563eb;">
+              <i class="fa-solid fa-microchip" style="font-size: 3rem;"></i>
+              <span class="badge badge-primary article-badge-pos">Modellar & Chip</span>
+              <button class="btn-bookmark" onclick="toggleBookmarkBtn(this)" title="Saqlab qo'yish">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="article-body">
+              <div class="article-meta-header">
+                <span><i class="fa-regular fa-calendar"></i> 15-sentyabr, 2026</span>
+                <span>4 daqiqa</span>
+              </div>
+              <h3 class="article-title">
+                <a href="https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                  Nvidia rahbari Jensen Huang: 'AI xavfsizligini ortiqcha qonunlar bilan cheklamang'
+                </a>
+              </h3>
+              <p class="article-excerpt">
+                Chip giganti rahbari AI bo'yicha og'ir byurokratik cheklovlar innovatsiyalarni sekinlashtirishi va xavfsizlik arxitekturasini injenerlar muvofiqlashtirishi kerakligini aytdi.
+              </p>
+              <div class="article-footer">
+                <span>TechCrunch AI</span>
+                <a href="https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/" target="_blank" rel="noopener noreferrer" class="read-more-link">O'qish &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3: Profound Unicorn -->
+          <article class="article-card" data-category="biznes">
+            <div class="article-visual-wrap" style="background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%); color: #ea580c;">
+              <i class="fa-solid fa-chart-line" style="font-size: 3rem;"></i>
+              <span class="badge badge-primary article-badge-pos">AEO & Startap</span>
+              <button class="btn-bookmark" onclick="toggleBookmarkBtn(this)" title="Saqlab qo'yish">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="article-body">
+              <div class="article-meta-header">
+                <span><i class="fa-regular fa-calendar"></i> 15-sentyabr, 2026</span>
+                <span>5 daqiqa</span>
+              </div>
+              <h3 class="article-title">
+                <a href="https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                  AEO startapi Profound $180M investitsiya bilan yangi unikornga aylandi
+                </a>
+              </h3>
+              <p class="article-excerpt">
+                Google SEO o'rnini AI Engine Optimization (Perplexity, ChatGPT, Claude da brendni ko'rsatish) egallamoqda. Profound bu bo'yicha Series D raundini yopdi.
+              </p>
+              <div class="article-footer">
+                <span>TechCrunch AI</span>
+                <a href="https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/" target="_blank" rel="noopener noreferrer" class="read-more-link">O'qish &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4: Uzbekistan IT Park AI Grants -->
+          <article class="article-card" data-category="uzb">
+            <div class="article-visual-wrap" style="background: linear-gradient(135deg, #f0fdf4 0%, #bbf7d0 100%); color: #16a34a;">
+              <i class="fa-solid fa-flag" style="font-size: 3rem;"></i>
+              <span class="badge badge-primary article-badge-pos">Mahalliy AI</span>
+              <button class="btn-bookmark" onclick="toggleBookmarkBtn(this)" title="Saqlab qo'yish">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="article-body">
+              <div class="article-meta-header">
+                <span><i class="fa-regular fa-calendar"></i> Bugun, 16-sentyabr</span>
+                <span>4 daqiqa</span>
+              </div>
+              <h3 class="article-title">
+                <a href="vositalar.html" style="color: inherit; text-decoration: none;">
+                  O'zbekiston IT Park AI startaplariga GPU va infratuzilma grantlarini ajratmoqda
+                </a>
+              </h3>
+              <p class="article-excerpt">
+                Mamlakatimizdagi AI jamoalari uchun milliy til modellari, B2B SaaS va ovozli tizimlarni o'qitish uchun davlat va xalqaro hamkorlar ko'magida quvvatlar beriladi.
+              </p>
+              <div class="article-footer">
+                <span>AINOMA Tahlil</span>
+                <a href="vositalar.html" class="read-more-link">AiNoma da ko'rish &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Right: Sidebar Widgets -->
+        <aside class="sidebar">
+          
+          <!-- Prompt of the Week Widget -->
+          <div class="widget-box" id="promptlar">
+            <div class="widget-title-bar">
+              <h3 class="widget-title">
+                <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--brand-purple);"></i>
+                Hafta Prompti
+              </h3>
+              <span class="prompt-category">B2B Sotuv</span>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px;">
+              Mijoz bilan sovuq taklif (cold email/dm) tayyorlash uchun sinovdan o'tgan prompt:
+            </p>
+
+            <div class="prompt-box" id="weeklyPrompt">
+              Siz B2B savdo bo'yicha ekspertisiz. Quyidagi xizmatimiz uchun O'zbekistondagi kompaniya rahbariga 4 ta qisqa jumladan iborat, hurmatli ("Siz" shaklida) va qiziqish uyg'otuvchi taklif matnini yozing.
+            </div>
+
+            <button class="btn-copy-prompt" onclick="copyPrompt()">
+              <i class="fa-regular fa-copy" id="copyPromptIcon"></i>
+              <span id="copyPromptText">Promptdan nusxa olish</span>
+            </button>
+          </div>
+
+          <!-- Featured AI Directory Widget -->
+          <div class="widget-box">
+            <div class="widget-title-bar">
+              <h3 class="widget-title">
+                <i class="fa-solid fa-layer-group" style="color: var(--brand-emerald);"></i>
+                Saralangan AI Vositalar
+              </h3>
+              <a href="vositalar.html" style="font-size: 0.78rem; color: var(--brand-emerald); font-weight: 700;">
+                Barchasi &rarr;
+              </a>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <a href="vosita.html?id=maya" style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: var(--radius-sm); background: var(--bg-surface-secondary);">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #059669; border: 1px solid var(--border-subtle);">M</div>
+                <div style="flex: 1;">
+                  <strong style="font-size: 0.9rem; color: var(--text-main); display: block;">Maya AI</strong>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">O'zbek tilidagi matn va ovoz boti</span>
+                </div>
+                <span style="font-size: 0.75rem; font-weight: 700; color: #059669;">Freemium</span>
+              </a>
+
+              <a href="vosita.html?id=gamma" style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: var(--radius-sm); background: var(--bg-surface-secondary);">
+                <div style="width: 36px; height: 36px; border-radius: 8px; background: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #7c3aed; border: 1px solid var(--border-subtle);">G</div>
+                <div style="flex: 1;">
+                  <strong style="font-size: 0.9rem; color: var(--text-main); display: block;">Gamma App</strong>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">Slayd va taqdimot yaratish</span>
+                </div>
+                <span style="font-size: 0.75rem; font-weight: 700; color: #7c3aed;">Freemium</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Telegram Community Widget -->
+          <div class="tg-widget">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--text-main); margin-bottom: 6px;">
+              <i class="fa-brands fa-telegram" style="color: var(--brand-tg);"></i> Telegram Hamjamiyat
+            </h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+              O'zbekistondagi 12,000+ tadbirkorlar va dasturchilar bilan eng so'nggi yangiliklar va amaliy keyslarni muhokama qiling.
+            </p>
+            <a href="https://t.me/gptifyuz" target="_blank" rel="noopener noreferrer" class="btn-tg-join">
+              Kanalga a'zo bo'lish &rarr;
+            </a>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- 5. Uzbekistan AI Spotlight Section -->
+    <section class="uzbek-ai-section" id="ozbekiston">
+      <div class="uzbek-ai-banner">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; color: var(--brand-emerald); text-transform: uppercase; letter-spacing: 0.5px;">
+            🇺🇿 Milliy Ekotizim
+          </span>
+          <h2 class="uzbek-title">
+            O'zbekistonda Sun'iy Intellekt Rivoji va Startaplar Ekotizimi
+          </h2>
+          <p class="uzbek-desc">
+            Biz mamlakatimizdagi AI startaplari, davlat grantlari, IT Park rezidentlari va ta'lim loyihalarini faol yoritib boramiz. O'z loyihangizni AINOMA va AiNoma da tanitmoqchimisiz?
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="vositalar.html" class="btn-tools-nav">
+              <i class="fa-solid fa-magnifying-glass"></i> O'zbekiston AI vositalarini ko'rish
+            </a>
+            <a href="mailto:info@ainoma.uz" class="btn-tg-header" style="background: #ffffff; color: var(--text-main); border: 1px solid var(--border-medium);">
+              Loyihangizni yuboring &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="uzbek-stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">45+</div>
+            <div class="stat-label">AI Startaplar</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">$15M</div>
+            <div class="stat-label">Investitsiyalar</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3,200+</div>
+            <div class="stat-label">Mutaxassislar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Tray -->
+  <div class="toast-tray" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color: var(--text-main);">AINOMA Media & AiNoma</strong> &bull; &copy; 2026 Barcha huquqlar himoyalangan.
+      </div>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <a href="ainoma_portal.html" style="color: var(--brand-emerald); font-weight: 600;">Bosh sahifa</a>
+        <a href="vositalar.html">AI Vositalar</a>
+        <a href="qollanmalar.html">Promptlar</a>
+        <a href="yangiliklar.html">O'zbekiston AI</a>
+        <a href="hikoyalar.html">Dayjest</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function filterArticles(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.article-card');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (category === 'all' || cat === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function toggleBookmarkBtn(btn) {
+      const icon = btn.querySelector('i');
+      if (icon.classList.contains('fa-regular')) {
+        icon.classList.remove('fa-regular');
+        icon.classList.add('fa-solid');
+        btn.classList.add('active');
+        showToast("Maqola saqlanganlarga qo'shildi!");
+      } else {
+        icon.classList.remove('fa-solid');
+        icon.classList.add('fa-regular');
+        btn.classList.remove('active');
+        showToast("Maqola saqlanganlardan olib tashlandi.");
+      }
+    }
+
+    function copyPrompt() {
+      const text = document.getElementById('weeklyPrompt').innerText.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        const icon = document.getElementById('copyPromptIcon');
+        const label = document.getElementById('copyPromptText');
+        icon.className = 'fa-solid fa-check';
+        label.innerText = 'Nusxa olindi!';
+        showToast("Prompt nusxalandi! ChatGPT yoki Claude ga joylang.");
+
+        setTimeout(() => {
+          icon.className = 'fa-regular fa-copy';
+          label.innerText = 'Promptdan nusxa olish';
+        }, 2500);
+      });
+    }
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const input = document.getElementById('digestEmail');
+      if (input.value) {
+        showToast(`Rahmat! ${input.value} manziliga a'zo bo'ldingiz.`);
+        input.value = '';
+      }
+    }
+
+    function showToast(message) {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = 'toast-msg';
+      toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color: var(--brand-emerald);"></i> <span>${message}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => toast.classList.add('show'), 10);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 250);
+      }, 3500);
+    }
+
+    // Dynamic Live Sync with latest_news.json
+    async function syncLiveNews() {
+      try {
+        const res = await fetch('./latest_news.json');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.updated_at) {
+          console.log("AINOMA Live News synced:", data.updated_at);
+        }
+      } catch (err) {
+        console.log("AINOMA: Running with embedded live data fallback.");
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      syncLiveNews();
+    });
+  </script>
+  <!-- Global Search Modal (Ctrl+K) -->
+  <div class="search-modal-overlay" id="globalSearchModal" onclick="if(event.target===this) closeSearchModal()">
+    <div class="search-modal-card">
+      <div class="search-input-header">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="globalSearchInput" class="search-global-input" placeholder="Sayt bo'ylab qidiring (vositalar, promptlar, yangiliklar)..." oninput="renderSearchResults(this.value)" autocomplete="off">
+        <span class="search-close-chip" onclick="closeSearchModal()">Esc</span>
+      </div>
+      <div class="search-results-list" id="globalSearchResults"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
