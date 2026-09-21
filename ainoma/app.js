@@ -102,6 +102,12 @@ document.addEventListener("keydown", (e) => {
 // Comprehensive Real Search Index
 const searchIndex = [
   // Yangiliklar & Maqolalar
+  { t: "Google Gemini 2.5 Enterprise API: 150ms jonli audio va video oqim", u: "yangiliklar.html", k: "google gemini 2.5 enterprise api audio video multimodal real-time call center" },
+  { t: "Markaziy Bank bank va fintexlarda AI skoringi qo‘llash reglamenti", u: "yangiliklar.html", k: "o'zbekiston markaziy bank cbu kredit skoring fintex algoritm xavfsizlik" },
+  { t: "Cursor va Cognition 'Autonomous Team Lead' avtonom muhandislik rejimi", u: "yangiliklar.html", k: "cursor cognition autonomous team lead agent dasturlash kod refaktoring" },
+  { t: "Apple Intelligence Markaziy Osiyo va o‘zbek tili uchun lokal imkoniyatlar", u: "yangiliklar.html", k: "apple intelligence siri o'zbek tili markaziy osiyo nlp" },
+  { t: "IT Park va Yandex Toshkentda 1,000 mutaxassis uchun AI Engineering dasturi", u: "yangiliklar.html", k: "it park yandex ai engineering toshkent grant ta'lim rag" },
+  { t: "Anthropic Claude 3.7 Sonnet: Gibrid tafakkur va korporativ kodlash", u: "yangiliklar.html", k: "claude 3.7 sonnet anthropic reasoning gibrid tafakkur frontier" },
   { t: "GPT-6 Astra: Yangi model nima, nimalar o‘zgardi va undan qanday foydalanish mumkin?", u: "maqola-gpt6-astra.html", k: "gpt-6 astra gpt6 openai yangi model tafakkur reasoning frontier ai xotira agent" },
   { t: "OpenAI 'Agents API'ni e'lon qildi: 24 soat avtonom ishlaydigan AI tizimlar", u: "maqola.html", k: "openai agents api avtonom kod revops yangilik sun'iy intellekt" },
   { t: "ChatGPT Work: Kompaniya ichki ma'lumotlari uchun Data Agent", u: "maqola.html", k: "chatgpt work data agent excel sql b2b hisobot" },
