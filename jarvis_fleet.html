@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARVIS & GPTify Autonomous Multi-Agent Fleet Canvas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .workflow-frame {
+      width: 1140px;
+      height: 640px;
+      background: #090d16;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(56, 189, 248, 0.25), 0 0 40px rgba(14, 165, 233, 0.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* n8n Sci-Fi Top Navigation Bar */
+    .n8n-header {
+      height: 48px;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      z-index: 40;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Dotted canvas background */
+    .canvas-viewport {
+      flex: 1;
+      position: relative;
+      background-color: #080c14;
+      background-image: radial-gradient(circle, #334155 1.25px, transparent 1.25px);
+      background-size: 24px 24px;
+      overflow: hidden;
+    }
+
+    /* Node styles */
+    .node-card {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.6), 0 4px 10px -2px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    /* Animated dashed SVG connectors */
+    .animated-dash {
+      stroke-dasharray: 6 5;
+      animation: dashFlow 1.2s linear infinite;
+    }
+    @keyframes dashFlow {
+      from { stroke-dashoffset: 22; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Glowing pulse dot traveling on paths */
+    .pulse-glow-cyan {
+      filter: drop-shadow(0 0 8px #00f0ff) drop-shadow(0 0 14px rgba(0, 240, 255, 0.7));
+    }
+    .pulse-glow-green {
+      filter: drop-shadow(0 0 8px #10b981) drop-shadow(0 0 14px rgba(16, 185, 129, 0.7));
+    }
+    .pulse-glow-purple {
+      filter: drop-shadow(0 0 8px #a855f7) drop-shadow(0 0 14px rgba(168, 85, 247, 0.7));
+    }
+    .pulse-glow-amber {
+      filter: drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 14px rgba(245, 158, 11, 0.7));
+    }
+    .pulse-glow-rose {
+      filter: drop-shadow(0 0 8px #f43f5e) drop-shadow(0 0 14px rgba(244, 63, 94, 0.7));
+    }
+
+    /* Sub-node circular icons */
+    .circle-node {
+      width: 68px;
+      height: 68px;
+      border-radius: 9999px;
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    .badge-check {
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0f172a;
+      border-radius: 9999px;
+      padding: 0 6px;
+      font-size: 9.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      height: 17px;
+      white-space: nowrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .port-circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 9999px;
+      background: #334155;
+      border: 2px solid #0f172a;
+      box-shadow: 0 0 0 1.5px #64748b;
+    }
+    .port-diamond {
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      border: 1.5px solid #ffffff;
+      box-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
+    }
+
+    /* Traveling data packet particles */
+    .travel-dot-1 {
+      offset-path: path("M 165 95 L 340 95");
+      animation: travel1 2.4s linear infinite;
+    }
+    @keyframes travel1 {
+      0% { offset-distance: 0%; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    .travel-dot-2 {
+      offset-path: path("M 770 95 L 945 95");
+      animation: travel2 2.4s linear infinite 1.2s;
+    }
+    @keyframes travel2 {
+      0% { offset-distance: 0%; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    .travel-dot-sub1 {
+      offset-path: path("M 430 160 C 430 250, 190 260, 190 350");
+      animation: travelSub 2.4s ease-in-out infinite 0.2s;
+    }
+    .travel-dot-sub2 {
+      offset-path: path("M 510 160 C 510 250, 420 260, 420 350");
+      animation: travelSub 2.4s ease-in-out infinite 0.6s;
+    }
+    .travel-dot-sub3 {
+      offset-path: path("M 600 160 C 600 250, 690 260, 690 350");
+      animation: travelSub 2.4s ease-in-out infinite 1.0s;
+    }
+    .travel-dot-sub4 {
+      offset-path: path("M 680 160 C 680 250, 920 260, 920 350");
+      animation: travelSub 2.4s ease-in-out infinite 1.4s;
+    }
+    @keyframes travelSub {
+      0% { offset-distance: 0%; opacity: 0; }
+      18% { opacity: 1; }
+      82% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    /* Status ping dot */
+    @keyframes pulseRing {
+      0% { transform: scale(0.9); opacity: 1; }
+      70% { transform: scale(1.7); opacity: 0; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+    .ping-indicator {
+      position: relative;
+    }
+    .ping-indicator::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background: #00f0ff;
+      animation: pulseRing 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="workflow-frame" id="workflowCanvas">
+    
+    <!-- ==================== N8N SCI-FI HEADER BAR ==================== -->
+    <header class="n8n-header">
+      <div class="flex items-center gap-2.5">
+        <!-- Brand indicator -->
+        <div class="w-7 h-7 rounded-lg bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-400 text-xs font-black shadow-sm shadow-cyan-500/30">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        
+        <div class="flex items-center gap-1.5">
+          <span class="font-black text-white text-xs tracking-wide">JARVIS // KRONOS</span>
+          <span class="text-cyan-500/50 text-xs">/</span>
+          <span class="font-semibold text-slate-300 text-[11px] font-mono">Multi-Agent Fleet</span>
+        </div>
+
+        <div class="flex items-center gap-1.5 ml-1 px-2 py-0.5 rounded-full bg-cyan-950/60 border border-cyan-500/40">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 ping-indicator"></span>
+          <span class="text-[10px] font-bold text-cyan-300 font-mono tracking-wider">CORE ONLINE</span>
+        </div>
+        
+        <span class="text-[9.5px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">v3.8 Executive</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 text-[11px] text-slate-400 font-mono">
+          <span class="text-cyan-400 font-bold">MRR:</span>
+          <span class="text-white font-bold">$1,180/oy</span>
+        </div>
+        <div class="h-3.5 w-px bg-slate-700"></div>
+        <div class="flex items-center gap-1.5 text-[11px] text-slate-400 font-mono">
+          <span class="text-emerald-400 font-bold">FLEET:</span>
+          <span class="text-white font-bold">5/5 Aktiv</span>
+        </div>
+        <div class="h-3.5 w-px bg-slate-700"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-[10.5px] font-mono text-cyan-400 bg-cyan-950/50 border border-cyan-800/50 px-2 py-0.5 rounded">140ms</span>
+          <button class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg flex items-center gap-1 shadow-sm shadow-cyan-500/30">
+            <i class="fa-solid fa-bolt text-[10px]"></i> Live Sync
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== CANVAS VIEWPORT ==================== -->
+    <div class="canvas-viewport">
+
+      <!-- ==================== SVG CONNECTOR WIRES ==================== -->
+      <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 1140 592">
+        <defs>
+          <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#38bdf8" />
+            <stop offset="100%" stop-color="#00f0ff" />
+          </linearGradient>
+          <linearGradient id="emeraldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#00f0ff" />
+            <stop offset="100%" stop-color="#10b981" />
+          </linearGradient>
+        </defs>
+
+        <!-- 1. Founder / Voice to Jarvis Core -->
+        <line x1="165" y1="95" x2="340" y2="95" stroke="#38bdf8" stroke-width="2.5" />
+
+        <!-- 2. Jarvis Core to DatabaseHub -->
+        <line x1="770" y1="95" x2="945" y2="95" stroke="#10b981" stroke-width="2.5" />
+
+        <!-- 3. Jarvis to Sub-Agent 1: B2B Outreach Closer -->
+        <path d="M 430 160 C 430 250, 190 260, 190 350" fill="none" stroke="#a855f7" stroke-width="2" class="animated-dash" />
+
+        <!-- 4. Jarvis to Sub-Agent 2: Instagram Growth (@shukhrat.ai) -->
+        <path d="M 510 160 C 510 250, 420 260, 420 350" fill="none" stroke="#f43f5e" stroke-width="2" class="animated-dash" />
+
+        <!-- 5. Jarvis to Sub-Agent 3: Academy & Assistant Bot (@GPTify_uz_bot) -->
+        <path d="M 600 160 C 600 250, 690 260, 690 350" fill="none" stroke="#0ea5e9" stroke-width="2" class="animated-dash" />
+
+        <!-- 6. Jarvis to Sub-Agent 4: Content & Publishing Studio -->
+        <path d="M 680 160 C 680 250, 920 260, 920 350" fill="none" stroke="#f59e0b" stroke-width="2" class="animated-dash" />
+
+        <!-- Moving Glowing Particles along paths -->
+        <circle cx="0" cy="0" r="5" fill="#00f0ff" class="travel-dot-1 pulse-glow-cyan" />
+        <circle cx="0" cy="0" r="5" fill="#10b981" class="travel-dot-2 pulse-glow-green" />
+        
+        <circle cx="0" cy="0" r="4.5" fill="#c084fc" class="travel-dot-sub1 pulse-glow-purple" />
+        <circle cx="0" cy="0" r="4.5" fill="#fb7185" class="travel-dot-sub2 pulse-glow-rose" />
+        <circle cx="0" cy="0" r="4.5" fill="#38bdf8" class="travel-dot-sub3 pulse-glow-cyan" />
+        <circle cx="0" cy="0" r="4.5" fill="#fbbf24" class="travel-dot-sub4 pulse-glow-amber" />
+      </svg>
+
+
+      <!-- ==================== 1. FOUNDER & INBOUND COMMAND (CHAPDA) ==================== -->
+      <div class="absolute left-[30px] top-[38px] z-20 flex flex-col items-center">
+        <div onclick="openNode('founder')" class="node-card cursor-pointer group hover:scale-105 transition-all duration-200 w-[135px] h-[115px] rounded-[22px] border-2 border-cyan-500/40 relative flex flex-col items-center justify-center p-3 shadow-lg shadow-cyan-950/40 hover:border-cyan-400 hover:shadow-cyan-500/40">
+          
+          <!-- Founder Microphone & Telegram Icon -->
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-600 to-blue-600 flex items-center justify-center text-white text-2xl shadow-md shadow-cyan-500/30">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+
+          <!-- Pin icon at bottom right -->
+          <div class="absolute bottom-2 right-2 text-cyan-400 text-xs">
+            <i class="fa-solid fa-thumbtack"></i>
+          </div>
+
+          <!-- Right Outgoing Port -->
+          <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 port-circle bg-cyan-400"></div>
+        </div>
+        <span class="mt-2.5 font-black text-white text-xs">Founder &amp; Voice Gate</span>
+        <span class="text-[10px] text-cyan-300 font-mono">@Shukhrat_AI_bot</span>
+      </div>
+
+      <!-- Line 1 Label: Voice & DM Commands -->
+      <div class="absolute left-[195px] top-[66px] z-30 flex flex-col items-center">
+        <span class="text-[10px] font-mono font-bold text-cyan-200 bg-slate-900/90 px-2 py-0.5 rounded shadow-sm border border-cyan-500/30">Voice &amp; Exec DM</span>
+        <span class="text-[9px] font-mono font-extrabold text-cyan-400 mt-0.5">DISPATCH</span>
+      </div>
+
+
+      <!-- ==================== 2. CENTRAL ORCHESTRATOR: JARVIS (MARKAZ) ==================== -->
+      <div class="absolute left-[340px] top-[26px] z-20">
+        <div onclick="openNode('jarvis')" class="node-card cursor-pointer group hover:scale-[1.02] transition-all duration-200 w-[430px] h-[138px] rounded-[24px] border-2 border-cyan-400 relative px-6 py-4 flex flex-col justify-between shadow-2xl shadow-cyan-500/20 hover:border-cyan-300 hover:shadow-cyan-400/40">
+          
+          <!-- Left Incoming Port -->
+          <div class="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-cyan-400 rounded-sm shadow-md shadow-cyan-400"></div>
+
+          <!-- Card Header & Content -->
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-950 to-slate-900 border border-cyan-400/50 flex items-center justify-center text-cyan-300 text-3xl shadow-lg shadow-cyan-500/20">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2.5">
+                <h3 class="text-lg font-black text-white tracking-tight">JARVIS Master Copilot</h3>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 ping-indicator"></span>
+              </div>
+              <span class="text-xs font-mono text-cyan-300 font-bold block mt-0.5">MasterCopilot &amp; Process Supervisor</span>
+              <span class="text-[10.5px] text-slate-400 font-mono block">Gemini 2.0 / Groq LLaMA 3.3 + ElevenLabs Voice</span>
+            </div>
+          </div>
+
+          <!-- Subordinate Agents Bar & Status -->
+          <div class="flex items-center justify-between pt-2 border-t border-slate-800/80">
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] font-mono text-slate-400">Agentlar boshqaruvi:</span>
+              <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30">4 ta Agent Ulandi</span>
+            </div>
+            <div class="flex items-center gap-1 text-cyan-400 text-xs font-mono font-bold bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-500/30">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>200 OK</span>
+            </div>
+          </div>
+
+          <!-- Right Outgoing Port -->
+          <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 port-circle bg-emerald-400"></div>
+
+          <!-- Bottom Connection Diamond Ports -->
+          <div class="absolute -bottom-1.5 left-[90px] port-diamond bg-purple-500"></div>
+          <div class="absolute -bottom-1.5 left-[170px] port-diamond bg-rose-500"></div>
+          <div class="absolute -bottom-1.5 left-[260px] port-diamond bg-sky-500"></div>
+          <div class="absolute -bottom-1.5 left-[340px] port-diamond bg-amber-500"></div>
+        </div>
+
+        <!-- Bottom Port Labels in Uzbek -->
+        <div class="relative w-[430px] mt-1.5 text-[9.5px] font-mono text-slate-400 font-bold flex justify-between px-3">
+          <span class="w-20 text-center text-purple-300">B2B Outreach</span>
+          <span class="w-24 text-center text-rose-300">Instagram DM</span>
+          <span class="w-24 text-center text-sky-300">Academy Funnel</span>
+          <span class="w-24 text-center text-amber-300">News &amp; Media</span>
+        </div>
+      </div>
+
+
+      <!-- Line 2 Label: Live Metrics & Unified State -->
+      <div class="absolute left-[810px] top-[66px] z-30 flex flex-col items-center">
+        <span class="text-[10px] font-mono font-bold text-emerald-300 bg-slate-900/90 px-2 py-0.5 rounded shadow-sm border border-emerald-500/30">Unified Telemetry</span>
+        <span class="text-[9px] font-mono font-extrabold text-emerald-400 mt-0.5">SYNC 24/7</span>
+      </div>
+
+
+      <!-- ==================== 3. UNIFIED DATABASEHUB & COCKPIT (O'NGDA) ==================== -->
+      <div class="absolute left-[945px] top-[38px] z-20 flex flex-col items-center">
+        <div onclick="openNode('database')" class="node-card cursor-pointer group hover:scale-105 transition-all duration-200 w-[145px] h-[115px] rounded-[22px] border-2 border-emerald-500/50 relative flex flex-col items-center justify-center p-3 shadow-lg shadow-emerald-950/40 hover:border-emerald-400 hover:shadow-emerald-500/40">
+          
+          <!-- Left Incoming Port -->
+          <div class="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-emerald-400 rounded-sm shadow-md shadow-emerald-400"></div>
+
+          <!-- DatabaseHub Icon -->
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-600 flex items-center justify-center text-white text-2xl shadow-md shadow-emerald-500/30">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <!-- Right Outgoing Port -->
+          <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 port-circle bg-emerald-400"></div>
+
+          <!-- Small Add (+) Node at the right -->
+          <div class="absolute -right-8 top-1/2 -translate-y-1/2 w-6 h-6 rounded-md border border-slate-700 bg-slate-800 text-slate-300 flex items-center justify-center text-xs shadow-sm">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <span class="mt-2.5 font-black text-white text-xs">Unified DatabaseHub</span>
+        <span class="text-[10px] text-emerald-400 font-mono">SQLite, Sheets &amp; CRM</span>
+      </div>
+
+
+      <!-- ==================== 4. LOWER SATELLITE FLEET (4 TA AGENT) ==================== -->
+
+      <!-- Sub-Agent 1: B2B Outreach Superagent -->
+      <div class="absolute left-[135px] top-[350px] z-20 flex flex-col items-center">
+        <div onclick="openNode('outreach')" class="circle-node cursor-pointer group hover:scale-110 transition-all duration-200 border-2 border-purple-500 shadow-purple-500/20 hover:shadow-purple-500/50">
+          <div class="absolute -top-1.5 port-diamond bg-purple-500"></div>
+          <div class="w-11 h-11 rounded-full bg-purple-950/60 border border-purple-500/40 flex items-center justify-center text-purple-300 text-xl">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="badge-check border border-purple-500/50 text-purple-300">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>1,300+ B2B</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-white text-xs">B2B Outreach Closer</span>
+        <span class="text-[10px] text-purple-300 font-mono">Enterprise Cadence</span>
+      </div>
+
+      <!-- Sub-Agent 2: Instagram Growth (@shukhrat.ai) -->
+      <div class="absolute left-[365px] top-[350px] z-20 flex flex-col items-center">
+        <div onclick="openNode('instagram')" class="circle-node cursor-pointer group hover:scale-110 transition-all duration-200 border-2 border-rose-500 shadow-rose-500/20 hover:shadow-rose-500/50">
+          <div class="absolute -top-1.5 port-diamond bg-rose-500"></div>
+          <div class="w-11 h-11 rounded-full bg-rose-950/60 border border-rose-500/40 flex items-center justify-center text-rose-300 text-xl">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="badge-check border border-rose-500/50 text-rose-300">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>147k+ DM</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-white text-xs">Instagram Closer</span>
+        <span class="text-[10px] text-rose-300 font-mono">@shukhrat.ai Meta API</span>
+      </div>
+
+      <!-- Sub-Agent 3: Academy & Assistant Bot (@GPTify_uz_bot) -->
+      <div class="absolute left-[635px] top-[350px] z-20 flex flex-col items-center">
+        <div onclick="openNode('academy')" class="circle-node cursor-pointer group hover:scale-110 transition-all duration-200 border-2 border-sky-500 shadow-sky-500/20 hover:shadow-sky-500/50">
+          <div class="absolute -top-1.5 port-diamond bg-sky-500"></div>
+          <div class="w-11 h-11 rounded-full bg-sky-950/60 border border-sky-500/40 flex items-center justify-center text-sky-300 text-xl">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="badge-check border border-sky-500/50 text-sky-300">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>Academy</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-white text-xs">GPTifyUZ Assistant</span>
+        <span class="text-[10px] text-sky-300 font-mono">@GPTify_uz_bot</span>
+      </div>
+
+      <!-- Sub-Agent 4: Content Studio & News Publisher -->
+      <div class="absolute left-[865px] top-[350px] z-20 flex flex-col items-center">
+        <div onclick="openNode('content')" class="circle-node cursor-pointer group hover:scale-110 transition-all duration-200 border-2 border-amber-500 shadow-amber-500/20 hover:shadow-amber-500/50">
+          <div class="absolute -top-1.5 port-diamond bg-amber-500"></div>
+          <div class="w-11 h-11 rounded-full bg-amber-950/60 border border-amber-500/40 flex items-center justify-center text-amber-300 text-xl">
+            <i class="fa-solid fa-newspaper"></i>
+          </div>
+          <div class="badge-check border border-amber-500/50 text-amber-300">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>Viral Media</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-white text-xs">News &amp; Media Studio</span>
+        <span class="text-[10px] text-amber-300 font-mono">Newsletter &amp; Carousels</span>
+      </div>
+
+      <!-- Stream Flow Indicators along the paths -->
+      <div class="absolute left-[245px] top-[260px] z-30 text-[9.5px] font-mono font-semibold text-purple-200 bg-slate-950/90 px-2 py-0.5 rounded border border-purple-500/40">
+        B2B Cadence
+      </div>
+      <div class="absolute left-[440px] top-[260px] z-30 text-[9.5px] font-mono font-semibold text-rose-200 bg-slate-950/90 px-2 py-0.5 rounded border border-rose-500/40">
+        DM Keywords (+/KURS)
+      </div>
+      <div class="absolute left-[625px] top-[260px] z-30 text-[9.5px] font-mono font-semibold text-sky-200 bg-slate-950/90 px-2 py-0.5 rounded border border-sky-500/40">
+        Talabalar Oqimi
+      </div>
+      <div class="absolute left-[810px] top-[260px] z-30 text-[9.5px] font-mono font-semibold text-amber-200 bg-slate-950/90 px-2 py-0.5 rounded border border-amber-500/40">
+        Kunlik Yangiliklar
+      </div>
+
+    </div>
+
+  </div>
+
+
+      <!-- ==================== HINT BANNER AT BOTTOM ==================== -->
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-30 bg-slate-900/90 border border-cyan-500/40 px-4 py-1.5 rounded-full flex items-center space-x-2 text-xs text-slate-200 shadow-lg pointer-events-none">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        <span class="font-mono text-cyan-300 font-bold">INTERAKTIV KANVAS:</span>
+        <span>Istalgan agent ustiga bosing — real prompt, JSON va jonli simulyatsiya ochiladi</span>
+        <i class="fa-solid fa-arrow-pointer text-cyan-400 text-xs"></i>
+      </div>
+
+      <!-- ==================== INTERACTIVE INSPECTOR DRAWER ==================== -->
+      <div id="inspectorDrawer" class="absolute top-0 right-0 bottom-0 w-[480px] bg-[#0a0f1d]/95 backdrop-blur-2xl border-l border-cyan-500/40 shadow-[-25px_0_60px_rgba(0,0,0,0.9)] z-50 transform translate-x-full transition-transform duration-300 ease-out flex flex-col overflow-hidden">
+        
+        <!-- Drawer Header -->
+        <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+          <div class="flex items-center space-x-3">
+            <div id="drawerIconBox" class="w-10 h-10 rounded-xl bg-cyan-950 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-xl shadow-md">
+              <i id="drawerIcon" class="fa-solid fa-brain"></i>
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <h3 id="drawerTitle" class="text-sm font-black text-white">JARVIS Master Copilot</h3>
+                <span id="drawerBadge" class="text-[10px] font-mono px-2 py-0.5 rounded font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">200 OK</span>
+              </div>
+              <span id="drawerSubtitle" class="text-[11px] font-mono text-slate-400 block">Claude 3.5 Sonnet • Latency: 140ms</span>
+            </div>
+          </div>
+
+          <button onclick="closeInspector()" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center text-sm transition">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Drawer Tabs -->
+        <div class="flex items-center border-b border-slate-800 bg-slate-900/50 px-4 text-xs font-mono">
+          <button onclick="switchTab('simulation')" id="tabBtn-simulation" class="py-2.5 px-3 font-bold border-b-2 border-cyan-400 text-cyan-300 flex items-center space-x-1.5 transition">
+            <i class="fa-solid fa-bolt text-[11px]"></i>
+            <span>Simulyatsiya & Log</span>
+          </button>
+          <button onclick="switchTab('prompt')" id="tabBtn-prompt" class="py-2.5 px-3 font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center space-x-1.5 transition">
+            <i class="fa-solid fa-code text-[11px]"></i>
+            <span>System Prompt</span>
+          </button>
+          <button onclick="switchTab('payload')" id="tabBtn-payload" class="py-2.5 px-3 font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center space-x-1.5 transition">
+            <i class="fa-solid fa-database text-[11px]"></i>
+            <span>JSON Payload</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Live Simulation & Execution Terminal -->
+        <div id="tabContent-simulation" class="flex-1 p-4 flex flex-col space-y-3 overflow-y-auto">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-300 font-bold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Jonli Jarayon Simulyatori
+            </span>
+            <button onclick="runSimulation()" class="px-3 py-1.5 bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white rounded-lg text-xs font-bold font-mono flex items-center space-x-1.5 shadow-md shadow-cyan-500/20 transition">
+              <i class="fa-solid fa-play text-[10px]"></i>
+              <span>Testni Boshlash</span>
+            </button>
+          </div>
+
+          <!-- Terminal Screen -->
+          <div id="terminalScreen" class="flex-1 min-h-[260px] bg-slate-950 rounded-xl p-3.5 border border-slate-800/80 font-mono text-xs text-slate-300 space-y-2 overflow-y-auto leading-relaxed">
+            <div class="text-slate-500">// Tugmani bosing yoki agent jarayonini jonli kuzating...</div>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="grid grid-cols-3 gap-2 text-center text-xs font-mono">
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-[10px] text-slate-400 block">Tezlik</span>
+              <span id="metricSpeed" class="text-cyan-400 font-bold">140ms</span>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-[10px] text-slate-400 block">Muvaffaqiyat</span>
+              <span id="metricSuccess" class="text-emerald-400 font-bold">99.8%</span>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-[10px] text-slate-400 block">SLA Holati</span>
+              <span id="metricSla" class="text-amber-400 font-bold">&lt; 15 min</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: System Prompt -->
+        <div id="tabContent-prompt" class="hidden flex-1 p-4 flex flex-col space-y-2 overflow-y-auto">
+          <span class="text-xs font-mono text-slate-400 font-bold">SYSTEM PROMPT & DIRECTIVES:</span>
+          <pre id="promptBox" class="flex-1 bg-slate-950 p-3.5 rounded-xl border border-slate-800 font-mono text-xs text-cyan-200 overflow-x-auto whitespace-pre-wrap leading-relaxed select-all"></pre>
+        </div>
+
+        <!-- Tab 3: JSON Payload -->
+        <div id="tabContent-payload" class="hidden flex-1 p-4 flex flex-col space-y-2 overflow-y-auto">
+          <span class="text-xs font-mono text-slate-400 font-bold">INBOUND WEBHOOK & CRM SCHEMA:</span>
+          <pre id="payloadBox" class="flex-1 bg-slate-950 p-3.5 rounded-xl border border-slate-800 font-mono text-xs text-emerald-300 overflow-x-auto whitespace-pre-wrap leading-relaxed select-all"></pre>
+        </div>
+
+      </div>
+
+      <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+      <script>
+        const nodeData = {
+          founder: {
+            title: "Founder & Voice Gate",
+            badge: "TELEGRAM BOT",
+            badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-500/40",
+            icon: "fa-solid fa-microphone-lines",
+            iconBg: "bg-cyan-950 text-cyan-400 border-cyan-500/40",
+            subtitle: "@Shukhrat_AI_bot • Whisper AI Voice-to-Command",
+            speed: "85ms",
+            success: "100%",
+            sla: "Instant",
+            prompt: `Sen Shukhrat Iskandarov (GPTify.co asoschisi) ning shaxsiy ovozli kotibi va buyruq qabul qiluvchisisan.
+Vazifang:
+1. Telegram ovozli xabarlarini Whisper AI orqali 99% aniqlikda transkripsiya qilish.
+2. Har bir xabardan biznes maqsadini (AutoPro, Thompson School, MedPro, Kontent) ajratib olish.
+3. Markaziy JARVIS orkestratoriga strukturalangan JSON komandalarini uzatish.`,
+            payload: JSON.stringify({
+              inbound: "Telegram Voice Message (OGG)",
+              duration: "8.4s",
+              transcription: "Jarvis, bugun AutoPro va Thompson bo'yicha yangi lidlarni tahlil qil va kechikkanlarini qizil qilib belgilab qo'y.",
+              extracted_target: ["AutoPro24", "Thompson_School"],
+              priority: "P0_CRITICAL"
+            }, null, 2),
+            logs: [
+              "00:01 🎙 Whisper AI: Ovozli xabar qabul qilindi (8.4 soniya)",
+              "00:02 ⚙ Transkripsiya yakunlandi: 100% aniqlik",
+              "00:03 🧠 Entitiyalar ajratildi: [AutoPro24, Thompson School, SLA_Alert]",
+              "00:04 🚀 JARVIS Master Copilot'ga komanda yuborildi: DISPATCH_OK"
+            ]
+          },
+          jarvis: {
+            title: "JARVIS Master Copilot",
+            badge: "ORCHESTRATOR",
+            badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-500/40",
+            icon: "fa-solid fa-brain",
+            iconBg: "bg-cyan-950 text-cyan-400 border-cyan-500/40",
+            subtitle: "Claude 3.5 Sonnet / Groq LLaMA 3.3 • 140ms Latency",
+            speed: "140ms",
+            success: "99.8%",
+            sla: "Real-time",
+            prompt: `You are JARVIS, Autonomous Master Copilot for GPTify.co and Cubeo.ai.
+Responsibilities:
+- Supervise 4 satellite sub-agents (B2B Outreach, Instagram DM, Academy, News Studio).
+- Maintain strict 15-minute SLA on all enterprise incoming leads.
+- Automatically route leads to AutoPro24, EduPro24, or MedPro24 pipelines.
+- Generate end-of-day executive financial debriefs with exact ROI calculations.`,
+            payload: JSON.stringify({
+              master_status: "HEALTHY",
+              active_subagents: 4,
+              connected_crms: ["AutoPro24", "Thompson_School", "Chinobod_Fayz"],
+              queue_length: 0,
+              mrr_tracked_usd: 1180,
+              uptime: "99.98%"
+            }, null, 2),
+            logs: [
+              "00:01 ⚡ Jarvis Core: Buyruq qabul qilindi",
+              "00:02 🔍 3 ta CRM bazasi tekshirilmoqda: 18 ta yangi lid",
+              "00:03 ⚠️ SLA xavfi aniqlandi: 2 ta lid javobsiz (12 daqiqa)",
+              "00:04 📲 Instagram va B2B agentlariga qayta aloqa vazifasi berildi",
+              "00:05 ✓ Unified DatabaseHub sinxronlandi. Hamma agentlar 200 OK."
+            ]
+          },
+          database: {
+            title: "Unified DatabaseHub",
+            badge: "DATA LAKE",
+            badgeColor: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
+            icon: "fa-solid fa-database",
+            iconBg: "bg-emerald-950 text-emerald-400 border-emerald-500/40",
+            subtitle: "PostgreSQL 16 + pgvector & Google Sheets API",
+            speed: "14ms",
+            success: "100%",
+            sla: "Sync 24/7",
+            prompt: `Database Hub Security & Replication Directives:
+- Real-time ACID transactions for lead pipeline and payments.
+- Automatic vector embeddings generation (text-embedding-3-small) for RAG lookups.
+- Automated backup every 6 hours with zero-downtime failover.`,
+            payload: JSON.stringify({
+              total_leads: 3420,
+              active_clients: 24,
+              crm_pipelines: ["AutoPro24", "Thompson_IELTS", "MedPro24"],
+              daily_sync_count: 14890,
+              vector_index_size: "128 MB"
+            }, null, 2),
+            logs: [
+              "00:01 🗄 PostgreSQL 16: Ulanish o'rnatildi (14ms latency)",
+              "00:02 🔄 Google Sheets va CRM bilan ikki tomonlama sync faol",
+              "00:03 📊 Yangi to'lov yozuvi kiritildi: 1,400,000 UZS (Click)",
+              "00:04 ✓ Holat: Barcha filiallar jadvali to'liq yangilandi."
+            ]
+          },
+          outreach: {
+            title: "B2B Outreach Closer",
+            badge: "SALES AGENT",
+            badgeColor: "bg-purple-500/20 text-purple-300 border-purple-500/40",
+            icon: "fa-solid fa-briefcase",
+            iconBg: "bg-purple-950 text-purple-400 border-purple-500/40",
+            subtitle: "Apollo + Hunter API • 3-bosqichli Enterprise Cadence",
+            speed: "220ms",
+            success: "68.4% Open",
+            sla: "Automated",
+            prompt: `Sen GPTify B2B Sotuv Agentisan.
+Vazifang:
+1. Maqsadli korxona rahbarlarini (direktor, bosh shifokor, avtomaktab egalari) aniqlash.
+2. Har bir rahbarning sohasi bo'yicha personalizatsiya qilingan qisqa taklif xati yozish.
+3. Javob bergan mijozni kalendarga (Call) avtomat yozish.`,
+            payload: JSON.stringify({
+              campaign: "Toshkent_Avtomaktablar_Q1",
+              target_leads_identified: 140,
+              emails_sent: 84,
+              open_rate: "68.4%",
+              meetings_booked: 12
+            }, null, 2),
+            logs: [
+              "00:01 🎯 Target: 14 ta yangi avtomaktab profili topildi",
+              "00:02 ✍️ Har bir rahbar uchun shaxsiy taklif matni generatsiya qilindi",
+              "00:03 ✉️ Email jo'natildi -> 8 soniyada 3 ta o'qilish qayd etildi",
+              "00:04 📅 Yangi uchrashuv belgilandi: Ertaga 11:00 (Zoom)"
+            ]
+          },
+          instagram: {
+            title: "Instagram Closer (@shukhrat.ai)",
+            badge: "META GRAPH API",
+            badgeColor: "bg-rose-500/20 text-rose-300 border-rose-500/40",
+            icon: "fa-brands fa-instagram",
+            iconBg: "bg-rose-950 text-rose-400 border-rose-500/40",
+            subtitle: "8 Soniya Qoidasi • Qabul & Sinov Darsiga Yozish",
+            speed: "8 soniya",
+            success: "94% Qabul",
+            sla: "Real-time",
+            prompt: `Sen @shukhrat.ai profilingdagi avtomat sotuv va qabul agentisan.
+Qoidalar:
+- Faqat "Siz" deb hurmat bilan yozasan.
+- Kommentda "AUTO" yoki "SYSTEM" deb yozganlarga 8 soniya ichida Direct'dan taqdimot va yo'riqnomani yuborasan.
+- O'quvchi yoki mijozning qiziqishini aniqlab, telefon raqamini olasan va CRMga kiritasan.`,
+            payload: JSON.stringify({
+              trigger_keyword: "AUTO",
+              user: "@nodir_tashkent",
+              action: "SEND_INTERACTIVE_DECK",
+              deck_link: "https://gptify.github.io/autopro_scrolly.html",
+              lead_status: "QUALIFIED_HOT"
+            }, null, 2),
+            logs: [
+              "00:01 💬 Yangi izoh keldi: 'AUTO'",
+              "00:02 ⚡ Meta Graph API: Direct suhbati ochildi",
+              "00:03 📨 Interaktiv taqdimot havolasi 8 soniyada yuborildi",
+              "00:04 📱 Foydalanuvchi telefon raqami olindi: +998 90 123-45-67",
+              "00:05 ✓ CRM voronkasiga yangi lid sifatida tushirildi."
+            ]
+          },
+          academy: {
+            title: "GPTifyUZ Assistant Bot",
+            badge: "EDUTECH BOT",
+            badgeColor: "bg-sky-500/20 text-sky-300 border-sky-500/40",
+            icon: "fa-solid fa-graduation-cap",
+            iconBg: "bg-sky-950 text-sky-400 border-sky-500/40",
+            subtitle: "@GPTify_uz_bot • Kurslar, Darsliklar va Promptlar",
+            speed: "65ms",
+            success: "100%",
+            sla: "24/7",
+            prompt: `Sen GPTify Akademiya o'quvchilariga yordam beruvchi avtomat tyutorsan.
+Vazifang:
+1. Foydalanuvchilarga AI promptlar to'plami va darsliklarni bepul ulashish.
+2. Savollarga o'zbek tilida to'liq va sodda javob berish.
+3. Kurs to'lovlarini avtomat qabul qilish.`,
+            payload: JSON.stringify({
+              bot_username: "@GPTify_uz_bot",
+              active_users: 18400,
+              downloads_today: 340,
+              payment_provider: "Click / Payme"
+            }, null, 2),
+            logs: [
+              "00:01 👤 Foydalanuvchi /start bosdi",
+              "00:02 📚 '100 ta AI Promptlar To'plami (PDF)' avtomat yuklandi",
+              "00:03 💳 Kursga to'lov amalga oshirildi (Payme webhook)",
+              "00:04 🎓 Yopiq darsliklar guruhiga kirish huquqi berildi."
+            ]
+          },
+          content: {
+            title: "News & Media Studio",
+            badge: "MEDIA AGENT",
+            badgeColor: "bg-amber-500/20 text-amber-300 border-amber-500/40",
+            icon: "fa-solid fa-newspaper",
+            iconBg: "bg-amber-950 text-amber-400 border-amber-500/40",
+            subtitle: "AI Yangiliklari, Karusellar va Telegram Nashriyoti",
+            speed: "450ms",
+            success: "Avtonom",
+            sla: "Har 4 soatda",
+            prompt: `Sen GPTify Media studiyasi bosh muharriri bo'lgan AI agentsan.
+Vazifang:
+1. Xalqaro AI yangiliklarini (OpenAI, Google Deepmind, Claude) skanerlash.
+2. O'zbek auditoriyasi uchun amaliy, tushunarli tahliliy postlar yozish.
+3. Instagram karusel slaydlarini avtomat formatlash.`,
+            payload: JSON.stringify({
+              sources_scanned: 18,
+              top_story_selected: "Claude 3.7 Hybrid Reasoning",
+              post_status: "SCHEDULED",
+              channels: ["Telegram_News", "Instagram_Carousel"]
+            }, null, 2),
+            logs: [
+              "00:01 🌐 Global AI manbalari skanerlandi (Arxiv & TechCrunch)",
+              "00:02 🧠 Eng muhim yangilik tanlandi va o'zbek tiliga tahlil qilindi",
+              "00:03 🎨 Karusel uchun 5 ta vizual slayd ssenariysi tuzildi",
+              "00:04 📢 Telegram kanalga avtomat rejalashtirildi."
+            ]
+          }
+        };
+
+        let currentNodeKey = "jarvis";
+
+        function openNode(nodeKey) {
+          currentNodeKey = nodeKey;
+          const data = nodeData[nodeKey];
+          if (!data) return;
+
+          document.getElementById('drawerTitle').innerText = data.title;
+          document.getElementById('drawerSubtitle').innerText = data.subtitle;
+          document.getElementById('drawerBadge').innerText = data.badge;
+          document.getElementById('drawerIcon').className = data.icon;
+          
+          document.getElementById('metricSpeed').innerText = data.speed;
+          document.getElementById('metricSuccess').innerText = data.success;
+          document.getElementById('metricSla').innerText = data.sla;
+
+          document.getElementById('promptBox').innerText = data.prompt;
+          document.getElementById('payloadBox').innerText = data.payload;
+
+          // Render initial logs
+          const term = document.getElementById('terminalScreen');
+          term.innerHTML = `<div class="text-cyan-400 font-bold">// ${data.title} — Holat: FAOL (200 OK)</div>`;
+          data.logs.forEach(log => {
+            term.innerHTML += `<div>${log}</div>`;
+          });
+
+          // Open drawer smoothly
+          const drawer = document.getElementById('inspectorDrawer');
+          drawer.classList.remove('translate-x-full');
+        }
+
+        function closeInspector() {
+          const drawer = document.getElementById('inspectorDrawer');
+          drawer.classList.add('translate-x-full');
+        }
+
+        function switchTab(tabKey) {
+          ['simulation', 'prompt', 'payload'].forEach(k => {
+            const btn = document.getElementById(`tabBtn-${k}`);
+            const content = document.getElementById(`tabContent-${k}`);
+            if (k === tabKey) {
+              btn.className = "py-2.5 px-3 font-bold border-b-2 border-cyan-400 text-cyan-300 flex items-center space-x-1.5 transition";
+              content.classList.remove('hidden');
+            } else {
+              btn.className = "py-2.5 px-3 font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center space-x-1.5 transition";
+              content.classList.add('hidden');
+            }
+          });
+        }
+
+        function runSimulation() {
+          const data = nodeData[currentNodeKey];
+          if (!data) return;
+
+          const term = document.getElementById('terminalScreen');
+          term.innerHTML = `<div class="text-cyan-400 font-bold">// ⚡ Jonli jarayon boshlanmoqda...</div>`;
+
+          data.logs.forEach((log, index) => {
+            setTimeout(() => {
+              const line = document.createElement('div');
+              line.className = "text-emerald-300 font-bold animate-pulse";
+              line.innerText = log;
+              term.appendChild(line);
+              term.scrollTop = term.scrollHeight;
+
+              setTimeout(() => {
+                line.classList.remove('animate-pulse');
+                line.className = "text-slate-200";
+              }, 600);
+            }, (index + 1) * 350);
+          });
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+          if (e.key === "Escape") closeInspector();
+        });
+      </script>
+
+</body>
+</html>
