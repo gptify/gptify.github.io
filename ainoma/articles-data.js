@@ -206,7 +206,7 @@ window.AINOMA_ARTICLES = {
     "sources": [
       {
         "name": "Meta for Business",
-        "url": "https://about.meta.com"
+        "url": "https://about.fb.com/news/"
       }
     ]
   },
@@ -349,8 +349,8 @@ window.AINOMA_ARTICLES = {
     "contentHtml": "\n<p>O‘zbekistonning yirik riteyl tarmoqlari va elektron do‘konlari (Uzum, Korzinka, Makro va b.) sun’iy intellektga asoslangan tavsiya tizimlarini tatbiq etish orqali o‘rtacha chek miqdorini 20–30% ga oshirishga muvaffaq bo‘lmoqda.</p>\n\n<h2>Qanday instrumentlar ishlatilmoqda?</h2>\n<ul>\n  <li><strong>Shaxsiylashtirilgan savat tavsiyalari:</strong> Mijoz xarid qilgan mahsulotga mos qo‘shimcha tovarlarni real vaqtda taklif qilish;</li>\n  <li><strong>Dinamik talab prognozi:</strong> Mavsum va ob-havoga qarab qaysi tovarlar ko‘p sotilishini oldindan bashorat qilish;</li>\n  <li><strong>Avtomatlashtirilgan keshbek va aksiyalar:</strong> Doimiy mijozlarga moslashtirilgan individual chegirmalar berish.</li>\n</ul>\n",
     "sources": [
       {
-        "name": "O‘zbekiston E-commerce Assotsiatsiyasi",
-        "url": "https://ecommerce.uz"
+        "name": "Spot.uz Biznes & Riteyl Tahlili",
+        "url": "https://www.spot.uz/oz/"
       }
     ]
   }
