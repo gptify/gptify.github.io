@@ -290,11 +290,11 @@
               
               <!-- Multi-Industry Interactive Mini Switcher -->
               <div class="flex items-center gap-1.5 p-1 bg-slate-100/80 rounded-2xl border border-slate-200/60 pr-20 sm:pr-24">
-                <button type="button" onclick="switchHeroIndustry('education')" id="heroTab-education" class="flex-1 py-1.5 px-2 rounded-xl text-[10px] font-bold transition-all bg-white text-slate-900 shadow-2xs">
-                  🎓 Kurslar
-                </button>
-                <button type="button" onclick="switchHeroIndustry('clinic')" id="heroTab-clinic" class="flex-1 py-1.5 px-2 rounded-xl text-[10px] font-bold transition-all text-slate-500 hover:text-slate-800">
+                <button type="button" onclick="switchHeroIndustry('clinic')" id="heroTab-clinic" class="flex-1 py-1.5 px-2 rounded-xl text-[10px] font-bold transition-all bg-white text-slate-900 shadow-2xs">
                   🏥 Klinika
+                </button>
+                <button type="button" onclick="switchHeroIndustry('education')" id="heroTab-education" class="flex-1 py-1.5 px-2 rounded-xl text-[10px] font-bold transition-all text-slate-500 hover:text-slate-800">
+                  🎓 Kurslar
                 </button>
                 <button type="button" onclick="switchHeroIndustry('retail')" id="heroTab-retail" class="flex-1 py-1.5 px-2 rounded-xl text-[10px] font-bold transition-all text-slate-500 hover:text-slate-800">
                   🛍️ Do‘kon
@@ -312,33 +312,32 @@
                 
                 <!-- Instagram Comment UI -->
                 <div class="bg-slate-50/90 rounded-2xl p-3 border border-slate-200/70 text-xs space-y-2.5">
-                  <!-- Customer Comment -->
+                  <!-- Customer Comment with Profile Photo -->
                   <div class="flex items-start gap-2.5">
-                    <div class="w-6 h-6 rounded-full bg-amber-400 text-white font-bold text-[10px] flex items-center justify-center shrink-0" id="heroSimAvatar">
-                      S
+                    <div class="w-7 h-7 rounded-full overflow-hidden shrink-0 border border-slate-200" id="heroSimAvatar">
+                      <img src="assets/avatars/user_zilola.jpg" alt="Zilola Rahimova" class="w-full h-full object-cover">
                     </div>
                     <div class="flex-1 min-w-0">
-                      <span class="font-bold text-slate-900 text-xs" id="heroSimUser">@sardor_umarov</span>
-                      <p class="text-slate-800 text-[11px] mt-0.5" id="heroSimComment">IELTS kursi narxi qancha? Kechki guruh bormi?</p>
+                      <span class="font-bold text-slate-900 text-xs" id="heroSimUser">@zilola_rahimova</span>
+                      <p class="text-slate-800 text-[11px] mt-0.5" id="heroSimComment">Belimda qattiq og‘riq bor, oyog‘imga uryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?</p>
                     </div>
                     <svg class="w-3 h-3 text-slate-300 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
                   </div>
 
-                    <!-- Brand Reply -->
-                    <div class="ml-3 pl-2.5 border-l-2 border-purple-300/70 pt-0.5 flex items-start gap-2">
-                      <div class="w-5 h-5 rounded-full bg-brand-navy text-white font-bold text-[8px] flex items-center justify-center shrink-0" id="heroSimBrandAvatar">
-                        T
+                  <!-- Brand Reply with Logo/Avatar -->
+                  <div class="ml-3 pl-2.5 border-l-2 border-teal-300/70 pt-0.5 flex items-start gap-2">
+                    <div class="w-6 h-6 rounded-full overflow-hidden shrink-0 border border-teal-200 bg-white" id="heroSimBrandAvatar">
+                      <img src="assets/chinobod_fayz_logo_crop.png" alt="Chinobod Fayz Plus" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center gap-1">
+                        <span class="font-bold text-slate-900 text-[11px]" id="heroSimBrandHandle">@chinobod_fayz</span>
+                        <span class="text-[8px] font-bold text-teal-700 bg-teal-100 px-1 rounded">Muallif</span>
                       </div>
-                      <div class="flex-1 min-w-0">
-                        <div class="flex items-center gap-1">
-                          <span class="font-bold text-slate-900 text-[11px]" id="heroSimBrandHandle">@thompson_school</span>
-                          <span class="text-[8px] font-bold text-purple-700 bg-purple-100 px-1 rounded">Muallif</span>
-                        </div>
-                        <p class="text-purple-900 font-medium text-[11px] mt-0.5 leading-snug" id="heroSimBrandReply">
-                          Assalomu alaykum! Akbarman. Dars jadvali va bepul sinov darsi Direct'ingizda 👇
-                        </p>
-                        <span class="text-[9px] text-emerald-600 font-semibold block mt-0.5">● Rasmiy @profilingiz nomidan (8s)</span>
-                      </div>
+                      <p class="text-slate-800 font-medium text-[11px] mt-0.5 leading-snug" id="heroSimBrandReply">
+                        Assalomu alaykum! Malikaman. Neyrojarroh qabuli va MRT ma’lumotlarini Direct’ga yubordik 🩺
+                      </p>
+                      <span class="text-[9px] text-emerald-600 font-semibold block mt-0.5">● Rasmiy @profilingiz nomidan (8s)</span>
                     </div>
                   </div>
                 </div>
@@ -351,15 +350,15 @@
                 <!-- STAGE 2: Direct Chat Stream -->
                 <div class="space-y-3 pt-1">
                   
-                  <!-- Direct Header -->
+                  <!-- Direct Header (No brackets next to names!) -->
                   <div class="flex items-center justify-between pb-2 border-b border-slate-100 text-xs">
                     <div class="flex items-center gap-2">
-                      <div class="w-7 h-7 rounded-full bg-brand-navy text-white font-bold text-xs flex items-center justify-center" id="heroSimDirectAvatar">
-                        T
+                      <div class="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-white" id="heroSimDirectAvatar">
+                        <img src="assets/chinobod_fayz_logo_crop.png" alt="Chinobod Fayz Plus" class="w-full h-full object-cover">
                       </div>
                       <div>
-                        <span class="font-bold text-slate-900 text-xs" id="heroSimBrandName">Thompson School</span>
-                        <div class="text-[9px] text-emerald-600 font-semibold leading-none mt-0.5" id="heroSimSenderTag">Akbar (Admin) · Rasmiy @profilingiz</div>
+                        <span class="font-bold text-slate-900 text-xs" id="heroSimBrandName">Chinobod Fayz Plus</span>
+                        <div class="text-[9px] text-emerald-600 font-semibold leading-none mt-0.5" id="heroSimSenderTag">Malika · Rasmiy @profilingiz</div>
                       </div>
                     </div>
                     <span class="text-[9px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full">Direct</span>
@@ -368,7 +367,7 @@
                   <!-- Brand Opening Bubble -->
                   <div class="flex flex-col items-start gap-1">
                     <div class="bg-slate-100 text-slate-800 px-3.5 py-2 rounded-2xl rounded-tl-xs max-w-[95%] text-xs leading-relaxed" id="heroSimDirectIntro">
-                      Assalomu alaykum! Thompson School'dan Akbarman. Yangi IELTS 7.5+ intensiv guruhimiz dushanba kuni boshlanadi. Shanba kuni soat 18:30 da bepul sinov darsiga yozib qo‘yaylikmi?
+                      Assalomu alaykum! Chinobod Fayz Plus markazimizda neyrojarroh-vertebrolog ko‘rigi va yuqori aniqlikdagi MRT mavjud. Ertaga 10:30 yoki 14:00 da qabulga yozib qo‘yaylikmi?
                     </div>
                   </div>
 
@@ -376,24 +375,27 @@
                   <div class="bg-gradient-to-r from-slate-50 to-white rounded-2xl p-2.5 border border-slate-200/80 shadow-xs flex items-center justify-between gap-3">
                     <div class="flex items-center gap-2.5">
                       <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white shrink-0 text-base" id="heroSimCardIcon">
-                        🎓
+                        🩺
                       </div>
                       <div>
-                        <span class="text-[9px] font-black uppercase tracking-wider text-purple-700 bg-purple-100/70 px-1.5 py-0.5 rounded" id="heroSimCardBadge">GURUH TANLOVI</span>
-                        <div class="font-bold text-xs text-slate-900 mt-0.5" id="heroSimCardTitle">IELTS Intensive 7.5+</div>
-                        <div class="text-[10px] text-slate-500" id="heroSimCardSubtitle">Offline + Online · 18:30 guruhi</div>
+                        <span class="text-[9px] font-black uppercase tracking-wider text-teal-700 bg-teal-100/70 px-1.5 py-0.5 rounded" id="heroSimCardBadge">SHIFOKOR QABULI</span>
+                        <div class="font-bold text-xs text-slate-900 mt-0.5" id="heroSimCardTitle">Neyrojarroh qabuli + MRT</div>
+                        <div class="text-[10px] text-slate-500" id="heroSimCardSubtitle">Bosh shifokor ko‘rigi · Baliqchi, Andijon</div>
                       </div>
                     </div>
                     <div class="text-right shrink-0">
-                      <span class="font-black text-xs sm:text-sm text-slate-900" id="heroSimCardPrice">890 000</span>
-                      <div class="text-[9px] text-slate-400 font-bold uppercase" id="heroSimCardPeriod">so‘m/oy</div>
+                      <span class="font-black text-xs sm:text-sm text-slate-900" id="heroSimCardPrice">10:30</span>
+                      <div class="text-[9px] text-slate-400 font-bold uppercase" id="heroSimCardPeriod">ertaga</div>
                     </div>
                   </div>
 
-                  <!-- Customer Response -->
-                  <div class="flex justify-end">
+                  <!-- Customer Response with user profile photo -->
+                  <div class="flex items-end justify-end gap-2">
                     <div class="bg-brand-navy text-white font-medium px-3 py-1.5 rounded-2xl rounded-tr-xs max-w-[85%] text-xs shadow-xs" id="heroSimUserReply">
-                      Ha, albatta yozing!
+                      Ha, 10:30 ga yozib qo‘ying, MRT xulosalarimni olib boraman.
+                    </div>
+                    <div class="w-5 h-5 rounded-full overflow-hidden shrink-0 border border-slate-200 mb-0.5" id="heroSimUserDirectAvatar">
+                      <img src="assets/avatars/user_zilola.jpg" alt="Zilola Rahimova" class="w-full h-full object-cover">
                     </div>
                   </div>
 
@@ -403,7 +405,7 @@
                 <div class="pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] pl-28 sm:pl-32">
                   <div class="flex items-center gap-1.5 text-emerald-700 font-bold">
                     <span class="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</span>
-                    <span id="heroSimCrmStatus">Yangi talaba CRM'ga uzatildi</span>
+                    <span id="heroSimCrmStatus">Bemor qabuli CRM va shifokor jadvaliga kiritildi</span>
                   </div>
                   <span class="text-[10px] text-slate-400 font-medium">hozir</span>
                 </div>
@@ -712,7 +714,7 @@
           
           <button onclick="switchSimScenario('clinic')" id="chip-clinic" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group ring-2 ring-purple-500 bg-purple-50/50 border-purple-300">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">1. Chinobod Fayz Plus (Umurtqa & Bel og‘rig‘i)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">1. Chinobod Fayz Plus: Umurtqa & Bel og‘rig‘i</div>
               <div class="text-xs text-slate-500 mt-0.5">"Belim qattiq og‘riyapti, oyog‘imga uryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?"</div>
             </div>
             <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2.5 py-1 rounded-full">Klinika</span>
@@ -720,7 +722,7 @@
 
           <button onclick="switchSimScenario('retail')" id="chip-retail" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">2. Kiyim do‘koni (O‘lcham & Yetkazish)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">2. Madina Boutique: O‘lcham & Yetkazish</div>
               <div class="text-xs text-slate-500 mt-0.5">"Salom, qora rangdagi M o‘lcham bormi?"</div>
             </div>
             <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">Kiyim</span>
@@ -728,7 +730,7 @@
 
           <button onclick="switchSimScenario('uz_slang')" id="chip-uz_slang" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">3. Jonli & Norasmiy muloqot (Erkin so‘zlashuv)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">3. Sneaker Hub: Jonli & Erkin so‘zlashuv</div>
               <div class="text-xs text-slate-500 mt-0.5">"Salom, 42-si bormi? Bugunga dostavka qberolisizmi?"</div>
             </div>
             <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Erkin til</span>
@@ -736,7 +738,7 @@
 
           <button onclick="switchSimScenario('price_objection')" id="chip-price_objection" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">4. Narxga e’tiroz (Chegirma so‘rash)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">4. Eco Cotton: Narxga e’tiroz & Chegirma</div>
               <div class="text-xs text-slate-500 mt-0.5">"349 ming juda qimmat-ku, arzonrog‘i yo‘qmi?"</div>
             </div>
             <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">E’tiroz</span>
@@ -744,7 +746,7 @@
 
           <button onclick="switchSimScenario('criticism')" id="chip-criticism" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">5. Tanqid & Negativ (Mijoz shikoyati)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">5. Express Brend: Shikoyat & Tezkor yechim</div>
               <div class="text-xs text-slate-500 mt-0.5">"Kecha zakaz qildim hali ham javob yo‘q!"</div>
             </div>
             <span class="text-xs font-bold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full">Shikoyat</span>
@@ -752,7 +754,7 @@
 
           <button onclick="switchSimScenario('course')" id="chip-course" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">6. Kichik biznes & Kurs (Trigger)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">6. Thompson School: Kichik biznes & Kurs</div>
               <div class="text-xs text-slate-500 mt-0.5">"KURS" so‘zini yozib ro‘yxatdan o‘tish</div>
             </div>
             <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Trigger</span>
@@ -760,7 +762,7 @@
 
           <button onclick="switchSimScenario('russian')" id="chip-russian" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">7. Ruscha so‘rov (Bilingval muloqot)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">7. Madina Boutique: Ruscha bilingval muloqot</div>
               <div class="text-xs text-slate-500 mt-0.5">"Здравствуйте! Есть ли в наличии черная модель?"</div>
             </div>
             <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">Bilingval</span>
@@ -768,7 +770,7 @@
 
           <button onclick="switchSimScenario('link_dropper')" id="chip-link_dropper" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">8. ⚡ Auto-DM & Shaxsiy uslub (Blogerlar)</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">8. Shukhrat Iskandarov: Auto-DM & Shaxsiy uslub</div>
               <div class="text-xs text-slate-500 mt-0.5">Robot emas, aynan sizdek samimiy gapirib havola ochish</div>
             </div>
             <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">Auto-DM</span>
@@ -782,9 +784,11 @@
             <!-- Simulator Window Top Header -->
             <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-2">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-black text-sm" id="sim-brand-avatar">CF</div>
+                <div class="w-10 h-10 rounded-xl overflow-hidden border border-slate-200 bg-white flex items-center justify-center shrink-0" id="sim-brand-avatar">
+                  <img src="assets/chinobod_fayz_logo_crop.png" alt="Chinobod Fayz Plus" class="w-full h-full object-cover">
+                </div>
                 <div>
-                  <div class="font-bold text-sm text-slate-900" id="sim-brand-title">Chinobod Fayz Plus (Neyrojarrohlik)</div>
+                  <div class="font-bold text-sm text-slate-900" id="sim-brand-title">Chinobod Fayz Plus</div>
                   <div class="flex items-center gap-1.5 mt-0.5">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                     <span class="text-[11px] font-medium text-slate-500" id="sim-brand-handle">@chinobod_fayz · Rasmiy profil nomidan</span>
@@ -1732,13 +1736,32 @@
      * -1. HERO MULTI-INDUSTRY SIMULATOR DATA & LOGIC
      * ------------------------------------------------------------- */
     const heroIndustryData = {
+      clinic: {
+        avatarImg: 'assets/avatars/user_zilola.jpg',
+        brandAvatarImg: 'assets/chinobod_fayz_logo_crop.png',
+        brandHandle: '@chinobod_fayz',
+        brandName: 'Chinobod Fayz Plus',
+        senderTag: 'Malika · Rasmiy @profilingiz',
+        user: '@zilola_rahimova',
+        comment: 'Belimda qattiq og‘riq bor, oyog‘imga uryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?',
+        brandReply: "Assalomu alaykum! Malikaman. Neyrojarroh qabuli va MRT ma’lumotlarini Direct’ga yubordik 🩺",
+        directIntro: "Assalomu alaykum! Chinobod Fayz Plus markazimizda neyrojarroh-vertebrolog ko‘rigi va yuqori aniqlikdagi MRT mavjud. Ertaga 10:30 yoki 14:00 da qabulga yozib qo‘yaylikmi?",
+        cardIcon: '🩺',
+        cardBadge: 'SHIFOKOR QABULI',
+        cardBadgeClass: 'text-teal-700 bg-teal-100/70',
+        cardTitle: 'Neyrojarroh qabuli + MRT',
+        cardSubtitle: 'Bosh shifokor ko‘rigi · Baliqchi, Andijon',
+        cardPrice: '10:30',
+        cardPeriod: 'ertaga',
+        userReply: 'Ha, 10:30 ga yozib qo‘ying, MRT xulosalarimni olib boraman.',
+        crmStatus: 'Bemor qabuli CRM va shifokor jadvaliga kiritildi'
+      },
       education: {
-        avatar: 'S',
-        avatarBg: 'bg-amber-400',
-        brandAvatar: 'T',
+        avatarImg: 'assets/avatars/user_sardor.jpg',
+        brandAvatarImg: 'assets/avatars/brand_school.jpg',
         brandHandle: '@thompson_school',
         brandName: 'Thompson School',
-        senderTag: 'Akbar (Admin) · Rasmiy @profilingiz',
+        senderTag: 'Akbar · Rasmiy @profilingiz',
         user: '@sardor_umarov',
         comment: 'IELTS kursi narxi qancha? Kechki guruh bormi?',
         brandReply: "Assalomu alaykum! Akbarman. Dars jadvali va bepul sinov darsi Direct'ingizda 👇",
@@ -1751,36 +1774,14 @@
         cardPrice: '890 000',
         cardPeriod: 'so‘m/oy',
         userReply: 'Ha, albatta yozing!',
-        crmStatus: 'Yangi talaba CRM\'ga uzatildi'
-      },
-      clinic: {
-        avatar: 'N',
-        avatarBg: 'bg-teal-500',
-        brandAvatar: 'C',
-        brandHandle: '@chinobod_fayz',
-        brandName: 'Chinobod Fayz Stomatologiya',
-        senderTag: 'Malika (Qabul bo‘limi) · Rasmiy @profilingiz',
-        user: '@nodira_karimova',
-        comment: 'Ertaga stomatolog ko‘rigiga yozilsa bo‘ladimi?',
-        brandReply: "Assalomu alaykum! Malikaman. Shifokor bo‘sh vaqtlari Direct'ingizda 🩺👇",
-        directIntro: "Assalomu alaykum! Chinobod Fayz klinikasidan Malikaman 🩺 Ertaga soat 14:00 va 17:30 da tajribali bosh shifokorimiz qabulida bo‘sh joylar bor. Qaysi vaqt sizga qulayroq?",
-        cardIcon: '🩺',
-        cardBadge: 'SHIFOKOR QABULI',
-        cardBadgeClass: 'text-teal-700 bg-teal-100/70',
-        cardTitle: 'Stomatolog ko‘rigi + 3D Rentgen',
-        cardSubtitle: 'Bosh shifokor qabuli · Dastlabki ko‘rik',
-        cardPrice: 'Bepul',
-        cardPeriod: 'ko‘rik',
-        userReply: 'Soat 17:30 ga yozib qo‘ying iltimos.',
-        crmStatus: 'Bemor vaqti jadvalga kiritildi'
+        crmStatus: "Yangi talaba CRM'ga uzatildi"
       },
       retail: {
-        avatar: 'D',
-        avatarBg: 'bg-rose-500',
-        brandAvatar: 'M',
+        avatarImg: 'assets/avatars/user_dilnoza.jpg',
+        brandAvatarImg: 'assets/avatars/brand_boutique.jpg',
         brandHandle: '@madina_boutique',
         brandName: 'Madina Boutique',
-        senderTag: 'Kamola (Konsultant) · Rasmiy @profilingiz',
+        senderTag: 'Kamola · Rasmiy @profilingiz',
         user: '@dilnoza_alieva',
         comment: 'Kiyim narxi qancha? M razmer bormi?',
         brandReply: "Assalomu alaykum! Kamolaman. O‘lchamlar va tovar kartasi Direct'ingizda 👇",
@@ -1793,12 +1794,12 @@
         cardPrice: '349 000',
         cardPeriod: 'so‘m',
         userReply: 'Buyurtma qilaman, manzilni yozaymi?',
-        crmStatus: 'Buyurtma va manzil CRM\'ga tushdi'
+        crmStatus: "Buyurtma va manzil CRM'ga tushdi"
       }
     };
 
     function switchHeroIndustry(industryKey) {
-      const keys = ['education', 'clinic', 'retail'];
+      const keys = ['clinic', 'education', 'retail'];
       keys.forEach(k => {
         const btn = document.getElementById('heroTab-' + k);
         if (btn) {
@@ -1815,13 +1816,21 @@
 
       const avatarEl = document.getElementById('heroSimAvatar');
       if (avatarEl) {
-        avatarEl.innerText = d.avatar;
-        avatarEl.className = `w-6 h-6 rounded-full ${d.avatarBg} text-white font-bold text-[10px] flex items-center justify-center shrink-0 transition-colors`;
+        avatarEl.innerHTML = `<img src="${d.avatarImg}" alt="${d.user}" class="w-full h-full object-cover">`;
       }
       const brandAvatarEl = document.getElementById('heroSimBrandAvatar');
-      if (brandAvatarEl) brandAvatarEl.innerText = d.brandAvatar;
+      if (brandAvatarEl) {
+        brandAvatarEl.innerHTML = `<img src="${d.brandAvatarImg}" alt="${d.brandName}" class="w-full h-full object-cover">`;
+      }
       const directAvatarEl = document.getElementById('heroSimDirectAvatar');
-      if (directAvatarEl) directAvatarEl.innerText = d.brandAvatar;
+      if (directAvatarEl) {
+        directAvatarEl.innerHTML = `<img src="${d.brandAvatarImg}" alt="${d.brandName}" class="w-full h-full object-cover">`;
+      }
+      const userDirectAvatarEl = document.getElementById('heroSimUserDirectAvatar');
+      if (userDirectAvatarEl) {
+        userDirectAvatarEl.innerHTML = `<img src="${d.avatarImg}" alt="${d.user}" class="w-full h-full object-cover">`;
+      }
+
       const brandHandleEl = document.getElementById('heroSimBrandHandle');
       if (brandHandleEl) brandHandleEl.innerText = d.brandHandle;
       const brandNameEl = document.getElementById('heroSimBrandName');
@@ -2202,147 +2211,163 @@
      * ------------------------------------------------------------- */
     const simScenarios = {
       clinic: {
-        badge: 'Klinika / Neyrojarrohlik',
-        brandTitle: 'Chinobod Fayz Plus (Neyrojarrohlik)',
-        brandHandle: '@chinobod_fayz',
-        avatarText: 'CF',
-        sender: 'Malika (Qabul bo‘limi)',
-        clientName: 'Zilola Rahimova',
-        clientHandle: '@zilola_rahimova',
-        clientAvatar: 'Z',
-        reelsComment: 'Assalomu alaykum, belim qattiq og‘riyapti, oyog‘imga tortib beryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?',
-        reelsReply: 'Assalomu alaykum! Bel og‘rig‘i bo‘yicha neyrojarroh-vertebrolog qabuliga yozilish va maslahat ma’lumotlarini Direct’ingizga yubordik 🩺',
+        badge: "Klinika / Neyrojarrohlik",
+        brandTitle: "Chinobod Fayz Plus",
+        brandHandle: "@chinobod_fayz",
+        brandAvatarImg: "assets/chinobod_fayz_logo_crop.png",
+        avatarText: "CF",
+        sender: "Malika",
+        clientName: "Zilola Rahimova",
+        clientHandle: "@zilola_rahimova",
+        clientAvatarImg: "assets/avatars/user_zilola.jpg",
+        clientAvatar: "Z",
+        reelsComment: "Assalomu alaykum, belim qattiq og‘riyapti, oyog‘imga tortib beryapti. Qaysi shifokorga ko‘rinsam bo‘ladi?",
+        reelsReply: "Assalomu alaykum! Bel og‘rig‘i bo‘yicha neyrojarroh-vertebrolog qabuliga yozilish va maslahat ma’lumotlarini Direct’ingizga yubordik 🩺",
         messages: [
-          { role: 'user', text: 'Assalomu alaykum, 2 haftadan beri belim qattiq og‘riyapti, o‘ng oyog‘imga tortib beryapti. Qaysi shifokorga ko‘rinishim kerak va qabul qachon?' },
-          { role: 'ailo', text: 'Assalomu alaykum! Bel og‘rig‘ining oyoqqa tortib berishi ko‘pincha umurtqa diski (grija) yoki asab ildizi qisilishidan darak berishi mumkin. Chinobod Fayz Plus markazimizda oliy toifali neyrojarroh-vertebrolog ko‘rigi va yuqori aniqlikdagi MRT tekshiruvi mavjud.\n\nSizga eng yaqin qabul vaqtlari:\n🗓 Ertaga (Seshanba): 10:30 yoki 14:00\n📍 Chinobod Fayz Plus — Andijon, Baliqchi tumani\n\nQaysi vaqt sizga qulay bo‘ladi?' },
-          { role: 'user', text: 'Ertaga 10:30 ga yozib qo‘ying, iltimos. MRT qog‘ozlarimni ham olib boraymi?' },
-          { role: 'card', title: 'Neyrojarroh qabuli (Bosh shifokor ko‘rigi)', meta: 'Ertaga 10:30 · Baliqchi, Andijon · MRT bilan birga', price: 'Qabul band qilindi' },
-          { role: 'ailo', text: 'Ajoyib! Ertaga 10:30 ga neyrojarroh qabuliga band qildik. Albatta, avval tushgan barcha MRT yoki rentgen xulosalaringizni o‘zingiz bilan oling — shifokorimiz joyida ko‘rib, aniq tashxis qo‘yadi.\n\nQabulni rasmiylashtirish uchun ism-familiyangiz va aloqa raqamingizni yozib yuborasizmi?' }
+          { role: "user", text: "Assalomu alaykum, 2 haftadan beri belim qattiq og‘riyapti, o‘ng oyog‘imga tortib beryapti. Qaysi shifokorga ko‘rinishim kerak va qabul qachon?" },
+          { role: "ailo", text: "Assalomu alaykum! Bel og‘rig‘ining oyoqqa tortib berishi ko‘pincha umurtqa diski (grija) yoki asab ildizi qisilishidan darak berishi mumkin. Chinobod Fayz Plus markazimizda oliy toifali neyrojarroh-vertebrolog ko‘rigi va yuqori aniqlikdagi MRT tekshiruvi mavjud.\n\nSizga eng yaqin qabul vaqtlari:\n🗓 Ertaga (Seshanba): 10:30 yoki 14:00\n📍 Chinobod Fayz Plus — Andijon, Baliqchi tumani\n\nQaysi vaqt sizga qulay bo‘ladi?" },
+          { role: "user", text: "Ertaga 10:30 ga yozib qo‘ying, iltimos. MRT qog‘ozlarimni ham olib boraymi?" },
+          { role: "card", title: "Neyrojarroh qabuli (Bosh shifokor ko‘rigi)", meta: "Ertaga 10:30 · Baliqchi, Andijon · MRT bilan birga", price: "Qabul band qilindi" },
+          { role: "ailo", text: "Ajoyib! Ertaga 10:30 ga neyrojarroh qabuliga band qildik. Albatta, avval tushgan barcha MRT yoki rentgen xulosalaringizni o‘zingiz bilan oling — shifokorimiz joyida ko‘rib, aniq tashxis qo‘yadi.\n\nQabulni rasmiylashtirish uchun ism-familiyangiz va aloqa raqamingizni yozib yuborasizmi?" }
         ]
       },
       retail: {
-        badge: 'Kiyim do‘koni',
-        brandTitle: 'Madina Boutique (Kamola)',
-        brandHandle: '@madina_boutique',
-        avatarText: 'M',
-        sender: 'Kamola (Konsultant)',
-        clientName: 'Dilnoza Alieva',
-        clientHandle: '@dilnoza_alieva',
-        clientAvatar: 'D',
-        reelsComment: 'NARX',
-        reelsReply: 'Assalomu alaykum! Kamolaman. Direct\'ingizga to‘liq o‘lchamlar va tovar kartasini yubordim 👇',
+        badge: "Kiyim do‘koni",
+        brandTitle: "Madina Boutique",
+        brandHandle: "@madina_boutique",
+        brandAvatarImg: "assets/avatars/brand_boutique.jpg",
+        avatarText: "M",
+        sender: "Kamola",
+        clientName: "Dilnoza Alieva",
+        clientHandle: "@dilnoza_alieva",
+        clientAvatarImg: "assets/avatars/user_dilnoza.jpg",
+        clientAvatar: "D",
+        reelsComment: "NARX",
+        reelsReply: "Assalomu alaykum! Kamolaman. Directingizga to‘liq o‘lchamlar va tovar kartasini yubordim 👇",
         messages: [
-          { role: 'user', text: 'Salom, qora rangdagi M o‘lcham bormi?' },
-          { role: 'ailo', text: 'Salom! Madina Boutique\'dan Kamolaman 🌸 Qora rangdagi M o‘lcham omborda mavjud. Sizga kundalik kiyish uchunmi yoki klassik model kerakmi?' },
-          { role: 'user', text: 'Kundalik. Toshkentga yetkazib berish qancha vaqt oladi?' },
-          { role: 'card', title: 'Essential qora ko‘ylak', meta: 'M o‘lcham · Bugun yetkazish', price: '349 000 so‘m' },
-          { role: 'ailo', text: 'Toshkent bo‘ylab bugunning o‘zida yetkazib beramiz. Buyurtmani rasmiylashtirish uchun telefon raqamingizni qoldirasizmi?' }
-        ]
-      },
-      link_dropper: {
-        badge: '⚡ Auto-DM (Bloger & Creator)',
-        brandTitle: 'Shukhrat Iskandarov',
-        brandHandle: '@shukhrat_ai',
-        avatarText: 'S',
-        sender: 'Shukhrat',
-        clientName: 'Bobur Alimov',
-        clientHandle: '@bobur_alimov',
-        clientAvatar: 'B',
-        reelsComment: 'KITOB',
-        reelsReply: 'Salom Bobur! 🔥 Kitob Direct’ingizga yetib bordi, o‘qib chiqing 🚀',
-        messages: [
-          { role: 'user', text: 'KITOB' },
-          { role: 'ailo', text: 'Salom Bobur! 🔥 "Biznesda AI va Avtomatizatsiya" qo‘llanmasini so‘raganingizdan xursandman. Siz so‘ragan havolani ochib berdim: 👉 [yuklab olish havolasi]\n\nAyniqsa 3-bobdagi 10 ta amaliy B2B promptlar sizga yoqadi deb o‘ylayman 😉' },
-          { role: 'user', text: 'Katta rahmat! Aynan shu kerak edi.' },
-          { role: 'ailo', text: 'Arzimaydi! O‘qib chiqing, amalda sinab ko‘rib natijalarni yozing. Omad tilayman! 🚀' }
+          { role: "user", text: "Salom, qora rangdagi M o‘lcham bormi?" },
+          { role: "ailo", text: "Salom! Madina Boutiquedan Kamolaman 🌸 Qora rangdagi M o‘lcham omborda mavjud. Sizga kundalik kiyish uchunmi yoki klassik model kerakmi?" },
+          { role: "user", text: "Kundalik. Toshkentga yetkazib berish qancha vaqt oladi?" },
+          { role: "card", title: "Essential qora ko‘ylak", meta: "M o‘lcham · Bugun yetkazish", price: "349 000 so‘m" },
+          { role: "ailo", text: "Toshkent bo‘ylab bugunning o‘zida yetkazib beramiz. Buyurtmani rasmiylashtirish uchun telefon raqamingizni qoldirasizmi?" }
         ]
       },
       uz_slang: {
-        badge: 'Jonli & Norasmiy muloqot',
-        brandTitle: 'Sneaker Hub (Shohruh)',
-        brandHandle: '@sneaker_hub_uz',
-        avatarText: 'S',
-        sender: 'Shohruh (Admin)',
-        clientName: 'Jasur Qodirov',
-        clientHandle: '@jasur_qodirov',
-        clientAvatar: 'J',
-        reelsComment: '42-si bormi?',
-        reelsReply: 'Assalomu alaykum! Shohruhman. Ha, bor, Direct\'ingizga yozdim 🚀',
+        badge: "Jonli & Norasmiy muloqot",
+        brandTitle: "Sneaker Hub",
+        brandHandle: "@sneaker_hub_uz",
+        brandAvatarImg: "assets/avatars/brand_boutique.jpg",
+        avatarText: "S",
+        sender: "Shohruh",
+        clientName: "Jasur Qodirov",
+        clientHandle: "@jasur_qodirov",
+        clientAvatarImg: "assets/avatars/user_jasur.jpg",
+        clientAvatar: "J",
+        reelsComment: "42-si bormi?",
+        reelsReply: "Assalomu alaykum! Shohruhman. Ha, bor, Directingizga yozdim 🚀",
         messages: [
-          { role: 'user', text: 'Salom, 42-si bormi? Bugunga dostavka qberolisizmi?' },
-          { role: 'ailo', text: 'Assalomu alaykum! Ha, 42 razmeri skladimizda bor. Toshkent bo‘ylab bugun kechgacha yetkazib beramiz 🚀' },
-          { role: 'user', text: 'Nechpul bo‘ladi o‘zi? Skidka bormi?' },
-          { role: 'card', title: 'Original Sneaker Classic', meta: '42 razmer · Sklad mavjud', price: '450 000 so‘m' },
-          { role: 'ailo', text: 'Narxi 450,000 so‘m, original sifat. 2 ta olsangiz dostavkasi mutlaqo bepul bo‘ladi. Qaysi tumanga tashlab beraylik?' },
-          { role: 'user', text: 'Chilonzor 9 ga. Ovolaman unda' }
+          { role: "user", text: "Salom, 42-si bormi? Bugunga dostavka qberolisizmi?" },
+          { role: "ailo", text: "Assalomu alaykum! Ha, 42 razmeri skladimizda bor. Toshkent bo‘ylab bugun kechgacha yetkazib beramiz 🚀" },
+          { role: "user", text: "Nechpul bo‘ladi o‘zi? Skidka bormi?" },
+          { role: "card", title: "Original Sneaker Classic", meta: "42 razmer · Sklad mavjud", price: "450 000 so‘m" },
+          { role: "ailo", text: "Narxi 450,000 so‘m, original sifat. 2 ta olsangiz dostavkasi mutlaqo bepul bo‘ladi. Qaysi tumanga tashlab beraylik?" },
+          { role: "user", text: "Chilonzor 9 ga. Ovolaman unda" }
         ]
       },
       price_objection: {
-        badge: 'Narxga e’tiroz',
-        brandTitle: 'Eco Cotton (Sardor)',
-        brandHandle: '@ecocotton_uz',
-        avatarText: 'E',
-        sender: 'Sardor (Menejer)',
-        clientName: 'Nodira Karimova',
-        clientHandle: '@nodira_k',
-        clientAvatar: 'N',
-        reelsComment: 'skidka bormi?',
-        reelsReply: 'Assalomu alaykum! Sardorman. Bugun aksiyamiz bor, Direct\'da batafsil tushuntiraman 🤝',
+        badge: "Narxga e’tiroz",
+        brandTitle: "Eco Cotton",
+        brandHandle: "@ecocotton_uz",
+        brandAvatarImg: "assets/avatars/brand_boutique.jpg",
+        avatarText: "E",
+        sender: "Sardor",
+        clientName: "Nodira Karimova",
+        clientHandle: "@nodira_k",
+        clientAvatarImg: "assets/avatars/user_nodira.jpg",
+        clientAvatar: "N",
+        reelsComment: "skidka bormi?",
+        reelsReply: "Assalomu alaykum! Sardorman. Bugun aksiyamiz bor, Directda batafsil tushuntiraman 🤝",
         messages: [
-          { role: 'user', text: '349 ming juda qimmat-ku, skidka bormi?' },
-          { role: 'ailo', text: 'Tushunaman, narx har doim muhim. Lekin bu model 100% tabiiy paxtadan tikilgan, 50 martadan ko‘p yuvilganda ham rangi o‘chmaydi. Agar bugun 2 dona buyurtma qilsangiz, yetkazib berish mutlaqo bepul bo‘ladi! Qaysi ranglarni tanlaysiz?' }
+          { role: "user", text: "349 ming juda qimmat-ku, skidka bormi?" },
+          { role: "ailo", text: "Tushunaman, narx har doim muhim. Lekin bu model 100% tabiiy paxtadan tikilgan, 50 martadan ko‘p yuvilganda ham rangi o‘chmaydi. Agar bugun 2 dona buyurtma qilsangiz, yetkazib berish mutlaqo bepul bo‘ladi! Qaysi ranglarni tanlaysiz?" }
         ]
       },
       criticism: {
-        badge: 'Shikoyat & Tanqid',
-        brandTitle: 'Express Brend (Logistika)',
-        brandHandle: '@express_brend',
-        avatarText: 'E',
-        sender: 'Mijozlar bilan ishlash',
-        clientName: 'Aziz Mahmudov',
-        clientHandle: '@aziz_mahmudov',
-        clientAvatar: 'A',
-        reelsComment: 'Qachon yetib keladi zakaz?!',
-        reelsReply: 'Kechirasiz! Hozir Direct\'da buyurtmangizni darhol tekshirib beraman 📩',
+        badge: "Shikoyat & Tanqid",
+        brandTitle: "Express Brend",
+        brandHandle: "@express_brend",
+        brandAvatarImg: "assets/avatars/brand_boutique.jpg",
+        avatarText: "E",
+        sender: "Aziz",
+        clientName: "Aziz Mahmudov",
+        clientHandle: "@aziz_mahmudov",
+        clientAvatarImg: "assets/avatars/user_aziz.jpg",
+        clientAvatar: "A",
+        reelsComment: "Qachon yetib keladi zakaz?!",
+        reelsReply: "Kechirasiz! Hozir Directda buyurtmangizni darhol tekshirib beraman 📩",
         messages: [
-          { role: 'user', text: 'Kecha zakaz qilgan edim, hali ham kuryerdan darak yo‘q! Nega buncha sekin?' },
-          { role: 'ailo', text: 'Kechikish uchun ming bor uzr so‘raymiz! 🤝 Sizni mutlaqo to‘g‘ri tushunib turibman. Iltimos, buyurtma bergan telefon raqamingizni yozib yuboring, hoziroq logistika bo‘limi bilan bog‘lanib, posilkangiz qayerda ekanini aniqlab beraman!' }
+          { role: "user", text: "Kecha zakaz qilgan edim, hali ham kuryerdan darak yo‘q! Nega buncha sekin?" },
+          { role: "ailo", text: "Kechikish uchun ming bor uzr so‘raymiz! 🤝 Sizni mutlaqo to‘g‘ri tushunib turibman. Iltimos, buyurtma bergan telefon raqamingizni yozib yuboring, hoziroq logistika bo‘limi bilan bog‘lanib, posilkangiz qayerda ekanini aniqlab beraman!" }
         ]
       },
       course: {
-        badge: 'Kichik biznes & Kurs',
-        brandTitle: 'Thompson School (Akbar)',
-        brandHandle: '@thompson_school',
-        avatarText: 'T',
-        sender: 'Akbar (Admin)',
-        clientName: 'Sardor Umarov',
-        clientHandle: '@sardor_umarov',
-        clientAvatar: 'S',
-        reelsComment: 'KURS',
-        reelsReply: 'Assalomu alaykum! Akbarman. Darslar rejasini Direct\'ingizga ochib berdim 📚',
+        badge: "Kichik biznes & Kurs",
+        brandTitle: "Thompson School",
+        brandHandle: "@thompson_school",
+        brandAvatarImg: "assets/avatars/brand_school.jpg",
+        avatarText: "T",
+        sender: "Akbar",
+        clientName: "Sardor Umarov",
+        clientHandle: "@sardor_umarov",
+        clientAvatarImg: "assets/avatars/user_sardor.jpg",
+        clientAvatar: "S",
+        reelsComment: "KURS",
+        reelsReply: "Assalomu alaykum! Akbarman. Darslar rejasini Directingizga ochib berdim 📚",
         messages: [
-          { role: 'user', text: 'KURS' },
-          { role: 'ailo', text: 'Assalomu alaykum! "AI Savdo Avtomatizatsiyasi" kursimizga qiziqish bildirganingiz uchun tashakkur! Kurs 4 haftalik amaliy dasturdan iborat.' },
-          { role: 'user', text: 'Dasturini qayerdan ko‘rsam bo‘ladi?' },
-          { role: 'ailo', text: 'To‘liq silabus va 3 ta bepul kirish darsini Telegram orqali ochib beraman. Qaysi raqamda Telegram ishlatasiz?' }
+          { role: "user", text: "KURS" },
+          { role: "ailo", text: 'Assalomu alaykum! "AI Savdo Avtomatizatsiyasi" kursimizga qiziqish bildirganingiz uchun tashakkur! Kurs 4 haftalik amaliy dasturdan iborat.' },
+          { role: "user", text: "Dasturini qayerdan ko‘rsam bo‘ladi?" },
+          { role: "ailo", text: "To‘liq silabus va 3 ta bepul kirish darsini Telegram orqali ochib beraman. Qaysi raqamda Telegram ishlatasiz?" }
         ]
       },
       russian: {
-        badge: 'Bilingval muloqot',
-        brandTitle: 'Madina Boutique (Диана)',
-        brandHandle: '@madina_boutique',
-        avatarText: 'M',
-        sender: 'Диана (Консультант)',
-        clientName: 'Elena Kim',
-        clientHandle: '@elena_kim',
-        clientAvatar: 'E',
-        reelsComment: 'ЦЕНА',
-        reelsReply: 'Здравствуйте! Я Диана. Отправила каталог и цены в Direct 👇',
+        badge: "Bilingval muloqot",
+        brandTitle: "Madina Boutique",
+        brandHandle: "@madina_boutique",
+        brandAvatarImg: "assets/avatars/brand_boutique.jpg",
+        avatarText: "M",
+        sender: "Диана",
+        clientName: "Elena Kim",
+        clientHandle: "@elena_kim",
+        clientAvatarImg: "assets/avatars/user_elena.jpg",
+        clientAvatar: "E",
+        reelsComment: "ЦЕНА",
+        reelsReply: "Здравствуйте! Я Диана. Отправила каталог и цены в Direct 👇",
         messages: [
-          { role: 'user', text: 'Здравствуйте! Есть ли в наличии черная модель размера M?' },
-          { role: 'ailo', text: 'Здравствуйте! Да, черная модель в размере M есть в наличии на складе. Вам подсказать по замерам или сразу оформить доставку?' },
-          { role: 'user', text: 'Какая стоимость доставки по Ташкенту?' },
-          { role: 'ailo', text: 'Доставка по Ташкенту стоит 25 000 сум и осуществляется сегодня же. Для подтверждения отправьте, пожалуйста, ваш номер телефона!' }
+          { role: "user", text: "Здравствуйте! Есть ли в наличии черная модель размера M?" },
+          { role: "ailo", text: "Здравствуйте! Да, черная модель в размере M есть в наличии на складе. Вам подсказать по замерам или сразу оформить доставку?" },
+          { role: "user", text: "Какая стоимость доставки по Ташкенту?" },
+          { role: "ailo", text: "Доставка по Ташкенту стоит 25 000 сум и осуществляется сегодня же. Для подтверждения отправьте, пожалуйста, ваш номер телефона!" }
+        ]
+      },
+      link_dropper: {
+        badge: "⚡ Auto-DM (Bloger & Creator)",
+        brandTitle: "Shukhrat Iskandarov",
+        brandHandle: "@shukhrat_ai",
+        brandAvatarImg: "assets/gptify_promptlab_avatar.jpg",
+        avatarText: "S",
+        sender: "Shukhrat",
+        clientName: "Bobur Alimov",
+        clientHandle: "@bobur_alimov",
+        clientAvatarImg: "assets/avatars/user_bobur.jpg",
+        clientAvatar: "B",
+        reelsComment: "KITOB",
+        reelsReply: "Salom Bobur! 🔥 Kitob Direct’ingizga yetib bordi, o‘qib chiqing 🚀",
+        messages: [
+          { role: "user", text: "KITOB" },
+          { role: "ailo", text: 'Salom Bobur! 🔥 "Biznesda AI va Avtomatizatsiya" qo‘llanmasini so‘raganingizdan xursandman. Siz so‘ragan havolani ochib berdim: 👉 [yuklab olish havolasi]\n\nAyniqsa 3-bobdagi 10 ta amaliy B2B promptlar sizga yoqadi deb o‘ylayman 😉' },
+          { role: "user", text: "Katta rahmat! Aynan shu kerak edi." },
+          { role: "ailo", text: "Arzimaydi! O‘qib chiqing, amalda sinab ko‘rib natijalarni yozing. Omad tilayman! 🚀" }
         ]
       }
     };
@@ -2372,18 +2397,26 @@
       const badgeEl = document.getElementById('sim-scenario-badge');
       badgeEl.innerText = scenario.badge;
 
-      // Update simulator window top brand info
+      // Update simulator window top brand info (Clean name & image avatar)
       const titleEl = document.getElementById('sim-brand-title');
       if (titleEl) titleEl.innerText = scenario.brandTitle || 'Sizning brendingiz';
       const handleEl = document.getElementById('sim-brand-handle');
       if (handleEl) handleEl.innerText = `${scenario.brandHandle || '@brendingiz'} · Rasmiy profil nomidan`;
       const avatarEl = document.getElementById('sim-brand-avatar');
-      if (avatarEl) avatarEl.innerText = scenario.avatarText || 'A';
+      if (avatarEl) {
+        if (scenario.brandAvatarImg) {
+          avatarEl.innerHTML = `<img src="${scenario.brandAvatarImg}" alt="${scenario.brandTitle}" class="w-full h-full object-cover">`;
+          avatarEl.className = "w-10 h-10 rounded-xl overflow-hidden border border-slate-200 bg-white flex items-center justify-center shrink-0";
+        } else {
+          avatarEl.innerText = scenario.avatarText || 'A';
+          avatarEl.className = "w-10 h-10 rounded-xl bg-brand-navy text-white flex items-center justify-center font-black text-sm shrink-0";
+        }
+      }
 
       chatBox.innerHTML = '';
 
       if (currentSimTab === 'comments') {
-        // Render 1. Reels Comment View
+        // Render 1. Reels Comment View with Authentic Avatars
         chatBox.innerHTML = `
           <div class="space-y-4">
             <!-- Reels Post Header Card -->
@@ -2398,29 +2431,36 @@
               <span class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded-full border border-purple-100">Jonli</span>
             </div>
 
-            <!-- Comment 1: Customer Trigger Comment -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-xs space-y-1">
+            <!-- Comment 1: Customer Trigger Comment with Profile Photo -->
+            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-xs space-y-1.5">
               <div class="flex items-center justify-between text-xs">
                 <div class="flex items-center gap-2">
-                  <span class="w-5 h-5 rounded-full bg-slate-200 text-slate-700 text-[10px] font-bold flex items-center justify-center shrink-0">${scenario.clientAvatar || 'M'}</span>
-                  <span class="font-bold text-slate-900">${scenario.clientHandle || '@mijoz'}</span>
+                  <div class="w-7 h-7 rounded-full overflow-hidden shrink-0 border border-slate-200 bg-slate-100">
+                    <img src="${scenario.clientAvatarImg || 'assets/avatars/user_zilola.jpg'}" alt="${scenario.clientName}" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                    <span class="font-bold text-slate-900 block leading-tight text-xs">${scenario.clientName}</span>
+                    <span class="text-[10px] text-slate-400 font-medium">${scenario.clientHandle || '@mijoz'}</span>
+                  </div>
                 </div>
                 <span class="text-[10px] text-slate-400">1m oldin</span>
               </div>
-              <p class="text-sm font-semibold text-slate-800 ml-7">${scenario.reelsComment}</p>
+              <p class="text-[13px] font-semibold text-slate-800 ml-9 leading-snug">${scenario.reelsComment}</p>
             </div>
 
-            <!-- Comment 2: Brand Public Instant Reply -->
+            <!-- Comment 2: Brand Public Instant Reply with Logo -->
             <div class="bg-purple-50/70 rounded-2xl p-3.5 border border-purple-200 space-y-2 ml-4">
               <div class="flex items-center justify-between text-xs">
-                <div class="flex items-center gap-1.5">
-                  <span class="w-5 h-5 rounded-md bg-brand-navy text-white text-[10px] font-black flex items-center justify-center">${scenario.avatarText || 'A'}</span>
-                  <span class="font-bold text-purple-900">${scenario.brandHandle || '@brendingiz'}</span>
-                  <span class="text-[10px] text-emerald-600 font-bold bg-emerald-100 px-1.5 py-0.2 rounded">8s javob</span>
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-full overflow-hidden shrink-0 border border-purple-200 bg-white">
+                    <img src="${scenario.brandAvatarImg || 'assets/chinobod_fayz_logo_crop.png'}" alt="${scenario.brandTitle}" class="w-full h-full object-cover">
+                  </div>
+                  <span class="font-bold text-purple-900 text-xs">${scenario.brandHandle || '@brendingiz'}</span>
+                  <span class="text-[9px] text-emerald-600 font-bold bg-emerald-100 px-1.5 py-0.2 rounded">8s javob</span>
                 </div>
                 <span class="text-[10px] text-slate-400">hozir</span>
               </div>
-              <p class="text-xs sm:text-[13px] text-slate-800 leading-relaxed">${scenario.reelsReply}</p>
+              <p class="text-xs sm:text-[13px] text-slate-800 leading-relaxed ml-8">${scenario.reelsReply}</p>
             </div>
 
             <!-- Direct Handoff Button -->
@@ -2431,35 +2471,43 @@
             </div>
           </div>`;
       } else {
-        // Render 2. Direct Sales Chat View
+        // Render 2. Direct Sales Chat View with User & Brand Photos
         scenario.messages.forEach(msg => {
           if (msg.role === 'user') {
             chatBox.innerHTML += `
-              <div class="flex justify-end">
-                <div class="bg-brand-navy text-white font-medium px-4 py-2.5 rounded-2xl rounded-tr-xs max-w-[85%] shadow-xs">
+              <div class="flex items-end justify-end gap-2">
+                <div class="bg-brand-navy text-white font-medium px-4 py-2.5 rounded-2xl rounded-br-xs max-w-[82%] shadow-xs leading-relaxed text-[13px]">
                   ${msg.text}
+                </div>
+                <div class="w-6 h-6 rounded-full overflow-hidden shrink-0 border border-slate-200 mb-0.5" title="${scenario.clientName}">
+                  <img src="${scenario.clientAvatarImg || 'assets/avatars/user_zilola.jpg'}" alt="${scenario.clientName}" class="w-full h-full object-cover">
                 </div>
               </div>`;
           } else if (msg.role === 'ailo') {
             chatBox.innerHTML += `
-              <div class="flex flex-col items-start gap-1">
-                <div class="flex items-center gap-1.5 ml-1 mb-0.5">
-                  <span class="text-[10px] font-bold text-slate-900">${scenario.sender || 'Menejer'}</span>
-                  <span class="text-[8px] font-semibold text-emerald-600 bg-emerald-50 px-1 py-0.2 rounded border border-emerald-100">● Rasmiy profil (8s)</span>
+              <div class="flex items-start gap-2">
+                <div class="w-7 h-7 rounded-full overflow-hidden shrink-0 border border-purple-200 bg-white mt-0.5" title="${scenario.brandTitle}">
+                  <img src="${scenario.brandAvatarImg || 'assets/chinobod_fayz_logo_crop.png'}" alt="${scenario.sender}" class="w-full h-full object-cover">
                 </div>
-                <div class="bg-slate-50 border border-slate-200/70 text-slate-800 px-4 py-2.5 rounded-2xl rounded-tl-xs max-w-[90%] leading-relaxed chat-bubble-shadow">
-                  ${msg.text}
+                <div class="flex flex-col items-start gap-1 max-w-[85%]">
+                  <div class="flex items-center gap-1.5 ml-1 mb-0.5">
+                    <span class="text-[10px] font-bold text-slate-900">${scenario.sender || 'Menejer'}</span>
+                    <span class="text-[8px] font-semibold text-emerald-600 bg-emerald-50 px-1 py-0.2 rounded border border-emerald-100">● Rasmiy profil (8s)</span>
+                  </div>
+                  <div class="bg-slate-50 border border-slate-200/70 text-slate-800 px-4 py-2.5 rounded-2xl rounded-tl-xs leading-relaxed chat-bubble-shadow text-[13px]">
+                    ${msg.text}
+                  </div>
                 </div>
               </div>`;
           } else if (msg.role === 'card') {
             chatBox.innerHTML += `
-              <div class="bg-gradient-to-r from-slate-50 to-white rounded-2xl p-3 border border-slate-200/80 shadow-xs flex items-center justify-between gap-3">
+              <div class="bg-gradient-to-r from-slate-50 to-white rounded-2xl p-3 border border-slate-200/80 shadow-xs flex items-center justify-between gap-3 ml-9">
                 <div class="flex items-center gap-3">
                   <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white shrink-0">
                     <svg class="w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path d="M16 2L13 6H11L8 2H3L4 9H6V22H18V9H20L21 2H16Z"/></svg>
                   </div>
                   <div>
-                    <span class="text-[9px] font-black uppercase tracking-wider text-purple-700 bg-purple-100 px-2 py-0.5 rounded-md">MOS TANLOV</span>
+                    <span class="text-[9px] font-black uppercase tracking-wider text-teal-700 bg-teal-100 px-2 py-0.5 rounded-md">MOS TANLOV</span>
                     <div class="font-bold text-xs text-slate-900 mt-0.5">${msg.title}</div>
                     <div class="text-[10px] text-slate-500">${msg.meta}</div>
                   </div>
@@ -2683,7 +2731,7 @@
     }
 
     // Initialize Defaults
-    switchHeroIndustry('education');
+    switchHeroIndustry('clinic');
     switchUseCaseTab('creator');
   </script>
 </body>
