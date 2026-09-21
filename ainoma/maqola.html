@@ -54,9 +54,9 @@
 
   <main>
     <div class="article-shell article-head">
-      <div class="kicker">Tahlil · B2B AI & Texnologiya · E’lon qilingan sana: 10-Sentabr, 2026</div>
-      <h1>OpenAI Agents API va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</h1>
-      <p class="article-deck">Sun’iy intellekt oddiy matn yozuvchi chat bo‘lishdan chiqib, kompaniya tizimlariga ulangan avtonom xodimga aylanmoqda. Bu O‘zbekistondagi savdo, marketing va boshqaruv jarayonlariga qanday ta’sir qiladi?</p>
+      <div class="kicker" id="articleKicker">Tahlil · B2B AI & Texnologiya · E’lon qilingan sana: 10-Sentabr, 2026</div>
+      <h1 id="articleTitle">OpenAI Agents API va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</h1>
+      <p class="article-deck" id="articleDeck">Sun’iy intellekt oddiy matn yozuvchi chat bo‘lishdan chiqib, kompaniya tizimlariga ulangan avtonom xodimga aylanmoqda. Bu O‘zbekistondagi savdo, marketing va boshqaruv jarayonlariga qanday ta’sir qiladi?</p>
       
       <div class="byline">
         <div class="avatar">AN</div>
@@ -68,10 +68,11 @@
     </div>
 
     <div class="article-hero">
-      <img src="assets/ai_network.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
+      <img id="articleHeroImg" src="assets/ai_network.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
     </div>
 
     <article class="article-shell article-body">
+      <div id="articleDynamicContent">
       <p>OpenAI 2026-yil 10-sentabrda birdaniga ikkita yirik texnologik yangilanishni e’lon qildi: uzoq muddatli avtonom jarayonlar uchun mo‘ljallangan <strong>Agents API</strong> hamda kompaniya ichki jadvallarini avtomatik tahlil qiluvchi <strong>ChatGPT Work Data Agent</strong>.</p>
       
       <p>Ko‘pchilik buni navbatdagi texnik reliz deb o‘ylashi mumkin, ammo B2B sektori va biznes jarayonlarini avtomatlashtirish nuqtai nazaridan bu tub burilishdir.</p>
@@ -105,10 +106,12 @@
         <li><strong>Gibrid nazorat qoidasini joriy eting:</strong> Yirik bitimlar va murakkab masalalarni AI faqat tayyorlab bersin, yakuniy tasdiqni esa har doim inson qilsin.</li>
       </ol>
 
+      </div>
+
       <!-- Manbalar va Iqtiboslar -->
       <div style="background:var(--soft); border-left:3px solid var(--green); padding:16px 20px; border-radius:0 8px 8px 0; margin:28px 0; font-size:13px; color:var(--muted);">
         <b style="color:var(--ink); font-size:14px;">Asosiy manbalar va iqtiboslar:</b>
-        <ul style="margin:8px 0 0 18px; padding:0; line-height:1.7;">
+        <ul id="articleSourcesList" style="margin:8px 0 0 18px; padding:0; line-height:1.7;">
           <li>OpenAI Official Engineering Blog — <em>"Introducing the Agents API and Enterprise Tooling"</em> (<a href="https://openai.com/news/" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">openai.com/news ↗</a>)</li>
           <li>TechCrunch Enterprise AI Desk — <em>"OpenAI launches autonomous long-running agent workflows"</em> (<a href="https://techcrunch.com" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">techcrunch.com ↗</a>)</li>
           <li>VentureBeat AI Coverage — <em>"Data Agent integration for Snowflake and BigQuery"</em> (<a href="https://venturebeat.com" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">venturebeat.com ↗</a>)</li>
@@ -118,7 +121,7 @@
       <!-- Telegram Sharing Bar -->
       <div class="share-bar">
         <span class="share-label">Maqolani ulashing:</span>
-        <a class="btn telegram" href="https://t.me/share/url?url=https://ainoma.uz/maqola.html&text=OpenAI%20Agents%20API%20va%20ChatGPT%20Data%20Agent%20haqida%20tahlil" target="_blank" rel="noopener">
+        <a class="btn telegram" id="articleTgShare" href="https://t.me/share/url?url=https://ainoma.uz/maqola.html&text=OpenAI%20Agents%20API%20va%20ChatGPT%20Data%20Agent%20haqida%20tahlil" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
           Telegram’da do‘stlarga yuborish
         </a>
@@ -156,6 +159,58 @@
     </div>
   </footer>
 
+  <script src="articles-data.js"></script>
   <script src="app.js"></script>
+
+  <script>
+  (function() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var id = params.get('id');
+      if (id && window.AINOMA_ARTICLES && window.AINOMA_ARTICLES[id]) {
+        var art = window.AINOMA_ARTICLES[id];
+        document.title = art.title + " — AiNoma";
+        
+        var kicker = document.getElementById('articleKicker');
+        if (kicker) kicker.textContent = art.kicker;
+        
+        var title = document.getElementById('articleTitle');
+        if (title) title.textContent = art.title;
+        
+        var deck = document.getElementById('articleDeck');
+        if (deck) deck.textContent = art.deck;
+        
+        var authorRole = document.getElementById('articleAuthorRole');
+        if (authorRole) authorRole.textContent = (art.authorRole || "AiNoma Tahrir Guruhi") + " · " + (art.readTime || "4 daqiqalik mutolaa");
+        
+        var heroImg = document.getElementById('articleHeroImg');
+        if (heroImg) {
+          heroImg.src = art.img;
+          heroImg.alt = art.imgAlt || art.title;
+        }
+        
+        var dynamicContent = document.getElementById('articleDynamicContent');
+        if (dynamicContent && art.contentHtml) {
+          dynamicContent.innerHTML = art.contentHtml;
+        }
+        
+        var sourcesList = document.getElementById('articleSourcesList');
+        if (sourcesList && art.sources) {
+          sourcesList.innerHTML = art.sources.map(function(s) {
+            return '<li>' + s.name + ' (<a href="' + s.url + '" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">Asl manba ↗</a>)</li>';
+          }).join('');
+        }
+        
+        var tgShare = document.getElementById('articleTgShare');
+        if (tgShare) {
+          tgShare.href = "https://t.me/share/url?url=" + encodeURIComponent(window.location.href) + "&text=" + encodeURIComponent(art.title);
+        }
+      }
+    } catch(e) {
+      console.error("Maqola hydration error:", e);
+    }
+  })();
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,2423 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify InstaSales AI — Instagram Uchun 24/7 Avtonom AI Sotuvchi & Lead Voronkasi</title>
+  <meta name="description" content="Instagram izohlari va Direct'ga 8 soniyada insoniy tilda javob beruvchi, o'zbek, rus va ingliz tillarida mijozlarni savdoga olib keluvchi va lidlarni 24/7 CRM'ga uzatuvchi avtonom AI tizimi.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              900: '#0c4a6e',
+            },
+            insta: {
+              pink: '#E1306C',
+              purple: '#833AB4',
+              orange: '#F77737',
+              yellow: '#FCAF45',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --bg-base: #fafbfe;
+      --bg-surface: #ffffff;
+      --card-border: #e2e8f0;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      overflow-x: hidden;
+    }
+
+    /* Studio Light Dot Matrix Background */
+    .bg-dot-matrix {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+      mask-image: radial-gradient(ellipse at 50% 20%, black 50%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 20%, black 50%, transparent 85%);
+      opacity: 0.65;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Ambient Studio Light Auras */
+    .studio-glow-top {
+      position: absolute;
+      width: 900px;
+      height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(225, 48, 108, 0.08) 0%, rgba(131, 58, 180, 0.04) 40%, transparent 70%);
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      filter: blur(70px);
+      z-index: 0;
+    }
+
+    /* Gradient Matnlar */
+    .grad-text-insta {
+      background: linear-gradient(135deg, #F56040 0%, #E1306C 50%, #833AB4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .grad-bg-insta {
+      background: linear-gradient(135deg, #F56040 0%, #E1306C 50%, #833AB4 100%);
+    }
+
+    /* Crisp Light Cards */
+    .card-light {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.03), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .card-light:hover {
+      transform: translateY(-3px);
+      border-color: #cbd5e1;
+      box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+    }
+
+    .card-featured {
+      background: linear-gradient(180deg, #ffffff 0%, #fff7f9 100%);
+      border: 2px solid #f43f5e;
+      box-shadow: 0 20px 40px -8px rgba(225, 48, 108, 0.12);
+    }
+
+    /* Instagram Phone Simulator Scrollbars */
+    .insta-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .insta-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    .badge-pulse {
+      animation: pulse-glow 2.5s infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.95; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-pink-500 selection:text-white relative">
+
+  <!-- Dot Matrix Pattern & Ambient Top Glow -->
+  <div class="bg-dot-matrix"></div>
+  <div class="studio-glow-top"></div>
+
+  <!-- ================================================================= -->
+  <!-- TOP ANNOUNCEMENT TICKER (Studio Light) -->
+  <!-- ================================================================= -->
+  <aside class="relative z-10 bg-gradient-to-r from-pink-50 via-purple-50 to-rose-50 border-b border-pink-100 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-slate-700">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black bg-pink-500 text-white shadow-sm">YANGILIK</span>
+        <span>Instagram izohlari va Direct uchun <b>24/7 avtonom AI sotuvchi</b> tizimi.</span>
+      </div>
+      <a href="#simulator" class="flex items-center gap-1 text-pink-600 hover:text-pink-700 font-bold transition">
+        <span>Sinab ko‘rish</span>
+        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================================================================= -->
+  <!-- NAVBAR (Studio Light) -->
+  <!-- ================================================================= -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl grad-bg-insta flex items-center justify-center shadow-md shadow-pink-500/20 group-hover:scale-105 transition-transform">
+          <i data-lucide="instagram" class="w-6 h-6 text-white"></i>
+        </div>
+        <div>
+          <div class="text-lg font-black tracking-tight text-slate-900 flex items-center gap-1.5">
+            GPTify <span class="text-xs px-2 py-0.5 rounded-full bg-pink-50 text-pink-600 border border-pink-200 font-mono font-bold">InstaSales AI</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-medium">B2B AI Workflow Consultancy</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="#sohalar" class="hover:text-slate-900 transition">Sohalar</a>
+        <a href="#simulator" class="hover:text-pink-600 transition flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-pink-500 animate-ping"></span>
+          Jonli Simulyator
+        </a>
+        <a href="#solishtiruv" class="hover:text-slate-900 transition">Taqqoslash</a>
+        <a href="#kalkulyator" class="hover:text-slate-900 transition flex items-center gap-1">
+          <i data-lucide="calculator" class="w-3.5 h-3.5 text-emerald-600"></i>
+          <span>Kalkulyator</span>
+        </a>
+        <a href="#jarayon" class="hover:text-slate-900 transition">Jarayon</a>
+        <a href="#narxlar" class="hover:text-slate-900 transition">Narxlar</a>
+        <a href="#faq" class="hover:text-slate-900 transition">FAQ</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <button onclick="openAuditModal()" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl grad-bg-insta hover:opacity-95 text-white text-sm font-bold shadow-md shadow-pink-600/20 transition-all cursor-pointer">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span>Bepul Audit & Demo</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================= -->
+  <!-- HERO SECTION (Decluttered, Modern & Breathable Studio Light) -->
+  <!-- ================================================================= -->
+  <section id="hero" class="relative pt-16 pb-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      
+      <!-- Minimalist Status Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold mb-6 shadow-xs">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Meta Rasmiy API</span>
+        <span class="text-slate-300">•</span>
+        <span class="text-pink-600 font-black flex items-center gap-1">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>100% Insondek Muloqot</span>
+        </span>
+        <span class="text-slate-300">•</span>
+        <span class="text-slate-500 font-medium">Sovuq robot shablonlarisiz</span>
+      </div>
+
+      <!-- Main Headline: Crisp & Bold -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 max-w-4xl mx-auto leading-[1.12]">
+        Instagram Izohlari va Direct'ingizni <br class="hidden sm:inline">
+        <span class="grad-text-insta">24/7 Avtonom Sotuvchiga</span> Aylantiring.
+      </h1>
+
+      <!-- Short, High-Impact Subtitle -->
+      <p class="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
+        Oddiy sovuq botlar emas. Har bir izoh va Direct'ga <b>8 soniyada 100% insondek samimiy</b> javob bering, suhbatni Direct'da erkin davom ettiring va tayyor xaridorlarni Telegram yoki CRM'ingizga jamlang.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+        <a href="#simulator" class="w-full sm:w-auto px-8 py-3.5 rounded-2xl grad-bg-insta hover:opacity-95 text-white font-bold text-sm shadow-xl shadow-pink-600/25 flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5">
+          <i data-lucide="play-circle" class="w-4 h-4"></i>
+          <span>Jonli Simulyatorda Sinash</span>
+        </a>
+        <button onclick="openAuditModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm border border-slate-300 shadow-xs flex items-center justify-center gap-2 transition-all cursor-pointer">
+          <i data-lucide="sparkles" class="w-4 h-4 text-pink-600"></i>
+          <span>Bepul 15-daqiqalik Demo Olish</span>
+        </button>
+      </div>
+
+      <!-- Audit Micro-Value Indicator -->
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[11px] text-slate-500 font-medium">
+        <span class="text-slate-700 font-bold">💡 30 daqiqalik bepul auditda:</span>
+        <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-pink-600"></i> Izohlar auditi</span>
+        <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-pink-600"></i> Boy berilgan lidlar hisobi</span>
+        <span class="flex items-center gap-1"><i data-lucide="check" class="w-3 h-3 text-pink-600"></i> Shaxsiy AI ssenariy loyihasi</span>
+      </div>
+
+      <!-- Clean 1-Line Trust Stacking -->
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500 font-medium">
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i>
+          <span>Meta Graph API Compliant</span>
+        </span>
+        <span class="text-slate-300 hidden sm:inline">•</span>
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="key-round" class="w-3.5 h-3.5 text-sky-600"></i>
+          <span>Parolsiz xavfsiz ulanish</span>
+        </span>
+        <span class="text-slate-300 hidden sm:inline">•</span>
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="languages" class="w-3.5 h-3.5 text-pink-600"></i>
+          <span>Uz, Ru, En + 100+ xorijiy tillar</span>
+        </span>
+        <span class="text-slate-300 hidden sm:inline">•</span>
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="bell" class="w-3.5 h-3.5 text-purple-600"></i>
+          <span>Telegram bildirishnomalari</span>
+        </span>
+      </div>
+
+      <!-- Streamlined Numbers Strip (Breathable & Clean) -->
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto">
+        <div class="p-4 rounded-2xl card-light text-center">
+          <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono">8 sek</div>
+          <div class="text-[11px] text-slate-500 mt-1 font-semibold">Javob tezligi</div>
+        </div>
+        <div class="p-4 rounded-2xl card-light text-center">
+          <div class="text-2xl sm:text-3xl font-black text-sky-600 font-mono">100+ Til</div>
+          <div class="text-[11px] text-slate-500 mt-1 font-semibold">Uz, Ru, En + Global tillar</div>
+        </div>
+        <div class="p-4 rounded-2xl card-light text-center">
+          <div class="text-2xl sm:text-3xl font-black text-emerald-600 font-mono">24/7</div>
+          <div class="text-[11px] text-slate-500 mt-1 font-semibold">Uzluksiz savdo</div>
+        </div>
+        <div class="p-4 rounded-2xl card-light text-center">
+          <div class="text-2xl sm:text-3xl font-black text-pink-600 font-mono">94%</div>
+          <div class="text-[11px] text-slate-500 mt-1 font-semibold">Lid konversiyasi</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- INDUSTRY USE CASES SECTION (Sohalar Bo'yicha Yechimlar) -->
+  <!-- ================================================================= -->
+  <section id="sohalar" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wider mb-3 border border-purple-200">
+        <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+        <span>Har Bir Soha Uchun Tayyor Yechim</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+        Sizning Biznesingizda Qanday Natija Beradi?
+      </h2>
+      <p class="text-slate-600 text-base mt-2">
+        Har bir soha uchun AI sotuvchining maxsus o‘rganilgan muloqot skriptlari, voronkalari va Telegram bildirishnomalari mavjud:
+      </p>
+    </div>
+
+    <!-- 4 Industry Tabs Selector -->
+    <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10" id="industryTabButtons">
+      <button onclick="switchIndustry('ecommerce')" id="indBtn-ecommerce" class="px-5 py-3 rounded-2xl bg-slate-900 text-white font-bold text-xs shadow-md transition flex items-center gap-2">
+        <span>🛍️ E-Commerce & Do‘konlar</span>
+      </button>
+      <button onclick="switchIndustry('experts')" id="indBtn-experts" class="px-5 py-3 rounded-2xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 shadow-xs transition flex items-center gap-2">
+        <span>🎓 Ekspertlar & Infobiznes</span>
+      </button>
+      <button onclick="switchIndustry('clinic')" id="indBtn-clinic" class="px-5 py-3 rounded-2xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 shadow-xs transition flex items-center gap-2">
+        <span>🏥 Klinika & Go‘zallik</span>
+      </button>
+      <button onclick="switchIndustry('b2b')" id="indBtn-b2b" class="px-5 py-3 rounded-2xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 shadow-xs transition flex items-center gap-2">
+        <span>💼 B2B & Xizmatlar</span>
+      </button>
+    </div>
+
+    <!-- Active Industry Content Display Box -->
+    <div class="card-light rounded-3xl p-6 sm:p-10 border border-slate-200 bg-white shadow-xl" id="industryContentBox">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left details -->
+        <div class="lg:col-span-7">
+          <span class="px-2.5 py-1 rounded-md bg-pink-100 text-pink-700 font-mono text-xs font-bold" id="indBadge">E-COMMERCE RETRO</span>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mt-2 mb-3" id="indTitle">🛍️ E-Commerce, Kiyim va Retail Do‘konlari</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-6" id="indDesc">
+            Izohlarda eng ko‘p beriladigan: "Razmeri bormi?", "Yetkazib berish qancha?", "Narxi nechi?" kabi yuzlab so‘rovlarni 8 soniyada aniqlab, Direct'da rasm va buyurtma havolasini yuboradi.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="text-xl font-black text-slate-900 font-mono" id="indMetric1">8 soniya</div>
+              <div class="text-xs text-slate-500 font-medium" id="indMetric1Label">Narxga javob tezligi</div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="text-xl font-black text-emerald-600 font-mono" id="indMetric2">+38%</div>
+              <div class="text-xs text-slate-500 font-medium" id="indMetric2Label">Sotuv konversiyasi</div>
+            </div>
+          </div>
+
+          <!-- Dialog Preview in Industry -->
+          <div class="p-4 rounded-2xl bg-slate-50/80 border border-slate-200 space-y-2 text-xs">
+            <div class="font-bold text-slate-500 text-[10px] uppercase">Real Instagram Dialog Namunasi:</div>
+            <p class="text-slate-800"><span class="font-bold" id="indDialogUser">@malika_shop:</span> <span id="indDialogText">Assalomu alaykum, oq kofta razmeri bormi?</span></p>
+            <p class="text-pink-600 font-medium pl-3 border-l-2 border-pink-500 leading-relaxed" id="indDialogBot">
+              @malika_shop Assalomu alaykum! Ha, M va L razmerlari bor. Direct'ingizga to‘liq o‘lcham jadvali va buyurtma havolasini yubordik 🛍️
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Real Telegram Push Notification Mockup (Tadbirkor Olgan Natija) -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-sm bg-slate-900 text-white p-5 rounded-3xl shadow-xl border border-slate-800">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4 text-xs">
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-sky-500 flex items-center justify-center text-[10px] font-bold">TG</div>
+                <span class="font-bold text-white">Telegram Bildirishnomasi</span>
+              </div>
+              <span class="text-slate-400 font-mono text-[10px]">Hozir</span>
+            </div>
+
+            <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 text-xs font-mono leading-relaxed space-y-2">
+              <div class="text-pink-400 font-bold flex items-center gap-1.5" id="tgLeadTitle">
+                <i data-lucide="bell-ring" class="w-3.5 h-3.5"></i>
+                <span>YANGI BUYURTMA SO‘ROVI</span>
+              </div>
+              <div class="text-slate-300 text-[11px] whitespace-pre-line" id="tgLeadBody">
+👤 Mijoz: @malika_shop
+👗 Tovar: Oq kofta (M/L razmer)
+💬 So‘rov: Razmer va xarid
+🟢 Holat: Sayt katalogiga yo‘naltirildi
+              </div>
+            </div>
+
+            <p class="text-[11px] text-slate-400 mt-4 text-center">
+              Tadbirkor yoki savdo menejeri har bir lidni Telegram orqali real vaqtda qabul qiladi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- INTERACTIVE SIMULATOR SECTION (Studio Light) -->
+  <!-- ================================================================= -->
+  <section id="simulator" class="py-20 bg-white border-y border-slate-200 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-bold uppercase tracking-wider mb-3 border border-pink-200">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>Interaktiv Jonli Tajriba</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          AI Sotuvchini Hozir O‘zingiz Sinab Ko‘ring
+        </h2>
+        <p class="text-slate-600 text-base mt-3">
+          Quyidagi ssenariylardan birini bosing yoki pastdagi maydonga o‘z savolingizni yozib ko‘ring. Tizim qanday qilib maqtovni kalit so‘zdan ajratishini va 3 tilda javob berishini jonli kuzating!
+        </p>
+      </div>
+
+      <!-- Simulator Layout: Left (Controls & Preset Triggers) | Right (Instagram Light UI Screen) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+        
+        <!-- Left Column: Controls & Presets (Studio Light) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="p-6 rounded-3xl card-light bg-slate-50/50 border border-slate-200">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-800 mb-3 flex items-center gap-2">
+              <i data-lucide="mouse-pointer-click" class="w-4 h-4 text-pink-600"></i>
+              <span>Haqiqiy Mijoz Ssenariylari</span>
+            </h3>
+            <p class="text-xs text-slate-500 mb-4">
+              Tugmalardan birini bosing va o‘ng tarafdagi Instagram interfeysida botning reaktsiyasini ko‘ring:
+            </p>
+
+            <div class="space-y-2.5" id="presetButtons">
+              <button id="btnPreset-video_keyword" onclick="runSimPreset('video_keyword')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-pink-50/60 border border-slate-200 hover:border-pink-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-pink-100 text-pink-700 font-mono text-[10px] font-bold mr-1.5">VORONKA</span>
+                  <span class="font-bold">"video" yoki "VIDEO"</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">Izohga tasdiq + Direct'ga bot havolasi</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-pink-600 transition"></i>
+              </button>
+
+              <button id="btnPreset-en_praise" onclick="runSimPreset('en_praise')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-sky-50/60 border border-slate-200 hover:border-sky-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-sky-100 text-sky-700 font-mono text-[10px] font-bold mr-1.5">INGLIZCHA</span>
+                  <span class="font-bold">"This is amazing video!"</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">Xato qilmaydi! Inglizcha xarizmatik AI javob</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 transition"></i>
+              </button>
+
+              <button id="btnPreset-uz_question" onclick="runSimPreset('uz_question')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-emerald-50/60 border border-slate-200 hover:border-emerald-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 font-mono text-[10px] font-bold mr-1.5">SAVOL</span>
+                  <span class="font-bold">"Bu videoni qaysi dasturda qildingiz?"</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">Insoniy ekspert javobi (Sotuv reklamasisiz)</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition"></i>
+              </button>
+
+              <button id="btnPreset-ru_request" onclick="runSimPreset('ru_request')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-purple-50/60 border border-slate-200 hover:border-purple-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-purple-100 text-purple-700 font-mono text-[10px] font-bold mr-1.5">RUSCHA</span>
+                  <span class="font-bold">"Классное видео, скиньте ссылку"</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">Ruscha izoh javobi + Ruscha DM yuboriladi</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-purple-600 transition"></i>
+              </button>
+
+              <button id="btnPreset-uz_slang" onclick="runSimPreset('uz_slang')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-amber-50/60 border border-slate-200 hover:border-amber-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-mono text-[10px] font-bold mr-1.5">SLENG/FIKR</span>
+                  <span class="font-bold">"Video zo'r chiqibdi, gap yo'q!"</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">O'zbekona hurmat va samimiyat bilan javob</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-amber-600 transition"></i>
+              </button>
+
+              <button id="btnPreset-tr_global" onclick="runSimPreset('tr_global')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-teal-50/60 border border-slate-200 hover:border-teal-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-teal-100 text-teal-800 font-mono text-[10px] font-bold mr-1.5">100+ TILLAR</span>
+                  <span class="font-bold">"Harika video, fiyatı nedir?" (Turkcha/Global)</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">Xorijiy mijoz bilan o‘z tilida insondek erkin muloqot</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-teal-600 transition"></i>
+              </button>
+
+              <button id="btnPreset-criticism_objection" onclick="runSimPreset('criticism_objection')" class="sim-preset-btn w-full text-left p-3.5 rounded-2xl bg-white hover:bg-rose-50/60 border border-slate-200 hover:border-rose-500 text-xs font-semibold text-slate-900 transition flex items-center justify-between group shadow-xs">
+                <div>
+                  <span class="px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-mono text-[10px] font-bold mr-1.5">TANQID / E'TIROZ</span>
+                  <span class="font-bold">"Juda qimmat-ku, xizmat ko‘rsatish nol!"</span>
+                  <p class="text-[11px] text-slate-500 font-normal mt-0.5">Spam link tiqishtirmay, e'tirozni xushmuomala yechadi</p>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-rose-600 transition"></i>
+              </button>
+            </div>
+
+            <!-- Custom Input Bar -->
+            <div class="mt-5 pt-4 border-t border-slate-200">
+              <label for="customCommentInput" class="block text-xs font-bold text-slate-700 mb-2">Yoki o‘zingiz istalgan izoh yozib ko‘ring:</label>
+              <div class="flex gap-2">
+                <input id="customCommentInput" type="text" onkeydown="if(event.key==='Enter') submitCustomSim()" placeholder="Masalan: narxi qancha?, kurs bormi?, nice..." class="flex-1 px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-pink-500 transition shadow-inner">
+                <button onclick="submitCustomSim()" class="px-4 py-2.5 rounded-xl grad-bg-insta text-white font-bold text-xs shadow-md shadow-pink-600/20 hover:opacity-95 transition">
+                  Sinash
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Realistic Instagram Mobile Device Frame (Clean Light UI) -->
+        <div class="lg:col-span-7 flex justify-center">
+          <div class="w-full max-w-[390px] bg-white border-[8px] border-slate-900 rounded-[44px] shadow-2xl shadow-slate-400/20 overflow-hidden relative">
+            
+            <!-- Phone Notch / Status Bar (Clean Light Style) -->
+            <div class="bg-white text-slate-900 px-6 pt-3 pb-2 flex items-center justify-between text-[11px] font-mono border-b border-slate-100">
+              <span class="font-bold">09:41</span>
+              <div class="w-24 h-4 bg-slate-900 rounded-full"></div>
+              <div class="flex items-center gap-1 text-slate-700">
+                <i data-lucide="wifi" class="w-3.5 h-3.5"></i>
+                <i data-lucide="battery" class="w-3.5 h-3.5"></i>
+              </div>
+            </div>
+
+            <!-- Instagram Header (Light Mode) -->
+            <div class="bg-white px-4 py-3 border-b border-slate-200 flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full p-[1.5px] grad-bg-insta flex items-center justify-center">
+                  <div class="w-full h-full bg-white rounded-full flex items-center justify-center text-[10px] font-bold text-slate-900">
+                    SI
+                  </div>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-900 flex items-center gap-1">
+                    shukhrat.ai
+                    <i data-lucide="badge-check" class="w-3.5 h-3.5 text-sky-500 fill-sky-500"></i>
+                  </div>
+                  <div class="text-[10px] text-slate-500">GPTify.co Founder</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <button onclick="togglePhoneTab('comments')" id="tabBtnComments" class="text-[11px] font-bold text-pink-600 underline underline-offset-4">Izohlar</button>
+                <button onclick="togglePhoneTab('direct')" id="tabBtnDirect" class="text-[11px] font-bold text-slate-500 hover:text-slate-900 transition">Direct (DM)</button>
+              </div>
+            </div>
+
+            <!-- Phone Content Screen (Light Mode) -->
+            <div class="bg-slate-50 p-4 h-[440px] flex flex-col justify-between insta-scroll overflow-y-auto" id="phoneScreen">
+              
+              <!-- TAB 1: COMMENTS VIEW -->
+              <div id="viewComments" class="space-y-3.5">
+                <!-- Original Reel Info Card -->
+                <div class="bg-white rounded-xl p-2.5 border border-slate-200 flex items-center gap-2.5 text-xs text-slate-700 shadow-2xs">
+                  <div class="w-10 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-pink-600 shrink-0">
+                    <i data-lucide="film" class="w-5 h-5"></i>
+                  </div>
+                  <div class="flex-1 truncate">
+                    <p class="font-bold text-slate-900 text-[11px] truncate">Reels: Instagramda AI Sotuvchi Tizimi</p>
+                    <p class="text-[10px] text-slate-500">Materiallar uchun izohda "VIDEO" deb yozing...</p>
+                  </div>
+                </div>
+
+                <div class="text-[10px] uppercase tracking-wider text-slate-400 font-bold text-center my-2">
+                  Izohlar (Jonli oqim)
+                </div>
+
+                <!-- Live Sim Comment Stream -->
+                <div id="simCommentStream" class="space-y-3">
+                  <!-- User Comment -->
+                  <div class="flex gap-2.5 text-xs">
+                    <div class="w-7 h-7 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center text-[10px] font-bold shrink-0">
+                      U
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center gap-1.5">
+                        <span class="font-bold text-slate-900 text-[11px]" id="simUserHandle">@tadbirkor_uz</span>
+                        <span class="text-[10px] text-slate-400">1d</span>
+                      </div>
+                      <p class="text-slate-800 mt-0.5 text-xs font-medium" id="simUserCommentText">video</p>
+                    </div>
+                  </div>
+
+                  <!-- Bot Reply Bubble with Typing Animation -->
+                  <div class="flex gap-2.5 text-xs pl-6 border-l-2 border-pink-500" id="simBotReplyBox">
+                    <div class="w-6 h-6 rounded-full grad-bg-insta flex items-center justify-center text-white text-[9px] font-bold shrink-0 shadow-xs">
+                      AI
+                    </div>
+                    <div class="flex-1">
+                      <!-- Live Typing Indicator -->
+                      <div id="simTypingIndicator" class="hidden items-center gap-1.5 py-1 text-xs text-slate-500 font-medium">
+                        <span class="inline-flex gap-1 items-center">
+                          <span class="w-1.5 h-1.5 rounded-full bg-pink-500 animate-bounce" style="animation-delay: 0ms"></span>
+                          <span class="w-1.5 h-1.5 rounded-full bg-pink-500 animate-bounce" style="animation-delay: 150ms"></span>
+                          <span class="w-1.5 h-1.5 rounded-full bg-pink-500 animate-bounce" style="animation-delay: 300ms"></span>
+                        </span>
+                        <span class="text-[10px] text-pink-600 font-bold ml-1">shukhrat.ai javob yozmoqda...</span>
+                      </div>
+
+                      <!-- Actual Bot Response Content -->
+                      <div id="simBotReplyContent">
+                        <div class="flex items-center gap-1.5">
+                          <span class="font-bold text-pink-600 text-[11px]">shukhrat.ai</span>
+                          <span class="px-1.5 py-0.2 rounded bg-pink-100 text-pink-700 text-[8px] font-mono font-bold">BOT 8s</span>
+                          <span class="text-[10px] text-slate-400">hozir</span>
+                        </div>
+                        <p class="text-slate-700 mt-0.5 text-xs leading-relaxed" id="simBotReplyText">
+                          @tadbirkor_uz Assalomu alaykum! Video va kerakli materiallarni Direct'ga yubordik 📩
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Switch to Direct Callout -->
+                  <div class="pt-1.5 pl-6">
+                    <button type="button" onclick="togglePhoneTab('direct')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-50 hover:bg-pink-100 text-pink-700 text-[10px] font-bold border border-pink-200 shadow-2xs transition group">
+                      <i data-lucide="messages-square" class="w-3.5 h-3.5 text-pink-600 group-hover:scale-110 transition-transform"></i>
+                      <span>Direct'dagi insondek suhbatni ko‘rish →</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB 2: DIRECT MESSAGE (DM) VIEW (Light Mode) -->
+              <div id="viewDirect" class="space-y-3 hidden">
+                <div class="text-center py-2 border-b border-slate-200 relative">
+                  <button type="button" onclick="togglePhoneTab('comments')" class="absolute left-0 top-2 text-[10px] font-bold text-slate-500 hover:text-slate-900 flex items-center gap-0.5 transition">
+                    <i data-lucide="chevron-left" class="w-3.5 h-3.5"></i> Izohlar
+                  </button>
+                  <div class="w-9 h-9 rounded-full p-[1.5px] grad-bg-insta mx-auto mb-1 flex items-center justify-center">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center text-xs font-bold text-slate-900">SI</div>
+                  </div>
+                  <h4 class="text-xs font-bold text-slate-900">Shukhrat Iskandarov</h4>
+                  <p class="text-[10px] text-slate-500">Instagram Direct • 24/7 Insondek AI Sotuvchi</p>
+                </div>
+
+                <!-- Multi-Turn DM Message Stream -->
+                <div class="space-y-2.5" id="simDmStream">
+                  <!-- Dynamically populated by applySimData() -->
+                  <div class="max-w-[90%] bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-sm border border-slate-200 text-xs leading-relaxed shadow-sm" id="simDmBox">
+                    <div class="flex items-center gap-1.5 mb-1 text-[10px] text-pink-600 font-bold">
+                      <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+                      <span>shukhrat.ai (AI Sotuvchi)</span>
+                    </div>
+                    <p class="text-slate-700 mb-2.5" id="simDmText">
+                      Assalomu alaykum! 🤝 Videoda aytilgan barcha materiallar va bepul AI darslari rasmiy Telegram botimizda:
+                    </p>
+                    <a id="simDmActionLink" href="https://t.me/GPTifyUZBot?start=video" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 px-3 py-1.5 rounded-lg shadow-xs transition">
+                      <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                      <span id="simDmLinkText">Telegram Botni Ochish</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Status Footer in Phone -->
+              <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-[10px] text-slate-500 font-mono">
+                <span class="flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span id="simStatusLabel">Til: O'zbekcha (Lotin)</span>
+                </span>
+                <span id="simEngineLabel" class="font-bold text-slate-700">Gemini 2.5 Flash</span>
+              </div>
+            </div>
+
+            <!-- Realistic Instagram Mobile Bottom Action Bar (Clean Light Style) -->
+            <div class="bg-white px-4 py-2.5 border-t border-slate-200 flex items-center justify-between text-xs text-slate-400">
+              <div class="flex items-center gap-2 flex-1">
+                <div class="w-6 h-6 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-[9px] font-bold text-slate-600">
+                  U
+                </div>
+                <span class="text-[11px] text-slate-400 font-medium">Izoh yozing...</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-slate-400 select-none">
+                <span class="text-xs hover:scale-125 transition cursor-pointer">❤️</span>
+                <span class="text-xs hover:scale-125 transition cursor-pointer">🙌</span>
+                <span class="text-xs hover:scale-125 transition cursor-pointer">🔥</span>
+              </div>
+            </div>
+
+            <!-- iOS Home Indicator -->
+            <div class="bg-white pb-1.5 flex justify-center">
+              <div class="w-28 h-1 bg-slate-900/80 rounded-full"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- PAIN POINTS: WHY TRADITIONAL CHATBOTS & MANUAL REPLIES FAIL -->
+  <!-- ================================================================= -->
+  <section id="afzalliklar" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wider mb-3 border border-rose-200">
+        <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+        <span>Bozor Realligi</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+        Nega An'anaviy Usullar va Oddiy Botlar Savdoni Boy Bermoqda?
+      </h2>
+      <p class="text-slate-600 text-base mt-3 leading-relaxed">
+        Bugungi Instagram xaridori 10 daqiqa kutmaydi. Agar birinchi soniyalarda samimiy va to‘g‘ri javob olmasa, darhol boshqa raqobatchiga o‘tib ketadi.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Feature 1: Speed to lead -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-rose-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-5 border border-rose-200">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Kech Javob Berish va Boy Berilgan Lidlar</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Jonli operatorlar tushlikda, yig‘ilishda yoki kechasi uxlayotganda mijozlar soatlab javob kutadi. Natijada eng issiq xaridorlar sovub, raqobatchidan xarid qiladi.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: 8 soniyada 24/7/365 har bir so‘rovni tutib oladi</span>
+        </div>
+      </div>
+
+      <!-- Feature 2: Handling Criticism & Objections -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-red-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mb-5 border border-red-200">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Tanqid va E'tirozlarni Ustomonlik Bilan Yechish</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Oddiy botlar "Qimmat-ku!", "Xizmat nol" degan norozi izohga ham quruq reklama linkini tiqishtirib, brend obro‘sini to‘kadi. GPTify AI esa salbiy kayfiyatni sezadi, spam link tashlamay, e'tirozni xushmuomalalik bilan diplomatik hal qiladi.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: E'tirozni yumshatib, norozi mijozni do‘stga aylantiradi</span>
+        </div>
+      </div>
+
+      <!-- Feature 3: Dialects, Slang & Free Speech -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-purple-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center mb-5 border border-purple-200">
+            <i data-lucide="languages" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Kalit So‘zlar, Mahalliy Shevalar va Slenglar</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            ManyChat faqat 100% bir xil so‘zni qidiradi. Harf xato bo‘lsa ishlamaydi. Bizning Gemini AI esa Toshkent, Samarqand, vodiy shevalari, "skinte narxini", "razmeri bormi brat" kabi erkin jumlalar va lotin/kirill yozuvini kontekstdan mukammal tushunadi.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: Kalit so‘z va erkin xalqona gaplarni to‘liq tushunadi</span>
+        </div>
+      </div>
+
+      <!-- Feature 4: Multi-Turn Consultative Sales in DM -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-sky-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center mb-5 border border-sky-200">
+            <i data-lucide="messages-square" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Direct'da Uzluksiz Maslahatli Muloqot</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Oddiy botlar Direct'ga faqat 1 marta link tashlab to‘xtaydi. Agar xaridor "Yetkazib berish qancha?", "Rangi bormi?" deb so‘rasa, bot jim bo‘lib qoladi. GPTify esa Direct'da to‘xtovsiz insondek maslahat beradi va xaridga yetaklaydi.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: Direct'da ketma-ket savollarga javob beruvchi haqiqiy sotuvchi</span>
+        </div>
+      </div>
+
+      <!-- Feature 5: Insondek Natural Voice vs Rigid Buttons -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-amber-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-5 border border-amber-200">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">100% Insondek Samimiy va Xarizmatik Ovoz</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            "1 ni bosing, 2 ni bosing" degan primitiv sovuq menyular bugungi xaridorlarni bezdiradi. Biznesingizga robot emas, har bir mijozni qadrlaydigan, hurmat bilan ("Siz" deb) muloqot qiladigan samimiy xodim kerak.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: Mijoz siz bilan jonli inson gaplashmoqda deb o‘ylaydi</span>
+        </div>
+      </div>
+
+      <!-- Feature 6: Unlimited Growth & 0 so‘m Overage -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-emerald-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5 border border-emerald-200">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Cheksiz Kontaktlar & 0 so‘m Yashirin Jarimalar</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            ManyChat'da bitta Reels'ingiz virus bo‘lib ketib, 25,000 ta izoh kelsa — hisobingizdan kutilmagan jarimalar yechiladi. GPTify'da esa har qanday oqimda to‘lov qat'iy va shaffof: xabarlar ham, kontaktlar ham cheksiz!
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: 50,000 ta izoh kelsa ham 1 so‘m ortiqcha to‘lamaysiz</span>
+        </div>
+      </div>
+
+      <!-- Feature 7: Smart Human Takeover -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-indigo-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-5 border border-indigo-200">
+            <i data-lucide="user-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Smart Human Takeover (Menejer Pauzasi)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Agar do‘koningiz sotuvchisi yoki menejeri Direct'da mijozga o‘zi yoza boshlasa, AI bir zumda 30 daqiqaga pauzaga o‘tadi va insoniy suhbatga aslo xalaqit bermaydi. Menejer va AI bir-biriga raqib emas, mukammal jamoa bo‘lib ishlaydi.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: Tirik menejeringiz bilan hech qachon bahslashmaydi</span>
+        </div>
+      </div>
+
+      <!-- Feature 8: Strict Pricing & 0% Hallucination -->
+      <div class="p-8 rounded-3xl card-light border-t-4 border-t-teal-500 relative group flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5 border border-teal-200">
+            <i data-lucide="badge-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-black text-slate-900 mb-2">Qat'iy Narxlar & 0% Xayoliy Va'da (Guardrails)</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            AI siz kiritgan preyskurant, mavjud o‘lchamlar va qoidalardan 1 so‘m ham adashmaydi. O‘ylab topilgan narx yoki yolg‘on va'da berilmaydi. Barcha savollarga faqat siz tasdiqlagan bilimlar bazasidan qat'iy javob beradi.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-bold flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+          <span>GPTify: Preyskurant va qoidalardan 1 qadam ham chetga chiqmaydi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- 4-WAY DETAILED COMPARISON TABLE (Studio Light) -->
+  <!-- ================================================================= -->
+  <section id="solishtiruv" class="py-20 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-50 text-pink-700 text-xs font-bold uppercase tracking-wider mb-3 border border-pink-200">
+          <i data-lucide="check-square" class="w-3.5 h-3.5"></i>
+          <span>Bozordagi Yechimlar Taqqoslovi</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          GPTify InstaSales AI vs Boshqa Alternativalar
+        </h2>
+        <p class="text-slate-600 text-base mt-2">
+          GPTify, ManyChat, oddiy shablon botlar va jonli operatorlar o‘rtasidagi real faktlar:
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-xl">
+        <table class="w-full text-left border-collapse text-sm min-w-[820px]">
+          <thead>
+            <tr class="border-b border-slate-200 bg-slate-50 text-xs uppercase tracking-wider font-mono">
+              <th class="p-5 text-slate-700 font-bold w-1/4">Xususiyat / Mezon</th>
+              <th class="p-5 text-pink-700 font-black bg-pink-50/80 border-x-2 border-t-2 border-pink-500 relative w-1/4">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+                  <span>GPTify InstaSales AI</span>
+                </div>
+                <span class="text-[9px] px-2 py-0.5 rounded bg-pink-600 text-white font-sans font-bold uppercase mt-1 inline-block">Tavsiya etiladi</span>
+              </th>
+              <th class="p-5 text-slate-600 font-semibold w-1/6">ManyChat</th>
+              <th class="p-5 text-slate-600 font-semibold w-1/6">
+                Oddiy Shablon Botlar<br>
+                <span class="text-[10px] text-slate-400 normal-case font-normal">(Chatfuel, SendPulse)</span>
+              </th>
+              <th class="p-5 text-slate-600 font-semibold w-1/6">
+                Jonli Operator<br>
+                <span class="text-[10px] text-slate-400 normal-case font-normal">(SMM xodim / Inson)</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <!-- Row 1: Speed to lead -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Javob tezligi (Speed to Lead)</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-bold text-emerald-700">
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="zap" class="w-4 h-4 text-emerald-600"></i>
+                  <span>3 – 8 soniya (24/7 tezkor)</span>
+                </div>
+                <span class="text-[11px] text-slate-500 font-normal">Insoniy simulyatsiya bilan</span>
+              </td>
+              <td class="p-5 text-slate-600">1 – 3 daqiqa <span class="text-xs text-slate-400 block">(serverga bog‘liq)</span></td>
+              <td class="p-5 text-slate-600">30s – 2 daqiqa</td>
+              <td class="p-5 text-rose-600 font-medium">15 daqiqa – 4+ soat <span class="text-xs text-slate-400 block">(kechasi umuman yo‘q)</span></td>
+            </tr>
+
+            <!-- Row 2: Communication style -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Muloqot sifati & Sun'iy intellekt</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-bold text-emerald-700">
+                <span>100% Insoniy AI (Gemini 2.5)</span>
+                <span class="text-[11px] text-slate-600 font-normal block">Kontekstni tushunuvchi erkin suhbat</span>
+              </td>
+              <td class="p-5 text-slate-600">Quruq ssenariy & tugmalar <span class="text-xs text-slate-400 block">AI imkoniyatlari cheklangan</span></td>
+              <td class="p-5 text-slate-600">Faqat qat'iy bloklar <span class="text-xs text-slate-400 block">"1 ni bosing, 2 ni bosing"</span></td>
+              <td class="p-5 text-slate-700">Insoniy, lekin beqaror <span class="text-xs text-slate-400 block">Charchoq va kayfiyatga bog‘liq</span></td>
+            </tr>
+
+            <!-- Row 3: Languages & Slang -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Til bilish & Slenglarni tushunish</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-bold text-emerald-700">
+                <span>Uz, Ru, En + 100 ta til</span>
+                <span class="text-[11px] text-slate-600 font-normal block">Lotin/kirill, slenglar va xorijiy tillarni avto-aniqlash</span>
+              </td>
+              <td class="p-5 text-rose-600 font-medium">Juda past <span class="text-xs text-slate-400 block">Faqat 100% bir xil so‘zlar</span></td>
+              <td class="p-5 text-rose-600 font-medium">Cheklangan <span class="text-xs text-slate-400 block">Harf xato bo‘lsa ishlamaydi</span></td>
+              <td class="p-5 text-slate-700">Yaxshi <span class="text-xs text-slate-400 block">Agar xodim tillarni bilsa</span></td>
+            </tr>
+
+            <!-- Row 4: Praise vs Trigger filter -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Maqtov va savollarni ajratish</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-bold text-emerald-700">
+                <span>Aqlli salbiy filtrlar</span>
+                <span class="text-[11px] text-slate-600 font-normal block">Maqtovga rahmat, so‘rovga havola</span>
+              </td>
+              <td class="p-5 text-rose-600 font-medium">Ajratolmaydi <span class="text-xs text-slate-400 block">Hamma izohga reklama link tashlaydi</span></td>
+              <td class="p-5 text-rose-600 font-medium">Ajratolmaydi <span class="text-xs text-slate-400 block">Spam sifatida qabul qilinishi mumkin</span></td>
+              <td class="p-5 text-slate-700">Ajratadi <span class="text-xs text-slate-400 block">Ammo har biriga vaqt sarflaydi</span></td>
+            </tr>
+
+            <!-- Row 5: Ongoing Monthly Cost -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Oylik doimiy xarajat & Cheklovlar</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-black text-emerald-700 font-mono text-sm sm:text-base">
+                <span>390,000 – 630,000 so‘m / oy*</span>
+                <span class="text-[11px] text-slate-600 font-normal block font-sans"><b>Cheksiz kontaktlar & triggerlar!</b> 0 so‘m o‘rnatish, jarima va ortiqcha to‘lovlarsiz (*yillik to‘lovda)</span>
+              </td>
+              <td class="p-5 text-rose-700 font-bold font-mono text-xs sm:text-sm">500,000 – 3,800,000+ so‘m / oy <span class="text-xs text-slate-400 font-sans block">Kontakt oshsa dollar jarimalari ($0.05/extra kontakt). O‘rnatish o‘zingizdan.</span></td>
+              <td class="p-5 text-rose-700 font-bold font-mono text-xs sm:text-sm">250,000 – 1,300,000+ so‘m / oy <span class="text-xs text-slate-400 font-sans block">Doimiy oylik to‘lov, cheklangan xabarlar soni</span></td>
+              <td class="p-5 text-rose-700 font-bold font-mono text-xs sm:text-sm">4,500,000 – 7,500,000+ so‘m / oy <span class="text-xs text-slate-400 font-sans block">Xodimning oylik maoshi ($350–$600) + soliqlar</span></td>
+            </tr>
+
+            <!-- Row 6: 24/7 night coverage -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">24/7 Kechasi va dam olishda ishlash</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-bold text-emerald-700">
+                <span>24/7/365 uzluksiz</span>
+                <span class="text-[11px] text-slate-600 font-normal block">Kechasi 03:00 da ham 8 soniyada sotadi</span>
+              </td>
+              <td class="p-5 text-slate-600">24/7 (faqat oddiy tugmalar) <span class="text-xs text-slate-400 block">Yangi savollarga javob yo‘q</span></td>
+              <td class="p-5 text-slate-600">24/7 (faqat shablonlar) <span class="text-xs text-slate-400 block">Ssenariydan chiqa olmaydi</span></td>
+              <td class="p-5 text-rose-600 font-medium">Faqat ish vaqtida <span class="text-xs text-slate-400 block">10:00 – 19:00, dam olishda yo‘q</span></td>
+            </tr>
+
+            <!-- Row 7: CRM & Telegram integration -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Lidlarni Telegram & CRM ga yig‘ish</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-pink-500 font-bold text-emerald-700">
+                <span>To‘g‘ridan-to‘g‘ri integratsiya</span>
+                <span class="text-[11px] text-slate-600 font-normal block">Telegram guruh va CRM'ga avtomatik</span>
+              </td>
+              <td class="p-5 text-slate-600">Pullik Zapier/Make orqali <span class="text-xs text-slate-400 block">Qo‘shimcha oylik xarajat</span></td>
+              <td class="p-5 text-slate-600">Cheklangan webhooklar <span class="text-xs text-slate-400 block">Dasturchisiz sozlab bo‘lmaydi</span></td>
+              <td class="p-5 text-slate-700">Qo‘lda kiritish <span class="text-xs text-slate-400 block">Unutish va lid yo‘qotish xavfi</span></td>
+            </tr>
+
+            <!-- Row 8: Security -->
+            <tr>
+              <td class="p-5 font-bold text-slate-900">Akkaunt xavfsizligi</td>
+              <td class="p-5 bg-pink-50/40 border-x-2 border-b-2 border-pink-500 font-bold text-emerald-700 rounded-b-2xl">
+                <span>Meta Rasmiy Graph API</span>
+                <span class="text-[11px] text-slate-600 font-normal block">100% parolsiz xavfsiz token</span>
+              </td>
+              <td class="p-5 text-slate-600">Meta API ruxsatnomasi</td>
+              <td class="p-5 text-slate-600">Meta API ruxsatnomasi</td>
+              <td class="p-5 text-rose-600 font-medium">Xavfli <span class="text-xs text-slate-400 block">Parolni xodimga berishga majbursiz</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- COST SAVINGS CALCULATOR: US VS MANYCHAT & OTHERS (Interactive) -->
+  <!-- ================================================================= -->
+  <section id="kalkulyator" class="py-20 bg-gradient-to-b from-white via-slate-50 to-white border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-3 border border-emerald-200">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Shaffof Iqtisodiy Foyda</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          ManyChat Overage Jarimalaridan Yiliga Qancha Tejab Qolasiz?
+        </h2>
+        <p class="text-slate-600 text-base mt-2">
+          Instagramdagi oylik faol kontaktlaringiz sonini tanlang. ManyChat'ning qimmat tariflari va kontakt oshgandagi jarimalariga nisbatan GPTify'ning cheksiz kontaktli rejasida qancha tejashingizni hisoblang:
+        </p>
+      </div>
+
+      <div class="card-light p-8 sm:p-12 rounded-3xl border border-slate-200 bg-white shadow-xl">
+        <!-- Slider Control -->
+        <div class="max-w-2xl mx-auto mb-10">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-800">Oylik Faol Kontaktlar (DM & Izoh Yozganlar):</span>
+              <p class="text-[11px] text-slate-500 mt-0.5">
+                💡 <i>Eslatma: ManyChat sahifadagi umumiy obunachilar (followers) soniga emas, balki faqat bot bilan muloqot qilgan <b>"Active Contacts"</b> soniga qarab haq oladi.</i>
+              </p>
+            </div>
+            <span class="text-2xl font-black text-slate-900 font-mono shrink-0" id="sliderFollowersLabel">15,000 kontakt</span>
+          </div>
+          <input type="range" id="followersSlider" min="1000" max="50000" step="1000" value="15000" oninput="calculateSavings()" class="w-full h-3 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-pink-600">
+          <div class="flex justify-between text-[11px] text-slate-400 font-mono mt-2 font-semibold">
+            <span>1,000</span>
+            <span>10,000</span>
+            <span>25,000</span>
+            <span>50,000+</span>
+          </div>
+        </div>
+
+        <!-- 3 Comparison Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <!-- ManyChat / SaaS Cost Card -->
+          <div class="p-6 rounded-2xl bg-rose-50/70 border border-rose-200 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase text-rose-700 font-mono">ManyChat (Pro / Business)</span>
+              <div class="mt-2 font-mono">
+                <div class="text-3xl sm:text-4xl font-black text-rose-900 tracking-tight" id="manychatAnnualCost">22,890,000</div>
+                <div class="text-[11px] font-bold text-rose-700 font-sans uppercase tracking-wider mt-0.5">so‘m / yil</div>
+              </div>
+              <p class="text-xs text-rose-700 mt-2" id="manychatMonthlyRate">Oyiga: ~$149 (1,900,000 so‘m) + overage</p>
+              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                Kontaktlar ko‘paygani sari tarif avtomatik oshadi. Har bir ortiqcha kontakt uchun ~650–1,300 so‘m ($0.05–$0.10) jarima (overage fee).
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-rose-200 text-[11px] text-rose-800 font-semibold flex items-center gap-1">
+              <i data-lucide="x-circle" class="w-3.5 h-3.5 text-rose-600"></i>
+              <span>Kontakt oshgani sari qimmatlashadi</span>
+            </div>
+          </div>
+
+          <!-- GPTify AI Cost Card -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-bold uppercase text-slate-600 font-mono">GPTify AI Pro (Yillik Reja)</span>
+              <div class="mt-2 font-mono">
+                <div class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight" id="gptifyAnnualCost">7,560,000</div>
+                <div class="text-[11px] font-bold text-slate-600 font-sans uppercase tracking-wider mt-0.5">so‘m / yil</div>
+              </div>
+              <p class="text-xs text-slate-600 mt-2" id="gptifyMonthlyRate">Oyiga: 630,000 so‘m (3 oy bepul!)</p>
+              <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+                O‘rnatish 0 so‘m (sozlab beramiz). <b>Cheksiz kontaktlar & triggerlar:</b> Bir oyda 100,000 kontakt kelsa ham 1 so‘m ortiqcha to‘lamaysiz.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-700 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+              <span>Cheksiz kontaktlar & 0 so‘m o‘rnatish</span>
+            </div>
+          </div>
+
+          <!-- Savings (Result) Card -->
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-500/80 flex flex-col justify-between shadow-sm">
+            <div>
+              <span class="text-[11px] font-black uppercase text-emerald-800 font-mono flex items-center gap-1">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Sizning Yillik Sof Tejovingiz</span>
+              </span>
+              <div class="mt-2 font-mono">
+                <div class="text-3xl sm:text-4xl font-black text-emerald-900 tracking-tight" id="netSavingsLabel">+15,330,000</div>
+                <div class="text-[11px] font-bold text-emerald-800 font-sans uppercase tracking-wider mt-0.5">so‘m / yil</div>
+              </div>
+              <p class="text-xs text-emerald-800 font-bold mt-2" id="savingsPctLabel">ManyChat'dan ~67% arzonroq!</p>
+              <p class="text-xs text-slate-600 mt-3 leading-relaxed" id="savingsDesc">
+                Tejalgan ushbu byudjetni to‘g‘ridan-to‘g‘ri maqsadli reklama (Targeting) yoki mahsulot sifatiga sarflashingiz mumkin.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-emerald-200 text-xs font-bold text-emerald-900 flex items-center gap-1.5">
+              <i data-lucide="trending-up" class="w-4 h-4 text-emerald-700"></i>
+              <span id="paybackTimeLabel">0 so‘m o‘rnatish: birinchi kundanoq foyda</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Operational Comparison with Live Human Operators -->
+        <div class="mt-8 p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs text-amber-950 flex items-start gap-3">
+          <i data-lucide="info" class="w-5 h-5 text-amber-600 shrink-0 mt-0.5"></i>
+          <div>
+            <span class="font-bold text-slate-900 text-sm">Jonli operator (SMM xodim) bilan solishtirganda:</span>
+            <p class="mt-1 text-slate-700 leading-relaxed">
+              O‘zbekistonda 1 nafar savdo yoki SMM operatorining oylik maoshi o‘rtacha <b>4,500,000 – 6,500,000 so‘m</b> (yiliga <b>54,000,000 – 78,000,000 so‘m</b> / ~$350 – $500/oy). GPTify InstaSales AI nafaqat ManyChat kabi platformalar obunasini tejaydi, balki kechki payt va dam olish kunlarida boy beriladigan o‘nlab xaridorlarni ushlab, biznesingizga sof daromad keltiradi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action below calculator -->
+        <div class="mt-10 text-center">
+          <a href="https://t.me/shukhrat_ai?text=Assalomu%20alaykum!%20Kalkulyatorda%20hisoblab%20ko'rdim,%20Instagram%20AI%20sotuvchini%20sahifamga%20o'rnatish%20bo'yicha%20gaplashsak" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl grad-bg-insta hover:opacity-95 text-white font-bold text-sm shadow-lg shadow-pink-600/25 transition transform hover:-translate-y-0.5">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Tizimni Sahifamga O‘rnatish Bo‘yicha Gaplashish</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- HOW IT WORKS (Studio Light) -->
+  <!-- ================================================================= -->
+  <section id="jarayon" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider mb-3 border border-sky-200">
+        <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+        <span>Joriy Qilish Bosqichlari</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+        Tizimni Qanday O‘rnatamiz va Ishga Tushiramiz?
+      </h2>
+      <p class="text-slate-600 text-base mt-2">
+        Sizdan hech qanday murakkab dasturlash yoki texnik bilim talab qilinmaydi. Biz barchasini 3 kunda tayyorlab topshiramiz.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Step 1 -->
+      <div class="p-8 rounded-3xl card-light border-slate-200 relative">
+        <div class="text-4xl font-black text-pink-500 font-mono mb-4">01</div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">Meta API Xavfsiz Ulanishi</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Instagram biznes sahifangizni rasmiy Meta Graph API orqali ulaymiz. Hech qanday akkaunt parollari talab qilinmaydi. Xavfsiz va rasmiy ruxsatnoma.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="p-8 rounded-3xl card-light border-slate-200 relative">
+        <div class="text-4xl font-black text-pink-500 font-mono mb-4">02</div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">AI Bilimlar Bazasi va Skript</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Biznesingiz haqidagi barcha ma’lumotlarni (narxlar, xizmatlar, savol-javoblar, voronkalar) Gemini AI ga o‘rgatamiz va kalit so‘zlarni sozlaymiz.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="p-8 rounded-3xl card-light border-slate-200 relative">
+        <div class="text-4xl font-black text-pink-500 font-mono mb-4">03</div>
+        <h3 class="text-xl font-bold text-slate-900 mb-2">Avtonom Savdo va Hisobot</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Tizim AWS serveringizda 24/7 ishga tushadi. Har kuni kechki soat 21:00 da Telegramingizga nechta izoh va DM kelgani bo‘yicha to‘liq analitika kelib turadi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- PRICING PACKAGES (Studio Light) -->
+  <!-- ================================================================= -->
+  <section id="narxlar" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-3 border border-emerald-200">
+          <i data-lucide="badge-dollar-sign" class="w-3.5 h-3.5"></i>
+          <span>Shaffof B2B Obuna Modellari</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Biznesingiz Uchun Qulay Obuna Rejalari
+        </h2>
+        <p class="text-slate-600 text-base mt-2">
+          <b>0 so‘m o‘rnatish to‘lovi.</b> Cheksiz kontaktlar va triggerlar kafolati bilan qulay oylik yoki 20%–30% chegirmali yillik to‘lov.
+        </p>
+      </div>
+
+      <!-- Billing Cycle Toggle (Monthly vs Annual) -->
+      <div class="flex items-center justify-center mb-12">
+        <div class="inline-flex items-center p-1.5 rounded-2xl bg-slate-200/80 border border-slate-300 shadow-inner">
+          <button type="button" id="btnBillingMonthly" onclick="setBillingCycle('monthly')" class="px-5 py-2.5 rounded-xl font-bold text-xs text-slate-600 hover:text-slate-900 transition-all duration-200">
+            Oylik to‘lov
+          </button>
+          <button type="button" id="btnBillingAnnual" onclick="setBillingCycle('annual')" class="px-5 py-2.5 rounded-xl font-bold text-xs bg-slate-900 text-white shadow-md transition-all duration-200 flex items-center gap-2">
+            <span>Yillik to‘lov</span>
+            <span class="px-2 py-0.5 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-[10px] font-extrabold text-white uppercase tracking-wider">~30% chegirma</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+        
+        <!-- Tier 1: Start -->
+        <div class="p-8 rounded-3xl card-light flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Boshlang‘ich</span>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold border border-emerald-200">0 so‘m O‘rnatish</span>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">Lead Trigger Voronka</h3>
+            <p class="text-xs text-slate-500 mt-2">Reels va postlar ostida kalit so‘z orqali lid yig‘uvchi bizneslar uchun.</p>
+            <div class="my-6">
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-3xl sm:text-4xl font-black text-slate-900 font-mono" id="priceStart">390,000</span>
+                <span class="text-xs sm:text-sm font-bold text-slate-500 font-sans" id="periodStart"> so‘m / oy</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1" id="subnoteStart">Yiliga 4,680,000 so‘m to‘lanadi (~20% tejov)</p>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span><b>Cheksiz kontaktlar & lidlar</b> (Overage jarimalarsiz)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Meta Official API xavfsiz ulanishi (100% parolsiz)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span><b>Cheksiz kalit so‘zlar & triggerlar:</b> Istalgancha so‘z, belgi (VIDEO, KURS, +, NARX) va ssenariylar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span><b>Barcha Reels va postlar qamrovi:</b> Barcha postlaringizda cheklovlarsiz ishlaydi</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Avtomatik izoh javobi + Direct'ga shaxsiy xabar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Telegram botga yoki havola manziliga o‘tkazish zanjiri</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span>Doimiy texnik nazorat va server kiritilgan</span>
+              </li>
+            </ul>
+            <div class="mt-5 p-3 rounded-2xl bg-slate-50 border border-slate-200 text-[11px] text-slate-600 leading-snug">
+              🎯 <b>Kimga mos:</b> Kichik bloglar, shaxsiy sahifalar va avtomatlashtirishni endi boshlayotgan yangi loyihalar uchun.
+            </div>
+          </div>
+          <button onclick="openAuditModal('Start Voronka')" class="mt-8 w-full block text-center py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-900 font-bold text-xs transition cursor-pointer">
+            Start Tarifni Tanlash
+          </button>
+        </div>
+
+        <!-- Tier 2: AI Pro (Featured) -->
+        <div class="p-8 rounded-3xl card-featured flex flex-col justify-between relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full grad-bg-insta text-white font-black text-[10px] uppercase tracking-wider shadow-md">
+            Eng Ko‘p Tanlanadigan
+          </div>
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600">To‘liq Avtonom</span>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold border border-emerald-200">Aksiya: 0 so‘m O‘rnatish</span>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">AI Smart Sotuvchi</h3>
+            <p class="text-xs text-slate-600 mt-2">Izohlar va Direct'da insondek savdo qiluvchi, ko‘p tilli to‘liq AI xodim.</p>
+            <div class="my-6">
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-3xl sm:text-4xl font-black text-slate-900 font-mono" id="pricePro">630,000</span>
+                <span class="text-xs sm:text-sm font-bold text-pink-600 font-sans" id="periodPro"> so‘m / oy</span>
+              </div>
+              <p class="text-[11px] text-pink-600 font-semibold mt-1" id="subnotePro">Yiliga 7,560,000 so‘m to‘lanadi (~30% tejov / 3 oy bepul!)</p>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-700">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span><b>Barcha Start imkoniyatlari</b> (Cheksiz triggerlar & postlar)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span><b>Cheksiz kontaktlar & 0 so‘m Overage:</b> Post virus bo‘lsa ham 0 so‘m jarima</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span><b>Generativ Gemini 2.5 Flash AI:</b> Kalit so‘z shart emas — har qanday erkin savolga javob</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span><b>Ko‘p tilli AI:</b> O‘zbek, Rus, Ingliz (slenglar) + 100+ xorijiy tillar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span>Tanqid, e'tiroz va salbiy izohlarni insondek muloyim boshqarish</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span>Direct'da ko‘p bosqichli insondek muloqot va savdoni yopish</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span>Har kuni soat 21:00 da Telegramga tahliliy hisobot</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-pink-600"></i>
+                <span>To‘liq kafolat va doimiy texnik qo‘llab-quvvatlash</span>
+              </li>
+            </ul>
+            <div class="mt-5 p-3 rounded-2xl bg-pink-50/80 border border-pink-200 text-[11px] text-pink-900 leading-snug">
+              ⭐ <b>Kimga mos:</b> Faol savdo qiluvchi kiyim do‘konlari, retail, klinika, go‘zallik salonlari va infobiznes ekspertlari uchun.
+            </div>
+          </div>
+          <button onclick="openAuditModal('AI Smart Sotuvchi (Pro)')" class="mt-8 w-full block text-center py-3.5 rounded-xl grad-bg-insta hover:opacity-90 text-white font-bold text-xs shadow-lg shadow-pink-600/30 transition cursor-pointer">
+            AI Pro Rejani Tanlash
+          </button>
+        </div>
+
+        <!-- Tier 3: Enterprise -->
+        <div class="p-8 rounded-3xl card-light flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-600">Omnichannel AI</span>
+              <span class="px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 text-[10px] font-bold border border-purple-200">Instagram + Telegram + CRM</span>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">CRM & Omnichannel</h3>
+            <p class="text-xs text-slate-500 mt-2">Instagram va Telegram bot uchun yagona AI sotuvchi hamda to‘liq CRM integratsiyasi.</p>
+            <div class="my-6">
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-3xl sm:text-4xl font-black text-slate-900 font-mono" id="priceEnterprise">1,290,000</span>
+                <span class="text-xs sm:text-sm font-bold text-purple-600 font-sans" id="periodEnterprise"> so‘m / oy</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1" id="subnoteEnterprise">Yiliga 15,480,000 so‘m to‘lanadi (~25% tejov)</p>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+                <span><b>Barcha AI Pro imkoniyatlari</b></span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+                <span><b>Instagram + Telegram AI Bot:</b> Har ikki tarmoqda yagona avtonom AI sotuvchi</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+                <span><b>Cheksiz kontaktlar & cheksiz triggerlar:</b> Ustuvor server tezligi</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+                <span>AmoCRM / Bitrix24 / Google Sheets ikki tomonlama sinxron</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+                <span>Jonli savdo menejeriga suhbatni uzatish xabarnomasi</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+                <span>Ko‘p akkauntli arxitektura va 24/7 shaxsiy SLA</span>
+              </li>
+            </ul>
+            <div class="mt-5 p-3 rounded-2xl bg-purple-50/80 border border-purple-200 text-[11px] text-purple-900 leading-snug">
+              🏢 <b>Kimga mos:</b> Savdo bo‘limi, amoCRM/Bitrix24 tizimi va kuniga yuzlab lidi bor yirikroq kompaniyalar uchun.
+            </div>
+          </div>
+          <button onclick="openAuditModal('Enterprise & Omnichannel')" class="mt-8 w-full block text-center py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-900 font-bold text-xs transition cursor-pointer">
+            Omnichannel Rejani Tanlash
+          </button>
+        </div>
+
+      </div>
+
+      <!-- 14-Day 100% Risk-Free Guarantee Banner -->
+      <div class="mt-8 p-6 sm:p-7 rounded-3xl bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border border-emerald-300 flex flex-col md:flex-row items-center justify-between gap-5 shadow-xs">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-emerald-600/20">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h4 class="text-base font-black text-slate-900">14 Kunlik 100% Xavf-Xatarsiz Sinov Kafolati</h4>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase tracking-wider">0% Tavakkal</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed max-w-2xl">
+              Agar dastlabki 14 kun ichida GPTify InstaSales AI sizning kutganingizdek natija bermasa yoki xizmatimiz sizga to‘liq ma'qul kelmasa, to‘lovingizni <b>100% so‘zsiz qaytarib beramiz</b>. Hech qanday byurokratiyasiz va noqulay savollarsiz.
+            </p>
+          </div>
+        </div>
+        <div class="shrink-0">
+          <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white text-emerald-800 font-bold text-xs border border-emerald-300 shadow-xs">
+            <i data-lucide="badge-check" class="w-4 h-4 text-emerald-600"></i>
+            <span>100% Pul Qaytarish Kafolati</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Optional Add-on: Telegram AI Bot & Channel Comment Responder -->
+      <div class="mt-8 p-6 sm:p-8 rounded-3xl bg-white border border-sky-200 shadow-lg shadow-sky-500/5 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 text-white flex items-center justify-center shrink-0 shadow-md shadow-sky-500/20">
+            <i data-lucide="bot" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-800 text-[10px] font-bold uppercase tracking-wider">Qo‘shimcha Modul (Add-on)</span>
+              <span class="text-xs font-semibold text-slate-500">Ixtiyoriy kengaytma</span>
+            </div>
+            <h4 class="text-lg font-black text-slate-900 mt-1">Telegram AI Bot & Kanal Avtopiloti</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed max-w-2xl">
+              Instagram bilan parallel ravishda shaxsiy <b>Telegram botingiz</b> (DM) va <b>Telegram kanalingiz izohlariga</b> ham 24/7 insoniy AI javob beruvchi, savdoni yopuvchi va lidlarni yagona bazaga jamlovchi modul.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-4 text-xs text-slate-700">
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-sky-600"></i> Telegram bot shaxsiy xabarlari (DM)</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-sky-600"></i> Kanal postlari ostidagi izohlarga AI javob</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-sky-600"></i> Instagram bilan yagona umumiy bilimlar bazasi</span>
+            </div>
+          </div>
+        </div>
+        <div class="shrink-0 text-center md:text-right w-full md:w-auto pt-4 md:pt-0 border-t md:border-t-0 border-slate-100">
+          <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono">+370,000 so‘m <span class="text-xs font-normal text-slate-500 font-sans">/ oy</span></div>
+          <p class="text-[11px] text-slate-500 mt-0.5">Istalgan paketga qo‘shish mumkin</p>
+          <a href="https://t.me/shukhrat_ai?text=Assalomu%20alaykum!%20Instagram%20paketiga%20Telegram%20AI%20bot%20modulini%20ham%20qo'shmoqchi%20edim" target="_blank" class="mt-3 inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-md shadow-sky-600/20 transition">
+            <span>Add-onni Qo‘shish</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Value Guarantee: Unlimited Contacts vs ManyChat Overage -->
+      <div class="mt-12 p-6 rounded-3xl bg-gradient-to-r from-pink-50 via-purple-50 to-rose-50 border border-pink-200 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-pink-600 text-white flex items-center justify-center shrink-0 shadow-md">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-base font-bold text-slate-900">Cheksiz Kontaktlar Kafolati (0 so‘m Yashirin Jarimalar)</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ManyChat'da bitta Reels'ingiz virus bo‘lib 20,000 kontakt kelsa, oyiga 1,900,000+ so‘mdan to‘lashga va ortiqcha kontaktlarga dollar jarimalari to‘lashga majbur bo‘lasiz. GPTify'da esa barcha tariflarda kontaktlar soni <b>cheksiz</b> — qat'iy va shaffof oylik obuna.
+            </p>
+          </div>
+        </div>
+        <div class="shrink-0 flex items-center gap-2">
+          <span class="px-3.5 py-1.5 rounded-full bg-white text-emerald-700 font-bold text-xs border border-emerald-200 shadow-xs flex items-center gap-1.5">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+            0 so‘m O‘rnatish to‘lovi
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- FOUNDER & TRUST SECTION (Studio Light) -->
+  <!-- ================================================================= -->
+  <section class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="p-8 sm:p-12 rounded-3xl card-light flex flex-col md:flex-row items-center gap-8 border-slate-200">
+      <div class="w-32 h-32 rounded-3xl p-1 grad-bg-insta shrink-0 shadow-lg shadow-pink-600/20">
+        <div class="w-full h-full bg-slate-900 rounded-[22px] flex items-center justify-center text-3xl font-black text-white">
+          SI
+        </div>
+      </div>
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-pink-600 mb-1">Tizim Arxitektori</div>
+        <h3 class="text-2xl font-black text-slate-900">Shukhrat Iskandarov</h3>
+        <p class="text-xs text-slate-500 mt-0.5">GPTify.co asoschisi & Cubeo.ai hammuassisi</p>
+        <p class="text-sm text-slate-600 mt-4 leading-relaxed">
+          "Biz shunchaki nazariya sotmaymiz. Ushbu Instagram AI tizimini avval o‘z sahifamizda (@shukhrat.ai), 100 minglab ko‘rishlar va minglab izohlarda sinab, har bir holatni (maqtov, savol, xato yozilgan so‘zlar) mukammallashtirdik. Biznesingizga o‘rnatib berganimizdan keyin, birinchi kundanoq mijozlaringizga professional insondek xizmat ko‘rsatishni boshlaydi."
+        </p>
+        <div class="mt-5 flex items-center gap-4">
+          <a href="https://instagram.com/shukhrat.ai" target="_blank" class="text-xs text-pink-600 hover:text-pink-700 font-bold flex items-center gap-1.5 transition">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+            <span>@shukhrat.ai</span>
+          </a>
+          <span class="text-slate-300">•</span>
+          <a href="https://t.me/shukhrat_ai" target="_blank" class="text-xs text-sky-600 hover:text-sky-700 font-bold flex items-center gap-1.5 transition">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Telegram: @shukhrat_ai</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- FAQ ACCORDION (Studio Light) -->
+  <!-- ================================================================= -->
+  <section id="faq" class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-black text-slate-900 tracking-tight">Ko‘p Beriladigan Savollar</h2>
+      <p class="text-slate-600 text-sm mt-2">Barcha nozik texnik va operatsion tafsilotlar:</p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="p-5 rounded-2xl card-light border-slate-200 group" open>
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>Instagram akkauntim bloklanib qolmaydimi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Mutlaqo xavfsiz. Biz noqonuniy skriptlar emas, balki rasmiy <b>Meta Graph API (Instagram Official API)</b> orqali ishlaymiz. Bundan tashqari, spam filtrlariga tushmaslik uchun har bir javob orasida 3–6 soniyalik tasodifiy insoniy kechikish (human simulation) qo‘llangan.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>Oylik obuna nimani o‘z ichiga oladi? Yashirin to‘lovlar yoki kontakt/kalit so‘z limiti bormi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Hech qanday yashirin to‘lovlar yo‘q. GPTify oylik obunasi (390,000 so‘m, 630,000 so‘m yoki 1,290,000 so‘m/oy) Gemini 2.5 Flash sun'iy intellekti, 24/7 bulutli server quvvati, Meta Graph API integratsiyasi va to‘liq texnik kafolatni o‘z ichiga oladi. Eng muhimi — ManyChat kabi tizimlardan farqli o‘laroq, bizda kontaktlar soni yoki kalit so‘zlar bo‘yicha sun'iy limit yoki ortiqcha kontakt jarimalari (overage fee) yo‘q. Reels'ingiz virus bo‘lib ketib, 50,000 kontakt kelsa ham to‘lovingiz bir tiyinga ham oshmaydi.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>Instagram akkauntim parolini berishim shartmi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Yo‘q! Siz hech qachon parolingizni kimgadir bermasligingiz kerak. Biz rasmiy Facebook Business Manager orqali faqat bot uchun xavfsiz token (ruxsatnoma) olamiz. Akkauntingiz 100% sizning nazoratingizda qoladi.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>O‘zbekcha xato yoki shevada yozilgan so‘zlarni tushunadimi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Ha. Gemini 2.5 modeli o‘zbek tilidagi lotin, kirill, slenglar va grammatik xatolarni kontekstdan mukammal tushunadi. Masalan: "skolko", "narxi nechi", "skinte", "bormi" kabi so‘zlarni darhol aniqlab, to‘g‘ri javob beradi.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>Turizm yoki eksport uchun boshqa tillarni ham (turkcha, arabcha, qozoqcha) tushunadimi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Albatta! Tizimimiz asosida turgan <b>Google Gemini 2.5 Flash</b> neyrotarmog‘i dunyodagi 100 dan ortiq tillarni qo‘shimcha tarjimonlarsiz mukammal tushunadi. Xorijlik sayyoh yoki xaridor qaysi tilda (turkcha, arabcha, nemischa, qozoqcha va b.) murojaat qilsa, AI aynan o‘sha tilda insondek samimiy muloqot olib boradi.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>Mijoz izohda tanqid, e'tiroz yoki salbiy fikr yozsa, AI nima qiladi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          Oddiy botlar har qanday izohga bir xil quruq shablon yoki reklama havolasini tashlab, norozi mijozni battar g‘azablantiradi. Bizning Gemini 2.5 AI esa avval izoh hissiyotini (sentiment) tahlil qiladi. Agar mijoz "juda qimmat", "kechikdi" yoki "xizmat yoqmadi" deb yozsa, tizim unga aslo spam link tiqishtirmaydi. Aksincha, samimiy uzr so‘rab, vaziyatni to‘g‘rilashga tayyorligini bildiradi va muammoni zudlik bilan ijobiy hal qilish uchun Direct'da mas'ul xodimga xushmuomala yo‘naltiradi.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>Bizning jonli sotuvchi/menejerimiz Direct'da o‘zi yoza boshlasa, bot xalaqit bermaydimi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          <b>Mutlaqo yo‘q!</b> Tizimimizda maxsus <b>Smart Human Takeover</b> texnologiyasi o‘rnatilgan. Agar sizning tirik sotuvchingiz yoki do‘kon egasi Instagram ilovasidan mijozga o‘zi yoza boshlasa, AI buni 1 soniyada sezadi va o‘sha suhbatni 30 daqiqaga to‘liq pauzaga qo‘yadi. Menejeringiz suhbatni bemalol o‘zi yopishi mumkin, AI esa xalaqit bermay orqada turadi.
+        </p>
+      </details>
+
+      <details class="p-5 rounded-2xl card-light border-slate-200 group">
+        <summary class="font-bold text-slate-900 text-sm cursor-pointer list-none flex items-center justify-between">
+          <span>AI mijozlarga noto‘g‘ri narx yoki yolg‘on va'da aytib qo‘ymaydimi?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition"></i>
+        </summary>
+        <p class="mt-3 text-xs text-slate-600 leading-relaxed">
+          <b>Hech qachon.</b> GPTify InstaSales AI qat'iy <b>Deterministic Guardrails (xavfsizlik devori)</b> bilan cheklangan. U faqat siz taqdim etgan rasmiy preyskurant, mavjud o‘lchamlar va yetkazib berish qoidalari asosida javob beradi. Tizimda o‘ylab topilgan narx yoki xayoliy chegirma berish (gallyutsinatsiya) xavfi qat'iy bloklangan.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- FINAL CALL TO ACTION (Studio Light) -->
+  <!-- ================================================================= -->
+  <section class="py-20 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="p-10 sm:p-14 rounded-3xl bg-gradient-to-r from-pink-50 via-purple-50 to-rose-50 border border-pink-200 shadow-xl">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Instagramingizni Bugunoq Avtonom Savdo Mashinasiga Aylantiring
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-4 max-w-xl mx-auto">
+          Boy berilayotgan mijozlar va ortiqcha operatsion to‘lovlarga chek qo‘ying. 30 daqiqalik bepul konsultatsiyada sahifangizni audit qilib, aynan qaysi voronka eng ko‘p lid olib kelishini ko‘rsatib beramiz.
+        </p>
+
+        <!-- 3 Specific Audit Deliverables -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-left max-w-3xl mx-auto mb-8">
+          <div class="p-4 rounded-2xl bg-white/90 border border-pink-200/80 shadow-2xs">
+            <div class="w-8 h-8 rounded-xl bg-pink-100 text-pink-700 font-black flex items-center justify-center text-xs mb-2.5">1</div>
+            <h5 class="text-xs font-bold text-slate-900">Izohlarni Chuqur Audit Qilish</h5>
+            <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">So‘nggi post va Reels’dagi izohlar oqimini tahlil qilib, javobsiz qolayotgan issiq so‘rovlarni aniqlaymiz.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/90 border border-purple-200/80 shadow-2xs">
+            <div class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 font-black flex items-center justify-center text-xs mb-2.5">2</div>
+            <h5 class="text-xs font-bold text-slate-900">Lid Yo‘qotish Hisobi</h5>
+            <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Kech javob sababli har oy necha dollar sof daromad raqobatchilarga ketayotganini ko‘rsatamiz.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/90 border border-emerald-200/80 shadow-2xs">
+            <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 font-black flex items-center justify-center text-xs mb-2.5">3</div>
+            <h5 class="text-xs font-bold text-slate-900">Shaxsiy AI Ssenariy</h5>
+            <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Sahifangiz biznes modeliga moslashtirilgan tayyor avtonom savdo voronkasi loyihasini taqdim etamiz.</p>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openAuditModal()" class="w-full sm:w-auto px-8 py-4 rounded-2xl grad-bg-insta hover:opacity-95 text-white font-extrabold text-sm shadow-xl shadow-pink-600/25 flex items-center justify-center gap-2 transition-all cursor-pointer">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Bepul Audit & Demo Buyurtma Qilish</span>
+          </button>
+          <a href="https://t.me/shukhrat_ai?text=Assalomu%20alaykum,%20Shukhrat!%20Instagram%20AI%20Sotuvchi%20tizimi%20haqida%20gaplashmoqchi%20edim" target="_blank" rel="noopener" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm border border-slate-300 shadow-xs flex items-center justify-center gap-2 transition">
+            <i data-lucide="send" class="w-4 h-4 text-sky-600"></i>
+            <span>Telegramda Bog‘lanish (@shukhrat_ai)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- FOOTER (Studio Light) -->
+  <!-- ================================================================= -->
+  <footer class="border-t border-slate-200 bg-white py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-slate-900">GPTify</span>
+        <span>— Pragmatic B2B AI Workflow Consultancy & Systems Builder.</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-500 font-semibold">
+        <a href="index.html" class="hover:text-slate-900 transition">AiNoma Portali</a>
+        <a href="https://t.me/gptifyuz" target="_blank" class="hover:text-slate-900 transition">@gptifyuz</a>
+        <a href="https://instagram.com/shukhrat.ai" target="_blank" class="hover:text-slate-900 transition">@shukhrat.ai</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- JAVASCRIPT LOGIC: SIMULATOR, CALCULATOR & INDUSTRY TABS -->
+  <!-- ================================================================= -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // -------------------------------------------------------------
+    // 1. INDUSTRY USE CASES DATA STORE & SWITCHER
+    // -------------------------------------------------------------
+    const industryData = {
+      ecommerce: {
+        badge: "E-COMMERCE & RETAIL",
+        title: "🛍️ E-Commerce, Kiyim va Do‘konlar",
+        description: "Izohlarda eng ko‘p beriladigan: 'Razmeri bormi?', 'Yetkazib berish qancha?', 'Narxi nechi?' degan yuzlab so‘rovlarni 8 soniyada aniqlab, Direct'da tovar kartochkasi va buyurtma havolasini yuboradi.",
+        metric1: "8 soniya", metric1Label: "Narxga javob tezligi",
+        metric2: "+38%", metric2Label: "Sotuv konversiyasi",
+        dialogUser: "@malika_shop",
+        dialogText: "Assalomu alaykum, oq kofta razmeri bormi?",
+        dialogBot: "@malika_shop Assalomu alaykum! Ha, M va L razmerlari bor. Direct'ingizga to‘liq o‘lcham jadvali va buyurtma havolasini yubordik 🛍️",
+        tgLeadTitle: "YANGI BUYURTMA SO‘ROVI (Instagram)",
+        tgLeadBody: "👤 Mijoz: @malika_shop\n👗 Tovar: Oq kofta (M/L razmer)\n💬 So‘rov: Razmer va xarid\n🟢 Holat: Sayt katalogiga yo‘naltirildi"
+      },
+      experts: {
+        badge: "EKSPERTLAR & INFOBIZNES",
+        title: "🎓 Ekspertlar, Ta’lim Markazlari & Kurslar",
+        description: "Reels va postlar ostida 'VIDEO', 'KURS', 'PROMPT' yoki '+' qoldirgan har bir foydalanuvchini 8 soniyada shaxsiy Telegram botingizga yoki bepul master-klassga olib kiradi.",
+        metric1: "200+ lid/kun", metric1Label: "Bitta Reels'dan o‘rtacha",
+        metric2: "94%", metric2Label: "Telegram botga o‘tish",
+        dialogUser: "@azamat_it",
+        dialogText: "video",
+        dialogBot: "@azamat_it Assalomu alaykum! Video va darslik materiallarini Direct'ga yubordik 📩",
+        tgLeadTitle: "YANGI TINGLOVCHI (Reels Voronka)",
+        tgLeadBody: "👤 Mijoz: @azamat_it\n🎬 Manba: 'Instagram AI Sotuvchi' Reels\n🎁 Olingan: Telegram Bot darslik havolasi\n🟢 Holat: Bepul darsga muvaffaqiyatli yozildi"
+      },
+      clinic: {
+        badge: "KLINIKA & GO‘ZALLIK",
+        title: "🏥 Tibbiyot Klinikalari, Stomatologiya & Salonlar",
+        description: "Mijozlarning shifokorlar grafigi, xizmat narxlari va lokatsiya bo‘yicha savollariga samimiy javob berib, qabulga yozish uchun telefon raqamlarini to‘playdi.",
+        metric1: "24/7", metric1Label: "Kechki payt ham qabul",
+        metric2: "+45%", metric2Label: "Ro‘yxatdan o‘tuvchilar",
+        dialogUser: "@zuhra_99",
+        dialogText: "Ertaga tish tozalashga yozilsa bo‘ladimi?",
+        dialogBot: "@zuhra_99 Assalomu alaykum! Ha, ertaga soat 14:00 va 17:00 da qabul bo‘sh. Direct'da vaqtingizni band qilib beraylikmi? 🦷✨",
+        tgLeadTitle: "QABULGA YOZILISH SO‘ROVI (Klinika)",
+        tgLeadBody: "👤 Mijoz: @zuhra_99\n🦷 Xizmat: Tish tozalash\n🕒 Vaqt: Ertaga 14:00 yoki 17:00\n📞 Tel: Administratorga qo‘ng‘iroq uchun uzatildi"
+      },
+      b2b: {
+        badge: "B2B & XIZMATLAR",
+        title: "💼 B2B Kompaniyalar, Ishlab chiqarish & Xizmatlar",
+        description: "Katta buyurtmalar va korporativ so‘rovlarni birinchi bo‘lib kutib oladi, mijozning byudjeti va talablarini aniqlab, tayyor lid holatida savdo menejeringizga topshiradi.",
+        metric1: "100%", metric1Label: "Lidlarni saralash",
+        metric2: "0 soniya", metric2Label: "Menejer vaqti tejalishi",
+        dialogUser: "@logistic_ceo",
+        dialogText: "Korxona uchun ulgurji narxlar bormi?",
+        dialogBot: "@logistic_ceo Assalomu alaykum! Albatta, ulgurji buyurtmalar uchun maxsus shartlarimiz bor. Direct'da qisqacha ma'lumot qoldirdik 🤝",
+        tgLeadTitle: "KORPORATIV B2B SO‘ROV",
+        tgLeadBody: "👤 Mijoz: @logistic_ceo\n📦 Tur: Ulgurji xarid\n🏢 Korxona rahbari\n🟢 Holat: Savdo bo‘limi boshlig‘iga CRM orqali uzatildi"
+      }
+    };
+
+    function switchIndustry(indKey) {
+      const data = industryData[indKey];
+      if (!data) return;
+
+      // Update button styles
+      const btnIds = ['ecommerce', 'experts', 'clinic', 'b2b'];
+      btnIds.forEach(id => {
+        const btn = document.getElementById(`indBtn-${id}`);
+        if (id === indKey) {
+          btn.className = "px-5 py-3 rounded-2xl bg-slate-900 text-white font-bold text-xs shadow-md transition flex items-center gap-2";
+        } else {
+          btn.className = "px-5 py-3 rounded-2xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 shadow-xs transition flex items-center gap-2";
+        }
+      });
+
+      // Update details
+      document.getElementById('indBadge').innerText = data.badge;
+      document.getElementById('indTitle').innerText = data.title;
+      document.getElementById('indDesc').innerText = data.description;
+      document.getElementById('indMetric1').innerText = data.metric1;
+      document.getElementById('indMetric1Label').innerText = data.metric1Label;
+      document.getElementById('indMetric2').innerText = data.metric2;
+      document.getElementById('indMetric2Label').innerText = data.metric2Label;
+
+      document.getElementById('indDialogUser').innerText = data.dialogUser + ':';
+      document.getElementById('indDialogText').innerText = data.dialogText;
+      document.getElementById('indDialogBot').innerText = data.dialogBot;
+
+      document.getElementById('tgLeadTitle').innerHTML = `<i data-lucide="bell-ring" class="w-3.5 h-3.5"></i> <span>${data.tgLeadTitle}</span>`;
+      document.getElementById('tgLeadBody').innerText = data.tgLeadBody;
+
+      lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------
+    // 2. BILLING CYCLE TOGGLE & PRICING SWITCHER (Option B SaaS)
+    // -------------------------------------------------------------
+    let currentBillingCycle = 'annual';
+
+    const pricingData = {
+      annual: {
+        start: { price: '390,000', period: ' so‘m / oy', note: 'Yiliga 4,680,000 so‘m to‘lanadi (~20% tejov)' },
+        pro: { price: '630,000', period: ' so‘m / oy', note: 'Yiliga 7,560,000 so‘m to‘lanadi (~30% tejov / 3 oy bepul!)' },
+        enterprise: { price: '1,290,000', period: ' so‘m / oy', note: 'Yiliga 15,480,000 so‘m to‘lanadi (~25% tejov)' }
+      },
+      monthly: {
+        start: { price: '490,000', period: ' so‘m / oy', note: 'Har oy qulay to‘lab boriladi' },
+        pro: { price: '890,000', period: ' so‘m / oy', note: 'Har oy qulay to‘lab boriladi' },
+        enterprise: { price: '1,690,000', period: ' so‘m / oy', note: 'Har oy qulay to‘lab boriladi' }
+      }
+    };
+
+    function setBillingCycle(cycle) {
+      currentBillingCycle = cycle;
+      const btnMonthly = document.getElementById('btnBillingMonthly');
+      const btnAnnual = document.getElementById('btnBillingAnnual');
+
+      if (cycle === 'annual') {
+        btnAnnual.className = "px-5 py-2.5 rounded-xl font-bold text-xs bg-slate-900 text-white shadow-md transition-all duration-200 flex items-center gap-2";
+        btnMonthly.className = "px-5 py-2.5 rounded-xl font-bold text-xs text-slate-600 hover:text-slate-900 transition-all duration-200";
+      } else {
+        btnMonthly.className = "px-5 py-2.5 rounded-xl font-bold text-xs bg-slate-900 text-white shadow-md transition-all duration-200";
+        btnAnnual.className = "px-5 py-2.5 rounded-xl font-bold text-xs text-slate-600 hover:text-slate-900 transition-all duration-200 flex items-center gap-2";
+      }
+
+      const data = pricingData[cycle];
+      document.getElementById('priceStart').innerText = data.start.price;
+      document.getElementById('periodStart').innerText = data.start.period;
+      document.getElementById('subnoteStart').innerText = data.start.note;
+
+      document.getElementById('pricePro').innerText = data.pro.price;
+      document.getElementById('periodPro').innerText = data.pro.period;
+      document.getElementById('subnotePro').innerText = data.pro.note;
+
+      document.getElementById('priceEnterprise').innerText = data.enterprise.price;
+      document.getElementById('periodEnterprise').innerText = data.enterprise.period;
+      document.getElementById('subnoteEnterprise').innerText = data.enterprise.note;
+    }
+
+    // -------------------------------------------------------------
+    // 3. MANYCHAT SAVINGS CALCULATOR LOGIC
+    // -------------------------------------------------------------
+    function calculateSavings() {
+      const slider = document.getElementById('followersSlider');
+      const count = parseInt(slider.value, 10);
+      
+      document.getElementById('sliderFollowersLabel').innerText = count.toLocaleString() + ' kontakt';
+      
+      // ManyChat real tier monthly cost (Pro / Business) based on Active Contacts (USD)
+      let mcMonthlyUSD = 15;
+      if (count <= 1000) mcMonthlyUSD = 15;
+      else if (count <= 2500) mcMonthlyUSD = 39;
+      else if (count <= 5000) mcMonthlyUSD = 65;
+      else if (count <= 10000) mcMonthlyUSD = 99;
+      else if (count <= 15000) mcMonthlyUSD = 149;
+      else if (count <= 25000) mcMonthlyUSD = 199;
+      else if (count <= 35000) mcMonthlyUSD = 249;
+      else mcMonthlyUSD = 299;
+
+      const exchangeRate = 12800; // 1 USD ~ 12,800 UZS
+      const mcAnnualSom = mcMonthlyUSD * 12 * exchangeRate;
+      const mcMonthlySom = mcMonthlyUSD * exchangeRate;
+      
+      // GPTify AI Pro Flat Annual (630,000 so'm/mo -> 7,560,000 so'm/yr with UNLIMITED contacts & 0 so'm setup)
+      const gptifyAnnualSom = 7560000;
+      const netSavingsSom = mcAnnualSom - gptifyAnnualSom;
+      const savingsPct = Math.round((netSavingsSom / mcAnnualSom) * 100);
+
+      document.getElementById('manychatAnnualCost').innerText = mcAnnualSom.toLocaleString();
+      document.getElementById('manychatMonthlyRate').innerText = 'Oyiga: ~$' + mcMonthlyUSD + ' (' + mcMonthlySom.toLocaleString() + ' so‘m) + overage';
+      
+      document.getElementById('gptifyAnnualCost').innerText = gptifyAnnualSom.toLocaleString();
+      document.getElementById('gptifyMonthlyRate').innerText = 'Oyiga: 630,000 so‘m (3 oy bepul!)';
+      
+      const netLabel = document.getElementById('netSavingsLabel');
+      const pctLabel = document.getElementById('savingsPctLabel');
+      const descEl = document.getElementById('savingsDesc');
+      const paybackEl = document.getElementById('paybackTimeLabel');
+
+      if (netSavingsSom > 0) {
+        netLabel.innerText = '+' + netSavingsSom.toLocaleString();
+        pctLabel.innerText = 'ManyChat\'dan ~' + savingsPct + '% arzonroq!';
+        pctLabel.className = 'text-xs text-emerald-800 font-bold mt-1';
+        if (descEl) descEl.innerText = 'Tejalgan ushbu byudjetni to‘g‘ridan-to‘g‘ri maqsadli reklama (Targeting) yoki mahsulot sifatiga sarflashingiz mumkin.';
+        if (paybackEl) paybackEl.innerText = '0 so‘m o‘rnatish: birinchi kundanoq sof foyda';
+      } else if (count <= 1000) {
+        netLabel.innerText = 'AI Ustunligi';
+        pctLabel.innerText = 'Kichik hajmda oddiy shablon bot';
+        pctLabel.className = 'text-xs text-slate-600 font-bold mt-1';
+        if (descEl) descEl.innerText = '1,000 kontaktda ManyChat quruq tugmali shablon beradi (~$15/oy). GPTify esa oyiga 630,000 so‘mga to‘liq Gemini 2.5 sun\'iy intellekti, cheksiz kalit so‘zlar va cheksiz kontakt kafolatini beradi — post virus bo‘lganda sizni yuzlab dollar overage jarimasidan 100% asraydi.';
+        if (paybackEl) paybackEl.innerText = '5,000+ kontaktdan sof naqd tejov boshlanadi';
+      } else {
+        netLabel.innerText = 'Teng Narx & AI';
+        netLabel.className = 'text-3xl font-black text-emerald-800 mt-2 font-mono';
+        pctLabel.innerText = 'ManyChat bilan deyarli teng narx!';
+        pctLabel.className = 'text-xs text-emerald-700 font-bold mt-1';
+        if (descEl) descEl.innerText = 'ManyChat ~$39/oy oladi, ammo sun\'iy intellekt bermaydi. GPTify esa to‘liq aqlli AI xodim va Reels oqimida cheksiz kontakt kafolatini beradi.';
+        if (paybackEl) paybackEl.innerText = 'Cheksiz kontakt: 0 so‘m jarima xavfi';
+      }
+    }
+
+    // Run calculator on initial load
+    calculateSavings();
+
+    // -------------------------------------------------------------
+    // 4. INSTAGRAM SIMULATOR LOGIC
+    // -------------------------------------------------------------
+    const simPresets = {
+      video_keyword: {
+        user: '@tadbirkor_uz',
+        comment: 'video',
+        lang: 'O‘zbekcha (Lotin)',
+        isTrigger: true,
+        reply: '@tadbirkor_uz Assalomu alaykum! Video va kerakli materiallarni Direct\'ga yubordik 📩',
+        dmIntro: 'Assalomu alaykum! 🤝',
+        dmText: '🎬 Videoda aytilgan barcha materiallar va bepul AI darslari rasmiy Telegram botimizda:',
+        dmLinkText: 'Telegram Botni Ochish',
+        dmUrl: 'https://t.me/GPTifyUZBot?start=video',
+        multiTurn: [
+          { sender: 'bot', text: 'Assalomu alaykum! 🤝 Videoda aytilgan barcha materiallar va bepul AI darslari rasmiy Telegram botimizda tayyor:' },
+          { sender: 'user', text: 'Katta rahmat! Bu tizim kiyim do‘konlariga ham to‘g‘ri keladimi?' },
+          { sender: 'bot', text: 'Albatta! Ayniqsa kiyim do‘konlarida "razmer bormi", "narxi qancha", "yetkazib berish" kabi savollarni 100% insondek yopadi va buyurtmalarni to‘g‘ridan-to‘g‘ri Telegram yoki CRM’ga tayyor lead qilib uzatadi 🚀' }
+        ]
+      },
+      criticism_objection: {
+        user: '@toshkent_xaridor',
+        comment: 'Juda qimmat-ku, xizmat ko‘rsatish nol!',
+        lang: 'Tanqid / E’tiroz Yechish',
+        isTrigger: false,
+        reply: '@toshkent_xaridor Fikringiz uchun rahmat! Agar xizmatimizda qandaydir kamchilik sezgan bo‘lsangiz, biz uchun sifat muhim. Vaziyatni to‘g‘rilash va sizga yordam berish uchun Direct’da bog‘landik 🤝',
+        dmIntro: 'Assalomu alaykum! 🤝',
+        dmText: 'Fikringiz biz uchun juda muhim. Qaysi xizmatimiz bo‘yicha noqulaylikka duch keldingiz? Sizga alohida shaxsiy yechim va yordam taklif qilmoqchimiz:',
+        dmLinkText: 'Menejer Bilan Bog‘lanish',
+        dmUrl: 'https://t.me/shukhrat_ai',
+        multiTurn: [
+          { sender: 'bot', text: 'Assalomu alaykum! 🤝 Fikringiz biz uchun juda muhim. Qaysi xizmatimiz bo‘yicha noqulaylikka duch keldingiz? Sizga alohida shaxsiy yechim va yordam taklif qilmoqchimiz:' },
+          { sender: 'user', text: 'Oldingi xizmatda yetkazib berish kechikkan edi, shunga jahlim chiqqandi.' },
+          { sender: 'bot', text: 'Tushundik, noqulaylik uchun chin dildan uzr so‘raymiz! Logistika bo‘limimiz bilan xatolik to‘liq bartaraf etildi. Sizga hurmatimiz belgisi sifatida keyingi buyurtmangizga 15% maxsus chegirma va bepul yetkazishni biriktirib qo‘ydik 🤝' }
+        ]
+      },
+      en_praise: {
+        user: '@tech_marketer',
+        comment: 'This is amazing video!',
+        lang: 'Inglizcha (English)',
+        isTrigger: false,
+        reply: '@tech_marketer Thank you so much! Glad you enjoyed the vibe, more practical AI breakdowns are on the way! 🚀🔥',
+        dmIntro: 'Hello! 🤝',
+        dmText: 'Thanks for engaging with our post! If you ever need tailored AI workflow automation, feel free to drop a message anytime.',
+        dmLinkText: 'Explore GPTify Insights',
+        dmUrl: 'https://t.me/GPTifyUZBot?start=video',
+        multiTurn: [
+          { sender: 'bot', text: 'Hello! 🤝 Thank you for engaging with our post! If you ever need tailored AI workflow automation, feel free to drop a message anytime.' },
+          { sender: 'user', text: 'Does your system handle dynamic follow-up conversations autonomously?' },
+          { sender: 'bot', text: 'Yes, absolutely! It retains context, handles objections politely, and guides prospective clients seamlessly into your sales funnel 🚀' }
+        ]
+      },
+      uz_question: {
+        user: '@dilshod_dev',
+        comment: 'Bu videoni qaysi dasturda qildingiz?',
+        lang: 'O‘zbekcha (Lotin)',
+        isTrigger: false,
+        reply: '@dilshod_dev Ushbu videoni bir nechta kuchli neyrotarmoqlar (masalan, Midjourney va Runway) yordamida yaratdik! 🚀 Jarayon haqida sahifamizda tez-tez ulashib boramiz ✨',
+        dmIntro: 'Assalomu alaykum! 🤝',
+        dmText: 'Savolingiz uchun rahmat! Agar video yaratish vositalari bo‘yicha qo‘llanma kerak bo‘lsa, rasmiy botimizdan yuklab olishingiz mumkin:',
+        dmLinkText: 'AI Qo‘llanmani Yuklash',
+        dmUrl: 'https://t.me/GPTifyUZBot?start=pdf',
+        multiTurn: [
+          { sender: 'bot', text: 'Assalomu alaykum! 🤝 Savolingiz uchun rahmat! Agar video yaratish vositalari bo‘yicha qo‘llanma kerak bo‘lsa, rasmiy botimizdan yuklab olishingiz mumkin:' },
+          { sender: 'user', text: 'Sizlarda tayyor tizim o‘rnatib berish xizmati ham bormi?' },
+          { sender: 'bot', text: 'Ha, albatta! Biznesingiz uchun Instagram AI sotuvchini 2–3 kunda to‘liq "pod klyuch" o‘rnatib, sozlab beramiz ⚡' }
+        ]
+      },
+      ru_request: {
+        user: '@rustam_invest',
+        comment: 'Классное видео, скиньте ссылку',
+        lang: 'Ruscha (Русский)',
+        isTrigger: true,
+        reply: '@rustam_invest Здравствуйте! Отправили видео и полезные материалы в Direct 📩',
+        dmIntro: 'Здравствуйте! 🤝',
+        dmText: '🎬 Все материалы из видео и бесплатные уроки по AI в нашем официальном Telegram-боте:',
+        dmLinkText: 'Открыть Telegram-бот',
+        dmUrl: 'https://t.me/GPTifyUZBot?start=video',
+        multiTurn: [
+          { sender: 'bot', text: 'Здравствуйте! 🤝 Все материалы из видео и бесплатные уроки по AI в нашем официальном Telegram-боте:' },
+          { sender: 'user', text: 'А есть ли интеграция с нашей amoCRM?' },
+          { sender: 'bot', text: 'Да, конечно! В тарифах AI Pro и Omnichannel настроена прямая двухсторонняя синхронизация с amoCRM, Bitrix24 и Google Sheets в реальном времени 🚀' }
+        ]
+      },
+      uz_slang: {
+        user: '@azamat_builder',
+        comment: 'Video zo‘r chiqibdi, gap yo‘q!',
+        lang: 'O‘zbekcha (Fikr/Maqtov)',
+        isTrigger: false,
+        reply: '@azamat_builder Rahmat! Sizga yoqqanidan juda xursandmiz, hali bundan ham amaliy va zo‘r tizimlarni ko‘rsatamiz! 🚀🔥',
+        dmIntro: 'Assalomu alaykum! 🤝',
+        dmText: 'E’tibor va fikringiz uchun katta rahmat! Loyihalaringizda doim yordamga tayyormiz.',
+        dmLinkText: 'Kanalimizga Qo‘shilish',
+        dmUrl: 'https://t.me/gptifyuz',
+        multiTurn: [
+          { sender: 'bot', text: 'Assalomu alaykum! 🤝 E’tibor va iliq so‘zlaringiz uchun katta rahmat! Loyihalaringizda doim yordamga tayyormiz.' },
+          { sender: 'user', text: 'Akaxon oylik to‘lovlari qancha bo‘lyapti?' },
+          { sender: 'bot', text: 'Tariflarimiz oyiga 390,000 so‘mdan boshlanadi. ManyChat kabi qo‘shimcha kontaktlar uchun jarimalarsiz, cheksiz triggerlar va erkin muloqot imkoniyati mavjud 🤝' }
+        ]
+      },
+      tr_global: {
+        user: '@mehmet_invest',
+        comment: 'Harika bir video, fiyatı ve detayları alabilir miyim?',
+        lang: 'Turkcha (Türkçe / 100+ Til)',
+        isTrigger: true,
+        reply: '@mehmet_invest Merhaba! İlginiz için teşekkür ederiz. Tüm detayları ve fiyat teklifini Direct kutunuza ilettik 📩',
+        dmIntro: 'Merhaba! 🤝',
+        dmText: '🎬 GPTify InstaSales AI hakkında tüm detaylar ve ücretsiz sunum resmi Telegram kanalımızda:',
+        dmLinkText: 'Detaylı Bilgi Alın',
+        dmUrl: 'https://t.me/GPTifyUZBot?start=video',
+        multiTurn: [
+          { sender: 'bot', text: 'Merhaba! 🤝 GPTify InstaSales AI hakkında tüm detaylar ve ücretsiz sunum resmi Telegram kanalımızda:' },
+          { sender: 'user', text: 'Sistem kurulumu ne kadar sürüyor?' },
+          { sender: 'bot', text: 'Kurulumumuz ortalama 24-48 saat içinde anahtar teslim olarak tamamlanır. Tüm süreci uzman ekibimiz yönetir 🤝' }
+        ]
+      }
+    };
+
+    function runSimPreset(presetKey) {
+      const data = simPresets[presetKey];
+      if (!data) return;
+
+      // Highlight active preset button
+      document.querySelectorAll('.sim-preset-btn').forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-pink-500', 'bg-pink-50/70', 'border-pink-400');
+        btn.classList.add('border-slate-200');
+      });
+      const activeBtn = document.getElementById('btnPreset-' + presetKey);
+      if (activeBtn) {
+        activeBtn.classList.remove('border-slate-200');
+        activeBtn.classList.add('ring-2', 'ring-pink-500', 'bg-pink-50/70', 'border-pink-400');
+      }
+
+      applySimData(data);
+    }
+
+    function submitCustomSim() {
+      const input = document.getElementById('customCommentInput');
+      const val = input.value.trim();
+      if (!val) return;
+
+      const lower = val.toLowerCase();
+      let detectedLang = "O‘zbekcha";
+      let isTrigger = false;
+      let reply = "";
+      let dmText = "";
+      let dmLinkText = "Telegram Botni Ochish";
+      let dmUrl = "https://t.me/GPTifyUZBot?start=custom";
+      let customMultiTurn = null;
+
+      // 1. Criticism / Objections Detection (Prioritized)
+      if (/\b(qimmat|yomon|yoqmadi|xato|brak|nol|firibgar|aldov|kechikdi|norozi|shikoyat|ishlamadi|dovdir|aldash)\b/i.test(lower)) {
+        detectedLang = "Tanqid / E’tiroz Yechish";
+        isTrigger = false;
+        reply = `@user Fikringiz uchun rahmat! Agar xizmatimizda qandaydir kamchilik sezgan bo‘lsangiz, biz uchun sifat muhim. Vaziyatni to‘g‘rilash va sizga yordam berish uchun Direct’da bog‘landik 🤝`;
+        dmText = `Assalomu alaykum! Fikringiz biz uchun juda muhim. Qaysi xizmatimiz bo‘yicha noqulaylikka duch keldingiz? Sizga alohida shaxsiy yechim va yordam taklif qilmoqchimiz:`;
+        dmLinkText = "Menejer Bilan Bog‘lanish";
+        dmUrl = "https://t.me/shukhrat_ai";
+        customMultiTurn = [
+          { sender: 'bot', text: 'Assalomu alaykum! 🤝 Fikringiz biz uchun juda muhim. Qaysi xizmatimiz bo‘yicha noqulaylikka duch keldingiz? Sizga alohida shaxsiy yechim va yordam taklif qilmoqchimiz:' },
+          { sender: 'user', text: val },
+          { sender: 'bot', text: 'E’tirozingizni to‘liq tushundik. Har bir mijozimiz fikri biz uchun qadrli — masalani eng yaxshi tarzda hal qilish uchun mas’ul mutaxassisimiz xizmatingizda 🤝' }
+        ];
+      }
+      // 2. Multilingual: Turkish
+      else if (/\b(fiyat|harika|merhaba|nasil|nasıl|guzel|güzel|teşekkür|tesekkur|lutfen|lütfen)\b/i.test(lower)) {
+        detectedLang = "Turkcha (Türkçe / 100+ Til)";
+        isTrigger = lower.includes("fiyat") || lower.includes("detay") || lower.includes("link");
+        reply = isTrigger 
+          ? `@user Merhaba! Detaylı bilgi ve fiyat teklifimizi Direct kutunuza ilettik 📩`
+          : `@user Yorumunuz için çok teşekkür ederiz! Başarılar dileriz 🚀✨`;
+        dmText = `Merhaba! Talebiniz alındı, uzman ekibimiz en kısa sürede sizinle iletişime geçecektir.`;
+        dmLinkText = "Detaylı Bilgi Alın";
+        customMultiTurn = [
+          { sender: 'bot', text: dmText },
+          { sender: 'user', text: val },
+          { sender: 'bot', text: 'Kurulumumuz ortalama 24-48 saat içinde anahtar teslim olarak tamamlanır. Tüm süreci uzman ekibimiz yönetir 🤝' }
+        ];
+      }
+      // 3. Multilingual: Kazakh
+      else if (/\b(сәлем|бағасы|қанша|керемет|рахмет|жақсы)\b/i.test(lower)) {
+        detectedLang = "Qozoqcha (Қазақша / 100+ Til)";
+        isTrigger = lower.includes("бағасы") || lower.includes("қанша") || lower.includes("ақпарат");
+        reply = isTrigger
+          ? `@user Сәлеметсіз бе! Толық ақпарат пен бағасын Direct-ке жібердік 📩`
+          : `@user Пікіріңізге үлкен рахмет! Сізге сәттілік тілейміз 🚀✨`;
+        dmText = `Сәлеметсіз бе! Сұрауыңыз бойынша барлық мәліметтер дайын.`;
+        customMultiTurn = [
+          { sender: 'bot', text: dmText },
+          { sender: 'user', text: val },
+          { sender: 'bot', text: 'Біздің жүйе Instagram мен Telegram арқылы сауданы 24/7 автоматтандырады 🚀' }
+        ];
+      }
+      // 4. Multilingual: Russian
+      else if (/[а-яё]/i.test(lower)) {
+        detectedLang = "Ruscha (Русский)";
+        if (lower.includes("видео") || lower.includes("ссылк") || lower.includes("скин") || lower.includes("цена") || lower.includes("сколько")) {
+          isTrigger = true;
+          reply = `@user Здравствуйте! Отправили материалы и условия в Direct 📩`;
+          dmText = `🎬 Все материалы по вашему запросу отправлены. Пользуйтесь с пользой!`;
+          dmLinkText = "Открыть Telegram-бот";
+        } else {
+          reply = `@user Спасибо за комментарий! Рады, что вы с нами 🚀🔥`;
+          dmText = `Здравствуйте! Всегда рады помочь с автоматизацией бизнеса.`;
+          dmLinkText = "Написать менеджеру";
+          dmUrl = "https://t.me/shukhrat_ai";
+        }
+        customMultiTurn = [
+          { sender: 'bot', text: dmText },
+          { sender: 'user', text: val },
+          { sender: 'bot', text: 'В наших тарифах AI Pro и Omnichannel настроена прямая синхронизация с amoCRM, Bitrix24 и Google Sheets в реальном времени 🚀' }
+        ];
+      }
+      // 5. Multilingual: English
+      else if (/\b(this|amazing|cool|nice|great|how|what|bro|price|send|link)\b/i.test(lower)) {
+        detectedLang = "Inglizcha (English)";
+        isTrigger = lower.includes("price") || lower.includes("send") || lower.includes("link") || lower.includes("video");
+        reply = isTrigger
+          ? `@user Hello! We've sent all the details directly to your DM 📩`
+          : `@user Appreciate your comment! Keep rocking with AI 🚀🔥`;
+        dmText = `Hello! Thanks for connecting with GPTify. Let us know if you need any AI solutions.`;
+        dmLinkText = "Chat on Telegram";
+        dmUrl = "https://t.me/shukhrat_ai";
+        customMultiTurn = [
+          { sender: 'bot', text: dmText },
+          { sender: 'user', text: val },
+          { sender: 'bot', text: 'Yes, 100%! Our system retains conversational context and smoothly converts inquiries into booked calls 🚀' }
+        ];
+      }
+      // 6. Uzbek Default (Keywords vs Casual/Slang)
+      else {
+        if (lower === "video" || lower.includes("link") || lower.includes("tashlang") || lower.includes("+") || lower.includes("narxi") || lower.includes("qancha")) {
+          isTrigger = true;
+          reply = `@user Assalomu alaykum! Kerakli materiallar Direct'ingizga yuborildi 📩`;
+          dmText = `🎬 So‘ragan barcha materiallaringiz rasmiy Telegram botimizda tayyor:`;
+          dmLinkText = "Telegram Botni Ochish";
+        } else {
+          reply = `@user Fikringiz uchun rahmat! Savollaringiz bo‘lsa, bemalol yozishingiz mumkin ⚡`;
+          dmText = `Assalomu alaykum! Biznesingizni avtomatlashtirish bo‘yicha har qanday savollarga tayyormiz.`;
+          dmLinkText = "Kanalimizga Qo‘shilish";
+          dmUrl = "https://t.me/gptifyuz";
+        }
+        customMultiTurn = [
+          { sender: 'bot', text: dmText },
+          { sender: 'user', text: val },
+          { sender: 'bot', text: 'Biznesingiz ehtiyojlariga moslashtirilgan AI voronkasi orqali sotuvlarni 24/7 oshiramiz 🤝 Bepul audit uchun xohlagan payt murojaat qilishingiz mumkin!' }
+        ];
+      }
+
+      // Clear active presets since custom input was submitted
+      document.querySelectorAll('.sim-preset-btn').forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-pink-500', 'bg-pink-50/70', 'border-pink-400');
+        btn.classList.add('border-slate-200');
+      });
+
+      applySimData({
+        user: '@sizning_izohingiz',
+        comment: val,
+        lang: detectedLang,
+        isTrigger: isTrigger,
+        reply: reply,
+        dmIntro: 'Assalomu alaykum! 🤝',
+        dmText: dmText,
+        dmLinkText: dmLinkText,
+        dmUrl: dmUrl,
+        multiTurn: customMultiTurn
+      });
+
+      input.value = '';
+    }
+
+    let simTypingTimer = null;
+
+    function applySimData(data) {
+      // 1. Immediately update user comment and switch to comments tab
+      document.getElementById('simUserHandle').innerText = data.user;
+      document.getElementById('simUserCommentText').innerText = data.comment;
+      togglePhoneTab('comments');
+
+      // 2. Show live typing indicator
+      const typingEl = document.getElementById('simTypingIndicator');
+      const contentEl = document.getElementById('simBotReplyContent');
+      if (typingEl && contentEl) {
+        typingEl.classList.remove('hidden');
+        typingEl.classList.add('flex');
+        contentEl.classList.add('hidden');
+      }
+
+      // 3. Clear previous typing timer if rapid clicking occurs
+      if (simTypingTimer) clearTimeout(simTypingTimer);
+
+      simTypingTimer = setTimeout(() => {
+        // Reveal bot reply
+        if (typingEl && contentEl) {
+          typingEl.classList.add('hidden');
+          typingEl.classList.remove('flex');
+          contentEl.classList.remove('hidden');
+        }
+        document.getElementById('simBotReplyText').innerText = data.reply;
+
+        // Update DM stream dynamically (Multi-turn dialogue)
+        const dmStream = document.getElementById('simDmStream');
+        if (dmStream) {
+          if (data.multiTurn && data.multiTurn.length > 0) {
+            let html = '';
+            data.multiTurn.forEach((msg, idx) => {
+              if (msg.sender === 'bot') {
+                html += `
+                  <div class="max-w-[88%] bg-white text-slate-800 p-3 rounded-2xl rounded-tl-sm border border-slate-200 text-xs leading-relaxed shadow-xs">
+                    <div class="flex items-center gap-1.5 mb-1 text-[10px] text-pink-600 font-bold">
+                      <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+                      <span>shukhrat.ai (AI Sotuvchi)</span>
+                    </div>
+                    <p class="text-slate-700">${msg.text}</p>
+                    ${idx === 0 && data.dmLinkText ? `
+                      <div class="mt-2.5">
+                        <a href="${data.dmUrl || 'https://t.me/GPTifyUZBot'}" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-bold text-white bg-sky-600 hover:bg-sky-700 px-3 py-1.5 rounded-lg shadow-xs transition">
+                          <i data-lucide="send" class="w-3 h-3"></i>
+                          <span>${data.dmLinkText}</span>
+                        </a>
+                      </div>
+                    ` : ''}
+                  </div>
+                `;
+              } else {
+                html += `
+                  <div class="flex justify-end">
+                    <div class="max-w-[85%] bg-gradient-to-r from-slate-900 to-slate-800 text-white p-3 rounded-2xl rounded-tr-sm text-xs leading-relaxed shadow-xs">
+                      <div class="flex items-center justify-end gap-1.5 mb-1 text-[10px] text-slate-400 font-semibold">
+                        <span>Mijoz (Direct)</span>
+                      </div>
+                      <p>${msg.text}</p>
+                    </div>
+                  </div>
+                `;
+              }
+            });
+            html += `
+              <div class="pt-1 text-center">
+                <span class="inline-flex items-center gap-1 text-[10px] text-emerald-700 font-semibold bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <i data-lucide="check-check" class="w-3 h-3 text-emerald-600"></i>
+                  AI suhbat kontekstini to‘liq saqlab insondek muloqot qiladi
+                </span>
+              </div>
+            `;
+            dmStream.innerHTML = html;
+          } else {
+            dmStream.innerHTML = `
+              <div class="max-w-[90%] bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-sm border border-slate-200 text-xs leading-relaxed shadow-sm">
+                <div class="flex items-center gap-1.5 mb-1 text-[10px] text-pink-600 font-bold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+                  <span>shukhrat.ai (AI Sotuvchi)</span>
+                </div>
+                <p class="text-slate-700 mb-2.5">${data.dmText}</p>
+                ${data.dmLinkText ? `
+                  <a href="${data.dmUrl || 'https://t.me/GPTifyUZBot'}" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 px-3 py-1.5 rounded-lg shadow-xs transition">
+                    <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                    <span>${data.dmLinkText}</span>
+                  </a>
+                ` : ''}
+              </div>
+            `;
+          }
+          if (window.lucide) lucide.createIcons();
+        }
+
+        // Status labels
+        document.getElementById('simStatusLabel').innerText = `Til: ${data.lang}`;
+        document.getElementById('simEngineLabel').innerText = data.isTrigger ? "🎯 Lead Trigger (Direct Sent)" : "🤖 Gemini 2.5 Insoniy AI";
+
+        // Flash animation if trigger
+        if (data.isTrigger) {
+          const botBox = document.getElementById('simBotReplyBox');
+          if (botBox) {
+            botBox.classList.add('bg-pink-50', 'rounded-xl', 'p-2');
+            setTimeout(() => {
+              botBox.classList.remove('bg-pink-50', 'rounded-xl', 'p-2');
+            }, 1200);
+          }
+        }
+      }, 420);
+    }
+
+    function togglePhoneTab(tab) {
+      const viewComments = document.getElementById('viewComments');
+      const viewDirect = document.getElementById('viewDirect');
+      const tabBtnComments = document.getElementById('tabBtnComments');
+      const tabBtnDirect = document.getElementById('tabBtnDirect');
+
+      if (tab === 'comments') {
+        viewComments.classList.remove('hidden');
+        viewDirect.classList.add('hidden');
+        tabBtnComments.className = "text-[11px] font-bold text-pink-600 underline underline-offset-4";
+        tabBtnDirect.className = "text-[11px] font-bold text-slate-500 hover:text-slate-900 transition";
+      } else {
+        viewComments.classList.add('hidden');
+        viewDirect.classList.remove('hidden');
+        tabBtnDirect.className = "text-[11px] font-bold text-pink-600 underline underline-offset-4";
+        tabBtnComments.className = "text-[11px] font-bold text-slate-500 hover:text-slate-900 transition";
+      }
+    }
+
+    // --- AUDIT MODAL HANDLERS ---
+    function openAuditModal(plan = 'Umumiy') {
+      const modal = document.getElementById('auditModal');
+      const box = document.getElementById('auditModalBox');
+      const planInput = document.getElementById('selectedPlan');
+      if (planInput) planInput.value = plan;
+
+      // Reset form view
+      document.getElementById('auditFormContainer').classList.remove('hidden');
+      document.getElementById('auditSuccessContainer').classList.add('hidden');
+
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+        const nameField = document.getElementById('leadName');
+        if (nameField) nameField.focus();
+      }, 10);
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function closeAuditModal() {
+      const modal = document.getElementById('auditModal');
+      const box = document.getElementById('auditModalBox');
+      box.classList.remove('scale-100');
+      box.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 150);
+    }
+
+    function submitAuditForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('leadName').value.trim();
+      const phone = document.getElementById('leadPhone').value.trim();
+      const instagram = document.getElementById('leadInstagram').value.trim();
+      const niche = document.getElementById('leadNiche').value;
+      const plan = document.getElementById('selectedPlan').value || 'Umumiy';
+
+      // Store in localStorage
+      try {
+        const existing = JSON.parse(localStorage.getItem('gptify_instasales_leads') || '[]');
+        existing.push({ name, phone, instagram, niche, plan, date: new Date().toISOString() });
+        localStorage.setItem('gptify_instasales_leads', JSON.stringify(existing));
+      } catch (err) {}
+
+      // Update summary
+      document.getElementById('summaryName').innerText = name;
+      document.getElementById('summaryPhone').innerText = phone;
+      document.getElementById('summaryInstagram').innerText = instagram;
+      document.getElementById('summaryPlan').innerText = plan;
+
+      // Prepare deep link to Telegram
+      const tgText = `Assalomu alaykum, Shukhrat! Instagram AI Sotuvchi bo'yicha ariza qoldirdim:%0A👤 Ism: ${encodeURIComponent(name)}%0A📞 Tel: ${encodeURIComponent(phone)}%0A📷 Instagram: ${encodeURIComponent(instagram)}%0A🏢 Soha: ${encodeURIComponent(niche)}%0A⭐ Tarif: ${encodeURIComponent(plan)}`;
+      const tgBtn = document.getElementById('btnDirectTelegram');
+      if (tgBtn) tgBtn.href = `https://t.me/shukhrat_ai?text=${tgText}`;
+
+      // Switch to success view
+      document.getElementById('auditFormContainer').classList.add('hidden');
+      document.getElementById('auditSuccessContainer').classList.remove('hidden');
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // Initialize default preset on load
+    runSimPreset('video_keyword');
+  </script>
+
+  <!-- ================================================================= -->
+  <!-- 15-MINUTE FREE AI AUDIT & DEMO MODAL -->
+  <!-- ================================================================= -->
+  <div id="auditModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm transition-opacity duration-300">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-slate-200 p-6 sm:p-8 overflow-hidden transform scale-95 transition-all duration-200" id="auditModalBox">
+      <!-- Close Button -->
+      <button onclick="closeAuditModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 flex items-center justify-center transition cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Step 1: Form -->
+      <div id="auditFormContainer">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-50 text-pink-700 text-[11px] font-black uppercase tracking-wider mb-2 border border-pink-200">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-pink-600"></i>
+          <span>15 Daqiqalik Bepul AI Demo</span>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+          Sahifangiz Uchun Shaxsiy AI Sotuvchini Sinab Ko‘ring
+        </h3>
+        <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+          Ma'lumotlaringizni qoldiring. Mutaxassisimiz 15 daqiqa ichida sahifangizni audit qilib, siz uchun tayyorlangan jonli AI voronkasini ko'rsatib beradi.
+        </p>
+
+        <form id="auditForm" onsubmit="submitAuditForm(event)" class="mt-5 space-y-3.5">
+          <input type="hidden" id="selectedPlan" value="Umumiy">
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Ismingiz *</label>
+            <input type="text" id="leadName" required placeholder="Masalan: Sardor" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-500/20 text-xs sm:text-sm text-slate-900 outline-none transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Telefon raqamingiz *</label>
+            <input type="tel" id="leadPhone" required value="+998 " class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-500/20 text-xs sm:text-sm text-slate-900 font-mono outline-none transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Instagram sahifangiz *</label>
+            <input type="text" id="leadInstagram" required placeholder="@sahifangiz (yoki havola)" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-500/20 text-xs sm:text-sm text-slate-900 outline-none transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Biznesingiz sohasi</label>
+            <select id="leadNiche" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-500/20 text-xs sm:text-sm text-slate-900 outline-none transition bg-white">
+              <option value="Kiyim, Butik & Retail">Kiyim, Butik & Chakana Savdo</option>
+              <option value="Tibbiyot & Klinika">Tibbiyot, Klinika & Stomatologiya</option>
+              <option value="O'quv Markazi & Kurslar">O'quv Markazi & Kurslar</option>
+              <option value="Restoran & Delivery">Restoran & Yetkazib berish (Delivery)</option>
+              <option value="Avtoservis & Ehtiyot qismlar">Avtoservis & Ehtiyot qismlar</option>
+              <option value="B2B Xizmatlar & Konsalting">B2B Xizmatlar & Konsalting</option>
+              <option value="Boshqa savdo/xizmat">Boshqa savdo yoki xizmat</option>
+            </select>
+          </div>
+
+          <button type="submit" id="btnSubmitAudit" class="w-full py-4 rounded-xl grad-bg-insta hover:opacity-95 text-white font-extrabold text-sm shadow-lg shadow-pink-600/25 transition flex items-center justify-center gap-2 cursor-pointer mt-2">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Bepul Audit & Jonli Demo Olish</span>
+          </button>
+
+          <p class="text-[10px] text-slate-400 text-center flex items-center justify-center gap-1 mt-2">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i>
+            <span>100% maxfiylik. Parol talab qilinmaydi. Ma'lumotlaringiz himoyalangan.</span>
+          </p>
+        </form>
+      </div>
+
+      <!-- Step 2: Success State -->
+      <div id="auditSuccessContainer" class="hidden text-center py-6">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="check-circle" class="w-9 h-9"></i>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 tracking-tight">
+          Arizangiz Qabul Qilindi! 🎉
+        </h3>
+        <p class="text-xs text-slate-600 mt-2 max-w-sm mx-auto leading-relaxed">
+          Rahmat! Mutaxassisimiz tez orada sahifangizni audit qilib, siz bilan bog‘lanadi.
+        </p>
+
+        <div class="mt-5 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-left text-xs space-y-1.5 max-w-sm mx-auto">
+          <p class="text-slate-400 text-[10px] uppercase font-black tracking-wider">Arizangiz ma'lumotlari:</p>
+          <p class="font-bold text-slate-900 flex justify-between"><span>Ism:</span> <span id="summaryName">-</span></p>
+          <p class="font-mono text-slate-700 flex justify-between"><span>Telefon:</span> <span id="summaryPhone">-</span></p>
+          <p class="text-pink-600 font-semibold flex justify-between"><span>Instagram:</span> <span id="summaryInstagram">-</span></p>
+          <p class="text-slate-600 flex justify-between"><span>Tanlangan tarif:</span> <span id="summaryPlan" class="font-bold">-</span></p>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-2.5 max-w-sm mx-auto">
+          <a id="btnDirectTelegram" href="https://t.me/shukhrat_ai" target="_blank" class="py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>To‘g‘ridan-to‘g‘ri Telegramda Tasdiqlash</span>
+          </a>
+          <button onclick="closeAuditModal()" class="py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs transition cursor-pointer">
+            Yopish
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MOBILE STICKY FLOATING CTA BAR (Mobile-Only Conversion Booster) -->
+  <!-- ================================================================= -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 shadow-2xl flex items-center justify-between gap-3">
+    <div class="flex flex-col">
+      <span class="text-[10px] font-bold text-pink-600 uppercase tracking-wider">30 daqiqa</span>
+      <span class="text-xs font-black text-slate-900">Bepul Sahifa Auditi</span>
+    </div>
+    <button onclick="openAuditModal()" class="px-4 py-2 rounded-xl grad-bg-insta text-white font-bold text-xs shadow-md shadow-pink-600/20 flex items-center gap-1.5 transition cursor-pointer">
+      <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+      <span>Audit Olish</span>
+    </button>
+  </div>
+</body>
+</html>
