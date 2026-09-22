@@ -14,7 +14,7 @@ AiNoma — O‘zbekistonda sun’iy intellekt bo‘yicha mustaqil nashr, B2B tah
 - **Qo‘llanmalar & Promptlar:** `qollanmalar.html` (nusxa olish tugmali master promptlar kutubxonasi)
 - **Masterklass maqola:** `qollanma-b2b.html` (B2B Outreach va AI Savdo Tizimi)
 - **Asosiy maqolalar:**
-  - `maqola-gpt6-astra.html` (GPT-6 Astra arxitekturasi va korporativ imkoniyatlari)
+  - `maqola.html?id=claude-37` (Claude 3.7 Sonnet gibrid tafakkur arxitekturasi va korporativ imkoniyatlari)
   - `maqola.html` (OpenAI Agents API va ChatGPT Data Agent)
   - `qollanma.html` (AI bilan ishlash bo‘yicha bazaviy qo‘llanma)
 - **Ekotizim Hikoyalari:** `hikoyalar.html` (Keyslar va startaplar suhbatlari)

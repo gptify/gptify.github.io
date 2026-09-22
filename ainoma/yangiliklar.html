@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="uz">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="AiNoma — O‘zbekiston va dunyodagi eng so‘nggi sun’iy intellekt yangiliklari tahlili." name="description"/>
-<title>So‘nggi Yangiliklar — AiNoma</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Yangiliklar — AiNoma</title>
+<meta content="O‘zbekiston va jahon sun’iy intellekt yangiliklari, tahlillar va biznes sharhlari." name="description"/>
 <link href="style.css" rel="stylesheet"/>
-<link href="https://ainoma.uz/yangiliklar.html" rel="canonical"/>
-<meta content="website" property="og:type"/>
-<meta content="AiNoma" property="og:site_name"/>
-<meta content="So‘nggi Yangiliklar — AiNoma" property="og:title"/>
-<meta content="O‘zbekiston va jahon sun’iy intellekt olamidagi eng so‘nggi yangiliklar, rasmiy relizlar va chuqur tahlillar." property="og:description"/>
-<meta content="https://ainoma.uz/yangiliklar.html" property="og:url"/>
-<meta content="https://ainoma.uz/assets/ai_network.jpg" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="So‘nggi Yangiliklar — AiNoma" name="twitter:title"/>
-<meta content="O‘zbekiston va jahon sun’iy intellekt olamidagi eng so‘nggi yangiliklar, rasmiy relizlar va chuqur tahlillar." name="twitter:description"/>
-<meta content="https://ainoma.uz/assets/ai_network.jpg" name="twitter:image"/>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="favicon.ico" rel="alternate icon"/>
+<link rel="canonical" href="https://ainoma.uz/yangiliklar.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" href="favicon.ico">
 </head>
 <body>
 <header>
@@ -33,15 +22,15 @@
 <a href="qollanmalar.html">Qo‘llanmalar</a>
 <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
 <a href="hikoyalar.html">Hikoyalar</a>
-        <a href="imkoniyatlar.html">Imkoniyatlar</a>
-        <a href="haqida.html">Haqida</a>
+<a href="imkoniyatlar.html">Imkoniyatlar</a>
+<a href="haqida.html">Haqida</a>
 </nav>
 <div class="navtools">
 <button aria-label="Qidiruv" class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
 <button aria-label="Mavzu" class="iconbtn" id="theme" title="Mavzuni o‘zgartirish"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
 <a class="btn-tg-nav" href="https://t.me/gptifyuz" rel="noopener" target="_blank">
 <span>Kanal</span> @gptifyuz
-        </a>
+</a>
 <button aria-label="Menyu" class="iconbtn hamb" id="hamb"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
 </div>
 </div>
@@ -49,7 +38,7 @@
 <!-- Search Modal -->
 <div class="searchbox" id="searchbox">
 <div class="searchinner">
-<input autocomplete="off" id="siteSearch" placeholder="AINoma bo‘ylab qidiring (masalan: Gamma, B2B prompt, Agents API)…"/>
+<input autocomplete="off" id="siteSearch" placeholder="AINoma bo‘ylab qidiring (masalan: Claude, Deep Research, Gemini)…"/>
 <button class="btn" id="closeSearch">Yopish (Esc)</button>
 <div class="search-results" id="searchResults"></div>
 </div>
@@ -57,7 +46,7 @@
 <main class="container">
 <div class="pagehead">
 <h1>Yangiliklar</h1>
-<p>Sun’iy intellekt olamidagi eng so‘nggi global va O‘zbekiston yangiliklari, tahliliy maqolalar va biznes sharhlari.</p>
+<p>Sun’iy intellekt olamidagi eng so‘nggi global va O‘zbekiston yangiliklari, tahliliy maqolalar va biznes sharhlari (birlamchi rasmiy manbalar asosida).</p>
 </div>
 <!-- Dynamic Filter Pills -->
 <div class="filter-pills">
@@ -66,25 +55,25 @@
 <button class="filter" data-filter="biznes">🏢 Biznes</button>
 <button class="filter" data-filter="uzbekistan">O‘zbekiston</button>
 <button class="filter" data-filter="dunyo">🌐 Dunyo</button>
-<button class="filter" data-filter="qollanma">📘 Qo‘llanmalar</button>
 </div>
-<!-- News Grid (Eng so'nggi sanadan boshlab saralangan + Amaliy Qo'llanmalar) -->
+<!-- News Grid -->
 <div class="pagegrid">
-<!-- 00A: OpenAI Deep Research (22-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="OpenAI Deep Research o3-mini tadqiqot agenti hisobot tahlil bozor">
-<div class="thumb"><img alt="OpenAI Deep Research va o3-mini taqdim etildi" src="assets/data_agent.jpg"/></div>
-<div class="card-meta">22-SENTABR, 2026 · FRONTIER LABS · DUNYO</div>
-<h3><a href="maqola.html?id=openai-deep-research">OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlilini 10 barobar tezlashtiruvchi agent</a></h3>
-<p>Endi LLM shunchaki bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili hisobotini tayyorlaydi.</p>
+<!-- 1: Anthropic Claude 3.7 Sonnet (24-Fevral, 2025) -->
+<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="Anthropic Claude 3.7 Sonnet gibrid tafakkur reasoning frontier">
+<div class="thumb"><img alt="Anthropic Claude 3.7 Sonnet" src="assets/ai_agents.jpg"/></div>
+<div class="card-meta">24-FEVRAL, 2025 · FRONTIER LABS · DUNYO</div>
+<h3><a href="maqola.html?id=claude-37">Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va korporativ kodlash</a></h3>
+<p>Dunyodagi birinchi gibrid tafakkur arxitekturasi: foydalanuvchi model tezkor javob berishi yoki chuqur o‘ylashini o‘zi boshqaradi.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>OpenAI / TechCrunch</b></span>
-<a href="https://openai.com" rel="noopener" target="_blank">Asl manba ↗</a>
+<span class="source-info">Manba: <b>Anthropic Research / TechCrunch</b></span>
+<a href="https://anthropic.com" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 00B: Claude Code CLI (21-Sentabr, 2026) -->
+
+<!-- 2: Anthropic Claude Code CLI (24-Fevral, 2025) -->
 <article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Anthropic Claude Code CLI terminal dasturchi agent kod devtools">
-<div class="thumb"><img alt="Anthropic Claude Code CLI vositasini ishga tushirdi" src="assets/gpu_datacenter.jpg"/></div>
-<div class="card-meta">21-SENTABR, 2026 · DASTURLASH &amp; DEVTOOLS</div>
+<div class="thumb"><img alt="Anthropic Claude Code CLI vositasi" src="assets/gpu_datacenter.jpg"/></div>
+<div class="card-meta">24-FEVRAL, 2025 · DASTURLASH &amp; DEVTOOLS</div>
 <h3><a href="maqola.html?id=claude-code-cli">Anthropic 'Claude Code' vositasini ishga tushirdi: Terminalda ishlovchi avtonom dasturchi agent</a></h3>
 <p>Brauzer shart emas — to‘g‘ridan-to‘g‘ri buyruqlar satrida butun repozitoriy bilan ishlovchi, git amallarini bajaruvchi va kodni testlovchi vosita.</p>
 <div class="card-source">
@@ -92,310 +81,156 @@
 <a href="https://anthropic.com" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 00C: O'zbekiston AI Sandbox (21-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes mutaxassislar" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston AI regulyator sandbox qonunchilik IT Park imtiyoz grant">
-<div class="thumb"><img alt="O‘zbekistonda sun’iy intellekt uchun Regulyator Sandbox ishga tushirildi" src="assets/registan_real.jpg"/></div>
-<div class="card-meta">21-SENTABR, 2026 · O‘ZBEKISTON · QONUNCHILIK</div>
-<h3><a href="maqola.html?id=uz-ai-sandbox">O‘zbekistonda sun’iy intellekt uchun 'Regulyator Sandbox' ishga tushirildi: Maxsus huquqiy rejim</a></h3>
-<p>Raqamli texnologiyalar vazirligi va IT Park mahalliy startaplarga tibbiyot, ta’lim va fintexdagi AI loyihalarini sinash uchun maxsus tartib va GPU grantlarini beradi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Raqamli texnologiyalar vazirligi / IT Park</b></span>
-<a href="https://digital.uz" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 00D: Telegram Mini Apps + AI (20-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="Telegram Mini Apps TMA sun'iy intellekt AI bot elektron savdo fintex payme click">
-<div class="thumb"><img alt="Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdo" src="assets/social_commerce.jpg"/></div>
-<div class="card-meta">20-SENTABR, 2026 · O‘ZBEKISTON · TIJORAT</div>
-<h3><a href="maqola.html?id=telegram-ai-apps">Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdoni avtomatlashtirishning yangi to‘lqini</a></h3>
-<p>Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy maslahat oladi va Payme/Click orqali bir bosishda to‘lov qiladi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Telegram Developers / Spot.uz</b></span>
-<a href="https://core.telegram.org/bots/webapps" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 0A: Google Gemini 2.5 Enterprise (21-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="Google Gemini 2.5 Enterprise multimodal audio video real-time api">
-<div class="thumb"><img alt="Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim" src="assets/ai_network.jpg"/></div>
-<div class="card-meta">21-SENTABR, 2026 · GOOGLE CLOUD · DUNYO</div>
-<h3><a href="maqola.html?id=gemini-enterprise">Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim</a></h3>
-<p>Yangi arxitektura korxona call-markazlari va ilovalar uchun insondek tez muloqot qiluvchi ovozli yordamchilar va real vaqtda kamera tasvirini tahlil qilish imkoniyatini taqdim etdi.</p>
+
+<!-- 3: Google Gemini 2.0 Flash (05-Fevral, 2025) -->
+<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="Google Gemini 2.0 Flash multimodal audio video live api real-time">
+<div class="thumb"><img alt="Google Gemini 2.0 Flash API" src="assets/ai_network.jpg"/></div>
+<div class="card-meta">05-FEVRAL, 2025 · GOOGLE CLOUD · DUNYO</div>
+<h3><a href="maqola.html?id=gemini-2-flash">Google Gemini 2.0 Flash modelini ommaga chiqardi: 150ms kechikishli jonli audio va video oqim</a></h3>
+<p>Yangi arxitektura va Multimodal Live API call-markazlar va ilovalar uchun insondek tez muloqot qiluvchi ovozli yordamchilar imkonini ochdi.</p>
 <div class="card-source">
 <span class="source-info">Manba: <b>Google Cloud AI / The Verge</b></span>
 <a href="https://cloud.google.com" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 0B: O'zbekiston Markaziy Banki AI Reglamenti (20-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston Markaziy Banki AI kredit skoring reglament fintex xavfsizlik">
-<div class="thumb"><img alt="Markaziy Bank bank va fintexlarda sun’iy intellekt skoringi qo‘llash bo‘yicha yangi reglamentni tasdiqladi" src="assets/tashkent_finance.jpg"/></div>
-<div class="card-meta">20-SENTABR, 2026 · O‘ZBEKISTON · FINTEX</div>
-<h3><a href="maqola.html?id=cbu-ai-skoring">Markaziy Bank bank va fintexlarda sun’iy intellekt skoringi qo‘llash bo‘yicha yangi reglamentni tasdiqladi</a></h3>
-<p>Kredit layoqatini baholashda diskriminatsiyasiz shaffoflik, mijozlarning shaxsiy ma’lumotlarini faqat O‘zbekiston hududidagi serverlarda saqlash talablari qat’iy belgilandi.</p>
+
+<!-- 4: OpenAI Deep Research (03-Fevral, 2025) -->
+<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="OpenAI Deep Research o3-mini tadqiqot agenti hisobot tahlil bozor">
+<div class="thumb"><img alt="OpenAI Deep Research va o3-mini" src="assets/data_agent.jpg"/></div>
+<div class="card-meta">03-FEVRAL, 2025 · FRONTIER LABS · DUNYO</div>
+<h3><a href="maqola.html?id=openai-deep-research">OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlilini 10 barobar tezlashtiruvchi agent</a></h3>
+<p>Endi LLM shunchaki bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy hisobot tayyorlaydi.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>O‘zbekiston Markaziy Banki / Gazeta.uz</b></span>
-<a href="https://cbu.uz" rel="noopener" target="_blank">Asl manba ↗</a>
+<span class="source-info">Manba: <b>OpenAI Newsroom</b></span>
+<a href="https://openai.com" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 0C: Cursor Autonomous Team Lead (19-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Cursor Cognition autonomous team lead dasturlash kod refaktoring">
-<div class="thumb"><img alt="Cursor va Cognition Labs "Autonomous Team Lead" rejimini e’lon qildi" src="assets/coding_workspace.jpg"/></div>
-<div class="card-meta">19-SENTABR, 2026 · DASTURLASH &amp; FRONTIER</div>
-<h3><a href="maqola.html?id=cursor-teamlead">Cursor va Cognition Labs "Autonomous Team Lead" rejimini e’lon qildi</a></h3>
-<p>Dasturlashda kod yozishdan to‘liq avtonom arxitektura boshqaruviga o‘tildi: agentlar butun kod omboridagi xatolarni mustaqil topib, avtomatik testlar va Pull Request tayyorlaydi.</p>
+
+<!-- 5: OpenAI Operator (23-Yanvar, 2025) -->
+<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="OpenAI Operator CUA brauzer kompyuter agent avtonom">
+<div class="thumb"><img alt="OpenAI Operator brauzer agenti" src="assets/voice_duplex.jpg"/></div>
+<div class="card-meta">23-YANVAR, 2025 · AGENTIK AI · DUNYO</div>
+<h3><a href="maqola.html?id=openai-operator">OpenAI 'Operator' vositasini taqdim etdi: Brauzerda mustaqil ishlovchi AI agent</a></h3>
+<p>Foydalanuvchi buyrug‘i bilan brauzer interfeyslarini boshqaruvchi, formalar to‘ldiruvchi va murakkab veb-vazifalarni avtonom bajaruvchi agent.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>Cursor Blog / TechCrunch</b></span>
+<span class="source-info">Manba: <b>OpenAI Research</b></span>
+<a href="https://openai.com" rel="noopener" target="_blank">Asl manba ↗</a>
+</div>
+</article>
+
+<!-- 6: Telegram Mini Apps + AI (Yanvar, 2025) -->
+<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="Telegram Mini Apps TMA sun'iy intellekt AI bot elektron savdo fintex payme click">
+<div class="thumb"><img alt="Telegram Mini Apps va AI savdo" src="assets/social_commerce.jpg"/></div>
+<div class="card-meta">YANVAR, 2025 · O‘ZBEKISTON · TIJORAT</div>
+<h3><a href="maqola.html?id=telegram-ai-apps">Telegram Mini Apps + AI: O‘zbekistonda elektron savdoning yangi to‘lqini</a></h3>
+<p>Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy tavsiya oladi va Payme/Click orqali to‘lovni amalga oshiradi.</p>
+<div class="card-source">
+<span class="source-info">Manba: <b>Telegram Developers / Spot.uz</b></span>
+<a href="https://core.telegram.org/bots/webapps" rel="noopener" target="_blank">Asl manba ↗</a>
+</div>
+</article>
+
+<!-- 7: Cursor & Agentic Coding (Dekabr, 2024) -->
+<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Cursor Composer agentic coding dasturlash kod refaktoring">
+<div class="thumb"><img alt="Cursor Agentic Coding" src="assets/coding_workspace.jpg"/></div>
+<div class="card-meta">DEKABR, 2024 · DASTURLASH &amp; DEVTOOLS</div>
+<h3><a href="maqola.html?id=cursor-teamlead">Cursor va Agentik Kodlash: Dasturlashda repo-darajali avtonom muhandislik</a></h3>
+<p>Dasturlashda kod yozishdan to‘liq avtonom arxitektura boshqaruviga o‘tildi: agentlar butun kod omboridagi xatolarni mustaqil topadi va tuzatadi.</p>
+<div class="card-source">
+<span class="source-info">Manba: <b>Cursor Blog</b></span>
 <a href="https://cursor.com" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 0D: Apple Intelligence Mintaqaviy Qo'llab-quvvatlash (18-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="Apple Intelligence Siri o‘zbek tili Markaziy Osiyo nlp">
-<div class="thumb"><img alt="Apple Intelligence yangi yangilanishda Markaziy Osiyo tillari uchun qo‘shimcha imkoniyatlarni sinovdan o‘tkazmoqda" src="assets/robot_assist.jpg"/></div>
-<div class="card-meta">18-SENTABR, 2026 · GLOBAL EKOTIZIM</div>
-<h3><a href="maqola.html?id=apple-intelligence-uz">Apple Intelligence yangi yangilanishda Markaziy Osiyo tillari uchun qo‘shimcha imkoniyatlarni sinovdan o‘tkazmoqda</a></h3>
-<p>Yangi beta versiyada Siri va qurilma ichki tahliliy yordamchisi mintaqaviy tillarda so‘rovlarni to‘g‘ridan-to‘g‘ri protsessorda xavfsiz qayta ishlashni boshladi.</p>
+
+<!-- 8: OpenAI o1 To'liq Versiya (05-Dekabr, 2024) -->
+<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="OpenAI o1 reasoning chain of thought matematika dasturlash">
+<div class="thumb"><img alt="OpenAI o1 Reasoning Model" src="assets/b2b_sales.jpg"/></div>
+<div class="card-meta">05-DEKABR, 2024 · FRONTIER LABS · DUNYO</div>
+<h3><a href="maqola.html?id=openai-o1">OpenAI o1 to‘liq mantiqiy modelini taqdim etdi: Dasturlash va fanda inson ekspertidan yuqori natija</a></h3>
+<p>Qadamma-qadam fikrlash (Chain-of-Thought) va multimodal rasm tahliliga ega bo‘lgan to‘liq versiya ommaga chiqarildi.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>Apple Developer / MacRumors</b></span>
-<a href="https://developer.apple.com" rel="noopener" target="_blank">Asl manba ↗</a>
+<span class="source-info">Manba: <b>OpenAI Platform</b></span>
+<a href="https://openai.com" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 0E: IT Park va Yandex AI Dasturi (17-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="uzbekistan o‘zbekiston biznes" data-search="IT Park Yandex AI muhandislik ta'lim dasturi grant Toshkent">
-<div class="thumb"><img alt="IT Park va Yandex Toshkentda 1,000 mutaxassis uchun "AI Engineering" bepul dasturini ishga tushirdi" src="assets/itpark_tashkent.jpg"/></div>
-<div class="card-meta">17-SENTABR, 2026 · O‘ZBEKISTON · TA’LIM</div>
-<h3><a href="maqola.html?id=itpark-yandex">IT Park va Yandex Toshkentda 1,000 mutaxassis uchun "AI Engineering" bepul dasturini ishga tushirdi</a></h3>
-<p>Katta til modellarini korporativ tizimlarga integratsiya qilish, RAG arxitekturasi va AI xavfsizligi bo‘yicha 6 oylik amaliy ta’lim granti e’lon qilindi.</p>
+
+<!-- 9: O'zbekiston AI Skoringi (Noyabr, 2024) -->
+<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston Markaziy Banki AI kredit skoring reglament fintex xavfsizlik">
+<div class="thumb"><img alt="Markaziy Bank AI Skoring reglamenti" src="assets/tashkent_finance.jpg"/></div>
+<div class="card-meta">NOYABR, 2024 · O‘ZBEKISTON · FINTEX</div>
+<h3><a href="maqola.html?id=cbu-ai-skoring">O‘zbekiston moliya bozorida AI skoringi: Shaffoflik va mijozlar ma’lumotlarini O‘zbekistonda saqlash talabi</a></h3>
+<p>Kredit layoqatini baholashda diskriminatsiyasiz shaffoflik, mijozlarning shaxsiy ma’lumotlarini faqat O‘zbekiston hududidagi serverlarda saqlash talablari belgilandi.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>IT Park Uzbekistan</b></span>
-<a href="https://it-park.uz" rel="noopener" target="_blank">Asl manba ↗</a>
+<span class="source-info">Manba: <b>Markaziy Bank / Gazeta.uz</b></span>
+<a href="https://cbu.uz" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 1: Anthropic Claude 3.7 (16-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Anthropic Claude 3.7 Sonnet gibrid tafakkur reasoning frontier">
-<div class="thumb"><img alt="Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va xavfsiz korporativ kodlash" src="assets/ai_agents.jpg"/></div>
-<div class="card-meta">16-SENTABR, 2026 · FRONTIER LABS · DUNYO</div>
-<h3><a href="maqola.html?id=claude-37">Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va xavfsiz korporativ kodlash</a></h3>
-<p>Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Foydalanuvchi qidiruvda model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.</p>
+
+<!-- 10: O'zbekiston AI Strategiyasi PQ-358 (14-Oktabr, 2024) -->
+<article class="card filter-card" data-audience="biznes mutaxassislar" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston AI strategiyasi PQ-358 prezident qarori IT Park sandbox grant">
+<div class="thumb"><img alt="O‘zbekistonda sun’iy intellekt strategiyasi PQ-358" src="assets/registan_real.jpg"/></div>
+<div class="card-meta">14-OKTABR, 2024 · O‘ZBEKISTON · QONUNCHILIK</div>
+<h3><a href="maqola.html?id=uz-ai-sandbox">O‘zbekistonda 2030-yilgacha AI strategiyasi tasdiqlandi: Superkompyuter klasteri va Regulyator Sandbox (PQ-358)</a></h3>
+<p>Prezident qarori bilan Sun'iy intellekt texnologiyalari markazi, startaplar uchun maxsus huquqiy rejim va davlat xizmatlariga AI integratsiyasi belgilandi.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>Anthropic Research / VentureBeat</b></span>
-<a href="https://anthropic.com" rel="noopener" target="_blank">Asl manba ↗</a>
+<span class="source-info">Manba: <b>Lex.uz / Adliya vazirligi</b></span>
+<a href="https://lex.uz" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- 2: Raqamli Vazirlik AI Standartlari (15-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="Raqamli texnologiyalar vazirligi davlat ai reglament o'zbekiston">
-<div class="thumb"><img alt="Raqamli Texnologiyalar Vazirligi davlat xizmatlarida sun’iy intellekt qo‘llash bo‘yicha yangi standartlarni tasdiqladi" src="assets/registan_real.jpg"/></div>
-<div class="card-meta">15-SENTABR, 2026 · O‘ZBEKISTON · DAVLAT</div>
-<h3><a href="maqola.html?id=gov-ai-standards">Raqamli Texnologiyalar Vazirligi davlat xizmatlarida sun’iy intellekt qo‘llash bo‘yicha yangi standartlarni tasdiqladi</a></h3>
-<p>Davlat idoralarida sun’iy intellekt modellarini joriy etishda fuqarolar ma’lumotlari xavfsizligi, shaffoflik va mahalliy serverlarda saqlash talablari belgilandi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Raqamli.uz / Gazeta.uz</b></span>
-<a href="https://digital.uz" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 3: Mistral Pixtral Large (14-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="Mistral Pixtral Large ochiq kod open source korporativ">
-<div class="thumb"><img alt="Mistral AI "Pixtral Large" modelini chiqardi: Korxonalar uchun mustaqil multimodal sun’iy intellekt" src="assets/data_agent.jpg"/></div>
-<div class="card-meta">14-SENTABR, 2026 · OCHIQ KOD &amp; DUNYO</div>
-<h3><a href="maqola.html?id=mistral-pixtral">Mistral AI "Pixtral Large" modelini chiqardi: Korxonalar uchun mustaqil multimodal sun’iy intellekt</a></h3>
-<p>Kompaniyalarning o‘z serverlarida ishlovchi, 128k kontekstga ega flagman model rasm, diagramma va murakkab moliyaviy jadvallarni mahalliy darajada tahlil qiladi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Mistral AI News</b></span>
-<a href="https://mistral.ai" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 4: Nvidia Blackwell B200 (13-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Nvidia Blackwell B200 server superklaster bulutli hisoblash">
-<div class="thumb"><img alt="Nvidia yangi Blackwell B200 klasterlarini yirik bulut provayderlariga yetkazib berishni boshladi" src="assets/gpu_datacenter.jpg"/></div>
-<div class="card-meta">13-SENTABR, 2026 · APPARATURA &amp; INFRASTRUKTURA</div>
-<h3><a href="maqola.html?id=nvidia-blackwell">Nvidia yangi Blackwell B200 klasterlarini yirik bulut provayderlariga yetkazib berishni boshladi</a></h3>
-<p>Yangi chiplar sun’iy intellekt modellarini inferensiya (ishlatish) bosqichida energiya sarfini 25 barobar kamaytirib, hisoblash tezligini 4 karra oshiradi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Nvidia Newsroom / Reuters</b></span>
-<a href="https://nvidianews.nvidia.com" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- Qo'llanma 1: B2B Outreach Masterklassi -->
-<article class="card filter-card" data-audience="biznes" data-cat="Biznes Qo‘llanma" data-search="B2B outreach qo'llanma apollo lemlist amocrm mijoz sotuv masterklass">
-<div class="thumb"><img alt="B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma" src="assets/b2b_sales.jpg"/></div>
-<div class="card-meta" style="color:var(--green); font-weight:700;">📘 AMALIY QO‘LLANMA · B2B OUTREACH</div>
-<h3><a href="qollanma-b2b.html">B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma</a></h3>
-<p>Apollo, Lemlist va sun’iy intellekt yordamida eksport va mahalliy korporativ mijozlar bazasini qurish, sovuq xatlar va konversiyali savdo voronkasi.</p>
-<div class="card-source">
-<span class="source-info">Muallif: <b>Shukhratbek Iskandarov</b></span>
-<a href="qollanma-b2b.html">Qo‘llanmaga o‘tish →</a>
-</div>
-</article>
-<!-- 5: IT Park GPU Grants (12-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="IT Park GPU grantlari O‘zbekiston AI startap klaster">
-<div class="thumb"><img alt="IT Park sun’iy intellekt startaplari uchun $5M GPU hisoblash grantlarini e’lon qildi" src="assets/gpu_datacenter.jpg"/></div>
-<div class="card-meta">12-SENTABR, 2026 · O‘ZBEKISTON · DAVLAT</div>
-<h3><a href="maqola.html?id=itpark-gpu-grants">IT Park sun’iy intellekt startaplari uchun $5M GPU hisoblash grantlarini e’lon qildi</a></h3>
-<p>Mahalliy sun’iy intellekt loyihalarini qo‘llab-quvvatlash uchun yuqori quvvatli server klasterlariga bepul kirish va maqsadli moliyaviy grantlar ajratilishi tasdiqlandi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>IT Park Uzbekistan</b></span>
-<a href="https://it-park.uz" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 6: Meta WhatsApp AI (11-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="Texnologiya Biznes" data-search="Meta WhatsApp Instagram AI biznes agentlar Texnologiya">
-<div class="thumb"><img alt="Meta WhatsApp va Instagram uchun avtonom biznes agentlarini kengaytirmoqda" src="assets/social_commerce.jpg"/></div>
-<div class="card-meta">11-SENTABR, 2026 · TEXNOLOGIYA &amp; CHATBOT</div>
-<h3><a href="maqola.html?id=meta-business-agents">Meta WhatsApp va Instagram uchun avtonom biznes agentlarini kengaytirmoqda</a></h3>
-<p>Kichik va o‘rta korxonalar uchun mijozlarning savollariga 24/7 javob beruvchi, mahsulot tavsiya qiluvchi va to‘lovgacha olib boruvchi aqlli agentlar sinovda.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Meta AI News / Reuters</b></span>
-<a href="https://about.fb.com/news/" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 7: OpenAI Agents API (10-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="OpenAI Agents API 24 soat avtonom agentlar Dunyo">
-<div class="thumb"><img alt="OpenAI "Agents API"ni taqdim etdi: 24 soatlik avtonom sessiyalar va B2B integratsiya" src="assets/agents_workflow.jpg"/></div>
-<div class="card-meta">10-SENTABR, 2026 · OPENAI API · FRONTIER LABS</div>
-<h3><a href="maqola.html?id=openai-agents">OpenAI "Agents API"ni taqdim etdi: 24 soatlik avtonom sessiyalar va B2B integratsiya</a></h3>
-<p>Codex harakati asosida yaratilgan yangi API murakkab ko‘p bosqichli ish jarayonlarini tashqi CRM va ma’lumotlar bazalariga ulab, inson aralashuvisiz bajarishga imkon beradi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>OpenAI Engineering Blog</b></span>
-<a href="https://openai.com/news/" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 8: ChatGPT Work Data Agent (10-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="Dunyo Biznes" data-search="ChatGPT Work Data agent korporativ hisobot Dunyo">
-<div class="thumb"><img alt="ChatGPT Work'da Data Agent ishga tushirildi: Kompaniya ma'lumotlari bilan jonli suhbat" src="assets/data_agent.jpg"/></div>
-<div class="card-meta">10-SENTABR, 2026 · KORPORATIV AI</div>
-<h3><a href="maqola.html?id=data-agent">ChatGPT Work'da Data Agent ishga tushirildi: Kompaniya ma'lumotlari bilan jonli suhbat</a></h3>
-<p>Xodimlar murakkab SQL yozmasdan, oddiy tilda savol berib, Snowflake, BigQuery yoki Excel jadvallaridan real vaqt rejimidagi savdo tahlillarini olishi mumkin.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>VentureBeat / OpenAI</b></span>
-<a href="https://venturebeat.com" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 9: Apple Intelligence Siri (9-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="Dunyo Texnologiya" data-search="Apple Intelligence Siri korporativ yangilanish ios mobil">
-<div class="thumb"><img alt="Apple Intelligence korporativ ilovalar va Siri bilan chuqur integratsiyani boshladi" src="assets/robot_assist.jpg"/></div>
-<div class="card-meta">9-SENTABR, 2026 · MOBIL &amp; KORPORATIV AI</div>
-<h3><a href="maqola.html?id=apple-corporate">Apple Intelligence korporativ ilovalar va Siri bilan chuqur integratsiyani boshladi</a></h3>
-<p>iOS tizimida shaxsiy ma’lumotlarni qurilmaning o‘zida (on-device) qayta ishlovchi yangi AI qatlam korporativ elektron pochta va kalendarlarni boshqarishga o‘tdi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Apple Newsroom / The Verge</b></span>
-<a href="https://apple.com/newsroom" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 10: Toshkent B2B CRM AI (8-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston B2B CRM AI ovozli yordamchi Toshkent">
-<div class="thumb"><img alt="Toshkentdagi distribyutorlar CRM tizimlariga sun’iy intellekt ovozli yordamchilarini ulamoqda" src="assets/b2b_sales.jpg"/></div>
-<div class="card-meta">8-SENTABR, 2026 · O‘ZBEKISTON · BIZNES</div>
-<h3><a href="maqola.html?id=tashkent-crm-voice">Toshkentdagi distribyutorlar CRM tizimlariga sun’iy intellekt ovozli yordamchilarini ulamoqda</a></h3>
-<p>Sotuv bo‘limi qo‘ng‘iroqlarini avtomatik matnga aylantirish, mijoz e’tirozlarini aniqlash va bitimlarni amocrm’ga kiritish bo‘yicha mahalliy keyslar ko‘paymoqda.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Spot.uz Biznes</b></span>
-<a href="https://www.spot.uz" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 11: AI Code Editors Cursor/Windsurf (7-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Cursor Windsurf AI kod dasturlash muhandislik agentic">
-<div class="thumb"><img alt="Muhandislikda sun’iy intellekt inqilobi: Dasturchilarning 45% dan ortig‘i agentlik muharrirlarga o‘tdi" src="assets/coding_workspace.jpg"/></div>
-<div class="card-meta">7-SENTABR, 2026 · DASTURLASH &amp; MUHANDISLIK</div>
-<h3><a href="maqola.html?id=developer-ai-revolution">Muhandislikda sun’iy intellekt inqilobi: Dasturchilarning 45% dan ortig‘i agentlik muharrirlarga o‘tdi</a></h3>
-<p>Cursor va Windsurf kabi AI vositalari butun arxitekturani tushunib kod yozishi dasturlash tezligini 3 baravarga oshirgani qayd etilmoqda.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Stack Overflow Insights</b></span>
-<a href="https://stackoverflow.blog" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 12: GPT-Live-1 Voice API (6-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="GPT-Live-1 ovozli api telefoniya openai voice">
-<div class="thumb"><img alt="OpenAI GPT-Live-1 modelini taqdim etdi: To‘liq dupleks real-vaqt ovoz" src="assets/voice_duplex.jpg"/></div>
-<div class="card-meta">6-SENTABR, 2026 · OVOZLI TEXNOLOGIYALAR</div>
-<h3><a href="maqola.html?id=openai-gpt-live">OpenAI GPT-Live-1 modelini taqdim etdi: To‘liq dupleks real-vaqt ovoz</a></h3>
-<p>Kechikishlarsiz gaplashuvchi, inson his-tuyg‘ularini anglaydigan va telefoniya tarmoqlariga ulanadigan yangi ovozli arxitektura ishlab chiqarishga chiqarildi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>OpenAI Platform / The Verge</b></span>
-<a href="https://platform.openai.com" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 13: ChatGPT Financial Services (5-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="Dunyo Biznes" data-search="ChatGPT for Financial Services moliya audit tahlil">
-<div class="thumb"><img alt="ChatGPT for Financial Services: Banklar va moliya sektori uchun maxsus paket" src="assets/tashkent_finance.jpg"/></div>
-<div class="card-meta">5-SENTABR, 2026 · FINTECH &amp; AUDIT</div>
-<h3><a href="maqola.html?id=chatgpt-financial-services">ChatGPT for Financial Services: Banklar va moliya sektori uchun maxsus paket</a></h3>
-<p>GPT-6 Astra arxitekturasi bilan boyitilgan, bozor ma’lumotlari va qat’iy xavfsizlik protokollarini o‘z ichiga olgan ixtisoslashgan korporativ yechim.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>Bloomberg Tech / FT</b></span>
-<a href="https://bloomberg.com" rel="noopener" target="_blank">Asl manba ↗</a>
-</div>
-</article>
-<!-- 14: GPT-6 Astra Global Rollout (4-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="GPT-6 Astra keng rollout plus team enterprise narxlar arzonlashdi">
-<div class="thumb"><img alt="GPT-6 Astra Global Rollout" src="assets/ai_network.jpg"/></div>
-<div class="card-meta">4-SENTABR, 2026 · FRONTIER LABS · ROLLOUT</div>
-<h3><a href="maqola-gpt6-astra.html">GPT-6 Astra butun dunyo bo‘ylab ChatGPT Plus, Team va Enterprise foydalanuvchilariga to‘liq ochildi</a></h3>
-<p>OpenAI yangi model uchun API narxlarini o3 modeliga nisbatan 60% ga arzonlashtirdi. Korxonalar uchun ma’lumotlar xavfsizligi va maxfiy hisoblash kafolatlari e’lon qilindi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>TechCrunch / OpenAI</b></span>
-<a href="https://openai.com/index/gpt-6/" target="_blank" rel="noopener">Asl manba ↗</a>
-</div>
-</article>
-<!-- 15: GPT-6 Astra Rasmiy Relizi (3-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="Dunyo Texnologiya" data-search="GPT-6 Astra OpenAI flagman yangi model tafakkur multi-modal Dunyo">
-<div class="thumb"><img alt="GPT-6 Astra OpenAI" src="assets/ai_agents.jpg"/></div>
-<div class="card-meta">3-SENTABR, 2026 · FRONTIER LABS · ASOSIY RELIZ</div>
-<h3><a href="maqola-gpt6-astra.html">OpenAI rasman GPT-6 Astra modelini e’lon qildi: Multi-modal tafakkur va korporativ xotira</a></h3>
-<p>Yangi avlod modeli chuqur mantiqiy xulosalarni (o-seriya) real vaqtli tezlik bilan birlashtirdi. Doimiy xotira va 24 soatlik avtonom agentlik sessiyalari qo‘llab-quvvatlanadi.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>OpenAI Research</b></span>
-<a href="https://openai.com/index/gpt-6/" target="_blank" rel="noopener">Asl manba ↗</a>
-</div>
-</article>
-<!-- 16: Retail AI in Uzbekistan (2-Sentabr, 2026) -->
-<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="Elektron tijorat riteyl AI savdo konversiya Biznes">
-<div class="thumb"><img alt="O‘zbekiston riteylida sun’iy intellekt: Savdo konversiyasini 30% ga oshirish usullari" src="assets/retail_ai.jpg"/></div>
-<div class="card-meta">2-SENTABR, 2026 · RITEYL &amp; E-COMMERCE</div>
+
+<!-- 11: O'zbekiston Riteylida AI (Noyabr, 2024) -->
+<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston riteyl AI tavsiya algoritmi savdo konversiyasi">
+<div class="thumb"><img alt="O‘zbekiston riteylida sun’iy intellekt" src="assets/retail_ai.jpg"/></div>
+<div class="card-meta">NOYABR, 2024 · O‘ZBEKISTON · RITEYL</div>
 <h3><a href="maqola.html?id=uzbekistan-retail-ai">O‘zbekiston riteylida sun’iy intellekt: Savdo konversiyasini 30% ga oshirish usullari</a></h3>
-<p>Mijozlar savatchasini tahlil qilish, talabni oldindan bashoratlash va dinamik chegirmalar berish orqali xarajatlarni qisqartirish tajribasi.</p>
+<p>Mijozlar savatchasini tahlil qilish, talabni oldindan bashoratlash va dinamik tavsiyalar berish bo‘yicha mahalliy amaliyot.</p>
 <div class="card-source">
-<span class="source-info">Manba: <b>Daryo.uz / Spot</b></span>
-<a href="https://www.spot.uz" rel="noopener" target="_blank">Asl manba ↗</a>
+<span class="source-info">Manba: <b>Spot.uz Biznes Tahlili</b></span>
+<a href="https://www.spot.uz/oz/" rel="noopener" target="_blank">Asl manba ↗</a>
 </div>
 </article>
-<!-- Qo'llanma 2: GPT-6 Astra Master Promptlari -->
-<article class="card filter-card" data-audience="mutaxassislar" data-cat="Texnologiya Qo‘llanma" data-search="GPT-6 Astra promptlar to'plami master prompt qo'llanma b2b yuridik shartnoma">
-<div class="thumb"><img alt="GPT-6 Astra Master Promptlari" src="assets/data_agent.jpg"/></div>
-<div class="card-meta" style="color:var(--green); font-weight:700;">📘 AMALIY QO‘LLANMA · PROMPTLAR</div>
-<h3><a href="qollanmalar.html">GPT-6 Astra va LLMlar uchun Ishga Tayyor Master Promptlar To‘plami</a></h3>
-<p>B2B savdo, marketing, yuridik shartnomalar tahlili va kod optimallashtirish uchun sinovdan o‘tgan 10 ta professional prompt andozalari.</p>
-<div class="card-source">
-<span class="source-info">Manba: <b>AiNoma Qo‘llanmalar Kutubxonasi</b></span>
-<a href="qollanmalar.html">Promptlarni ko‘rish →</a>
+
 </div>
-</article>
-</div>
-<div class="empty">Bu kategoriya uchun yangiliklar hali mavjud emas.</div>
-<!-- Telegram-First Community Banner -->
-<div class="newsletter">
-<div>
-<h2>Barcha yangiliklar har tong Telegram’da!</h2>
-<p>Telegram kanalimizda (@gptifyuz) har bir yangilik 3 daqiqalik qisqa formatda, audio xulosalar va amaliy B2B maslahatlar bilan beriladi.</p>
-</div>
-<a class="btn-tg-large" href="https://t.me/gptifyuz" rel="noopener" target="_blank">
-<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"></path></svg>
-        Telegram kanalimizga ulaning
-      </a>
+<div class="empty" style="display:none; text-align:center; padding:48px 16px; color:var(--muted);">
+Ushbu bo‘lim bo‘yicha hozircha yangiliklar mavjud emas.
 </div>
 </main>
-<footer>
-<div class="container footer">
-<a aria-label="AiNoma Bosh Sahifa" class="logo" href="index.html">
+<footer class="footer">
+<div class="container foot-grid">
+<div>
+<div class="logo">
 <img alt="AiNoma" class="brand-logo-img" src="assets/logo.svg"/>
-</a>
-<div class="footerlinks">
-<a href="yangiliklar.html">Yangiliklar</a>
-<a href="vositalar.html">AI vositalar</a>
-<a href="qollanmalar.html">Qo‘llanmalar</a>
-<a href="hikoyalar.html">Hikoyalar</a>
-        <a href="imkoniyatlar.html">Imkoniyatlar</a>
-        <a href="haqida.html">Haqida</a>
-<a href="https://t.me/gptifyuz" rel="noopener" target="_blank">Telegram (@gptifyuz)</a>
-<span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
 </div>
+<p style="margin-top:12px; color:var(--muted); font-size:14px; line-height:1.6;">O‘zbekistonda sun’iy intellekt texnologiyalari, vositalari va biznes amaliyoti bo‘yicha mustaqil tahliliy portal.</p>
+</div>
+<div>
+<h4 style="font-size:14px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color:var(--foreground);">Bo‘limlar</h4>
+<ul style="list-style:none; padding:0; margin:0; line-height:2; font-size:14px;">
+<li><a href="yangiliklar.html">Yangiliklar</a></li>
+<li><a href="vositalar.html">AI vositalar</a></li>
+<li><a href="qollanmalar.html">Qo‘llanmalar</a></li>
+<li><a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a></li>
+<li><a href="hikoyalar.html">Hikoyalar</a></li>
+<li><a href="imkoniyatlar.html">Imkoniyatlar</a></li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:14px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color:var(--foreground);">Loyihalar</h4>
+<ul style="list-style:none; padding:0; margin:0; line-height:2; font-size:14px;">
+<li><a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a></li>
+<li><a href="instagram_ai_sales.html">Instagram AI Sotuvchi</a></li>
+<li><a href="https://t.me/gptifyuz" rel="noopener" target="_blank">Telegram Kanal</a></li>
+<li><a href="https://www.gptify.uz" rel="noopener" target="_blank">GPTify B2B Tizimlar</a></li>
+</ul>
+</div>
+<div>
+<h4 style="font-size:14px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color:var(--foreground);">Hamkorlik</h4>
+<p style="color:var(--muted); font-size:14px; line-height:1.6;">Keysingizni ulashing yoki B2B integratsiya bo‘yicha bog‘laning:</p>
+<a class="btn primary" href="https://t.me/shukhratbek" rel="noopener" style="margin-top:8px; display:inline-block;" target="_blank">Bog‘lanish →</a>
+</div>
+</div>
+<div class="container" style="border-top:1px solid var(--border); margin-top:32px; padding-top:20px; text-align:center; color:var(--muted); font-size:13px;">
+© 2025 AiNoma.uz — Barcha huquqlar himoyalangan.
 </div>
 </footer>
 <script src="app.js"></script>
