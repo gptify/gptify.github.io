@@ -1,4 +1,38 @@
 window.AINOMA_ARTICLES = {
+  "meta-muse-openclaw-ilhomlanish-tahlili": {
+    "id": "meta-muse-openclaw-ilhomlanish-tahlili",
+    "slug": "meta-muse-openclaw-ilhomlanish-tahlili",
+    "title": "Sun’iy intellekt sohasida intellektual mulk chegarasi: Meta Muse yordamchisida OpenClaw izlari tan olindi",
+    "kicker": "Voqea: 22-Sentabr, 2026 · Manba: 22-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
+    "deck": "Meta kompaniyasi yangi Muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning OpenClaw loyihasidan sezilarli darajada ilhomlanganini rasman tan oldi.",
+    "event_date": "2026-09-22",
+    "source_published_date": "2026-09-22",
+    "ainoma_published_date": "2026-09-22",
+    "ainoma_updated_date": "2026-09-22",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_agents.jpg",
+    "imgAlt": "Meta va OpenClaw sun’iy intellekt modellari o'rtasidagi arxitektura va kod o'xshashligi tahlili",
+    "qisqacha": [
+      "Meta yangi Muse sun’iy intellekt yordamchisi OpenClaw loyihasidan kuchli ilhomlanganini tasdiqladi.",
+      "Ishchi muhitdagi fayl nomlari va kontent tuzilmasidagi aniq mosliklar texnik o'xshashlikni ko'rsatmoqda.",
+      "Ochiq kodli manbalardan foydalanishda korporativ etika va intellektual mulk masalalari qayta ko'rib chiqilmoqda."
+    ],
+    "primary_source": {
+      "name": "TechCrunch AI",
+      "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
+      "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
+      "date": "22.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Meta texnologik giganti o'zining yangi Muse deb nomlangan sun’iy intellekt yordamchisini mutlaqo noldan qurganini ta'kidlab kelayotgan edi. Biroq, TechCrunch bergan xabarga ko'ra, kompaniya ushbu sun’iy intellekt yordamchisi OpenClaw ochiq loyihasidan \"chuqur ilhomlanganini\" rasman tan oldi. O'xshashlik shunchalik yuqoriki, hatto ishchi muhitdagi ba'zi fayl nomlari va kontent tuzilmalari ham bir xil ekani ma'lum bo'ldi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Katta texnologik korporatsiyalar va ochiq kodli (open-source) hamjamiyat o'rtasidagi munosabatlar doimiy ravishda diqqat markazida bo'lib kelgan. Meta kompaniyasi ochiq manbali modellarni qo'llab-quvvatlashi bilan tanilgan bo'lsa-da, tijoriy loyihalarda mavjud ochiq yechimlardan andoza olish va ularni o'z mahsuloti sifatida taqdim etish chegarasi borasidagi bahslar ushbu hodisa sababli yanada kuchayadi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><b>Arxitektura va fayllar strukturasi:</b> Tizimdagi konfiguratsiya hamda fayl nomlarining bir xilligi muhandislar OpenClaw loyihasi kodi va mantiqini bevosita o'rganib chiqib, moslashtirganini ko'rsatadi.</li>\n      <li><b>Modellarni o'qitish va sozlash:</b> Tizimlarni noldan shakllantirish o'rniga, sinovdan o'tgan ochiq tuzilmalardan foydalanish ishlab chiqish vaqtini qisqartiradi, ammo unikal arxitektura da'vosini shubha ostiga qo'yadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><b>R&D xarajatlari va samaradorlik:</b> Mavjud ochiq yechimlardan ilhomlanib mahsulot qurish bozorga chiqish vaqtini (time-to-market) qisqartiradi va kapital xarajatlarini tejaydi.</li>\n      <li><b>Reputatsiya va intellektual mulk xatarlari:</b> Mualliflik huquqlari va litsenziya shartlariga e'tiborsizlik brend obro'siga hamda huquqiy xatarlarga olib kelishi mumkin.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT ekotizimida ham ko'plab drayver startaplar va mahsulot jamoalari global ochiq manbali sun’iy intellekt modellaridan keng foydalanmoqda. Ushbu holat mahalliy dasturchilar va biznes rahbarlariga o'z mahsulotlarini qurishda litsenziyalash talablariga qat'iy rioya qilish hamda mualliflik huquqini to'g'ri rasmiylashtirish zarurligini ko'rsatib beradi. Ochiq koddan foydalanishda shaffoflikni ta'minlash kelajakda xalqaro investitsiyalarni jalb qilishda muhim omil hisoblanadi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><b>Litsenziyalarni audit qiling:</b> Kompaniyangizda foydalanilayotgan barcha ochiq manbali sun’iy intellekt kutubxonalari va koddagi litsenziya shartlarini qayta ko'rib chiqing.</li>\n    <li><b>Ichki ishlab chiqish standartlarini belgilang:</b> Muhandislaringiz uchun koding va arxitektura andozalaridan foydalanish bo'yicha aniq etika qoidalarini joriy eting.</li>\n    <li><b>Intellektual mulk muhofazasini ta'minlang:</b> O'z mahsulotingizni qurishda tashqi manbalardan olingan qismlarni aniq hujjatlashtiring va shaffoflikni saqlang.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22"
+  },
   "openai-gpt6-astra": {
     "id": "openai-gpt6-astra",
     "slug": "openai-gpt6-astra",
@@ -583,4 +617,3 @@ window.AINOMA_ARTICLES = {
     "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind va MIT FutureTech tadqiqotchilari butun dunyo bo‘ylab 3,500 dan ziyod olim va tahlilchilar ishtirokida sun’iy intellektning real samaradorligini o‘rgandi. Hisobotga ko‘ra, mutaxassislar AI yordamida haftasiga o‘rtacha 7 soatgacha vaqt tejamoqda. Biroq, tadqiqot mualliflari yangi jiddiy xavfni o‘rtaga tashlashdi: <strong>'Tekshirish solig‘i' (The Verification Tax)</strong>.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt bir necha soniyada 100 sahifalik hisobot yoki minglab qator kod ishlab bera oladi. Ammo uning ichidagi mayda xatolarni, noaniq havolalarni va yashirin mantiqiy nuqsonlarni inson ko‘zi bilan topish ba’zida noldan yozishdan ham ko‘proq kognitiv charchoq keltiradi. Agar tashkilotda avtomatlashtirilgan tekshirish vositalari (unit-testlar, linterlar, avtonom auditorlar) bo‘lmasa, xodimlar butun vaqtini AI xatolarini tuzatishga sarflaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Avtomatlashtirilgan tekshiruv (Automated Verification):</strong> Kodni testlar (CI/CD) va qat’iy sxemalar orqali tekshirishni odatga aylantiring.</li>\n      <li><strong>Fact-checking protokollari:</strong> Modeldan har bir keltirilgan fakt va manbaga birlamchi havola talab qiling.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Kompaniyada xatarlar nazorati:</strong> Xodimlarga shunchaki 'AI ishlat' deyish kamlik qiladi; sifat nazorati (QA) reglamentini joriy etish shart.</li>\n      <li><strong>Haqiqiy ROI hisobi:</strong> Tejalgan 7 soatning qancha qismi tekshirishga ketayotganini o‘lchash.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston biznesi uchun nimani anglatadi?</div>\n  <p>O‘zbekiston kompaniyalarida ko‘pincha xodimlar AI tayyorlagan shartnoma yoki moliyaviy hisobotlarni to‘liq o‘qimasdan rahbariyatga taqdim etishi oqibatida xatarlar paydo bo‘lmoqda. Tizimli yondashuv — bu AIdan natija olish bilan birga, uni ichki ekspertizadan o‘tkazish mas’uliyatini qat’iy belgilashdir.</p>\n</div>\n"
   }
 };
-

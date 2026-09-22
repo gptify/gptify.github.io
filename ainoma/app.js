@@ -111,7 +111,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Sun’iy intellekt sohasida intellektual mulk chegarasi: Meta Muse yordamchisida OpenClaw izlari tan olindi", u: "maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili", k: "sun’iy intellekt sohasida intellektual mulk chegarasi: meta muse yordamchisida openclaw izlari tan olindi dunyo texnologiya techcrunch ai meta kompaniyasi yangi muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning " },
   { t: "JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma", u: "maqola.html?id=jetbrains-air", k: "jetbrains 'air' tizimini e’lon qildi: agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma dasturlash devtools jetbrains official blog jetbrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom ai agentlarini koordinatsiya qili" },
   { t: "Perform.AI elektron tijorat uchun 'AI Commerce OS' operatsion tizimini ishga tushirdi", u: "maqola.html?id=perform-ai-commerce-os", k: "perform.ai elektron tijorat uchun 'ai commerce os' operatsion tizimini ishga tushirdi dunyo biznes eqs corporate newsroom brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtir" },
   { t: "BMT Ilmiy Hay’ati: Avtonom AI agentlar xavfsizligi ularning texnik imkoniyatlaridan ortda qolmoqda", u: "maqola.html?id=un-ai-agents-warning", k: "bmt ilmiy hay’ati: avtonom ai agentlar xavfsizligi ularning texnik imkoniyatlaridan ortda qolmoqda dunyo texnologiya un independent scientific panel on ai bmt qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberx" },
