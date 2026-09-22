@@ -34,6 +34,7 @@
         <a href="yangiliklar.html">Yangiliklar</a>
         <a href="vositalar.html">AI vositalar</a>
         <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
         <a href="hikoyalar.html">Hikoyalar</a>
         <a href="imkoniyatlar.html">Imkoniyatlar</a>
         <a href="haqida.html">Haqida</a>
@@ -61,12 +62,15 @@
   <main class="container">
     <!-- Hero Section -->
     <div class="hero">
-      <div class="hero-copy">
-        <div class="kicker">O‘rgan. Qo‘lla. Qur.</div>
-        <h1>AI haqida.<br><span class="green">Sodda</span> tilda.</h1>
-        <p class="lead">Sun’iy intellekt bo‘yicha eng sara tahlillar, O‘zbekiston biznesi uchun amaliy vositalar va ishlab chiqarish promptlari — ortiqcha murakkabliklarsiz.</p>
-        <div class="actions">
-          <a class="btn primary" href="yangiliklar.html">Yangiliklarni o‘qish →</a>
+      <div class="hero-left">
+        <div class="badge">
+          <span>O‘zbekiston AI Portali</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+        <h1>Sun’iy intellekt — tushunarli, xolis va amaliyotda.</h1>
+        <p>Quruq shov-shuvsiz. Global innovatsiyalar, O‘zbekiston IT ekotizimi, xolis vositalar tahlili va biznesda qo‘llash mumkin bo‘lgan amaliy bilimlar.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="yangiliklar.html">Yangiliklarni o‘qish</a>
           <a class="btn" href="vositalar.html">AI vositalar katalogi</a>
         </div>
         <div class="stats">
@@ -102,6 +106,15 @@
 
     <!-- Quick Portal Links (2-tone standardized palette with distinct SVGs) -->
     <div class="portals">
+      <a class="portal" href="prompt-ustaxonasi.html" style="border: 1px solid var(--border-focus);">
+        <div class="portal-icon">
+          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </div>
+        <div>
+          <b style="color:var(--green);">Prompt Ustaxonasi</b>
+          <small>Interaktiv prompt konstruktori</small>
+        </div>
+      </a>
       <a class="portal" href="yangiliklar.html">
         <div class="portal-icon">
           <svg viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path><path d="M18 14h-8"></path><path d="M15 18h-5"></path><path d="M10 6h8v4h-8V6Z"></path></svg>
@@ -111,22 +124,13 @@
           <small>Global va O‘zbekiston voqealari</small>
         </div>
       </a>
-      <a class="portal" href="hikoyalar.html">
-        <div class="portal-icon">
-          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-        </div>
-        <div>
-          <b>Hikoyalar</b>
-          <small>Ekotizim va amaliy keyslar</small>
-        </div>
-      </a>
       <a class="portal" href="qollanmalar.html">
         <div class="portal-icon">
           <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
         </div>
         <div>
           <b>Qo‘llanmalar</b>
-          <small>Ishga tayyor master promptlar</small>
+          <small>Ishga tayyor master yo‘riqnomalar</small>
         </div>
       </a>
       <a class="portal" href="vositalar.html">
@@ -138,6 +142,15 @@
           <small>Tekshirilgan servislar katalogi</small>
         </div>
       </a>
+      <a class="portal" href="hikoyalar.html">
+        <div class="portal-icon">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        </div>
+        <div>
+          <b>Hikoyalar</b>
+          <small>Ekotizim va amaliy keyslar</small>
+        </div>
+      </a>
       <a class="portal" href="imkoniyatlar.html">
         <div class="portal-icon">
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -145,15 +158,6 @@
         <div>
           <b>Imkoniyatlar</b>
           <small>0% Soliq, Sandbox &amp; GPU grantlar</small>
-        </div>
-      </a>
-      <a class="portal" href="instagram_ai_sales.html">
-        <div class="portal-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-        </div>
-        <div>
-          <b>Instagram AI Sotuvchi</b>
-          <small>ManyChat o‘rniga avtonom agent</small>
         </div>
       </a>
     </div>
@@ -167,10 +171,21 @@
       <div class="news-layout">
         <div class="cards">
           <article class="card">
+            <div class="thumb"><img src="assets/data_agent.jpg" alt="OpenAI Deep Research va o3-mini"></div>
+            <div class="card-meta">22-SENTABR, 2026 · FRONTIER LABS · DUNYO</div>
+            <h3><a href="maqola.html?id=openai-deep-research">OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlili agenti</a></h3>
+            <p>Endi LLM shunchaki bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili tayyorlaydi.</p>
+            <div class="card-source">
+              <span class="source-info">Manba: <b>OpenAI / TechCrunch</b></span>
+              <a href="https://openai.com" target="_blank" rel="noopener">Asl manba ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
             <div class="thumb"><img src="assets/ai_network.jpg" alt="Google Gemini 2.5 Enterprise API"></div>
             <div class="card-meta">21-SENTABR, 2026 · GOOGLE CLOUD · DUNYO</div>
-            <h3><a href="maqola.html?id=gemini-enterprise">Google Gemini 2.5 Enterprise API taqdim etildi: 150ms jonli audio va video tahlil</a></h3>
-            <p>Yangi arxitektura korxona call-markazlari va biznes ilovalari uchun insondek tezkor, uzluksiz ovozli muloqot va real vaqtda video oqim tahlilini ochdi.</p>
+            <h3><a href="maqola.html?id=gemini-enterprise">Google Gemini 2.5 Enterprise API: 150ms jonli audio va video oqim</a></h3>
+            <p>Yangi arxitektura korxona call-markazlari va biznes ilovalari uchun insondek tezkor ovozli muloqot va real vaqtda video tahlil imkonini ochdi.</p>
             <div class="card-source">
               <span class="source-info">Manba: <b>Google Cloud AI / The Verge</b></span>
               <a href="https://cloud.google.com" target="_blank" rel="noopener">Asl manba ↗</a>
@@ -178,35 +193,24 @@
           </article>
 
           <article class="card">
-            <div class="thumb"><img src="assets/tashkent_finance.jpg" alt="O'zbekiston Markaziy Banki Sun'iy Intellekt Skoringi"></div>
-            <div class="card-meta">20-SENTABR, 2026 · O‘ZBEKISTON · FINTEX</div>
-            <h3><a href="maqola.html?id=cbu-ai-skoring">Markaziy Bank bank va fintexlarda sun’iy intellekt skoringi qo‘llash bo‘yicha talablarni belgiladi</a></h3>
-            <p>Kredit layoqatini baholashda diskriminatsiyasiz shaffoflik, mijozlarning shaxsiy ma’lumotlarini faqat O‘zbekiston serverlarida saqlash belgilandi.</p>
+            <div class="thumb"><img src="assets/registan_real.jpg" alt="O'zbekistonda sun'iy intellekt regulyator sandboxi"></div>
+            <div class="card-meta">21-SENTABR, 2026 · O‘ZBEKISTON · QONUNCHILIK</div>
+            <h3><a href="maqola.html?id=uz-ai-sandbox">O‘zbekistonda sun’iy intellekt uchun 'Regulyator Sandbox' ishga tushirildi</a></h3>
+            <p>Raqamli texnologiyalar vazirligi va IT Park startaplarga tibbiyot, ta’lim va fintexdagi AI loyihalarini sinash uchun maxsus rejim va GPU grantlarini taqdim etadi.</p>
             <div class="card-source">
-              <span class="source-info">Manba: <b>Markaziy Bank / Gazeta.uz</b></span>
-              <a href="https://cbu.uz" target="_blank" rel="noopener">Asl manba ↗</a>
+              <span class="source-info">Manba: <b>Raqamli texnologiyalar vazirligi / IT Park</b></span>
+              <a href="https://digital.uz" target="_blank" rel="noopener">Asl manba ↗</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="thumb"><img src="assets/ai_agents.jpg" alt="Anthropic Claude 3.7"></div>
-            <div class="card-meta">16-SENTABR, 2026 · FRONTIER LABS · DUNYO</div>
-            <h3><a href="maqola.html?id=claude-37">Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur</a></h3>
-            <p>Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Foydalanuvchi qidiruvda model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.</p>
+            <div class="thumb"><img src="assets/social_commerce.jpg" alt="Telegram Mini Apps va AI savdo"></div>
+            <div class="card-meta">20-SENTABR, 2026 · O‘ZBEKISTON · TIJORAT</div>
+            <h3><a href="maqola.html?id=telegram-ai-apps">Telegram Mini Apps + AI: O‘zbekistonda elektron savdoning yangi to‘lqini</a></h3>
+            <p>Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy tavsiya oladi va Payme/Click orqali to‘lovni amalga oshiradi.</p>
             <div class="card-source">
-              <span class="source-info">Manba: <b>Anthropic / VentureBeat</b></span>
-              <a href="https://anthropic.com" target="_blank" rel="noopener">Asl manba ↗</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><img src="assets/gpu_datacenter.jpg" alt="O'zbekiston Sun'iy Intellekt Klasteri GPU"></div>
-            <div class="card-meta">12-SENTABR, 2026 · O‘ZBEKISTON · DAVLAT</div>
-            <h3><a href="maqola.html?id=itpark-gpu-grants">IT Park sun’iy intellekt startaplari uchun GPU hisoblash grantlarini e’lon qildi</a></h3>
-            <p>Mahalliy sun’iy intellekt loyihalarini qo‘llab-quvvatlash uchun yuqori quvvatli server va klaster infratuzilmasiga bepul kirish imkoniyati beriladi.</p>
-            <div class="card-source">
-              <span class="source-info">Manba: <b>IT Park Uzbekistan</b></span>
-              <a href="https://it-park.uz" target="_blank" rel="noopener">Asl manba ↗</a>
+              <span class="source-info">Manba: <b>Telegram Developers / Spot.uz</b></span>
+              <a href="https://core.telegram.org/bots/webapps" target="_blank" rel="noopener">Asl manba ↗</a>
             </div>
           </article>
         </div>
@@ -227,6 +231,61 @@
         <a class="more" href="qollanmalar.html">Barcha qo‘llanmalarni ko‘rish →</a>
       </div>
       <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <article class="card" style="border: 2px solid var(--border-focus);">
+          <div class="thumb"><img src="assets/coding_workspace.jpg" alt="Prompt Ustaxonasi — Interaktiv Prompt Konstruktori"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">🛠️ INTERAKTIV ASBOB · PROMPTLAR</div>
+          <h3><a href="prompt-ustaxonasi.html">Prompt Ustaxonasi: Professional prompt konstruktori va O‘zbekiston B2B andozalari</a></h3>
+          <p>O‘zingizning sohangiz, vazifangiz va kontekstingizni tanlab, 1 daqiqada mukammal tizimli prompt yarating va to‘g‘ridan-to‘g‘ri ChatGPT/Claude'da sinab ko‘ring.</p>
+          <div class="card-source">
+            <span class="source-info">Format: <b>Interaktiv generator</b></span>
+            <a href="prompt-ustaxonasi.html">Ustaxonani ochish →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="assets/robot_assist.jpg" alt="Sun’iy intellektni 0 dan boshlash"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">📖 BAZAVIY YO‘RIQNOMA · 0 DAN</div>
+          <h3><a href="qollanma-noldan.html">Sun’iy intellektni 0 dan boshlash: Yangi boshlovchilar uchun amaliy yo‘riqnoma</a></h3>
+          <p>ChatGPT, Claude va Gemini o‘rtasidagi farq, bepul vs pullik tariflar, shaxsiy kabinet ochish va birinchi kundan boshlab to‘g‘ri foydalanish qoidalari.</p>
+          <div class="card-source">
+            <span class="source-info">Daraja: <b>Boshlang‘ich</b></span>
+            <a href="qollanma-noldan.html">O‘qish →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="assets/ai_agents.jpg" alt="Mukammal prompt yozish san’ati"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">⚡ MASTERKLASS · PROMPTING</div>
+          <h3><a href="qollanma-prompting.html">Mukammal prompt yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida</a></h3>
+          <p>RCFO formulasi (Rol, Kontekst, Format, Cheklovlar), few-shot prompting, qadam-baqadam tafakkur va sun’iy intellektdan aniq biznes natija olish sirlari.</p>
+          <div class="card-source">
+            <span class="source-info">Daraja: <b>O‘rta / B2B</b></span>
+            <a href="qollanma-prompting.html">O‘qish →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="assets/tashkent_finance.jpg" alt="Ishda sun’iy intellektdan foydalanish"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">🏢 BIZNES UNUMDORLIK · ISHDA</div>
+          <h3><a href="qollanma-ishda.html">Ishda sun’iy intellektdan foydalanish: Vaqtni 3 barobar tejaydigan 5 ta amaliy ish oqimi</a></h3>
+          <p>Didox shartnoma auditi, Excel va 1C ma’lumotlarini tahlil qilish, yig‘ilish bayonnomalari va Gamma taqdimotlarni avtomatlashtirish.</p>
+          <div class="card-source">
+            <span class="source-info">Daraja: <b>Amaliy biznes</b></span>
+            <a href="qollanma-ishda.html">O‘qish →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb"><img src="assets/agents_workflow.jpg" alt="Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish"></div>
+          <div class="card-meta" style="color:var(--green); font-weight:700;">⚙️ MUHANDISLIK &amp; AGENTLAR</div>
+          <h3><a href="qollanma-qurish.html">Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar</a></h3>
+          <p>Make, n8n, OpenAI API va Telegram botlar yordamida 24/7 ishlovchi avtonom savdo va mijozlarni qabul qilish tizimini 0 dan loyihalash.</p>
+          <div class="card-source">
+            <span class="source-info">Daraja: <b>Ilg‘or / Tizimlar</b></span>
+            <a href="qollanma-qurish.html">O‘qish →</a>
+          </div>
+        </article>
+
         <article class="card">
           <div class="thumb"><img src="assets/b2b_sales.jpg" alt="B2B Outreach Masterklassi"></div>
           <div class="card-meta" style="color:var(--green); font-weight:700;">📘 MASTERKLASS · B2B SAVDO</div>
@@ -235,28 +294,6 @@
           <div class="card-source">
             <span class="source-info">Muallif: <b>Shukhratbek Iskandarov</b></span>
             <a href="qollanma-b2b.html">Qo‘llanmaga o‘tish →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="thumb"><img src="assets/coding_workspace.jpg" alt="GPT-6 Astra Master Promptlari"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">⚡ PROMPT TO‘PLAMI · BIZNES</div>
-          <h3><a href="qollanmalar.html">GPT-6 Astra va LLMlar uchun Ishga Tayyor Master Promptlar To‘plami</a></h3>
-          <p>B2B savdo, marketing, yuridik shartnomalar tahlili va kod optimallashtirish bo‘yicha sinovdan o‘tgan 10 ta professional prompt andozasi.</p>
-          <div class="card-source">
-            <span class="source-info">Manba: <b>AiNoma Qo‘llanmalar Kutubxonasi</b></span>
-            <a href="qollanmalar.html">Promptlarni ko‘rish →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="thumb"><img src="assets/robot_assist.jpg" alt="AI Boshlang'ich Qo'llanma"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">📖 BAZAVIY YO‘RIQNOMA</div>
-          <h3><a href="qollanma.html">AI bilan to‘g‘ri ishlash: Birinchi promptdan natijagacha</a></h3>
-          <p>ChatGPT, Claude va Gemini kabi LLM modellaridan aniq biznes natijalar olish uchun tizimli ko‘rsatmalar berish metodikasi.</p>
-          <div class="card-source">
-            <span class="source-info">Manba: <b>AiNoma Tahririyati</b></span>
-            <a href="qollanma.html">O‘qish →</a>
           </div>
         </article>
       </div>

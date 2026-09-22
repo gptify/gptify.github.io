@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mukammal AI prompt yozish metodikasi. RCFO formulasi, Few-shot prompting va professional natija olish sirlari.">
+  <title>Mukammal Prompt Yozish San’ati: Amaliy Masterklass | AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://ainoma.uz/qollanma-prompting.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a class="active" href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Amaliy Masterklass · Prompt Muhandisligi</div>
+      <h1>Mukammal prompt yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida</h1>
+      <p class="article-deck">Nega ko‘pchilik sun’iy intellektdan o‘rtamiyona javob oladi va qanday qilib 1 ta to‘g‘ri tuzilgan prompt orqali 10 barobar sifatli natijaga erishish mumkin?</p>
+      
+      <div class="byline">
+        <div class="avatar">ShI</div>
+        <div>
+          <b>Shukhratbek Iskandarov</b><br>
+          <span style="color:var(--muted)">GPTify.co asoschisi & B2B AI amaliyotchisi · 6 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="assets/coding_workspace.jpg" alt="Mukammal prompt yozish san'ati bo'yicha masterklass">
+    </div>
+
+    <article class="article-shell article-body">
+      <p>Sun’iy intellekt modellariga kiritilayotgan so‘rov (prompt) — bu shunchaki qidiruv so‘zi emas, balki modelga berilayotgan texnik topshiriq (TOR)dir. Qanchalik aniq texnik topshiriq bersangiz, natija shunchalik xatosiz va biznes talablaringizga mos bo‘ladi.</p>
+
+      <h2>1. "RCFO" Formulasi: 95% muvaffaqiyat garovi</h2>
+      <p>Professional prompt muhandislari har qanday murakkab vazifani 4 ta ustun ustiga quradi:</p>
+
+      <div class="audience-grid">
+        <div class="lens-box tech">
+          <div class="lens-title">R — Rol (Persona)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Modelga qaysi mutaxassis nomidan fikrlashi kerakligini aniq belgilang. <em>"Sen B2B savdo bo‘yicha 10 yillik tajribaga ega strategsan."</em></p>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">C — Kontekst (Context)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Biznesingiz, auditoriyangiz va vaziyat haqida qisqacha ma’lumot bering. <em>"Biz O‘zbekistonda distribyutsiyani avtomatlashtiruvchi IT xizmatmiz."</em></p>
+        </div>
+        <div class="lens-box tech">
+          <div class="lens-title">F — Format (Output Format)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Javob qanday ko‘rinishda bo‘lishi shartligini ko‘rsating: <em>"Jadval shaklida, 3 ta ustun: Muammo, Yechim, Natija."</em></p>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">O — Oqibat & Cheklov (Constraints)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Nimalarni qilmaslik kerakligini yozing: <em>"Ortiqcha lirikadan qoch, 100 so‘zdan oshmasin, faqat faktlarni keltir."</em></p>
+        </div>
+      </div>
+
+      <h2>2. "Few-Shot Prompting": Modelga misollar bering</h2>
+      <p>Sun’iy intellektga eng yaxshi tushuntirish usuli — bu unga 1–2 ta muvaffaqiyatli misolni ko‘rsatishdir. Masalan, agar siz mijozlar sharhini ijobiy yoki salbiyga ajratmoqchi bo‘lsangiz, avval unga shunday ko‘rsatma bering:</p>
+      
+      <div class="prompt-card" style="margin:20px 0;">
+        <pre class="prompt-code">"Menga matn ohangini aniqlashga yordam ber:
+Misol 1: 'Tovarni juda tez yetkazib berishdi, rahmat!' -> Ijobiy (Positive)
+Misol 2: 'Kuryer 2 soat kechikdi va qo'ng'iroqqa javob bermadi' -> Salbiy (Negative)
+Endi mana bu matnni tahlil qil: '[Yangi sharh matni]'"</pre>
+      </div>
+
+      <h2>3. "Chain-of-Thought": Bosqichma-bosqich fikrlashni yoqing</h2>
+      <p>Murakkab moliyaviy, yuridik yoki hisob-kitob topshiriqlarida model birdaniga javob yozsa, xato qilishi mumkin. Shuning uchun prompt oxiriga ushbu sehrli jumlani qo‘shing:</p>
+      
+      <blockquote>
+        "Yakuniy xulosaga kelishdan oldin, barcha hisob-kitoblarni bosqichma-bosqich, qadamma-qadam (step-by-step) tahlil qilib ko‘rsat."
+      </blockquote>
+
+      <h2>4. Salbiy ko‘rsatmalar tuzog‘i</h2>
+      <p>Odamlar ko‘pincha <em>"Qimmat so‘zini ishlatma"</em> deb yozadi, ammo model salbiy inkorlarni ba’zan to‘g‘ri idrok qilmaydi. Buning o‘rniga ijobiy muqobilini bering: <em>"'Qimmat' so‘zi o‘rniga 'premium investitsiya' yoki 'uzoq muddatli tejamkorlik' atamalarini qo‘lla."</em></p>
+
+      <div class="action-checklist">
+        <div class="action-checklist-title">🎯 Promptingizni tekshirish chek-listi</div>
+        <ol>
+          <li>Modelga aniq rol berildimi? (Ekspert, yurist, muharrir).</li>
+          <li>Kompaniya va mijoz haqida 2 qator kontekst bormi?</li>
+          <li>Javob formati belgilandimi? (Jadval, punktlar, qisqa xat).</li>
+          <li>Kutilayotgan hajm va so‘zlar soni chegaralandimi?</li>
+        </ol>
+      </div>
+
+      <div class="article-note">
+        <b>🛠️ Tayyor vosita:</b> Har safar qo‘lda prompt yozishga vaqt sarflamang. AiNoma’ning <a href="prompt-ustaxonasi.html" style="color:var(--green); font-weight:700;">Prompt Ustaxonasida</a> vazifangizni tanlang — tizim bir necha soniyada master promptni generatsiya qilib beradi.
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class="footerlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz ↗</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

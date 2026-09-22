@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AiNoma Prompt Ustaxonasi — O‘zbekiston biznesi va mutaxassislari uchun professional sun’iy intellekt prompt generatori va tayyor qoliplar.">
+  <title>Prompt Ustaxonasi — AI Prompt Generator & Konstruktor | AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://ainoma.uz/prompt-ustaxonasi.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <style>
+    .builder-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      margin-bottom: 40px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 14.5px;
+      color: var(--ink);
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color .2s ease;
+      font-family: inherit;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      border-color: var(--green);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 640px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .builder-card {
+        padding: 20px;
+      }
+    }
+    .output-card {
+      background: #090d16;
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+      border: 1px solid #1e293b;
+      position: relative;
+    }
+    .output-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .output-pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: "JetBrains Mono", monospace, monospace;
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: #34d399;
+      margin: 0;
+      max-height: 380px;
+      overflow-y: auto;
+    }
+    .output-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .output-actions a, .output-actions button {
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .gptify-banner {
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.08) 0%, rgba(6, 78, 59, 0.12) 100%);
+      border: 1px solid rgba(5, 150, 105, 0.3);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      .gptify-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a class="active" href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="pagehero">
+      <div class="kicker">AiNoma / B2B AI Generator</div>
+      <h1>Prompt Ustaxonasi</h1>
+      <p>G‘oyangizni professional AI promptga aylantiring. Oddiy o‘zbek tilida vazifangizni yozing — generator ChatGPT, Claude va Gemini uchun qat’iy kontekstli, rolga asoslangan master prompt tayyorlab beradi.</p>
+    </div>
+
+    <!-- Interactive Prompt Builder -->
+    <div class="builder-card">
+      <h2 style="font-size: 20px; font-weight:800; margin-top:0; margin-bottom:20px;">⚡ Prompt Konstruktori</h2>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="promptCategory">1. Yo‘nalish va soha:</label>
+          <select id="promptCategory" onchange="applyPresetTemplate(this.value)">
+            <option value="custom">Maxsus (O‘z vazifangiz)</option>
+            <option value="b2b_sales">B2B Savdo & Sovuq Outreach</option>
+            <option value="objection">Mijoz Narx E’tirozi ("Qimmat")</option>
+            <option value="contract_audit">Didox / Shartnomadagi Xatarlar Auditi</option>
+            <option value="data_analysis">Excel & Moliyaviy Tahlil</option>
+            <option value="telegram_smm">Telegram Kanal Uchun Kontent-Reja</option>
+            <option value="hr_interview">HR STAR Metodi Bo‘yicha Suhbat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="promptRole">2. Sun’iy intellekt roli (Persona):</label>
+          <input type="text" id="promptRole" placeholder="Masalan: 10 yillik tajribaga ega B2B savdo strategi" value="B2B savdo va korporativ muzokaralar bo‘yicha ekspert">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="promptGoal">3. Asosiy vazifa (Nima qilib berishi kerak?):</label>
+        <textarea id="promptGoal" rows="2" placeholder="Masalan: Yangi mijozlarga sotuvchi sovuq email xatini yozib ber"></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="promptContext">4. Kontekst (Kompaniyangiz, mahsulotingiz, mijozingiz):</label>
+          <textarea id="promptContext" rows="3" placeholder="Masalan: Biz O‘zbekistondagi kompaniyalar uchun CRM va AI botlar quramiz. Maqsadli mijoz: ishlab chiqarish korxonalari rahbarlari."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="promptConstraints">5. Cheklovlar va qoidalar (Constraints):</label>
+          <textarea id="promptConstraints" rows="3" placeholder="Masalan: Ortiqcha maqtovlardan qoch, 120 so‘zdan oshmasin, professional samimiy ohangda yoz, bepul auditga chaqir."></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="promptFormat">6. Kutilayotgan format:</label>
+          <select id="promptFormat">
+            <option value="bullet">Aniq punktlar (Bullet points) va xulosa</option>
+            <option value="email">Yuborishga tayyor rasmiy xat (Email shabloni)</option>
+            <option value="table">Taqqoslash jadvali (Markdown Table)</option>
+            <option value="script">Sotuvchi va mijoz o‘rtasidagi jonli dialog (Skript)</option>
+            <option value="code">Kod / SQL so‘rov va izohlar</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="display:flex; align-items:flex-end;">
+          <button class="btn primary" style="width:100%; height:46px; font-size:15px; font-weight:700; display:flex; justify-content:center; align-items:center; gap:8px;" onclick="generateStructuredPrompt()">
+            <span>⚡ Professional Prompt Yaratish</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Output Display -->
+      <div class="output-card" id="outputCard" style="display:none;">
+        <div class="output-header">
+          <b style="color:#ffffff; font-size:14px;">Tayyor Master Prompt:</b>
+          <button class="btn" style="background:#10b981; color:#ffffff; border:none; padding:6px 14px; font-size:12px;" onclick="copyGeneratedPrompt()">
+            Nusxa olish
+          </button>
+        </div>
+        <pre class="output-pre" id="outputPre"></pre>
+        <div class="output-actions">
+          <a href="https://chatgpt.com" target="_blank" rel="noopener" style="background:#1e293b; color:#ffffff; border:1px solid #334155;">
+            ChatGPT'da sinash ↗
+          </a>
+          <a href="https://claude.ai" target="_blank" rel="noopener" style="background:#1e293b; color:#ffffff; border:1px solid #334155;">
+            Claude'da sinash ↗
+          </a>
+          <a href="https://gemini.google.com" target="_blank" rel="noopener" style="background:#1e293b; color:#ffffff; border:1px solid #334155;">
+            Gemini'da sinash ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GPTify B2B Advisory Bridge -->
+    <div class="gptify-banner">
+      <div>
+        <h3 style="margin:0 0 6px; font-size:18px; color:var(--ink); font-weight:800;">Kompaniyangiz uchun maxsus AI workflow va agentlar tizimini qurmoqchimisiz?</h3>
+        <p style="margin:0; font-size:14px; color:var(--muted); line-height:1.6;">
+          GPTify O‘zbekistondagi B2B korxonalariga CRM integratsiyalari, savdo agentlari va avtomatlashtirilgan tahlil tizimlarini joriy etishda amaliy konsalting xizmatini taqdim etadi.
+        </p>
+      </div>
+      <div style="display:flex; gap:12px; flex-shrink:0;">
+        <a class="btn primary" href="https://www.gptify.uz" target="_blank" rel="noopener">
+          GPTify.uz (Audit olish) ↗
+        </a>
+        <a class="btn" href="https://gptify.co/prompt-ustaxonasi/" target="_blank" rel="noopener">
+          To‘liq ilovada ochish ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- 6 Ready-Made Production Templates -->
+    <section>
+      <div class="section-head">
+        <h2 class="section-title">O‘zbekiston biznesi uchun tayyor master qoliplar</h2>
+      </div>
+
+      <div class="pagegrid">
+        <!-- Template 1 -->
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <span>B2B & Sotuv · Qolip</span>
+            <button class="copy-btn">Nusxa olish</button>
+          </div>
+          <h3 style="margin:0; font-size:16px;">B2B mijozlar uchun sovuq taklif (Outreach)</h3>
+          <p style="font-size:13px; color:var(--muted); margin:0;">Mijozning e’tiborini birinchi 3 qatordayoq tortuvchi va javob berish ehtimolini oshiruvchi xat shabloni.</p>
+          <pre class="prompt-code">"Sen B2B savdo bo‘yicha tajribali mutaxassissan. Bizning xizmat: [xizmat nomi]. Maqsadli mijoz: [kompaniya yoki rahbar lavozimi].
+Vazifa: Mijozga 120 so‘zdan oshmagan samimiy va professional sovuq xat yoz.
+Talablar:
+1. Birinchi jumlada shablon salomlardan qoch, ularning sohasidagi og‘riqli nuqtani tilga ol.
+2. 2 ta gapda bizning yechim ularga qanday vaqt yoki pul tejashini ko‘rsat.
+3. Call-to-Action (CTA): Qattiq sotuv qilma, shunchaki 'Bu mavzuda 10 daqiqa fikr almashsak qanday qaraysiz?' qabilida taklif ber."</pre>
+        </article>
+
+        <!-- Template 2 -->
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <span>Savdo · E'tiroz</span>
+            <button class="copy-btn">Nusxa olish</button>
+          </div>
+          <h3 style="margin:0; font-size:16px;">Mijozning "Qimmat" e'tirozini yengish</h3>
+          <p style="font-size:13px; color:var(--muted); margin:0;">Mijoz mahsulot narxiga shubha bildirganida narxni tushirmasdan qiymatni ko‘rsatuvchi 3 xil javob.</p>
+          <pre class="prompt-code">"Sen B2B savdo bo‘yicha professional trener va muzokarachi mutaxassissan.
+Vaziyat: Potentsial mijoz bizning tijorat taklifimizni ko‘rib, 'Xizmatingiz juda qimmat ekan, arzonroq variantini qidiramiz' deb javob berdi.
+Bizning mahsulot: [Mahsulot yoki xizmat nomi va asosiy afzalliklari].
+Vazifa: Savdo menejeri mijozga yo‘llashi uchun 3 ta turli xil psixologik yondashuvdagi javob variantini yoz:
+Variant 1: Qiymat va ROI (qaytim) hisob-kitobiga asoslangan javob.
+Variant 2: Sifat kafolati va arzon xizmatning yashirin xatarlarini tushuntiruvchi muloyim javob.
+Variant 3: Kompromiss taklif (hajmni moslashtirish orqali byudjetga sig‘ish)."</pre>
+        </article>
+
+        <!-- Template 3 -->
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <span>Huquq · Audit</span>
+            <button class="copy-btn">Nusxa olish</button>
+          </div>
+          <h3 style="margin:0; font-size:16px;">Didox / Shartnomadagi xatarlarni tekshirish</h3>
+          <p style="font-size:13px; color:var(--muted); margin:0;">O‘zbekiston Fuqarolik Kodeksi doirasida bir tomonlama jarimalar va xavfli punktlarni aniqlash.</p>
+          <pre class="prompt-code">"Sen O‘zbekiston Respublikasi xo‘jalik qonunchiligi bo‘yicha ixtisoslashgan tajribali korporativ yuristsan.
+Quyida Didox orqali kelgan shartnoma matni keltirilgan:
+---
+[Shartnoma matnini shu yerga qo‘ying]
+---
+Vazifa: Shartnomani biz (Ijrochi / Xaridor) tomoni manfaatlaridan kelib chiqib chuqur tahlil qil.
+Natijani quyidagi tartibda chiqar:
+1. Qizil zonalar (Kompaniyamiz uchun xavfli bo‘lgan 3 ta asosiy punkt).
+2. Bir tomonlama jarimalar va nomutanosib javobgarlik shartlari.
+3. For-major va shartnomani bekor qilish tartibidagi yashirin tuzoqlar.
+4. Qarshi taklif: Mazkur xavfli bandlarni qanday tahrir qilish bo‘yicha tayyor yuridik jumlalar."</pre>
+        </article>
+
+        <!-- Template 4 -->
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <span>Moliya · Tahlil</span>
+            <button class="copy-btn">Nusxa olish</button>
+          </div>
+          <h3 style="margin:0; font-size:16px;">Excel & Moliyaviy jadvallarni tahlil qilish</h3>
+          <p style="font-size:13px; color:var(--muted); margin:0;">Katta jadvallardan eng ko‘p marja keltirgan tovarlar va samarasiz xarajatlarni aniqlash.</p>
+          <pre class="prompt-code">"Sen yetakchi moliyaviy tahlilchi va data-analitiksiz.
+Quyida kompaniyamizning o‘tgan oylik savdo jadvallari ma’lumotlari keltirilgan:
+---
+[Jadval ma’lumotlari yoki CSV formatidagi nusxa]
+---
+Vazifa:
+1. Eng yuqori marja bergan top-5 mahsulotni aniqla.
+2. Xarajatlarning qaysi moddasi kutilganidan 15% dan ortiq oshib ketganini ko‘rsat.
+3. Keyingi oy uchun moliyaviy oqimni (Cash Flow) optimallashtirish bo‘yicha 3 ta amaliy boshqaruv qarorini ber."</pre>
+        </article>
+
+        <!-- Template 5 -->
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <span>Kontent & SMM</span>
+            <button class="copy-btn">Nusxa olish</button>
+          </div>
+          <h3 style="margin:0; font-size:16px;">Telegram kanal uchun 7 kunlik kontent-reja</h3>
+          <p style="font-size:13px; color:var(--muted); margin:0;">B2B auditoriya uchun foydali keyslar, tahliliy postlar va konversiyali takliflar ketma-ketligi.</p>
+          <pre class="prompt-code">"Sen O‘zbekiston bozorida B2B Telegram kanallarini yurgizuvchi professional kontent-marketologsan.
+Bizning soha: [Sohangiz, masalan: Distribyutsiya, IT, Logistika].
+Maqsadli auditoriya: O‘zbekistondagi tadbirkorlar va boshqaruvchilar.
+Vazifa: 7 kunlik (dushanba-yakshanba) professional kontent-reja tuz.
+Har bir post uchun quyidagilarni ko‘rsat:
+1. Post formati (Keys, tahlil, amaliy qo‘llanma, savol-javob, interaktiv).
+2. Kuchli 'Hook' (diqqatni tortuvchi birinchi 2 ta gap).
+3. Postning asosiy qiymati (foydalanuvchi nimani bilib oladi?).
+4. Call to action (Muxlislarni muhokamaga yoki xizmatga chorlash)."</pre>
+        </article>
+
+        <!-- Template 6 -->
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <span>HR · Intervyu</span>
+            <button class="copy-btn">Nusxa olish</button>
+          </div>
+          <h3 style="margin:0; font-size:16px;">STAR metodologiyasi suhbat savollari</h3>
+          <p style="font-size:13px; color:var(--muted); margin:0;">Nomzodning haqiqiy kompetensiyasini ochib beruvchi chuqur situatsion savollar to‘plami.</p>
+          <pre class="prompt-code">"Sen tajribali HR direktorsan.
+Biz [Lavozim nomi, masalan: Katta Sotuv Menejeri / Dasturchi] vakansiyasi uchun nomzodlarni saralamoqdamiz.
+Biz uchun eng muhim fazilatlar: [1. Muammolarni mustaqil yechish, 2. Stressga chidamlilik, 3. Muzokara qobiliyati].
+Vazifa: STAR (Situation, Task, Action, Result) metodologiyasi asosida 5 ta chuqur intervyu savolini tuz.
+Har bir savol uchun:
+- Savol matni;
+- Nomzod javobida nimaga e’tibor berish kerak (Yashil belgilar — Green flags);
+- Qanday javoblar xavotirli belgi hisoblanadi (Qizil bayroqlar — Red flags)."</pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class="footerlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz ↗</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    const PRESETS = {
+      b2b_sales: {
+        role: "B2B savdo va korporativ muzokaralar bo‘yicha tajribali mutaxassis",
+        goal: "Kompaniya rahbari nomiga yuboriladigan samimiy, ishonchli va diqqatni tortuvchi sovuq xat (cold email) yozib ber.",
+        context: "Bizning kompaniya: [Kompaniyangiz nomi va xizmatingiz]. Maqsadli mijoz: [Mijozingiz faoliyat sohasi va rahbar lavozimi]. Asosiy qiymat: xarajatlarni 25% ga qisqartirish yoki vaqtni tejash.",
+        constraints: "Ortiqcha shablon so‘zlardan qoch. 120 so‘zdan oshmasin. Qat’iy sotuv qilma, shunchaki 10 daqiqalik qisqa konsultatsiyaga taklif ber.",
+        format: "email"
+      },
+      objection: {
+        role: "B2B muzokarachi va savdo bo‘yicha yetakchi ekspert",
+        goal: "Mijozning 'Narxingiz juda qimmat ekan' degan e’tirozini muloyimlik bilan yengish va qiymatni isbotlovchi 3 ta javob variantini tayyorlab ber.",
+        context: "Mahsulotimiz: [Mahsulot nomi]. Bozor narxidan yuqoriroq, chunki biz [sifat kafolati, bepul o‘rnatish va 24/7 texnik yordam] taqdim etamiz.",
+        constraints: "Narxni tushirishga darhol rozi bo‘lma. Mijozga hurmat saqla. Javoblarni qisqa, aniq va savol bilan yakunla.",
+        format: "script"
+      },
+      contract_audit: {
+        role: "O‘zbekiston xo‘jalik huquqi bo‘yicha korporativ yurist",
+        goal: "Didox orqali kelgan shartnoma matnini tekshirib, kompaniyamiz uchun yashirin xavflar va noadolatli jarimalarni aniqlab ber.",
+        context: "Biz shartnomada [Ijrochi / Xaridor] tomonimiz. [Shartnomaning asosiy punktlarini qo‘ying].",
+        constraints: "O‘zbekiston Fuqarolik Kodeksi talablari doirasida tahlil qil. Qizil zonalarni alohida ajratib ko‘rsat.",
+        format: "bullet"
+      },
+      data_analysis: {
+        role: "Bosh moliyaviy tahlilchi va ma’lumotlar mutaxassisi",
+        goal: "Berilgan oylik savdo ma’lumotlarini tahlil qilib, marja, ortiqcha xarajatlar va kelgusi oy prognozini tayyorlab ber.",
+        context: "[Kompaniya savdo ko‘rsatkichlari, tushum va xarajatlar jadvallarini qo‘ying].",
+        constraints: "Faqat aniq hisob-kitoblarga tayangan xulosalar ber. Xatarlarni foizlarda ko‘rsat.",
+        format: "table"
+      },
+      telegram_smm: {
+        role: "B2B sohada Telegram kanallarni yurgizuvchi tajribali kontent-marketolog",
+        goal: "Kanalimiz obunachilarini jalb qiluvchi va ishonchni oshiruvchi 7 kunlik professional kontent-reja tuzib ber.",
+        context: "Kanalimiz mavzusi: [Mavzuingiz]. Auditoriya: O‘zbekistondagi tadbirkorlar va mutaxassislar.",
+        constraints: "Har kuni bitta post formati: amaliy keys, infografika, xato tahlili, so‘rovnoma. Har bir post uchun kuchli Hook ber.",
+        format: "bullet"
+      },
+      hr_interview: {
+        role: "Katta HR-direktor va kadrlar bo‘yicha ekspert",
+        goal: "STAR metodologiyasi asosida nomzodning amaliy malakasini tekshiruvchi 5 ta vaziyatli intervyu savolini tuzib ber.",
+        context: "Vakansiya: [Lavozim nomi]. Kompaniya uchun eng muhim ko‘nikmalar: [mustaqillik, muzokara, mas’uliyat].",
+        constraints: "Har bir savol uchun ijobiy (Green flags) va xavotirli (Red flags) javoblarni ko‘rsat.",
+        format: "bullet"
+      }
+    };
+
+    function applyPresetTemplate(cat) {
+      if (PRESETS[cat]) {
+        const p = PRESETS[cat];
+        document.getElementById('promptRole').value = p.role;
+        document.getElementById('promptGoal').value = p.goal;
+        document.getElementById('promptContext').value = p.context;
+        document.getElementById('promptConstraints').value = p.constraints;
+        document.getElementById('promptFormat').value = p.format;
+      }
+    }
+
+    function generateStructuredPrompt() {
+      const role = document.getElementById('promptRole').value.trim() || "Sun’iy intellekt bo‘yicha ekspert";
+      const goal = document.getElementById('promptGoal').value.trim() || "Menga ushbu vazifani professional darajada bajarishga yordam ber.";
+      const context = document.getElementById('promptContext').value.trim();
+      const constraints = document.getElementById('promptConstraints').value.trim();
+      const format = document.getElementById('promptFormat').value;
+
+      let formatText = "Aniq punktlar (bullet points) va xulosalar shaklida taqdim et.";
+      if (format === "email") formatText = "Yuborishga tayyor, mavzusi (Subject line) bilan to‘liq professional email xati formatida taqdim et.";
+      else if (format === "table") formatText = "Taqqoslash jadvallari (Markdown Table) va asosiy raqamlar kesimida ko‘rsat.";
+      else if (format === "script") formatText = "Savdo menejeri va mijoz o‘rtasidagi replikalar (dialog) shaklida taqdim et.";
+      else if (format === "code") formatText = "Izohlarga ega toza kod yoki SQL so‘rov formatida ber.";
+
+      let prompt = `Sen ${role}san.\n\n`;
+      prompt += `### ASOSIY VAZIFA:\n${goal}\n\n`;
+      if (context) {
+        prompt += `### BIZNES KONTEKSTI:\n${context}\n\n`;
+      }
+      if (constraints) {
+        prompt += `### QAT'IY CHEKLOVLAR VA QOIDALAR:\n${constraints}\n\n`;
+      }
+      prompt += `### TALAB ETILADIGAN FORMAT:\n${formatText}\n\n`;
+      prompt += `Agar senga topshiriqni 100% aniqlikda bajarish uchun qo‘shimcha ma’lumot kerak bo‘lsa, javob berishdan oldin 2 ta aniqlashtiruvchi savol ber.`;
+
+      document.getElementById('outputPre').textContent = prompt;
+      document.getElementById('outputCard').style.display = "block";
+      document.getElementById('outputCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function copyGeneratedPrompt() {
+      const text = document.getElementById('outputPre').textContent;
+      if (text) {
+        navigator.clipboard.writeText(text).then(() => {
+          if (window.showToast) window.showToast("Prompt nusxalandi! Endi ChatGPT yoki Claude'ga qo‘yishingiz mumkin.");
+          else alert("Prompt nusxalandi!");
+        });
+      }
+    }
+  </script>
+</body>
+</html>

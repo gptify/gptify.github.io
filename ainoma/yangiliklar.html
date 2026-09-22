@@ -31,6 +31,7 @@
 <a class="active" href="yangiliklar.html">Yangiliklar</a>
 <a href="vositalar.html">AI vositalar</a>
 <a href="qollanmalar.html">Qo‘llanmalar</a>
+<a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
 <a href="hikoyalar.html">Hikoyalar</a>
         <a href="imkoniyatlar.html">Imkoniyatlar</a>
         <a href="haqida.html">Haqida</a>
@@ -48,19 +49,18 @@
 <!-- Search Modal -->
 <div class="searchbox" id="searchbox">
 <div class="searchinner">
-<input autocomplete="off" id="siteSearch" placeholder="Yangiliklar bo‘ylab qidiring (masalan: Agents API, GPU, Meta, GPT-Live)…"/>
+<input autocomplete="off" id="siteSearch" placeholder="AINoma bo‘ylab qidiring (masalan: Gamma, B2B prompt, Agents API)…"/>
 <button class="btn" id="closeSearch">Yopish (Esc)</button>
 <div class="search-results" id="searchResults"></div>
 </div>
 </div>
 <main class="container">
-<div class="pagehero">
-<div class="kicker">AiNoma / Eng So‘nggi Yangiliklar</div>
-<h1>So‘nggi Yangiliklar</h1>
-<p>O‘zbekiston va jahon sun’iy intellekt olamidagi eng so‘nggi voqealar — e’lon qilingan rasmiy sanasi, birlamchi manbasi va chuqur tahlili bilan (eng so‘nggilaridan boshlab tartiblangan).</p>
+<div class="pagehead">
+<h1>Yangiliklar</h1>
+<p>Sun’iy intellekt olamidagi eng so‘nggi global va O‘zbekiston yangiliklari, tahliliy maqolalar va biznes sharhlari.</p>
 </div>
-<!-- Filter Buttons -->
-<div class="filters">
+<!-- Dynamic Filter Pills -->
+<div class="filter-pills">
 <button class="filter active" data-filter="all">Barchasi</button>
 <button class="filter" data-filter="mutaxassislar">👤 Mutaxassislar</button>
 <button class="filter" data-filter="biznes">🏢 Biznes</button>
@@ -70,6 +70,50 @@
 </div>
 <!-- News Grid (Eng so'nggi sanadan boshlab saralangan + Amaliy Qo'llanmalar) -->
 <div class="pagegrid">
+<!-- 00A: OpenAI Deep Research (22-Sentabr, 2026) -->
+<article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="OpenAI Deep Research o3-mini tadqiqot agenti hisobot tahlil bozor">
+<div class="thumb"><img alt="OpenAI Deep Research va o3-mini taqdim etildi" src="assets/data_agent.jpg"/></div>
+<div class="card-meta">22-SENTABR, 2026 · FRONTIER LABS · DUNYO</div>
+<h3><a href="maqola.html?id=openai-deep-research">OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlilini 10 barobar tezlashtiruvchi agent</a></h3>
+<p>Endi LLM shunchaki bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili hisobotini tayyorlaydi.</p>
+<div class="card-source">
+<span class="source-info">Manba: <b>OpenAI / TechCrunch</b></span>
+<a href="https://openai.com" rel="noopener" target="_blank">Asl manba ↗</a>
+</div>
+</article>
+<!-- 00B: Claude Code CLI (21-Sentabr, 2026) -->
+<article class="card filter-card" data-audience="mutaxassislar" data-cat="Dunyo Texnologiya" data-search="Anthropic Claude Code CLI terminal dasturchi agent kod devtools">
+<div class="thumb"><img alt="Anthropic Claude Code CLI vositasini ishga tushirdi" src="assets/gpu_datacenter.jpg"/></div>
+<div class="card-meta">21-SENTABR, 2026 · DASTURLASH &amp; DEVTOOLS</div>
+<h3><a href="maqola.html?id=claude-code-cli">Anthropic 'Claude Code' vositasini ishga tushirdi: Terminalda ishlovchi avtonom dasturchi agent</a></h3>
+<p>Brauzer shart emas — to‘g‘ridan-to‘g‘ri buyruqlar satrida butun repozitoriy bilan ishlovchi, git amallarini bajaruvchi va kodni testlovchi vosita.</p>
+<div class="card-source">
+<span class="source-info">Manba: <b>Anthropic Research</b></span>
+<a href="https://anthropic.com" rel="noopener" target="_blank">Asl manba ↗</a>
+</div>
+</article>
+<!-- 00C: O'zbekiston AI Sandbox (21-Sentabr, 2026) -->
+<article class="card filter-card" data-audience="biznes mutaxassislar" data-cat="uzbekistan o‘zbekiston biznes" data-search="O‘zbekiston AI regulyator sandbox qonunchilik IT Park imtiyoz grant">
+<div class="thumb"><img alt="O‘zbekistonda sun’iy intellekt uchun Regulyator Sandbox ishga tushirildi" src="assets/registan_real.jpg"/></div>
+<div class="card-meta">21-SENTABR, 2026 · O‘ZBEKISTON · QONUNCHILIK</div>
+<h3><a href="maqola.html?id=uz-ai-sandbox">O‘zbekistonda sun’iy intellekt uchun 'Regulyator Sandbox' ishga tushirildi: Maxsus huquqiy rejim</a></h3>
+<p>Raqamli texnologiyalar vazirligi va IT Park mahalliy startaplarga tibbiyot, ta’lim va fintexdagi AI loyihalarini sinash uchun maxsus tartib va GPU grantlarini beradi.</p>
+<div class="card-source">
+<span class="source-info">Manba: <b>Raqamli texnologiyalar vazirligi / IT Park</b></span>
+<a href="https://digital.uz" rel="noopener" target="_blank">Asl manba ↗</a>
+</div>
+</article>
+<!-- 00D: Telegram Mini Apps + AI (20-Sentabr, 2026) -->
+<article class="card filter-card" data-audience="biznes" data-cat="uzbekistan o‘zbekiston biznes" data-search="Telegram Mini Apps TMA sun'iy intellekt AI bot elektron savdo fintex payme click">
+<div class="thumb"><img alt="Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdo" src="assets/social_commerce.jpg"/></div>
+<div class="card-meta">20-SENTABR, 2026 · O‘ZBEKISTON · TIJORAT</div>
+<h3><a href="maqola.html?id=telegram-ai-apps">Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdoni avtomatlashtirishning yangi to‘lqini</a></h3>
+<p>Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy maslahat oladi va Payme/Click orqali bir bosishda to‘lov qiladi.</p>
+<div class="card-source">
+<span class="source-info">Manba: <b>Telegram Developers / Spot.uz</b></span>
+<a href="https://core.telegram.org/bots/webapps" rel="noopener" target="_blank">Asl manba ↗</a>
+</div>
+</article>
 <!-- 0A: Google Gemini 2.5 Enterprise (21-Sentabr, 2026) -->
 <article class="card filter-card" data-audience="mutaxassislar biznes" data-cat="Dunyo Texnologiya" data-search="Google Gemini 2.5 Enterprise multimodal audio video real-time api">
 <div class="thumb"><img alt="Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim" src="assets/ai_network.jpg"/></div>

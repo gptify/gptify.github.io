@@ -169,7 +169,7 @@
 
   <!-- ================= TOP NAVIGATION ================= -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
       <!-- Logo: AILO (Transformed with Spark / Ray Symbol + by GPTify endorsement) -->
       <a href="#" class="flex items-center gap-2.5 group">
@@ -206,12 +206,12 @@
   </header>
 
   <!-- Navbar Spacer -->
-  <div class="h-20"></div>
+  <div class="h-16"></div>
 
   <!-- ================= HERO SECTION ================= -->
-  <section class="relative pt-8 sm:pt-14 pb-16 sm:pb-24 overflow-hidden bg-hero-glow">
+  <section class="relative pt-3 sm:pt-5 lg:pt-7 pb-12 sm:pb-16 overflow-hidden bg-hero-glow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start">
         
         <!-- Hero Left Column: Wide & Authoritative Value Proposition -->
         <div class="lg:col-span-6 xl:col-span-7 space-y-6">
@@ -301,27 +301,29 @@
         </div>
 
         <!-- Hero Right Column: Multi-Industry Interactive Simulator Card -->
-        <div class="lg:col-span-6 xl:col-span-5 flex justify-center pt-2 sm:pt-4">
+        <div class="lg:col-span-6 xl:col-span-5 flex justify-center pt-2 sm:pt-3">
           
-          <div class="relative w-full max-w-md mx-auto">
+          <div class="w-full max-w-md mx-auto">
             
-            <!-- Soft Ambient Glow behind the card (Card Separation & Depth) -->
-            <div class="absolute -inset-2.5 bg-gradient-to-tr from-purple-200/50 via-rose-200/40 to-teal-200/40 rounded-[40px] blur-xl opacity-80 -z-10"></div>
+            <!-- Card Wrapper with precise relative positioning for floating badges -->
+            <div class="relative">
+              <!-- Soft Ambient Glow behind the card (Card Separation & Depth) -->
+              <div class="absolute -inset-2.5 bg-gradient-to-tr from-purple-200/50 via-rose-200/40 to-teal-200/40 rounded-[40px] blur-xl opacity-80 -z-10"></div>
 
-            <!-- Floating Badge 1: Top Right (Moved outward so it NEVER covers "Do‘kon" tab) -->
-            <div class="absolute -top-5 -right-2 sm:-right-6 lg:-right-7 bg-white/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-[0_10px_25px_-5px_rgba(255,94,77,0.3)] border border-slate-200/90 flex flex-col z-20 pointer-events-none">
-              <span class="text-sm sm:text-base font-black text-brand-coral leading-tight">⚡ 8 soniya</span>
-              <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">o‘rtacha javob</span>
-            </div>
+              <!-- Floating Badge 1: Top Right (Hangs off top-right, never covers tabs) -->
+              <div class="absolute -top-5 -right-2 sm:-right-6 lg:-right-7 bg-white/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-[0_10px_25px_-5px_rgba(255,94,77,0.3)] border border-slate-200/90 flex flex-col z-20 pointer-events-none">
+                <span class="text-sm sm:text-base font-black text-brand-coral leading-tight">⚡ 8 soniya</span>
+                <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">o‘rtacha javob</span>
+              </div>
 
-            <!-- Floating Badge 2: Bottom Left (Moved outward so it NEVER cuts off reassurance strip) -->
-            <div class="absolute bottom-12 -left-3 sm:-left-7 lg:-left-8 bg-white/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-[0_10px_25px_-5px_rgba(15,23,42,0.15)] border border-slate-200/90 flex flex-col z-20 pointer-events-none">
-              <span class="text-sm sm:text-base font-black text-slate-900 leading-tight">● 24/7 faol</span>
-              <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">savdo davom etadi</span>
-            </div>
+              <!-- Floating Badge 2: Bottom Left (Hangs off bottom-left corner of the card, zero text overlap) -->
+              <div class="absolute -bottom-10 sm:-bottom-11 -left-2 sm:-left-6 lg:-left-7 bg-white/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-[0_10px_25px_-5px_rgba(15,23,42,0.15)] border border-slate-200/90 flex flex-col z-20 pointer-events-none">
+                <span class="text-sm sm:text-base font-black text-slate-900 leading-tight">● 24/7 faol</span>
+                <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">savdo davom etadi</span>
+              </div>
 
-            <!-- Main Card Container: High Contrast, Elevated Shadow & Crisp Borders -->
-            <div class="relative bg-white rounded-[32px] p-5 sm:p-6 pb-6 shadow-[0_20px_50px_rgba(15,23,42,0.12),0_4px_16px_rgba(15,23,42,0.06)] border border-slate-200/90 space-y-3.5">
+              <!-- Main Card Container: High Contrast, Elevated Shadow & Crisp Borders -->
+              <div class="relative bg-white rounded-[32px] p-5 sm:p-6 pb-6 shadow-[0_20px_50px_rgba(15,23,42,0.12),0_4px_16px_rgba(15,23,42,0.06)] border border-slate-200/90 space-y-3.5">
               
               <!-- Multi-Industry Interactive Switcher (Full Width 3-Col Grid) -->
               <div class="space-y-1.5">
@@ -458,18 +460,20 @@
               </div>
 
             </div>
+          </div>
+          <!-- End Card Wrapper -->
 
-            <!-- Official Account Reassurance Trust Badge (Cleanly centered beneath card, zero overlap) -->
-            <div class="text-center pt-3.5">
-              <span class="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full border border-slate-200/90 shadow-xs">
-                <span class="text-emerald-700 font-bold">🛡️ 100% Rasmiy profilingiz nomidan:</span>
-                <span>Begona bot emas, rasmiy logotipingizdan yuboriladi</span>
-              </span>
-            </div>
-
+          <!-- Official Account Reassurance Trust Badge (Cleanly centered beneath card with comfortable spacing) -->
+          <div class="text-center pt-8 sm:pt-9">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full border border-slate-200/90 shadow-xs">
+              <span class="text-emerald-700 font-bold">🛡️ 100% Rasmiy profilingiz nomidan:</span>
+              <span>Begona bot emas, rasmiy logotipingizdan yuboriladi</span>
+            </span>
           </div>
 
         </div>
+
+      </div>
 
       </div>
     </div>

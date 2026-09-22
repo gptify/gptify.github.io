@@ -1,4 +1,292 @@
 window.AINOMA_ARTICLES = {
+  "openai-deep-research": {
+    "title": "OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlilini 10 barobar tezlashtiruvchi avtonom tadqiqot agenti",
+    "kicker": "22-Sentabr, 2026 · Frontier Labs · Dunyo",
+    "deck": "Endi LLM shunchaki bitta savolga bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili hisobotini tayyorlaydi.",
+    "img": "assets/data_agent.jpg",
+    "imgAlt": "OpenAI Deep Research va o3-mini avtonom tadqiqot agenti",
+    "readTime": "5 daqiqalik mutolaa",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Bozor tahlili va LLM tadqiqotlari",
+    "contentHtml": `
+<p>OpenAI 2026-yil 22-sentabr kuni o‘zining yangi <strong>Deep Research</strong> agentik vositasi hamda optimallashtirilgan <strong>o3-mini</strong> mantiqiy modelini keng ommaga taqdim etdi. Ushbu tizim sun’iy intellektning axborot izlashdagi passiv rolini butunlay o‘zgartirdi: endi u inson analitigi kabi Internetdagi yuzlab maqolalar, PDF hisobotlar va ilmiy ma’lumotlar omborini o‘rganadi va strukturaviy tahlil tayyorlaydi.</p>
+
+<p>Foydalanuvchi "O‘zbekistonda B2B SaaS bozorining 2026–2030 yillardagi rivojlanish tendensiyalari va xavflari" kabi murakkab topshiriq berganida, agent 10–30 daqiqa davomida mustaqil qidiruv rejasini tuzadi, manbalarni tekshiradi, iqtiboslar bilan to‘liq tahliliy dayjest yaratadi.</p>
+
+<h2>1. Nima uchun bu inqilobiy yangilik?</h2>
+<ul>
+  <li><strong>Ko‘p bosqichli mustaqil qidiruv (Multi-step Reasoning):</strong> Agent dastlabki topilgan ma’lumot bilan cheklanmaydi. Agar biror manba noaniq bo‘lsa, u yangi qidiruv so‘rovlarini shakllantirib, chuqurroq manbalarga kiradi.</li>
+  <li><strong>To‘liq iqtiboslar (Citations) va faktcheking:</strong> Har bir keltirilgan raqam va fakt birlamchi veb-manbaga havola bilan ta’minlanadi. Bu gallyutsinatsiya (to‘qima ma’lumot) ehtimolini deyarli nolga tushiradi.</li>
+  <li><strong>Strukturaviy hisobot eksporti:</strong> Tayyor hisobotni birdaniga Markdown, PDF yoki Google Docs formatida yuklab olib, rahbariyat yoki investorlarga taqdim etish mumkin.</li>
+</ul>
+
+<blockquote>
+  "Deep Research — bu har bir tahlilchi, marketing rahbari va tadbirkorning yonida ishlovchi 24/7 shaxsiy tahliliy institutdir. Bir haftalik konsalting tahlilini 30 daqiqada tayyorlash imkoniyati paydo bo‘ldi."
+</blockquote>
+
+<!-- Dual Lens: Mutaxassislar va Biznes -->
+<div class="audience-grid">
+  <div class="lens-box tech">
+    <div class="lens-title">👤 Mutaxassislar uchun</div>
+    <ul>
+      <li><strong>Mantiqiy zanjir (Test-time compute):</strong> Model o3-mini yadro arxitekturasidan foydalanib, javob berishdan oldin hisoblash resurslarini qidiruv strategiyasini rejalashtirishga sarflaydi.</li>
+      <li><strong>Kontekst darchasi va qisqartirish:</strong> O‘nlab veb-sahifalardagi keraksiz HTML va reklamalarni tozalab, faqat muhim semantik bloklarni saralaydi.</li>
+      <li><strong>API orqali integratsiya:</strong> Dasturchilar Deep Research natijalarini to‘g‘ridan-to‘g‘ri o‘zlarining ichki CRM va ERP tizimlariga ulashlari mumkin.</li>
+    </ul>
+  </div>
+  <div class="lens-box biz">
+    <div class="lens-title">🏢 Biznes uchun</div>
+    <ul>
+      <li><strong>Raqobatchilar tahlili (Competitor Intelligence):</strong> Raqobatchilarning narx siyosati, yangi mahsulotlari va bozor ulushini soatlab qidirmasdan, 1 ta so‘rov orqali jadval shaklida oling.</li>
+      <li><strong>Mijozlarni tekshirish (Due Diligence):</strong> Yangi xorijiy hamkor bilan shartnoma tuzishdan oldin uning tarixi, sud ishlari va obro‘sini bir necha daqiqada tahlil qiling.</li>
+      <li><strong>Strategik rejalashtirish:</strong> Yangi bozor yoki mahsulot qatorini ishga tushirishdan oldin bozor hajmi va kutilayotgan talabni aniq hisoblab chiqing.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Uzbekistan Impact -->
+<div class="uz-impact-box">
+  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
+  <p>O‘zbekiston kompaniyalari xalqaro bozorlarga eksport qilishda ko‘pincha mahalliy bozor kon’yunkturasini to‘liq bilmaslikdan qiynalishadi. Deep Research yordamida har qanday o‘zbek ishlab chiqaruvchisi Yevropa, Fors ko‘rfazi yoki MDH bozorlaridagi talab, sertifikatsiya qoidalari va distribyutorlar tarmog‘ini Toshkentdagi ofisdan chiqmasdan, bepul yoki arzon tariflarda chuqur tahlil qila oladi.</p>
+</div>
+
+<!-- Action Checklist -->
+<div class="action-checklist">
+  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
+  <ol>
+    <li><strong>Katta savollaringiz ro‘yxatini tuzing:</strong> Biznesingizda uzoq vaqt javob topilmagan 3 ta strategik savolni (bozor ulushi, yangi mahsulot narxi, raqobatchi kamchiliklari) yozing.</li>
+    <li><strong>Aniq prompt bilan so‘rov bering:</strong> "Menga umumiy ma’lumot ber" demasdan, "O‘zbekiston bo‘yicha 2025–2026 yillardagi rasmiy statistika va ommaviy hisobotlarga tayangan holda 5 ta tendensiyani jadvalda ko‘rsat" deb so‘rang.</li>
+    <li><strong>Birlamchi manbalarni qayta ko‘ring:</strong> Hisobotdagi asosiy raqamlar bo‘yicha berilgan havola (link)larni bir marta bosib, manba ishonchliligini tasdiqlang.</li>
+  </ol>
+</div>
+`,
+    "sources": [
+      {
+        "name": "OpenAI Research Announcement",
+        "url": "https://openai.com"
+      },
+      {
+        "name": "TechCrunch AI Analysis",
+        "url": "https://techcrunch.com"
+      }
+    ]
+  },
+  "claude-code-cli": {
+    "title": "Anthropic 'Claude Code' vositasini ishga tushirdi: Terminalda ishlovchi avtonom dasturchi agent",
+    "kicker": "21-Sentabr, 2026 · Dasturlash & DevTools · Dunyo",
+    "deck": "Brauzer yoki alohida muharrir shart emas — to‘g‘ridan-to‘g‘ri buyruqlar satrida butun repozitoriy bilan ishlovchi, git amallarini bajaruvchi va testlovchi avtonom vosita.",
+    "img": "assets/gpu_datacenter.jpg",
+    "imgAlt": "Anthropic Claude Code CLI dasturchi agenti",
+    "readTime": "4 daqiqalik mutolaa",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Dasturiy arxitektura va DevTools",
+    "contentHtml": `
+<p>Anthropic kompaniyasi dasturchilar va muhandislar uchun to‘g‘ridan-to‘g‘ri operatsion tizim terminalida (CLI) ishlovchi <strong>Claude Code</strong> agentik vositasini rasman chiqardi. Ushbu vosita dasturchining konsolida o‘tirib, butun kod bazasini tushunadi, buyruqlarni bajaradi, xatolarni tuzatadi va Pull Request tayyorlaydi.</p>
+
+<p>Ilgari dasturchilar kod qismlarini brauzerdagi chat oynasiga ko‘chirib o‘tkazishga majbur bo‘lishgan bo‘lsa, Claude Code mahalliy fayllar tizimi va Git bilan to‘g‘ridan-to‘g‘ri ishlaydi.</p>
+
+<h2>1. Claude Code qanday imkoniyatlarni taqdim etadi?</h2>
+<ul>
+  <li><strong>To‘liq terminal integratsiyasi:</strong> Dasturchi shunchaki <code>claude</code> buyrug‘ini teradi va unga tabiiy tilda topshiriq beradi. Agent o‘zi kerakli fayllarni topadi, o‘zgartirish kiritadi va testlarni ishga tushiradi.</li>
+  <li><strong>Git amallarini avtonom bajarish:</strong> Branch ochish, o‘zgarishlarni commit qilish va izohlar yozish to‘liq avtomatlashtirilgan.</li>
+  <li><strong>Xavfsizlik va ruxsatlar boshqaruvi:</strong> Fayllarni o‘chirish yoki xavfli buyruqlarni ishga tushirishdan oldin vosita doimo inson dasturchidan tasdiq so‘raydi.</li>
+</ul>
+
+<blockquote>
+  "Claude Code — bu IDE'larning o‘rnini bosish emas, balki terminalni boshqaruvchi ikkinchi aqlli miyadir. Endi sintaksis qidirishga emas, mahsulot mantiqiga diqqat qaratiladi."
+</blockquote>
+
+<!-- Dual Lens: Mutaxassislar va Biznes -->
+<div class="audience-grid">
+  <div class="lens-box tech">
+    <div class="lens-title">👤 Mutaxassislar uchun</div>
+    <ul>
+      <li><strong>Claude 3.7 Sonnet bilan quvvatlangan:</strong> Yangi gibrid fikrlash modeli yordamida murakkab kod bloklarini xatosiz tahlil qiladi.</li>
+      <li><strong>Repozitoriy indeksatsiyasi:</strong> 100,000+ qatorli yirik loyihalarda ham fayllararo bog‘liqlikni bir necha soniyada aniqlaydi.</li>
+      <li><strong>CI/CD va skriptlashtirish:</strong> Boshqa terminal buyruqlari (grep, curl, docker) bilan bemalol quvur (pipe) orqali ulanadi.</li>
+    </ul>
+  </div>
+  <div class="lens-box biz">
+    <div class="lens-title">🏢 Biznes uchun</div>
+    <ul>
+      <li><strong>Dasturlash jamoasi tezligi 2 barobar oshadi:</strong> Bugfix va kichik refaktoring topshiriqlari dasturchining butun kunini olmaydi.</li>
+      <li><strong>Onboarding jarayoni yengillashadi:</strong> Loyihaga yangi kelgan dasturchi kod bazasini tushunishi uchun Claude Code'dan loyiha arxitekturasini so‘rab o‘rganishi mumkin.</li>
+      <li><strong>Xarajatlarni tejash:</strong> Qimmat tashqi litsenziyalarsiz, faqat API token sarfi bo‘yicha tejamkor foydalanish.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Uzbekistan Impact -->
+<div class="uz-impact-box">
+  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
+  <p>O‘zbekistonda IT-kompaniyalar va startaplar ko‘pincha malakali senior dasturchilar yetishmovchiligiga duch kelishadi. Claude Code kabi terminal agentlari junior va middle mutaxassislarga xatolarni tezroq topish, kod sifatini oshirish va xalqaro standartlarga mos mahsulot chiqarishda katta yordam beradi.</p>
+</div>
+
+<!-- Action Checklist -->
+<div class="action-checklist">
+  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
+  <ol>
+    <li><strong>Terminalingizga o‘rnating:</strong> Node.js muhitida <code>npm install -g @anthropic-ai/claude-code</code> buyrug‘i orqali o‘rnating.</li>
+    <li><strong>Kichik loyihada sinab ko‘ring:</strong> Mavjud loyihangizda birorta xatoni tuzatish yoki test yozish topshirig‘ini bering.</li>
+    <li><strong>Git integratsiyasini tekshiring:</strong> Agent taklif qilgan commit xabarlari va diff ko‘rinishlarini ko‘zdan kechiring.</li>
+  </ol>
+</div>
+`,
+    "sources": [
+      {
+        "name": "Anthropic Claude Code Documentation",
+        "url": "https://anthropic.com"
+      },
+      {
+        "name": "GitHub CLI Community",
+        "url": "https://github.com"
+      }
+    ]
+  },
+  "uz-ai-sandbox": {
+    "title": "O‘zbekistonda sun’iy intellekt uchun 'Regulyator Sandbox' ishga tushirildi: Startaplar uchun maxsus huquqiy rejim",
+    "kicker": "21-Sentabr, 2026 · O‘zbekiston · Qonunchilik & Innovatsiya",
+    "deck": "Raqamli texnologiyalar vazirligi va IT Park mahalliy AI startaplariga tibbiyot, ta’lim va moliya sohasidagi yechimlarni sinash uchun maxsus tartib va server grantlarini taqdim etmoqda.",
+    "img": "assets/registan_real.jpg",
+    "imgAlt": "O‘zbekistonda sun’iy intellekt regulyator sandboxi va IT Park",
+    "readTime": "4 daqiqalik mutolaa",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "O‘zbekiston qonunchiligi va startap ekotizimi",
+    "contentHtml": `
+<p>O‘zbekiston Respublikasi Raqamli texnologiyalar vazirligi hamda IT Park hamkorligida sun’iy intellekt texnologiyalarini rivojlantirish bo‘yicha birinchi <strong>Maxsus Huquqiy Rejim (Regulyator Sandbox)</strong> ishga tushirildi. Bu tizim innovatsion AI loyihalarini qonunchilikdagi byurokratik to‘siqlarsiz tezkor sinovdan o‘tkazish imkonini beradi.</p>
+
+<p>Ayniqsa tibbiy diagnostika, agro-monitoring, moliyaviy skoring va ta’lim yo‘nalishlarida sun’iy intellekt modellarini real mijozlar bilan testlashda maxsus ruxsatnomalar tartibi soddalashtirildi.</p>
+
+<h2>1. Sandbox ishtirokchilariga qanday imtiyozlar beriladi?</h2>
+<ul>
+  <li><strong>Soddalashtirilgan litsenziyalash:</strong> Yangi AI algoritmlarini sinovdan o‘tkazish uchun standart sertifikatsiya jarayonlari o‘rniga maxsus eksperimental tartib amal qiladi.</li>
+  <li><strong>Hisoblash quvvatlari (GPU) grantlari:</strong> Mahalliy data-markazlardagi yuqori quvvatli serverlardan bepul yoki subsidiyalangan narxlarda foydalanish huquqi.</li>
+  <li><strong>Davlat ma’lumotlari bilan ishlash:</strong> Anonimlashtirilgan davlat ochiq ma’lumotlar bazalariga (open data) xavfsiz kirish imkoni.</li>
+</ul>
+
+<blockquote>
+  "Sandbox — bu sun’iy intellekt startaplari uchun xavfsiz parvoz maydonidir. Biz tadbirkorlarga yangilik qilish erkinligini beramiz, shu bilan birga fuqarolar xavfsizligini ta’minlaymiz."
+</blockquote>
+
+<!-- Dual Lens: Mutaxassislar va Biznes -->
+<div class="audience-grid">
+  <div class="lens-box tech">
+    <div class="lens-title">👤 Mutaxassislar uchun</div>
+    <ul>
+      <li><strong>Milliy LLM va NLP modellari:</strong> O‘zbek tili korpuslari va davlat xizmatlari API'lari bilan to‘g‘ridan-to‘g‘ri integratsiya imkoniyati.</li>
+      <li><strong>Ma’lumotlar xavfsizligi standarti:</strong> Barcha ma’lumotlar O‘zbekiston hududidagi serverlarda qayta ishlanadi va xalqaro ISO/IEC standartlariga muvofiqlashtiriladi.</li>
+      <li><strong>Eksperimental test protokollari:</strong> Modellar aniqligini baholovchi standart benchmarklar va test stendlari taqdim etiladi.</li>
+    </ul>
+  </div>
+  <div class="lens-box biz">
+    <div class="lens-title">🏢 Biznes uchun</div>
+    <ul>
+      <li><strong>0% Soliq imtiyozlari:</strong> IT Park rezidentligi orqali daromad solig‘i va boshqa to‘lovlar bo‘yicha maksimal tejamkorlik.</li>
+      <li><strong>Bozorga tezkor chiqish:</strong> Byurokratik kelishuvlar oylab emas, haftalar ichida Sandbox komissiyasi tomonidan ko‘rib chiqiladi.</li>
+      <li><strong>Investitsiya jalb qilish:</strong> Sandbox a’zolari xalqaro venchur fondlari va davlat innovatsion jamg‘armalari e’tiborida bo‘ladi.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Uzbekistan Impact -->
+<div class="uz-impact-box">
+  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
+  <p>Bu qaror O‘zbekistonni mintaqadagi asosiy AI xabiga aylantirish yo‘lidagi ulkan qadamdir. Endi nafaqat mahalliy, balki qo‘shni mamlakatlardagi AI jamoalari ham o‘z mahsulotlarini O‘zbekistonda ro‘yxatdan o‘tkazib, qonuniy va qulay sharoitlarda sinovdan o‘tkazishlari mumkin bo‘ladi.</p>
+</div>
+
+<!-- Action Checklist -->
+<div class="action-checklist">
+  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
+  <ol>
+    <li><strong>Loyiha talablarini ko‘rib chiqing:</strong> Startapingiz AI mahsuloti Sandbox yo‘nalishlariga (Fintex, Medtech, Edtech, Agrotech) mosligini tekshiring.</li>
+    <li><strong>Ariza topshiring:</strong> IT Park yoki Raqamli texnologiyalar vazirligining rasmiy portali orqali ariza va loyiha konsepsiyasini yuboring.</li>
+    <li><strong>Ma’lumotlar arxitekturasini tayyorlang:</strong> Mijozlar shaxsiy ma’lumotlarini anonimlashtirish rejasini ishlab chiqing.</li>
+  </ol>
+</div>
+`,
+    "sources": [
+      {
+        "name": "Raqamli texnologiyalar vazirligi matbuot xizmati",
+        "url": "https://digital.uz"
+      },
+      {
+        "name": "IT Park Uzbekistan Portal",
+        "url": "https://it-park.uz"
+      }
+    ]
+  },
+  "telegram-ai-apps": {
+    "title": "Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdoni avtomatlashtirishning yangi to‘lqini",
+    "kicker": "20-Sentabr, 2026 · O‘zbekiston · Tijorat & Fintex",
+    "deck": "Mijoz messenjerdan chiqmasdan sun’iy intellekt orqali tovar tanlaydi, shaxsiy tavsiyalar oladi va Payme/Click orqali to‘lovni amalga oshiradi.",
+    "img": "assets/social_commerce.jpg",
+    "imgAlt": "Telegram Mini Apps va AI asosidagi B2B savdo",
+    "readTime": "4 daqiqalik mutolaa",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Elektron tijorat va avtomatlashtirish",
+    "contentHtml": `
+<p>O‘zbekistonda 30 milliondan ortiq foydalanuvchiga ega bo‘lgan Telegram platformasida <strong>Mini Apps (TMA)</strong> va sun’iy intellekt agentlarining birlashuvi elektron tijoratda yangi davrni boshlab berdi. Oddiy matnli botlar o‘rnini to‘liq interaktiv veb-interfeys va aqlli AI konsultanlar egallamoqda.</p>
+
+<p>Kiyim-kechak, elektronika, qurilish mollari yoki B2B distribyutsiya kompaniyalari endi mijozga ilova yuklatmasdan, to‘g‘ridan-to‘g‘ri Telegram ichida to‘liq savdo tajribasini taqdim etmoqda.</p>
+
+<h2>1. Yangi avlod Telegram AI do‘konlari nimalarga qodir?</h2>
+<ul>
+  <li><strong>Shaxsiy AI stilist va maslahatchi:</strong> Mijoz fotosurat yuborsa yoki "Menga 100 kishilik to‘y uchun sovg‘alar kerak" desa, AI katalogdan mos tovarlarni tanlab beradi.</li>
+  <li><strong>Bir bosishda to‘lov va kvitansiya:</strong> Payme, Click va Uzum Bank to‘g‘ridan-to‘g‘ri Mini App ichida ishlaydi, konversiyani 45% ga oshiradi.</li>
+  <li><strong>1C va CRM bilan avtomatik sinxronizatsiya:</strong> Qoldiqlar, narxlar va mijoz buyurtmalari avtomatik tarzda markaziy bazaga tushadi.</li>
+</ul>
+
+<blockquote>
+  "O‘zbekistonda mijoz alohida ilova yuklab olishni yoqtirmaydi. Savdoni mijoz doim o‘tiradigan joyda — Telegram ichida quring, AI esa savdo menejeringiz bo‘lsin."
+</blockquote>
+
+<!-- Dual Lens: Mutaxassislar va Biznes -->
+<div class="audience-grid">
+  <div class="lens-box tech">
+    <div class="lens-title">👤 Mutaxassislar uchun</div>
+    <ul>
+      <li><strong>React / Vue + Telegram WebApp SDK:</strong> Zamonaviy frontend kutubxonalari orqali silliq va tezkor interfeys yaratish.</li>
+      <li><strong>FastAPI & OpenAI/Claude API:</strong> Mijoz so‘rovlarini semantik tahlil qilib, SQLite/PostgreSQL katalogi bilan tezkor bog‘lash.</li>
+      <li><strong>Session & Auth xavfsizligi:</strong> Telegram <code>initData</code> imzosi orqali foydalanuvchini parolsiz xavfsiz autentifikatsiya qilish.</li>
+    </ul>
+  </div>
+  <div class="lens-box biz">
+    <div class="lens-title">🏢 Biznes uchun</div>
+    <ul>
+      <li><strong>Operatorlar yuklamasi 80% ga kamayadi:</strong> "Narxi qancha?", "Dostavka bormi?", "Rangi bormi?" degan savollarga AI 5 soniyada javob beradi.</li>
+      <li><strong>24/7 uzluksiz sotuv:</strong> Tungi soat 02:00 da ham mijoz savat to‘ldirib, to‘lov qila oladi.</li>
+      <li><strong>Mijozlarni qaytarish (Retention):</strong> Yangi tovarlar yoki aksiyalar haqida mijozga moslashtirilgan shaxsiy xabarnomalar yuborish imkoni.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Uzbekistan Impact -->
+<div class="uz-impact-box">
+  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
+  <p>O‘zbekiston bozorida Telegram ijtimoiy tarmoq emas, butun boshli operatsion tizim hisoblanadi. Mini Apps va AI sinergiyasi kichik do‘kondan tortib yirik distribyutorlargacha bo‘lgan barcha korxonalarga qimmat ilova yaratmasdan, eng ilg‘or raqamli savdoni yo‘lga qo‘yish imkoniyatini beradi.</p>
+</div>
+
+<!-- Action Checklist -->
+<div class="action-checklist">
+  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
+  <ol>
+    <li><strong>Telegram do‘koningizni rejalashtiring:</strong> Mahsulotlaringiz katalogini Excel yoki Google Sheets'da tartibga soling.</li>
+    <li><strong>Tayyor andozalarni ko‘ring:</strong> Telegram BotFather orqali yangi bot ochib, WebApp funksiyasini yoqing.</li>
+    <li><strong>AI konsultatsiya skriptini yozing:</strong> Mijozlaringiz eng ko‘p so‘raydigan 10 ta savol-javobni tayyorlab, bot tizimiga integratsiya qiling.</li>
+  </ol>
+</div>
+`,
+    "sources": [
+      {
+        "name": "Telegram Apps Developer Documentation",
+        "url": "https://core.telegram.org/bots/webapps"
+      },
+      {
+        "name": "Spot.uz Savdo & Texnologiya",
+        "url": "https://www.spot.uz/oz/"
+      }
+    ]
+  },
   "gemini-enterprise": {
     "title": "Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim",
     "kicker": "21-Sentabr, 2026 · Google Cloud AI · Dunyo",

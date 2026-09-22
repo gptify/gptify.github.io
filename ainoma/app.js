@@ -106,6 +106,10 @@ const searchIndex = [
   { t: "AiNoma Haqida: Missiya, tahririyat tamoyillari va B2B ekspertiza", u: "haqida.html", k: "ainoma haqida loyiha missiya gptify shukhratbek iskandarov b2b konsalting aloqa tahririyat" },
 
   // Yangiliklar & Maqolalar
+  { t: "OpenAI Deep Research va o3-mini: Ilmiy va bozor tahlili agenti", u: "maqola.html?id=openai-deep-research", k: "openai deep research o3-mini frontier tadqiqot hisobot analitika bozor" },
+  { t: "Anthropic Claude Code: Terminalda ishlovchi avtonom dasturchi agent", u: "maqola.html?id=claude-code-cli", k: "claude code anthropic cli terminal dasturchi agent git repo devtools" },
+  { t: "O‘zbekistonda AI uchun Regulyator Sandbox: Maxsus huquqiy rejim", u: "maqola.html?id=uz-ai-sandbox", k: "o'zbekiston ai sandbox qonunchilik regulyator it park grant gpu startap" },
+  { t: "Telegram Mini Apps + AI: Elektron tijorat va B2B savdo", u: "maqola.html?id=telegram-ai-apps", k: "telegram mini apps tma ai bot elektron savdo fintex payme click b2b" },
   { t: "Google Gemini 2.5 Enterprise API: 150ms jonli audio va video oqim", u: "maqola.html?id=gemini-enterprise", k: "google gemini 2.5 enterprise api audio video multimodal real-time call center" },
   { t: "Markaziy Bank bank va fintexlarda AI skoringi qo‘llash reglamenti", u: "maqola.html?id=cbu-ai-skoring", k: "o'zbekiston markaziy bank cbu kredit skoring fintex algoritm xavfsizlik" },
   { t: "Cursor va Cognition 'Autonomous Team Lead' avtonom muhandislik rejimi", u: "maqola.html?id=cursor-teamlead", k: "cursor cognition autonomous team lead agent dasturlash kod refaktoring" },
@@ -146,6 +150,11 @@ const searchIndex = [
   { t: "Yuridik AI — O'zbekiston shartnomalari va qonunchiligini tekshirish", u: "vosita.html?id=yuridik", k: "yuridik shartnoma xatar qonun audit yurist" },
   
   // Qo'llanmalar & Promptlar
+  { t: "Prompt Ustaxonasi: Interaktiv prompt konstruktori va B2B andozalar", u: "prompt-ustaxonasi.html", k: "prompt ustaxonasi generator konstruktor andoza chatgpt claude gemini b2b" },
+  { t: "Sun’iy intellektni 0 dan boshlash: Yangi boshlovchilar uchun amaliy yo‘riqnoma", u: "qollanma-noldan.html", k: "sun'iy intellekt 0 dan boshlash noldan yangi boshlovchi chatgpt claude gemini obuna" },
+  { t: "Mukammal prompt yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida", u: "qollanma-prompting.html", k: "mukammal prompt yozish san'ati rcfo formulasi few shot chain of thought prompting" },
+  { t: "Ishda sun’iy intellektdan foydalanish: 5 ta amaliy ish oqimi", u: "qollanma-ishda.html", k: "ishda sun'iy intellekt unumdorlik excel 1c didox yig'ilish bayonnoma gamma slayd" },
+  { t: "Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar", u: "qollanma-qurish.html", k: "tizim qurish no-code make n8n api openai agent bot avtomatlashtirish" },
   { t: "B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma", u: "qollanma-b2b.html", k: "b2b outreach masterklass apollo lemlist amocrm shukhratbek iskandarov" },
   { t: "AI bilan to‘g‘ri ishlash: Birinchi promptdan natijagacha", u: "qollanma.html", k: "ai prompt chatgpt claude boshlangich yo'riqnoma" },
   { t: "B2B mijozlarga sovuq taklif yozish uchun master prompt", u: "qollanmalar.html", k: "prompt b2b taklif email outreach mijoz sotuv iskandarov" },

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sun’iy intellekt bilan avtonom B2B tizimlar va agentlar qurish bo‘yicha qo‘llanma. No-code, Webhooklar, Telegram botlar va CRM integratsiyasi.">
+  <title>Sun’iy Intellekt Bilan Tizim Qurish: No-Code va Agentlar | AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://ainoma.uz/qollanma-qurish.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a class="active" href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Amaliy Qo‘llanma · Muhandislik & Arxitektura</div>
+      <h1>Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar</h1>
+      <p class="article-deck">Shunchaki chatda savol berishdan kompaniyangiz uchun 24/7 ishlaydigan avtonom raqamli xodimlar va avtomatlashtirilgan tizimlar yaratishgacha bo‘lgan yo‘l xaritasi.</p>
+      
+      <div class="byline">
+        <div class="avatar">ShI</div>
+        <div>
+          <b>Shukhratbek Iskandarov</b><br>
+          <span style="color:var(--muted)">GPTify.co asoschisi & B2B AI amaliyotchisi · 7 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="assets/agents_workflow.jpg" alt="Sun'iy intellekt bilan avtomatlashtirilgan tizimlar qurish">
+    </div>
+
+    <article class="article-shell article-body">
+      <p>Sun’iy intellekt texnologiyalarining eng katta qiymati — bu insonni takrorlanuvchi zerikarli ishlardan ozod qilib, tizimlarni bir-biri bilan avtonom bog‘lashidadir. Bugungi kunda korxonangiz uchun AI agentlar qurish uchun minglab qator kod yozish shart emas.</p>
+
+      <h2>1. Arxitekturani tushunish: Tizim qanday qismlardan iborat?</h2>
+      <p>Har qanday avtonom AI tizimi 4 ta asosiy qatlamdan tashkil topadi:</p>
+
+      <div class="audience-grid">
+        <div class="lens-box tech">
+          <div class="lens-title">1. Trigger (Kiruvchi signal)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Mijoz Telegram yoki Instagram botga yozdi, saytda ariza qoldirdi yoki pochta qutisiga yangi shartnoma kelib tushdi.</p>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">2. Intellekt qatlami (LLM Brain)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">GPT-4o, Claude yoki Gemini xabarni o‘qiydi, niyatni (intent) aniqlaydi va qaysi harakatni bajarish kerakligini belgilaydi.</p>
+        </div>
+        <div class="lens-box tech">
+          <div class="lens-title">3. Harakat vositalari (Tool use & Actions)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Agent ma’lumotlar bazasini (CRM / SQL) tekshiradi, ombordan tovar zaxirasini ko‘radi yoki to‘lov havolasini shakllantiradi.</p>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">4. Inson nazorati (Human-in-the-loop)</div>
+          <p style="font-size:14px; color:var(--muted); margin:0;">Yirik bitimlar, shartnomalar va nozik holatlarda tizim yakuniy tasdiqni jonli menejerga yo‘naltiradi.</p>
+        </div>
+      </div>
+
+      <h2>2. No-Code vositalar bilan boshlash (Dasturlashsiz)</h2>
+      <p>O‘zbekistondagi ko‘plab B2B jamoalar o‘zlarining birinchi tizimlarini ochiq kodli va qulay vizual vositalar orqali qurmoqda:</p>
+      <ul>
+        <li><strong>n8n va Make.com:</strong> Veb-xuklar (webhook) orqali Telegram, Google Sheets, Gmail va CRM tizimlarini bir-biriga bog‘lovchi vizual oqim konstruktorlari.</li>
+        <li><strong><a href="vosita.html?id=mindstudio" style="color:var(--green); font-weight:700;">MindStudio</a>:</strong> Dasturlashsiz shaxsiy bilimlar bazasiga (RAG) ega bo‘lgan ichki korporativ AI yordamchilar yaratish platformasi.</li>
+        <li><strong><a href="vosita.html?id=manychat" style="color:var(--green); font-weight:700;">ManyChat</a> va Instagram AI:</strong> Xaridorlar izoh qoldirganda yoki Direct'ga yozganda avtomatik katalog va to‘lov havolasini yuboruvchi voronkalar.</li>
+      </ul>
+
+      <h2>3. Telegram botni sun’iy intellektga ulash amaliyoti</h2>
+      <p>O‘zbekistonda biznesning 80% muloqoti Telegram orqali kechadi. Telegram botni AI bilan bog‘lashda quyidagi xatolarga yo‘l qo‘ymang:</p>
+      
+      <div class="action-checklist">
+        <div class="action-checklist-title">🎯 Muvaffaqiyatli Telegram AI bot mezonlari</div>
+        <ol>
+          <li><strong>Botga umumiy internetdan javob bermasligini tayinlang:</strong> Model faqat siz kiritgan kompaniya narxlari va qoidalari (System Prompt) doirasida gapirishi shart.</li>
+          <li><strong>Tugmali menyular bilan gibrid qiling:</strong> Faqat matnli chat emas, balki qulay Inline tugmalar (Katalog, Narxlar, Operator) berilsa, konversiya 40% ga oshadi.</li>
+          <li><strong>Stenogrammani CRM'ga saqlang:</strong> Bot mijoz bilan nima gaplashganini avtomatik amocrm yoki Bitrix24 kartochkasiga izoh sifatida yozib qo‘ysin.</li>
+        </ol>
+      </div>
+
+      <div class="article-note">
+        <b>🏢 Korxona darajasidagi integratsiya:</b> Agar sizning kompaniyangizda ERP, 1C yoki ko‘p qavatli savdo bo‘limi bo‘lsa va tayyor yechim kerak bo‘lsa, <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz jamoasi</a> bilan bog‘lanib, bepul texnik audit olishingiz mumkin.
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class="footerlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz ↗</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

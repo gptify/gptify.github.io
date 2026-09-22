@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Ish joyida sun’iy intellektdan foydalanish bo‘yicha 5 ta amaliy ish oqimi (workflow). Excel, shartnomalar, B2B xatlar va uchrashuv bayonnomalari.">
+  <title>Ishda Sun’iy Intellektdan Foydalanish: 5 ta Amaliy Ish Oqimi | AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://ainoma.uz/qollanma-ishda.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a class="active" href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Amaliy Qo‘llanma · Ish Unumdorligi</div>
+      <h1>Ishda sun’iy intellektdan foydalanish: Vaqtni 3 barobar tejaydigan 5 ta amaliy ish oqimi</h1>
+      <p class="article-deck">Ofis xodimlari, sotuv menejerlari va rahbarlar uchun har kuni soatlab vaqt oladigan mexanik ishlarni sun’iy intellektga topshirish bo‘yicha aniq tizim.</p>
+      
+      <div class="byline">
+        <div class="avatar">ShI</div>
+        <div>
+          <b>Shukhratbek Iskandarov</b><br>
+          <span style="color:var(--muted)">B2B AI integratsiyalar bo‘yicha ekspert · 5 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="assets/b2b_sales.jpg" alt="Ish joyida sun'iy intellektdan foydalanish bo'yicha amaliy ish oqimi">
+    </div>
+
+    <article class="article-shell article-body">
+      <p>Ko‘pchilik sun’iy intellektdan faqat bayram tabriklari yoki oddiy postlar yozishda foydalanadi. Ammo haqiqiy operatsion foyda kundalik ofis jarayonlarida yuzaga keladi. Quyida har bir kompaniya xodimi bugunoq joriy eta oladigan 5 ta sinalgan amaliy ish oqimini (workflows) ko‘rib chiqamiz.</p>
+
+      <h2>1. Rasmiy xatlar va B2B javoblar (30 daqiqa o‘rniga 2 daqiqa)</h2>
+      <p>Mijozlar yoki hamkorlardan kelgan uzun rasmiy xatlarga javob yozish ko‘p vaqt oladi. Xat matnini ChatGPT yoki Claude'ga tashlang va quyidagicha so‘rang:</p>
+      
+      <div class="prompt-card" style="margin:20px 0;">
+        <pre class="prompt-code">"Quyidagi xatga O‘zbekiston rasmiy korporativ etiketi doirasida muloyim va professional javob tayyorla. 
+Biz taklif qilingan shartlarga rozi bo‘lamiz, ammo yetkazib berish muddatini 5 kunga uzaytirishni so‘raymiz:
+---
+[Kelgan xat matni]
+---"</pre>
+      </div>
+
+      <h2>2. Excel va 1C hisobotlarini so‘rov bilan tahlil qilish</h2>
+      <p>Katta jadvallardan xulosa chiqarish uchun murakkab VLOOKUP yoki Pivot formulalarini eslab qolish shart emas. Jadvalingizning bir qismini nusxalang yoki CSV faylini modelga yuklang:</p>
+      <ul>
+        <li><em>"Qaysi tovarlar umumiy tushumning 80% qismini tashkil qilmoqda?"</em></li>
+        <li><em>"O‘tgan oylarga nisbatan sotuvi 20% dan ortiq pasaygan filiallarni ajratib ber."</em></li>
+      </ul>
+
+      <h2>3. Uchrashuv bayonnomasi (Meeting Minutes) va topshiriqlar</h2>
+      <p>Zoom, Google Meet yoki ofisdagi 1 soatlik yig‘ilishdan so‘ng barcha aytilgan gaplarni eslab qolish qiyin. Audio yozuvni <a href="vosita.html?id=meetgeek" style="color:var(--green); font-weight:600;">MeetGeek</a> yoki <a href="vosita.html?id=descript" style="color:var(--green); font-weight:600;">Descript</a> orqali matnga o‘giring va modeldan 3 ta narsani so‘rang:</p>
+      <ol style="padding-left:20px; line-height:1.8;">
+        <li>Muhokama qilingan 3 ta asosiy masala;</li>
+        <li>Qabul qilingan yakuniy qarorlar;</li>
+        <li>Kim qaysi muddatgacha nima qilishi kerakligi (Action Items ro‘yxati).</li>
+      </ol>
+
+      <h2>4. Didox shartnomalaridagi xatarlarni tekshirish</h2>
+      <p>Yuristlar doim ham band bo‘lishi mumkin. Didox orqali yangi hamkordan shartnoma kelganda, uni imzolashdan oldin Claude 3.7 yoki ChatGPT'ga yuklab, xatarlarni tekshiring:</p>
+
+      <div class="prompt-card" style="margin:20px 0;">
+        <pre class="prompt-code">"Sen korporativ yuristsan. Mazkur shartnomani tekshir va biz (buyurtmachi) uchun bir tomonlama javobgarlik yuklaydigan, 0.5% dan yuqori penyalar va shartnomani bir tomonlama bekor qilishdagi xavfli tuzoqlarni 3 ta punktda ko‘rsat."</pre>
+      </div>
+
+      <h2>5. Taqdimot va hisobot slaydlarini 10 daqiqada tayyorlash</h2>
+      <p>Rahbariyatga yoki mijozga taqdimot tayyorlash uchun PowerPoint'da soatlab vaqt o‘tkazmang. <a href="vosita.html?id=gamma" style="color:var(--green); font-weight:700;">Gamma AI</a> vositasidan foydalanib, oddiy loyiha rejangizni bir zumda professional dizaynga ega interaktiv slaydga aylantiring.</p>
+
+      <div class="action-checklist">
+        <div class="action-checklist-title">🎯 Ishda qo‘llash bo‘yicha tavsiyalar</div>
+        <ol>
+          <li>Barcha 5 ta jarayonni birdaniga o‘zgartirishga urinmang, bugun faqat bittasidan (masalan, xatlar yozishdan) boshlang.</li>
+          <li>Kompaniyangizdagi ichki maxfiy parollar va moliyaviy sirlarni modelga yuklamaslik odatini shakllantiring.</li>
+          <li>Olingan natijalarni har doim yakuniy yuborishdan oldin 30 soniya davomida ko‘zdan kechiring.</li>
+        </ol>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class="footerlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz ↗</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
