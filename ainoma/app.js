@@ -110,6 +110,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma", u: "maqola.html?id=jetbrains-air", k: "jetbrains 'air' tizimini e’lon qildi: agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma dasturlash devtools jetbrains official blog jetbrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom ai agentlarini koordinatsiya qili" },
   { t: "Perform.AI elektron tijorat uchun 'AI Commerce OS' operatsion tizimini ishga tushirdi", u: "maqola.html?id=perform-ai-commerce-os", k: "perform.ai elektron tijorat uchun 'ai commerce os' operatsion tizimini ishga tushirdi dunyo biznes eqs corporate newsroom brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtir" },
@@ -152,25 +153,21 @@ const searchIndex = [
   { t: "Dastyor AI — O'zbekiston soliq va buxgalteriya qonunchiligi bo'yicha AI yordamchi", u: "vosita.html?id=dastyor", k: "dastyor soliq buxgalteriya hisob qonun fintex" },
   { t: "Yuridik AI — O'zbekiston shartnomalari va qonunchiligini tekshirish", u: "vosita.html?id=yuridik", k: "yuridik shartnoma xatar qonun audit yurist" },
   
-  // Qo'llanmalar & Promptlar
-  { t: "Prompt Ustaxonasi: Interaktiv prompt konstruktori va B2B andozalar", u: "prompt-ustaxonasi.html", k: "prompt ustaxonasi generator konstruktor andoza chatgpt claude gemini b2b" },
+  // Qo'llanmalar & Amaliy Yo'riqnomalar
+  { t: "Qo‘llanmalar va Amaliy Yo‘riqnomalar kutubxonasi", u: "qollanmalar.html", k: "qollanmalar barcha qo'llanmalar amaliy qo'llanma yo'riqnoma darslik" },
   { t: "Sun’iy intellektni 0 dan boshlash: Yangi boshlovchilar uchun amaliy yo‘riqnoma", u: "qollanma-noldan.html", k: "sun'iy intellekt 0 dan boshlash noldan yangi boshlovchi chatgpt claude gemini obuna" },
-  { t: "Mukammal prompt yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida", u: "qollanma-prompting.html", k: "mukammal prompt yozish san'ati rcfo formulasi few shot chain of thought prompting" },
+  { t: "Mukammal so‘rov yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida", u: "qollanma-prompting.html", k: "mukammal prompt so'rov yozish san'ati rcfo formulasi few shot chain of thought prompting" },
   { t: "Ishda sun’iy intellektdan foydalanish: 5 ta amaliy ish oqimi", u: "qollanma-ishda.html", k: "ishda sun'iy intellekt unumdorlik excel 1c didox yig'ilish bayonnoma gamma slayd" },
   { t: "Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar", u: "qollanma-qurish.html", k: "tizim qurish no-code make n8n api openai agent bot avtomatlashtirish" },
   { t: "Kompaniyada sun’iy intellekt xavfsizligi va ma’lumotlar maxfiyligi: 5 qadam", u: "qollanma-xavfsizlik.html", k: "xavfsizlik korporativ maxfiylik zero data retention pii masking litsenziya policy iskandarov" },
   { t: "Ovozli sun’iy intellekt agentlarini biznesga joriy qilish: Jonli muloqot", u: "qollanma-ovoz.html", k: "ovozli sun'iy intellekt voice ai call markaz telephony sip zadarma duplex streaming gemini live iskandarov" },
   { t: "B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma", u: "qollanma-b2b.html", k: "b2b outreach masterklass apollo lemlist amocrm shukhratbek iskandarov" },
-  { t: "AI bilan to‘g‘ri ishlash: Birinchi promptdan natijagacha", u: "qollanma.html", k: "ai prompt chatgpt claude boshlangich yo'riqnoma" },
-  { t: "B2B mijozlarga sovuq taklif yozish uchun master prompt", u: "qollanmalar.html", k: "prompt b2b taklif email outreach mijoz sotuv iskandarov" },
-  { t: "Uchrashuvdan keyingi professional 'Follow-up' xati prompti", u: "qollanmalar.html", k: "follow up uchrashuv kelishuv xat sotuv b2b iskandarov" },
-  { t: "Noyob Qiymat Taklifi (UVP) formulasi generatori", u: "qollanmalar.html", k: "uvp taklif marketing strategiya raqobatchi iskandarov" },
-  { t: "B2B shartnomalardagi xatarlarni tekshirish prompti", u: "qollanmalar.html", k: "shartnoma yurist huquq audit jarima xatar didox" },
-  { t: "Reels & Shorts uchun 30 soniyalik 'Hook' va virusli ssenariy", u: "qollanmalar.html", k: "reels tiktok shorts video hook ssenariy smm zokirova" },
-  { t: "Nomzodlar uchun STAR metodologiyasi suhbat savollari", u: "qollanmalar.html", k: "hr suhbat intervyu star kompetensiya xodim rahmatova" },
-  { t: "SQL so‘rovlarni 10 barobar tezlashtirish va indekslash", u: "qollanmalar.html", k: "sql baza postgresql mysql explain indeks dasturlash umarov" },
-  { t: "Telegram kanal uchun 7 kunlik professional kontent-reja tuzish", u: "qollanmalar.html", k: "prompt telegram kanal post ssm kontent reja zokirova" },
-  { t: "Mijozlarning narx e'tirozini yengish uchun skript generatori", u: "qollanmalar.html", k: "prompt narx e'tiroz qimmat savdo menejeri iskandarov" }
+  { t: "Kompaniya moliyasi va buxgalteriyasida sun’iy intellekt: 1C, kassa va Cash Flow", u: "qollanma-moliya.html", k: "moliya buxgalteriya 1c kassa nazorati cash flow o'zbekiston fintex tannarx debit qarzdorlik" },
+  { t: "Shartnomalar auditi va yuridik xatarlarda sun’iy intellekt: Didox integratsiyasi", u: "qollanma-huquq.html", k: "shartnoma yurist huquq audit didox sud jarima forsmajor xatar tekshirish" },
+  { t: "Kadrlar tanlash va HR boshqaruvida sun’iy intellekt: STAR suhbatlar va rezyume", u: "qollanma-hr.html", k: "hr kadr rezyume suhbat star intervyu baholash onboarding xodim saralash" },
+  { t: "B2B kontent-marketing va Telegram kanallarda sun’iy intellekt: Savdo voronkasi", u: "qollanma-smm.html", k: "smm b2b kontent marketing telegram kanal sotuv voronka virallik auditoriya" },
+  { t: "Sun’iy intellekt bilan to‘g‘ri ishlash: Birinchi so‘rovdan natijagacha", u: "qollanma.html", k: "sun'iy intellekt prompt chatgpt claude boshlangich yo'riqnoma" },
+  { t: "Prompt Ustaxonasi: Interaktiv prompt konstruktori va B2B andozalar", u: "prompt-ustaxonasi.html", k: "prompt ustaxonasi generator konstruktor andoza chatgpt claude gemini b2b so'rov shablon" }
 ];
 
 searchInput?.addEventListener("input", (e) => {

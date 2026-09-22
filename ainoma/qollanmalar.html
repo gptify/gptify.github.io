@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="AiNoma — O‘zbekiston biznesi va mutaxassislari uchun sinovdan o‘tgan professional AI promptlar va qo‘llanmalar.">
-  <title>Qo‘llanmalar va Promptlar — AiNoma</title>
+  <meta name="description" content="AiNoma — O‘zbekiston biznesi, mutaxassislari va jamoalari uchun sun’iy intellekt texnologiyalarini amaliyotga tatbiq etish bo‘yicha to‘liq tizimli qo‘llanmalar kutubxonasi.">
+  <title>Qo‘llanmalar Kutubxonasi — AiNoma</title>
   <link rel="stylesheet" href="style.css">
   <link rel="canonical" href="https://ainoma.uz/qollanmalar.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AiNoma">
-  <meta property="og:title" content="Qo‘llanmalar va Promptlar Kutubxonasi — AiNoma">
-  <meta property="og:description" content="B2B savdo, marketing, kontent, huquq va tahlil uchun sinovdan o‘tgan professional master-promptlar va amaliy yo‘riqnomalar.">
+  <meta property="og:title" content="Amaliy Qo‘llanmalar Kutubxonasi — AiNoma">
+  <meta property="og:description" content="Sun’iy intellektni 0 dan boshlash, savdo, marketing, moliya, huquq, HR va xavfsizlik bo‘yicha to‘liq bosqichma-bosqich yo‘riqnomalar.">
   <meta property="og:url" content="https://ainoma.uz/qollanmalar.html">
   <meta property="og:image" content="https://ainoma.uz/assets/coding_workspace.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Qo‘llanmalar va Promptlar Kutubxonasi — AiNoma">
-  <meta name="twitter:description" content="B2B savdo, marketing, kontent, huquq va tahlil uchun sinovdan o‘tgan professional master-promptlar va amaliy yo‘riqnomalar.">
+  <meta name="twitter:title" content="Amaliy Qo‘llanmalar Kutubxonasi — AiNoma">
+  <meta name="twitter:description" content="Sun’iy intellektni 0 dan boshlash, savdo, marketing, moliya, huquq, HR va xavfsizlik bo‘yicha to‘liq bosqichma-bosqich yo‘riqnomalar.">
   <meta name="twitter:image" content="https://ainoma.uz/assets/coding_workspace.jpg">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.ico">
@@ -49,7 +49,7 @@
   <!-- Search Modal -->
   <div class="searchbox" id="searchbox">
     <div class="searchinner">
-      <input id="siteSearch" placeholder="Promptlarni qidiring (masalan: B2B, Telegram, E'tiroz, Moliya)…" autocomplete="off">
+      <input id="siteSearch" placeholder="Qo‘llanmalarni qidiring (masalan: Moliya, Didox, Xavfsizlik, B2B, Ovoz)…" autocomplete="off">
       <button class="btn" id="closeSearch">Yopish (Esc)</button>
       <div class="search-results" id="searchResults"></div>
     </div>
@@ -57,350 +57,231 @@
 
   <main class="container">
     <div class="pagehero">
-      <div class="kicker">AiNoma / Qo‘llanmalar & Promptlar</div>
-      <h1>Qo‘llanmalar va Promptlar</h1>
-      <p>Nazariya emas, aynan ishxonada bugunoq ishlatish mumkin bo‘lgan tayyor skriptlar, tizimli promptlar va bosqichma-bosqich yo‘riqnomalar.</p>
+      <div class="kicker">AiNoma / Qo‘llanmalar Kutubxonasi</div>
+      <h1>Amaliy Qo‘llanmalar</h1>
+      <p>Quruq nazariya emas, aynan O‘zbekiston korxonalari va mutaxassislari bugunoq ishlatishi mumkin bo‘lgan bosqichma-bosqich tizimlar va yo‘riqnomalar to‘plami.</p>
     </div>
 
-    <!-- Big Guides Cards -->
-    <div style="margin-bottom: 40px;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
-        <h2 style="font-size:20px; font-weight:800; margin:0;">Asosiy amaliy yo‘riqnomalar</h2>
-        <a class="btn primary" href="prompt-ustaxonasi.html" style="font-size:13px; padding:6px 14px; display:inline-flex; align-items:center; gap:6px;">
-          <span>⚡ Prompt Ustaxonasi</span> →
-        </a>
+    <!-- Workshop Callout Banner -->
+    <div style="background:linear-gradient(135deg, rgba(5, 150, 105, 0.08) 0%, rgba(6, 78, 59, 0.12) 100%); border:1px solid rgba(5, 150, 105, 0.3); border-radius:12px; padding:20px 24px; margin-bottom:32px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div style="font-weight:700; font-size:16px; margin-bottom:4px; color:var(--ink);">⚡ Tayyor so‘rov qoliplari va prompt generatori kerakmi?</div>
+        <div style="font-size:14px; color:var(--muted);">Kompaniyangiz vazifasiga mos professional so‘rovlarni interaktiv konstruktor yordamida shakllantiring.</div>
       </div>
-      <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
-        <a class="card" href="qollanma-noldan.html" style="text-decoration:none;">
-          <div class="thumb" style="height:150px;"><img src="assets/robot_assist.jpg" alt="0 dan boshlash"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">📖 0 DAN BOSHLASH</div>
-          <h3 style="font-size:16px; margin:8px 0 6px;">Sun’iy intellektni 0 dan boshlash</h3>
-          <p style="font-size:13px; color:var(--muted);">Qaysi modeldan boshlash, bepul versiya nimaga yetishi va birinchi qoidalar.</p>
-        </a>
-        <a class="card" href="qollanma-prompting.html" style="text-decoration:none;">
-          <div class="thumb" style="height:150px;"><img src="assets/coding_workspace.jpg" alt="Prompting"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">⚡ PROMPT MUHANDISLIGI</div>
-          <h3 style="font-size:16px; margin:8px 0 6px;">Mukammal prompt yozish san’ati</h3>
-          <p style="font-size:13px; color:var(--muted);">RCFO formulasi, Few-shot misollar va modelni aniq boshqarish.</p>
-        </a>
-        <a class="card" href="qollanma-ishda.html" style="text-decoration:none;">
-          <div class="thumb" style="height:150px;"><img src="assets/b2b_sales.jpg" alt="Ishda qo'llash"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">🏢 ISH UNUMDORLIGI</div>
-          <h3 style="font-size:16px; margin:8px 0 6px;">Ishda AI’dan foydalanish</h3>
-          <p style="font-size:13px; color:var(--muted);">Email yozish, Excel jadvallar tahlili, shartnoma auditi va slaydlar.</p>
-        </a>
-        <a class="card" href="qollanma-qurish.html" style="text-decoration:none;">
-          <div class="thumb" style="height:150px;"><img src="assets/agents_workflow.jpg" alt="Tizim qurish"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">🛠️ MUHANDISLIK & AGENTLAR</div>
-          <h3 style="font-size:16px; margin:8px 0 6px;">AI bilan tizim qurish</h3>
-          <p style="font-size:13px; color:var(--muted);">n8n, Telegram botlarni LLMlarga ulash, CRM va inson nazorati.</p>
-        </a>
-        <a class="card" href="qollanma-xavfsizlik.html" style="text-decoration:none;">
-          <div class="thumb" style="height:150px;"><img src="assets/gpu_datacenter.jpg" alt="Kompaniyada xavfsizlik va maxfiylik"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">🛡️ KORPORATIV XAVFSIZLIK</div>
-          <h3 style="font-size:16px; margin:8px 0 6px;">Kompaniyada xavfsizlik va maxfiylik</h3>
-          <p style="font-size:13px; color:var(--muted);">Tijorat sirlari, Zero Data Retention va Enterprise LLM qoidalari.</p>
-        </a>
-        <a class="card" href="qollanma-ovoz.html" style="text-decoration:none;">
-          <div class="thumb" style="height:150px;"><img src="assets/voice_duplex.jpg" alt="Ovozli sun'iy intellekt agentlari"></div>
-          <div class="card-meta" style="color:var(--green); font-weight:700;">🎙️ OVOZLI SUN’IY INTELLEKT</div>
-          <h3 style="font-size:16px; margin:8px 0 6px;">Ovozli AI agentlarni joriy qilish</h3>
-          <p style="font-size:13px; color:var(--muted);">Duplex streaming, 150ms kechikish va mijozlar bilan jonli ovozda muloqot.</p>
-        </a>
-      </div>
+      <a class="btn primary" href="prompt-ustaxonasi.html" style="font-size:13px; padding:8px 18px; display:inline-flex; align-items:center; gap:6px;">
+        <span>Prompt Ustaxonasiga o‘tish</span> →
+      </a>
     </div>
 
     <!-- Filters -->
     <div class="filters">
-      <button class="filter active" data-filter="all">Barchasi</button>
-      <button class="filter" data-filter="Sotuv">B2B & Sotuv</button>
-      <button class="filter" data-filter="Kontent">Kontent & SMM</button>
-      <button class="filter" data-filter="Moliya">Moliya & Tahlil</button>
-      <button class="filter" data-filter="Huquq">Huquq & Shartnoma</button>
-      <button class="filter" data-filter="HR">HR & Jamoa</button>
-      <button class="filter" data-filter="Dasturlash">Dasturlash</button>
-      <button class="filter" data-filter="Boshlang‘ich">Boshlang‘ich</button>
+      <button class="filter active" data-filter="all">Barchasi (11)</button>
+      <button class="filter" data-filter="boshlangich">Boshlang‘ich</button>
+      <button class="filter" data-filter="biznes">Boshqaruv & Biznes</button>
+      <button class="filter" data-filter="savdo">Savdo & Marketing</button>
+      <button class="filter" data-filter="moliya">Moliya & Huquq</button>
+      <button class="filter" data-filter="tizim">Muhandislik & Xavfsizlik</button>
     </div>
 
+    <!-- Guides Grid -->
     <div class="pagegrid">
-      <!-- Card 1: B2B Outreach Prompt -->
-      <article class="prompt-card filter-card" data-cat="Sotuv" data-search="B2B mijozlarga sovuq taklif email outreach sotuv Shukhratbek Iskandarov">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">B2B mijozlar uchun sovuq taklif (Outreach)</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Mijozning e’tiborini birinchi 3 qatordayoq tortuvchi va javob berish ehtimolini oshiruvchi xat shabloni.</p>
-        <pre class="prompt-code">"Sen B2B savdo bo‘yicha tajribali mutaxassissan. Bizning xizmat: [xizmat nomi]. Maqsadli mijoz: [kompaniya yoki rahbar lavozimi].
-Vazifa: Mijozga 120 so‘zdan oshmagan samimiy va professional sovuq xat yoz.
-Talablar:
-1. Birinchi jumlada shablon salomlardan qoch, ularning sohasidagi og‘riqli nuqtani tilga ol.
-2. 2 ta gapda bizning yechim ularga qanday vaqt yoki pul tejashini ko‘rsat.
-3. Call-to-Action (CTA): Qattiq sotuv qilma, shunchaki 'Bu mavzuda 10 daqiqa fikr almashsak qanday qaraysiz?' qabilida taklif ber."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">ShI</span>
-          <span>Muallif: <b>Shukhratbek Iskandarov</b> · B2B AI maslahatchisi</span>
-        </div>
-      </article>
 
-      <!-- Card 2: Telegram Content Plan -->
-      <article class="prompt-card filter-card" data-cat="Kontent" data-search="Telegram kanal 7 kunlik kontent reja ssm post Malika Zokirova">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Telegram kanal uchun 7 kunlik kontent-reja</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">O‘quvchini zeriktirmaydigan, ekspertlikni oshiruvchi va savdoni rag‘batlantiruvchi muvozanatli reja.</p>
-        <pre class="prompt-code">"Sen O‘zbekiston Telegram auditoriyasini chuqur tushunadigan kontent-strategsan. Kanal mavzusi: [Mavzu]. Maqsadli auditoriya: [Tadbirkorlar / Mutaxassislar].
-Vazifa: 7 kunlik kontent-reja tuz.
-Tuzilishi:
-- Dushanba: Sohadagi yangilik va shaxsiy tahlil.
-- Seshanba: Amaliy xato va undan olingan saboq (Keys).
-- Chorshanba: Bosqichma-bosqich yo‘riqnoma yoki 'Checklist'.
-- Payshanba: Foydali vosita yoki kitob tavsiyasi.
-- Juma: Falsafiy xulosa yoki jamoa ichki jarayoni.
-- Shanba: Savol-javob / Auditoriya bilan muloqot.
-- Yakshanba: Dam olish yoki yengil formatdagi qiziqarli fakt."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">MZ</span>
-          <span>Muallif: <b>Malika Zokirova</b> · SMM & Kontent-strateg</span>
-        </div>
-      </article>
-
-      <!-- Card 3: Price Objection Script -->
-      <article class="prompt-card filter-card" data-cat="Sotuv" data-search="Narx e'tirozi qimmat savdo skripti mijoz Shukhratbek Iskandarov">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">"Sizlarda qimmat ekan" e’tirozini hal qilish</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Narx bo‘yicha bahslashmasdan, qiymatni birinchi o‘ringa olib chiquvchi javob variantlari.</p>
-        <pre class="prompt-code">"Sen savdo bo‘yicha bosh murabbiysan. Mahsulotimiz narxi: [narx], raqobatchilarniki esa arzonroq. Mijoz: 'Sizlarda juda qimmat ekan' deb aytdi.
-Vazifa: Menejer uchun 3 xil stsenariyda muloyim, hurmatli ('Siz' ohangida) va ishonchli javob varianti yoz:
-1-variant: Xarajat emas, uzoq muddatli tejamkorlik va kafolatga urg‘u berish.
-2-variant: Boshqa arzonroq yechimlar bilan taqqoslashdagi yashirin xavflarni tushuntirish.
-3-variant: Moslashuvchan to‘lov yoki sinov bosqichini taklif qilish."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">ShI</span>
-          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Savdo tizimlari</span>
-        </div>
-      </article>
-
-      <!-- Card 4: Financial & Expense Audit -->
-      <article class="prompt-card filter-card" data-cat="Moliya" data-search="Moliya xarajat tahlil audit tushum marja Jasur Aliyev">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Kompaniya oylik xarajatlarini tahlil qilish</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Ortiqcha xarajatlarni aniqlash va daromadlilikni oshirish bo‘yicha moliyaviy tahlil.</p>
-        <pre class="prompt-code">"Sen bosh moliyaviy tahlilchisan (CFO). Quyida kompaniyamizning oxirgi 3 oylik xarajatlar va tushumlar ro‘yxati keltirilgan: [Ma'lumotlar yoki CSV matni].
-Vazifa:
-1. Xarajatlarni doimiy va o‘zgaruvchan guruhlarga ajrat.
-2. Eng ko‘p pul ketayotgan va optimallashtirish mumkin bo‘lgan 3 ta moddani aniq ko‘rsat.
-3. Keyingi chorak uchun marjani 15% ga oshirish bo‘yicha aniq harakatlar rejasini tuz."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">JA</span>
-          <span>Muallif: <b>Jasur Aliyev</b> · Moliyaviy tahlilchi (CFO)</span>
-        </div>
-      </article>
-
-      <!-- Card 5: Code Refactor & Clean Code -->
-      <article class="prompt-card filter-card" data-cat="Dasturlash" data-search="Kod refaktoring clean code dasturlash xatolik Sardorbek Umarov">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Kodni tozalash va xavfsizlik auditi</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Koddagi potensial xatoliklar, xotira sarfi va xavfsizlik zaifliklarini bartaraf etish.</p>
-        <pre class="prompt-code">"Sen tajribali Senior Software Engineerasan. Quyidagi kod parchasini ko‘rib chiq:
-[Kod]
-Vazifa:
-1. Kodni Clean Code va SOLID tamoyillariga mos ravishda qayta yoz (refactor).
-2. Xavfsizlik (SQL injection, XSS va h.k.) zaifliklari bo‘lsa, ko‘rsat va bartaraf et.
-3. Kod nima sababdan optimallashganini 3 ta qisqa punktdan iborat izoh bilan tushuntir."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">SU</span>
-          <span>Muallif: <b>Sardorbek Umarov</b> · Senior AI Engineer</span>
-        </div>
-      </article>
-
-      <!-- Card 6: Beginner Guide -->
-      <article class="card filter-card" data-cat="Boshlang‘ich" data-search="AI bilan ishlashni boshlash qollanma boshlangich Shukhratbek Iskandarov">
-        <div class="thumb"><img src="assets/coding_workspace.jpg" alt="Boshlang'ich qo'llanma"></div>
-        <div class="card-meta">BOSHLANG‘ICH · QO‘LLANMA</div>
-        <h3><a href="qollanma.html">AI bilan to‘g‘ri ishlash: Birinchi promptdan natijagacha</a></h3>
-        <p>ChatGPT va Claude'dan 10 barobar aniqroq javob olishning 4 bosqichli oddiy tizimi — yangi boshlovchilar uchun to‘liq qo‘llanma.</p>
+      <!-- Guide 1: 0 dan boshlash -->
+      <article class="card filter-card" data-cat="boshlangich" data-search="suniy intellekt 0 dan boshlash noldan yangi boshlovchi chatgpt claude gemini">
+        <div class="thumb"><img src="assets/robot_assist.jpg" alt="Sun’iy intellektni 0 dan boshlash"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">📖 BOSHLANG‘ICH · 5 DAQIQA</div>
+        <h3><a href="qollanma-noldan.html">Sun’iy intellektni 0 dan boshlash: Yangi boshlovchilar uchun amaliy yo‘riqnoma</a></h3>
+        <p>Qaysi modeldan boshlash, bepul versiya nimaga yetishi, pullik obuna qachon o‘zini oqlashi va birinchi 5 ta asosiy qoida.</p>
         <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
           <span class="avatar-mini">ShI</span>
-          <span>Muallif: <b>Shukhratbek Iskandarov</b> · B2B AI mutaxassisi</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Bosh maslahatchi</span>
         </div>
         <div style="padding-top:10px;">
-          <a class="more" href="qollanma.html">Qo‘llanmani o‘qish →</a>
+          <a class="more" href="qollanma-noldan.html">Qo‘llanmani o‘qish →</a>
         </div>
       </article>
 
-      <!-- Card 7: Follow-up Email After Meeting (B2B & Sotuv) -->
-      <article class="prompt-card filter-card" data-cat="Sotuv" data-search="B2B uchrashuvdan keyingi xat follow-up kelishuv sotuv Shukhratbek Iskandarov">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Uchrashuvdan keyingi professional 'Follow-up' xati</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Mijoz bilan og‘zaki suhbatdagi kelishuvlarni mustahkamlovchi va keyingi qadamni belgilovchi xat.</p>
-        <pre class="prompt-code">"Sen B2B savdo bo‘yicha ekspertisan. Bugun mijozimiz [Kompaniya nomi va rahbar ismi] bilan uchrashuv o‘tkazdik.
-Muhokama qilingan mavzular: [Uchrashuv qisqa xulosasi]. Bizning va’da: [Yuboriladigan taklif yoki demo]. Ularning vazifasi: [Ichki ma’lumotlarni berish].
-Vazifa: Uchrashuvdan so‘ng 2 soat ichida yuboriladigan hurmatli ('Siz' ohangida) follow-up xati yoz:
-1. Vaqt ajratgani uchun samimiy minnatdorlik.
-2. Kelishilgan 3 ta asosiy punktni qisqa ro‘yxat qilib ber.
-3. Keyingi qadam: 'Kelasi seshanba soat 15:00 da demo taqdimot bo‘yicha bog‘lanamiz' deb aniq muddat qo‘y."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">ShI</span>
-          <span>Muallif: <b>Shukhratbek Iskandarov</b> · B2B Savdo tizimlari</span>
-        </div>
-      </article>
-
-      <!-- Card 8: UVP (Unique Value Proposition) Generator (Marketing & Sotuv) -->
-      <article class="prompt-card filter-card" data-cat="Sotuv" data-search="UVP noyob qiymat taklifi marketing strategiya raqobatchi Shukhratbek Iskandarov">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Noyob Qiymat Taklifi (UVP) formulasi</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Mijoz "Nega aynan sizdan sotib olishim kerak?" deb so‘raganda 1 jumlada aniq javob berish formulasi.</p>
-        <pre class="prompt-code">"Sen mahsulot marketologi va strategik maslahatchisan.
-Bizning mahsulot / xizmat: [Mahsulot nomi].
-Maqsadli auditoriya: [Kimlar uchun].
-Ularning eng katta og‘rig‘i: [Muammo].
-Bizning asosiy afzalligimiz: [Qanday hal qilamiz].
-Bozordagi raqobatchilar: [Raqobatchilar kamchiligi].
-Vazifa: Biz uchun 4 xil xalqaro formatda (Steve Blank, Geoff Moore, XYZ va Outcome-based) qisqa, esda qolarli va ishonarli UVP variantlarini ishlab chiq."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">ShI</span>
-          <span>Muallif: <b>Shukhratbek Iskandarov</b> · AI Strategiya maslahatchisi</span>
-        </div>
-      </article>
-
-      <!-- Card 9: Contract Risk Review (Huquq & Shartnomalar) -->
-      <article class="prompt-card filter-card" data-cat="Huquq" data-search="Shartnoma auditi huquq yurist xatar jarima majburiyat Temur Mirzayev">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">B2B shartnomalardagi xatarlarni tekshirish</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Shartnoma matnidagi bir tomonlama majburiyatlar, yashirin jarimalar va nomutanosibliklarni aniqlash.</p>
-        <pre class="prompt-code">"Sen O‘zbekiston xo‘jalik huquqi bo‘yicha tajribali korporativ yuristsan.
-Quyida hamkorimiz taqdim etgan shartnoma loyihasi: [Shartnoma matni yoki bandlari].
-Bizning rolimiz: [Ijrochi / Buyurtmachi].
-Vazifa:
-1. Bizning manfaatlarimizga zid bo‘lgan 3 ta eng xatarli bandni ajratib ko‘rsat.
-2. To‘lov kechikishi va penya stavkalarining qonuniy me’yorlarga muvofiqligini tekshir.
-3. Ushbu bandlarni xavfsiz va murosali tahrirda qayta yozib ber (taklif etiladigan redaksiya)."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">TM</span>
-          <span>Muallif: <b>Temur Mirzayev</b> · Korporativ yurist & AI Huquq</span>
-        </div>
-      </article>
-
-      <!-- Card 10: Viral Video Hook & Script (Kontent & SMM) -->
-      <article class="prompt-card filter-card" data-cat="Kontent" data-search="Reels TikTok video hook ssenariy virusli video Malika Zokirova">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Reels & Shorts uchun 30 soniyalik 'Hook' va ssenariy</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Ilk 3 soniyadayoq e’tiborni tortuvchi va oxirigacha ko‘rishga undovchi dinamik video tuzilishi.</p>
-        <pre class="prompt-code">"Sen qisqa videolar (Reels, TikTok, Shorts) bo‘yicha mohir ssenarist va virusli kontent bo‘yicha mutaxassissan.
-Mavzu: [Mavzu, masalan: Kompaniyada vaqtni tejovchi 3 ta AI vosita].
-Auditoriya: [Tadbirkorlar / Freelancerlar].
-Vazifa: 30 soniyalik video ssenariysini yoz:
-0-3 soniya: Kuchli 'Pattern interrupt' (Vizual harakat + kutilmagan savol).
-4-18 soniya: Muammo va tezkor yechim (Ortiqcha so‘zsiz, 2 ta aniq fakt).
-19-27 soniya: Natija va taassurot.
-28-30 soniya: Izoh qoldirishga turtki beruvchi savol (Masalan: 'Siz qaysi birini sinab ko‘rgan bo‘lardingiz?')."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">MZ</span>
-          <span>Muallif: <b>Malika Zokirova</b> · SMM & Kontent-strateg</span>
-        </div>
-      </article>
-
-      <!-- Card 11: STAR Behavioral Interview Questions (HR & Boshqaruv) -->
-      <article class="prompt-card filter-card" data-cat="HR" data-search="HR suhbat intervyu STAR savollar xodim tanlash Dildora Rahmatova">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">Nomzodlar uchun STAR metodologiyasi savollari</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Rezyumedagi chiroyli so‘zlarni emas, nomzodning real vaziyatlardagi xatti-harakatini baholash tizimi.</p>
-        <pre class="prompt-code">"Sen xalqaro darajadagi HR-direktorsan. Biz [Lavozim nomi, masalan: B2B Savdo bo‘yicha yetakchi menejer] lavozimiga nomzod bilan intervyu o‘tkazmoqdamiz.
-Biz uchun muhim kompetensiyalar: [Muzokara olib borish, stressga chidamlilik, mustaqillik].
-Vazifa: STAR (Situation, Task, Action, Result) metodologiyasi bo‘yicha 5 ta chuqur vaziyatli savol tuz:
-1. Har bir savol 'Biror marta ... bo‘lgan vaziyatni aytib bering' shaklida boshlansin.
-2. Har bir savol yonida intervyuer nimaga e’tibor berishi kerakligini (Qizil bayroqlar va Ijobiy belgilar) ko‘rsat."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">DR</span>
-          <span>Muallif: <b>Dildora Rahmatova</b> · HR-direktor & Konsultant</span>
-        </div>
-      </article>
-
-      <!-- Card 12: SQL Query Optimization & Indexing (Dasturlash) -->
-      <article class="prompt-card filter-card" data-cat="Dasturlash" data-search="SQL so'rov optimallashtirish indeks explain postgresql mysql Sardorbek Umarov">
-        <div class="prompt-meta">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <h3 style="margin:0; font-size:16px;">SQL so‘rovlarni 10 barobar tezlashtirish va indekslash</h3>
-        <p style="font-size:13px; color:var(--muted); margin:0;">Sekin ishlayotgan murakkab SELECT so‘rovlarini tahlil qilish va ma’lumotlar bazasi yuklamasini kamaytirish.</p>
-        <pre class="prompt-code">"Sen Senior Database Administrator (DBA) va backend arxitektorsan.
-Baza turi: [PostgreSQL / MySQL].
-Sekin ishlayotgan so‘rov:
-[SQL so'rovi]
-Jadvallar hajmi va mavjud indekslar: [Ma'lumot].
-Vazifa:
-1. Ushbu so‘rovdagi asosiy resurs talab qiluvchi (bottleneck) joylarni aniqla.
-2. So‘rovni JOIN va WHERE shartlarini optimallashtirgan holda qayta yoz.
-3. Kerakli B-Tree yoki Composite indekslar qurish uchun aniq DDL buyruqlarini ber."</pre>
-        <div class="prompt-author">
-          <span class="avatar-mini">SU</span>
-          <span>Muallif: <b>Sardorbek Umarov</b> · Senior AI & DB Engineer</span>
-        </div>
-      </article>
-
-      <!-- Card 13: B2B Outreach Master Guide (Katta Qo‘llanma) -->
-      <article class="card filter-card" data-cat="Sotuv Boshlang‘ich" data-search="B2B outreach qo'llanma sovuq email telegram masterklass Shukhratbek Iskandarov">
-        <div class="thumb"><img src="assets/b2b_sales.jpg" alt="B2B Outreach Masterklass"></div>
-        <div class="card-meta">B2B AMALIYOT · KATTA QO‘LLANMA</div>
-        <h3><a href="qollanma-b2b.html">B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha</a></h3>
-        <p>Apollo orqali qaror qabul qiluvchi rahbarlarni topish, Lemlist orqali shaxsiylashtirilgan zanjir yo‘lga qo‘yish va CRM integratsiyasi bo‘yicha to‘liq qo‘llanma.</p>
+      <!-- Guide 2: Prompting san'ati -->
+      <article class="card filter-card" data-cat="boshlangich tizim" data-search="mukammal prompt yozish sanati rcfo formulasi few shot chain of thought so'rov">
+        <div class="thumb"><img src="assets/coding_workspace.jpg" alt="Mukammal so‘rov yozish san’ati"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">⚡ SO‘ROV MUHANDISLIGI · 6 DAQIQA</div>
+        <h3><a href="qollanma-prompting.html">Mukammal so‘rov yozish san’ati: Aniq natijaga erishishning 5 oltin qoidasi</a></h3>
+        <p>RCFO formulasi (Rol, Kontekst, Format, Cheklov), Few-shot misollar berish va mantiqiy tafakkur zanjirlarini to‘g‘ri boshqarish.</p>
         <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
           <span class="avatar-mini">ShI</span>
-          <span>Muallif: <b>Shukhratbek Iskandarov</b> · B2B AI maslahatchisi</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · LLM mutaxassisi</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-prompting.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 3: Ishda qo'llash -->
+      <article class="card filter-card" data-cat="biznes" data-search="ishda suniy intellektdan foydalanish unumdorlik excel shartnoma xatlar bayonnoma">
+        <div class="thumb"><img src="assets/b2b_sales.jpg" alt="Ishda sun’iy intellektdan foydalanish"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">🏢 ISH UNUMDORLIGI · 5 DAQIQA</div>
+        <h3><a href="qollanma-ishda.html">Ishda sun’iy intellektdan foydalanish: Vaqtni 3 barobar tejaydigan 5 ta ish oqimi</a></h3>
+        <p>B2B rasmiy xatlar yozish, Excel jadvallari tahlili, Didox shartnomalarini ko‘rikdan o‘tkazish va uchrashuv bayonnomalarini yig‘ish.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · GPTify.co</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-ishda.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 4: Tizim qurish -->
+      <article class="card filter-card" data-cat="tizim biznes" data-search="suniy intellekt bilan avtomatlashtirilgan tizim qurish no-code n8n webhook crm agentlar">
+        <div class="thumb"><img src="assets/agents_workflow.jpg" alt="Sun’iy intellekt bilan tizim qurish"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">🛠️ TIZIM & AGENTLAR · 7 DAQIQA</div>
+        <h3><a href="qollanma-qurish.html">Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar</a></h3>
+        <p>Oddiy chatdan kompaniya uchun 24/7 ishlaydigan avtonom raqamli xodimlargacha: n8n, Make, Telegram botlar va CRM integratsiyasi.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Tizimlar me’mori</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-qurish.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 5: Korporativ Xavfsizlik -->
+      <article class="card filter-card" data-cat="tizim biznes" data-search="kompaniyada suniy intellekt xavfsizligi va malumotlar maxfiyligi tijorat siri zero data retention">
+        <div class="thumb"><img src="assets/gpu_datacenter.jpg" alt="Kompaniyada xavfsizlik va maxfiylik"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">🛡️ KORPORATIV XAVFSIZLIK · 6 DAQIQA</div>
+        <h3><a href="qollanma-xavfsizlik.html">Kompaniyada sun’iy intellekt xavfsizligi va maxfiylik: Tijorat sirlarini asrash</a></h3>
+        <p>Tijorat sirlari sizib chiqmasligi, Zero Data Retention (ZDR), shaxsiy ma’lumotlarni niqoblash (PII Masking) va korporativ siyosat qoidalari.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Kiberxavfsizlik eksperti</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-xavfsizlik.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 6: Ovozli sun'iy intellekt -->
+      <article class="card filter-card" data-cat="savdo tizim" data-search="ovozli suniy intellekt agentlarini biznesga joriy qilish voice ai call markaz telephony sip">
+        <div class="thumb"><img src="assets/voice_duplex.jpg" alt="Ovozli sun’iy intellekt agentlari"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">🎙️ OVOZLI TEXNOLOGIYA · 7 DAQIQA</div>
+        <h3><a href="qollanma-ovoz.html">Ovozli sun’iy intellekt agentlarini biznesga joriy qilish: Jonli muloqot</a></h3>
+        <p>Telefon qo‘ng‘iroqlari, buyurtmalarni tasdiqlash va mijozlar xizmati: Full-Duplex audio oqimi, 150ms kechikish va SIP telefoniya integratsiyasi.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Ovozli tizimlar integratori</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-ovoz.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 7: B2B Outreach -->
+      <article class="card filter-card" data-cat="savdo" data-search="b2b outreach tizimi sovuq email apollo lemlist shartnoma mijoz topish voronka">
+        <div class="thumb"><img src="assets/b2b_sales.jpg" alt="B2B Outreach tizimi"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">🤝 B2B SAVDO · 8 DAQIQA</div>
+        <h3><a href="qollanma-b2b.html">B2B savdo va sovuq xatlar tizimi: 0 dan birinchi yirik shartnomagacha</a></h3>
+        <p>Apollo orqali rahbarlarni topish, Lemlist bilan shaxsiylashtirilgan xatlar zanjiri va CRM voronkasiga avtomatik integratsiya qilish tizimi.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · B2B Savdo tizimlari</span>
         </div>
         <div style="padding-top:10px;">
           <a class="more" href="qollanma-b2b.html">Qo‘llanmani o‘qish →</a>
         </div>
       </article>
-    </div>
 
-    <div class="empty">Bu kategoriya uchun materiallar hali qo‘shilmagan.</div>
+      <!-- Guide 8: Moliya va 1C -->
+      <article class="card filter-card" data-cat="moliya biznes" data-search="kompaniya moliyasi buxgalteriya 1c hisobotlar kassa oqimi cash flow xarajatlar auditi">
+        <div class="thumb"><img src="assets/tashkent_finance.jpg" alt="Moliyaviy tahlil va kassa oqimi"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">📊 MOLIYA & TAHLIL · 6 DAQIQA</div>
+        <h3><a href="qollanma-moliya.html">Kompaniya moliyasi va buxgalteriyasida sun’iy intellekt: 1C va kassa nazorati</a></h3>
+        <p>Ortiqcha xarajatlarni aniqlash, kassa uzilishlarini (Cash Flow gap) oldindan bashorat qilish va Excel jadvallarini avtomatlashtirish tizimi.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Moliya konsultanti</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-moliya.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
 
-    <!-- Telegram-First Community Banner -->
-    <div class="newsletter">
-      <div>
-        <h2>Har kuni yangi promptlar va keyslar</h2>
-        <p>Telegram (@gptifyuz) kanalimizda obunachilarimiz uchun eng samarali promptlar va vositalar muntazam ulashib boriladi.</p>
-      </div>
-      <a class="btn-tg-large" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
-        Kanalga ulanish (@gptifyuz)
-      </a>
+      <!-- Guide 9: Shartnomalar va Didox -->
+      <article class="card filter-card" data-cat="moliya" data-search="shartnomalar auditi didox yuridik xatarlar penya fuqarolik kodeksi shartnoma tekshirish">
+        <div class="thumb"><img src="assets/data_agent.jpg" alt="Shartnomalar auditi va Didox"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">⚖️ HUQUQ & AUDIT · 6 DAQIQA</div>
+        <h3><a href="qollanma-huquq.html">Shartnomalar auditi va yuridik xatarlarni tekshirishda sun’iy intellekt</a></h3>
+        <p>Didox orqali kelgan shartnomalardagi bir tomonlama majburiyatlar, yashirin penya tuzoqlari va nomutanosib punktlarni 2 daqiqada tahlil qilish.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Huquqiy tahlilchi</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-huquq.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 10: Kadrlar va HR -->
+      <article class="card filter-card" data-cat="biznes" data-search="kadrlar tanlash hr boshqaruv rezyumelar star intervyu suhbat jamoa baholash">
+        <div class="thumb"><img src="assets/coding_workspace.jpg" alt="Kadrlar tanlash va HR boshqaruv"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">👥 HR & JAMOA · 5 DAQIQA</div>
+        <h3><a href="qollanma-hr.html">Kadrlar tanlash va jamoani boshqarishda sun’iy intellekt: Rezyumelar saralash</a></h3>
+        <p>Yuzlab nomzodlar orasidan munosib mutaxassislarni saralash, STAR metodologiyasida situatsion suhbatlar o‘tkazish va yangi xodimlarni moslashtirish.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Tashkiliy maslahatchi</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-hr.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
+      <!-- Guide 11: B2B Kontent va Telegram -->
+      <article class="card filter-card" data-cat="savdo" data-search="b2b kontent marketing telegram kanallar media strategiya hook voronka sotuv">
+        <div class="thumb"><img src="assets/social_commerce.jpg" alt="B2B kontent-marketing va Telegram kanallar"></div>
+        <div class="card-meta" style="color:var(--green); font-weight:700;">📱 KONTENT & MEDIA · 6 DAQIQA</div>
+        <h3><a href="qollanma-smm.html">B2B kontent-marketing va Telegram kanallarda sun’iy intellekt: Savdo voronkasi</a></h3>
+        <p>Shunchaki matn yozish emas, balki ekspertlikni oshiruvchi real keyslar, qiziqarli 'hook'lar va messenjerda mijozlarni jalb etish tizimi.</p>
+        <div class="prompt-author" style="margin-top:auto; padding-top:12px; border-top:1px solid var(--line);">
+          <span class="avatar-mini">ShI</span>
+          <span>Muallif: <b>Shukhratbek Iskandarov</b> · Kontent strategisti</span>
+        </div>
+        <div style="padding-top:10px;">
+          <a class="more" href="qollanma-smm.html">Qo‘llanmani o‘qish →</a>
+        </div>
+      </article>
+
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <div class="container footer">
-      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+    <div class="container footer-grid">
+      <div class="footer-brand">
         <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
-      </a>
-      <div class="footerlinks">
-        <a href="yangiliklar.html">Yangiliklar</a>
-        <a href="vositalar.html">AI vositalar</a>
-        <a href="qollanmalar.html">Qo‘llanmalar</a>
-        <a href="hikoyalar.html">Hikoyalar</a>
-        <a href="imkoniyatlar.html">Imkoniyatlar</a>
-        <a href="haqida.html">Haqida</a>
-        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz ↗</a>
-        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram (@gptifyuz)</a>
-        <span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
+        <p>O‘zbekiston va dunyodagi sun’iy intellekt texnologiyalari, xolis tahliliy maqolalar va amaliy qo‘llanmalar portali.</p>
       </div>
+      <div>
+        <div class="footer-title">Ruknlar</div>
+        <div class="footer-links">
+          <a href="yangiliklar.html">Barcha yangiliklar</a>
+          <a href="vositalar.html">AI vositalar katalogi</a>
+          <a href="qollanmalar.html">Qo‘llanmalar kutubxonasi</a>
+          <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Resurslar</div>
+        <div class="footer-links">
+          <a href="hikoyalar.html">Keyslar & Hikoyalar</a>
+          <a href="imkoniyatlar.html">Grantlar & Kurslar</a>
+          <a href="haqida.html">Tahririyat haqida</a>
+          <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram Kanal</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; 2026 AiNoma.uz · Barcha huquqlar himoyalangan.
     </div>
   </footer>
 

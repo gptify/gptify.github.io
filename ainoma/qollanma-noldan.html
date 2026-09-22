@@ -69,7 +69,7 @@
     <article class="article-shell article-body">
       <p>Sun’iy intellekt haqida internetda shov-shuvlar juda ko‘p: kimdir u barcha kasblarni yo‘q qiladi desa, kimdir oddiy o‘yinchoq deb hisoblaydi. Aslida esa sun’iy intellekt — bu sizning kundalik vazifalaringizni bir necha soniyada bajarib beruvchi yuqori malakali raqamli assistentdir.</p>
       
-      <p>Agar siz AI bilan ilgari deyarli ishlamagan bo‘lsangiz yoki faqat bir-ikki marta sinab, hafsalangiz pir bo‘lgan bo‘lsa, ushbu qo‘llanma aynan siz uchun tayyorlangan.</p>
+      <p>Agar siz sun’iy intellekt bilan ilgari deyarli ishlamagan bo‘lsangiz yoki faqat bir-ikki marta sinab, hafsalangiz pir bo‘lgan bo‘lsa, ushbu qo‘llanma aynan siz uchun tayyorlangan.</p>
 
       <h2>1-qadam: Qaysi modeldan boshlash kerak?</h2>
       <p>Bozorda yuzlab vositalar bor, ammo yangi boshlovchi uchun quyidagi 3 ta yetakchi modeldan birini tanlash yetarli:</p>
@@ -97,7 +97,7 @@
       <p>Ko‘pchilik boshidanoq pullik obuna olishga shoshiladi. B2B amaliyotida ko‘rayotganimizdek, <strong>dastlabki 2–3 hafta bepul versiyada ishlash tavsiya etiladi</strong>:</p>
       <ul>
         <li><strong>Bepul versiya nimaga yetadi:</strong> Xatlarni tahrirlash, matnlarni o‘zbekcha-inglizcha-ruscha tarjima qilish, maqolalar va hisobotlar xulosasini chiqarish, oddiy jadvallar bilan ishlash.</li>
-        <li><strong>Qachon pullik ($20) kerak bo‘ladi:</strong> Har kuni 5 tadan ortiq katta PDF fayl yuklasangiz, doimiy ravishda murakkab kod yozsangiz yoki maxsus GPT agentlaridan (Custom GPTs) intensiv foydalansangiz.</li>
+        <li><strong>Qachon pullik ($20) kerak bo‘ladi:</strong> Har kuni 5 tadan ortiq katta PDF fayl yuklasangiz, doimiy ravishda murakkab kod yozsangiz yoki maxsus modellashtirilgan agentlardan intensiv foydalansangiz.</li>
       </ul>
 
       <h2>3-qadam: Birinchi kundan boshlab to‘g‘ri ishlashning 3 qoidasi</h2>
@@ -105,29 +105,17 @@
       <div class="action-checklist">
         <div class="action-checklist-title">🎯 Yangi boshlovchilar uchun oltin qoidalar</div>
         <ol>
-          <li><strong>Bitta gaplik savol bermang:</strong> <em>"Menga marketing haqida yoz"</em> deb yozsangiz, AI umumiy darslik matnini beradi. O‘rniga: <em>"Sen B2B marketologsan. Toshkentdagi mebel ishlab chiqaruvchi korxona uchun Instagramda 3 ta post g‘oyasini ber"</em> deb so‘rang.</li>
+          <li><strong>Bitta gaplik savol bermang:</strong> <em>"Menga marketing haqida yoz"</em> deb yozsangiz, sun’iy intellekt umumiy darslik matnini beradi. O‘rniga: <em>"Siz B2B marketologsiz. Toshkentdagi mebel ishlab chiqaruvchi korxona uchun Instagramda 3 ta post g‘oyasini bering"</em> deb so‘rang.</li>
           <li><strong>Konfidensial ma’lumotlarni bermang:</strong> Kompaniya hisob raqamlari, mijozlar telefonlari yoki pasport ma’lumotlarini ochiq chatlarga hech qachon kiritmang.</li>
-          <li><strong>Har bir faktni tekshiring:</strong> AI matematik formulalar va aniq sanalarda ba’zan xato qilishi mumkin. Muhim qarorlar oldidan manbani doim inson ko‘zi bilan ko‘zdan kechiring.</li>
+          <li><strong>Har bir faktni tekshiring:</strong> Sun’iy intellekt matematik formulalar va aniq sanalarda ba’zan xato qilishi mumkin. Muhim qarorlar oldidan manbani doim inson ko‘zi bilan ko‘zdan kechiring.</li>
         </ol>
       </div>
 
-      <h2>Amaliy mashq: Bugunoq sinab ko‘ring!</h2>
-      <p>ChatGPT yoki Claude'ni oching va quyidagi tayyor promptni o‘zingizga moslab yuboring:</p>
-
-      <div class="prompt-card" style="margin:24px 0;">
-        <div class="prompt-meta" style="justify-content: flex-end;">
-          <button class="copy-btn">Nusxa olish</button>
-        </div>
-        <pre class="prompt-code">"Sen mening shaxsiy tahrirchi assistentimsan. 
-Quyidagi matnni o‘zbek adabiy tilida xatosiz, samimiy va professional uslubda tahrir qilib ber:
----
-[Tahrir qilinishi kerak bo‘lgan matningiz]
----
-Iltimos, nimalarni o‘zgartirganingni 2 ta punktda tushuntirib o‘t."</pre>
-      </div>
+      <h2>Amaliy mashq: Bugunoq sinab ko‘ring</h2>
+      <p>ChatGPT yoki Claude'ni oching va birinchi so‘rovingizda modelga aniq vazifa va qoidalarni bering. Masalan: <em>"Siz mening shaxsiy tahrirchi assistentimsiz. Quyidagi xatni o‘zbek adabiy tilida xatosiz, samimiy va professional uslubda tahrir qilib bering va nimalar o‘zgarganini 2 ta punktda tushuntiring."</em></p>
 
       <div class="article-note">
-        <b>💡 Keyingi qadam:</b> Agar sizga turli sohalar uchun tayyor promptlar kerak bo‘lsa, AiNoma’ning <a href="prompt-ustaxonasi.html" style="color:var(--green); font-weight:700;">Prompt Ustaxonasi</a> bo‘limiga o‘ting va o‘z vazifangiz bo‘yicha avtomatik master prompt shakllantiring.
+        <b>💡 Keyingi qadam:</b> Agar sizga turli sohalar uchun tayyor so‘rov qoliplari kerak bo‘lsa, AiNoma’ning <a href="prompt-ustaxonasi.html" style="color:var(--green); font-weight:700;">Prompt Ustaxonasi</a> bo‘limiga o‘ting va o‘z vazifangiz bo‘yicha avtomatik master prompt shakllantiring.
       </div>
     </article>
   </main>
