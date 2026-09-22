@@ -463,5 +463,124 @@ window.AINOMA_ARTICLES = {
       }
     ],
     "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekistonda savdo va xizmat ko‘rsatish sohalarida Telegram Mini Apps (TMA) va sun’iy intellekt botlari integratsiyasi kengaymoqda. Yangi avlod TMA ilovalari oddiy veb-sahifa bo‘lib qolmasdan, mijozning xarid tarixini eslab qoluvchi va unga individual maslahat beruvchi aqlli raqamli sotuvchiga aylanmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>O‘zbekistonlik xaridor alohida mobil ilova yuklab olishni xush ko‘rmaydi, biroq kuniga bir necha soatini Telegram'da o‘tkazadi. TMA ichida sun’iy intellektning ishlashi tovar tanlashdan tortib Click/Payme to‘lovigacha bo‘lgan barcha to‘siqlarni olib tashlaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Yengil frontend va API:</strong> React/Vue asosidagi TMA ilovalari to‘g‘ridan-to‘g‘ri LLM API bilan ulanadi.</li>\n      <li><strong>To‘lov tizimlari:</strong> Payme, Click va Uzum Pay mahalliy to‘lov shlyuzlari bilan oson integratsiya.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>24/7 savdo oqimi:</strong> Tungi paytda ham mijoz savollariga javob berilib, buyurtmalar rasmiylashtiriladi.</li>\n      <li><strong>Menejer xarajatlarini tejash:</strong> Standart so‘rovlarni qabul qilish uchun katta qo‘ng‘iroqlar markazi kerak emas.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "openai-math-advisory-group": {
+    "id": "openai-math-advisory-group",
+    "slug": "openai-math-advisory-group",
+    "title": "OpenAI matematika maslahat guruhini tuzdi: Sun’iy intellekt 100 dan ortiq ochiq muammoga yechim taklif qildi",
+    "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
+    "deck": "OpenAI fundamental fanning qiyin masalalarini hal qilish va yangi gipotezalarni formal tekshirish uchun dunyoning yetakchi matematiklaridan iborat nufuzli mustaqil kengash tuzdi.",
+    "event_date": "2026-09-21",
+    "source_published_date": "2026-09-21",
+    "ainoma_published_date": "2026-09-22",
+    "ainoma_updated_date": "2026-09-22",
+    "author": "AiNoma Ilmiy Tahlil",
+    "authorRole": "Matematik Modellashtirish & Frontier AI",
+    "readTime": "5 daqiqalik mutolaa",
+    "category": "Ilm-fan Dunyo",
+    "audience": "mutaxassislar",
+    "img": "assets/coding_workspace.jpg",
+    "imgAlt": "OpenAI Matematika Maslahat Guruhi va Ilmiy Kashfiyotlar",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "OpenAI nufuzli Institute for Advanced Study (IAS) va yetakchi olimlar bilan hamkorlikda Matematika va Sun’iy intellekt bo‘yicha maslahat guruhini rasman tashkil etdi.",
+      "Kompaniyaning yangi mantiqiy xulosalash modellari matematika va nazariy fizikada 100 dan ortiq yechilmagan ochiq gipotezalar uchun dastlabki isbot yo‘nalishlarini taklif qildi.",
+      "Kengashning asosiy maqsadi — sun’iy intellekt xulosalarini formal matematik tillar (Lean 4) vositasida tekshirish va ilmiy gallyutsinatsiyalarning oldini olish."
+    ],
+    "primary_source": {
+      "name": "TechCrunch Science & AI",
+      "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+      "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+      "date": "21.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "OpenAI Announcement",
+        "title": "Advisory Group on Mathematics and AI: Advancing Science with Reasoning Systems",
+        "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai/",
+        "date": "21.09.2026",
+        "badge": "RASMIY E’LON"
+      }
+    ],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>OpenAI 2026-yil 21-sentabr kuni fan olamidagi eng yirik tashabbuslardan birini e’lon qildi: kompaniya nufuzli Prinston Institute for Advanced Study (IAS) hamda Garvard va Kembrij universitetlarining yetakchi olimlari, jumladan Filds medali sovrindorlari ishtirokida <strong>Matematika va Sun’iy intellekt bo‘yicha maslahat guruhi</strong>ni (Advisory Group on Mathematics and AI) tuzdi. Mazkur guruh OpenAI'ning yangi mantiqiy xulosalash tizimlari tomonidan ilgari surilgan 100 dan ortiq ochiq ilmiy muammolarning yechimlarini auditdan o‘tkazadi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt ilgari matn yoki tasvir generatsiyasida kuchli bo‘lgan bo‘lsa, endi u insoniyat bilimi yetmagan fundamental abstrakt mantiq va nazariy tenglamalarni yechish bosqichiga qadam qo‘ymoqda. Biroq generativ modellarning 'ishonch bilan yolg‘on gapirish' (hallucination) xususiyati fan uchun o‘ta xavflidir. Maslahat guruhi Lean 4 kabi formal interfeyslar orqali xulosalarning mutlaq to‘g‘riligini tekshiradigan tizimlarni ishlab chiqishga boshchilik qiladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Lean 4 integratsiyasi:</strong> Sun’iy intellekt isbotlarini kompyuter tekshiruvidan o‘tuvchi qat’iy sintaksisga aylantirish.</li>\n      <li><strong>Navier-Stokes va kombinatorika:</strong> Gidrodinamika va ehtimollar nazariyasidagi murakkab chegaralarni tahlil qilish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Sanoat hisob-kitoblari aniqligi:</strong> Aviatsiya, mikrosxemalar loyihalash va yangi materiallar sintezida xatolar darajasini nolga tushirish.</li>\n      <li><strong>Murakkab mantiqiy audit:</strong> Moliyaviy modellar va xatarlarni baholashda yangi avlod tekshiruv algoritmlari.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston Fanlar akademiyasi Matematika instituti va mahalliy universitetlar uchun ushbu tashabbus yosh olimlarning sun’iy intellekt yordamida fundamental ilmiy maqolalar yozishi va xalqaro jurnallarda teng huquqli kashfiyotlar e’lon qilishi uchun yangi maydon ochadi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Siz uchun amaliy xulosalar</div>\n  <ol>\n    <li><strong>Murakkab hisob-kitoblarda formal tekshiruvni yo‘lga qo‘ying:</strong> Sun’iy intellekt bergan moliyaviy yoki texnik formulalarni qat’iy dasturiy qoidalar bilan tekshirmasdan ishlab chiqarishga kiritmang.</li>\n    <li><strong>Reasoning modellari imkoniyatini o‘rganing:</strong> GPT-o1/o3 va shunga o‘xshash mantiqiy modellar oddiy chatbotlardan farqli ravishda murakkab algoritmlarni bosqichma-bosqich yechishga qodir.</li>\n  </ol>\n</div>\n"
+  },
+  "mit-insect-flying-robots": {
+    "id": "mit-insect-flying-robots",
+    "slug": "mit-insect-flying-robots",
+    "title": "MIT kashfiyoti: Sun’iy intellekt pashsha o‘lchamidagi uchar mikrorobotlar tezligini 447% ga oshirdi",
+    "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
+    "deck": "MIT muhandislari neyrotarmoqlar asosida aerodinamik qanot qoqish modelini qayta hisoblab, mikroskopik robotlarning parvoz tezligi va barqarorligini 4 barobardan ko‘proqqa oshirdi.",
+    "event_date": "2026-09-21",
+    "source_published_date": "2026-09-21",
+    "ainoma_published_date": "2026-09-22",
+    "ainoma_updated_date": "2026-09-22",
+    "author": "AiNoma Texnologiya Tahririyati",
+    "authorRole": "Robototexnika & Kiber-fizik Tizimlar",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Robototexnika Dunyo",
+    "audience": "mutaxassislar",
+    "img": "assets/robot_assist.jpg",
+    "imgAlt": "MIT mikrorobotlari va aerodinamik sun’iy intellekt",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "MIT tadqiqotchilari sun’iy intellekt modellashtirishidan foydalanib, og‘irligi atigi bir necha milligramm bo‘lgan uchar mikrorobotlar aerodinamikasini optimallashtirdi.",
+      "Yangi neyrotarmoq boshqaruvi parvoz tezligini 447% ga oshirib, mikrorobotlarning turbulent havo oqimlarida muvozanat saqlash qobiliyatini yaratdi.",
+      "Ushbu kashfiyot yer silkinishlari va favqulodda vaziyatlarda vayronalar ostidan odamlarni qidirish hamda agrar sohada sun’iy changlatish uchun yo‘l ochadi."
+    ],
+    "primary_source": {
+      "name": "ScienceDaily / MIT Research",
+      "title": "AI helps insect-sized flying robots boost flight speed by 447 percent",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260921081114.htm",
+      "date": "21.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Massachusetts Texnologiya Instituti (MIT) olimlari pashsha kattaligidagi uchar mikrorobotlar boshqaruviga sun’iy intellekt algoritmlarini tatbiq etib, rekord darajadagi natijaga erishdilar. Tadqiqot xulosalariga ko‘ra, sun’iy intellekt ishlab chiqqan qanot qoqish traektoriyasi robotlar parvoz tezligini <strong>447 foizga</strong> oshirdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Hasharot o‘lchamidagi mikrorobotlarning eng katta muammosi — havodagi eng kichik shamol shabadasi ham ularning parvozini izdan chiqarishi edi. An’anaviy fizik tenglamalar bunday mikro-masshtabda havoning turbulentligini real vaqtda hisoblab ulgurmaydi. MIT guruhi o‘rgatgan neyrotarmoq esa soniyasiga yuzlab marta mikro-tuzatishlar kiritib, robotning hatto kuchli shamolda ham o‘z yo‘nalishini saqlashini ta’minladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Edge AI va mikro-chiplar:</strong> Og‘irligi 100 milligrammdan kam bo‘lgan tizimda yengil inferens algoritmlari.</li>\n      <li><strong>Nochiziqli aerodinamika:</strong> Qanot burchagini har bir millisekundda optimallashtiruvchi mustahkamlangan ta’lim (RL).</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Sanoat quvurlari va konlar monitoringi:</strong> Inson yoki oddiy dronlar kira olmaydigan tor va xavfli zonalarni tekshirish.</li>\n      <li><strong>Qishloq xo‘jaligi:</strong> Issiqxonalarda ekologik zararsiz mikro-changlatish va o‘simliklar salomatligini kuzatish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Favqulodda vaziyatlar vazirligi va qutqaruv xizmatlari, shuningdek O‘zbekistonning yirik neft-gaz va gidroenergetika inshootlari inspeksiyasida xodimlar hayotini xatarga qo‘ymasdan texnik ko‘rik o‘tkazishda bunday mikrorobotlar kelajakda asosiy vositaga aylanadi.</p>\n</div>\n"
+  },
+  "google-ai-verification-tax": {
+    "id": "google-ai-verification-tax",
+    "slug": "google-ai-verification-tax",
+    "title": "Google tadqiqoti: Sun’iy intellekt olimlarga 7 soat tejamoqda, ammo 'tekshirish solig‘i' unumdorlikka soya solmoqda",
+    "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 16-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
+    "deck": "Google DeepMind va MIT FutureTech 3,500 dan ortiq tadqiqotchi ishtirokida o‘tkazilgan tahlilni e’lon qildi: AI natijalarini qo‘lda tekshirish yangi kognitiv yukka aylanmoqda.",
+    "event_date": "2026-09-16",
+    "source_published_date": "2026-09-16",
+    "ainoma_published_date": "2026-09-17",
+    "ainoma_updated_date": "2026-09-22",
+    "author": "AiNoma Tadqiqotlar Bo‘limi",
+    "authorRole": "AI Iqtisodiyoti & Metodologiya",
+    "readTime": "5 daqiqalik mutolaa",
+    "category": "Ilm-fan Dunyo",
+    "audience": "biznes mutaxassislar",
+    "img": "assets/data_agent.jpg",
+    "imgAlt": "Google AI in Science va Verification Tax tadqiqoti",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "Google DeepMind va MIT FutureTech qo‘shma hisoboti: Sun’iy intellektdan muntazam foydalanuvchi mutaxassislar haftasiga o‘rtacha 7 soatgacha vaqt tejaydi.",
+      "Ammo generatsiya qilingan kod, xulosalar va bibliografik manbalarni qayta tekshirish xodimlardan katta kognitiv vaqt va diqqat talab qilmoqda ('Verification Tax').",
+      "Tekshiruv infratuzilmasi qurilmagan kompaniyalarda AI bergan sof unumdorlik o‘sishi 40 foizgacha pasayishi aniqlandi."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind / MIT FutureTech",
+      "title": "AI in Science: Opportunities, Challenges, and the Verification Tax",
+      "url": "https://ai.google/static/documents/AI-in-Science.pdf",
+      "date": "16.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Gartner Research",
+        "title": "Gartner Forecasts Worldwide AI Spending Growth and ROI Governance for 2026",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-increase",
+        "date": "16.09.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind va MIT FutureTech tadqiqotchilari butun dunyo bo‘ylab 3,500 dan ziyod olim va tahlilchilar ishtirokida sun’iy intellektning real samaradorligini o‘rgandi. Hisobotga ko‘ra, mutaxassislar AI yordamida haftasiga o‘rtacha 7 soatgacha vaqt tejamoqda. Biroq, tadqiqot mualliflari yangi jiddiy xavfni o‘rtaga tashlashdi: <strong>'Tekshirish solig‘i' (The Verification Tax)</strong>.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt bir necha soniyada 100 sahifalik hisobot yoki minglab qator kod ishlab bera oladi. Ammo uning ichidagi mayda xatolarni, noaniq havolalarni va yashirin mantiqiy nuqsonlarni inson ko‘zi bilan topish ba’zida noldan yozishdan ham ko‘proq kognitiv charchoq keltiradi. Agar tashkilotda avtomatlashtirilgan tekshirish vositalari (unit-testlar, linterlar, avtonom auditorlar) bo‘lmasa, xodimlar butun vaqtini AI xatolarini tuzatishga sarflaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Avtomatlashtirilgan tekshiruv (Automated Verification):</strong> Kodni testlar (CI/CD) va qat’iy sxemalar orqali tekshirishni odatga aylantiring.</li>\n      <li><strong>Fact-checking protokollari:</strong> Modeldan har bir keltirilgan fakt va manbaga birlamchi havola talab qiling.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Kompaniyada xatarlar nazorati:</strong> Xodimlarga shunchaki 'AI ishlat' deyish kamlik qiladi; sifat nazorati (QA) reglamentini joriy etish shart.</li>\n      <li><strong>Haqiqiy ROI hisobi:</strong> Tejalgan 7 soatning qancha qismi tekshirishga ketayotganini o‘lchash.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston biznesi uchun nimani anglatadi?</div>\n  <p>O‘zbekiston kompaniyalarida ko‘pincha xodimlar AI tayyorlagan shartnoma yoki moliyaviy hisobotlarni to‘liq o‘qimasdan rahbariyatga taqdim etishi oqibatida xatarlar paydo bo‘lmoqda. Tizimli yondashuv — bu AIdan natija olish bilan birga, uni ichki ekspertizadan o‘tkazish mas’uliyatini qat’iy belgilashdir.</p>\n</div>\n"
   }
 };
+

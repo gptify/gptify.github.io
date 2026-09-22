@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Kompaniyada sun’iy intellekt xavfsizligi va tijorat sirlarini himoya qilish bo‘yicha 5 qadamli amaliy qo‘llanma. Zero Data Retention, Data Masking va korporativ siyosat.">
+  <title>Kompaniyada Sun’iy Intellekt Xavfsizligi va Maxfiylik: 5 Qadamli Qo‘llanma | AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://ainoma.uz/qollanma-xavfsizlik.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AiNoma">
+  <meta property="og:title" content="Kompaniyada Sun’iy Intellekt Xavfsizligi va Maxfiylik — AiNoma">
+  <meta property="og:description" content="Tijorat sirlari sizib chiqmasligi, Zero Data Retention va Enterprise LLM qoidalari.">
+  <meta property="og:url" content="https://ainoma.uz/qollanma-xavfsizlik.html">
+  <meta property="og:image" content="https://ainoma.uz/assets/gpu_datacenter.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kompaniyada Sun’iy Intellekt Xavfsizligi va Maxfiylik — AiNoma">
+  <meta name="twitter:description" content="Tijorat sirlari sizib chiqmasligi, Zero Data Retention va Enterprise LLM qoidalari.">
+  <meta name="twitter:image" content="https://ainoma.uz/assets/gpu_datacenter.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a class="active" href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Amaliy Qo‘llanma · Korporativ Kiberxavfsizlik</div>
+      <h1>Kompaniyada sun’iy intellekt xavfsizligi va ma’lumotlar maxfiyligi: Tijorat sirlarini asrash bo‘yicha 5 qadam</h1>
+      <p class="article-deck">Xodimlar mijozlar bazasi yoki ichki moliyaviy hisobotlarni ommaviy AI xizmatlariga kiritganda ma’lumotlar sizib chiqmasligi uchun kompaniyangizda joriy etish zarur bo‘lgan asosiy xavfsizlik choralari.</p>
+      
+      <div class="byline">
+        <div class="avatar">ShI</div>
+        <div>
+          <b>Shukhratbek Iskandarov</b><br>
+          <span style="color:var(--muted)">GPTify.co asoschisi & Korporativ AI tizimlar me’mori · 6 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="assets/gpu_datacenter.jpg" alt="Korporativ ma'lumotlar xavfsizligi va sun'iy intellekt infratuzilmasi">
+    </div>
+
+    <article class="article-shell article-body">
+      <p>Bugun deyarli har bir kompaniya xodimi o‘z ishini tezlashtirish uchun ChatGPT, Claude yoki boshqa sun’iy intellekt chatlaridan foydalanmoqda. Biroq ko‘pchilik rahbarlar bitta jiddiy xatardan bexabar: xodimlar ommaviy bepul chatlarga kompaniyaning maxfiy shartnomalarini, mijozlar telefon raqamlarini yoki dasturiy manba kodlarini yuklaganida, ushbu ma’lumotlar provayderning umumiy o‘qitish bazasiga qo‘shilib ketishi mumkin.</p>
+
+      <p>Sun’iy intellektdan butunlay voz kechish raqobatda orqada qolishga olib keladi. To‘g‘ri yechim — kompaniya ichida qat’iy, ammo qulay <strong>AI xavfsizlik infratuzilmasini qurish</strong>dir. Quyida 5 ta amaliy qadamni ko‘rib chiqamiz.</p>
+
+      <h2>1. Iste’molchi chatlari va Korporativ API farqini tushuning</h2>
+      <p>OpenAI, Anthropic va Google xizmatlarining bepul yoki oddiy individual tariflarida kiritilgan ma’lumotlar modellarni qayta o‘qitish uchun ishlatilishi mumkin (agar foydalanuvchi sozlamalarda buni o‘chirib qo‘ymasa). Biroq, biznes uchun mutlaqo boshqa huquqiy rejimlar amal qiladi:</p>
+      
+      <div class="audience-grid">
+        <div class="lens-box tech">
+          <div class="lens-title">❌ Bepul shaxsiy akkauntlar</div>
+          <ul>
+            <li>Ma’lumotlar modelni takomillashtirishga yo‘naltirilishi mumkin.</li>
+            <li>Hech qanday korporativ SLA va maxfiylik kafolati yo‘q.</li>
+            <li>Xodim ishdan ketsa, barcha kompaniya so‘rovlari uning shaxsiy tarixida qoladi.</li>
+          </ul>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">✓ Enterprise va API shartnomalari</div>
+          <ul>
+            <li><strong>Zero Data Retention (ZDR):</strong> Provayder ma’lumotlarni o‘qitish uchun aslo saqlamaydi va ishlatmaydi.</li>
+            <li><strong>SOC 2 Type II va ISO 27001:</strong> Global kiberxavfsizlik sertifikatlari bilan himoyalangan.</li>
+            <li>Yagona markazlashtirilgan admin paneli va audit jurnallari.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>2. Shaxsiy ma’lumotlarni niqoblash (Data Masking / PII Anonymization)</h2>
+      <p>Hatto korporativ litsenziyadan foydalanganda ham, sun’iy intellektga mijozlarning pasport seriyalari, karta raqamlari yoki to‘liq ismlarini yuborish shart emas. Tizimli yondashuvda ma’lumotlar modelga uzatilishidan oldin avtomatik niqoblanadi:</p>
+      <ul>
+        <li><code>Mijoz: Abdullayev Temur, Pasport: AA 1234567, Qarz: $4,500</code></li>
+        <li>O‘zgaradi: <code>Mijoz: [MIJOZ_01], Pasport: [MASKED], Qarz: [SUMMA_A]</code></li>
+      </ul>
+      <p>Model tahlilni to‘laqonli bajaraveradi, lekin tashqi bulut serveriga birorta ham haqiqiy shaxsiy ma’lumot uzatilmaydi.</p>
+
+      <h2>3. Mahalliy (On-Premise / Private Cloud) modellardan qachon foydalanish kerak?</h2>
+      <p>Agar kompaniyangiz bank, tibbiyot yoki davlat xavfsizligi talablariga bo‘ysunsa va ma’lumotlarning O‘zbekiston hududidan tashqariga chiqishi qonunan taqiqlangan bo‘lsa, yechim — <strong>ochiq kodli mahalliy modellarni (Local LLMs)</strong> ichki serverlarda yurgizishdir:</p>
+      <ul>
+        <li><strong>Llama 3.3, Qwen 2.5 va DeepSeek:</strong> Bugungi ochiq modellar ko‘plab vazifalarda GPT-4o bilan tengma-teng raqobatlasha oladi.</li>
+        <li><strong>vLLM yoki Ollama arxitekturasi:</strong> Kompaniyaning ichki serverida yoki mahalliy ma’lumotlar markazida (Datacenter) internetga chiqmasdan, to‘liq avtonom ishlaydi.</li>
+      </ul>
+
+      <h2>4. Ichki Korporativ AI Siyosatini (Policy) qabul qiling</h2>
+      <p>Kompaniyada xavfsizlik buyruqbozlik emas, xodimlar uchun tushunarli qo‘llanma bo‘lishi zarur. Har bir xodim quyidagi 3 qoidani aniq bilishi kerak:</p>
+      <ol>
+        <li><strong>Ruxsat berilgan vositalar ro‘yxati (White-list):</strong> Faqat kompaniya rasman tasdiqlagan xizmatlardan foydalanish.</li>
+        <li><strong>Qat’iy taqiqlar (Black-list):</strong> Mijozlar bazasi, manba kodlari, bank hisob raqamlari va yuridik nizolarga oid birlamchi hujjatlarni shaxsiy chatlarga yuklamaslik.</li>
+        <li><strong>Inson tekshiruvi:</strong> Sun’iy intellekt tayyorlagan har qanday tashqi hujjat yoki kod xodim tomonidan to‘liq ko‘rib chiqilib, mas’uliyat inson zimmasida qolishi.</li>
+      </ol>
+
+      <h2>5. Doimiy monitoring va API kalitlar rotatsiyasi</h2>
+      <p>Kompaniyangiz ishlab chiqqan botlar va ichki tizimlarda API kalitlar xavfsizligini ta’minlang. Kod repozitoriylarida (GitHub, GitLab) maxfiy kalitlarni ochiq qoldirmang (GitGuardian yoki TruffleHog kabi skanerlardan foydalaning) va har 90 kunda kalitlarni yangilab boring.</p>
+
+      <div class="uz-impact-box">
+        <div class="uz-impact-title">Xulosa: Xavfsizlik unumdorlikka xalal bermasligi kerak</div>
+        <p>Sun’iy intellektdan to‘g‘ri foydalanish — bu uni yopib qo‘yish emas, balki xavfsiz koridorlar qurish demakdir. Xodimlaringizga xavfsiz korporativ litsenziyalar bering va qoidalarni o‘rgating. Shunda kompaniyangiz sirlari ham to‘liq saqlanadi, unumdorlik ham keskin oshadi.</p>
+      </div>
+
+      <div class="author-box" style="margin-top:40px;">
+        <div class="author-avatar" style="width:56px;height:56px;font-size:20px;">ShI</div>
+        <div>
+          <div style="font-weight:700;font-size:16px;">Shukhratbek Iskandarov</div>
+          <p style="font-size:14px;color:var(--muted);margin:4px 0 0;">GPTify.co asoschisi va bosh maslahatchisi. O‘zbekiston va xalqaro kompaniyalarda xavfsiz korporativ AI infratuzilmalari va avtomatlashtirilgan jarayonlarni qurishga ixtisoslashgan.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+        <p>O‘zbekiston va dunyodagi sun’iy intellekt texnologiyalari, tahliliy maqolalar va amaliy qo‘llanmalar portali.</p>
+      </div>
+      <div>
+        <div class="footer-title">Ruknlar</div>
+        <div class="footer-links">
+          <a href="yangiliklar.html">Barcha yangiliklar</a>
+          <a href="vositalar.html">AI vositalar katalogi</a>
+          <a href="qollanmalar.html">Qo‘llanmalar & Promptlar</a>
+          <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Resurslar</div>
+        <div class="footer-links">
+          <a href="hikoyalar.html">Keyslar & Hikoyalar</a>
+          <a href="imkoniyatlar.html">Grantlar & Kurslar</a>
+          <a href="haqida.html">Tahririyat haqida</a>
+          <a href="https://t.me/gptifyuz" target="_blank" rel="noopener">Telegram Kanal</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; 2026 AiNoma.uz · Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
