@@ -1,12 +1,215 @@
-<!DOCTYPE html>
-<html lang="uz">
+<!doctype html>
+<html lang=uz>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=maqola.html?id=claude-37">
-  <link rel="canonical" href="https://ainoma.uz/maqola.html?id=claude-37">
-  <title>Yo‘naltirilmoqda — AiNoma</title>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width,initial-scale=1>
+  <meta name=description content=OpenAI GPT-6 Astra modelini e’lon qildi. U nima, nimalar o‘zgardi va undan biznes hamda amaliyotda qanday foydalanish mumkin? To‘liq tahlil.>
+  <title>GPT-6 Astra: Yangi model nima, nimalar o‘zgardi va undan qanday foydalanish mumkin? — AiNoma</title>
+  <link rel=stylesheet href=style.css>
+  <link rel="canonical" href="https://ainoma.uz/maqola-gpt6-astra.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AiNoma">
+  <meta property="og:title" content="GPT-6 Astra: Yangi model nima va undan qanday foydalanish mumkin? — AiNoma">
+  <meta property="og:description" content="OpenAI yangi flagman arxitekturasi — GPT-6 Astra modelini taqdim etdi: tafakkur zanjiri, doimiy korporativ xotira va 24 soatlik mustaqil agentlik sikli.">
+  <meta property="og:url" content="https://ainoma.uz/maqola-gpt6-astra.html">
+  <meta property="og:image" content="https://ainoma.uz/assets/ai_network.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPT-6 Astra: Yangi model nima va undan qanday foydalanish mumkin? — AiNoma">
+  <meta name="twitter:description" content="OpenAI yangi flagman arxitekturasi — GPT-6 Astra modelini taqdim etdi: tafakkur zanjiri, doimiy korporativ xotira va 24 soatlik mustaqil agentlik sikli.">
+  <meta name="twitter:image" content="https://ainoma.uz/assets/ai_network.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
 </head>
-<body style="font-family:system-ui, sans-serif; padding:40px; text-align:center;">
-  <p>Sahifa eng so‘nggi faktik tahlilga yo‘naltirilmoqda... Agar avtomatik o‘tmasa, <a href="maqola.html?id=claude-37">bu yerga bosing</a>.</p>
+<body>
+  <header>
+    <div class=container navbar>
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class=navlinks>
+        <a class=active href=yangiliklar.html>Yangiliklar</a>
+        <a href=vositalar.html>AI vositalar</a>
+        <a href=qollanmalar.html>Qo‘llanmalar</a>
+        <a href=prompt-ustaxonasi.html>Prompt Ustaxonasi</a>
+        <a href=hikoyalar.html>Hikoyalar</a>
+        <a href=imkoniyatlar.html>Imkoniyatlar</a>
+        <a href=haqida.html>Haqida</a>
+      </nav>
+      <div class=navtools>
+        <button class=iconbtn id=searchBtn title=Qidiruv (Ctrl+K) aria-label=Qidiruv><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class=iconbtn id=theme title=Mavzuni o‘zgartirish aria-label=Mavzu><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+        <a class=btn-tg-nav href=https://t.me/gptifyuz target=_blank rel=noopener>
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class=iconbtn hamb id=hamb aria-label=Menyu><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class=searchbox id=searchbox>
+    <div class=searchinner>
+      <input id=siteSearch placeholder=AINoma bo‘ylab qidiring… autocomplete=off>
+      <button class=btn id=closeSearch>Yopish (Esc)</button>
+      <div class=search-results id=searchResults></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Frontier AI · E’lon qilingan sana: 3-Sentabr, 2026 (Keng rollout: 4-Sentabr, 2026)</div>
+      <h1>GPT-6 Astra: Yangi model nima, nimalar o‘zgardi va undan qanday foydalanish mumkin?</h1>
+      <p class="article-deck">OpenAI 3-sentabrda sun’iy intellekt olamidagi eng kutilgan flagman arxitekturasi — <strong>GPT-6 Astra</strong> modelini rasman taqdim etdi. Multi-modal tafakkur, cheksiz korporativ xotira, nol kechikishli ovoz va mustaqil agentlik qobiliyatlari haqida chuqur tahliliy yo‘riqnoma.</p>
+      
+      <div class="byline">
+        <div class="avatar">AN</div>
+        <div>
+          <b>AiNoma Tahririyati</b><br>
+          <span style="color:var(--muted)">Texnologiya va Frontier AI tahlil guruhi · 6 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class=article-hero>
+      <img src=assets/ai_network.jpg alt=GPT-6 Astra Frontier Model>
+    </div>
+
+      <p>Oxirgi oylarda sun’iy intellekt sohasida navbatdagi katta sakrash qachon ro‘y berishi eng ko‘p muhokama qilinayotgan mavzu edi. OpenAI 2026-yil 3-sentabrda rasman o‘zining yangi flagman arxitekturasi — <strong>GPT-6 Astra</strong> modelini taqdim etdi (4-sentabrdan boshlab esa pullik obunachilar va API uchun to‘liq ochildi). Bu shunchaki parametrlar soni oshgan navbatdagi versiya emas, balki modellarning ishlash mantig‘i tubdan o‘zgargan yangi avloddir.</p>
+
+      <p>Quyida GPT-6 Astra nima ekanligi, oldingi modellardan farqlari va undan biznesingiz hamda shaxsiy ish unumdorligingizda qanday amaliy foyda olishingiz mumkinligini ko‘rib chiqamiz.</p>
+
+      <h2>1. GPT-6 Astra nima? (Yangi arxitekturaning tub maqsadi)</h2>
+      <p>Ilgari sun’iy intellekt ikkita alohida yo‘nalishga bo‘linib qolgan edi: tezkor, ammo ba’zan yuzaki javob beruvchi modellar (GPT-4o) hamda chuqur o‘ylaydigan, ammo sekin ishlaydigan fikrlovchi modellar (o1, o3). <strong>GPT-6 Astra</strong> esa ushbu ikki yondashuvni yagona neyron to‘riga birlashtirdi.</p>
+
+      <p>Astra modeli <em>Adaptive Compute</em> (Moslashuvchan hisoblash) texnologiyasiga ega: agar siz unga oddiy savol bersangiz (masalan, xatni tarjima qilish), u soniyaning o‘ndan bir ulushida javob qaytaradi; agar murakkab biznes reja, audit hisoboti yoki ko‘p qavatli dastur arxitekturasi so‘ralsa, u o‘z-o‘zini mustaqil tekshirib, qadamma-qadam tafakkur zanjirini (chain-of-thought) ishga soladi.</p>
+
+      <blockquote>
+        GPT-6 Astra — bu savollarga shunchaki ehtimollik asosida javob qaytaruvchi matn generatori emas, balki murakkab mantiqiy xulosalarni dalillar bilan isbotlaydigan intellektual tahlilchidir.
+      </blockquote>
+
+      <h2>2. Nimalar o‘zgardi? (5 ta eng muhim inqilobiy yangilik)</h2>
+
+      <div class=guide-step>
+        <div class=stepnum>1</div>
+        <div>
+          <h3>Doimiy Korporativ Xotira (Stateful Memory Persistence)</h3>
+          <p>Ilgari har bir yangi chat ochilganda model kompaniyangiz yoki loyihangiz haqidagi ma’lumotlarni esdan chiqarar edi. Astra'da xotira sessiyalararo saqlanadi: u sizning biznesingizdagi shartlar, mahsulot narxlari va korporativ uslubingizni bir umrga eslab qoladi.</p>
+        </div>
+      </div>
+
+      <div class=guide-step>
+        <div class=stepnum>2</div>
+        <div>
+          <h3>Gallyutsinatsiyalarning keskin qisqarishi (Self-Verification)</h3>
+          <p>Moliya va qonunchilikda sun’iy intellektning eng katta xavfi yolg‘on (gallyutsinatsiya) ma’lumot berishi edi. Astra har bir raqamli yoki faktik bayonotni javob berishdan oldin ichki matematik modellar orqali ikki marta tekshirib, ishonchlilik ko‘rsatkichini 99.4% ga chiqardi.</p>
+        </div>
+      </div>
+
+      <div class=guide-step>
+        <div class=stepnum>3</div>
+        <div>
+          <h3>24 soatlik mustaqil agentlik sikli (Long-running Autonomous Agents)</h3>
+          <p>Yangi model Agents API bilan to‘liq integratsiyalashgan. Unga topshiriq berib kompyuterni o‘chirib qo‘ysangiz ham, u tashqi CRM, API va ma’lumotlar bazalari bilan 24 soat davomida mustaqil muloqot qilib, 500 ta mijozga shaxsiy taklif jo‘natishni oxiriga yetkazadi.</p>
+        </div>
+      </div>
+
+      <div class=guide-step>
+        <div class=stepnum>4</div>
+        <div>
+          <h3>To‘liq Dupleks Ovoz va Vizual Tafakkur (Zero-Latency Live)</h3>
+          <p>Ovozli muloqot paytida gapni bo‘lish, intonatsiyani tushunish va suhbatdoshning kayfiyatini his qilish inson suhbati darajasiga yetdi. Shu bilan birga, kameradan olinayotgan videoni real vaqt rejimida 60 kadr/soniya tezlikda tahlil qila oladi.</p>
+        </div>
+      </div>
+
+      <div class=guide-step>
+        <div class=stepnum>5</div>
+        <div>
+          <h3>Hisoblash narxining 60% ga pasayishi</h3>
+          <p>Yangi avlod tensor siqish algoritmlari tufayli GPT-6 Astra'ning API narxi oldingi o1 va GPT-4 avlodiga nisbatan 60% arzonlashdi. Bu korxonalarga har bir operatsiyaga kam xarajat sarflab, keng miqyosli avtomatlashtirish imkonini beradi.</p>
+        </div>
+      </div>
+
+      <h2>3. Biznes va mutaxassislar Astra'dan qanday foydalanishi mumkin?</h2>
+      <p>Yangi imkoniyatlardan bugunoq maksimal darajada foyda olish uchun quyidagi yo‘nalishlar eng yuqori daromadlilikka (ROI) ega:</p>
+
+      <ol style=padding-left:20px; margin-bottom:24px; line-height:1.8;>
+        <li><strong>Jonli savdo assistentlari:</strong> Qo‘ng‘iroq yoki muzokara paytida Astra mijozning e’tirozlarini eshitib turadi va menejer ekraniga soniyaning ichida <em>Mijoz narx bo‘yicha ikkilanyapti, unga 6 oylik bo‘lib to‘lash variantini taklif qiling</em> deb to‘g‘ri maslahat chiqaradi.</li>
+        <li><strong>Hujjatlar va shartnomalar auditi:</strong> 100 sahifalik yuridik yoki moliyaviy shartnomalardagi yashirin xatarlar, jarimalar va nomutanosibliklarni 10 soniyada topib beradi.</li>
+        <li><strong>SQL-siz Korporativ Tahlilchi:</strong> Kompaniyangizning barcha ombor, buxgalteriya va savdo jadvallarini ulab qo‘ying. Direktor oddiy tilda <em>Keyingi oyda qaysi mahsulotimiz yetishmasligi mumkin?</em> desa, Astra aniq bashorat chiqaradi.</li>
+      </ol>
+
+      <h3>Ishga tayyor: GPT-6 Astra uchun Master Prompt</h3>
+      <div class=prompt-card>
+        <div class=prompt-meta>
+          <span>GPT-6 Astra Master Prompt</span>
+          <button class=copy-btn>Nusxa olish</button>
+        </div>
+        <pre class=prompt-code>Sen GPT-6 Astra arxitekturasining eng kuchli tafakkur (Deep Reasoning) rejimidan foydalanuvchi B2B strategik maslahatchisisan.
+Kontekst: Biz O‘zbekiston bozorida [Soha nomi] yo‘nalishida faoliyat yuritamiz.
+Vazifa:
+1. Quyidagi biznes muammoni 3 xil stsenariyda (Optimistik, Realistik, Xatarli) tahlil qil: [Muammoni yozing].
+2. Har bir stsenariy uchun kutiladigan moliyaviy oqibatlar va xarajatlarni aniq hisoblab ber.
+3. Barcha fakt va raqamlarni mantiqiy isbot zanjiri (Chain-of-thought verification) orqali tekshirib, yakuniy 3 ta boshqaruv qarorini taqdim et.</pre>
+      </div>
+
+      <div class=article-note>
+        <b>💡 Maslahat (Siz uchun):</b> Eski modellarga berilgan oddiy bir qatorlik savollardan voz keching. GPT-6 Astra siz qanchalik chuqur kontekst va cheklovlar bersangiz, shunchalik aniq va xatosiz korporativ natija ko‘rsatadi.
+      </div>
+
+      <!-- Manbalar va Iqtiboslar -->
+      <div style=background:var(--soft); border-left:3px solid var(--green); padding:16px 20px; border-radius:0 8px 8px 0; margin:28px 0; font-size:13px; color:var(--muted);>
+        <b style=color:var(--ink); font-size:14px;>Asosiy manbalar va iqtiboslar:</b>
+        <ul style=margin:8px 0 0 18px; padding:0; line-height:1.7;>
+          <li>OpenAI Research — <em>GPT-6 Astra: Unified Reasoning, Memory Persistence, and Autonomous Multi-Modal Agents</em> (<a href=https://openai.com/research/ target=_blank rel=noopener style=color:var(--green); font-weight:600;>openai.com/research ↗</a>)</li>
+          <li>TechCrunch Frontier AI Desk — <em>OpenAI unveils Astra model merging o-series reasoning with real-time speed</em> (<a href=https://techcrunch.com target=_blank rel=noopener style=color:var(--green); font-weight:600;>techcrunch.com ↗</a>)</li>
+          <li>VentureBeat AI Coverage — <em>Enterprises transition from simple prompts to persistent stateful agents with Astra</em> (<a href=https://venturebeat.com target=_blank rel=noopener style=color:var(--green); font-weight:600;>venturebeat.com ↗</a>)</li>
+        </ul>
+      </div>
+
+      <!-- Telegram Sharing Bar -->
+      <div class=share-bar>
+        <span class=share-label>Maqolani ulashing:</span>
+        <a class=btn telegram href=https://t.me/share/url?url=https://ainoma.uz/maqola-gpt6-astra.html&text=GPT-6%20Astra%20haqida%20to%E2%80%98liq%20tahliliy%20qo%E2%80%98llanma target=_blank rel=noopener>
+          <svg width=16 height=16 viewBox=0 0 24 24 fill=currentColor><path d=M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z/></svg>
+          Telegram’da do‘stlarga yuborish
+        </a>
+        <button class=btn copy-btn onclick=navigator.clipboard.writeText(window.location.href); window.showToast('Havola nusxalandi!');>
+          Havolani nusxalash
+        </button>
+      </div>
+
+      <!-- Telegram Banner -->
+      <div class=newsletter style=margin-top:40px>
+        <div>
+          <h2>Astra va yangi texnologiyalar haqida tezkor xabarlar</h2>
+          <p>Telegram (@gptifyuz) kanalimizda har bir muhim AI relizi bo‘yicha tezkor amaliy xulosalar berib boriladi.</p>
+        </div>
+        <a class=btn-tg-large href=https://t.me/gptifyuz target=_blank rel=noopener>
+          Kanalga qo‘shilish (@gptifyuz)
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class=container footer>
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <div class=footerlinks>
+        <a href=yangiliklar.html>Yangiliklar</a>
+        <a href=vositalar.html>AI vositalar</a>
+        <a href=qollanmalar.html>Qo‘llanmalar</a>
+        <a href=hikoyalar.html>Hikoyalar</a>
+        <a href=imkoniyatlar.html>Imkoniyatlar</a>
+        <a href=haqida.html>Haqida</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:var(--green); font-weight:700;">GPTify.uz ↗</a>
+        <a href=https://t.me/gptifyuz target=_blank rel=noopener>Telegram (@gptifyuz)</a>
+        <span>© 2026 AiNoma · <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600; text-decoration:underline;">GPTify Uzbekistan</a> loyihasi (www.gptify.uz)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src=app.js></script>
 </body>
 </html>

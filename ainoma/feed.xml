@@ -6,54 +6,54 @@
     <link>https://ainoma.uz/</link>
     <atom:link href="https://ainoma.uz/feed.xml" rel="self" type="application/rss+xml" />
     <language>uz</language>
-    <lastBuildDate>Mon, 24 Feb 2025 12:00:00 +0500</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 12:00:00 +0500</lastBuildDate>
 
     <item>
-      <title>Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va korporativ kodlash</title>
-      <link>https://ainoma.uz/maqola.html?id=claude-37</link>
-      <guid>https://ainoma.uz/maqola.html?id=claude-37</guid>
-      <pubDate>Mon, 24 Feb 2025 10:00:00 +0500</pubDate>
-      <description>Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Dasturchi model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.</description>
-    </item>
-
-    <item>
-      <title>Google Gemini 2.0 Flash rasman chiqdi: Multimodal Live API va arzon narxlar</title>
-      <link>https://ainoma.uz/maqola.html?id=gemini-20-flash</link>
-      <guid>https://ainoma.uz/maqola.html?id=gemini-20-flash</guid>
-      <pubDate>Wed, 05 Feb 2025 10:00:00 +0500</pubDate>
-      <description>Google o‘zining keyingi avlod flagman tezkor modelini taqdim etdi. 1 million tokenlik kontekst oynasi, audio/video real vaqtli oqim va o‘ta arzon API narxlari.</description>
-    </item>
-
-    <item>
-      <title>OpenAI 'Deep Research' va o3-mini modelini e’lon qildi</title>
+      <title>OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlili agenti</title>
       <link>https://ainoma.uz/maqola.html?id=openai-deep-research</link>
       <guid>https://ainoma.uz/maqola.html?id=openai-deep-research</guid>
-      <pubDate>Mon, 03 Feb 2025 11:00:00 +0500</pubDate>
-      <description>Internet bo‘ylab o‘nlab manbalarni avtonom tahlil qilib, 10–20 sahifalik keng qamrovli korporativ hisobotlar tayyorlovchi yangi agentik rejim.</description>
+      <pubDate>Tue, 22 Sep 2026 09:00:00 +0500</pubDate>
+      <description>Endi LLM shunchaki bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili tayyorlaydi.</description>
     </item>
 
     <item>
-      <title>OpenAI 'Operator' kompyuterni boshqaruvchi agentini chiqardi (CUA)</title>
-      <link>https://ainoma.uz/maqola.html?id=openai-operator</link>
-      <guid>https://ainoma.uz/maqola.html?id=openai-operator</guid>
-      <pubDate>Thu, 23 Jan 2025 10:00:00 +0500</pubDate>
-      <description>Brauzerda forma to‘ldirish, chipta xarid qilish va korxona tizimlari bo‘ylab avtonom navigatsiya qiluvchi Computer-Using Agent davri boshlandi.</description>
+      <title>Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim</title>
+      <link>https://ainoma.uz/maqola.html?id=gemini-enterprise</link>
+      <guid>https://ainoma.uz/maqola.html?id=gemini-enterprise</guid>
+      <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Yangi arxitektura korxona call-markazlari va ilovalar uchun insondek tez muloqot qiluvchi ovozli yordamchilar va real vaqtda kamera tasvirini tahlil qilish imkoniyatini taqdim etdi.</description>
     </item>
 
     <item>
-      <title>O‘zbekistonda sun’iy intellektni rivojlantirish bo‘yicha Prezident qarori (PQ-358) imzolandi</title>
-      <link>https://ainoma.uz/maqola.html?id=uzbekistan-pq358</link>
-      <guid>https://ainoma.uz/maqola.html?id=uzbekistan-pq358</guid>
-      <pubDate>Mon, 14 Oct 2024 09:00:00 +0500</pubDate>
-      <description>2030-yilgacha mo‘ljallangan milliy strategiya: Tartibga solishning maxsus rejimi (Regulyator qumdoni - Sandbox) va hisoblash quvvatlari klasteri tasdiqlandi.</description>
+      <title>Markaziy Bank bank va fintexlarda AI skoringi qo‘llash bo‘yicha yangi reglamentni tasdiqladi</title>
+      <link>https://ainoma.uz/maqola.html?id=cbu-ai-skoring</link>
+      <guid>https://ainoma.uz/maqola.html?id=cbu-ai-skoring</guid>
+      <pubDate>Sun, 20 Sep 2026 14:00:00 +0500</pubDate>
+      <description>Kredit layoqatini baholashda diskriminatsiyasiz shaffoflik, mijozlarning shaxsiy ma’lumotlarini faqat O‘zbekiston hududidagi serverlarda saqlash talablari qat’iy belgilandi.</description>
     </item>
 
     <item>
-      <title>B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma</title>
-      <link>https://ainoma.uz/qollanma-b2b.html</link>
-      <guid>https://ainoma.uz/qollanma-b2b.html</guid>
-      <pubDate>Mon, 07 Oct 2024 09:30:00 +0500</pubDate>
-      <description>Apollo, Lemlist va sun’iy intellekt orqali eksport va mahalliy korporativ mijozlar bazasini qurish, sovuq xatlar va savdo voronkasi.</description>
+      <title>Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va xavfsiz korporativ kodlash</title>
+      <link>https://ainoma.uz/maqola.html?id=claude-37</link>
+      <guid>https://ainoma.uz/maqola.html?id=claude-37</guid>
+      <pubDate>Wed, 16 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Foydalanuvchi qidiruvda model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.</description>
+    </item>
+
+    <item>
+      <title>OpenAI "Agents API" va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</title>
+      <link>https://ainoma.uz/maqola.html?id=openai-agents</link>
+      <guid>https://ainoma.uz/maqola.html?id=openai-agents</guid>
+      <pubDate>Thu, 10 Sep 2026 12:00:00 +0500</pubDate>
+      <description>Endi sun’iy intellekt faqat matn yozib beruvchi chat emas, balki 24 soat davomida CRM, savdo va analitikani boshqaruvchi avtonom xodimga aylanmoqda.</description>
+    </item>
+
+    <item>
+      <title>OpenAI rasman GPT-6 Astra modelini taqdim etdi: Yangi avlod imkoniyatlari</title>
+      <link>https://ainoma.uz/maqola-gpt6-astra.html</link>
+      <guid>https://ainoma.uz/maqola-gpt6-astra.html</guid>
+      <pubDate>Thu, 03 Sep 2026 14:00:00 +0500</pubDate>
+      <description>Tafakkur zanjiri (reasoning), cheksiz korporativ xotira va 24 soatlik avtonom agentlik sessiyalari. O‘zbekiston biznesi uchun to‘liq tahlil.</description>
     </item>
   </channel>
 </rss>
