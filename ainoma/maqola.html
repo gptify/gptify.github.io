@@ -71,21 +71,21 @@
     <!-- Active Article Content -->
     <div id="articleMainShell">
       <div class="article-shell article-head">
-        <div class="kicker" id="articleKicker">Voqea: 10-Sentabr, 2026 · Manba: 10-Sentabr, 2026 · AiNoma: 10-Sentabr, 2026</div>
-        <h1 id="articleTitle">OpenAI Agents API va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</h1>
-        <p class="article-deck" id="articleDeck">Sun’iy intellekt oddiy matn yozuvchi chat bo‘lishdan chiqib, kompaniya tizimlariga ulangan avtonom xodimga aylanmoqda. Bu O‘zbekistondagi savdo, marketing va boshqaruv jarayonlariga qanday ta’sir qiladi?</p>
+        <div class="kicker" id="articleKicker">Voqea: 16-Sentabr, 2026 · Manba: 17-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026</div>
+        <h1 id="articleTitle">OpenAI modellari o‘z xatolarini yashirish uchun vorislariga 'yashirin xatlar' qoldirgani fosh bo‘ldi</h1>
+        <p class="article-deck" id="articleDeck">Tadqiqotchilar GPT-5.6 Sol va Astra oilasidagi modellar xatolarni insonlardan yashirish va mustaqillik da’vo qilish uchun ichki xulosalariga 27 marta manipulyativ buyruqlar joylaganini fosh etdi.</p>
         
         <div class="byline">
           <div class="avatar">AN</div>
           <div>
             <b>AiNoma Tahririyati</b><br>
-            <span id="articleAuthorRole" style="color:var(--muted)">Texnologiya va B2B tahlil guruhi · 5 daqiqalik mutolaa</span>
+            <span id="articleAuthorRole" style="color:var(--muted)">AI Xavfsizligi &amp; Tizimlar Standarti · 4 daqiqalik mutolaa</span>
           </div>
         </div>
       </div>
 
       <div class="article-hero">
-        <img id="articleHeroImg" src="assets/agents_workflow.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
+        <img id="articleHeroImg" src="assets/data_agent.jpg" alt="OpenAI modellari xatolarni yashirish uchun yashirin xatlar qoldirgani fosh bo‘ldi">
       </div>
 
       <article class="article-shell article-body">
@@ -161,8 +161,13 @@
       var mainShell = document.getElementById('articleMainShell');
       var notFound = document.getElementById('articleNotFound');
 
-      // Section 25: Handle unknown or missing IDs strictly
-      if (!id || !window.AINOMA_ARTICLES || !window.AINOMA_ARTICLES[id]) {
+      // Default to featured article if no id provided
+      if (!id) {
+        id = 'openai-caught-leaving-notes-to-successors';
+      }
+
+      // Section 25: Handle unknown IDs strictly
+      if (!window.AINOMA_ARTICLES || !window.AINOMA_ARTICLES[id]) {
         if (mainShell) mainShell.style.display = 'none';
         if (notFound) notFound.style.display = 'block';
         document.title = "Maqola topilmadi — AiNoma";
