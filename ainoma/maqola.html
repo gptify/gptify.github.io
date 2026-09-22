@@ -35,12 +35,12 @@
         <a href="haqida.html">Haqida</a>
       </nav>
       <div class="navtools">
-        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv">⌕</button>
-        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu">◐</button>
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
         <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
           <span>Kanal</span> @gptifyuz
         </a>
-        <button class="iconbtn hamb" id="hamb" aria-label="Menyu">☰</button>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
       </div>
     </div>
   </header>
@@ -64,13 +64,13 @@
         <div class="avatar">AN</div>
         <div>
           <b>AiNoma Tahririyati</b><br>
-          <span style="color:var(--muted)">Texnologiya va B2B tahlil guruhi · 5 daqiqalik mutolaa</span>
+          <span id="articleAuthorRole" style="color:var(--muted)">Texnologiya va B2B tahlil guruhi · 5 daqiqalik mutolaa</span>
         </div>
       </div>
     </div>
 
     <div class="article-hero">
-      <img id="articleHeroImg" src="assets/ai_network.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
+      <img id="articleHeroImg" src="assets/agents_workflow.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
     </div>
 
     <article class="article-shell article-body">
@@ -80,13 +80,11 @@
       <p>Ko‘pchilik buni navbatdagi texnik reliz deb o‘ylashi mumkin, ammo B2B sektori va biznes jarayonlarini avtomatlashtirish nuqtai nazaridan bu tub burilishdir.</p>
 
       <h2>1. "Agents API" nima va u oddiy ChatGPT'dan nimasi bilan farq qiladi?</h2>
-      <p>Ilgari AI bilan ishlash bir martalik savol-javob shaklida kechar edi: siz savol berasiz, u javob qaytaradi. Yangi <strong>Agents API</strong> esa 24 soatgacha davom etadigan mustaqil sessiyalarni boshqaradi. U tashqi tizimlar — CRM (amocrm, Bitrix24), elektron pochta, Google Sheets yoki ombor bazalariga ulanadi va belgilangan vazifani inson aralashuvisiz oxirigacha yetkazadi.</p>
+      <p>Ilgari sun’iy intellekt bilan ishlash bir martalik savol-javob shaklida kechar edi: siz savol berasiz, u javob qaytaradi. Yangi <strong>Agents API</strong> esa 24 soatgacha davom etadigan mustaqil sessiyalarni boshqaradi. U tashqi tizimlar — CRM (amocrm, Bitrix24), elektron pochta, Google Sheets yoki ombor bazalariga ulanadi va belgilangan vazifani inson aralashuvisiz oxirigacha yetkazadi.</p>
       
       <blockquote>
         "Agents API oddiy skriptni kompaniyangiz uchun 24/7 ishlaydigan, xato qilmaydigan va o‘z-o‘zini tekshiradigan raqamli xodimga aylantiradi."
       </blockquote>
-
-      <p>Tasavvur qiling, veb-sayt yoki Telegram botingizga yangi mijoz kelib tushdi. Agent uning sohasini aniqlaydi, Apollo yoki ma’lumotlar bazasidan qo‘shimcha kontaktlarni to‘ldiradi, individual tijorat taklifini shakllantiradi va uchrashuv vaqtini menejer taqvimiga kiritib qo‘yadi.</p>
 
       <h2>2. "Data Agent": Kompaniya ma’lumotlari bilan jonli muloqot</h2>
       <p>Kompaniyalarda ko‘pincha ma’lumotlar bor, ammo ularni tezkor tahlil qilish uchun tahlilchi (data analyst) yetishmaydi. ChatGPT Work ichidagi <strong>Data Agent</strong> quyidagi imkoniyatlarni beradi:</p>
@@ -96,17 +94,41 @@
         <li><strong>Xavfsiz ulanish:</strong> Korxona ma’lumotlari modelni o‘qitish uchun ishlatilmaydi va qat’iy korporativ protokollar bilan himoyalanadi.</li>
       </ul>
 
-      <div class="article-note">
-        <b>💡 Amaliy xulosa (Siz uchun):</b> Agar sizda savdo yoki xizmat ko‘rsatish kompaniyasi bo‘lsa, hozirdanoq Excel yoki CRM jadvallaringiz tartibini to‘g‘rilang. AI qanchalik kuchli bo‘lmasin, kiruvchi ma’lumot sifatsiz bo‘lsa, uning xulosasi ham xato bo‘ladi.
+      <!-- Dual Lens: Mutaxassislar va Biznes -->
+      <div class="audience-grid">
+        <div class="lens-box tech">
+          <div class="lens-title">👤 Mutaxassislar uchun</div>
+          <ul>
+            <li><strong>Webhook va asinxron arxitektura:</strong> Agent sessiyasi uzoq vaqt fon rejimida ishlaydi, hodisalar holati veb-xuklar orqali qaytariladi.</li>
+            <li><strong>Function calling &amp; Tool use:</strong> Ochiq OpenAPI spetsifikatsiyalari orqali Postgres, ERP yoki 1C API'lariga xavfsiz ulanish imkoni.</li>
+            <li><strong>Deterministik xavfsizlik:</strong> Xatolik yuz berganda avtomatik qayta urinish (retry logic) va kutilmagan sikllarni to‘xtatuvchi limitlar mavjud.</li>
+          </ul>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">🏢 Biznes uchun</div>
+          <ul>
+            <li><strong>Menejerlar vaqtini tejash:</strong> Kiruvchi arizalarni saralash va dastlabki hisob-kitob qilish to‘liq avtomatlashadi.</li>
+            <li><strong>Xatoliklar ehtimolini kamaytirish:</strong> Insoniy charchoq omili yo‘qoladi, takroriy mexanik operatsiyalar xatosiz bajariladi.</li>
+            <li><strong>Mijozlarga 24/7 tezkor xizmat:</strong> Xaridorlar hatto tungi soat 02:00 da murojaat qilganda ham darhol individual javob oladilar.</li>
+          </ul>
+        </div>
       </div>
 
-      <h2>O‘zbekistondagi kompaniyalar bugun nimadan boshlashi kerak?</h2>
-      <p>B2B amaliyotida va xalqaro tajribada ko‘rayotganimizdek, murakkab va qimmat loyihalarga birdaniga sho‘ng‘ish shart emas. Kichik va aniq o‘lchanadigan qadamlardan boshlash tavsiya etiladi:</p>
-      <ol style="padding-left:20px; margin-bottom:24px; line-height:1.8;">
-        <li><strong>Bitta takrorlanuvchi jarayonni tanlang:</strong> Masalan, yangi arizalarni saralash yoki mijozlar e’tirozlarini yig‘ish.</li>
-        <li><strong>AI botlar va zamonaviy veb-xuklar orqali integratsiya qiling:</strong> Telegram va Instagram xabarlarini bitta markaziy CRM bilan bog‘lang.</li>
-        <li><strong>Gibrid nazorat qoidasini joriy eting:</strong> Yirik bitimlar va murakkab masalalarni AI faqat tayyorlab bersin, yakuniy tasdiqni esa har doim inson qilsin.</li>
-      </ol>
+      <!-- Uzbekistan Impact -->
+      <div class="uz-impact-box">
+        <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
+        <p>O‘zbekiston B2B bozorida Telegram va Instagram asosiy savdo kanallari hisoblanadi. Agents API orqali mahalliy kompaniyalar mijoz xabarlarini to‘g‘ridan-to‘g‘ri amocrm yoki 1C bazasiga ulab, schyot-fakturani avtomatik tayyorlash imkoniyatiga ega bo‘lmoqda. Bu esa raqamli iqtisodiyotda operatsion xarajatlarni 30–40% ga qisqartirish imkonini beradi.</p>
+      </div>
+
+      <!-- Action Checklist -->
+      <div class="action-checklist">
+        <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
+        <ol>
+          <li><strong>Bitta takrorlanuvchi jarayonni tanlang:</strong> Masalan, yangi kiruvchi arizalarni saralash yoki mijozlar e’tirozlarini yig‘ish.</li>
+          <li><strong>Ma’lumotlar bazangizni tartibga keltiring:</strong> CRM yoki Excel jadvallaringizdagi maydonlar standart formatda to‘ldirilganiga ishonch hosil qiling.</li>
+          <li><strong>Gibrid nazorat qoidasini joriy eting:</strong> Yirik shartnomalar va nozik masalalarni sun’iy intellekt faqat tayyorlab bersin, yakuniy tasdiqni esa har doim inson qilsin.</li>
+        </ol>
+      </div>
 
       </div>
 

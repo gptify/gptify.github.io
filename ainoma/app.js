@@ -182,7 +182,7 @@ searchInput?.addEventListener("input", (e) => {
   }
 });
 
-// Category Filtering for Grid Pages
+// Category & Audience Filtering for Grid Pages
 $$(".filter").forEach((btn) => {
   btn.addEventListener("click", () => {
     const filterValue = (btn.dataset.filter || "all").toLowerCase();
@@ -192,7 +192,18 @@ $$(".filter").forEach((btn) => {
     let visibleCount = 0;
     $$(".filter-card").forEach((card) => {
       const cardCat = (card.dataset.cat || "").toLowerCase();
-      const isMatch = filterValue === "all" || cardCat.split(/\s+/).some(c => c === filterValue || c.includes(filterValue));
+      const cardAud = (card.dataset.audience || "").toLowerCase();
+      const combined = cardCat + " " + cardAud;
+
+      let isMatch = false;
+      if (filterValue === "all") {
+        isMatch = true;
+      } else if (filterValue === "uzbekistan" || filterValue === "o‘zbekiston") {
+        isMatch = combined.includes("uzbekistan") || combined.includes("o‘zbekiston");
+      } else {
+        isMatch = combined.includes(filterValue);
+      }
+
       card.style.display = isMatch ? "flex" : "none";
       if (isMatch) visibleCount++;
     });
