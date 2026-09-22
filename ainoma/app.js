@@ -108,6 +108,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma", u: "maqola.html?id=jetbrains-air", k: "jetbrains 'air' tizimini e’lon qildi: agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma dasturlash devtools jetbrains official blog jetbrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom ai agentlarini koordinatsiya qili" },
   { t: "Perform.AI elektron tijorat uchun 'AI Commerce OS' operatsion tizimini ishga tushirdi", u: "maqola.html?id=perform-ai-commerce-os", k: "perform.ai elektron tijorat uchun 'ai commerce os' operatsion tizimini ishga tushirdi dunyo biznes eqs corporate newsroom brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtir" },
