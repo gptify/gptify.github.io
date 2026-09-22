@@ -9,51 +9,60 @@
     <lastBuildDate>Tue, 22 Sep 2026 12:00:00 +0500</lastBuildDate>
 
     <item>
-      <title>OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlili agenti</title>
-      <link>https://ainoma.uz/maqola.html?id=openai-deep-research</link>
-      <guid>https://ainoma.uz/maqola.html?id=openai-deep-research</guid>
-      <pubDate>Tue, 22 Sep 2026 09:00:00 +0500</pubDate>
-      <description>Endi LLM shunchaki bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili tayyorlaydi.</description>
+      <title>JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma</title>
+      <link>https://ainoma.uz/maqola.html?id=jetbrains-air</link>
+      <guid>https://ainoma.uz/maqola.html?id=jetbrains-air</guid>
+      <pubDate>Mon, 22 Sep 2026 10:00:00 +0500</pubDate>
+      <description>JetBrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom AI agentlarini koordinatsiya qilish imkonini beruvchi 'JetBrains Air' mahsulotlar tizimini chiqardi.</description>
     </item>
-
     <item>
-      <title>Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim</title>
-      <link>https://ainoma.uz/maqola.html?id=gemini-enterprise</link>
-      <guid>https://ainoma.uz/maqola.html?id=gemini-enterprise</guid>
+      <title>Perform.AI elektron tijorat uchun 'AI Commerce OS' operatsion tizimini ishga tushirdi</title>
+      <link>https://ainoma.uz/maqola.html?id=perform-ai-commerce-os</link>
+      <guid>https://ainoma.uz/maqola.html?id=perform-ai-commerce-os</guid>
+      <pubDate>Mon, 22 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtirilgan savdoga ixtisoslashgan operatsion tizim taqdim etildi.</description>
+    </item>
+    <item>
+      <title>BMT Ilmiy Hay’ati: Avtonom AI agentlar xavfsizligi ularning texnik imkoniyatlaridan ortda qolmoqda</title>
+      <link>https://ainoma.uz/maqola.html?id=un-ai-agents-warning</link>
+      <guid>https://ainoma.uz/maqola.html?id=un-ai-agents-warning</guid>
       <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
-      <description>Yangi arxitektura korxona call-markazlari va ilovalar uchun insondek tez muloqot qiluvchi ovozli yordamchilar va real vaqtda kamera tasvirini tahlil qilish imkoniyatini taqdim etdi.</description>
+      <description>BMT qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberxavfsizlik choralari bo‘yicha global tavsiyalarini chiqardi.</description>
     </item>
-
     <item>
-      <title>Markaziy Bank bank va fintexlarda AI skoringi qo‘llash bo‘yicha yangi reglamentni tasdiqladi</title>
-      <link>https://ainoma.uz/maqola.html?id=cbu-ai-skoring</link>
-      <guid>https://ainoma.uz/maqola.html?id=cbu-ai-skoring</guid>
-      <pubDate>Sun, 20 Sep 2026 14:00:00 +0500</pubDate>
-      <description>Kredit layoqatini baholashda diskriminatsiyasiz shaffoflik, mijozlarning shaxsiy ma’lumotlarini faqat O‘zbekiston hududidagi serverlarda saqlash talablari qat’iy belgilandi.</description>
+      <title>Tadqiqot: LLM modellar moliyaviy hisob-kitoblar va skoringda 57% gacha noaniqlikka yo‘l qo‘ymoqda</title>
+      <link>https://ainoma.uz/maqola.html?id=spot-ai-finance-risk</link>
+      <guid>https://ainoma.uz/maqola.html?id=spot-ai-finance-risk</guid>
+      <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
+      <description>O‘tkazilgan tahlillar ommabop sun’iy intellekt modellari moliyaviy va buxgalteriya savollariga javob berishda jiddiy noaniqliklarga yo‘l qo‘yishini ko‘rsatdi.</description>
     </item>
-
     <item>
-      <title>Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va xavfsiz korporativ kodlash</title>
-      <link>https://ainoma.uz/maqola.html?id=claude-37</link>
-      <guid>https://ainoma.uz/maqola.html?id=claude-37</guid>
-      <pubDate>Wed, 16 Sep 2026 10:00:00 +0500</pubDate>
-      <description>Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Foydalanuvchi qidiruvda model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.</description>
+      <title>O‘zbekistonda qishloq xo‘jaligi va ekologiya uchun 'Yashil AI' moduli ishga tushirilmoqda</title>
+      <link>https://ainoma.uz/maqola.html?id=spot-green-ai-uzbekistan</link>
+      <guid>https://ainoma.uz/maqola.html?id=spot-green-ai-uzbekistan</guid>
+      <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Tuproq sifati, iqlim ma’lumotlari va suv resurslarini tahlil qiluvchi yangi milliy sun’iy intellekt platformasi qishloq xo‘jaligi samaradorligini oshiradi.</description>
     </item>
-
     <item>
-      <title>OpenAI "Agents API" va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</title>
-      <link>https://ainoma.uz/maqola.html?id=openai-agents</link>
-      <guid>https://ainoma.uz/maqola.html?id=openai-agents</guid>
-      <pubDate>Thu, 10 Sep 2026 12:00:00 +0500</pubDate>
-      <description>Endi sun’iy intellekt faqat matn yozib beruvchi chat emas, balki 24 soat davomida CRM, savdo va analitikani boshqaruvchi avtonom xodimga aylanmoqda.</description>
+      <title>Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdo to‘lqini</title>
+      <link>https://ainoma.uz/maqola.html?id=telegram-ai-apps</link>
+      <guid>https://ainoma.uz/maqola.html?id=telegram-ai-apps</guid>
+      <pubDate>Mon, 20 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy tavsiya oladi va Payme/Click orqali to‘lovni amalga oshiradi.</description>
     </item>
-
     <item>
-      <title>OpenAI rasman GPT-6 Astra modelini taqdim etdi: Yangi avlod imkoniyatlari</title>
-      <link>https://ainoma.uz/maqola-gpt6-astra.html</link>
-      <guid>https://ainoma.uz/maqola-gpt6-astra.html</guid>
-      <pubDate>Thu, 03 Sep 2026 14:00:00 +0500</pubDate>
-      <description>Tafakkur zanjiri (reasoning), cheksiz korporativ xotira va 24 soatlik avtonom agentlik sessiyalari. O‘zbekiston biznesi uchun to‘liq tahlil.</description>
+      <title>Gartner hisoboti: 2026-yilda global sun’iy intellekt xarajatlari $2.7 trillionga yetadi</title>
+      <link>https://ainoma.uz/maqola.html?id=gartner-ai-spending-2026</link>
+      <guid>https://ainoma.uz/maqola.html?id=gartner-ai-spending-2026</guid>
+      <pubDate>Mon, 16 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Tadqiqot agentik tizimlar va hisoblash infratuzilmasiga investitsiyalar o‘tgan yilga nisbatan qariyb 50% ga oshganini ko‘rsatmoqda.</description>
+    </item>
+    <item>
+      <title>OpenAI yangi xavfsizlik hisobotini chiqardi: Modellar og‘ishi va xatolarni tizimli tekshirish tizimi</title>
+      <link>https://ainoma.uz/maqola.html?id=openai-misalignment-framework</link>
+      <guid>https://ainoma.uz/maqola.html?id=openai-misalignment-framework</guid>
+      <pubDate>Mon, 16 Sep 2026 10:00:00 +0500</pubDate>
+      <description>OpenAI laboratoriyalarda aniqlangan model xatolari va kutilmagan mantiqiy og‘ishlarni tizimli o‘rganish hamda ommaga oshkor qilish standartini joriy qildi.</description>
     </item>
   </channel>
 </rss>

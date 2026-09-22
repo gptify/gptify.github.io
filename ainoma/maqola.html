@@ -56,116 +56,78 @@
   </div>
 
   <main>
-    <div class="article-shell article-head">
-      <div class="kicker" id="articleKicker">Tahlil · B2B AI & Texnologiya · E’lon qilingan sana: 10-Sentabr, 2026</div>
-      <h1 id="articleTitle">OpenAI Agents API va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</h1>
-      <p class="article-deck" id="articleDeck">Sun’iy intellekt oddiy matn yozuvchi chat bo‘lishdan chiqib, kompaniya tizimlariga ulangan avtonom xodimga aylanmoqda. Bu O‘zbekistondagi savdo, marketing va boshqaruv jarayonlariga qanday ta’sir qiladi?</p>
-      
-      <div class="byline">
-        <div class="avatar">AN</div>
-        <div>
-          <b>AiNoma Tahririyati</b><br>
-          <span id="articleAuthorRole" style="color:var(--muted)">Texnologiya va B2B tahlil guruhi · 5 daqiqalik mutolaa</span>
-        </div>
-      </div>
+    <!-- 404 / Not Found State (Section 25) -->
+    <div id="articleNotFound" class="not-found-card" style="display:none; text-align:center; padding:70px 20px; max-width:620px; margin:40px auto; background:var(--card); border:1px solid var(--border); border-radius:14px; box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+      <div style="font-size:48px; margin-bottom:16px;">🔍</div>
+      <h1 style="font-size:26px; font-weight:800; margin-bottom:12px; color:var(--ink);">Maqola topilmadi</h1>
+      <p style="color:var(--muted); font-size:15px; margin-bottom:28px; line-height:1.6;">
+        Kechirasiz, siz qidirgan maqola identifikatori (ID) tizimda mavjud emas yoki o‘chirilgan bo‘lishi mumkin.
+      </p>
+      <a href="yangiliklar.html" class="btn primary" style="display:inline-flex; align-items:center; gap:8px;">
+        ← Barcha yangiliklar tasmasiga qaytish
+      </a>
     </div>
 
-    <div class="article-hero">
-      <img id="articleHeroImg" src="assets/agents_workflow.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
+    <!-- Active Article Content -->
+    <div id="articleMainShell">
+      <div class="article-shell article-head">
+        <div class="kicker" id="articleKicker">Voqea: 10-Sentabr, 2026 · Manba: 10-Sentabr, 2026 · AiNoma: 10-Sentabr, 2026</div>
+        <h1 id="articleTitle">OpenAI Agents API va ChatGPT Data Agent: O‘zbekiston biznesi uchun nimalar o‘zgaradi?</h1>
+        <p class="article-deck" id="articleDeck">Sun’iy intellekt oddiy matn yozuvchi chat bo‘lishdan chiqib, kompaniya tizimlariga ulangan avtonom xodimga aylanmoqda. Bu O‘zbekistondagi savdo, marketing va boshqaruv jarayonlariga qanday ta’sir qiladi?</p>
+        
+        <div class="byline">
+          <div class="avatar">AN</div>
+          <div>
+            <b>AiNoma Tahririyati</b><br>
+            <span id="articleAuthorRole" style="color:var(--muted)">Texnologiya va B2B tahlil guruhi · 5 daqiqalik mutolaa</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-hero">
+        <img id="articleHeroImg" src="assets/agents_workflow.jpg" alt="OpenAI Agents API va Data Agent bosh maqola tasviri">
+      </div>
+
+      <article class="article-shell article-body">
+        <!-- Qisqacha Executive Summary (Section 20) -->
+        <div id="articleQisqachaBox"></div>
+
+        <!-- Dynamic Content Body -->
+        <div id="articleDynamicContent"></div>
+
+        <!-- Verified Sources Container (Section 21 & 22) -->
+        <div class="sources-container" id="articleSourcesContainer">
+          <div class="sources-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Tasdiqlangan Birlamchi va Mustaqil Manbalar (Fact-Checked)
+          </div>
+          <div id="articleSourcesList"></div>
+        </div>
+
+        <!-- Telegram Sharing Bar -->
+        <div class="share-bar">
+          <span class="share-label">Maqolani ulashing:</span>
+          <a class="btn telegram" id="articleTgShare" href="https://t.me/share/url?url=https://ainoma.uz/maqola.html&text=AiNoma%20yangiliklari" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            Telegram’da do‘stlarga yuborish
+          </a>
+          <button class="btn copy-btn" onclick="navigator.clipboard.writeText(window.location.href); window.showToast('Havola nusxalandi!');">
+            Havolani nusxalash
+          </button>
+        </div>
+
+        <!-- Telegram Banner -->
+        <div class="newsletter" style="margin-top:40px">
+          <div>
+            <h2>Bunday tahlillarni har kuni o‘qishni xohlaysizmi?</h2>
+            <p>Telegram (@gptifyuz) kanalimizda O‘zbekiston va dunyodagi eng muhim AI tendensiyalarini amaliy misollarda tushuntiramiz.</p>
+          </div>
+          <a class="btn-tg-large" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+            Telegram’da qo‘shilish (@gptifyuz)
+          </a>
+        </div>
+      </article>
     </div>
-
-    <article class="article-shell article-body">
-      <div id="articleDynamicContent">
-      <p>OpenAI 2026-yil 10-sentabrda birdaniga ikkita yirik texnologik yangilanishni e’lon qildi: uzoq muddatli avtonom jarayonlar uchun mo‘ljallangan <strong>Agents API</strong> hamda kompaniya ichki jadvallarini avtomatik tahlil qiluvchi <strong>ChatGPT Work Data Agent</strong>.</p>
-      
-      <p>Ko‘pchilik buni navbatdagi texnik reliz deb o‘ylashi mumkin, ammo B2B sektori va biznes jarayonlarini avtomatlashtirish nuqtai nazaridan bu tub burilishdir.</p>
-
-      <h2>1. "Agents API" nima va u oddiy ChatGPT'dan nimasi bilan farq qiladi?</h2>
-      <p>Ilgari sun’iy intellekt bilan ishlash bir martalik savol-javob shaklida kechar edi: siz savol berasiz, u javob qaytaradi. Yangi <strong>Agents API</strong> esa 24 soatgacha davom etadigan mustaqil sessiyalarni boshqaradi. U tashqi tizimlar — CRM (amocrm, Bitrix24), elektron pochta, Google Sheets yoki ombor bazalariga ulanadi va belgilangan vazifani inson aralashuvisiz oxirigacha yetkazadi.</p>
-      
-      <blockquote>
-        "Agents API oddiy skriptni kompaniyangiz uchun 24/7 ishlaydigan, xato qilmaydigan va o‘z-o‘zini tekshiradigan raqamli xodimga aylantiradi."
-      </blockquote>
-
-      <h2>2. "Data Agent": Kompaniya ma’lumotlari bilan jonli muloqot</h2>
-      <p>Kompaniyalarda ko‘pincha ma’lumotlar bor, ammo ularni tezkor tahlil qilish uchun tahlilchi (data analyst) yetishmaydi. ChatGPT Work ichidagi <strong>Data Agent</strong> quyidagi imkoniyatlarni beradi:</p>
-      <ul>
-        <li><strong>SQL bilish shart emas:</strong> Oddiy o‘zbek tilida <em>"O‘tgan oyda Toshkent viloyatida eng ko‘p sotilgan 5 ta mahsulot va ularning marjasini ko‘rsat"</em> deb yozsangiz kifoya.</li>
-        <li><strong>Jonli vizualizatsiya:</strong> Natija shunchaki sonlar emas, balki qulay grafiklar, taqqoslash jadvallari va xulosalar shaklida taqdim etiladi.</li>
-        <li><strong>Xavfsiz ulanish:</strong> Korxona ma’lumotlari modelni o‘qitish uchun ishlatilmaydi va qat’iy korporativ protokollar bilan himoyalanadi.</li>
-      </ul>
-
-      <!-- Dual Lens: Mutaxassislar va Biznes -->
-      <div class="audience-grid">
-        <div class="lens-box tech">
-          <div class="lens-title">👤 Mutaxassislar uchun</div>
-          <ul>
-            <li><strong>Webhook va asinxron arxitektura:</strong> Agent sessiyasi uzoq vaqt fon rejimida ishlaydi, hodisalar holati veb-xuklar orqali qaytariladi.</li>
-            <li><strong>Function calling &amp; Tool use:</strong> Ochiq OpenAPI spetsifikatsiyalari orqali Postgres, ERP yoki 1C API'lariga xavfsiz ulanish imkoni.</li>
-            <li><strong>Deterministik xavfsizlik:</strong> Xatolik yuz berganda avtomatik qayta urinish (retry logic) va kutilmagan sikllarni to‘xtatuvchi limitlar mavjud.</li>
-          </ul>
-        </div>
-        <div class="lens-box biz">
-          <div class="lens-title">🏢 Biznes uchun</div>
-          <ul>
-            <li><strong>Menejerlar vaqtini tejash:</strong> Kiruvchi arizalarni saralash va dastlabki hisob-kitob qilish to‘liq avtomatlashadi.</li>
-            <li><strong>Xatoliklar ehtimolini kamaytirish:</strong> Insoniy charchoq omili yo‘qoladi, takroriy mexanik operatsiyalar xatosiz bajariladi.</li>
-            <li><strong>Mijozlarga 24/7 tezkor xizmat:</strong> Xaridorlar hatto tungi soat 02:00 da murojaat qilganda ham darhol individual javob oladilar.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Uzbekistan Impact -->
-      <div class="uz-impact-box">
-        <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
-        <p>O‘zbekiston B2B bozorida Telegram va Instagram asosiy savdo kanallari hisoblanadi. Agents API orqali mahalliy kompaniyalar mijoz xabarlarini to‘g‘ridan-to‘g‘ri amocrm yoki 1C bazasiga ulab, schyot-fakturani avtomatik tayyorlash imkoniyatiga ega bo‘lmoqda. Bu esa raqamli iqtisodiyotda operatsion xarajatlarni 30–40% ga qisqartirish imkonini beradi.</p>
-      </div>
-
-      <!-- Action Checklist -->
-      <div class="action-checklist">
-        <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
-        <ol>
-          <li><strong>Bitta takrorlanuvchi jarayonni tanlang:</strong> Masalan, yangi kiruvchi arizalarni saralash yoki mijozlar e’tirozlarini yig‘ish.</li>
-          <li><strong>Ma’lumotlar bazangizni tartibga keltiring:</strong> CRM yoki Excel jadvallaringizdagi maydonlar standart formatda to‘ldirilganiga ishonch hosil qiling.</li>
-          <li><strong>Gibrid nazorat qoidasini joriy eting:</strong> Yirik shartnomalar va nozik masalalarni sun’iy intellekt faqat tayyorlab bersin, yakuniy tasdiqni esa har doim inson qilsin.</li>
-        </ol>
-      </div>
-
-      </div>
-
-      <!-- Manbalar va Iqtiboslar -->
-      <div style="background:var(--soft); border-left:3px solid var(--green); padding:16px 20px; border-radius:0 8px 8px 0; margin:28px 0; font-size:13px; color:var(--muted);">
-        <b style="color:var(--ink); font-size:14px;">Asosiy manbalar va iqtiboslar:</b>
-        <ul id="articleSourcesList" style="margin:8px 0 0 18px; padding:0; line-height:1.7;">
-          <li>OpenAI Official Engineering Blog — <em>"Introducing the Agents API and Enterprise Tooling"</em> (<a href="https://openai.com/news/" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">openai.com/news ↗</a>)</li>
-          <li>TechCrunch Enterprise AI Desk — <em>"OpenAI launches autonomous long-running agent workflows"</em> (<a href="https://techcrunch.com" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">techcrunch.com ↗</a>)</li>
-          <li>VentureBeat AI Coverage — <em>"Data Agent integration for Snowflake and BigQuery"</em> (<a href="https://venturebeat.com" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">venturebeat.com ↗</a>)</li>
-        </ul>
-      </div>
-
-      <!-- Telegram Sharing Bar -->
-      <div class="share-bar">
-        <span class="share-label">Maqolani ulashing:</span>
-        <a class="btn telegram" id="articleTgShare" href="https://t.me/share/url?url=https://ainoma.uz/maqola.html&text=OpenAI%20Agents%20API%20va%20ChatGPT%20Data%20Agent%20haqida%20tahlil" target="_blank" rel="noopener">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
-          Telegram’da do‘stlarga yuborish
-        </a>
-        <button class="btn copy-btn" onclick="navigator.clipboard.writeText(window.location.href); window.showToast('Havola nusxalandi!');">
-          Havolani nusxalash
-        </button>
-      </div>
-
-      <!-- Telegram Banner -->
-      <div class="newsletter" style="margin-top:40px">
-        <div>
-          <h2>Bunday tahlillarni har kuni o‘qishni xohlaysizmi?</h2>
-          <p>Telegram (@gptifyuz) kanalimizda O‘zbekiston va dunyodagi eng muhim AI tendensiyalarini amaliy misollarda tushuntiramiz.</p>
-        </div>
-        <a class="btn-tg-large" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
-          Telegram’da qo‘shilish (@gptifyuz)
-        </a>
-      </div>
-    </article>
   </main>
 
   <footer>
@@ -195,44 +157,121 @@
     try {
       var params = new URLSearchParams(window.location.search);
       var id = params.get('id');
-      if (id && window.AINOMA_ARTICLES && window.AINOMA_ARTICLES[id]) {
-        var art = window.AINOMA_ARTICLES[id];
-        document.title = art.title + " — AiNoma";
+      
+      var mainShell = document.getElementById('articleMainShell');
+      var notFound = document.getElementById('articleNotFound');
+
+      // Section 25: Handle unknown or missing IDs strictly
+      if (!id || !window.AINOMA_ARTICLES || !window.AINOMA_ARTICLES[id]) {
+        if (mainShell) mainShell.style.display = 'none';
+        if (notFound) notFound.style.display = 'block';
+        document.title = "Maqola topilmadi — AiNoma";
+        return;
+      }
+
+      var art = window.AINOMA_ARTICLES[id];
+      document.title = art.title + " — AiNoma";
+      
+      // Kicker with separate dates (Section 2)
+      var kicker = document.getElementById('articleKicker');
+      if (kicker) {
+        var eventDateStr = art.event_date || "Sentabr, 2026";
+        var srcDateStr = art.source_published_date || eventDateStr;
+        var aiDateStr = art.ainoma_published_date || eventDateStr;
+        kicker.textContent = "Voqea: " + eventDateStr + " · Manba: " + srcDateStr + " · AiNoma: " + aiDateStr;
+      }
+      
+      var title = document.getElementById('articleTitle');
+      if (title) title.textContent = art.title;
+      
+      var deck = document.getElementById('articleDeck');
+      if (deck) deck.textContent = art.deck;
+      
+      var authorRole = document.getElementById('articleAuthorRole');
+      if (authorRole) authorRole.textContent = (art.authorRole || "AiNoma Tahrir Guruhi") + " · " + (art.readTime || "4 daqiqalik mutolaa");
+      
+      var heroImg = document.getElementById('articleHeroImg');
+      if (heroImg) {
+        heroImg.src = art.img;
+        heroImg.alt = art.imgAlt || art.title;
+      }
+
+      // Render Qisqacha Executive Summary (Section 20)
+      var qisqachaBox = document.getElementById('articleQisqachaBox');
+      if (qisqachaBox && art.qisqacha && art.qisqacha.length > 0) {
+        qisqachaBox.innerHTML = 
+          '<div class="qisqacha-box">' +
+            '<div class="qisqacha-title">' +
+              '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>' +
+              ' Qisqacha (Asosiy faktlar)' +
+            '</div>' +
+            '<ul class="qisqacha-list">' +
+              art.qisqacha.map(function(q) { return '<li>' + q + '</li>'; }).join('') +
+            '</ul>' +
+          '</div>';
+      } else if (qisqachaBox) {
+        qisqachaBox.innerHTML = '';
+      }
+      
+      // Dynamic Content
+      var dynamicContent = document.getElementById('articleDynamicContent');
+      if (dynamicContent && art.contentHtml) {
+        dynamicContent.innerHTML = art.contentHtml;
+      }
+      
+      // Render Verified Sources (Section 21 & 22)
+      var sourcesList = document.getElementById('articleSourcesList');
+      if (sourcesList) {
+        var sourceCardsHtml = '';
         
-        var kicker = document.getElementById('articleKicker');
-        if (kicker) kicker.textContent = art.kicker;
-        
-        var title = document.getElementById('articleTitle');
-        if (title) title.textContent = art.title;
-        
-        var deck = document.getElementById('articleDeck');
-        if (deck) deck.textContent = art.deck;
-        
-        var authorRole = document.getElementById('articleAuthorRole');
-        if (authorRole) authorRole.textContent = (art.authorRole || "AiNoma Tahrir Guruhi") + " · " + (art.readTime || "4 daqiqalik mutolaa");
-        
-        var heroImg = document.getElementById('articleHeroImg');
-        if (heroImg) {
-          heroImg.src = art.img;
-          heroImg.alt = art.imgAlt || art.title;
+        // Primary source
+        if (art.primary_source) {
+          var ps = art.primary_source;
+          var badgeClass = 'birlamchi';
+          var badgeText = ps.badge || 'BIRLAMCHI MANBA';
+          if (badgeText.indexOf('RASMIY') !== -1) badgeClass = 'rasmiy';
+          if (badgeText.indexOf('TADQIQOT') !== -1) badgeClass = 'tadqiqot';
+
+          sourceCardsHtml += 
+            '<div class="source-card">' +
+              '<div class="source-badge-row">' +
+                '<span class="source-badge ' + badgeClass + '">' + badgeText + '</span>' +
+                '<span class="source-doc-meta">' + ps.name + ' · ' + (ps.date || art.source_published_date || '') + '</span>' +
+              '</div>' +
+              '<div class="source-doc-title">' + ps.title + '</div>' +
+              '<a class="source-doc-link" href="' + ps.url + '" target="_blank" rel="noopener">' +
+                'Birlamchi hujjatni ochish (Asl manba) ↗' +
+              '</a>' +
+            '</div>';
         }
-        
-        var dynamicContent = document.getElementById('articleDynamicContent');
-        if (dynamicContent && art.contentHtml) {
-          dynamicContent.innerHTML = art.contentHtml;
+
+        // Secondary sources
+        if (art.secondary_sources && art.secondary_sources.length > 0) {
+          art.secondary_sources.forEach(function(ss) {
+            var ssBadgeClass = 'mustaqil';
+            var ssBadgeText = ss.badge || 'MUSTAQIL MANBA';
+            if (ssBadgeText.indexOf('RASMIY') !== -1) ssBadgeClass = 'rasmiy';
+
+            sourceCardsHtml += 
+              '<div class="source-card">' +
+                '<div class="source-badge-row">' +
+                  '<span class="source-badge ' + ssBadgeClass + '">' + ssBadgeText + '</span>' +
+                  '<span class="source-doc-meta">' + ss.name + ' · ' + (ss.date || art.source_published_date || '') + '</span>' +
+                '</div>' +
+                '<div class="source-doc-title">' + ss.title + '</div>' +
+                '<a class="source-doc-link" href="' + ss.url + '" target="_blank" rel="noopener">' +
+                  'Mustaqil tahlilni o‘qish ↗' +
+                '</a>' +
+              '</div>';
+          });
         }
-        
-        var sourcesList = document.getElementById('articleSourcesList');
-        if (sourcesList && art.sources) {
-          sourcesList.innerHTML = art.sources.map(function(s) {
-            return '<li>' + s.name + ' (<a href="' + s.url + '" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">Asl manba ↗</a>)</li>';
-          }).join('');
-        }
-        
-        var tgShare = document.getElementById('articleTgShare');
-        if (tgShare) {
-          tgShare.href = "https://t.me/share/url?url=" + encodeURIComponent(window.location.href) + "&text=" + encodeURIComponent(art.title);
-        }
+
+        sourcesList.innerHTML = sourceCardsHtml;
+      }
+      
+      var tgShare = document.getElementById('articleTgShare');
+      if (tgShare) {
+        tgShare.href = "https://t.me/share/url?url=" + encodeURIComponent(window.location.href) + "&text=" + encodeURIComponent(art.title);
       }
     } catch(e) {
       console.error("Maqola hydration error:", e);

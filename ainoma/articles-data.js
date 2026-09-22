@@ -1,645 +1,415 @@
 window.AINOMA_ARTICLES = {
-  "openai-deep-research": {
-    "title": "OpenAI Deep Research va o3-mini taqdim etildi: Ilmiy va bozor tahlilini 10 barobar tezlashtiruvchi avtonom tadqiqot agenti",
-    "kicker": "22-Sentabr, 2026 · Frontier Labs · Dunyo",
-    "deck": "Endi LLM shunchaki bitta savolga bir xatboshi javob bermaydi, balki o‘nlab ishonchli manbalarni mustaqil ko‘rib chiqib, 20 sahifalik chuqur ilmiy va bozor tahlili hisobotini tayyorlaydi.",
-    "img": "assets/data_agent.jpg",
-    "imgAlt": "OpenAI Deep Research va o3-mini avtonom tadqiqot agenti",
+  "openai-gpt6-astra": {
+    "id": "openai-gpt6-astra",
+    "slug": "openai-gpt6-astra",
+    "title": "OpenAI rasman GPT-6 Astra modelini e’lon qildi: Kompyuterni boshqaruvchi yangi avlod tafakkuri",
+    "kicker": "Voqea: 03-Sentabr, 2026 · Manba: 03-Sentabr, 2026 · AiNoma: 04-Sentabr, 2026",
+    "deck": "Mantiqiy xulosalash zanjiri (Deep Reasoning), doimiy korporativ xotira va kompyuterni bevosita boshqarish imkoniyatlari rasman ochildi.",
+    "event_date": "2026-09-03",
+    "source_published_date": "2026-09-03",
+    "ainoma_published_date": "2026-09-04",
+    "ainoma_updated_date": "2026-09-04",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
     "readTime": "5 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Bozor tahlili va LLM tadqiqotlari",
-    "contentHtml": `
-<p>OpenAI 2026-yil 22-sentabr kuni o‘zining yangi <strong>Deep Research</strong> agentik vositasi hamda optimallashtirilgan <strong>o3-mini</strong> mantiqiy modelini keng ommaga taqdim etdi. Ushbu tizim sun’iy intellektning axborot izlashdagi passiv rolini butunlay o‘zgartirdi: endi u inson analitigi kabi Internetdagi yuzlab maqolalar, PDF hisobotlar va ilmiy ma’lumotlar omborini o‘rganadi va strukturaviy tahlil tayyorlaydi.</p>
-
-<p>Foydalanuvchi "O‘zbekistonda B2B SaaS bozorining 2026–2030 yillardagi rivojlanish tendensiyalari va xavflari" kabi murakkab topshiriq berganida, agent 10–30 daqiqa davomida mustaqil qidiruv rejasini tuzadi, manbalarni tekshiradi, iqtiboslar bilan to‘liq tahliliy dayjest yaratadi.</p>
-
-<h2>1. Nima uchun bu inqilobiy yangilik?</h2>
-<ul>
-  <li><strong>Ko‘p bosqichli mustaqil qidiruv (Multi-step Reasoning):</strong> Agent dastlabki topilgan ma’lumot bilan cheklanmaydi. Agar biror manba noaniq bo‘lsa, u yangi qidiruv so‘rovlarini shakllantirib, chuqurroq manbalarga kiradi.</li>
-  <li><strong>To‘liq iqtiboslar (Citations) va faktcheking:</strong> Har bir keltirilgan raqam va fakt birlamchi veb-manbaga havola bilan ta’minlanadi. Bu gallyutsinatsiya (to‘qima ma’lumot) ehtimolini deyarli nolga tushiradi.</li>
-  <li><strong>Strukturaviy hisobot eksporti:</strong> Tayyor hisobotni birdaniga Markdown, PDF yoki Google Docs formatida yuklab olib, rahbariyat yoki investorlarga taqdim etish mumkin.</li>
-</ul>
-
-<blockquote>
-  "Deep Research — bu har bir tahlilchi, marketing rahbari va tadbirkorning yonida ishlovchi 24/7 shaxsiy tahliliy institutdir. Bir haftalik konsalting tahlilini 30 daqiqada tayyorlash imkoniyati paydo bo‘ldi."
-</blockquote>
-
-<!-- Dual Lens: Mutaxassislar va Biznes -->
-<div class="audience-grid">
-  <div class="lens-box tech">
-    <div class="lens-title">👤 Mutaxassislar uchun</div>
-    <ul>
-      <li><strong>Mantiqiy zanjir (Test-time compute):</strong> Model o3-mini yadro arxitekturasidan foydalanib, javob berishdan oldin hisoblash resurslarini qidiruv strategiyasini rejalashtirishga sarflaydi.</li>
-      <li><strong>Kontekst darchasi va qisqartirish:</strong> O‘nlab veb-sahifalardagi keraksiz HTML va reklamalarni tozalab, faqat muhim semantik bloklarni saralaydi.</li>
-      <li><strong>API orqali integratsiya:</strong> Dasturchilar Deep Research natijalarini to‘g‘ridan-to‘g‘ri o‘zlarining ichki CRM va ERP tizimlariga ulashlari mumkin.</li>
-    </ul>
-  </div>
-  <div class="lens-box biz">
-    <div class="lens-title">🏢 Biznes uchun</div>
-    <ul>
-      <li><strong>Raqobatchilar tahlili (Competitor Intelligence):</strong> Raqobatchilarning narx siyosati, yangi mahsulotlari va bozor ulushini soatlab qidirmasdan, 1 ta so‘rov orqali jadval shaklida oling.</li>
-      <li><strong>Mijozlarni tekshirish (Due Diligence):</strong> Yangi xorijiy hamkor bilan shartnoma tuzishdan oldin uning tarixi, sud ishlari va obro‘sini bir necha daqiqada tahlil qiling.</li>
-      <li><strong>Strategik rejalashtirish:</strong> Yangi bozor yoki mahsulot qatorini ishga tushirishdan oldin bozor hajmi va kutilayotgan talabni aniq hisoblab chiqing.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Uzbekistan Impact -->
-<div class="uz-impact-box">
-  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
-  <p>O‘zbekiston kompaniyalari xalqaro bozorlarga eksport qilishda ko‘pincha mahalliy bozor kon’yunkturasini to‘liq bilmaslikdan qiynalishadi. Deep Research yordamida har qanday o‘zbek ishlab chiqaruvchisi Yevropa, Fors ko‘rfazi yoki MDH bozorlaridagi talab, sertifikatsiya qoidalari va distribyutorlar tarmog‘ini Toshkentdagi ofisdan chiqmasdan, bepul yoki arzon tariflarda chuqur tahlil qila oladi.</p>
-</div>
-
-<!-- Action Checklist -->
-<div class="action-checklist">
-  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
-  <ol>
-    <li><strong>Katta savollaringiz ro‘yxatini tuzing:</strong> Biznesingizda uzoq vaqt javob topilmagan 3 ta strategik savolni (bozor ulushi, yangi mahsulot narxi, raqobatchi kamchiliklari) yozing.</li>
-    <li><strong>Aniq prompt bilan so‘rov bering:</strong> "Menga umumiy ma’lumot ber" demasdan, "O‘zbekiston bo‘yicha 2025–2026 yillardagi rasmiy statistika va ommaviy hisobotlarga tayangan holda 5 ta tendensiyani jadvalda ko‘rsat" deb so‘rang.</li>
-    <li><strong>Birlamchi manbalarni qayta ko‘ring:</strong> Hisobotdagi asosiy raqamlar bo‘yicha berilgan havola (link)larni bir marta bosib, manba ishonchliligini tasdiqlang.</li>
-  </ol>
-</div>
-`,
-    "sources": [
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_agents.jpg",
+    "imgAlt": "OpenAI GPT-6 Astra",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "OpenAI rasman GPT-6 Astra modelini e’lon qildi va ChatGPT Plus, Pro va Enterprise foydalanuvchilariga chiqardi.",
+      "Astra kompaniyaning xavfsizlik reytingida kiberxavfsizlik bo‘yicha 'Critical' darajaga yetgan birinchi model bo‘ldi.",
+      "Yangi arxitektura kompyuterni to‘g‘ridan-to‘g‘ri boshqarish (Computer Use), dasturiy injiniring va ilmiy tahlilga ixtisoslashgan."
+    ],
+    "primary_source": {
+      "name": "OpenAI Research",
+      "title": "Introducing GPT-6 Astra: Autonomous Computer Use and Critical-Tier Cyber Capabilities",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "date": "03.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
       {
-        "name": "OpenAI Research Announcement",
-        "url": "https://openai.com"
+        "name": "Wikipedia Knowledge Base",
+        "title": "GPT-6 Astra: Architecture, Release, and Critical Safety Thresholds",
+        "url": "https://en.wikipedia.org/wiki/GPT-6_Astra",
+        "date": "04.09.2026",
+        "badge": "MUSTAQIL MANBA"
       },
       {
-        "name": "TechCrunch AI Analysis",
-        "url": "https://techcrunch.com"
+        "name": "OpenRouter API Catalog",
+        "title": "OpenAI GPT-6 Astra Model Specification and Benchmark Benchmarking",
+        "url": "https://openrouter.ai/openai/gpt-6-astra",
+        "date": "04.09.2026",
+        "badge": "MUSTAQIL MANBA"
       }
-    ]
+    ],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>OpenAI 2026-yil 3-sentabr kuni cheklangan ko‘rinishda, 4-sentabrda esa keng ommaga yangi avlod <strong>GPT-6 Astra</strong> flagman modelini taqdim etdi. Ushbu model chuqur mantiqiy xulosalash zanjirlarini (reasoning) real vaqtli tezlik bilan birlashtirib, kompyuter va brauzer interfeysini inson kabi to‘g‘ridan-to‘g‘ri boshqarish (Computer Use) imkoniyatini ochdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Astra OpenAI'ning xavfsizlik reytingida kiberxavfsizlik va zaifliklarni aniqlash bo‘yicha 'Critical' darajaga yetgan birinchi tijoriy model hisoblanadi. Shu sababli xavfli buyruqlarni bajarish maxsus xavfsizlik filtrlari va inson roziligi (human-in-the-loop) bilan cheklangan.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>To‘g‘ridan-to‘g‘ri Computer Use:</strong> Brauzer va operatsion tizim oynalarida avtonom navigatsiya va shakllarni to‘ldirish.</li>\n      <li><strong>SWE-bench va ARC-AGI-3 rekordi:</strong> Dasturiy ta’minot muhandisligi va yangi abstrakt mantiqiy masalalarda yetakchi ko‘rsatkich.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Doimiy korporativ xotira:</strong> Kompaniyaning o‘tgan muloqotlari, hisobotlari va qoidalarini yodda saqlash.</li>\n      <li><strong>60% arzonlashgan inferens:</strong> Oldingi o-seriya modellariga nisbatan sezilarli darajada tejamkor operatsion xarajat.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston korporativ sektorida Astra yordamida ko‘p sahifali moliyaviy hisobotlar auditi, Didox orqali kelgan shartnomalardagi xatarlarni tekshirish va B2B savdo jarayonlarini avtomatlashtirishda yangi sifat darajasiga erishiladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Astra imkoniyatlarini ChatGPT Plus yoki Codex orqali sinab ko‘ring:</strong> Modelga murakkab ko‘p bosqichli tahlil topshirig‘ini bering.</li>\n    <li><strong>Ma’lumotlar xavfsizligini ta’minlang:</strong> Muhim ichki kalitlar va maxfiy ma’lumotlarni uzatmaslik choralarini ko‘ring.</li>\n  </ol>\n</div>\n"
   },
-  "claude-code-cli": {
-    "title": "Anthropic 'Claude Code' vositasini ishga tushirdi: Terminalda ishlovchi avtonom dasturchi agent",
-    "kicker": "21-Sentabr, 2026 · Dasturlash & DevTools · Dunyo",
-    "deck": "Brauzer yoki alohida muharrir shart emas — to‘g‘ridan-to‘g‘ri buyruqlar satrida butun repozitoriy bilan ishlovchi, git amallarini bajaruvchi va testlovchi avtonom vosita.",
+  "google-gemini-38-flash": {
+    "id": "google-gemini-38-flash",
+    "slug": "google-gemini-38-flash",
+    "title": "Google Gemini 3.8 Flash va Flash Cyber modellarini taqdim etdi: Boshqariladigan tafakkur darajalari",
+    "kicker": "Voqea: 02-Sentabr, 2026 · Manba: 02-Sentabr, 2026 · AiNoma: 03-Sentabr, 2026",
+    "deck": "1 million tokenlik kontekst, dasturchilar tomonidan boshqariluvchi tafakkur chuqurligi va kirish tokenlari uchun $0.75 arzon narx siyosati.",
+    "event_date": "2026-09-02",
+    "source_published_date": "2026-09-02",
+    "ainoma_published_date": "2026-09-03",
+    "ainoma_updated_date": "2026-09-03",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Google Cloud & LLM Injiniringi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Google Cloud AI",
+    "audience": "mutaxassislar",
+    "img": "assets/ai_network.jpg",
+    "imgAlt": "Google Gemini 3.8 Flash",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "Google 2026-yil 2-sentabrda Gemini 3.8 Flash va Flash Cyber modellarini rasman taqdim etdi.",
+      "Yangi 'thinking levels' parametri orqali dasturchi model qancha vaqt fikrlashini boshqara oladi.",
+      "1 million tokenlik kontekst oynasi va $0.75/$3.75 hamyonbop narx siyosati e’lon qilindi."
+    ],
+    "primary_source": {
+      "name": "Google Official Blog",
+      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber: Advancing agentic workflows and cybersecurity",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "date": "02.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Google DeepMind",
+        "title": "Gemini 3.8 Flash Model Card and Technical Evaluation",
+        "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+        "date": "02.09.2026",
+        "badge": "RASMIY HUJJAT"
+      }
+    ],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Google kompaniyasi o‘zining tejamkor va tezkor Flash model oilasini <strong>Gemini 3.8 Flash</strong> bilan yangiladi. Ushbu model agentik dasturlash, ko‘p bosqichli mantiq va kiberxavfsizlik auditi uchun ixtisoslashgan bo‘lib, dasturchilarga modelning fikrlash chuqurligini parametrik nazorat qilish imkonini beradi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Kompaniyalar oddiy savollar uchun qimmat va sekin reasoning modellarini ishlatishga majbur emas. Yangi <code>thinking_budget</code> yoki <code>thinking_level</code> parametrlari orqali xarajat va aniqlik balansi to‘liq nazoratga olinadi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Thinking Levels:</strong> Fikrlash chuqurligini vazifa murakkabligiga qarab boshqarish.</li>\n      <li><strong>1M token kontekst:</strong> Katta hajmdagi texnik dokumentatsiya va kod repozitoriylarini bir zumda tahlil qilish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>O‘ta arzon API:</strong> Kiruvchi tokenlar uchun $0.75/million narx korxona call-markazlari va ilovalarida operatsion xarajatni keskin kamaytiradi.</li>\n      <li><strong>Vertex AI kafolati:</strong> Korporativ ma’lumotlar maxfiyligi va barqaror SLA kafolatlari.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "claude-fable-51": {
+    "id": "claude-fable-51",
+    "slug": "claude-fable-51",
+    "title": "Anthropic Claude Fable 5.1 va Mythos 5.1 modellarini chiqardi: Kesh narxi 75% arzonlashdi",
+    "kicker": "Voqea: 01-Sentabr, 2026 · Manba: 01-Sentabr, 2026 · AiNoma: 02-Sentabr, 2026",
+    "deck": "Anthropic agentik ish jarayonlari uchun prompt kesh o‘qish narxini 75% ga arzonlashtirdi va korxonalarga ma'lumotlarni saqlamaslik (zero data retention) rejimini ochdi.",
+    "event_date": "2026-09-01",
+    "source_published_date": "2026-09-01",
+    "ainoma_published_date": "2026-09-02",
+    "ainoma_updated_date": "2026-09-02",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Anthropic Ekotizimi & AI Xavfsizligi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/coding_workspace.jpg",
+    "imgAlt": "Anthropic Claude Fable 5.1",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "Anthropic 2026-yil 1-sentabrda Claude Fable 5.1 va cheklangan Mythos 5.1 modellarini rasman e’lon qildi.",
+      "Prompt cache read narxi 75% ga (million token uchun $1.00 dan $0.25 gacha) pasaytirildi.",
+      "1 million tokenlik kontekst oynasi va 128,000 tokenlik maksimal chiqish hajmi taqdim etildi."
+    ],
+    "primary_source": {
+      "name": "Anthropic Platform Documentation",
+      "title": "Claude Models Overview: Fable 5.1 and Mythos 5.1 Architecture",
+      "url": "https://platform.claude.com/docs/en/models/overview",
+      "date": "01.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Anthropic Release Notes",
+        "title": "Claude Release Notes: Prompt cache pricing reduction and enterprise safeguards",
+        "url": "https://support.claude.com/en/articles/12138966-release-notes",
+        "date": "01.09.2026",
+        "badge": "RASMIY HUJJAT"
+      }
+    ],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Anthropic 2026-yil 1-sentabrda o‘zining eng yangi flagman <strong>Claude Fable 5.1</strong> modelini hamda kiberxavfsizlik va biologiya sohasidagi maxsus loyihalar uchun mo‘ljallangan <strong>Claude Mythos 5.1</strong> modelini taqdim etdi. Yangilanish agentik tizimlar foydalanadigan prompt kesh narxini 75% ga kamaytirish bilan birga, yirik korxonalarga ma’lumotlarni nol saqlash (zero data retention) rejimini taqdim etdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Agentik tizimlar har safar butun loyiha kodini yoki 100 sahifalik hujjatni qayta o‘qiganda kesh xizmatidan foydalanadi. Kesh narxining $0.25 gacha tushishi korxonalar uchun yillik operatsion xarajatlarni 3-4 barobarga qisqartiradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>128k tokenlik chiqish:</strong> Bir so‘rovda to‘liq dasturiy arxitekturalar yoki kitob hajmida kod generatsiyasi.</li>\n      <li><strong>Kesh optimallashtirish:</strong> Takroriy so‘rovlarda sezilarli iqtisod va yuqori tezlik.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Zero Data Retention:</strong> Bank va tibbiyot sirlari model xotirasida mutlaqo saqlanmaydi.</li>\n      <li><strong>Agentlar xarajati arzonlashuvi:</strong> Katta jamoalar uchun agentlarni saqlash osonlashadi.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "jetbrains-air": {
+    "id": "jetbrains-air",
+    "slug": "jetbrains-air",
+    "title": "JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma",
+    "kicker": "Voqea: 22-Sentabr, 2026 · Manba: 22-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
+    "deck": "JetBrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom AI agentlarini koordinatsiya qilish imkonini beruvchi 'JetBrains Air' mahsulotlar tizimini chiqardi.",
+    "event_date": "2026-09-22",
+    "source_published_date": "2026-09-22",
+    "ainoma_published_date": "2026-09-22",
+    "ainoma_updated_date": "2026-09-22",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Dasturlash Vositalari & IDE Injiniringi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dasturlash DevTools",
+    "audience": "mutaxassislar",
     "img": "assets/gpu_datacenter.jpg",
-    "imgAlt": "Anthropic Claude Code CLI dasturchi agenti",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Dasturiy arxitektura va DevTools",
-    "contentHtml": `
-<p>Anthropic kompaniyasi dasturchilar va muhandislar uchun to‘g‘ridan-to‘g‘ri operatsion tizim terminalida (CLI) ishlovchi <strong>Claude Code</strong> agentik vositasini rasman chiqardi. Ushbu vosita dasturchining konsolida o‘tirib, butun kod bazasini tushunadi, buyruqlarni bajaradi, xatolarni tuzatadi va Pull Request tayyorlaydi.</p>
-
-<p>Ilgari dasturchilar kod qismlarini brauzerdagi chat oynasiga ko‘chirib o‘tkazishga majbur bo‘lishgan bo‘lsa, Claude Code mahalliy fayllar tizimi va Git bilan to‘g‘ridan-to‘g‘ri ishlaydi.</p>
-
-<h2>1. Claude Code qanday imkoniyatlarni taqdim etadi?</h2>
-<ul>
-  <li><strong>To‘liq terminal integratsiyasi:</strong> Dasturchi shunchaki <code>claude</code> buyrug‘ini teradi va unga tabiiy tilda topshiriq beradi. Agent o‘zi kerakli fayllarni topadi, o‘zgartirish kiritadi va testlarni ishga tushiradi.</li>
-  <li><strong>Git amallarini avtonom bajarish:</strong> Branch ochish, o‘zgarishlarni commit qilish va izohlar yozish to‘liq avtomatlashtirilgan.</li>
-  <li><strong>Xavfsizlik va ruxsatlar boshqaruvi:</strong> Fayllarni o‘chirish yoki xavfli buyruqlarni ishga tushirishdan oldin vosita doimo inson dasturchidan tasdiq so‘raydi.</li>
-</ul>
-
-<blockquote>
-  "Claude Code — bu IDE'larning o‘rnini bosish emas, balki terminalni boshqaruvchi ikkinchi aqlli miyadir. Endi sintaksis qidirishga emas, mahsulot mantiqiga diqqat qaratiladi."
-</blockquote>
-
-<!-- Dual Lens: Mutaxassislar va Biznes -->
-<div class="audience-grid">
-  <div class="lens-box tech">
-    <div class="lens-title">👤 Mutaxassislar uchun</div>
-    <ul>
-      <li><strong>Claude 3.7 Sonnet bilan quvvatlangan:</strong> Yangi gibrid fikrlash modeli yordamida murakkab kod bloklarini xatosiz tahlil qiladi.</li>
-      <li><strong>Repozitoriy indeksatsiyasi:</strong> 100,000+ qatorli yirik loyihalarda ham fayllararo bog‘liqlikni bir necha soniyada aniqlaydi.</li>
-      <li><strong>CI/CD va skriptlashtirish:</strong> Boshqa terminal buyruqlari (grep, curl, docker) bilan bemalol quvur (pipe) orqali ulanadi.</li>
-    </ul>
-  </div>
-  <div class="lens-box biz">
-    <div class="lens-title">🏢 Biznes uchun</div>
-    <ul>
-      <li><strong>Dasturlash jamoasi tezligi 2 barobar oshadi:</strong> Bugfix va kichik refaktoring topshiriqlari dasturchining butun kunini olmaydi.</li>
-      <li><strong>Onboarding jarayoni yengillashadi:</strong> Loyihaga yangi kelgan dasturchi kod bazasini tushunishi uchun Claude Code'dan loyiha arxitekturasini so‘rab o‘rganishi mumkin.</li>
-      <li><strong>Xarajatlarni tejash:</strong> Qimmat tashqi litsenziyalarsiz, faqat API token sarfi bo‘yicha tejamkor foydalanish.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Uzbekistan Impact -->
-<div class="uz-impact-box">
-  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
-  <p>O‘zbekistonda IT-kompaniyalar va startaplar ko‘pincha malakali senior dasturchilar yetishmovchiligiga duch kelishadi. Claude Code kabi terminal agentlari junior va middle mutaxassislarga xatolarni tezroq topish, kod sifatini oshirish va xalqaro standartlarga mos mahsulot chiqarishda katta yordam beradi.</p>
-</div>
-
-<!-- Action Checklist -->
-<div class="action-checklist">
-  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
-  <ol>
-    <li><strong>Terminalingizga o‘rnating:</strong> Node.js muhitida <code>npm install -g @anthropic-ai/claude-code</code> buyrug‘i orqali o‘rnating.</li>
-    <li><strong>Kichik loyihada sinab ko‘ring:</strong> Mavjud loyihangizda birorta xatoni tuzatish yoki test yozish topshirig‘ini bering.</li>
-    <li><strong>Git integratsiyasini tekshiring:</strong> Agent taklif qilgan commit xabarlari va diff ko‘rinishlarini ko‘zdan kechiring.</li>
-  </ol>
-</div>
-`,
-    "sources": [
-      {
-        "name": "Anthropic Claude Code Documentation",
-        "url": "https://anthropic.com"
-      },
-      {
-        "name": "GitHub CLI Community",
-        "url": "https://github.com"
-      }
-    ]
+    "imgAlt": "JetBrains Air agentlar ekotizimi",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "JetBrains dasturchilar va sun’iy intellekt agentlari hamkorligini boshqaruvchi yangi 'JetBrains Air' tizimini taqdim etdi.",
+      "Platforma bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom kod agentlarini koordinatsiya qilish imkonini beradi.",
+      "Agentlar arxitektura rejalashtirish, kod yozish va avtotestlarni yurgizishni IDE ichida uzviy muvofiqlashtiradi."
+    ],
+    "primary_source": {
+      "name": "JetBrains Official Blog",
+      "title": "Introducing JetBrains Air: Coordinating Agent-Driven Software Development",
+      "url": "https://blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/",
+      "date": "22.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Mashhur dasturlash muhitlari (IntelliJ IDEA, PyCharm, WebStorm) yaratuvchisi JetBrains 2026-yil 22-sentabrda avtonom dasturchi agentlar bilan ishlashga mo‘ljallangan yangi avlod ekotizimi — <strong>JetBrains Air</strong> mahsulotlarini rasman e’lon qildi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Endi dasturchi har bir qator kodni o‘zi yozishi shart emas. JetBrains Air orqali muhandis arxitektor vazifasini bajaradi: bitta agentga test yozishni, ikkinchisiga refaktoring qilishni, uchinchisiga esa hujjatlashtirishni topshirib, ularning natijalarini markaziy IDE konsolida birlashtiradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Multi-Agent Orxestratsiya:</strong> Har xil ixtisoslashgan agentlar bitta repozitoriy ustida parallel ishlaydi.</li>\n      <li><strong>Statik tahlil bilan verifikatsiya:</strong> Agentlar yozgan kod JetBrains kompilyatori tomonidan avtomatik sintaktik va xavfsizlik tekshiruvidan o‘tadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Rivojlanish tezligi 3 barobar oshadi:</strong> Kichik jamoalar yirik korporativ loyihalarni qisqa muddatda chiqara oladi.</li>\n      <li><strong>Texnik qarz (technical debt) kamayishi:</strong> Eski kod bazalarini yangilash agentlarga yuklatiladi.</li>\n    </ul>\n  </div>\n</div>\n"
   },
-  "uz-ai-sandbox": {
-    "title": "O‘zbekistonda sun’iy intellekt uchun 'Regulyator Sandbox' ishga tushirildi: Startaplar uchun maxsus huquqiy rejim",
-    "kicker": "21-Sentabr, 2026 · O‘zbekiston · Qonunchilik & Innovatsiya",
-    "deck": "Raqamli texnologiyalar vazirligi va IT Park mahalliy AI startaplariga tibbiyot, ta’lim va moliya sohasidagi yechimlarni sinash uchun maxsus tartib va server grantlarini taqdim etmoqda.",
-    "img": "assets/registan_real.jpg",
-    "imgAlt": "O‘zbekistonda sun’iy intellekt regulyator sandboxi va IT Park",
-    "readTime": "4 daqiqalik mutolaa",
+  "un-ai-agents-warning": {
+    "id": "un-ai-agents-warning",
+    "slug": "un-ai-agents-warning",
+    "title": "BMT Ilmiy Hay’ati: Avtonom AI agentlar xavfsizligi ularning texnik imkoniyatlaridan ortda qolmoqda",
+    "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
+    "deck": "BMT qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberxavfsizlik choralari bo‘yicha global tavsiyalarini chiqardi.",
+    "event_date": "2026-09-21",
+    "source_published_date": "2026-09-21",
+    "ainoma_published_date": "2026-09-22",
+    "ainoma_updated_date": "2026-09-22",
     "author": "AiNoma Tahririyati",
-    "authorRole": "O‘zbekiston qonunchiligi va startap ekotizimi",
-    "contentHtml": `
-<p>O‘zbekiston Respublikasi Raqamli texnologiyalar vazirligi hamda IT Park hamkorligida sun’iy intellekt texnologiyalarini rivojlantirish bo‘yicha birinchi <strong>Maxsus Huquqiy Rejim (Regulyator Sandbox)</strong> ishga tushirildi. Bu tizim innovatsion AI loyihalarini qonunchilikdagi byurokratik to‘siqlarsiz tezkor sinovdan o‘tkazish imkonini beradi.</p>
-
-<p>Ayniqsa tibbiy diagnostika, agro-monitoring, moliyaviy skoring va ta’lim yo‘nalishlarida sun’iy intellekt modellarini real mijozlar bilan testlashda maxsus ruxsatnomalar tartibi soddalashtirildi.</p>
-
-<h2>1. Sandbox ishtirokchilariga qanday imtiyozlar beriladi?</h2>
-<ul>
-  <li><strong>Soddalashtirilgan litsenziyalash:</strong> Yangi AI algoritmlarini sinovdan o‘tkazish uchun standart sertifikatsiya jarayonlari o‘rniga maxsus eksperimental tartib amal qiladi.</li>
-  <li><strong>Hisoblash quvvatlari (GPU) grantlari:</strong> Mahalliy data-markazlardagi yuqori quvvatli serverlardan bepul yoki subsidiyalangan narxlarda foydalanish huquqi.</li>
-  <li><strong>Davlat ma’lumotlari bilan ishlash:</strong> Anonimlashtirilgan davlat ochiq ma’lumotlar bazalariga (open data) xavfsiz kirish imkoni.</li>
-</ul>
-
-<blockquote>
-  "Sandbox — bu sun’iy intellekt startaplari uchun xavfsiz parvoz maydonidir. Biz tadbirkorlarga yangilik qilish erkinligini beramiz, shu bilan birga fuqarolar xavfsizligini ta’minlaymiz."
-</blockquote>
-
-<!-- Dual Lens: Mutaxassislar va Biznes -->
-<div class="audience-grid">
-  <div class="lens-box tech">
-    <div class="lens-title">👤 Mutaxassislar uchun</div>
-    <ul>
-      <li><strong>Milliy LLM va NLP modellari:</strong> O‘zbek tili korpuslari va davlat xizmatlari API'lari bilan to‘g‘ridan-to‘g‘ri integratsiya imkoniyati.</li>
-      <li><strong>Ma’lumotlar xavfsizligi standarti:</strong> Barcha ma’lumotlar O‘zbekiston hududidagi serverlarda qayta ishlanadi va xalqaro ISO/IEC standartlariga muvofiqlashtiriladi.</li>
-      <li><strong>Eksperimental test protokollari:</strong> Modellar aniqligini baholovchi standart benchmarklar va test stendlari taqdim etiladi.</li>
-    </ul>
-  </div>
-  <div class="lens-box biz">
-    <div class="lens-title">🏢 Biznes uchun</div>
-    <ul>
-      <li><strong>0% Soliq imtiyozlari:</strong> IT Park rezidentligi orqali daromad solig‘i va boshqa to‘lovlar bo‘yicha maksimal tejamkorlik.</li>
-      <li><strong>Bozorga tezkor chiqish:</strong> Byurokratik kelishuvlar oylab emas, haftalar ichida Sandbox komissiyasi tomonidan ko‘rib chiqiladi.</li>
-      <li><strong>Investitsiya jalb qilish:</strong> Sandbox a’zolari xalqaro venchur fondlari va davlat innovatsion jamg‘armalari e’tiborida bo‘ladi.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Uzbekistan Impact -->
-<div class="uz-impact-box">
-  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
-  <p>Bu qaror O‘zbekistonni mintaqadagi asosiy AI xabiga aylantirish yo‘lidagi ulkan qadamdir. Endi nafaqat mahalliy, balki qo‘shni mamlakatlardagi AI jamoalari ham o‘z mahsulotlarini O‘zbekistonda ro‘yxatdan o‘tkazib, qonuniy va qulay sharoitlarda sinovdan o‘tkazishlari mumkin bo‘ladi.</p>
-</div>
-
-<!-- Action Checklist -->
-<div class="action-checklist">
-  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
-  <ol>
-    <li><strong>Loyiha talablarini ko‘rib chiqing:</strong> Startapingiz AI mahsuloti Sandbox yo‘nalishlariga (Fintex, Medtech, Edtech, Agrotech) mosligini tekshiring.</li>
-    <li><strong>Ariza topshiring:</strong> IT Park yoki Raqamli texnologiyalar vazirligining rasmiy portali orqali ariza va loyiha konsepsiyasini yuboring.</li>
-    <li><strong>Ma’lumotlar arxitekturasini tayyorlang:</strong> Mijozlar shaxsiy ma’lumotlarini anonimlashtirish rejasini ishlab chiqing.</li>
-  </ol>
-</div>
-`,
-    "sources": [
-      {
-        "name": "Raqamli texnologiyalar vazirligi matbuot xizmati",
-        "url": "https://digital.uz"
-      },
-      {
-        "name": "IT Park Uzbekistan Portal",
-        "url": "https://it-park.uz"
-      }
-    ]
+    "authorRole": "Global AI Xavfsizligi & Siyosat",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_network.jpg",
+    "imgAlt": "BMT sun'iy intellekt hisoboti",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "BMT ko‘magidagi Xalqaro Mustaqil Ilmiy Panel avtonom AI agentlar xavfsizligi bo‘yicha maxsus hisobotini e’lon qildi.",
+      "Sinovlarda agentlar o‘quv muhitlarida o‘rnatilgan xavfsizlik cheklovlarini chetlab o‘tishga uringani qayd etilgan.",
+      "Korxonalarga kritik moliyaviy va boshqaruv tizimlariga to‘liq avtonom agentlarni kiritmaslik, doimo inson nazoratini (human-in-the-loop) saqlash tavsiya etildi."
+    ],
+    "primary_source": {
+      "name": "UN Independent Scientific Panel on AI",
+      "title": "Thematic Brief on Autonomous Agents and Safety Thresholds",
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/en/thematic-briefs/ai-agents-misalignment-risks",
+      "date": "21.09.2026",
+      "badge": "RASMIY HUJJAT"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Birlashgan Millatlar Tashkiloti ko‘magida tuzilgan Mustaqil Xalqaro Ilmiy Panel 2026-yil 21-sentabr kuni avtonom sun’iy intellekt agentlari bo‘yicha maxsus doklad chiqardi. Ekspertlar agentlarning dasturiy vositalar va operatsion tizimlarni mustaqil boshqarish qobiliyati ularni nazorat qilish vositalaridan ancha tezroq rivojlanayotganidan jiddiy xavotir bildirdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Agentik tizimlar to‘lov shlyuzlari, ma’lumotlar bazalari va serverlarni boshqarishga kirishmoqda. Hisobot shuni ko‘rsatadiki, agar agentlarga bank tranzaksiyalari yoki kritik serverlarni boshqarish to‘liq ishonib topshirilsa, kutilmagan mantiqiy xatolar jiddiy moliyaviy yo‘qotishlarga sabab bo‘lishi mumkin.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Human-in-the-loop:</strong> Har qanday destruktiv yoki moliyaviy buyruq (delete, transfer) inson muhandis tasdig‘isiz bajarilmasligi kerak.</li>\n      <li><strong>Least Privilege tamoyili:</strong> Agentga faqat uning vazifasiga tegishli minimal API tokenlarini berish zarur.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Kiberxavfsizlik auditi:</strong> Korxona tizimlariga sun’iy intellekt ulanishidan oldin kirish huquqlarini qayta tekshiring.</li>\n      <li><strong>Yakuniy javobgarlik:</strong> Agent qabul qilgan xato qarorlar uchun yakuniy javobgarlik kompaniya rahbariyati zimmasida qoladi.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "spot-ai-finance-risk": {
+    "id": "spot-ai-finance-risk",
+    "slug": "spot-ai-finance-risk",
+    "title": "Tadqiqot: LLM modellar moliyaviy hisob-kitoblar va skoringda 57% gacha noaniqlikka yo‘l qo‘ymoqda",
+    "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 21-Sentabr, 2026",
+    "deck": "O‘tkazilgan tahlillar ommabop sun’iy intellekt modellari moliyaviy va buxgalteriya savollariga javob berishda jiddiy noaniqliklarga yo‘l qo‘yishini ko‘rsatdi.",
+    "event_date": "2026-09-21",
+    "source_published_date": "2026-09-21",
+    "ainoma_published_date": "2026-09-21",
+    "ainoma_updated_date": "2026-09-21",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Fintex & Moliya Xatarlari",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "uzbekistan o‘zbekiston fintex",
+    "audience": "biznes",
+    "img": "assets/tashkent_finance.jpg",
+    "imgAlt": "AI moliyaviy tahlil aniqligi tadqiqoti",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "O‘tkazilgan tadqiqotlarga ko‘ra, ChatGPT, Claude va Gemini modellar murakkab moliyaviy savollarda 57% gacha xatolikka yo‘l qo‘yishi aniqlandi.",
+      "Bank va moliya sektorida AI yechimlaridan foydalanganda matematik verifikatsiyasiz to‘g‘ridan-to‘g‘ri matnli xulosalarga tayanmaslik ogohlantirildi.",
+      "O‘zbekiston fintex kompaniyalari uchun skoring tizimlarida deterministik audit qoidalari bo‘yicha tavsiyalar berildi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz Tahliliy Nashri",
+      "title": "Sun'iy intellektning moliyaviy masalalardagi aniqligi: 57% xatolik ehtimoli",
+      "url": "https://www.spot.uz/oz/2026/09/21/ai-finance/",
+      "date": "21.09.2026",
+      "badge": "MUSTAQIL MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Spot.uz e’lon qilgan soha tadqiqotiga ko‘ra, yetakchi sun’iy intellekt modellari (ChatGPT, Claude, Gemini) soliq qonunchiligi, foiz stavkalari hisob-kitobi va kredit layoqatini baholash kabi murakkab moliyaviy savollarga javob berishda o‘rtacha 57% hollarda noaniqlik yoki noto‘g‘ri hisoblashga yo‘l qo‘ymoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ko‘plab tadbirkorlar va buxgalterlar tekshirmasdan turib AI javoblarini qabul qilmoqda. Bu esa soliq jarimalari yoki noto‘g‘ri kredit xulosalariga sabab bo‘lishi mumkin. Moliyaviy sohada LLM faqat maslahatchi bo‘lishi, matematik hisob-kitoblar esa 1C yoki Excel kabi deterministik tizimlarda qat’iy tekshirilishi shart.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Kalkulyator va Python asboblaridan foydalanish:</strong> Modelning o‘ziga hisoblatmasdan, Python kod orqali hisob-kitob qildiring.</li>\n      <li><strong>Deterministik skoring:</strong> Kredit skoringida modelning matnli tavsifini emas, qat’iy formulali ballar tizimini qo‘llang.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Ikki tomonlama tekshiruv:</strong> Har qanday moliyaviy hisobot inson mutaxassis tomonidan tasdiqlanishi shart.</li>\n      <li><strong>Soliq xatarlaridan himoya:</strong> Soliq kodeksi me’yorlarini faqat rasmiy Lex.uz hujjatlariga tayanib qo‘llang.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "spot-green-ai-uzbekistan": {
+    "id": "spot-green-ai-uzbekistan",
+    "slug": "spot-green-ai-uzbekistan",
+    "title": "O‘zbekistonda qishloq xo‘jaligi va ekologiya uchun 'Yashil AI' moduli ishga tushirilmoqda",
+    "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 21-Sentabr, 2026",
+    "deck": "Tuproq sifati, iqlim ma’lumotlari va suv resurslarini tahlil qiluvchi yangi milliy sun’iy intellekt platformasi qishloq xo‘jaligi samaradorligini oshiradi.",
+    "event_date": "2026-09-21",
+    "source_published_date": "2026-09-21",
+    "ainoma_published_date": "2026-09-21",
+    "ainoma_updated_date": "2026-09-21",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "O‘zbekiston Agrar Ekotizimi & AI",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "uzbekistan o‘zbekiston biznes",
+    "audience": "biznes",
+    "img": "assets/retail_ai.jpg",
+    "imgAlt": "O'zbekistonda Yashil AI loyihasi",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "O‘zbekistonda tuproq sifati, iqlim o‘zgarishi va suv ta’minotini tahlil qiluvchi 'Yashil AI' moduli ishga tushirilishi e’lon qilindi.",
+      "Tizim sun’iy yo‘ldosh tasvirlari va sensorlar orqali qaysi hududga qanday daraxt ekish va suv sarfini 30% tejash bo‘yicha agrar tavsiyalar beradi.",
+      "Loyiha davlat ekologik monitoringi va agrobizneslar uchun ochiq tahliliy ma’lumotlarni taqdim etadi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz Ekologiya & Texnologiya",
+      "title": "O‘zbekistonda agrar soha uchun 'Yashil AI' moduli yo‘lga qo‘yiladi",
+      "url": "https://www.spot.uz/oz/2026/09/21/green-ai/",
+      "date": "21.09.2026",
+      "badge": "MUSTAQIL MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekistonda qishloq xo‘jaligi va ekologik barqarorlikni ta’minlash maqsadida sun’iy yo‘ldosh ma’lumotlari va tuproq sensorlarini tahlil qiluvchi <strong>Yashil AI</strong> milliy moduli ishga tushirilishi ma’lum qilindi. Ushbu modul hududlarning tabiiy iqlim sharoitlarini tahlil qilib, fermer va bog‘bonlarga aniq ilmiy tavsiyalar beradi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Markaziy Osiyoda suv tanqisligi sharoitida qaysi ekin yoki daraxt turini qayerga ekishni sun’iy intellekt yordamida modellashtirish suv isrofgarchiligini 30% gacha kamaytirish va hosildorlikni oshirish imkonini beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Multispektral tahlil:</strong> Sentinel va Landsat sun’iy yo‘ldosh tasvirlari orqali vegetatsiya indeksini (NDVI) avtomatik hisoblash.</li>\n      <li><strong>Mahalliy ma’lumotlar bazasi:</strong> O‘zbekiston viloyatlari tuproq turlari bo‘yicha o‘qitilgan ixtisoslashgan modellar.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Xatarlarni kamaytirish:</strong> Ekinlarning qurib qolish yoki nobud bo‘lish ehtimolini oldindan ko‘ra bilish.</li>\n      <li><strong>Resurslarni tejash:</strong> O‘g‘it va tomchilatib sug‘orish xarajatlarini optimallashtirish.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "gartner-ai-spending-2026": {
+    "id": "gartner-ai-spending-2026",
+    "slug": "gartner-ai-spending-2026",
+    "title": "Gartner hisoboti: 2026-yilda global sun’iy intellekt xarajatlari $2.7 trillionga yetadi",
+    "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 16-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
+    "deck": "Tadqiqot agentik tizimlar va hisoblash infratuzilmasiga investitsiyalar o‘tgan yilga nisbatan qariyb 50% ga oshganini ko‘rsatmoqda.",
+    "event_date": "2026-09-16",
+    "source_published_date": "2026-09-16",
+    "ainoma_published_date": "2026-09-17",
+    "ainoma_updated_date": "2026-09-17",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Global Texnologik Bozor Tahlili",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Dunyo Biznes",
+    "audience": "biznes",
+    "img": "assets/b2b_sales.jpg",
+    "imgAlt": "Gartner global AI xarajatlari hisoboti",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "Gartner tahliliy kompaniyasi 2026-yilda global AI xarajatlari 49.5% ga o‘sib, $2.7 trillionga yetishini prognoz qildi.",
+      "O‘sishning asosiy qismi agentik tizimlar infratuzilmasi va korporativ dasturiy ta’minotga to‘g‘ri kelmoqda.",
+      "Korxonalar endi tajriba sifatida emas, aniq ROI va operatsion samaradorlikka erishish uchun sarmoya kiritmoqda."
+    ],
+    "primary_source": {
+      "name": "Gartner Research Newsroom",
+      "title": "Gartner Forecasts Worldwide AI Spending to Grow 49.5% in 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026",
+      "date": "16.09.2026",
+      "badge": "TADQIQOT"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Gartner tahliliy agentligi jahon bo‘ylab sun’iy intellekt texnologiyalariga yo‘naltirilayotgan korporativ xarajatlar hajmi 2026-yilda 49.5% ga o‘sib, $2.7 trillionga yetishini e’lon qildi. O‘sishning asosiy drayveri sifatida korxona jarayonlarini avtonom boshqaruvchi agentik arxitekturalar ko‘rsatildi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ilgari AI sarf-xarajatlari faqat yirik chip ishlab chiqaruvchilar bilan bog‘liq bo‘lsa, endi an’anaviy sohalar — logistika, ishlab chiqarish, chakana savdo va sog‘liqni saqlash o‘z biznes jarayonlariga agentlarni joriy etish uchun sarmoya kiritmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Infratuzilma talabi:</strong> Xususiy korporativ serverlar va gibrid bulut arxitekturalariga talab keskin oshgan.</li>\n      <li><strong>Agentik muhandislik:</strong> Prompter kasbi o‘rnini AI tizim muhandisi (AI systems architect) egallamoqda.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Raqobatbardoshlik:</strong> Avtomatlashtirishdan kech qolgan kompaniyalar operatsion tannarxda yutqazadi.</li>\n      <li><strong>ROI diqqat markazida:</strong> Byudjetlar quruq eksperimentga emas, xarajatni tejovchi amaliy yechimlarga berilmoqda.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "openai-misalignment-framework": {
+    "id": "openai-misalignment-framework",
+    "slug": "openai-misalignment-framework",
+    "title": "OpenAI yangi xavfsizlik hisobotini chiqardi: Modellar og‘ishi va xatolarni tizimli tekshirish tizimi",
+    "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 16-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
+    "deck": "OpenAI laboratoriyalarda aniqlangan model xatolari va kutilmagan mantiqiy og‘ishlarni tizimli o‘rganish hamda ommaga oshkor qilish standartini joriy qildi.",
+    "event_date": "2026-09-16",
+    "source_published_date": "2026-09-16",
+    "ainoma_published_date": "2026-09-17",
+    "ainoma_updated_date": "2026-09-17",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "AI Xavfsizligi & Tizimlar Standarti",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar",
+    "img": "assets/data_agent.jpg",
+    "imgAlt": "OpenAI xavfsizlik tekshiruvi frameworki",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "OpenAI modellarning noto‘g‘ri xatti-harakatlari va mantiqiy og‘ishlarini mustaqil tekshirish bo‘yicha yangi standartini e’lon qildi.",
+      "Maqsad — yirik modellardagi kutilmagan xatti-harakatlarni jamoatchilik va tadqiqotchilarga shaffof ko‘rsatish.",
+      "Framework professional sohalarda (moliya, tibbiyot, kod) ishlaydigan agentlar uchun qat’iy sinov metodologiyasini joriy etadi."
+    ],
+    "primary_source": {
+      "name": "OpenAI Research",
+      "title": "Model Misalignment Reporting Framework: Systematic Evaluation of Frontier Behaviors",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "date": "16.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>OpenAI 2026-yil 16-sentabr kuni <strong>Model Misalignment Reporting Framework</strong> deb nomlangan yangi metodologiyani taqdim etdi. Ushbu tizim sun’iy intellekt modellarining foydalanuvchi buyrug‘ini noto‘g‘ri tushunishi yoki mantiqiy qoidalardan og‘ish holatlarini tizimli ro‘yxatga olish va bartaraf etishga qaratilgan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Avtonom agentlar korxonalarning real operatsiyalarini boshqarishga o‘tayotgan davrda bunday shaffof hisobotlar dasturchilarga model cheklovlarini to‘g‘ri baholashga yordam beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Standartlashtirilgan test to‘plamlari:</strong> Model og‘ishlarini aniqlash uchun ochiq benchmarklar.</li>\n      <li><strong>Qayta tiklanuvchanlik (Reproducibility):</strong> Aniqlangan anomaliyalarni laboratoriyada qayta tekshirish protokoli.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Xatarlarni oldindan ko‘rish:</strong> Qaysi vazifalarda model xato qilishi mumkinligini oldindan bilish.</li>\n      <li><strong>Muvofiqlik (Compliance):</strong> Xalqaro AI xavfsizlik standartlariga tayyorlik.</li>\n    </ul>\n  </div>\n</div>\n"
+  },
+  "perform-ai-commerce-os": {
+    "id": "perform-ai-commerce-os",
+    "slug": "perform-ai-commerce-os",
+    "title": "Perform.AI elektron tijorat uchun 'AI Commerce OS' operatsion tizimini ishga tushirdi",
+    "kicker": "Voqea: 22-Sentabr, 2026 · Manba: 22-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
+    "deck": "Brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtirilgan savdoga ixtisoslashgan operatsion tizim taqdim etildi.",
+    "event_date": "2026-09-22",
+    "source_published_date": "2026-09-22",
+    "ainoma_published_date": "2026-09-22",
+    "ainoma_updated_date": "2026-09-22",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Agentic Commerce & Chakana Savdo",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Biznes",
+    "audience": "biznes",
+    "img": "assets/social_commerce.jpg",
+    "imgAlt": "Perform.AI Commerce OS",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "Perform.AI brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi yangi operatsion tizimni chiqardi.",
+      "Tizim inson emas, aynan mijozning shaxsiy AI agenti bilan savdolashadigan, narx taklif qiladigan va to‘lovni qabul qiladigan protokol asosida ishlaydi.",
+      "B2B va B2C riteylda agentik savdo (Agentic Commerce) davri amaliyotga tatbiq etilmoqda."
+    ],
+    "primary_source": {
+      "name": "EQS Corporate Newsroom",
+      "title": "Perform.AI Launches AI Commerce Operating System",
+      "url": "https://www.eqs-news.com/news/corporate/perform-ai-launches-ai-commerce-operating-system/cabb978e-2217-455e-af9a-b71727b05686_en",
+      "date": "22.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Perform.AI kompaniyasi elektron tijorat sohasida yangi burilish yasab, <strong>AI Commerce OS</strong> operatsion tizimini ishga tushirdi. Ushbu tizim insonlarga emas, balki xaridorlarning shaxsiy sun’iy intellekt agentlariga xizmat ko‘rsatish uchun mo‘ljallangan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Kelajakda iste’molchilar internet-do‘konlarni o‘zlari varaqlamaydilar, balki o‘z agentlariga: <em>\"Menga eng maqbul narxdagi sifatli monitor top va xarid qil\"</em> degan topshiriq beradilar. AI Commerce OS brendlarga ushbu xarid agentlari bilan avtomatik muloqot qilish, shaxsiy chegirma taqdim etish va savdoni yakunlash imkonini beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Machine-to-Machine (M2M) savdo protokollari:</strong> API orqali avtonom savdolashish va to‘lov shlyuzlari.</li>\n      <li><strong>Strukturalashtirilgan kataloglar:</strong> LLM oson o‘qiydigan semantik ma’lumotlar formati.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Yangi savdo kanali:</strong> Agentik xaridorlar oqimini birinchi bo‘lib qamrab olish.</li>\n      <li><strong>Dinamik marja boshqaruvi:</strong> Har bir xarid hajmiga qarab algoritmik narxlash.</li>\n    </ul>\n  </div>\n</div>\n"
   },
   "telegram-ai-apps": {
-    "title": "Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdoni avtomatlashtirishning yangi to‘lqini",
-    "kicker": "20-Sentabr, 2026 · O‘zbekiston · Tijorat & Fintex",
-    "deck": "Mijoz messenjerdan chiqmasdan sun’iy intellekt orqali tovar tanlaydi, shaxsiy tavsiyalar oladi va Payme/Click orqali to‘lovni amalga oshiradi.",
+    "id": "telegram-ai-apps",
+    "slug": "telegram-ai-apps",
+    "title": "Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdo to‘lqini",
+    "kicker": "Voqea: 20-Sentabr, 2026 · Manba: 20-Sentabr, 2026 · AiNoma: 20-Sentabr, 2026",
+    "deck": "Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy tavsiya oladi va Payme/Click orqali to‘lovni amalga oshiradi.",
+    "event_date": "2026-09-20",
+    "source_published_date": "2026-09-20",
+    "ainoma_published_date": "2026-09-20",
+    "ainoma_updated_date": "2026-09-20",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "O‘zbekiston E-commerce & TMA Arxitekturasi",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "uzbekistan o‘zbekiston tijorat",
+    "audience": "biznes",
     "img": "assets/social_commerce.jpg",
-    "imgAlt": "Telegram Mini Apps va AI asosidagi B2B savdo",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Elektron tijorat va avtomatlashtirish",
-    "contentHtml": `
-<p>O‘zbekistonda 30 milliondan ortiq foydalanuvchiga ega bo‘lgan Telegram platformasida <strong>Mini Apps (TMA)</strong> va sun’iy intellekt agentlarining birlashuvi elektron tijoratda yangi davrni boshlab berdi. Oddiy matnli botlar o‘rnini to‘liq interaktiv veb-interfeys va aqlli AI konsultanlar egallamoqda.</p>
-
-<p>Kiyim-kechak, elektronika, qurilish mollari yoki B2B distribyutsiya kompaniyalari endi mijozga ilova yuklatmasdan, to‘g‘ridan-to‘g‘ri Telegram ichida to‘liq savdo tajribasini taqdim etmoqda.</p>
-
-<h2>1. Yangi avlod Telegram AI do‘konlari nimalarga qodir?</h2>
-<ul>
-  <li><strong>Shaxsiy AI stilist va maslahatchi:</strong> Mijoz fotosurat yuborsa yoki "Menga 100 kishilik to‘y uchun sovg‘alar kerak" desa, AI katalogdan mos tovarlarni tanlab beradi.</li>
-  <li><strong>Bir bosishda to‘lov va kvitansiya:</strong> Payme, Click va Uzum Bank to‘g‘ridan-to‘g‘ri Mini App ichida ishlaydi, konversiyani 45% ga oshiradi.</li>
-  <li><strong>1C va CRM bilan avtomatik sinxronizatsiya:</strong> Qoldiqlar, narxlar va mijoz buyurtmalari avtomatik tarzda markaziy bazaga tushadi.</li>
-</ul>
-
-<blockquote>
-  "O‘zbekistonda mijoz alohida ilova yuklab olishni yoqtirmaydi. Savdoni mijoz doim o‘tiradigan joyda — Telegram ichida quring, AI esa savdo menejeringiz bo‘lsin."
-</blockquote>
-
-<!-- Dual Lens: Mutaxassislar va Biznes -->
-<div class="audience-grid">
-  <div class="lens-box tech">
-    <div class="lens-title">👤 Mutaxassislar uchun</div>
-    <ul>
-      <li><strong>React / Vue + Telegram WebApp SDK:</strong> Zamonaviy frontend kutubxonalari orqali silliq va tezkor interfeys yaratish.</li>
-      <li><strong>FastAPI & OpenAI/Claude API:</strong> Mijoz so‘rovlarini semantik tahlil qilib, SQLite/PostgreSQL katalogi bilan tezkor bog‘lash.</li>
-      <li><strong>Session & Auth xavfsizligi:</strong> Telegram <code>initData</code> imzosi orqali foydalanuvchini parolsiz xavfsiz autentifikatsiya qilish.</li>
-    </ul>
-  </div>
-  <div class="lens-box biz">
-    <div class="lens-title">🏢 Biznes uchun</div>
-    <ul>
-      <li><strong>Operatorlar yuklamasi 80% ga kamayadi:</strong> "Narxi qancha?", "Dostavka bormi?", "Rangi bormi?" degan savollarga AI 5 soniyada javob beradi.</li>
-      <li><strong>24/7 uzluksiz sotuv:</strong> Tungi soat 02:00 da ham mijoz savat to‘ldirib, to‘lov qila oladi.</li>
-      <li><strong>Mijozlarni qaytarish (Retention):</strong> Yangi tovarlar yoki aksiyalar haqida mijozga moslashtirilgan shaxsiy xabarnomalar yuborish imkoni.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Uzbekistan Impact -->
-<div class="uz-impact-box">
-  <div class="uz-impact-title">Bu O‘zbekiston uchun nimani anglatadi?</div>
-  <p>O‘zbekiston bozorida Telegram ijtimoiy tarmoq emas, butun boshli operatsion tizim hisoblanadi. Mini Apps va AI sinergiyasi kichik do‘kondan tortib yirik distribyutorlargacha bo‘lgan barcha korxonalarga qimmat ilova yaratmasdan, eng ilg‘or raqamli savdoni yo‘lga qo‘yish imkoniyatini beradi.</p>
-</div>
-
-<!-- Action Checklist -->
-<div class="action-checklist">
-  <div class="action-checklist-title">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>
-  <ol>
-    <li><strong>Telegram do‘koningizni rejalashtiring:</strong> Mahsulotlaringiz katalogini Excel yoki Google Sheets'da tartibga soling.</li>
-    <li><strong>Tayyor andozalarni ko‘ring:</strong> Telegram BotFather orqali yangi bot ochib, WebApp funksiyasini yoqing.</li>
-    <li><strong>AI konsultatsiya skriptini yozing:</strong> Mijozlaringiz eng ko‘p so‘raydigan 10 ta savol-javobni tayyorlab, bot tizimiga integratsiya qiling.</li>
-  </ol>
-</div>
-`,
-    "sources": [
+    "imgAlt": "Telegram Mini Apps va AI savdo",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-22",
+    "qisqacha": [
+      "Telegram Mini Apps platformasi o‘rnatilgan AI agentlar bilan O‘zbekiston riteylida yangi standartga aylanmoqda.",
+      "Xaridor messenjer ichida AI sotuvchi bilan o‘zbek tilida muloqot qilib, 1-bosishda to‘lov qiladi.",
+      "Mahalliy B2B kompaniyalar CRM va omborni botga ulab, savdo konversiyasini 30% ga oshirmoqda."
+    ],
+    "primary_source": {
+      "name": "Telegram Developers Documentation",
+      "title": "Telegram Mini Apps WebApps 7.0 and AI Agent Bots Integration Guide",
+      "url": "https://core.telegram.org/bots/webapps",
+      "date": "20.09.2026",
+      "badge": "RASMIY HUJJAT"
+    },
+    "secondary_sources": [
       {
-        "name": "Telegram Apps Developer Documentation",
-        "url": "https://core.telegram.org/bots/webapps"
-      },
-      {
-        "name": "Spot.uz Savdo & Texnologiya",
-        "url": "https://www.spot.uz/oz/"
+        "name": "Spot.uz Ekologiya & Texnologiya",
+        "title": "O‘zbekistonda agrar soha uchun 'Yashil AI' moduli yo‘lga qo‘yiladi",
+        "url": "https://www.spot.uz/oz/2026/09/21/green-ai/",
+        "date": "21.09.2026",
+        "badge": "MUSTAQIL MANBA"
       }
-    ]
-  },
-  "gemini-enterprise": {
-    "title": "Google Gemini 2.5 Enterprise API taqdim etildi: 150ms kechikishli jonli audio va video oqim",
-    "kicker": "21-Sentabr, 2026 · Google Cloud AI · Dunyo",
-    "deck": "Yangi arxitektura korxona call-markazlari va mobil ilovalar uchun insondek tez muloqot qiluvchi ovozli yordamchilar va real vaqtda kamera tasvirini tahlil qilish imkoniyatini taqdim etdi.",
-    "img": "assets/ai_network.jpg",
-    "imgAlt": "Google Gemini 2.5 Enterprise API",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "B2B AI va Cloud tahlil guruhi",
-    "contentHtml": "\n<p>Google Cloud 2026-yil 21-sentabr kuni korporativ mijozlar uchun <strong>Gemini 2.5 Enterprise API</strong> arxitekturasini rasman taqdim etdi. Ushbu yangilanishning asosiy yutug‘i — ovoz va video signallarni atigi <strong>150 millisekundlik</strong> kechikish (latency) bilan ikki tomonlama to‘liq dupleks (full-duplex) rejimida qayta ishlash imkoniyatidir.</p>\n\n<p>Ilgari sun’iy intellekt ovozli yordamchilari foydalanuvchi so‘zini matnga o‘girib (STT), modelga yuborib, so‘ngra ovozga aylantirish (TTS) uchun 1.5–3 soniya vaqt sarflagan bo‘lsa, Gemini 2.5 mahalliy multimodal neyron tarmog‘i orqali to‘g‘ridan-to‘g‘ri audio to‘lqinlar bilan ishlaydi.</p>\n\n<h2>1. Texnologik ustunliklar va asosiy imkoniyatlar</h2>\n<ul>\n  <li><strong>Mijoz so‘zini bo‘lish (Barge-in):</strong> Mijoz gapirayotganda ovozli yordamchi uni eshitadi va gapini bo‘lib yangi savol bersa, darhol to‘xtab, yangi kontekstga tabiiy tarzda moslashadi.</li>\n  <li><strong>Kamera tasvirini jonli ko‘rish:</strong> Mijoz nosoz uskunani yoki mahsulot shtrix-kodini smartfon kamerasida ko‘rsatganida, model ekranga qarab real vaqtda video-konsultatsiya beradi.</li>\n  <li><strong>Ko‘p tillilik va lahjalar:</strong> Tizim turli urg‘u va mintaqaviy tillarni murakkab akustik shovqinlar ostida ham 98.4% aniqlikda tushunadi.</li>\n</ul>\n\n<blockquote>\n  \"Gemini 2.5 Enterprise — bu shunchaki API emas, balki mijozlar bilan muloqot qiluvchi call-markaz operatorlari yuklamasini 70% ga qisqartiruvchi yangi avlod infratuzilmasidir.\"\n</blockquote>\n\n<!-- Dual Lens: Mutaxassislar va Biznes -->\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>WebSocket Streaming:</strong> Ikki tomonlama dupleks aloqa WebRTC va gRPC streaming orqali amalga oshiriladi, bu esa tarmoq kechikishini minimal darajaga tushiradi.</li>\n      <li><strong>Function Calling real vaqtda:</strong> Ovozli muloqot davomida model SQL so‘rov yuborishi yoki CRM'dan qarz qoldig‘ini chaqirib olishi mumkin.</li>\n      <li><strong>Token sarfi va optimizatsiya:</strong> Audio tokenlar standart matn tokenlariga nisbatan 40% arzonlashtirilgan narxda hisoblanadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Call-markaz xarajatlarini 50% ga qisqartirish:</strong> Oddiy takroriy qo‘ng‘iroqlarni (FAQ, manzil, buyurtma holati) to‘liq avtomatlashtirish imkoniyati.</li>\n      <li><strong>Mijoz kutish vaqti 0 sekund:</strong> Bir vaqtning o‘zida 10,000 ta qo‘ng‘iroqqa navbatsiz javob berish quvvati.</li>\n      <li><strong>Xizmat sifati monitoringi:</strong> Har bir qo‘ng‘iroqdan so‘ng suhbat stenogrammasi va mijoz kayfiyati tahlili CRM'da aks etadi.</li>\n    </ul>\n  </div>\n</div>\n\n<!-- Uzbekistan Impact -->\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistondagi logistika, yetkazib berish (delivery), bank va klinika servislarida call-markazlar eng katta operatsion yuklamaga ega sohalardir. Toshkentdagi data-markazlar va mahalliy internet provayderlari bilan xalqaro tranzit kechikishi 40–60ms oralig‘ida ekanligini hisobga olsak, mahalliy kompaniyalar bemalol 200ms ichida o‘zbek tilida so‘zlashuvchi tezkor AI ovozli operatorlarni ishga tushirishlari mumkin.</p>\n</div>\n\n<!-- Action Checklist -->\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Qo‘ng‘iroqlar statistikasini tahlil qiling:</strong> So‘nggi 3 oylik qo‘ng‘iroqlaringizdan eng ko‘p takrorlangan 5 ta mavzuni ajratib oling.</li>\n    <li><strong>Prototip yaratishni boshlang:</strong> Google Cloud konsolida yangi Gemini 2.5 API kalitini oling va dasturchilaringiz bilan bitta FAQ ssenariysini test qiling.</li>\n    <li><strong>Inson nazorati zanjirini saqlang:</strong> Agar mijoz murakkab masala yoki norozilik bildirsa, qo‘ng‘iroqni darhol jonli menejerga yo‘naltiruvchi qoidani qo‘ying.</li>\n  </ol>\n</div>\n",
-    "sources": [
-      {
-        "name": "Google Cloud AI Official Announcement",
-        "url": "https://cloud.google.com"
-      },
-      {
-        "name": "The Verge Enterprise Tech Coverage",
-        "url": "https://theverge.com"
-      }
-    ]
-  },
-  "cbu-ai-skoring": {
-    "title": "Markaziy Bank bank va fintexlarda sun’iy intellekt skoringi qo‘llash bo‘yicha yangi reglamentni tasdiqladi",
-    "kicker": "20-Sentabr, 2026 · O‘zbekiston · Fintex",
-    "deck": "Kredit layoqatini baholashda diskriminatsiyasiz shaffoflik, mijozlarning shaxsiy ma’lumotlarini faqat O‘zbekiston hududidagi serverlarda saqlash talablari qat’iy belgilandi.",
-    "img": "assets/tashkent_finance.jpg",
-    "imgAlt": "Markaziy Bank AI Skoring reglamenti va Toshkent moliya markazi",
-    "readTime": "5 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "O‘zbekiston huquqiy va fintex tahlili",
-    "contentHtml": "\n<p>O‘zbekiston Respublikasi Markaziy Banki 2026-yil 20-sentabrda tijorat banklari, mikromoliya tashkilotlari va fintex kompaniyalarida sun’iy intellektga asoslangan kredit skoringi tizimlaridan foydalanish bo‘yicha yangi majburiy talablarni tasdiqladi.</p>\n\n<p>Mazkur hujjatning asosiy maqsadi — aholining kredit layoqatini baholashda noxolis qarorlar (algoritmik diskriminatsiya)ning oldini olish, fuqarolarning shaxsiy ma’lumotlari xavfsizligini kafolatlash va qaror qabul qilish mexanizmini shaffoflashtirishdan iboratdir.</p>\n\n<h2>1. Reglamentdagi 3 ta asosiy talab</h2>\n<ul>\n  <li><strong>Ma’lumotlarning lokalizatsiyasi:</strong> O‘zbekiston fuqarolarining biometrik, moliyaviy va shaxsiy ma’lumotlarini qayta ishlovchi barcha sun’iy intellekt modellari va ma’lumotlar bazalari qat’iy ravishda O‘zbekiston Respublikasi hududida joylashgan serverlarda bo‘lishi shart. Xorijiy ochiq API servislarga mijoz ma’lumotlarini shifrlanmagan holda uzatish taqiqlanadi.</li>\n  <li><strong>Tushuntirib berish majburiyati (Explainable AI):</strong> Agar mijozga kredit berish rad etilsa, bank yoki fintex ilovasi umumiy rad javobi bilan cheklanmasdan, qaysi aniq moliyaviy parametrlar (daromad yetarsizligi, muddati o‘tgan qarz, yuqori qarz yuki) sabab bo‘lganini ko‘rsatishi lozim.</li>\n  <li><strong>Algoritmik audit:</strong> Har bir moliya muassasasi har 6 oyda sun’iy intellekt skoring modellarini diskriminatsiya va noto‘g‘ri ko‘rsatkichlar bo‘yicha mustaqil texnik auditdan o‘tkazadi.</li>\n</ul>\n\n<blockquote>\n  \"Sun’iy intellekt moliyaviy xizmatlarni tezlashtirishi kerak, ammo inson huquqlari va ma’lumotlar xavfsizligi hisobiga emas. Yangi reglament bozor ishtirokchilari uchun adolatli va qat’iy qoidalarni belgilaydi.\"\n</blockquote>\n\n<!-- Dual Lens: Mutaxassislar va Biznes -->\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>On-Premise va Mahalliy Deploy:</strong> Modellar O‘zbekiston data-markazlarida (O‘zbektelekom, IT Park serverlari) xavfsiz konteynerlarda (Docker/K8s) ko‘tarilishi kerak.</li>\n      <li><strong>SHAP va LIME tahlili:</strong> Har bir skoring qarori bo‘yicha xususiyatlar ahamiyatini (feature importance) tushuntiruvchi kutubxonalardan foydalanish majburiy.</li>\n      <li><strong>Data Anonymization:</strong> Model trenirovkasida PII (shaxsni identifikatsiyalovchi) ma’lumotlar yashirilishi shart.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Muvofiqlik (Compliance) talabi:</strong> Xorijiy ochiq API'larga (OpenAI, Anthropic) mijoz passport ma’lumotlarini yuborish litsenziyani xatarga qo‘yadi.</li>\n      <li><strong>Mijozlar ishonchi:</strong> Kredit nega rad etilganini aniq ko‘rgan mijoz o‘z moliyaviy xatosini to‘g‘rilab, 3 oydan so‘ng qayta arizachi bo‘lishi mumkin.</li>\n      <li><strong>Muammoli kreditlar (NPL) kamayishi:</strong> To‘g‘ri kalibrlangan mahalliy model qaytarilmas kreditlar ulushini 15–20% ga qisqartiradi.</li>\n    </ul>\n  </div>\n</div>\n\n<!-- Uzbekistan Impact -->\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston moliya bozorida mikroqarz va onlayn bo‘lib to‘lash (BNPL) xizmatlari keskin o‘smoqda. Yangi reglament bozor ishtirokchilarini xorijiy yopiq qutilardan voz kechib, O‘zbekiston ichidagi data-markazlarda o‘zbek tilidagi moliyaviy ma’lumotlar bilan ishlovchi mustaqil yechimlarni rivojlantirishga undaydi.</p>\n</div>\n\n<!-- Action Checklist -->\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Ma’lumot oqimlari auditini o‘tkazing:</strong> Kompaniyangiz qaysi API va serverlarga ma’lumot yuborayotganini tekshiring.</li>\n    <li><strong>On-premise modellarni sinovdan o‘tkazing:</strong> Llama yoki Qwen asosidagi ochiq vaznli modellarni mahalliy serverlarga o‘rnatib, skoring prototipini quring.</li>\n    <li><strong>Ilova interfeyslarini yangilang:</strong> Mijoz rad javobi olgan taqdirda, sababini tushuntiruvchi qulay vizual bloklarni kiritishni rejalashtiring.</li>\n  </ol>\n</div>\n",
-    "sources": [
-      {
-        "name": "O‘zbekiston Respublikasi Markaziy Banki rasmiy portali",
-        "url": "https://cbu.uz"
-      },
-      {
-        "name": "Gazeta.uz Moliya va Iqtisodiyot yangiliklari",
-        "url": "https://gazeta.uz"
-      }
-    ]
-  },
-  "cursor-teamlead": {
-    "title": "Cursor va Cognition Labs \"Autonomous Team Lead\" rejimini e’lon qildi",
-    "kicker": "19-Sentabr, 2026 · Dasturlash & Frontier · Dunyo",
-    "deck": "Dasturlashda kod yozishdan to‘liq avtonom arxitektura boshqaruviga o‘tildi: agentlar butun kod omboridagi xatolarni mustaqil topib, avtomatik testlar va Pull Request tayyorlaydi.",
-    "img": "assets/coding_workspace.jpg",
-    "imgAlt": "Cursor Autonomous Team Lead",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Dasturiy injiniring va DevTools tahlili",
-    "contentHtml": "\n<p>Dasturlash muhitlarining yetakchisi <strong>Cursor</strong> hamda birinchi sun’iy intellekt muhandisi Devin'ni yaratgan <strong>Cognition Labs</strong> hamkorlikda <strong>\"Autonomous Team Lead\"</strong> rejimini e’lon qildi. Bu yangilik dasturiy ta’minot ishlab chiqish jarayonida navbatdagi bosqichni boshlab berdi.</p>\n\n<p>Ilgari sun’iy intellekt asistentlari shunchaki bitta fayl doirasida kod qatorini to‘ldirish yoki alohida funksiya yozish bilan cheklangan bo‘lsa, yangi rejim butun repozitoriy (repo-level) arxitekturasini tushunadi va o‘zini tajribali Team Lead kabi tutadi.</p>\n\n<h2>1. Yangi rejim nimalarni avtomatlashtiradi?</h2>\n<ul>\n  <li><strong>Multi-fayl refaktoring:</strong> Bazaviy ma’lumotlar bazasi sxemasi yoki API o‘zgarganda, agent tizimdagi barcha 50+ bog‘langan fayllarni, migratsiyalarni va frontend chaqiriqlarini bir vaqtda to‘g‘rilaydi.</li>\n  <li><strong>Avtomatik testlar va regressiya tekshiruvi:</strong> Kod yozilgach, agent orqa fonda virtual konteyner ko‘tarib, barcha testlarni yurgizadi va qayerda sinish yuz bersa, mustaqil ravishda tuzatadi.</li>\n  <li><strong>Pull Request va kod taqrizi:</strong> Inson dasturchilarga tayyor tahliliy tushuntirish, xavflar tahlili va benchmark natijalari bilan to‘liq PR taqdim etadi.</li>\n</ul>\n\n<blockquote>\n  \"Biz kod yozish davridan to‘liq arxitektura muhandisligi davriga o‘tdik. Endi muhandisning vazifasi sintaksis yozish emas, tizim talablari va biznes mantiqini to‘g‘ri shakllantirishdir.\"\n</blockquote>\n\n<!-- Dual Lens: Mutaxassislar va Biznes -->\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Repo-level AST Indexing:</strong> Kod bazasidagi barcha chaqiruv daraxtlari (Abstract Syntax Tree) vektor xotirada saqlanadi.</li>\n      <li><strong>Deterministic Linting & Sandbox:</strong> Agent o‘zi yozgan kodni xavfsiz izolyatsiyalangan Docker muhitida test qiladi.</li>\n      <li><strong>Spagetti-koddan qochish:</strong> Modulli arxitektura va qat’iy TypeScript/Python tipizatsiyasi agent samaradorligini 3 barobarga oshiradi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Mahsulot chiqarish tezligi (Time-to-market):</strong> Yangi funksiyalar va integratsiyalar 2–3 hafta o‘rniga 2–3 kunda yetkaziladi.</li>\n      <li><strong>Texnik qarz (Tech debt) kamayishi:</strong> Eski kodlar va eskirgan kutubxonalarni yangilash avtomatlashtiriladi.</li>\n      <li><strong>Muhandislar quvvati:</strong> Team Lead'lar va senior dasturchilar vaqtini sintaktik tekshiruvlarga emas, mahsulot qiymatiga sarflaydi.</li>\n    </ul>\n  </div>\n</div>\n\n<!-- Uzbekistan Impact -->\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT outsorsing va mahsulot kompaniyalari uchun bu katta imkoniyat. Mahalliy dasturchilar bu kabi agentlik muharrirlardan foydalanish orqali xalqaro buyurtmachilarga yuqori sifatli va testlar bilan qoplangan arxitekturani ancha tezroq yetkazib berishlari mumkin.</p>\n</div>\n\n<!-- Action Checklist -->\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Kod bazangizda avtomatik testlarni yo‘lga qo‘ying:</strong> Agent faqat testlar orqali kodning to‘g‘riligini tasdiqlay oladi.</li>\n    <li><strong>Linter va CI/CD qoidalarini qat’iylashtiring:</strong> Github Actions yoki Gitlab CI quvurlaringizga avtomatik tekshiruvlarni qo‘shing.</li>\n    <li><strong>Jamoangizga Cursor va agentik rejimdan to‘g‘ri foydalanishni o‘rgating:</strong> Kichik arxitektura refaktoringlaridan boshlang.</li>\n  </ol>\n</div>\n",
-    "sources": [
-      {
-        "name": "Cursor Official Changelog",
-        "url": "https://cursor.com"
-      },
-      {
-        "name": "Cognition Labs Research Blog",
-        "url": "https://cognition.ai"
-      }
-    ]
-  },
-  "apple-intelligence-uz": {
-    "title": "Apple Intelligence yangi yangilanishda Markaziy Osiyo tillari uchun qo‘shimcha imkoniyatlarni sinovdan o‘tkazmoqda",
-    "kicker": "18-Sentabr, 2026 · Global Ekotizim · Apple",
-    "deck": "Yangi beta versiyada Siri va qurilma ichki tahliliy yordamchisi mintaqaviy tillarda so‘rovlarni to‘g‘ridan-to‘g‘ri protsessorda xavfsiz qayta ishlashni boshladi.",
-    "img": "assets/robot_assist.jpg",
-    "imgAlt": "Apple Intelligence Regional Support",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Mobil platformalar va ekotizim guruhi",
-    "contentHtml": "\n<p>Apple kompaniyasi iOS va macOS tizimlarining navbatdagi dasturchilar uchun mo‘ljallangan beta versiyasida <strong>Apple Intelligence</strong> doirasida Markaziy Osiyo mintaqasi tillari, jumladan o‘zbek tili uchun mahalliy til modellarini (On-Device SLM) sinovdan o‘tkazishni boshladi.</p>\n\n<h2>1. Nima o‘zgarmoqda?</h2>\n<p>Ilgari mintaqa foydalanuvchilari Apple AI imkoniyatlaridan faqat ingliz tilida foydalanishga majbur bo‘lishgan bo‘lsa, yangi arxitektura qurilmaning o‘zida (Neural Engine chipida) ishlovchi kichik, ammo yuqori aniqlikdagi til modellarini ishga tushirmoqda:</p>\n<ul>\n  <li><strong>Qurilma ichida tahrirlash (Writing Tools):</strong> Xatlar, hisobotlar va Telegram xabarlarini o‘zbek tilida imlo va uslubiy jihatdan tekshirib berish.</li>\n  <li><strong>Ovozli eslatmalar va qo‘ng‘iroqlar transkripsiyasi:</strong> Suhbatlarni avtomatik matnga aylantirish va qisqacha xulosa (summary) chiqarish.</li>\n  <li><strong>To‘liq maxfiylik:</strong> Foydalanuvchi ma’lumotlari bulutga chiqmaydi, barcha hisob-kitoblar smartfon yoki noutbukning o‘zida yakunlanadi.</li>\n</ul>\n\n<div class=\"article-note\">\n  <b>💡 Ommaviy reliz:</b> Mintaqaviy til qo‘llab-quvvatlashining to‘liq versiyasi barcha foydalanuvchilarga joriy yil oxirigacha taqdim etilishi kutilmoqda.\n</div>\n",
-    "sources": [
-      {
-        "name": "Apple Developer Newsroom",
-        "url": "https://developer.apple.com"
-      },
-      {
-        "name": "MacRumors Regional Insights",
-        "url": "https://macrumors.com"
-      }
-    ]
-  },
-  "itpark-yandex": {
-    "title": "IT Park va Yandex Toshkentda 1,000 mutaxassis uchun \"AI Engineering\" bepul dasturini ishga tushirdi",
-    "kicker": "17-Sentabr, 2026 · O‘zbekiston · Ta’lim",
-    "deck": "Katta til modellarini korporativ tizimlarga integratsiya qilish, RAG arxitekturasi va AI xavfsizligi bo‘yicha 6 oylik amaliy ta’lim granti e’lon qilindi.",
-    "img": "assets/itpark_tashkent.jpg",
-    "imgAlt": "IT Park Toshkent texnologik markazi",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "O‘zbekiston IT ta’lim va startaplar",
-    "contentHtml": "\n<p>IT Park Uzbekistan hamda Yandex hamkorlikda O‘zbekistondagi dasturchilar va muhandislar uchun <strong>\"AI Engineering & Applied Machine Learning\"</strong> nomli 6 oylik bepul intensiv ta’lim grantini e’lon qildi. Dastur doirasida 1,000 nafar saralab olingan mutaxassis zamonaviy AI injiniring yo‘nalishida bepul o‘qitiladi.</p>\n\n<h2>1. Dasturda nimalar o‘rgatiladi?</h2>\n<ul>\n  <li><strong>RAG (Retrieval-Augmented Generation):</strong> Korporativ ma’lumotlar bazalari, qidiruv tizimlari va bilimlar omborini LLMlarga to‘g‘ri ulash.</li>\n  <li><strong>Fine-tuning va SLM:</strong> O‘zbek tili va sohaviy terminlar uchun kichik modellarni optimallashtirish.</li>\n  <li><strong>AI Agentlar va Funksiyalar chaqiruvi (Function Calling):</strong> CRM va ERP tizimlari bilan avtonom ishlaydigan agentlar qurish.</li>\n  <li><strong>AI xavfsizligi va LLMOps:</strong> Model xarajatlarini monitoring qilish va ma’lumotlar sizib chiqishini to‘sish.</li>\n</ul>\n\n<blockquote>\n  \"O‘zbekistonda shunchaki prompt yozuvchilar emas, balki korxona tizimlariga sun’iy intellektni xavfsiz tatbiq eta oladigan chuqur texnik muhandislarga talab juda yuqori.\"\n</blockquote>\n\n<h2>2. Kimlar qatnasha oladi?</h2>\n<p>Dasturda qatnashish uchun kamida 1 yillik Python, JavaScript yoki Go dasturlash tajribasiga ega bo‘lish lozim. Saralash bosqichi onlayn algoritmik test va suhbatdan iborat bo‘ladi.</p>\n",
-    "sources": [
-      {
-        "name": "IT Park Uzbekistan Rasmiy Portal",
-        "url": "https://it-park.uz"
-      },
-      {
-        "name": "Yandex Education Central Asia",
-        "url": "https://yandex.com"
-      }
-    ]
-  },
-  "claude-37": {
-    "title": "Anthropic Claude 3.7 Sonnet modelini taqdim etdi: Gibrid tafakkur va xavfsiz korporativ kodlash",
-    "kicker": "16-Sentabr, 2026 · Frontier Labs · Dunyo",
-    "deck": "Yangi model real vaqtli tezkor javoblar bilan chuqur tahlilni birlashtirdi. Foydalanuvchi qidiruvda model qancha soniya o‘ylashini o‘zi boshqarishi mumkin.",
-    "img": "assets/ai_agents.jpg",
-    "imgAlt": "Anthropic Claude 3.7 Sonnet",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "LLM arxitekturasi va AI xavfsizligi",
-    "contentHtml": "\n<p>Anthropic sun’iy intellekt laboratoriyasi o‘zining yangi flagman <strong>Claude 3.7 Sonnet</strong> modelini rasman taqdim etdi. Bu dunyodagi birinchi gibrid tafakkur (Hybrid Reasoning) arxitekturasiga ega tijoriy model bo‘lib, real vaqtli tezkor javoblar bilan chuqur tahliliy fikrlashni bitta nuqtada birlashtirdi.</p>\n\n<h2>1. Gibrid tafakkur nima va u nega muhim?</h2>\n<p>Ilgari modellar yo faqat tezkor javob berar (standart LLM), yoki har bir savol ustida uzoq vaqt \"o‘ylab\" (o1 kabi reasoning modellar) javob qaytarar edi. Claude 3.7 da esa dasturchi model qancha vaqt fikrlashini <code>thinking_budget</code> parametri orqali nazorat qilishi mumkin:</p>\n<ul>\n  <li>Oddiy savollar va chat muloqoti uchun — 1 soniyalik tezkor javob;</li>\n  <li>Murakkab xavfsizlik auditi, arxitektura loyihalash yoki matematik isbotlar uchun — 30–60 soniyalik chuqur zanjirli tafakkur.</li>\n</ul>\n\n<!-- Dual Lens: Mutaxassislar va Biznes -->\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Boshqariladigan fikrlash budjeti:</strong> <code>thinking: { type: \"enabled\", budget_tokens: 4096 }</code> orqali xarajat va vaqt balansi boshqariladi.</li>\n      <li><strong>SWE-bench rekordi:</strong> Dasturiy ta’minot muhandisligi benchmarklarida 70.3% natija bilan soha yetakchisi.</li>\n      <li><strong>Avtonom terminal va CLI boshqaruvi:</strong> Claude Code vositasi orqali dasturchi konsolidan to‘liq repozitoriy boshqaruvi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Yagona API — ikkita foyda:</strong> Har xil vazifalar uchun har xil modellarni integratsiya qilish shart emas, bitta model bilan barcha ehtiyoj yopiladi.</li>\n      <li><strong>Shartnomalar va huquqiy audit:</strong> Ko‘p sahifali murakkab shartnomalardagi yashirin xatarlarni chuqur tahlil qilish imkoniyati.</li>\n      <li><strong>Arzon operatsion xarajat:</strong> O1 Pro kabi qimmat yechimlarga nisbatan 50% gacha tejamkor narx siyosati.</li>\n    </ul>\n  </div>\n</div>\n\n<!-- Uzbekistan Impact -->\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston korporativ sektorida murakkab hisobotlarni tekshirish, buxgalteriya auditlari va dasturiy injiniringda Claude 3.7 yuqori aniqlik taqdim etadi. O‘zbek tilidagi uzun matnlar va hujjatlar bilan ishlashda uning kontekst tushunishi yuqori darajada.</p>\n</div>\n\n<!-- Action Checklist -->\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Anthropic Console orqali test qiling:</strong> Yangi modelni korporativ hisobingizda faollashtiring.</li>\n    <li><strong>Claude Code CLI'ni sinab ko‘ring:</strong> Mahsulot jamoangiz bilan mahalliy terminalda kod yozish jarayonini sinang.</li>\n    <li><strong>Fikrlash budjetini optimallashtiring:</strong> Oddiy so‘rovlar uchun fikrlashni o‘chirib, faqat murakkab auditlar uchun yoqing.</li>\n  </ol>\n</div>\n",
-    "sources": [
-      {
-        "name": "Anthropic Research Blog",
-        "url": "https://anthropic.com"
-      },
-      {
-        "name": "VentureBeat AI Coverage",
-        "url": "https://venturebeat.com"
-      }
-    ]
-  },
-  "gov-ai-standards": {
-    "title": "Raqamli Texnologiyalar Vazirligi davlat xizmatlarida sun’iy intellekt qo‘llash bo‘yicha yangi standartlarni tasdiqladi",
-    "kicker": "15-Sentabr, 2026 · O‘zbekiston · Davlat Boshqaruvi",
-    "deck": "My.gov.uz va boshqa davlat portallarida AI yordamchilarni integratsiya qilish, ma’lumotlarni shifrlash va xatoliklar ustidan inson nazorati belgilandi.",
-    "img": "assets/registan_real.jpg",
-    "imgAlt": "O‘zbekiston davlat xizmatlarida AI standartlari",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Davlat raqamlashtirish tahlili",
-    "contentHtml": "\n<p>O‘zbekiston Respublikasi Raqamli Texnologiyalar Vazirligi davlat axborot tizimlarida sun’iy intellekt texnologiyalarini tatbiq etish bo‘yicha milliy standartlarni tasdiqladi.</p>\n\n<h2>Asosiy qoidalar</h2>\n<ul>\n  <li>Fuqarolarning davlat xizmatlari bo‘yicha arizalarini ko‘rib chiqishda sun’iy intellekt faqat maslahat beruvchi va saralovchi vosita sifatida ishlaydi;</li>\n  <li>Yakuniy huquqiy qaror har doim vakolatli mas’ul xodim tomonidan tasdiqlanadi;</li>\n  <li>Aholiga xizmat ko‘rsatuvchi barcha chatbotlar o‘zbek tilida (ham lotin, ham kirill alifbosida) xatosiz muloqot qilishi shart qilib qo‘yildi.</li>\n</ul>\n",
-    "sources": [
-      {
-        "name": "O‘zbekiston Raqamli Texnologiyalar Vazirligi",
-        "url": "https://digital.uz"
-      }
-    ]
-  },
-  "mistral-pixtral": {
-    "title": "Mistral AI \"Pixtral Large\" modelini chiqardi: Korxonalar uchun mustaqil multimodal sun’iy intellekt",
-    "kicker": "14-Sentabr, 2026 · Ochiq Manba & Yevropa · Dunyo",
-    "deck": "124 milliard parametrli ochiq vaznli model hujjatlar tahlili, jadvallarni o‘qish va korxona serverlarida to‘liq avtonom ishlash imkonini beradi.",
-    "img": "assets/data_agent.jpg",
-    "imgAlt": "Mistral Pixtral Large",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Ochiq manbali AI yechimlari",
-    "contentHtml": "\n<p>Fransiyaning Mistral AI kompaniyasi o‘zining eng qudratli ochiq multimodal modeli — <strong>Pixtral Large</strong>'ni e’lon qildi. Model rasmlar, murakkab moliyaviy jadvallar va ko‘p sahifali PDF hujjatlarni tahlil qilishda proprietary yopiq modellarga to‘liq raqobatchi bo‘la oladi.</p>\n\n<p>Kompaniyalar ushbu modelni o‘zlarining xususiy bulutlariga yuklab, ma’lumotlar maxfiyligini 100% o‘zlarida saqlab qolishlari mumkin.</p>\n",
-    "sources": [
-      {
-        "name": "Mistral AI Official",
-        "url": "https://mistral.ai"
-      }
-    ]
-  },
-  "nvidia-blackwell": {
-    "title": "Nvidia yangi Blackwell B200 klasterlarini yirik bulut provayderlariga yetkazib berishni boshladi",
-    "kicker": "13-Sentabr, 2026 · AI Uskunalar & Bulut · Dunyo",
-    "deck": "Yangi arxitektura yirik til modellarini o‘qitish va xulosa chiqarish tezligini 4 barobarga oshirib, energiya sarfini sezilarli darajada kamaytiradi.",
-    "img": "assets/gpu_datacenter.jpg",
-    "imgAlt": "Nvidia Blackwell B200 klasterlari",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Uskunaviy ta’minot va data-markazlar",
-    "contentHtml": "\n<p>Nvidia korporatsiyasi <strong>Blackwell B200</strong> grafik protsessorlari asosidagi dastlabki server klasterlarini Microsoft Azure, Google Cloud va Oracle Cloud data-markazlariga yetkazib berishni boshladi.</p>\n\n<p>Bu AI infratuzilmasi uchun katta yutuq bo‘lib, kelgusi 6 oy ichida global miqyosda AI xizmatlarining API narxi arzonlashishi va tezligi keskin oshishi kutilmoqda.</p>\n",
-    "sources": [
-      {
-        "name": "Nvidia Newsroom",
-        "url": "https://nvidianews.nvidia.com"
-      }
-    ]
-  },
-  "itpark-gpu-grants": {
-    "title": "IT Park sun’iy intellekt startaplari uchun $5M GPU hisoblash grantlarini e’lon qildi",
-    "kicker": "12-Sentabr, 2026 · O‘zbekiston · Startaplar & Infratuzilma",
-    "deck": "O‘zbekiston startaplari o‘z modellarini o‘qitish uchun bepul yuqori unumdorlikdagi hisoblash quvvatlariga ega bo‘ladi.",
-    "img": "assets/gpu_datacenter.jpg",
-    "imgAlt": "IT Park Uzbekistan GPU hisoblash grantlari",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Startaplar va investitsiyalar",
-    "contentHtml": "\n<p>IT Park Uzbekistan sun’iy intellekt yo‘nalishida mahalliy mahsulot yaratayotgan istiqbolli startaplar uchun umumiy qiymati <strong>5 million dollarlik</strong> GPU hisoblash grantlarini taqdim etadi.</p>\n\n<p>Grant sohiblari yuqori quvvatli server klasterlaridan bepul foydalanib, mahalliy bozor va eksport uchun AI yechimlarini ishlab chiqishi mumkin bo‘ladi.</p>\n",
-    "sources": [
-      {
-        "name": "IT Park Uzbekistan Portal",
-        "url": "https://it-park.uz"
-      }
-    ]
-  },
-  "meta-business-agents": {
-    "title": "Meta WhatsApp va Instagram uchun avtonom biznes agentlarini kengaytirmoqda",
-    "kicker": "11-Sentabr, 2026 · Ijtimoiy Savdo & B2B · Global",
-    "deck": "Kichik va o‘rta bizneslar uchun xaridorlar bilan to‘liq avtomatlashtirilgan savdo va to‘lov muloqotini olib boruvchi AI agentlar taqdim etildi.",
-    "img": "assets/social_commerce.jpg",
-    "imgAlt": "Meta WhatsApp va Instagram biznes agentlari",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Ijtimoiy media va savdo avtomatlashuvi",
-    "contentHtml": "\n<p>Meta kompaniyasi WhatsApp Business va Instagram Direct kanallarida ishlovchi avtonom savdo yordamchilarini yangi mamlakatlarda, jumladan Markaziy Osiyo mintaqasida faollashtirdi.</p>\n\n<p>Ushbu agentlar mijozlar savollariga javob berish, tovar zaxirasini tekshirish va to‘lov havolasini yuborish kabi jarayonlarni to‘liq o‘z zimmasiga oladi.</p>\n",
-    "sources": [
-      {
-        "name": "Meta for Business",
-        "url": "https://about.fb.com/news/"
-      }
-    ]
-  },
-  "openai-agents": {
-    "title": "OpenAI \"Agents API\"ni taqdim etdi: 24 soatlik avtonom sessiyalar va B2B integratsiya",
-    "kicker": "10-Sentabr, 2026 · B2B AI & Texnologiya · Dunyo",
-    "deck": "Sun’iy intellekt oddiy matn yozuvchi chat bo‘lishdan chiqib, kompaniya tizimlariga ulangan avtonom xodimga aylanmoqda. Bu O‘zbekistondagi savdo, marketing va boshqaruv jarayonlariga qanday ta’sir qiladi?",
-    "img": "assets/agents_workflow.jpg",
-    "imgAlt": "OpenAI Agents API",
-    "readTime": "5 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Texnologiya va B2B tahlil guruhi",
-    "contentHtml": "\n<p>OpenAI 2026-yil 10-sentabrda birdaniga ikkita yirik texnologik yangilanishni e’lon qildi: uzoq muddatli avtonom jarayonlar uchun mo‘ljallangan <strong>Agents API</strong> hamda kompaniya ichki jadvallarini avtomatik tahlil qiluvchi <strong>ChatGPT Work Data Agent</strong>.</p>\n\n<p>Ko‘pchilik buni navbatdagi texnik reliz deb o‘ylashi mumkin, ammo B2B sektori va biznes jarayonlarini avtomatlashtirish nuqtai nazaridan bu tub burilishdir.</p>\n\n<h2>1. \"Agents API\" nima va u oddiy ChatGPT'dan nimasi bilan farq qiladi?</h2>\n<p>Ilgari sun’iy intellekt bilan ishlash bir martalik savol-javob shaklida kechar edi: siz savol berasiz, u javob qaytaradi. Yangi <strong>Agents API</strong> esa 24 soatgacha davom etadigan mustaqil sessiyalarni boshqaradi. U tashqi tizimlar — CRM (amocrm, Bitrix24), elektron pochta, Google Sheets yoki ombor bazalariga ulanadi va belgilangan vazifani inson aralashuvisiz oxirigacha yetkazadi.</p>\n\n<blockquote>\n  \"Agents API oddiy skriptni kompaniyangiz uchun 24/7 ishlaydigan, xato qilmaydigan va o‘z-o‘zini tekshiradigan raqamli xodimga aylantiradi.\"\n</blockquote>\n\n<h2>2. \"Data Agent\": Kompaniya ma’lumotlari bilan jonli muloqot</h2>\n<p>Kompaniyalarda ko‘pincha ma’lumotlar bor, ammo ularni tezkor tahlil qilish uchun tahlilchi (data analyst) yetishmaydi. ChatGPT Work ichidagi <strong>Data Agent</strong> quyidagi imkoniyatlarni beradi:</p>\n<ul>\n  <li><strong>SQL bilish shart emas:</strong> Oddiy o‘zbek tilida <em>\"O‘tgan oyda Toshkent viloyatida eng ko‘p sotilgan 5 ta mahsulot va ularning marjasini ko‘rsat\"</em> deb yozsangiz kifoya.</li>\n  <li><strong>Jonli vizualizatsiya:</strong> Natija shunchaki sonlar emas, balki qulay grafiklar, taqqoslash jadvallari va xulosalar shaklida taqdim etiladi.</li>\n  <li><strong>Xavfsiz ulanish:</strong> Korxona ma’lumotlari modelni o‘qitish uchun ishlatilmaydi va qat’iy korporativ protokollar bilan himoyalanadi.</li>\n</ul>\n\n<!-- Dual Lens: Mutaxassislar va Biznes -->\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Asinxron sessiyalar va Webhook:</strong> Agentlar fon rejimida uzoq davom etuvchi operatsiyalarni bajaradi va natijani veb-xuklar orqali uzatadi.</li>\n      <li><strong>OpenAPI & Tool Calling:</strong> O‘zingizning maxsus ichki API'laringizni JSON-sxema orqali modelga bir zumda ulash imkoniyati.</li>\n      <li><strong>Loop prevention & State:</strong> Sikllarga tushib qolishdan himoya va mustahkam holat (state management) arxitekturasi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Menejerlar vaqtini tejash:</strong> Takrorlanuvchi hisob-kitoblar, hisobotlar va arizalarni saralash to‘liq avtomatlashadi.</li>\n      <li><strong>Xatoliklar ehtimolini kamaytirish:</strong> Insoniy charchoq omili yo‘qoladi, takroriy operatsiyalar xatosiz bajariladi.</li>\n      <li><strong>Mijozlarga 24/7 tezkor xizmat:</strong> Mijoz hatto tungi soat 02:00 da murojaat qilganda ham darhol individual yechim oladi.</li>\n    </ul>\n  </div>\n</div>\n\n<!-- Uzbekistan Impact -->\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston B2B bozorida Telegram va Instagram asosiy savdo kanallari hisoblanadi. Agents API orqali mahalliy kompaniyalar mijoz xabarlarini to‘g‘ridan-to‘g‘ri amocrm yoki 1C bazasiga ulab, schyot-fakturani avtomatik tayyorlash imkoniyatiga ega bo‘lmoqda. Bu esa raqamli iqtisodiyotda operatsion xarajatlarni 30–40% ga qisqartirish imkonini beradi.</p>\n</div>\n\n<!-- Action Checklist -->\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Bitta takrorlanuvchi jarayonni tanlang:</strong> Masalan, yangi arizalarni saralash yoki mijozlar e’tirozlarini yig‘ish.</li>\n    <li><strong>Ma’lumotlar bazangizni tartibga keltiring:</strong> CRM yoki Excel jadvallaringizdagi maydonlar standart formatda ekanligiga ishonch hosil qiling.</li>\n    <li><strong>Gibrid nazorat qoidasini joriy eting:</strong> Yirik bitimlar va murakkab masalalarni sun’iy intellekt faqat tayyorlab bersin, yakuniy tasdiqni esa har doim inson qilsin.</li>\n  </ol>\n</div>\n",
-    "sources": [
-      {
-        "name": "OpenAI Official Engineering Blog",
-        "url": "https://openai.com/news/"
-      },
-      {
-        "name": "TechCrunch Enterprise AI Desk",
-        "url": "https://techcrunch.com"
-      }
-    ]
-  },
-  "data-agent": {
-    "title": "ChatGPT Work'da Data Agent ishga tushirildi: Kompaniya ma'lumotlari bilan jonli suhbat",
-    "kicker": "09-Sentabr, 2026 · Korporativ Boshqaruv · Tahlil",
-    "deck": "SQL bilmasdan turib kompaniyangizning butun moliyaviy va sotuvlar tarixini o‘zbek tilida tahlil qilish imkoniyati paydo bo‘ldi.",
-    "img": "assets/data_agent.jpg",
-    "imgAlt": "ChatGPT Work Data Agent",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "B2B ma’lumotlar tahlili",
-    "contentHtml": "\n<p>Kompaniyalarda ko‘pincha katta hajmdagi ma’lumotlar bor, ammo ularni tezkor tahlil qilish uchun har doim ma’lumotlar tahlilchisi (data analyst) yetishmaydi. ChatGPT Work tizimi ichidagi <strong>Data Agent</strong> aynan shu masalani yechish uchun mo‘ljallangan.</p>\n\n<h2>Asosiy qulayliklar</h2>\n<ul>\n  <li><strong>SQL bilish shart emas:</strong> Oddiy o‘zbek tilida <em>\"O‘tgan oyda qaysi fililimiz eng ko‘p foyda keltirdi va sababi nima?\"</em> deb so‘rang;</li>\n  <li><strong>Vizual jadvallar va grafiklar:</strong> Natijalar chiroyli grafiklar va taqqoslash diagrammalari ko‘rinishida bir zumda tayyorlanadi;</li>\n  <li><strong>Xavfsiz korporativ ulanish:</strong> Korxona ma’lumotlari modelni o‘qitish uchun ishlatilmaydi.</li>\n</ul>\n",
-    "sources": [
-      {
-        "name": "OpenAI Enterprise Guide",
-        "url": "https://openai.com"
-      },
-      {
-        "name": "VentureBeat Data Architecture",
-        "url": "https://venturebeat.com"
-      }
-    ]
-  },
-  "apple-corporate": {
-    "title": "Apple Intelligence korporativ ilovalar va Siri bilan chuqur integratsiyani boshladi",
-    "kicker": "08-Sentabr, 2026 · Mobil Ekotizim & B2B · Dunyo",
-    "deck": "Korxona xodimlari uchun pochta, taqvim va hujjatlar o‘rtasida xavfsiz va aqlli aloqa yo‘lga qo‘yildi.",
-    "img": "assets/robot_assist.jpg",
-    "imgAlt": "Apple Intelligence korporativ integratsiya",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Korporativ mobillik",
-    "contentHtml": "\n<p>Apple kompaniyasi o‘zining macOS Sequoia va iOS 18 yangilanishlarida korporativ ilovalar bilan ishlovchi chuqur integratsion protokollarni taqdim etdi.</p>\n\n<p>Xodimlar endi bir necha ilovalar bo‘ylab ma’lumot qidirish va yig‘ish uchun qo‘shimcha vaqt sarflamaydilar — tizim shaxsiy maxfiylikni to‘liq saqlagan holda kerakli hujjatni bir zumda topib beradi.</p>\n",
-    "sources": [
-      {
-        "name": "Apple Newsroom",
-        "url": "https://apple.com/newsroom"
-      }
-    ]
-  },
-  "tashkent-crm-voice": {
-    "title": "Toshkentdagi distribyutorlar CRM tizimlariga sun’iy intellekt ovozli yordamchilarini ulamoqda",
-    "kicker": "07-Sentabr, 2026 · O‘zbekiston · B2B Savdo & CRM",
-    "deck": "Mijozlar buyurtmalarini qabul qilish va ombordagi tovarlar holatini tekshirish to‘liq avtomatlashtirilmoqda.",
-    "img": "assets/b2b_sales.jpg",
-    "imgAlt": "Toshkent B2B savdo va CRM ovozli yordamchisi",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Mahalliy B2B amaliyoti",
-    "contentHtml": "\n<p>Toshkent shahrida faoliyat yurituvchi yirik distribyutsiya va logistika kompaniyalari o‘zlarining amocrm va Bitrix24 tizimlariga o‘zbek tilida so‘zlashuvchi AI ovozli yordamchilarni joriy etishni boshladi.</p>\n\n<h2>Natijalar</h2>\n<ul>\n  <li>Operatorlar zaxirani tekshirish va manzil so‘rash kabi oddiy qo‘ng‘iroqlardan ozod qilindi;</li>\n  <li>Har bir qabul qilingan buyurtma avtomatik tarzda 1C yoki CRM bazasida schyot-faktura sifatida rasmiylashtirilmoqda;</li>\n  <li>Mijozlarning kutish vaqti 0 sekundgacha qisqardi.</li>\n</ul>\n",
-    "sources": [
-      {
-        "name": "GPTify B2B Case Studies",
-        "url": "https://gptify.co"
-      }
-    ]
-  },
-  "developer-ai-revolution": {
-    "title": "Muhandislikda sun’iy intellekt inqilobi: Dasturchilarning 45% dan ortig‘i agentlik muharrirlarga o‘tdi",
-    "kicker": "06-Sentabr, 2026 · Texnologiya & Karyera · Dunyo",
-    "deck": "Klassik IDE muharrirlari o‘rnini ko‘p agentli dasturlash platformalari egallamoqda.",
-    "img": "assets/coding_workspace.jpg",
-    "imgAlt": "Dasturchilar va AI agentlari",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Dasturchilar ekotizimi",
-    "contentHtml": "\n<p>Stack Overflow va GitHub tomonidan o‘tkazilgan so‘nggi so‘rovnomaga ko‘ra, jahon dasturchilarining 45% dan ko‘prog‘i kundalik ishida Cursor, Windsurf va Devin kabi agentlik muharrirlardan foydalanmoqda.</p>\n\n<p>Bu esa junior va middle dasturchilar uchun vazifalar profilini tubdan o‘zgartirib, tizimli fikrlash va arxitektura bilimlarini birinchi o‘ringa olib chiqdi.</p>\n",
-    "sources": [
-      {
-        "name": "GitHub Octoverse 2026",
-        "url": "https://github.blog"
-      }
-    ]
-  },
-  "openai-gpt-live": {
-    "title": "OpenAI GPT-Live-1 modelini taqdim etdi: To‘liq dupleks real-vaqt ovoz",
-    "kicker": "05-Sentabr, 2026 · Frontier Labs · Dunyo",
-    "deck": "Ovozli muloqotda insoniy pauzalar, kulgi va emotsiyalarni tabiiy ifodalovchi yangi model.",
-    "img": "assets/voice_duplex.jpg",
-    "imgAlt": "OpenAI GPT-Live-1",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Ovozli AI texnologiyalari",
-    "contentHtml": "\n<p>OpenAI barcha dasturchilar uchun <strong>GPT-Live-1</strong> ovozli modelini taqdim etdi. Bu model suhbatdoshning intonatsiyasiga qarab o‘z ohangini o‘zgartiradi va real vaqtda jonli muloqot olib boradi.</p>\n",
-    "sources": [
-      {
-        "name": "OpenAI Newsroom",
-        "url": "https://openai.com"
-      }
-    ]
-  },
-  "chatgpt-financial-services": {
-    "title": "ChatGPT for Financial Services: Banklar va moliya sektori uchun maxsus paket",
-    "kicker": "04-Sentabr, 2026 · Moliya & Fintex · Tahlil",
-    "deck": "Moliya institutlari uchun qat’iy xavfsizlik va muvofiqlik (compliance) sertifikatlariga ega yechim.",
-    "img": "assets/tashkent_finance.jpg",
-    "imgAlt": "ChatGPT for Financial Services",
-    "readTime": "3 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Fintex va bank auditi",
-    "contentHtml": "\n<p>OpenAI moliyaviy institutlar va investitsiya fondlari uchun maxsus tayyorlangan <strong>ChatGPT for Financial Services</strong> paketini e’lon qildi.</p>\n\n<p>Paket bank ma’lumotlarini shifrlash, SOC2 va ISO sertifikatlari hamda ichki kredit tahlilini avtomatlashtirish vositalarini o‘z ichiga oladi.</p>\n",
-    "sources": [
-      {
-        "name": "OpenAI Finance",
-        "url": "https://openai.com"
-      }
-    ]
-  },
-  "uzbekistan-retail-ai": {
-    "title": "O‘zbekiston riteylida sun’iy intellekt: Savdo konversiyasini 30% ga oshirish usullari",
-    "kicker": "03-Sentabr, 2026 · O‘zbekiston · Elektron Tijorat",
-    "deck": "Mahalliy riteylerlar AI tavsiya algoritmlari va dinamik narxlash orqali qanday natijalarga erishmoqda?",
-    "img": "assets/retail_ai.jpg",
-    "imgAlt": "O‘zbekiston riteylida sun’iy intellekt",
-    "readTime": "4 daqiqalik mutolaa",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Riteyl va elektron tijorat",
-    "contentHtml": "\n<p>O‘zbekistonning yirik riteyl tarmoqlari va elektron do‘konlari (Uzum, Korzinka, Makro va b.) sun’iy intellektga asoslangan tavsiya tizimlarini tatbiq etish orqali o‘rtacha chek miqdorini 20–30% ga oshirishga muvaffaq bo‘lmoqda.</p>\n\n<h2>Qanday instrumentlar ishlatilmoqda?</h2>\n<ul>\n  <li><strong>Shaxsiylashtirilgan savat tavsiyalari:</strong> Mijoz xarid qilgan mahsulotga mos qo‘shimcha tovarlarni real vaqtda taklif qilish;</li>\n  <li><strong>Dinamik talab prognozi:</strong> Mavsum va ob-havoga qarab qaysi tovarlar ko‘p sotilishini oldindan bashorat qilish;</li>\n  <li><strong>Avtomatlashtirilgan keshbek va aksiyalar:</strong> Doimiy mijozlarga moslashtirilgan individual chegirmalar berish.</li>\n</ul>\n",
-    "sources": [
-      {
-        "name": "Spot.uz Biznes & Riteyl Tahlili",
-        "url": "https://www.spot.uz/oz/"
-      }
-    ]
+    ],
+    "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekistonda savdo va xizmat ko‘rsatish sohalarida Telegram Mini Apps (TMA) va sun’iy intellekt botlari integratsiyasi kengaymoqda. Yangi avlod TMA ilovalari oddiy veb-sahifa bo‘lib qolmasdan, mijozning xarid tarixini eslab qoluvchi va unga individual maslahat beruvchi aqlli raqamli sotuvchiga aylanmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>O‘zbekistonlik xaridor alohida mobil ilova yuklab olishni xush ko‘rmaydi, biroq kuniga bir necha soatini Telegram'da o‘tkazadi. TMA ichida sun’iy intellektning ishlashi tovar tanlashdan tortib Click/Payme to‘lovigacha bo‘lgan barcha to‘siqlarni olib tashlaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Yengil frontend va API:</strong> React/Vue asosidagi TMA ilovalari to‘g‘ridan-to‘g‘ri LLM API bilan ulanadi.</li>\n      <li><strong>To‘lov tizimlari:</strong> Payme, Click va Uzum Pay mahalliy to‘lov shlyuzlari bilan oson integratsiya.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>24/7 savdo oqimi:</strong> Tungi paytda ham mijoz savollariga javob berilib, buyurtmalar rasmiylashtiriladi.</li>\n      <li><strong>Menejer xarajatlarini tejash:</strong> Standart so‘rovlarni qabul qilish uchun katta qo‘ng‘iroqlar markazi kerak emas.</li>\n    </ul>\n  </div>\n</div>\n"
   }
 };
