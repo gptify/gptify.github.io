@@ -398,10 +398,10 @@
         </p>
 </div>
 <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-start;">
-<a class="btn-tg-large" href="https://t.me/gptifyuz?text=Assalomu%20alaykum!%20AiNoma%20katalogiga%20sun%E2%80%99iy%20intellekt%20vositamizni%20qo%E2%80%98shmoqchimiz:%0A%0A1.%20Vosita%20nomi:%20%0A2.%20Asosiy%20vazifasi%20(biznes/shaxsiy):%20%0A3.%20Sayt%20yoki%20bot%20havolasi:%20%0A4.%20O%E2%80%98zbekistonlik%20foydalanuvchilar%20uchun%20imtiyoz/sinov:%20%0A5.%20Bog%E2%80%98lanish%20uchun%20kontakt:" rel="noopener" style="background:#ffffff; color:#064e3b; font-weight:700;" target="_blank">
+<button class="btn-tg-large" id="openSubmitToolBtn" type="button" style="background:#ffffff; color:#064e3b; font-weight:700; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:8px;">
 <svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"></path></svg>
-          Vositani ro‘yxatga qo‘shish (@gptifyuz)
-        </a>
+          Vositani ro‘yxatga qo‘shish (Ariza topshirish)
+        </button>
 <small style="color:#a7f3d0; font-size:12px;">Ariza 24 soat ichida ko‘rib chiqiladi · 100% Bepul</small>
 </div>
 </div>
@@ -433,6 +433,180 @@
 </div>
 </div>
 </footer>
+
+<!-- Modal: Vositani Ro'yxatga Qo'shish Formasi -->
+<div id="submitToolModal" class="submit-modal-overlay" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,0.8); backdrop-filter:blur(6px); z-index:9999; align-items:center; justify-content:center; padding:16px; overflow-y:auto;">
+  <div class="submit-modal-card" style="background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:16px; max-width:560px; width:100%; box-shadow:0 25px 50px -12px rgba(0,0,0,0.5); padding:28px; position:relative; margin:auto;">
+    <button type="button" id="closeSubmitModal" aria-label="Yopish" style="position:absolute; top:18px; right:18px; background:none; border:none; color:var(--muted); font-size:24px; cursor:pointer; line-height:1;">&times;</button>
+    
+    <div style="margin-bottom:20px;">
+      <span class="badge" style="background:var(--green); color:#fff; font-size:11px; padding:3px 8px; border-radius:4px; font-weight:700;">100% BEPUL RO‘YXATDAN O‘TISH</span>
+      <h3 style="margin:8px 0 6px; font-size:20px; font-weight:800; color:var(--text);">O‘z AI vositangizni AiNoma katalogiga qo‘shing</h3>
+      <p style="margin:0; font-size:13px; color:var(--muted); line-height:1.5;">Arizangiz to‘g‘ridan-to‘g‘ri <strong style="color:var(--text);">gptify.co</strong> tahririyatiga yuboriladi va 24 soat ichida ko‘rib chiqiladi.</p>
+    </div>
+
+    <form id="submitToolForm" style="display:flex; flex-direction:column; gap:14px;">
+      <div>
+        <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">Vosita nomi *</label>
+        <input type="text" id="toolName" name="tool_name" required placeholder="Masalan: Muxlisa AI yoki SalesCopilot" style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box;">
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div>
+          <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">Sayt / Bot havolasi *</label>
+          <input type="url" id="toolUrl" name="tool_url" required placeholder="https://..." style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box;">
+        </div>
+        <div>
+          <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">Yo‘nalish / Kategoriya *</label>
+          <select id="toolCat" name="tool_category" required style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box;">
+            <option value="B2B va Savdo">B2B va Savdo</option>
+            <option value="Marketing va SMM">Marketing va SMM</option>
+            <option value="Ovozli AI va Nutq">Ovozli AI va Nutq</option>
+            <option value="Fintex va Buxgalteriya">Fintex va Buxgalteriya</option>
+            <option value="Dasturlash va Avtomatlashtirish">Dasturlash va Avtomatlashtirish</option>
+            <option value="Yuridik va Hujjatlar">Yuridik va Hujjatlar</option>
+            <option value="Boshqa">Boshqa sun’iy intellekt xizmati</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">Qisqacha tavsifi (Mahsulot qanday masalani hal qiladi?) *</label>
+        <textarea id="toolDesc" name="tool_desc" required rows="3" placeholder="Foydalanuvchi yoki biznes uchun asosiy foydasi va xususiyatlari..." style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box; resize:vertical; font-family:inherit;"></textarea>
+      </div>
+
+      <div>
+        <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">O‘zbekistonlik foydalanuvchilar uchun imtiyoz / sinov (Ixtiyoriy)</label>
+        <input type="text" id="toolPerks" name="tool_perks" placeholder="Masalan: 14 kunlik bepul sinov yoki 20% promokod" style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box;">
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div>
+          <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">Telegram (@username) yoki Telefon *</label>
+          <input type="text" id="toolContact" name="contact" required placeholder="@shaxsiy_username yoki +998..." style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box;">
+        </div>
+        <div>
+          <label style="display:block; font-size:12px; font-weight:700; margin-bottom:5px; color:var(--text);">Sizning Email pochtangiz *</label>
+          <input type="email" id="toolEmail" name="email" required placeholder="asoschi@kompaniya.uz" style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text); font-size:14px; box-sizing:border-box;">
+        </div>
+      </div>
+
+      <div id="formStatusBox" style="display:none; padding:12px; border-radius:8px; font-size:13px; line-height:1.4;"></div>
+
+      <button type="submit" id="submitFormBtn" style="background:var(--green); color:#fff; border:none; padding:12px 18px; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:opacity .2s;">
+        <span id="submitBtnText">Arizani yuborish (gptify.co ga)</span> <span id="submitBtnIcon">→</span>
+      </button>
+
+      <div style="font-size:12px; color:var(--muted); text-align:center; margin-top:2px;">
+        Shoshilinch savollar bo‘lsa: <a href="https://t.me/shukhrat_ai" target="_blank" rel="noopener" style="color:var(--green); font-weight:600; text-decoration:underline;">@shukhrat_ai (Telegram)</a>
+      </div>
+    </form>
+  </div>
+</div>
+
 <script src="app.js"></script>
+<script>
+  // Tool Submission Modal Handler
+  const submitModal = document.getElementById("submitToolModal");
+  const openSubmitBtn = document.getElementById("openSubmitToolBtn");
+  const closeSubmitBtn = document.getElementById("closeSubmitModal");
+  const submitForm = document.getElementById("submitToolForm");
+  const statusBox = document.getElementById("formStatusBox");
+  const submitBtn = document.getElementById("submitFormBtn");
+  const submitBtnText = document.getElementById("submitBtnText");
+  const submitBtnIcon = document.getElementById("submitBtnIcon");
+
+  function openModal() {
+    if (!submitModal) return;
+    submitModal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    if (!submitModal) return;
+    submitModal.style.display = "none";
+    document.body.style.overflow = "";
+    if (statusBox) statusBox.style.display = "none";
+  }
+
+  openSubmitBtn?.addEventListener("click", openModal);
+  closeSubmitBtn?.addEventListener("click", closeModal);
+
+  submitModal?.addEventListener("click", (e) => {
+    if (e.target === submitModal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && submitModal?.style.display === "flex") {
+      closeModal();
+    }
+  });
+
+  submitForm?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!submitBtn) return;
+
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = "0.7";
+    submitBtnText.textContent = "Yuborilmoqda...";
+    submitBtnIcon.textContent = "⏳";
+    statusBox.style.display = "none";
+
+    const payload = {
+      _subject: "AiNoma: Yangi vosita arizasi - " + document.getElementById("toolName").value,
+      _template: "table",
+      _captcha: "false",
+      "Vosita Nomi": document.getElementById("toolName").value,
+      "Havola (URL)": document.getElementById("toolUrl").value,
+      "Kategoriya": document.getElementById("toolCat").value,
+      "Tavsif": document.getElementById("toolDesc").value,
+      "Imtiyoz": document.getElementById("toolPerks").value || "Ko‘rsatilmagan",
+      "Aloqa (Telegram/Tel)": document.getElementById("toolContact").value,
+      "Asoschi Emaili": document.getElementById("toolEmail").value
+    };
+
+    try {
+      const resp = await fetch("https://formsubmit.co/ajax/gptify.co@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await resp.json();
+
+      if (resp.ok) {
+        statusBox.style.display = "block";
+        statusBox.style.background = "rgba(16, 185, 129, 0.15)";
+        statusBox.style.color = "var(--green)";
+        statusBox.style.border = "1px solid var(--green)";
+        statusBox.innerHTML = "<strong>✓ Rahmat! Arizangiz gptify.co tahririyatiga yuborildi.</strong><br>24 soat ichida loyihangiz ko‘rib chiqilib, aloqaga chiqamiz.";
+        submitForm.reset();
+        submitBtnText.textContent = "✓ Yuborildi";
+        submitBtnIcon.textContent = "";
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = "1";
+          submitBtnText.textContent = "Yana ariza yuborish";
+          submitBtnIcon.textContent = "→";
+        }, 4000);
+      } else {
+        throw new Error(data.message || "Xatolik yuz berdi");
+      }
+    } catch (err) {
+      statusBox.style.display = "block";
+      statusBox.style.background = "rgba(239, 68, 68, 0.15)";
+      statusBox.style.color = "#ef4444";
+      statusBox.style.border = "1px solid #ef4444";
+      statusBox.innerHTML = "<strong>Xatolik yuz berdi:</strong> Aloqa uzildi. Iltimos, to‘g‘ridan-to‘g‘ri <a href='https://t.me/shukhrat_ai' target='_blank' style='color:#ef4444; text-decoration:underline;'>@shukhrat_ai</a> ga yozing.";
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = "1";
+      submitBtnText.textContent = "Qayta urinish";
+      submitBtnIcon.textContent = "→";
+    }
+  });
+</script>
 </body>
 </html>
