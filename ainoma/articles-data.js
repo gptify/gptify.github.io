@@ -1,4 +1,88 @@
 window.AINOMA_ARTICLES = {
+  "openai-gpt6-sol-luna-50-percent-price-cut": {
+    "id": "openai-gpt6-sol-luna-50-percent-price-cut",
+    "slug": "openai-gpt6-sol-luna-50-percent-price-cut",
+    "title": "OpenAI rasman GPT-6 Sol va Luna modellarini e’lon qildi: 50% arzonlashgan API va yangi avlod tezligi",
+    "kicker": "Voqea: 22-Sentabr, 2026 · Manba: OpenAI Research · AiNoma: 23-Sentabr, 2026",
+    "deck": "GPT-6 oilasi kengaydi: murakkab dasturlash vazifalari uchun Sol hamda ultra-tezkor va ixcham Luna modellari taqdim etildi. API narxlari ikki barobar arzonlashdi.",
+    "event_date": "2026-09-22",
+    "source_published_date": "2026-09-22",
+    "ainoma_published_date": "2026-09-23",
+    "ainoma_updated_date": "2026-09-23",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier Sun’iy Intellekt & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_network.jpg",
+    "imgAlt": "OpenAI GPT-6 Sol va Luna modellar arxitekturasi va narx siyosati",
+    "qisqacha": [
+      "OpenAI GPT-6 Astra negizida ikkita yangi modelni — Sol (ishlab chiqarish va dasturlash) va Luna (ultra-tezkor) e'lon qildi.",
+      "Ikkala model uchun API narxi avvalgi GPT-5.6 narxlariga nisbatan roppa-rosa 50% ga arzonlashtirildi.",
+      "Luna modeli ChatGPT Free va Go foydalanuvchilariga desktop ilovada bepul taqdim etildi, Sol esa Plus, Pro va Enterprise obunalariga qo'shildi."
+    ],
+    "primary_source": {
+      "name": "OpenAI Research",
+      "title": "Introducing GPT-6 Sol and Luna: Efficient Frontier Intelligence and 50% Price Reduction",
+      "url": "https://openai.com/index/gpt-6-sol-luna/",
+      "date": "22.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "OpenRouter Model Hub",
+        "title": "OpenAI GPT-6 Sol and Luna API Benchmarks and Pricing Index",
+        "url": "https://openrouter.ai/models",
+        "date": "22.09.2026",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>OpenAI 2026-yil 22-sentabr kuni o‘zining flagman GPT-6 neyrotarmoqlar oilasiga ikkita yangi a’zoni rasman qo‘shdi: <strong>GPT-6 Sol</strong> va <strong>GPT-6 Luna</strong>. Oy boshida taqdim etilgan Astra modeli murakkab tadqiqotlar va kompyuterni bevosita boshqarishga (Computer Use) qaratilgan bo‘lsa, yangi Sol va Luna kundalik biznes jarayonlari, dasturlash hamda real vaqtli ommaviy xizmatlar uchun optimallashtirilgan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Eng katta yangilik — narx inqilobi bo‘ldi. OpenAI ikkala model uchun ham API tariflarini avvalgi GPT-5.6 darajasidan <strong>50% ga arzonlashtirdi</strong>. Bu sun’iy intellekt agentlari, CRM integratsiyalari va mijozlarga xizmat ko‘rsatuvchi yirik botlarni yuritayotgan kompaniyalar uchun oylik hisoblash xarajatlarini ikki baravarga qisqartiradi. <strong>GPT-6 Sol</strong> murakkab kod yozish va kiberxavfsizlik tahlilida Astra darajasidagi aniqlikni beradi, <strong>GPT-6 Luna</strong> esa 100 millisekunddan kam kechikish (low-latency) bilan ishlaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Codex integratsiyasi:</strong> GPT-6 Sol bevosita dasturiy ta’minot muhandislari uchun IDE va terminal muhitida ko‘p bosqichli refaktoringni bajaradi.</li>\n      <li><strong>Yashin tezligidagi Luna:</strong> Katta hajmdagi chat va oqimli javoblarda token ishlab chiqarish tezligi avvalgi modellardan 2.8 barobar yuqori.</li>\n      <li><strong>Kesh xarajatlarining pasayishi:</strong> Prompt keshini o‘qish yanada arzonlashtirilib, uzoq kontekstli ilovalar samaradorligi oshirildi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>50% to‘g‘ridan-to‘g‘ri tejash:</strong> B2B dasturiy ta’minot va avtomatlashtirilgan xizmatlarda sun’iy intellekt operatsion xarajatlari keskin kamayadi.</li>\n      <li><strong>Ommaviy mijozlarga xizmat ko‘rsatish:</strong> Luna modeli orqali minglab mijozlarga bir vaqtda to‘xtovsiz va tezkor konsultatsiya berish imkoniyati ochiladi.</li>\n      <li><strong>Tezkor joriy qilish:</strong> Yangi API ulanishlari mavjud tizimlarga o‘zgarishsiz mos tushadi (drop-in replacement).</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistonda faoliyat yuritayotgan fintex, banklar va elektron tijorat kompaniyalari uchun 50% arzonlashgan API — sun’iy intellektni keng masshtabda joriy qilish uchun katta turtkidir. Ayniqsa, Luna modeli orqali Telegram botlar, Call-markazlar va Didox orqali keladigan hujjatlar oqimini bir necha barobar arzon va tez qayta ishlash imkoni paydo bo‘ladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>API kalitlaringizni yangilang:</strong> Loyihalaringizdagi model parametrini <code>gpt-6-sol</code> yoki <code>gpt-6-luna</code> ga almashtirib, xarajatlar farqini solishtiring.</li>\n    <li><strong>ChatGPT desktop ilovasini tekshiring:</strong> Luna modeli barcha foydalanuvchilar, jumladan bepul tarif egalari uchun ham ochilgan.</li>\n    <li><strong>Tezlik va javob sifatini audit qiling:</strong> Mijozlar bilan muloqot qiluvchi botlaringizda kechikish vaqtini qisqartirish uchun Lunani sinab ko‘ring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-23"
+  },
+  "xai-grok-47-coding-benchmark-release": {
+    "id": "xai-grok-47-coding-benchmark-release",
+    "slug": "xai-grok-47-coding-benchmark-release",
+    "title": "xAI Grok 4.7 modelini taqdim etdi: Dasturlash va avtonom agentlar uchun 71% natija",
+    "kicker": "Voqea: 22-Sentabr, 2026 · Manba: xAI Official · AiNoma: 23-Sentabr, 2026",
+    "deck": "Elon Muskning xAI kompaniyasi dasturiy ta’minot injiniringi va professional tahlilga ixtisoslashgan yangi Grok 4.7 modelini e’lon qildi. DeepSWE benchmarkida yetakchi ko‘rsatkich qayd etildi.",
+    "event_date": "2026-09-22",
+    "source_published_date": "2026-09-22",
+    "ainoma_published_date": "2026-09-23",
+    "ainoma_updated_date": "2026-09-23",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Dasturiy Tizimlar va Agentik Arxitektura",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/agents_workflow.jpg",
+    "imgAlt": "xAI Grok 4.7 modelining dasturiy injiniring va avtonom agentlar benchmarki",
+    "qisqacha": [
+      "xAI rasman Grok 4.7 modelini chiqardi va dasturiy injiniring hamda tibbiy-huquqiy bilimlarga e'tibor qaratdi.",
+      "Model DeepSWE v1.1 dasturlash sinovida 71.0%, CursorBench 4.0 da esa 46.3% yuqori aniqlik ko'rsatdi.",
+      "Muhandislar uchun agentik ish oqimlarini (multi-file editing, debugging) bajarish qobiliyati tubdan kuchaytirildi."
+    ],
+    "primary_source": {
+      "name": "xAI Official",
+      "title": "Introducing Grok 4.7: Advanced Coding and Professional Agent Benchmarks",
+      "url": "https://x.ai/news/grok-4-7",
+      "date": "22.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Artificial Analysis",
+        "title": "Grok 4.7 Coding & Intelligence Benchmark Independent Verification",
+        "url": "https://artificialanalysis.ai/models/grok-4-7",
+        "date": "22.09.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Elon Musk asos solgan xAI kompaniyasi 2026-yil 22-sentabr kuni dasturchilar va ilmiy tadqiqotchilar uchun mo‘ljallangan yangi avlod <strong>Grok 4.7</strong> modelini rasman foydalanishga topshirdi. Ushbu relizda xAI umumiy suhbatlashish o‘rniga real loyihalardagi murakkab dasturiy xatolarni tuzatish (debugging), arxitektura rejalashtirish va avtonom kodlash agentlarini muvofiqlashtirishga asosiy urg‘u berdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Grok 4.7 dasturiy ta’minot muhandisligi bo‘yicha dunyo miqyosidagi eng nufuzli <strong>DeepSWE v1.1</strong> benchmarkida <strong>71.0%</strong> natija qayd etdi. Shuningdek, zamonaviy dasturlash muhitlarini sinovchi <strong>CursorBench 4.0</strong> testida 46.3% va tibbiy-tahliliy <strong>HealthBench Professional</strong> reytingida 56.7% ko‘rsatkichga erishdi. xAI shuningdek modelning inferens narxlarini pasaytirib, yirik ishlab chiquvchilar jamoalarini jalb qilish uchun agressiv narx siyosatini yo‘lga qo‘ydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Multi-file kod tahriri:</strong> Grok 4.7 bitta so‘rov orqali bir vaqtning o‘zida o‘nlab bog‘liq fayllarni tahlil qilish va sintaktik xatolarsiz o‘zgartirish kiritish imkoniga ega.</li>\n      <li><strong>EEBench va CursorBench yutuqlari:</strong> Murakkab arxitektura va zamonaviy freymvorklar (React, Next.js, Python, Rust) bilan ishlash barqarorligi sezilarli oshdi.</li>\n      <li><strong>Kengaytirilgan tafakkur (Reasoning effort):</strong> Murakkab vazifalarda tafakkur chuqurligini ('high' yoki 'xhigh') dasturchi tomonidan moslashuvchan boshqarish mumkin.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>IT mahsulot ishlab chiqish tezligi:</strong> Dasturchilar jamoasining kundalik rutin kodlash va test yozish xarajatlari 40% gacha tejaladi.</li>\n      <li><strong>Texnik qarzni kamaytirish:</strong> Katta kod bazasidagi eskirgan modullarni yangilash va xavfsizlik zaifliklarini audit qilish avtomatlashadi.</li>\n      <li><strong>Raqobatbardosh API narxlari:</strong> Korxona miqyosida agentik tizimlarni joriy qilishda xAI tejamkor muqobil variantni taqdim etmoqda.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT Park rezidentlari, autsorsing kompaniyalari va startaplari uchun Grok 4.7 dasturiy mahsulotlarni xalqaro bozorga tezroq olib chiqish imkoniyatini beradi. Mahalliy dasturchilar Grok 4.7 API'sini o‘z ish muhitlariga ulab, sifat nazorati (Code Review) va arxitektura auditini sezilarli darajada kuchaytirishlari mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Grok 4.7 imkoniyatlarini kod bazangizda sinab ko‘ring:</strong> xAI API yoki platformasi orqali murakkab loyihangizdagi refaktoring vazifasini modelga topshiring.</li>\n    <li><strong>Benchmarklarni o‘z ehtiyojlaringiz bilan solishtiring:</strong> DeepSWE natijalarini o‘zingiz ishlatayotgan mavjud vositalar (Claude 3.7 yoki GPT-6) bilan taqqoslang.</li>\n    <li><strong>Ichki kodlash standartlarini yangilang:</strong> Avtonom sun’iy intellekt vositalari yozgan kodlarni tekshirish uchun test qamrovini (Unit & Integration tests) oshiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-23"
+  },
   "youtube-monetizatsiya-ozbekiston-google": {
     "id": "youtube-monetizatsiya-ozbekiston-google",
     "slug": "youtube-monetizatsiya-ozbekiston-google",
@@ -48,8 +132,8 @@ window.AINOMA_ARTICLES = {
     "readTime": "4 daqiqalik mutolaa",
     "category": "Biznes & Sun’iy intellekt",
     "audience": "mutaxassislar biznes",
-    "img": "assets/social_commerce.jpg",
-    "imgAlt": "Sun’iy intellekt va sintetik personajlar tadqiqoti",
+    "img": "assets/data_agent.jpg",
+    "imgAlt": "Sun’iy intellekt va ma’lumotlar tahlili: Sintetik personajlar tadqiqoti",
     "qisqacha": [
       "Upworthy tadqiqot bazasidagi minglab real A/B testlar orqali Sun’iy intellekt modellarining auditoriya reaksiyasini taxmin qilish qobiliyati sinovdan o'tkazildi.",
       "Demografik personajlarga asoslangan 10 kishilik sintetik panel oddiy zero-shot (personajsiz) so'rovdan pastroq aniqlik ko'rsatdi.",

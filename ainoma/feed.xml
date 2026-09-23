@@ -23,6 +23,20 @@
       <description>Upworthy A/B testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditoriya personajlarini simulyatsiya qilishdan ko‘ra oddiy zero-shot so‘rov berish aniqroq natija beradi.</description>
     </item>
     <item>
+      <title>OpenAI rasman GPT-6 Sol va Luna modellarini e’lon qildi: 50% arzonlashgan API va yangi avlod tezligi</title>
+      <link>https://ainoma.uz/maqola.html?id=openai-gpt6-sol-luna-50-percent-price-cut</link>
+      <guid>https://ainoma.uz/maqola.html?id=openai-gpt6-sol-luna-50-percent-price-cut</guid>
+      <pubDate>Mon, 22 Sep 2026 10:00:00 +0500</pubDate>
+      <description>GPT-6 oilasi kengaydi: murakkab dasturlash vazifalari uchun Sol hamda ultra-tezkor va ixcham Luna modellari taqdim etildi. API narxlari ikki barobar arzonlashdi.</description>
+    </item>
+    <item>
+      <title>xAI Grok 4.7 modelini taqdim etdi: Dasturlash va avtonom agentlar uchun 71% natija</title>
+      <link>https://ainoma.uz/maqola.html?id=xai-grok-47-coding-benchmark-release</link>
+      <guid>https://ainoma.uz/maqola.html?id=xai-grok-47-coding-benchmark-release</guid>
+      <pubDate>Mon, 22 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Elon Muskning xAI kompaniyasi dasturiy ta’minot injiniringi va professional tahlilga ixtisoslashgan yangi Grok 4.7 modelini e’lon qildi. DeepSWE benchmarkida yetakchi ko‘rsatkich qayd etildi.</description>
+    </item>
+    <item>
       <title>Sun’iy intellekt sohasida intellektual mulk chegarasi: Meta Muse yordamchisida OpenClaw izlari tan olindi</title>
       <link>https://ainoma.uz/maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili</link>
       <guid>https://ainoma.uz/maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili</guid>
@@ -49,20 +63,6 @@
       <guid>https://ainoma.uz/maqola.html?id=un-ai-agents-warning</guid>
       <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
       <description>BMT qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberxavfsizlik choralari bo‘yicha global tavsiyalarini chiqardi.</description>
-    </item>
-    <item>
-      <title>Tadqiqot: LLM modellar moliyaviy hisob-kitoblar va skoringda 57% gacha noaniqlikka yo‘l qo‘ymoqda</title>
-      <link>https://ainoma.uz/maqola.html?id=spot-ai-finance-risk</link>
-      <guid>https://ainoma.uz/maqola.html?id=spot-ai-finance-risk</guid>
-      <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
-      <description>O‘tkazilgan tahlillar ommabop sun’iy intellekt modellari moliyaviy va buxgalteriya savollariga javob berishda jiddiy noaniqliklarga yo‘l qo‘yishini ko‘rsatdi.</description>
-    </item>
-    <item>
-      <title>O‘zbekistonda qishloq xo‘jaligi va ekologiya uchun 'Yashil AI' moduli ishga tushirilmoqda</title>
-      <link>https://ainoma.uz/maqola.html?id=spot-green-ai-uzbekistan</link>
-      <guid>https://ainoma.uz/maqola.html?id=spot-green-ai-uzbekistan</guid>
-      <pubDate>Mon, 21 Sep 2026 10:00:00 +0500</pubDate>
-      <description>Tuproq sifati, iqlim ma’lumotlari va suv resurslarini tahlil qiluvchi yangi milliy sun’iy intellekt platformasi qishloq xo‘jaligi samaradorligini oshiradi.</description>
     </item>
   </channel>
 </rss>
