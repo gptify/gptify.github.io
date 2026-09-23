@@ -2931,9 +2931,148 @@
       }
     }
 
+    /* --- ARCHITECTURE SWITCHER BAR & FREEMIUM GATE MODAL (OPTION A vs B) --- */
+    .arch-switcher-bar {
+      background: #0F172A;
+      color: #F8FAFC;
+      padding: 7px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      flex-wrap: wrap;
+      z-index: 1200;
+      position: relative;
+    }
+    .arch-switcher-label {
+      font-weight: 800;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 10.5px;
+    }
+    .arch-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 11.5px;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.06);
+      color: #E2E8F0;
+      font-family: inherit;
+    }
+    .arch-pill:hover {
+      background: rgba(255,255,255,0.15);
+      color: #FFFFFF;
+    }
+    .arch-pill.active {
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+      color: #FFFFFF;
+      border-color: transparent;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.35);
+    }
+    .gate-badge-free {
+      background: #ECFDF5;
+      color: #047857;
+      border: 1px solid rgba(5, 150, 105, 0.25);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+    .gate-badge-lock {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    .freemium-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+    .freemium-modal-overlay.show {
+      display: flex;
+    }
+    .freemium-modal-card {
+      background: #FFFFFF;
+      color: #0F172A;
+      border-radius: 22px;
+      max-width: 460px;
+      width: 100%;
+      padding: 28px;
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.28);
+      border: 1px solid #E2E8F0;
+      animation: modalFadeUp 0.22s ease-out;
+    }
+    @keyframes modalFadeUp {
+      from { opacity: 0; transform: translateY(12px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
 </style>
 </head>
 <body>
+
+  <!-- Architecture Comparison Switcher Bar (Option A vs Option B) -->
+  <div class="arch-switcher-bar" id="archSwitcherBar">
+    <span class="arch-switcher-label">🧭 Arxitektura Tanlovi:</span>
+    <button type="button" id="btnArchFreemium" onclick="setGatedDemoState(true)" class="arch-pill active">
+      🎯 A-Variant: Freemium App Gate (1.1-dars ochiq, 1.2+ qulflangan)
+    </button>
+    <button type="button" id="btnArchUnlocked" onclick="setGatedDemoState(false)" class="arch-pill">
+      🔓 Kabinet Ochiq Holati (Unlocked)
+    </button>
+    <a href="landing.html" class="arch-pill">
+      🌐 B-Variant: Alohida Sotuvchi Landing Page (landing.html) →
+    </a>
+  </div>
+
+  <!-- Freemium Conversion Gate Modal (Option A) -->
+  <div class="freemium-modal-overlay" id="freemiumGateModal" onclick="if(event.target===this) closeFreemiumGateModal()">
+    <div class="freemium-modal-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="background:#ECFDF5; color:#047857; font-size:11px; font-weight:800; padding:4px 10px; border-radius:999px; border:1px solid rgba(5,150,105,0.2);">
+          🔒 A-VARIANT: FREEMIUM GATE
+        </span>
+        <button type="button" onclick="closeFreemiumGateModal()" style="background:none; border:none; font-size:22px; line-height:1; cursor:pointer; color:#64748B;">&times;</button>
+      </div>
+      <h3 style="font-size:20px; font-weight:800; line-height:1.25; margin-bottom:8px;" id="gateModalLessonTitle">
+        Keyingi Dars va Shaxsiy Kabinetni Oching
+      </h3>
+      <p style="font-size:13.5px; color:#334155; margin-bottom:16px; line-height:1.55;">
+        1.1-Dars bepul tanishuv edi. Qolgan <b>13 ta amaliy B2B darslar</b>, AI topshiriq tekshiruvi va <b>Rasmiy QR-Sertifikat</b>ni ochish uchun shaxsiy kabinetingizni faollashtiring:
+      </p>
+      <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:12px 14px; margin-bottom:18px; font-size:12.5px; color:#334155;">
+        <div style="margin-bottom:5px;">✅ <b>Barcha 14 ta B2B darslar</b> va ko'chirib olinuvchi promptlar</div>
+        <div style="margin-bottom:5px;">✅ <b>Interaktiv AI Tekshiruv</b> va shaxsiy progress saqlanishi</div>
+        <div>✅ <b>Rasmiy SHA-256 QR-kodli Malaka Sertifikati</b></div>
+      </div>
+      <button type="button" onclick="unlockAcademyFromGate('Telegram Foydalanuvchi')" style="width:100%; padding:12px; border-radius:11px; border:none; background:#0284C7; color:#fff; font-weight:800; font-size:13.5px; cursor:pointer; margin-bottom:12px; display:flex; align-items:center; justify-content:center; gap:8px;">
+        <span>✈️</span> <span>Telegram orqali 1 soniyada kirish</span>
+      </button>
+      <div style="text-align:center; font-size:11px; color:#94A3B8; font-weight:700; margin-bottom:10px;">— YOKI ISM VA TELEFON ORQALI —</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px;">
+        <input type="text" id="gateUserName" placeholder="Ismingiz" value="Shukhrat Iskandarov" style="padding:10px 12px; border:1px solid #CBD5E1; border-radius:9px; font-size:13px; font-family:inherit;">
+        <input type="tel" id="gateUserPhone" placeholder="+998 90 ..." value="+998 90 123 45 67" style="padding:10px 12px; border:1px solid #CBD5E1; border-radius:9px; font-size:13px; font-family:inherit;">
+      </div>
+      <button type="button" onclick="unlockAcademyFromGate(document.getElementById('gateUserName').value)" style="width:100%; padding:12px; border-radius:11px; border:none; background:linear-gradient(135deg, #10B981 0%, #059669 100%); color:#fff; font-weight:800; font-size:14px; cursor:pointer; box-shadow:0 4px 14px rgba(5,150,105,0.28);">
+        🔓 Barcha 14 ta Darsni Ochish →
+      </button>
+    </div>
+  </div>
 
   <!-- Top Navigation Header (Makon.ai Minimalist Standard) -->
   <header class="top-nav">
@@ -5166,7 +5305,82 @@
       updateGamificationUI();
     }
 
+    window.isFreemiumGated = true;
+    window.pendingGateLessonId = '1_2';
+
+    function setGatedDemoState(gated) {
+      window.isFreemiumGated = gated;
+      const btnFree = document.getElementById('btnArchFreemium');
+      const btnUnlock = document.getElementById('btnArchUnlocked');
+      if (btnFree && btnUnlock) {
+        if (gated) {
+          btnFree.classList.add('active');
+          btnUnlock.classList.remove('active');
+        } else {
+          btnFree.classList.remove('active');
+          btnUnlock.classList.add('active');
+        }
+      }
+
+      document.querySelectorAll('.lesson-item').forEach(item => {
+        const onclickAttr = item.getAttribute('onclick') || '';
+        const durSpan = item.querySelector('.lesson-dur');
+        if (!durSpan) return;
+        if (!durSpan.dataset.origText) {
+          durSpan.dataset.origText = durSpan.innerHTML;
+        }
+        if (gated) {
+          if (onclickAttr.includes("'1_1'")) {
+            durSpan.innerHTML = '<span class="gate-badge-free">Bepul</span>';
+          } else {
+            durSpan.innerHTML = '<span class="gate-badge-lock">🔒 Yopiq</span>';
+          }
+        } else {
+          durSpan.innerHTML = durSpan.dataset.origText;
+        }
+      });
+    }
+
+    function openFreemiumGateModal(targetId) {
+      window.pendingGateLessonId = targetId || '1_2';
+      const data = window.COURSE_DATA ? window.COURSE_DATA[window.pendingGateLessonId] : null;
+      const titleEl = document.getElementById('gateModalLessonTitle');
+      if (titleEl && data) {
+        titleEl.innerText = `🔒 "${data.title.split('(')[0].trim()}" darsini ochish`;
+      }
+      const modal = document.getElementById('freemiumGateModal');
+      if (modal) modal.classList.add('show');
+      triggerHaptic('warning');
+    }
+
+    function closeFreemiumGateModal() {
+      const modal = document.getElementById('freemiumGateModal');
+      if (modal) modal.classList.remove('show');
+    }
+
+    function unlockAcademyFromGate(userName) {
+      closeFreemiumGateModal();
+      setGatedDemoState(false);
+      if (typeof launchConfetti === 'function') launchConfetti();
+      if (window.pendingGateLessonId) {
+        loadLesson(window.pendingGateLessonId, true);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.location.search.includes('demo=unlocked')) {
+        setGatedDemoState(false);
+      } else {
+        setGatedDemoState(true);
+      }
+    });
+
     function loadLesson(id, userTriggered = false) {
+      if (window.isFreemiumGated && id !== '1_1' && userTriggered) {
+        openFreemiumGateModal(id);
+        return;
+      }
+
       const data = (window.COURSE_DATA && window.COURSE_DATA[id]) || (typeof COURSE_DATA !== 'undefined' ? COURSE_DATA[id] : null);
       if (!data) {
         console.warn('Lesson data not found for id:', id);

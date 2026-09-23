@@ -870,12 +870,29 @@ footer {
     left: 0;
     right: 0;
     background: var(--surface);
-    padding: 24px;
+    padding: 20px;
     flex-direction: column;
     border-bottom: 1px solid var(--line);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-    gap: 16px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+    gap: 10px;
     z-index: 100;
+  }
+  body.nav-open .navlinks a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: var(--ink);
+    background: var(--soft);
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  body.nav-open .navlinks a:hover,
+  body.nav-open .navlinks a.active {
+    background: var(--green-light);
+    color: var(--green);
+    font-weight: 700;
   }
 }
 
@@ -1429,4 +1446,221 @@ footer {
 .qisqacha-list li:last-child {
   margin-bottom: 0;
 }
+
+/* =============================================================================
+   📱 MOBILE-FIRST NATIVE NAVIGATION & READING ERGONOMICS
+   ============================================================================= */
+
+/* Reading Progress Bar (Top of screen) */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  background: var(--green);
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(5, 150, 105, 0.6);
+}
+
+/* Mobile Navigation Backdrop Overlay */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 45;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+body.nav-open .nav-backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+body.nav-open {
+  overflow: hidden;
+}
+
+/* Mobile Bottom Navigation Bar (Thumb Zone) */
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 12px));
+  }
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(58px + env(safe-area-inset-bottom, 10px));
+    padding-bottom: env(safe-area-inset-bottom, 10px);
+    background: color-mix(in srgb, var(--surface) 95%, transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--line);
+    z-index: 80;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  }
+  .mobile-bottom-bar a, .mobile-bottom-bar button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 10.5px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 52px;
+    transition: color 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mobile-bottom-bar svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .mobile-bottom-bar a:hover,
+  .mobile-bottom-bar a.active,
+  .mobile-bottom-bar button:hover,
+  .mobile-bottom-bar button.active {
+    color: var(--green);
+  }
+
+  /* iOS Safari Auto-zoom prevention: ensure all inputs are >= 16px */
+  input, select, textarea, .searchinner input {
+    font-size: 16px !important;
+  }
+}
+
+/* Compact Mobile News Rows (< 640px) */
+@media (max-width: 640px) {
+  .news-layout .cards, .pagegrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .news-layout .cards .card, .pagegrid .card.filter-card {
+    display: flex !important;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    text-decoration: none;
+    box-shadow: none;
+  }
+  .news-layout .cards .card .thumb, .pagegrid .card.filter-card .thumb {
+    width: 84px !important;
+    height: 84px !important;
+    min-width: 84px !important;
+    max-width: 84px !important;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .news-layout .cards .card .thumb img, .pagegrid .card.filter-card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .news-layout .cards .card h3, .pagegrid .card.filter-card h3 {
+    font-size: 14px;
+    line-height: 1.35;
+    margin: 0 0 6px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .news-layout .cards .card .card-meta, .pagegrid .card.filter-card .card-meta {
+    font-size: 10px;
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  .news-layout .cards .card p, .pagegrid .card.filter-card p {
+    display: none; /* Hide long paragraph on phone screens for fast skimming */
+  }
+  .news-layout .cards .card .card-source, .pagegrid .card.filter-card .card-source {
+    margin-top: 4px;
+    padding-top: 4px;
+    font-size: 11px;
+    border-top: none;
+  }
+}
+
+/* Article Reading Ergonomics */
+.article-back-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  transition: .2s;
+}
+.article-back-nav:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+.telegram-share-card {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08), rgba(5, 150, 105, 0.08));
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 32px 0 24px;
+}
+.telegram-share-card b {
+  font-size: 15px;
+  color: var(--ink);
+}
+.telegram-share-card p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+@media (max-width: 560px) {
+  .telegram-share-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+  .telegram-share-card .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 

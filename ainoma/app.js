@@ -121,6 +121,8 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "O‘zbekistonda YouTube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: Raqamli media va biznes uchun yangi imkoniyatlar", u: "maqola.html?id=youtube-monetizatsiya-ozbekiston-google", k: "o‘zbekistonda youtube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: raqamli media va biznes uchun yangi imkoniyatlar o‘zbekiston it spot.uz it & biznes google rahbariyati bilan o‘tkazilgan muzokaralar o‘zbekistonda youtube hamkorlik dasturini faollasht" },
   { t: "Sun’iy intellektda sintetik personajlar afsonasi: Oddiy so‘rov murakkab personalardan ustun keldi", u: "maqola.html?id=sintetik-persona-suniy-intellekt-ab-test-arxiv-2026", k: "sun’iy intellektda sintetik personajlar afsonasi: oddiy so‘rov murakkab personalardan ustun keldi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
@@ -257,15 +259,73 @@ $$(".filter").forEach((btn) => {
   });
 });
 
-// Mobile Hamburger Nav
+// Mobile Hamburger Nav & Backdrop Drawer
+let navBackdrop = $(".nav-backdrop");
+if (!navBackdrop) {
+  navBackdrop = document.createElement("div");
+  navBackdrop.className = "nav-backdrop";
+  document.body.appendChild(navBackdrop);
+}
+
+function toggleMobileNav(force) {
+  const isOpen = force !== undefined ? force : !document.body.classList.contains("nav-open");
+  document.body.classList.toggle("nav-open", isOpen);
+}
+
 const hambBtn = $("#hamb");
 hambBtn?.addEventListener("click", (e) => {
   e.stopPropagation();
-  document.body.classList.toggle("nav-open");
+  toggleMobileNav();
 });
 
-document.addEventListener("click", (e) => {
-  if (document.body.classList.contains("nav-open") && !e.target.closest(".navlinks") && !e.target.closest("#hamb")) {
-    document.body.classList.remove("nav-open");
+navBackdrop.addEventListener("click", () => toggleMobileNav(false));
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && document.body.classList.contains("nav-open")) {
+    toggleMobileNav(false);
   }
 });
+
+// Mobile Bottom Bar handlers
+const bottomSearchBtn = $("#bottomSearchBtn");
+bottomSearchBtn?.addEventListener("click", (e) => {
+  e.preventDefault();
+  toggleMobileNav(false);
+  openSearch();
+});
+
+const bottomMenuBtn = $("#bottomMenuBtn");
+bottomMenuBtn?.addEventListener("click", (e) => {
+  e.preventDefault();
+  toggleMobileNav();
+});
+
+// Reading Progress Bar (Top of screen)
+const progressBar = document.createElement("div");
+progressBar.className = "reading-progress-bar";
+document.body.prepend(progressBar);
+
+window.addEventListener("scroll", () => {
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  if (total > 200) {
+    const progress = Math.min(100, Math.max(0, (window.scrollY / total) * 100));
+    progressBar.style.width = progress + "%";
+  } else {
+    progressBar.style.width = "0%";
+  }
+}, { passive: true });
+
+// Auto-highlight active link in Mobile Bottom Bar
+try {
+  const curPage = window.location.pathname.split("/").pop() || "index.html";
+  $$(".mobile-bottom-bar a").forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === curPage || (curPage === "index.html" && href === "yangiliklar.html") || (curPage === "" && href === "yangiliklar.html")) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+} catch (_) {}
+
+

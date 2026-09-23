@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify Academy — B2B va Professional Sun'iy Intellekt Akademiyasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #F1F5F9;
+      --text-main: #0F172A;
+      --text-secondary: #334155;
+      --text-muted: #64748B;
+      --brand-emerald: #059669;
+      --brand-emerald-dark: #047857;
+      --brand-emerald-light: #ECFDF5;
+      --brand-lime: #84CC16;
+      --border: #E2E8F0;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 10px 30px -5px rgba(15, 23, 42, 0.07);
+      --shadow-lg: 0 20px 40px -10px rgba(5, 150, 105, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Architecture Switcher Bar (Demo Comparison) */
+    .arch-switcher-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0F172A;
+      color: #F8FAFC;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 12.5px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      flex-wrap: wrap;
+    }
+    .arch-switcher-label {
+      font-weight: 700;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 11px;
+    }
+    .arch-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 12px;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.06);
+      color: #E2E8F0;
+    }
+    .arch-pill:hover {
+      background: rgba(255,255,255,0.15);
+      color: #FFFFFF;
+    }
+    .arch-pill.active {
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+      color: #FFFFFF;
+      border-color: transparent;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.35);
+    }
+
+    /* Top Navbar */
+    .navbar {
+      position: sticky;
+      top: 41px;
+      z-index: 900;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+    }
+    .navbar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: -0.02em;
+    }
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #059669 0%, #0F172A 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      border: 1px solid #10B981;
+    }
+    .brand-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10B981;
+      display: inline-block;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--brand-emerald);
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn-ghost {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover {
+      background: #E2E8F0;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 64px 24px 72px;
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald-dark);
+      border: 1px solid rgba(5, 150, 105, 0.2);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, #059669 0%, #0284C7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: 16.5px;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      max-width: 600px;
+      line-height: 1.65;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .btn-lg {
+      padding: 14px 26px;
+      font-size: 15px;
+      border-radius: 12px;
+    }
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .metric-item strong {
+      display: block;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .metric-item span {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Right Hero Preview Card */
+    .app-preview-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      position: relative;
+    }
+    .app-window-bar {
+      background: #0F172A;
+      color: #94A3B8;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .window-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .window-dots i {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .app-preview-body {
+      padding: 22px;
+    }
+    .preview-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--brand-emerald);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .preview-lesson-box {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      margin-top: 12px;
+    }
+    .preview-lesson-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 12px;
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      border: 1px solid var(--border);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .preview-lesson-row:last-child {
+      margin-bottom: 0;
+    }
+    .badge-open {
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald-dark);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .badge-locked {
+      background: #F1F5F9;
+      color: #64748B;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* Section Containers */
+    .section {
+      padding: 64px 24px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+    }
+    .section-header h2 {
+      font-size: clamp(26px, 3vw, 36px);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      color: var(--text-secondary);
+      font-size: 15.5px;
+    }
+
+    /* Curriculum Grid */
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+    }
+    .module-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .module-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(5, 150, 105, 0.35);
+    }
+    .module-num {
+      display: inline-block;
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald-dark);
+      font-weight: 800;
+      font-size: 11.5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .module-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .module-lessons {
+      list-style: none;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+    .module-lessons li {
+      padding: 6px 0;
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .module-lessons li:last-child {
+      border-bottom: none;
+    }
+
+    /* Pricing Grid */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+    .price-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .price-card.featured {
+      border: 2px solid var(--brand-emerald);
+      box-shadow: var(--shadow-lg);
+    }
+    .featured-ribbon {
+      position: absolute;
+      top: -12px;
+      right: 24px;
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+    .price-amount {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 14px 0 6px;
+      color: var(--text-main);
+    }
+    .price-features {
+      list-style: none;
+      margin: 20px 0 28px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .price-features li {
+      padding: 7px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    /* Authors Section */
+    .authors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .author-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .author-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #059669 0%, #0F172A 100%);
+      color: #fff;
+      font-weight: 800;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Login Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      padding: 20px;
+    }
+    .modal-backdrop.show {
+      display: flex;
+    }
+    .login-modal {
+      background: #FFFFFF;
+      border-radius: 20px;
+      max-width: 440px;
+      width: 100%;
+      padding: 30px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      border: 1px solid var(--border);
+    }
+    .input-field {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 14px;
+      font-family: inherit;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-section {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Architecture Comparison Bar -->
+  <div class="arch-switcher-bar">
+    <span class="arch-switcher-label">🧭 Arxitektura Tanlovi:</span>
+    <a href="index.html?demo=freemium" class="arch-pill">
+      🎯 A-Variant: Freemium App Gate (1.1-dars ochiq, 1.2+ qulflangan)
+    </a>
+    <a href="landing.html" class="arch-pill active">
+      🌐 B-Variant: Alohida Sotuvchi Landing Page + Yopiq Kabinet (Hozirgi sahifa)
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="landing.html" class="brand-logo">
+        <div class="brand-icon">G</div>
+        GPTify Academy <span class="brand-dot"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#dastur">O'quv Dasturi (14 Dars)</a>
+        <a href="#mualliflar">Mualliflar</a>
+        <a href="#tariflar">Tariflar & B2B</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="index.html?demo=freemium" class="btn btn-ghost">👁️ 1.1-Darsni Bepul Ko'rish</a>
+        <button type="button" onclick="openAppLogin()" class="btn btn-primary">🔒 Kabinetga Kirish (App)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div>
+      <div class="hero-badge">⚡ O'zbekistonning Amaliy B2B AI Platformasi</div>
+      <h1 class="hero-title">
+        Xodimlaringiz va Biznesingiz Uchun <span>Amaliy Sun'iy Intellekt</span> Tizimi
+      </h1>
+      <p class="hero-subtitle">
+        Quruq nazariya emas — 14 ta intensiv amaliy dars, Evergreen modellar matritsasi (Claude Fable, GPT-6 Astra, Gemini 3), Oltin Prompt Formulasi va haftasiga 10+ soat vaqtingizni tejovchi korporativ ish oqimlari.
+      </p>
+      <div class="hero-cta-group">
+        <a href="index.html?demo=freemium" class="btn btn-primary btn-lg">🚀 1.1-Darsdan Bepul Boshlash</a>
+        <button type="button" onclick="openAppLogin()" class="btn btn-ghost btn-lg">🔑 Shaxsiy Kabinetni Ochish</button>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric-item">
+          <strong>14 ta Dars</strong>
+          <span>Har biri 15 daqiqalik aniq amaliyot</span>
+        </div>
+        <div class="metric-item">
+          <strong>10+ Soat</strong>
+          <span>Haftalik o'rtacha tejaladigan ish vaqti</span>
+        </div>
+        <div class="metric-item">
+          <strong>SHA-256</strong>
+          <span>Tekshiriluvchi rasmiy QR-Sertifikat</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live App Preview Window -->
+    <div class="app-preview-card">
+      <div class="app-window-bar">
+        <div class="window-dots">
+          <i style="background:#EF4444;"></i>
+          <i style="background:#F59E0B;"></i>
+          <i style="background:#10B981;"></i>
+        </div>
+        <span>app.gptify.co/academy — Yopiq O'quv Kabineti</span>
+        <span>🔒 SSL</span>
+      </div>
+      <div class="app-preview-body">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="preview-tag">🎓 O'quvchi Kabineti Ko'rinishi</span>
+          <span style="font-size:12px; font-weight:700; color:#059669;">★ 850 XP · 🔥 1 Kun</span>
+        </div>
+        <h3 style="font-size:17px; font-weight:800; margin-top:6px;">Sun'iy Intellekt Asoslari (AI Foundations)</h3>
+        <p style="font-size:12.5px; color:var(--text-muted); margin-top:2px;">Interaktiv mutolaa, jonli AI vazifa tekshiruvi va rasmiy sertifikatsiya</p>
+
+        <div class="preview-lesson-box">
+          <div class="preview-lesson-row">
+            <span>1.1. LLM qanday fikrlaydi? (Evergreen Modellar)</span>
+            <span class="badge-open">✓ Bepul Preview</span>
+          </div>
+          <div class="preview-lesson-row">
+            <span>1.2. Tokenlar, xotira va Context Window</span>
+            <span class="badge-locked">🔒 Yopiq Kabinet</span>
+          </div>
+          <div class="preview-lesson-row">
+            <span>2.1. Oltin Formula: ROL + KONTEKST + VAZIFA</span>
+            <span class="badge-locked">🔒 Yopiq Kabinet</span>
+          </div>
+          <div class="preview-lesson-row">
+            <span>3.1. ChatGPT vs Claude vs Perplexity B2B</span>
+            <span class="badge-locked">🔒 Yopiq Kabinet</span>
+          </div>
+          <div class="preview-lesson-row">
+            <span>5.2. Yakuniy Imtihon & QR-Sertifikat</span>
+            <span class="badge-locked">🏆 Sertifikat</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:10px;">
+          <a href="index.html?demo=freemium" class="btn btn-primary" style="width:100%;">Kabinetni Jonli Ko'rish →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section class="section" id="dastur">
+    <div class="section-header">
+      <h2>5 Modulli Tizimli O'quv Dasturi</h2>
+      <p>Har bir dars 7 daqiqa nazariy tahlil, 2 daqiqa bilim testi va 6 daqiqa real korporativ prompt amaliyotidan iborat.</p>
+    </div>
+    <div class="curriculum-grid">
+      <div class="module-card">
+        <span class="module-num">1-MODUL · 3 TA DARS</span>
+        <h3>AI Anatomiyasi & Evergreen Modellar</h3>
+        <ul class="module-lessons">
+          <li><span>1.1. LLM qanday fikrlaydi? (4 Arxetip)</span> <span class="badge-open">Ochiq</span></li>
+          <li><span>1.2. Tokenlar va "Lost in the Middle" siri</span> <span>🔒</span></li>
+          <li><span>1.3. Korporativ maxfiylik (NDA & Xavfsizlik)</span> <span>🔒</span></li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <span class="module-num">2-MODUL · 3 TA DARS</span>
+        <h3>Oltin Formula: Prompt Muhandisligi</h3>
+        <ul class="module-lessons">
+          <li><span>2.1. ROL + KONTEKST + VAZIFA + FORMAT</span> <span>🔒</span></li>
+          <li><span>2.2. Few-Shot Prompting (Namunalar bilan o'rgatish)</span> <span>🔒</span></li>
+          <li><span>2.3. Chain-of-Thought va Iterativ tahrirlash</span> <span>🔒</span></li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <span class="module-num">3-MODUL · 3 TA DARS</span>
+        <h3>B2B Vositalar Ekotizimi</h3>
+        <ul class="module-lessons">
+          <li><span>3.1. Claude Frontier vs ChatGPT vs Perplexity</span> <span>🔒</span></li>
+          <li><span>3.2. Gamma App: 5 daqiqada investor taqdimoti</span> <span>🔒</span></li>
+          <li><span>3.3. Audio, Transkripsiya va Majlis Bayonnomalari</span> <span>🔒</span></li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <span class="module-num">4-MODUL · 3 TA DARS</span>
+        <h3>Ish Unumdorligi va Avtomatizatsiya</h3>
+        <ul class="module-lessons">
+          <li><span>4.1. 15 Daqiqalik Kundalik AI Odati</span> <span>🔒</span></li>
+          <li><span>4.2. SMM, Marketing va Kontent Konveyeri</span> <span>🔒</span></li>
+          <li><span>4.3. Eyzenxauer Matritsasi va Vaqt Auditi</span> <span>🔒</span></li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <span class="module-num">5-MODUL · 2 TA DARS</span>
+        <h3>Shaxsiy AI Tizimi & Sertifikatsiya</h3>
+        <ul class="module-lessons">
+          <li><span>5.1. O'z sohangiz uchun Shaxsiy AI Portfolio qurish</span> <span>🔒</span></li>
+          <li><span>5.2. Yakuniy Malaka Imtihoni & Rasmiy Sertifikat</span> <span>🏆</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authors Section -->
+  <section class="section" id="mualliflar" style="padding-top:20px;">
+    <div class="section-header">
+      <h2>Dastur Mualliflari</h2>
+      <p>Xalqaro B2B amaliyot va akademik metodologiya uyg'unligi.</p>
+    </div>
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-avatar">SI</div>
+        <div>
+          <h3 style="font-size:17px; font-weight:800;">Shukhrat Iskandarov</h3>
+          <div style="font-size:12.5px; color:var(--brand-emerald); font-weight:700; margin-bottom:6px;">GPTify.co asoschisi & Cubeo.ai hammuassisi (Berlin — Toshkent)</div>
+          <p style="font-size:13.5px; color:var(--text-secondary);">
+            Yevropa va O'zbekiston kompaniyalari uchun B2B AI ish oqimlari, CRM avtomatizatsiyasi va avtonom agentlar arxitektori.
+          </p>
+        </div>
+      </div>
+      <div class="author-card">
+        <div class="author-avatar" style="background:linear-gradient(135deg, #0284C7 0%, #0F172A 100%);">DI</div>
+        <div>
+          <h3 style="font-size:17px; font-weight:800;">Davlatbek Iskandarov, PhD</h3>
+          <div style="font-size:12.5px; color:#0284C7; font-weight:700; margin-bottom:6px;">TDIU Dotsenti, Ilmiy Rahbar va Metodolog</div>
+          <p style="font-size:13.5px; color:var(--text-secondary);">
+            O'quv dasturining pedagogik tizimi, baholash mezonlari va amaliy malaka sertifikatsiyasi ilmiy rahbari.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section" id="tariflar" style="padding-top:20px;">
+    <div class="section-header">
+      <h2>Kirish Formatlari va Tariflar</h2>
+      <p>Avval 1.1-darsni bepul sinab ko'ring, so'ngra o'zingiz yoki jamoangiz uchun to'liq kabinetni oching.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Tier 1 -->
+      <div class="price-card">
+        <div>
+          <span class="preview-tag">TANISHUV (FREEMIUM)</span>
+          <div class="price-amount">Bepul</div>
+          <p style="font-size:13px; color:var(--text-muted);">Platforma sifatini to'siqsiz sinab ko'rish uchun</p>
+          <ul class="price-features">
+            <li>✅ <b>1.1-Darsga to'liq ochiq kirish</b></li>
+            <li>✅ Interaktiv Evergreen Model Maslahatchisi</li>
+            <li>✅ Jonli xalqaro benchmark radarlari (LMSYS)</li>
+            <li>✅ GPTify B2B Telegram hamjamiyatiga kirish</li>
+          </ul>
+        </div>
+        <a href="index.html?demo=freemium" class="btn btn-ghost" style="width:100%;">1.1-Darsni Bepul O'qish →</a>
+      </div>
+
+      <!-- Tier 2 -->
+      <div class="price-card featured">
+        <div class="featured-ribbon">Eng Ommabop</div>
+        <div>
+          <span class="preview-tag">SHAXSIY KABINET (PRO)</span>
+          <div class="price-amount">490 000 <span style="font-size:15px; font-weight:600; color:var(--text-muted);">so'm</span></div>
+          <p style="font-size:13px; color:var(--text-muted);">Bir martalik to'lov · Doimiy yangilanuvchi kabinet</p>
+          <ul class="price-features">
+            <li>✅ <b>Barcha 5 ta modul va 14 ta amaliy dars</b></li>
+            <li>✅ Har bir darsda interaktiv AI vazifa tekshiruvi</li>
+            <li>✅ Ko'chirib olinuvchi B2B Promptlar to'plami</li>
+            <li>✅ <b>Rasmiy SHA-256 QR-kodli Malaka Sertifikati</b></li>
+            <li>✅ Kelajakdagi yangi modellar darslariga bepul kirish</li>
+          </ul>
+        </div>
+        <button type="button" onclick="openAppLogin()" class="btn btn-primary" style="width:100%;">🔒 To'liq Kabinetni Ochish →</button>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="price-card">
+        <div>
+          <span class="preview-tag">B2B KORPORATIV JAMOA</span>
+          <div class="price-amount">Shartnoma</div>
+          <p style="font-size:13px; color:var(--text-muted);">10 dan 100+ gacha xodimlar va bo'limlar uchun</p>
+          <ul class="price-features">
+            <li>✅ <b>Har bir xodim uchun shaxsiy `app.gptify.co` kabineti</b></li>
+            <li>✅ HR va rahbar uchun xodimlar progressi hisoboti</li>
+            <li>✅ Toshkentdagi ofisingizda 2 kunlik jonli vorkshop</li>
+            <li>✅ Kompaniyangiz CRM va hujjatlariga mos promptlar</li>
+          </ul>
+        </div>
+        <a href="https://t.me/shukhrat_iskandarov" target="_blank" class="btn btn-ghost" style="width:100%;">🏢 B2B Taklif Olish →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Login Modal -->
+  <div class="modal-backdrop" id="appLoginModal" onclick="if(event.target===this) closeAppLogin()">
+    <div class="login-modal">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <span class="preview-tag">🔒 APP.GPTIFY.CO — AVTORIZATSIYA</span>
+        <button type="button" onclick="closeAppLogin()" style="background:none; border:none; font-size:20px; cursor:pointer; color:var(--text-muted);">&times;</button>
+      </div>
+      <h3 style="font-size:20px; font-weight:800; margin-bottom:6px;">Shaxsiy Kabinetga Kirish</h3>
+      <p style="font-size:13px; color:var(--text-secondary); margin-bottom:18px;">
+        Progressingizni saqlash, uyga vazifalarni tekshirtirish va rasmiy sertifikat olish uchun tizimga kiring:
+      </p>
+
+      <button type="button" onclick="loginAndRedirect('Telegram Foydalanuvchi')" class="btn btn-primary" style="width:100%; background:#0284C7; margin-bottom:14px; padding:12px;">
+        ✈️ Telegram orqali 1 soniyada kirish
+      </button>
+
+      <div style="text-align:center; font-size:11.5px; color:var(--text-muted); margin-bottom:14px;">— YOKI TELEFON RAQAM ORQALI —</div>
+
+      <input type="text" id="loginUserName" class="input-field" placeholder="Ism va familiyangiz (Sertifikat uchun)" value="Shukhrat Iskandarov">
+      <input type="tel" id="loginUserPhone" class="input-field" placeholder="Telefon raqamingiz (+998 90 ...)" value="+998 90 123 45 67">
+
+      <button type="button" onclick="loginAndRedirect(document.getElementById('loginUserName').value)" class="btn btn-primary" style="width:100%; padding:12px;">
+        🔓 Kabinetni Ochish va Darsga Kirish →
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function openAppLogin() {
+      document.getElementById('appLoginModal').classList.add('show');
+    }
+    function closeAppLogin() {
+      document.getElementById('appLoginModal').classList.remove('show');
+    }
+    function loginAndRedirect(name) {
+      try {
+        localStorage.setItem('gptify_auth_user', name || 'Foydalanuvchi');
+      } catch(e) {}
+      window.location.href = 'index.html?demo=unlocked';
+    }
+  </script>
+</body>
+</html>
