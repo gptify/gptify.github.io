@@ -118,6 +118,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "O‘zbekistonda YouTube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: Raqamli media va biznes uchun yangi imkoniyatlar", u: "maqola.html?id=youtube-monetizatsiya-ozbekiston-google", k: "o‘zbekistonda youtube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: raqamli media va biznes uchun yangi imkoniyatlar o‘zbekiston it spot.uz it & biznes google rahbariyati bilan o‘tkazilgan muzokaralar o‘zbekistonda youtube hamkorlik dasturini faollasht" },
   { t: "Sun’iy intellektda sintetik personajlar afsonasi: Oddiy so‘rov murakkab personalardan ustun keldi", u: "maqola.html?id=sintetik-persona-suniy-intellekt-ab-test-arxiv-2026", k: "sun’iy intellektda sintetik personajlar afsonasi: oddiy so‘rov murakkab personalardan ustun keldi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
