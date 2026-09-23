@@ -1,35 +1,43 @@
 window.AINOMA_ARTICLES = {
-  "eu-removes-usmanov-sanctions-uzbekistan-tech-impact": {
-    "id": "eu-removes-usmanov-sanctions-uzbekistan-tech-impact",
-    "slug": "eu-removes-usmanov-sanctions-uzbekistan-tech-impact",
-    "title": "Yevropa Ittifoqi Alisher Usmonovni sanksiyalar ro‘yxatidan chiqardi: O‘zbekiston raqamli infratuzilmasi va Sun’iy intellekt loyihalari uchun yangi imkoniyatlar",
-    "kicker": "Voqea: 23-Sentabr, 2026 · Manba: Spot.uz · AiNoma: 23-Sentabr, 2026",
-    "deck": "Yevropa Ittifoqining Alisher Usmonov va Mixail Fridmanga nisbatan sanksiyalarni bekor qilishi O‘zbekistonning IT-ekotizimi, telekommunikatsiya va Sun’iy intellekt infratuzilmasiga xorijiy investitsiyalar oqimini tezlashtirishi kutilmoqda.",
+  "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026": {
+    "id": "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026",
+    "slug": "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026",
+    "title": "Sun’iy intellektda sintetik personajlar afsonasi: Oddiy so‘rov murakkab personalardan ustun keldi",
+    "kicker": "Voqea: 23-Sentabr, 2026 · Manba: 23-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
+    "deck": "Upworthy A/B testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditoriya personajlarini simulyatsiya qilishdan ko‘ra oddiy zero-shot so‘rov berish aniqroq natija beradi.",
     "event_date": "2026-09-23",
     "source_published_date": "2026-09-23",
-    "ainoma_published_date": "2026-09-23",
-    "ainoma_updated_date": "2026-09-23",
+    "ainoma_published_date": "2026-09-24",
+    "ainoma_updated_date": "2026-09-24",
     "author": "AiNoma Tahririyati",
-    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "authorRole": "Frontier Sun’iy Intellekt & Tizimlar Arxitekturasi",
     "readTime": "4 daqiqalik mutolaa",
-    "category": "Biznes & AI",
+    "category": "Biznes & Sun’iy intellekt",
     "audience": "mutaxassislar biznes",
     "img": "assets/ai_agents.jpg",
-    "imgAlt": "Yevropa Ittifoqi va O‘zbekiston o‘rtasidagi iqtisodiy va texnologik aloqalar ramziy tasviri",
+    "imgAlt": "Sun’iy intellekt va sintetik personajlar tadqiqoti",
     "qisqacha": [
-      "Yevropa Ittifoqi Alisher Usmonov va Mixail Fridmanni sanksiyalar ro‘yxatidan rasman chiqardi, boshqa cheklovlar esa 3 yilga uzaytirildi.",
-      "Ushbu qaror USM va Digital Holding kabi yirik xoldinglarning O‘zbekistondagi telekommunikatsiya va yuqori texnologiyali loyihalariga xorijiy kapital jalb etishini osonlashtiradi.",
-      "Mahalliy bozorda Sun’iy intellekt hisoblash quvvatlarini oshirish va ilg‘or ma’lumotlar markazlarini qurish jarayonlari yangi bosqichga chiqishi mumkin."
+      "Upworthy tadqiqot bazasidagi minglab real A/B testlar orqali Sun’iy intellekt modellarining auditoriya reaksiyasini taxmin qilish qobiliyati sinovdan o'tkazildi.",
+      "Demografik personajlarga asoslangan 10 kishilik sintetik panel oddiy zero-shot (personajsiz) so'rovdan pastroq aniqlik ko'rsatdi.",
+      "Marketing sohasida qimmatbaho sintetik persona tizimlarini qurish har doim ham o'zini oqlamasligi ilmiy hisob-kitoblar bilan isbotlandi."
     ],
     "primary_source": {
-      "name": "Spot.uz IT & Biznes",
-      "title": "Alisher Usmonov Yevropa Ittifoqining sanksiyalar ro‘yxatidan chiqarib tashlandi",
-      "url": "https://www.spot.uz/oz/2026/09/23/eu-usmonov-removed/",
+      "name": "arXiv cs.AI",
+      "title": "Do Synthetic Personas Predict Real Audience Response? A Sim-to-Real Study Where a No-Persona Baseline Beats Persona-Based Copy Simulation",
+      "url": "https://arxiv.org/abs/2609.25010",
       "date": "23.09.2026",
       "badge": "BIRLAMCHI MANBA"
     },
-    "secondary_sources": [],
-    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Yevropa Ittifoqi kengashi o‘zining sanksiyalar ro‘yxatiga kutilmagan o‘zgartirishlar kiritdi. Unga ko‘ra, asli o‘zbekistonlik milliarder Alisher Usmonov hamda Alfa-Group aksiyadori Mixail Fridman sanksiyalar ro‘yxatidan chiqarildi. Shu bilan birga, boshqa shaxslarga nisbatan joriy etilgan cheklovlar birdaniga uch yil muddatga uzaytirildi.</p>\n\n<p>Ushbu geosiyosiy va iqtisodiy o‘zgarish nafaqat global moliya bozorlariga, balki O‘zbekistonning raqamli ekotizimiga ham bevosita ta’sir ko‘rsatadi. Usmonovga tegishli USM xoldingi mamlakatimiz telekommunikatsiya va raqamli xizmatlar bozorida (xususan, Digital Holding va Ucell orqali) yetakchi o‘rinlardan birini egallaydi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sanksiyalarning bekor qilinishi yirik texnologik infratuzilmalarni moliyalashtirish va g‘arb texnologiyalarini import qilish yo‘lidagi to‘siqlarni olib tashlaydi. Endilikda O‘zbekistonda yuqori tezlikdagi ma’lumotlar markazlarini qurish va Sun’iy intellekt modellarini o‘qitish uchun zarur bo‘lgan ilg‘or hisoblash serverlarini (GPU) sotib olish imkoniyatlari kengayadi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>G‘arb apparat ta’minoti (hardware) va dasturiy yechimlariga to‘g‘ridan-to‘g‘ri kirish imkoniyati ochiladi.</li>\n      <li>Sun’iy intellekt va katta ma’lumotlar (Big Data) bilan ishlovchi muhandislar uchun xalqaro bulutli platformalar bilan integratsiya qilish osonlashadi.</li>\n      <li>Mahalliy dasturchilar va tizim arxitektorlari xalqaro standartlar asosida xavfsiz raqamli tizimlarni ishlab chiqish imkoniga ega bo‘ladilar.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Xalqaro investitsiyalar va venchur fondlarining O‘zbekiston IT bozoriga bo‘lgan ishonchi ortadi, kapital oqimi tezlashadi.</li>\n      <li>Telekommunikatsiya va fintech sohalarida xizmatlar tannarxi pasayadi, bu esa korporativ mijozlar uchun ROI (investitsiyalar rentabelligi) ko‘rsatkichini yaxshilaydi.</li>\n      <li>Kiberxavfsizlik va xalqaro muvofiqlik (compliance) xatarlari sezilarli darajada kamayadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT va Sun’iy intellekt infratuzilmasini rivojlantirishda yangi davr boshlanishi mumkin. Digital Holding tarkibiga kiruvchi kompaniyalar endilikda Yevropa va AQShning yetakchi texnologik gigantlari bilan to‘g‘ridan-to‘g‘ri hamkorlik shartnomalarini imzolashlari osonlashadi. Bu esa mamlakatimizda milliy Sun’iy intellekt modellarini ishlab chiqish va ularni davlat hamda xususiy sektor xizmatlariga tatbiq etish jarayonini tezlashtiradi. Siz ushbu o‘zgarishlar tufayli yaqin oylarda yuqori texnologiyali loyihalarga investitsiyalar ko‘payishini kuzatishingiz mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Mavjud IT-infratuzilmangizni xalqaro hamkorlikka tayyorlang va g‘arb texnologiyalari bilan integratsiya imkoniyatlarini tahlil qiling.</li>\n    <li>Sun’iy intellekt va ma’lumotlarni qayta ishlash loyihalarida xalqaro litsenziyalash va muvofiqlik (compliance) talablarini qayta ko‘rib chiqing.</li>\n    <li>Telekommunikatsiya va raqamli xizmatlar provayderlari bilan hamkorlikda yangi raqamli mahsulotlarni ishlab chiqish strategiyasini yangilang.</li>\n  </ol>\n</div>",
+    "secondary_sources": [
+      {
+        "name": "arXiv Ilmiy Manuskripti (PDF)",
+        "title": "Do Synthetic Personas Predict Real Audience Response? Complete Research Manuscript",
+        "url": "https://arxiv.org/pdf/2609.25010",
+        "date": "23.09.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>arXiv platformasida e'lon qilingan yangi tadqiqotda katta til modellari (LLM) yordamida \"sintetik personajlar\" (synthetic personas) orqali auditoriya reaksiyasini bashorat qilish samaradorligi o‘rganildi. Marketing jamoalari matn va sarlavhalar bosilishini (CTR) tekshirish uchun ko'pincha turli demografik qatlamlarni aks ettiruvchi maxsus personajlar tizimini ishlab chiqishadi. Biroq, Upworthy tadqiqot arxividagi minglab real A/B testlar asosida o'tkazilgan tahlil kutilmagan natijani berdi: personajlarsiz yo'naltirilgan oddiy zero-shot prompt tizimi murakkab personajlar panelidan ko'ra aniqroq va ishonchliroq natija ko'rsatdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt vositalaridan foydalanishda ko'pincha \"qancha murakkab prompt va xarakter berilsa, natija shuncha aniq bo'ladi\" degan qarash mavjud. Ushbu tadqiqot ushbu gipotezani rad etadi. Katta til modellari muayyan demografik profil xarakteriga kirganida (role-play), ba'zida stereotiplarga berilishi va ortiqcha shovqinli (noise) ma'lumotlarni ko'paytirishi aniqlandi. Akkauntlarni sun'iy ravishda segmentatsiyalash o'rniga, modeldan to'g'ridan-to'g'ri \"o'rtacha kitobxon bu sarlavhani bosadimi?\" deb so'rash real xulq-atvorga yaqinroq javob beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Sim-to-Real uzilishi:</strong> Profil berilgan LLM'lar ba'zida inson namunasini taqlid qilsa-da, real CTR xulq-atvori bilan korrelyatsiyasi past bo'lib chiqdi.</li>\n      <li><strong>Shovqin ko'payishi:</strong> Synthetic Personas panelida javoblar tarqoqligi (variance) oshadi, lekin aniqlik kamayadi. Zero-shot baseline esa ortiqcha shovqinlarni cheklaydi.</li>\n      <li><strong>Inferens xarajatlari:</strong> 10 xil persona bo'yicha prompt yuborish o'rniga bitta neytral prompt ishlatish hisoblash resurslarini 10 barobargacha tejash imkonini beradi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Xarajatlarni kamaytirish:</strong> Qimmatbaho va murakkab sintetik profil tizimlarini qurishga shoshilmang; oddiy so'rovlar bilan ham marketing farazlarini tezroq sinashingiz mumkin.</li>\n      <li><strong>A/B testlarni almashtirmaslik:</strong> Sun’iy intellekt real mijozlar testining o'rnini to'liq bosa olmaydi, u faqat dastlabki gipotezalarni saralashga xizmat qiladi.</li>\n      <li><strong>Yuqori ROI:</strong> Ortiqcha muhandislik va prompt murakkabligisiz Sun’iy intellekt imkoniyatlaridan tejamkor foydalanish yo'li ochiladi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT va raqamli marketing bozorida ham Sun’iy intellekt vositalari orqali maqsadli auditoriya profilini shakllantirish tendensiyasi o'smoqda. Mahalliy kompaniyalar va agentliklar murakkab personaj simulyatsiyalarini qurish uchun ko'p vaqt va mablag' sarflashlari shart emas. Siz o'z marketing gipotezalaringizni oddiy va to'g'ridan-to'g'ri promptlar orqali tezkor sinovdan o'tkazishingiz, tejalgan resurslarni esa real O'zbekiston auditoriyasida o'tkaziladigan haqiqiy A/B testlariga yo'naltirishingiz mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Prompt injeneriyasini soddalashtiring:</strong> Marketing matnlarini baholashda murakkab personajlar o'rniga aniq, neytral zero-shot promptlardan foydalaning.</li>\n    <li><strong>Real ma'lumotlar bilan tekshiring:</strong> Sun’iy intellekt bergan taxminlarni doimiy ravishda o'zingizning real bosilishlar va konversiya ko'rsatkichlaringiz bilan solishtirib boring.</li>\n    <li><strong>Inferens xarajatlarini audit qiling:</strong> Qayta-qayta takrorlanuvchi qimmat sintetik panellar o'rniga tejamkor modellar va sodda prompt arxitekturasini joriy eting.</li>\n  </ol>\n</div>",
     "verification_status": "VERIFIED",
     "verification_date": "2026-09-23"
   },
