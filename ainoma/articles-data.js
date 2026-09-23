@@ -6,6 +6,7 @@ window.AINOMA_ARTICLES = {
     "kicker": "Voqea: 22-Sentabr, 2026 · Manba: OpenAI Research · AiNoma: 23-Sentabr, 2026",
     "deck": "GPT-6 oilasi kengaydi: murakkab dasturlash vazifalari uchun Sol hamda ultra-tezkor va ixcham Luna modellari taqdim etildi. API narxlari ikki barobar arzonlashdi.",
     "event_date": "2026-09-22",
+    "pinned": true,
     "source_published_date": "2026-09-22",
     "ainoma_published_date": "2026-09-23",
     "ainoma_updated_date": "2026-09-23",
