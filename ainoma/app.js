@@ -115,7 +115,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "O‘zbekistonda YouTube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: Raqamli media va biznes uchun yangi imkoniyatlar", u: "maqola.html?id=youtube-monetizatsiya-ozbekiston-google", k: "o‘zbekistonda youtube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: raqamli media va biznes uchun yangi imkoniyatlar o‘zbekiston it spot.uz it & biznes google rahbariyati bilan o‘tkazilgan muzokaralar o‘zbekistonda youtube hamkorlik dasturini faollasht" },
   { t: "Sun’iy intellektda sintetik personajlar afsonasi: Oddiy so‘rov murakkab personalardan ustun keldi", u: "maqola.html?id=sintetik-persona-suniy-intellekt-ab-test-arxiv-2026", k: "sun’iy intellektda sintetik personajlar afsonasi: oddiy so‘rov murakkab personalardan ustun keldi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
   { t: "Sun’iy intellekt sohasida intellektual mulk chegarasi: Meta Muse yordamchisida OpenClaw izlari tan olindi", u: "maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili", k: "sun’iy intellekt sohasida intellektual mulk chegarasi: meta muse yordamchisida openclaw izlari tan olindi dunyo texnologiya techcrunch ai meta kompaniyasi yangi muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning " },
   { t: "JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma", u: "maqola.html?id=jetbrains-air", k: "jetbrains 'air' tizimini e’lon qildi: agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma dasturlash devtools jetbrains official blog jetbrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom ai agentlarini koordinatsiya qili" },

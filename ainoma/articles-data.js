@@ -1,4 +1,38 @@
 window.AINOMA_ARTICLES = {
+  "youtube-monetizatsiya-ozbekiston-google": {
+    "id": "youtube-monetizatsiya-ozbekiston-google",
+    "slug": "youtube-monetizatsiya-ozbekiston-google",
+    "title": "O‘zbekistonda YouTube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: Raqamli media va biznes uchun yangi imkoniyatlar",
+    "kicker": "Voqea: 23-Sentabr, 2026 · Manba: Spot.uz · AiNoma: 23-Sentabr, 2026",
+    "deck": "Google rahbariyati bilan o‘tkazilgan muzokaralar O‘zbekistonda YouTube hamkorlik dasturini faollashtirish va mahalliy kreatorlar uchun moliya oqimlarini ochish imkonini beradi.",
+    "event_date": "2026-09-23",
+    "source_published_date": "2026-09-23",
+    "ainoma_published_date": "2026-09-23",
+    "ainoma_updated_date": "2026-09-23",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Raqamli Iqtisodiyot va Media Ekosistema",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "O‘zbekiston IT",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/social_commerce.jpg",
+    "imgAlt": "O‘zbekistonda YouTube monetizatsiyasi va raqamli media rivoji",
+    "qisqacha": [
+      "O‘zbekiston rasmiylari hamda Google vitse-prezidenti o‘rtasida YouTube Partner Program’ni (YPP) mamlakatimizda faollashtirish masalasi muhokama qilindi.",
+      "Monetizatsiyaning yo‘lga qo‘yilishi mahalliy kontent mualliflariga to‘g‘ridan-to‘g‘ri daromad keltirish va brendlar uchun aniq targeting imkoniyatini taqdim etadi.",
+      "Sun’iy intellekt va zamonaviy media vositalari yordamida sifatli video kontent ishlab chiquvchi jamoalar uchun yangi moliyaviy manba ochiladi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz IT & Biznes",
+      "title": "O‘zbekistonda YouTube monetizatsiyasi ishga tushirilishi mumkin",
+      "url": "https://www.spot.uz/oz/2026/09/23/youtube-monetization/",
+      "date": "23.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekistonda YouTube platformasining rasmiy monetizatsiya tizimini (YouTube Partner Program) faollashtirish bo‘yicha muhim strategik muzokaralar o‘tkazildi. Saida Mirziyoyeva Google kompaniyasining vitse-prezidenti bilan bo‘lib o‘tgan uchrashuvda mamlakatimizda kontent mualliflari hamda media-kompaniyalar uchun to‘g‘ridan-to‘g‘ri moliyaviy imkoniyatlarni taqdim etish masalasini atroflicha muhokama qildi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ayni paytgacha O‘zbekistondagi kreatorlar va media uylar YouTube orqali to‘g‘ridan-to‘g‘ri monetizatsiya daromadlarini olishda cheklovlarga duch kelayotgan edi. Ushbu tizimning rasman ishga tushirilishi mahalliy raqamli ekotizim, Sun’iy intellekt texnologiyalari yordamida video tayyorlayotgan mutaxassislar hamda mahalliy brendlar uchun burilish nuqtasi bo‘ladi. Siz bu orqali o‘z media loyihalaringizni barqaror daromad manbaiga aylantirishingiz va xalqaro bozorga chiqishingiz mumkin bo‘ladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Algoritmlar va optimallashtirish:</strong> Kontentni monetizatsiya standartlariga mos ravishda tayyorlash hamda mualliflik huquqlarini (Content ID) himoya qilish tizimlarini joriy etish.</li>\n      <li><strong>Sun’iy intellekt integratsiyasi:</strong> Ovozni avtomatik tarjima qilish, ko‘p tilli subtitrlar va AI-montaj vositalari yordamida auditoriya qamrovini kengaytirish.</li>\n      <li><strong>Analitika:</strong> YouTube Analytics ma'lumotlari orqali foydalanuvchilar faolligi hamda CPM/RPM ko‘rsatkichlarini chuqur tahlil qilish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Aniq targeting va ROI:</strong> Google Ads orqali O‘zbekiston auditoriyasiga mo‘ljallangan aniq in-stream reklamalarni yo‘lga qo‘yish imkoniyati.</li>\n      <li><strong>Brending va Media-investitsiya:</strong> Mahalliy kontent ishlab chiquvchilarga to‘g‘ridan-to‘g‘ri investitsiya kiritish va brend integratsiyasining unumdorligini oshirish.</li>\n      <li><strong>Eksport salohiyati:</strong> Mahalliy mahsulotlar va xizmatlarni xorijiy tomoshabinlarga namoyish etib, valyuta tushumlarini oshirish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>YouTube monetizatsiyasining ochilishi O‘zbekiston media sanoatida keskin sifat o‘sishini ta’minlaydi. Mahalliy IT va kreatorlar hamjamiyati xalqaro valyuta tushumlariga ega bo‘ladi. Bu o‘z navbatida, Sun’iy intellekt asosida kontent ishlab chiqaruvchi agentliklar va frilanserlar faoliyatini tizimlashtirishga hamda yangi ish o‘rinlarini shakllantirishga xizmat qiladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Kanalingizni muvofiqlashtiring:</strong> YouTubening monetizatsiya shartlari (obunachilar va tomosha soatlari) va mualliflik huquqi qoidalariga rioya etilishini tekshirib chiqing.</li>\n    <li><strong>Sun’iy intellekt vositalarini tatbiq eting:</strong> Video sifatini va kontent ishlab chiqarish tezligini oshirish uchun zamonaviy AI generatorlari va ovoz ishlov beruvchi dasturlardan foydalaning.</li>\n    <li><strong>Marketing strategiyangizni tayyorlang:</strong> Agar biznes egasi bo‘lsangiz, raqamli reklama byudjetini YouTube in-stream va Bumper formatlariga moslashtirish rejasini ishlab chiqing.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-23"
+  },
   "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026": {
     "id": "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026",
     "slug": "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026",
