@@ -1,4 +1,38 @@
 window.AINOMA_ARTICLES = {
+  "eu-removes-usmanov-sanctions-uzbekistan-tech-impact": {
+    "id": "eu-removes-usmanov-sanctions-uzbekistan-tech-impact",
+    "slug": "eu-removes-usmanov-sanctions-uzbekistan-tech-impact",
+    "title": "Yevropa Ittifoqi Alisher Usmonovni sanksiyalar ro‘yxatidan chiqardi: O‘zbekiston raqamli infratuzilmasi va Sun’iy intellekt loyihalari uchun yangi imkoniyatlar",
+    "kicker": "Voqea: 23-Sentabr, 2026 · Manba: Spot.uz · AiNoma: 23-Sentabr, 2026",
+    "deck": "Yevropa Ittifoqining Alisher Usmonov va Mixail Fridmanga nisbatan sanksiyalarni bekor qilishi O‘zbekistonning IT-ekotizimi, telekommunikatsiya va Sun’iy intellekt infratuzilmasiga xorijiy investitsiyalar oqimini tezlashtirishi kutilmoqda.",
+    "event_date": "2026-09-23",
+    "source_published_date": "2026-09-23",
+    "ainoma_published_date": "2026-09-23",
+    "ainoma_updated_date": "2026-09-23",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Biznes & AI",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_agents.jpg",
+    "imgAlt": "Yevropa Ittifoqi va O‘zbekiston o‘rtasidagi iqtisodiy va texnologik aloqalar ramziy tasviri",
+    "qisqacha": [
+      "Yevropa Ittifoqi Alisher Usmonov va Mixail Fridmanni sanksiyalar ro‘yxatidan rasman chiqardi, boshqa cheklovlar esa 3 yilga uzaytirildi.",
+      "Ushbu qaror USM va Digital Holding kabi yirik xoldinglarning O‘zbekistondagi telekommunikatsiya va yuqori texnologiyali loyihalariga xorijiy kapital jalb etishini osonlashtiradi.",
+      "Mahalliy bozorda Sun’iy intellekt hisoblash quvvatlarini oshirish va ilg‘or ma’lumotlar markazlarini qurish jarayonlari yangi bosqichga chiqishi mumkin."
+    ],
+    "primary_source": {
+      "name": "Spot.uz IT & Biznes",
+      "title": "Alisher Usmonov Yevropa Ittifoqining sanksiyalar ro‘yxatidan chiqarib tashlandi",
+      "url": "https://www.spot.uz/oz/2026/09/23/eu-usmonov-removed/",
+      "date": "23.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Yevropa Ittifoqi kengashi o‘zining sanksiyalar ro‘yxatiga kutilmagan o‘zgartirishlar kiritdi. Unga ko‘ra, asli o‘zbekistonlik milliarder Alisher Usmonov hamda Alfa-Group aksiyadori Mixail Fridman sanksiyalar ro‘yxatidan chiqarildi. Shu bilan birga, boshqa shaxslarga nisbatan joriy etilgan cheklovlar birdaniga uch yil muddatga uzaytirildi.</p>\n\n<p>Ushbu geosiyosiy va iqtisodiy o‘zgarish nafaqat global moliya bozorlariga, balki O‘zbekistonning raqamli ekotizimiga ham bevosita ta’sir ko‘rsatadi. Usmonovga tegishli USM xoldingi mamlakatimiz telekommunikatsiya va raqamli xizmatlar bozorida (xususan, Digital Holding va Ucell orqali) yetakchi o‘rinlardan birini egallaydi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sanksiyalarning bekor qilinishi yirik texnologik infratuzilmalarni moliyalashtirish va g‘arb texnologiyalarini import qilish yo‘lidagi to‘siqlarni olib tashlaydi. Endilikda O‘zbekistonda yuqori tezlikdagi ma’lumotlar markazlarini qurish va Sun’iy intellekt modellarini o‘qitish uchun zarur bo‘lgan ilg‘or hisoblash serverlarini (GPU) sotib olish imkoniyatlari kengayadi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>G‘arb apparat ta’minoti (hardware) va dasturiy yechimlariga to‘g‘ridan-to‘g‘ri kirish imkoniyati ochiladi.</li>\n      <li>Sun’iy intellekt va katta ma’lumotlar (Big Data) bilan ishlovchi muhandislar uchun xalqaro bulutli platformalar bilan integratsiya qilish osonlashadi.</li>\n      <li>Mahalliy dasturchilar va tizim arxitektorlari xalqaro standartlar asosida xavfsiz raqamli tizimlarni ishlab chiqish imkoniga ega bo‘ladilar.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Xalqaro investitsiyalar va venchur fondlarining O‘zbekiston IT bozoriga bo‘lgan ishonchi ortadi, kapital oqimi tezlashadi.</li>\n      <li>Telekommunikatsiya va fintech sohalarida xizmatlar tannarxi pasayadi, bu esa korporativ mijozlar uchun ROI (investitsiyalar rentabelligi) ko‘rsatkichini yaxshilaydi.</li>\n      <li>Kiberxavfsizlik va xalqaro muvofiqlik (compliance) xatarlari sezilarli darajada kamayadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT va Sun’iy intellekt infratuzilmasini rivojlantirishda yangi davr boshlanishi mumkin. Digital Holding tarkibiga kiruvchi kompaniyalar endilikda Yevropa va AQShning yetakchi texnologik gigantlari bilan to‘g‘ridan-to‘g‘ri hamkorlik shartnomalarini imzolashlari osonlashadi. Bu esa mamlakatimizda milliy Sun’iy intellekt modellarini ishlab chiqish va ularni davlat hamda xususiy sektor xizmatlariga tatbiq etish jarayonini tezlashtiradi. Siz ushbu o‘zgarishlar tufayli yaqin oylarda yuqori texnologiyali loyihalarga investitsiyalar ko‘payishini kuzatishingiz mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Mavjud IT-infratuzilmangizni xalqaro hamkorlikka tayyorlang va g‘arb texnologiyalari bilan integratsiya imkoniyatlarini tahlil qiling.</li>\n    <li>Sun’iy intellekt va ma’lumotlarni qayta ishlash loyihalarida xalqaro litsenziyalash va muvofiqlik (compliance) talablarini qayta ko‘rib chiqing.</li>\n    <li>Telekommunikatsiya va raqamli xizmatlar provayderlari bilan hamkorlikda yangi raqamli mahsulotlarni ishlab chiqish strategiyasini yangilang.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-23"
+  },
   "meta-muse-openclaw-ilhomlanish-tahlili": {
     "id": "meta-muse-openclaw-ilhomlanish-tahlili",
     "slug": "meta-muse-openclaw-ilhomlanish-tahlili",
