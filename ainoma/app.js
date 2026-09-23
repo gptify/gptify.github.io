@@ -114,6 +114,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Sun’iy intellektda sintetik personajlar afsonasi: Oddiy so‘rov murakkab personalardan ustun keldi", u: "maqola.html?id=sintetik-persona-suniy-intellekt-ab-test-arxiv-2026", k: "sun’iy intellektda sintetik personajlar afsonasi: oddiy so‘rov murakkab personalardan ustun keldi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
   { t: "Sun’iy intellekt sohasida intellektual mulk chegarasi: Meta Muse yordamchisida OpenClaw izlari tan olindi", u: "maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili", k: "sun’iy intellekt sohasida intellektual mulk chegarasi: meta muse yordamchisida openclaw izlari tan olindi dunyo texnologiya techcrunch ai meta kompaniyasi yangi muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning " },

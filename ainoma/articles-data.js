@@ -14,7 +14,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "4 daqiqalik mutolaa",
     "category": "Biznes & Sun’iy intellekt",
     "audience": "mutaxassislar biznes",
-    "img": "assets/ai_agents.jpg",
+    "img": "assets/social_commerce.jpg",
     "imgAlt": "Sun’iy intellekt va sintetik personajlar tadqiqoti",
     "qisqacha": [
       "Upworthy tadqiqot bazasidagi minglab real A/B testlar orqali Sun’iy intellekt modellarining auditoriya reaksiyasini taxmin qilish qobiliyati sinovdan o'tkazildi.",
@@ -56,7 +56,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "4 daqiqalik mutolaa",
     "category": "Dunyo Texnologiya",
     "audience": "mutaxassislar biznes",
-    "img": "assets/ai_agents.jpg",
+    "img": "assets/coding_workspace.jpg",
     "imgAlt": "Meta va OpenClaw sun’iy intellekt modellari o'rtasidagi arxitektura va kod o'xshashligi tahlili",
     "qisqacha": [
       "Meta yangi Muse sun’iy intellekt yordamchisi OpenClaw loyihasidan kuchli ilhomlanganini tasdiqladi.",
