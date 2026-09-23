@@ -191,74 +191,92 @@ header {
 .stat b { display: block; font-size: 18px; font-weight: 800; }
 .stat small { font-size: 11px; color: var(--muted); }
 
-/* Hero Featured Article (BOSH MAQOLA) */
+/* Hero Featured Article (BOSH MAQOLA — Split Editorial Design) */
 .hero-card {
-  min-height: 480px;
   height: 100%;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 48px rgba(2, 18, 14, 0.16);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(2, 18, 14, 0.06);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  border: 2px solid rgba(5, 150, 105, 0.35);
+  text-decoration: none;
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 .hero-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 26px 56px rgba(2, 18, 14, 0.24);
+  box-shadow: 0 20px 42px rgba(5, 150, 105, 0.12);
   border-color: var(--green);
 }
-.hero-card > img {
-  position: absolute;
-  inset: 0;
+.hero-card-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0f172a;
+  overflow: hidden;
+}
+.hero-card-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform .4s ease;
 }
-.hero-card:hover > img {
-  transform: scale(1.03);
+.hero-card:hover .hero-card-thumb img {
+  transform: scale(1.04);
 }
-.overlay {
+.hero-card-badge {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(2, 18, 14, 0.96) 0%, rgba(2, 18, 14, 0.55) 55%, rgba(2, 18, 14, 0.15) 100%);
-  z-index: 1;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 32px;
-  color: white;
-}
-.hero-content .label {
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #34d399;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  text-transform: uppercase;
+  letter-spacing: .08em;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
-  letter-spacing: .12em;
-  font-weight: 800;
-  color: #34d399;
-  background: rgba(6, 78, 59, 0.7);
-  border: 1px solid rgba(52, 211, 153, 0.3);
-  padding: 4px 10px;
-  border-radius: 6px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  z-index: 2;
+}
+.hero-content {
+  position: relative;
+  padding: 24px 26px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: var(--ink);
 }
 .hero-content h2 {
-  font: 800 32px/1.2 "Space Grotesk", sans-serif;
-  margin: 10px 0;
-  color: #ffffff;
+  font: 800 22px/1.3 "Space Grotesk", sans-serif;
+  color: var(--ink);
+  margin: 0 0 10px;
+  transition: color .2s ease;
+}
+.hero-card:hover .hero-content h2 {
+  color: var(--green);
 }
 .hero-content p {
   font-size: 14px;
-  color: #d1fae5;
-  max-width: 600px;
-  line-height: 1.6;
-  margin: 0 0 14px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.hero-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  margin-top: auto;
 }
 .hero-read-more {
   display: inline-flex;
@@ -266,10 +284,17 @@ header {
   gap: 6px;
   font-size: 13px;
   font-weight: 700;
-  color: #6ee7b7;
+  color: var(--green);
+  transition: transform .2s ease;
 }
 .hero-card:hover .hero-read-more {
   text-decoration: underline;
+  transform: translateX(3px);
+}
+.hero-meta-date {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
 }
 
 /* Portals Grid — 2-tone clean palette */
@@ -856,7 +881,7 @@ footer {
   .hamb { display: inline-flex; }
   .hero { grid-template-columns: 1fr; }
   .hero h1 { font-size: 44px; }
-  .hero-card { height: 360px; }
+  .hero-card { height: auto; }
   .portals, .topics { grid-template-columns: repeat(2, 1fr); }
   .news-layout, .reco { grid-template-columns: 1fr; }
   .newsletter { flex-direction: column; align-items: flex-start; }
@@ -910,9 +935,10 @@ footer {
   .hero-copy { padding: 0; }
   .hero h1 { font-size: clamp(28px, 8vw, 34px); line-height: 1.15; margin: 10px 0 14px; }
   .lead { font-size: 15px; margin-bottom: 20px; }
-  .hero-card { height: 270px; border-radius: 12px; }
-  .hero-content { padding: 18px; }
-  .hero-content h2 { font-size: 20px; line-height: 1.25; }
+  .hero-card { height: auto; border-radius: 14px; }
+  .hero-content { padding: 16px 18px 16px; }
+  .hero-content h2 { font-size: 19px; line-height: 1.3; }
+  .hero-content p { font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
   
   .stats { gap: 12px; flex-wrap: wrap; }
   .stat { padding-right: 12px; margin-right: 0; }

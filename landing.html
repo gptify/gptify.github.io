@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GPTify Academy — B2B va Professional Sun'iy Intellekt Akademiyasi</title>
+  <meta name="description" content="Sun'iy intellektni noldan o'rganing va ish vaqtingizni haftasiga 10 soatga qisqartiring. 14 ta amaliy B2B darslar, Evergreen modellar va rasmiy QR-Sertifikat.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -31,6 +32,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg-page);
@@ -39,64 +44,16 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Architecture Switcher Bar (Demo Comparison) */
-    .arch-switcher-bar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #0F172A;
-      color: #F8FAFC;
-      padding: 8px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      font-size: 12.5px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      flex-wrap: wrap;
-    }
-    .arch-switcher-label {
-      font-weight: 700;
-      color: #94A3B8;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-size: 11px;
-    }
-    .arch-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 5px 12px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 12px;
-      text-decoration: none;
-      transition: all 0.2s;
-      cursor: pointer;
-      border: 1px solid rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.06);
-      color: #E2E8F0;
-    }
-    .arch-pill:hover {
-      background: rgba(255,255,255,0.15);
-      color: #FFFFFF;
-    }
-    .arch-pill.active {
-      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-      color: #FFFFFF;
-      border-color: transparent;
-      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.35);
-    }
-
     /* Top Navbar */
     .navbar {
       position: sticky;
-      top: 41px;
+      top: 0;
       z-index: 900;
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
       padding: 14px 24px;
+      transition: all 0.2s;
     }
     .navbar-inner {
       max-width: 1240px;
@@ -169,6 +126,7 @@
       cursor: pointer;
       transition: all 0.2s;
       border: none;
+      font-family: inherit;
     }
     .btn-ghost {
       background: var(--bg-subtle);
@@ -320,6 +278,13 @@
       border: 1px solid var(--border);
       font-size: 13px;
       font-weight: 600;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.15s;
+    }
+    .preview-lesson-row:hover {
+      border-color: var(--brand-emerald);
+      transform: translateX(2px);
     }
     .preview-lesson-row:last-child {
       margin-bottom: 0;
@@ -361,6 +326,50 @@
     .section-header p {
       color: var(--text-secondary);
       font-size: 15.5px;
+    }
+
+    /* Before / After Grid */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    .comp-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 26px;
+      border: 1px solid var(--border);
+    }
+    .comp-card.bad {
+      border-left: 4px solid #EF4444;
+    }
+    .comp-card.good {
+      border-left: 4px solid #10B981;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+    }
+    .comp-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .comp-list {
+      list-style: none;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+    .comp-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .comp-list li:last-child {
+      border-bottom: none;
     }
 
     /* Curriculum Grid */
@@ -495,6 +504,85 @@
       flex-shrink: 0;
     }
 
+    /* FAQ Section */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 18px 22px;
+      font-weight: 800;
+      font-size: 15.5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question:hover {
+      color: var(--brand-emerald);
+    }
+    .faq-answer {
+      padding: 0 22px 18px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      display: none;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+    .faq-icon {
+      transition: transform 0.2s;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0F172A;
+      color: #94A3B8;
+      padding: 48px 24px 32px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13.5px;
+    }
+    .footer-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-brand {
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-copy {
+      max-width: 1240px;
+      margin: 20px auto 0;
+      text-align: center;
+      font-size: 12px;
+      color: #64748B;
+    }
+
     /* Login Modal */
     .modal-backdrop {
       position: fixed;
@@ -537,26 +625,18 @@
       .nav-links {
         display: none;
       }
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Architecture Comparison Bar -->
-  <div class="arch-switcher-bar">
-    <span class="arch-switcher-label">🧭 Arxitektura Tanlovi:</span>
-    <a href="index.html?demo=freemium" class="arch-pill">
-      🎯 A-Variant: Freemium App Gate (1.1-dars ochiq, 1.2+ qulflangan)
-    </a>
-    <a href="landing.html" class="arch-pill active">
-      🌐 B-Variant: Alohida Sotuvchi Landing Page + Yopiq Kabinet (Hozirgi sahifa)
-    </a>
-  </div>
-
   <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-inner">
-      <a href="landing.html" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <div class="brand-icon">G</div>
         GPTify Academy <span class="brand-dot"></span>
       </a>
@@ -564,9 +644,10 @@
         <a href="#dastur">O'quv Dasturi (14 Dars)</a>
         <a href="#mualliflar">Mualliflar</a>
         <a href="#tariflar">Tariflar & B2B</a>
+        <a href="#faq">Savol-Javoblar</a>
       </nav>
       <div class="nav-actions">
-        <a href="index.html?demo=freemium" class="btn btn-ghost">👁️ 1.1-Darsni Bepul Ko'rish</a>
+        <a href="app.html?lesson=1_1" class="btn btn-ghost">👁️ 1.1-Darsni Bepul Ko'rish</a>
         <button type="button" onclick="openAppLogin()" class="btn btn-primary">🔒 Kabinetga Kirish (App)</button>
       </div>
     </div>
@@ -583,7 +664,7 @@
         Quruq nazariya emas — 14 ta intensiv amaliy dars, Evergreen modellar matritsasi (Claude Fable, GPT-6 Astra, Gemini 3), Oltin Prompt Formulasi va haftasiga 10+ soat vaqtingizni tejovchi korporativ ish oqimlari.
       </p>
       <div class="hero-cta-group">
-        <a href="index.html?demo=freemium" class="btn btn-primary btn-lg">🚀 1.1-Darsdan Bepul Boshlash</a>
+        <a href="app.html?lesson=1_1" class="btn btn-primary btn-lg">🚀 1.1-Darsdan Bepul Boshlash</a>
         <button type="button" onclick="openAppLogin()" class="btn btn-ghost btn-lg">🔑 Shaxsiy Kabinetni Ochish</button>
       </div>
       <div class="hero-metrics">
@@ -622,31 +703,59 @@
         <p style="font-size:12.5px; color:var(--text-muted); margin-top:2px;">Interaktiv mutolaa, jonli AI vazifa tekshiruvi va rasmiy sertifikatsiya</p>
 
         <div class="preview-lesson-box">
-          <div class="preview-lesson-row">
+          <a href="app.html?lesson=1_1" class="preview-lesson-row">
             <span>1.1. LLM qanday fikrlaydi? (Evergreen Modellar)</span>
             <span class="badge-open">✓ Bepul Preview</span>
-          </div>
-          <div class="preview-lesson-row">
+          </a>
+          <a href="javascript:void(0)" onclick="openAppLogin()" class="preview-lesson-row">
             <span>1.2. Tokenlar, xotira va Context Window</span>
             <span class="badge-locked">🔒 Yopiq Kabinet</span>
-          </div>
-          <div class="preview-lesson-row">
+          </a>
+          <a href="javascript:void(0)" onclick="openAppLogin()" class="preview-lesson-row">
             <span>2.1. Oltin Formula: ROL + KONTEKST + VAZIFA</span>
             <span class="badge-locked">🔒 Yopiq Kabinet</span>
-          </div>
-          <div class="preview-lesson-row">
+          </a>
+          <a href="javascript:void(0)" onclick="openAppLogin()" class="preview-lesson-row">
             <span>3.1. ChatGPT vs Claude vs Perplexity B2B</span>
             <span class="badge-locked">🔒 Yopiq Kabinet</span>
-          </div>
-          <div class="preview-lesson-row">
+          </a>
+          <a href="javascript:void(0)" onclick="openAppLogin()" class="preview-lesson-row">
             <span>5.2. Yakuniy Imtihon & QR-Sertifikat</span>
             <span class="badge-locked">🏆 Sertifikat</span>
-          </div>
+          </a>
         </div>
 
         <div style="margin-top:16px; display:flex; gap:10px;">
-          <a href="index.html?demo=freemium" class="btn btn-primary" style="width:100%;">Kabinetni Jonli Ko'rish →</a>
+          <a href="app.html" class="btn btn-primary" style="width:100%;">Kabinetni Jonli Ko'rish (app.html) →</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Oddiy Foydalanuvchi vs GPTify Mutaxassisi -->
+  <section class="section" style="padding-top:10px;">
+    <div class="section-header">
+      <h2>Nega Oddiy ChatGPT Bilan Cheklanib Bo'lmaydi?</h2>
+      <p>Sun'iy intellektdan professional B2B darajasida foydalanish — tasodifiy savollar berish emas, balki qat'iy tizimga tayanishdir.</p>
+    </div>
+    <div class="comparison-grid">
+      <div class="comp-card bad">
+        <h3 style="color:#DC2626;">❌ Oddiy Foydalanuvchi Xatolari</h3>
+        <ul class="comp-list">
+          <li><span>⚠️</span> <span>Modelga ochiq manbasiz savol berib, soxta qonun moddalari yoki yolg'on (hallucination) natija olish.</span></li>
+          <li><span>⚠️</span> <span>Har yangi versiya (GPT-5, Claude, Gemini) chiqqanda boshqatdan adashib qolish.</span></li>
+          <li><span>⚠️</span> <span>Korporativ maxfiy hisobotlar va mijozlar telefonlarini ochiq chatlarga tashlab yuborish (NDA xavfi).</span></li>
+          <li><span>⚠️</span> <span>Har bir savolga 10 martalab qayta-qayta tushuntirib, vaqtni tejash o'rniga behuda sarflash.</span></li>
+        </ul>
+      </div>
+      <div class="comp-card good">
+        <h3 style="color:#059669;">✅ GPTify Academy Bitiruvchisi Tizimi</h3>
+        <ul class="comp-list">
+          <li><span>🛡️</span> <span><b>Grounding qoidasi:</b> Modelni qat'iy taqdim etilgan hujjat bilan cheklab, 99% aniqlikka erishish.</span></li>
+          <li><span>🧭</span> <span><b>Evergreen 4-Arxetip:</b> Model nomiga emas, vazifaga mos laboratoriya DNKsiga qarab to'g'ri tanlash.</span></li>
+          <li><span>🔒</span> <span><b>Ma'lumotlar xavfsizligi:</b> Chat history & training sozlamalarini to'g'ri o'chirib, maxfiylikni kafolatlash.</span></li>
+          <li><span>⚡</span> <span><b>Oltin Formula (RTC):</b> 1-urinishdayoq mukammal shartnoma, tahlil va rasmiy xat olish.</span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -718,7 +827,7 @@
           <h3 style="font-size:17px; font-weight:800;">Shukhrat Iskandarov</h3>
           <div style="font-size:12.5px; color:var(--brand-emerald); font-weight:700; margin-bottom:6px;">GPTify.co asoschisi & Cubeo.ai hammuassisi (Berlin — Toshkent)</div>
           <p style="font-size:13.5px; color:var(--text-secondary);">
-            Yevropa va O'zbekiston kompaniyalari uchun B2B AI ish oqimlari, CRM avtomatizatsiyasi va avtonom agentlar arxitektori.
+            Yevropa va O'zbekiston kompaniyalari uchun B2B AI ish oqimlari, CRM avtomatizatsiyasi va avtonom tizimlar arxitektori.
           </p>
         </div>
       </div>
@@ -728,7 +837,7 @@
           <h3 style="font-size:17px; font-weight:800;">Davlatbek Iskandarov, PhD</h3>
           <div style="font-size:12.5px; color:#0284C7; font-weight:700; margin-bottom:6px;">TDIU Dotsenti, Ilmiy Rahbar va Metodolog</div>
           <p style="font-size:13.5px; color:var(--text-secondary);">
-            O'quv dasturining pedagogik tizimi, baholash mezonlari va amaliy malaka sertifikatsiyasi ilmiy rahbari.
+            O'quv dasturining pedagogik tuzilishi, baholash mezonlari va amaliy malaka sertifikatsiyasi ilmiy rahbari.
           </p>
         </div>
       </div>
@@ -755,7 +864,7 @@
             <li>✅ GPTify B2B Telegram hamjamiyatiga kirish</li>
           </ul>
         </div>
-        <a href="index.html?demo=freemium" class="btn btn-ghost" style="width:100%;">1.1-Darsni Bepul O'qish →</a>
+        <a href="app.html?lesson=1_1" class="btn btn-ghost" style="width:100%;">1.1-Darsni Bepul O'qish →</a>
       </div>
 
       <!-- Tier 2 -->
@@ -793,6 +902,71 @@
       </div>
     </div>
   </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq" style="padding-top:10px;">
+    <div class="section-header">
+      <h2>Ko'p Beriladigan Savollar</h2>
+      <p>Kurs, sertifikat va korporativ kirish bo'yicha eng muhim ma'lumotlar.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Ushbu kurs kimlar uchun mo'ljallangan?</span>
+          <span class="faq-icon">▾</span>
+        </div>
+        <div class="faq-answer">
+          Ushbu kurs dasturchi bo'lmagan, lekin o'z kasbiy ishida sun'iy intellektdan unumli foydalanishni istagan mutaxassislar (rahbarlar, savdo va marketing menejerlari, huquqshunoslar, moliya xodimlari va tahlilchilar) uchun ishlab chiqilgan.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Har safar yangi AI modeli chiqqanda bu bilimlar eskirmaydimi?</span>
+          <span class="faq-icon">▾</span>
+        </div>
+        <div class="faq-answer">
+          Yo'q! Biz vaqtinchalik versiya raqamlarini emas, balki <b>Evergreen 4-Arxetip</b> va <b>Laboratoriyalar DNKsi</b> frameworkini o'rgatamiz. Natijada ertaga yangi model chiqsa ham, siz uning xususiyatini 1 soniyada tushunib olasiz.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Sertifikat qanday beriladi va uni tekshirsa bo'ladimi?</span>
+          <span class="faq-icon">▾</span>
+        </div>
+        <div class="faq-answer">
+          Barcha 14 ta dars va amaliy topshiriqlarni muvaffaqiyatli yakunlaganingizdan so'ng, sizga unikal SHA-256 xesh kodiga ega rasmiy sertifikat beriladi. Har qanday ish beruvchi uning QR-kodini skaner qilib, platforma reyestridan haqiqiyligini tekshirishi mumkin.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Korxonamiz xodimlari uchun to'lovni o'tkazma (hisob-raqam) orqali amalga oshirish mumkinmi?</span>
+          <span class="faq-icon">▾</span>
+        </div>
+        <div class="faq-answer">
+          Albatta. Korporativ B2B jamoalar uchun rasmiy shartnoma va hisob-faktura (schet-faktura) taqdim etiladi. B2B paketga xodimlar uchun alohida kabinetlar va rahbar uchun analitika kiradi.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-icon" style="width:28px; height:28px; font-size:11px;">G</div>
+        <span>GPTify Academy</span>
+      </div>
+      <div style="display:flex; gap:20px; font-size:13px;">
+        <a href="app.html" style="color:#94A3B8; text-decoration:none;">O'quv Kabineti (App)</a>
+        <a href="#dastur" style="color:#94A3B8; text-decoration:none;">Dastur</a>
+        <a href="#tariflar" style="color:#94A3B8; text-decoration:none;">Tariflar</a>
+        <a href="https://t.me/gptifyuz" target="_blank" style="color:#10B981; text-decoration:none; font-weight:700;">Telegram: @gptifyuz</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 GPTify (GPTify.co). Barcha huquqlar himoyalangan. B2B Sun'iy Intellekt Ish Oqimlari va Tizimlari.
+    </div>
+  </footer>
 
   <!-- App Login Modal -->
   <div class="modal-backdrop" id="appLoginModal" onclick="if(event.target===this) closeAppLogin()">
@@ -832,7 +1006,11 @@
       try {
         localStorage.setItem('gptify_auth_user', name || 'Foydalanuvchi');
       } catch(e) {}
-      window.location.href = 'index.html?demo=unlocked';
+      window.location.href = 'app.html?auth=1';
+    }
+    function toggleFaq(el) {
+      const parent = el.parentElement;
+      parent.classList.toggle('open');
     }
   </script>
 </body>
