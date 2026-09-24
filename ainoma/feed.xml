@@ -16,11 +16,18 @@
       <description>Google DeepMind konfidentsial sun’iy intellekt hisoblashlari (Private AI Compute) uchun yangi apparat xotira arxitekturasini e’lon qildi — endi korporativ ma’lumotlar serverda qayta ishlanganda ham to‘liq shifrlangan holatda qoladi.</description>
     </item>
     <item>
-      <title>Google joylashuv ma’lumotlari maxfiyligi buzilgani uchun 403 mln yevro jarimaga tortildi</title>
-      <link>https://ainoma.uz/maqola.html?id=google-403-mln-yevro-jarima-joylashuv-malumotlari</link>
-      <guid>https://ainoma.uz/maqola.html?id=google-403-mln-yevro-jarima-joylashuv-malumotlari</guid>
-      <pubDate>Mon, 23 Sep 2026 10:00:00 +0500</pubDate>
-      <description>Yevropa regulyatorlari Google kompaniyasiga foydalanuvchilar geolokatsiya ma’lumotlarini shaffof qayta ishlamagani va belgilangan muddatdan uzoq saqlagani uchun yirik moliyaviy jazo qo‘lladi.</description>
+      <title>Oracle Sun’iy Intellekt Infratuzilmasi Uchun 2.8 Mlrddan Ortiq Mablag‘ Yo‘naltirmoqda: An’anaviy Dasturchilar O‘rnini GPU va AI Muhandislari Egallamoqda</title>
+      <link>https://ainoma.uz/maqola.html?id=oracle-ai-cloud-restructuring-layoffs-2026</link>
+      <guid>https://ainoma.uz/maqola.html?id=oracle-ai-cloud-restructuring-layoffs-2026</guid>
+      <pubDate>Mon, 24 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Oracle an’anaviy bulut va dasturiy ta’minot bo‘limlaridagi xodimlarni qisqartirib, bo‘shagan 2.8 milliard dollardan ortiq sarmoyani ulkan sun’iy intellekt ma’lumotlar markazlari va GPU klasterlariga qayta yo‘naltirmoqda.</description>
+    </item>
+    <item>
+      <title>O‘zbekiston Banklarida Sun’iy Intellekt Skoringi: 500 Mln So‘mgacha Kreditlarda Qog‘ozbozlik va Biznes-Reja Talabi Qanday Bekor Bo‘lmoqda?</title>
+      <link>https://ainoma.uz/maqola.html?id=ozbekiston-fintex-kredit-skoring-ai-tahlil-2026</link>
+      <guid>https://ainoma.uz/maqola.html?id=ozbekiston-fintex-kredit-skoring-ai-tahlil-2026</guid>
+      <pubDate>Mon, 24 Sep 2026 10:00:00 +0500</pubDate>
+      <description>Tadbirkorlar uchun 500 million so‘mgacha kredit ajratishda an’anaviy biznes-reja majburiyati bekor qilindi — mahalliy banklar va fintex tashkilotlari kredit risklarini baholashda real vaqt rejimida ishlovchi sun’iy intellekt va pul oqimi skoringiga o‘tmoqda.</description>
     </item>
     <item>
       <title>O‘zbekistonda YouTube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: Raqamli media va biznes uchun yangi imkoniyatlar</title>
@@ -56,13 +63,6 @@
       <guid>https://ainoma.uz/maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili</guid>
       <pubDate>Mon, 22 Sep 2026 10:00:00 +0500</pubDate>
       <description>Meta kompaniyasi yangi Muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning OpenClaw loyihasidan sezilarli darajada ilhomlanganini rasman tan oldi.</description>
-    </item>
-    <item>
-      <title>JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma</title>
-      <link>https://ainoma.uz/maqola.html?id=jetbrains-air</link>
-      <guid>https://ainoma.uz/maqola.html?id=jetbrains-air</guid>
-      <pubDate>Mon, 22 Sep 2026 10:00:00 +0500</pubDate>
-      <description>JetBrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom AI agentlarini koordinatsiya qilish imkonini beruvchi 'JetBrains Air' mahsulotlar tizimini chiqardi.</description>
     </item>
   </channel>
 </rss>
