@@ -6,6 +6,7 @@ window.AINOMA_ARTICLES = {
     "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
     "deck": "Google DeepMind konfidentsial sun’iy intellekt hisoblashlari (Private AI Compute) uchun yangi apparat xotira arxitekturasini e’lon qildi — endi korporativ ma’lumotlar serverda qayta ishlanganda ham to‘liq shifrlangan holatda qoladi.",
     "event_date": "2026-09-24",
+    "pinned": true,
     "source_published_date": "2026-09-24",
     "ainoma_published_date": "2026-09-24",
     "ainoma_updated_date": "2026-09-24",
@@ -14,7 +15,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "4 daqiqalik mutolaa",
     "category": "Frontier AI Tadqiqot",
     "audience": "mutaxassislar biznes",
-    "img": "assets/google_gemini_banner.jpg",
+    "img": "assets/deepmind_private_ai.jpg",
     "imgAlt": "Google DeepMind Private AI Compute xavfsiz apparat xotira texnologiyasi",
     "qisqacha": [
       "Google DeepMind shaxsiy sun’iy intellekt hisob-kitoblari uchun server tomonidagi xavfsiz apparat xotira arxitekturasini rasman taqdim etdi.",
@@ -30,41 +31,6 @@ window.AINOMA_ARTICLES = {
     },
     "secondary_sources": [],
     "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind tadqiqot jamoasi sun’iy intellekt xavfsizligida yangi bosqichni boshlab beruvchi <strong>Private AI Compute</strong> (Maxfiy sun’iy intellekt hisoblashlari) tizimini e’lon qildi. Ushbu tizim yirik til modellari (LLM) bilan ishlashda ma’lumotlarni nafaqat saqlash yoki uzatish jarayonida, balki bevosita server operativ xotirasida (RAM) qayta ishlash chog‘ida ham apparat darajasida himoyalovchi xavfsiz enklav texnologiyasiga tayanadi. Natijada hatto bulut provayderining o‘zi yoki tizim administratorlari ham Siz yuborgan so‘rovlar va shaxsiy ma’lumotlarni ko‘ra olmaydi.</p>\n\n<h2>Nega bu muhim? (Texnik va Biznes nuqtai nazaridan)</h2>\n<p>Bugungi kunda banklar, sog‘liqni saqlash muassasalari va xususiy korxonalar sun’iy intellektdan foydalanishda bitta asosiy to‘siqqa duch kelmoqda: maxfiy korporativ ma’lumotlarning bulutga chiqib ketishi xavfi. DeepMind taklif etgan yangi arxitektura inferens tezligini sekinlashtirmagan holda nol-ishonch (Zero-Trust) tamoyilini apparat darajasida kafolatlaydi. Bu korxonalarga o‘zining eng qimmatli tijoriy sirlari va mijozlar bazasini sun’iy intellekt agentlariga xavfsiz topshirish eshigini ochadi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Apparat darajasidagi Enklavlar (Confidential VMs):</strong> LLM vaznlari va kontekst oynasi xotirada shifrlangan holatda (Hardware Memory Encryption) saqlanadi, xotira dump qilinganda ham hech narsa o‘qilmaydi.</li>\n      <li><strong>Kriptografik Tasdiqlash (Remote Attestation):</strong> Mijoz so‘rov yuborishdan oldin server haqiqatan ham xavfsiz kod va o‘zgarmas modelni ishlatayotganini kriptografik tekshirishi mumkin.</li>\n      <li><strong>Nol-Kesh Qoldig‘i:</strong> Sessiya yakunlanishi bilan kontekst xotiradan butunlay o‘chiriladi va keyingi so‘rovlar uchun hech qanday iz qoldirilmaydi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Maxfiylik Kafolati:</strong> Bank operatsiyalari, buxgalteriya hisobotlari va shartnomalarni xalqaro xavfsizlik standartlariga muvofiq xavfsiz tahlil qilish imkoniyati.</li>\n      <li><strong>Regulyatorlar Talabiga Moslik:</strong> GDPR va O‘zbekiston Shaxsiy ma’lumotlar to‘g‘risidagi qonunchiligi talablariga to‘liq javob beruvchi arxitektura.</li>\n      <li><strong>Tijoriy Sir Xavfsizligi:</strong> Kompaniya ichki ma’lumotlari ommaviy modellarni qayta o‘rgatishga tushib qolmasligi 100% kafolatlanadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistondagi ko‘plab moliya tashkilotlari, davlat idoralari va sug‘urta kompaniyalari ma’lumotlar maxfiyligi sababli xalqaro LLM modellardan foydalanishdan cheklanib kelayotgan edi. Ushbu xavfsiz xotira texnologiyasi mahalliy IT jamoalariga eng ilg‘or xalqaro modellarni xavfsizlik qoidalarini buzmagan holda biznes jarayonlariga integratsiya qilish imkonini beradi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Ma’lumotlar xavfsizligi auditini o‘tkazing:</strong> Kompaniyada AI vositalariga qanday ma’lumotlar yuborilayotganini tekshiring va maxfiy ma’lumotlar oqimini tartibga soling.</li>\n    <li><strong>Confidential Computing yechimlarini o‘rganing:</strong> Bulutli xizmatlar (Google Cloud, AWS, Azure) bilan ishlaganda Confidential VM va shifrlangan xotira imkoniyatlaridan foydalanishni yo‘lga qo‘ying.</li>\n    <li><strong>Zero-Retention shartlarini talab qiling:</strong> AI provayderlari bilan shartnomalarda ma’lumotlarni saqlamaslik (Zero Data Retention) bandini majburiy qilib belgilang.</li>\n  </ol>\n</div>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-09-24"
-  },
-  "oracle-ai-cloud-restructuring-layoffs-2026": {
-    "id": "oracle-ai-cloud-restructuring-layoffs-2026",
-    "slug": "oracle-ai-cloud-restructuring-layoffs-2026",
-    "title": "Oracle AI Sababli Dasturchilarni Ommaviy Qisqartirmoqda",
-    "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
-    "deck": "Oracle kompaniyasi sun’iy intellektga o‘tish doirasida an’anaviy dasturchi va xodimlarni ommaviy ishdan bo‘shatmoqda. Bo‘shagan 2.8 milliard dollarlik mablag‘ esa AI klasterlariga yo‘naltirilmoqda.",
-    "event_date": "2026-09-24",
-    "pinned": true,
-    "source_published_date": "2026-09-24",
-    "ainoma_published_date": "2026-09-24",
-    "ainoma_updated_date": "2026-09-24",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Global Bulut & AI Infratuzilmasi",
-    "readTime": "4 daqiqalik mutolaa",
-    "category": "Global Biznes & AI",
-    "audience": "mutaxassislar biznes",
-    "img": "assets/oracle_ai_banner.jpg",
-    "imgAlt": "Oracle kompaniyasida sun’iy intellekt sababli ommaviy ishdan bo‘shatishlar",
-    "qisqacha": [
-      "Oracle kompaniyasi sun’iy intellekt infratuzilmasiga o‘tish munosabati bilan an’anaviy dasturchilarni ommaviy qisqartirmoqda.",
-      "An’anaviy dasturiy ta’minot jamoalarini qisqartirish orqali bo‘shagan 2.8 milliard dollar mablag‘ to‘liq GPU klasterlariga yo‘naltirilmoqda.",
-      "Bu global IT bozorida oddiy kod yozuvchilar o‘rnini sun’iy intellekt infratuzilmasi egallayotganini ko‘rsatadi."
-    ],
-    "primary_source": {
-      "name": "CyberNews & Business Insider",
-      "title": "Oracle Layoffs & AI Infrastructure Shift",
-      "url": "https://cybernews.com/news/oracle-layoffs-ai-restructuring/",
-      "date": "24.09.2026",
-      "badge": "BIRLAMCHI MANBA"
-    },
-    "secondary_sources": [],
-    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Global texnologiya giganti Oracle kompaniyasi sun’iy intellekt poygasi va yangi avlod infratuzilmasiga o‘tish doirasida <strong>ommaviy ishdan bo‘shatishlar (layoffs)</strong> to‘lqinini amalga oshirmoqda. Kompaniya an’anaviy dasturiy ta’minot, ma’lumotlar bazasi va bulut xizmatlaridagi yuzlab dasturchilar hamda boshqaruv xodimlarini qisqartirmoqda. Ushbu optimallashtirish orqali bo‘shagan <strong>2.8 milliard dollardan ortiq mablag‘</strong> to‘g‘ridan-to‘g‘ri yangi avlod sun’iy intellekt ma’lumotlar markazlari va GPU klasterlarini qurishga qayta taqsimlandi.</p>\n\n<h2>Nega bu muhim? (Bozor va Mehnat bozori nuqtai nazaridan)</h2>\n<p>Oracle’dagi ommaviy qisqartirishlar butun global IT bozorida kuchlar nisbati qanday o‘zgarayotganining aniq belgisidir. Korporatsiyalar an’anaviy CRUD va veb dasturchilariga bo‘lgan ehtiyojni kamaytirib, asosiy mablag‘larni GPU muhandislari, AI arxitektorlari va hisoblash infratuzilmasiga sarflamoqda. Sun’iy intellekt vositalari dasturlash jarayonini tezlashtirgani sababli, kompaniyalar oddiy ishlab chiqish bo‘limlarini ixchamlashtirib, apparat quvvatlariga sarmoya kiritishni afzal ko‘rmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Dasturchilar Qisqarishi:</strong> An’anaviy tizim dasturchilari o‘rnini GPU klasterlari va model inferensini boshqaruvchi muhandislar egallamoqda.</li>\n      <li><strong>Superklasterlar Quvvati:</strong> Oracle minglab NVIDIA H100/B200 chiplaridan iborat yagona yuqori tezlikdagi RDMA tarmog‘ini kengaytirmoqda.</li>\n      <li><strong>Infratuzilma Muhandisligi:</strong> Katta hajmdagi elektr quvvati va sovutish tizimlarini boshqaruvchi server me’morchiligiga talab ortdi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Xarajatlarni Qayta Taqsimlash:</strong> Korxona rahbarlari ham o‘z IT byudjetlarini an’anaviy xizmatlardan sun’iy intellekt vositalariga yo‘naltirishi kerakligini ko‘rsatadi.</li>\n      <li><strong>Hisoblash Quvvati Narxi:</strong> Bulut provayderlari o‘rtasida GPU quvvatlari uchun raqobat kuchayishi korxonalarga hisoblash quvvatlarini arzonlashtiradi.</li>\n      <li><strong>Jamoani Qayta Tayyorlash:</strong> Dasturchilarni AI yordamchilari (Cursor, Copilot) bilan ishlashga o‘rgatish korxona uchun strategik ahamiyatga ega.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston IT sektori uchun nimani anglatadi?</div>\n  <p>O‘zbekistonlik dasturchilar va IT kompaniyalar uchun bu muhim ogohlantirish: an’anaviy kod yozish bo‘yicha jahon bozoridagi talab qisqarmoqda. Biroq sun’iy intellekt modellarini biznesga integratsiya qiluvchi, ma’lumotlar muhandisligi va AI arxitekturasini biladigan mutaxassislarga talab keskin o‘smoqda. Mahalliy mutaxassislar sun’iy intellekt yo‘nalishlariga ixtisoslashishni kechiktirmasliklari lozim.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>AI ko‘nikmalarini chuqurlashtiring:</strong> LLM integratsiyasi, prompt arxitekturasi va model inferens texnologiyalarini o‘zlashtiring.</li>\n    <li><strong>Kompaniya resurslarini optimallashtiring:</strong> An’anaviy dasturiy xarajatlarni qisqartirib, tejalgan resurslarni AI avtomatlashtirishga yo‘naltiring.</li>\n    <li><strong>Agentik vositalarni joriy qiling:</strong> Dasturchilaringizga avtonom AI dasturlash muhitlarini to‘liq taqdim eting.</li>\n  </ol>\n</div>",
     "verification_status": "VERIFIED",
     "verification_date": "2026-09-24"
   },

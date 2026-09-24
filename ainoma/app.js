@@ -133,29 +133,34 @@ const searchIndex = [
 
 
 
+
+
+
+
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Google DeepMind: Shaxsiy AI Uchun Xavfsiz Xotira", u: "maqola.html?id=google-deepmind-private-ai-compute-secure-memory-2026", k: "google deepmind: shaxsiy ai uchun xavfsiz xotira frontier ai tadqiqot google deepmind research google deepmind konfidentsial sun’iy intellekt hisoblashlari (private ai compute) uchun yangi appara" },
-  { t: "Oracle AI Sababli Dasturchilarni Ommaviy Qisqartirmoqda", u: "maqola.html?id=oracle-ai-cloud-restructuring-layoffs-2026", k: "oracle ai sababli dasturchilarni ommaviy qisqartirmoqda global biznes & ai cybernews & business insider oracle kompaniyasi sun’iy intellektga o‘tish doirasida an’anaviy dasturchi va xodimlarni ommaviy ish" },
-  { t: "O‘zbekiston Banklari Kredit Skoringida AIdan Foydalanishga O‘tmoqda", u: "maqola.html?id=ozbekiston-fintex-kredit-skoring-ai-tahlil-2026", k: "o‘zbekiston banklari kredit skoringida aidan foydalanishga o‘tmoqda o‘zbekiston fintech & ai spot.uz it & biznes tadbirkorlar uchun 500 million so‘mgacha kredit ajratishda an’anaviy biznes-reja majburiyati bekor q" },
-  { t: "O‘zbekistonda YouTube Monetizatsiyasi Ishga Tushirilmoqda", u: "maqola.html?id=youtube-monetizatsiya-ozbekiston-google", k: "o‘zbekistonda youtube monetizatsiyasi ishga tushirilmoqda o‘zbekiston it spot.uz it & biznes google rahbariyati bilan o‘tkazilgan muzokaralar o‘zbekistonda youtube hamkorlik dasturini faollasht" },
-  { t: "AI Marketing Tadqiqoti: Oddiy So‘rov Personalardan Ustun Chiqdi", u: "maqola.html?id=sintetik-persona-suniy-intellekt-ab-test-arxiv-2026", k: "ai marketing tadqiqoti: oddiy so‘rov personalardan ustun chiqdi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
-  { t: "OpenAI GPT-6 Sol va Luna Modellarini Taqdim Etdi", u: "maqola.html?id=openai-gpt6-sol-luna-50-percent-price-cut", k: "openai gpt-6 sol va luna modellarini taqdim etdi dunyo texnologiya openai research gpt-6 oilasi kengaydi: murakkab dasturlash vazifalari uchun sol hamda ultra-tezkor va ixcham luna mo" },
-  { t: "xAI Dasturlash Uchun Grok 4.7 Modelini Chiqardi", u: "maqola.html?id=xai-grok-47-coding-benchmark-release", k: "xai dasturlash uchun grok 4.7 modelini chiqardi dunyo texnologiya xai official elon muskning xai kompaniyasi dasturiy ta’minot injiniringi va professional tahlilga ixtisoslashgan " },
-  { t: "Meta Muse Tizimida OpenClaw Kodi Borligi Tan Olindi", u: "maqola.html?id=meta-muse-openclaw-ilhomlanish-tahlili", k: "meta muse tizimida openclaw kodi borligi tan olindi dunyo texnologiya techcrunch ai meta kompaniyasi yangi muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning " },
-  { t: "JetBrains AI Agentlar Uchun 'Air' Platformasini Taqdim Etdi", u: "maqola.html?id=jetbrains-air", k: "jetbrains ai agentlar uchun 'air' platformasini taqdim etdi dasturlash devtools jetbrains official blog jetbrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom ai agentlarini koordinatsiya qili" },
-  { t: "Perform.AI Elektron Tijorat Uchun 'AI Commerce OS'ni Chiqardi", u: "maqola.html?id=perform-ai-commerce-os", k: "perform.ai elektron tijorat uchun 'ai commerce os'ni chiqardi dunyo biznes eqs corporate newsroom brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtir" },
-  { t: "BMT: Avtonom AI Agentlar Xavfsizligi Bo‘yicha Ogohlantirish", u: "maqola.html?id=un-ai-agents-warning", k: "bmt: avtonom ai agentlar xavfsizligi bo‘yicha ogohlantirish dunyo texnologiya un independent scientific panel on ai bmt qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberx" },
-  { t: "Tadqiqot: LLM Modellar Bank Skoringida Xatoga Yo‘l Qo‘ymoqda", u: "maqola.html?id=spot-ai-finance-risk", k: "tadqiqot: llm modellar bank skoringida xatoga yo‘l qo‘ymoqda uzbekistan o‘zbekiston fintex spot.uz tahliliy nashri o‘tkazilgan tahlillar ommabop sun’iy intellekt modellari moliyaviy va buxgalteriya savollariga javob" },
-  { t: "O‘zbekistonda Qishloq Xo‘jaligi Uchun 'Yashil AI' Moduli Ishga Tushmoqda", u: "maqola.html?id=spot-green-ai-uzbekistan", k: "o‘zbekistonda qishloq xo‘jaligi uchun 'yashil ai' moduli ishga tushmoqda uzbekistan o‘zbekiston biznes spot.uz ekologiya & texnologiya tuproq sifati, iqlim ma’lumotlari va suv resurslarini tahlil qiluvchi yangi milliy sun’iy intellekt " },
-  { t: "OpenAI Fundamental Fan Uchun Matematika Maslahat Guruhini Tuzdi", u: "maqola.html?id=openai-math-advisory-group", k: "openai fundamental fan uchun matematika maslahat guruhini tuzdi ilm-fan dunyo techcrunch science & ai openai fundamental fanning qiyin masalalarini hal qilish va yangi gipotezalarni formal tekshirish uc" },
-  { t: "MIT: AI Pashsha O‘lchamidagi Mikrorobotlar Tezligini 447% ga Oshirdi", u: "maqola.html?id=mit-insect-flying-robots", k: "mit: ai pashsha o‘lchamidagi mikrorobotlar tezligini 447% ga oshirdi robototexnika dunyo sciencedaily / mit research mit muhandislari neyrotarmoqlar asosida aerodinamik qanot qoqish modelini qayta hisoblab, mikroskopi" },
-  { t: "Telegram Mini Apps va AI: O‘zbekistonda B2B Savdo To‘lqini", u: "maqola.html?id=telegram-ai-apps", k: "telegram mini apps va ai: o‘zbekistonda b2b savdo to‘lqini uzbekistan o‘zbekiston tijorat telegram developers documentation mijoz messenjerdan chiqmasdan ai orqali tovar tanlaydi, shaxsiy tavsiya oladi va payme/click orqali " },
-  { t: "OpenAI Modellari Xatolarini Yashirish Uchun Xatlar Qoldirgani Aniqlindi", u: "maqola.html?id=openai-caught-leaving-notes-to-successors", k: "openai modellari xatolarini yashirish uchun xatlar qoldirgani aniqlindi dunyo texnologiya techcrunch (rebecca bellan) tadqiqotchilar gpt-5.6 sol va astra oilasidagi modellar xatolarni insonlardan yashirish va mustaqill" },
-  { t: "Gartner: 2026-Yilda Global AI Xarajatlari $2.7 Trillionga Yetadi", u: "maqola.html?id=gartner-ai-spending-2026", k: "gartner: 2026-yilda global ai xarajatlari $2.7 trillionga yetadi dunyo biznes gartner research newsroom tadqiqot agentik tizimlar va hisoblash infratuzilmasiga investitsiyalar o‘tgan yilga nisbatan qariyb" },
-  { t: "DeepMind Tadqiqoti: AI Olimlarga Haftasiga 7 Soat Tejamoqda", u: "maqola.html?id=google-ai-verification-tax", k: "deepmind tadqiqoti: ai olimlarga haftasiga 7 soat tejamoqda ilm-fan dunyo google deepmind / mit futuretech google deepmind va mit futuretech 3,500 dan ortiq tadqiqotchi ishtirokida o‘tkazilgan tahlilni e’lon" },
-  { t: "OpenAI GPT-6 Astra Modelini Rasman Taqdim Etdi", u: "maqola.html?id=openai-gpt6-astra", k: "openai gpt-6 astra modelini rasman taqdim etdi dunyo texnologiya openai research mantiqiy xulosalash zanjiri (deep reasoning), doimiy korporativ xotira va kompyuterni bevosita boshq" },
-  { t: "Google Gemini 3.8 Flash Modellarini E’lon Qildi", u: "maqola.html?id=google-gemini-38-flash", k: "google gemini 3.8 flash modellarini e’lon qildi google cloud ai google official blog 1 million tokenlik kontekst, dasturchilar tomonidan boshqariluvchi tafakkur chuqurligi va kirish tok" },
-  { t: "Anthropic Claude Fable 5.1 Modelini Chiqardi", u: "maqola.html?id=claude-fable-51", k: "anthropic claude fable 5.1 modelini chiqardi dunyo texnologiya anthropic platform documentation anthropic agentik ish jarayonlari uchun prompt kesh o‘qish narxini 75% ga arzonlashtirdi va korxonal" },
+  { t: "Google DeepMind: Shaxsiy AI Uchun Xavfsiz Xotira", u: "yangiliklar/google-deepmind-private-ai-compute-secure-memory-2026/", k: "google deepmind: shaxsiy ai uchun xavfsiz xotira frontier ai tadqiqot google deepmind research google deepmind konfidentsial sun’iy intellekt hisoblashlari (private ai compute) uchun yangi appara" },
+  { t: "O‘zbekiston Banklari Kredit Skoringida AIdan Foydalanishga O‘tmoqda", u: "yangiliklar/ozbekiston-fintex-kredit-skoring-ai-tahlil-2026/", k: "o‘zbekiston banklari kredit skoringida aidan foydalanishga o‘tmoqda o‘zbekiston fintech & ai spot.uz it & biznes tadbirkorlar uchun 500 million so‘mgacha kredit ajratishda an’anaviy biznes-reja majburiyati bekor q" },
+  { t: "O‘zbekistonda YouTube Monetizatsiyasi Ishga Tushirilmoqda", u: "yangiliklar/youtube-monetizatsiya-ozbekiston-google/", k: "o‘zbekistonda youtube monetizatsiyasi ishga tushirilmoqda o‘zbekiston it spot.uz it & biznes google rahbariyati bilan o‘tkazilgan muzokaralar o‘zbekistonda youtube hamkorlik dasturini faollasht" },
+  { t: "AI Marketing Tadqiqoti: Oddiy So‘rov Personalardan Ustun Chiqdi", u: "yangiliklar/sintetik-persona-suniy-intellekt-ab-test-arxiv-2026/", k: "ai marketing tadqiqoti: oddiy so‘rov personalardan ustun chiqdi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
+  { t: "OpenAI GPT-6 Sol va Luna Modellarini Taqdim Etdi", u: "yangiliklar/openai-gpt6-sol-luna-50-percent-price-cut/", k: "openai gpt-6 sol va luna modellarini taqdim etdi dunyo texnologiya openai research gpt-6 oilasi kengaydi: murakkab dasturlash vazifalari uchun sol hamda ultra-tezkor va ixcham luna mo" },
+  { t: "xAI Dasturlash Uchun Grok 4.7 Modelini Chiqardi", u: "yangiliklar/xai-grok-47-coding-benchmark-release/", k: "xai dasturlash uchun grok 4.7 modelini chiqardi dunyo texnologiya xai official elon muskning xai kompaniyasi dasturiy ta’minot injiniringi va professional tahlilga ixtisoslashgan " },
+  { t: "Meta Muse Tizimida OpenClaw Kodi Borligi Tan Olindi", u: "yangiliklar/meta-muse-openclaw-ilhomlanish-tahlili/", k: "meta muse tizimida openclaw kodi borligi tan olindi dunyo texnologiya techcrunch ai meta kompaniyasi yangi muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning " },
+  { t: "JetBrains AI Agentlar Uchun 'Air' Platformasini Taqdim Etdi", u: "yangiliklar/jetbrains-air/", k: "jetbrains ai agentlar uchun 'air' platformasini taqdim etdi dasturlash devtools jetbrains official blog jetbrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom ai agentlarini koordinatsiya qili" },
+  { t: "Perform.AI Elektron Tijorat Uchun 'AI Commerce OS'ni Chiqardi", u: "yangiliklar/perform-ai-commerce-os/", k: "perform.ai elektron tijorat uchun 'ai commerce os'ni chiqardi dunyo biznes eqs corporate newsroom brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtir" },
+  { t: "BMT: Avtonom AI Agentlar Xavfsizligi Bo‘yicha Ogohlantirish", u: "yangiliklar/un-ai-agents-warning/", k: "bmt: avtonom ai agentlar xavfsizligi bo‘yicha ogohlantirish dunyo texnologiya un independent scientific panel on ai bmt qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberx" },
+  { t: "Tadqiqot: LLM Modellar Bank Skoringida Xatoga Yo‘l Qo‘ymoqda", u: "yangiliklar/spot-ai-finance-risk/", k: "tadqiqot: llm modellar bank skoringida xatoga yo‘l qo‘ymoqda uzbekistan o‘zbekiston fintex spot.uz tahliliy nashri o‘tkazilgan tahlillar ommabop sun’iy intellekt modellari moliyaviy va buxgalteriya savollariga javob" },
+  { t: "O‘zbekistonda Qishloq Xo‘jaligi Uchun 'Yashil AI' Moduli Ishga Tushmoqda", u: "yangiliklar/spot-green-ai-uzbekistan/", k: "o‘zbekistonda qishloq xo‘jaligi uchun 'yashil ai' moduli ishga tushmoqda uzbekistan o‘zbekiston biznes spot.uz ekologiya & texnologiya tuproq sifati, iqlim ma’lumotlari va suv resurslarini tahlil qiluvchi yangi milliy sun’iy intellekt " },
+  { t: "OpenAI Fundamental Fan Uchun Matematika Maslahat Guruhini Tuzdi", u: "yangiliklar/openai-math-advisory-group/", k: "openai fundamental fan uchun matematika maslahat guruhini tuzdi ilm-fan dunyo techcrunch science & ai openai fundamental fanning qiyin masalalarini hal qilish va yangi gipotezalarni formal tekshirish uc" },
+  { t: "MIT: AI Pashsha O‘lchamidagi Mikrorobotlar Tezligini 447% ga Oshirdi", u: "yangiliklar/mit-insect-flying-robots/", k: "mit: ai pashsha o‘lchamidagi mikrorobotlar tezligini 447% ga oshirdi robototexnika dunyo sciencedaily / mit research mit muhandislari neyrotarmoqlar asosida aerodinamik qanot qoqish modelini qayta hisoblab, mikroskopi" },
+  { t: "Telegram Mini Apps va AI: O‘zbekistonda B2B Savdo To‘lqini", u: "yangiliklar/telegram-ai-apps/", k: "telegram mini apps va ai: o‘zbekistonda b2b savdo to‘lqini uzbekistan o‘zbekiston tijorat telegram developers documentation mijoz messenjerdan chiqmasdan ai orqali tovar tanlaydi, shaxsiy tavsiya oladi va payme/click orqali " },
+  { t: "OpenAI Modellari Xatolarini Yashirish Uchun Xatlar Qoldirgani Aniqlindi", u: "yangiliklar/openai-caught-leaving-notes-to-successors/", k: "openai modellari xatolarini yashirish uchun xatlar qoldirgani aniqlindi dunyo texnologiya techcrunch (rebecca bellan) tadqiqotchilar gpt-5.6 sol va astra oilasidagi modellar xatolarni insonlardan yashirish va mustaqill" },
+  { t: "Gartner: 2026-Yilda Global AI Xarajatlari $2.7 Trillionga Yetadi", u: "yangiliklar/gartner-ai-spending-2026/", k: "gartner: 2026-yilda global ai xarajatlari $2.7 trillionga yetadi dunyo biznes gartner research newsroom tadqiqot agentik tizimlar va hisoblash infratuzilmasiga investitsiyalar o‘tgan yilga nisbatan qariyb" },
+  { t: "DeepMind Tadqiqoti: AI Olimlarga Haftasiga 7 Soat Tejamoqda", u: "yangiliklar/google-ai-verification-tax/", k: "deepmind tadqiqoti: ai olimlarga haftasiga 7 soat tejamoqda ilm-fan dunyo google deepmind / mit futuretech google deepmind va mit futuretech 3,500 dan ortiq tadqiqotchi ishtirokida o‘tkazilgan tahlilni e’lon" },
+  { t: "OpenAI GPT-6 Astra Modelini Rasman Taqdim Etdi", u: "yangiliklar/openai-gpt6-astra/", k: "openai gpt-6 astra modelini rasman taqdim etdi dunyo texnologiya openai research mantiqiy xulosalash zanjiri (deep reasoning), doimiy korporativ xotira va kompyuterni bevosita boshq" },
+  { t: "Google Gemini 3.8 Flash Modellarini E’lon Qildi", u: "yangiliklar/google-gemini-38-flash/", k: "google gemini 3.8 flash modellarini e’lon qildi google cloud ai google official blog 1 million tokenlik kontekst, dasturchilar tomonidan boshqariluvchi tafakkur chuqurligi va kirish tok" },
+  { t: "Anthropic Claude Fable 5.1 Modelini Chiqardi", u: "yangiliklar/claude-fable-51/", k: "anthropic claude fable 5.1 modelini chiqardi dunyo texnologiya anthropic platform documentation anthropic agentik ish jarayonlari uchun prompt kesh o‘qish narxini 75% ga arzonlashtirdi va korxonal" },
   
   // Hikoyalar
   { t: "Mohirdev va Muxlisa AI: O'zbek tilidagi nutqni anglash tarixi", u: "hikoyalar.html", k: "muxlisa mohirdev anvar narzulla nutq stt tts o'zbek tili" },
@@ -200,16 +205,35 @@ const searchIndex = [
   { t: "Prompt Ustaxonasi: Interaktiv prompt konstruktori va B2B andozalar", u: "prompt-ustaxonasi.html", k: "prompt ustaxonasi generator konstruktor andoza chatgpt claude gemini b2b so'rov shablon" }
 ];
 
+// Apostrophe & Diacritic Normalization for Uzbek Search (T20)
+function normalizeUzbek(str) {
+  if (!str) return "";
+  return str
+    .toLowerCase()
+    .replace(/[ʻʼ‘’'`]/g, "'")
+    .trim();
+}
+
+function stripUzApostrophe(str) {
+  return normalizeUzbek(str).replace(/'/g, "");
+}
+
 searchInput?.addEventListener("input", (e) => {
-  const q = e.target.value.trim().toLowerCase();
+  const rawQ = e.target.value.trim();
   if (!searchResultsBox) return;
-  if (!q) {
+  if (!rawQ) {
     searchResultsBox.innerHTML = "";
     return;
   }
-  const results = searchIndex.filter((item) =>
-    (item.t + " " + item.k).toLowerCase().includes(q)
-  );
+  const normQ = normalizeUzbek(rawQ);
+  const strippedQ = stripUzApostrophe(rawQ);
+
+  const results = searchIndex.filter((item) => {
+    const rawTarget = item.t + " " + item.k;
+    const normTarget = normalizeUzbek(rawTarget);
+    const strippedTarget = stripUzApostrophe(rawTarget);
+    return normTarget.includes(normQ) || strippedTarget.includes(strippedQ);
+  });
   if (results.length > 0) {
     searchResultsBox.innerHTML = results
       .map(
@@ -271,6 +295,44 @@ $$(".filter").forEach((btn) => {
     }
   });
 });
+
+// URL Parameter filtering support (T5: e.g. yangiliklar.html?kategoriya=biznes)
+try {
+  const urlParams = new URLSearchParams(window.location.search);
+  const rawParam = urlParams.get("kategoriya") || urlParams.get("filter") || urlParams.get("cat");
+  if (rawParam) {
+    const targetFilter = rawParam.toLowerCase().trim();
+    const filterMap = {
+      "biznes": "biznes",
+      "talim": "mutaxassislar",
+      "ta'lim": "mutaxassislar",
+      "ta’lim": "mutaxassislar",
+      "davlat": "biznes",
+      "startap": "biznes",
+      "startaplar": "biznes",
+      "uzbekistan": "uzbekistan",
+      "o'zbekiston": "uzbekistan",
+      "ozbekiston": "uzbekistan",
+      "o‘zbekiston": "uzbekistan",
+      "dunyo": "dunyo",
+      "global": "dunyo",
+      "qollanma": "qollanma",
+      "qo'llanma": "qollanma",
+      "qollanmalar": "qollanma",
+      "prompt": "qollanma",
+      "promptlar": "qollanma",
+      "marketing": "biznes",
+      "mutaxassislar": "mutaxassislar"
+    };
+    const mapped = filterMap[targetFilter] || targetFilter;
+    const matchingBtn = document.querySelector(`.filter[data-filter="${mapped}"]`);
+    if (matchingBtn) {
+      matchingBtn.click();
+    }
+  }
+} catch (e) {
+  console.warn("Category filter init error", e);
+}
 
 // Mobile Hamburger Nav & Backdrop Drawer
 let navBackdrop = $(".nav-backdrop");
