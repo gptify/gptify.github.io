@@ -216,373 +216,21 @@
     </button>
   </nav>
 
+  <script src="tools-data.js"></script>
   <script src="app.js"></script>
   <script>
-    // Tool Dynamic Profiles
-    const toolsData = {
-      gamma: {
-        name: "Gamma AI",
-        kicker: "AI vosita · Prezentatsiya & Hujjatlar",
-        headline: "Taqdimotga slayd kerak, lekin PowerPoint'da dizayn tuzishga soatlab vaqtingiz ketyaptimi? <b>Gamma AI</b> bitta mavzu orqali bir necha daqiqada tayyor, chiroyli va interaktiv prezentatsiya tayyorlaydi.",
-        category: "Prezentatsiya & Slayd",
-        pricing: "Freemium (Bepul kreditlar)",
-        lang: "To‘liq qo‘llab-quvvatlanadi",
-        url: "https://try.gamma.app/phx9znt88tpu",
-        bg: "#7c3aed",
-        initial: "G",
-        f1_t: "1 ta promptdan to‘liq slaydlar",
-        f1_d: "Mavzuni kiritishingiz bilan barcha slaydlarni mantiqiy tartib, sarlavha va rasmlar bilan tuzadi.",
-        f2_t: "Moslashuvchan dizayn",
-        f2_d: "Matn o‘zgarsa ham slayd buzilmaydi, telefon va kompyuterga avtomatik moslashadi.",
-        f3_t: "Veb va hujjat formati",
-        f3_d: "Faqat slayd emas, balki bir bosishda chiroyli hujjat yoki veb-sahifa shaklida yuklaysiz.",
-        benefit: "Dizayner yollamasdan, professional taqdimot va taklifnomalarni o‘zingiz bir necha daqiqada chiqarasiz.",
-        prompt: "O‘zbekistondagi B2B kompaniyalar uchun sun’iy intellekt asosidagi avtomatlashtirish xizmatlari haqida 8 slayddan iborat tijorat taqdimoti tayyorla. Auditoriya: biznes egalari va direktorlar. Ranglar: toza oq va zumrad yashil."
-      },
-      seamless: {
-        name: "Seamless.ai",
-        kicker: "AI vosita · B2B Lead Qidiruvi",
-        headline: "Xorijiy bozorlarga chiqishda qaror qabul qiluvchi rahbarlar kontaktini topish qiyin bo‘lyaptimi? <b>Seamless.ai</b> real vaqtda tekshirilgan mobil telefonlar va korporativ pochtalarni topib beradi.",
-        category: "B2B Lead & Savdo",
-        pricing: "Freemium / Yillik obuna",
-        lang: "Ingliz (Global B2B qidiruv)",
-        url: "https://get.seamless.ai/wxur32uh7xzb",
-        bg: "#0284c7",
-        initial: "S",
-        f1_t: "Real-time kontakt tekshiruvi",
-        f1_d: "Eskirgan bazalar emas, sun’iy intellekt orqali ayni paytda faol telefon va email manzillarni aniqlaydi.",
-        f2_t: "Chrome Extension",
-        f2_d: "LinkedIn orqali profillarni ko‘rayotganda 1 bosishda to‘g‘ridan-to‘g‘ri telefon va emailni ochib beradi.",
-        f3_t: "CRM integratsiya",
-        f3_d: "Topilgan kontaktlarni HubSpot, Salesforce yoki Excel/CSV formatga darhol eksport qilish imkoniyati.",
-        benefit: "Mijoz qidirishga haftalab sarflanadigan vaqtni bir necha daqiqaga tushirib, savdo jamoasini to‘g‘ridan-to‘g‘ri muloqotga yo‘naltiradi.",
-        prompt: "Biz O‘zbekistondan turib tekstil mahsulotlarini Yevropa bozoriga eksport qilmoqchimiz. Germaniyadagi kiyim-kechak chakana brendlari xarid bo‘yicha direktorlarining LinkedIn qidiruv filtrlari va muloqot boshlash strategiyasini tuzib ber."
-      },
-      descript: {
-        name: "Descript",
-        kicker: "AI vosita · Video & Ovoz Montaji",
-        headline: "Video montaj qilish uchun murakkab dasturlarda soatlab vaqt yo‘qotyapsizmi? <b>Descript</b> videodagi ovozni matnga aylantiradi — siz esa xuddi matnni o‘chirgandek videoni tahrir qilasiz.",
-        category: "Video & Audio Montaj",
-        pricing: "Freemium / Pro",
-        lang: "Ingliz, Rus (O‘zbek tili transkripsiyada rivojlanmoqda)",
-        url: "https://get.descript.com/turigheoz1eq",
-        bg: "#10b981",
-        initial: "D",
-        f1_t: "Matn orqali montaj",
-        f1_d: "Transkriptdagi ortiqcha so‘zni o‘chirsangiz, videoning o‘sha qismi avtomatik qirqiladi.",
-        f2_t: "Studio Sound",
-        f2_d: "Telefon yoki shovqinli xonadagi ovozni professional studiya mikrofoni darajasiga ko‘taradi.",
-        f3_t: "To‘xtalishlarni tozalash",
-        f3_d: "Nutqdagi “e-e-e”, “a-a-a” kabi to‘xtalishlar va noqulay sukunatlarni 1 bosishda yo‘qotadi.",
-        benefit: "Montajchiga pul to‘lamay, Reels, YouTube yoki dars videolaringizni sifatli ovoz bilan o‘zingiz chiqarasiz.",
-        prompt: "Videoni yuklang -> Studio Sound tugmasini yoqing -> 'Remove filler words' orqali nutqdagi barcha to‘xtalishlarni 1 soniyada tozalang."
-      },
-      apollo: {
-        name: "Apollo.io",
-        kicker: "AI vosita · B2B Lead Generation",
-        headline: "Xizmatingizni chet elga yoki yirik kompaniyalarga sotmoqchisiz, lekin rahbarlar kontaktini topolmayapsizmi? <b>Apollo.io</b> orqali istalgan sohadagi direktorlarning tekshirilgan email va telefonlarini topasiz.",
-        category: "B2B Lead & Sotuv",
-        pricing: "Freemium (Bepul limitlar bor)",
-        lang: "Global platforma",
-        url: "https://get.apollo.io/yy5q6cfw7xi5",
-        bg: "#f59e0b",
-        initial: "A",
-        f1_t: "275M+ tekshirilgan kontaktlar",
-        f1_d: "Soha, davlat va lavozim bo‘yicha filtrlab, rahbarlarning to‘g‘ridan-to‘g‘ri pochtasini beradi.",
-        f2_t: "Avtomatik pochta zanjiri",
-        f2_d: "Topilgan mijozlarga moslashtirilgan xatlar zanjirini rejalashtirib, javoblarni kuzatadi.",
-        f3_t: "Xarid niyati (Buyer Intent)",
-        f3_d: "Aynan hozir sizning sohangizda yechim qidirayotgan faol kompaniyalarni ko‘rsatadi.",
-        benefit: "Eksport va B2B savdo bo‘limingiz uchun oylab vaqt ketadigan mijozlar bazasini bir necha soatda yig‘ib beradi.",
-        prompt: "Apollo qidiruvida: Industry = Textile / Software, Location = UAE / Germany / USA, Title = Head of Procurement yoki CEO deb filtrlang."
-      },
-            maya: {
-        name: "Tahrirchi AI",
-        kicker: "AI vosita · O‘zbek tili & Matn tahriri",
-        headline: "O‘zbek tilida xatosiz, ravon va professional matnlar, maqolalar va rasmiy xatlar yozmoqchimisiz? <b>Tahrirchi AI</b> kirill va lotin alifbolarida orfografik xatolarni tuzatadi va uslubiy tahrir qiladi.",
-        url: "https://tahrirchi.uz",
-        cta: "Tahrirchi platformasiga o‘tish ↗",
-        logo: "T",
-        color: "#2563eb",
-        benefit: "O‘zbek tilida xatosiz, orfografik va stilistik jihatdan mukammal hujjatlar va maqolalar tayyorlash.",
-        promptTitle: "Rasmiy xat va hujjatni tahrirlash prompti",
-        promptText: `"Sen o‘zbek tili bo‘yicha tajribali muharrir va tahrirchisan. Quyidagi matnni imlo, tinish belgilari va uslubiy qoidalar bo‘yicha tekshirib, xatolarini to‘g‘irla. Lotin alifbosi qoidalariga (o‘, g‘ harflari va tutuq belgilariga) qat’iy rioya qil.
-
-Matn: [Matningizni bu yerga qo‘ying]"`
-      },
-      muxlisa: {
-        name: "UzbekVoice AI (Mohirdev)",
-        kicker: "AI vosita · O‘zbekiston Nutq & Audio",
-        headline: "O‘zbekcha jonli nutqni aniq matnga aylantirish (Speech-to-Text) va yozma matnni tabiiy, ohangdor o‘zbek ovozida o‘qib berish (Text-to-Speech) texnologiyasi.",
-        category: "Nutq & Transkripsiya (O‘zbekiston)",
-        pricing: "API & Obuna tariflari",
-        lang: "O‘zbek tili (Lotin & Kirill)",
-        url: "https://uzbekvoice.ai",
-        bg: "#0284c7",
-        initial: "Mx",
-        f1_t: "O‘zbekcha nutqni aniq tanish (STT)",
-        f1_d: "Turli shevalar, tez va shovqinli audio yozuvlarni yuqori aniqlikda matnga o‘giradi.",
-        f2_t: "Tabiiy audio ovozlashtirish (TTS)",
-        f2_d: "Kitoblar, yangiliklar va interfeyslarni jonli insonga yaqin o‘zbek ovozida o‘qiydi.",
-        f3_t: "Dasturchilar uchun qulay API",
-        f3_d: "Telegram botlar, mobil ilovalar va call-markazlarga bir necha qator kod bilan ulanadi.",
-        benefit: "Mijozlar bilan ovozli muloqotni avtomatlashtirish va audio fayllarni oson transkripsiya qilish.",
-        prompt: "Muxlisa AI API integratsiyasi: Audio faylni yuboring -> STT moduli orqali o‘zbekcha matnni qabul qilib oling."
-      },
-      lemlist: {
-        name: "Lemlist",
-        kicker: "AI vosita · B2B Email Outreach",
-        headline: "Har bir mijoz uchun AI yordamida chuqur shaxsiylashtirilgan xatlar jo‘natish. Spamga tushmaslikni ta’minlovchi platforma.",
-        category: "Email Outreach & Sotuv",
-        pricing: "Sinov muddati / Obuna",
-        lang: "Ko‘p tilli (Ingliz, Rus, O‘zbek)",
-        url: "https://get.lemlist.com/9wfnrv5mceyj",
-        bg: "#ec4899",
-        initial: "L",
-        f1_t: "Dinamik matn va rasm",
-        f1_d: "Har bir xatga qabul qiluvchining ismi, kompaniyasi va veb-sayti skrinshotini avtomatik qo‘yadi.",
-        f2_t: "Email isitish (Lemwarm)",
-        f2_d: "Pochtangiz obro‘sini (reputatsiyasini) oshirib, spam papkasiga tushish xavfini yo‘qotadi.",
-        f3_t: "Ko‘p kanalli ketma-ketlik",
-        f3_d: "Email va LinkedIn aloqalarini bitta avtomatlashtirilgan zanjirga birlashtiradi.",
-        benefit: "Sovuq xatlarga javob olish foizini (reply rate) 3-4 barobarga oshirish.",
-        prompt: "Qabul qiluvchining veb-sayti [URL] ma'lumotlariga qarab, ularning muammosini ko'rsatuvchi 3 qatorlik kirish xati yoz."
-      },
-      meetgeek: {
-        name: "MeetGeek",
-        kicker: "AI vosita · Uchrashuvlar & Bayonnomalar",
-        headline: "Zoom, Google Meet va Teams uchrashuvlarini yozib olib, 1 daqiqada asosiy xulosalar va topshiriqlar bayonnomasini chiqaradi.",
-        category: "Uchrashuv va Majlislar",
-        pricing: "Freemium / Pro",
-        lang: "O‘zbekcha, Ruscha, Inglizcha",
-        url: "https://get.meetgeek.ai/uy8dxc8l9prm",
-        bg: "#6366f1",
-        initial: "MG",
-        f1_t: "Avtomatik ulanish",
-        f1_d: "Taqvimingizdagi onlayn majlisga o‘zi kirib, butun suhbatni audio va video shaklida yozib oladi.",
-        f2_t: "Topshiriqlar ro‘yxati (Action Items)",
-        f2_d: "Kim qaysi vazifani qachongacha bajarishi kerakligini ajratib ko‘rsatadi.",
-        f3_t: "Kalit so‘zlar qidiruvi",
-        f3_d: "1 soatlik majlisdan kerakli mavzuni qidiruv orqali 2 soniyada topasiz.",
-        benefit: "Majlisda qo‘lda konspekt yozishdan qutulib, barcha kelishuvlarni aniq saqlash.",
-        prompt: "MeetGeek xulosasi: 'Ushbu uchrashuvdagi barcha kelishuvlarni Telegram orqali jamoaga jo‘natish uchun qisqa post holatiga keltir.'"
-      },
-      instantly: {
-        name: "Instantly",
-        kicker: "AI vosita · Mass Email Outreach",
-        headline: "Katta hajmdagi B2B email kampaniyalarini xavfsiz kengaytirish, hisoblarni isitish va javoblarni AI bilan saralash.",
-        category: "B2B Outreach Scale",
-        pricing: "Pullik (Bepul sinov bor)",
-        lang: "Global platforma",
-        url: "https://refer.instantly.ai/7pwwq1hkoudw",
-        bg: "#2563eb",
-        initial: "IN",
-        f1_t: "Cheksiz pochtalar ulash",
-        f1_d: "O‘nlab domenlarni bitta markazdan boshqarish imkoniyati.",
-        f2_t: "Avtomatik AI Isitish",
-        f2_d: "Pochtalar reputatsiyasini doimiy yuqori saqlaydi.",
-        f3_t: "AI Unibox",
-        f3_d: "Mijozlarning 'qiziqdim' yoki 'kerak emas' javoblarini avtomatik ajratadi.",
-        benefit: "Eksport va yirik savdo bo‘limlari uchun keng miqyosli mijozlar oqimini yo‘lga qo‘yish.",
-        prompt: "Kampaniya sozlamalari: Kunlik jo‘natma soni = 35 ta / pochta, oraliq vaqt = 8 daqiqa."
-      },
-      mindstudio: {
-        name: "MindStudio",
-        kicker: "AI vosita · No-Code AI Quruvchi",
-        headline: "Dasturlashni bilmasdan turib kompaniyangiz uchun ichki AI ilovalar, bilimlar bazasi va mijozlar bilan muloqot agentlarini quring.",
-        category: "No-Code Platforma",
-        pricing: "Freemium / Pro",
-        lang: "Barcha tillar",
-        url: "https://get.mindstudio.ai/1eqeupsiig0i",
-        bg: "#09090b",
-        initial: "MS",
-        f1_t: "Bir nechta modelni ulash",
-        f1_d: "GPT-4o, Claude 3.5 va Llama modellarini bitta jarayonga zanjir qilib ulaydi.",
-        f2_t: "Kompaniya ma'lumotlar bazasi",
-        f2_d: "PDF, Word va jadvallarni yuklab, faqat o‘z ma’lumotlaringiz bo‘yicha javob beruvchi bot yasaysiz.",
-        f3_t: "Oson ulash (API & Embed)",
-        f3_d: "Saytingizga, Telegram yoki ichki portallarga bir bosishda joylashtirish mumkin.",
-        benefit: "Dasturchi yollamasdan, biznes jarayonlaringiz uchun shaxsiy AI yordamchilar yaratish.",
-        prompt: "MindStudio Workflow: Input -> Knowledge Base Search -> Claude 3.5 Sonnet Reasoning -> Format Output."
-      },
-      billz: {
-        name: "Billz AI",
-        kicker: "AI vosita · O‘zbekiston Riteyl",
-        headline: "O‘zbekiston va mintaqa chakana savdo tarmoqlari uchun intellektual tahlil va kassa integratsiyasi.",
-        category: "Riteyl & Savdo Tahlili",
-        pricing: "Korporativ tariflar",
-        lang: "O‘zbek tili, Rus tili",
-        url: "https://billz.io",
-        bg: "#4f46e5",
-        initial: "B",
-        f1_t: "Talabni bashoratlash",
-        f1_d: "Qaysi tovar qaysi faslda va qaysi filialda ko‘p sotilishini oldindan aytadi.",
-        f2_t: "Inventar xavfsizligi",
-        f2_d: "Tovarlar yetishmovchiligi yoki omborda uzoq yotib qolishini oldini oladi.",
-        f3_t: "Mijozlar sodiqligi",
-        f3_d: "Doimiy xaridorlar xatti-harakatini tahlil qilib, shaxsiy chegirmalar shakllantiradi.",
-        benefit: "Do‘kon daromadini oshirish va ortiqcha ombor xarajatlarini 25% ga qisqartirish.",
-        prompt: "Oxirgi 90 kunlik cheklar tahlili asosida ABC-tahlil hisobotini ko‘rsat."
-      },
-      dastyor: {
-        name: "Dastyor AI",
-        kicker: "AI vosita · O‘zbekiston Fintech",
-        headline: "O‘zbekiston soliq kodeksi va buxgalteriya standartlariga moslashtirilgan sun’iy intellekt yordamchisi.",
-        category: "Buxgalteriya & Soliq",
-        pricing: "Obuna asosida",
-        lang: "O‘zbek tili, Rus tili",
-        url: "https://dastyor.uz",
-        bg: "#0d9488",
-        initial: "D",
-        f1_t: "Soliq maslahatchisi",
-        f1_d: "Soliq stavkalari, imtiyozlar va hisobot topshirish muddatlari bo‘yicha aniq ma’lumot beradi.",
-        f2_t: "Hujjatlar tahlili",
-        f2_d: "Schyot-faktura va aktlarni tekshiradi.",
-        f3_t: "Doimiy yangilanish",
-        f3_d: "Qonunchilikka kiritilgan har bir o‘zgarish tizimga bir zumda kiritiladi.",
-        benefit: "Buxgalteriya xatolarini kamaytirish va jarimalardan himoyalanish.",
-        prompt: "QQS hisoboti bo‘yicha kiritilayotgan xarajat moddalarining hisob-kitob qoidalarini ko‘rsat."
-      },
-      yuridik: {
-        name: "Yuridik AI (Didox)",
-        kicker: "AI vosita · Huquq & Shartnomalar",
-        headline: "O‘zbekiston xo‘jalik qonunchiligi bo‘yicha shartnomalarni 30 soniyada tekshirish va xatarlarni aniqlash.",
-        category: "Yuridik Audit",
-        pricing: "Korporativ",
-        lang: "O‘zbek tili, Rus tili",
-        url: "https://didox.uz",
-        bg: "#3b82f6",
-        initial: "Y",
-        f1_t: "Shartnoma auditi",
-        f1_d: "Kompaniya uchun noqulay yoki xavfli bandlarni belgilab beradi.",
-        f2_t: "Jarima moddalari tahlili",
-        f2_d: "Bir tomonlama javobgarlik yuklangan shartlarni aniqlaydi.",
-        f3_t: "Didox bilan integratsiya",
-        f3_d: "Elektron hujjat aylanishi tizimi ichida to‘g‘ridan-to‘g‘ri ishlaydi.",
-        benefit: "Shartnomalarni tekshirish vaqtini 10 barobarga qisqartirish va yuridik xatarlarni bartaraf etish.",
-        prompt: "Ushbu ijara shartnomasidagi muddati o‘tgan to‘lovlar bo‘yicha penya stavkasi qonuniy me’yorlarga mosligini tekshir."
-      },
-      lindy: {
-        name: "Lindy",
-        kicker: "AI vosita · Avtonom AI Assistent",
-        headline: "Kundalik takroriy ishlarni bajarishdan charchadingizmi? <b>Lindy</b> xatlarga javob beradigan, uchrashuvlarni belgilaydigan va shaxsiy topshiriqlarni avtonom bajaruvchi AI yordamchingizdir.",
-        category: "AI Assistent & Unumdorlik",
-        pricing: "Freemium / Obuna",
-        lang: "Ingliz, Rus, Ko‘p tilli",
-        url: "https://try.lindy.ai/9jnuq63xr11e",
-        bg: "#ea580c",
-        initial: "L",
-        f1_t: "Avtonom topshiriqlar",
-        f1_d: "Pochtani kuzatadi, xatlarni saralaydi va oldindan berilgan qoidalar bo‘yicha avtomatik javob tayyorlaydi.",
-        f2_t: "Taqvim va uchrashuvlar",
-        f2_d: "Mijozlar bilan mos vaqtni o‘zi kelishib, Google Calendar yoki Outlook’ka kiritadi.",
-        f3_t: "3000+ dasturga ulanish",
-        f3_d: "Slack, WhatsApp, Gmail va CRM tizimlaringiz bilan to‘g‘ridan-to‘g‘ri sinxronlashadi.",
-        benefit: "Rutina ishlarga sarflanadigan kunlik 2-3 soat vaqtingizni asosiy strategik vazifalarga bo‘shatadi.",
-        prompt: "Menga kelgan yangi hamkorlik xatlarini tekshir, ularning kompaniyasi haqida qisqa ma'lumot tayyorla va menga Telegram orqali xulosa ber."
-      },
-      adcreative: {
-        name: "AdCreative.ai",
-        kicker: "AI vosita · Reklama va Kreativ",
-        headline: "Targeting va reklama uchun har safar yangi banner yasashga vaqt ketayotgan bo‘lsa, <b>AdCreative.ai</b> sun’iy intellekt orqali konversiyasi yuqori bannerlar va matnlarni daqiqalarda yaratadi.",
-        category: "Reklama & Marketing",
-        pricing: "Bepul sinov / Obuna",
-        lang: "Global marketing",
-        url: "https://free-trial.adcreative.ai/jb870cr6hwhe",
-        bg: "#e11d48",
-        initial: "AC",
-        f1_t: "Konversiyaga moslangan bannerlar",
-        f1_d: "Millionlab muvaffaqiyatli reklamalar tahlili asosida xaridorlarni jalb qiluvchi dizaynlar shakllantiradi.",
-        f2_t: "Barcha formatlar bir bosishda",
-        f2_d: "Instagram Story, Post, Facebook Feed va Display bannerlarini 1 soniyada moslashtiradi.",
-        f3_t: "AI matn generatori",
-        f3_d: "Reklama uchun diqqatni tortuvchi sarlavha va Call-to-Action (CTA) matnlarini yozib beradi.",
-        benefit: "Grafik dizayner kutmasdan, reklama kampaniyalarini bir necha barobar tezroq ishga tushirish imkoni.",
-        prompt: "Mahsulotimiz: B2B konsalting xizmatlari. Ranglar: quyuq ko‘k va zumrad. Instagram Stories formati uchun 3 ta kuchli taklif banneri tayyorla."
-      },
-      beautifulai: {
-        name: "Beautiful.ai",
-        kicker: "AI vosita · Taqdimot Dizayni",
-        headline: "Taqdimot tayyorlashda slaydlardagi shakllar va matnlarni to‘g‘rilashga soatlab vaqt ketadimi? <b>Beautiful.ai</b> sun’iy intellekt yordamida dizayn qoidalariga avtomatik rioya qilib, professional slaydlar tuzadi.",
-        category: "Taqdimot & Dizayn",
-        pricing: "Sinov muddati / Pro",
-        lang: "Global platforma",
-        url: "https://beautifulai.partnerlinks.io/rvvr8zuu35ig",
-        bg: "#0ea5e9",
-        initial: "B",
-        f1_t: "Aqlli slayd shablonlari",
-        f1_d: "Matn yoki rasm qo‘shganingizda slayd dizayni o‘zini-o‘zi mukammal proporsiyada moslashtiradi.",
-        f2_t: "Brend qoidalari (Brand Kit)",
-        f2_d: "Kompaniyangiz logotipi, shriftlari va korporativ ranglarini barcha slaydlarga birdek tatbiq etadi.",
-        f3_t: "Jamoaviy ishlash",
-        f3_d: "Butun jamoa bilan birgalikda taqdimot ustida real vaqt rejimida ishlash imkoniyati.",
-        benefit: "Har qanday investor yoki mijoz oldida taassurot qoldiruvchi, xalqaro darajadagi taqdimotlar yaratish.",
-        prompt: "Kompaniyamizning yillik moliyaviy hisoboti va kelasi yil maqsadlari uchun 10 slayddan iborat korporativ taqdimot dizaynini tuz."
-      },
-      calilio: {
-        name: "Calilio",
-        kicker: "AI vosita · Bulutli Telefoniya",
-        headline: "Xalqaro mijozlar bilan muloqot va qo‘ng‘iroqlarni boshqarish uchun <b>Calilio</b> AI asosidagi virtual telefoniya, suhbatlar tahlili va ko‘p kanalli aloqani taqdim etadi.",
-        category: "Telefoniya & Mijozlar aloqasi",
-        pricing: "Sinov muddati / Oylik tariflar",
-        lang: "Ko‘p tilli (Global VoIP)",
-        url: "https://try.calilio.com/yvlkop2jok4w",
-        bg: "#6d28d9",
-        initial: "C",
-        f1_t: "Xalqaro virtual raqamlar",
-        f1_d: "AQSH, Yevropa va 100 dan ortiq mamlakatlarning mahalliy raqamlarini bir necha daqiqada faollashtirish.",
-        f2_t: "AI qo‘ng‘iroqlar transkripsiyasi",
-        f2_d: "Menejerlarning mijozlar bilan audio suhbatlarini matnga aylantirib, asosiy kelishuvlarni ajratadi.",
-        f3_t: "Mijozlar kayfiyati tahlili (Sentiment)",
-        f3_d: "Mijozning suhbat davomidagi mamnunlik darajasi va e’tirozlarini avtomatik baholaydi.",
-        benefit: "Xorijiy mijozlarga ishonchli xalqaro raqamlar orqali xizmat ko‘rsatish va savdo sifatini nazorat qilish.",
-        prompt: "Xorijiy mijozlar bilan bo‘lgan 15 daqiqalik qo‘ng‘iroq yozuvini tahlil qil, mijozning e’tirozlari va keyingi qadamlarni aniqlab ber."
-      },
-      uzum: {
-        name: "Uzum AI Copilot",
-        kicker: "AI vosita · O‘zbekiston E-commerce",
-        headline: "O‘zbekistonning eng yirik ekotizimi va marketpleysi uchun maxsus ishlab chiqilgan, mahsulot kartochkalarini optimallashtiruvchi intellektual yordamchi.",
-        category: "E-commerce & Marketpleys",
-        pricing: "Sotuvchilar uchun qulay",
-        lang: "O‘zbek tili, Rus tili",
-        url: "https://uzum.uz",
-        bg: "#7c3aed",
-        initial: "U",
-        f1_t: "Katalog va tavsif optimallashuvi",
-        f1_d: "Uzum Market sotuvchilari uchun qidiruvda yuqori o‘rinda chiqadigan mahsulot tavsiflarini yaratadi.",
-        f2_t: "Sharhlar tahlili",
-        f2_d: "Xaridorlarning minglab izohlarini umumlashtirib, mahsulot sifatini yaxshilash bo‘yicha tavsiyalar beradi.",
-        f3_t: "Vizual talablarga moslashuv",
-        f3_d: "Mahsulot fotosuratlarini marketpleys standartlariga mosligini tekshiradi.",
-        benefit: "Marketpleysda savdoni oshirish va tovar kartochkalarini to‘ldirish vaqtini 5 barobarga qisqartirish.",
-        prompt: "Uzum Market uchun yangi tushgan smart-soatlar to‘plamiga SEO-moslashtirilgan o‘zbekcha mahsulot tavsifi yoz."
-      },
-      manychat: {
-        name: "Manychat",
-        kicker: "AI vosita · Instagram & Messenger Chatbot",
-        headline: "Instagram Direct va Telegram'da mijozlarga kechayu-kunduz avtomatik javob berish, izoh yozganlarga avto-DM yuborish va savdoni avtomatlashtirish platformasi.",
-        category: "Sotuv & Chatbot",
-        pricing: "Freemium / Oylik tariflar",
-        lang: "Ko‘p tilli (O‘zbekcha, Ruscha, Inglizcha)",
-        url: "https://manychat.partnerlinks.io/gopygbhk9cau",
-        bg: "#0084ff",
-        initial: "MC",
-        f1_t: "Izohlardan to‘g‘ridan-to‘g‘ri DM ochish",
-        f1_d: "Post yoki Reels ostiga kalit so‘z (masalan 'NARX') yozgan obunachiga avtomatik shaxsiy xat jo‘natadi.",
-        f2_t: "Sun’iy intellekt integratsiyasi",
-        f2_d: "ChatGPT / OpenAI modellari bilan ulanib, standart tugmalar o‘rniga erkin tilda mijoz savollariga javob beradi.",
-        f3_t: "Avtomatik lead yig‘ish",
-        f3_d: "Mijozning telefon raqami va buyurtmasini olib, CRM yoki Google Sheets bazasiga bir zumda yozadi.",
-        benefit: "Instagram Direct'dagi yuzlab xabarlarni o‘tkazib yubormasdan, har bir murojaatni 10 soniyada buyurtmaga aylantirish.",
-        prompt: "Instagram Reels ostiga 'BAZA' deb yozgan foydalanuvchiga Direct orqali B2B katalog havolasini yuboruvchi va ularning telefon raqamini so‘rab oluvchi 3 bosqichli avtomatik ssenariy tuz."
-      }
-    };
-
+    const toolsData = window.AINOMA_TOOLS || {};
     const params = new URLSearchParams(window.location.search);
     const toolId = params.get("id") || "gamma";
     const data = toolsData[toolId] || toolsData["gamma"];
 
-    document.getElementById("pageTitle").innerText = data.name + " — AiNoma AI vositalar";
+    document.getElementById("pageTitle").innerText = data.name + " sharhi va qo‘llanmasi — AiNoma AI vositalar";
+    document.title = data.name + " sharhi, imkoniyatlari va qo‘llanmasi | AiNoma";
+    
+    // Dynamic SEO Meta
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.content = data.name + " nima va undan qanday foydalanish kerak? O‘zbekiston biznesi uchun amaliy foydasi, rasmiy havola va tayyor prompt andozasi.";
+
     document.getElementById("toolName").innerText = data.name;
     document.getElementById("toolKicker").innerText = data.kicker;
     document.getElementById("toolHeadline").innerHTML = data.headline;
@@ -601,6 +249,23 @@ Matn: [Matningizni bu yerga qo‘ying]"`
     document.getElementById("featDesc3").innerText = data.f3_d;
     document.getElementById("toolBenefit").innerText = data.benefit;
     document.getElementById("toolPrompt").innerText = data.prompt;
+
+    // Inject SoftwareApplication Structured Data
+    const schemaScript = document.createElement("script");
+    schemaScript.type = "application/ld+json";
+    schemaScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": data.name,
+      "applicationCategory": data.category,
+      "description": data.headline.replace(/<[^>]*>?/gm, ''),
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    });
+    document.head.appendChild(schemaScript);
   </script>
 </body>
 </html>

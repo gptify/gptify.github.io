@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ChatGPT nima va O‘zbekistonda undan qanday to‘g‘ri foydalanish kerak? Ro‘yxatdan o‘tish, to‘lov usullari, GPT-6 modellari hamda ishga tayyor o‘zbekcha master promptlar.">
+  <meta name="keywords" content="chatgpt uzbekiston, chatgpt nima, chatgpt dan qanday foydalanish, chatgpt o'zbekcha, chatgpt royxatdan otish, chatgpt promptlar, sun'iy intellekt dasturlari">
+  <title>ChatGPT O‘zbekistonda: To‘liq Qo‘llanma, Ro‘yxatdan O‘tish va Promptlar | AiNoma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://ainoma.uz/chatgpt-uzbekiston.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AiNoma">
+  <meta property="og:title" content="ChatGPT O‘zbekistonda: To‘liq Qo‘llanma va Ishga Tayyor Promptlar">
+  <meta property="og:description" content="ChatGPT nima va O‘zbekistonda undan qanday foydalanish kerak? Ro‘yxatdan o‘tish, to‘lov imkoniyatlari va ishga tayyor master promptlar to‘plami.">
+  <meta property="og:url" content="https://ainoma.uz/chatgpt-uzbekiston.html">
+  <meta property="og:image" content="https://ainoma.uz/assets/openai_gpt_banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChatGPT O‘zbekistonda: To‘liq Qo‘llanma va Promptlar — AiNoma">
+  <meta name="twitter:description" content="O‘zbekistonda ChatGPT’dan to‘g‘ri va professional foydalanish bo‘yicha to‘liq amaliy qo‘llanma.">
+  <meta name="twitter:image" content="https://ainoma.uz/assets/openai_gpt_banner.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+
+  <!-- Schema.org FAQPage & Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "ChatGPT O‘zbekistonda: To‘liq Qo‘llanma, Ro‘yxatdan O‘tish va Promptlar",
+        "description": "ChatGPT nima va O‘zbekistonda undan qanday to‘g‘ri foydalanish kerak? Ro‘yxatdan o‘tish, to‘lov usullari va ishga tayyor master promptlar.",
+        "image": "https://ainoma.uz/assets/openai_gpt_banner.jpg",
+        "author": {
+          "@type": "Organization",
+          "name": "AiNoma Tahririyati",
+          "url": "https://ainoma.uz"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AiNoma",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ainoma.uz/assets/logo.svg"
+          }
+        },
+        "datePublished": "2026-09-24",
+        "dateModified": "2026-09-24",
+        "mainEntityOfPage": "https://ainoma.uz/chatgpt-uzbekiston.html"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "ChatGPT O‘zbekistonda rasman ishlaydimi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ha, ChatGPT O‘zbekistonda mutlaqo rasmiy va VPN'siz ishlaydi. OpenAI rasmiy ravishda O‘zbekiston telefon raqamlari (+998) va internet tarmog‘i orqali to‘g‘ridan-to‘g‘ri ro‘yxatdan o‘tish imkoniyatini taqdim etgan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ChatGPT bepulmi yoki pullik?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ChatGPT’ning asosiy versiyasi mutlaqo bepul. Bepul versiyada yangi GPT-6 Luna va GPT-4o modellari kundalik savol-javob, matn tahriri va tahlil uchun bepul taqdim etiladi. Murakkab dasturlash, tahlil va agentik vazifalar uchun ChatGPT Plus (oyiga $20) obunasi mavjud."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ChatGPT o‘zbek tilini tushunadimi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ha, ChatGPT o‘zbek tilida ham lotin, ham kirill alifbolarida erkin muloqot qila oladi. Eng sifatli javob olish uchun so‘rovni (prompt) aniq kontekst va maqsad bilan kiritish tavsiya etiladi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O‘zbekiston kartalari orqali ChatGPT Plus obunasini to‘lash mumkinmi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ha, mahalliy banklar (Ipak Yo‘li, Kapitalbank, NBU va boshqalar) tomonidan chiqarilgan xalqaro Visa va Mastercard kartalari orqali to‘lov to‘g‘ridan-to‘g‘ri qabul qilinadi."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="assets/logo.svg" alt="AiNoma">
+      </a>
+      <nav class="navlinks">
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="vositalar.html">AI vositalar</a>
+        <a class="active" href="qollanmalar.html">Qo‘llanmalar</a>
+        <a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="hikoyalar.html">Hikoyalar</a>
+        <a href="imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/gptifyuz" target="_blank" rel="noopener">
+          <span>Kanal</span> @gptifyuz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-shell article-head">
+      <div class="kicker">Amaliy Masterclass · O‘zbekiston Qo‘llanmasi</div>
+      <h1>ChatGPT O‘zbekistonda: To‘liq Qo‘llanma, Ro‘yxatdan O‘tish va Ishga Tayyor Promptlar</h1>
+      <p class="article-deck">ChatGPT nima, O‘zbekistondan turib VPN’siz ro‘yxatdan o‘tish, GPT-6 modellarining imkoniyatlari, to‘lov usullari va biznes hamda shaxsiy ishlar uchun sinalgan o‘zbekcha promptlar to‘plami.</p>
+      
+      <div class="byline">
+        <div class="avatar">AN</div>
+        <div>
+          <b>AiNoma Tahririyati</b><br>
+          <span style="color:var(--muted)">Texnologik tahlil guruhi · Yangilangan: 2026-yil Sentabr · 6 daqiqalik mutolaa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      <img src="assets/openai_gpt_banner.jpg" alt="ChatGPT O‘zbekistonda to‘liq qo‘llanma va GPT-6 arxitekturasi">
+    </div>
+
+    <article class="article-shell article-body">
+      <p>Bugungi kunda sun’iy intellekt haqida gap ketganda birinchi navbatda <strong>ChatGPT</strong> tilga olinadi. O‘zbekistonda talabalar, marketologlar, dasturchilar va tadbirkorlar orasida ChatGPT kundalik ish unumdorligini 3-4 barobarga oshiruvchi asosiy raqamli assistentga aylandi.</p>
+      
+      <p>Ushbu keng qamrovli qo‘llanmada ChatGPT’dan to‘g‘ri ro‘yxatdan o‘tish, bepul va pullik imkoniyatlar farqi, to‘lovni xavfsiz amalga oshirish hamda yuqori sifatli natija beruvchi o‘zbekcha promptlarni ko‘rib chiqamiz.</p>
+
+      <h2>1. ChatGPT Nima va U Qanday Ishlaydi?</h2>
+      <p>ChatGPT — bu OpenAI laboratoriyasi tomonidan ishlab chiqilgan va tabiiy tilda suhbatlashuvchi yirik til modeli (LLM). U oddiy qidiruv tizimlaridan farqli o‘laroq, tayyor havolalar ro‘yxatini emas, balki Siz bergan aniq vazifa va topshiriqqa moslashtirilgan <strong>to‘liq xulosa, tahlil, jadval yoki dastur kodi</strong> ko‘rinishida javob qaytaradi.</p>
+
+      <div class="audience-grid" style="margin:24px 0;">
+        <div class="lens-box tech">
+          <div class="lens-title">💡 ChatGPT Nimalarga Qodir?</div>
+          <ul>
+            <li><strong>Matn va Hujjat Tahriri:</strong> Rasmiy xatlar, shartnomalar, maqolalar va hisobotlarni tahrirlash hamda xatolarini tuzatish.</li>
+            <li><strong>Dasturlash va Kod Yozish:</strong> Python, JavaScript, SQL, PHP kodlarini yozish, xatolarini (debugging) topish va tushuntirish.</li>
+            <li><strong>Ma’lumotlar Tahlili:</strong> Excel, CSV jadvallarini yuklab, ulardan grafiklar va moliyaviy tahlil xulosalari olish.</li>
+            <li><strong>G‘oyalar va Strategiya:</strong> Yangi biznes reja, marketing kampaniyasi va kontent-rejalarni tezkor loyihalash.</li>
+          </ul>
+        </div>
+        <div class="lens-box biz">
+          <div class="lens-title">🏢 Biznes Uchun Qanday Foydasi Bor?</div>
+          <ul>
+            <li><strong>Mijozlarga Xizmat:</strong> Standart savollarga bir zumda javob beruvchi botlar va ko‘p tilli muloqot.</li>
+            <li><strong>Vaqtni Tejash:</strong> Xodimlar kundalik 2-3 soatlik mexanik yozishmalardan xalos bo‘ladi.</li>
+            <li><strong>Bozor Tahlili:</strong> Raqobatchilar va yangi bozorlar haqidagi ochiq ma’lumotlarni tizimlashtirish.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>2. O‘zbekistonda ChatGPT’dan Ro‘yxatdan O‘tish (Qadamma-qadam)</h2>
+      <p>Oldingi yillarda O‘zbekistondan ChatGPT’ga kirish uchun xorijiy telefon raqamlari yoki VPN talab qilingan bo‘lsa, hozirda OpenAI O‘zbekistonni rasman qo‘llab-quvvatlaydi. Hech qanday vositachilarsiz 2 daqiqada hisob ochishingiz mumkin:</p>
+
+      <ol>
+        <li><strong>Rasmiy sahifaga kiring:</strong> Kompyuter yoki telefoningizdan rasmiy <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a> manziliga o‘ting.</li>
+        <li><strong>"Sign up" (Ro‘yxatdan o‘tish) tugmasini bosing:</strong> O‘z Google hisobingiz (Continue with Google) orqali bitta bosishda yoki elektron pochtangizni kiritib kiring.</li>
+        <li><strong>Telefon raqamni tasdiqlang:</strong> O‘zbekiston hududidagi amaldagi telefon raqamingizni (+998...) kiriting va SMS orqali kelgan xavfsizlik kodini yozing.</li>
+        <li><strong>Ishga tushirish:</strong> Suhbat oynasi ochiladi va Siz o‘zbek tilida bemalol birinchi savolingizni berishingiz mumkin!</li>
+      </ol>
+
+      <h2>3. Bepul Versiya va ChatGPT Plus: Qaysi Biri Sizga Kerak?</h2>
+      <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; background:var(--card); border:1px solid var(--border); border-radius:10px; overflow:hidden;">
+        <thead>
+          <tr style="background:var(--bg-card); text-align:left; border-bottom:1px solid var(--border);">
+            <th style="padding:12px 16px;">Imkoniyat</th>
+            <th style="padding:12px 16px;">ChatGPT Free (Bepul)</th>
+            <th style="padding:12px 16px; color:var(--green);">ChatGPT Plus ($20/oy)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:12px 16px;"><b>Asosiy Modellar</b></td>
+            <td style="padding:12px 16px;">GPT-6 Luna & GPT-4o (cheklangan)</td>
+            <td style="padding:12px 16px;">GPT-6 Sol, GPT-6 Astra, o1, o3-mini</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:12px 16px;"><b>Fayl & Rasm Tahlili</b></td>
+            <td style="padding:12px 16px;">Kunlik cheklangan hajm</td>
+            <td style="padding:12px 16px;">Cheksiz yuklash va Excel tahlili</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:12px 16px;"><b>Dasturlash Qobiliyati</b></td>
+            <td style="padding:12px 16px;">O‘rtacha kod vazifalari</td>
+            <td style="padding:12px 16px;">Murakkab arxitektura va refaktoring</td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;"><b>Tavsiya Qilinadigan Auditoriya</b></td>
+            <td style="padding:12px 16px;">Talabalar, kundalik qidiruv, yangi boshlovchilar</td>
+            <td style="padding:12px 16px;">Dasturchilar, tahlilchilar, biznes egalari</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>O‘zbekiston kartalari orqali ChatGPT Plus obunasi qanday to‘lanadi?</h3>
+      <p>Agar Plus tarifiga o‘tmoqchi bo‘lsangiz, mahalliy banklarimiz (Kapitalbank, Ipak Yo‘li, NBU, TBC, Anorbank va boshqalar) tomonidan ochilgan <strong>Visa</strong> yoki <strong>Mastercard</strong> xalqaro so‘m yoki dollar kartasi yetarli. To‘lov sahifasida karta raqami, amal qilish muddati va CVV kodini kiritasiz. 3D-Secure SMS tasdiqlangach, obuna darhol faollashadi.</p>
+
+      <h2>4. Mukammal O‘zbekcha Prompt Yozishning Oltin Qoidasi (RCFO Formulasi)</h2>
+      <p>Ko‘pchilik foydalanuvchilar sun’iy intellektga <em>"Menga marketing haqida ma'lumot ber"</em> deb juda qisqa va noaniq yozishadi. Natijada AI umumiy, zerikarli javob qaytaradi. Yuqori aniqlikdagi professional natija olish uchun AiNoma tomonidan tavsiya etilgan <strong>RCFO formulasi</strong>dan foydalaning:</p>
+
+      <div style="background:var(--bg-card); border-left:4px solid var(--green); padding:16px 20px; margin:20px 0; border-radius:0 10px 10px 0;">
+        <ul style="margin:0; padding-left:18px; line-height:1.7;">
+          <li><b>R — Role (Rol):</b> AI kimning nomidan gapirishi kerak? <em>(Masalan: "Sen tajribali B2B yuristisan")</em></li>
+          <li><b>C — Context (Kontekst):</b> Kompaniya yoki vaziyat haqida qisqa ma’lumot. <em>(Masalan: "Biz Toshkentda distribyutsiya bilan shug‘ullanamiz")</em></li>
+          <li><b>F — Focus / Task (Aniq Topshiriq):</b> Nimani bajarish kerak? <em>(Masalan: "Yetkazib berish shartnomasidagi penya xatarlarini audit qil")</em></li>
+          <li><b>O — Output (Format):</b> Natija qanday shaklda bo‘lsin? <em>(Masalan: "3 ustunli jadval shaklida va xulosani ko‘rsat")</em></li>
+        </ul>
+      </div>
+
+      <h2>5. Ishga Tayyor 4 ta Master Prompt (Nusxalab Oling)</h2>
+
+      <div class="prompt-card" style="margin-bottom:24px;">
+        <div class="prompt-header">
+          <div>
+            <div class="prompt-tag">SAVDO & B2B</div>
+            <div class="prompt-title">Kompaniyalar uchun Taklif Xati (Commercial Proposal)</div>
+          </div>
+          <button class="btn copy-btn" data-target="promptB2B" type="button">Nusxalash</button>
+        </div>
+        <p class="prompt-desc">B2B mijozlarga sovuq taklif yuborishda diqqatni tortuvchi, lo‘nda va professional xat.</p>
+        <pre class="prompt-code" id="promptB2B">Sen B2B sotuvlar bo‘yicha ekspertisan. Biz O‘zbekiston kompaniyalari uchun [Xizmat turi, masalan: logistika va omborxona avtomatlashtirish] xizmatini taqdim etamiz.
+
+Mijoz kompaniya: [Kompaniya nomi yoki yo‘nalishi]
+Qaror qabul qiluvchi: Bosh direktor
+
+Vazifang: Ushbu kompaniya rahbariga yuborish uchun 150 so‘zdan oshmaydigan, lo‘nda va qiziqtiruvchi tijorat xati yoz.
+Qoidalar:
+1. Birinchi jumlada ularning sohasidagi asosiy muammoni ko‘rsat.
+2. Quruq maqtovlarsiz, biz qancha vaqt yoki xarajat tejab berishimizni fakt bilan tushuntir.
+3. Oxirida majburiyatsiz 10 daqiqalik qisqa suhbatga chaqir (Call to Action).
+4. Ohang: O‘ta muloyim, hurmat bilan ("Siz").</pre>
+      </div>
+
+      <div class="prompt-card" style="margin-bottom:24px;">
+        <div class="prompt-header">
+          <div>
+            <div class="prompt-tag">YURIDIK & SHARTNOMA</div>
+            <div class="prompt-title">Shartnomadagi Xatarli Bandlarni Audit Qilish</div>
+          </div>
+          <button class="btn copy-btn" data-target="promptLegal" type="button">Nusxalash</button>
+        </div>
+        <p class="prompt-desc">Didox orqali kelgan shartnomalarni 30 soniyada xatarlar bo‘yicha tekshirish.</p>
+        <pre class="prompt-code" id="promptLegal">Sen O‘zbekiston xo‘jalik huquqi bo‘yicha yetakchi korporativ yuristisan. Quyida keltirilgan shartnoma matnini tekshirib ber.
+
+Mening rolim: [Buyurtmachi / Bajaruvchi / Xaridor]
+
+Topshiriq:
+1. Shartnomadagi bir tomonlama, noxolis yoki biz uchun kutilmagan jarima keltirib chiqaruvchi xatarli bandlarni aniqla.
+2. O‘zbekiston qonunchiligiga zid yoki noaniq ifodalangan moddalarni ko‘rsat.
+3. Har bir xatar uchun ushbu bandni qanday o‘zgartirish kerakligi bo‘yicha tahrir matnini taklif qil.
+Natijani jadval shaklida (Band raqami | Xatar mazmuni | Tavsiya etilgan tahrir) ko‘rsat.
+
+Shartnoma matni:
+[Shartnoma matnini shu yerga qo‘ying]</pre>
+      </div>
+
+      <div class="prompt-card" style="margin-bottom:24px;">
+        <div class="prompt-header">
+          <div>
+            <div class="prompt-tag">MARKETING & KONTENT</div>
+            <div class="prompt-title">Telegram Kanal Uchun Ekspertlik Posti</div>
+          </div>
+          <button class="btn copy-btn" data-target="promptSmm" type="button">Nusxalash</button>
+        </div>
+        <p class="prompt-desc">O‘quvchilarni jalb qiluvchi va professional obro‘ni oshiruvchi Telegram posti.</p>
+        <pre class="prompt-code" id="promptSmm">Sen professional kontent-marketologsan. [Sohangiz, masalan: zamonaviy mebel ishlab chiqarish] bo‘yicha Telegram kanal yuritmoqdamiz.
+
+Mavzu: [Mavzu, masalan: Sifatli furnitura tanlashda qanday aldanib qolmaslik kerak]
+Auditoriya: Toshkent va viloyatlardagi xonadon egalari va dizaynerlar.
+
+Topshiriq:
+1. Dastlabki 2 qatorda kuchli "ilgak" (Hook) bo‘lsin.
+2. O‘quvchi o‘zi bilmagan 3 ta nozik xatoni va ularni qanday oldini olishni amaliy tushuntir.
+3. Reklama quruq bo‘lmasin, o‘quvchiga haqiqiy foyda bersin.
+4. Emoji va formatlashdan me’yorida foydalan. Hurmat bilan "Siz" deb yoz.</pre>
+      </div>
+
+      <div class="prompt-card" style="margin-bottom:34px;">
+        <div class="prompt-header">
+          <div>
+            <div class="prompt-tag">DASTURLASH & IT</div>
+            <div class="prompt-title">Kod Audit va Xatolarni Tuzatish (Code Review)</div>
+          </div>
+          <button class="btn copy-btn" data-target="promptCode" type="button">Nusxalash</button>
+        </div>
+        <p class="prompt-desc">Koddagi xavfsizlik zaifliklari va sekin ishlash sabablarini topish.</p>
+        <pre class="prompt-code" id="promptCode">Sen Senior dasturiy ta’minot me’morisan. Quyidagi [Dasturlash tili: masalan Python / Next.js] kod fragmentini chuqur tahlil qil.
+
+Vazifang:
+1. Koddagi potentsial xotira sizib chiqishi (memory leak) va sekin ishlovchi nuqtalarni aniqla.
+2. Xavfsizlik zaifliklari (SQL injection, XSS va boshqalar) mavjudligini tekshir.
+3. Koddagi ortiqcha murakkablikni kamaytirib, toza va optimallashtirilgan refaktoring variantini taqdim et.
+4. Nima uchun o‘zgartirilganini punktma-punkt tushuntir.
+
+Kod:
+[Kodingizni bu yerga qo‘ying]</pre>
+      </div>
+
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:28px 24px; margin:36px 0; text-align:center;">
+        <h3 style="margin-top:0; font-size:20px;">Ko‘proq tayyor promptlar kerakmi?</h3>
+        <p style="color:var(--muted); max-width:560px; margin:0 auto 20px;">AiNoma <b>Prompt Ustaxonasi</b>da biznes, moliya, huquq va dasturlash uchun 25 dan ortiq maxsus andozalar to‘plangan.</p>
+        <a class="btn primary" href="prompt-ustaxonasi.html" style="padding:12px 24px;">Prompt Ustaxonasini Ochish →</a>
+      </div>
+
+      <h2>Ko‘p So‘raladigan Savollar (FAQ)</h2>
+      <div class="faq-accordion" style="margin:24px 0;">
+        <details style="background:var(--card); border:1px solid var(--border); border-radius:8px; padding:14px 18px; margin-bottom:12px;">
+          <summary style="font-weight:700; cursor:pointer; font-size:16px;">ChatGPT O‘zbekistonda rasman ishlaydimi?</summary>
+          <p style="margin-top:10px; color:var(--text); line-height:1.6;">Ha, ChatGPT O‘zbekistonda mutlaqo rasmiy va VPN'siz ishlaydi. OpenAI rasmiy ravishda O‘zbekiston telefon raqamlari (+998) va internet provayderlari orqali to‘g‘ridan-to‘g‘ri ro‘yxatdan o‘tish imkoniyatini taqdim etgan.</p>
+        </details>
+
+        <details style="background:var(--card); border:1px solid var(--border); border-radius:8px; padding:14px 18px; margin-bottom:12px;">
+          <summary style="font-weight:700; cursor:pointer; font-size:16px;">ChatGPT bepulmi yoki pullik?</summary>
+          <p style="margin-top:10px; color:var(--text); line-height:1.6;">ChatGPT’ning asosiy versiyasi mutlaqo bepul. Unda GPT-6 Luna va GPT-4o modellari kundalik savol-javob va matn tahriri uchun taqdim etiladi. Murakkab vazifalar va chuqur tahlil uchun ChatGPT Plus ($20/oy) obunasi mavjud.</p>
+        </details>
+
+        <details style="background:var(--card); border:1px solid var(--border); border-radius:8px; padding:14px 18px; margin-bottom:12px;">
+          <summary style="font-weight:700; cursor:pointer; font-size:16px;">ChatGPT o‘zbek tilini tushunadimi?</summary>
+          <p style="margin-top:10px; color:var(--text); line-height:1.6;">Ha, ChatGPT o‘zbek tilida ham lotin, ham kirill alifbolarida erkin muloqot qiladi. Yuqori sifatli natija olish uchun yuqoridagi RCFO formulasi bo‘yicha aniq ko‘rsatma berish tavsiya etiladi.</p>
+        </details>
+
+        <details style="background:var(--card); border:1px solid var(--border); border-radius:8px; padding:14px 18px;">
+          <summary style="font-weight:700; cursor:pointer; font-size:16px;">O‘zbekiston kartalari orqali ChatGPT Plus obunasini to‘lash mumkinmi?</summary>
+          <p style="margin-top:10px; color:var(--text); line-height:1.6;">Ha, mahalliy banklar (Ipak Yo‘li, Kapitalbank, NBU va boshqalar) tomonidan chiqarilgan xalqaro Visa va Mastercard kartalari orqali to‘lov to‘g‘ridan-to‘g‘ri qabul qilinadi.</p>
+        </details>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <a class="footer-logo" href="index.html">
+          <img src="assets/logo.svg" alt="AiNoma" height="24">
+        </a>
+        <p class="footer-desc">O‘zbekistonda sun’iy intellekt bo‘yicha xolis axborot, professional vositalar katalogi va amaliy biznes qo‘llanmalari portali.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Bo‘limlar</div>
+        <ul class="footer-links">
+          <li><a href="yangiliklar.html">Yangiliklar</a></li>
+          <li><a href="vositalar.html">AI vositalar</a></li>
+          <li><a href="qollanmalar.html">Qo‘llanmalar</a></li>
+          <li><a href="prompt-ustaxonasi.html">Prompt Ustaxonasi</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Ekotizim</div>
+        <ul class="footer-links">
+          <li><a href="imkoniyatlar.html">Imkoniyatlar & Soliq</a></li>
+          <li><a href="hikoyalar.html">Keyslar & Tajriba</a></li>
+          <li><a href="haqida.html">Loyiha haqida</a></li>
+          <li><a href="feed.xml">RSS lenta</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Hamjamiyat</div>
+        <p style="font-size:13px; color:var(--muted); margin-bottom:12px;">Har tong eng muhim AI yangiliklari va B2B keyslarni Telegramda kuzating:</p>
+        <a class="btn primary" href="https://t.me/gptifyuz" target="_blank" rel="noopener" style="display:inline-block; padding:10px 18px; font-size:13px;">@gptifyuz kanaliga ulanish</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 AiNoma (ainoma.uz). Barcha huquqlar himoyalangan.</div>
+      <div>B2B AI loyihalashtirish va tizimlashtirish: <a href="https://gptify.co" target="_blank" rel="noopener" style="color:var(--green); font-weight:600;">GPTify.co</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

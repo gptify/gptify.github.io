@@ -132,6 +132,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Google DeepMind: Shaxsiy AI Uchun Xavfsiz Xotira", u: "maqola.html?id=google-deepmind-private-ai-compute-secure-memory-2026", k: "google deepmind: shaxsiy ai uchun xavfsiz xotira frontier ai tadqiqot google deepmind research google deepmind konfidentsial sun’iy intellekt hisoblashlari (private ai compute) uchun yangi appara" },
   { t: "Oracle AI Sababli Dasturchilarni Ommaviy Qisqartirmoqda", u: "maqola.html?id=oracle-ai-cloud-restructuring-layoffs-2026", k: "oracle ai sababli dasturchilarni ommaviy qisqartirmoqda global biznes & ai cybernews & business insider oracle kompaniyasi sun’iy intellektga o‘tish doirasida an’anaviy dasturchi va xodimlarni ommaviy ish" },
