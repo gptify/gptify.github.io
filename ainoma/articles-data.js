@@ -1,4 +1,72 @@
 window.AINOMA_ARTICLES = {
+  "kredit-garov-yengillik-fintex-skoring-2026": {
+    "id": "kredit-garov-yengillik-fintex-skoring-2026",
+    "slug": "kredit-garov-yengillik-fintex-skoring-2026",
+    "title": "500 Mln So‘mgacha Kreditlar: Sun’iy Intellekt va Pul Oqimi Tahlili Qanday Qilib Qog‘ozbozlikni Tugatmoqda?",
+    "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
+    "deck": "O‘zbekistonda 500 million so‘mgacha bo‘lgan kreditlarni ajratishda biznes-reja majburiyati bekor qilindi — endilikda banklar va fintex platformalar risklarni Sun’iy intellekt hamda pul oqimlari skoringi orqali baholaydi.",
+    "event_date": "2026-09-24",
+    "source_published_date": "2026-09-24",
+    "ainoma_published_date": "2026-09-24",
+    "ainoma_updated_date": "2026-09-24",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "FinTech & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Biznes & AI",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/tashkent_finance.jpg",
+    "imgAlt": "O‘zbekiston moliya va fintex sektori, kredit skoring tizimlari va raqamli bank xizmatlari",
+    "qisqacha": [
+      "500 million so‘mgacha bo‘lgan kreditlar uchun rasmiy biznes-reja topshirish talabi butunlay bekor qilindi.",
+      "Moliyaviy qarorlar tadbirkorning amaldagi pul oqimi (cash flow) va avtomatlashtirilgan skoring ko‘rsatkichlariga tayangan holda chiqariladi.",
+      "Yangi tartib mahalliy banklar va fintex platformalariga Sun’iy intellekt algoritmlarini joriy etishni tezlashtirish imkoniyatini beradi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz IT & Biznes",
+      "title": "Kredit uchun garov talabi yengillashtiriladi",
+      "url": "https://www.spot.uz/oz/2026/09/24/lending/",
+      "date": "24.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekiston moliya va biznes muhitida muhim qadam tashlandi: endi 500 million so‘mgacha bo‘lgan kreditlar uchun ortiqcha qog‘ozbozlik hamda biznes-reja taqdim etish majburiyati bekor qilinmoqda. Asosiy e’tibor tadbirkorning amaldagi pul oqimi (cash flow) va haqiqiy moliyaviy aylanmasiga qaratiladi. Siz endi haftalab biznes-reja yozish o‘rniga, o‘z moliyaviy aylanmangiz shaffofligini ko‘rsatish orqali tezkor moliyalashtirish imkoniyatiga ega bo‘lasiz.</p>\n\n<h2>Nega muhim? (Fintex va AI nuqtai nazaridan)</h2>\n<p>An’anaviy bank tizimlarida kredit ajratish garov mulki va ko‘p sahifali qog‘oz hujjatlarga tayanar edi. Biznes-reja talabining bekor qilinishi banklar va FinTech tashkilotlarini operatsion usullarni tubdan o‘zgartirishga majbur qiladi. Pul oqimini real vaqt rejimida baholash uchun Sun’iy intellekt va mashinali o‘rgatish (Machine Learning) algoritmlari ishga tushiriladi. Soliq organlari, bank aylanmalari hamda onlayn-kassa ma’lumotlarini avtomatlashtirilgan tarzda tahlil qilish orqali kredit berish muddati bir necha kundan bir necha daqiqagacha qisqaradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>API Integratsiyasi:</strong> Davlat soliq qo‘mitasi, Open Banking API va bank operatsion tizimlari (ABS) o‘rtasida uzluksiz ma’lumot almashinuvini tizimlashtirish talab etiladi.</li>\n      <li><strong>Predikativ Skoring Modellari:</strong> Mijozning pul oqimini bashorat qilish va xavf darajasini baholash uchun gradient boosting va neyron tarmoqlaridan foydalanish imkoni kengayadi.</li>\n      <li><strong>Kiberxavfsizlik va Fraud-Monitoring:</strong> Soxta operatsiyalar hamda sun’iy ravishda oshirilgan aylanmalarni aniqlash bo‘yicha aniq avtomatlashtirilgan algoritmlar ishlab chiqish zarur.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Operatsion Tezlik:</strong> Biznes-reja tuzish uchun ketadigan vaqt va moliyaviy konsultantlar xarajatlari tejaladi.</li>\n      <li><strong>Kapitalga Oson Kirish:</strong> Moddiy garov mulkiga ega bo‘lmagan, lekin yuqori aylanmaga ega kichik va o‘rta biznes egalari uchun kredit olish imkoniyati keskin oshadi.</li>\n      <li><strong>Shaffoflik Foydasi:</strong> Rasmiy tushumlar va raqamli to‘lovlarni ko‘paytirgan korxonalar pastroq foiz stavkalari hamda tezkor limitlar ko‘rinishida afzallik oladi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Ushbu islohot O‘zbekistonda soyadagi iqtisodiyot ulushini qisqartirishga va FinTech ekotizimining keskin rivojlanishiga turtki beradi. Raqamli banklar va neobanklar uchun o‘z skoring tizimlarini Sun’iy intellekt modellari bilan kuchaytirish imkoniyati kengayadi. Sizning biznesingiz uchun bu rasmiy hisob-kitoblarni yuritish orqali eng tezkor hamda qulay kapitalga ega bo‘lish imkonini beradi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>Moliyaviy aylanmalarni raqamlashtiring:</strong> Barcha naqd va naqdsiz tushumlarni rasmiy bank hisobraqamlari hamda onlayn-kassalar orqali o‘tkazishni yo‘lga qo‘ying.</li>\n    <li><strong>Ochiq bank xizmatlaridan foydalaning:</strong> Bank ilovalari va FinTech servislari orqali avtomatik skoring reytingingizni ko‘rib boring.</li>\n    <li><strong>Kredit tarixini toza tuting:</strong> Avvalgi kredit majburiyatlari va soliq to‘lovlarini o‘z vaqtida amalga oshirish orqali algoritmik ishonch indeksingizni oshiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-24"
+  },
+  "google-403-mln-yevro-jarima-joylashuv-malumotlari": {
+    "id": "google-403-mln-yevro-jarima-joylashuv-malumotlari",
+    "slug": "google-403-mln-yevro-jarima-joylashuv-malumotlari",
+    "title": "Google joylashuv ma’lumotlari maxfiyligi buzilgani uchun 403 mln yevro jarimaga tortildi",
+    "kicker": "Voqea: 23-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
+    "deck": "Yevropa regulyatorlari Google kompaniyasiga foydalanuvchilar geolokatsiya ma’lumotlarini shaffof qayta ishlamagani va belgilangan muddatdan uzoq saqlagani uchun yirik moliyaviy jazo qo‘lladi.",
+    "event_date": "2026-09-23",
+    "source_published_date": "2026-09-24",
+    "ainoma_published_date": "2026-09-24",
+    "ainoma_updated_date": "2026-09-24",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/google_gemini_banner.jpg",
+    "imgAlt": "Google va raqamli ma'lumotlar xavfsizligi",
+    "qisqacha": [
+      "Google foydalanuvchilar geolokatsiyasini qayta ishlashda shaffoflikni ta’minlamagani aniqlandi.",
+      "Kompaniyaga nisbatan 403 million yevro miqdorida jarima jazosi belgilandi.",
+      "Tadqiqotlar ma’lumotlar me’yordan ortiq muddat davomida serverlarda saqlanganini ko‘rsatdi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz",
+      "title": "Google joylashuv ma’lumotlaridan foydalangani uchun 403 mln yevro jarimaga tortildi",
+      "url": "https://www.spot.uz/oz/2026/09/23/google-penalty/",
+      "date": "24.09.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Yevropa regulyatorlari va nazorat organlari Google kompaniyasiga nisbatan navbatdagi yirik sanksiyani qo‘lladi. Surishtiruvlar shuni ko‘rsatdiki, texnologik gigant foydalanuvchilarning geolokatsiya (joylashuv) ma’lumotlarini to‘plash va qayta ishlash jarayonida yetarlicha shaffoflikni ta’minlamagan. Bundan tashqari, ushbu axborotlar belgilangan texnik va huquqiy muddatlardan ancha uzoqroq vaqt davomida serverlarda saqlab kelingan.</p>\n<p>Natijada, xalqaro maxfiylik standartlari hamda shaxsiy ma’lumotlarni muhofaza qilish qoidalarini buzgani uchun kompaniya 403 million yevro miqdorida jarima to‘lashga majbur qilindi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Raqamli platformalar va Sun’iy intellekt tizimlari rivojlanayotgan davrda foydalanuvchilarning geolokatsiya ma’lumotlari eng sezgir (sensitive) raqamli aktivlardan biriga aylandi. Ushbu qaror global darajada ma’lumotlar xavfsizligi va kompaniyalarning shaffoflik majburiyatlari tobora qat’iylashayotganini ko‘rsatadi. Axborotni asossiz ravishda uzoq muddat saqlash faqatgina huquqiy xavflarni emas, balki kiberxavfsizlik tahdidlarini ham oshiradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><b>Data Retention (Ma’lumotlarni saqlash) siyosatini qayta ko‘rish:</b> Tizimlarda foydalanuvchi ma’lumotlarining yashash muddatini (TTL) avtomatik nazorat qiluvchi arxitekturani yo‘lga qo‘yish zarur.</li>\n      <li><b>Geolokatsiya anonimatsiyasi:</b> Dasturchilar va muhandislar geotracking ma’lumotlarini saqlashda xesh-funksiyalar va differensial maxfiylik (Differential Privacy) usullaridan foydalanishlari lozim.</li>\n      <li><b>Opt-in / Opt-out shaffofligi:</b> Tizimda foydalanuvchidan rozilik olish ochiq-oydin va istalgan vaqtda bekor qilinadigan mantiqiy zanjirga ega bo‘lishi shart.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><b>Yuridik va moliyaviy xavflar:</b> Mijozlar ma’lumotlarini tartibsiz yig‘ish katta regulyator jarimalariga sabab bo‘lishini tushunishingiz kerak.</li>\n      <li><b>Brend obro‘si va ishonch:</b> Shaffof bo‘lmagan ma’lumotlar siyosati mijozlarning mahsulot yoki servisga bo‘lgan ishonchini jiddiy darajada puturdan ketkazadi.</li>\n      <li><b>Muvofiqlik (Compliance) auditi:</b> Kompaniyangiz to‘playotgan har bir shaxsiy ma’lumot turi bo‘yicha aniq huquqiy va biznes asos bo‘lishini ta’minlashingiz zarur.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistonda ham raqamli xizmatlar, yetkazib berish ilovalari, fintex mahsulotlari va taksi agregatorlari jadal rivojlanib bormoqda. Mahalliy kompaniyalar foydalanuvchilarning geolokatsiyasi va shaxsiy ma’lumotlaridan keng foydalanmoqda.</p>\n  <p>O‘zbekistonning \"Shaxsiy ma’lumotlar to‘g‘risida\"gi qonunchiligi va me’yoriy hujjatlari tobora takomillashib borayotganini inobatga olsak, ushbu holat mahalliy bizneslar uchun jiddiy ogohlantirishdir. Agar Siz ilova yoki raqamli platforma yuritayotgan bo‘lsangiz, mijoz ma’lumotlarini saqlash muddatlarini qat’iy belgilashingiz hamda to‘plash maqsadi tugagach, ularni avtomatik o‘chirish mexanizmlarini shakllantirishingiz shart.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><b>Tizim auditi o‘tkazing:</b> Mahsulotingizda foydalanuvchilarning qanday geolokatsiya va shaxsiy ma’lumotlari to‘planayotganini va ular qancha vaqt saqlanayotganini tekshirishingiz mumkin.</li>\n    <li><b>Saqlash muddatini cheklang:</b> Keraksiz va muddati o‘tgan ma’lumotlarni avtomatik ravishda o‘chirib tashlaydigan skript va mantiqiy jarayonlarni joriy qiling.</li>\n    <li><b>Maxfiylik siyosatini yangilang:</b> Foydalanuvchilaringizga ularning ma’lumotlari qanday va qaysi maqsadda ishlatilishini aniq va tushunarli tilda tushuntirib bering.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-24"
+  },
   "openai-gpt6-sol-luna-50-percent-price-cut": {
     "id": "openai-gpt6-sol-luna-50-percent-price-cut",
     "slug": "openai-gpt6-sol-luna-50-percent-price-cut",
