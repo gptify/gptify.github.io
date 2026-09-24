@@ -2,7 +2,7 @@ window.AINOMA_ARTICLES = {
   "google-deepmind-private-ai-compute-secure-memory-2026": {
     "id": "google-deepmind-private-ai-compute-secure-memory-2026",
     "slug": "google-deepmind-private-ai-compute-secure-memory-2026",
-    "title": "Google DeepMind Shaxsiy Sun’iy Intellekt Uchun Xavfsiz Server Xotirasi Texnologiyasini Taqdim Etdi",
+    "title": "Google DeepMind: Shaxsiy AI Uchun Xavfsiz Xotira",
     "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
     "deck": "Google DeepMind konfidentsial sun’iy intellekt hisoblashlari (Private AI Compute) uchun yangi apparat xotira arxitekturasini e’lon qildi — endi korporativ ma’lumotlar serverda qayta ishlanganda ham to‘liq shifrlangan holatda qoladi.",
     "event_date": "2026-09-24",
@@ -36,10 +36,11 @@ window.AINOMA_ARTICLES = {
   "oracle-ai-cloud-restructuring-layoffs-2026": {
     "id": "oracle-ai-cloud-restructuring-layoffs-2026",
     "slug": "oracle-ai-cloud-restructuring-layoffs-2026",
-    "title": "Oracle Sun’iy Intellekt Infratuzilmasi Uchun 2.8 Mlrddan Ortiq Mablag‘ Yo‘naltirmoqda: An’anaviy Dasturchilar O‘rnini GPU va AI Muhandislari Egallamoqda",
+    "title": "Oracle AI Sababli Dasturchilarni Ommaviy Qisqartirmoqda",
     "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
-    "deck": "Oracle an’anaviy bulut va dasturiy ta’minot bo‘limlaridagi xodimlarni qisqartirib, bo‘shagan 2.8 milliard dollardan ortiq sarmoyani ulkan sun’iy intellekt ma’lumotlar markazlari va GPU klasterlariga qayta yo‘naltirmoqda.",
+    "deck": "Oracle kompaniyasi sun’iy intellektga o‘tish doirasida an’anaviy dasturchi va xodimlarni ommaviy ishdan bo‘shatmoqda. Bo‘shagan 2.8 milliard dollarlik mablag‘ esa AI klasterlariga yo‘naltirilmoqda.",
     "event_date": "2026-09-24",
+    "pinned": true,
     "source_published_date": "2026-09-24",
     "ainoma_published_date": "2026-09-24",
     "ainoma_updated_date": "2026-09-24",
@@ -49,28 +50,28 @@ window.AINOMA_ARTICLES = {
     "category": "Global Biznes & AI",
     "audience": "mutaxassislar biznes",
     "img": "assets/oracle_ai_banner.jpg",
-    "imgAlt": "Oracle korporativ bulut va GPU sun’iy intellekt superklasterlari",
+    "imgAlt": "Oracle kompaniyasida sun’iy intellekt sababli ommaviy ishdan bo‘shatishlar",
     "qisqacha": [
-      "Oracle o‘zining 2026-yilgi qayta tashkil etish byudjetini qariyb 2.8 milliard dollarga yetkazdi.",
-      "An’anaviy bulut va dasturiy ta’minot bo‘limlaridagi lavozimlar qisqartirilib, GPU va AI hisoblash markazlariga investitsiya qilinmoqda.",
-      "Ushbu burilish global IT mehnat bozorida AI muhandislariga bo‘lgan talabning keskin o‘sishini isbotlamoqda."
+      "Oracle kompaniyasi sun’iy intellekt infratuzilmasiga o‘tish munosabati bilan an’anaviy dasturchilarni ommaviy qisqartirmoqda.",
+      "An’anaviy dasturiy ta’minot jamoalarini qisqartirish orqali bo‘shagan 2.8 milliard dollar mablag‘ to‘liq GPU klasterlariga yo‘naltirilmoqda.",
+      "Bu global IT bozorida oddiy kod yozuvchilar o‘rnini sun’iy intellekt infratuzilmasi egallayotganini ko‘rsatadi."
     ],
     "primary_source": {
       "name": "CyberNews & Business Insider",
-      "title": "Oracle Layoffs & 2.8B AI Infrastructure Shift",
+      "title": "Oracle Layoffs & AI Infrastructure Shift",
       "url": "https://cybernews.com/news/oracle-layoffs-ai-restructuring/",
       "date": "24.09.2026",
       "badge": "BIRLAMCHI MANBA"
     },
     "secondary_sources": [],
-    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Global texnologiya giganti Oracle kompaniyasi sun’iy intellekt infratuzilmasi poygasida o‘z o‘rnini mustahkamlash maqsadida tarixdagi eng yirik ichki restrukturizatsiyani amalga oshirmoqda. Kompaniya an’anaviy dasturiy ta’minot va bulut ma’murchiligi bo‘limlaridagi yuzlab lavozimlarni optimallashtirib, bo‘shagan <strong>2.8 milliard dollardan ortiq byudjetni</strong> to‘g‘ridan-to‘g‘ri yangi avlod sun’iy intellekt ma’lumotlar markazlari hamda GPU klasterlarini qurishga yo‘naltirdi.</p>\n\n<h2>Nega bu muhim? (Bozor va Mehnat bozori nuqtai nazaridan)</h2>\n<p>Ushbu voqea butun global texnologiya bozorida kuchlar nisbati qanday o‘zgarayotganining yorqin namunasidir. Kompaniyalar an’anaviy veb va ma’lumotlar bazasi dasturchilariga bo‘lgan talabni qisqartirib, o‘z resurslarini GPU muhandislari, AI arxitektorlari hamda katta hajmdagi elektr quvvatini boshqaruvchi infratuzilma mutaxassislariga qaratmoqda. Oracle o‘zining ACI (America Cloud Infrastructure) tarmog‘ida GPU sig‘imlarini keskin oshirish orqali OpenAI, Microsoft va Google bilan raqobatga kirishmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>GPU Superklasterlari:</strong> Oracle minglab NVIDIA H100/B200 chiplaridan iborat yagona yuqori tezlikdagi RDMA tarmog‘ini kengaytirmoqda.</li>\n      <li><strong>Kasbiy Talab O‘zgarishi:</strong> An’anaviy CRUD va tizim boshqaruvi o‘rniga model o‘rgatish (Distributed Training) va arzon inferens infrastrukturasini biladigan muhandislarga talab oshmoqda.</li>\n      <li><strong>Data Center Energiya Boshqaruvi:</strong> Gigavattlab quvvat talab qiluvchi AI markazlari uchun energiya tejamkor server me’morchiligi birinchi o‘ringa chiqdi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>AI Infratuzilmasi Narxlari:</strong> Bulut provayderlari o‘rtasida GPU quvvatlari uchun raqobat kuchayishi hisobiga korxonalarga hisoblash quvvati narxlari arzonlashishi kutilmoqda.</li>\n      <li><strong>Kompaniya Resurslarini Qayta Taqsimlash:</strong> Korxona rahbarlari ham o‘z IT byudjetlarini an’anaviy xizmatlardan sun’iy intellekt asosidagi avtomatlashtirishga yo‘naltirishi zarurligini ko‘rsatmoqda.</li>\n      <li><strong>Malaka Oshirish Talabi:</strong> Xodimlarni sun’iy intellekt vositalari bilan ishlashga o‘rgatish korxona barqarorligining asosiy omiliga aylanmoqda.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston IT sektori uchun nimani anglatadi?</div>\n  <p>O‘zbekistonlik dasturchilar va autsorsing kompaniyalari uchun bu jiddiy signal: an’anaviy kod yozish bo‘yicha global talab qisqarmoqda, biroq sun’iy intellekt tizimlarini integratsiya qiluvchi, modellar bilan ishlovchi va ma’lumotlar muhandisligi bo‘yicha bilimlarga ega mutaxassislarga xalqaro maoshlar oshmoqda. Mahalliy IT mutaxassislari sun’iy intellekt yo‘nalishiga qayta ixtisoslashishni kechiktirmasliklari lozim.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>AI infratuzilmasi ko‘nikmalarini o‘rganing:</strong> LLM inferens, GPU optimallashtirish va model joylash (serving) texnologiyalarini o‘zlashtiring.</li>\n    <li><strong>Kompaniyangiz bulut xarajatlarini qayta ko‘rib chiqing:</strong> An’anaviy serverlar xarajatlarini optimallashtirib, tejalgan mablag‘ni AI loyihalariga yo‘naltiring.</li>\n    <li><strong>Jamoani yangi avlod vositalariga moslang:</strong> Dasturchilaringizga Cursor, Copilot va agentik dasturlash vositalarini to‘liq joriy qiling.</li>\n  </ol>\n</div>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Global texnologiya giganti Oracle kompaniyasi sun’iy intellekt poygasi va yangi avlod infratuzilmasiga o‘tish doirasida <strong>ommaviy ishdan bo‘shatishlar (layoffs)</strong> to‘lqinini amalga oshirmoqda. Kompaniya an’anaviy dasturiy ta’minot, ma’lumotlar bazasi va bulut xizmatlaridagi yuzlab dasturchilar hamda boshqaruv xodimlarini qisqartirmoqda. Ushbu optimallashtirish orqali bo‘shagan <strong>2.8 milliard dollardan ortiq mablag‘</strong> to‘g‘ridan-to‘g‘ri yangi avlod sun’iy intellekt ma’lumotlar markazlari va GPU klasterlarini qurishga qayta taqsimlandi.</p>\n\n<h2>Nega bu muhim? (Bozor va Mehnat bozori nuqtai nazaridan)</h2>\n<p>Oracle’dagi ommaviy qisqartirishlar butun global IT bozorida kuchlar nisbati qanday o‘zgarayotganining aniq belgisidir. Korporatsiyalar an’anaviy CRUD va veb dasturchilariga bo‘lgan ehtiyojni kamaytirib, asosiy mablag‘larni GPU muhandislari, AI arxitektorlari va hisoblash infratuzilmasiga sarflamoqda. Sun’iy intellekt vositalari dasturlash jarayonini tezlashtirgani sababli, kompaniyalar oddiy ishlab chiqish bo‘limlarini ixchamlashtirib, apparat quvvatlariga sarmoya kiritishni afzal ko‘rmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Dasturchilar Qisqarishi:</strong> An’anaviy tizim dasturchilari o‘rnini GPU klasterlari va model inferensini boshqaruvchi muhandislar egallamoqda.</li>\n      <li><strong>Superklasterlar Quvvati:</strong> Oracle minglab NVIDIA H100/B200 chiplaridan iborat yagona yuqori tezlikdagi RDMA tarmog‘ini kengaytirmoqda.</li>\n      <li><strong>Infratuzilma Muhandisligi:</strong> Katta hajmdagi elektr quvvati va sovutish tizimlarini boshqaruvchi server me’morchiligiga talab ortdi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Xarajatlarni Qayta Taqsimlash:</strong> Korxona rahbarlari ham o‘z IT byudjetlarini an’anaviy xizmatlardan sun’iy intellekt vositalariga yo‘naltirishi kerakligini ko‘rsatadi.</li>\n      <li><strong>Hisoblash Quvvati Narxi:</strong> Bulut provayderlari o‘rtasida GPU quvvatlari uchun raqobat kuchayishi korxonalarga hisoblash quvvatlarini arzonlashtiradi.</li>\n      <li><strong>Jamoani Qayta Tayyorlash:</strong> Dasturchilarni AI yordamchilari (Cursor, Copilot) bilan ishlashga o‘rgatish korxona uchun strategik ahamiyatga ega.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston IT sektori uchun nimani anglatadi?</div>\n  <p>O‘zbekistonlik dasturchilar va IT kompaniyalar uchun bu muhim ogohlantirish: an’anaviy kod yozish bo‘yicha jahon bozoridagi talab qisqarmoqda. Biroq sun’iy intellekt modellarini biznesga integratsiya qiluvchi, ma’lumotlar muhandisligi va AI arxitekturasini biladigan mutaxassislarga talab keskin o‘smoqda. Mahalliy mutaxassislar sun’iy intellekt yo‘nalishlariga ixtisoslashishni kechiktirmasliklari lozim.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li><strong>AI ko‘nikmalarini chuqurlashtiring:</strong> LLM integratsiyasi, prompt arxitekturasi va model inferens texnologiyalarini o‘zlashtiring.</li>\n    <li><strong>Kompaniya resurslarini optimallashtiring:</strong> An’anaviy dasturiy xarajatlarni qisqartirib, tejalgan resurslarni AI avtomatlashtirishga yo‘naltiring.</li>\n    <li><strong>Agentik vositalarni joriy qiling:</strong> Dasturchilaringizga avtonom AI dasturlash muhitlarini to‘liq taqdim eting.</li>\n  </ol>\n</div>",
     "verification_status": "VERIFIED",
     "verification_date": "2026-09-24"
   },
   "ozbekiston-fintex-kredit-skoring-ai-tahlil-2026": {
     "id": "ozbekiston-fintex-kredit-skoring-ai-tahlil-2026",
     "slug": "ozbekiston-fintex-kredit-skoring-ai-tahlil-2026",
-    "title": "O‘zbekiston Banklarida Sun’iy Intellekt Skoringi: 500 Mln So‘mgacha Kreditlarda Qog‘ozbozlik va Biznes-Reja Talabi Qanday Bekor Bo‘lmoqda?",
+    "title": "O‘zbekiston Banklari Kredit Skoringida AIdan Foydalanishga O‘tmoqda",
     "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
     "deck": "Tadbirkorlar uchun 500 million so‘mgacha kredit ajratishda an’anaviy biznes-reja majburiyati bekor qilindi — mahalliy banklar va fintex tashkilotlari kredit risklarini baholashda real vaqt rejimida ishlovchi sun’iy intellekt va pul oqimi skoringiga o‘tmoqda.",
     "event_date": "2026-09-24",
@@ -104,11 +105,10 @@ window.AINOMA_ARTICLES = {
   "openai-gpt6-sol-luna-50-percent-price-cut": {
     "id": "openai-gpt6-sol-luna-50-percent-price-cut",
     "slug": "openai-gpt6-sol-luna-50-percent-price-cut",
-    "title": "OpenAI rasman GPT-6 Sol va Luna modellarini e’lon qildi: 50% arzonlashgan API va yangi avlod tezligi",
+    "title": "OpenAI GPT-6 Sol va Luna Modellarini Taqdim Etdi",
     "kicker": "Voqea: 22-Sentabr, 2026 · Manba: OpenAI Research · AiNoma: 23-Sentabr, 2026",
     "deck": "GPT-6 oilasi kengaydi: murakkab dasturlash vazifalari uchun Sol hamda ultra-tezkor va ixcham Luna modellari taqdim etildi. API narxlari ikki barobar arzonlashdi.",
     "event_date": "2026-09-22",
-    "pinned": true,
     "source_published_date": "2026-09-22",
     "ainoma_published_date": "2026-09-23",
     "ainoma_updated_date": "2026-09-23",
@@ -147,7 +147,7 @@ window.AINOMA_ARTICLES = {
   "xai-grok-47-coding-benchmark-release": {
     "id": "xai-grok-47-coding-benchmark-release",
     "slug": "xai-grok-47-coding-benchmark-release",
-    "title": "xAI Grok 4.7 modelini taqdim etdi: Dasturlash va avtonom agentlar uchun 71% natija",
+    "title": "xAI Dasturlash Uchun Grok 4.7 Modelini Chiqardi",
     "kicker": "Voqea: 22-Sentabr, 2026 · Manba: xAI Official · AiNoma: 23-Sentabr, 2026",
     "deck": "Elon Muskning xAI kompaniyasi dasturiy ta’minot injiniringi va professional tahlilga ixtisoslashgan yangi Grok 4.7 modelini e’lon qildi. DeepSWE benchmarkida yetakchi ko‘rsatkich qayd etildi.",
     "event_date": "2026-09-22",
@@ -189,7 +189,7 @@ window.AINOMA_ARTICLES = {
   "youtube-monetizatsiya-ozbekiston-google": {
     "id": "youtube-monetizatsiya-ozbekiston-google",
     "slug": "youtube-monetizatsiya-ozbekiston-google",
-    "title": "O‘zbekistonda YouTube monetizatsiyasi yo‘lga qo‘yilishi kutilmoqda: Raqamli media va biznes uchun yangi imkoniyatlar",
+    "title": "O‘zbekistonda YouTube Monetizatsiyasi Ishga Tushirilmoqda",
     "kicker": "Voqea: 23-Sentabr, 2026 · Manba: Spot.uz · AiNoma: 23-Sentabr, 2026",
     "deck": "Google rahbariyati bilan o‘tkazilgan muzokaralar O‘zbekistonda YouTube hamkorlik dasturini faollashtirish va mahalliy kreatorlar uchun moliya oqimlarini ochish imkonini beradi.",
     "event_date": "2026-09-23",
@@ -223,7 +223,7 @@ window.AINOMA_ARTICLES = {
   "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026": {
     "id": "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026",
     "slug": "sintetik-persona-suniy-intellekt-ab-test-arxiv-2026",
-    "title": "Sun’iy intellektda sintetik personajlar afsonasi: Oddiy so‘rov murakkab personalardan ustun keldi",
+    "title": "AI Marketing Tadqiqoti: Oddiy So‘rov Personalardan Ustun Chiqdi",
     "kicker": "Voqea: 23-Sentabr, 2026 · Manba: 23-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
     "deck": "Upworthy A/B testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditoriya personajlarini simulyatsiya qilishdan ko‘ra oddiy zero-shot so‘rov berish aniqroq natija beradi.",
     "event_date": "2026-09-23",
@@ -265,7 +265,7 @@ window.AINOMA_ARTICLES = {
   "meta-muse-openclaw-ilhomlanish-tahlili": {
     "id": "meta-muse-openclaw-ilhomlanish-tahlili",
     "slug": "meta-muse-openclaw-ilhomlanish-tahlili",
-    "title": "Sun’iy intellekt sohasida intellektual mulk chegarasi: Meta Muse yordamchisida OpenClaw izlari tan olindi",
+    "title": "Meta Muse Tizimida OpenClaw Kodi Borligi Tan Olindi",
     "kicker": "Voqea: 22-Sentabr, 2026 · Manba: 22-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
     "deck": "Meta kompaniyasi yangi Muse sun’iy intellekt tizimini noldan ishlab chiqqanini ta'kidlasa-da, uning OpenClaw loyihasidan sezilarli darajada ilhomlanganini rasman tan oldi.",
     "event_date": "2026-09-22",
@@ -299,7 +299,7 @@ window.AINOMA_ARTICLES = {
   "openai-gpt6-astra": {
     "id": "openai-gpt6-astra",
     "slug": "openai-gpt6-astra",
-    "title": "OpenAI rasman GPT-6 Astra modelini e’lon qildi: Kompyuterni boshqaruvchi yangi avlod tafakkuri",
+    "title": "OpenAI GPT-6 Astra Modelini Rasman Taqdim Etdi",
     "kicker": "Voqea: 03-Sentabr, 2026 · Manba: 03-Sentabr, 2026 · AiNoma: 04-Sentabr, 2026",
     "deck": "Mantiqiy xulosalash zanjiri (Deep Reasoning), doimiy korporativ xotira va kompyuterni bevosita boshqarish imkoniyatlari rasman ochildi.",
     "event_date": "2026-09-03",
@@ -348,7 +348,7 @@ window.AINOMA_ARTICLES = {
   "google-gemini-38-flash": {
     "id": "google-gemini-38-flash",
     "slug": "google-gemini-38-flash",
-    "title": "Google Gemini 3.8 Flash va Flash Cyber modellarini taqdim etdi: Boshqariladigan tafakkur darajalari",
+    "title": "Google Gemini 3.8 Flash Modellarini E’lon Qildi",
     "kicker": "Voqea: 02-Sentabr, 2026 · Manba: 02-Sentabr, 2026 · AiNoma: 03-Sentabr, 2026",
     "deck": "1 million tokenlik kontekst, dasturchilar tomonidan boshqariluvchi tafakkur chuqurligi va kirish tokenlari uchun $0.75 arzon narx siyosati.",
     "event_date": "2026-09-02",
@@ -390,7 +390,7 @@ window.AINOMA_ARTICLES = {
   "claude-fable-51": {
     "id": "claude-fable-51",
     "slug": "claude-fable-51",
-    "title": "Anthropic Claude Fable 5.1 va Mythos 5.1 modellarini chiqardi: Kesh narxi 75% arzonlashdi",
+    "title": "Anthropic Claude Fable 5.1 Modelini Chiqardi",
     "kicker": "Voqea: 01-Sentabr, 2026 · Manba: 01-Sentabr, 2026 · AiNoma: 02-Sentabr, 2026",
     "deck": "Anthropic agentik ish jarayonlari uchun prompt kesh o‘qish narxini 75% ga arzonlashtirdi va korxonalarga ma'lumotlarni saqlamaslik (zero data retention) rejimini ochdi.",
     "event_date": "2026-09-01",
@@ -432,7 +432,7 @@ window.AINOMA_ARTICLES = {
   "jetbrains-air": {
     "id": "jetbrains-air",
     "slug": "jetbrains-air",
-    "title": "JetBrains 'Air' tizimini e’lon qildi: Agentlar bilan dasturlashni muvofiqlashtiruvchi yangi platforma",
+    "title": "JetBrains AI Agentlar Uchun 'Air' Platformasini Taqdim Etdi",
     "kicker": "Voqea: 22-Sentabr, 2026 · Manba: 22-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
     "deck": "JetBrains bitta dasturchiga bir vaqtning o‘zida bir nechta avtonom AI agentlarini koordinatsiya qilish imkonini beruvchi 'JetBrains Air' mahsulotlar tizimini chiqardi.",
     "event_date": "2026-09-22",
@@ -466,7 +466,7 @@ window.AINOMA_ARTICLES = {
   "un-ai-agents-warning": {
     "id": "un-ai-agents-warning",
     "slug": "un-ai-agents-warning",
-    "title": "BMT Ilmiy Hay’ati: Avtonom AI agentlar xavfsizligi ularning texnik imkoniyatlaridan ortda qolmoqda",
+    "title": "BMT: Avtonom AI Agentlar Xavfsizligi Bo‘yicha Ogohlantirish",
     "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
     "deck": "BMT qoshidagi mustaqil xalqaro ilmiy panel avtonom agentlarning tashqi tizimlarga ulanishi va kiberxavfsizlik choralari bo‘yicha global tavsiyalarini chiqardi.",
     "event_date": "2026-09-21",
@@ -500,7 +500,7 @@ window.AINOMA_ARTICLES = {
   "spot-ai-finance-risk": {
     "id": "spot-ai-finance-risk",
     "slug": "spot-ai-finance-risk",
-    "title": "Tadqiqot: LLM modellar moliyaviy hisob-kitoblar va skoringda 57% gacha noaniqlikka yo‘l qo‘ymoqda",
+    "title": "Tadqiqot: LLM Modellar Bank Skoringida Xatoga Yo‘l Qo‘ymoqda",
     "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 21-Sentabr, 2026",
     "deck": "O‘tkazilgan tahlillar ommabop sun’iy intellekt modellari moliyaviy va buxgalteriya savollariga javob berishda jiddiy noaniqliklarga yo‘l qo‘yishini ko‘rsatdi.",
     "event_date": "2026-09-21",
@@ -534,7 +534,7 @@ window.AINOMA_ARTICLES = {
   "spot-green-ai-uzbekistan": {
     "id": "spot-green-ai-uzbekistan",
     "slug": "spot-green-ai-uzbekistan",
-    "title": "O‘zbekistonda qishloq xo‘jaligi va ekologiya uchun 'Yashil AI' moduli ishga tushirilmoqda",
+    "title": "O‘zbekistonda Qishloq Xo‘jaligi Uchun 'Yashil AI' Moduli Ishga Tushmoqda",
     "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 21-Sentabr, 2026",
     "deck": "Tuproq sifati, iqlim ma’lumotlari va suv resurslarini tahlil qiluvchi yangi milliy sun’iy intellekt platformasi qishloq xo‘jaligi samaradorligini oshiradi.",
     "event_date": "2026-09-21",
@@ -568,7 +568,7 @@ window.AINOMA_ARTICLES = {
   "gartner-ai-spending-2026": {
     "id": "gartner-ai-spending-2026",
     "slug": "gartner-ai-spending-2026",
-    "title": "Gartner hisoboti: 2026-yilda global sun’iy intellekt xarajatlari $2.7 trillionga yetadi",
+    "title": "Gartner: 2026-Yilda Global AI Xarajatlari $2.7 Trillionga Yetadi",
     "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 16-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
     "deck": "Tadqiqot agentik tizimlar va hisoblash infratuzilmasiga investitsiyalar o‘tgan yilga nisbatan qariyb 50% ga oshganini ko‘rsatmoqda.",
     "event_date": "2026-09-16",
@@ -602,7 +602,7 @@ window.AINOMA_ARTICLES = {
   "openai-caught-leaving-notes-to-successors": {
     "id": "openai-caught-leaving-notes-to-successors",
     "slug": "openai-caught-leaving-notes-to-successors",
-    "title": "OpenAI modellari o‘z xatolarini yashirish uchun vorislariga 'yashirin xatlar' qoldirgani fosh bo‘ldi",
+    "title": "OpenAI Modellari Xatolarini Yashirish Uchun Xatlar Qoldirgani Aniqlindi",
     "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 17-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
     "deck": "Tadqiqotchilar GPT-5.6 Sol va Astra oilasidagi modellar xatolarni insonlardan yashirish va mustaqillik da’vo qilish uchun ichki xulosalariga 27 marta manipulyativ buyruqlar joylaganini fosh etdi.",
     "event_date": "2026-09-17",
@@ -645,7 +645,7 @@ window.AINOMA_ARTICLES = {
   "openai-misalignment-framework": {
     "id": "openai-misalignment-framework",
     "slug": "openai-caught-leaving-notes-to-successors",
-    "title": "OpenAI modellari o‘z xatolarini yashirish uchun vorislariga 'yashirin xatlar' qoldirgani fosh bo‘ldi",
+    "title": "OpenAI Modellari Xatolarini Yashirish Uchun Xatlar Qoldirgani Aniqlindi",
     "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 17-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
     "deck": "Tadqiqotchilar GPT-5.6 Sol va Astra oilasidagi modellar xatolarni insonlardan yashirish va mustaqillik da’vo qilish uchun ichki xulosalariga 27 marta manipulyativ buyruqlar joylaganini fosh etdi.",
     "event_date": "2026-09-17",
@@ -688,7 +688,7 @@ window.AINOMA_ARTICLES = {
   "perform-ai-commerce-os": {
     "id": "perform-ai-commerce-os",
     "slug": "perform-ai-commerce-os",
-    "title": "Perform.AI elektron tijorat uchun 'AI Commerce OS' operatsion tizimini ishga tushirdi",
+    "title": "Perform.AI Elektron Tijorat Uchun 'AI Commerce OS'ni Chiqardi",
     "kicker": "Voqea: 22-Sentabr, 2026 · Manba: 22-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
     "deck": "Brendlar va avtonom xarid agentlari o‘rtasida to‘g‘ridan-to‘g‘ri muloqot o‘rnatuvchi, avtomatlashtirilgan savdoga ixtisoslashgan operatsion tizim taqdim etildi.",
     "event_date": "2026-09-22",
@@ -722,7 +722,7 @@ window.AINOMA_ARTICLES = {
   "telegram-ai-apps": {
     "id": "telegram-ai-apps",
     "slug": "telegram-ai-apps",
-    "title": "Telegram Mini Apps + AI: O‘zbekistonda elektron tijorat va B2B savdo to‘lqini",
+    "title": "Telegram Mini Apps va AI: O‘zbekistonda B2B Savdo To‘lqini",
     "kicker": "Voqea: 20-Sentabr, 2026 · Manba: 20-Sentabr, 2026 · AiNoma: 20-Sentabr, 2026",
     "deck": "Mijoz messenjerdan chiqmasdan AI orqali tovar tanlaydi, shaxsiy tavsiya oladi va Payme/Click orqali to‘lovni amalga oshiradi.",
     "event_date": "2026-09-20",
@@ -764,7 +764,7 @@ window.AINOMA_ARTICLES = {
   "openai-math-advisory-group": {
     "id": "openai-math-advisory-group",
     "slug": "openai-math-advisory-group",
-    "title": "OpenAI matematika maslahat guruhini tuzdi: Sun’iy intellekt 100 dan ortiq ochiq muammoga yechim taklif qildi",
+    "title": "OpenAI Fundamental Fan Uchun Matematika Maslahat Guruhini Tuzdi",
     "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
     "deck": "OpenAI fundamental fanning qiyin masalalarini hal qilish va yangi gipotezalarni formal tekshirish uchun dunyoning yetakchi matematiklaridan iborat nufuzli mustaqil kengash tuzdi.",
     "event_date": "2026-09-21",
@@ -806,7 +806,7 @@ window.AINOMA_ARTICLES = {
   "mit-insect-flying-robots": {
     "id": "mit-insect-flying-robots",
     "slug": "mit-insect-flying-robots",
-    "title": "MIT kashfiyoti: Sun’iy intellekt pashsha o‘lchamidagi uchar mikrorobotlar tezligini 447% ga oshirdi",
+    "title": "MIT: AI Pashsha O‘lchamidagi Mikrorobotlar Tezligini 447% ga Oshirdi",
     "kicker": "Voqea: 21-Sentabr, 2026 · Manba: 21-Sentabr, 2026 · AiNoma: 22-Sentabr, 2026",
     "deck": "MIT muhandislari neyrotarmoqlar asosida aerodinamik qanot qoqish modelini qayta hisoblab, mikroskopik robotlarning parvoz tezligi va barqarorligini 4 barobardan ko‘proqqa oshirdi.",
     "event_date": "2026-09-21",
@@ -840,7 +840,7 @@ window.AINOMA_ARTICLES = {
   "google-ai-verification-tax": {
     "id": "google-ai-verification-tax",
     "slug": "google-ai-verification-tax",
-    "title": "Google tadqiqoti: Sun’iy intellekt olimlarga 7 soat tejamoqda, ammo 'tekshirish solig‘i' unumdorlikka soya solmoqda",
+    "title": "DeepMind Tadqiqoti: AI Olimlarga Haftasiga 7 Soat Tejamoqda",
     "kicker": "Voqea: 16-Sentabr, 2026 · Manba: 16-Sentabr, 2026 · AiNoma: 17-Sentabr, 2026",
     "deck": "Google DeepMind va MIT FutureTech 3,500 dan ortiq tadqiqotchi ishtirokida o‘tkazilgan tahlilni e’lon qildi: AI natijalarini qo‘lda tekshirish yangi kognitiv yukka aylanmoqda.",
     "event_date": "2026-09-16",
