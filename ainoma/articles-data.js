@@ -8,7 +8,6 @@ window.AINOMA_ARTICLES = {
     "kicker": "Voqea: 24-Sentabr, 2026 · Manba: 24-Sentabr, 2026 · AiNoma: 24-Sentabr, 2026",
     "deck": "Google DeepMind konfidentsial sun’iy intellekt hisoblashlari (Private AI Compute) uchun yangi apparat xotira arxitekturasini e’lon qildi — endi korporativ ma’lumotlar serverda qayta ishlanganda ham to‘liq shifrlangan holatda qoladi.",
     "event_date": "2026-09-24",
-    "pinned": true,
     "source_published_date": "2026-09-24",
     "ainoma_published_date": "2026-09-24",
     "ainoma_updated_date": "2026-09-24",
