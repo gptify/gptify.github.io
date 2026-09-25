@@ -148,10 +148,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "AI Agentlar Xavfsizligi: Kompyuter Uchun 5 Ta Qoida", u: "yangiliklar/ai-agent-kompyuter-xavfsizlik-qollanma/", k: "ai agentlar xavfsizligi: kompyuter uchun 5 ta qoida qo'llanmalar openai research gpt-6 astra kabi modellar endi kompyuterni mustaqil boshqaradi. ai agentga vazifa topshirishdan oldi" },
   { t: "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi", u: "yangiliklar/google-gemini-live-avatar-2026/", k: "google gemini 3.8 live'ga live avatar qo‘shildi global ai tadqiqot google (rasmiy blog) google gemini 3.8 live'ga live avatar funksiyasini qo'shdi — u real vaqtda lab harakati va yuz ifoda" },
-  { t: "Altman va Amodei BMTda AI Tartibga Solishga Chaqirdi", u: "yangiliklar/openai-anthropic-un-security-council-ai-regulation-2026/", k: "altman va amodei bmtda ai tartibga solishga chaqirdi global ai siyosati al jazeera openai'ning sam altman va anthropic'ning dario amodei bmt xavfsizlik kengashida sun'iy intellektni g" },
+  { t: "Altman va Amodei BMTda AI Tartibga Solishga Chaqirdi", u: "yangiliklar/openai-anthropic-un-security-council-ai-regulation-2026/", k: "altman va amodei bmtda ai tartibga solishga chaqirdi global ai siyosati cnn (cnn newsource orqali) openai'ning sam altman va anthropic'ning dario amodei bmt xavfsizlik kengashida sun'iy intellektni g" },
   { t: "Toshkentda Future Intelligence Forum 2026 Bo‘lib O‘tdi", u: "yangiliklar/toshkent-future-intelligence-forum-2026/", k: "toshkentda future intelligence forum 2026 bo‘lib o‘tdi o'zbekiston ai siyosati kun.uz toshkentda huawei va hamkorlari tashkil etgan future intelligence forum 2026 o'z ishini yakunladi. r" },
   { t: "Anthropic Claude Opus 5.5 Modelini Taqdim Etdi", u: "yangiliklar/anthropic-claude-opus-5-5-2026/", k: "anthropic claude opus 5.5 modelini taqdim etdi global ai tadqiqot anthropic anthropic claude opus 5.5 modelini chiqardi — narx 40% arzonlashdi, kod yozish va kompyuterdan foyda" },
   { t: "Cisco Talos Ilk Avtonom AI Malware'ni Aniqladi", u: "yangiliklar/cisco-talos-closedquorum-ai-malware-2026/", k: "cisco talos ilk avtonom ai malware'ni aniqladi ai xavfsizligi cisco talos cisco talos closedquorum nomli zararli dasturni aniqladi — u keyingi qadamni tanlash uchun to'rt xil" },
