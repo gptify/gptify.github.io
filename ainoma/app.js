@@ -142,6 +142,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "AI Agentlar Xavfsizligi: Kompyuter Uchun 5 Ta Qoida", u: "yangiliklar/ai-agent-kompyuter-xavfsizlik-qollanma/", k: "ai agentlar xavfsizligi: kompyuter uchun 5 ta qoida qo'llanmalar openai research gpt-6 astra kabi modellar endi kompyuterni mustaqil boshqaradi. ai agentga vazifa topshirishdan oldi" },
   { t: "Google DeepMind: Shaxsiy AI Uchun Xavfsiz Xotira", u: "yangiliklar/google-deepmind-private-ai-compute-secure-memory-2026/", k: "google deepmind: shaxsiy ai uchun xavfsiz xotira frontier ai tadqiqot google deepmind research google deepmind konfidentsial sun’iy intellekt hisoblashlari (private ai compute) uchun yangi appara" },
