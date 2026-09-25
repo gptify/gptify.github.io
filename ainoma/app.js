@@ -143,10 +143,12 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "AI Agentlar Xavfsizligi: Kompyuter Uchun 5 Ta Qoida", u: "yangiliklar/ai-agent-kompyuter-xavfsizlik-qollanma/", k: "ai agentlar xavfsizligi: kompyuter uchun 5 ta qoida qo'llanmalar openai research gpt-6 astra kabi modellar endi kompyuterni mustaqil boshqaradi. ai agentga vazifa topshirishdan oldi" },
   { t: "Google DeepMind: Shaxsiy AI Uchun Xavfsiz Xotira", u: "yangiliklar/google-deepmind-private-ai-compute-secure-memory-2026/", k: "google deepmind: shaxsiy ai uchun xavfsiz xotira frontier ai tadqiqot google deepmind research google deepmind konfidentsial sun’iy intellekt hisoblashlari (private ai compute) uchun yangi appara" },
   { t: "O‘zbekiston Banklari Kredit Skoringida AIdan Foydalanishga O‘tmoqda", u: "yangiliklar/ozbekiston-fintex-kredit-skoring-ai-tahlil-2026/", k: "o‘zbekiston banklari kredit skoringida aidan foydalanishga o‘tmoqda o‘zbekiston fintech & ai spot.uz it & biznes tadbirkorlar uchun 500 million so‘mgacha kredit ajratishda an’anaviy biznes-reja majburiyati bekor q" },
+  { t: "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi", u: "yangiliklar/google-gemini-live-avatar-2026/", k: "google gemini 3.8 live'ga live avatar qo‘shildi global ai tadqiqot rasmiy manba " },
   { t: "O‘zbekistonda YouTube Monetizatsiyasi Ishga Tushirilmoqda", u: "yangiliklar/youtube-monetizatsiya-ozbekiston-google/", k: "o‘zbekistonda youtube monetizatsiyasi ishga tushirilmoqda o‘zbekiston it spot.uz it & biznes google rahbariyati bilan o‘tkazilgan muzokaralar o‘zbekistonda youtube hamkorlik dasturini faollasht" },
   { t: "AI Marketing Tadqiqoti: Oddiy So‘rov Personalardan Ustun Chiqdi", u: "yangiliklar/sintetik-persona-suniy-intellekt-ab-test-arxiv-2026/", k: "ai marketing tadqiqoti: oddiy so‘rov personalardan ustun chiqdi biznes & sun’iy intellekt arxiv cs.ai upworthy a/b testlari bazasida o‘tkazilgan tadqiqot shuni ko‘rsatdiki, katta til modellarida auditor" },
   { t: "Altman va Amodei BMTda AI Tartibga Solishga Chaqirdi", u: "yangiliklar/openai-anthropic-un-security-council-ai-regulation-2026/", k: "altman va amodei bmtda ai tartibga solishga chaqirdi global ai siyosati al jazeera openai'ning sam altman va anthropic'ning dario amodei bmt xavfsizlik kengashida sun'iy intellektni g" },
