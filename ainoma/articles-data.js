@@ -1070,7 +1070,7 @@ window.AINOMA_ARTICLES = {
     "title": "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi",
     "kicker": "GLOBAL AI TADQIQOT",
     "meta_title": "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi — AiNoma",
-    "meta_description": "",
+    "meta_description": "Google Gemini 3.8 Live'ga Live Avatar funksiyasini qo'shdi — u real vaqtda lab harakati va yuz ifodasi bilan foydalanuvchi bilan 'muloqot qiladi'. Hozircha faqat Gemini Enterprise mijozlari uchun.",
     "category": "Global AI Tadqiqot",
     "audience": "mutaxassislar",
     "event_date": "2026-09-24",
@@ -1079,7 +1079,7 @@ window.AINOMA_ARTICLES = {
     "ainoma_published_date": "2026-09-25",
     "read_time": "3 daqiqa",
     "readTime": "3 daqiqa",
-    "deck": "",
+    "deck": "Google Gemini 3.8 Live'ga Live Avatar funksiyasini qo'shdi — u real vaqtda lab harakati va yuz ifodasi bilan foydalanuvchi bilan 'muloqot qiladi'. Hozircha faqat Gemini Enterprise mijozlari uchun.",
     "img": "assets/gemini-live-avatar-cover.jpg",
     "imgAlt": "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi",
     "qisqacha": [
@@ -1089,9 +1089,9 @@ window.AINOMA_ARTICLES = {
       "Barcha audio/video natijalarga Google'ning SynthID suv belgisi qo'yiladi, bu AI tomonidan ishlab chiqilgan kontentni aniqlashga yordam beradi."
     ],
     "primary_source": {
-      "name": "Rasmiy Manba",
-      "title": "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi",
-      "url": "https://openai.com/index/gpt-6-astra/",
+      "name": "Google (rasmiy blog)",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
       "badge": "BIRLAMCHI MANBA"
     },
     "secondary_sources": [
