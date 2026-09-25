@@ -147,6 +147,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "AI Agentlar Xavfsizligi: Kompyuter Uchun 5 Ta Qoida", u: "yangiliklar/ai-agent-kompyuter-xavfsizlik-qollanma/", k: "ai agentlar xavfsizligi: kompyuter uchun 5 ta qoida qo'llanmalar openai research gpt-6 astra kabi modellar endi kompyuterni mustaqil boshqaradi. ai agentga vazifa topshirishdan oldi" },
   { t: "Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi", u: "yangiliklar/google-gemini-live-avatar-2026/", k: "google gemini 3.8 live'ga live avatar qo‘shildi global ai tadqiqot google (rasmiy blog) google gemini 3.8 live'ga live avatar funksiyasini qo'shdi — u real vaqtda lab harakati va yuz ifoda" },
