@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="OpenAI yangi Agents API va Data Agent vositalarini chiqardi. Bu O‘zbekiston biznesi va mutaxassislari uchun nimani anglatadi?">
   <title>OpenAI Agents API va ChatGPT Data Agent tahlili — AiNoma</title>
-  <link rel="stylesheet" href="style.css?v=1790543690">
+  <link rel="stylesheet" href="style.css?v=1790544533">
   <link rel="canonical" href="https://ainoma.uz/maqola.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AiNoma">
@@ -108,14 +108,8 @@
         <!-- Dynamic Content Body -->
         <div id="articleDynamicContent"></div>
 
-        <!-- Verified Sources Container (Section 21 & 22) -->
-        <div class="sources-container" id="articleSourcesContainer">
-          <div class="sources-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Tasdiqlangan Birlamchi va Mustaqil Manbalar (Fact-Checked)
-          </div>
-          <div id="articleSourcesList"></div>
-        </div>
+        <!-- Source Reference -->
+        <div id="articleSourceRef"></div>
 
         <!-- Telegram Sharing Bar -->
         <div class="share-bar">
@@ -165,8 +159,8 @@
     </div>
   </footer>
 
-  <script src="articles-data.js?v=1790543690"></script>
-  <script src="app.js?v=1790543690"></script>
+  <script src="articles-data.js?v=1790544533"></script>
+  <script src="app.js?v=1790544533"></script>
 
   <script>
   (function() {
@@ -240,54 +234,16 @@
         dynamicContent.innerHTML = art.contentHtml;
       }
       
-      // Render Verified Sources (Section 21 & 22)
-      var sourcesList = document.getElementById('articleSourcesList');
-      if (sourcesList) {
-        var sourceCardsHtml = '';
-        
-        // Primary source
-        if (art.primary_source) {
-          var ps = art.primary_source;
-          var badgeClass = 'birlamchi';
-          var badgeText = ps.badge || 'BIRLAMCHI MANBA';
-          if (badgeText.indexOf('RASMIY') !== -1) badgeClass = 'rasmiy';
-          if (badgeText.indexOf('TADQIQOT') !== -1) badgeClass = 'tadqiqot';
-
-          sourceCardsHtml += 
-            '<div class="source-card">' +
-              '<div class="source-badge-row">' +
-                '<span class="source-badge ' + badgeClass + '">' + badgeText + '</span>' +
-                '<span class="source-doc-meta">' + ps.name + ' · ' + (ps.date || art.source_published_date || '') + '</span>' +
-              '</div>' +
-              '<div class="source-doc-title">' + ps.title + '</div>' +
-              '<a class="source-doc-link" href="' + ps.url + '" target="_blank" rel="noopener">' +
-                'Birlamchi hujjatni ochish (Asl manba) ↗' +
-              '</a>' +
-            '</div>';
+      // Render Source Reference (guides have NO sources; news has simple 1-line link)
+      var sourceRefEl = document.getElementById('articleSourceRef');
+      if (sourceRefEl) {
+        var isGuide = (art.category === "Qo'llanmalar" || art.kicker === "QO'LLANMALAR" || (art.title && art.title.toLowerCase().indexOf("qo‘llanma") !== -1));
+        if (!isGuide && art.primary_source && art.primary_source.url && art.primary_source.url !== "#" && art.primary_source.url.indexOf("https://ainoma.uz") !== 0) {
+          var srcName = art.primary_source.name || "Rasmiy manba";
+          sourceRefEl.innerHTML = '<div class="article-source-ref"><span>Asl manba:</span> <a href="' + art.primary_source.url + '" target="_blank" rel="noopener">' + srcName + ' ↗</a></div>';
+        } else {
+          sourceRefEl.innerHTML = '';
         }
-
-        // Secondary sources
-        if (art.secondary_sources && art.secondary_sources.length > 0) {
-          art.secondary_sources.forEach(function(ss) {
-            var ssBadgeClass = 'mustaqil';
-            var ssBadgeText = ss.badge || 'MUSTAQIL MANBA';
-            if (ssBadgeText.indexOf('RASMIY') !== -1) ssBadgeClass = 'rasmiy';
-
-            sourceCardsHtml += 
-              '<div class="source-card">' +
-                '<div class="source-badge-row">' +
-                  '<span class="source-badge ' + ssBadgeClass + '">' + ssBadgeText + '</span>' +
-                  '<span class="source-doc-meta">' + ss.name + ' · ' + (ss.date || art.source_published_date || '') + '</span>' +
-                '</div>' +
-                '<div class="source-doc-title">' + ss.title + '</div>' +
-                '<a class="source-doc-link" href="' + ss.url + '" target="_blank" rel="noopener">' +
-                  'Mustaqil tahlilni o‘qish ↗' +
-                '</a>' +
-              '</div>';
-          });
-        }
-
-        sourcesList.innerHTML = sourceCardsHtml;
       }
       
       var tgShare = document.getElementById('articleTgShare');

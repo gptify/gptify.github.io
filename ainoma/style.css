@@ -1620,6 +1620,32 @@ footer {
   text-decoration: underline;
 }
 
+/* Minimal News Source Reference Link */
+.article-source-ref {
+  margin: 28px 0 24px;
+  padding: 12px 18px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.article-source-ref a {
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.article-source-ref a:hover {
+  color: var(--green-hover, #047857);
+}
+
 /* Executive Summary Qisqacha Box */
 .qisqacha-box {
   background: var(--soft);
