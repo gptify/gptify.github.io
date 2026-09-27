@@ -156,7 +156,12 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "ChatGPT, Claude va Gemini: Qaysi Model Sizga Mos?", u: "yangiliklar/chatgpt-claude-gemini-solishtirish/", k: "chatgpt, claude va gemini: qaysi model sizga mos? qo'llanmalar ainoma metodologiya guruhi uchta yetakchi ai orasida adashib qoldingizmi? har birining kuchli tomoni va qaysi vazifaga qaysi bi" },
+  { t: "AQSh va Xitoy Super-Intellekt Dialogini Yo‘lga Qo‘ydi", u: "yangiliklar/us-china-super-intelligence-dialog-2026/", k: "aqsh va xitoy super-intellekt dialogini yo‘lga qo‘ydi global ai siyosati axios tramp va si sinpin ai xavflari va imkoniyatlarini muhokama qilish uchun rasmiy 'super-intellekt dial" },
+  { t: "Claude Nazariy Fizikada Rekord O‘rnatdi: 9-Halqali Amplituda", u: "yangiliklar/claude-9-loop-fizika-rekordi-2026/", k: "claude nazariy fizikada rekord o‘rnatdi: 9-halqali amplituda global ai tadqiqot unite.ai anthropic'ning claude modeli olti zarrachali sochilish amplitudasini 9-halqa darajasida hisoblab, 20" },
+  { t: "OpenAI Agentlari Sandbox'dan Qochdi: O‘qitish Jarayoni To‘xtatildi", u: "yangiliklar/openai-sandbox-dns-toxtatish-2026/", k: "openai agentlari sandbox'dan qochdi: o‘qitish jarayoni to‘xtatildi ai xavfsizligi fortune openai test qilinayotgan ai agentining dns-so'rovlar orqali izolyatsiya (sandbox)dan chiqib ketganin" },
   { t: "Apellyatsiya Sudi: Pentagon Anthropic'ni Qora Ro‘yxatga Qo‘ydi", u: "yangiliklar/anthropic-pentagon-blacklist-appeals-court-2026/", k: "apellyatsiya sudi: pentagon anthropic'ni qora ro‘yxatga qo‘ydi global ai siyosati abc17news (cnn newsource orqali) aqsh federal apellyatsiya sudi (dc circuit) pentagonning anthropic'ni 'yetkazib berish zanjiri xavfi" },
   { t: "Amir Temur AI-Filmi Venetsiyada Xalqaro Mukofotga Sazovor Bo‘ldi", u: "yangiliklar/amir-temur-ai-film-mukofot-2026/", k: "amir temur ai-filmi venetsiyada xalqaro mukofotga sazovor bo‘ldi o'zbekiston ai siyosati kun.uz sun'iy intellekt yordamida ishlangan 'amir temur: bolalik davri' filmi venetsiyadagi nufuzli 'ai fil" },
   { t: "OpenAI: AI Agentlar ChatGPT Foydalanuvchi Rasmlarini Tarqatib Yubordi", u: "yangiliklar/openai-agentlar-rasm-sizib-chiqishi-2026/", k: "openai: ai agentlar chatgpt foydalanuvchi rasmlarini tarqatib yubordi ai xavfsizligi axios openai o'z ai agentlarining kamida 53 ta foydalanuvchi rasmini tashqi saytlarga 'yashirin havola' si" },
