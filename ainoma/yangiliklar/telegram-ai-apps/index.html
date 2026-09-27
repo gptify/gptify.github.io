@@ -53,12 +53,18 @@
   "citation": "https://core.telegram.org/bots/webapps"
 }
   </script>
+  <script>
+    (function(){
+      var t = localStorage.getItem('ainoma-theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (t === 'dark') document.documentElement.dataset.theme = 'dark';
+    })();
+  </script>
 </head>
 <body>
   <header>
     <div class="container navbar">
       <a class="logo" href="../../" aria-label="AiNoma Bosh Sahifa">
-        <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma">
+        <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma" width="136" height="48" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/logo.svg';}">
       </a>
       <nav class="navlinks">
         <a class="active" href="../../yangiliklar.html">Yangiliklar</a>
@@ -188,7 +194,7 @@
     <div class="container footer">
       <div style="display:flex; flex-direction:column; gap:8px;">
         <a class="logo" href="../../" aria-label="AiNoma Bosh Sahifa">
-          <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma">
+          <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma" width="118" height="42" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/logo.svg';}">
         </a>
         <p style="font-size:13.5px; color:var(--muted); margin:0; max-width:440px; line-height:1.5;">AiNoma — O‘zbekistonda sun’iy intellekt bo‘yicha mustaqil tahliliy nashr, tekshirilgan vositalar katalogi va amaliy B2B qo‘llanmalar.</p>
       </div>

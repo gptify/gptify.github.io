@@ -9,8 +9,24 @@ const root = document.documentElement;
 
 // Theme Persistence & Logo Update
 function updateLogo(theme) {
-  $$(".logo img").forEach(img => {
-    img.src = theme === "dark" ? "assets/logo-dark.svg" : "assets/logo.svg";
+  const isDark = theme === "dark";
+  $$(".brand-logo-img, .logo img").forEach(img => {
+    const currentSrc = img.getAttribute("src") || "";
+    // Detect prefix from current src: '../../', '../', or ''
+    const match = currentSrc.match(/^(\.\.\/)+/);
+    const prefix = match ? match[0] : "";
+    const logoFile = isDark ? "assets/logo-dark.svg" : "assets/logo.svg";
+    const targetSrc = prefix + logoFile;
+    if (img.getAttribute("src") !== targetSrc) {
+      img.src = targetSrc;
+    }
+    // Fail-safe error handler
+    img.onerror = function() {
+      if (!this.dataset.retry) {
+        this.dataset.retry = "1";
+        this.src = isDark ? "/assets/logo-dark.svg" : "/assets/logo.svg";
+      }
+    };
   });
 }
 
@@ -18,7 +34,22 @@ const savedTheme = localStorage.getItem("ainoma-theme");
 if (savedTheme) {
   root.dataset.theme = savedTheme;
   updateLogo(savedTheme);
+} else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  root.dataset.theme = "dark";
+  updateLogo("dark");
 }
+
+// Listen for system theme changes if user hasn't explicitly chosen
+if (window.matchMedia) {
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+    if (!localStorage.getItem("ainoma-theme")) {
+      const next = e.matches ? "dark" : "light";
+      root.dataset.theme = next;
+      updateLogo(next);
+    }
+  });
+}
+
 $("#theme")?.addEventListener("click", () => {
   const next = root.dataset.theme === "dark" ? "light" : "dark";
   root.dataset.theme = next;
@@ -104,6 +135,9 @@ const searchIndex = [
   // Loyiha haqida va Imkoniyatlar
   { t: "O‘zbekistonda AI Imkoniyatlari: Qonunchilik, IT Park 0% Soliq va GPU Grantlari", u: "imkoniyatlar.html", k: "o'zbekiston imkoniyatlar qonun soliq it park 0% sandbox pq-358 strategiya 2030 gpu grant superkompyuter etika startap" },
   { t: "AiNoma Haqida: Missiya, tahririyat tamoyillari va B2B ekspertiza", u: "haqida.html", k: "ainoma haqida loyiha missiya gptify shukhratbek iskandarov b2b konsalting aloqa tahririyat" },
+
+
+
 
 
 
