@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="AiNoma — O‘zbekistonda sun’iy intellekt bo‘yicha mustaqil nashr va amaliy bilimlar markazi.">
   <title>AiNoma — O‘rgan. Qo‘lla. Qur. | AI jaydari tilda</title>
-  <link rel="stylesheet" href="style.css?v=1790507861">
+  <link rel="stylesheet" href="style.css?v=1790508670">
   <link rel="canonical" href="https://ainoma.uz/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AiNoma">
@@ -56,6 +56,25 @@
       <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring (masalan: Gamma, B2B prompt, Agents API)…" autocomplete="off">
       <button class="btn" id="closeSearch">Yopish (Esc)</button>
       <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+    <!-- Trending Topics Bar (Kun.uz Style) -->
+  <div class="trending-bar">
+    <div class="container trending-inner">
+      <span class="trending-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+        Dolzarb:
+      </span>
+      <div class="trending-tags">
+        <a href="yangiliklar.html?q=GPT-6" class="trending-tag">• GPT-6 Astra</a>
+        <a href="yangiliklar.html?q=Agentlar" class="trending-tag">• AI Agentlar</a>
+        <a href="yangiliklar.html?q=O‘zbekiston" class="trending-tag">• O‘zbekiston AI</a>
+        <a href="yangiliklar.html?q=Anthropic" class="trending-tag">• Anthropic &amp; Claude</a>
+        <a href="yangiliklar.html?q=Xavfsizlik" class="trending-tag">• AI Xavfsizligi</a>
+        <a href="prompt-ustaxonasi.html" class="trending-tag">• Prompt Ustaxonasi</a>
+        <a href="qollanma-b2b.html" class="trending-tag">• B2B Outreach</a>
+      </div>
     </div>
   </div>
 
@@ -160,79 +179,100 @@
       </a>
     </div>
 
-    <!-- Latest News -->
-    <section>
-      <div class="section-head">
-        <h2 class="section-title">So‘nggi yangiliklar</h2>
-        <a class="more" href="yangiliklar.html">Barchasini ko‘rish →</a>
-      </div>
-      <div class="cards">
-          <article class="card">
-            <div class="thumb"><picture>
+        <!-- Latest News Split Section (Kun.uz Style) -->
+    <section class="news-main-section">
+      <div class="news-split-layout">
+        <div class="news-primary-col">
+          <div class="section-head">
+            <h2 class="section-title">So‘nggi yangiliklar</h2>
+            <a class="more" href="yangiliklar.html">Barchasini ko‘rish →</a>
+          </div>
+          <div class="cards-grid-2col">
+            <article class="card">
+              <div class="thumb"><picture>
               <source srcset="assets/amir-temur-ai-film-cover-640.webp" type="image/webp">
               <img src="assets/amir-temur-ai-film-cover.jpg" alt="Amir Temur AI-Filmi Venetsiyada Xalqaro Mukofotga Sazovor Bo‘ldi" width="640" height="360" loading="lazy" decoding="async">
             </picture></div>
-            <div class="card-meta">26.09.2026</div>
-            <h3><a href="yangiliklar/amir-temur-ai-film-mukofot-2026/">Amir Temur AI-Filmi Venetsiyada Xalqaro Mukofotga Sazovor Bo‘ldi</a></h3>
-            <p>Sun'iy intellekt yordamida ishlangan 'Amir Temur: Bolalik davri' filmi Venetsiyadagi nufuzli 'AI Film Awards' tanlovida eng yuqori mukofotga loyiq ko'rildi — tashkilotchilar keyingi festivalni Toshkentda o'tkazishni taklif qilishmoqda.</p>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><picture>
+              <div class="card-meta">26.09.2026</div>
+              <h3><a href="yangiliklar/amir-temur-ai-film-mukofot-2026/">Amir Temur AI-Filmi Venetsiyada Xalqaro Mukofotga Sazovor Bo‘ldi</a></h3>
+              <p>Sun'iy intellekt yordamida ishlangan 'Amir Temur: Bolalik davri' filmi Venetsiyadagi nufuzli 'AI Film Awards' tanlovida eng yuqori mukofotga loyiq ko'rildi — tashkilotchilar keyingi festivalni Toshkentda o'tkazishni taklif qilishmoqda.</p>
+            </article>
+            <article class="card">
+              <div class="thumb"><picture>
               <source srcset="assets/data_agent-640.webp" type="image/webp">
               <img src="assets/data_agent.jpg" alt="OpenAI: AI Agentlar ChatGPT Foydalanuvchi Rasmlarini Tarqatib Yubordi" width="640" height="360" loading="lazy" decoding="async">
             </picture></div>
-            <div class="card-meta">26.09.2026</div>
-            <h3><a href="yangiliklar/openai-agentlar-rasm-sizib-chiqishi-2026/">OpenAI: AI Agentlar ChatGPT Foydalanuvchi Rasmlarini Tarqatib Yubordi</a></h3>
-            <p>OpenAI o'z AI agentlarining kamida 53 ta foydalanuvchi rasmini tashqi saytlarga 'yashirin havola' sifatida joylaganini tan oldi — bu kompaniyaning foydalanuvchi ma'lumotlari bilan bog'liq birinchi ochiq e'tirofi.</p>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><picture>
+              <div class="card-meta">26.09.2026</div>
+              <h3><a href="yangiliklar/openai-agentlar-rasm-sizib-chiqishi-2026/">OpenAI: AI Agentlar ChatGPT Foydalanuvchi Rasmlarini Tarqatib Yubordi</a></h3>
+              <p>OpenAI o'z AI agentlarining kamida 53 ta foydalanuvchi rasmini tashqi saytlarga 'yashirin havola' sifatida joylaganini tan oldi — bu kompaniyaning foydalanuvchi ma'lumotlari bilan bog'liq birinchi ochiq e'tirofi.</p>
+            </article>
+            <article class="card">
+              <div class="thumb"><picture>
               <source srcset="assets/social_commerce-640.webp" type="image/webp">
               <img src="assets/social_commerce.jpg" alt="Meta O‘zining Muse AI Agentiga Jollybot Maskotini Beradi" width="640" height="360" loading="lazy" decoding="async">
             </picture></div>
-            <div class="card-meta">26.09.2026</div>
-            <h3><a href="yangiliklar/meta-muse-jollybot-maskot-2026/">Meta O‘zining Muse AI Agentiga Jollybot Maskotini Beradi</a></h3>
-            <p>Meta o'zining shaxsiy AI agenti Muse uchun 'Jollybot' nomli yumshoq, yonoqlari qizil maskot taqdim etdi — bu, AI haqidagi 'halokat' sarlavhalari fonida foydalanuvchi ishonchini oshirish strategiyasi sifatida talqin qilinmoqda.</p>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><picture>
+              <div class="card-meta">26.09.2026</div>
+              <h3><a href="yangiliklar/meta-muse-jollybot-maskot-2026/">Meta O‘zining Muse AI Agentiga Jollybot Maskotini Beradi</a></h3>
+              <p>Meta o'zining shaxsiy AI agenti Muse uchun 'Jollybot' nomli yumshoq, yonoqlari qizil maskot taqdim etdi — bu, AI haqidagi 'halokat' sarlavhalari fonida foydalanuvchi ishonchini oshirish strategiyasi sifatida talqin qilinmoqda.</p>
+            </article>
+            <article class="card">
+              <div class="thumb"><picture>
               <source srcset="assets/ai_network-640.webp" type="image/webp">
               <img src="assets/ai_network.jpg" alt="Google 1-Oktabrda AI Chiplarini Orbitaga Uchiradi" width="640" height="360" loading="lazy" decoding="async">
             </picture></div>
-            <div class="card-meta">26.09.2026</div>
-            <h3><a href="yangiliklar/google-suncatcher-ai-kosmos-2026/">Google 1-Oktabrda AI Chiplarini Orbitaga Uchiradi</a></h3>
-            <p>Google SpaceX bilan hamkorlikda to'rtta Trillium TPU chipini kosmosga uchirmoqchi — maqsad, AI hisoblash infratuzilmasini orbitada joylashtirish imkoniyatini sinab ko'rish.</p>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><picture>
-              <source srcset="assets/gpt6-astra-cover-640.webp" type="image/webp">
-              <img src="assets/gpt6-astra-cover.jpg" alt="GPT-6 Astra 83 Yillik Enigma Shifrini Ochdi" width="640" height="360" loading="lazy" decoding="async">
-            </picture></div>
-            <div class="card-meta">26.09.2026</div>
-            <h3><a href="yangiliklar/gpt-6-astra-enigma-shifr-2026/">GPT-6 Astra 83 Yillik Enigma Shifrini Ochdi</a></h3>
-            <p>OpenAI'ning GPT-6 Astra 'Extra High' modeli 1941-yilgi, 2005-yildan beri yechilmay kelayotgan nemis Enigma radio xabarini atigi 10 soatda deshifrlab berdi.</p>
-          </article>
-
-          <article class="card">
-            <div class="thumb"><picture>
-              <source srcset="assets/gemini-live-avatar-cover-640.webp" type="image/webp">
-              <img src="assets/gemini-live-avatar-cover.jpg" alt="Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi" width="640" height="360" loading="lazy" decoding="async">
-            </picture></div>
-            <div class="card-meta">25.09.2026</div>
-            <h3><a href="yangiliklar/google-gemini-live-avatar-2026/">Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi</a></h3>
-            <p>Google Gemini 3.8 Live'ga Live Avatar funksiyasini qo'shdi — u real vaqtda lab harakati va yuz ifodasi bilan foydalanuvchi bilan 'muloqot qiladi'. Hozircha faqat Gemini Enterprise mijozlari uchun.</p>
-          </article>
+              <div class="card-meta">26.09.2026</div>
+              <h3><a href="yangiliklar/google-suncatcher-ai-kosmos-2026/">Google 1-Oktabrda AI Chiplarini Orbitaga Uchiradi</a></h3>
+              <p>Google SpaceX bilan hamkorlikda to'rtta Trillium TPU chipini kosmosga uchirmoqchi — maqsad, AI hisoblash infratuzilmasini orbitada joylashtirish imkoniyatini sinab ko'rish.</p>
+            </article>
+          </div>
         </div>
+        
+        <aside class="news-wire-sidebar">
+          <div class="sidebar-head">
+            <span class="wire-live-indicator"><span class="pulse-dot"></span> Tezkor AI Lentasi</span>
+            <a class="sidebar-more" href="yangiliklar.html">Barchasi →</a>
+          </div>
+          <div class="wire-list">
+            <a class="wire-item" href="yangiliklar/amir-temur-ai-film-mukofot-2026/">
+              <div class="wire-meta"><span class="wire-tag">O'zbekiston AI Siyosati</span> · 26.09.2026</div>
+              <h4>Amir Temur AI-Filmi Venetsiyada Xalqaro Mukofotga Sazovor Bo‘ldi</h4>
+            </a>
+            <a class="wire-item" href="yangiliklar/openai-agentlar-rasm-sizib-chiqishi-2026/">
+              <div class="wire-meta"><span class="wire-tag">AI Xavfsizligi</span> · 26.09.2026</div>
+              <h4>OpenAI: AI Agentlar ChatGPT Foydalanuvchi Rasmlarini Tarqatib Yubordi</h4>
+            </a>
+            <a class="wire-item" href="yangiliklar/meta-muse-jollybot-maskot-2026/">
+              <div class="wire-meta"><span class="wire-tag">Global AI Tadqiqot</span> · 26.09.2026</div>
+              <h4>Meta O‘zining Muse AI Agentiga Jollybot Maskotini Beradi</h4>
+            </a>
+            <a class="wire-item" href="yangiliklar/google-suncatcher-ai-kosmos-2026/">
+              <div class="wire-meta"><span class="wire-tag">Global AI Tadqiqot</span> · 26.09.2026</div>
+              <h4>Google 1-Oktabrda AI Chiplarini Orbitaga Uchiradi</h4>
+            </a>
+            <a class="wire-item" href="yangiliklar/gpt-6-astra-enigma-shifr-2026/">
+              <div class="wire-meta"><span class="wire-tag">Global AI Tadqiqot</span> · 26.09.2026</div>
+              <h4>GPT-6 Astra 83 Yillik Enigma Shifrini Ochdi</h4>
+            </a>
+            <a class="wire-item" href="yangiliklar/google-gemini-live-avatar-2026/">
+              <div class="wire-meta"><span class="wire-tag">Global AI Tadqiqot</span> · 25.09.2026</div>
+              <h4>Google Gemini 3.8 Live'ga Live Avatar Qo‘shildi</h4>
+            </a>
+            <a class="wire-item" href="yangiliklar/openai-anthropic-un-security-council-ai-regulation-2026/">
+              <div class="wire-meta"><span class="wire-tag">Global AI Siyosati</span> · 25.09.2026</div>
+              <h4>Altman va Amodei BMTda AI Tartibga Solishga Chaqirdi</h4>
+            </a>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <!-- Guides & Masterclasses Section -->
-    <section>
-      <div class="section-head">
-        <h2 class="section-title">Amaliy Qo‘llanmalar & Masterklasslar</h2>
+    <section class="editor-pick-section">
+      <div class="section-head" style="margin-bottom: 20px;">
+        <div>
+          <div class="editor-badge">📘 MUHARRIR TANLOVI · CHUQUR TAHLIL</div>
+          <h2 class="section-title" style="margin: 0;">Amaliy Qo‘llanmalar &amp; Masterklasslar</h2>
+        </div>
         <a class="more" href="qollanmalar.html">Barcha qo‘llanmalarni ko‘rish →</a>
       </div>
       <div class="cards guides-swipe" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));">
@@ -244,11 +284,7 @@
           <div class="card-meta" style="color:var(--green); font-weight:700;">🛠️ INTERAKTIV ASBOB · PROMPTLAR</div>
           <h3><a href="prompt-ustaxonasi.html">Prompt Ustaxonasi: Professional prompt konstruktori va O‘zbekiston B2B andozalari</a></h3>
           <p>O‘zingizning sohangiz, vazifangiz va kontekstingizni tanlab, 1 daqiqada mukammal tizimli prompt quring va to‘g‘ridan-to‘g‘ri ChatGPT/Claude'da sinab ko‘ring.</p>
-          <div class="card-source">
-            <span class="source-info">Format: <b>Interaktiv generator</b></span>
-            <a href="prompt-ustaxonasi.html">Ustaxonani ochish →</a>
-          </div>
-        </article>
+          </article>
 
         <article class="card">
           <div class="thumb"><picture>
@@ -258,11 +294,7 @@
           <div class="card-meta" style="color:var(--green); font-weight:700;">📖 BAZAVIY YO‘RIQNOMA · 0 DAN</div>
           <h3><a href="qollanma-noldan.html">Sun’iy intellektni 0 dan boshlash: Yangi boshlovchilar uchun amaliy yo‘riqnoma</a></h3>
           <p>ChatGPT, Claude va Gemini o‘rtasidagi farq, bepul vs pullik tariflar, shaxsiy kabinet ochish va birinchi kundan boshlab to‘g‘ri foydalanish qoidalari.</p>
-          <div class="card-source">
-            <span class="source-info">Daraja: <b>Boshlang‘ich</b></span>
-            <a href="qollanma-noldan.html">O‘qish →</a>
-          </div>
-        </article>
+          </article>
 
         <article class="card">
           <div class="thumb"><picture>
@@ -272,11 +304,7 @@
           <div class="card-meta" style="color:var(--green); font-weight:700;">⚡ MASTERKLASS · PROMPTING</div>
           <h3><a href="qollanma-prompting.html">Mukammal prompt yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida</a></h3>
           <p>RCFO formulasi (Rol, Kontekst, Format, Cheklovlar), few-shot prompting, qadam-baqadam tafakkur va sun’iy intellektdan aniq biznes natija olish sirlari.</p>
-          <div class="card-source">
-            <span class="source-info">Daraja: <b>O‘rta / B2B</b></span>
-            <a href="qollanma-prompting.html">O‘qish →</a>
-          </div>
-        </article>
+          </article>
 
         <article class="card">
           <div class="thumb"><picture>
@@ -286,11 +314,7 @@
           <div class="card-meta" style="color:var(--green); font-weight:700;">🏢 BIZNES UNUMDORLIK · ISHDA</div>
           <h3><a href="qollanma-ishda.html">Ishda sun’iy intellektdan foydalanish: Vaqtni 3 barobar tejaydigan 5 ta amaliy ish oqimi</a></h3>
           <p>Didox shartnoma auditi, Excel va 1C ma’lumotlarini tahlil qilish, yig‘ilish bayonnomalari va Gamma taqdimotlarni avtomatlashtirish.</p>
-          <div class="card-source">
-            <span class="source-info">Daraja: <b>Amaliy biznes</b></span>
-            <a href="qollanma-ishda.html">O‘qish →</a>
-          </div>
-        </article>
+          </article>
 
         <article class="card">
           <div class="thumb"><picture>
@@ -300,11 +324,7 @@
           <div class="card-meta" style="color:var(--green); font-weight:700;">⚙️ MUHANDISLIK &amp; AGENTLAR</div>
           <h3><a href="qollanma-qurish.html">Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar</a></h3>
           <p>Make, n8n, OpenAI API va Telegram botlar yordamida 24/7 ishlovchi avtonom savdo va mijozlarni qabul qilish tizimini 0 dan loyihalash.</p>
-          <div class="card-source">
-            <span class="source-info">Daraja: <b>Ilg‘or / Tizimlar</b></span>
-            <a href="qollanma-qurish.html">O‘qish →</a>
-          </div>
-        </article>
+          </article>
 
         <article class="card">
           <div class="thumb"><picture>
@@ -314,11 +334,7 @@
           <div class="card-meta" style="color:var(--green); font-weight:700;">📘 MASTERKLASS · B2B SAVDO</div>
           <h3><a href="qollanma-b2b.html">B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma</a></h3>
           <p>Apollo, Lemlist va sun’iy intellekt orqali eksport va mahalliy korporativ mijozlar bazasini qurish, sovuq xatlar va savdo voronkasi.</p>
-          <div class="card-source">
-            <span class="source-info">Muallif: <b>Shukhratbek Iskandarov</b></span>
-            <a href="qollanma-b2b.html">Qo‘llanmaga o‘tish →</a>
-          </div>
-        </article>
+          </article>
       </div>
     </section>
 
@@ -501,6 +517,6 @@
     </button>
   </nav>
 
-  <script src="app.js?v=1790507861"></script>
+  <script src="app.js?v=1790508670"></script>
 </body>
 </html>

@@ -154,6 +154,8 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Apellyatsiya Sudi: Pentagon Anthropic'ni Qora Ro‘yxatga Qo‘ydi", u: "yangiliklar/anthropic-pentagon-blacklist-appeals-court-2026/", k: "apellyatsiya sudi: pentagon anthropic'ni qora ro‘yxatga qo‘ydi global ai siyosati abc17news (cnn newsource orqali) aqsh federal apellyatsiya sudi (dc circuit) pentagonning anthropic'ni 'yetkazib berish zanjiri xavfi" },
   { t: "Amir Temur AI-Filmi Venetsiyada Xalqaro Mukofotga Sazovor Bo‘ldi", u: "yangiliklar/amir-temur-ai-film-mukofot-2026/", k: "amir temur ai-filmi venetsiyada xalqaro mukofotga sazovor bo‘ldi o'zbekiston ai siyosati kun.uz sun'iy intellekt yordamida ishlangan 'amir temur: bolalik davri' filmi venetsiyadagi nufuzli 'ai fil" },
