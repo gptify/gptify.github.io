@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify Meet — Zoom, Google Meet va Teams uchun Maxfiy AI Kotib</title>
+  <meta name="description" content="Begona botlarsiz, 100% maxfiy uchrashuv bayonnomasi. O'zbek tilida qarorlar, topshiriqlar, mas'ullar va Telegram integratsiyasi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #0B131D;
+      --bg-surface: #0E1A27;
+      --bg-card: #132232;
+      --bg-subtle: #192D42;
+      --text-main: #FFFFFF;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      --brand-emerald: #10B981;
+      --brand-emerald-dark: #059669;
+      --brand-emerald-light: #064E3B;
+      --border: #1E354B;
+      --border-light: #2A4966;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 10px 30px -5px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 25px 50px -12px rgba(16, 185, 129, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Ambient background glow */
+    .glow-bg {
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, rgba(14, 165, 233, 0.08) 40%, rgba(11, 19, 29, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(11, 19, 29, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .logo-badge {
+      width: 38px;
+      height: 38px;
+      background: #061B26;
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+    }
+    .logo-badge img {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+    }
+    .logo-text {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .logo-text span {
+      color: var(--brand-emerald);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: var(--text-main);
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #10B981, #059669);
+      color: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(16, 185, 129, 0.5);
+    }
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-subtle);
+      border-color: var(--border-light);
+    }
+    .btn-lg {
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: var(--radius-lg);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #34D399;
+      margin-bottom: 24px;
+    }
+    .pill-badge span.dot {
+      width: 8px;
+      height: 8px;
+      background: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #10B981;
+    }
+    .hero-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-title span.gradient {
+      background: linear-gradient(135deg, #FFFFFF 30%, #A7F3D0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+    .cta-subtext {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .cta-subtext span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Product Showcase Frame */
+    .showcase-wrapper {
+      position: relative;
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 12px;
+      background: rgba(25, 45, 66, 0.4);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+    }
+    .showcase-window {
+      background: #0B131D;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .window-header {
+      background: #0E1A27;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .window-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+    .window-dot.red { background: #EF4444; }
+    .window-dot.yellow { background: #F59E0B; }
+    .window-dot.green { background: #10B981; }
+    .window-title {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-left: 12px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .showcase-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Comparison Section */
+    .section {
+      padding: 100px 0;
+      position: relative;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+    .section-tag {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brand-emerald);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .section-title {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+
+    /* Comparison Table */
+    .compare-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .compare-table th, .compare-table td {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table th {
+      background: var(--bg-card);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+    .compare-table th.highlight {
+      background: rgba(16, 185, 129, 0.1);
+      color: #34D399;
+      border-bottom: 2px solid var(--brand-emerald);
+    }
+    .compare-table td.highlight {
+      background: rgba(16, 185, 129, 0.04);
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+    .feature-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text-main);
+    }
+    .feature-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .badge-check {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #34D399;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .badge-cross {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #EF4444;
+      font-size: 14px;
+    }
+
+    /* Feature Grid */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      transition: all 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-light);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Pricing Section */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 36px 30px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.2s;
+    }
+    .pricing-card.featured {
+      background: linear-gradient(180deg, #132738 0%, #0E1A27 100%);
+      border: 2px solid var(--brand-emerald);
+      box-shadow: var(--shadow-lg);
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      right: 24px;
+      background: linear-gradient(135deg, #10B981, #059669);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .plan-name {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .plan-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      min-height: 40px;
+    }
+    .plan-price {
+      margin-bottom: 24px;
+    }
+    .price-num {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .price-period {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .price-usd {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .plan-features {
+      list-style: none;
+      margin-bottom: 32px;
+      flex: 1;
+    }
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .plan-features li strong {
+      color: var(--text-main);
+    }
+    .check-icon {
+      color: var(--brand-emerald);
+      font-weight: bold;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+    .faq-item h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+    .faq-item p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 50px 0;
+      background: #080E16;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: var(--text-main);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-title { font-size: 38px; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-bg"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="https://gptify.co" class="logo-container">
+        <div class="logo-badge">
+          <img src="assets/meet/logo.png" alt="GPTify Meet">
+        </div>
+        <div class="logo-text">GPTify <span>Meet</span></div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#solishtirish" class="nav-link">Nega GPTify?</a>
+        <a href="#imkoniyatlar" class="nav-link">Imkoniyatlar</a>
+        <a href="#tariflar" class="nav-link">Tariflar</a>
+        <a href="#faq" class="nav-link">Savol-javoblar</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#yuklab-olish" class="btn btn-primary">
+          Bepul Yuklab Olish (v0.4)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="pill-badge">
+        <span class="dot"></span>
+        100% Maxfiy va Lokal AI · Botlarsiz Yozib Olish
+      </div>
+
+      <h1 class="hero-title">
+        Zoom, Google Meet va Teams uchrashuvlaringiz uchun <br>
+        <span class="gradient">botlarsiz xavfsiz AI kotib</span>
+      </h1>
+
+      <p class="hero-desc">
+        Uchrashuvga begona botlarni chaqirmasdan, bevosita kompyuteringiz orqali yozib oladi. 
+        Suhbatlaringiz hech qachon tashqi serverlarga chiqmaydi. Yig'ilish yakunida qarorlar, topshiriqlar va mas'ullar ro'yxati o'zbek tilida tayyor bo'ladi.
+      </p>
+
+      <div class="hero-cta-group" id="yuklab-olish">
+        <div class="hero-buttons">
+          <a href="#tariflar" class="btn btn-primary btn-lg">
+            <span>💻 Windows uchun yuklab olish (.exe)</span>
+          </a>
+          <a href="#tariflar" class="btn btn-secondary btn-lg">
+            <span>🍏 macOS uchun yuklab olish (.dmg)</span>
+          </a>
+        </div>
+        <div class="cta-subtext">
+          <span>✓ Karta talab qilinmaydi</span>
+          <span>✓ 14 kun to'liq bepul sinov</span>
+          <span>✓ 2 daqiqada o'rnatiladi</span>
+        </div>
+      </div>
+
+      <!-- App Screenshot Mockup -->
+      <div class="showcase-wrapper">
+        <div class="showcase-window">
+          <div class="window-header">
+            <div class="window-dot red"></div>
+            <div class="window-dot yellow"></div>
+            <div class="window-dot green"></div>
+            <div class="window-title">GPTify Meet — Privacy-First AI Meeting Assistant</div>
+          </div>
+          <img src="assets/meet/dashboard.png" alt="GPTify Meet Boshqaruv Paneli" class="showcase-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="section" id="solishtirish">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">An'anaviy botlarga qarshi</span>
+        <h2 class="section-title">Otter.ai va Fireflies.ai nima uchun kompaniyalarni chalg'itadi?</h2>
+        <p class="section-desc">
+          Mijozlaringiz bilan jiddiy muzokara o'tkazayotganingizda uchrashuvga bot qo'shilishi noqulaylik tug'diradi. GPTify Meet esa butunlay ko'rinmas va xavfsiz ishlaydi.
+        </p>
+      </div>
+
+      <div class="compare-card">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Xususiyatlar va Maxfiylik</th>
+              <th style="width: 30%;">Otter.ai / Fireflies</th>
+              <th style="width: 30%;" class="highlight">GPTify Meet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="feature-name">Botlarsiz ishlash (Invisibility)</div>
+                <div class="feature-sub">Qo'ng'iroq ishtirokchilari begona botni ko'rmaydi</div>
+              </td>
+              <td><span class="badge-cross">✕ Bot suhbatga kiradi</span></td>
+              <td class="highlight"><span class="badge-check">✓ 100% Ko'rinmas (OS Loopback)</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="feature-name">Ma'lumotlar maxfiyligi (Zero Data Leak)</div>
+                <div class="feature-sub">Kompaniya sirlari tashqi bulutga chiqmasligi</div>
+              </td>
+              <td><span class="badge-cross">✕ Chet el serverlarida saqlanadi</span></td>
+              <td class="highlight"><span class="badge-check">✓ 100% Lokal (Kompyuterda qoladi)</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="feature-name">O'zbek tili va B2B biznes leksikasi</div>
+                <div class="feature-sub">Qarorlar, muddatlar va mas'ullarni to'g'ri ajratish</div>
+              </td>
+              <td><span class="badge-cross">✕ O'zbek tilida xatolar ko'p</span></td>
+              <td class="highlight"><span class="badge-check">✓ Mahalliylashtirilgan B2B leksika</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="feature-name">Telegram integratsiyasi</div>
+                <div class="feature-sub">Bayonnomani 1 ta klikda jamoaviy guruhga yuborish</div>
+              </td>
+              <td><span class="badge-cross">✕ Mavjud emas (Faqat Slack/Email)</span></td>
+              <td class="highlight"><span class="badge-check">✓ 1-klikda Telegram hisobot</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="feature-name">Oylik narx (Tannarx)</div>
+                <div class="feature-sub">Kichik va o'rta biznes uchun xarajat</div>
+              </td>
+              <td>$20 – $35 / oy / kishi</td>
+              <td class="highlight"><strong>195,000 so'm / oy ($15)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section" id="imkoniyatlar">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Imkoniyatlar</span>
+        <h2 class="section-title">Uchrashuvlaringizni biznes natijalariga aylantiring</h2>
+        <p class="section-desc">
+          Yig'ilishdan keyin qo'lda konspekt yozish va topshiriqlarni eslab qolishga vaqt sarflamang.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-card">
+          <div class="icon-box">🎙</div>
+          <h3>Botlarsiz Tizim Ovozini Yozish</h3>
+          <p>
+            Zoom, Google Meet, Microsoft Teams, Telegram Desktop yoki oflayn muzokaralarni bevosita operatsion tizim darajasida tiniq sifatda yozib oladi.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">🧠</div>
+          <h3>Lokal Whisper & Ollama Dvigatellari</h3>
+          <p>
+            Kompyuteringiz apparat quvvatidan (NVIDIA GPU, Apple Silicon yoki CPU) foydalanadi. Hech qanday uchinchi tomon serverlariga bog'liqlik yo'q.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">⚡️</div>
+          <h3>1-Klikda Telegram & CRM Eksport</h3>
+          <p>
+            Yig'ilish tugashi bilan barcha muhim qarorlar, mas'ullar va ijro muddatlari Telegram formatida shakllanadi va kanalingizga yo'llanadi.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">🔍</div>
+          <h3>Uchrashuvlar bo'yicha Aqlli Qidiruv</h3>
+          <p>
+            3 oy oldingi yig'ilishda kim qaysi raqamni yoki va'dani aytganini bitta so'z orqali bir zumda butun arxivdan topib oling.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">📁</div>
+          <h3>Mavjud Audio Fayllarni Qayta Ishlash</h3>
+          <p>
+            Diktofonda yozib olingan yoki boshqa manbalardan yuklab olingan audio fayllarni dasturga tashlang — tizim ularni ham darhol bayonnomaga aylantirib beradi.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-box">🛡</div>
+          <h3>100% Maxfiylik va Bank Darajasidagi Himoya</h3>
+          <p>
+            Moliyaviy hisobotlar, tijoriy sirlar va ichki muzokaralar faqat o'zingizning qattiq diskingizda (SQLite shifrlangan bazasida) qoladi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section" id="tariflar">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Shaffof narxlar</span>
+        <h2 class="section-title">Har qanday biznes miqyosi uchun qulay obuna</h2>
+        <p class="section-desc">
+          Hech qanday yashirin to'lovlarsiz. O'zbekiston bank kartalari (Payme, Click, Uzum) yoki xalqaro kartalar orqali to'lang.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Free Trial -->
+        <div class="pricing-card">
+          <div class="plan-name">Sinov muddati</div>
+          <div class="plan-desc">Dastur imkoniyatlari bilan amalda tanishish uchun</div>
+          <div class="plan-price">
+            <div class="price-num">0 <span class="price-period">so'm</span></div>
+            <div class="price-usd">14 kun bepul</div>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> <strong>Cheksiz uchrashuvlar:</strong> 14 kun davomida</li>
+            <li><span class="check-icon">✓</span> Lokal Whisper transkripsiya</li>
+            <li><span class="check-icon">✓</span> O'zbekcha B2B xulosalar</li>
+            <li><span class="check-icon">✓</span> Telegramga eksport qilish</li>
+          </ul>
+          <a href="#yuklab-olish" class="btn btn-secondary">Bepul boshlash</a>
+        </div>
+
+        <!-- Pro Monthly -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Ommabop</div>
+          <div class="plan-name">GPTify Pro</div>
+          <div class="plan-desc">Rahbarlar, sotuv jamoalari va loyiha menejerlari uchun</div>
+          <div class="plan-price">
+            <div class="price-num">195,000 <span class="price-period">so'm/oy</span></div>
+            <div class="price-usd">yoki $15 / oy</div>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> <strong>Cheksiz soat:</strong> Uchrashuvlar sonida cheklov yo'q</li>
+            <li><span class="check-icon">✓</span> <strong>100% Maxfiy:</strong> Lokal va Gibrid Cloud dvigatellari</li>
+            <li><span class="check-icon">✓</span> B2B shablonlar (Muzokara, Sotuv, Sprint, ROP)</li>
+            <li><span class="check-icon">✓</span> Telegram Bot to'g'ridan-to'g'ri yuborish</li>
+            <li><span class="check-icon">✓</span> Audio fayllarni import qilib transkripsiya qilish</li>
+            <li><span class="check-icon">✓</span> GPTify jamoasining shaxsiy qo'llab-quvvatlashi</li>
+          </ul>
+          <a href="https://gptify.co/uz" class="btn btn-primary">Pro Litsenziyani olish</a>
+        </div>
+
+        <!-- Yearly Plan -->
+        <div class="pricing-card">
+          <div class="plan-name">Yillik Pro</div>
+          <div class="plan-desc">2 oy bepul sovg'a va 20% tejamkorlik bilan</div>
+          <div class="plan-price">
+            <div class="price-num">1,900,000 <span class="price-period">so'm/yil</span></div>
+            <div class="price-usd">yoki $149 / yil</div>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✓</span> Pro tarifining barcha imkoniyatlari</li>
+            <li><span class="check-icon">✓</span> <strong>2 oy bepul:</strong> 12 oy foydalanasiz</li>
+            <li><span class="check-icon">✓</span> B2B hisob-faktura va shartnoma taqdim etiladi</li>
+            <li><span class="check-icon">✓</span> Yangi beta funksiyalarga birinchi bo'lib kirish</li>
+          </ul>
+          <a href="https://gptify.co/uz" class="btn btn-secondary">Yillik litsenziya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Savol-javoblar</span>
+        <h2 class="section-title">Ko'p beriladigan savollar</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4>GPTify Meet ovozni qanday ushlab oladi?</h4>
+          <p>
+            Dastur operatsion tizim (Windows va macOS) drayveri orqali mikrofoningiz va dinamikdan chiqayotgan ovozni to'g'ridan-to'g'ri loopback orqali yozib oladi. Shuning uchun uchrashuvga hech qanday begona botlarni qo'shish shart emas.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Suhbatlarim xavfsizligi qanday ta'minlanadi?</h4>
+          <p>
+            Lokal rejim tanlanganda audio fayllar ham, matnlar ham faqat o'zingizning kompyuteringizda (Ollama va Whisper yordamida) qayta ishlanadi va tashqi serverlarga hech qachon jo'natilmaydi.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Dastur qaysi platformalarda ishlaydi?</h4>
+          <p>
+            Zoom, Google Meet, Microsoft Teams, Telegram Desktop, Skype yoki hatto kompyuterda ijro etilayotgan ixtiyoriy audio/video bilan to'liq mos keladi.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Litsenziyani qanday faollashtirish mumkin?</h4>
+          <p>
+            To'lov amalga oshirilgach, sizga shaxsiy litsenziya kaliti taqdim etiladi (masalan: <code>GPTIFY-PRO-XXXX-XXXX</code>). Dastur ichidagi "GPTify Pro" oynasiga ushbu kalitni kiritishingiz bilan barcha imkoniyatlar ochiladi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>GPTify Meet</strong> — Privacy-First AI Meeting Assistant</p>
+        <p style="margin-top: 4px; font-size: 12px;">© 2026 GPTify.co · Shukhrat Iskandarov. Barcha huquqlar himoyalangan.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://gptify.co">GPTify.co</a>
+        <a href="https://t.me/gptify_uz">Telegram Kanal</a>
+        <a href="https://gptify.co/uz">B2B Konsalting</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

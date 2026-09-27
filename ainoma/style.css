@@ -1232,16 +1232,9 @@ footer {
   font-weight: 600;
 }
 
-/* News Card Source Reference */
+/* News Card Source Reference - Hidden on cards (details shown inside article) */
 .card-source {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: 10px;
-  border-top: 1px solid var(--line);
-  font-size: 11px;
-  color: var(--muted);
+  display: none !important;
 }
 .card-source .source-info {
   display: inline-flex;
