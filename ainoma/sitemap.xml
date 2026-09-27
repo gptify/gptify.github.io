@@ -145,6 +145,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/yangiliklar/ai-bilan-pul-ishlash-7-yol/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/yangiliklar/us-china-super-intelligence-dialog-2026/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -373,6 +379,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/vositalar/aisha/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/vositalar/apollo/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -392,12 +404,6 @@
   </url>
   <url>
     <loc>https://ainoma.uz/vositalar/calilio/</loc>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/vositalar/dastyor/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -469,13 +475,7 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ainoma.uz/vositalar/uzum/</loc>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/vositalar/yuridik/</loc>
+    <loc>https://ainoma.uz/vositalar/tilmoch/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

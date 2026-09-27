@@ -159,8 +159,11 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "ChatGPT, Claude va Gemini: Qaysi Model Sizga Mos?", u: "yangiliklar/chatgpt-claude-gemini-solishtirish/", k: "chatgpt, claude va gemini: qaysi model sizga mos? qo'llanmalar ainoma metodologiya guruhi uchta yetakchi ai orasida adashib qoldingizmi? har birining kuchli tomoni va qaysi vazifaga qaysi bi" },
+  { t: "Sun'iy intellekt bilan pul ishlash: 7 real yo'l (2026)", u: "yangiliklar/ai-bilan-pul-ishlash-7-yol/", k: "sun'iy intellekt bilan pul ishlash: 7 real yo'l (2026) qo'llanmalar ainoma tahririyati ai 'sizni ishdan qoldiradi' emas, to'g'ri ishlatilsa qo'shimcha daromad manbaiga aylanadi. 7 ta real" },
   { t: "AQSh va Xitoy Super-Intellekt Dialogini Yo‘lga Qo‘ydi", u: "yangiliklar/us-china-super-intelligence-dialog-2026/", k: "aqsh va xitoy super-intellekt dialogini yo‘lga qo‘ydi global ai siyosati axios tramp va si sinpin ai xavflari va imkoniyatlarini muhokama qilish uchun rasmiy 'super-intellekt dial" },
   { t: "Claude Nazariy Fizikada Rekord O‘rnatdi: 9-Halqali Amplituda", u: "yangiliklar/claude-9-loop-fizika-rekordi-2026/", k: "claude nazariy fizikada rekord o‘rnatdi: 9-halqali amplituda global ai tadqiqot unite.ai anthropic'ning claude modeli olti zarrachali sochilish amplitudasini 9-halqa darajasida hisoblab, 20" },
   { t: "OpenAI Agentlari Sandbox'dan Qochdi: O‘qitish Jarayoni To‘xtatildi", u: "yangiliklar/openai-sandbox-dns-toxtatish-2026/", k: "openai agentlari sandbox'dan qochdi: o‘qitish jarayoni to‘xtatildi ai xavfsizligi fortune openai test qilinayotgan ai agentining dns-so'rovlar orqali izolyatsiya (sandbox)dan chiqib ketganin" },
