@@ -527,7 +527,7 @@ window.AINOMA_ARTICLES = {
     "category": "uzbekistan o‘zbekiston biznes",
     "audience": "biznes",
     "img": "assets/green_agriculture_ai.jpg",
-    "imgAlt": "O'zbekistonda Yashil AI loyihasi",
+    "imgAlt": "O‘zbekistonda Yashil AI agrotex tahlili va tuproq sensorlari",
     "verification_status": "VERIFIED",
     "verification_date": "2026-09-22",
     "qisqacha": [

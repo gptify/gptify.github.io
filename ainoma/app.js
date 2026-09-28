@@ -204,6 +204,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi", u: "yangiliklar/britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026/", k: "britaniya parlamenti openai va meta rahbarlarini so‘roqqa chaqirdi ai xavfsizligi uk parliament buyuk britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnolo" },
   { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati the street dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
