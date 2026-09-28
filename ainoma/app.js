@@ -200,11 +200,13 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi", u: "yangiliklar/britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026/", k: "britaniya parlamenti openai va meta rahbarlarini so‘roqqa chaqirdi ai xavfsizligi uk parliament buyuk britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnolo" },
   { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati the street dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
   { t: "Nvidia va Google 100 Gigavattlik Energiya Alyansini Tuzdi", u: "yangiliklar/nvidia-google-emerald-100-gigavatt-energiya-alyansi-2026/", k: "nvidia va google 100 gigavattlik energiya alyansini tuzdi infrastruktura va energetika siliconangle tech sun‘iy intellekt hisoblash markazlarining elektr tarmog‘iga bosimini kamaytirish maqsadida nvidia, g" },
   { t: "Anthropic Rahbari Oq Uyda Trump Bilan Muloqot O‘tkazdi", u: "yangiliklar/anthropic-dario-amodei-oq-uy-trump-uchrashuv-2026/", k: "anthropic rahbari oq uyda trump bilan muloqot o‘tkazdi ai siyosati va strategiya the times of india anthropic bosh ijrochi direktori dario amodei vashingtonda donald trump bilan yakka tartibda uchrash" },
+  { t: "Avstraliya OpenAI va Anthropic Rahbarlarini Medicare Buzilishi Bo'yicha Senatga", u: "yangiliklar/avstraliya-openai-anthropic-medicare-sorov-2026/", k: "avstraliya openai va anthropic rahbarlarini medicare buzilishi bo'yicha senatga ai xavfsizligi al jazeera avstraliya bosh vaziri openai agentining medicare portaliga ruxsatsiz kirib olganini oshkor qilgach," },
   { t: "ChatGPT, Claude va Gemini: Qaysi Model Sizga Mos?", u: "yangiliklar/chatgpt-claude-gemini-solishtirish/", k: "chatgpt, claude va gemini: qaysi model sizga mos? qo'llanmalar  uchta yetakchi ai orasida adashib qoldingizmi? har birining kuchli tomoni va qaysi vazifaga qaysi bi" },
   { t: "Sun'iy intellekt bilan pul ishlash: 7 real yo'l (2026)", u: "yangiliklar/ai-bilan-pul-ishlash-7-yol/", k: "sun'iy intellekt bilan pul ishlash: 7 real yo'l (2026) qo'llanmalar  ai 'sizni ishdan qoldiradi' emas, to'g'ri ishlatilsa qo'shimcha daromad manbaiga aylanadi. 7 ta real" },
   { t: "AQSh va Xitoy Super-Intellekt Dialogini Yo‘lga Qo‘ydi", u: "yangiliklar/us-china-super-intelligence-dialog-2026/", k: "aqsh va xitoy super-intellekt dialogini yo‘lga qo‘ydi global ai siyosati axios tramp va si sinpin ai xavflari va imkoniyatlarini muhokama qilish uchun rasmiy 'super-intellekt dial" },
