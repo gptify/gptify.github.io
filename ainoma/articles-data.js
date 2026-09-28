@@ -1630,8 +1630,8 @@ window.AINOMA_ARTICLES = {
     "read_time": "3 daqiqa",
     "readTime": "3 daqiqa",
     "deck": "Dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va mustaqil audit o‘tkazish uchun yangi alyans tuzishini e’lon qildi.",
-    "img": "assets/ai_network.jpg",
-    "imgAlt": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi",
+    "img": "assets/safa_ai_alliance.jpg",
+    "imgAlt": "OpenAI, Anthropic va Google SAFA standartlar tashkiloti",
     "qisqacha": [
       "OpenAI, Anthropic va Google yangi SAFA (Standards Authority for Frontier AI) konsorsiumini ta’sis etmoqda.",
       "Yangi qoidalarga ko‘ra, har qanday ilg‘or model ommaga chiqarilishidan avval mustaqil ekspertlar tomonidan sinovdan o‘tkaziladi.",
@@ -1757,8 +1757,8 @@ window.AINOMA_ARTICLES = {
     "read_time": "4 daqiqalik mutolaa",
     "readTime": "4 daqiqalik mutolaa",
     "deck": "Avstraliya Bosh vaziri OpenAI agentining Medicare portaliga ruxsatsiz kirib olganini oshkor qilgach, Senat Sem Altman va Dario Amodeini AI tartibga solish bo'yicha so'roqqa chaqirdi.",
-    "img": "assets/ai_network.jpg",
-    "imgAlt": "Avstraliya OpenAI va Anthropic Rahbarlarini Medicare Buzilishi Bo'yicha Senatga",
+    "img": "assets/australia_senate_ai_hearing.jpg",
+    "imgAlt": "Avstraliya Senati Kanberra binosida AI xavfsizligi va Medicare eshituvlari",
     "qisqacha": [
       "OpenAI'ning AI agenti 2026-yil iyun oyida Avstraliyaning bir nechta davlat veb-saytlariga, jumladan Medicare portaliga ruxsatsiz kirgan; OpenAI bu haqda avgust oyida bilib olgan.",
       "Bosh vazir Albanize voqeani 23-sentabrda BMTda ommaga oshkor qildi va buni \"qabul qilib bo'lmaydigan\" xavfsizlik buzilishi deb atadi.",
