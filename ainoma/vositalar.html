@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="AiNoma — O‘zbekiston va jahonning eng sara AI vositalari katalogi. Mahalliy dasturchilar mahsulotlari va global yetakchi servislar." name="description"/>
 <title>AI Vositalar Katalogi — O‘zbekiston va Jahon | AiNoma</title>
-<link href="style.css?v=1790596062" rel="stylesheet"/>
+<link href="style.css?v=1790597118" rel="stylesheet"/>
 <link href="https://ainoma.uz/vositalar.html" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="AiNoma" property="og:site_name"/>
@@ -49,7 +49,7 @@
 <!-- Search Modal -->
 <div class="searchbox" id="searchbox">
 <div class="searchinner">
-<input autocomplete="off" id="siteSearch" placeholder="Vositalarni qidiring (masalan: Gamma, MindStudio, Maya, Apollo, Descript)…"/>
+<input autocomplete="off" id="siteSearch" placeholder="Vositalarni qidiring (masalan: ChatGPT, Claude, Gemini, DeepSeek, Gamma, Apollo, Higgsfield)…"/>
 <button class="btn" id="closeSearch">Yopish (Esc)</button>
 <div class="search-results" id="searchResults"></div>
 </div>
@@ -72,10 +72,12 @@
 <button class="filter active" data-filter="all">Barchasi</button>
 <button class="filter" data-filter="uzbekistan" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;">🇺🇿 O‘zbekiston vositalari</button>
 <button class="filter" data-filter="global" style="background:#ecfdf5; color:#047857; border-color:#a7f3d0;">🌐 Jahon vositalari</button>
+<button class="filter" data-filter="llm" style="background:#fef3c7; color:#92400e; border-color:#fde68a;">🧠 LLM &amp; Asosiy Modellar</button>
 <button class="filter" data-filter="prezentatsiya">Prezentatsiya</button>
 <button class="filter" data-filter="sotuv">Sotuv &amp; Chatbot</button>
-<button class="filter" data-filter="lead">B2B Mijoz Qidiruvi &amp; Savdo</button>
+<button class="filter" data-filter="lead">B2B Mijoz Qidiruvi</button>
 <button class="filter" data-filter="video">Video &amp; Ovoz</button>
+<button class="filter" data-filter="dasturlash">Dasturlash</button>
 </div>
 <!-- ================================================================= -->
 <!-- SECTION 1: O'ZBEKISTON DASTURCHILARI ISHLAB CHIQARGAN AI VOSITALAR -->
@@ -243,11 +245,137 @@
           </p>
 </div>
 <span style="background:#059669; color:#ffffff; font-weight:700; font-size:12px; padding:6px 14px; border-radius:999px;">
-          14 ta Tekshirilgan Servis
+          22 ta Tekshirilgan Servis
         </span>
 </div>
 <div class="pagegrid">
-<!-- 1: Gamma AI -->
+<!-- 1: ChatGPT (OpenAI) -->
+<article class="card filter-card" data-cat="global llm" data-search="ChatGPT OpenAI gpt-4o gpt-5 gpt-6 llm matn tahlil ovoz advanced voice chat suniy intellekt">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#10a37f">GPT</div>
+<span class="badge badge-global">🌐 Global · Universal LLM</span>
+</div>
+<div class="card-meta">UNIVERSAL SUN’IY INTELLEKT &amp; LLM</div>
+<h3>ChatGPT (OpenAI)</h3>
+<p>Dunyoning eng ommabop universal sun’iy intellekti. Murakkab vazifalarni tahlil qilish, professional matnlar va dasturiy kod yozish hamda Advanced Voice orqali jonli ovozli suhbat tizimi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=chatgpt" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://chatgpt.com" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 2: Claude (Anthropic) -->
+<article class="card filter-card" data-cat="global llm dasturlash" data-search="Claude Anthropic sonnet opus artifacts kod dasturlash tahlil llm mantiq hujjat">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#d97706">C</div>
+<span class="badge badge-global">🌐 Global · Kod &amp; Tahlil</span>
+</div>
+<div class="card-meta">CHUQUR MANTIQ, TAHLIL &amp; DASTURLASH</div>
+<h3>Claude (Anthropic)</h3>
+<p>Anthropic kompaniyasining eng ilg‘or modeli (Claude 3.5 Sonnet). Katta hajmdagi hujjatlarni chuqur tahlil qilish, yuridik audit va dasturchilar darajasida sifatli kod yozishda jahon yetakchisi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=claude" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://claude.ai" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 3: Google Gemini -->
+<article class="card filter-card" data-cat="global llm video" data-search="Google Gemini flash pro multimodal katta xotira video tahlil llm docs workspace">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#2563eb">G</div>
+<span class="badge badge-global">🌐 Global · Multimodal</span>
+</div>
+<div class="card-meta">MULTIMODAL &amp; KATTA XOTIRA</div>
+<h3>Google Gemini</h3>
+<p>1–2 million tokenli ulkan xotiraga ega sun’iy intellekt. Soatlab davom etgan video/audio yozuvlar, kitoblar va Google Workspace (Docs, Gmail, Drive) bilan to‘liq integratsiyalashgan.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=gemini" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://gemini.google.com" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 4: DeepSeek -->
+<article class="card filter-card" data-cat="global llm dasturlash" data-search="DeepSeek R1 V3 ochiq kod arzon llm matematika kod reasoning fikrlash xitoy">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#1d4ed8">DS</div>
+<span class="badge badge-global">🌐 Global · Ochiq Kod &amp; R1</span>
+</div>
+<div class="card-meta">OCHIQ KODLI LLM &amp; MANTIQIY FIKRLASH</div>
+<h3>DeepSeek (V3 &amp; R1)</h3>
+<p>Jahon bozorini larzaga keltirgan yuqori unumli ochiq kodli modellar. Murakkab matematika, dasturlash va mantiqiy hisob-kitoblarni eng arzon narxda yoki bepul taqdim etadi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=deepseek" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://www.deepseek.com" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 5: Grok (xAI) -->
+<article class="card filter-card" data-cat="global llm" data-search="Grok xAI elon musk twitter x real time tahlil kodlash llm yangiliklar">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#0f172a">Gr</div>
+<span class="badge badge-global">🌐 Global · Real-Time X</span>
+</div>
+<div class="card-meta">REAL-TIME TAHLIL &amp; ERKIN MANTIQ</div>
+<h3>Grok (xAI)</h3>
+<p>Ilon Mask (xAI) tomonidan ishlab chiqilgan, X (Twitter) ma’lumotlar oqimini real vaqtda tahlil qiluvchi, senzuralarsiz erkin fikrlash va kuchli dasturlash benchmarklariga ega tizim.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=grok" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://x.ai" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 6: Perplexity AI -->
+<article class="card filter-card" data-cat="global llm lead" data-search="Perplexity AI qidiruv tadqiqot manba havolalar google muqobil faktlar">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#134e4a">P</div>
+<span class="badge badge-global">🌐 Global · Qidiruv &amp; Manba</span>
+</div>
+<div class="card-meta">MANBALI AI QIDIRUV &amp; TADQIQOT</div>
+<h3>Perplexity AI</h3>
+<p>An’anaviy qidiruv tizimlariga eng zamonaviy muqobil. Internetdagi ma’lumotlarni o‘rganib, har bir ma’lumotiga aniq manba havolasini ilova qilgan holda faktlarga asoslangan konspekt beradi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=perplexity" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://www.perplexity.ai" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 7: Higgsfield AI -->
+<article class="card filter-card" data-cat="global video" data-search="Higgsfield AI video generatsiya kinematik kamera harakat reels tiktok kino">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#7c2d12">HF</div>
+<span class="badge badge-global">🌐 Global · Kinematik Video</span>
+</div>
+<div class="card-meta">KINEMATIK VIDEO &amp; HARAKAT</div>
+<h3>Higgsfield AI</h3>
+<p>Kino darajasidagi video generatsiya platformasi. Bitta rasm yoki matnli ko‘rsatmadan kinematik kamera harakatlari, inson mimikasi va professional rakurslarga ega sifatli videolarni ishlab chiqadi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=higgsfield" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://higgsfield.ai" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 8: Cursor AI -->
+<article class="card filter-card" data-cat="global dasturlash" data-search="Cursor AI dasturlash kod yozish vs code agent claude sonnet muharrir">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#18181b">Cur</div>
+<span class="badge badge-global">🌐 Global · Kod Agent</span>
+</div>
+<div class="card-meta">DASTURLASH &amp; KOD AGENTLARI</div>
+<h3>Cursor AI</h3>
+<p>Dasturchilar orasida eng ommabop sun’iy intellekt muharriri (VS Code asosida). Butun kod bazangizni chuqur tushunib, dasturiy kod yozish, xatolarni tuzatish va arxitekturani tezlashtiradi.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=cursor" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://www.cursor.com" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 9: Midjourney -->
+<article class="card filter-card" data-cat="global video" data-search="Midjourney AI rasm generatsiya tasvir dizayn fotorealizm vizual">
+<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+<div class="tool-logo" style="background:#312e81">MJ</div>
+<span class="badge badge-global">🌐 Global · Tasvir &amp; Vizual</span>
+</div>
+<div class="card-meta">TASVIR &amp; VIZUAL DIZAYN</div>
+<h3>Midjourney</h3>
+<p>Fotorealistik va badiiy san’at darajasidagi vizual tasvirlarni ishlab chiqaruvchi yetakchi platforma. Dizayn, marketing va brending uchun cheksiz vizual tasavvur imkoniyatlari.</p>
+<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
+<a class="btn primary" href="vosita.html?id=midjourney" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
+<a class="btn" href="https://www.midjourney.com" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Saytga o‘tish ↗</a>
+</div>
+</article>
+<!-- 10: Gamma AI -->
 <article class="card filter-card" data-cat="global prezentatsiya" data-search="Gamma AI taqdimot slayd veb sayt dizayn">
 <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
 <div class="tool-logo" style="background:#7c3aed">G</div>
@@ -261,7 +389,7 @@
 <a class="btn" href="https://try.gamma.app/phx9znt88tpu" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
 </div>
 </article>
-<!-- 2: Apollo.io -->
+<!-- 11: Apollo.io -->
 <article class="card filter-card" data-cat="global lead" data-search="Apollo io b2b lead direktori xarid eksport email baza">
 <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
 <div class="tool-logo" style="background:#f59e0b">A</div>
@@ -273,20 +401,6 @@
 <div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
 <a class="btn primary" href="vosita.html?id=apollo" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
 <a class="btn" href="https://get.apollo.io/yy5q6cfw7xi5" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
-</div>
-</article>
-<!-- 3: Manychat -->
-<article class="card filter-card" data-cat="global sotuv" data-search="Manychat instagram direct telegram chatbot savdo avtomatlashtirish sotuv">
-<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-<div class="tool-logo" style="background:#0084ff">MC</div>
-<span class="badge badge-global">🌐 Global · Sotuv</span>
-</div>
-<div class="card-meta">SOTUV &amp; INSTAGRAM CHATBOT</div>
-<h3>Manychat</h3>
-<p>Instagram Direct va Telegram'da mijozlarga 24/7 avtomatik javob berish, izohlardan lead yig‘ish va savdoni avtomatlashtirish platformasi.</p>
-<div style="margin-top:auto; padding-top:16px; display:flex; gap:8px;">
-<a class="btn primary" href="vosita.html?id=manychat" style="font-size:12px; padding:8px 14px;">Ko‘rish →</a>
-<a class="btn" href="https://manychat.partnerlinks.io/gopygbhk9cau" rel="noopener" style="font-size:12px; padding:8px 14px;" target="_blank">Bepul sinash ↗</a>
 </div>
 </article>
 <!-- 4: Descript -->
@@ -578,7 +692,7 @@
   </div>
 </div>
 
-<script src="app.js?v=1790596062"></script>
+<script src="app.js?v=1790597118"></script>
 <script>
   // Tool Submission Modal Handler
   const submitModal = document.getElementById("submitToolModal");
