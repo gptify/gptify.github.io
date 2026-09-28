@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GPTify OS — Biznesingizni Yurituvchi Avtonom Operatsion Tizim | GPTify</title>
-  <meta name="description" content="GPTify OS: Biznesingizni yurituvchi operatsion tizimlarni loyihalashtiramiz va quramiz. Ailo, ILDAM CRM, GPTify Meet va Jarvis orqali qo'l mehnatini qisqartiring va dasturlaringizni yagona zanjirga ulang.">
+  <meta name="description" content="GPTify OS: Biznesingizni yurituvchi operatsion tizimlarni loyihalashtiramiz va quramiz. Ailo, ILDAM CRM & B2B Outreach, GPTify Meet va Jarvis orqali qo'l mehnatini qisqartiring va dasturlaringizni yagona zanjirga ulang.">
   <link rel="canonical" href="https://gptify.co/os">
   <link rel="icon" type="image/png" href="assets/ailo_logo.png">
 
-  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono (Exact EZYE-inspired editorial stack) -->
+  <!-- Google Fonts: Instrument Serif (Editorial Display), Plus Jakarta Sans (UI Sans), JetBrains Mono (System Telemetry) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,13 +21,15 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
             paper: '#FAF9F5',
             surface: '#FFFFFF',
-            subtle: '#F3F1EB',
-            divider: '#E5E2D9',
+            subtle: '#F4F2EC',
+            divider: '#E7E5DF',
+            dividerDark: '#D8D5CD',
             slateDark: '#0F172A',
             slateMuted: '#64748B',
             emeraldBrand: '#059669',
@@ -43,12 +45,16 @@
   </script>
 
   <style>
+    :root {
+      --font-serif: 'Instrument Serif', Georgia, serif;
+    }
     body {
       background-color: #FAF9F5;
       color: #0F172A;
       font-family: 'Plus Jakarta Sans', sans-serif;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
     .badge-live-pulse {
       box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
@@ -61,32 +67,51 @@
     }
     .card-elevated {
       background: #FFFFFF;
-      border: 1px solid #E5E2D9;
-      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 6px 16px rgba(15, 23, 42, 0.02);
-      transition: all 0.25s ease;
+      border: 1px solid #E7E5DF;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03), 0 6px 16px rgba(15, 23, 42, 0.02);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .card-elevated:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.08);
-      border-color: #D1CDC2;
+      box-shadow: 0 14px 34px -10px rgba(15, 23, 42, 0.07);
+      border-color: #D8D5CD;
     }
-    .workflow-pill {
-      animation: floatPill 6s ease-in-out infinite;
+    /* Slider Range Custom Styling */
+    input[type=range] {
+      -webkit-appearance: none;
+      background: #E7E5DF;
+      border-radius: 9999px;
+      height: 6px;
+      cursor: pointer;
     }
-    @keyframes floatPill {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #059669;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+    input[type=range]:focus {
+      outline: 2px solid #059669;
+      outline-offset: 2px;
     }
   </style>
 </head>
 <body class="selection:bg-emerald-100 selection:text-emerald-900">
 
-  <!-- ==================== STICKY NAVIGATION ==================== -->
-  <header class="sticky top-0 z-50 bg-[#FAF9F5]/92 backdrop-blur-md border-b border-[#E5E2D9]">
+  <!-- ==================== STICKY NAVIGATION (EZYE STYLE) ==================== -->
+  <header class="sticky top-0 z-50 bg-[#FAF9F5]/92 backdrop-blur-md border-b border-divider">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-8">
-        <a href="os.html" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-slateDark flex items-center justify-center text-white font-black text-lg shadow-sm group-hover:bg-emeraldBrand transition-colors">
+        <a href="os.html" class="flex items-center gap-3 group cursor-pointer" aria-label="GPTify OS Bosh sahifa">
+          <div class="w-10 h-10 rounded-xl bg-slateDark flex items-center justify-center text-white font-black text-lg shadow-sm group-hover:bg-emeraldBrand transition-colors duration-200">
             G
           </div>
           <div class="flex flex-col">
@@ -97,81 +122,86 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-700 pl-4 border-l border-divider">
-          <a href="#services" class="px-3 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors">4 Asosiy Ustun</a>
-          <a href="#comparison" class="px-3 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors">Farqimiz</a>
-          <a href="#calculator" class="px-3 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors">Yo'qotish Kalkulyatori</a>
-          <a href="#workflow" class="px-3 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors">Konveyer</a>
-          <a href="#process" class="px-3 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors">Ish Tartibi</a>
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-700 pl-4 border-l border-divider" aria-label="Asosiy bo'limlar">
+          <a href="#services" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">4 Asosiy Ustun</a>
+          <a href="#comparison" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Farqimiz</a>
+          <a href="#calculator" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Yo'qotish Kalkulyatori</a>
+          <a href="#workflow" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Konveyer</a>
+          <a href="#process" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Ish Tartibi</a>
         </nav>
       </div>
 
       <div class="flex items-center gap-3">
-        <a href="index.html" class="hidden sm:inline-flex text-xs font-semibold px-3 py-2 text-slateMuted hover:text-slateDark border border-divider rounded-lg hover:bg-white transition">
-          ← GPTify Akademiya
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 text-slate-700 hover:text-slateDark border border-divider rounded-xl hover:bg-white transition duration-150 cursor-pointer">
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+          <span>GPTify Bosh Sahifa</span>
         </a>
-        <a href="https://meet.gptify.uz" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs sm:text-sm font-bold shadow-sm transition-all">
+        <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs sm:text-sm font-bold shadow-sm transition-all duration-200 cursor-pointer">
           <span>Strategik Sessiya (30 daq)</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (EZYE AESTHETIC) ==================== -->
+  <!-- ==================== HERO SECTION (EZYE EDITORIAL AESTHETIC) ==================== -->
   <section class="pt-16 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Left Column: Copy & Value Proposition -->
+      <!-- Left Column: Editorial Headline & Value Proposition -->
       <div class="lg:col-span-7">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-divider text-xs font-bold text-slateDark mb-6 shadow-2xs">
-          <span class="w-2 h-2 rounded-full bg-emeraldBrand badge-live-pulse"></span>
+          <span class="w-2 h-2 rounded-full bg-emeraldBrand badge-live-pulse" aria-hidden="true"></span>
           <span>B2B Tizimlar · Kalit Ostida O'rnatish</span>
         </div>
 
-        <h1 class="text-4xl sm:text-6xl font-black text-slateDark tracking-tight leading-[1.1] mb-6">
+        <h1 class="text-4xl sm:text-6xl font-black text-slateDark tracking-tight leading-[1.12] mb-6">
           Biznesingizni yurituvchi <br>
-          <span class="text-emeraldBrand">operatsion tizimlarni</span> loyihalashtiramiz va quramiz.
+          <span class="font-serif italic font-normal text-emeraldBrand text-[1.12em] tracking-normal">operatsion tizimlarni</span><br>
+          loyihalashtiramiz va quramiz.
         </h1>
 
         <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8 max-w-2xl">
           Qo'l mehnatini qisqartiramiz, dasturlaringizni yagona zanjirga ulaymiz va jamoangizni faqat o'sishga yo'naltiramiz. 
-          Yana bitta quruq vosita emas — to'liq ishlaydigan operatsion tizim.
+          Yana bitta quruq vosita emas — to'liq ishlaydigan yaxlit operatsion tizim.
         </p>
 
-        <!-- CTA & Guarantee Row -->
+        <!-- CTA & Strategic Session Details -->
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
-          <a href="https://meet.gptify.uz" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-sm text-center shadow-md transition-all flex items-center justify-center gap-2">
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-sm text-center shadow-md transition-all duration-200 flex items-center justify-center gap-2.5 cursor-pointer">
             <span>Bepul Strategik Sessiya Belgilash</span>
-            <span class="text-emerald-400">➔</span>
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
           <div class="text-xs text-slateMuted">
             <span class="font-bold text-slateDark block">Bepul · 30 daqiqa · Majburiyatsiz</span>
-            Tizim to'liq sizning mulkingiz bo'lib qoladi
+            Tizim to'liq sizning korxonangiz mulki bo'lib qoladi
           </div>
         </div>
 
-        <!-- Quick Proof Badges -->
-        <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs font-medium text-slate-600 pt-6 border-t border-divider">
+        <!-- Quick Proof Badges (Accessible SVG Checkmarks) -->
+        <div class="flex flex-wrap items-center gap-y-3 gap-x-6 text-xs font-semibold text-slate-700 pt-6 border-t border-divider">
           <span class="flex items-center gap-1.5">
-            <span class="text-emeraldBrand font-bold">✓</span> O'zbekistondagi real bizneslar amaliyotida sinovdan o'tgan
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            O'zbekistondagi real B2B amaliyotida sinovdan o'tgan
           </span>
           <span class="flex items-center gap-1.5">
-            <span class="text-emeraldBrand font-bold">✓</span> Mavjud CRM va Telegramingizga to'g'ridan-to'g'ri ulanadi
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Mavjud CRM va Telegramingizga to'g'ridan-to'g'ri ulanadi
           </span>
           <span class="flex items-center gap-1.5">
-            <span class="text-emeraldBrand font-bold">✓</span> 48 soat ichida ishga tushirish
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            48 soat ichida ishga tushirish
           </span>
         </div>
       </div>
 
-      <!-- Right Column: Live Simulated Operations Stack (EZYE-style pills) -->
+      <!-- Right Column: Live Simulated Operations Stack (Interactive Flow Card) -->
       <div class="lg:col-span-5">
         <div class="bg-white rounded-3xl p-6 sm:p-7 border border-divider shadow-sm relative">
           <div class="flex items-center justify-between pb-4 mb-4 border-b border-divider">
             <div class="flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-emeraldBrand badge-live-pulse"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emeraldBrand badge-live-pulse" aria-hidden="true"></span>
               <span class="text-xs font-mono font-bold uppercase tracking-wider text-slateDark">GPTify OS Jonli Konveyeri</span>
             </div>
             <span class="text-[11px] font-mono text-slateMuted">Avtomatik oqim</span>
@@ -179,40 +209,52 @@
 
           <div class="space-y-3 font-mono text-xs">
             <!-- Event 1: Ailo -->
-            <a href="https://ailo.gptify.uz" target="_blank" class="block p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100 hover:border-emerald-300 transition group">
+            <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100 hover:border-emerald-300 transition duration-150 group cursor-pointer">
               <div class="flex items-center justify-between text-emerald-900 font-bold mb-1">
-                <span>01 · Inbound Aloqa & Triage</span>
-                <span class="text-[10px] bg-emerald-200/80 px-2 py-0.5 rounded-md">8 soniyada</span>
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+                  01 · Inbound Aloqa & Triage
+                </span>
+                <span class="text-[10px] bg-emerald-200/80 text-emerald-900 px-2 py-0.5 rounded-md font-sans font-bold">8 soniyada</span>
               </div>
               <p class="text-slate-600 font-sans text-xs">Ailo Instagram va Telegramda mijozga insondek javob berdi va saraladi.</p>
               <span class="text-[10px] text-emerald-700 font-semibold block mt-1.5 group-hover:underline">ailo.gptify.uz ↗</span>
             </a>
 
             <!-- Event 2: ILDAM B2B Outreach Agent -->
-            <a href="https://ildam.gptify.uz" target="_blank" class="block p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 hover:border-amber-300 transition group">
+            <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 hover:border-amber-300 transition duration-150 group cursor-pointer">
               <div class="flex items-center justify-between text-amber-900 font-bold mb-1">
-                <span>02 · B2B Outreach Agenti</span>
-                <span class="text-[10px] bg-amber-200/80 px-2 py-0.5 rounded-md">Telegram • IG • Email</span>
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 8.97 6.364-3.541 1.109zM3.75 3.75h16.5m-16.5 4.5h9m-9 4.5h6"/></svg>
+                  02 · B2B Outreach Agenti
+                </span>
+                <span class="text-[10px] bg-amber-200/80 text-amber-900 px-2 py-0.5 rounded-md font-sans font-bold">Telegram • IG • Email</span>
               </div>
               <p class="text-slate-600 font-sans text-xs">ILDAM yangi B2B korxonalarni topdi, taklif yubordi va javoblarni CRMga kiritdi.</p>
               <span class="text-[10px] text-amber-700 font-semibold block mt-1.5 group-hover:underline">ildam.gptify.uz ↗</span>
             </a>
 
             <!-- Event 3: GPTify Meet -->
-            <a href="https://meet.gptify.uz" target="_blank" class="block p-3.5 rounded-2xl bg-sky-50/70 border border-sky-100 hover:border-sky-300 transition group">
+            <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-2xl bg-sky-50/70 border border-sky-100 hover:border-sky-300 transition duration-150 group cursor-pointer">
               <div class="flex items-center justify-between text-sky-900 font-bold mb-1">
-                <span>03 · Uchrashuv Bayonnomasi</span>
-                <span class="text-[10px] bg-sky-200/80 px-2 py-0.5 rounded-md">100% Maxfiy</span>
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-sky-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
+                  03 · Uchrashuv Bayonnomasi
+                </span>
+                <span class="text-[10px] bg-sky-200/80 text-sky-900 px-2 py-0.5 rounded-md font-sans font-bold">100% Maxfiy</span>
               </div>
               <p class="text-slate-600 font-sans text-xs">GPTify Meet audio yozuvdan topshiriqlar va muddatlarni Telegramga jo'natdi.</p>
               <span class="text-[10px] text-sky-700 font-semibold block mt-1.5 group-hover:underline">meet.gptify.uz ↗</span>
             </a>
 
             <!-- Event 4: Jarvis -->
-            <a href="jarvis_fleet.html" class="block p-3.5 rounded-2xl bg-purple-50/70 border border-purple-100 hover:border-purple-300 transition group">
+            <a href="jarvis_fleet.html" class="block p-3.5 rounded-2xl bg-purple-50/70 border border-purple-100 hover:border-purple-300 transition duration-150 group cursor-pointer">
               <div class="flex items-center justify-between text-purple-900 font-bold mb-1">
-                <span>04 · Operatsion Monitoring & Flot</span>
-                <span class="text-[10px] bg-purple-200/80 px-2 py-0.5 rounded-md">24/7 Doimiy</span>
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3"/></svg>
+                  04 · Operatsion Monitoring & Flot
+                </span>
+                <span class="text-[10px] bg-purple-200/80 text-purple-900 px-2 py-0.5 rounded-md font-sans font-bold">24/7 Doimiy</span>
               </div>
               <p class="text-slate-600 font-sans text-xs">Jarvis barcha oqimlar va integratsiyalar barqarorligini nazorat qilmoqda.</p>
               <span class="text-[10px] text-purple-700 font-semibold block mt-1.5 group-hover:underline">jarvis_fleet.html →</span>
@@ -234,7 +276,8 @@
     <div class="max-w-3xl mb-14">
       <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Haqiqiy Operatsion Muammo</span>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
-        Ko'pchilik biznes egalari nimadir noto'g'ri ekanini biladi. Faqat hali raqamlarda hisoblab ko'rmagan.
+        Ko'pchilik biznes egalari nimadir noto'g'ri ekanini biladi. <br class="hidden sm:inline">
+        <span class="font-serif italic font-normal text-slate-800">Faqat hali raqamlarda hisoblab ko'rmagan.</span>
       </h2>
       <p class="text-slate-600 text-base mt-3">
         Muammo yangi instrumentlar yetishmasligida emas. Muammo — mavjud jarayonlarning bir-biri bilan bog'lanmaganidadir.
@@ -243,9 +286,10 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       
+      <!-- Loss Card 1 -->
       <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 font-bold text-lg flex items-center justify-center mb-4">
-          ⏱️
+        <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slateDark mb-2">Vaqt Yo'qotilishi</h3>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -253,9 +297,10 @@
         </p>
       </div>
 
+      <!-- Loss Card 2 -->
       <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 font-bold text-lg flex items-center justify-center mb-4">
-          📡
+        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.652a3.75 3.75 0 010-5.304m5.304 0a3.75 3.75 0 010 5.304m-7.425 2.121a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12z"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slateDark mb-2">Sekin Javob & Sovuq Lidlar</h3>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -263,9 +308,10 @@
         </p>
       </div>
 
+      <!-- Loss Card 3 -->
       <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 font-bold text-lg flex items-center justify-center mb-4">
-          🧩
+        <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959A3.75 3.75 0 0012 1.5a3.75 3.75 0 00-2.651 3.628c.215.283.401.604.401.959v.881a2.25 2.25 0 01-2.25 2.25H6.62c-.355 0-.676-.186-.959-.401A3.75 3.75 0 002 12a3.75 3.75 0 003.628 2.651c.283-.215.604-.401.959-.401h.881a2.25 2.25 0 012.25 2.25v.881c0 .355-.186.676-.401.959A3.75 3.75 0 0012 22.5a3.75 3.75 0 002.651-3.628c-.215-.283-.401-.604-.401-.959v-.881a2.25 2.25 0 012.25-2.25h.881c.355 0 .676.186.959.401A3.75 3.75 0 0022 12a3.75 3.75 0 00-3.628-2.651c-.283.215-.604.401-.959.401h-.881a2.25 2.25 0 01-2.25-2.25v-.881z"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slateDark mb-2">Dasturlar Tartibsizligi</h3>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -273,39 +319,40 @@
         </p>
       </div>
 
+      <!-- Loss Card 4 -->
       <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 font-bold text-lg flex items-center justify-center mb-4">
-          📉
+        <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
         </div>
         <h3 class="text-lg font-bold text-slateDark mb-2">Ortda Qolish Xavfi</h3>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          Raqobatchilar avtomatlashtirilgan 8 soniyalik javoblarga o'tayotgan bir paytda, sizning xodimlaringiz hali ham qo'lda copy-paste qilmoqda.
+          Raqobatchilar avtomatlashtirilgan 8 soniyalik javoblarga o'tayotgan bir paytda, sizning jamoangiz hali ham qo'lda copy-paste qilmoqda.
         </p>
       </div>
 
     </div>
 
     <!-- Highlighted Loss Callout -->
-    <div class="mt-8 p-6 rounded-2xl bg-subtle border border-divider flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div class="mt-8 p-6 sm:p-7 rounded-2xl bg-subtle border border-divider flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
       <div>
-        <span class="text-xs font-mono font-bold text-slateDark uppercase">Bularning barchasi jamlanganda:</span>
-        <div class="text-lg sm:text-xl font-extrabold text-slateDark mt-0.5">
-          Har yili o'rtacha <span class="text-red-600">48,000,000+ so'm</span> qaytarib olish mumkin bo'lgan operatsion yo'qotish yuzaga keladi.
+        <span class="text-xs font-mono font-bold text-slateDark uppercase tracking-wider">Bularning barchasi jamlanganda:</span>
+        <div class="text-lg sm:text-xl font-extrabold text-slateDark mt-1">
+          Har yili o'rtacha <span class="text-red-600 underline decoration-red-300 underline-offset-4">48,000,000+ so'm</span> qaytarib olish mumkin bo'lgan operatsion yo'qotish yuzaga keladi.
         </div>
       </div>
-      <a href="#calculator" class="px-5 py-2.5 rounded-xl bg-white border border-divider hover:bg-slate-50 text-slateDark text-xs font-bold transition whitespace-nowrap">
+      <a href="#calculator" class="px-5 py-3 rounded-xl bg-white border border-divider hover:bg-slate-50 text-slateDark text-xs font-bold transition duration-150 whitespace-nowrap cursor-pointer shadow-2xs">
         O'z raqamlaringizni hisoblang ↓
       </a>
     </div>
   </section>
 
-  <!-- ==================== THE 4-WAY COMPARISON (NOT A TOOL, NOT A HIRE) ==================== -->
+  <!-- ==================== THE 4-WAY COMPARISON (NOT A TOOL, A COMPLETE OS) ==================== -->
   <section id="comparison" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
     <div class="max-w-3xl mb-14">
       <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Aqlli Muqobil</span>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
         Yana bitta tarqoq ilova emas. <br>
-        Sizning yaxlit operatsion tizimingiz.
+        <span class="font-serif italic font-normal text-slate-800">Sizning yaxlit operatsion tizimingiz.</span>
       </h2>
       <p class="text-slate-600 text-base mt-3">
         Biz shunchaki dastur litsenziyasini sotib ketmaymiz. Biz biznesingizga kirib, tizimni to'liq ishlaydigan holatda o'rnatib topshiramiz.
@@ -320,19 +367,19 @@
         <span class="text-xs font-mono text-slateMuted block mb-4">Sekin va inson xatolari ko'p</span>
         <ul class="space-y-3 text-xs text-slate-600">
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Barcha ma'lumotlar qo'lda kiritiladi, tezda chalkashadi</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Lidlar va to'lovlar daftarlarda esdan chiqadi</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Avtomatik eslatma va real vaqtda tahlil yo'q</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Sovuq bozorlarga tizimli outreach qilib bo'lmaydi</span>
           </li>
         </ul>
@@ -344,19 +391,19 @@
         <span class="text-xs font-mono text-slateMuted block mb-4">O'zingiz sozlashingiz kerak</span>
         <ul class="space-y-3 text-xs text-slate-600">
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Sozlashni o'zingiz qilishingiz shart</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Mavjud tartibsizlik ustiga yana bitta ilova</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Mahalliy O'zbekiston jarayonlariga mos emas</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Hech qanday jonli texnik strategiya yo'q</span>
           </li>
         </ul>
@@ -368,25 +415,25 @@
         <span class="text-xs font-mono text-slateMuted block mb-4">Bir martalik yamoq</span>
         <ul class="space-y-3 text-xs text-slate-600">
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Bitta kichik botni ulaydi va g'oyib bo'ladi</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Yaxlit biznes konveyeri haqida tushunchasi yo'q</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Standart shablon, sizga moslashtirilmagan</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-red-500 font-bold">×</span>
+            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             <span>Keyinchalik xatolik chiqsa tuzatuvchi yo'q</span>
           </li>
         </ul>
       </div>
 
-      <!-- Option 4: GPTify OS (Featured) -->
+      <!-- Option 4: GPTify OS (Featured Executive Solution) -->
       <div class="p-6 rounded-2xl bg-white border-2 border-emeraldBrand shadow-sm relative">
         <div class="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-emeraldBrand text-white font-mono text-[10px] font-bold uppercase tracking-wider">
           Tavsiya etiladi
@@ -395,20 +442,20 @@
         <span class="text-xs font-mono text-emeraldBrand font-bold block mb-4">Boshidan oxirigacha kalit ostida</span>
         <ul class="space-y-3 text-xs text-slate-700">
           <li class="flex items-start gap-2">
-            <span class="text-emeraldBrand font-bold">✓</span>
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
             <span><strong>Strategiyadan to ijrogacha:</strong> Jarayon xaritasi + tizim o'rnatish</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-emeraldBrand font-bold">✓</span>
-            <span><strong>Sohaviy tajriba:</strong> Savdo, avto, tibbiyot, ta'lim konveyerlari</span>
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <span><strong>Sohaviy tajriba:</strong> B2B savdo, distribyutsiya, xizmat ko'rsatish</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-emeraldBrand font-bold">✓</span>
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
             <span><strong>O'lchanadigan ROI:</strong> Qaytariladigan soatlar va sof tejamkorlik</span>
           </li>
           <li class="flex items-start gap-2">
-            <span class="text-emeraldBrand font-bold">✓</span>
-            <span><strong>Jamoaga to'liq o'rgatish:</strong> SOP hujjatlar va video qo'llanmalar</span>
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <span><strong>Jamoaga to'liq o'rgatish:</strong> SOP qo'llanmalar va video darslar</span>
           </li>
         </ul>
       </div>
@@ -416,7 +463,7 @@
     </div>
   </section>
 
-  <!-- ==================== THE 4 CORE ENGINES (OUR PLATFORM FLEET) ==================== -->
+  <!-- ==================== THE 4 CORE ENGINES ==================== -->
   <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
     <div class="max-w-3xl mb-14">
       <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Yetkazib Beriladigan Tizim</span>
@@ -435,7 +482,7 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2.5">
-              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center text-sm">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-extrabold flex items-center justify-center text-sm font-mono">
                 01
               </div>
               <div>
@@ -443,7 +490,7 @@
                 <span class="text-xs text-emeraldBrand font-mono font-bold">Aloqa & Savdo Agenti</span>
               </div>
             </div>
-            <a href="https://ailo.gptify.uz" target="_blank" class="text-xs font-mono font-bold text-emeraldBrand hover:underline flex items-center gap-1">
+            <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-emeraldBrand hover:underline flex items-center gap-1 cursor-pointer">
               ailo.gptify.uz ↗
             </a>
           </div>
@@ -455,25 +502,26 @@
 
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
-              <span class="text-emeraldBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Meta Rasmiy Graph API:</strong> Bloklanish xavfisiz, xavfsiz va qonuniy integratsiya.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-emeraldBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>O'zbek Tili & Shevalar:</strong> Erkin matn, audio va qisqartmalarni 100% tushunish.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-emeraldBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Qolipli Botlardan 10x Kuchli:</strong> Quruq tugmalar emas, samimiy insoniy muloqot.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
-          <a href="https://ailo.gptify.uz" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition">
-            ailo.gptify.uz saytiga o'tish ➔
+          <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
+            <span>ailo.gptify.uz saytiga o'tish</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="ailo.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition">
+          <a href="ailo.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer">
             Tafsilotlar
           </a>
         </div>
@@ -484,7 +532,7 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2.5">
-              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 font-extrabold flex items-center justify-center text-sm">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 font-extrabold flex items-center justify-center text-sm font-mono">
                 02
               </div>
               <div>
@@ -492,7 +540,7 @@
                 <span class="text-xs text-amberBrand font-mono font-bold">Faol Savdo & Avtonom Outreach Agenti</span>
               </div>
             </div>
-            <a href="https://ildam.gptify.uz" target="_blank" class="text-xs font-mono font-bold text-amberBrand hover:underline flex items-center gap-1">
+            <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-amberBrand hover:underline flex items-center gap-1 cursor-pointer">
               ildam.gptify.uz ↗
             </a>
           </div>
@@ -504,29 +552,30 @@
 
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
-              <span class="text-amberBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Avtonom B2B Outreach Agenti:</strong> Telegram, Instagram va Email orqali potensial mijozlarga avtomatik aloqa o'rnatish.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-amberBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>10-Soniyalik Jonli Triage:</strong> Qiziqish bildirgan korxonalarni darhol CRM voronkasiga kiritish va mas'ul biriktirish.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-amberBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>1,200+ Korxonalar Bazasi:</strong> O'zbekistondagi faol yuridik shaxslar ma'lumotnomasi bilan tayyor integratsiya.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-amberBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Milestone To'lovlar Nazorati:</strong> Shartnoma, 30/70 avans va bosqichma-bosqich to'lovlarni avtomatik eslatib turish.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
-          <a href="https://ildam.gptify.uz" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition">
-            ildam.gptify.uz saytiga o'tish ➔
+          <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
+            <span>ildam.gptify.uz saytiga o'tish</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="ildam.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition">
+          <a href="ildam.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer">
             Tafsilotlar
           </a>
         </div>
@@ -537,7 +586,7 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2.5">
-              <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-800 font-extrabold flex items-center justify-center text-sm">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-800 font-extrabold flex items-center justify-center text-sm font-mono">
                 03
               </div>
               <div>
@@ -545,7 +594,7 @@
                 <span class="text-xs text-skyBrand font-mono font-bold">Maxfiy AI Kotib</span>
               </div>
             </div>
-            <a href="https://meet.gptify.uz" target="_blank" class="text-xs font-mono font-bold text-skyBrand hover:underline flex items-center gap-1">
+            <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-skyBrand hover:underline flex items-center gap-1 cursor-pointer">
               meet.gptify.uz ↗
             </a>
           </div>
@@ -557,25 +606,26 @@
 
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
-              <span class="text-skyBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-skyBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Zero-Bot Maxfiylik:</strong> Ekrandan begona bot ko'rinmaydi, audio oqimi to'liq shifrlangan.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-skyBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-skyBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>O'zbekcha Aniq Transkripsiya:</strong> Texnik va biznes terminlarni chalkashtirmasdan yozish.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-skyBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-skyBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Topshiriqlar Bayonnomasi:</strong> Uchrashuv tugashi bilanoq kim nima qilishi kerakligi tayyor.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
-          <a href="https://meet.gptify.uz" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition">
-            meet.gptify.uz saytiga o'tish ➔
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
+            <span>meet.gptify.uz saytiga o'tish</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="meet.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition">
+          <a href="meet.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer">
             Tafsilotlar
           </a>
         </div>
@@ -586,7 +636,7 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2.5">
-              <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-800 font-extrabold flex items-center justify-center text-sm">
+              <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-800 font-extrabold flex items-center justify-center text-sm font-mono">
                 04
               </div>
               <div>
@@ -606,23 +656,24 @@
 
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
-              <span class="text-purpleBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-purpleBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Ko'p Agentli Telemetriya:</strong> Ailo, CRM va Meet o'rtasidagi ma'lumotlarni real vaqtda kuzatish.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-purpleBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-purpleBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Xatoliklarni Avtomatik Tuzatish:</strong> To'xtab qolgan ssenariylarni darhol aniqlash.</span>
             </div>
             <div class="flex items-start gap-2">
-              <span class="text-purpleBrand font-bold">✓</span>
+              <svg class="w-4 h-4 text-purpleBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
               <span><strong>Markaziy Audit Jurnali:</strong> Har bir tranzaksiya va qarorning to'liq tarixi.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
-          <a href="jarvis_fleet.html" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition">
-            Fleet Console'ni ochish ➔
+          <a href="jarvis_fleet.html" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
+            <span>Fleet Console'ni ochish</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
         </div>
       </div>
@@ -652,8 +703,8 @@
               <span>Jamoangizdagi xodimlar soni:</span>
               <span class="text-sm font-mono text-emeraldBrand font-black" id="valTeamSize">5 kishi</span>
             </div>
-            <input type="range" id="teamSize" min="1" max="50" value="5" class="w-full h-2 bg-subtle rounded-lg appearance-none cursor-pointer accent-emerald-600">
-            <div class="flex justify-between text-[10px] text-slateMuted mt-1">
+            <input type="range" id="teamSize" min="1" max="50" value="5" class="w-full">
+            <div class="flex justify-between text-[10px] text-slateMuted mt-1 font-mono">
               <span>1 kishi</span>
               <span>25 kishi</span>
               <span>50 kishi</span>
@@ -662,11 +713,11 @@
 
           <div>
             <div class="flex justify-between items-center text-xs font-bold text-slateDark mb-2">
-              <span>Har bir xodimning qo'lda qiladigan takroriy ishi:</span>
+              <span>Har bir xodimning takroriy qo'l mehnati:</span>
               <span class="text-sm font-mono text-emeraldBrand font-black" id="valHoursSpent">15 soat/hafta</span>
             </div>
-            <input type="range" id="hoursSpent" min="5" max="35" value="15" class="w-full h-2 bg-subtle rounded-lg appearance-none cursor-pointer accent-emerald-600">
-            <div class="flex justify-between text-[10px] text-slateMuted mt-1">
+            <input type="range" id="hoursSpent" min="5" max="35" value="15" class="w-full">
+            <div class="flex justify-between text-[10px] text-slateMuted mt-1 font-mono">
               <span>5 soat</span>
               <span>20 soat</span>
               <span>35 soat</span>
@@ -678,8 +729,8 @@
               <span>O'rtacha oylik maosh (1 xodim):</span>
               <span class="text-sm font-mono text-emeraldBrand font-black" id="valSalary">5,000,000 so'm</span>
             </div>
-            <input type="range" id="salary" min="3000000" max="15000000" step="500000" value="5000000" class="w-full h-2 bg-subtle rounded-lg appearance-none cursor-pointer accent-emerald-600">
-            <div class="flex justify-between text-[10px] text-slateMuted mt-1">
+            <input type="range" id="salary" min="3000000" max="15000000" step="500000" value="5000000" class="w-full">
+            <div class="flex justify-between text-[10px] text-slateMuted mt-1 font-mono">
               <span>3 mln</span>
               <span>8 mln</span>
               <span>15 mln</span>
@@ -712,8 +763,9 @@
             </div>
           </div>
 
-          <a href="https://meet.gptify.uz" target="_blank" class="w-full py-3 px-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs font-bold text-center shadow-sm transition">
-            Ushbu yo'qotishlarni bartaraf etish ➔
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs font-bold text-center shadow-sm transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
+            <span>Ushbu yo'qotishlarni bartaraf etish</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
         </div>
 
@@ -838,7 +890,6 @@
     </div>
   </section>
 
-
   <!-- ==================== FOUNDER NOTE & STRATEGY CALL CTA ==================== -->
   <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
     <div class="bg-white rounded-3xl border border-divider p-8 sm:p-12 shadow-sm text-center relative overflow-hidden">
@@ -856,17 +907,20 @@
           Sizga aniq qadamlar xaritasini beramiz. Hech qanday bosimsiz, ochiq va samimiy professional suhbat.
         </p>
 
-        <!-- Our Guarantee -->
-        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-100 text-xs text-emerald-900 font-medium mb-8 max-w-lg mx-auto">
-          🛡️ <strong>Bizning kafolat:</strong> Agar suhbat davomida biznesingizda yiliga kamida 20,000,000 so'mlik tejamkorlik nuqtalarini topa olmasak, buni ochiq aytamiz va vaqtingizni behuda olmaymiz.
+        <!-- Our Guarantee (Accessible SVG Shield) -->
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-100 text-xs text-emerald-900 font-medium mb-8 max-w-lg mx-auto flex items-center gap-2.5 text-left">
+          <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <div>
+            <strong>Bizning kafolat:</strong> Agar suhbat davomida biznesingizda yiliga kamida 20,000,000 so'mlik tejamkorlik nuqtalarini topa olmasak, buni ochiq aytamiz va vaqtingizni behuda olmaymiz.
+          </div>
         </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://meet.gptify.uz" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white font-bold text-sm shadow-md transition duration-150 flex items-center justify-center gap-2.5 cursor-pointer">
             <span>Uchrashuv Belgilash (meet.gptify.uz)</span>
-            <span>➔</span>
+            <svg class="w-4 h-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="https://t.me/shukhrat_iskandarov" target="_blank" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-divider hover:bg-subtle text-slateDark font-semibold text-sm transition">
+          <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-divider hover:bg-subtle text-slateDark font-semibold text-sm transition duration-150 cursor-pointer">
             Telegram orqali yozish
           </a>
         </div>
@@ -894,15 +948,15 @@
       </div>
 
       <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-600">
-        <a href="https://ailo.gptify.uz" target="_blank" class="hover:text-emeraldBrand">ailo.gptify.uz</a>
+        <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="hover:text-emeraldBrand cursor-pointer">ailo.gptify.uz</a>
         <span>•</span>
-        <a href="https://ildam.gptify.uz" target="_blank" class="hover:text-amberBrand">ildam.gptify.uz</a>
+        <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="hover:text-amberBrand cursor-pointer">ildam.gptify.uz</a>
         <span>•</span>
-        <a href="https://meet.gptify.uz" target="_blank" class="hover:text-skyBrand">meet.gptify.uz</a>
+        <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="hover:text-skyBrand cursor-pointer">meet.gptify.uz</a>
         <span>•</span>
-        <a href="jarvis_fleet.html" class="hover:text-purpleBrand">Jarvis Fleet</a>
+        <a href="jarvis_fleet.html" class="hover:text-purpleBrand cursor-pointer">Jarvis Fleet</a>
         <span>•</span>
-        <a href="index.html" class="hover:text-slateDark">GPTify Akademiya</a>
+        <a href="index.html" class="hover:text-slateDark cursor-pointer">GPTify Bosh Sahifa</a>
       </div>
 
       <div class="text-xs text-slateMuted">
@@ -938,7 +992,7 @@
       // Hourly rate calculation: Salary / (4 weeks * 40 hours) = Salary / 160
       const hourlyRate = salary / 160;
       
-      // Assume 70% automation rate (conservative, matching industry standards)
+      // 70% automation rate for repetitive mechanical workflows
       const weeklyHoursTotal = team * hours;
       const weeklyHoursSaved = weeklyHoursTotal * 0.7;
       const yearlyHoursSaved = weeklyHoursSaved * 50; // 50 working weeks
