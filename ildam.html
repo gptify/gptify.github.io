@@ -64,7 +64,6 @@
   <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
   <div class="border-b border-amber-200/70 bg-amber-100/80 text-amber-900 text-xs py-2 px-4 text-center font-semibold flex items-center justify-center gap-2">
     <span>⚡ <strong>ILDAM Platformasi v2.5:</strong> Telegram & Instagramdan kelgan lidlarni 10 soniyada savdoga aylantiring.</span>
-    <a href="/presentation" class="underline hover:text-amber-700 font-bold ml-1">16:9 Taqdimotni ko'rish ↗</a>
   </div>
 
   <!-- ==================== TOP NAVIGATION BAR ==================== -->
@@ -98,12 +97,12 @@
           <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400"></i>
         </div>
 
-        <a href="/crm" target="_blank" class="px-5 py-2.5 text-xs font-bold rounded-xl text-slate-700 hover:text-slate-900 border border-slate-300 bg-white transition shadow-sm">
-          Kirish
-        </a>
+        <button onclick="openAuditModal('Demo')" class="px-5 py-2.5 text-xs font-bold rounded-xl text-slate-700 hover:text-slate-900 border border-slate-300 bg-white transition shadow-sm">
+          Demo olish
+        </button>
 
-        <button onclick="openAuditModal()" class="px-5 py-2.5 text-xs font-black rounded-xl bg-amber-500 hover:bg-amber-600 text-white shadow-md shadow-amber-500/25 transition">
-          Bepul boshlash
+        <button onclick="openAuditModal('Bog\'lanish')" class="px-5 py-2.5 text-xs font-black rounded-xl bg-amber-500 hover:bg-amber-600 text-white shadow-md shadow-amber-500/25 transition">
+          Bog'lanish
         </button>
       </div>
 
@@ -782,7 +781,7 @@
           <div class="h-12 w-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center font-bold mb-6">
             <i data-lucide="columns-3" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Tezkor Kanban Doskasi</h3>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Tezkor Savdo Quvuri</h3>
           <p class="text-xs text-slate-600 leading-relaxed">
             5 bosqichli vizual savdo quvuri. Kartalarni surish, to'lovlarni boshqarish va xodimlar o'rtasida lidlarni taqsimlash 10 daqiqada o'rganiladi.
           </p>
@@ -1064,12 +1063,11 @@
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">YaTT & Kichik Savdo</span>
             <h3 class="text-xl font-bold text-slate-900 mt-1">Starter AI CRM</h3>
             <p class="text-xs text-slate-500 mt-2 mb-4">1-3 kishilik xizmat ko'rsatuvchi YaTTlar va kichik savdo jamoalari uchun.</p>
-            <div class="text-4xl font-black text-slate-900 font-mono">$99 <span class="text-xs font-normal text-slate-500">/ oy</span></div>
-            <div class="text-[11px] text-amber-700 font-mono mt-1 mb-6 font-semibold">+ $450 bir martalik o'rnatish</div>
+            <div class="text-4xl font-black text-slate-900 font-mono mb-6">$99 <span class="text-xs font-normal text-slate-500">/ oy</span></div>
 
             <ul class="space-y-3 text-xs text-slate-700 mb-8">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Zamonaviy Kanban CRM Platformasi</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>24/7 Telegram Bot AI Sotuvchi</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Zamonaviy CRM Savdo Platformasi</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>24/7 Telegram & Instagram AI Sotuvchi</li>
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Cheksiz xodimlar akkauntlari</li>
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Xodimlar uchun 1 kunlik instruktaj</li>
             </ul>
@@ -1088,8 +1086,7 @@
             <span class="text-xs font-bold uppercase tracking-wider text-amber-600">B2B Kompaniyalar & Klinikalar</span>
             <h3 class="text-xl font-bold text-slate-900 mt-1">Growth Engine</h3>
             <p class="text-xs text-slate-500 mt-2 mb-4">Mijozlar oqimi yuqori bo'lgan xususiy shifoxona, avtoservis va savdo korxonalari.</p>
-            <div class="text-4xl font-black text-slate-900 font-mono">$250 <span class="text-xs font-normal text-slate-500">/ oy</span></div>
-            <div class="text-[11px] text-emerald-700 font-mono mt-1 mb-6 font-semibold">+ $950 bir martalik o'rnatish</div>
+            <div class="text-4xl font-black text-slate-900 font-mono mb-6">$150 <span class="text-xs font-normal text-slate-500">/ oy</span></div>
 
             <ul class="space-y-3 text-xs text-slate-700 mb-8">
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><strong>Starter</strong> paketining barcha imkoniyatlari</li>
@@ -1099,7 +1096,7 @@
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Doimiy server hosting & AI tokenlar</li>
             </ul>
           </div>
-          <button onclick="selectPackage('Growth Engine ($250/oy)')" class="w-full py-3.5 text-xs font-black rounded-2xl bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/25 transition">
+          <button onclick="selectPackage('Growth Engine ($150/oy)')" class="w-full py-3.5 text-xs font-black rounded-2xl bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/25 transition">
             Ushbu Paketni Tanlash ➔
           </button>
         </div>
@@ -1110,8 +1107,7 @@
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Yirik Korporatsiya & Distribyutor</span>
             <h3 class="text-xl font-bold text-slate-900 mt-1">Enterprise Fleet</h3>
             <p class="text-xs text-slate-500 mt-2 mb-4">1C / ERP integratsiyasi, ovozli boshqaruv va maxsus talabga ega korxonalar.</p>
-            <div class="text-4xl font-black text-slate-900 font-mono">$500+ <span class="text-xs font-normal text-slate-500">/ oy</span></div>
-            <div class="text-[11px] text-purple-700 font-mono mt-1 mb-6 font-semibold">+ Maxsus integratsiya</div>
+            <div class="text-2xl font-black text-slate-900 font-sans mb-6">Kelishuv asosida</div>
 
             <ul class="space-y-3 text-xs text-slate-700 mb-8">
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><strong>Growth</strong> paketining to'liq funksionali</li>
@@ -1120,7 +1116,7 @@
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>24/7 Shaxsiy muhandis va maxsus SLA</li>
             </ul>
           </div>
-          <button onclick="selectPackage('Enterprise Fleet')" class="w-full py-3 text-xs font-bold rounded-2xl bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-300 transition shadow-sm">
+          <button onclick="selectPackage('Enterprise Fleet (Kelishuv asosida)')" class="w-full py-3 text-xs font-bold rounded-2xl bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-300 transition shadow-sm">
             Bog'lanish
           </button>
         </div>
@@ -1129,16 +1125,16 @@
     </div>
   </section>
 
-  <!-- ==================== ABOUT & FOUNDER ==================== -->
+  <!-- ==================== ABOUT & TEAM ==================== -->
   <section id="about" class="py-16 px-6 bg-white border-b border-slate-200">
     <div class="max-w-4xl mx-auto text-center">
       <div class="inline-flex items-center gap-3 p-2 pr-5 rounded-full bg-[#faf9f5] border border-slate-200 shadow-sm mb-6">
-        <div class="h-9 w-9 rounded-full bg-amber-500 text-white font-black flex items-center justify-center text-sm">
-          SI
+        <div class="h-9 w-9 rounded-full bg-emerald-600 text-white font-black flex items-center justify-center text-xs">
+          GPT
         </div>
         <div class="text-left text-xs">
-          <strong class="text-slate-900 block">Shukhrat Iskandarov</strong>
-          <span class="text-slate-500">Asoschi: GPTify.co & ILDAM</span>
+          <strong class="text-slate-900 block">GPTify.uz jamoasi</strong>
+          <span class="text-slate-500">B2B AI Tizimlari & Ish Oqimlari</span>
         </div>
       </div>
       <p class="text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
@@ -1157,9 +1153,8 @@
       </div>
       
       <div class="flex flex-wrap items-center gap-6 font-semibold">
-        <a href="/presentation" class="hover:text-amber-600 transition">16:9 Taqdimot Deck</a>
-        <a href="/crm" class="hover:text-amber-600 transition">Kanban Boshqaruv Doskasi</a>
-        <a href="https://t.me/GPTify_uz_bot" target="_blank" class="hover:text-amber-600 transition">Telegram Bot</a>
+        <a href="javascript:void(0)" onclick="openAuditModal('Demo')" class="hover:text-amber-600 transition">Demo olish</a>
+        <a href="javascript:void(0)" onclick="openAuditModal('Bog\'lanish')" class="hover:text-amber-600 transition">Bog'lanish</a>
       </div>
     </div>
 
@@ -1178,19 +1173,8 @@
       <div class="mb-3">
         <img src="/static/ildam_brand_logo.png" alt="ILDAM Logo" class="h-7 w-auto object-contain">
       </div>
-      <h3 class="text-xl font-extrabold text-slate-900 mb-1">15 Daqiqalik Bepul Savdo Auditi</h3>
-      <p class="text-xs text-slate-500 mb-6 leading-relaxed">Biznesingizdagi mijoz yo'qotishlarini aniqlaymiz va ILDAM tizimini namoyish qilamiz.</p>
-
-      <a href="https://t.me/GPTifyUzAdminbot?start=ildam_audit" target="_blank" rel="noopener" class="w-full py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md shadow-sky-500/20 transition hover:-translate-y-0.5 mb-4">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .39z"/></svg>
-        <span>Telegram Botda zudlik bilan boshlash (@GPTifyUzAdminbot)</span>
-      </a>
-
-      <div class="relative flex py-1 items-center mb-3">
-        <div class="flex-grow border-t border-slate-200"></div>
-        <span class="flex-shrink mx-3 text-[10px] uppercase font-bold text-slate-400">yoki sayt orqali ariza qoldiring</span>
-        <div class="flex-grow border-t border-slate-200"></div>
-      </div>
+      <h3 class="text-xl font-extrabold text-slate-900 mb-1">15 Daqiqalik Bepul Savdo Auditi & Demo</h3>
+      <p class="text-xs text-slate-500 mb-6 leading-relaxed">Biznesingizdagi mijoz yo'qotishlarini aniqlaymiz va tizimni namoyish qilamiz.</p>
 
       <form id="auditForm" onsubmit="submitAudit(event)" class="space-y-4">
         <div>
@@ -1202,27 +1186,26 @@
           <input type="text" id="leadContact" required placeholder="Masalan: Sardorbek (Rahbar)" class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
         </div>
         <div>
-          <label class="block text-[11px] font-bold text-slate-700 mb-1">Telefon yoki Telegram:</label>
-          <input type="text" id="leadPhone" required placeholder="+998 90 123 45 67 yoki @username" class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Telefon raqamingiz:</label>
+          <input type="text" id="leadPhone" required placeholder="+998 90 123 45 67" class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
         </div>
         <div>
-          <label class="block text-[11px] font-bold text-slate-700 mb-1">Tanlangan paket:</label>
-          <input type="text" id="leadPkg" value="Growth Engine ($250/oy)" class="w-full p-3 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-600 font-medium" readonly>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Tanlangan paket / ehtiyoj:</label>
+          <input type="text" id="leadPkg" value="Growth Engine ($150/oy)" class="w-full p-3 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-600 font-medium" readonly>
         </div>
 
         <button type="submit" id="submitBtn" class="w-full py-3.5 text-xs font-black rounded-xl bg-amber-500 hover:bg-amber-600 text-white transition flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25">
-          <span>Ariza Qoldirish ➔</span>
+          <span>Demo Olish (Bog'lanish) ➔</span>
         </button>
       </form>
       <div id="formSuccess" class="hidden text-center py-5">
         <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3 text-xl font-bold">✓</div>
         <h4 class="text-base font-extrabold text-slate-900 mb-1">Arizangiz qabul qilindi!</h4>
         <p class="text-xs text-slate-500 mb-4 leading-relaxed">
-          Navbatsiz 10 soniyada javob olish va ILDAM savdo tizimini ko'rish uchun quyidagi tugmani bosing:
+          Mutaxassisimiz bilan zudlik bilan bog'lanish va demo tahlilini olish uchun quyidagi tugmani bosing:
         </p>
-        <a id="tgSuccessBtn" href="https://t.me/GPTifyUzAdminbot?start=ildam_lead" target="_blank" rel="noopener" class="w-full py-3.5 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-sky-500/25 transition">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .39z"/></svg>
-          <span>Telegramda ochish (@GPTifyUzAdminbot) ➔</span>
+        <a id="tgSuccessBtn" href="https://t.me/GPTifyUzAdminbot?start=ildam_lead" target="_blank" rel="noopener" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/25 transition">
+          <span>Demoga o'tish (Bog'lanish) ➔</span>
         </a>
       </div>
     </div>
@@ -1255,7 +1238,20 @@
       }
     }
 
-    function openAuditModal() {
+    function openAuditModal(pkg) {
+      if (pkg) {
+        const pkgInput = document.getElementById('leadPkg');
+        if (pkgInput) pkgInput.value = pkg;
+      }
+      const form = document.getElementById('auditForm');
+      const success = document.getElementById('formSuccess');
+      const submitBtn = document.getElementById('submitBtn');
+      if (form) form.classList.remove('hidden');
+      if (success) success.classList.add('hidden');
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Demo Olish (Bog\'lanish) ➔</span>';
+      }
       document.getElementById('leadModal').classList.remove('hidden');
     }
     function closeAuditModal() {
@@ -1263,8 +1259,7 @@
     }
 
     function selectPackage(pkgName) {
-      document.getElementById('leadPkg').value = pkgName;
-      openAuditModal();
+      openAuditModal(pkgName);
     }
 
     function setSimPreset(type) {

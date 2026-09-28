@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GPTify Meet sharhi va foydalanish qo‘llanmasi — AiNoma AI Vositalar</title>
+  <meta name="description" content="Zoom, Google Meet, Teams yoki oflayn uchrashuvlarni botlarsiz yozib oluvchi, o‘zbekcha nutqni transkripsiya qilib qarorlar va topshiriqlarni kompyuteringizda tayyorlovchi 100% maxfiy AI vosita.">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="canonical" href="https://ainoma.uz/vositalar/meet/">
+  <link rel="alternate" type="application/rss+xml" title="AiNoma RSS Tasmasi" href="https://ainoma.uz/feed.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AiNoma">
+  <meta property="og:title" content="GPTify Meet sharhi va qo‘llanmasi — AiNoma">
+  <meta property="og:description" content="Zoom, Google Meet, Teams yoki oflayn uchrashuvlarni botlarsiz yozib oluvchi, o‘zbekcha nutqni transkripsiya qilib qarorlar va topshiriqlarni kompyuteringizda tayyorlovchi 100% maxfiy AI vosita.">
+  <meta property="og:url" content="https://ainoma.uz/vositalar/meet/">
+  <meta property="og:image" content="https://ainoma.uz/assets/gptify_meet_screenshot.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPTify Meet sharhi — AiNoma">
+  <meta name="twitter:description" content="Zoom, Google Meet, Teams yoki oflayn uchrashuvlarni botlarsiz yozib oluvchi, o‘zbekcha nutqni transkripsiya qilib qarorlar va topshiriqlarni kompyuteringizda tayyorlovchi 100% maxfiy AI vosita.">
+  <meta name="twitter:image" content="https://ainoma.uz/assets/gptify_meet_screenshot.png">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="alternate icon" href="../../favicon.ico">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "GPTify Meet",
+  "applicationCategory": "Uchrashuv Bayonnomasi & Ovoz Tahlili (O‘zbekiston)",
+  "operatingSystem": "Windows, macOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Bepul demo & Konsultatsiya asosida"
+  },
+  "description": "Zoom, Google Meet, Teams yoki oflayn uchrashuvlarni botlarsiz yozib oluvchi, o‘zbekcha nutqni transkripsiya qilib qarorlar va topshiriqlarni kompyuteringizda tayyorlovchi 100% maxfiy AI vosita.",
+  "url": "https://ainoma.uz/vositalar/meet/"
+}
+  </script>
+  <script>
+    (function(){
+      var t = localStorage.getItem('ainoma-theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (t === 'dark') document.documentElement.dataset.theme = 'dark';
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="../../" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma" width="136" height="48" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/logo.svg';}">
+      </a>
+      <nav class="navlinks">
+        <a href="../../yangiliklar.html">Yangiliklar</a>
+        <a class="active" href="../../vositalar.html">AI vositalar</a>
+        <a href="../../qollanmalar.html">Qo‘llanmalar</a>
+        <a href="../../prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="../../hikoyalar.html">Hikoyalar</a>
+        <a href="../../imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="../../haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/ainomauz" target="_blank" rel="noopener">
+          <span>Kanal</span> @ainomauz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div style="padding-top:24px;">
+      <a class="more" href="../../vositalar.html">← Barcha vositalar katalogiga qaytish</a>
+    </div>
+
+    <div class="tool-detail">
+      <div class="tool-content">
+        <div class="kicker">AI vosita · Uchrashuv Bayonnomasi &amp; Ovoz Tahlili</div>
+        <div class="tool-title">
+          <div class="tool-logo" style="background:#ffffff; border:1px solid #e0e7ff; padding:4px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+            <img src="../../assets/meet_logo.png" alt="GPTify Meet" style="width:100%; height:100%; object-fit:contain; border-radius:8px;">
+          </div>
+          <div>
+            <h1>GPTify Meet</h1>
+          </div>
+        </div>
+
+        <p class="tool-copy">Zoom, Google Meet, Microsoft Teams yoki oflayn uchrashuvlarni botlarsiz yozib oluvchi, o‘zbek tilidagi erkin nutqni transkripsiya qilib, qabul qilingan qarorlar va topshiriqlarni kompyuteringizning o‘zida tayyorlovchi 100% maxfiy AI tizim.</p>
+
+        <!-- Product Screenshot -->
+        <div style="margin:20px 0 28px; border-radius:12px; overflow:hidden; border:1px solid var(--line); box-shadow:0 6px 20px rgba(0,0,0,0.07);">
+          <img src="../../assets/gptify_meet_screenshot.png" alt="GPTify Meet interfeysi skrinshoti" style="width:100%; height:auto; display:block;">
+        </div>
+
+        <div style="margin:24px 0;">
+          <a class="btn primary" href="https://meet.gptify.uz" target="_blank" rel="noopener" style="padding:12px 24px; font-size:15px; font-weight:700;">
+            Rasmiy saytga o‘tish (Sinab ko‘rish) ↗
+          </a>
+        </div>
+
+        <h2>Asosiy imkoniyatlari</h2>
+        <div class="tool-features">
+          <div class="feature-card">
+            <h4>Botlarsiz maxfiy yozib olish (Zero-Bot)</h4>
+            <p>Uchrashuvga begona bot kirmaydi, qatnashuvchilarni cho‘chitmaydi. Kompyuteringiz audio oqimini mahalliy darajada yozib oladi.</p>
+          </div>
+          <div class="feature-card">
+            <h4>O‘zbek tili va aralash nutqni aniq tushunish</h4>
+            <p>Groq Whisper va moslashtirilgan sun’iy intellekt modeli jamoaviy bahslar, o‘zbekcha-ruscha aralash nutqni xatosiz matnga aylantiradi.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Qarorlar, topshiriqlar va mas’ullar taqsimoti</h4>
+            <p>Uchrashuv yakunlanishi bilanoq kim qaysi vazifaga mas’ulligi, aniq muddatlar va potensial xavflar strukturaviy bayonnoma ko‘rinishida tayyor bo‘ladi.</p>
+          </div>
+        </div>
+
+        <h2>O‘zbekiston mutaxassislari uchun amaliy foydasi</h2>
+        <p class="tool-benefit">Har bir uchrashuvdan so‘ng 30-40 daqiqa vaqtni bayonnoma (minutes) yozishga sarflamaslik, kelishilgan topshiriqlar va mas’ullarni yo‘qotmaslik hamda tijorat sirlarini xorijiy bulutlarga chiqarmasdan xavfsiz saqlash.</p>
+      </div>
+
+      <aside class="tool-sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-title">Asbob parametrlari</div>
+          <div class="fact"><span>Kategoriya:</span> <b>Uchrashuv &amp; Ovoz Tahlili (O‘zbekiston)</b></div>
+          <div class="fact"><span>Narxi:</span> <b>Bepul demo va konsultatsiya asosida</b></div>
+          <div class="fact"><span>O‘zbek tili:</span> <b>O‘zbek tili, Rus tili, Ingliz tili</b></div>
+          <a class="btn primary" href="https://meet.gptify.uz" target="_blank" rel="noopener" style="margin-top:16px; width:100%; justify-content:center;">
+            Rasmiy sayt ↗
+          </a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <a class="logo" href="../../" aria-label="AiNoma Bosh Sahifa">
+          <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma" width="118" height="42" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/logo.svg';}">
+        </a>
+        <p style="font-size:13.5px; color:var(--muted); margin:0; max-width:440px; line-height:1.5;">AiNoma — O‘zbekistonda sun’iy intellekt bo‘yicha mustaqil tahliliy nashr, tekshirilgan vositalar katalogi va amaliy B2B qo‘llanmalar.</p>
+      </div>
+      <div class="footerlinks">
+        <a href="../../yangiliklar.html">Yangiliklar</a>
+        <a href="../../vositalar.html">AI vositalar</a>
+        <a href="../../qollanmalar.html">Qo‘llanmalar</a>
+        <a href="../../prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="../../hikoyalar.html">Hikoyalar</a>
+        <a href="../../imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="../../haqida.html">Haqida &amp; Tahririyat</a>
+        <a href="../../feed.xml" target="_blank" rel="alternate" type="application/rss+xml" style="display:inline-flex; align-items:center; gap:4px; color:var(--green); font-weight:700;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> RSS Lenta
+        </a>
+        <a href="https://t.me/ainomauz" target="_blank" rel="noopener">Telegram (@ainomauz)</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600;">GPTify Uzbekistan ↗</a>
+        <span style="display:block; width:100%; margin-top:8px; font-size:12.5px;">© 2026 AiNoma. Barcha huquqlar himoyalangan.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../app.js"></script>
+</body>
+</html>
