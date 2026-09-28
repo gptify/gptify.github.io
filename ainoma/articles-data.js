@@ -1710,8 +1710,8 @@ window.AINOMA_ARTICLES = {
     "read_time": "3 daqiqalik mutolaa",
     "readTime": "3 daqiqalik mutolaa",
     "deck": "Anthropic bosh ijrochi direktori Dario Amodei Vashingtonda Donald Trump bilan yakka tartibda uchrashib, milliy xavfsizlik, AI poygasi va tartibga solish masalalarini muhokama qildi.",
-    "img": "assets/anthropic_trump_meeting.jpg",
-    "imgAlt": "Dario Amodei va Donald Trump uchrashuvi",
+    "img": "assets/white_house_washington.jpg",
+    "imgAlt": "Vashingtondagi Oq uy binosi — Anthropic va AQSh rahbariyati muloqoti",
     "qisqacha": [
       "Anthropic bosh direktori Dario Amodei 27-sentabr oqshomida Oq uyda Donald Trump bilan shaxsiy muloqot o‘tkazdi.",
       "Uchrashuv Pentagonning ta’minot zanjiri xavfi bo‘yicha sud qaroridan so‘ng sun‘iy intellekt xavfsizligi va xalqaro raqobatbardoshlik masalalariga bag‘ishlandi.",
