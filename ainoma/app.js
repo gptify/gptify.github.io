@@ -207,6 +207,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi", u: "yangiliklar/britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026/", k: "britaniya parlamenti openai va meta rahbarlarini so‘roqqa chaqirdi ai xavfsizligi uk parliament buyuk britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnolo" },
   { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati the street dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
@@ -530,11 +531,11 @@ try {
       </div>
       <div class="ainoma-tg-toast-body">
         <div class="ainoma-tg-toast-title">AiNoma Telegramda</div>
-        <p class="ainoma-tg-toast-desc">Muhim AI yangiliklari va amaliy qo‘llanmalar birinchi bo‘lib kanalda e’lon qilinadi.</p>
+        <p class="ainoma-tg-toast-desc">Tezkor AI tahlillar va qo‘llanmalar</p>
       </div>
     </div>
     <a href="https://t.me/ainomauz" target="_blank" rel="noopener" class="ainoma-tg-toast-btn" id="ainomaTgToastJoin">
-      Kanalga a’zo bo‘lish (@ainomauz) ↗
+      Obuna bo‘lish (@ainomauz) ↗
     </a>
   `;
 
