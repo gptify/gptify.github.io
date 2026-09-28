@@ -134,7 +134,8 @@ document.addEventListener("keydown", (e) => {
 const searchIndex = [
   // Loyiha haqida va Imkoniyatlar
   { t: "O‘zbekistonda AI Imkoniyatlari: Qonunchilik, IT Park 0% Soliq va GPU Grantlari", u: "imkoniyatlar.html", k: "o'zbekiston imkoniyatlar qonun soliq it park 0% sandbox pq-358 strategiya 2030 gpu grant superkompyuter etika startap" },
-  { t: "AiNoma Haqida: Missiya, tahririyat tamoyillari va B2B ekspertiza", u: "haqida.html", k: "ainoma haqida loyiha missiya gptify shukhratbek iskandarov b2b konsalting aloqa tahririyat" },
+  { t: "AiNoma Haqida: Missiya, tahririyat tamoyillari va B2B ekspertiza", u: "haqida.html", k: "ainoma haqida loyiha missiya gptify b2b konsalting aloqa tahririyat" },
+
 
 
 
@@ -280,9 +281,9 @@ const searchIndex = [
   { t: "Mukammal so‘rov yozish san’ati: B2B va kundalik ish uchun 5 ta oltin qoida", u: "qollanma-prompting.html", k: "mukammal prompt so'rov yozish san'ati rcfo formulasi few shot chain of thought prompting" },
   { t: "Ishda sun’iy intellektdan foydalanish: 5 ta amaliy ish oqimi", u: "qollanma-ishda.html", k: "ishda sun'iy intellekt unumdorlik excel 1c didox yig'ilish bayonnoma gamma slayd" },
   { t: "Sun’iy intellekt bilan avtomatlashtirilgan tizim qurish: No-code, API va agentlar", u: "qollanma-qurish.html", k: "tizim qurish no-code make n8n api openai agent bot avtomatlashtirish" },
-  { t: "Kompaniyada sun’iy intellekt xavfsizligi va ma’lumotlar maxfiyligi: 5 qadam", u: "qollanma-xavfsizlik.html", k: "xavfsizlik korporativ maxfiylik zero data retention pii masking litsenziya policy iskandarov" },
-  { t: "Ovozli sun’iy intellekt agentlarini biznesga joriy qilish: Jonli muloqot", u: "qollanma-ovoz.html", k: "ovozli sun'iy intellekt voice ai call markaz telephony sip zadarma duplex streaming gemini live iskandarov" },
-  { t: "B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma", u: "qollanma-b2b.html", k: "b2b outreach masterklass apollo lemlist amocrm shukhratbek iskandarov" },
+  { t: "Kompaniyada sun’iy intellekt xavfsizligi va ma’lumotlar maxfiyligi: 5 qadam", u: "qollanma-xavfsizlik.html", k: "xavfsizlik korporativ maxfiylik zero data retention pii masking litsenziya policy xavfsizlik" },
+  { t: "Ovozli sun’iy intellekt agentlarini biznesga joriy qilish: Jonli muloqot", u: "qollanma-ovoz.html", k: "ovozli sun'iy intellekt voice ai call markaz telephony sip zadarma duplex streaming gemini live ovoz" },
+  { t: "B2B Outreach tizimi: 0 dan birinchi yirik shartnomagacha katta qo‘llanma", u: "qollanma-b2b.html", k: "b2b outreach masterklass apollo lemlist amocrm b2b sotuv" },
   { t: "Kompaniya moliyasi va buxgalteriyasida sun’iy intellekt: 1C, kassa va Cash Flow", u: "qollanma-moliya.html", k: "moliya buxgalteriya 1c kassa nazorati cash flow o'zbekiston fintex tannarx debit qarzdorlik" },
   { t: "Shartnomalar auditi va yuridik xatarlarda sun’iy intellekt: Didox integratsiyasi", u: "qollanma-huquq.html", k: "shartnoma yurist huquq audit didox sud jarima forsmajor xatar tekshirish" },
   { t: "Kadrlar tanlash va HR boshqaruvida sun’iy intellekt: STAR suhbatlar va rezyume", u: "qollanma-hr.html", k: "hr kadr rezyume suhbat star intervyu baholash onboarding xodim saralash" },

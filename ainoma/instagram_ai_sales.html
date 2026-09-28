@@ -816,7 +816,7 @@
 
           <button onclick="switchSimScenario('link_dropper')" id="chip-link_dropper" class="sim-chip w-full text-left p-4 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-purple-300 transition-all flex items-center justify-between group">
             <div>
-              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">8. Shukhrat Iskandarov: Auto-DM & Shaxsiy uslub</div>
+              <div class="font-bold text-sm text-slate-900 group-hover:text-purple-700">8. AILO: Auto-DM & Insondek samimiy uslub</div>
               <div class="text-xs text-slate-500 mt-0.5">Robot emas, aynan sizdek samimiy gapirib havola ochish</div>
             </div>
             <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-full">Auto-DM</span>
@@ -1663,7 +1663,7 @@
       <div class="text-center md:text-right space-y-1">
         <div class="font-medium text-slate-700">GPTify B2B AI konsaltingi va tizim muhandislari tomonidan ishlab chiqilgan</div>
         <div class="text-slate-400 text-[11px]">
-          Asoschisi: <a href="https://gptify.co" target="_blank" class="font-bold text-slate-800 hover:text-purple-600 underline">Shukhrat Iskandarov</a> (GPTify.co & Cubeo.ai) · © 2026 AILO. Barcha huquqlar himoyalangan.
+          Loyiha: <a href="https://gptify.co" target="_blank" class="font-bold text-slate-800 hover:text-purple-600 underline">GPTify Uzbekistan</a> · © 2026 AILO. Barcha huquqlar himoyalangan.
         </div>
       </div>
 
@@ -1763,7 +1763,7 @@
         </div>
 
         <div class="mt-6 flex flex-col gap-2.5 max-w-sm mx-auto">
-          <a id="btnDirectTelegram" href="https://t.me/shukhrat_ai" target="_blank" class="py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition">
+          <a id="btnDirectTelegram" href="https://t.me/ainomauzbot" target="_blank" class="py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md transition">
             <span>✈️</span>
             <span>To‘g‘ridan-to‘g‘ri Telegramda Tasdiqlash</span>
           </a>
@@ -1955,8 +1955,8 @@
         metric: '100% insoniy samimiyat & 8s javob',
         simScenario: 'link_dropper',
         chat: {
-          brandHandle: '@shukhrat_ai',
-          sender: 'Shukhrat',
+          brandHandle: '@ainomauzbot',
+          sender: "AILO AI",
           userHandle: '@bobur_alimov',
           postTitle: 'Biznes egalari uchun 50 ta B2B AI Prompts to‘plami',
           userComment: 'KITOB',
@@ -2415,11 +2415,11 @@
       },
       link_dropper: {
         badge: "⚡ Auto-DM (Bloger & Creator)",
-        brandTitle: "Shukhrat Iskandarov",
-        brandHandle: "@shukhrat_ai",
+        brandTitle: "AILO AI",
+        brandHandle: "@ainomauzbot",
         brandAvatarImg: "assets/gptify_promptlab_avatar.jpg",
         avatarText: "S",
-        sender: "Shukhrat",
+        sender: "AILO AI",
         clientName: "Bobur Alimov",
         clientHandle: "@bobur_alimov",
         clientAvatarImg: "assets/avatars/user_bobur.jpg",
@@ -2775,9 +2775,9 @@
       if (document.getElementById('summaryPlan')) document.getElementById('summaryPlan').innerText = plan;
 
       // Prepare deep link to Telegram
-      const tgText = `Assalomu alaykum, Shukhrat! AILO (Instagram AI Sotuvchi) bo‘yicha ariza qoldirdim:%0A👤 Ism: ${encodeURIComponent(name)}%0A📞 Tel: ${encodeURIComponent(phone)}%0A📷 Instagram: ${encodeURIComponent(instagram)}%0A🏢 Soha: ${encodeURIComponent(niche)}%0A⭐ Tarif: ${encodeURIComponent(plan)}`;
+      const tgText = `Assalomu alaykum! AILO (Instagram AI Sotuvchi) bo‘yicha ariza qoldirdim:%0A👤 Ism: ${encodeURIComponent(name)}%0A📞 Tel: ${encodeURIComponent(phone)}%0A📷 Instagram: ${encodeURIComponent(instagram)}%0A🏢 Soha: ${encodeURIComponent(niche)}%0A⭐ Tarif: ${encodeURIComponent(plan)}`;
       const tgBtn = document.getElementById('btnDirectTelegram');
-      if (tgBtn) tgBtn.href = `https://t.me/shukhrat_ai?text=${tgText}`;
+      if (tgBtn) tgBtn.href = `https://t.me/ainomauzbot?text=${tgText}`;
 
       // Switch to success view
       document.getElementById('auditFormContainer').classList.add('hidden');
