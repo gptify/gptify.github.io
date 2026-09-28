@@ -391,7 +391,7 @@ window.AINOMA_TOOLS = {
     category: "AI Sotuvchi & Direct Voronka (O‘zbekiston)",
     pricing: "Oylik obuna (390,000 so‘mdan boshlab / 14 kunlik kafolat)",
     lang: "O‘zbek tili, Rus tili",
-    url: "https://gptify.github.io/ailo",
+    url: "https://ailo.gptify.uz",
     bg: "#ff5e4d",
     initial: "Ai",
     f1_t: "8 soniyada Reels-to-Direct voronkasi",
