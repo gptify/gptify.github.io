@@ -362,5 +362,25 @@ window.AINOMA_TOOLS = {
     f3_d: "Mijozning telefon raqami va buyurtmasini olib, CRM yoki Google Sheets bazasiga bir zumda yozadi.",
     benefit: "Instagram Direct'dagi xabarlarni o‘tkazib yubormasdan, har bir murojaatni tezda buyurtmaga aylantirish.",
     prompt: "Instagram Reels ostiga 'BAZA' deb yozgan foydalanuvchiga Direct orqali B2B katalog havolasini yuboruvchi va ularning telefon raqamini so‘rab oluvchi 3 bosqichli avtomatik ssenariy tuz."
+  },
+  ezgusavdo: {
+    id: "ezgusavdo",
+    name: "EzguSavdo AI",
+    kicker: "AI vosita · O‘zbekiston Tovar & Savdo Boti",
+    headline: "Chakana savdo va tovar bizneslari uchun 24/7 ishlovchi AI-sotuvchi. Instagram Direct, Telegram va veb-saytda mijozlarga tovar topadi, Billz va 1C qoldiqlarini tekshiradi hamda nazoratli savdolashadi.",
+    category: "AI Sotuvchi & E-commerce (O‘zbekiston)",
+    pricing: "Freemium (50 ta bepul dialog / pullik tariflar)",
+    lang: "O‘zbek tili, Rus tili",
+    url: "https://ezgusavdo.uz/uz",
+    bg: "#07162f",
+    initial: "ES",
+    f1_t: "Billz va 1C qoldiqlari sinxronizatsiyasi",
+    f1_d: "Haqiqiy narx va ombor qoldiqlari bo‘yicha aniq ma'lumot beradi, quruq taxmin qilmaydi.",
+    f2_t: "Nazoratli savdolashuv (Marja himoyasi)",
+    f2_d: "Mijoz chegirma so‘raganda, biznes belgilagan minimal narxdan pastga tushmasdan chegirma hisoblaydi.",
+    f3_t: "Ovozli xabarlarni tushunish",
+    f3_d: "O‘zbek va rus tillaridagi audio/ovozli so‘rovlarni tushunib, mos tovarlarni tavsiya qiladi.",
+    benefit: "Kunlik o‘nlab javobsiz xabarlarni nolgacha tushirib, sotuv bo‘limi yuklamasini kamaytirish.",
+    prompt: "EzguSavdo ssenariysi: Xaridor mahsulot so‘raganda, ombor qoldig‘ini tekshirib, yetkazib berish shartlari bilan darhol rasmiylashtirish."
   }
 };
