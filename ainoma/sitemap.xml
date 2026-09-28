@@ -151,6 +151,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/yangiliklar/nvidia-google-emerald-100-gigavatt-energiya-alyansi-2026/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/yangiliklar/anthropic-dario-amodei-oq-uy-trump-uchrashuv-2026/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/yangiliklar/chatgpt-claude-gemini-solishtirish/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -385,31 +397,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ainoma.uz/vositalar/ailo/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/vositalar/ildam/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/vositalar/meet/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/vositalar/ezgusavdo/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <loc>https://ainoma.uz/vositalar/adcreative/</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ainoma.uz/vositalar/adcreative/</loc>
+    <loc>https://ainoma.uz/vositalar/ailo/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -451,7 +445,19 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/vositalar/ezgusavdo/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/vositalar/gamma/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/vositalar/ildam/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -482,6 +488,12 @@
   </url>
   <url>
     <loc>https://ainoma.uz/vositalar/maya/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/vositalar/meet/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
