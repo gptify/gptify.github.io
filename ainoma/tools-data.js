@@ -405,9 +405,9 @@ window.AINOMA_TOOLS = {
   },
   ildam: {
     id: "ildam",
-    name: "ILDAM by GPTify",
-    kicker: "AI vosita · B2B & YaTT AI Savdo Tizimi",
-    headline: "Telegram va Instagramdan keluvchi har bir lidga 10 soniyada javob beruvchi 24/7 AI sotuvchi, zamonaviy savdo konveyeri va 1,200+ mahalliy korxona tasdiqlangan ochiq B2B bazasiga ega aqlli platforma.",
+    name: "ILDAM",
+    kicker: "AI vosita · B2B & YaTT AI Savdo CRM",
+    headline: "Telegram va Instagramdan keluvchi har bir lidga 10 soniyada javob beruvchi 24/7 AI sotuvchi, zamonaviy savdo konveyeri va 1,200+ mahalliy korxona tasdiqlangan ochiq B2B bazasiga ega aqlli CRM tizimi.",
     category: "B2B Savdo & CRM (O‘zbekiston)",
     pricing: "Oyiga $99 dan boshlab",
     lang: "O‘zbek tili, Rus tili",
@@ -418,8 +418,8 @@ window.AINOMA_TOOLS = {
     f1_d: "Telegram va Instagram Direct orqali kelgan yangi mijozlarga 10 soniyada mahsulot, narx va xizmatlarni tushuntiradi hamda savdoni yopadi.",
     f2_t: "1,200+ Korxona B2B Bazasi",
     f2_d: "O‘zbekistondagi korxona va tashkilotlarning tasdiqlangan ochiq rekvizitlari va har biriga moslashtirilgan outreach skriptlari.",
-    f3_t: "5 bosqichli konveyer va AI Copilot",
-    f3_d: "Lidni saralashdan to bitim yopilishigacha bo‘lgan jarayonlarni boshqaradi, tijorat taklifnomalari va e’tirozlarni yechadi.",
+    f3_t: "5 bosqichli CRM konveyer va AI Copilot",
+    f3_d: "Lidni saralashdan to bitim yopilishigacha bo‘lgan CRM jarayonlarini boshqaradi, tijorat taklifnomalari va e’tirozlarni yechadi.",
     benefit: "Kechki va dam olish kunlaridagi mijoz yo‘qotishlarini nolgacha tushirib, B2B savdo aylanmasini oshirish.",
     prompt: ""
   },
