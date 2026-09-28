@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="c4_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <!-- Executive Deep Midnight -->
+    <linearGradient id="c4_slate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <!-- Warm Amber Gold Accent -->
+    <linearGradient id="c4_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Emerald Accent -->
+    <linearGradient id="c4_emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <filter id="c4_shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#c4_bg)" stroke="#E2E8F0" stroke-width="2.5" filter="url(#c4_shadow)"/>
+
+  <!-- Outer Executive Crest Ring (Double Thin Border) -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <circle cx="256" cy="256" r="166" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- GA Interlocking Architectural Monogram -->
+  <!-- Outer G Frame -->
+  <path d="M 340 180
+           C 316 140, 276 120, 230 120
+           C 156 120, 100 178, 100 256
+           C 100 334, 156 392, 234 392
+           C 310 392, 364 340, 368 266
+           L 248 266
+           L 248 304
+           L 322 304
+           C 310 334, 276 352, 234 352
+           C 180 352, 142 312, 142 256
+           C 142 200, 180 160, 230 160
+           C 264 160, 296 176, 312 204
+           L 340 180 Z"
+        fill="url(#c4_slate)"/>
+
+  <!-- Inner "A" (Academy Apex) in Vivid Emerald -->
+  <polygon points="256,170 216,252 296,252" fill="none" stroke="url(#c4_emerald)" stroke-width="22" stroke-linejoin="round"/>
+  <!-- Crossbar of A -->
+  <line x1="204" y1="252" x2="308" y2="252" stroke="url(#c4_emerald)" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Top Academic Gold Star -->
+  <polygon points="256,92 262,106 276,107 265,116 269,130 256,122 243,130 247,116 236,107 250,106"
+           fill="url(#c4_gold)"/>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas Gradient -->
+    <linearGradient id="c1_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <!-- Main Indigo to Cyan-Emerald Flow -->
+    <linearGradient id="c1_arch" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Emerald Growth Arrow -->
+    <linearGradient id="c1_arrow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Soft Ambient Shadow -->
+    <filter id="c1_shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#c1_bg)" stroke="#E2E8F0" stroke-width="2.5" filter="url(#c1_shadow)"/>
+
+  <!-- Inner Soft Grid Ring -->
+  <circle cx="256" cy="256" r="164" fill="none" stroke="#F1F5F9" stroke-width="2.5"/>
+
+  <!-- Main G Body (Architectural Precision Cut) -->
+  <path d="M 356 188
+           A 136 136 0 1 0 392 256
+           L 256 256
+           A 20 20 0 0 1 256 216
+           L 348 216
+           A 20 20 0 0 1 368 236
+           A 176 176 0 1 1 324 148
+           L 356 188 Z"
+        fill="url(#c1_arch)"/>
+
+  <!-- Growth Vector Chevron & Arrow (Evolution of GPTify Original Identity) -->
+  <!-- Dynamic Diagonal Arrow Path -->
+  <path d="M 276 236
+           L 388 124
+           M 332 124
+           L 388 124
+           L 388 180"
+        fill="none"
+        stroke="url(#c1_arrow)"
+        stroke-width="36"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- AI Pulse Beacon (Small Accent Diamond) -->
+  <circle cx="256" cy="256" r="14" fill="#10B981"/>
+</svg>
