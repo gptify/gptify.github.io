@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify OS Core — Biznesingiz Uchun 4 Asosiy AI Operatsion Ustun | GPTify</title>
+  <meta name="description" content="GPTify OS Core: Ailo (24/7 AI Muloqot), ILDAM CRM (Faol Savdo Konveyeri), GPTify Meet (Maxfiy AI Kotib) va Jarvis (Avtonom Flot Boshqaruvi). Biznesingizni yagona tizimda avtomatlashtiring.">
+  <link rel="canonical" href="https://gptify.co/os">
+  <link rel="icon" type="image/png" href="assets/ailo_logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+            marker: ['"Permanent Marker"', 'cursive'],
+          },
+          colors: {
+            brand: {
+              50: '#F5F3FF',
+              100: '#EDE9FE',
+              500: '#6366F1',
+              600: '#4F35F3',
+              700: '#432DD7',
+              900: '#141126',
+              950: '#0B0917',
+            },
+            ailo: '#059669',
+            ildam: '#F59E0B',
+            meet: '#0284C7',
+            jarvis: '#8B5CF6'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAFAFD;
+      color: #0F0E1A;
+      overflow-x: hidden;
+    }
+    .gradient-hero {
+      background: radial-gradient(60% 60% at 50% 0%, #ECE9FE 0%, #F6F4FF 40%, #FAFAFD 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(79, 53, 243, 0.12);
+    }
+    .status-live {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulseGreen 2s infinite;
+    }
+    @keyframes pulseGreen {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-100 selection:text-brand-700">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="E'lon" class="bg-brand-950 text-white text-xs font-medium py-2.5 px-4 text-center border-b border-brand-900/60 flex items-center justify-center gap-2 flex-wrap">
+    <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold text-[11px] border border-emerald-500/30">
+      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 status-live"></span> JONLI REJIMDA
+    </span>
+    <span>GPTify OS Core tizimlari rasman ishga tushirildi:</span>
+    <span class="font-mono text-slate-300">meet.gptify.uz • ailo.gptify.uz • ildam.gptify.uz</span>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <a href="os.html" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white font-black text-lg shadow-md shadow-brand-600/30 group-hover:scale-105 transition-transform">
+            G
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-black tracking-tight text-slate-950 leading-none">GPTify <span class="text-brand-600">OS</span></span>
+            <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase font-bold mt-1">Autonomous Core</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-700 pl-4 border-l border-slate-200">
+          <a href="#core-fleet" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition-colors">4 Asosiy Ustun</a>
+          <a href="#workflow" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition-colors">Ulanish Sxemasi</a>
+          <a href="https://ailo.gptify.uz" target="_blank" class="px-3 py-1.5 rounded-lg hover:text-ailo hover:bg-emerald-50 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-ailo"></span> Ailo
+          </a>
+          <a href="https://ildam.gptify.uz" target="_blank" class="px-3 py-1.5 rounded-lg hover:text-amber-600 hover:bg-amber-50 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-ildam"></span> Ildam CRM
+          </a>
+          <a href="https://meet.gptify.uz" target="_blank" class="px-3 py-1.5 rounded-lg hover:text-meet hover:bg-sky-50 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-meet"></span> GPTify Meet
+          </a>
+          <a href="jarvis_fleet.html" class="px-3 py-1.5 rounded-lg hover:text-jarvis hover:bg-purple-50 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-jarvis"></span> Jarvis
+          </a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="hidden sm:inline-flex text-xs font-semibold px-3 py-2 text-slate-600 hover:text-slate-900 border border-slate-200 rounded-lg hover:bg-slate-50 transition">
+          ← Akademiya & Darslar
+        </a>
+        <a href="https://meet.gptify.uz" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-900 hover:bg-brand-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-brand-900/20 transition-all">
+          <span>Demo Belgilash</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="gradient-hero pt-16 pb-20 px-4 sm:px-6 lg:px-8 border-b border-slate-200/80">
+    <div class="max-w-5xl mx-auto text-center">
+      
+      <!-- Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-500/20 shadow-sm text-xs font-bold text-brand-700 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 status-live"></span>
+        <span>GPTify OS Core 2026: Yagona Operatsion Ekotizim</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-black text-slate-950 tracking-tight leading-[1.12] mb-6">
+        Biznesingizni yurituvchi <br class="hidden sm:inline">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-purple-600 to-indigo-600">4 ta avtonom AI operatsion ustun.</span>
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10">
+        Eskirgan passiv jadvallar va uzilib qolgan messenjerlarni unuting. 
+        <strong class="text-slate-900 font-semibold">Ailo</strong> mijoz bilan gaplashadi, 
+        <strong class="text-slate-900 font-semibold">ILDAM CRM</strong> lidlarni saralaydi, 
+        <strong class="text-slate-900 font-semibold">GPTify Meet</strong> uchrashuvlarni hujjatlashtiradi, 
+        <strong class="text-slate-900 font-semibold">Jarvis</strong> esa butun flotni 24/7 boshqaradi.
+      </p>
+
+      <!-- Subdomain Quick-Launch Bar -->
+      <div class="bg-white p-3 sm:p-4 rounded-2xl shadow-xl shadow-slate-200/70 border border-slate-200 max-w-4xl mx-auto mb-10">
+        <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-bold mb-3 text-left px-2">
+          ⚡ Jonli Ishga Tushirilgan Platformalar (Direct Subdomain Access):
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+          
+          <a href="https://ailo.gptify.uz" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-emerald-100 bg-emerald-50/50 hover:bg-emerald-50 hover:border-emerald-300 transition group text-left">
+            <div>
+              <div class="text-xs font-mono font-bold text-emerald-800 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> ailo.gptify.uz
+              </div>
+              <div class="text-xs font-bold text-slate-800 mt-0.5">AILO • 24/7 AI Sotuvchi</div>
+            </div>
+            <span class="text-emerald-600 text-xs font-bold group-hover:translate-x-0.5 transition-transform">↗</span>
+          </a>
+
+          <a href="https://ildam.gptify.uz" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-amber-100 bg-amber-50/50 hover:bg-amber-50 hover:border-amber-300 transition group text-left">
+            <div>
+              <div class="text-xs font-mono font-bold text-amber-800 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> ildam.gptify.uz
+              </div>
+              <div class="text-xs font-bold text-slate-800 mt-0.5">ILDAM • AI CRM</div>
+            </div>
+            <span class="text-amber-600 text-xs font-bold group-hover:translate-x-0.5 transition-transform">↗</span>
+          </a>
+
+          <a href="https://meet.gptify.uz" target="_blank" class="flex items-center justify-between p-3 rounded-xl border border-sky-100 bg-sky-50/50 hover:bg-sky-50 hover:border-sky-300 transition group text-left">
+            <div>
+              <div class="text-xs font-mono font-bold text-sky-800 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span> meet.gptify.uz
+              </div>
+              <div class="text-xs font-bold text-slate-800 mt-0.5">GPTify Meet • AI Kotib</div>
+            </div>
+            <span class="text-sky-600 text-xs font-bold group-hover:translate-x-0.5 transition-transform">↗</span>
+          </a>
+
+          <a href="jarvis_fleet.html" class="flex items-center justify-between p-3 rounded-xl border border-purple-100 bg-purple-50/50 hover:bg-purple-50 hover:border-purple-300 transition group text-left">
+            <div>
+              <div class="text-xs font-mono font-bold text-purple-800 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span> jarvis_fleet
+              </div>
+              <div class="text-xs font-bold text-slate-800 mt-0.5">Jarvis • Fleet Console</div>
+            </div>
+            <span class="text-purple-600 text-xs font-bold group-hover:translate-x-0.5 transition-transform">→</span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Trust Row -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-500">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          O'zbek tili va dialektlarini 100% tushunish
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          24/7 Inson aralashuvisiz uzluksiz ishlash
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          B2B CRM & Telegram ekotizimiga tayyor integratsiya
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4 CORE ENGINES SHOWCASE ==================== -->
+  <section id="core-fleet" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
+        GPTify OS Arxitekturasi
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 mt-4 tracking-tight">
+        4 Ta Ixtisoslashgan AI Mexanizm
+      </h2>
+      <p class="text-base text-slate-600 mt-3">
+        Har bir modul o'z vazifasini mukammal bajaradi va umumiy operatsion zanjir orqali sinxronlashadi.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- ================= PILLAR 1: AILO ================= -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 card-hover relative overflow-hidden flex flex-col justify-between">
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-400 to-teal-600"></div>
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-xl">
+                A
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-emerald-600 uppercase tracking-wider">Ustun 01 • Aloqa & Sotuv</span>
+                <h3 class="text-2xl font-black text-slate-900">AILO</h3>
+              </div>
+            </div>
+            <a href="https://ailo.gptify.uz" target="_blank" class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 font-mono text-xs font-bold border border-emerald-200 hover:bg-emerald-100 transition flex items-center gap-1">
+              <span>ailo.gptify.uz</span> ↗
+            </a>
+          </div>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Instagram Direct va Telegram'ga kelgan barcha murojaatlarga <strong>8 soniyada</strong> insondek javob beruvchi, mahsulotni tavsiya qiluvchi va xaridga tayyor lidlarni saralovchi AI sotuvchi.
+          </p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-emerald-500 font-bold">✓</span>
+              <span><strong>Meta Rasmiy Graph API:</strong> Bloklanish xavfisiz 100% qonuniy integratsiya.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-emerald-500 font-bold">✓</span>
+              <span><strong>Sheva & Audio Tushunish:</strong> O'zbek tilidagi erkin yozilgan so'zlar va ovozli xabarlarni aniq tushunadi.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-emerald-500 font-bold">✓</span>
+              <span><strong>ManyChat'dan 10x Kuchli:</strong> Oddiy qolipli tugmalar emas, to'liq tabiiy dialog quradi.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-slate-100 flex flex-wrap items-center gap-3">
+          <a href="https://ailo.gptify.uz" target="_blank" class="flex-1 text-center py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-emerald-600/20 transition">
+            ailo.gptify.uz saytiga o'tish ➔
+          </a>
+          <a href="ailo.html" class="py-3 px-4 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 text-xs sm:text-sm font-semibold transition">
+            Tafsilotlar
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= PILLAR 2: ILDAM CRM ================= -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 card-hover relative overflow-hidden flex flex-col justify-between">
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-400 to-orange-500"></div>
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center font-black text-xl">
+                ⚡
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-amber-600 uppercase tracking-wider">Ustun 02 • Savdo Konveyeri</span>
+                <h3 class="text-2xl font-black text-slate-900">ILDAM CRM</h3>
+              </div>
+            </div>
+            <a href="https://ildam.gptify.uz" target="_blank" class="px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 font-mono text-xs font-bold border border-amber-200 hover:bg-amber-100 transition flex items-center gap-1">
+              <span>ildam.gptify.uz</span> ↗
+            </a>
+          </div>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Eskirgan passiv CRMlar kabi faqat yozuv saqlamaydi. ILDAM lidlarni <strong>10 soniyada saralaydi</strong>, bosqichma-bosqich to'lovlarni nazorat qiladi va savdo bo'limini harakatga keltiradi.
+          </p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-amber-500 font-bold">✓</span>
+              <span><strong>10-Soniyalik Jonli Triage:</strong> Kelgan har bir lidning to'lov qobiliyati va qiziqish darajasini avtomatik baholaydi.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-amber-500 font-bold">✓</span>
+              <span><strong>Milestone To'lovlar Nazorati:</strong> B2B shartnomalardagi 30/70 yoki avans to'lovlarini eslatadi.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-amber-500 font-bold">✓</span>
+              <span><strong>1,200+ Korxonalar Bazasi:</strong> O'zbekistondagi faol yuridik korxonalar ma'lumotnomasi bilan tayyor integratsiya.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-slate-100 flex flex-wrap items-center gap-3">
+          <a href="https://ildam.gptify.uz" target="_blank" class="flex-1 text-center py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs sm:text-sm font-bold shadow-md shadow-amber-500/20 transition">
+            ildam.gptify.uz saytiga o'tish ➔
+          </a>
+          <a href="ildam.html" class="py-3 px-4 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 text-xs sm:text-sm font-semibold transition">
+            Tafsilotlar
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= PILLAR 3: GPTIFY MEET ================= -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 card-hover relative overflow-hidden flex flex-col justify-between">
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-sky-400 to-blue-600"></div>
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center font-black text-xl">
+                🎙️
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-sky-600 uppercase tracking-wider">Ustun 03 • Uchrashuv & Bayonnoma</span>
+                <h3 class="text-2xl font-black text-slate-900">GPTify Meet</h3>
+              </div>
+            </div>
+            <a href="https://meet.gptify.uz" target="_blank" class="px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 font-mono text-xs font-bold border border-sky-200 hover:bg-sky-100 transition flex items-center gap-1">
+              <span>meet.gptify.uz</span> ↗
+            </a>
+          </div>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Begona botlarsiz, <strong>100% maxfiy AI kotib</strong>. Zoom, Google Meet va Teams uchrashuvlaridagi har bir qaror, vazifalar va mas'ullarni avtomatik qayd etib, Telegramga yuboradi.
+          </p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-sky-500 font-bold">✓</span>
+              <span><strong>Zero-Bot Maxfiylik:</strong> Ekrandan begona bot ko'rinmaydi, audio oqimi to'liq shifrlangan.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-sky-500 font-bold">✓</span>
+              <span><strong>Aniq O'zbekcha Transkripsiya:</strong> Texnik va biznes terminlarni chalkashtirmasdan yozadi.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-sky-500 font-bold">✓</span>
+              <span><strong>Topshiriqlar & Action Items:</strong> "Kim nima qilishi kerak?" savoliga uchrashuv tugashi bilanoq tayyor bayonnoma.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-slate-100 flex flex-wrap items-center gap-3">
+          <a href="https://meet.gptify.uz" target="_blank" class="flex-1 text-center py-3 px-4 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-sky-600/20 transition">
+            meet.gptify.uz saytiga o'tish ➔
+          </a>
+          <a href="meet.html" class="py-3 px-4 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 text-xs sm:text-sm font-semibold transition">
+            Tafsilotlar
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= PILLAR 4: JARVIS ================= -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 card-hover relative overflow-hidden flex flex-col justify-between">
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-purple-500 to-indigo-600"></div>
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center font-black text-xl">
+                🤖
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-purple-600 uppercase tracking-wider">Ustun 04 • Flot Markazi</span>
+                <h3 class="text-2xl font-black text-slate-900">JARVIS</h3>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 font-mono text-xs font-bold border border-purple-200">
+              Fleet Console
+            </span>
+          </div>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Barcha agentlar faoliyatini bir joyda jamlovchi <strong>avtonom operatsion kokpit</strong>. Telemetriya, xabarlar oqimi va integratsiyalarni 24/7 nazorat qilib boradi.
+          </p>
+
+          <div class="space-y-3 mb-8">
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-purple-500 font-bold">✓</span>
+              <span><strong>Ko'p Agentli Telemetriya:</strong> Ailo, CRM va Meet o'rtasidagi ma'lumotlar oqimini real vaqtda kuzatadi.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-purple-500 font-bold">✓</span>
+              <span><strong>Xatoliklarni Avtomatik Tuzatish:</strong> To'xtab qolgan ssenariylarni aniqlab, darhol muqobil yo'lni ishga tushiradi.</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+              <span class="text-purple-500 font-bold">✓</span>
+              <span><strong>Markaziy Audit Jurnali:</strong> Har bir tranzaksiya, yuborilgan xabar va qabul qilingan qarorning to'liq tarixi.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-slate-100 flex flex-wrap items-center gap-3">
+          <a href="jarvis_fleet.html" class="flex-1 text-center py-3 px-4 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-purple-600/20 transition">
+            Fleet Console'ni ochish ➔
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== WORKFLOW CONVEYOR ==================== -->
+  <section id="workflow" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-400 bg-brand-900/60 px-3 py-1 rounded-full border border-brand-700">
+          Uzluksiz Konveyer
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-4">
+          GPTify OS Qanday Birlashadi?
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          Mijoz birinchi marta yozgan soniyadan to shartnoma imzolanib, jamoa hisobot olguncha bo'lgan to'liq tsikl.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+        
+        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700">
+          <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 font-mono font-bold flex items-center justify-center text-xs mb-4 border border-emerald-500/30">
+            01
+          </div>
+          <h4 class="font-bold text-white text-base mb-1">Muloqotni Boshlash</h4>
+          <span class="text-[11px] font-mono text-emerald-400 block mb-2">AILO • 8 soniyada</span>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Mijoz Instagram yoki Telegramda yozadi. Ailo darhol ehtiyojni aniqlab, qiziqish darajasini belgilaydi.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700">
+          <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 font-mono font-bold flex items-center justify-center text-xs mb-4 border border-amber-500/30">
+            02
+          </div>
+          <h4 class="font-bold text-white text-base mb-1">Saralash & Tranzaksiya</h4>
+          <span class="text-[11px] font-mono text-amber-400 block mb-2">ILDAM CRM • 10 soniyada</span>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Lid avtomatik CRM kankaniga tushadi. Mas'ul menejer belgilanadi va to'lov shartlari shakllantiriladi.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700">
+          <div class="w-8 h-8 rounded-full bg-sky-500/20 text-sky-400 font-mono font-bold flex items-center justify-center text-xs mb-4 border border-sky-500/30">
+            03
+          </div>
+          <h4 class="font-bold text-white text-base mb-1">Uchrashuv & Qarorlar</h4>
+          <span class="text-[11px] font-mono text-sky-400 block mb-2">GPTIFY MEET • Jonli</span>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Onlayn uchrashuv yozib olinadi, kelishuvlar va muddatlar saralanib, jamoaga Telegram orqali yuboriladi.
+          </p>
+        </div>
+
+        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700">
+          <div class="w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-mono font-bold flex items-center justify-center text-xs mb-4 border border-purple-500/30">
+            04
+          </div>
+          <h4 class="font-bold text-white text-base mb-1">Operatsion Nazorat</h4>
+          <span class="text-[11px] font-mono text-purple-400 block mb-2">JARVIS • 24/7 Flot</span>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Keyingi qadamlar, eslatmalar va integratsiya zanjirlari to'xtab qolmasligi uchun butun jarayonni monitoring qiladi.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Live CTA inside dark block -->
+      <div class="mt-14 p-8 rounded-3xl bg-gradient-to-r from-brand-900 via-indigo-950 to-slate-900 border border-brand-700/50 text-center">
+        <h3 class="text-xl sm:text-2xl font-black text-white mb-3">
+          Biznesingizda GPTify OS tizimini joriy qilmoqchimisiz?
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto mb-6">
+          Bizning jamoa kompaniyangiz jarayonlarini audit qilib, 48 soat ichida Ailo, ILDAM va Meet tizimlarini biznesingizga to'liq ulab beradi.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <a href="https://meet.gptify.uz" target="_blank" class="px-6 py-3 rounded-full bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm shadow-lg shadow-brand-600/30 transition">
+            meet.gptify.uz orqali uchrashuv belgilash ➔
+          </a>
+          <a href="https://t.me/shukhrat_iskandarov" target="_blank" class="px-6 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-600 transition">
+            Telegram orqali bog'lanish
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-white border-t border-slate-200 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-sm">
+          G
+        </div>
+        <div>
+          <span class="font-extrabold text-slate-900 text-sm">GPTify OS Core</span>
+          <span class="text-xs text-slate-500 block">Amaliy B2B AI tizimlari va ish jarayonlarini avtomatlashtirish</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-600">
+        <a href="https://ailo.gptify.uz" target="_blank" class="hover:text-emerald-600">ailo.gptify.uz</a>
+        <span>•</span>
+        <a href="https://ildam.gptify.uz" target="_blank" class="hover:text-amber-600">ildam.gptify.uz</a>
+        <span>•</span>
+        <a href="https://meet.gptify.uz" target="_blank" class="hover:text-sky-600">meet.gptify.uz</a>
+        <span>•</span>
+        <a href="jarvis_fleet.html" class="hover:text-purple-600">Jarvis Fleet</a>
+        <span>•</span>
+        <a href="index.html" class="hover:text-slate-900">GPTify Akademiya</a>
+      </div>
+
+      <div class="text-xs text-slate-400">
+        © 2026 GPTify. Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

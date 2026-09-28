@@ -640,6 +640,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex-wrap: wrap;
 }
 .footer .logo { width: 110px; }
 .footerlinks {
@@ -652,6 +653,26 @@ footer {
   flex-wrap: wrap;
 }
 .footerlinks a:hover { color: var(--green); }
+
+.footer-disclaimer {
+  width: 100%;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.footer-disclaimer p {
+  margin: 0 0 6px;
+}
+.footer-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+.footer-disclaimer b {
+  color: var(--ink);
+  font-weight: 600;
+}
 
 /* Multi-column Footer Grid (Qo'llanmalar & Inner Pages) */
 .footer-grid {
