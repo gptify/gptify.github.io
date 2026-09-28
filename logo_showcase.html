@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify Academy — Logo Redizayn Variantlari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border: #E2E8F0;
+      --border-focus: #CBD5E1;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --brand-indigo: #4F46E5;
+      --brand-blue: #2563EB;
+      --brand-emerald: #059669;
+      --brand-amber: #D97706;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-base);
+      color: var(--text-main);
+      padding: 40px 24px 80px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: #EEF2FF;
+      border: 1px solid #C7D2FE;
+      color: var(--brand-indigo);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+    }
+    .header-title {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+      color: #0F172A;
+    }
+    .header-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+    .grid-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .option-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .option-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: #CBD5E1;
+    }
+    .card-top {
+      padding: 24px;
+      text-align: center;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .option-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .option-tag.recommended {
+      background: #ECFDF5;
+      border-color: #A7F3D0;
+      color: var(--brand-emerald);
+    }
+    .logo-hero-preview {
+      width: 140px;
+      height: 140px;
+      margin: 16px auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      border-radius: 28px;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1);
+      overflow: hidden;
+      padding: 12px;
+    }
+    .logo-hero-preview img, .logo-hero-preview svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .option-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+    .option-style-pill {
+      font-size: 11.5px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--brand-indigo);
+      background: #EEF2FF;
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .option-desc {
+      font-size: 13.5px;
+      color: #475569;
+      line-height: 1.55;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+    .preview-cluster {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 14px;
+      margin-top: auto;
+    }
+    .cluster-title {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .mockup-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #EDF2F7;
+    }
+    .mockup-row:last-child { border-bottom: none; }
+    .mockup-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    /* Telegram Circle Mockup */
+    .tg-avatar-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1.5px solid #CBD5E1;
+      background: #FFFFFF;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+    .tg-avatar-box img, .tg-avatar-box svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Web Navbar Mockup */
+    .navbar-brand-mockup {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: 1px solid #E2E8F0;
+    }
+    .navbar-brand-mockup img, .navbar-brand-mockup svg {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+    }
+    .navbar-brand-mockup span {
+      font-size: 12px;
+      font-weight: 800;
+      color: #0F172A;
+    }
+    /* Certificate Stamp */
+    .cert-stamp-mockup {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #FEF3C7;
+      border: 1.5px dashed #D97706;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 4px;
+    }
+    .cert-stamp-mockup img, .cert-stamp-mockup svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Comparison Section */
+    .comparison-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 40px;
+    }
+    .section-heading {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .section-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .live-demo-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .bar-item {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .bar-item h4 {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .bar-item p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Action bar */
+    .action-bar {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-radius: 18px;
+      padding: 24px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .action-bar h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .action-bar p {
+      font-size: 13px;
+      color: #94A3B8;
+    }
+    .btn-select {
+      background: #10B981;
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s;
+    }
+    .btn-select:hover {
+      background: #059669;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-badge">✦ GPTify Brand System 2.0</div>
+    <h1 class="header-title">GPTify Academy — Logo Redizayn Variantlari</h1>
+    <p class="header-desc">
+      Veb-platforma (`academy.gptify.uz`) va Telegram ilovasi (`@GPTify_uz_bot`) uchun maxsus ishlab chiqilgan, zamonaviy executive yorug' (light) palitradagi 4 ta asosiy brend ramzi.
+    </p>
+
+    <!-- 4 LOGO OPTIONS GRID -->
+    <div class="grid-options">
+
+      <!-- OPTION 1: Modern Squircle Ribbon (RECOMMENDED) -->
+      <div class="option-card" style="border: 2px solid #10B981;">
+        <div class="card-top">
+          <span class="option-tag recommended">★ Tavsiya etiladi (Top Pick)</span>
+          <div class="logo-hero-preview">
+            <img src="assets/logo_option_c.jpg" alt="Option 1: Modern Squircle Ribbon">
+          </div>
+        </div>
+        <div class="card-body">
+          <h2 class="option-title">Variant 1: Modern Squircle Ribbon</h2>
+          <span class="option-style-pill">SaaS App Icon · Linear & Apple Aesthetic</span>
+          <p class="option-desc">
+            Toza oq squircle ustida joylashgan qatlamli "G" harfi. Moviy safir, zumrad yashil va firuza ranglar uyg'unligi. Telegram Mini App va mobil ekranlarda eng yuqori darajada ko'zga tashlanadi va premium taassurot qoldiradi.
+          </p>
+
+          <div class="preview-cluster">
+            <div class="cluster-title">Qanday ko'rinadi (Context Preview):</div>
+            <div class="mockup-row">
+              <span class="mockup-label">Telegram Profil (Doira):</span>
+              <div class="tg-avatar-box">
+                <img src="assets/logo_option_c.jpg" alt="TG Circle">
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Veb Navbar (Sayt):</span>
+              <div class="navbar-brand-mockup">
+                <img src="assets/logo_option_c.jpg" alt="Nav">
+                <span>GPTify Academy</span>
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Sertifikat Muhri:</span>
+              <div class="cert-stamp-mockup">
+                <img src="assets/logo_option_c.jpg" alt="Cert">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTION 2: Geometric G + AI Vector Spark -->
+      <div class="option-card">
+        <div class="card-top">
+          <span class="option-tag">Variant 2</span>
+          <div class="logo-hero-preview">
+            <img src="assets/logo_option_a.jpg" alt="Option 2: Geometric G Spark">
+          </div>
+        </div>
+        <div class="card-body">
+          <h2 class="option-title">Variant 2: Geometric Vector Spark</h2>
+          <span class="option-style-pill">Minimalist Tech · Growth & AI Spark</span>
+          <p class="option-desc">
+            Arxitekturaviy qat'iy "G" konturi va uning markazidan o'ng tomonga (kelajakka) yo'nalgan AI nuri hamda o'sish vektori. Emerald-dan Cyan-ga o'tuvchi toza gradient. Oddiy, aniq va muhandislik ruhini ifodalaydi.
+          </p>
+
+          <div class="preview-cluster">
+            <div class="cluster-title">Qanday ko'rinadi (Context Preview):</div>
+            <div class="mockup-row">
+              <span class="mockup-label">Telegram Profil (Doira):</span>
+              <div class="tg-avatar-box">
+                <img src="assets/logo_option_a.jpg" alt="TG Circle">
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Veb Navbar (Sayt):</span>
+              <div class="navbar-brand-mockup">
+                <img src="assets/logo_option_a.jpg" alt="Nav">
+                <span>GPTify Academy</span>
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Sertifikat Muhri:</span>
+              <div class="cert-stamp-mockup">
+                <img src="assets/logo_option_a.jpg" alt="Cert">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTION 3: Academic Crest & Infinity Knot -->
+      <div class="option-card">
+        <div class="card-top">
+          <span class="option-tag">Variant 3</span>
+          <div class="logo-hero-preview">
+            <img src="assets/logo_option_b.jpg" alt="Option 3: Academic Crest">
+          </div>
+        </div>
+        <div class="card-body">
+          <h2 class="option-title">Variant 3: Academic Infinity Crest</h2>
+          <span class="option-style-pill">EdTech & Mastery · Continuous Learning</span>
+          <p class="option-desc">
+            Akademik qalpoqcha va uzluksiz bilim olishni anglatuvchi cheksizlik (infinity) "G" tuguni. Deep Indigo va dengiz to'lqini rangi. Universitet yoki xalqaro sertifikat beruvchi yirik institutlarga xos nufuzli ko'rinish.
+          </p>
+
+          <div class="preview-cluster">
+            <div class="cluster-title">Qanday ko'rinadi (Context Preview):</div>
+            <div class="mockup-row">
+              <span class="mockup-label">Telegram Profil (Doira):</span>
+              <div class="tg-avatar-box">
+                <img src="assets/logo_option_b.jpg" alt="TG Circle">
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Veb Navbar (Sayt):</span>
+              <div class="navbar-brand-mockup">
+                <img src="assets/logo_option_b.jpg" alt="Nav">
+                <span>GPTify Academy</span>
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Sertifikat Muhri:</span>
+              <div class="cert-stamp-mockup">
+                <img src="assets/logo_option_b.jpg" alt="Cert">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPTION 4: Precision Pure SVG Vector -->
+      <div class="option-card">
+        <div class="card-top">
+          <span class="option-tag">Variant 4 · Pure SVG</span>
+          <div class="logo-hero-preview">
+            <img src="assets/logo_option_d.svg" alt="Option 4: Precision SVG">
+          </div>
+        </div>
+        <div class="card-body">
+          <h2 class="option-title">Variant 4: Precision Vector Monogram</h2>
+          <span class="option-style-pill">0.5 KB Pure SVG · Ultra-Sharp Retina</span>
+          <p class="option-desc">
+            Toza SVG vektor kodi orqali chizilgan "G" monogrammasi va AI olmos uchquni. Hech qanday piksellashishsiz har qanday ekranda (16px favicondan tortib 4K monitorlargacha) bir xil tiniq ko'rinadi, yuklanish tezligi 0.001 soniya.
+          </p>
+
+          <div class="preview-cluster">
+            <div class="cluster-title">Qanday ko'rinadi (Context Preview):</div>
+            <div class="mockup-row">
+              <span class="mockup-label">Telegram Profil (Doira):</span>
+              <div class="tg-avatar-box">
+                <img src="assets/logo_option_d.svg" alt="TG Circle">
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Veb Navbar (Sayt):</span>
+              <div class="navbar-brand-mockup">
+                <img src="assets/logo_option_d.svg" alt="Nav">
+                <span>GPTify Academy</span>
+              </div>
+            </div>
+            <div class="mockup-row">
+              <span class="mockup-label">Sertifikat Muhri:</span>
+              <div class="cert-stamp-mockup">
+                <img src="assets/logo_option_d.svg" alt="Cert">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COMPARISON & TECHNICAL SPECIFICATIONS -->
+    <div class="comparison-section">
+      <h2 class="section-heading">Mezonlar va Tavsiya</h2>
+      <p class="section-sub">Telegram Mini App, mobil o'lchamlar va veb-platforma talablariga ko'ra tahlil:</p>
+
+      <div class="live-demo-bar">
+        <div class="bar-item">
+          <h4>📱 Telegram Mini App & Bot Avatar</h4>
+          <p>Telegram profillari doira (circle) shaklida qirqiladi. <b>Variant 1 (Squircle Ribbon)</b> va <b>Variant 4 (Vector)</b> doira ichida markazlashib, hech qanday qirqilishsiz eng toza ko'rinadi.</p>
+        </div>
+        <div class="bar-item">
+          <h4>🖥️ Veb Navbar & Favicon (16-32px)</h4>
+          <p>Navbarda logotip kichik (32-36px) bo'ladi. Detallari haddan tashqari ko'p bo'lmagan, qalin chiziqli monogramma eng yaxshi o'qiladi. Variant 1 va 4 bu mezon bo'yicha 10/10 ball oladi.</p>
+        </div>
+        <div class="bar-item">
+          <h4>📜 Diplom & Malaka Sertifikati</h4>
+          <p>Sertifikat chop etilganda yoki PDF qilinsa, zumrad va safir aksentlari yuqori darajadagi nufuz va ishonchlilik (B2B Authority) bag'ishlaydi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER ACTION -->
+    <div class="action-bar">
+      <div>
+        <h3>Qaysi variant sizga ko'proq ma'qul?</h3>
+        <p>Tanlangan variant darhol `academy.gptify.uz`, `app.html` va Telegram botlariga avtomatik integratsiya qilinadi.</p>
+      </div>
+      <div>
+        <span style="font-size:13px; color:#A7F3D0; font-weight:700;">Variant 1 (Tavsiya) | Variant 2 | Variant 3 | Variant 4</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

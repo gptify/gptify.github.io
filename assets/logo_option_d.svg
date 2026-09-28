@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Squircle Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+
+    <!-- Brand Vibrant Primary Gradient (Electric Indigo to Vivid Emerald) -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Accent Emerald Pulse -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Icon Tile -->
+    <filter id="tileShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+
+    <filter id="innerGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#4F46E5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Canvas (Telegram / App Icon standard) -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#bgGrad)" stroke="#E2E8F0" stroke-width="3" filter="url(#tileShadow)"/>
+
+  <!-- Subtle Executive Grid / Orbit Ring -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#F1F5F9" stroke-width="3" stroke-dasharray="8 8"/>
+
+  <!-- Geometric Monogram "G" Structure -->
+  <!-- Outer Arch of "G" -->
+  <path d="M 368 184
+           C 344 140, 304 116, 256 116
+           C 178 116, 116 178, 116 256
+           C 116 334, 178 396, 256 396
+           C 334 396, 388 344, 396 272
+           L 264 272
+           C 256 272, 250 278, 250 286
+           L 250 306
+           C 250 312, 254 316, 260 316
+           L 338 316
+           C 328 344, 296 360, 256 360
+           C 198 360, 152 314, 152 256
+           C 152 198, 198 152, 256 152
+           C 290 152, 320 168, 338 196
+           L 368 184 Z"
+        fill="url(#brandGrad)"
+        filter="url(#innerGlow)"/>
+
+  <!-- Central AI Spark Node (4-Point Diamond Sparkle) -->
+  <path d="M 288 214
+           Q 288 238, 264 238
+           Q 288 238, 288 262
+           Q 288 238, 312 238
+           Q 288 238, 288 214 Z"
+        fill="url(#accentGrad)"/>
+
+  <!-- Dynamic Growth Vector (Forward arrow accent at top right of G) -->
+  <polygon points="360,116 400,116 400,156 384,140 344,180 328,164 368,124"
+           fill="#10B981"/>
+</svg>
