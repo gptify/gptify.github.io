@@ -385,7 +385,7 @@ window.AINOMA_TOOLS = {
   },
   ailo: {
     id: "ailo",
-    name: "AILO by GPTify",
+    name: "AILO",
     kicker: "AI vosita · Instagram & Telegram AI Sotuvchi",
     headline: "Instagram Reels izohlari va Direct xabarlarini 24/7 savdoga aylantiruvchi, 8 soniyada insondek samimiy muloqot qiluvchi va buyurtmalarni CRM'ga uzatuvchi aqlli milliy AI-sotuvchi tizimi.",
     category: "AI Sotuvchi & Direct Voronka (O‘zbekiston)",
