@@ -1587,8 +1587,8 @@ window.AINOMA_ARTICLES = {
     "source_date": "2026-09-28",
     "source_published_date": "2026-09-28",
     "ainoma_published_date": "2026-09-28",
-    "read_time": "3 daqiqalik mutolaa",
-    "readTime": "3 daqiqalik mutolaa",
+    "read_time": "3 daqiqa",
+    "readTime": "3 daqiqa",
     "deck": "Buyuk Britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnologiya rahbarlarini rasmiy hisobot berishga chaqirdi.",
     "img": "assets/appeals_court_defense.jpg",
     "imgAlt": "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi",
@@ -1598,9 +1598,9 @@ window.AINOMA_ARTICLES = {
       "Eshituv 2026-yil oktabr oyida Londonda to‘g‘ridan-to‘g‘ri translyatsiya bilan bo‘lib o‘tadi."
     ],
     "primary_source": {
-      "name": "Rasmiy Manba",
-      "title": "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi",
-      "url": "https://ainoma.uz",
+      "name": "UK Parliament",
+      "title": "Business and Trade Committee calls Big Tech executives on AI security risks",
+      "url": "https://committees.parliament.uk/committee/365/business-and-trade-committee/news/",
       "badge": "BIRLAMCHI MANBA"
     },
     "secondary_sources": [],
@@ -1627,8 +1627,8 @@ window.AINOMA_ARTICLES = {
     "source_date": "2026-09-28",
     "source_published_date": "2026-09-28",
     "ainoma_published_date": "2026-09-28",
-    "read_time": "3 daqiqalik mutolaa",
-    "readTime": "3 daqiqalik mutolaa",
+    "read_time": "3 daqiqa",
+    "readTime": "3 daqiqa",
     "deck": "Dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va mustaqil audit o‘tkazish uchun yangi alyans tuzishini e’lon qildi.",
     "img": "assets/ai_network.jpg",
     "imgAlt": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi",
@@ -1638,9 +1638,9 @@ window.AINOMA_ARTICLES = {
       "Ushbu qadam hukumatlarning avtonom agentlar bo‘yicha keskin cheklovlariga javoban sanoatning o‘zini o‘zi tartibga solish tashabbusidir."
     ],
     "primary_source": {
-      "name": "Rasmiy Manba",
-      "title": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi",
-      "url": "https://ainoma.uz",
+      "name": "The Street",
+      "title": "OpenAI, Anthropic and Google unite to launch AI standards body",
+      "url": "https://www.thestreet.com/technology/openai-anthropic-and-google-unite-to-launch-ai-standards-body",
       "badge": "BIRLAMCHI MANBA"
     },
     "secondary_sources": [],

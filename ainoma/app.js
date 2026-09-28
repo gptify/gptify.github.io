@@ -197,9 +197,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi", u: "yangiliklar/britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026/", k: "britaniya parlamenti openai va meta rahbarlarini so‘roqqa chaqirdi ai xavfsizligi rasmiy manba buyuk britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnolo" },
-  { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati rasmiy manba dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
+  { t: "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi", u: "yangiliklar/britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026/", k: "britaniya parlamenti openai va meta rahbarlarini so‘roqqa chaqirdi ai xavfsizligi uk parliament buyuk britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnolo" },
+  { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati the street dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
   { t: "ChatGPT, Claude va Gemini: Qaysi Model Sizga Mos?", u: "yangiliklar/chatgpt-claude-gemini-solishtirish/", k: "chatgpt, claude va gemini: qaysi model sizga mos? qo'llanmalar  uchta yetakchi ai orasida adashib qoldingizmi? har birining kuchli tomoni va qaysi vazifaga qaysi bi" },
   { t: "Sun'iy intellekt bilan pul ishlash: 7 real yo'l (2026)", u: "yangiliklar/ai-bilan-pul-ishlash-7-yol/", k: "sun'iy intellekt bilan pul ishlash: 7 real yo'l (2026) qo'llanmalar  ai 'sizni ishdan qoldiradi' emas, to'g'ri ishlatilsa qo'shimcha daromad manbaiga aylanadi. 7 ta real" },
   { t: "AQSh va Xitoy Super-Intellekt Dialogini Yo‘lga Qo‘ydi", u: "yangiliklar/us-china-super-intelligence-dialog-2026/", k: "aqsh va xitoy super-intellekt dialogini yo‘lga qo‘ydi global ai siyosati axios tramp va si sinpin ai xavflari va imkoniyatlarini muhokama qilish uchun rasmiy 'super-intellekt dial" },
@@ -480,5 +481,106 @@ try {
     }
   });
 } catch (_) {}
+
+// ==========================================================================
+// AiNoma Smart Telegram Subscription Slide-in Toast
+// ==========================================================================
+(function initTgToast() {
+  const DISMISSED_KEY = "ainoma_tg_toast_dismissed";
+  const JOINED_KEY = "ainoma_tg_toast_joined";
+  const DISMISS_DAYS = 7;
+  const JOIN_DAYS = 30;
+
+  try {
+    const dismissedAt = localStorage.getItem(DISMISSED_KEY);
+    if (dismissedAt && (Date.now() - parseInt(dismissedAt, 10)) < DISMISS_DAYS * 86400000) {
+      return;
+    }
+    const joinedAt = localStorage.getItem(JOINED_KEY);
+    if (joinedAt && (Date.now() - parseInt(joinedAt, 10)) < JOIN_DAYS * 86400000) {
+      return;
+    }
+  } catch (_) {}
+
+  // Create toast DOM element
+  const toast = document.createElement("div");
+  toast.className = "ainoma-tg-toast";
+  toast.id = "ainomaTgToast";
+  toast.setAttribute("role", "dialog");
+  toast.setAttribute("aria-label", "Telegram kanal obunasi");
+  toast.innerHTML = `
+    <button class="ainoma-tg-toast-close" id="ainomaTgToastClose" aria-label="Yopish" title="Yopish">&times;</button>
+    <div class="ainoma-tg-toast-header">
+      <div class="ainoma-tg-toast-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+        </svg>
+      </div>
+      <div class="ainoma-tg-toast-body">
+        <div class="ainoma-tg-toast-title">AiNoma Telegramda</div>
+        <p class="ainoma-tg-toast-desc">Muhim AI yangiliklari va amaliy qo‘llanmalar birinchi bo‘lib kanalda e’lon qilinadi.</p>
+      </div>
+    </div>
+    <a href="https://t.me/ainomauz" target="_blank" rel="noopener" class="ainoma-tg-toast-btn" id="ainomaTgToastJoin">
+      Kanalga a’zo bo‘lish (@ainomauz) ↗
+    </a>
+  `;
+
+  document.body.appendChild(toast);
+
+  let isShown = false;
+  function showToast() {
+    if (isShown) return;
+    isShown = true;
+    window.removeEventListener("scroll", checkScroll);
+    clearTimeout(timer);
+    toast.classList.add("visible");
+  }
+
+  function hideToast(permanentKey, durationDays) {
+    toast.classList.remove("visible");
+    try {
+      localStorage.setItem(permanentKey, Date.now().toString());
+    } catch (_) {}
+    setTimeout(() => {
+      if (toast.parentNode) toast.parentNode.removeChild(toast);
+    }, 400);
+  }
+
+  function checkScroll() {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    if (total > 300) {
+      const scrollPercent = (window.scrollY / total) * 100;
+      if (scrollPercent >= 30) {
+        showToast();
+      }
+    }
+  }
+
+  // Trigger on scroll past 30% OR after 12 seconds
+  window.addEventListener("scroll", checkScroll, { passive: true });
+  const timer = setTimeout(showToast, 12000);
+
+  // Close button
+  const closeBtn = document.getElementById("ainomaTgToastClose");
+  closeBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    hideToast(DISMISSED_KEY, DISMISS_DAYS);
+  });
+
+  // Join button click
+  const joinBtn = document.getElementById("ainomaTgToastJoin");
+  joinBtn?.addEventListener("click", () => {
+    hideToast(JOINED_KEY, JOIN_DAYS);
+  });
+
+  // Esc key closes toast
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isShown) {
+      hideToast(DISMISSED_KEY, DISMISS_DAYS);
+    }
+  });
+})();
+
 
 
