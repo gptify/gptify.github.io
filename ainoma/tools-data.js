@@ -382,5 +382,25 @@ window.AINOMA_TOOLS = {
     f3_d: "O‘zbek va rus tillaridagi audio/ovozli so‘rovlarni tushunib, mos tovarlarni tavsiya qiladi.",
     benefit: "Kunlik o‘nlab javobsiz xabarlarni nolgacha tushirib, sotuv bo‘limi yuklamasini kamaytirish.",
     prompt: "EzguSavdo ssenariysi: Xaridor mahsulot so‘raganda, ombor qoldig‘ini tekshirib, yetkazib berish shartlari bilan darhol rasmiylashtirish."
+  },
+  ailo: {
+    id: "ailo",
+    name: "AILO by GPTify",
+    kicker: "AI vosita · Instagram & Telegram AI Sotuvchi",
+    headline: "Instagram Reels izohlari va Direct xabarlarini 24/7 savdoga aylantiruvchi, 8 soniyada insondek samimiy muloqot qiluvchi va buyurtmalarni CRM'ga uzatuvchi aqlli milliy AI-sotuvchi tizimi.",
+    category: "AI Sotuvchi & Direct Voronka (O‘zbekiston)",
+    pricing: "Oylik obuna (390,000 so‘mdan boshlab / 14 kunlik kafolat)",
+    lang: "O‘zbek tili, Rus tili",
+    url: "https://gptify.github.io/ailo",
+    bg: "#ff5e4d",
+    initial: "Ai",
+    f1_t: "8 soniyada Reels-to-Direct voronkasi",
+    f1_d: "Reels izohlariga darhol javob berib, bir vaqtning o‘zida shaxsiy Direct ochadi va xaridorni qizdiradi.",
+    f2_t: "Erkin so‘zlashuv & E’tirozlarni yopish",
+    f2_d: "Mijozning 'qimmat-ku' yoki boshqa e’tirozlarini o‘zbek tilida erkin tushunib, samimiy muloqot bilan yechadi.",
+    f3_t: "amoCRM, Bitrix24 & Telegram integratsiyasi",
+    f3_d: "Xaridga tayyor lidlar va buyurtma ma'lumotlarini savdo bo‘limi CRM bazasiga avtomatik kiritadi.",
+    benefit: "Kecha-yu kunduz har bir murojaatga 8 soniyada javob berib, savdo konversiyasini oshirish va operatorlar maoshini tejash.",
+    prompt: "AILO savdo ssenariysi: Reels ostiga '+' yoki narx so‘rab yozgan xaridorga profilingiz nomidan Direct ochib, mos variantni tavsiya qilish va buyurtmani rasmiylashtirish."
   }
 };
