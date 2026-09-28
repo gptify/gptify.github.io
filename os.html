@@ -1178,10 +1178,10 @@
         </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white font-bold text-sm shadow-md transition duration-150 flex items-center justify-center gap-2.5 cursor-pointer">
-            <span data-t="founderCtaPrimary">Uchrashuv Belgilash (meet.gptify.uz)</span>
+          <button type="button" onclick="openDemoModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white font-bold text-sm shadow-md transition duration-150 flex items-center justify-center gap-2.5 cursor-pointer">
+            <span data-t="founderCtaPrimary">30 Daqiqalik Demo Belgilash</span>
             <svg class="w-4 h-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          </button>
           <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-divider hover:bg-subtle text-slateDark font-semibold text-sm transition duration-150 cursor-pointer" data-t="founderCtaTelegram">
             Telegram orqali yozish
           </a>
@@ -1227,6 +1227,159 @@
     </div>
   </footer>
 
+  <!-- ==================== LEAD CAPTURE DEMO MODAL ==================== -->
+  <div id="demoModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <!-- Backdrop with blur -->
+    <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="closeDemoModal()"></div>
+
+    <!-- Modal Card -->
+    <div class="relative bg-white rounded-3xl border border-divider shadow-2xl max-w-lg w-full p-6 sm:p-8 z-10 my-auto text-left transition-all transform scale-100">
+      
+      <!-- Close Button -->
+      <button type="button" onclick="closeDemoModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-subtle hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center transition cursor-pointer" aria-label="Yopish">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Form Container -->
+      <div id="leadFormContainer">
+        <!-- Header -->
+        <div class="mb-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[10px] font-mono font-bold text-emerald-800 uppercase tracking-wider mb-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 badge-live-pulse"></span>
+            <span data-t="modalBadge">JONLI DEMO & AUDIT</span>
+          </div>
+          <h3 id="modalTitle" class="text-2xl sm:text-3xl font-black text-slateDark tracking-tight" data-t="modalTitle">
+            Jonli Demo va Tizim Auditini Belgilash
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed" data-t="modalSub">
+            GPTify OS korxonangiz ish jarayonida qanday ishlashini jonli ko'ring. 15 daqiqada siz bilan bog'lanamiz.
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form id="demoLeadForm" onsubmit="submitDemoLead(event)" class="space-y-4">
+          <!-- Full Name -->
+          <div>
+            <label for="leadName" class="block text-xs font-bold text-slateDark mb-1.5" data-t="lblModalName">
+              Ism va Familiyangiz
+            </label>
+            <input type="text" id="leadName" required placeholder="Masalan: Jasur Rustamov" class="w-full px-4 py-3 rounded-xl border border-divider bg-subtle/50 text-slateDark text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emeraldBrand focus:bg-white transition">
+          </div>
+
+          <!-- Company Name -->
+          <div>
+            <label for="leadCompany" class="block text-xs font-bold text-slateDark mb-1.5" data-t="lblModalCompany">
+              Kompaniya nomi va faoliyat sohasi
+            </label>
+            <input type="text" id="leadCompany" required placeholder="Masalan: Apex Logistics (B2B savdo)" class="w-full px-4 py-3 rounded-xl border border-divider bg-subtle/50 text-slateDark text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emeraldBrand focus:bg-white transition">
+          </div>
+
+          <!-- Phone or Telegram -->
+          <div>
+            <label for="leadContact" class="block text-xs font-bold text-slateDark mb-1.5" data-t="lblModalContact">
+              Telefon raqam yoki Telegram (@username)
+            </label>
+            <input type="text" id="leadContact" required placeholder="+998 90 123 45 67 yoki @foydalanuvchi" class="w-full px-4 py-3 rounded-xl border border-divider bg-subtle/50 text-slateDark text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emeraldBrand focus:bg-white transition">
+          </div>
+
+          <!-- Channels Checklist -->
+          <div>
+            <label class="block text-xs font-bold text-slateDark mb-2" data-t="lblModalChannels">
+              Ulanishi kerak bo'lgan kanallar:
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
+              <label class="flex items-center gap-2 p-2 rounded-lg bg-subtle/60 border border-divider cursor-pointer hover:bg-emerald-50/50">
+                <input type="checkbox" name="channels" value="Telegram" checked class="accent-emerald-600 rounded">
+                <span class="text-slate-700 font-medium">Telegram</span>
+              </label>
+              <label class="flex items-center gap-2 p-2 rounded-lg bg-subtle/60 border border-divider cursor-pointer hover:bg-emerald-50/50">
+                <input type="checkbox" name="channels" value="WhatsApp" checked class="accent-emerald-600 rounded">
+                <span class="text-slate-700 font-medium">WhatsApp</span>
+              </label>
+              <label class="flex items-center gap-2 p-2 rounded-lg bg-subtle/60 border border-divider cursor-pointer hover:bg-emerald-50/50">
+                <input type="checkbox" name="channels" value="Instagram Direct" checked class="accent-emerald-600 rounded">
+                <span class="text-slate-700 font-medium">Instagram</span>
+              </label>
+              <label class="flex items-center gap-2 p-2 rounded-lg bg-subtle/60 border border-divider cursor-pointer hover:bg-emerald-50/50">
+                <input type="checkbox" name="channels" value="Corporate Email" class="accent-emerald-600 rounded">
+                <span class="text-slate-700 font-medium">Email</span>
+              </label>
+              <label class="flex items-center gap-2 p-2 rounded-lg bg-subtle/60 border border-divider cursor-pointer hover:bg-emerald-50/50">
+                <input type="checkbox" name="channels" value="LinkedIn Outreach" class="accent-emerald-600 rounded">
+                <span class="text-slate-700 font-medium">LinkedIn</span>
+              </label>
+              <label class="flex items-center gap-2 p-2 rounded-lg bg-subtle/60 border border-divider cursor-pointer hover:bg-emerald-50/50">
+                <input type="checkbox" name="channels" value="CRM Integratsiya" checked class="accent-emerald-600 rounded">
+                <span class="text-slate-700 font-medium">CRM / 1C</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Team Size Dropdown / Selection -->
+          <div>
+            <label for="leadTeamSize" class="block text-xs font-bold text-slateDark mb-1.5" data-t="lblModalTeam">
+              Jamoangiz hajmi:
+            </label>
+            <select id="leadTeamSize" class="w-full px-4 py-3 rounded-xl border border-divider bg-subtle/50 text-slateDark text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emeraldBrand focus:bg-white transition cursor-pointer">
+              <option value="1-5 xodim">1-5 xodim</option>
+              <option value="6-20 xodim" selected>6-20 xodim</option>
+              <option value="20-50 xodim">20-50 xodim</option>
+              <option value="50+ xodim (Enterprise)">50+ xodim (Enterprise)</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button type="submit" id="btnSubmitLead" class="w-full py-3.5 px-6 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white font-bold text-sm shadow-md transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer">
+              <span id="btnSubmitText" data-t="modalSubmitBtn">Demoni Tasdiqlash</span>
+              <svg id="btnSubmitIcon" class="w-4 h-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+              <!-- Spinner (hidden by default) -->
+              <svg id="btnSubmitSpinner" class="hidden animate-spin w-4 h-4 text-white" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="text-center text-[10px] text-slateMuted mt-2" data-t="modalFooterNote">
+            Spamsiz · 100% maxfiy · 48 soat ichida kalit ostida ulanadi
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Confirmation State (shown after submission) -->
+      <div id="leadSuccessContainer" class="hidden text-center py-6 space-y-5">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-xs">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-black text-slateDark" data-t="successTitle">
+            So'rovingiz Muvaffaqiyatli Qabul Qilindi!
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-sm mx-auto leading-relaxed" data-t="successDesc">
+            Ma'lumotlar Shukhrat Iskandarovga yo'naltirildi. 15 daqiqa ichida siz bilan bog'lanamiz.
+          </p>
+        </div>
+
+        <div class="pt-2 flex flex-col gap-2.5 max-w-xs mx-auto text-xs font-bold">
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white shadow-xs transition flex items-center justify-center gap-2 cursor-pointer">
+            <span data-t="successCalendarBtn">Taqvimdan vaqt tanlash (meet.gptify.uz)</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slateDark transition flex items-center justify-center gap-2 cursor-pointer">
+            <span data-t="successTelegramBtn">Telegramda darhol yozish</span>
+          </a>
+        </div>
+
+        <button type="button" onclick="closeDemoModal()" class="text-[11px] text-slate-400 hover:text-slate-600 font-bold uppercase tracking-wider cursor-pointer">
+          Oynani yopish
+        </button>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ==================== MULTILINGUAL TRANSLATION DICTIONARY & SCRIPTS ==================== -->
   <script>
     const TRANSLATIONS = {
@@ -1238,12 +1391,12 @@
         navConfigurator: "System Configurator",
         navFaq: "FAQ",
         navHome: "GPTify Home",
-        navBook: "Strategic Session (30 min)",
+        navBook: "Book a Demo",
 
         heroBadge: "Pre-Built Enterprise AI OS · Deploys in 48 Hours",
         heroH1: "The Pre-Built AI Operating System <br><span class=\"font-serif italic font-normal text-emeraldBrand text-[1.12em] tracking-normal\">for Modern B2B Operations.</span>",
         heroSub: "Connect Telegram, WhatsApp, Instagram, Email, and LinkedIn directly to your CRM and meeting workflows. Zero custom coding needed — pre-configured AI agents qualify leads in 8 seconds, prospect B2B accounts, and log meetings 24/7.",
-        heroCtaPrimary: "Book Free Strategic Audit",
+        heroCtaPrimary: "Book a Live Demo",
         heroCtaNote: "Free · 30 Minutes · Zero Obligation",
         heroCtaSub: "The deployed infrastructure remains 100% your enterprise property",
         proof1: "Omnichannel: Telegram, WhatsApp, Instagram, Email & LinkedIn",
@@ -1328,7 +1481,7 @@
         cfgCore2: "<strong>ILDAM CRM:</strong> Lead stage pipeline & revenue tracking",
         cfgCore3: "<strong>GPTify Meet:</strong> Audio meeting action protocol",
         cfgCore4: "<strong>Jarvis Monitoring:</strong> 24/7 telemetry & health checks",
-        cfgQuoteBtn: "Get Implementation Scope",
+        cfgQuoteBtn: "Request Custom Architecture Demo",
         cfgAddonsTitle: "Specialized Add-on Agents",
         cfgAddonsSub: "Select modules for your operational stack",
         cfgSelectedPrefix: "Selected:",
@@ -1379,9 +1532,25 @@
         founderCtaTitle: "30-Minute Complimentary Operations Audit",
         founderCtaSub: "During this session, we map where your business is hemorrhaging hours and revenue, delivering a pragmatic action plan with zero sales pressure.",
         founderGuarantee: "<strong>Our Guarantee:</strong> If we fail to identify at least $2,000+ in annual recoverable operational savings during the call, we will candidly say so and respect your time.",
-        founderCtaPrimary: "Schedule Strategy Call (meet.gptify.uz)",
+        founderCtaPrimary: "Book a 30-Min Demo Call",
         founderCtaTelegram: "Message on Telegram",
         founderRole: "Founder at GPTify.co & Co-Founder at Cubeo.ai",
+
+        modalBadge: "LIVE DEMO & AUDIT",
+        modalTitle: "Book a Live Demo & System Audit",
+        modalSub: "See GPTify OS running live on your workflow. We will contact you within 15 minutes.",
+        lblModalName: "Your Full Name",
+        lblModalCompany: "Company Name & Industry",
+        lblModalContact: "Phone Number or Telegram (@username)",
+        lblModalChannels: "Channels to Connect:",
+        lblModalTeam: "Team Size:",
+        modalSubmitBtn: "Confirm & Book Demo",
+        modalFooterNote: "Zero spam · 100% confidential · Turnkey deployed in 48h",
+        successTitle: "Demo Request Received!",
+        successDesc: "Your details were delivered directly to Shukhrat Iskandarov. We will contact you within 15 minutes.",
+        successCalendarBtn: "Pick Time on Calendar (meet.gptify.uz)",
+        successTelegramBtn: "Message on Telegram Directly",
+
         footerDesc: "Pragmatic B2B AI operating systems and enterprise workflow automation.",
         footerAcademy: "GPTify Main Site",
         footerRights: "All rights reserved."
@@ -1395,12 +1564,12 @@
         navConfigurator: "Tizim Konstruktori",
         navFaq: "Savollar",
         navHome: "GPTify Bosh Sahifa",
-        navBook: "Strategik Sessiya (30 daq)",
+        navBook: "Jonli Demo Belgilash",
 
         heroBadge: "Tayyor B2B AI Operatsion Tizimi · 48 Soatda Ulab Berish",
         heroH1: "B2B biznesingizni avtopilotga o'tkazuvchi <br><span class=\"font-serif italic font-normal text-emeraldBrand text-[1.12em] tracking-normal\">tayyor AI operatsion tizimi.</span>",
         heroSub: "Telegram, WhatsApp, Instagram, Email va LinkedIn'ni CRM hamda uchrashuvlaringizga yagona zanjirda bog'lang. Noldan dasturlash shart emas — sinovdan o'tgan avtonom agentlar lidlarni 8 soniyada saralaydi, faol savdo qiladi va bayonnomalarni 24/7 yuritadi.",
-        heroCtaPrimary: "Bepul Strategik Sessiya Belgilash",
+        heroCtaPrimary: "Jonli Demo Belgilash",
         heroCtaNote: "Bepul · 30 daqiqa · Majburiyatsiz",
         heroCtaSub: "Tizim to'liq sizning korxonangiz mulki bo'lib qoladi",
         proof1: "Omnikanal: Telegram, WhatsApp, Instagram, Email va LinkedIn",
@@ -1485,7 +1654,7 @@
         cfgCore2: "<strong>ILDAM CRM:</strong> Lidlar voronkasi va to'lovlar nazorati",
         cfgCore3: "<strong>GPTify Meet:</strong> Audio yozuvdan vazifalar protokoli",
         cfgCore4: "<strong>Jarvis Monitoring:</strong> 24/7 avtomatik telemetriya",
-        cfgQuoteBtn: "Get Implementation Scope",
+        cfgQuoteBtn: "Moslashtirilgan Demo Olish",
         cfgAddonsTitle: "Qo'shimcha Ixtisoslashgan Agentlar",
         cfgAddonsSub: "Kerakli modullarni belgilang",
         cfgSelectedPrefix: "Tanlandi:",
@@ -1536,9 +1705,25 @@
         founderCtaTitle: "30 Daqiqalik Bepul Operatsion Audit",
         founderCtaSub: "Ushbu suhbat davomida biz biznesingiz qayerda vaqt va mablag' yo'qotayotganini aniqlaymiz. Sizga aniq qadamlar xaritasini beramiz. Hech qanday bosimsiz, ochiq va samimiy professional suhbat.",
         founderGuarantee: "<strong>Bizning kafolat:</strong> Agar suhbat davomida biznesingizda yiliga kamida $2,000+ tejamkorlik nuqtalarini topa olmasak, buni ochiq aytamiz va vaqtingizni behuda olmaymiz.",
-        founderCtaPrimary: "Uchrashuv Belgilash (meet.gptify.uz)",
+        founderCtaPrimary: "30 Daqiqalik Demo Belgilash",
         founderCtaTelegram: "Telegram orqali yozish",
         founderRole: "Founder at GPTify.co & Co-Founder at Cubeo.ai",
+
+        modalBadge: "JONLI DEMO & AUDIT",
+        modalTitle: "Jonli Demo va Tizim Auditini Belgilash",
+        modalSub: "GPTify OS korxonangiz ish jarayonida qanday ishlashini jonli ko'ring. 15 daqiqada siz bilan bog'lanamiz.",
+        lblModalName: "Ism va Familiyangiz",
+        lblModalCompany: "Kompaniya nomi va faoliyat sohasi",
+        lblModalContact: "Telefon raqam yoki Telegram (@username)",
+        lblModalChannels: "Ulanishi kerak bo'lgan kanallar:",
+        lblModalTeam: "Jamoangiz hajmi:",
+        modalSubmitBtn: "Demoni Tasdiqlash",
+        modalFooterNote: "Spamsiz · 100% maxfiy · 48 soat ichida kalit ostida ulanadi",
+        successTitle: "So'rovingiz Muvaffaqiyatli Qabul Qilindi!",
+        successDesc: "Ma'lumotlar Shukhrat Iskandarovga yo'naltirildi. 15 daqiqa ichida siz bilan bog'lanamiz.",
+        successCalendarBtn: "Taqvimdan vaqt tanlash (meet.gptify.uz)",
+        successTelegramBtn: "Telegramda darhol yozish",
+
         footerDesc: "Amaliy B2B AI operatsion tizimlari va ish oqimlarini avtomatlashtirish.",
         footerAcademy: "GPTify Bosh Sahifa",
         footerRights: "Barcha huquqlar himoyalangan."
@@ -1552,12 +1737,12 @@
         navConfigurator: "Конструктор Флота",
         navFaq: "Вопросы и Ответы",
         navHome: "Главная GPTify",
-        navBook: "Стратегическая Сессия (30 мин)",
+        navBook: "Запросить Демо",
 
         heroBadge: "Готовая B2B AI Операционная Система · Запуск за 48 Часов",
         heroH1: "Готовая автономная AI операционная система <br><span class=\"font-serif italic font-normal text-emeraldBrand text-[1.12em] tracking-normal\">для управления B2B бизнесом.</span>",
         heroSub: "Объедините Telegram, WhatsApp, Instagram, Email и LinkedIn с вашей CRM и протоколами встреч в единый конвейер. Никакой разработки с нуля — готовые AI агенты квалифицируют лидов за 8 секунд, ведут B2B аутрич и фиксируют задачи 24/7.",
-        heroCtaPrimary: "Назначить Бесплатный Аудит",
+        heroCtaPrimary: "Запросить Демо",
         heroCtaNote: "Бесплатно · 30 Минут · Без Обязательств",
         heroCtaSub: "Вся внедренная инфраструктура остается 100% вашей собственностью",
         proof1: "Омниканальность: Telegram, WhatsApp, Instagram, Email и LinkedIn",
@@ -1642,7 +1827,7 @@
         cfgCore2: "<strong>ILDAM CRM:</strong> Воронка лидов и контроль оплат",
         cfgCore3: "<strong>GPTify Meet:</strong> Протокол задач из аудиозаписей",
         cfgCore4: "<strong>Jarvis Мониторинг:</strong> 24/7 автоматическая телеметрия",
-        cfgQuoteBtn: "Get Implementation Scope",
+        cfgQuoteBtn: "Запросить Персональное Демо",
         cfgAddonsTitle: "Специализированные Агенты",
         cfgAddonsSub: "Отметьте необходимые модули",
         cfgSelectedPrefix: "Выбрано:",
@@ -1693,12 +1878,27 @@
         founderCtaTitle: "30-Минутный Бесплатный Операционный Аудит",
         founderCtaSub: "В ходе диалога мы найдем, где ваш бизнес теряет время и прибыль, и составим пошаговый план действий без агрессивных продаж.",
         founderGuarantee: "<strong>Наша гарантия:</strong> Если мы не сможем найти точки экономии как минимум на $2,000+ в год, мы честно скажем об этом и не станем отнимать ваше время.",
-        founderCtaPrimary: "Назначить Встречу (meet.gptify.uz)",
+        founderCtaPrimary: "Забронировать 30-Мин Демо",
         founderCtaTelegram: "Написать в Telegram",
         founderRole: "Основатель GPTify.co & Сооснователь Cubeo.ai",
         footerDesc: "Практические B2B AI операционные системы и автоматизация бизнес-процессов.",
         footerAcademy: "Главная GPTify",
-        footerRights: "Все права защищены."
+        footerRights: "Все права защищены.",
+
+        modalBadge: "ЖИВОЕ ДЕМО И АУДИТ",
+        modalTitle: "Запросить Живое Демо и Аудит Системы",
+        modalSub: "Узнайте, как GPTify OS автоматизирует ваши процессы. Мы свяжемся с вами в течение 15 минут.",
+        lblModalName: "Ваше Имя и Фамилия",
+        lblModalCompany: "Название компании и сфера деятельности",
+        lblModalContact: "Номер телефона или Telegram (@username)",
+        lblModalChannels: "Необходимые каналы связи:",
+        lblModalTeam: "Размер вашей команды:",
+        modalSubmitBtn: "Подтвердить и Получить Демо",
+        modalFooterNote: "Без спама · 100% конфиденциально · Запуск под ключ за 48 часов",
+        successTitle: "Заявка Успешно Принята!",
+        successDesc: "Данные переданы основателю Shukhrat Iskandarov. Мы свяжемся с вами в течение 15 минут.",
+        successCalendarBtn: "Выбрать время в календаре (meet.gptify.uz)",
+        successTelegramBtn: "Написать напрямую в Telegram"
       }
     };
 
