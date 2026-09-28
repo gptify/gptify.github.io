@@ -1902,7 +1902,7 @@
       }
     };
 
-    let currentLang = 'uz';
+    let currentLang = 'en';
 
     function setLang(lang) {
       if (!TRANSLATIONS[lang]) return;
@@ -2057,6 +2057,161 @@
       card.classList.toggle('selected');
       const count = document.querySelectorAll('.addon-card.selected').length;
       document.getElementById('selectedAddonsCount').textContent = count;
+    }
+
+    // ==================== LEAD CAPTURE DEMO MODAL LOGIC ====================
+    const BOT_TOKEN = '8652296582:AAGr4AShAy8dHKBil5pM3R07t4m8upOjNhM';
+    const CHAT_IDS = ['327216340', '5077641672'];
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        switch (m) {
+          case '&': return '&amp;';
+          case '<': return '&lt;';
+          case '>': return '&gt;';
+          case '"': return '&quot;';
+          case "'": return '&#039;';
+          default: return m;
+        }
+      });
+    }
+
+    function openDemoModal() {
+      const modal = document.getElementById('demoModal');
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        const input = document.getElementById('leadName');
+        if (input) input.focus();
+      }, 50);
+    }
+
+    function closeDemoModal() {
+      const modal = document.getElementById('demoModal');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeDemoModal();
+      }
+    });
+
+    const demoModalBackdrop = document.getElementById('demoModal');
+    if (demoModalBackdrop) {
+      demoModalBackdrop.addEventListener('click', (e) => {
+        if (e.target === demoModalBackdrop) {
+          closeDemoModal();
+        }
+      });
+    }
+
+    async function sendLeadToTelegram(leadData) {
+      const text = `⚡ <b>YANGI LEAD: GPTify OS Demo So'rovi</b> ⚡\n` +
+        `━━━━━━━━━━━━━━━━━━\n` +
+        `👤 <b>Ism:</b> ${escapeHtml(leadData.name)}\n` +
+        `🏢 <b>Kompaniya / Soha:</b> ${escapeHtml(leadData.company)}\n` +
+        `📞 <b>Aloqa:</b> ${escapeHtml(leadData.contact)}\n` +
+        `👥 <b>Jamoa hajmi:</b> ${escapeHtml(leadData.teamSize)}\n` +
+        `🔌 <b>Ulanadigan kanallar:</b> ${escapeHtml(leadData.channels.join(', '))}\n` +
+        `🌐 <b>Til:</b> ${leadData.lang.toUpperCase()} | <b>Manba:</b> GPTify OS Demo Modal\n` +
+        `⏰ <b>Vaqt:</b> ${leadData.timestamp}\n` +
+        `━━━━━━━━━━━━━━━━━━`;
+
+      const promises = CHAT_IDS.map(chatId => {
+        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+        return fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: text,
+            parse_mode: 'HTML'
+          })
+        }).catch(err => {
+          console.warn('Telegram send failed for chat ' + chatId, err);
+          return null;
+        });
+      });
+
+      try {
+        await Promise.all(promises);
+      } catch (err) {
+        console.warn('Telegram dispatch error', err);
+      }
+    }
+
+    async function submitDemoLead(event) {
+      event.preventDefault();
+
+      const btnSubmit = document.getElementById('btnSubmitLead');
+      const btnIcon = document.getElementById('btnSubmitIcon');
+      const btnSpinner = document.getElementById('btnSubmitSpinner');
+
+      const name = document.getElementById('leadName').value.trim();
+      const company = document.getElementById('leadCompany').value.trim();
+      const contact = document.getElementById('leadContact').value.trim();
+      const teamSize = document.getElementById('leadTeamSize').value;
+
+      const checkedChannels = Array.from(document.querySelectorAll('input[name="channels"]:checked'))
+        .map(el => el.value);
+
+      if (!name || !company || !contact) {
+        alert(currentLang === 'ru' ? 'Пожалуйста, заполните все обязательные поля.' :
+             (currentLang === 'uz' ? 'Iltimos, barcha majburiy maydonlarni to\'ldiring.' :
+              'Please fill in all required fields.'));
+        return;
+      }
+
+      // UI Loading state
+      if (btnSubmit) btnSubmit.disabled = true;
+      if (btnSpinner) btnSpinner.classList.remove('hidden');
+      if (btnIcon) btnIcon.classList.add('hidden');
+
+      const leadData = {
+        name: name,
+        company: company,
+        contact: contact,
+        teamSize: teamSize,
+        channels: checkedChannels.length > 0 ? checkedChannels : ['None selected'],
+        lang: currentLang,
+        timestamp: new Date().toLocaleString()
+      };
+
+      // Backup locally
+      try {
+        const stored = JSON.parse(localStorage.getItem('gptify_leads') || '[]');
+        stored.push(leadData);
+        localStorage.setItem('gptify_leads', JSON.stringify(stored));
+      } catch (e) {
+        console.warn('LocalStorage error', e);
+      }
+
+      // Send to Telegram Bot
+      try {
+        await sendLeadToTelegram(leadData);
+      } catch (e) {
+        console.warn('Send lead error', e);
+      }
+
+      // Switch to success view inside modal
+      const formContainer = document.getElementById('leadFormContainer');
+      const successContainer = document.getElementById('leadSuccessContainer');
+      if (formContainer && successContainer) {
+        formContainer.classList.add('hidden');
+        successContainer.classList.remove('hidden');
+      }
+
+      // Reset loading state
+      if (btnSubmit) btnSubmit.disabled = false;
+      if (btnSpinner) btnSpinner.classList.add('hidden');
+      if (btnIcon) btnIcon.classList.remove('hidden');
     }
 
     // Auto-detect language from URL or localStorage
