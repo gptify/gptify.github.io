@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPTify OS — Biznesingizni Yurituvchi Avtonom Operatsion Tizim | GPTify</title>
-  <meta name="description" content="GPTify OS: Biznesingizni yurituvchi operatsion tizimlarni loyihalashtiramiz va quramiz. Ailo, ILDAM CRM & B2B Outreach, GPTify Meet va Jarvis orqali qo'l mehnatini qisqartiring va dasturlaringizni yagona zanjirga ulang.">
+  <title>GPTify OS — Autonomous AI Operating Systems for B2B Enterprises | GPTify</title>
+  <meta name="description" content="GPTify OS: We architect and deploy autonomous AI operating systems that run business operations. Ailo, ILDAM CRM & B2B Outreach, GPTify Meet, and Jarvis.">
   <link rel="canonical" href="https://gptify.co/os">
   <link rel="icon" type="image/png" href="assets/ailo_logo.png">
 
@@ -47,6 +47,7 @@
   <style>
     :root {
       --font-serif: 'Instrument Serif', Georgia, serif;
+      --accent: #059669;
     }
     body {
       background-color: #FAF9F5;
@@ -56,6 +57,8 @@
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
+
+    /* Live pulse dots */
     .badge-live-pulse {
       box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
       animation: pulseGreen 2.2s infinite;
@@ -65,6 +68,64 @@
       70% { box-shadow: 0 0 0 8px rgba(5, 150, 105, 0); }
       100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
     }
+
+    /* Floating badges */
+    @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+    .float-a { animation: floatA 4.5s ease-in-out infinite; }
+    .float-b { animation: floatB 5.2s ease-in-out infinite; }
+
+    /* Fake cursor moving across hero command center */
+    @keyframes cursorMove {
+      0%   { top: 28%; left: 16%; opacity: 0; }
+      6%   { opacity: 1; }
+      22%  { top: 28%; left: 16%; }
+      32%  { top: 58%; left: 72%; }
+      50%  { top: 58%; left: 72%; }
+      60%  { top: 42%; left: 45%; }
+      78%  { top: 42%; left: 45%; }
+      88%  { top: 28%; left: 16%; }
+      94%  { opacity: 1; top: 28%; left: 16%; }
+      100% { opacity: 0; top: 28%; left: 16%; }
+    }
+    .fake-cursor {
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      animation: cursorMove 10s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 10;
+      background: #059669;
+      box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.25);
+    }
+
+    /* Sparkline draw animation */
+    @keyframes dashMove { from { stroke-dashoffset: 260; } to { stroke-dashoffset: 0; } }
+    .sparkline-path { stroke-dasharray: 260; animation: dashMove 3.4s linear infinite; }
+
+    /* Looping simulated chat conversation */
+    @keyframes demoMsg1 { 0% { opacity: 0; transform: translateY(6px); } 6% { opacity: 1; transform: translateY(0); } 94% { opacity: 1; } 100% { opacity: 0; transform: translateY(6px); } }
+    @keyframes demoMsg2 { 0%,18% { opacity: 0; transform: translateY(6px); } 24% { opacity: 1; transform: translateY(0); } 94% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes demoTyping { 0%,36% { opacity: 0; } 42%,58% { opacity: 1; } 64%,100% { opacity: 0; } }
+    @keyframes demoMsg3 { 0%,58% { opacity: 0; transform: translateY(6px); } 64% { opacity: 1; transform: translateY(0); } 94% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes demoBadge { 0%,76% { opacity: 0; transform: scale(0.92); } 82% { opacity: 1; transform: scale(1); } 94% { opacity: 1; } 100% { opacity: 0; } }
+
+    .demo-msg1 { animation: demoMsg1 11s ease-in-out infinite; }
+    .demo-msg2 { animation: demoMsg2 11s ease-in-out infinite; }
+    .demo-typing { animation: demoTyping 11s ease-in-out infinite; }
+    .demo-msg3 { animation: demoMsg3 11s ease-in-out infinite; }
+    .demo-badge { animation: demoBadge 11s ease-in-out infinite; }
+
+    @keyframes typingBounce { 0%,80%,100% { transform: translateY(0); opacity: 0.4; } 40% { transform: translateY(-4px); opacity: 1; } }
+    .typing-dot { animation: typingBounce 1.2s ease-in-out infinite; }
+
+    /* Infinite Marquee Track */
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-track { display: flex; align-items: center; gap: 48px; width: max-content; animation: marquee 24s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+
+    /* Card styling */
     .card-elevated {
       background: #FFFFFF;
       border: 1px solid #E7E5DF;
@@ -76,7 +137,8 @@
       box-shadow: 0 14px 34px -10px rgba(15, 23, 42, 0.07);
       border-color: #D8D5CD;
     }
-    /* Slider Range Custom Styling */
+
+    /* Range slider */
     input[type=range] {
       -webkit-appearance: none;
       background: #E7E5DF;
@@ -102,15 +164,47 @@
       outline: 2px solid #059669;
       outline-offset: 2px;
     }
+
+    /* FAQ Details chevron */
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-chevron { transform: rotate(180deg); }
+
+    /* Add-on toggle button styling */
+    .addon-card.selected {
+      border-color: #059669;
+      background-color: #F0FDF4;
+    }
+    .addon-card.selected .check-circle {
+      background-color: #059669;
+      border-color: #059669;
+      color: #FFFFFF;
+    }
+
+    /* Language Switcher Styling */
+    .lang-pill-btn {
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748B;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .lang-pill-btn.active {
+      background-color: #FFFFFF;
+      color: #0F172A;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+    }
   </style>
 </head>
 <body class="selection:bg-emerald-100 selection:text-emerald-900">
 
-  <!-- ==================== STICKY NAVIGATION (EZYE STYLE) ==================== -->
+  <!-- ==================== STICKY NAVIGATION ==================== -->
   <header class="sticky top-0 z-50 bg-[#FAF9F5]/92 backdrop-blur-md border-b border-divider">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-8">
-        <a href="os.html" class="flex items-center gap-3 group cursor-pointer" aria-label="GPTify OS Bosh sahifa">
+        <a href="os.html" class="flex items-center gap-3 group cursor-pointer" aria-label="GPTify OS">
           <div class="w-10 h-10 rounded-xl bg-slateDark flex items-center justify-center text-white font-black text-lg shadow-sm group-hover:bg-emeraldBrand transition-colors duration-200">
             G
           </div>
@@ -118,360 +212,366 @@
             <div class="flex items-center gap-1.5">
               <span class="text-xl font-extrabold tracking-tight text-slateDark">GPTify <span class="text-emeraldBrand">OS</span></span>
             </div>
-            <span class="text-[10px] font-mono tracking-widest text-slateMuted uppercase font-bold">OPERATIONS SYSTEMS</span>
+            <span class="text-[10px] font-mono tracking-widest text-slateMuted uppercase font-bold" data-t="navTagline">OPERATIONS SYSTEMS</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center gap-1 text-sm font-semibold text-slate-700 pl-4 border-l border-divider" aria-label="Asosiy bo'limlar">
-          <a href="#services" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">4 Asosiy Ustun</a>
-          <a href="#comparison" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Farqimiz</a>
-          <a href="#calculator" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Yo'qotish Kalkulyatori</a>
-          <a href="#workflow" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Konveyer</a>
-          <a href="#process" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer">Ish Tartibi</a>
+        <nav class="hidden lg:flex items-center gap-1 text-sm font-semibold text-slate-700 pl-4 border-l border-divider" aria-label="Navigation">
+          <a href="#services" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer" data-t="navPillars">4 Asosiy Ustun</a>
+          <a href="#demo" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer" data-t="navDemo">Jonli Demo</a>
+          <a href="#calculator" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer" data-t="navCalculator">Kalkulyator</a>
+          <a href="#configurator" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer" data-t="navConfigurator">Tizim Konstruktori</a>
+          <a href="#faq" class="px-3.5 py-1.5 rounded-lg hover:text-emeraldBrand hover:bg-subtle transition-colors duration-150 cursor-pointer" data-t="navFaq">Savollar</a>
         </nav>
       </div>
 
       <div class="flex items-center gap-3">
+        <!-- 3-Language Switcher (EN / UZ / RU) -->
+        <div class="flex items-center bg-[#EAE8E1] border border-divider rounded-full p-1 text-xs font-mono font-bold">
+          <button type="button" onclick="setLang('en')" id="btn-lang-en" class="lang-pill-btn">EN</button>
+          <button type="button" onclick="setLang('uz')" id="btn-lang-uz" class="lang-pill-btn active">UZ</button>
+          <button type="button" onclick="setLang('ru')" id="btn-lang-ru" class="lang-pill-btn">RU</button>
+        </div>
+
         <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 text-slate-700 hover:text-slateDark border border-divider rounded-xl hover:bg-white transition duration-150 cursor-pointer">
           <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
-          <span>GPTify Bosh Sahifa</span>
+          <span data-t="navHome">GPTify Bosh Sahifa</span>
         </a>
         <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs sm:text-sm font-bold shadow-sm transition-all duration-200 cursor-pointer">
-          <span>Strategik Sessiya (30 daq)</span>
+          <span data-t="navBook">Strategik Sessiya (30 daq)</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (EZYE EDITORIAL AESTHETIC) ==================== -->
-  <section class="pt-16 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
+  <!-- ==================== HERO SECTION WITH LIVE COMMAND CENTER ==================== -->
+  <section class="pt-14 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       <!-- Left Column: Editorial Headline & Value Proposition -->
-      <div class="lg:col-span-7">
+      <div class="lg:col-span-6">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-divider text-xs font-bold text-slateDark mb-6 shadow-2xs">
           <span class="w-2 h-2 rounded-full bg-emeraldBrand badge-live-pulse" aria-hidden="true"></span>
-          <span>B2B Tizimlar · Kalit Ostida O'rnatish</span>
+          <span data-t="heroBadge">B2B Operatsion Tizimlar · Kalit Ostida O'rnatish</span>
         </div>
 
-        <h1 class="text-4xl sm:text-6xl font-black text-slateDark tracking-tight leading-[1.12] mb-6">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slateDark tracking-tight leading-[1.12] mb-6" data-t="heroH1">
           Biznesingizni yurituvchi <br>
-          <span class="font-serif italic font-normal text-emeraldBrand text-[1.12em] tracking-normal">operatsion tizimlarni</span><br>
+          <span class="font-serif italic font-normal text-emeraldBrand text-[1.14em] tracking-normal">operatsion tizimlarni</span><br>
           loyihalashtiramiz va quramiz.
         </h1>
 
-        <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8 max-w-2xl">
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-xl" data-t="heroSub">
           Qo'l mehnatini qisqartiramiz, dasturlaringizni yagona zanjirga ulaymiz va jamoangizni faqat o'sishga yo'naltiramiz. 
           Yana bitta quruq vosita emas — to'liq ishlaydigan yaxlit operatsion tizim.
         </p>
 
-        <!-- CTA & Strategic Session Details -->
+        <!-- CTA & Strategy Session Details -->
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
-          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-sm text-center shadow-md transition-all duration-200 flex items-center justify-center gap-2.5 cursor-pointer">
-            <span>Bepul Strategik Sessiya Belgilash</span>
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-sm text-center shadow-md transition-all duration-200 flex items-center justify-center gap-2.5 cursor-pointer">
+            <span data-t="heroCtaPrimary">Bepul Strategik Sessiya Belgilash</span>
             <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
           <div class="text-xs text-slateMuted">
-            <span class="font-bold text-slateDark block">Bepul · 30 daqiqa · Majburiyatsiz</span>
-            Tizim to'liq sizning korxonangiz mulki bo'lib qoladi
+            <span class="font-bold text-slateDark block" data-t="heroCtaNote">Bepul · 30 daqiqa · Majburiyatsiz</span>
+            <span data-t="heroCtaSub">Tizim to'liq sizning korxonangiz mulki bo'lib qoladi</span>
           </div>
         </div>
 
-        <!-- Quick Proof Badges (Accessible SVG Checkmarks) -->
+        <!-- Quick Proof Badges -->
         <div class="flex flex-wrap items-center gap-y-3 gap-x-6 text-xs font-semibold text-slate-700 pt-6 border-t border-divider">
           <span class="flex items-center gap-1.5">
             <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            O'zbekistondagi real B2B amaliyotida sinovdan o'tgan
+            <span data-t="proof1">O'zbekistondagi real B2B amaliyotida sinovdan o'tgan</span>
           </span>
           <span class="flex items-center gap-1.5">
             <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            Mavjud CRM va Telegramingizga to'g'ridan-to'g'ri ulanadi
-          </span>
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            48 soat ichida ishga tushirish
+            <span data-t="proof2">Mavjud CRM va Telegramingizga to'g'ridan-to'g'ri ulanadi</span>
           </span>
         </div>
       </div>
 
-      <!-- Right Column: Live Simulated Operations Stack (Interactive Flow Card) -->
-      <div class="lg:col-span-5">
-        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-divider shadow-sm relative">
-          <div class="flex items-center justify-between pb-4 mb-4 border-b border-divider">
+      <!-- Right Column: Simulated Live Command Center Window (Interactive Software Mockup) -->
+      <div class="lg:col-span-6 relative">
+        
+        <!-- Floating Chip 1 -->
+        <div class="float-a absolute -top-4 right-2 sm:right-6 z-20 bg-white border border-divider rounded-xl px-3.5 py-2 shadow-lg flex items-center gap-2 text-xs font-bold text-slateDark">
+          <span class="w-2 h-2 rounded-full bg-emeraldBrand badge-live-pulse"></span>
+          <span data-t="heroFloat1">47 lid saralandi (8s javob)</span>
+        </div>
+
+        <!-- Floating Chip 2 -->
+        <div class="float-b absolute -bottom-4 left-2 sm:left-4 z-20 bg-white border border-divider rounded-xl px-3.5 py-2 shadow-lg flex items-center gap-2 text-xs font-bold text-slateDark">
+          <svg class="w-4 h-4 text-amberBrand" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+          <span data-t="heroFloat2">Outreach Agenti: 12 korxonaga yuborildi</span>
+        </div>
+
+        <!-- Simulated Window -->
+        <div class="relative bg-white border border-divider rounded-2xl overflow-hidden shadow-xl">
+          <div class="fake-cursor hidden sm:block"></div>
+
+          <!-- Window Top Bar -->
+          <div class="flex items-center justify-between px-4 py-3 bg-[#F8FAFC] border-b border-divider text-xs">
             <div class="flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-emeraldBrand badge-live-pulse" aria-hidden="true"></span>
-              <span class="text-xs font-mono font-bold uppercase tracking-wider text-slateDark">GPTify OS Jonli Konveyeri</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#FF5F57]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#28C840]"></span>
+              <span class="font-mono text-[11px] text-slate-500 ml-2">app.gptify.uz/command-center</span>
             </div>
-            <span class="text-[11px] font-mono text-slateMuted">Avtomatik oqim</span>
+            <div class="flex items-center gap-1.5 text-emerald-700 font-mono text-[10px] font-bold bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              <span data-t="dashStatus">JONLI FLOT</span>
+            </div>
           </div>
 
-          <div class="space-y-3 font-mono text-xs">
-            <!-- Event 1: Ailo -->
-            <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100 hover:border-emerald-300 transition duration-150 group cursor-pointer">
-              <div class="flex items-center justify-between text-emerald-900 font-bold mb-1">
-                <span class="flex items-center gap-1.5">
-                  <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-                  01 · Inbound Aloqa & Triage
-                </span>
-                <span class="text-[10px] bg-emerald-200/80 text-emerald-900 px-2 py-0.5 rounded-md font-sans font-bold">8 soniyada</span>
+          <!-- Window Body -->
+          <div class="p-5 sm:p-6 bg-white space-y-5">
+            
+            <!-- Real-time Metrics Grid -->
+            <div class="grid grid-cols-3 gap-3">
+              <div class="p-3 rounded-xl bg-subtle/80 border border-divider">
+                <div class="flex items-center justify-between text-[10px] font-mono text-slateMuted font-bold">
+                  <span data-t="kpi1Label">LIDLAR</span>
+                  <span class="text-emeraldBrand">+14%</span>
+                </div>
+                <div class="text-xl font-mono font-black text-slateDark mt-1">47</div>
+                <svg viewBox="0 0 100 24" class="w-full h-5 mt-1">
+                  <path d="M0,18 L15,16 L30,19 L45,12 L60,14 L75,7 L90,9 L100,2" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" class="sparkline-path"/>
+                </svg>
               </div>
-              <p class="text-slate-600 font-sans text-xs">Ailo Instagram va Telegramda mijozga insondek javob berdi va saraladi.</p>
-              <span class="text-[10px] text-emerald-700 font-semibold block mt-1.5 group-hover:underline">ailo.gptify.uz ↗</span>
-            </a>
 
-            <!-- Event 2: ILDAM B2B Outreach Agent -->
-            <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 hover:border-amber-300 transition duration-150 group cursor-pointer">
-              <div class="flex items-center justify-between text-amber-900 font-bold mb-1">
-                <span class="flex items-center gap-1.5">
-                  <svg class="w-3.5 h-3.5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 8.97 6.364-3.541 1.109zM3.75 3.75h16.5m-16.5 4.5h9m-9 4.5h6"/></svg>
-                  02 · B2B Outreach Agenti
-                </span>
-                <span class="text-[10px] bg-amber-200/80 text-amber-900 px-2 py-0.5 rounded-md font-sans font-bold">Telegram • IG • Email</span>
+              <div class="p-3 rounded-xl bg-subtle/80 border border-divider">
+                <div class="flex items-center justify-between text-[10px] font-mono text-slateMuted font-bold">
+                  <span data-t="kpi2Label">AGENTLAR</span>
+                  <span class="text-emeraldBrand" data-t="kpi2Active">Faol</span>
+                </div>
+                <div class="text-xl font-mono font-black text-slateDark mt-1">4/4</div>
+                <div class="flex items-end gap-1 h-5 mt-1 pt-1">
+                  <span class="w-2 bg-emeraldBrand rounded-xs h-3"></span>
+                  <span class="w-2 bg-emeraldBrand rounded-xs h-4"></span>
+                  <span class="w-2 bg-emeraldBrand rounded-xs h-5"></span>
+                  <span class="w-2 bg-emeraldBrand rounded-xs h-4"></span>
+                </div>
               </div>
-              <p class="text-slate-600 font-sans text-xs">ILDAM yangi B2B korxonalarni topdi, taklif yubordi va javoblarni CRMga kiritdi.</p>
-              <span class="text-[10px] text-amber-700 font-semibold block mt-1.5 group-hover:underline">ildam.gptify.uz ↗</span>
-            </a>
 
-            <!-- Event 3: GPTify Meet -->
-            <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="block p-3.5 rounded-2xl bg-sky-50/70 border border-sky-100 hover:border-sky-300 transition duration-150 group cursor-pointer">
-              <div class="flex items-center justify-between text-sky-900 font-bold mb-1">
-                <span class="flex items-center gap-1.5">
-                  <svg class="w-3.5 h-3.5 text-sky-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
-                  03 · Uchrashuv Bayonnomasi
-                </span>
-                <span class="text-[10px] bg-sky-200/80 text-sky-900 px-2 py-0.5 rounded-md font-sans font-bold">100% Maxfiy</span>
+              <div class="p-3 rounded-xl bg-subtle/80 border border-divider">
+                <div class="flex items-center justify-between text-[10px] font-mono text-slateMuted font-bold">
+                  <span data-t="kpi3Label">TEJALDI</span>
+                  <span class="text-emeraldBrand font-bold" data-t="kpi3Sub">Bu hafta</span>
+                </div>
+                <div class="text-xl font-mono font-black text-slateDark mt-1">52.5h</div>
+                <div class="text-[10px] font-mono text-slate-500 mt-1" data-t="kpi3Value">~5,600,000 so'm</div>
               </div>
-              <p class="text-slate-600 font-sans text-xs">GPTify Meet audio yozuvdan topshiriqlar va muddatlarni Telegramga jo'natdi.</p>
-              <span class="text-[10px] text-sky-700 font-semibold block mt-1.5 group-hover:underline">meet.gptify.uz ↗</span>
-            </a>
+            </div>
 
-            <!-- Event 4: Jarvis -->
-            <a href="jarvis_fleet.html" class="block p-3.5 rounded-2xl bg-purple-50/70 border border-purple-100 hover:border-purple-300 transition duration-150 group cursor-pointer">
-              <div class="flex items-center justify-between text-purple-900 font-bold mb-1">
-                <span class="flex items-center gap-1.5">
-                  <svg class="w-3.5 h-3.5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3"/></svg>
-                  04 · Operatsion Monitoring & Flot
+            <!-- Live Operations Telemetry Stream -->
+            <div>
+              <div class="flex items-center justify-between mb-2.5 text-[11px] font-mono text-slate-500 font-bold uppercase tracking-wider">
+                <span data-t="telemetryTitle">Avtonom Oqim Jurnali</span>
+                <span class="text-emeraldBrand flex items-center gap-1 font-bold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emeraldBrand"></span>
+                  <span data-t="telemetrySync">Sinxron</span>
                 </span>
-                <span class="text-[10px] bg-purple-200/80 text-purple-900 px-2 py-0.5 rounded-md font-sans font-bold">24/7 Doimiy</span>
               </div>
-              <p class="text-slate-600 font-sans text-xs">Jarvis barcha oqimlar va integratsiyalar barqarorligini nazorat qilmoqda.</p>
-              <span class="text-[10px] text-purple-700 font-semibold block mt-1.5 group-hover:underline">jarvis_fleet.html →</span>
-            </a>
-          </div>
 
-          <div class="mt-4 pt-3 border-t border-divider flex items-center justify-between text-[11px] text-slateMuted">
-            <span>Barcha bosqichlar avtonom ishlaydi</span>
-            <span class="font-bold text-slateDark">Inson omilisiz</span>
+              <div class="space-y-2 text-xs">
+                <!-- Stream 1 -->
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                    <span class="font-bold text-slateDark">Ailo:</span>
+                    <span class="text-slate-600 truncate max-w-[190px] sm:max-w-[260px]" data-t="tel1">Direct'dagi mijoz 8s da saralandi va narx taqdim etildi</span>
+                  </div>
+                  <span class="font-mono text-[10px] text-slate-400">00:08</span>
+                </div>
+
+                <!-- Stream 2 -->
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-amber-50/60 border border-amber-100">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                    <span class="font-bold text-slateDark">ILDAM Outreach:</span>
+                    <span class="text-slate-600 truncate max-w-[190px] sm:max-w-[260px]" data-t="tel2">12 ta yangi B2B korxonaga Telegram/Email taklif jo'natildi</span>
+                  </div>
+                  <span class="font-mono text-[10px] text-slate-400">10:42</span>
+                </div>
+
+                <!-- Stream 3 -->
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-sky-50/60 border border-sky-100">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-sky-600"></span>
+                    <span class="font-bold text-slateDark">GPTify Meet:</span>
+                    <span class="text-slate-600 truncate max-w-[190px] sm:max-w-[260px]" data-t="tel3">35 daqiqalik uchrashuvdan 5 ta vazifa Telegramga yuborildi</span>
+                  </div>
+                  <span class="font-mono text-[10px] text-slate-400">11:15</span>
+                </div>
+
+                <!-- Stream 4 -->
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-purple-50/60 border border-purple-100">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                    <span class="font-bold text-slateDark">Jarvis Flot:</span>
+                    <span class="text-slate-600 truncate max-w-[190px] sm:max-w-[260px]" data-t="tel4">Barcha webhook va integratsiyalar barqaror holatda</span>
+                  </div>
+                  <span class="font-mono text-[10px] text-slate-400">24/7</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== THE PROBLEM: PUTTING A NUMBER ON LOSSES ==================== -->
-  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
-    <div class="max-w-3xl mb-14">
-      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Haqiqiy Operatsion Muammo</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
-        Ko'pchilik biznes egalari nimadir noto'g'ri ekanini biladi. <br class="hidden sm:inline">
-        <span class="font-serif italic font-normal text-slate-800">Faqat hali raqamlarda hisoblab ko'rmagan.</span>
-      </h2>
-      <p class="text-slate-600 text-base mt-3">
-        Muammo yangi instrumentlar yetishmasligida emas. Muammo — mavjud jarayonlarning bir-biri bilan bog'lanmaganidadir.
-      </p>
+  <!-- ==================== INFINITE MARQUEE STRIP ==================== -->
+  <section class="py-10 border-b border-divider bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 mb-5 text-center">
+      <span class="text-xs font-mono font-bold uppercase tracking-widest text-slateMuted" data-t="marqueeTitle">
+        Sizning Mavjud Dasturlaringizga To'g'ridan-To'g'ri Bog'lanadi
+      </span>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <!-- Loss Card 1 -->
-      <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mb-4">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <div class="relative w-full overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_12%,black_88%,transparent)]">
+      <div class="marquee-track font-mono text-xs font-bold text-slate-600">
+        <!-- Set 1 -->
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <svg class="w-4 h-4 text-sky-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          <span>Telegram Bot & Channels</span>
         </div>
-        <h3 class="text-lg font-bold text-slateDark mb-2">Vaqt Yo'qotilishi</h3>
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          Har haftada jamoangiz <strong>20+ soat</strong> vaqtini takrorlanuvchi, odam qilishi shart bo'lmagan mexanik ishlarga sarflaydi.
-        </p>
-      </div>
-
-      <!-- Loss Card 2 -->
-      <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.652a3.75 3.75 0 010-5.304m5.304 0a3.75 3.75 0 010 5.304m-7.425 2.121a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12z"/></svg>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <svg class="w-4 h-4 text-pink-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Meta Graph API</span>
         </div>
-        <h3 class="text-lg font-bold text-slateDark mb-2">Sekin Javob & Sovuq Lidlar</h3>
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          Mijoz Direct yoki Telegramda soatlab kutib qoladi. Yangi B2B bozorlarga esa tizimli outreach qilinmaydi va savdo imkoniyatlari boy beriladi.
-        </p>
-      </div>
-
-      <!-- Loss Card 3 -->
-      <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959A3.75 3.75 0 0012 1.5a3.75 3.75 0 00-2.651 3.628c.215.283.401.604.401.959v.881a2.25 2.25 0 01-2.25 2.25H6.62c-.355 0-.676-.186-.959-.401A3.75 3.75 0 002 12a3.75 3.75 0 003.628 2.651c.283-.215.604-.401.959-.401h.881a2.25 2.25 0 012.25 2.25v.881c0 .355-.186.676-.401.959A3.75 3.75 0 0012 22.5a3.75 3.75 0 002.651-3.628c-.215-.283-.401-.604-.401-.959v-.881a2.25 2.25 0 012.25-2.25h.881c.355 0 .676.186.959.401A3.75 3.75 0 0022 12a3.75 3.75 0 00-3.628-2.651c-.283.215-.604.401-.959.401h-.881a2.25 2.25 0 01-2.25-2.25v-.881z"/></svg>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+          <span>ILDAM B2B CRM</span>
         </div>
-        <h3 class="text-lg font-bold text-slateDark mb-2">Dasturlar Tartibsizligi</h3>
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          CRM boshqa joyda, Telegram guruhlar boshqa joyda, hisob-kitob esa Excelda. Ular bir-biri bilan avtomatik gaplashmaydi.
-        </p>
-      </div>
-
-      <!-- Loss Card 4 -->
-      <div class="card-elevated p-6 rounded-2xl">
-        <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+          <span>Claude 3.5 Sonnet</span>
         </div>
-        <h3 class="text-lg font-bold text-slateDark mb-2">Ortda Qolish Xavfi</h3>
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          Raqobatchilar avtomatlashtirilgan 8 soniyalik javoblarga o'tayotgan bir paytda, sizning jamoangiz hali ham qo'lda copy-paste qilmoqda.
-        </p>
-      </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+          <span>OpenAI ChatGPT</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+          <span>Google Gemini API</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          <span>Google Sheets & Excel</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-sky-600"></span>
+          <span>Zoom & Google Meet</span>
+        </div>
 
-    </div>
-
-    <!-- Highlighted Loss Callout -->
-    <div class="mt-8 p-6 sm:p-7 rounded-2xl bg-subtle border border-divider flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-      <div>
-        <span class="text-xs font-mono font-bold text-slateDark uppercase tracking-wider">Bularning barchasi jamlanganda:</span>
-        <div class="text-lg sm:text-xl font-extrabold text-slateDark mt-1">
-          Har yili o'rtacha <span class="text-red-600 underline decoration-red-300 underline-offset-4">48,000,000+ so'm</span> qaytarib olish mumkin bo'lgan operatsion yo'qotish yuzaga keladi.
+        <!-- Duplicated Set for Seamless Infinite Loop -->
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <svg class="w-4 h-4 text-sky-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          <span>Telegram Bot & Channels</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <svg class="w-4 h-4 text-pink-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Meta Graph API</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+          <span>ILDAM B2B CRM</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+          <span>Claude 3.5 Sonnet</span>
+        </div>
+        <div class="flex items-center gap-2.5 bg-subtle px-4 py-2 rounded-xl border border-divider">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+          <span>OpenAI ChatGPT</span>
         </div>
       </div>
-      <a href="#calculator" class="px-5 py-3 rounded-xl bg-white border border-divider hover:bg-slate-50 text-slateDark text-xs font-bold transition duration-150 whitespace-nowrap cursor-pointer shadow-2xs">
-        O'z raqamlaringizni hisoblang ↓
-      </a>
     </div>
   </section>
 
-  <!-- ==================== THE 4-WAY COMPARISON (NOT A TOOL, A COMPLETE OS) ==================== -->
-  <section id="comparison" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
-    <div class="max-w-3xl mb-14">
-      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Aqlli Muqobil</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
-        Yana bitta tarqoq ilova emas. <br>
-        <span class="font-serif italic font-normal text-slate-800">Sizning yaxlit operatsion tizimingiz.</span>
+  <!-- ==================== LOOPING LIVE CHAT DEMO ==================== -->
+  <section id="demo" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-b border-divider">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand" data-t="demoEyebrow">Jonli Simulyatsiya</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-2 tracking-tight" data-t="demoTitle">
+        Ailo va ILDAM Real Vaqtda Qanday Ishlaydi?
       </h2>
-      <p class="text-slate-600 text-base mt-3">
-        Biz shunchaki dastur litsenziyasini sotib ketmaymiz. Biz biznesingizga kirib, tizimni to'liq ishlaydigan holatda o'rnatib topshiramiz.
+      <p class="text-slate-600 text-sm sm:text-base mt-2" data-t="demoSub">
+        Quruq tugmali bot emas — 8 soniyada samimiy muloqot, ehtiyojni aniqlash va CRMga avtomatik biriktirish.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-      
-      <!-- Option 1: Manual Spreadsheets -->
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <h4 class="font-extrabold text-slateDark text-base mb-1">Qo'lda Boshqarish (Excel/Daftar)</h4>
-        <span class="text-xs font-mono text-slateMuted block mb-4">Sekin va inson xatolari ko'p</span>
-        <ul class="space-y-3 text-xs text-slate-600">
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Barcha ma'lumotlar qo'lda kiritiladi, tezda chalkashadi</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Lidlar va to'lovlar daftarlarda esdan chiqadi</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Avtomatik eslatma va real vaqtda tahlil yo'q</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Sovuq bozorlarga tizimli outreach qilib bo'lmaydi</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Option 2: Another SaaS Tool -->
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <h4 class="font-extrabold text-slateDark text-base mb-1">Yana Bitta SaaS Dastur</h4>
-        <span class="text-xs font-mono text-slateMuted block mb-4">O'zingiz sozlashingiz kerak</span>
-        <ul class="space-y-3 text-xs text-slate-600">
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Sozlashni o'zingiz qilishingiz shart</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Mavjud tartibsizlik ustiga yana bitta ilova</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Mahalliy O'zbekiston jarayonlariga mos emas</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Hech qanday jonli texnik strategiya yo'q</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Option 3: Generic Freelancer -->
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <h4 class="font-extrabold text-slateDark text-base mb-1">Tasodifiy Frilanser</h4>
-        <span class="text-xs font-mono text-slateMuted block mb-4">Bir martalik yamoq</span>
-        <ul class="space-y-3 text-xs text-slate-600">
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Bitta kichik botni ulaydi va g'oyib bo'ladi</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Yaxlit biznes konveyeri haqida tushunchasi yo'q</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Standart shablon, sizga moslashtirilmagan</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span>Keyinchalik xatolik chiqsa tuzatuvchi yo'q</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Option 4: GPTify OS (Featured Executive Solution) -->
-      <div class="p-6 rounded-2xl bg-white border-2 border-emeraldBrand shadow-sm relative">
-        <div class="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-emeraldBrand text-white font-mono text-[10px] font-bold uppercase tracking-wider">
-          Tavsiya etiladi
+    <!-- Chat Window Mockup -->
+    <div class="bg-white rounded-2xl border border-divider shadow-xl overflow-hidden max-w-xl mx-auto">
+      <div class="flex items-center justify-between px-4 py-3 bg-[#F8FAFC] border-b border-divider">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs flex items-center justify-center">
+            A
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slateDark flex items-center gap-1.5">
+              <span>Ailo Sales Engine</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-emeraldBrand"></span>
+            </div>
+            <div class="text-[10px] text-slate-400" data-t="chatChannel">Instagram Direct / Telegram orqali</div>
+          </div>
         </div>
-        <h4 class="font-extrabold text-slateDark text-base mb-1">GPTify OS Hamkorligi</h4>
-        <span class="text-xs font-mono text-emeraldBrand font-bold block mb-4">Boshidan oxirigacha kalit ostida</span>
-        <ul class="space-y-3 text-xs text-slate-700">
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span><strong>Strategiyadan to ijrogacha:</strong> Jarayon xaritasi + tizim o'rnatish</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span><strong>Sohaviy tajriba:</strong> B2B savdo, distribyutsiya, xizmat ko'rsatish</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span><strong>O'lchanadigan ROI:</strong> Qaytariladigan soatlar va sof tejamkorlik</span>
-          </li>
-          <li class="flex items-start gap-2">
-            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            <span><strong>Jamoaga to'liq o'rgatish:</strong> SOP qo'llanmalar va video darslar</span>
-          </li>
-        </ul>
+        <span class="text-[10px] font-mono text-emeraldBrand font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+          8s Response
+        </span>
       </div>
 
+      <!-- Messages Stream -->
+      <div class="p-6 bg-[#FAFAFB] min-h-[300px] flex flex-col justify-end gap-3.5 text-xs sm:text-sm">
+        
+        <!-- User Inquiry -->
+        <div class="demo-msg1 self-start bg-white border border-divider text-slate-800 p-3.5 rounded-2xl rounded-tl-xs max-w-[85%] shadow-xs" data-t="chatMsg1">
+          Assalomu alaykum! B2B savdo korxonamiz uchun mijozlar bazasi va sotuvlarni tartibga solish kerak edi. Qanday yordam bera olasizlar?
+        </div>
+
+        <!-- AI Instant Qualified Reply -->
+        <div class="demo-msg2 self-end bg-slateDark text-white p-3.5 rounded-2xl rounded-tr-xs max-w-[85%] shadow-md" data-t="chatMsg2">
+          Vaalaykum assalom! Albatta. GPTify OS doirasida ILDAM CRM va Ailo tizimini ulab beramiz. Jamoangizda nechta xodim ishlaydi va hozir mijozlarni qayerda qayd qilyapsiz?
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="demo-typing self-start bg-white border border-divider p-3 rounded-2xl rounded-tl-xs flex items-center gap-1.5 shadow-xs w-16">
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-400 typing-dot"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-400 typing-dot" style="animation-delay: 0.15s"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-400 typing-dot" style="animation-delay: 0.3s"></span>
+        </div>
+
+        <!-- User Reply -->
+        <div class="demo-msg3 self-start bg-white border border-divider text-slate-800 p-3.5 rounded-2xl rounded-tl-xs max-w-[85%] shadow-xs" data-t="chatMsg3">
+          12 ta xodimimiz bor, hozircha Excel va Telegram guruhda chalkashib ketyapti.
+        </div>
+
+        <!-- Success Verification Pill -->
+        <div class="demo-badge self-center bg-emeraldLight border border-emerald-300 text-emerald-800 px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 shadow-xs">
+          <svg class="w-4 h-4 text-emeraldBrand" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          <span data-t="chatBadge">Lid ILDAM CRMga kiritildi va mas'ul mutaxassisga yo'naltirildi</span>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- ==================== THE 4 CORE ENGINES ==================== -->
   <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
     <div class="max-w-3xl mb-14">
-      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Yetkazib Beriladigan Tizim</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand" data-t="pillarsEyebrow">Yetkazib Beriladigan Tizim</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight" data-t="pillarsTitle">
         GPTify OS Core: 4 Ta Asosiy Operatsion Ustun
       </h2>
-      <p class="text-slate-600 text-base mt-3">
-        Har bir modul mustaqil ishlay oladi va yagona markaziy konveyer orqali sinxronlashadi.
+      <p class="text-slate-600 text-base mt-3" data-t="pillarsSub">
+        Har bir modul mustaqil ishlay oladi va yagona markaziy konveyer orqali bir-biriga ulanadi.
       </p>
     </div>
 
@@ -487,7 +587,7 @@
               </div>
               <div>
                 <h3 class="text-xl font-extrabold text-slateDark">AILO</h3>
-                <span class="text-xs text-emeraldBrand font-mono font-bold">Aloqa & Savdo Agenti</span>
+                <span class="text-xs text-emeraldBrand font-mono font-bold" data-t="ailoRole">Aloqa & Savdo Agenti</span>
               </div>
             </div>
             <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-emeraldBrand hover:underline flex items-center gap-1 cursor-pointer">
@@ -495,7 +595,7 @@
             </a>
           </div>
 
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6" data-t="ailoDesc">
             Instagram Direct va Telegram'ga kelgan barcha murojaatlarga <strong>8 soniyada</strong> insondek javob beradi. 
             Mijoz ehtiyojini aniqlaydi, e'tirozlarni yopadi va xaridga tayyor lidlarni to'g'ridan-to'g'ri CRMga uzatadi.
           </p>
@@ -503,25 +603,25 @@
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Meta Rasmiy Graph API:</strong> Bloklanish xavfisiz, xavfsiz va qonuniy integratsiya.</span>
+              <span data-t="ailoB1"><strong>Meta Rasmiy Graph API:</strong> Bloklanish xavfisiz, xavfsiz va qonuniy integratsiya.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>O'zbek Tili & Shevalar:</strong> Erkin matn, audio va qisqartmalarni 100% tushunish.</span>
+              <span data-t="ailoB2"><strong>Ko'p Tillilik & Kontekst:</strong> Matn, audio va qisqartmalarni 100% tushunish.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Qolipli Botlardan 10x Kuchli:</strong> Quruq tugmalar emas, samimiy insoniy muloqot.</span>
+              <span data-t="ailoB3"><strong>Insoniy Muloqot:</strong> Quruq tugmalar emas, professional savdo intellekti.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
           <a href="https://ailo.gptify.uz" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
-            <span>ailo.gptify.uz saytiga o'tish</span>
+            <span data-t="ailoCta">ailo.gptify.uz saytiga o'tish</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="ailo.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer">
+          <a href="ailo.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer" data-t="details">
             Tafsilotlar
           </a>
         </div>
@@ -537,7 +637,7 @@
               </div>
               <div>
                 <h3 class="text-xl font-extrabold text-slateDark">ILDAM CRM & B2B Outreach</h3>
-                <span class="text-xs text-amberBrand font-mono font-bold">Faol Savdo & Avtonom Outreach Agenti</span>
+                <span class="text-xs text-amberBrand font-mono font-bold" data-t="ildamRole">Faol Savdo & Avtonom Outreach Agenti</span>
               </div>
             </div>
             <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-amberBrand hover:underline flex items-center gap-1 cursor-pointer">
@@ -545,37 +645,33 @@
             </a>
           </div>
 
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6" data-t="ildamDesc">
             Eskirgan passiv jadvallar faqat kelgan mijozni saqlaydi. ILDAM esa o'zi yangi B2B korxonalarni qidiradi, 
-            <strong>Telegram, Instagram va Email</strong> orqali shaxsiylashtirilgan takliflar yuboradi, 10 soniyada javoblarni saralaydi va to'lovlarni nazorat qiladi.
+            <strong>Telegram, Instagram va Email</strong> orqali takliflar yuboradi, 10 soniyada saralaydi va to'lovlarni nazorat qiladi.
           </p>
 
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Avtonom B2B Outreach Agenti:</strong> Telegram, Instagram va Email orqali potensial mijozlarga avtomatik aloqa o'rnatish.</span>
+              <span data-t="ildamB1"><strong>Avtonom B2B Outreach Agenti:</strong> Telegram, Instagram va Email orqali faol aloqa o'rnatish.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>10-Soniyalik Jonli Triage:</strong> Qiziqish bildirgan korxonalarni darhol CRM voronkasiga kiritish va mas'ul biriktirish.</span>
+              <span data-t="ildamB2"><strong>10-Soniyalik Jonli Triage:</strong> Qiziqish bildirgan korxonalarni darhol voronkaga kiritish.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>1,200+ Korxonalar Bazasi:</strong> O'zbekistondagi faol yuridik shaxslar ma'lumotnomasi bilan tayyor integratsiya.</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <svg class="w-4 h-4 text-amberBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Milestone To'lovlar Nazorati:</strong> Shartnoma, 30/70 avans va bosqichma-bosqich to'lovlarni avtomatik eslatib turish.</span>
+              <span data-t="ildamB3"><strong>Milestone To'lovlar Nazorati:</strong> Avans va bosqichma-bosqich to'lovlarni avtomatik eslatish.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
           <a href="https://ildam.gptify.uz" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
-            <span>ildam.gptify.uz saytiga o'tish</span>
+            <span data-t="ildamCta">ildam.gptify.uz saytiga o'tish</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="ildam.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer">
+          <a href="ildam.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer" data-t="details">
             Tafsilotlar
           </a>
         </div>
@@ -591,7 +687,7 @@
               </div>
               <div>
                 <h3 class="text-xl font-extrabold text-slateDark">GPTify Meet</h3>
-                <span class="text-xs text-skyBrand font-mono font-bold">Maxfiy AI Kotib</span>
+                <span class="text-xs text-skyBrand font-mono font-bold" data-t="meetRole">Maxfiy AI Kotib</span>
               </div>
             </div>
             <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="text-xs font-mono font-bold text-skyBrand hover:underline flex items-center gap-1 cursor-pointer">
@@ -599,7 +695,7 @@
             </a>
           </div>
 
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6" data-t="meetDesc">
             Begona botlarsiz, <strong>100% maxfiy uchrashuv intellekti</strong>. Zoom, Google Meet va Teams suhbatlaridagi 
             qarorlar, vazifalar va mas'ullarni avtomatik qayd etib, Telegramga jo'natadi.
           </p>
@@ -607,25 +703,25 @@
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-skyBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Zero-Bot Maxfiylik:</strong> Ekrandan begona bot ko'rinmaydi, audio oqimi to'liq shifrlangan.</span>
+              <span data-t="meetB1"><strong>Zero-Bot Maxfiylik:</strong> Ekrandan begona bot ko'rinmaydi, audio oqimi to'liq shifrlangan.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-skyBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>O'zbekcha Aniq Transkripsiya:</strong> Texnik va biznes terminlarni chalkashtirmasdan yozish.</span>
+              <span data-t="meetB2"><strong>Aniq Transkripsiya:</strong> Texnik va biznes terminlarni chalkashtirmasdan bayonlashtirish.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-skyBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Topshiriqlar Bayonnomasi:</strong> Uchrashuv tugashi bilanoq kim nima qilishi kerakligi tayyor.</span>
+              <span data-t="meetB3"><strong>Topshiriqlar Bayonnomasi:</strong> Uchrashuv tugashi bilanoq kim nima qilishi kerakligi tayyor.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
           <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
-            <span>meet.gptify.uz saytiga o'tish</span>
+            <span data-t="meetCta">meet.gptify.uz saytiga o'tish</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="meet.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer">
+          <a href="meet.html" class="py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slate-700 text-xs font-semibold transition duration-150 cursor-pointer" data-t="details">
             Tafsilotlar
           </a>
         </div>
@@ -641,7 +737,7 @@
               </div>
               <div>
                 <h3 class="text-xl font-extrabold text-slateDark">JARVIS</h3>
-                <span class="text-xs text-purpleBrand font-mono font-bold">Flot Kokpiti & Monitoring</span>
+                <span class="text-xs text-purpleBrand font-mono font-bold" data-t="jarvisRole">Flot Kokpiti & Monitoring</span>
               </div>
             </div>
             <span class="text-xs font-mono font-bold text-purpleBrand">
@@ -649,7 +745,7 @@
             </span>
           </div>
 
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          <p class="text-slate-600 text-sm leading-relaxed mb-6" data-t="jarvisDesc">
             Barcha agentlar faoliyatini bir joyda jamlovchi <strong>avtonom operatsion kokpit</strong>. 
             Telemetriya, xabarlar oqimi va integratsiyalarni 24/7 nazorat qilib boradi.
           </p>
@@ -657,22 +753,22 @@
           <div class="space-y-2.5 text-xs text-slate-700 mb-8">
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-purpleBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Ko'p Agentli Telemetriya:</strong> Ailo, CRM va Meet o'rtasidagi ma'lumotlarni real vaqtda kuzatish.</span>
+              <span data-t="jarvisB1"><strong>Ko'p Agentli Telemetriya:</strong> Ailo, CRM va Meet ma'lumotlarini real vaqtda kuzatish.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-purpleBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Xatoliklarni Avtomatik Tuzatish:</strong> To'xtab qolgan ssenariylarni darhol aniqlash.</span>
+              <span data-t="jarvisB2"><strong>Xatoliklarni Avtomatik Tuzatish:</strong> To'xtab qolgan ssenariylarni darhol qayta ishga tushirish.</span>
             </div>
             <div class="flex items-start gap-2">
               <svg class="w-4 h-4 text-purpleBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-              <span><strong>Markaziy Audit Jurnali:</strong> Har bir tranzaksiya va qarorning to'liq tarixi.</span>
+              <span data-t="jarvisB3"><strong>Markaziy Audit Jurnali:</strong> Har bir tranzaksiya va qarorning to'liq tarixi.</span>
             </div>
           </div>
         </div>
 
         <div class="pt-6 border-t border-divider flex items-center gap-3">
           <a href="jarvis_fleet.html" class="flex-1 py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
-            <span>Fleet Console'ni ochish</span>
+            <span data-t="jarvisCta">Fleet Console'ni ochish</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
         </div>
@@ -684,11 +780,11 @@
   <!-- ==================== INTERACTIVE RECOVERABLE LOSS CALCULATOR ==================== -->
   <section id="calculator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto border-b border-divider">
     <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Interaktiv Kalkulyator</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand" data-t="calcEyebrow">Interaktiv Kalkulyator</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight" data-t="calcTitle">
         Stol ustida qancha pul qoldiryapsiz?
       </h2>
-      <p class="text-slate-600 text-sm sm:text-base mt-2">
+      <p class="text-slate-600 text-sm sm:text-base mt-2" data-t="calcSub">
         Raqamlaringizni kiriting. Bu samarasizlik hozirning o'zida biznesingizga qanchaga tushayotganini ko'rsatib beradi.
       </p>
     </div>
@@ -700,40 +796,40 @@
         <div class="space-y-6">
           <div>
             <div class="flex justify-between items-center text-xs font-bold text-slateDark mb-2">
-              <span>Jamoangizdagi xodimlar soni:</span>
+              <span data-t="calcTeam">Jamoangizdagi xodimlar soni:</span>
               <span class="text-sm font-mono text-emeraldBrand font-black" id="valTeamSize">5 kishi</span>
             </div>
             <input type="range" id="teamSize" min="1" max="50" value="5" class="w-full">
             <div class="flex justify-between text-[10px] text-slateMuted mt-1 font-mono">
-              <span>1 kishi</span>
-              <span>25 kishi</span>
-              <span>50 kishi</span>
+              <span id="rangeTeamMin">1 kishi</span>
+              <span id="rangeTeamMid">25 kishi</span>
+              <span id="rangeTeamMax">50 kishi</span>
             </div>
           </div>
 
           <div>
             <div class="flex justify-between items-center text-xs font-bold text-slateDark mb-2">
-              <span>Har bir xodimning takroriy qo'l mehnati:</span>
+              <span data-t="calcHours">Har bir xodimning takroriy qo'l mehnati:</span>
               <span class="text-sm font-mono text-emeraldBrand font-black" id="valHoursSpent">15 soat/hafta</span>
             </div>
             <input type="range" id="hoursSpent" min="5" max="35" value="15" class="w-full">
             <div class="flex justify-between text-[10px] text-slateMuted mt-1 font-mono">
-              <span>5 soat</span>
-              <span>20 soat</span>
-              <span>35 soat</span>
+              <span id="rangeHoursMin">5 soat</span>
+              <span id="rangeHoursMid">20 soat</span>
+              <span id="rangeHoursMax">35 soat</span>
             </div>
           </div>
 
           <div>
             <div class="flex justify-between items-center text-xs font-bold text-slateDark mb-2">
-              <span>O'rtacha oylik maosh (1 xodim):</span>
+              <span data-t="calcSalary">O'rtacha oylik maosh (1 xodim):</span>
               <span class="text-sm font-mono text-emeraldBrand font-black" id="valSalary">5,000,000 so'm</span>
             </div>
             <input type="range" id="salary" min="3000000" max="15000000" step="500000" value="5000000" class="w-full">
             <div class="flex justify-between text-[10px] text-slateMuted mt-1 font-mono">
-              <span>3 mln</span>
-              <span>8 mln</span>
-              <span>15 mln</span>
+              <span id="rangeSalaryMin">3 mln</span>
+              <span id="rangeSalaryMid">8 mln</span>
+              <span id="rangeSalaryMax">15 mln</span>
             </div>
           </div>
         </div>
@@ -741,7 +837,7 @@
         <!-- Result Card Side -->
         <div class="bg-subtle p-6 sm:p-8 rounded-2xl border border-divider text-center flex flex-col justify-between">
           <div>
-            <span class="text-[11px] font-mono uppercase tracking-wider text-slateMuted font-bold block mb-1">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slateMuted font-bold block mb-1" data-t="calcResultTitle">
               Yillik Qaytarilishi Mumkin Bo'lgan Mablag'
             </span>
             <div class="text-3xl sm:text-4xl font-black text-emeraldBrand tracking-tight my-2" id="calcSavingsUzs">
@@ -754,17 +850,17 @@
 
           <div class="my-6 pt-6 border-t border-divider grid grid-cols-2 gap-4 text-left">
             <div>
-              <span class="text-[10px] font-mono text-slateMuted block">Tejaladigan vaqt / yil:</span>
+              <span class="text-[10px] font-mono text-slateMuted block" data-t="calcSavedYear">Tejaladigan vaqt / yil:</span>
               <span class="text-base font-extrabold text-slateDark" id="calcHoursYear">2,700 soat</span>
             </div>
             <div>
-              <span class="text-[10px] font-mono text-slateMuted block">Qaytarilgan soat / hafta:</span>
+              <span class="text-[10px] font-mono text-slateMuted block" data-t="calcSavedWeek">Qaytarilgan soat / hafta:</span>
               <span class="text-base font-extrabold text-slateDark" id="calcHoursWeek">52.5 soat</span>
             </div>
           </div>
 
           <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs font-bold text-center shadow-sm transition duration-150 cursor-pointer inline-flex items-center justify-center gap-1.5">
-            <span>Ushbu yo'qotishlarni bartaraf etish</span>
+            <span data-t="calcCta">Ushbu yo'qotishlarni bartaraf etish</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
         </div>
@@ -773,62 +869,143 @@
     </div>
   </section>
 
-  <!-- ==================== WORKFLOW CONVEYOR ==================== -->
-  <section id="workflow" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
-    <div class="max-w-3xl mb-14">
-      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Uzluksiz Zanjir</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
-        Lid Kelishidan To Bitim Yopilishigacha: To'liq Konveyer
+  <!-- ==================== MODULAR PIPELINE CONFIGURATOR ==================== -->
+  <section id="configurator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
+    <div class="max-w-3xl mb-12">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand" data-t="cfgEyebrow">Moslashuvchan Modullar</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight" data-t="cfgTitle">
+        GPTify OS Konstruktori: O'zingizga Kerakli Flotni Tanlang
       </h2>
-      <p class="text-slate-600 text-base mt-3">
-        Biz har bir elementni alohida emas, balki bir-birini quvvatlovchi yagona zanjir sifatida ulaymiz.
+      <p class="text-slate-600 text-base mt-2" data-t="cfgSub">
+        Asosiy operatsion o'zak har bir korxonaga standart o'rnatiladi. Qo'shimcha agentlarni esa ehtiyojingizga qarab faollashtiring.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <span class="text-xs font-mono font-bold text-emeraldBrand block mb-1">BOSQICH 01</span>
-        <h4 class="font-extrabold text-slateDark text-base mb-2">Muloqot & Triage</h4>
-        <p class="text-xs text-slate-600 leading-relaxed mb-4">
-          Ailo mijoz bilan Instagram yoki Telegramda suhbatni boshlaydi, savollarga javob beradi va qiziqish darajasini belgilaydi.
+      <!-- Core Pipeline Box -->
+      <div class="lg:col-span-4 bg-white border-2 border-emeraldBrand rounded-3xl p-7 shadow-sm">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold uppercase tracking-wider mb-4" data-t="cfgCoreBadge">
+          Standart O'zak
+        </div>
+        <h3 class="text-2xl font-black text-slateDark">Pipeline Core</h3>
+        <p class="text-xs text-slate-600 mt-2 mb-6" data-t="cfgCoreDesc">
+          Har qanday B2B biznesning avtonom ishlashi uchun zarur bo'lgan minimal markaziy konveyer.
         </p>
-        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold border border-emerald-200">
-          AILO (8 soniyada)
-        </span>
+
+        <ul class="space-y-3 text-xs text-slate-700 pt-4 border-t border-divider">
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <span data-t="cfgCore1"><strong>Ailo Inbound:</strong> 8 soniyalik Meta va Telegram aloqasi</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <span data-t="cfgCore2"><strong>ILDAM CRM:</strong> Lidlar voronkasi va to'lovlar nazorati</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <span data-t="cfgCore3"><strong>GPTify Meet:</strong> Audio yozuvdan vazifalar protokoli</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-emeraldBrand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <span data-t="cfgCore4"><strong>Jarvis Monitoring:</strong> 24/7 avtomatik telemetriya</span>
+          </li>
+        </ul>
+
+        <div class="mt-8 pt-6 border-t border-divider">
+          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-slateDark hover:bg-slate-800 text-white text-xs font-bold text-center block transition cursor-pointer" data-t="cfgQuoteBtn">
+            O'rnatish smetasini olish <svg class="w-3.5 h-3.5 inline-block ml-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <span class="text-xs font-mono font-bold text-amberBrand block mb-1">BOSQICH 02</span>
-        <h4 class="font-extrabold text-slateDark text-base mb-2">B2B Outreach & CRM</h4>
-        <p class="text-xs text-slate-600 leading-relaxed mb-4">
-          ILDAM Agenti yangi korxonalarga Telegram, Instagram va Email orqali takliflar yuboradi, 10 soniyada javoblarni saralab CRMga olib kiradi.
-        </p>
-        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-700 font-bold border border-amber-200">
-          ILDAM CRM & Outreach
-        </span>
-      </div>
+      <!-- Add-on Agents Grid -->
+      <div class="lg:col-span-8 bg-white border border-divider rounded-3xl p-7 shadow-sm">
+        <div class="flex items-center justify-between mb-6 pb-4 border-b border-divider">
+          <div>
+            <h4 class="font-extrabold text-slateDark text-base" data-t="cfgAddonsTitle">Qo'shimcha Ixtisoslashgan Agentlar</h4>
+            <span class="text-xs text-slateMuted" data-t="cfgAddonsSub">Kerakli modullarni belgilang</span>
+          </div>
+          <span class="text-xs font-mono font-bold text-emeraldBrand bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+            <span data-t="cfgSelectedPrefix">Tanlandi:</span> <span id="selectedAddonsCount">2</span> <span data-t="cfgSelectedSuffix">ta</span>
+          </span>
+        </div>
 
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <span class="text-xs font-mono font-bold text-skyBrand block mb-1">BOSQICH 03</span>
-        <h4 class="font-extrabold text-slateDark text-base mb-2">Uchrashuv & Protokol</h4>
-        <p class="text-xs text-slate-600 leading-relaxed mb-4">
-          Mijoz bilan Zoom/Meet qo'ng'irog'i o'tkaziladi. GPTify Meet suhbatdan topshiriqlar, mas'ullar va kelishuvlarni Telegramga yuboradi.
-        </p>
-        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-700 font-bold border border-sky-200">
-          GPTIFY MEET (Jonli)
-        </span>
-      </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          <!-- Add-on 1 -->
+          <div class="addon-card selected p-4 rounded-2xl border border-divider cursor-pointer transition hover:border-emerald-400" onclick="toggleAddonCard(this)">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="w-5 h-5 text-amberBrand" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 8.97 6.364-3.541 1.109zM3.75 3.75h16.5m-16.5 4.5h9m-9 4.5h6"/></svg>
+              <div class="check-circle w-5 h-5 rounded-full border border-divider flex items-center justify-center text-[10px]">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+            </div>
+            <div class="font-bold text-slateDark text-xs mb-1" data-t="add1Title">B2B Outreach Agenti</div>
+            <p class="text-[11px] text-slate-500 leading-normal" data-t="add1Desc">Telegram, IG va Email orqali yangi korxonalarga avtomatik takliflar yuborish.</p>
+          </div>
 
-      <div class="p-6 rounded-2xl bg-white border border-divider">
-        <span class="text-xs font-mono font-bold text-purpleBrand block mb-1">BOSQICH 04</span>
-        <h4 class="font-extrabold text-slateDark text-base mb-2">Operatsion Monitoring</h4>
-        <p class="text-xs text-slate-600 leading-relaxed mb-4">
-          Jarvis barcha integratsiyalar barqarorligini, eslatmalarni va navbatdagi qadamlarni 24/7 kuzatib boradi.
-        </p>
-        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-700 font-bold border border-purple-200">
-          JARVIS (24/7 Flot)
-        </span>
+          <!-- Add-on 2 -->
+          <div class="addon-card selected p-4 rounded-2xl border border-divider cursor-pointer transition hover:border-emerald-400" onclick="toggleAddonCard(this)">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"/></svg>
+              <div class="check-circle w-5 h-5 rounded-full border border-divider flex items-center justify-center text-[10px]">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+            </div>
+            <div class="font-bold text-slateDark text-xs mb-1" data-t="add2Title">Kontent & Video Studio</div>
+            <p class="text-[11px] text-slate-500 leading-normal" data-t="add2Desc">Kompaniya ekspertizasidan avtomatik Reels, karusel va postlar konveyeri.</p>
+          </div>
+
+          <!-- Add-on 3 -->
+          <div class="addon-card p-4 rounded-2xl border border-divider cursor-pointer transition hover:border-emerald-400" onclick="toggleAddonCard(this)">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              <div class="check-circle w-5 h-5 rounded-full border border-divider flex items-center justify-center text-[10px]">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+            </div>
+            <div class="font-bold text-slateDark text-xs mb-1" data-t="add3Title">Ovozli AI Qabulxona</div>
+            <p class="text-[11px] text-slate-500 leading-normal" data-t="add3Desc">Kiruvchi qo'ng'iroqlarni o'zbek tilida qabul qilish va navbatga qo'yish.</p>
+          </div>
+
+          <!-- Add-on 4 -->
+          <div class="addon-card p-4 rounded-2xl border border-divider cursor-pointer transition hover:border-emerald-400" onclick="toggleAddonCard(this)">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg>
+              <div class="check-circle w-5 h-5 rounded-full border border-divider flex items-center justify-center text-[10px]">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+            </div>
+            <div class="font-bold text-slateDark text-xs mb-1" data-t="add4Title">1C / ERP Ko'prik</div>
+            <p class="text-[11px] text-slate-500 leading-normal" data-t="add4Desc">Buxgalteriya va ombor qoldiqlari bilan real vaqtda avtomatik sinxronizatsiya.</p>
+          </div>
+
+          <!-- Add-on 5 -->
+          <div class="addon-card p-4 rounded-2xl border border-divider cursor-pointer transition hover:border-emerald-400" onclick="toggleAddonCard(this)">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+              <div class="check-circle w-5 h-5 rounded-full border border-divider flex items-center justify-center text-[10px]">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+            </div>
+            <div class="font-bold text-slateDark text-xs mb-1" data-t="add5Title">Auto-Heal & Qutqaruv</div>
+            <p class="text-[11px] text-slate-500 leading-normal" data-t="add5Desc">API yoki internet uzilganda avtomatik qayta urinish va xatolarni tuzatish.</p>
+          </div>
+
+          <!-- Add-on 6 -->
+          <div class="addon-card p-4 rounded-2xl border border-divider cursor-pointer transition hover:border-emerald-400" onclick="toggleAddonCard(this)">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z"/></svg>
+              <div class="check-circle w-5 h-5 rounded-full border border-divider flex items-center justify-center text-[10px]">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+            </div>
+            <div class="font-bold text-slateDark text-xs mb-1" data-t="add6Title">Shoshilinch Eskalatsiya</div>
+            <p class="text-[11px] text-slate-500 leading-normal" data-t="add6Desc">Mijoz norozi bo'lganida darhol asoschi yoki boshqaruvchiga qo'ng'iroq qilish.</p>
+          </div>
+
+        </div>
       </div>
 
     </div>
@@ -837,11 +1014,11 @@
   <!-- ==================== THE 3-STEP CONSULTING PROCESS ==================== -->
   <section id="process" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-divider">
     <div class="max-w-3xl mb-14">
-      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand">Sinovdan O'tgan Metodologiya</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand" data-t="procEyebrow">Sinovdan O'tgan Metodologiya</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight" data-t="procTitle">
         3 Bosqichli Amaliy Jarayon
       </h2>
-      <p class="text-slate-600 text-base mt-3">
+      <p class="text-slate-600 text-base mt-3" data-t="procSub">
         Biz avval biznesingiz qanday ishlayotganini tushunamiz, keyin esa mustahkam tizim quramiz.
       </p>
     </div>
@@ -850,42 +1027,96 @@
       
       <div class="card-elevated p-8 rounded-3xl">
         <div class="text-3xl font-mono font-black text-slateDark mb-4">01</div>
-        <h3 class="text-xl font-extrabold text-slateDark mb-2">Discover (Audit)</h3>
-        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+        <h3 class="text-xl font-extrabold text-slateDark mb-2" data-t="p1Title">Discover (Audit)</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4" data-t="p1Desc">
           Biznesingizning mavjud jarayonlarini xaritaga tushiramiz: qayerda vaqt yo'qotilyapti, qaysi lidlar tushib qolyapti va tizim qayerda oqsamoqda.
         </p>
         <ul class="text-xs text-slateMuted space-y-1.5 font-medium">
-          <li>• To'liq operatsion audit</li>
-          <li>• Tor bo'g'inlarni (bottlenecks) aniqlash</li>
-          <li>• Qaytariladigan yo'qotishlar hisob-kitobi</li>
+          <li data-t="p1B1">• To'liq operatsion audit</li>
+          <li data-t="p1B2">• Tor bo'g'inlarni (bottlenecks) aniqlash</li>
+          <li data-t="p1B3">• Qaytariladigan yo'qotishlar hisob-kitobi</li>
         </ul>
       </div>
 
       <div class="card-elevated p-8 rounded-3xl">
         <div class="text-3xl font-mono font-black text-slateDark mb-4">02</div>
-        <h3 class="text-xl font-extrabold text-slateDark mb-2">Design (Loyiha)</h3>
-        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+        <h3 class="text-xl font-extrabold text-slateDark mb-2" data-t="p2Title">Design (Loyiha)</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4" data-t="p2Desc">
           Texnologiyani tiqishtirishdan oldin jarayonning o'zini to'g'rilaymiz. Har bir qadam tasodifiy emas, balki aniq maqsadli bo'lishini ta'minlaymiz.
         </p>
         <ul class="text-xs text-slateMuted space-y-1.5 font-medium">
-          <li>• Konveyer arxitekturasi xaritasi</li>
-          <li>• Jamoa uchun tushunarli SOP qo'llanmalar</li>
-          <li>• Aniq mas'ullar va eslatmalar zanjiri</li>
+          <li data-t="p2B1">• Konveyer arxitekturasi xaritasi</li>
+          <li data-t="p2B2">• Jamoa uchun tushunarli SOP qo'llanmalar</li>
+          <li data-t="p2B3">• Aniq mas'ullar va eslatmalar zanjiri</li>
         </ul>
       </div>
 
       <div class="card-elevated p-8 rounded-3xl">
         <div class="text-3xl font-mono font-black text-slateDark mb-4">03</div>
-        <h3 class="text-xl font-extrabold text-slateDark mb-2">Build (Qurish & Handoff)</h3>
-        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+        <h3 class="text-xl font-extrabold text-slateDark mb-2" data-t="p3Title">Build (Qurish & Handoff)</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4" data-t="p3Desc">
           Rejani amalga oshiramiz: Ailo, ILDAM, Meet va Jarvis tizimlarini ulab, sinovdan o'tkazamiz va jamoangizga to'liq topshiramiz.
         </p>
         <ul class="text-xs text-slateMuted space-y-1.5 font-medium">
-          <li>• To'liq kalit ostida integratsiya</li>
-          <li>• Jamoa bilan jonli onboarding darsi</li>
-          <li>• Video yo'riqnomalar va kafolat</li>
+          <li data-t="p3B1">• To'liq kalit ostida integratsiya</li>
+          <li data-t="p3B2">• Jamoa bilan jonli onboarding darsi</li>
+          <li data-t="p3B3">• Video yo'riqnomalar va kafolat</li>
         </ul>
       </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDION ==================== -->
+  <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-b border-divider">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-emeraldBrand" data-t="faqEyebrow">Savol-Javoblar</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark mt-3 tracking-tight" data-t="faqTitle">
+        Ko'p So'raladigan Savollar
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      
+      <details class="group bg-white border border-divider rounded-2xl p-5 shadow-xs" open>
+        <summary class="flex items-center justify-between text-base font-bold text-slateDark">
+          <span data-t="faqQ1">Bizning mavjud CRM yoki jadvallarimiz (1C, Excel, Telegram) bilan ishlaydimi?</span>
+          <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <div class="pt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-divider mt-3" data-t="faqA1">
+          Ha, albatta. GPTify OS ning asosiy maqsadi — siz ishlatayotgan vositalarni almashtirib tashlash emas, balki ularni yagona zanjirga ulashdir. Mavjud Telegram guruhlaringiz, Instagram sahifangiz, ILDAM yoki boshqa CRM tizimlari o'z o'rnida qoladi va avtonom oqimga ulanadi.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-divider rounded-2xl p-5 shadow-xs">
+        <summary class="flex items-center justify-between text-base font-bold text-slateDark">
+          <span data-t="faqQ2">Tizimni o'rnatish va jamoani o'rgatish qancha vaqt oladi?</span>
+          <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <div class="pt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-divider mt-3" data-t="faqA2">
+          Standart Pipeline Core o'rnatilishi 48 soatdan 5 ish kunigacha davom etadi. Shundan so'ng biz jamoangiz bilan jonli onboarding darsi o'tkazamiz, qadam-baqadam video qo'llanmalarni topshiramiz va dastlabki 14 kun davomida to'liq nazoratda ushlab turamiz.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-divider rounded-2xl p-5 shadow-xs">
+        <summary class="flex items-center justify-between text-base font-bold text-slateDark">
+          <span data-t="faqQ3">Ma'lumotlarimiz va mijozlar bazasi xavfsizligi qanday ta'minlanadi?</span>
+          <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <div class="pt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-divider mt-3" data-t="faqA3">
+          Barcha tizimlar to'g'ridan-to'g'ri sizning korxonangiz serverlari yoki rasmiy bulutli hisobingizga ulanadi. Biz uchinchi tomon shubhali botlaridan foydalanmaymiz: Meta rasmiy Graph API, shifrlangan ma'lumotlar oqimi va Meet uchun Zero-Bot maxfiy protokoli ishlatiladi.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-divider rounded-2xl p-5 shadow-xs">
+        <summary class="flex items-center justify-between text-base font-bold text-slateDark">
+          <span data-t="faqQ4">Nega shunchaki yana bitta bot yoki dastur litsenziyasini sotib olish yetarli emas?</span>
+          <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <div class="pt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-divider mt-3" data-t="faqA4">
+          Chunki tarqoq ilova mavjud tartibsizlik ustiga yana bitta ilova qo'shadi, xolos. Uni sozlash, jamoaga o'rgatish va bir-biri bilan gaplashtirish yana sizning zimmangizda qoladi. GPTify OS esa butun boshli operatsiyani kalit ostida, sinovdan o'tgan konveyer sifatida ishlab topshiradi.
+        </div>
+      </details>
 
     </div>
   </section>
@@ -898,29 +1129,29 @@
           G
         </div>
 
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark tracking-tight mb-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slateDark tracking-tight mb-4" data-t="founderCtaTitle">
           30 Daqiqalik Bepul Operatsion Audit
         </h2>
 
-        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8" data-t="founderCtaSub">
           Ushbu suhbat davomida biz biznesingiz qayerda vaqt va mablag' yo'qotayotganini aniqlaymiz. 
           Sizga aniq qadamlar xaritasini beramiz. Hech qanday bosimsiz, ochiq va samimiy professional suhbat.
         </p>
 
-        <!-- Our Guarantee (Accessible SVG Shield) -->
+        <!-- Guarantee -->
         <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-100 text-xs text-emerald-900 font-medium mb-8 max-w-lg mx-auto flex items-center gap-2.5 text-left">
           <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-          <div>
-            <strong>Bizning kafolat:</strong> Agar suhbat davomida biznesingizda yiliga kamida 20,000,000 so'mlik tejamkorlik nuqtalarini topa olmasak, buni ochiq aytamiz va vaqtingizni behuda olmaymiz.
+          <div data-t="founderGuarantee">
+            <strong>Bizning kafolat:</strong> Agar suhbat davomida biznesingizda yiliga kamida $2,000+ tejamkorlik nuqtalarini topa olmasak, buni ochiq aytamiz va vaqtingizni behuda olmaymiz.
           </div>
         </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white font-bold text-sm shadow-md transition duration-150 flex items-center justify-center gap-2.5 cursor-pointer">
-            <span>Uchrashuv Belgilash (meet.gptify.uz)</span>
+            <span data-t="founderCtaPrimary">Uchrashuv Belgilash (meet.gptify.uz)</span>
             <svg class="w-4 h-4 text-emerald-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </a>
-          <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-divider hover:bg-subtle text-slateDark font-semibold text-sm transition duration-150 cursor-pointer">
+          <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-divider hover:bg-subtle text-slateDark font-semibold text-sm transition duration-150 cursor-pointer" data-t="founderCtaTelegram">
             Telegram orqali yozish
           </a>
         </div>
@@ -928,7 +1159,7 @@
         <!-- Founder Signature Block -->
         <div class="mt-10 pt-6 border-t border-divider text-center">
           <div class="text-sm font-bold text-slateDark">Shukhrat Iskandarov</div>
-          <div class="text-xs text-slateMuted mt-0.5">Founder at GPTify.co & Co-Founder at Cubeo.ai</div>
+          <div class="text-xs text-slateMuted mt-0.5" data-t="founderRole">Founder at GPTify.co & Co-Founder at Cubeo.ai</div>
         </div>
       </div>
     </div>
@@ -943,7 +1174,7 @@
         </div>
         <div>
           <span class="font-extrabold text-slateDark text-sm">GPTify OS Core</span>
-          <span class="text-xs text-slateMuted block">Amaliy B2B AI operatsion tizimlari va ish oqimlarini avtomatlashtirish</span>
+          <span class="text-xs text-slateMuted block" data-t="footerDesc">Amaliy B2B AI operatsion tizimlari va ish oqimlarini avtomatlashtirish</span>
         </div>
       </div>
 
@@ -956,17 +1187,578 @@
         <span>•</span>
         <a href="jarvis_fleet.html" class="hover:text-purpleBrand cursor-pointer">Jarvis Fleet</a>
         <span>•</span>
-        <a href="index.html" class="hover:text-slateDark cursor-pointer">GPTify Bosh Sahifa</a>
+        <a href="index.html" class="hover:text-slateDark cursor-pointer" data-t="footerAcademy">GPTify Bosh Sahifa</a>
       </div>
 
       <div class="text-xs text-slateMuted">
-        © 2026 GPTify. Barcha huquqlar himoyalangan.
+        © 2026 GPTify. <span data-t="footerRights">Barcha huquqlar himoyalangan.</span>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== CALCULATOR SCRIPT ==================== -->
+  <!-- ==================== MULTILINGUAL TRANSLATION DICTIONARY & SCRIPTS ==================== -->
   <script>
+    const TRANSLATIONS = {
+      en: {
+        navTagline: "OPERATIONS SYSTEMS",
+        navPillars: "4 Core Pillars",
+        navDemo: "Live Demo",
+        navCalculator: "Loss Calculator",
+        navConfigurator: "System Configurator",
+        navFaq: "FAQ",
+        navHome: "GPTify Home",
+        navBook: "Strategic Session (30 min)",
+
+        heroBadge: "Enterprise B2B AI Systems · Turnkey Deployment",
+        heroH1: "We architect and deploy <br><span class=\"font-serif italic font-normal text-emeraldBrand text-[1.14em] tracking-normal\">autonomous operating systems</span><br>that run your business.",
+        heroSub: "Eliminate repetitive manual labor, synchronize fragmented software into a unified pipeline, and focus your workforce purely on high-margin growth. Not another isolated tool — a complete operating system.",
+        heroCtaPrimary: "Book Free Strategic Audit",
+        heroCtaNote: "Free · 30 Minutes · Zero Obligation",
+        heroCtaSub: "The deployed infrastructure remains 100% your enterprise property",
+        proof1: "Field-tested on active B2B business operations",
+        proof2: "Connects natively to your CRM, Telegram & Meta APIs",
+
+        heroFloat1: "47 Leads Triaged (8s Latency)",
+        heroFloat2: "Outreach Agent: 12 B2B accounts contacted",
+        dashStatus: "FLEET LIVE",
+        kpi1Label: "LEADS",
+        kpi2Label: "AGENTS",
+        kpi2Active: "Active",
+        kpi3Label: "HOURS SAVED",
+        kpi3Sub: "This Week",
+        kpi3Value: "~$480 saved",
+        telemetryTitle: "Autonomous Event Telemetry",
+        telemetrySync: "Synchronized",
+        tel1: "Direct message qualified in 8s and product quote delivered",
+        tel2: "Outreach sent to 12 targeted B2B enterprises via Telegram & Email",
+        tel3: "Action items extracted from 35-min conference call to Telegram",
+        tel4: "Fleet health & webhook endpoints running at 99.9% uptime",
+
+        marqueeTitle: "Natively Integrates With Your Existing Enterprise Software",
+
+        demoEyebrow: "Live Simulation",
+        demoTitle: "How Ailo and ILDAM Operate in Real Time",
+        demoSub: "Not a static button bot — instant qualification, objection handling, and automatic CRM routing.",
+        chatChannel: "via Instagram Direct & Telegram",
+        chatMsg1: "Hello! We are a B2B distribution company and need to streamline our sales pipeline and customer database. How can you help?",
+        chatMsg2: "Hello! Absolutely. Under GPTify OS, we connect ILDAM CRM and Ailo directly to your channels. How many team members manage sales, and where are leads currently tracked?",
+        chatMsg3: "We have 12 team members; currently everything is scattered between Excel sheets and Telegram groups.",
+        chatBadge: "Lead logged into ILDAM CRM and assigned to dedicated account executive",
+
+        pillarsEyebrow: "Production Deliverables",
+        pillarsTitle: "GPTify OS Core: 4 Foundation Engines",
+        pillarsSub: "Each module functions autonomously and synchronizes via a central operational conveyor.",
+        ailoRole: "Inbound Sales & Triage Agent",
+        ailoDesc: "Responds to inbound inquiries on Instagram Direct and Telegram within <strong>8 seconds</strong>. Qualifies budget and need, resolves objections, and routes sales-ready leads to CRM.",
+        ailoB1: "<strong>Official Meta Graph API:</strong> Fully verified, zero account ban risk.",
+        ailoB2: "<strong>Multilingual Context:</strong> Native audio and text comprehension.",
+        ailoB3: "<strong>Natural Human Flow:</strong> Dynamic intelligence instead of rigid button trees.",
+        ailoCta: "Visit ailo.gptify.uz",
+
+        ildamRole: "Active Pipeline & Autonomous B2B Outreach",
+        ildamDesc: "Passive spreadsheets only log existing traffic. ILDAM actively prospects new B2B accounts, delivers personalized outreach via <strong>Telegram, Instagram, and Email</strong>, and tracks milestones.",
+        ildamB1: "<strong>Autonomous B2B Outreach Agent:</strong> Multi-channel cold prospecting.",
+        ildamB2: "<strong>10-Second Live Triage:</strong> Immediate lead qualification and assignment.",
+        ildamB3: "<strong>Milestone Payment Tracking:</strong> Automated advance and installment invoice alerts.",
+        ildamCta: "Visit ildam.gptify.uz",
+
+        meetRole: "Confidential Executive AI Secretary",
+        meetDesc: "Zero-bot presence, <strong>100% confidential meeting intelligence</strong>. Extracts decisions, action items, and deadlines from Zoom, Teams, and Google Meet directly to Telegram.",
+        meetB1: "<strong>Zero-Bot Architecture:</strong> No awkward bot avatar in meeting rooms.",
+        meetB2: "<strong>Precise Action Items:</strong> Filters meeting small talk into structured briefs.",
+        meetB3: "<strong>Instant Dispatch:</strong> Task assignments sent within 60 seconds of call end.",
+        meetCta: "Visit meet.gptify.uz",
+
+        jarvisRole: "Central Fleet Cockpit & Monitoring",
+        jarvisDesc: "Central <strong>autonomous cockpit</strong> aggregating all agent activity, telemetry, error handling, and webhooks 24/7.",
+        jarvisB1: "<strong>Multi-Agent Telemetry:</strong> Live data flow across Ailo, CRM, and Meet.",
+        jarvisB2: "<strong>Self-Healing Routines:</strong> Immediate retry logic for interrupted runs.",
+        jarvisB3: "<strong>Audit Logging:</strong> Full transparency and decision traceability.",
+        jarvisCta: "Open Fleet Console",
+        details: "Details",
+
+        calcEyebrow: "Interactive ROI Calculator",
+        calcTitle: "How Much Capital Are You Leaving on the Table?",
+        calcSub: "Adjust your team parameters. See the exact recoverable losses currently drain your business.",
+        calcTeam: "Number of team members:",
+        calcHours: "Weekly repetitive manual hours per employee:",
+        calcSalary: "Average monthly salary per employee:",
+        calcResultTitle: "Estimated Annual Recoverable Capital",
+        calcSavedYear: "Time recovered / year:",
+        calcSavedWeek: "Hours recovered / week:",
+        calcCta: "Eliminate These Operating Losses",
+
+        cfgEyebrow: "Modular Architecture",
+        cfgTitle: "GPTify OS Configurator: Assemble Your Custom Fleet",
+        cfgSub: "The core pipeline installs as standard. Activate specialized add-on agents tailored to your industry.",
+        cfgCoreBadge: "Base Core",
+        cfgCoreDesc: "The essential unified pipeline required for autonomous B2B operations.",
+        cfgCore1: "<strong>Ailo Inbound:</strong> 8-second Meta & Telegram engagement",
+        cfgCore2: "<strong>ILDAM CRM:</strong> Lead stage pipeline & revenue tracking",
+        cfgCore3: "<strong>GPTify Meet:</strong> Audio meeting action protocol",
+        cfgCore4: "<strong>Jarvis Monitoring:</strong> 24/7 telemetry & health checks",
+        cfgQuoteBtn: "Get Implementation Scope",
+        cfgAddonsTitle: "Specialized Add-on Agents",
+        cfgAddonsSub: "Select modules for your operational stack",
+        cfgSelectedPrefix: "Selected:",
+        cfgSelectedSuffix: "units",
+        add1Title: "B2B Outreach Agent",
+        add1Desc: "Automated account discovery and outreach across Telegram, IG, and Email.",
+        add2Title: "Content & Video Engine",
+        add2Desc: "Translates company expertise into reels, carousels, and thought leadership.",
+        add3Title: "Voice AI Receptionist",
+        add3Desc: "Inbound phone call answering, routing, and meeting booking.",
+        add4Title: "1C / ERP Bridge",
+        add4Desc: "Real-time bi-directional synchronization with accounting and inventory.",
+        add5Title: "Auto-Heal & Fallback",
+        add5Desc: "Automatic retry and fallback protocols when third-party APIs fail.",
+        add6Title: "Urgent Escalation Agent",
+        add6Desc: "Instant manager phone call alert when high-priority clients flag friction.",
+
+        procEyebrow: "Battle-Tested Methodology",
+        procTitle: "3-Stage Implementation Roadmap",
+        procSub: "We audit and streamline real-world operations before deploying code.",
+        p1Title: "01 Discover (Audit)",
+        p1Desc: "Map existing workflows: uncover where time is squandered, where leads drop off, and where bottlenecks stifle revenue.",
+        p1B1: "• Complete operational audit",
+        p1B2: "• Bottleneck & drop-off discovery",
+        p1B3: "• Recoverable loss computation",
+        p2Title: "02 Design (Architecture)",
+        p2Desc: "Refine processes before automating. Ensure every trigger, handoff, and reminder serves an unambiguous business objective.",
+        p2B1: "• Pipeline architecture blueprint",
+        p2B2: "• Standard Operating Procedures (SOP)",
+        p2B3: "• Role ownership & escalation ladder",
+        p3Title: "03 Build (Deploy & Handoff)",
+        p3Desc: "Implement the system: connect Ailo, ILDAM, Meet, and Jarvis. Conduct end-to-end stress testing and train your staff.",
+        p3B1: "• Turnkey enterprise integration",
+        p3B2: "• Live staff onboarding & training",
+        p3B3: "• Video playbooks & warranty SLA",
+
+        faqEyebrow: "Answers & Transparency",
+        faqTitle: "Frequently Asked Questions",
+        faqQ1: "Does this integrate with our current ERP, CRM, or spreadsheets (1C, Excel, Telegram)?",
+        faqA1: "Yes. The purpose of GPTify OS is not to rip and replace what already works, but to connect your tools into an autonomous pipeline. Your Telegram channels, CRM, and databases remain in place while GPTify OS synchronizes them.",
+        faqQ2: "How long does full deployment and staff onboarding take?",
+        faqA2: "The Pipeline Core installs within 48 hours to 5 business days. Afterward, we lead live interactive onboarding sessions, deliver step-by-step video manuals, and provide dedicated monitoring during the first 14 days.",
+        faqQ3: "How is our company data and customer database protected?",
+        faqA3: "All infrastructure runs directly on your enterprise cloud accounts or private dedicated servers. We strictly avoid shady unverified bots: we use official Meta Graph APIs, encrypted channels, and zero-bot meeting architecture.",
+        faqQ4: "Why not simply subscribe to another SaaS software?",
+        faqA4: "Because another SaaS tool merely adds clutter on top of existing chaos. You still have to configure it, integrate it, and teach staff to use it. GPTify OS delivers a turnkey, custom-tuned operational system built specifically for your business model.",
+
+        founderCtaTitle: "30-Minute Complimentary Operations Audit",
+        founderCtaSub: "During this session, we map where your business is hemorrhaging hours and revenue, delivering a pragmatic action plan with zero sales pressure.",
+        founderGuarantee: "<strong>Our Guarantee:</strong> If we fail to identify at least $2,000+ in annual recoverable operational savings during the call, we will candidly say so and respect your time.",
+        founderCtaPrimary: "Schedule Strategy Call (meet.gptify.uz)",
+        founderCtaTelegram: "Message on Telegram",
+        founderRole: "Founder at GPTify.co & Co-Founder at Cubeo.ai",
+        footerDesc: "Pragmatic B2B AI operating systems and enterprise workflow automation.",
+        footerAcademy: "GPTify Main Site",
+        footerRights: "All rights reserved."
+      },
+
+      uz: {
+        navTagline: "OPERATIONS SYSTEMS",
+        navPillars: "4 Asosiy Ustun",
+        navDemo: "Jonli Demo",
+        navCalculator: "Kalkulyator",
+        navConfigurator: "Tizim Konstruktori",
+        navFaq: "Savollar",
+        navHome: "GPTify Bosh Sahifa",
+        navBook: "Strategik Sessiya (30 daq)",
+
+        heroBadge: "B2B Operatsion Tizimlar · Kalit Ostida O'rnatish",
+        heroH1: "Biznesingizni yurituvchi <br><span class=\"font-serif italic font-normal text-emeraldBrand text-[1.14em] tracking-normal\">operatsion tizimlarni</span><br>loyihalashtiramiz va quramiz.",
+        heroSub: "Qo'l mehnatini qisqartiramiz, dasturlaringizni yagona zanjirga ulaymiz va jamoangizni faqat o'sishga yo'naltiramiz. Yana bitta quruq vosita emas — to'liq ishlaydigan yaxlit operatsion tizim.",
+        heroCtaPrimary: "Bepul Strategik Sessiya Belgilash",
+        heroCtaNote: "Bepul · 30 daqiqa · Majburiyatsiz",
+        heroCtaSub: "Tizim to'liq sizning korxonangiz mulki bo'lib qoladi",
+        proof1: "O'zbekistondagi real B2B amaliyotida sinovdan o'tgan",
+        proof2: "Mavjud CRM va Telegramingizga to'g'ridan-to'g'ri ulanadi",
+
+        heroFloat1: "47 lid saralandi (8s javob)",
+        heroFloat2: "Outreach Agenti: 12 korxonaga yuborildi",
+        dashStatus: "JONLI FLOT",
+        kpi1Label: "LIDLAR",
+        kpi2Label: "AGENTLAR",
+        kpi2Active: "Faol",
+        kpi3Label: "TEJALDI",
+        kpi3Sub: "Bu hafta",
+        kpi3Value: "~5,600,000 so'm",
+        telemetryTitle: "Avtonom Oqim Jurnali",
+        telemetrySync: "Sinxron",
+        tel1: "Direct'dagi mijoz 8s da saralandi va narx taqdim etildi",
+        tel2: "12 ta yangi B2B korxonaga Telegram/Email taklif jo'natildi",
+        tel3: "35 daqiqalik uchrashuvdan 5 ta vazifa Telegramga yuborildi",
+        tel4: "Barcha webhook va integratsiyalar barqaror holatda",
+
+        marqueeTitle: "Sizning Mavjud Dasturlaringizga To'g'ridan-To'g'ri Bog'lanadi",
+
+        demoEyebrow: "Jonli Simulyatsiya",
+        demoTitle: "Ailo va ILDAM Real Vaqtda Qanday Ishlaydi?",
+        demoSub: "Quruq tugmali bot emas — 8 soniyada samimiy muloqot, ehtiyojni aniqlash va CRMga avtomatik biriktirish.",
+        chatChannel: "Instagram Direct / Telegram orqali",
+        chatMsg1: "Assalomu alaykum! B2B savdo korxonamiz uchun mijozlar bazasi va sotuvlarni tartibga solish kerak edi. Qanday yordam bera olasizlar?",
+        chatMsg2: "Vaalaykum assalom! Albatta. GPTify OS doirasida ILDAM CRM va Ailo tizimini ulab beramiz. Jamoangizda nechta xodim ishlaydi va hozir mijozlarni qayerda qayd qilyapsiz?",
+        chatMsg3: "12 ta xodimimiz bor, hozircha Excel va Telegram guruhda chalkashib ketyapti.",
+        chatBadge: "Lid ILDAM CRMga kiritildi va mas'ul mutaxassisga yo'naltirildi",
+
+        pillarsEyebrow: "Yetkazib Beriladigan Tizim",
+        pillarsTitle: "GPTify OS Core: 4 Ta Asosiy Operatsion Ustun",
+        pillarsSub: "Har bir modul mustaqil ishlay oladi va yagona markaziy konveyer orqali bir-biriga ulanadi.",
+        ailoRole: "Aloqa & Savdo Agenti",
+        ailoDesc: "Instagram Direct va Telegram'ga kelgan barcha murojaatlarga <strong>8 soniyada</strong> insondek javob beradi. Mijoz ehtiyojini aniqlaydi, e'tirozlarni yopadi va xaridga tayyor lidlarni to'g'ridan-to'g'ri CRMga uzatadi.",
+        ailoB1: "<strong>Meta Rasmiy Graph API:</strong> Bloklanish xavfisiz, xavfsiz va qonuniy integratsiya.",
+        ailoB2: "<strong>Ko'p Tillilik & Kontekst:</strong> Matn, audio va qisqartmalarni 100% tushunish.",
+        ailoB3: "<strong>Insoniy Muloqot:</strong> Quruq tugmalar emas, professional savdo intellekti.",
+        ailoCta: "ailo.gptify.uz saytiga o'tish",
+
+        ildamRole: "Faol Savdo & Avtonom Outreach Agenti",
+        ildamDesc: "Eskirgan passiv jadvallar faqat kelgan mijozni saqlaydi. ILDAM esa o'zi yangi B2B korxonalarni qidiradi, <strong>Telegram, Instagram va Email</strong> orqali takliflar yuboradi, 10 soniyada saralaydi va to'lovlarni nazorat qiladi.",
+        ildamB1: "<strong>Avtonom B2B Outreach Agenti:</strong> Telegram, Instagram va Email orqali faol aloqa o'rnatish.",
+        ildamB2: "<strong>10-Soniyalik Jonli Triage:</strong> Qiziqish bildirgan korxonalarni darhol voronkaga kiritish.",
+        ildamB3: "<strong>Milestone To'lovlar Nazorati:</strong> Avans va bosqichma-bosqich to'lovlarni avtomatik eslatish.",
+        ildamCta: "ildam.gptify.uz saytiga o'tish",
+
+        meetRole: "Maxfiy AI Kotib",
+        meetDesc: "Begona botlarsiz, <strong>100% maxfiy uchrashuv intellekti</strong>. Zoom, Google Meet va Teams suhbatlaridagi qarorlar, vazifalar va mas'ullarni avtomatik qayd etib, Telegramga jo'natadi.",
+        meetB1: "<strong>Zero-Bot Maxfiylik:</strong> Ekrandan begona bot ko'rinmaydi, audio oqimi to'liq shifrlangan.",
+        meetB2: "<strong>Aniq Transkripsiya:</strong> Texnik va biznes terminlarni chalkashtirmasdan bayonlashtirish.",
+        meetB3: "<strong>Topshiriqlar Bayonnomasi:</strong> Uchrashuv tugashi bilanoq kim nima qilishi kerakligi tayyor.",
+        meetCta: "meet.gptify.uz saytiga o'tish",
+
+        jarvisRole: "Flot Kokpiti & Monitoring",
+        jarvisDesc: "Barcha agentlar faoliyatini bir joyda jamlovchi <strong>avtonom operatsion kokpit</strong>. Telemetriya, xabarlar oqimi va integratsiyalarni 24/7 nazorat qilib boradi.",
+        jarvisB1: "<strong>Ko'p Agentli Telemetriya:</strong> Ailo, CRM va Meet ma'lumotlarini real vaqtda kuzatish.",
+        jarvisB2: "<strong>Xatoliklarni Avtomatik Tuzatish:</strong> To'xtab qolgan ssenariylarni darhol qayta ishga tushirish.",
+        jarvisB3: "<strong>Markaziy Audit Jurnali:</strong> Har bir tranzaksiya va qarorning to'liq tarixi.",
+        jarvisCta: "Fleet Console'ni ochish",
+        details: "Tafsilotlar",
+
+        calcEyebrow: "Interaktiv Kalkulyator",
+        calcTitle: "Stol ustida qancha pul qoldiryapsiz?",
+        calcSub: "Raqamlaringizni kiriting. Bu samarasizlik hozirning o'zida biznesingizga qanchaga tushayotganini ko'rsatib beradi.",
+        calcTeam: "Jamoangizdagi xodimlar soni:",
+        calcHours: "Har bir xodimning takroriy qo'l mehnati:",
+        calcSalary: "O'rtacha oylik maosh (1 xodim):",
+        calcResultTitle: "Yillik Qaytarilishi Mumkin Bo'lgan Mablag'",
+        calcSavedYear: "Tejaladigan vaqt / yil:",
+        calcSavedWeek: "Qaytarilgan soat / hafta:",
+        calcCta: "Ushbu yo'qotishlarni bartaraf etish",
+
+        cfgEyebrow: "Moslashuvchan Modullar",
+        cfgTitle: "GPTify OS Konstruktori: O'zingizga Kerakli Flotni Tanlang",
+        cfgSub: "Asosiy operatsion o'zak har bir korxonaga standart o'rnatiladi. Qo'shimcha agentlarni esa ehtiyojingizga qarab faollashtiring.",
+        cfgCoreBadge: "Standart O'zak",
+        cfgCoreDesc: "Har qanday B2B biznesning avtonom ishlashi uchun zarur bo'lgan minimal markaziy konveyer.",
+        cfgCore1: "<strong>Ailo Inbound:</strong> 8 soniyalik Meta va Telegram aloqasi",
+        cfgCore2: "<strong>ILDAM CRM:</strong> Lidlar voronkasi va to'lovlar nazorati",
+        cfgCore3: "<strong>GPTify Meet:</strong> Audio yozuvdan vazifalar protokoli",
+        cfgCore4: "<strong>Jarvis Monitoring:</strong> 24/7 avtomatik telemetriya",
+        cfgQuoteBtn: "Get Implementation Scope",
+        cfgAddonsTitle: "Qo'shimcha Ixtisoslashgan Agentlar",
+        cfgAddonsSub: "Kerakli modullarni belgilang",
+        cfgSelectedPrefix: "Tanlandi:",
+        cfgSelectedSuffix: "ta",
+        add1Title: "B2B Outreach Agenti",
+        add1Desc: "Telegram, IG va Email orqali yangi korxonalarga avtomatik takliflar yuborish.",
+        add2Title: "Kontent & Video Studio",
+        add2Desc: "Kompaniya ekspertizasidan avtomatik Reels, karusel va postlar konveyeri.",
+        add3Title: "Ovozli AI Qabulxona",
+        add3Desc: "Kiruvchi qo'ng'iroqlarni o'zbek tilida qabul qilish va navbatga qo'yish.",
+        add4Title: "1C / ERP Ko'prik",
+        add4Desc: "Buxgalteriya va ombor qoldiqlari bilan real vaqtda avtomatik sinxronizatsiya.",
+        add5Title: "Auto-Heal & Qutqaruv",
+        add5Desc: "API yoki internet uzilganda avtomatik qayta urinish va xatolarni tuzatish.",
+        add6Title: "Shoshilinch Eskalatsiya",
+        add6Desc: "Mijoz norozi bo'lganida darhol asoschi yoki boshqaruvchiga qo'ng'iroq qilish.",
+
+        procEyebrow: "Sinovdan O'tgan Metodologiya",
+        procTitle: "3 Bosqichli Amaliy Jarayon",
+        procSub: "Biz avval biznesingiz qanday ishlayotganini tushunamiz, keyin esa mustahkam tizim quramiz.",
+        p1Title: "01 Discover (Audit)",
+        p1Desc: "Biznesingizning mavjud jarayonlarini xaritaga tushiramiz: qayerda vaqt yo'qotilyapti, qaysi lidlar tushib qolyapti va tizim qayerda oqsamoqda.",
+        p1B1: "• To'liq operatsion audit",
+        p1B2: "• Tor bo'g'inlarni (bottlenecks) aniqlash",
+        p1B3: "• Qaytariladigan yo'qotishlar hisob-kitobi",
+        p2Title: "02 Design (Loyiha)",
+        p2Desc: "Texnologiyani tiqishtirishdan oldin jarayonning o'zini to'g'rilaymiz. Har bir qadam tasodifiy emas, balki aniq maqsadli bo'lishini ta'minlaymiz.",
+        p2B1: "• Konveyer arxitekturasi xaritasi",
+        p2B2: "• Jamoa uchun tushunarli SOP qo'llanmalar",
+        p2B3: "• Aniq mas'ullar va eslatmalar zanjiri",
+        p3Title: "03 Build (Qurish & Handoff)",
+        p3Desc: "Rejani amalga oshiramiz: Ailo, ILDAM, Meet va Jarvis tizimlarini ulab, sinovdan o'tkazamiz va jamoangizga to'liq topshiramiz.",
+        p3B1: "• To'liq kalit ostida integratsiya",
+        p3B2: "• Jamoa bilan jonli onboarding darsi",
+        p3B3: "• Video yo'riqnomalar va kafolat",
+
+        faqEyebrow: "Savol-Javoblar",
+        faqTitle: "Ko'p So'raladigan Savollar",
+        faqQ1: "Bizning mavjud CRM yoki jadvallarimiz (1C, Excel, Telegram) bilan ishlaydimi?",
+        faqA1: "Ha, albatta. GPTify OS ning asosiy maqsadi — siz ishlatayotgan vositalarni almashtirib tashlash emas, balki ularni yagona zanjirga ulashdir. Mavjud Telegram guruhlaringiz, Instagram sahifangiz, ILDAM yoki boshqa CRM tizimlari o'z o'rnida qoladi va avtonom oqimga ulanadi.",
+        faqQ2: "Tizimni o'rnatish va jamoani o'rgatish qancha vaqt oladi?",
+        faqA2: "Standart Pipeline Core o'rnatilishi 48 soatdan 5 ish kunigacha davom etadi. Shundan so'ng biz jamoangiz bilan jonli onboarding darsi o'tkazamiz, qadam-baqadam video qo'llanmalarni topshiramiz va dastlabki 14 kun davomida to'liq nazoratda ushlab turamiz.",
+        faqQ3: "Ma'lumotlarimiz va mijozlar bazasi xavfsizligi qanday ta'minlanadi?",
+        faqA3: "Barcha tizimlar to'g'ridan-to'g'ri sizning korxonangiz serverlari yoki rasmiy bulutli hisobingizga ulanadi. Biz uchinchi tomon shubhali botlaridan foydalanmaymiz: Meta rasmiy Graph API, shifrlangan ma'lumotlar oqimi va Meet uchun Zero-Bot maxfiy protokoli ishlatiladi.",
+        faqQ4: "Nega shunchaki yana bitta bot yoki dastur litsenziyasini sotib olish yetarli emas?",
+        faqA4: "Chunki tarqoq ilova mavjud tartibsizlik ustiga yana bitta ilova qo'shadi, xolos. Uni sozlash, jamoaga o'rgatish va bir-biri bilan gaplashtirish yana sizning zimmangizda qoladi. GPTify OS esa butun boshli operatsiyani kalit ostida, sinovdan o'tgan konveyer sifatida ishlab topshiradi.",
+
+        founderCtaTitle: "30 Daqiqalik Bepul Operatsion Audit",
+        founderCtaSub: "Ushbu suhbat davomida biz biznesingiz qayerda vaqt va mablag' yo'qotayotganini aniqlaymiz. Sizga aniq qadamlar xaritasini beramiz. Hech qanday bosimsiz, ochiq va samimiy professional suhbat.",
+        founderGuarantee: "<strong>Bizning kafolat:</strong> Agar suhbat davomida biznesingizda yiliga kamida $2,000+ tejamkorlik nuqtalarini topa olmasak, buni ochiq aytamiz va vaqtingizni behuda olmaymiz.",
+        founderCtaPrimary: "Uchrashuv Belgilash (meet.gptify.uz)",
+        founderCtaTelegram: "Telegram orqali yozish",
+        founderRole: "Founder at GPTify.co & Co-Founder at Cubeo.ai",
+        footerDesc: "Amaliy B2B AI operatsion tizimlari va ish oqimlarini avtomatlashtirish.",
+        footerAcademy: "GPTify Bosh Sahifa",
+        footerRights: "Barcha huquqlar himoyalangan."
+      },
+
+      ru: {
+        navTagline: "ОПЕРАЦИОННЫЕ СИСТЕМЫ",
+        navPillars: "4 Опоры Системы",
+        navDemo: "Демо в Реальном Времени",
+        navCalculator: "Калькулятор Потерь",
+        navConfigurator: "Конструктор Флота",
+        navFaq: "Вопросы и Ответы",
+        navHome: "Главная GPTify",
+        navBook: "Стратегическая Сессия (30 мин)",
+
+        heroBadge: "B2B AI Системы · Внедрение Под Ключ",
+        heroH1: "Проектируем и внедряем <br><span class=\"font-serif italic font-normal text-emeraldBrand text-[1.14em] tracking-normal\">автономные операционные системы</span>,<br>управляющие вашим бизнесом.",
+        heroSub: "Сокращаем ручной труд, объединяем разрозненные программы в единый конвейер и освобождаем команду для роста. Не еще одно приложение, а полноценная операционная система.",
+        heroCtaPrimary: "Назначить Бесплатный Аудит",
+        heroCtaNote: "Бесплатно · 30 Минут · Без Обязательств",
+        heroCtaSub: "Вся внедренная инфраструктура остается 100% вашей собственностью",
+        proof1: "Проверено на реальной практике B2B предприятий",
+        proof2: "Прямая интеграция с вашей CRM, Telegram и Meta API",
+
+        heroFloat1: "47 лидов квалифицировано (8с ответ)",
+        heroFloat2: "Аутрич Агент: 12 B2B компаний обработано",
+        dashStatus: "ФЛОТ АКТИВЕН",
+        kpi1Label: "ЛИДЫ",
+        kpi2Label: "АГЕНТЫ",
+        kpi2Active: "Активно",
+        kpi3Label: "СЭКОНОМЛЕНО",
+        kpi3Sub: "За неделю",
+        kpi3Value: "~5,600,000 сум",
+        telemetryTitle: "Журнал Автономных Событий",
+        telemetrySync: "Синхронизировано",
+        tel1: "Лид в Direct обработан за 8 секунд и выслан расчет",
+        tel2: "Отправлены персонализированные предложения 12 компаниям",
+        tel3: "Протокол встречи с 5 задачами отправлен в Telegram",
+        tel4: "Все вебхуки и интеграции работают со стабильностью 99.9%",
+
+        marqueeTitle: "Бесшовная Интеграция с Вашими Корпоративными Программами",
+
+        demoEyebrow: "Живая Симуляция",
+        demoTitle: "Как Ailo и ILDAM Работают в Реальном Времени",
+        demoSub: "Не шаблонный кнопочный бот — мгновенный диалог, выявление потребностей и автоматическая запись в CRM.",
+        chatChannel: "через Instagram Direct и Telegram",
+        chatMsg1: "Здравствуйте! У нас B2B торговая компания, нужно систематизировать продажи и клиентскую базу. Чем можете помочь?",
+        chatMsg2: "Здравствуйте! В рамках GPTify OS мы внедряем связку ILDAM CRM и Ailo. Сколько сотрудников у вас в отделе продаж и где сейчас ведете учет?",
+        chatMsg3: "У нас 12 сотрудников, пока все разбросано между Excel и чатами в Telegram.",
+        chatBadge: "Лид внесен в ILDAM CRM и назначен ответственный менеджер",
+
+        pillarsEyebrow: "Готовые Компоненты",
+        pillarsTitle: "GPTify OS Core: 4 Главных Модуля Системы",
+        pillarsSub: "Каждый модуль работает автономно и объединяется в единую центральную цепочку.",
+        ailoRole: "Агент Продаж и Квалификации",
+        ailoDesc: "Отвечает на все входящие запросы в Instagram Direct и Telegram за <strong>8 секунд</strong>. Выявляет бюджет, закрывает возражения и передает готовых лидов прямо в CRM.",
+        ailoB1: "<strong>Официальный Meta Graph API:</strong> Безопасно, законно, без риска блокировки.",
+        ailoB2: "<strong>Мультиязычность и Контекст:</strong> 100% понимание текста, голоса и сокращений.",
+        ailoB3: "<strong>Человечный Диалог:</strong> Умные продажи вместо примитивных кнопок.",
+        ailoCta: "Перейти на ailo.gptify.uz",
+
+        ildamRole: "Активные Продажи и Автономный B2B Аутрич",
+        ildamDesc: "Пассивные таблицы лишь хранят входящий трафик. ILDAM сам находит новые B2B компании, рассылает предложения через <strong>Telegram, Instagram и Email</strong> и контролирует оплаты.",
+        ildamB1: "<strong>Автономный B2B Аутрич Агент:</strong> Активный поиск и рассылка предложений.",
+        ildamB2: "<strong>Квалификация за 10 Секунд:</strong> Мгновенный перенос теплых лидов в воронку.",
+        ildamB3: "<strong>Контроль Этапов Оплаты:</strong> Автоматические напоминания об авансах и счетах.",
+        ildamCta: "Перейти на ildam.gptify.uz",
+
+        meetRole: "Конфиденциальный AI Секретарь",
+        meetDesc: "Без посторонних ботов в звонке, <strong>100% конфиденциальный интеллект встреч</strong>. Фиксирует решения и задачи из Zoom, Google Meet и Teams прямо в Telegram.",
+        meetB1: "<strong>Zero-Bot Архитектура:</strong> В звонке нет постороннего бота-аватара.",
+        meetB2: "<strong>Точный Протокол:</strong> Выделение конкретных поручений и дедлайнов.",
+        meetB3: "<strong>Мгновенная Доставка:</strong> Задачи рассылаются через 60 секунд после звонка.",
+        meetCta: "Перейти на meet.gptify.uz",
+
+        jarvisRole: "Центральный Пульт и Мониторинг Флота",
+        jarvisDesc: "Центральный <strong>автономный кокпит</strong>, объединяющий метрики всех агентов, трафик сообщений и стабильность интеграций 24/7.",
+        jarvisB1: "<strong>Мультиагентная Телеметрия:</strong> Мониторинг Ailo, CRM и Meet в реальном времени.",
+        jarvisB2: "<strong>Автоматическое Исправление Ошибок:</strong> Перезапуск зависших сценариев.",
+        jarvisB3: "<strong>Центральный Журнал Аудита:</strong> Полная история транзакций и решений.",
+        jarvisCta: "Открыть Fleet Console",
+        details: "Подробнее",
+
+        calcEyebrow: "Интерактивный Калькулятор",
+        calcTitle: "Сколько Денег Вы Теряете из-за Рутины?",
+        calcSub: "Введите параметры вашей команды. Узнайте точный объем потерь, который можно устранить уже в этом месяце.",
+        calcTeam: "Количество сотрудников в команде:",
+        calcHours: "Часов ручной механической работы в неделю на сотрудника:",
+        calcSalary: "Средняя зарплата сотрудника в месяц:",
+        calcResultTitle: "Годовая Сумма к Возврату",
+        calcSavedYear: "Экономия времени / год:",
+        calcSavedWeek: "Возвращенные часы / неделю:",
+        calcCta: "Устранить Эти Операционные Потери",
+
+        cfgEyebrow: "Модульная Архитектура",
+        cfgTitle: "Конструктор GPTify OS: Соберите Нужный Флот",
+        cfgSub: "Базовое ядро внедряется как стандарт. Подключайте специализированных агентов под задачи вашей отрасли.",
+        cfgCoreBadge: "Базовое Ядро",
+        cfgCoreDesc: "Минимальный центральный конвейер, необходимый для автономной работы B2B бизнеса.",
+        cfgCore1: "<strong>Ailo Inbound:</strong> 8-секундная обработка Meta и Telegram",
+        cfgCore2: "<strong>ILDAM CRM:</strong> Воронка лидов и контроль оплат",
+        cfgCore3: "<strong>GPTify Meet:</strong> Протокол задач из аудиозаписей",
+        cfgCore4: "<strong>Jarvis Мониторинг:</strong> 24/7 автоматическая телеметрия",
+        cfgQuoteBtn: "Get Implementation Scope",
+        cfgAddonsTitle: "Специализированные Агенты",
+        cfgAddonsSub: "Отметьте необходимые модули",
+        cfgSelectedPrefix: "Выбрано:",
+        cfgSelectedSuffix: "модулей",
+        add1Title: "B2B Аутрич Агент",
+        add1Desc: "Автоматический поиск целевых компаний и рассылка в Telegram, IG и Email.",
+        add2Title: "Контент и Видео Студия",
+        add2Desc: "Превращение экспертизы компании в Reels, карусели и публикации.",
+        add3Title: "Голосовая AI Приемная",
+        add3Desc: "Прием входящих звонков, консультация и запись на консультацию.",
+        add4Title: "Мост с 1C / ERP",
+        add4Desc: "Двусторонняя синхронизация с бухгалтерией и складскими остатками.",
+        add5Title: "Auto-Heal и Восстановление",
+        add5Desc: "Автоматический перезапуск сценариев при сбоях сторонних API.",
+        add6Title: "Экстренная Эскалация",
+        add6Desc: "Срочный звонок руководителю при возникновении негатива от ключевого клиента.",
+
+        procEyebrow: "Проверенная Методология",
+        procTitle: "3 Этапа Практического Внедрения",
+        procSub: "Сначала мы наводим порядок в логике процессов, и только затем разворачиваем код.",
+        p1Title: "01 Discover (Аудит)",
+        p1Desc: "Составляем карту текущих операций: где теряются часы, где отваливаются заявки и где тормозит выручка.",
+        p1B1: "• Полный операционный аудит",
+        p1B2: "• Поиск узких мест (bottlenecks)",
+        p1B3: "• Расчет устранимых финансовых потерь",
+        p2Title: "02 Design (Архитектура)",
+        p2Desc: "Корректируем сам процесс до автоматизации. Каждый шаг, триггер и передача задачи должны быть строго обоснованы.",
+        p2B1: "• Карта архитектуры конвейера",
+        p2B2: "• Понятные регламенты (SOP) для сотрудников",
+        p2B3: "• Четкое закрепление зон ответственности",
+        p3Title: "03 Build (Внедрение и Запуск)",
+        p3Desc: "Интегрируем модули Ailo, ILDAM, Meet и Jarvis. Проводим стресс-тестирование и обучаем вашу команду.",
+        p3B1: "• Полная интеграция под ключ",
+        p3B2: "• Живые обучающие сессии для сотрудников",
+        p3B3: "• Видеоинструкции и гарантийный регламент",
+
+        faqEyebrow: "Вопросы и Ответы",
+        faqTitle: "Часто Задаваемые Вопросы",
+        faqQ1: "Будет ли система работать с нашей текущей 1C, CRM или Excel?",
+        faqA1: "Да, безусловно. Цель GPTify OS — не заменить то, что уже работает, а связать ваши инструменты в единый слаженный конвейер. Ваши чаты, CRM и учетные базы остаются на своих местах.",
+        faqQ2: "Сколько времени занимает внедрение и обучение сотрудников?",
+        faqA2: "Базовый Pipeline Core разворачивается за срок от 48 часов до 5 рабочих дней. Затем мы проводим живой онбординг команды, передаем видеоуроки и сопровождаем систему первые 14 дней.",
+        faqQ3: "Как обеспечивается безопасность клиентской базы и данных?",
+        faqA3: "Вся инфраструктура разворачивается на ваших корпоративных серверах или официальных облачных аккаунтах. Мы не используем сомнительных ботов: применяются официальные Meta Graph API и сквозное шифрование.",
+        faqQ4: "Почему недостаточно просто купить еще одну SaaS подписку?",
+        faqA4: "Потому что отдельный сервис лишь добавляет слой к существующему хаосу. Настраивать его и обучать людей все равно придется вам. GPTify OS поставляет готовую, настроенную под ваш бизнес операционную систему под ключ.",
+
+        founderCtaTitle: "30-Минутный Бесплатный Операционный Аудит",
+        founderCtaSub: "В ходе диалога мы найдем, где ваш бизнес теряет время и прибыль, и составим пошаговый план действий без агрессивных продаж.",
+        founderGuarantee: "<strong>Наша гарантия:</strong> Если мы не сможем найти точки экономии как минимум на $2,000+ в год, мы честно скажем об этом и не станем отнимать ваше время.",
+        founderCtaPrimary: "Назначить Встречу (meet.gptify.uz)",
+        founderCtaTelegram: "Написать в Telegram",
+        founderRole: "Основатель GPTify.co & Сооснователь Cubeo.ai",
+        footerDesc: "Практические B2B AI операционные системы и автоматизация бизнес-процессов.",
+        footerAcademy: "Главная GPTify",
+        footerRights: "Все права защищены."
+      }
+    };
+
+    let currentLang = 'uz';
+
+    function setLang(lang) {
+      if (!TRANSLATIONS[lang]) return;
+      currentLang = lang;
+      localStorage.setItem('gptify_lang', lang);
+
+      // Update button classes
+      ['en', 'uz', 'ru'].forEach(l => {
+        const btn = document.getElementById('btn-lang-' + l);
+        if (btn) {
+          if (l === lang) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        }
+      });
+
+      // Update document language & title
+      document.documentElement.lang = lang;
+      if (lang === 'en') {
+        document.title = "GPTify OS — Autonomous AI Operating Systems for B2B Enterprises | GPTify";
+      } else if (lang === 'ru') {
+        document.title = "GPTify OS — Автономные AI операционные системы для B2B бизнеса | GPTify";
+      } else {
+        document.title = "GPTify OS — Biznesingizni Yurituvchi Avtonom Operatsion Tizim | GPTify";
+      }
+
+      // Update all data-t elements
+      const elements = document.querySelectorAll('[data-t]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-t');
+        if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+          el.innerHTML = TRANSLATIONS[lang][key];
+        }
+      });
+
+      // Update calculator labels & currency based on language
+      updateCalculatorCurrency();
+      updateCalculator();
+    }
+
+    function updateCalculatorCurrency() {
+      const minSalary = document.getElementById('rangeSalaryMin');
+      const midSalary = document.getElementById('rangeSalaryMid');
+      const maxSalary = document.getElementById('rangeSalaryMax');
+      const minTeam = document.getElementById('rangeTeamMin');
+      const midTeam = document.getElementById('rangeTeamMid');
+      const maxTeam = document.getElementById('rangeTeamMax');
+      const minHours = document.getElementById('rangeHoursMin');
+      const midHours = document.getElementById('rangeHoursMid');
+      const maxHours = document.getElementById('rangeHoursMax');
+
+      if (currentLang === 'en') {
+        minTeam.textContent = '1 member';
+        midTeam.textContent = '25 members';
+        maxTeam.textContent = '50 members';
+        minHours.textContent = '5 hrs';
+        midHours.textContent = '20 hrs';
+        maxHours.textContent = '35 hrs';
+        minSalary.textContent = '$300';
+        midSalary.textContent = '$800';
+        maxSalary.textContent = '$1,500';
+      } else if (currentLang === 'ru') {
+        minTeam.textContent = '1 чел';
+        midTeam.textContent = '25 чел';
+        maxTeam.textContent = '50 чел';
+        minHours.textContent = '5 ч';
+        midHours.textContent = '20 ч';
+        maxHours.textContent = '35 ч';
+        minSalary.textContent = '3 млн';
+        midSalary.textContent = '8 млн';
+        maxSalary.textContent = '15 млн';
+      } else {
+        minTeam.textContent = '1 kishi';
+        midTeam.textContent = '25 kishi';
+        maxTeam.textContent = '50 kishi';
+        minHours.textContent = '5 soat';
+        midHours.textContent = '20 soat';
+        maxHours.textContent = '35 soat';
+        minSalary.textContent = '3 mln';
+        midSalary.textContent = '8 mln';
+        maxSalary.textContent = '15 mln';
+      }
+    }
+
+    // Calculator Logic
     const teamSizeInput = document.getElementById('teamSize');
     const hoursSpentInput = document.getElementById('hoursSpent');
     const salaryInput = document.getElementById('salary');
@@ -985,12 +1777,19 @@
       const hours = parseInt(hoursSpentInput.value, 10);
       const salary = parseInt(salaryInput.value, 10);
 
-      valTeamSize.textContent = team + ' kishi';
-      valHoursSpent.textContent = hours + ' soat/hafta';
-      valSalary.textContent = salary.toLocaleString('uz-UZ') + ' so\'m';
+      const teamUnit = currentLang === 'en' ? ' members' : (currentLang === 'ru' ? ' чел' : ' kishi');
+      const hoursUnit = currentLang === 'en' ? ' hrs/week' : (currentLang === 'ru' ? ' ч/неделю' : ' soat/hafta');
+      const salaryUnit = currentLang === 'en' ? ' USD' : (currentLang === 'ru' ? ' сум' : ' so\'m');
+
+      // Convert salary to USD if English
+      const displaySalary = currentLang === 'en' ? Math.round(salary / 12800) : salary;
+
+      valTeamSize.textContent = team + teamUnit;
+      valHoursSpent.textContent = hours + hoursUnit;
+      valSalary.textContent = (currentLang === 'en' ? '$' : '') + displaySalary.toLocaleString() + (currentLang === 'en' ? '' : salaryUnit);
 
       // Hourly rate calculation: Salary / (4 weeks * 40 hours) = Salary / 160
-      const hourlyRate = salary / 160;
+      const hourlyRate = displaySalary / 160;
       
       // 70% automation rate for repetitive mechanical workflows
       const weeklyHoursTotal = team * hours;
@@ -1000,18 +1799,55 @@
       const yearlyMoneySaved = Math.round(yearlyHoursSaved * hourlyRate);
       const monthlyMoneySaved = Math.round(yearlyMoneySaved / 12);
 
-      calcSavingsUzs.textContent = '~' + yearlyMoneySaved.toLocaleString('uz-UZ') + ' so\'m';
-      calcMonthlyUzs.textContent = 'Bu oyiga ~' + monthlyMoneySaved.toLocaleString('uz-UZ') + ' so\'m qo\'shimcha tejamkorlik degani';
-      calcHoursYear.textContent = Math.round(yearlyHoursSaved).toLocaleString('uz-UZ') + ' soat';
-      calcHoursWeek.textContent = weeklyHoursSaved.toFixed(1) + ' soat';
+      if (currentLang === 'en') {
+        calcSavingsUzs.textContent = '~$' + yearlyMoneySaved.toLocaleString();
+        calcMonthlyUzs.textContent = 'This translates to ~$' + monthlyMoneySaved.toLocaleString() + ' in monthly bottom-line efficiency';
+        calcHoursYear.textContent = Math.round(yearlyHoursSaved).toLocaleString() + ' hrs';
+        calcHoursWeek.textContent = weeklyHoursSaved.toFixed(1) + ' hrs';
+      } else if (currentLang === 'ru') {
+        calcSavingsUzs.textContent = '~' + yearlyMoneySaved.toLocaleString('ru-RU') + ' сум';
+        calcMonthlyUzs.textContent = 'Это ~' + monthlyMoneySaved.toLocaleString('ru-RU') + ' сум ежемесячной экономии фонда';
+        calcHoursYear.textContent = Math.round(yearlyHoursSaved).toLocaleString('ru-RU') + ' ч';
+        calcHoursWeek.textContent = weeklyHoursSaved.toFixed(1) + ' ч';
+      } else {
+        calcSavingsUzs.textContent = '~' + yearlyMoneySaved.toLocaleString('uz-UZ') + ' so\'m';
+        calcMonthlyUzs.textContent = 'Bu oyiga ~' + monthlyMoneySaved.toLocaleString('uz-UZ') + ' so\'m qo\'shimcha tejamkorlik degani';
+        calcHoursYear.textContent = Math.round(yearlyHoursSaved).toLocaleString('uz-UZ') + ' soat';
+        calcHoursWeek.textContent = weeklyHoursSaved.toFixed(1) + ' soat';
+      }
     }
 
     teamSizeInput.addEventListener('input', updateCalculator);
     hoursSpentInput.addEventListener('input', updateCalculator);
     salaryInput.addEventListener('input', updateCalculator);
 
-    // Initial calculation on load
-    updateCalculator();
+    // Addon cards selection toggle
+    function toggleAddonCard(card) {
+      card.classList.toggle('selected');
+      const count = document.querySelectorAll('.addon-card.selected').length;
+      document.getElementById('selectedAddonsCount').textContent = count;
+    }
+
+    // Auto-detect language from URL or localStorage
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLang = urlParams.get('lang');
+      const savedLang = localStorage.getItem('gptify_lang');
+      const browserLang = (navigator.language || '').substring(0, 2);
+
+      let initialLang = 'uz';
+      if (urlLang && ['en', 'uz', 'ru'].includes(urlLang)) {
+        initialLang = urlLang;
+      } else if (savedLang && ['en', 'uz', 'ru'].includes(savedLang)) {
+        initialLang = savedLang;
+      } else if (browserLang === 'ru') {
+        initialLang = 'ru';
+      } else if (browserLang === 'en') {
+        initialLang = 'en';
+      }
+
+      setLang(initialLang);
+    });
   </script>
 
 </body>
