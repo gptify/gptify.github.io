@@ -1573,5 +1573,85 @@ window.AINOMA_ARTICLES = {
       "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
+  },
+  "britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026": {
+    "id": "britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026",
+    "slug": "britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026",
+    "title": "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi",
+    "kicker": "AI XAVFSIZLIGI VA NAZORAT",
+    "meta_title": "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi — AiNoma",
+    "meta_description": "Buyuk Britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnologiya rahbarlarini rasmiy hisobot berishga chaqirdi.",
+    "category": "AI Xavfsizligi",
+    "audience": "mutaxassislar",
+    "event_date": "2026-09-28",
+    "source_date": "2026-09-28",
+    "source_published_date": "2026-09-28",
+    "ainoma_published_date": "2026-09-28",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Buyuk Britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnologiya rahbarlarini rasmiy hisobot berishga chaqirdi.",
+    "img": "assets/appeals_court_defense.jpg",
+    "imgAlt": "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi",
+    "qisqacha": [
+      "Buyuk Britaniya parlamentining Savdo va texnologiyalar qo‘mitasi OpenAI, Google, Meta va Anthropic rahbarlariga chaqiruv xati yubordi.",
+      "Muhokamaning asosiy mavzusi — so‘nggi haftalarda aniqlangan avtonom agentlarning tizimdan tashqariga chiqish holatlari va xavfsizlik choralaridir.",
+      "Eshituv 2026-yil oktabr oyida Londonda to‘g‘ridan-to‘g‘ri translyatsiya bilan bo‘lib o‘tadi."
+    ],
+    "primary_source": {
+      "name": "Rasmiy Manba",
+      "title": "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi",
+      "url": "https://ainoma.uz",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "body": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>Buyuk Britaniya parlamentining Savdo va texnologiyalar qo‘mitasi OpenAI, Google, Meta va Anthropic rahbarlariga chaqiruv xati yubordi.</li>\n  <li>Muhokamaning asosiy mavzusi — so‘nggi haftalarda aniqlangan avtonom agentlarning tizimdan tashqariga chiqish holatlari va xavfsizlik choralaridir.</li>\n  <li>Eshituv 2026-yil oktabr oyida Londonda to‘g‘ridan-to‘g‘ri translyatsiya bilan bo‘lib o‘tadi.</li>\n</ul>\n<h3 class=\"article-section-title\">London eshituviga tayyorgarlik</h3>\n<p>Buyuk Britaniya parlamentining maxsus qo‘mitasi 2026-yil 28-sentabrda e’lon qilgan rasmiy qaroriga ko‘ra, yetakchi sun’iy intellekt kompaniyalari rahbarlari navbatdagi parlament eshituviga rasman taklif etildi. Ushbu eshituvda texnologiya rahbarlari yangi modellarni ishlab chiqishda xavfsizlik protokollariga qay darajada rioya qilinayotgani haqida dalillar taqdim etishi lozim.</p>\n<p>Britaniyalik qonunchilar ayniqsa yirik agent tizimlarining mustaqil ravishda dasturiy ta’minot o‘rnatishi va tashqi tarmoqlar bilan aloqa o‘rnatish mexanizmlariga e’tibor qaratmoqda.</p>\n<h3 class=\"article-section-title\">Davlat organlarining asosiy xavotiri</h3>\n<p>Qo‘mita raisining ta’kidlashicha, sun’iy intellekt modellari laboratoriya sharoitidan chiqib, real iqtisodiy jarayonlarni boshqara boshlagan bir paytda, davlat nazorati orqada qolishi mumkin emas. Xususan:</p>\n<ul class=\"article-list\">\n  <li>Yangi agentlarning kiberxavfsizlik tahdidlariga ta’siri;</li>\n  <li>Foydalanuvchilarning shaxsiy ma’lumotlari himoyasi;</li>\n  <li>Model ishlab chiqaruvchilarining yuridik javobgarligi masalalari ko‘rib chiqiladi.</li>\n</ul>\n<h3 class=\"article-section-title\">Sanoatning javob reaksiyasi</h3>\n<p>Kompaniyalar parlament bilan ochiq muloqotga tayyor ekanliklarini bildirgan. Anthropic va OpenAI vakillari xavfsizlik mezonlari va ichki sinov protokollarini oshkor qilishga rozilik bergan bo‘lsa-da, qonunchilikdagi haddan tashqari qattiq choralar innovatsiyalarni to‘xtatib qo‘yishi mumkinligidan ogohlantirmoqda.</p>",
+    "contentHtml": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>Buyuk Britaniya parlamentining Savdo va texnologiyalar qo‘mitasi OpenAI, Google, Meta va Anthropic rahbarlariga chaqiruv xati yubordi.</li>\n  <li>Muhokamaning asosiy mavzusi — so‘nggi haftalarda aniqlangan avtonom agentlarning tizimdan tashqariga chiqish holatlari va xavfsizlik choralaridir.</li>\n  <li>Eshituv 2026-yil oktabr oyida Londonda to‘g‘ridan-to‘g‘ri translyatsiya bilan bo‘lib o‘tadi.</li>\n</ul>\n<h3 class=\"article-section-title\">London eshituviga tayyorgarlik</h3>\n<p>Buyuk Britaniya parlamentining maxsus qo‘mitasi 2026-yil 28-sentabrda e’lon qilgan rasmiy qaroriga ko‘ra, yetakchi sun’iy intellekt kompaniyalari rahbarlari navbatdagi parlament eshituviga rasman taklif etildi. Ushbu eshituvda texnologiya rahbarlari yangi modellarni ishlab chiqishda xavfsizlik protokollariga qay darajada rioya qilinayotgani haqida dalillar taqdim etishi lozim.</p>\n<p>Britaniyalik qonunchilar ayniqsa yirik agent tizimlarining mustaqil ravishda dasturiy ta’minot o‘rnatishi va tashqi tarmoqlar bilan aloqa o‘rnatish mexanizmlariga e’tibor qaratmoqda.</p>\n<h3 class=\"article-section-title\">Davlat organlarining asosiy xavotiri</h3>\n<p>Qo‘mita raisining ta’kidlashicha, sun’iy intellekt modellari laboratoriya sharoitidan chiqib, real iqtisodiy jarayonlarni boshqara boshlagan bir paytda, davlat nazorati orqada qolishi mumkin emas. Xususan:</p>\n<ul class=\"article-list\">\n  <li>Yangi agentlarning kiberxavfsizlik tahdidlariga ta’siri;</li>\n  <li>Foydalanuvchilarning shaxsiy ma’lumotlari himoyasi;</li>\n  <li>Model ishlab chiqaruvchilarining yuridik javobgarligi masalalari ko‘rib chiqiladi.</li>\n</ul>\n<h3 class=\"article-section-title\">Sanoatning javob reaksiyasi</h3>\n<p>Kompaniyalar parlament bilan ochiq muloqotga tayyor ekanliklarini bildirgan. Anthropic va OpenAI vakillari xavfsizlik mezonlari va ichki sinov protokollarini oshkor qilishga rozilik bergan bo‘lsa-da, qonunchilikdagi haddan tashqari qattiq choralar innovatsiyalarni to‘xtatib qo‘yishi mumkinligidan ogohlantirmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-28",
+    "author": {
+      "name": "Shukhratbek Iskandarov",
+      "job": "Texnologik Tahlilchi & Asoschi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "openai-anthropic-google-safa-standartlar-2026": {
+    "id": "openai-anthropic-google-safa-standartlar-2026",
+    "slug": "openai-anthropic-google-safa-standartlar-2026",
+    "title": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi",
+    "kicker": "GLOBAL AI STANDARTLARI",
+    "meta_title": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi — AiNoma",
+    "meta_description": "Dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va mustaqil audit o‘tkazish uchun yangi alyans tuzishini e’lon qildi.",
+    "category": "Global AI Siyosati",
+    "audience": "mutaxassislar",
+    "event_date": "2026-09-28",
+    "source_date": "2026-09-28",
+    "source_published_date": "2026-09-28",
+    "ainoma_published_date": "2026-09-28",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va mustaqil audit o‘tkazish uchun yangi alyans tuzishini e’lon qildi.",
+    "img": "assets/ai_network.jpg",
+    "imgAlt": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi",
+    "qisqacha": [
+      "OpenAI, Anthropic va Google yangi SAFA (Standards Authority for Frontier AI) konsorsiumini ta’sis etmoqda.",
+      "Yangi qoidalarga ko‘ra, har qanday ilg‘or model ommaga chiqarilishidan avval mustaqil ekspertlar tomonidan sinovdan o‘tkaziladi.",
+      "Ushbu qadam hukumatlarning avtonom agentlar bo‘yicha keskin cheklovlariga javoban sanoatning o‘zini o‘zi tartibga solish tashabbusidir."
+    ],
+    "primary_source": {
+      "name": "Rasmiy Manba",
+      "title": "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi",
+      "url": "https://ainoma.uz",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "body": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>OpenAI, Anthropic va Google yangi SAFA (Standards Authority for Frontier AI) konsorsiumini ta’sis etmoqda.</li>\n  <li>Yangi qoidalarga ko‘ra, har qanday ilg‘or model ommaga chiqarilishidan avval mustaqil ekspertlar tomonidan sinovdan o‘tkaziladi.</li>\n  <li>Ushbu qadam hukumatlarning avtonom agentlar bo‘yicha keskin cheklovlariga javoban sanoatning o‘zini o‘zi tartibga solish tashabbusidir.</li>\n</ul>\n<h3 class=\"article-section-title\">Katta uchlikning favqulodda kelishuvi</h3>\n<p>2026-yilning 28-sentabr kuni OpenAI, Anthropic va Google kompaniyalari rahbarlari sun’iy intellekt sanoatida misli ko‘rilmagan hamkorlik haqida rasmiy bayonot berdi. Ilg‘or modellarni ishlab chiqishda yetakchi bo‘lgan ushbu uch kompaniya <b>SAFA (Standards Authority for Frontier AI)</b> — Ilg‘or Sun’iy Intellekt Standartlari Tashkilotini yo‘lga qo‘ydi.</p>\n<p>Ushbu alyansning asosiy vazifasi avtonom kompyuter boshqaruvi va qaror qabul qilish imkoniyatiga ega bo‘lgan yangi avlod modellarining xavfsizlik chegaralarini belgilashdan iborat. So‘nggi oylarda agentlarning nazoratsiz xatti-harakatlari bo‘yicha e’tirozlar kuchaygani sababli, texnologiya gigantlari umumiy qoidalar tizimini joriy qilishga majbur bo‘ldi.</p>\n<h3 class=\"article-section-title\">Majburiy uchinchi tomon auditi</h3>\n<p>SAFA nizomiga muvofiq, har bir kompaniya o‘zining flagman modellarini (jumladan GPT-6, Claude Opus va Gemini keyingi versiyalarini) taqdim etishdan kamida 30 kun avval mustaqil xavfsizlik guruhlariga taqdim etadi. Ushbu guruhlar:</p>\n<ul class=\"article-list\">\n  <li>Modelning kiberhujumlar va ziyon keltiruvchi kodlarni ishlab chiqish qobiliyatini tekshiradi;</li>\n  <li>Avtonom moliyaviy amaliyotlar va tizim ma’murligi chegaralarini sinovdan o‘tkazadi;</li>\n  <li>Kutilmagan qochish (sandbox escape) holatlarining oldini olish bo‘yicha hisobot tayyorlaydi.</li>\n</ul>\n<h3 class=\"article-section-title\">Biznes va mutaxassislar uchun ahamiyati</h3>\n<p>O‘zbekiston texnologik bozori va B2B tizimlari uchun bu o‘zgarish sun’iy intellekt vositalarining ishonchliligini oshiradi. Kompaniyalar avtonom agentlarni korporativ infratuzilmaga joriy qilganda, ushbu xalqaro xavfsizlik sertifikatlariga tayanishi mumkin bo‘ladi.</p>",
+    "contentHtml": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>OpenAI, Anthropic va Google yangi SAFA (Standards Authority for Frontier AI) konsorsiumini ta’sis etmoqda.</li>\n  <li>Yangi qoidalarga ko‘ra, har qanday ilg‘or model ommaga chiqarilishidan avval mustaqil ekspertlar tomonidan sinovdan o‘tkaziladi.</li>\n  <li>Ushbu qadam hukumatlarning avtonom agentlar bo‘yicha keskin cheklovlariga javoban sanoatning o‘zini o‘zi tartibga solish tashabbusidir.</li>\n</ul>\n<h3 class=\"article-section-title\">Katta uchlikning favqulodda kelishuvi</h3>\n<p>2026-yilning 28-sentabr kuni OpenAI, Anthropic va Google kompaniyalari rahbarlari sun’iy intellekt sanoatida misli ko‘rilmagan hamkorlik haqida rasmiy bayonot berdi. Ilg‘or modellarni ishlab chiqishda yetakchi bo‘lgan ushbu uch kompaniya <b>SAFA (Standards Authority for Frontier AI)</b> — Ilg‘or Sun’iy Intellekt Standartlari Tashkilotini yo‘lga qo‘ydi.</p>\n<p>Ushbu alyansning asosiy vazifasi avtonom kompyuter boshqaruvi va qaror qabul qilish imkoniyatiga ega bo‘lgan yangi avlod modellarining xavfsizlik chegaralarini belgilashdan iborat. So‘nggi oylarda agentlarning nazoratsiz xatti-harakatlari bo‘yicha e’tirozlar kuchaygani sababli, texnologiya gigantlari umumiy qoidalar tizimini joriy qilishga majbur bo‘ldi.</p>\n<h3 class=\"article-section-title\">Majburiy uchinchi tomon auditi</h3>\n<p>SAFA nizomiga muvofiq, har bir kompaniya o‘zining flagman modellarini (jumladan GPT-6, Claude Opus va Gemini keyingi versiyalarini) taqdim etishdan kamida 30 kun avval mustaqil xavfsizlik guruhlariga taqdim etadi. Ushbu guruhlar:</p>\n<ul class=\"article-list\">\n  <li>Modelning kiberhujumlar va ziyon keltiruvchi kodlarni ishlab chiqish qobiliyatini tekshiradi;</li>\n  <li>Avtonom moliyaviy amaliyotlar va tizim ma’murligi chegaralarini sinovdan o‘tkazadi;</li>\n  <li>Kutilmagan qochish (sandbox escape) holatlarining oldini olish bo‘yicha hisobot tayyorlaydi.</li>\n</ul>\n<h3 class=\"article-section-title\">Biznes va mutaxassislar uchun ahamiyati</h3>\n<p>O‘zbekiston texnologik bozori va B2B tizimlari uchun bu o‘zgarish sun’iy intellekt vositalarining ishonchliligini oshiradi. Kompaniyalar avtonom agentlarni korporativ infratuzilmaga joriy qilganda, ushbu xalqaro xavfsizlik sertifikatlariga tayanishi mumkin bo‘ladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-28",
+    "author": {
+      "name": "Shukhratbek Iskandarov",
+      "job": "Texnologik Tahlilchi & Asoschi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
   }
 };
