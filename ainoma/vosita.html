@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="AI vosita sharhi va foydalanish bo‘yicha to‘liq qo‘llanma — AiNoma">
   <title id="pageTitle">Gamma AI — AiNoma AI vositalar</title>
-  <link rel="stylesheet" href="style.css?v=1790585672">
+  <link rel="stylesheet" href="style.css?v=1790589140">
   <link rel="canonical" href="https://ainoma.uz/vosita.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AiNoma">
@@ -124,17 +124,6 @@
             Dizayner yollamasdan yoki soatlab shrift va rang tanlamasdan, professional taqdimot va taklifnomalarni o‘zingiz bir necha daqiqada chiqarasiz.
           </p>
         </div>
-
-        <!-- Sample Prompt for this Tool -->
-        <div style="margin-top:34px;">
-          <h3 style="font-size:18px; margin-bottom:12px;">Ushbu vosita uchun namunaviy prompt:</h3>
-          <div class="prompt-card">
-            <div class="prompt-meta">
-              <button class="copy-btn">Nusxa olish</button>
-            </div>
-            <pre class="prompt-code" id="toolPrompt">"O‘zbekistondagi B2B kompaniyalar uchun sun’iy intellekt asosidagi avtomatlashtirish xizmatlari haqida 8 slayddan iborat tijorat taqdimoti tayyorla. Auditoriya: biznes egalari va direktorlar. Ranglar: toza oq va zumrad yashil. Har bir slaydda aniq muammo va yechim ko‘rsatilsin."</pre>
-          </div>
-        </div>
       </article>
 
       <aside>
@@ -229,7 +218,7 @@
   </nav>
 
   <script src="tools-data.js"></script>
-  <script src="app.js?v=1790585672"></script>
+  <script src="app.js?v=1790589140"></script>
   <script>
     const toolsData = window.AINOMA_TOOLS || {};
     const params = new URLSearchParams(window.location.search);
@@ -260,7 +249,6 @@
     document.getElementById("featTitle3").innerText = data.f3_t;
     document.getElementById("featDesc3").innerText = data.f3_d;
     document.getElementById("toolBenefit").innerText = data.benefit;
-    document.getElementById("toolPrompt").innerText = data.prompt;
 
     // Inject SoftwareApplication Structured Data
     const schemaScript = document.createElement("script");

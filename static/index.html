@@ -1,0 +1,2658 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPTify CRM • B2B & YaTT Savdo Platformasi</title>
+  <!-- Tailwind CSS CDN with dark/light support -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            slate: {
+              850: '#151e2e',
+              900: '#0f172a',
+              950: '#090d16',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.4);
+      border-radius: 9999px;
+    }
+    .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(71, 85, 105, 0.5);
+    }
+    .card-drag-over {
+      background-color: rgba(99, 102, 241, 0.12) !important;
+      border-color: rgba(99, 102, 241, 0.6) !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200 selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP APP BAR -->
+  <header class="border-b border-slate-200 dark:border-slate-800/80 bg-white/90 dark:bg-slate-900/80 backdrop-blur sticky top-0 z-40 px-6 py-3 transition-colors">
+    <div class="max-w-[1720px] mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      
+      <!-- Brand & Status -->
+      <div class="flex items-center gap-3.5">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-brand-600 to-violet-500 flex items-center justify-center font-extrabold text-white shadow-lg shadow-brand-500/20 text-lg">
+          G
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-bold text-lg text-slate-900 dark:text-white tracking-tight">GPTify CRM</h1>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
+              B2B & YaTT
+            </span>
+            <span class="flex items-center gap-1 text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
+              <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Port 8090
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 dark:text-slate-400">
+            B2B Sun'iy Intellekt Ish Oqimlari & Bitimlar Boshqaruvi • Shukhrat Iskandarov
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Actions & Theme Switcher -->
+      <div class="flex items-center flex-wrap gap-2.5">
+        
+        <!-- Light / Dark Theme Switcher -->
+        <button onclick="toggleTheme()" id="themeBtn" class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 transition" title="Yorug' yoki Tungi rejimni tanlash">
+          <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-500 dark:hidden" id="sunIcon"></i>
+          <i data-lucide="moon" class="w-3.5 h-3.5 text-indigo-400 hidden dark:inline" id="moonIcon"></i>
+          <span id="themeBtnText">Rejim</span>
+        </button>
+
+        <!-- Voice Assistant Trigger -->
+        <button onclick="toggleVoiceAssistant()" id="voiceBtn" class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 transition">
+          <i data-lucide="mic" class="w-3.5 h-3.5 text-brand-500 dark:text-brand-400" id="micIcon"></i>
+          <span>Ovozli Buyruq</span>
+        </button>
+
+        <!-- Inbound Leads Drawer Button -->
+        <button onclick="switchTab('inbound')" class="relative flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 transition">
+          <i data-lucide="inbox" class="w-3.5 h-3.5 text-amber-500 dark:text-amber-400"></i>
+          <span>Yangi Lidlar</span>
+          <span id="inboundBadge" class="ml-1 px-1.5 py-0.2 rounded-full text-[10px] bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold">0</span>
+        </button>
+
+        <!-- Presentation Slide Deck Button -->
+        <a href="/presentation" target="_blank" class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-violet-50 dark:bg-violet-950/80 hover:bg-violet-100 dark:hover:bg-violet-900 text-violet-700 dark:text-violet-300 border border-violet-300 dark:border-violet-700/60 transition shadow-xs" title="16:9 Interaktiv Taqdimot va Video Ssenariylar">
+          <i data-lucide="presentation" class="w-3.5 h-3.5 text-violet-500"></i>
+          <span>🎬 Taqdimot Deck ↗</span>
+        </a>
+
+        <!-- Master Hub Links -->
+        <a href="http://localhost:8502" target="_blank" class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-sky-50 dark:bg-sky-950/80 hover:bg-sky-100 dark:hover:bg-sky-900/80 text-sky-700 dark:text-sky-300 border border-sky-300 dark:border-sky-700/50 transition" title="Streamlit Master Mission Control (Port 8502)">
+          <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+          <span>Master Hub (8502) ↗</span>
+        </a>
+
+        <!-- Export CSV -->
+        <a href="/api/export/deals.csv" class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 transition" title="Bitimlarni CSV formatida yuklash">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>CSV</span>
+        </a>
+
+        <!-- Add Deal Button -->
+        <button onclick="openAddDealModal()" class="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-brand-600 hover:bg-brand-500 text-white shadow-md shadow-brand-500/20 transition">
+          <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+          <span>Yangi Bitim</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION TABS -->
+  <nav class="border-b border-slate-200 dark:border-slate-800/80 bg-white/60 dark:bg-slate-900/60 px-6 transition-colors">
+    <div class="max-w-[1720px] mx-auto flex items-center gap-1 overflow-x-auto custom-scrollbar">
+      
+      <button onclick="switchTab('kanban')" id="tabBtn_kanban" class="px-4 py-3 text-xs font-bold border-b-2 border-brand-500 text-brand-600 dark:text-brand-400 flex items-center gap-2 transition">
+        <i data-lucide="columns-3" class="w-4 h-4"></i>
+        <span>Pipeline (Kanban)</span>
+      </button>
+
+      <button onclick="switchTab('dealsTable')" id="tabBtn_dealsTable" class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 flex items-center gap-2 transition">
+        <i data-lucide="table" class="w-4 h-4"></i>
+        <span>Bitimlar Jadvali</span>
+      </button>
+
+      <button onclick="switchTab('clientsTable')" id="tabBtn_clientsTable" class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 flex items-center gap-2 transition">
+        <i data-lucide="users" class="w-4 h-4"></i>
+        <span>Mijozlar Bazasi</span>
+      </button>
+
+      <button onclick="switchTab('inbound')" id="tabBtn_inbound" class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 flex items-center gap-2 transition">
+        <i data-lucide="inbox" class="w-4 h-4"></i>
+        <span>Inbound Lidlar (Triage)</span>
+      </button>
+
+      <button onclick="switchTab('radar')" id="tabBtn_radar" class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 flex items-center gap-2 transition">
+        <i data-lucide="radar" class="w-4 h-4 text-violet-500"></i>
+        <span>B2B Radar & Hunter</span>
+      </button>
+
+      <button onclick="switchTab('analytics')" id="tabBtn_analytics" class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 flex items-center gap-2 transition">
+        <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+        <span>Moliyaviy Tahlil & MRR</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- METRICS RIBBON -->
+  <section class="border-b border-slate-200 dark:border-slate-800/60 bg-slate-100/60 dark:bg-slate-900/40 px-6 py-4 transition-colors">
+    <div class="max-w-[1720px] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+      
+      <!-- Metric 1: Pipeline Value -->
+      <div class="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 rounded-xl p-3.5 shadow-sm transition-colors">
+        <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+          <span>Jami Pipeline Hajmi</span>
+          <i data-lucide="dollar-sign" class="w-4 h-4 text-brand-500 dark:text-brand-400"></i>
+        </div>
+        <div class="text-xl font-bold text-slate-900 dark:text-white tracking-tight font-mono" id="metricPipelineVal">$0</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" id="metricPipelineUzs">~0 so'm</div>
+      </div>
+
+      <!-- Metric 2: Monthly Recurring Revenue -->
+      <div class="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 rounded-xl p-3.5 shadow-sm transition-colors">
+        <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+          <span>Oylik Retayner (MRR)</span>
+          <i data-lucide="refresh-cw" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+        </div>
+        <div class="text-xl font-bold text-emerald-600 dark:text-emerald-400 tracking-tight font-mono" id="metricMrrVal">$0 / oy</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" id="metricRetainerClients">0 ta faol mijoz</div>
+      </div>
+
+      <!-- Metric 3: Active Deals -->
+      <div class="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 rounded-xl p-3.5 shadow-sm transition-colors">
+        <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+          <span>Faol Bitimlar</span>
+          <i data-lucide="layers" class="w-4 h-4 text-blue-500 dark:text-blue-400"></i>
+        </div>
+        <div class="text-xl font-bold text-slate-900 dark:text-white tracking-tight font-mono" id="metricActiveDeals">0</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">5 ta bosqich bo'yicha</div>
+      </div>
+
+      <!-- Metric 4: Inbound Leads -->
+      <div class="bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 rounded-xl p-3.5 shadow-sm transition-colors">
+        <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+          <span>Kutilayotgan Lidlar</span>
+          <i data-lucide="user-check" class="w-4 h-4 text-amber-500 dark:text-amber-400"></i>
+        </div>
+        <div class="text-xl font-bold text-amber-600 dark:text-amber-400 tracking-tight font-mono" id="metricNewLeads">0</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">@GPTify_uz_bot orqali</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEARCH & FILTER TOOLBAR -->
+  <section class="px-6 pt-4 pb-2">
+    <div class="max-w-[1720px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2 w-full sm:w-auto flex-1 max-w-md">
+        <div class="relative w-full">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-slate-400"></i>
+          <input 
+            type="text" 
+            id="searchInput" 
+            oninput="handleSearch()"
+            placeholder="Bitim, mijoz yoki soha bo'yicha qidirish..." 
+            class="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-800 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 outline-none transition"
+          >
+        </div>
+      </div>
+      <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+        <span>Tizim holati:</span>
+        <button onclick="refreshData()" class="px-2.5 py-1 rounded-md bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 flex items-center gap-1 transition">
+          <i data-lucide="rotate-cw" class="w-3 h-3"></i>
+          <span>Yangilash</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TAB 1: KANBAN BOARD VIEW ==================== -->
+  <main id="view_kanban" class="flex-1 px-6 py-4 overflow-x-auto custom-scrollbar">
+    <div class="max-w-[1720px] mx-auto flex gap-4 min-w-[1300px] items-start pb-6">
+
+      <!-- Column 1: Inquiry / Inbound -->
+      <div class="flex-1 min-w-[250px] bg-slate-200/50 dark:bg-slate-900/50 rounded-2xl border border-slate-300/80 dark:border-slate-800/70 p-3.5 flex flex-col max-h-[calc(100vh-280px)] transition-colors">
+        <div class="flex items-center justify-between mb-3 px-1">
+          <div class="flex items-center gap-2">
+            <span class="h-2.5 w-2.5 rounded-full bg-slate-400"></span>
+            <h3 class="font-semibold text-xs text-slate-800 dark:text-slate-200 tracking-tight">1. Yangi So'rov</h3>
+            <span class="col-count text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-slate-300 dark:bg-slate-800 text-slate-700 dark:text-slate-300">0</span>
+          </div>
+          <span class="col-sum text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-mono" id="sum_inquiry">$0</span>
+        </div>
+        <div 
+          id="col_inquiry" 
+          ondragover="allowDrop(event)" 
+          ondrop="dropDeal(event, 'inquiry')" 
+          ondragleave="dragLeave(event)"
+          class="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-1 min-h-[140px]"
+        >
+        </div>
+      </div>
+
+      <!-- Column 2: Audit Scheduled -->
+      <div class="flex-1 min-w-[250px] bg-slate-200/50 dark:bg-slate-900/50 rounded-2xl border border-slate-300/80 dark:border-slate-800/70 p-3.5 flex flex-col max-h-[calc(100vh-280px)] transition-colors">
+        <div class="flex items-center justify-between mb-3 px-1">
+          <div class="flex items-center gap-2">
+            <span class="h-2.5 w-2.5 rounded-full bg-blue-500"></span>
+            <h3 class="font-semibold text-xs text-slate-800 dark:text-slate-200 tracking-tight">2. Discovery & Audit</h3>
+            <span class="col-count text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-slate-300 dark:bg-slate-800 text-slate-700 dark:text-slate-300">0</span>
+          </div>
+          <span class="col-sum text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-mono" id="sum_audit_scheduled">$0</span>
+        </div>
+        <div 
+          id="col_audit_scheduled" 
+          ondragover="allowDrop(event)" 
+          ondrop="dropDeal(event, 'audit_scheduled')" 
+          ondragleave="dragLeave(event)"
+          class="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-1 min-h-[140px]"
+        >
+        </div>
+      </div>
+
+      <!-- Column 3: Proposal Sent -->
+      <div class="flex-1 min-w-[250px] bg-slate-200/50 dark:bg-slate-900/50 rounded-2xl border border-slate-300/80 dark:border-slate-800/70 p-3.5 flex flex-col max-h-[calc(100vh-280px)] transition-colors">
+        <div class="flex items-center justify-between mb-3 px-1">
+          <div class="flex items-center gap-2">
+            <span class="h-2.5 w-2.5 rounded-full bg-amber-500"></span>
+            <h3 class="font-semibold text-xs text-slate-800 dark:text-slate-200 tracking-tight">3. Taklif Yuborildi</h3>
+            <span class="col-count text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-slate-300 dark:bg-slate-800 text-slate-700 dark:text-slate-300">0</span>
+          </div>
+          <span class="col-sum text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-mono" id="sum_proposal_sent">$0</span>
+        </div>
+        <div 
+          id="col_proposal_sent" 
+          ondragover="allowDrop(event)" 
+          ondrop="dropDeal(event, 'proposal_sent')" 
+          ondragleave="dragLeave(event)"
+          class="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-1 min-h-[140px]"
+        >
+        </div>
+      </div>
+
+      <!-- Column 4: Closed Won -->
+      <div class="flex-1 min-w-[250px] bg-slate-200/50 dark:bg-slate-900/50 rounded-2xl border border-slate-300/80 dark:border-slate-800/70 p-3.5 flex flex-col max-h-[calc(100vh-280px)] transition-colors">
+        <div class="flex items-center justify-between mb-3 px-1">
+          <div class="flex items-center gap-2">
+            <span class="h-2.5 w-2.5 rounded-full bg-purple-500"></span>
+            <h3 class="font-semibold text-xs text-slate-800 dark:text-slate-200 tracking-tight">4. Bitim Yopildi</h3>
+            <span class="col-count text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-slate-300 dark:bg-slate-800 text-slate-700 dark:text-slate-300">0</span>
+          </div>
+          <span class="col-sum text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-mono" id="sum_closed_won">$0</span>
+        </div>
+        <div 
+          id="col_closed_won" 
+          ondragover="allowDrop(event)" 
+          ondrop="dropDeal(event, 'closed_won')" 
+          ondragleave="dragLeave(event)"
+          class="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-1 min-h-[140px]"
+        >
+        </div>
+      </div>
+
+      <!-- Column 5: Active Retainer -->
+      <div class="flex-1 min-w-[250px] bg-slate-200/50 dark:bg-slate-900/50 rounded-2xl border border-slate-300/80 dark:border-slate-800/70 p-3.5 flex flex-col max-h-[calc(100vh-280px)] transition-colors">
+        <div class="flex items-center justify-between mb-3 px-1">
+          <div class="flex items-center gap-2">
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+            <h3 class="font-semibold text-xs text-slate-800 dark:text-slate-200 tracking-tight">5. Oylik Retayner</h3>
+            <span class="col-count text-[11px] font-bold px-1.5 py-0.5 rounded-md bg-slate-300 dark:bg-slate-800 text-slate-700 dark:text-slate-300">0</span>
+          </div>
+          <span class="col-sum text-[11px] font-semibold text-slate-500 dark:text-slate-400 font-mono" id="sum_active_retainer">$0</span>
+        </div>
+        <div 
+          id="col_active_retainer" 
+          ondragover="allowDrop(event)" 
+          ondrop="dropDeal(event, 'active_retainer')" 
+          ondragleave="dragLeave(event)"
+          class="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-1 min-h-[140px]"
+        >
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== TAB 2: DEALS TABLE VIEW ==================== -->
+  <main id="view_dealsTable" class="flex-1 px-6 py-4 hidden">
+    <div class="max-w-[1720px] mx-auto bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h2 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="table" class="w-4 h-4 text-brand-500 dark:text-brand-400"></i>
+            <span>Barcha B2B Bitimlar (Jadval Ko'rinishi)</span>
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Tezkor filtr va saralashga ega to'liq ma'lumotlar jadvali</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="/api/export/deals.csv" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs text-slate-700 dark:text-slate-200 flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>CSV Eksport</span>
+          </a>
+          <button onclick="openAddDealModal()" class="px-3 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-500 text-xs font-semibold text-white flex items-center gap-1.5 transition">
+            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+            <span>+ Yangi Bitim</span>
+          </button>
+        </div>
+      </div>
+      <div class="overflow-x-auto custom-scrollbar">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 text-slate-500 dark:text-slate-400 text-[11px] font-semibold uppercase tracking-wider">
+              <th class="p-3.5 pl-6">ID</th>
+              <th class="p-3.5">Kompaniya</th>
+              <th class="p-3.5">Loyiha Nomi</th>
+              <th class="p-3.5">Soha</th>
+              <th class="p-3.5">Bosqich</th>
+              <th class="p-3.5">Qiymat ($)</th>
+              <th class="p-3.5">MRR ($/oy)</th>
+              <th class="p-3.5">Aloqa / Telegram</th>
+              <th class="p-3.5 pr-6 text-right">Amallar</th>
+            </tr>
+          </thead>
+          <tbody id="dealsTableBody" class="divide-y divide-slate-200 dark:divide-slate-800/60 text-slate-800 dark:text-slate-200">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== TAB 3: CLIENTS DIRECTORY VIEW ==================== -->
+  <main id="view_clientsTable" class="flex-1 px-6 py-4 hidden">
+    <div class="max-w-[1720px] mx-auto bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h2 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="users" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+            <span>Mijozlar Katalogi & Kompaniyalar</span>
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">B2B korporativ hamkorlar va kontakt shaxslar</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="/api/export/clients.csv" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs text-slate-700 dark:text-slate-200 flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>CSV Eksport</span>
+          </a>
+          <button onclick="openAddClientModal()" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-semibold text-white flex items-center gap-1.5 transition">
+            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+            <span>+ Yangi Mijoz</span>
+          </button>
+        </div>
+      </div>
+      <div class="overflow-x-auto custom-scrollbar">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 text-slate-500 dark:text-slate-400 text-[11px] font-semibold uppercase tracking-wider">
+              <th class="p-3.5 pl-6">ID</th>
+              <th class="p-3.5">Kompaniya Nomi</th>
+              <th class="p-3.5">Soha</th>
+              <th class="p-3.5">Aloqa Shaxsi</th>
+              <th class="p-3.5">Telegram</th>
+              <th class="p-3.5">Telefon</th>
+              <th class="p-3.5">Bitimlar Soni</th>
+              <th class="p-3.5">Jami Summa ($)</th>
+              <th class="p-3.5 pr-6 text-right">Aloqa</th>
+            </tr>
+          </thead>
+          <tbody id="clientsTableBody" class="divide-y divide-slate-200 dark:divide-slate-800/60 text-slate-800 dark:text-slate-200">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== TAB 4: INBOUND LEADS VIEW ==================== -->
+  <main id="view_inbound" class="flex-1 px-6 py-4 hidden">
+    <div class="max-w-[1720px] mx-auto bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h2 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="inbox" class="w-4 h-4 text-amber-500 dark:text-amber-400"></i>
+            <span>Inbound Lidlar Triage Paneli (@GPTify_uz_bot & Veb)</span>
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Tushgan so'rovlar, AI saralash ballari va pipeline'ga o'tkazish</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="syncBotLeads()" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs text-slate-700 dark:text-slate-200 flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 transition">
+            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+            <span>Botlarni Sinxronlash</span>
+          </button>
+          <a href="/api/export/inbound.csv" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs text-slate-700 dark:text-slate-200 flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 transition">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>CSV Eksport</span>
+          </a>
+        </div>
+      </div>
+      <div class="p-6 space-y-4" id="inboundLeadsList">
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== TAB 5: B2B RADAR & HUNTER ==================== -->
+  <main id="view_radar" class="flex-1 px-6 py-4 hidden">
+    <div class="max-w-[1720px] mx-auto space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- Secret Shopper Radar -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i data-lucide="shield-search" class="w-4 h-4 text-violet-500"></i>
+                <span>Secret Shopper AI Radar (O'zbekiston B2B Korxonalari)</span>
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Telegram kanallar va botlarni yashirin xaridor sifatida audit qilish</p>
+            </div>
+            <button onclick="loadRadarCandidates()" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-200 transition">Yangilash</button>
+          </div>
+
+          <!-- Candidates scroll list -->
+          <div class="space-y-2.5 max-h-[360px] overflow-y-auto custom-scrollbar pr-1 mb-4" id="radarCandidatesList">
+            <!-- Dynamic candidates -->
+          </div>
+
+          <!-- Audit Output Box (when audit runs) -->
+          <div id="radarAuditReportBox" class="hidden p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-violet-200 dark:border-violet-900/50 space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="h-2.5 w-2.5 rounded-full bg-violet-500 animate-pulse"></span>
+                <h4 class="font-bold text-xs text-slate-900 dark:text-white" id="auditReportTarget">Audit Natijasi</h4>
+              </div>
+              <span id="auditReportBadge" class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-50 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/20 font-mono">
+                Kechikish
+              </span>
+            </div>
+            <div class="text-xs text-slate-700 dark:text-slate-300 space-y-1.5" id="auditReportDetails">
+              <!-- Dynamic report text -->
+            </div>
+            <div class="bg-white dark:bg-slate-900 p-3 rounded-lg border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300">
+              <div class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1 flex items-center justify-between">
+                <span>Shukhrat Iskandarov nomidan Founder Pitch:</span>
+                <button onclick="copyAuditPitch()" class="text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1 font-mono text-[10px]">
+                  <i data-lucide="copy" class="w-3 h-3"></i>
+                  <span id="copyPitchBtnText">Nusxa Olish</span>
+                </button>
+              </div>
+              <p id="auditPitchText" class="leading-relaxed font-sans text-slate-800 dark:text-slate-200 whitespace-pre-line"></p>
+            </div>
+            <div class="flex flex-wrap justify-end gap-2 pt-1">
+              <a id="btnSendTelegramPitch" href="#" target="_blank" class="hidden px-3.5 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold shadow transition flex items-center gap-1.5">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                <span>Telegram orqali Jo'natish (Pitch)</span>
+              </a>
+              <button onclick="addAuditedLeadToCrm()" id="btnAddAuditToCrm" class="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow transition flex items-center gap-1.5">
+                <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+                <span>Pipeline'ga Bitim Qo'shish ($2,500)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lead Hunter -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i data-lucide="target" class="w-4 h-4 text-emerald-500"></i>
+                <span>B2B Lead Hunter (TGStat & Reestr)</span>
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">O'zbekiston bo'ylab avtomatik saralash va CRM'ga 1-klik import</p>
+            </div>
+            <span id="hunterStatsBadge" class="px-2 py-0.5 rounded-full text-[10px] bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/20 font-mono">
+              1,300+ B2B Korxona & Jonli Reestr
+            </span>
+          </div>
+
+          <div class="space-y-2.5 mb-4">
+            <!-- Row 1: Soha & Obyekt Turi (Entity Type) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Qidiruv Sohasi</label>
+                <select id="hunterIndustrySelect" class="w-full p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-200 outline-none">
+                  <option value="ALL">Barcha Sohalar (All Industries)</option>
+                  <option value="Tibbiyot" selected>🏥 Tibbiyot va Xususiy Klinikalar (400+)</option>
+                  <option value="Biznes">💼 B2B Xizmatlar, Yuridik & Konsalting (275+)</option>
+                  <option value="Talim">🎓 Ta'lim, Kurslar & IT Markazlar (265+)</option>
+                  <option value="Avtoservis">🚗 Avtoservis, Detailing & Ehtiyot qismlar (160+)</option>
+                  <option value="Qurilish">🏗️ Qurilish, Arxitektura & Mebel (60+)</option>
+                  <option value="HoReCa">🍽️ Restoran, Mehmonxona & HoReCa (45+)</option>
+                  <option value="Logistika">🚚 Logistika, Transport & Kargo (40+)</option>
+                  <option value="E-commerce">🛍️ E-Commerce & Chakana Savdo (45+)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Obyekt Turi (Entity Filter)</label>
+                <select id="hunterEntityTypeSelect" class="w-full p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-200 outline-none font-medium">
+                  <option value="ALL">Barcha Turlar (Aralash)</option>
+                  <option value="business" selected>🏥 🎓 Faqat Aniq Klinikalar & Markazlar (Physical)</option>
+                  <option value="linkedin_exec">💼 LinkedIn B2B Rahbarlar (Executives)</option>
+                  <option value="telegram_media">📢 Faqat Telegram Kanallar (Media / Blog)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 2: Manba & Shahar / Hudud & Limit -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Qidiruv Manbasi</label>
+                <select id="hunterSourceSelect" class="w-full p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-200 outline-none">
+                  <option value="ALL" selected>Omni-Search (Barcha 7 ta Manba)</option>
+                  <option value="yellowpages_uz">🟡 YellowPages.uz & Davlat Ochiq Reestri</option>
+                  <option value="orginfo_uz">🏛️ Orginfo.uz (Yuridik Shaxslar & STIR Reestri)</option>
+                  <option value="stat_uz_opendata">📊 Stat.uz & E-Gov Davlat Ochiq Reestri</option>
+                  <option value="osm_overpass">🌍 OpenStreetMap B2B Baza (Overpass API)</option>
+                  <option value="live_web">🌐 Jonli Veb-Skreyper (Real-Time Web Search)</option>
+                  <option value="uz_b2b_registry">🏢 O'zbekiston B2B Korxona Reestri</option>
+                  <option value="linkedin">💼 LinkedIn B2B Professional</option>
+                  <option value="tgstat_uz">📡 TGStat Tijoriy Kanallar</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Shahar / Hudud (Barcha 12 Viloyat)</label>
+                <select id="hunterCitySelect" class="w-full p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-200 outline-none font-medium">
+                  <option value="ALL" selected>Barcha Hududlar (Butun O'zbekiston)</option>
+                  <option value="Toshkent shahri">🏙️ Toshkent shahri</option>
+                  <option value="Toshkent viloyati">📍 Toshkent viloyati</option>
+                  <option value="Samarqand viloyati">🏛️ Samarqand viloyati</option>
+                  <option value="Farg'ona viloyati">🌾 Farg'ona viloyati</option>
+                  <option value="Andijon viloyati">🏢 Andijon viloyati</option>
+                  <option value="Namangan viloyati">🌸 Namangan viloyati</option>
+                  <option value="Buxoro viloyati">🕌 Buxoro viloyati</option>
+                  <option value="Qashqadaryo viloyati">⚡ Qashqadaryo viloyati</option>
+                  <option value="Surxondaryo viloyati">☀️ Surxondaryo viloyati</option>
+                  <option value="Xorazm viloyati">🌊 Xorazm viloyati</option>
+                  <option value="Navoiy viloyati">🏭 Navoiy viloyati</option>
+                  <option value="Jizzax viloyati">🌲 Jizzax viloyati</option>
+                  <option value="Sirdaryo viloyati">💧 Sirdaryo viloyati</option>
+                  <option value="Qoraqalpog'iston Respublikasi">🏜️ Qoraqalpog'iston Respublikasi</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-slate-600 dark:text-slate-300 mb-1">Natijalar Soni (Limit)</label>
+                <select id="hunterLimitSelect" class="w-full p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-200 outline-none font-semibold text-emerald-600 dark:text-emerald-400">
+                  <option value="25">25 ta</option>
+                  <option value="50" selected>50 ta (Standart)</option>
+                  <option value="100">100 ta</option>
+                  <option value="250">250 ta</option>
+                  <option value="500">500 ta</option>
+                  <option value="1000">1,000 ta</option>
+                  <option value="2000">To'liq Baza (All / 1,300+ korxona)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Search input + Action Button -->
+            <div class="flex gap-2 pt-1">
+              <input type="text" id="hunterKeywordInput" placeholder="Kalit so'z (masalan: stomatologiya, implant, direktor)..." class="flex-1 p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-200 outline-none">
+              <button onclick="runLeadHunterAction()" id="btnRunHunter" class="px-5 py-2 text-xs font-semibold rounded-xl bg-brand-600 hover:bg-brand-500 text-white flex items-center justify-center gap-1.5 transition shadow-md whitespace-nowrap">
+                <i data-lucide="search" class="w-3.5 h-3.5"></i>
+                <span>Qidirish</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hunter Results List -->
+          <div id="hunterResultsContainer" class="flex-1 flex flex-col min-h-0">
+            <div id="hunterResultsStatus" class="text-xs text-slate-500 dark:text-slate-400 mb-2 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span>Topilgan korxonalar ro'yxati:</span>
+                <span id="hunterFoundCount" class="font-mono font-bold text-slate-700 dark:text-slate-300">0 ta</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="downloadOutreachCampaign()" id="btnExportOutreach" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white flex items-center gap-1 transition shadow-sm" title="Barcha lidlar uchun shaxsiylashtirilgan WhatsApp, Telegram va Qo'ng'iroq skriptlari bilan Excel yuklash">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                  <span>🚀 AI Outreach Kampaniya</span>
+                </button>
+                <button onclick="exportHunterLeadsToCSV()" id="btnExportHunterCSV" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white flex items-center gap-1 transition shadow-sm" title="Jadvalni Excel yoki CSV formatida yuklab olish">
+                  <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5"></i>
+                  <span>Excel / CSV</span>
+                </button>
+              </div>
+            </div>
+            <div class="space-y-3 max-h-[480px] overflow-y-auto custom-scrollbar pr-1" id="hunterResultsList">
+              <div class="p-8 text-center text-xs text-slate-400 border border-dashed border-slate-200 dark:border-slate-800 rounded-xl">
+                Qidiruv sohasini tanlang va "Lidlarni Qidirish" tugmasini bosing.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== TAB 6: ANALYTICS & REVENUE VIEW ==================== -->
+  <main id="view_analytics" class="flex-1 px-6 py-4 hidden">
+    <div class="max-w-[1720px] mx-auto space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-4">
+            <i data-lucide="pie-chart" class="w-4 h-4 text-brand-500 dark:text-brand-400"></i>
+            <span>Bitimlar Bosqichlari Bo'yicha Taqsimot</span>
+          </h3>
+          <div class="space-y-3 text-xs" id="stageDistributionList">
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-4">
+            <i data-lucide="refresh-cw" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+            <span>Oylik Retayner (MRR) Tahlili</span>
+          </h3>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800/80 mb-4">
+            <div class="text-xs text-slate-500 dark:text-slate-400 mb-1">Doimiy oylik kafolatlangan daromad:</div>
+            <div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 font-mono" id="analyticsMrr">$0 / oy</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1" id="analyticsMrrUzs">~0 so'm / oy</div>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            SLA doirasida model optimallashtirish, server monitoringi va kunlik texnik ko'rik ta'minlanadi.
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-4">
+            <i data-lucide="network" class="w-4 h-4 text-sky-500 dark:text-sky-400"></i>
+            <span>GPTify Tizimlar Ekotizimi</span>
+          </h3>
+          <div class="space-y-2.5 text-xs">
+            <a href="http://localhost:8502" target="_blank" class="block p-3 rounded-xl bg-slate-50 dark:bg-slate-950 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition">
+              <div class="font-bold text-slate-900 dark:text-white flex items-center justify-between">
+                <span>🎛️ Master Mission Control (Port 8502)</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-400"></i>
+              </div>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">17 loyiha portfeli, Telegram/Instagram jonli chat takeover, agentlar telemetriyasi</p>
+            </a>
+            <a href="http://localhost:8503" target="_blank" class="block p-3 rounded-xl bg-slate-50 dark:bg-slate-950 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 transition">
+              <div class="font-bold text-slate-900 dark:text-white flex items-center justify-between">
+                <span>🎙️ Jarvis Voice Brain (Port 8503)</span>
+                <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-400"></i>
+              </div>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">ElevenLabs & Edge TTS ovozli sintez va markaziy agent boshqaruvi</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- MILESTONES MODAL -->
+  <div id="milestonesModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl transition-colors">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="check-square" class="w-4 h-4 text-brand-500"></i>
+            <span id="milestoneModalTitle">Bitim Bosqichlari (Milestones)</span>
+          </h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400" id="milestoneModalSubtitle">To'lov va topshirish muddatlari</p>
+        </div>
+        <button onclick="closeMilestonesModal()" class="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="space-y-3 mb-4 max-h-[300px] overflow-y-auto custom-scrollbar pr-1" id="milestonesList">
+        <!-- Dynamic milestones -->
+      </div>
+      <!-- Add Milestone Form -->
+      <form onsubmit="handleAddMilestone(event)" class="pt-3 border-t border-slate-200 dark:border-slate-800 flex gap-2">
+        <input type="text" id="newMilestoneTitle" required placeholder="Masalan: 50% Qabul Akti" class="flex-1 p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+        <input type="number" id="newMilestoneAmount" required placeholder="$ Summa" class="w-24 p-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none font-mono">
+        <button type="submit" class="px-3 py-2 text-xs font-semibold rounded-xl bg-brand-600 hover:bg-brand-500 text-white shadow transition">Qo'shish</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADD CLIENT MODAL -->
+  <div id="addClientModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl transition-colors">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="user-plus" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+          <span>Yangi Mijoz Qo'shish</span>
+        </h3>
+        <button onclick="closeAddClientModal()" class="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <form onsubmit="handleCreateClient(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Kompaniya Nomi *</label>
+          <input type="text" id="clientCompanyInput" required placeholder="Masalan: Chinobod Fayz MCHJ" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Soha (Industry)</label>
+            <input type="text" id="clientIndustryInput" placeholder="Masalan: Tibbiyot / B2B" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Aloqa Shaxsi</label>
+            <input type="text" id="clientContactInput" placeholder="Direktor / Boshqaruvchi" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Telegram Handle</label>
+            <input type="text" id="clientTgInput" placeholder="@username" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Telefon</label>
+            <input type="text" id="clientPhoneInput" placeholder="+998 90 123 45 67" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Qaydlar</label>
+          <textarea id="clientNotesInput" rows="2" placeholder="Kompaniya haqida qo'shimcha ma'lumot..." class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none"></textarea>
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeAddClientModal()" class="px-4 py-2 text-xs font-semibold rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">Bekor qilish</button>
+          <button type="submit" class="px-4 py-2 text-xs font-semibold rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-md">Mijozni Saqlash</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- AI PROPOSAL MODAL -->
+  <div id="proposalModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full flex flex-col max-h-[90vh] shadow-2xl overflow-hidden transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="file-text" class="w-4 h-4 text-brand-500"></i>
+            <span id="proposalModalTitle">B2B Loyiha Taklifi (Scope Proposal)</span>
+          </h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400" id="proposalModalSubtitle">GPTify amaliy arxitekturasi asosida shakllantirildi</p>
+        </div>
+        <button onclick="closeProposalModal()" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="p-6 overflow-y-auto custom-scrollbar flex-1 bg-slate-50 dark:bg-slate-950/40">
+        <div id="proposalContent" class="text-xs text-slate-800 dark:text-slate-200 leading-relaxed font-mono whitespace-pre-wrap select-all p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+        </div>
+      </div>
+      <div class="px-6 py-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50 dark:bg-slate-900">
+        <span class="text-[11px] text-slate-500 dark:text-slate-400">B2B andaza: 50% avans, 50% qabul qilish akti</span>
+        <div class="flex items-center gap-2">
+          <button onclick="copyProposalText()" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center gap-1.5 transition">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span id="copyProposalBtnText">Nusxa Olish</span>
+          </button>
+          <button onclick="closeProposalModal()" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-brand-600 hover:bg-brand-500 text-white transition">
+            Yopish
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI OBJECTION MODAL -->
+  <div id="objectionModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-xl w-full flex flex-col max-h-[90vh] shadow-2xl overflow-hidden transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="shield-alert" class="w-4 h-4 text-emerald-600 dark:text-emerald-400"></i>
+            <span>Mijoz E'tirozini Hal Qilish (Objection Copilot)</span>
+          </h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400" id="objectionModalDealName">Kompaniya nomi</p>
+        </div>
+        <button onclick="closeObjectionModal()" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="p-6 space-y-4 overflow-y-auto custom-scrollbar flex-1">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Mijoz nima dedi yoki qanday e'tiroz bildirdi?</label>
+          <div class="flex gap-2 mb-2 flex-wrap">
+            <button onclick="fillObjection('Juda qimmat, biroz chegirma qilib berolmaysizmi?')" class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-[11px] text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700">"Qimmat"</button>
+            <button onclick="fillObjection('Xavfsizlik qanday bo\'ladi? Ichki ma\'lumotlarimiz chiqib ketmaydimi?')" class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-[11px] text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700">"Xavfsizlik"</button>
+            <button onclick="fillObjection('O\'zimizning IT mutaxassisimiz qilsa bo\'lmaydimi?')" class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-[11px] text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700">"O'zimiz qilsakchi"</button>
+          </div>
+          <textarea 
+            id="objectionInput" 
+            rows="3" 
+            placeholder="Mijoz e'tirozini yozing..." 
+            class="w-full p-3 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-brand-500 text-slate-900 dark:text-slate-200 outline-none"
+          ></textarea>
+        </div>
+        <button onclick="resolveObjection()" id="btnResolveObjection" class="w-full py-2 text-xs font-semibold rounded-xl bg-brand-600 hover:bg-brand-500 text-white flex items-center justify-center gap-1.5 transition">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>Asosli Javob Yaratish</span>
+        </button>
+        <div id="objectionResult" class="hidden p-4 rounded-xl bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs text-slate-800 dark:text-slate-200 leading-relaxed font-sans whitespace-pre-wrap"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI FOLLOW-UP MODAL -->
+  <div id="followupModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full flex flex-col shadow-2xl overflow-hidden transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4 text-blue-500"></i>
+            <span>1-Tap Telegram Follow-up</span>
+          </h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400" id="followupModalTarget">Mijozga xabar</p>
+        </div>
+        <button onclick="closeFollowupModal()" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between text-xs">
+          <span class="text-slate-500 dark:text-slate-400">Hurmatli B2B ohang ("Siz"):</span>
+          <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-950 p-1 rounded-lg border border-slate-300 dark:border-slate-800">
+            <button onclick="switchFollowupLang('uz')" id="langUzBtn" class="px-2 py-0.5 rounded text-[11px] font-semibold bg-brand-600 text-white">UZ</button>
+            <button onclick="switchFollowupLang('ru')" id="langRuBtn" class="px-2 py-0.5 rounded text-[11px] font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white">RU</button>
+          </div>
+        </div>
+        <textarea 
+          id="followupText" 
+          rows="4" 
+          class="w-full p-3 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-brand-500 text-slate-900 dark:text-slate-200 outline-none leading-relaxed"
+        ></textarea>
+        <div class="flex items-center justify-between pt-2">
+          <span class="text-[11px] text-slate-500 dark:text-slate-400 font-mono" id="followupTgHandle">@handle</span>
+          <div class="flex items-center gap-2">
+            <button onclick="copyFollowupText()" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center gap-1 transition">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span id="copyFollowupBtnText">Nusxa</span>
+            </button>
+            <a id="btnSendTg" href="#" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1.5 transition">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              <span>Telegramda Ochish</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI B2B OUTREACH & PITCH MODAL -->
+  <div id="aiPitchModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-2xl w-full flex flex-col max-h-[92vh] shadow-2xl overflow-hidden transition-colors">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="h-9 w-9 rounded-xl bg-violet-100 dark:bg-violet-950/80 text-violet-600 dark:text-violet-400 flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <span>AI B2B Cold Outreach & Pitch Generator</span>
+            </h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400" id="aiPitchModalSubtitle">Kompaniya nomi • Soha</p>
+          </div>
+        </div>
+        <button onclick="closeAIPitchModal()" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Cadence Step Selector (Day 0, Day 3, Day 7, Day 14) -->
+      <div class="px-6 py-2.5 bg-slate-100/80 dark:bg-slate-950/60 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2 flex-wrap">
+        <span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide flex items-center gap-1.5">
+          <i data-lucide="calendar" class="w-3.5 h-3.5 text-violet-500"></i>
+          <span>Bosqich (Cadence):</span>
+        </span>
+        <div class="flex items-center gap-1.5 flex-wrap" id="cadenceBtnGroup">
+          <button onclick="switchCadenceStage('day0')" id="cadenceBtn_day0" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-violet-600 text-white shadow-xs transition">
+            📌 Day 0: Taklif
+          </button>
+          <button onclick="switchCadenceStage('day3')" id="cadenceBtn_day3" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 transition">
+            🔄 Day 3: Isbot & Keys
+          </button>
+          <button onclick="switchCadenceStage('day7')" id="cadenceBtn_day7" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 transition">
+            📊 Day 7: Mikro-Audit
+          </button>
+          <button onclick="switchCadenceStage('day14')" id="cadenceBtn_day14" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 transition">
+            🤝 Day 14: Yakuniy Eslatma
+          </button>
+        </div>
+      </div>
+
+      <!-- Channel Tab selection -->
+      <div class="px-6 pt-2 pb-0 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/30 flex items-center gap-1.5 flex-wrap">
+        <button onclick="switchPitchTab('telegram')" id="pitchTab_telegram" class="px-3 py-1.5 text-xs font-semibold rounded-t-lg border-b-2 border-brand-500 text-brand-600 dark:text-brand-400 flex items-center gap-1.5 transition">
+          <i data-lucide="send" class="w-3.5 h-3.5 text-blue-500"></i>
+          <span>💬 Telegram</span>
+        </button>
+        <button onclick="switchPitchTab('whatsapp')" id="pitchTab_whatsapp" class="px-3 py-1.5 text-xs font-semibold rounded-t-lg border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1.5 transition">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-500"></i>
+          <span>🟢 WhatsApp</span>
+        </button>
+        <button onclick="switchPitchTab('call')" id="pitchTab_call" class="px-3 py-1.5 text-xs font-semibold rounded-t-lg border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1.5 transition">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>📞 30s Qo'ng'iroq</span>
+        </button>
+        <button onclick="switchPitchTab('offer')" id="pitchTab_offer" class="px-3 py-1.5 text-xs font-semibold rounded-t-lg border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1.5 transition">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-indigo-500"></i>
+          <span>📄 Taklif & Email</span>
+        </button>
+      </div>
+
+      <!-- Content -->
+      <div class="p-6 space-y-3 overflow-y-auto custom-scrollbar flex-1">
+        <div class="flex items-center justify-between text-xs">
+          <span class="text-slate-500 dark:text-slate-400">Hurmat bilan ("Siz" ohangida, to'g'ridan-to'g'ri nusxalashga tayyor):</span>
+          <span id="pitchCharCount" class="font-mono text-[11px] text-slate-400">0 belgi</span>
+        </div>
+        <textarea 
+          id="pitchTextarea" 
+          rows="10" 
+          class="w-full p-3.5 text-xs font-sans rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 focus:border-brand-500 text-slate-900 dark:text-slate-200 outline-none leading-relaxed custom-scrollbar"
+        ></textarea>
+      </div>
+
+      <!-- Footer -->
+      <div class="px-6 py-3 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2" id="pitchDirectActions">
+          <!-- Dynamically filled with WhatsApp / Telegram buttons -->
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="copyPitchText()" id="btnCopyPitch" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center gap-1.5 transition border border-slate-300 dark:border-slate-700">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span id="copyPitchBtnText">Nusxa Olish</span>
+          </button>
+          <button onclick="closeAIPitchModal()" class="px-4 py-1.5 text-xs font-semibold rounded-lg bg-brand-600 hover:bg-brand-500 text-white transition">
+            Yopish
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD DEAL MODAL -->
+  <div id="addDealModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl transition-colors">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="plus-circle" class="w-4 h-4 text-brand-500"></i>
+          <span>Yangi Bitim Qo'shish</span>
+        </h3>
+        <button onclick="closeAddDealModal()" class="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <form onsubmit="handleCreateDeal(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Mijoz Kompaniyasi</label>
+          <select id="dealClientSelect" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Bitim Nomi</label>
+          <input type="text" id="dealTitleInput" required placeholder="Masalan: Klinika AI Triaj Tizimi" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Loyiha Qiymati ($ USD)</label>
+            <input type="number" id="dealValueInput" value="3500" step="100" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none font-mono">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Oylik Retayner ($/oy MRR)</label>
+            <input type="number" id="dealMrrInput" value="300" step="50" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none font-mono">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Dastlabki Bosqich</label>
+          <select id="dealStageSelect" class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none">
+            <option value="inquiry">1. Yangi So'rov (Inquiry)</option>
+            <option value="audit_scheduled">2. Discovery & Audit</option>
+            <option value="proposal_sent">3. Taklif Yuborildi</option>
+            <option value="closed_won">4. Bitim Yopildi</option>
+            <option value="active_retainer">5. Oylik Retayner</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Qaydlar / Texnik Talablar</label>
+          <textarea id="dealNotesInput" rows="2" placeholder="Integratsiya talablari, muddat, xususiyatlar..." class="w-full p-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-200 outline-none"></textarea>
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeAddDealModal()" class="px-4 py-2 text-xs font-semibold rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">Bekor qilish</button>
+          <button type="submit" class="px-4 py-2 text-xs font-semibold rounded-xl bg-brand-600 hover:bg-brand-500 text-white shadow-md">Bitimni Saqlash</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- VOICE ASSISTANT POPUP -->
+  <div id="voiceBanner" class="fixed bottom-6 right-6 z-50 hidden bg-white dark:bg-slate-900 border border-brand-500/40 shadow-2xl rounded-2xl p-4 max-w-sm w-full transition-colors">
+    <div class="flex items-center gap-3">
+      <div class="h-10 w-10 rounded-xl bg-brand-500/20 text-brand-600 dark:text-brand-400 flex items-center justify-center animate-pulse">
+        <i data-lucide="mic" class="w-5 h-5"></i>
+      </div>
+      <div class="flex-1">
+        <h4 class="text-xs font-bold text-slate-900 dark:text-white">Jarvis CRM Ovozli Buyruq</h4>
+        <p class="text-[11px] text-slate-500 dark:text-slate-400" id="voiceStatusText">Gapiring... (Masalan: "MedPro bitimini Proposal bosqichiga o'tkaz")</p>
+      </div>
+      <button onclick="stopVoiceAssistant()" class="text-slate-400 hover:text-slate-600 dark:hover:text-white">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 left-6 z-50 hidden bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-white text-xs px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 transition-colors">
+    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500" id="toastIcon"></i>
+    <span id="toastMsg">Xabar</span>
+  </div>
+
+  <!-- JAVASCRIPT APPLICATION CORE -->
+  <script>
+    const USD_TO_UZS = 12850;
+    let allDeals = [];
+    let allClients = [];
+    let allInboundLeads = [];
+    let activeDealForAi = null;
+    let activeDealForMilestones = null;
+    let recognition = null;
+    let currentTab = 'kanban';
+
+    const STAGES = {
+      inquiry: { title: "1. Yangi So'rov", badge: "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700" },
+      audit_scheduled: { title: "2. Discovery & Audit", badge: "bg-blue-50 dark:bg-blue-500/10 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-500/20" },
+      proposal_sent: { title: "3. Taklif Yuborildi", badge: "bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-500/20" },
+      closed_won: { title: "4. Bitim Yopildi", badge: "bg-purple-50 dark:bg-purple-500/10 text-purple-700 dark:text-purple-400 border-purple-200 dark:border-purple-500/20" },
+      active_retainer: { title: "5. Oylik Retayner", badge: "bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-500/20" }
+    };
+
+    // THEME SWITCHER (LIGHT / DARK)
+    function initTheme() {
+      const saved = localStorage.getItem('gptify_crm_theme') || 'dark';
+      applyTheme(saved);
+    }
+
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const next = isDark ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem('gptify_crm_theme', next);
+    }
+
+    function applyTheme(theme) {
+      const doc = document.documentElement;
+      const text = document.getElementById('themeBtnText');
+      if (theme === 'dark') {
+        doc.classList.add('dark');
+        doc.classList.remove('light');
+        if (text) text.textContent = "Yorug'";
+      } else {
+        doc.classList.remove('dark');
+        doc.classList.add('light');
+        if (text) text.textContent = "Tungi";
+      }
+      lucide.createIcons();
+    }
+
+    // TAB SWITCHING
+    function switchTab(tab) {
+      currentTab = tab;
+      const tabs = ['kanban', 'dealsTable', 'clientsTable', 'inbound', 'radar', 'analytics'];
+      tabs.forEach(t => {
+        const v = document.getElementById(`view_${t}`);
+        const btn = document.getElementById(`tabBtn_${t}`);
+        if (v) v.classList.toggle('hidden', t !== tab);
+        if (btn) {
+          if (t === tab) {
+            btn.className = "px-4 py-3 text-xs font-bold border-b-2 border-brand-500 text-brand-600 dark:text-brand-400 flex items-center gap-2 transition";
+          } else {
+            btn.className = "px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 flex items-center gap-2 transition";
+          }
+        }
+      });
+      if (tab === 'radar') loadRadarCandidates();
+      lucide.createIcons();
+    }
+
+    // INIT
+    document.addEventListener("DOMContentLoaded", () => {
+      initTheme();
+      lucide.createIcons();
+      refreshData();
+    });
+
+    async function refreshData() {
+      try {
+        await Promise.all([
+          loadMetrics(),
+          loadDeals(),
+          loadClients(),
+          loadInboundLeads()
+        ]);
+        renderDealsTable();
+        renderClientsTable();
+        renderInboundLeadsView();
+        renderAnalyticsView();
+        lucide.createIcons();
+      } catch (err) {
+        console.error("Data load error:", err);
+      }
+    }
+
+    // LOAD METRICS
+    async function loadMetrics() {
+      const res = await fetch("/api/metrics");
+      if (!res.ok) return;
+      const m = await res.json();
+      
+      const pipeVal = m.pipeline_value_usd || 0;
+      document.getElementById("metricPipelineVal").textContent = `$${pipeVal.toLocaleString()}`;
+      document.getElementById("metricPipelineUzs").textContent = `~${(pipeVal * USD_TO_UZS).toLocaleString()} so'm`;
+      
+      const mrr = m.mrr_usd || 0;
+      document.getElementById("metricMrrVal").textContent = `$${mrr.toLocaleString()} / oy`;
+      document.getElementById("metricRetainerClients").textContent = `${m.retainer_clients_count || 0} ta faol mijoz`;
+      
+      document.getElementById("metricActiveDeals").textContent = m.active_deals_count || 0;
+      document.getElementById("metricNewLeads").textContent = m.new_leads_count || 0;
+      document.getElementById("inboundBadge").textContent = m.new_leads_count || 0;
+
+      const aMrr = document.getElementById("analyticsMrr");
+      if (aMrr) aMrr.textContent = `$${mrr.toLocaleString()} / oy`;
+      const aMrrUzs = document.getElementById("analyticsMrrUzs");
+      if (aMrrUzs) aMrrUzs.textContent = `~${(mrr * USD_TO_UZS).toLocaleString()} so'm / oy`;
+    }
+
+    // LOAD DEALS
+    async function loadDeals() {
+      const res = await fetch("/api/deals");
+      if (!res.ok) return;
+      const data = await res.json();
+      allDeals = data.deals || [];
+      renderKanban(allDeals);
+    }
+
+    // LOAD CLIENTS
+    async function loadClients() {
+      const res = await fetch("/api/clients");
+      if (!res.ok) return;
+      const data = await res.json();
+      allClients = data.clients || [];
+      populateClientSelect();
+    }
+
+    function populateClientSelect() {
+      const sel = document.getElementById("dealClientSelect");
+      if (!sel) return;
+      sel.innerHTML = allClients.map(c => 
+        `<option value="${c.id}">${c.company_name} (${c.industry || 'B2B'})</option>`
+      ).join("");
+    }
+
+    // LOAD INBOUND LEADS
+    async function loadInboundLeads() {
+      const res = await fetch("/api/inbound?status=new");
+      if (!res.ok) return;
+      const data = await res.json();
+      allInboundLeads = data.leads || [];
+    }
+
+    // RENDER KANBAN
+    function renderKanban(deals) {
+      Object.keys(STAGES).forEach(stage => {
+        const col = document.getElementById(`col_${stage}`);
+        if (col) col.innerHTML = "";
+        const sumElem = document.getElementById(`sum_${stage}`);
+        if (sumElem) sumElem.textContent = "$0";
+      });
+
+      const stageSums = { inquiry: 0, audit_scheduled: 0, proposal_sent: 0, closed_won: 0, active_retainer: 0 };
+      const stageCounts = { inquiry: 0, audit_scheduled: 0, proposal_sent: 0, closed_won: 0, active_retainer: 0 };
+
+      deals.forEach(deal => {
+        const stage = deal.stage || "inquiry";
+        if (stageSums[stage] !== undefined) {
+          stageSums[stage] += (deal.value_usd || 0);
+          stageCounts[stage] += 1;
+        }
+
+        const col = document.getElementById(`col_${stage}`);
+        if (col) {
+          col.appendChild(createDealCard(deal));
+        }
+      });
+
+      // Update Column Headers
+      Object.keys(STAGES).forEach(stage => {
+        const sumElem = document.getElementById(`sum_${stage}`);
+        if (sumElem) sumElem.textContent = `$${stageSums[stage].toLocaleString()}`;
+        
+        const col = document.getElementById(`col_${stage}`);
+        if (col && col.parentElement) {
+          const countBadge = col.parentElement.querySelector(".col-count");
+          if (countBadge) countBadge.textContent = stageCounts[stage];
+        }
+      });
+
+      lucide.createIcons();
+    }
+
+    // CREATE DEAL CARD
+    function createDealCard(deal) {
+      const card = document.createElement("div");
+      card.className = "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/90 hover:border-brand-400 dark:hover:border-brand-500/50 rounded-xl p-3.5 shadow-sm transition-all duration-200 cursor-grab active:cursor-grabbing group relative";
+      card.draggable = true;
+      card.id = `deal_card_${deal.id}`;
+      
+      card.ondragstart = (e) => {
+        e.dataTransfer.setData("text/plain", deal.id);
+        card.classList.add("opacity-50");
+      };
+      card.ondragend = () => {
+        card.classList.remove("opacity-50");
+      };
+
+      const initials = (deal.company_name || "Mijoz").substring(0, 2).toUpperCase();
+      const tgHandle = deal.telegram_handle ? deal.telegram_handle.replace("@", "") : "";
+
+      card.innerHTML = `
+        <div class="flex items-start justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2">
+            <div class="h-6 w-6 rounded-md bg-brand-50 dark:bg-brand-500/10 text-brand-600 dark:text-brand-400 flex items-center justify-center font-bold text-[10px] border border-brand-200 dark:border-brand-500/20">
+              ${initials}
+            </div>
+            <div>
+              <h4 class="font-bold text-xs text-slate-900 dark:text-white leading-snug group-hover:text-brand-600 dark:group-hover:text-brand-300 transition">${deal.company_name || 'Noma\'lum'}</h4>
+              <span class="text-[10px] text-slate-500 dark:text-slate-400">${deal.industry || 'B2B AI'}</span>
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-xs font-bold text-slate-900 dark:text-white tracking-tight font-mono">$${(deal.value_usd || 0).toLocaleString()}</div>
+            ${deal.mrr_usd > 0 ? `<div class="text-[10px] text-emerald-600 dark:text-emerald-400 font-medium font-mono">+$${deal.mrr_usd}/oy</div>` : ''}
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="text-xs font-semibold text-slate-700 dark:text-slate-200 line-clamp-1">${deal.title}</div>
+          ${deal.notes ? `<p class="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2 mt-0.5 leading-relaxed">${deal.notes}</p>` : ''}
+        </div>
+
+        <!-- Milestones Bar trigger -->
+        <button onclick="openMilestonesModal(${deal.id})" class="w-full mb-3 py-1 px-2 rounded-lg bg-slate-50 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 text-[10px] text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 flex items-center justify-between transition">
+          <span class="flex items-center gap-1 font-medium">
+            <i data-lucide="check-circle-2" class="w-3 h-3 text-brand-500"></i>
+            <span>Bosqichlar (Milestones)</span>
+          </span>
+          <span class="text-[10px] font-mono text-slate-400 hover:underline">Ko'rish &gt;</span>
+        </button>
+
+        <div class="pt-2.5 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between text-[11px]">
+          <div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400">
+            ${tgHandle ? `
+              <a href="https://t.me/${tgHandle}" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1 transition" title="Telegramda yozish">
+                <i data-lucide="send" class="w-3 h-3 text-blue-500"></i>
+                <span class="font-mono">@${tgHandle}</span>
+              </a>
+            ` : (deal.contact_person ? `<span class="truncate max-w-[90px]">${deal.contact_person}</span>` : '<span>-</span>')}
+          </div>
+
+          <div class="flex items-center gap-1 opacity-90 group-hover:opacity-100 transition">
+            <button onclick="openProposalModal(${deal.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-brand-600 dark:text-brand-300" title="AI B2B Taklif Generatori">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+            </button>
+            <button onclick="openFollowupModal(${deal.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-blue-600 dark:text-blue-400" title="1-Tap Telegram Follow-up">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            </button>
+            <button onclick="openObjectionModal(${deal.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-emerald-600 dark:text-emerald-400" title="E'tirozlarni Hal Qilish (AI)">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            </button>
+            <button onclick="deleteDeal(${deal.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 hover:bg-rose-100 dark:hover:bg-rose-900/50 text-slate-400 hover:text-rose-600 dark:hover:text-rose-400" title="O'chirish">
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      `;
+
+      return card;
+    }
+
+    // RENDER DEALS TABLE VIEW
+    function renderDealsTable() {
+      const tbody = document.getElementById("dealsTableBody");
+      if (!tbody) return;
+      if (!allDeals || allDeals.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="9" class="p-8 text-center text-slate-400">Bitimlar topilmadi.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = allDeals.map(d => {
+        const stageInfo = STAGES[d.stage] || { title: d.stage, badge: "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700" };
+        const tg = d.telegram_handle ? d.telegram_handle.replace("@", "") : "";
+        return `
+          <tr class="hover:bg-slate-100/60 dark:hover:bg-slate-800/30 transition">
+            <td class="p-3.5 pl-6 font-mono text-slate-400">#${d.id}</td>
+            <td class="p-3.5 font-bold text-slate-900 dark:text-white">${d.company_name || 'Noma\'lum'}</td>
+            <td class="p-3.5 font-medium text-slate-700 dark:text-slate-200">${d.title}</td>
+            <td class="p-3.5 text-slate-500 dark:text-slate-400">${d.industry || 'B2B'}</td>
+            <td class="p-3.5">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold border ${stageInfo.badge}">
+                ${stageInfo.title}
+              </span>
+            </td>
+            <td class="p-3.5 font-mono font-bold text-slate-900 dark:text-white">$${(d.value_usd || 0).toLocaleString()}</td>
+            <td class="p-3.5 font-mono text-emerald-600 dark:text-emerald-400 font-semibold">${d.mrr_usd > 0 ? `+$${d.mrr_usd}/oy` : '-'}</td>
+            <td class="p-3.5">
+              ${tg ? `<a href="https://t.me/${tg}" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline font-mono">@${tg}</a>` : (d.contact_person || '-')}
+            </td>
+            <td class="p-3.5 pr-6 text-right">
+              <div class="flex items-center justify-end gap-1.5">
+                <button onclick="openMilestonesModal(${d.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 text-indigo-500" title="Bosqichlar">
+                  <i data-lucide="check-square" class="w-3.5 h-3.5"></i>
+                </button>
+                <button onclick="openProposalModal(${d.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 text-brand-600 dark:text-brand-300" title="Taklif">
+                  <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                </button>
+                <button onclick="openFollowupModal(${d.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 text-blue-500" title="Xabar">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                </button>
+                <button onclick="openObjectionModal(${d.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 text-emerald-600 dark:text-emerald-400" title="E'tiroz">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                </button>
+                <button onclick="deleteDeal(${d.id})" class="p-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-400 hover:text-rose-600" title="O'chirish">
+                  <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    // RENDER CLIENTS TABLE VIEW
+    function renderClientsTable() {
+      const tbody = document.getElementById("clientsTableBody");
+      if (!tbody) return;
+      if (!allClients || allClients.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="9" class="p-8 text-center text-slate-400">Mijozlar mavjud emas.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = allClients.map(c => {
+        const tg = c.telegram_handle ? c.telegram_handle.replace("@", "") : "";
+        return `
+          <tr class="hover:bg-slate-100/60 dark:hover:bg-slate-800/30 transition">
+            <td class="p-3.5 pl-6 font-mono text-slate-400">#${c.id}</td>
+            <td class="p-3.5 font-bold text-slate-900 dark:text-white">${c.company_name}</td>
+            <td class="p-3.5 text-slate-500 dark:text-slate-400">${c.industry || 'B2B'}</td>
+            <td class="p-3.5 text-slate-700 dark:text-slate-200">${c.contact_person || '-'}</td>
+            <td class="p-3.5">
+              ${tg ? `<a href="https://t.me/${tg}" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline font-mono">@${tg}</a>` : '-'}
+            </td>
+            <td class="p-3.5 font-mono text-slate-500 dark:text-slate-400">${c.phone || '-'}</td>
+            <td class="p-3.5 font-mono font-semibold text-slate-900 dark:text-white">${c.deals_count || 0} ta</td>
+            <td class="p-3.5 font-mono font-bold text-emerald-600 dark:text-emerald-400">$${(c.total_value || 0).toLocaleString()}</td>
+            <td class="p-3.5 pr-6 text-right">
+              ${tg ? `<a href="https://t.me/${tg}" target="_blank" class="px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-600/20 text-blue-600 dark:text-blue-300 font-semibold text-[11px] transition">Chat</a>` : '-'}
+            </td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    // RENDER INBOUND LEADS VIEW
+    function renderInboundLeadsView() {
+      const container = document.getElementById("inboundLeadsList");
+      if (!container) return;
+      if (!allInboundLeads || allInboundLeads.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 text-slate-400">
+            <i data-lucide="check" class="w-8 h-8 mx-auto mb-2 opacity-40"></i>
+            <p class="text-xs">Barcha yangi lidlar ko'rib chiqilgan.</p>
+          </div>
+        `;
+        return;
+      }
+      container.innerHTML = allInboundLeads.map(l => `
+        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-colors">
+          <div class="space-y-1.5 flex-1">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-slate-900 dark:text-white text-xs">${l.name || 'Noma\'lum'}</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">${l.source || 'Bot'}</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-500/20 font-mono">
+                ${l.ai_qualification_score || 70}% Moslik
+              </span>
+            </div>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-lg border border-slate-200 dark:border-slate-800/80">
+              "${l.raw_message || 'Xabar yo\'q'}"
+            </p>
+            <div class="text-[11px] text-slate-500 dark:text-slate-400">
+              Aloqa: <span class="font-mono text-slate-700 dark:text-slate-300">${l.contact_info || '-'}</span> | Sana: <span>${l.created_at || '-'}</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="convertLeadToDeal(${l.id}, '${(l.name || '').replace(/'/g, "\\'")}')" class="px-3.5 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-500 text-xs font-semibold text-white shadow-md transition flex items-center gap-1.5 whitespace-nowrap">
+              <i data-lucide="zap" class="w-3.5 h-3.5"></i>
+              <span>Bitimga aylantirish</span>
+            </button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // RENDER ANALYTICS VIEW
+    function renderAnalyticsView() {
+      const container = document.getElementById("stageDistributionList");
+      if (!container) return;
+      const counts = { inquiry: 0, audit_scheduled: 0, proposal_sent: 0, closed_won: 0, active_retainer: 0 };
+      allDeals.forEach(d => {
+        if (counts[d.stage] !== undefined) counts[d.stage] += 1;
+      });
+      const total = allDeals.length || 1;
+      container.innerHTML = Object.keys(STAGES).map(st => {
+        const c = counts[st];
+        const pct = Math.round((c / total) * 100);
+        return `
+          <div>
+            <div class="flex justify-between text-xs mb-1">
+              <span class="text-slate-700 dark:text-slate-300">${STAGES[st].title}</span>
+              <span class="font-mono text-slate-500 dark:text-slate-400">${c} ta (${pct}%)</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-950 overflow-hidden">
+              <div class="h-full bg-brand-500 rounded-full" style="width: ${pct}%"></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // RADAR CANDIDATES & HUNTER
+    let currentAuditedLead = null;
+    let hunterDiscoveredLeads = [];
+
+    async function loadRadarCandidates() {
+      const list = document.getElementById("radarCandidatesList");
+      list.innerHTML = `<div class="p-6 text-center text-xs text-slate-400">
+        <i data-lucide="loader" class="w-4 h-4 mx-auto mb-1.5 animate-spin text-violet-500"></i>
+        Nomzodlar yuklanmoqda...
+      </div>`;
+      lucide.createIcons();
+      try {
+        const res = await fetch("/api/secret_shopper/candidates");
+        const data = await res.json();
+        const cand = data.candidates || [];
+        if (cand.length === 0) {
+          list.innerHTML = `<div class="p-6 text-center text-xs text-slate-400">Nomzodlar ro'yxati bo'sh.</div>`;
+          return;
+        }
+        list.innerHTML = cand.map(c => {
+          let contactBadge = "";
+          if (c.handle && c.handle.startsWith("@")) {
+            contactBadge = `<a href="https://t.me/${c.handle.replace('@','')}" target="_blank" class="font-mono text-blue-500 hover:underline font-semibold flex items-center gap-1"><i data-lucide="send" class="w-3 h-3"></i><span>${c.handle}</span></a>`;
+          } else if (c.website) {
+            contactBadge = `<a href="${c.website}" target="_blank" class="font-mono text-emerald-600 hover:underline flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3"></i><span>${c.website.replace('https://','').replace('http://','').replace(/\/$/,'')}</span></a>`;
+          } else if (c.phone) {
+            contactBadge = `<span class="font-mono text-slate-600 dark:text-slate-400 flex items-center gap-1"><i data-lucide="phone" class="w-3 h-3"></i><span>${c.phone}</span></span>`;
+          } else {
+            contactBadge = `<span class="text-slate-400 text-[10px]">Rasmiy ro'yxat</span>`;
+          }
+          return `
+          <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-3 hover:border-violet-300 dark:hover:border-violet-700/50 transition">
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="font-bold text-xs text-slate-900 dark:text-white truncate">${c.name}</span>
+                <span class="px-1.5 py-0.2 rounded text-[10px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono">${c.city || 'Toshkent'}</span>
+                <span class="px-1.5 py-0.2 rounded text-[10px] bg-violet-100 dark:bg-violet-950 text-violet-700 dark:text-violet-300 font-medium">${c.industry}</span>
+              </div>
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-2 mt-1">
+                ${contactBadge}
+                <span>•</span>
+                <span class="truncate">${c.contact_person}</span>
+              </div>
+            </div>
+            <button onclick="runAuditOnTarget(${c.id}, '${c.handle || c.name}')" id="btnAudit_${c.id}" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-violet-600 hover:bg-violet-500 text-white transition flex items-center gap-1 shadow-sm whitespace-nowrap">
+              <i data-lucide="shield-search" class="w-3.5 h-3.5"></i>
+              <span>Audit Qilish</span>
+            </button>
+          </div>
+        `;
+        }).join("");
+      } catch (err) {
+        list.innerHTML = `<div class="p-6 text-center text-xs text-rose-400">Yuklashda xatolik yuz berdi.</div>`;
+      }
+      lucide.createIcons();
+    }
+
+    async function runAuditOnTarget(targetId, handle) {
+      const btn = document.getElementById(`btnAudit_${targetId}`);
+      const oldHtml = btn ? btn.innerHTML : "";
+      if (btn) {
+        btn.innerHTML = `<i data-lucide="loader" class="w-3 h-3 animate-spin"></i><span>Tekshirilmoqda...</span>`;
+      }
+      lucide.createIcons();
+      showToast(`Secret Shopper '${handle}' kanalini audit qilmoqda...`);
+
+      try {
+        const res = await fetch("/api/secret_shopper/audit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ target: targetId })
+        });
+        const data = await res.json();
+        if (data.success && data.audit) {
+          const a = data.audit;
+          currentAuditedLead = a;
+
+          const box = document.getElementById("radarAuditReportBox");
+          document.getElementById("auditReportTarget").textContent = `${a.kompaniya_nomi} • ${a.soha} (${a.shahar || 'Toshkent'})`;
+          document.getElementById("auditReportBadge").textContent = a.javob_berilgan_vaqt ? `Javob: ${a.javob_berilgan_vaqt}` : "Javob kechikishi";
+          
+          const tgChannelLink = a.aloqa_kanali && a.aloqa_kanali.startsWith('@')
+            ? `<a href="https://t.me/${a.aloqa_kanali.replace('@','')}" target="_blank" class="text-blue-500 underline">${a.aloqa_kanali}</a>`
+            : `<span class="text-slate-700 dark:text-slate-300 font-mono">${a.aloqa_kanali || 'Rasmiy aloqa'}</span>`;
+
+          document.getElementById("auditReportDetails").innerHTML = `
+            <div class="grid grid-cols-2 gap-2 p-2 rounded-lg bg-slate-100/70 dark:bg-slate-900/60 font-mono text-[11px]">
+              <div>Kanal / Aloqa: ${tgChannelLink}</div>
+              <div>Rahbar: <span class="text-slate-900 dark:text-white">${a.rahbar_ism || 'Noma\'lum'}</span></div>
+              <div>Yo'qotilgan Daromad: <span class="text-rose-500 font-bold">${a.yoqotilgan_lid_tahmini || '$3,000+/oy'}</span></div>
+              <div>GPTify Taklifi: <span class="text-emerald-500 font-bold">$${a.taklif_summasi_usd || 2500} + $${a.mrr_usd || 350}/oy</span></div>
+            </div>
+            <p class="text-slate-600 dark:text-slate-300 italic pt-1">${a.izoh || ''}</p>
+          `;
+
+          document.getElementById("auditPitchText").textContent = a.founder_pitch || "Taklif shakllantirilmadi.";
+          
+          const tgBtn = document.getElementById("btnSendTelegramPitch");
+          if (tgBtn) {
+            const rawHandle = (a.aloqa_kanali || a.rahbar_telegram || '').replace('@', '').trim();
+            if (rawHandle) {
+              tgBtn.href = `https://t.me/${rawHandle}?text=${encodeURIComponent(a.founder_pitch || '')}`;
+              tgBtn.classList.remove("hidden");
+            } else {
+              tgBtn.classList.add("hidden");
+            }
+          }
+
+          box.classList.remove("hidden");
+          box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          showToast(`'${a.kompaniya_nomi}' auditi muvaffaqiyatli yakunlandi!`);
+        } else {
+          showToast(data.error || "Auditda xatolik yuz berdi");
+        }
+      } catch (err) {
+        showToast("Audit serverida xatolik yuz berdi");
+      } finally {
+        if (btn) btn.innerHTML = oldHtml;
+        lucide.createIcons();
+      }
+    }
+
+    function copyAuditPitch() {
+      const text = document.getElementById("auditPitchText").textContent;
+      navigator.clipboard.writeText(text);
+      const btn = document.getElementById("copyPitchBtnText");
+      btn.textContent = "Nusxalandi!";
+      setTimeout(() => { btn.textContent = "Nusxa Olish"; }, 2000);
+    }
+
+    async function addAuditedLeadToCrm() {
+      if (!currentAuditedLead) return;
+      const btn = document.getElementById("btnAddAuditToCrm");
+      btn.disabled = true;
+      btn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i><span>Qo'shilmoqda...</span>`;
+      lucide.createIcons();
+
+      try {
+        const res = await fetch("/api/hunter/import-lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            lead: currentAuditedLead,
+            add_as_deal: true
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          btn.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5"></i><span>✓ Bitim Pipeline'ga Qo'shildi!</span>`;
+          btn.className = "px-3.5 py-1.5 rounded-lg bg-emerald-700 text-white text-xs font-semibold shadow";
+          showToast(`'${currentAuditedLead.kompaniya_nomi}' $2,500 bitim bilan Pipeline'ga qo'shildi!`);
+          refreshData();
+        } else {
+          showToast(data.error || "Qo'shishda xatolik");
+          btn.disabled = false;
+          btn.innerHTML = `<i data-lucide="plus-circle" class="w-3.5 h-3.5"></i><span>Pipeline'ga Bitim Qo'shish ($2,500)</span>`;
+        }
+      } catch (err) {
+        showToast("Xatolik yuz berdi");
+        btn.disabled = false;
+      }
+      lucide.createIcons();
+    }
+
+    async function runLeadHunterAction() {
+      const ind = document.getElementById("hunterIndustrySelect").value;
+      const entityType = document.getElementById("hunterEntityTypeSelect").value;
+      const source = document.getElementById("hunterSourceSelect").value;
+      const city = document.getElementById("hunterCitySelect").value;
+      const limitVal = parseInt(document.getElementById("hunterLimitSelect")?.value || "50", 10);
+      const kw = document.getElementById("hunterKeywordInput").value.trim();
+
+      const btn = document.getElementById("btnRunHunter");
+      btn.disabled = true;
+      btn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i><span>Qidirilmoqda...</span>`;
+      lucide.createIcons();
+
+      const list = document.getElementById("hunterResultsList");
+      list.innerHTML = `<div class="p-8 text-center text-xs text-slate-400">
+        <i data-lucide="loader" class="w-5 h-5 mx-auto mb-2 animate-spin text-emerald-500"></i>
+        <span>${ind !== 'ALL' ? ind : 'Barcha'} sohalar bo'yicha saralanmoqda...</span>
+      </div>`;
+      lucide.createIcons();
+
+      try {
+        const res = await fetch("/api/hunter/run", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            industry: ind,
+            entity_type: entityType,
+            source: source,
+            city: city,
+            query: kw,
+            limit: limitVal
+          })
+        });
+        const data = await res.json();
+        hunterDiscoveredLeads = data.leads || [];
+        document.getElementById("hunterFoundCount").textContent = `${hunterDiscoveredLeads.length} ta`;
+
+        if (hunterDiscoveredLeads.length === 0) {
+          list.innerHTML = `<div class="p-8 text-center text-xs text-slate-400">
+            <i data-lucide="filter-x" class="w-6 h-6 mx-auto mb-2 opacity-40"></i>
+            Tanlangan filtrlar bo'yicha hech qanday korxona topilmadi. Filtrlarni kengaytirib qayta urinib ko'ring.
+          </div>`;
+          lucide.createIcons();
+          return;
+        }
+
+        list.innerHTML = hunterDiscoveredLeads.map((l, idx) => {
+          const initials = (l.name || "K").substring(0, 2).toUpperCase();
+          const tg = l.telegram ? l.telegram.replace("@", "") : "";
+          const score = l.ai_qualification_score || 85;
+
+          // Direct Communication Buttons (WhatsApp & Telegram)
+          const rawPhone = l.phone ? l.phone.replace(/\D/g, '') : '';
+          let cleanPhone = rawPhone;
+          if (cleanPhone.length === 9) cleanPhone = '998' + cleanPhone;
+
+          let directChatButtons = '';
+          if (cleanPhone && cleanPhone.length >= 11) {
+            directChatButtons += `
+              <a href="https://wa.me/${cleanPhone}" target="_blank" class="px-2 py-1 text-[11px] font-semibold rounded-lg bg-emerald-50 dark:bg-emerald-950/80 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 flex items-center gap-1 transition" title="WhatsApp orqali yozish">
+                <i data-lucide="message-circle" class="w-3 h-3 text-emerald-500"></i>
+                <span>WhatsApp</span>
+              </a>
+            `;
+          }
+          if (tg) {
+            directChatButtons += `
+              <a href="https://t.me/${tg}" target="_blank" class="px-2 py-1 text-[11px] font-semibold rounded-lg bg-blue-50 dark:bg-blue-950/80 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-800 flex items-center gap-1 transition" title="Telegram orqali yozish">
+                <i data-lucide="send" class="w-3 h-3 text-blue-500"></i>
+                <span>TG Chat</span>
+              </a>
+            `;
+          } else if (cleanPhone && cleanPhone.length >= 11) {
+            directChatButtons += `
+              <a href="https://t.me/+${cleanPhone}" target="_blank" class="px-2 py-1 text-[11px] font-semibold rounded-lg bg-blue-50 dark:bg-blue-950/80 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-800 flex items-center gap-1 transition" title="Telegramda raqam orqali ochish">
+                <i data-lucide="send" class="w-3 h-3 text-blue-500"></i>
+                <span>TG Chat</span>
+              </a>
+            `;
+          }
+
+          // Entity badge styling
+          let entityBadge = "";
+          if (l.source === 'yellowpages_uz') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-amber-50 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/60">🟡 YellowPages (Reestr)</span>`;
+          } else if (l.source === 'orginfo_uz') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-amber-50 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/60">🏛️ Orginfo.uz (STIR)</span>`;
+          } else if (l.source === 'stat_uz_opendata') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/60">📊 Stat.uz Ochiq Reestr</span>`;
+          } else if (l.source === 'osm_overpass') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-teal-50 dark:bg-teal-950/80 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800/60">🌍 OpenStreetMap (OSM)</span>`;
+          } else if (l.source === 'live_web_scraper') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60">🌐 Jonli Veb-Qidiruv (Live)</span>`;
+          } else if (l.entity_type === 'business') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-blue-50 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60">🏥 Fizik Muassasa / Klinika</span>`;
+          } else if (l.entity_type === 'linkedin_exec') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-sky-50 dark:bg-sky-950/80 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800/60">💼 LinkedIn B2B Rahbar</span>`;
+          } else if (l.entity_type === 'telegram_media') {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-purple-50 dark:bg-purple-950/80 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60">📢 Telegram Kanal / Media</span>`;
+          } else {
+            entityBadge = `<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">🏢 Korxona</span>`;
+          }
+
+          return `
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 space-y-2.5 transition hover:border-emerald-300 dark:hover:border-emerald-700/50" id="hunterCard_${idx}">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-2.5">
+                  <div class="h-8 w-8 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 flex items-center justify-center font-bold text-xs font-mono">
+                    ${initials}
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                      <h4 class="font-bold text-xs text-slate-900 dark:text-white leading-snug">${l.name}</h4>
+                      ${entityBadge}
+                    </div>
+                    <div class="flex items-center gap-1.5 flex-wrap text-[10px] text-slate-500 dark:text-slate-400 mt-1">
+                      <span class="px-1.5 py-0.2 rounded bg-slate-200 dark:bg-slate-800 font-mono text-slate-700 dark:text-slate-300">${l.shahar || 'Toshkent'}</span>
+                      <span class="px-1.5 py-0.2 rounded bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 font-semibold">${l.soha}</span>
+                      ${l.audience_size ? `<span class="px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-800 font-mono">${l.audience_size}</span>` : ''}
+                    </div>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-500/20 font-mono whitespace-nowrap">
+                  ${score}% Moslik
+                </span>
+              </div>
+
+              <!-- Contact & Links -->
+              <div class="text-[11px] text-slate-600 dark:text-slate-300 flex items-center gap-3 flex-wrap">
+                ${l.website ? `
+                  <a href="${l.website}" target="_blank" class="text-emerald-600 dark:text-emerald-400 hover:underline flex items-center gap-1 font-mono">
+                    <i data-lucide="${l.website.includes('maps') ? 'map-pin' : 'globe'}" class="w-3 h-3"></i>
+                    <span>${l.website.includes('maps') ? 'Google Xarita (GPS)' : l.website.replace('https://','').replace('http://','').replace(/\/$/,'')}</span>
+                  </a>
+                ` : ''}
+                ${l.linkedin_url ? `
+                  <a href="${l.linkedin_url}" target="_blank" class="text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 font-mono font-semibold">
+                    <i data-lucide="linkedin" class="w-3 h-3"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                ` : ''}
+                ${tg ? `
+                  <a href="https://t.me/${tg}" target="_blank" class="text-blue-500 hover:underline flex items-center gap-1 font-mono">
+                    <i data-lucide="send" class="w-3 h-3"></i>
+                    <span>@${tg}</span>
+                  </a>
+                ` : ''}
+                ${l.phone ? `
+                  <a href="tel:${l.phone.replace(/\s+/g,'')}" class="flex items-center gap-1 font-mono text-slate-700 dark:text-slate-300 hover:text-emerald-600">
+                    <i data-lucide="phone" class="w-3 h-3 text-slate-400"></i>
+                    <span>${l.phone}</span>
+                  </a>
+                ` : ''}
+                ${l.contact_person ? `
+                  <span class="text-slate-500 dark:text-slate-400">
+                    Mas'ul: <span class="text-slate-700 dark:text-slate-200">${l.contact_person}</span>
+                  </span>
+                ` : ''}
+              </div>
+
+              ${l.address ? `
+                <div class="text-[10px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                  <i data-lucide="map-pin" class="w-3 h-3 text-rose-400"></i>
+                  <span>${l.address}</span>
+                </div>
+              ` : ''}
+
+              ${l.ai_summary ? `
+                <p class="text-[11px] text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 p-2 rounded-lg border border-slate-200 dark:border-slate-800 leading-relaxed">
+                  ${l.ai_summary}
+                </p>
+              ` : ''}
+
+              <!-- Actions -->
+              <div class="flex items-center justify-between gap-2 pt-2 border-t border-slate-200 dark:border-slate-800/80 flex-wrap">
+                <!-- Outreach & Quick Chat -->
+                <div class="flex items-center gap-1.5 flex-wrap">
+                  <button onclick="openAIPitchModal(${idx})" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-violet-50 dark:bg-violet-950/80 hover:bg-violet-100 dark:hover:bg-violet-900/60 text-violet-700 dark:text-violet-300 border border-violet-200 dark:border-violet-800 flex items-center gap-1.5 transition shadow-xs" title="AI B2B Outreach xabari va qo'ng'iroq skriptini ko'rish">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-violet-500"></i>
+                    <span>🤖 AI Xabar / Pitch</span>
+                  </button>
+                  ${directChatButtons}
+                </div>
+
+                <!-- CRM Pipeline Import -->
+                <div class="flex items-center gap-2">
+                  <button onclick="importHunterLead(${idx}, false)" id="btnImportInbound_${idx}" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 transition flex items-center gap-1">
+                    <i data-lucide="inbox" class="w-3 h-3 text-amber-500"></i>
+                    <span>Inbound</span>
+                  </button>
+                  <button onclick="importHunterLead(${idx}, true)" id="btnImportDeal_${idx}" class="px-2.5 py-1 text-xs font-semibold rounded-lg bg-brand-600 hover:bg-brand-500 text-white shadow-sm transition flex items-center gap-1">
+                    <i data-lucide="zap" class="w-3 h-3"></i>
+                    <span>Bitim Yaratish</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+
+        showToast(`${hunterDiscoveredLeads.length} ta korxona saralandi!`);
+      } catch (err) {
+        showToast("Hunterda xatolik yuz berdi");
+        list.innerHTML = `<div class="p-8 text-center text-xs text-rose-400">Qidiruvda xatolik yuz berdi.</div>`;
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = `<i data-lucide="search" class="w-3.5 h-3.5"></i><span>Qidirish</span>`;
+        lucide.createIcons();
+      }
+    }
+
+    async function importHunterLead(idx, addAsDeal) {
+      const lead = hunterDiscoveredLeads[idx];
+      if (!lead) return;
+
+      const btn = addAsDeal ? document.getElementById(`btnImportDeal_${idx}`) : document.getElementById(`btnImportInbound_${idx}`);
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = `<i data-lucide="loader" class="w-3 h-3 animate-spin"></i><span>...</span>`;
+      }
+      lucide.createIcons();
+
+      try {
+        const res = await fetch("/api/hunter/import-lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ lead: lead, add_as_deal: addAsDeal })
+        });
+        const data = await res.json();
+        if (data.success) {
+          const card = document.getElementById(`hunterCard_${idx}`);
+          if (card) {
+            card.classList.add("ring-1", "ring-emerald-500/50");
+          }
+          if (btn) {
+            btn.innerHTML = `<i data-lucide="check" class="w-3 h-3"></i><span>Qo'shildi!</span>`;
+            btn.className = "px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-600 text-white";
+          }
+          showToast(`'${lead.name}' ${addAsDeal ? 'Pipeline bitimlariga' : 'Inbound lidlariga'} saqlandi!`);
+          refreshData();
+        } else {
+          showToast(data.error || "Xatolik yuz berdi");
+          if (btn) btn.disabled = false;
+        }
+      } catch (err) {
+        showToast("Server xatosi");
+        if (btn) btn.disabled = false;
+      }
+      lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------
+    // HUNTER: CSV EXPORT & AI PITCH GENERATOR
+    // -------------------------------------------------------------
+    let currentPitchLead = null;
+    let currentPitchTab = 'telegram';
+
+    function downloadOutreachCampaign() {
+      const ind = document.getElementById("hunterIndustrySelect")?.value || "ALL";
+      const city = document.getElementById("hunterCitySelect")?.value || "ALL";
+      const limitVal = parseInt(document.getElementById("hunterLimitSelect")?.value || "100", 10);
+      showToast("🚀 AI Outreach kampaniyasi Excel formatida tayyorlanmoqda...");
+      window.location.href = `/api/outreach/campaign.csv?industry=${encodeURIComponent(ind)}&city=${encodeURIComponent(city)}&limit=${limitVal}`;
+    }
+
+    function exportHunterLeadsToCSV() {
+      if (!hunterDiscoveredLeads || hunterDiscoveredLeads.length === 0) {
+        showToast("Eksport qilish uchun korxonalar mavjud emas");
+        return;
+      }
+
+      const headers = [
+        "Nomi",
+        "Soha",
+        "Shahar / Hudud",
+        "Manba",
+        "Telefon",
+        "Telegram",
+        "Veb-sayt / Xarita",
+        "Manzil",
+        "Mas'ul Shaxs",
+        "AI Moslik Bali",
+        "AI Xulosasi",
+        "Tavsiya etilgan Pitch"
+      ];
+
+      const rows = hunterDiscoveredLeads.map(l => [
+        `"${(l.name || '').replace(/"/g, '""')}"`,
+        `"${(l.soha || '').replace(/"/g, '""')}"`,
+        `"${(l.shahar || '').replace(/"/g, '""')}"`,
+        `"${(l.source || '').replace(/"/g, '""')}"`,
+        `"${(l.phone || '').replace(/"/g, '""')}"`,
+        `"${(l.telegram || '').replace(/"/g, '""')}"`,
+        `"${(l.website || '').replace(/"/g, '""')}"`,
+        `"${(l.address || '').replace(/"/g, '""')}"`,
+        `"${(l.contact_person || '').replace(/"/g, '""')}"`,
+        `"${l.ai_qualification_score || 85}%"`,
+        `"${(l.ai_summary || '').replace(/"/g, '""')}"`,
+        `"${(l.recommended_pitch || '').replace(/"/g, '""')}"`
+      ]);
+
+      const csvContent = "\uFEFF" + [headers.join(","), ...rows.map(r => r.join(","))].join("\r\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      const dateStr = new Date().toISOString().slice(0, 10);
+      link.setAttribute("href", url);
+      link.setAttribute("download", `GPTify_B2B_Leads_${dateStr}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast(`${hunterDiscoveredLeads.length} ta korxona CSV/Excel ga yuklab olindi!`);
+    }
+
+    let currentCadenceStage = 'day0';
+
+    function openAIPitchModal(idx) {
+      const lead = hunterDiscoveredLeads[idx];
+      if (!lead) return;
+      currentPitchLead = lead;
+      currentCadenceStage = 'day0';
+      currentPitchTab = 'telegram';
+
+      document.getElementById("aiPitchModalSubtitle").textContent = `${lead.name} • ${lead.soha} (${lead.shahar || 'O\'zbekiston'})`;
+
+      switchCadenceStage('day0');
+      switchPitchTab('telegram');
+      document.getElementById("aiPitchModal").classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeAIPitchModal() {
+      document.getElementById("aiPitchModal").classList.add("hidden");
+    }
+
+    function switchCadenceStage(stageKey) {
+      currentCadenceStage = stageKey;
+      const stages = ['day0', 'day3', 'day7', 'day14'];
+      stages.forEach(s => {
+        const btn = document.getElementById(`cadenceBtn_${s}`);
+        if (btn) {
+          if (s === stageKey) {
+            btn.className = "px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-violet-600 text-white shadow-xs transition";
+          } else {
+            btn.className = "px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 transition";
+          }
+        }
+      });
+      renderCadencePitchContent();
+    }
+
+    function switchPitchTab(tabKey) {
+      currentPitchTab = tabKey;
+      const tabs = ['telegram', 'whatsapp', 'call', 'offer'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`pitchTab_${t}`);
+        if (btn) {
+          if (t === tabKey) {
+            btn.className = "px-3 py-1.5 text-xs font-semibold rounded-t-lg border-b-2 border-brand-500 text-brand-600 dark:text-brand-400 flex items-center gap-1.5 transition";
+          } else {
+            btn.className = "px-3 py-1.5 text-xs font-semibold rounded-t-lg border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1.5 transition";
+          }
+        }
+      });
+      renderCadencePitchContent();
+    }
+
+    function renderCadencePitchContent() {
+      if (!currentPitchLead) return;
+      const l = currentPitchLead;
+      const cName = l.name || 'Korxona';
+      const cSoha = l.soha || 'B2B';
+      const cCity = l.shahar || 'O\'zbekiston';
+      const cPerson = l.contact_person || 'Rahbariyat';
+      const rawPhone = l.phone ? l.phone.replace(/\D/g, '') : '';
+      let cleanPhone = rawPhone;
+      if (cleanPhone.length === 9) cleanPhone = '998' + cleanPhone;
+      const tg = l.telegram ? l.telegram.replace('@', '') : '';
+
+      // Industry value props
+      let valueProp = "mijozlar so'rovlariga 10 soniyada javob berish, 24/7 qabul tizimi va yo'qotilayotgan lidlarni CRM ga avtomatik yozish";
+      let proofSnippet = "mijozlar so'rovlarini 100% CRM ga avtomat kiritib, yo'qotilayotgan lidlarni 0 ga tushirdik";
+      let callHook = `Assalomu alaykum! ${cName} bilan korporativ savdo va mijozlar qabulini avtomatlashtirish masalasida bog'lanayotgandik.`;
+
+      if (cSoha === 'Tibbiyot') {
+        valueProp = "bemorlarni 24/7 qabulga yozish, Telegram/Instagram orqali navbat olishni avtomatlashtirish va shifokorlar jadvali bilan sinxronlash";
+        proofSnippet = "yaqinda xususiy klinikalardan birida kechki soat 19:00 dan keyingi murojaatlarni 34% ga ko'paytirdik";
+        callHook = `Assalomu alaykum! ${cName} klinikasining qabulxona va bemorlar navbatini avtomatlashtirish bo'yicha bog'lanayotgandik.`;
+      } else if (cSoha === 'Talim') {
+        valueProp = "yangi o'quvchilarni sinov darslariga 10 soniyada yozdirish, to'lov va darslarni avtomatik eslatish hamda guruhlar to'liqligini oshirish";
+        proofSnippet = "o'quv markazida reklama orqali yozgan o'quvchilarga 10 soniyada javob qaytarib, sinov darslariga yozilishni 28% ga oshirdik";
+        callHook = `Assalomu alaykum! ${cName} o'quv markaziga yangi o'quvchilar oqimini jalb qilish va sinov darslariga yozish konversiyasi masalasida bog'lanayotgandik.`;
+      } else if (cSoha === 'Avtoservis') {
+        valueProp = "mijozlarni servisga yozish, ehtiyot qismlar narxini Telegram orqali 10 soniyada aytish va moy almashtirish vaqtini avtomat eslatish";
+        proofSnippet = "servis markazida moy almashtirish va mavsumiy ta'mirni avtomat eslatish orqali takroriy mijozlarni 2.5 barobarga oshirdik";
+        callHook = `Assalomu alaykum! ${cName} avtomarkaziga mijozlar qabulini va takroriy servis chaqiruvlarini avtomatlashtirish bo'yicha murojaat qilayotgandik.`;
+      } else if (cSoha === 'Qurilish') {
+        valueProp = "qurilish materiallari va mebel buyurtmalarini hisoblash, smeta so'rovlariga 10 soniyada javob berish hamda obyekt murojaatlarini saralash";
+        proofSnippet = "mebel va qurilish korxonasida birlamchi smeta parametrlarini AI orqali yig'ib, hisob-kitob vaqtini 4 barobarga qisqartirdik";
+        callHook = `Assalomu alaykum! ${cName} qurilish/mebel korxonasining yangi buyurtmalar qabuli va smetalarni tezkor hisoblash jarayoni bo'yicha bog'lanayotgandik.`;
+      } else if (cSoha === 'HoReCa') {
+        valueProp = "mehmonlar uchun stol va xonalarni 24/7 band qilish (bron), banket so'rovlarini qabul qilish hamda doimiy mijozlarga aksiyalarni eslatish";
+        proofSnippet = "restoran tarmog'ida dam olish kunlari o'tkazib yuboriladigan qo'ng'iroqlarni 0 ga tushirib, kechki bronlarni 40% ga ko'paytirdik";
+        callHook = `Assalomu alaykum! ${cName} restoran/mehmonxonasiga mijozlar oqimi va bron tizimini avtomatlashtirish masalasida bog'lanayotgandik.`;
+      } else if (cSoha === 'Logistika') {
+        valueProp = "yuk tashish narxlarini yo'nalishlar bo'yicha tezkor hisoblash, yuk holatini mijozlarga avtomat yetkazish va buyurtmalarni saralash";
+        proofSnippet = "transport kompaniyasida yo'nalish narxlarini avtomat hisoblab, mijozlarga taklif berishni 10 soniyaga tushirdik";
+        callHook = `Assalomu alaykum! ${cName} logistika va transport xizmatlari bo'yicha yangi buyurtmalar qabulini avtomatlashtirish masalasida murojaat qilayotgandik.`;
+      }
+
+      // Cadence Step text mapping
+      let text = '';
+      let waText = '';
+      let tgText = '';
+
+      if (currentCadenceStage === 'day0') {
+        // DAY 0: INITIAL PITCH
+        tgText = `Assalomu alaykum, ${cName} jamoasi!\n\nMening ismim Shukhrat Iskandarov, GPTify.co asoschisiman. Biz O'zbekistondagi ${cSoha.toLowerCase()} korxonalarida ${valueProp} bo'yicha amaliy AI tizimlarini joriy etamiz.\n\nKuzatuvlarimizga ko'ra, mijozlar aynan tezkor javob va qulay qabul jarayonini tanlashadi. ${cName} uchun ushbu jarayonni 1 haftalik bepul sinov tariqasida joriy qilib, natijasini amalda ko'rsatishni taklif qilamiz.\n\nSizga bu borada qisqa 5 daqiqalik video-namoyish yoki taklifimizni yuborsak, ko'rib chiqa olasizmi?\n\nHurmat bilan,\nShukhrat Iskandarov\nGPTify.co asoschisi`;
+        waText = `Assalomu alaykum! ${cName} rahbariyati yoki boshqaruvchisi bilan bog'lansak bo'ladimi? Biz GPTify kompaniyasidanmiz, ${cCity} bo'yicha ${cSoha.toLowerCase()} yo'nalishida mijozlar qabulini avtomatlashtirish va konversiyani oshirish bo'yicha amaliy yechim taklif qilmoqchi edik.`;
+
+        if (currentPitchTab === 'telegram') text = tgText;
+        else if (currentPitchTab === 'whatsapp') text = waText;
+        else if (currentPitchTab === 'call') {
+          text = `[KIRISH - 0:00 - 0:10]\n— "${callHook} ${cPerson} bilan 1 daqiqa bog'lana olamanmi?"\n\n[QIYMAT VA MUAMMO - 0:10 - 0:25]\n— "Biz hozirda ${cSoha.toLowerCase()} korxonalarida mijozlar yo'qolishining oldini oluvchi va ${valueProp} AI tizimlarini o'rnatyapmiz. Hozirda sizlarda ish vaqtidan tashqari keladigan murojaatlar qanday boshqarilmoqda?"\n\n[CTA - 0:25 - 0:35]\n— "Bugun yoki ertaga 10 daqiqa vaqtingiz bo'lsa, Telegram orqali tizimning jonli namunasini ko'rsatib bersam bo'ladimi?"`;
+        } else if (currentPitchTab === 'offer') {
+          text = `LOYIHA: ${cName} uchun B2B AI Avtomatlashtirish & Savdo Tizimi\nIJROCHI: GPTify.co (B2B AI Workflow Consultancy)\n\n1. KUTILAYOTGAN NATIJALAR:\n• 24/7 AI Receptionist: Mijozlar telefon va Telegram so'rovlariga 5 soniyada to'liq javob oladi.\n• 0% Yo'qotilgan Lidlar: Barcha kiruvchi so'rovlar avtomatik tarzda CRM ga yoziladi.\n• ${valueProp}.\n• Xodimlar vaqti 65% ga tejaladi, konversiya 25-35% ga oshadi.\n\n2. AMALGA OSHIRISH (7-10 KUN):\n- Biznes jarayonlar va mijozlar so'rovlari auditi.\n- ${cName} xizmatlari va narxlari bo'yicha AI modelni o'rgatish.\n- CRM va telefon/messendjer integratsiyasi.\n- 30 kunlik kafolatli qo'llab-quvvatlash.`;
+        }
+
+      } else if (currentCadenceStage === 'day3') {
+        // DAY 3: SOCIAL PROOF & CASE STUDY
+        tgText = `Assalomu alaykum, ${cName}!\n\nO'tgan kuni ${cSoha.toLowerCase()} sohasida mijozlar qabulini avtomatlashtirish bo'yicha yozgan edim.\n\nXabaringiz bormi, biz ${proofSnippet}. ${cName} uchun ham xuddi shunday amaliy natijaga erishish mumkin.\n\nSizga ushbu keysimiz bo'yicha qisqa 3 daqiqalik ma'lumotni yuborsam, ko'rib chiqa olasizmi?\n\nHurmat bilan,\nShukhrat Iskandarov (GPTify.co)`;
+        waText = `Assalomu alaykum, ${cName}! O'tgan kuni yozgan edik — yaqinda sizning sohangizda ${proofSnippet}. ${cName} uchun ham amaliy tahlilni ko'rib chiqish qulay bo'ladimi?`;
+
+        if (currentPitchTab === 'telegram') text = tgText;
+        else if (currentPitchTab === 'whatsapp') text = waText;
+        else if (currentPitchTab === 'call') {
+          text = `[KIRISH - 0:00 - 0:10]\n— "Assalomu alaykum! ${cName} ma'muriyatimi? O'tgan seshanba kuni bog'langan Shukhrat edim (GPTify.co)."\n\n[KEYS - 0:10 - 0:25]\n— "Sizning sohangizda ${proofSnippet}. Shuni ${cName} faoliyatiga qanday moslash bo'yicha 1 daqiqa ma'lumot bermoqchi edim."\n\n[CTA - 0:25 - 0:35]\n— "Bugun soat 16:00 da yoki ertaga 10 daqiqa vaqtingiz bo'ladimi?"`;
+        } else if (currentPitchTab === 'offer') {
+          text = `KEYS VA AMALIY TAHLIL: ${cSoha} Sohasida AI Samaradorligi\n\n• Erishilgan natija: ${proofSnippet}.\n• Kechki so'rovlar konversiyasi: +30% o'sish.\n• O'rtacha javob berish tezligi: 4 soatdan 8 soniyagacha qisqardi.\n• ${cName} uchun loyiha qiymati: $2,500 bir martalik joriy etish + $350/oy kafolatli qo'llab-quvvatlash.`;
+        }
+
+      } else if (currentCadenceStage === 'day7') {
+        // DAY 7: MICRO-AUDIT & PAIN POINT
+        tgText = `Assalomu alaykum, ${cName}!\n\nO'zbekiston ${cSoha.toLowerCase()} bozoridagi tahlillarimizga ko'ra, korxonalarga keluvchi murojaatlarning kamida 30-35% qismi ish vaqtidan tashqari yoki operatorlar band paytida javobsiz qoladi va mijozlar raqobatchilarga ketadi.\n\nBiz ${cName} uchun qabulxona va onlayn so'rovlar oqimini bepul tekshirib (mikro-audit), qayerda mijozlar yo'qolayotganini aniqlab berishimiz mumkin.\n\nBuni ushbu haftada tashkil qilsak bo'ladimi?`;
+        waText = `Assalomu alaykum, ${cName}! Sizning kanalingiz va qabulxona so'rovlarini mikro-audit qilib, oyiga qancha daromad kechikayotganini hisoblab berishimiz mumkin (bepul). Qisqa ko'rib chiqishga rozimisiz?`;
+
+        if (currentPitchTab === 'telegram') text = tgText;
+        else if (currentPitchTab === 'whatsapp') text = waText;
+        else if (currentPitchTab === 'call') {
+          text = `[KIRISH - 0:00 - 0:10]\n— "Assalomu alaykum! ${cName} qabulxona auditi bo'yicha bog'lanayotgandik."\n\n[MUAMMO - 0:10 - 0:25]\n— "Hozir ko'p korxonalarda kechki so'rovlar yo'qolmoqda. Biz sizga bepul mikro-audit xulosasini tayyorladik."\n\n[CTA - 0:25 - 0:35]\n— "Telegramingizga audit xulosasini tashlab bersam, ko'ra olasizmi?"`;
+        } else if (currentPitchTab === 'offer') {
+          text = `BEPUL MIKRO-AUDIT DASTURI (${cName}):\n\n1. Telegram bot va kanalga yozilgan so'rovlar javob berish tezligi (Response Time Benchmark).\n2. Dam olish kunlari va 18:00 dan keyingi kiruvchi murojaatlar qamrovi.\n3. Yo'qotilayotgan potensial mijozlar soni va oylik daromad tahlili.\n4. Amaliy tuzatish rejasi (Action Plan).`;
+        }
+
+      } else if (currentCadenceStage === 'day14') {
+        // DAY 14: BREAKUP / POLITE CLOSE
+        tgText = `Assalomu alaykum, ${cName}!\n\nKo'rinishidan, hozir sizlarda mijozlar qabulini avtomatlashtirish dolzarb emas yoki jamoangiz juda band.\n\nSizni ortiqcha bezovta qilmayman. Agar kelajakda AI assistent, 24/7 qabul yoki CRM integratsiyasi bo'yicha yordam kerak bo'lsa, istalgan vaqtda yozishingiz mumkin.\n\n${cName} ga kelgusi ishlarida ulkan muvaffaqiyatlar tilayman!\n\nHurmat bilan,\nShukhrat Iskandarov\nGPTify.co`;
+        waText = `Assalomu alaykum, ${cName}! Hozir bu mavzu dolzarb emas deb tushundim. Sizni ortiqcha bezovta qilmayman. Kelgusida kerak bo'lsa, istalgan paytda bog'lanishingiz mumkin. Omad!`;
+
+        if (currentPitchTab === 'telegram') text = tgText;
+        else if (currentPitchTab === 'whatsapp') text = waText;
+        else if (currentPitchTab === 'call') {
+          text = `[KIRISH - 0:00 - 0:10]\n— "Assalomu alaykum! ${cName} ga oxirgi marta xabar berib qo'ymoqchi edim."\n\n[YAKUN - 0:10 - 0:25]\n— "Hozir vaqtingiz qulay emasligini tushunaman, ortiqcha bezovta qilmayman. Kontaktlarimizni saqlab qo'ying, kerak bo'lganda yordam berishga tayyormiz. Xayrli kun!"`;
+        } else if (currentPitchTab === 'offer') {
+          text = `ALOQA KARTASI: GPTify B2B AI Consultancy\n\n• Sayt: gptify.co\n• Founder: Shukhrat Iskandarov\n• Telegram: @Shukhrat_AI_bot\n• Xizmatlar: 24/7 AI Receptionist, B2B CRM Integratsiyasi, Savdo Konveyerlari.\n• Maqom: Zaxirada (Standby).`;
+        }
+      }
+
+      // Update textarea
+      const ta = document.getElementById("pitchTextarea");
+      if (ta) {
+        ta.value = text;
+        document.getElementById("pitchCharCount").textContent = `${text.length} belgi`;
+      }
+
+      // Update direct action buttons in footer with live stage text
+      const directActionsEl = document.getElementById("pitchDirectActions");
+      let btns = '';
+      if (cleanPhone && cleanPhone.length >= 11) {
+        const encWa = encodeURIComponent(waText);
+        btns += `
+          <a href="https://wa.me/${cleanPhone}?text=${encWa}" target="_blank" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white flex items-center gap-1.5 transition shadow-xs" title="Tanlangan bosqich xabarini WhatsApp orqali jo'natish">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>WhatsApp (${currentCadenceStage.toUpperCase()})</span>
+          </a>
+        `;
+      }
+      if (tg) {
+        const encTg = encodeURIComponent(tgText);
+        btns += `
+          <a href="https://t.me/${tg}?text=${encTg}" target="_blank" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1.5 transition shadow-xs" title="Tanlangan bosqich xabarini Telegram orqali jo'natish">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            <span>Telegram (@${tg})</span>
+          </a>
+        `;
+      } else if (cleanPhone && cleanPhone.length >= 11) {
+        btns += `
+          <a href="https://t.me/+${cleanPhone}" target="_blank" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center gap-1.5 transition shadow-xs" title="Telegramda raqam orqali ochish">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            <span>Telegram (+${cleanPhone})</span>
+          </a>
+        `;
+      }
+      directActionsEl.innerHTML = btns;
+      lucide.createIcons();
+    }
+
+    function copyPitchText() {
+      const ta = document.getElementById("pitchTextarea");
+      if (!ta || !ta.value) return;
+      navigator.clipboard.writeText(ta.value).then(() => {
+        const btnText = document.getElementById("copyPitchBtnText");
+        const orig = btnText.textContent;
+        btnText.textContent = "Nusxalandi! ✓";
+        showToast("AI Pitch xabari buferga nusxalandi!");
+        setTimeout(() => { btnText.textContent = orig; }, 2000);
+      }).catch(() => {
+        ta.select();
+        document.execCommand('copy');
+        showToast("Nusxalandi!");
+      });
+    }
+
+    // MILESTONES MODAL & ACTIONS
+    async function openMilestonesModal(dealId) {
+      const deal = allDeals.find(d => d.id === dealId);
+      if (!deal) return;
+      activeDealForMilestones = deal;
+
+      document.getElementById("milestoneModalTitle").textContent = `Bosqichlar: ${deal.title}`;
+      document.getElementById("milestoneModalSubtitle").textContent = `${deal.company_name} • Jami: $${(deal.value_usd || 0).toLocaleString()}`;
+      document.getElementById("milestonesModal").classList.remove("hidden");
+
+      await loadDealMilestones(dealId);
+      lucide.createIcons();
+    }
+
+    function closeMilestonesModal() {
+      document.getElementById("milestonesModal").classList.add("hidden");
+    }
+
+    async function loadDealMilestones(dealId) {
+      const list = document.getElementById("milestonesList");
+      list.innerHTML = `<div class="text-center py-4 text-xs text-slate-400">Yuklanmoqda...</div>`;
+      try {
+        const res = await fetch(`/api/deals/${dealId}`);
+        const deal = await res.json();
+        const miles = deal.milestones || [];
+        if (miles.length === 0) {
+          list.innerHTML = `<div class="p-4 text-center text-xs text-slate-400 bg-slate-50 dark:bg-slate-950 rounded-xl">Hozircha bosqichlar qo'shilmagan. Quyidagi forma orqali avans va qabul bosqichlarini kiriting.</div>`;
+          return;
+        }
+        list.innerHTML = miles.map(m => {
+          const isPaid = m.status === 'paid';
+          return `
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+              <div>
+                <div class="font-bold text-xs ${isPaid ? 'line-through text-slate-400' : 'text-slate-900 dark:text-white'}">${m.title}</div>
+                <div class="text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-semibold">$${(m.amount_usd || 0).toLocaleString()} ${m.paid_at ? `(To'langan: ${m.paid_at.substring(0, 10)})` : ''}</div>
+              </div>
+              <button onclick="toggleMilestonePaid(${m.id})" class="px-2.5 py-1 rounded-lg text-xs font-semibold border ${isPaid ? 'bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-300 dark:border-emerald-500/30' : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700'} transition">
+                ${isPaid ? '✓ To\'langan' : '⏳ Kutilmoqda'}
+              </button>
+            </div>
+          `;
+        }).join("");
+      } catch (err) {
+        list.innerHTML = `<div class="text-center py-4 text-xs text-rose-400">Xatolik.</div>`;
+      }
+      lucide.createIcons();
+    }
+
+    async function toggleMilestonePaid(milestoneId) {
+      try {
+        const res = await fetch(`/api/milestones/${milestoneId}`, { method: "PATCH" });
+        if (res.ok) {
+          showToast("Bosqich holati yangilandi!");
+          loadDealMilestones(activeDealForMilestones.id);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    async function handleAddMilestone(e) {
+      e.preventDefault();
+      const title = document.getElementById("newMilestoneTitle").value.trim();
+      const amt = parseFloat(document.getElementById("newMilestoneAmount").value || 0);
+      if (!title || !amt) return;
+
+      const res = await fetch(`/api/deals/${activeDealForMilestones.id}/milestones`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title: title, amount_usd: amt })
+      });
+      if (res.ok) {
+        document.getElementById("newMilestoneTitle").value = "";
+        document.getElementById("newMilestoneAmount").value = "";
+        showToast("Yangi bosqich saqlandi!");
+        loadDealMilestones(activeDealForMilestones.id);
+      }
+    }
+
+    // DRAG & DROP LOGIC
+    function allowDrop(e) {
+      e.preventDefault();
+      e.currentTarget.classList.add("card-drag-over");
+    }
+
+    function dragLeave(e) {
+      e.currentTarget.classList.remove("card-drag-over");
+    }
+
+    async function dropDeal(e, targetStage) {
+      e.preventDefault();
+      e.currentTarget.classList.remove("card-drag-over");
+      const dealId = e.dataTransfer.getData("text/plain");
+      if (!dealId) return;
+
+      const deal = allDeals.find(d => d.id == dealId);
+      if (deal && deal.stage !== targetStage) {
+        deal.stage = targetStage;
+        renderKanban(allDeals);
+        renderDealsTable();
+        showToast(`Bitim '${STAGES[targetStage].title}' bosqichiga o'tkazildi.`);
+
+        try {
+          const res = await fetch(`/api/deals/${dealId}/stage`, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ stage: targetStage })
+          });
+          if (!res.ok) throw new Error("Stage update failed");
+          loadMetrics();
+        } catch (err) {
+          console.error("Stage save error:", err);
+          refreshData();
+        }
+      }
+    }
+
+    // SEARCH FILTER
+    function handleSearch() {
+      const q = document.getElementById("searchInput").value.toLowerCase().trim();
+      if (!q) {
+        renderKanban(allDeals);
+        renderDealsTable();
+        return;
+      }
+      const filtered = allDeals.filter(d => 
+        (d.title && d.title.toLowerCase().includes(q)) ||
+        (d.company_name && d.company_name.toLowerCase().includes(q)) ||
+        (d.industry && d.industry.toLowerCase().includes(q)) ||
+        (d.contact_person && d.contact_person.toLowerCase().includes(q))
+      );
+      renderKanban(filtered);
+    }
+
+    async function syncBotLeads() {
+      showToast("Telegram botdan lidlar sinxronlanmoqda...");
+      const res = await fetch("/api/inbound/sync", { method: "POST" });
+      if (res.ok) {
+        showToast("Sinxronlash yakunlandi!");
+        refreshData();
+      }
+    }
+
+    async function convertLeadToDeal(leadId, leadName) {
+      const company = prompt("Mijoz kompaniya nomi:", leadName || "Yangi Hamkor");
+      if (!company) return;
+      const title = prompt("Loyiha nomi:", "AI Ish Oqimi Avtomatlashtirish");
+      if (!title) return;
+      const val = prompt("Dastlabki byudjet ($):", "3500");
+
+      const res = await fetch(`/api/inbound/${leadId}/convert`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ company_name: company, title: title, value_usd: parseFloat(val || 3500) })
+      });
+      if (res.ok) {
+        showToast("Lid muvaffaqiyatli bitimga aylantirildi!");
+        refreshData();
+      }
+    }
+
+    // AI PROPOSAL MODAL
+    async function openProposalModal(dealId) {
+      const deal = allDeals.find(d => d.id === dealId);
+      if (!deal) return;
+      activeDealForAi = deal;
+
+      document.getElementById("proposalModalTitle").textContent = `Loyiha Taklifi: ${deal.title}`;
+      document.getElementById("proposalModalSubtitle").textContent = `${deal.company_name} uchun GPTify arxitekturasi`;
+      document.getElementById("proposalContent").textContent = "Sun'iy intellekt orqali loyiha smetasi shakllantirilmoqda...";
+      document.getElementById("proposalModal").classList.remove("hidden");
+
+      try {
+        const res = await fetch("/api/ai/scope", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ deal_id: dealId })
+        });
+        const data = await res.json();
+        document.getElementById("proposalContent").textContent = data.proposal || "Taklif matnini yaratib bo'lmadi.";
+      } catch (err) {
+        document.getElementById("proposalContent").textContent = "Xatolik yuz berdi.";
+      }
+      lucide.createIcons();
+    }
+
+    function closeProposalModal() {
+      document.getElementById("proposalModal").classList.add("hidden");
+    }
+
+    function copyProposalText() {
+      const text = document.getElementById("proposalContent").textContent;
+      navigator.clipboard.writeText(text);
+      const btn = document.getElementById("copyProposalBtnText");
+      btn.textContent = "Nusxalandi!";
+      setTimeout(() => { btn.textContent = "Nusxa Olish"; }, 2000);
+    }
+
+    // AI OBJECTION MODAL
+    function openObjectionModal(dealId) {
+      const deal = allDeals.find(d => d.id === dealId);
+      if (!deal) return;
+      activeDealForAi = deal;
+      document.getElementById("objectionModalDealName").textContent = `${deal.company_name} • ${deal.title}`;
+      document.getElementById("objectionInput").value = "";
+      document.getElementById("objectionResult").classList.add("hidden");
+      document.getElementById("objectionModal").classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeObjectionModal() {
+      document.getElementById("objectionModal").classList.add("hidden");
+    }
+
+    function fillObjection(text) {
+      document.getElementById("objectionInput").value = text;
+    }
+
+    async function resolveObjection() {
+      const objectionText = document.getElementById("objectionInput").value.trim();
+      if (!objectionText) return;
+
+      const btn = document.getElementById("btnResolveObjection");
+      btn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i><span>Tahlil qilinmoqda...</span>`;
+      lucide.createIcons();
+
+      try {
+        const res = await fetch("/api/ai/objection", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ deal_id: activeDealForAi.id, objection: objectionText })
+        });
+        const data = await res.json();
+        const resDiv = document.getElementById("objectionResult");
+        resDiv.textContent = data.answer || "Javob yaratib bo'lmadi.";
+        resDiv.classList.remove("hidden");
+      } catch (err) {
+        console.error(err);
+      } finally {
+        btn.innerHTML = `<i data-lucide="sparkles" class="w-3.5 h-3.5"></i><span>Asosli Javob Yaratish</span>`;
+        lucide.createIcons();
+      }
+    }
+
+    // AI FOLLOW-UP MODAL
+    let currentFollowupLang = "uz";
+    async function openFollowupModal(dealId) {
+      const deal = allDeals.find(d => d.id === dealId);
+      if (!deal) return;
+      activeDealForAi = deal;
+
+      document.getElementById("followupModalTarget").textContent = `${deal.company_name} (${deal.contact_person || 'Hurmatli hamkor'})`;
+      const tg = deal.telegram_handle ? deal.telegram_handle.replace("@", "") : "";
+      document.getElementById("followupTgHandle").textContent = tg ? `@${tg}` : "Telegram belgilanmagan";
+      
+      const sendBtn = document.getElementById("btnSendTg");
+      if (tg) {
+        sendBtn.href = `https://t.me/${tg}`;
+        sendBtn.classList.remove("hidden");
+      } else {
+        sendBtn.classList.add("hidden");
+      }
+
+      document.getElementById("followupModal").classList.remove("hidden");
+      await generateFollowupText();
+    }
+
+    async function generateFollowupText() {
+      document.getElementById("followupText").value = "Tayyorlanmoqda...";
+      try {
+        const res = await fetch("/api/ai/followup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ deal_id: activeDealForAi.id, lang: currentFollowupLang })
+        });
+        const data = await res.json();
+        document.getElementById("followupText").value = data.followup || "";
+      } catch (err) {
+        document.getElementById("followupText").value = "Xatolik yuz berdi.";
+      }
+      lucide.createIcons();
+    }
+
+    function switchFollowupLang(lang) {
+      currentFollowupLang = lang;
+      if (lang === 'uz') {
+        document.getElementById("langUzBtn").className = "px-2 py-0.5 rounded text-[11px] font-semibold bg-brand-600 text-white";
+        document.getElementById("langRuBtn").className = "px-2 py-0.5 rounded text-[11px] font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white";
+      } else {
+        document.getElementById("langRuBtn").className = "px-2 py-0.5 rounded text-[11px] font-semibold bg-brand-600 text-white";
+        document.getElementById("langUzBtn").className = "px-2 py-0.5 rounded text-[11px] font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white";
+      }
+      generateFollowupText();
+    }
+
+    function closeFollowupModal() {
+      document.getElementById("followupModal").classList.add("hidden");
+    }
+
+    function copyFollowupText() {
+      const text = document.getElementById("followupText").value;
+      navigator.clipboard.writeText(text);
+      const btn = document.getElementById("copyFollowupBtnText");
+      btn.textContent = "Nusxalandi!";
+      setTimeout(() => { btn.textContent = "Nusxa"; }, 2000);
+    }
+
+    // ADD DEAL MODAL
+    function openAddDealModal() {
+      document.getElementById("addDealModal").classList.remove("hidden");
+    }
+    function closeAddDealModal() {
+      document.getElementById("addDealModal").classList.add("hidden");
+    }
+
+    async function handleCreateDeal(e) {
+      e.preventDefault();
+      const clientId = document.getElementById("dealClientSelect").value;
+      const title = document.getElementById("dealTitleInput").value;
+      const val = parseFloat(document.getElementById("dealValueInput").value || 0);
+      const mrr = parseFloat(document.getElementById("dealMrrInput").value || 0);
+      const stage = document.getElementById("dealStageSelect").value;
+      const notes = document.getElementById("dealNotesInput").value;
+
+      const res = await fetch("/api/deals", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          client_id: parseInt(clientId),
+          title: title,
+          value_usd: val,
+          mrr_usd: mrr,
+          stage: stage,
+          notes: notes
+        })
+      });
+
+      if (res.ok) {
+        closeAddDealModal();
+        showToast("Yangi bitim muvaffaqiyatli saqlandi!");
+        refreshData();
+      }
+    }
+
+    // ADD CLIENT MODAL
+    function openAddClientModal() {
+      document.getElementById("addClientModal").classList.remove("hidden");
+    }
+    function closeAddClientModal() {
+      document.getElementById("addClientModal").classList.add("hidden");
+    }
+
+    async function handleCreateClient(e) {
+      e.preventDefault();
+      const comp = document.getElementById("clientCompanyInput").value;
+      const ind = document.getElementById("clientIndustryInput").value;
+      const contact = document.getElementById("clientContactInput").value;
+      const tg = document.getElementById("clientTgInput").value;
+      const phone = document.getElementById("clientPhoneInput").value;
+      const notes = document.getElementById("clientNotesInput").value;
+
+      const res = await fetch("/api/clients", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          company_name: comp,
+          industry: ind,
+          contact_person: contact,
+          telegram_handle: tg,
+          phone: phone,
+          notes: notes
+        })
+      });
+
+      if (res.ok) {
+        closeAddClientModal();
+        showToast("Yangi mijoz muvaffaqiyatli saqlandi!");
+        refreshData();
+      }
+    }
+
+    async function deleteDeal(dealId) {
+      if (!confirm("Haqiqatan ham bu bitimni o'chirmoqchimisiz?")) return;
+      const res = await fetch(`/api/deals/${dealId}`, { method: "DELETE" });
+      if (res.ok) {
+        showToast("Bitim o'chirildi.");
+        refreshData();
+      }
+    }
+
+    // VOICE ASSISTANT (WEB SPEECH + SERVER AI)
+    function toggleVoiceAssistant() {
+      const banner = document.getElementById("voiceBanner");
+      if (!banner.classList.contains("hidden")) {
+        stopVoiceAssistant();
+        return;
+      }
+
+      if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        const cmd = prompt("Ovozli buyruq matnini kiriting (masalan: 'MedPro bitimini Proposal bosqichiga o'tkaz'):");
+        if (cmd) executeVoiceCommand(cmd);
+        return;
+      }
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      recognition = new SpeechRecognition();
+      recognition.lang = 'uz-UZ';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      banner.classList.remove("hidden");
+      document.getElementById("voiceStatusText").textContent = "Tinglanmoqda... Buyruq bering";
+
+      recognition.onresult = (event) => {
+        const text = event.results[0][0].transcript;
+        document.getElementById("voiceStatusText").textContent = `Eshitildi: "${text}"`;
+        executeVoiceCommand(text);
+      };
+
+      recognition.onerror = (e) => {
+        document.getElementById("voiceStatusText").textContent = "Ovozni aniqlab bo'lmadi.";
+      };
+
+      recognition.onend = () => {
+        setTimeout(stopVoiceAssistant, 3000);
+      };
+
+      recognition.start();
+    }
+
+    function stopVoiceAssistant() {
+      if (recognition) {
+        recognition.stop();
+        recognition = null;
+      }
+      document.getElementById("voiceBanner").classList.add("hidden");
+    }
+
+    async function executeVoiceCommand(cmdText) {
+      try {
+        const res = await fetch("/api/orchestrator/voice_turn", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: cmdText })
+        });
+        const data = await res.json();
+        showToast(data.reply || "Buyruq ijro etildi!");
+        refreshData();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // TOAST
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      const msgElem = document.getElementById("toastMsg");
+      msgElem.textContent = msg;
+      toast.classList.remove("hidden");
+      setTimeout(() => {
+        toast.classList.add("hidden");
+      }, 3500);
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

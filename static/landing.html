@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILDAM • Biznesingiz ildam ishlasin | B2B & YaTT AI Savdo Platformasi</title>
+  <meta name="description" content="Savdo, mijozlar va jarayonlar — barchasi bitta aqlli platformada. O'zbekistondagi B2B korxonalar va YaTT tadbirkorlar uchun 24/7 AI Sotuvchi, zamonaviy Kanban CRM va 1,200+ korxona bazasi.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            hand: ['Caveat', 'cursive'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brandTeal: '#073B3A',
+            brandAmber: '#F59E0B',
+            brandMint: '#14B8A6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #faf9f5;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+    .font-handwriting {
+      font-family: 'Caveat', cursive;
+    }
+    .shadow-soft {
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06);
+    }
+    .perspective-tablet {
+      perspective: 1400px;
+    }
+    .tilt-tablet {
+      transform: rotateY(-7deg) rotateX(3deg);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .tilt-tablet:hover {
+      transform: rotateY(-2deg) rotateX(1deg) scale(1.01);
+    }
+  </style>
+</head>
+<body class="bg-[#faf9f5] selection:bg-amber-500 selection:text-white">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="border-b border-amber-200/70 bg-amber-100/80 text-amber-900 text-xs py-2 px-4 text-center font-semibold flex items-center justify-center gap-2">
+    <span>⚡ <strong>ILDAM Platformasi v2.5:</strong> Telegram & Instagramdan kelgan lidlarni 10 soniyada savdoga aylantiring.</span>
+    <a href="/presentation" class="underline hover:text-amber-700 font-bold ml-1">16:9 Taqdimotni ko'rish ↗</a>
+  </div>
+
+  <!-- ==================== TOP NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-50 bg-[#faf9f5]/95 backdrop-blur-md border-b border-slate-200/80 px-6 sm:px-12 py-4">
+    <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-2 select-none group">
+        <img src="/static/ildam_brand_logo.png" alt="ILDAM" class="h-9 sm:h-10 w-auto object-contain">
+      </a>
+
+      <!-- Center Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#features" class="hover:text-amber-600 transition flex items-center gap-1">
+          <span>Mahsulot</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#pricing" class="hover:text-amber-600 transition">Narxlar</a>
+        <a href="#calculator" class="hover:text-amber-600 transition flex items-center gap-1">
+          <span>Resurslar</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400"></i>
+        </a>
+        <a href="#about" class="hover:text-amber-600 transition">Biz haqimizda</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <div class="hidden sm:flex items-center gap-1 text-xs font-bold text-slate-600 cursor-pointer">
+          <i data-lucide="globe" class="w-4 h-4 text-slate-400"></i>
+          <span>UZ</span>
+          <i data-lucide="chevron-down" class="w-3 h-3 text-slate-400"></i>
+        </div>
+
+        <a href="/crm" target="_blank" class="px-5 py-2.5 text-xs font-bold rounded-xl text-slate-700 hover:text-slate-900 border border-slate-300 bg-white transition shadow-sm">
+          Kirish
+        </a>
+
+        <button onclick="openAuditModal()" class="px-5 py-2.5 text-xs font-black rounded-xl bg-amber-500 hover:bg-amber-600 text-white shadow-md shadow-amber-500/25 transition">
+          Bepul boshlash
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (CRISP VECTOR 100% SHARP) ==================== -->
+  <section class="relative pt-8 pb-20 px-6 sm:px-12 overflow-hidden">
+    <div class="max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
+        
+        <!-- LEFT COLUMN: Headline & Pitch -->
+        <div class="lg:col-span-5 space-y-7 z-10">
+          
+          <!-- Pill Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-200/80 border border-slate-300 text-xs font-semibold text-slate-700 shadow-sm">
+            <span class="text-amber-500 text-sm">⚡</span>
+            <span>O'zbekiston va Markaziy Osiyo bizneslari uchun</span>
+          </div>
+
+          <!-- Main Heavy Title -->
+          <h1 class="text-5xl sm:text-6xl lg:text-[70px] font-black text-[#0B1320] tracking-tight leading-[1.05]">
+            Biznesingiz <br>
+            <span class="text-amber-500">ildam</span> ishlasin.
+          </h1>
+
+          <!-- Subhead -->
+          <p class="text-lg sm:text-xl text-slate-600 font-medium leading-relaxed max-w-xl">
+            Savdo, mijozlar va jarayonlar — barchasi bitta aqlli platformada.
+          </p>
+
+          <!-- Buttons Row -->
+          <div class="flex flex-wrap items-center gap-4 pt-1">
+            <button onclick="openAuditModal()" class="px-8 py-4 text-sm font-black rounded-2xl bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/30 flex items-center gap-2 transition hover:-translate-y-0.5">
+              <span>Bepul boshlash</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 stroke-[2.5]"></i>
+            </button>
+            <a href="#simulator" class="px-7 py-4 text-sm font-bold rounded-2xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-300/90 shadow-sm flex items-center gap-2.5 transition">
+              <i data-lucide="play-circle" class="w-5 h-5 text-slate-700"></i>
+              <span>Demoni ko'rish</span>
+            </a>
+          </div>
+
+          <!-- Metrics Row with Dividers -->
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200/80 max-w-xl">
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono">1,200+</div>
+              <div class="text-xs text-slate-500 font-semibold mt-1">Tayyor B2B korxona bazasi</div>
+            </div>
+            <div class="border-l border-slate-200/80 pl-6">
+              <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono">24/7</div>
+              <div class="text-xs text-slate-500 font-semibold mt-1">Telegram & Instagram AI sotuvchi</div>
+            </div>
+            <div class="border-l border-slate-200/80 pl-6">
+              <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono">10 soniyada</div>
+              <div class="text-xs text-slate-500 font-semibold mt-1">Yangi mijozlar javobi</div>
+            </div>
+          </div>
+
+          <!-- Handwritten Note with Arrow -->
+          <div class="pt-2 flex items-center gap-3">
+            <span class="font-handwriting text-2xl text-slate-700 font-bold -rotate-2">
+              Ko'proq mijozlar. Katta imkoniyatlar.
+            </span>
+            <svg class="w-14 h-7 text-slate-700" viewBox="0 0 60 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M5 15 C 20 5, 40 25, 55 12" />
+              <polyline points="48 8, 56 12, 50 18" />
+            </svg>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Embedded CRM Interface + Floating AI Notification -->
+        <div class="lg:col-span-7 relative">
+          
+          <!-- Warm Yellow Backdrop Circle -->
+          <div class="absolute -top-16 -right-10 w-96 h-96 sm:w-[540px] sm:h-[540px] rounded-full bg-gradient-to-tr from-amber-200/90 to-amber-300/70 -z-10 blur-xl"></div>
+          <div class="absolute top-1/4 right-0 w-80 h-80 sm:w-[440px] sm:h-[440px] rounded-full bg-amber-300/60 -z-10"></div>
+
+          <!-- Floating AI Notification Card -->
+          <div class="relative z-30 mb-[-42px] ml-auto mr-4 sm:mr-10 max-w-sm bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-slate-100 transition-all hover:-translate-y-1">
+            <div class="flex items-start gap-3">
+              <div class="h-11 w-11 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0 border border-emerald-200">
+                <i data-lucide="bot" class="w-6 h-6"></i>
+              </div>
+              
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center justify-between mb-1">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-xs font-bold text-slate-900">AI Sotuvchi</span>
+                    <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 font-medium">hozir</span>
+                </div>
+                
+                <p class="text-[11px] text-slate-600 leading-snug mb-2.5">
+                  Salom! Sizga mos <strong>12 ta yangi kompaniya</strong> topdim. Ko'rishni boshlaymizmi?
+                </p>
+
+                <a href="#directory" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-[11px] font-bold border border-emerald-200/60 transition">
+                  <span>Leadlarni ko'rish</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+
+              <!-- Handwritten 24/7 Annotation -->
+              <div class="hidden sm:block absolute -right-28 top-0 text-left -rotate-6">
+                <span class="font-handwriting text-slate-800 text-sm font-bold block leading-tight">24/7 sizning<br>sotuvchingiz</span>
+                <svg class="w-8 h-8 text-amber-500 mt-0.5" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 5 C 10 15, 18 20, 25 22" stroke-linecap="round"/>
+                  <path d="M25 22 L 18 18 M 25 22 L 20 26" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded CRM Interface (Seamless Native Hero Integration) -->
+          <div class="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl shadow-slate-900/10 border border-slate-200/90 overflow-hidden flex min-h-[480px] sm:min-h-[520px] transition-all hover:shadow-[0_25px_60px_-15px_rgba(7,59,58,0.12)]">
+            
+            <!-- Dark Teal Brand Sidebar (#073B3A) -->
+              <div class="w-36 sm:w-44 bg-[#073b3a] text-white p-3 sm:p-4 flex flex-col justify-between shrink-0 select-none border-r border-[#052928]">
+                <div>
+                  <!-- Official Sidebar Logo Badge -->
+                  <div class="mb-5 px-1 flex items-center">
+                    <img src="/static/ildam_brand_badge.png" alt="ILDAM" class="h-6 sm:h-7 w-auto object-contain">
+                  </div>
+
+                  <!-- Clickable Navigation Tabs -->
+                  <nav class="space-y-1 text-[11px] font-medium" id="mockupNav">
+                    <button type="button" onclick="switchMockupTab('asosiy')" id="mockup-btn-asosiy" class="w-full text-left flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-emerald-900/70 text-white font-semibold transition mockup-nav-btn">
+                      <i data-lucide="home" class="w-3.5 h-3.5 text-emerald-400"></i>
+                      <span>Asosiy</span>
+                    </button>
+                    <button type="button" onclick="switchMockupTab('crm')" id="mockup-btn-crm" class="w-full text-left flex items-center gap-2 px-2.5 py-1.5 rounded-xl text-slate-300 hover:text-white transition mockup-nav-btn">
+                      <i data-lucide="columns-3" class="w-3.5 h-3.5"></i>
+                      <span>CRM</span>
+                    </button>
+                    <button type="button" onclick="switchMockupTab('sotuvlar')" id="mockup-btn-sotuvlar" class="w-full text-left flex items-center gap-2 px-2.5 py-1.5 rounded-xl text-slate-300 hover:text-white transition mockup-nav-btn">
+                      <i data-lucide="trending-up" class="w-3.5 h-3.5"></i>
+                      <span>Sotuvlar</span>
+                    </button>
+                    <button type="button" onclick="switchMockupTab('ai')" id="mockup-btn-ai" class="w-full text-left flex items-center justify-between px-2.5 py-1.5 rounded-xl text-slate-300 hover:text-white transition mockup-nav-btn">
+                      <div class="flex items-center gap-2">
+                        <i data-lucide="bot" class="w-3.5 h-3.5 text-emerald-400"></i>
+                        <span>AI Sotuvchi</span>
+                      </div>
+                      <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    </button>
+                    <button type="button" onclick="switchMockupTab('baza')" id="mockup-btn-baza" class="w-full text-left flex items-center gap-2 px-2.5 py-1.5 rounded-xl text-slate-300 hover:text-white transition mockup-nav-btn">
+                      <i data-lucide="building" class="w-3.5 h-3.5"></i>
+                      <span>Kompaniya bazasi</span>
+                    </button>
+                    <button type="button" onclick="switchMockupTab('vazifalar')" id="mockup-btn-vazifalar" class="w-full text-left flex items-center gap-2 px-2.5 py-1.5 rounded-xl text-slate-300 hover:text-white transition mockup-nav-btn">
+                      <i data-lucide="check-square" class="w-3.5 h-3.5"></i>
+                      <span>Vazifalar</span>
+                    </button>
+                    <button type="button" onclick="switchMockupTab('hisobotlar')" id="mockup-btn-hisobotlar" class="w-full text-left flex items-center gap-2 px-2.5 py-1.5 rounded-xl text-slate-300 hover:text-white transition mockup-nav-btn">
+                      <i data-lucide="bar-chart-3" class="w-3.5 h-3.5"></i>
+                      <span>Hisobotlar</span>
+                    </button>
+                  </nav>
+                </div>
+
+                <div class="pt-4 border-t border-[#052928]">
+                  <div class="flex items-center gap-2 px-2.5 py-1 text-[11px] text-slate-300 hover:text-white transition cursor-pointer">
+                    <i data-lucide="settings" class="w-3.5 h-3.5"></i>
+                    <span>Sozlamalar</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Dashboard Area (Razor Sharp & Perfectly Balanced) -->
+              <div class="flex-1 bg-slate-50 p-4 sm:p-5 flex flex-col overflow-hidden relative">
+                
+                <!-- Search Bar (Clean Top Right matching concept art) -->
+                <div class="flex items-center justify-end mb-3 sm:mb-4">
+                  <div class="relative w-full max-w-[240px]">
+                    <i data-lucide="search" class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2"></i>
+                    <input type="text" placeholder="Mijoz, kompaniya yoki bitimni qidirish..." class="w-full pl-8 pr-3 py-1.5 rounded-xl bg-white border border-slate-200 text-[10px] sm:text-[11px] text-slate-600 focus:outline-none placeholder:text-slate-400 shadow-sm" readonly>
+                  </div>
+                </div>
+
+                <!-- VIEW 1: ASOSIY (DASHBOARD) -->
+                <div id="tab-view-asosiy" class="mockup-tab-view space-y-3.5 sm:space-y-4 flex-1">
+                  <div>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-1.5">
+                      <span>Assalomu alaykum, Jamshid!</span>
+                      <span>👋</span>
+                    </h4>
+                    <p class="text-xs text-slate-500 font-medium">Bugun 12 ta yangi imkoniyat sizni kutmoqda.</p>
+                  </div>
+
+                  <!-- 4 Top Metric Cards with Icon Boxes -->
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <!-- Card 1 -->
+                    <div class="p-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                      <div class="w-9 h-9 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                        <i data-lucide="users" class="w-4 h-4"></i>
+                      </div>
+                      <div class="min-w-0">
+                        <span class="text-[10px] text-slate-500 font-semibold block leading-tight">Yangi leadlar</span>
+                        <div class="text-sm font-black text-slate-900 font-mono leading-tight">247</div>
+                        <span class="text-[9px] text-emerald-600 font-bold leading-tight flex items-center gap-0.5">
+                          <i data-lucide="trending-up" class="w-2.5 h-2.5 inline"></i> +12%
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                      <div class="w-9 h-9 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                        <i data-lucide="dollar-sign" class="w-4 h-4"></i>
+                      </div>
+                      <div class="min-w-0">
+                        <span class="text-[10px] text-slate-500 font-semibold block leading-tight">Sotuvlar</span>
+                        <div class="text-sm font-black text-slate-900 font-mono leading-tight">128</div>
+                        <span class="text-[9px] text-emerald-600 font-bold leading-tight flex items-center gap-0.5">
+                          <i data-lucide="trending-up" class="w-2.5 h-2.5 inline"></i> +28%
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                      <div class="w-9 h-9 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+                        <i data-lucide="bar-chart-2" class="w-4 h-4"></i>
+                      </div>
+                      <div class="min-w-0">
+                        <span class="text-[10px] text-slate-500 font-semibold block leading-tight">Daromad</span>
+                        <div class="text-xs sm:text-sm font-black text-slate-900 leading-tight whitespace-nowrap">320 mln so'm</div>
+                        <span class="text-[9px] text-emerald-600 font-bold leading-tight flex items-center gap-0.5">
+                          <i data-lucide="trending-up" class="w-2.5 h-2.5 inline"></i> +18%
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="p-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-sm flex items-center gap-2.5">
+                      <div class="w-9 h-9 rounded-xl bg-teal-50 flex items-center justify-center text-teal-600 shrink-0">
+                        <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                      </div>
+                      <div class="min-w-0">
+                        <span class="text-[10px] text-slate-500 font-semibold block leading-tight">Vazifalar</span>
+                        <div class="text-sm font-black text-slate-900 font-mono leading-tight">18</div>
+                        <span class="text-[9px] text-emerald-600 font-bold leading-tight flex items-center gap-0.5">
+                          <i data-lucide="trending-up" class="w-2.5 h-2.5 inline"></i> +6%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pipeline Section (Snug & Evenly Distributed) -->
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <h5 class="text-xs sm:text-sm font-black text-slate-900">Sotuvlar pipeline</h5>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-2 sm:gap-2.5">
+                      
+                      <!-- COLUMN 1: Yangi leadlar -->
+                      <div class="space-y-1.5 sm:space-y-2">
+                        <!-- Header -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-slate-100 border border-slate-200/80 flex items-center justify-between">
+                          <div>
+                            <span class="text-[10px] sm:text-[11px] font-bold text-slate-800 block leading-tight">Yangi leadlar</span>
+                            <span class="text-[9px] text-slate-500 font-medium">320 mln so'm</span>
+                          </div>
+                          <span class="px-1.5 py-0.5 rounded-md bg-white text-[10px] font-bold text-slate-700 shadow-sm">24</span>
+                        </div>
+                        
+                        <!-- Card 1 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-black flex items-center justify-center shrink-0">A</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Agrotex Servis</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">25 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-800 text-[10px] font-black flex items-center justify-center shrink-0">N</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Namangan Textil</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">18 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-cyan-100 text-cyan-800 text-[10px] font-black flex items-center justify-center shrink-0">Q</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Qarshi Dizayn</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">12 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+                      </div>
+
+                      <!-- COLUMN 2: Aloqada -->
+                      <div class="space-y-1.5 sm:space-y-2">
+                        <!-- Header -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-between">
+                          <div>
+                            <span class="text-[10px] sm:text-[11px] font-bold text-blue-950 block leading-tight">Aloqada</span>
+                            <span class="text-[9px] text-blue-600/80 font-medium">540 mln so'm</span>
+                          </div>
+                          <span class="px-1.5 py-0.5 rounded-md bg-blue-500 text-[10px] font-bold text-white shadow-sm">18</span>
+                        </div>
+                        
+                        <!-- Card 1 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-cyan-100 text-cyan-800 text-[10px] font-black flex items-center justify-center shrink-0">S</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Samarqand Bino</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">40 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-800 text-[10px] font-black flex items-center justify-center shrink-0">B</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Buxoro Food</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">32 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-indigo-100 text-indigo-800 text-[10px] font-black flex items-center justify-center shrink-0">T</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Toshkent Med</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">28 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+                      </div>
+
+                      <!-- COLUMN 3: Taklif yuborilgan -->
+                      <div class="space-y-1.5 sm:space-y-2">
+                        <!-- Header -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-between">
+                          <div>
+                            <span class="text-[10px] sm:text-[11px] font-bold text-amber-950 block leading-tight">Taklif yuborilgan</span>
+                            <span class="text-[9px] text-amber-700/80 font-medium">410 mln so'm</span>
+                          </div>
+                          <span class="px-1.5 py-0.5 rounded-md bg-amber-500 text-[10px] font-bold text-white shadow-sm">11</span>
+                        </div>
+                        
+                        <!-- Card 1 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-800 text-[10px] font-black flex items-center justify-center shrink-0">A</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Andijon Plast</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">60 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-orange-100 text-orange-800 text-[10px] font-black flex items-center justify-center shrink-0">F</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Farg'ona Logistik</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">38 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="p-1.5 sm:p-2 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-between gap-1.5 hover:border-slate-300 transition">
+                          <div class="flex items-center gap-2 min-w-0">
+                            <div class="w-6 h-6 rounded-full bg-amber-100 text-amber-800 text-[10px] font-black flex items-center justify-center shrink-0">X</div>
+                            <div class="min-w-0">
+                              <span class="font-bold text-slate-900 text-[10px] sm:text-[11px] block truncate leading-tight">Xorazm Savdo</span>
+                              <span class="text-[9px] sm:text-[10px] text-slate-400 font-medium block leading-tight">27 mln so'm</span>
+                            </div>
+                          </div>
+                          <span class="text-slate-400 text-xs px-0.5">⋮</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 2: CRM (KANBAN BOARD FULL) -->
+                <div id="tab-view-crm" class="mockup-tab-view hidden space-y-3.5 flex-1">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h4 class="text-xs sm:text-sm font-extrabold text-slate-900">B2B Savdo Quvuri (Kanban)</h4>
+                      <p class="text-[10px] text-slate-500">Faol bitimlar: 10 ta ($28,700 qiymat)</p>
+                    </div>
+                    <span class="text-[10px] font-bold px-2 py-1 rounded-lg bg-amber-500 text-white shadow-sm">+ Yangi Bitim</span>
+                  </div>
+
+                  <div class="grid grid-cols-3 gap-2 flex-1">
+                    <div class="bg-slate-100/70 p-2 rounded-xl border border-slate-200 space-y-2">
+                      <div class="flex items-center justify-between text-[9px] font-bold text-slate-600 uppercase">
+                        <span>1. Muloqot</span>
+                        <span class="h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">Medion Clinic</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span>$3,500</span>
+                          <span class="text-amber-600 font-semibold">Tibbiyot</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">Najot Ta'lim</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span>$4,000</span>
+                          <span class="text-indigo-600 font-semibold">Ta'lim</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">Grand Pharm</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span>$2,200</span>
+                          <span class="text-emerald-600 font-semibold">Farmasevtika</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bg-blue-50/70 p-2 rounded-xl border border-blue-100 space-y-2">
+                      <div class="flex items-center justify-between text-[9px] font-bold text-blue-800 uppercase">
+                        <span>2. Taklif</span>
+                        <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">Texnomart B2B</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span>$5,500</span>
+                          <span class="text-blue-600 font-semibold">Savdo</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">SilkRoad Trans</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span>$2,800</span>
+                          <span class="text-emerald-600 font-semibold">Logistika</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">Orient Motors</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span>$7,100</span>
+                          <span class="text-blue-600 font-semibold">Avtomobil</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bg-emerald-50/70 p-2 rounded-xl border border-emerald-100 space-y-2">
+                      <div class="flex items-center justify-between text-[9px] font-bold text-emerald-800 uppercase">
+                        <span>3. To'landi ✓</span>
+                        <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-emerald-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-emerald-900 block truncate">Akfa Medline</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span class="text-emerald-700 font-bold">$6,000</span>
+                          <span class="text-emerald-600 font-bold">Avans ✓</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-emerald-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">AvtoMoy Servis</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span class="text-emerald-700 font-bold">$1,900</span>
+                          <span class="text-emerald-600 font-bold">Yakuniy ✓</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-lg bg-white border border-slate-200 shadow-sm space-y-1">
+                        <span class="text-[10px] font-bold text-slate-900 block truncate">Toshkent Bread</span>
+                        <div class="flex items-center justify-between text-[9px] text-slate-500">
+                          <span class="text-emerald-700 font-bold">$3,100</span>
+                          <span class="text-emerald-600 font-bold">To'liq ✓</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 3: SOTUVLAR & DAROMAD -->
+                <div id="tab-view-sotuvlar" class="mockup-tab-view hidden space-y-3 flex-1">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-extrabold text-slate-900">Sotuvlar Dinamikasi & Tushum</h4>
+                    <p class="text-[10px] text-slate-500">Joriy oylik tushum ko'rsatkichlari</p>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-3">
+                    <div class="p-3 rounded-xl bg-white border border-slate-200 shadow-sm">
+                      <span class="text-[10px] text-slate-400 block font-medium">Oylik Doimiy Tushum (MRR):</span>
+                      <div class="text-lg sm:text-xl font-black text-emerald-600 font-mono mt-1">$3,650 / oy</div>
+                      <span class="text-[9px] text-emerald-600 font-semibold mt-1 block">↑ +28% o'tgan oyga nisbatan</span>
+                    </div>
+                    <div class="p-3 rounded-xl bg-white border border-slate-200 shadow-sm">
+                      <span class="text-[10px] text-slate-400 block font-medium">Faol Pipeline:</span>
+                      <div class="text-lg sm:text-xl font-black text-slate-900 font-mono mt-1">$28,700</div>
+                      <span class="text-[9px] text-slate-500 mt-1 block">10 ta B2B muzokara</span>
+                    </div>
+                  </div>
+
+                  <div class="p-3 rounded-xl bg-slate-100/80 border border-slate-200 text-[10px] text-slate-700 space-y-1.5">
+                    <div class="flex justify-between font-bold">
+                      <span>O'rtacha bitim muddati:</span>
+                      <span class="text-slate-900">4 kun (Eski tizimda 18 kun)</span>
+                    </div>
+                    <div class="flex justify-between font-bold">
+                      <span>Konversiya darajasi:</span>
+                      <span class="text-emerald-700">32.4% (+14% o'sish)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 4: AI SOTUVCHI (LIVE DIALOGUE) -->
+                <div id="tab-view-ai" class="mockup-tab-view hidden space-y-2.5 flex-1">
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
+                    <div class="flex items-center gap-1.5">
+                      <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                      <span class="text-xs font-bold text-slate-900">24/7 AI Inbound Operator</span>
+                    </div>
+                    <span class="text-[9px] text-emerald-600 font-mono font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">10s Reaksiya</span>
+                  </div>
+
+                  <div class="space-y-2 text-[10px] overflow-y-auto pr-1">
+                    <div class="flex items-start gap-1.5">
+                      <div class="h-5 w-5 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-[9px] shrink-0">M</div>
+                      <div class="p-2 rounded-xl bg-white border border-slate-200 text-slate-800 max-w-[85%] shadow-sm">
+                        Assalomu alaykum, ertaga kardiolog qabuliga yozilsam bo'ladimi? Narxi qancha?
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-1.5 justify-end">
+                      <div class="p-2 rounded-xl bg-emerald-600 text-white max-w-[85%] shadow-sm leading-relaxed">
+                        Assalomu alaykum! Albatta, ertaga soat 10:30 va 15:00 da qabul mavjud. Narxi 250,000 so'm. Ismingiz va raqamingizni yozsangiz, darhol joy band qilamiz.
+                      </div>
+                      <div class="h-5 w-5 rounded-full bg-emerald-800 text-white font-bold flex items-center justify-center text-[9px] shrink-0">AI</div>
+                    </div>
+
+                    <div class="flex items-start gap-1.5">
+                      <div class="h-5 w-5 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-[9px] shrink-0">M</div>
+                      <div class="p-2 rounded-xl bg-white border border-slate-200 text-slate-800 max-w-[85%] shadow-sm">
+                        Jamshid Aliyev, +998 90 123 45 67. Soat 15:00 ga yozing.
+                      </div>
+                    </div>
+
+                    <div class="p-1.5 rounded-lg bg-emerald-100/70 border border-emerald-200 text-[9px] text-emerald-900 font-bold flex items-center gap-1.5">
+                      <span>✓</span>
+                      <span>Bitim avtomatik ochildi va mas'ul shifokorga biriktirildi.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 5: B2B KOMPANIYA BAZASI (1,200+) -->
+                <div id="tab-view-baza" class="mockup-tab-view hidden space-y-2 flex-1">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h4 class="text-xs sm:text-sm font-extrabold text-slate-900">B2B Bozor Indeksi</h4>
+                      <p class="text-[10px] text-slate-500">1,200+ saralangan korxonalar katalogi</p>
+                    </div>
+                    <span class="text-[9px] font-mono text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">1-Klik Outreach</span>
+                  </div>
+
+                  <div class="space-y-1.5 text-[10px]">
+                    <div class="p-2 rounded-xl bg-white border border-slate-200 flex items-center justify-between shadow-sm">
+                      <div>
+                        <span class="font-bold text-slate-900 block truncate">Akfa Medline University Hospital</span>
+                        <span class="text-[9px] text-slate-400">Tibbiyot • Toshkent (+998 71 203 30 03)</span>
+                      </div>
+                      <span class="px-2 py-1 rounded bg-emerald-50 text-emerald-700 font-bold text-[9px] border border-emerald-200">WhatsApp ↗</span>
+                    </div>
+
+                    <div class="p-2 rounded-xl bg-white border border-slate-200 flex items-center justify-between shadow-sm">
+                      <div>
+                        <span class="font-bold text-slate-900 block truncate">Najot Ta'lim IT Academy</span>
+                        <span class="text-[9px] text-slate-400">Ta'lim • Toshkent (+998 78 888 98 88)</span>
+                      </div>
+                      <span class="px-2 py-1 rounded bg-blue-50 text-blue-700 font-bold text-[9px] border border-blue-200">Telegram ↗</span>
+                    </div>
+
+                    <div class="p-2 rounded-xl bg-white border border-slate-200 flex items-center justify-between shadow-sm">
+                      <div>
+                        <span class="font-bold text-slate-900 block truncate">Texnomart Retail & Wholesale</span>
+                        <span class="text-[9px] text-slate-400">B2B Savdo • O'zbekiston (+998 71 209 99 44)</span>
+                      </div>
+                      <span class="px-2 py-1 rounded bg-amber-50 text-amber-700 font-bold text-[9px] border border-amber-200">Qo'ng'iroq ↗</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 6: VAZIFALAR & HISOBOTLAR -->
+                <div id="tab-view-vazifalar" class="mockup-tab-view hidden space-y-2 flex-1">
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-extrabold text-slate-900">Kunlik Savdo Vazifalari</h4>
+                    <p class="text-[10px] text-slate-500">Menejerlar uchun AI tomonidan saralangan vazifalar</p>
+                  </div>
+                  <div class="space-y-1.5 text-[10px]">
+                    <div class="p-2 rounded-xl bg-white border border-slate-200 flex items-center gap-2 shadow-sm">
+                      <input type="checkbox" checked class="accent-emerald-500">
+                      <span class="text-slate-800 line-through">Akfa Medline 50% avans hisob-fakturasini tekshirish</span>
+                    </div>
+                    <div class="p-2 rounded-xl bg-white border border-slate-200 flex items-center gap-2 shadow-sm">
+                      <input type="checkbox" class="accent-amber-500">
+                      <span class="text-slate-800 font-semibold">Samarqand Bino bilan soat 14:00 da demo qo'ng'iroq</span>
+                    </div>
+                    <div class="p-2 rounded-xl bg-white border border-slate-200 flex items-center gap-2 shadow-sm">
+                      <input type="checkbox" class="accent-amber-500">
+                      <span class="text-slate-800 font-semibold">Buxoro Food uchun AI Copilot taklifnomasini yuborish</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4 PILLARS OF ILDAM ==================== -->
+  <section id="features" class="py-20 px-6 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200">Mahsulot Imkoniyatlari</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Nega aynan ILDAM savdo platformasi?
+        </h2>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+          Eskirgan passiv CRMlar faqat xodim yozgan narsani saqlaydi. ILDAM esa o'zi mijozlar topadi, ularga 10 soniyada javob beradi va savdo bo'limini harakatga keltiradi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="p-8 rounded-3xl bg-[#faf9f5] border border-slate-200/80 shadow-soft hover:shadow-lg transition">
+          <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold mb-6">
+            <i data-lucide="bot" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">24/7 AI Sotuvchi</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Telegram va Instagram Directdan kelgan har bir murojaatga 10 soniyada professional javob beradi, konsultatsiyaga yozadi va telefon raqamini oladi.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-200 text-[11px] font-mono font-bold text-emerald-600">
+            ✓ 0 ta yo'qotilgan mijoz
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-8 rounded-3xl bg-[#faf9f5] border border-slate-200/80 shadow-soft hover:shadow-lg transition">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center font-bold mb-6">
+            <i data-lucide="columns-3" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Tezkor Kanban Doskasi</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            5 bosqichli vizual savdo quvuri. Kartalarni surish, to'lovlarni boshqarish va xodimlar o'rtasida lidlarni taqsimlash 10 daqiqada o'rganiladi.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-200 text-[11px] font-mono font-bold text-amber-600">
+            ✓ Cheksiz xodimlar akkaunti
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-8 rounded-3xl bg-[#faf9f5] border border-slate-200/80 shadow-soft hover:shadow-lg transition">
+          <div class="h-12 w-12 rounded-2xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center font-bold mb-6">
+            <i data-lucide="building-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">1,200+ Ochiq B2B Reestr</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            O'zbekistondagi klinikalar (400 ta), ta'lim markazlari (265 ta) va servislar bazasi. 1-klikda WhatsApp va Telegram orqali outreach boshlang.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-200 text-[11px] font-mono font-bold text-indigo-600">
+            ✓ Qonuniy B2B indeks (O'RQ-547)
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-8 rounded-3xl bg-[#faf9f5] border border-slate-200/80 shadow-soft hover:shadow-lg transition">
+          <div class="h-12 w-12 rounded-2xl bg-rose-500/10 text-rose-600 flex items-center justify-center font-bold mb-6">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">AI Savdo Copilot</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Menejer uchun 1 klikda professional tijorat taklifi (Proposal), smeta va "Qimmat", "O'ylab ko'ramiz" kabi e'tirozlarni yopish matnlarini tuzadi.
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-200 text-[11px] font-mono font-bold text-rose-600">
+            ✓ 3x tezroq bitim yopish
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE AI TRIAGE SIMULATOR ==================== -->
+  <section id="simulator" class="py-20 px-6 bg-[#faf9f5]">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full">Jonli Sinov</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          ILDAM AI qanday ishlaydi? O'zingiz sinab ko'ring
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">
+          Mijozingiz Telegram yoki Instagramdan yozganda AI 10 soniyada uni qanday tahlil qilishini ko'ring:
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-soft">
+        
+        <!-- Preset Buttons -->
+        <div class="flex flex-wrap items-center gap-2 mb-6">
+          <span class="text-xs font-bold text-slate-500 mr-2">Sohalar:</span>
+          <button onclick="setSimPreset('med')" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-amber-100 hover:text-amber-800 text-xs font-semibold text-slate-700 transition">🏥 Xususiy Klinika</button>
+          <button onclick="setSimPreset('edu')" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-amber-100 hover:text-amber-800 text-xs font-semibold text-slate-700 transition">🎓 O'quv Markazi</button>
+          <button onclick="setSimPreset('auto')" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-amber-100 hover:text-amber-800 text-xs font-semibold text-slate-700 transition">🚗 Avtoservis</button>
+          <button onclick="setSimPreset('b2b')" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-amber-100 hover:text-amber-800 text-xs font-semibold text-slate-700 transition">🏢 B2B Korxona</button>
+        </div>
+
+        <!-- Input & Run -->
+        <div class="flex flex-col sm:flex-row gap-3 mb-8">
+          <input type="text" id="simInput" value="Assalomu alaykum! Akfa Medline klinikasida ertaga kardiolog qabuliga yozilmoqchi edim. Narxi qancha va soat nechida bo'sh vaqt bor?" class="flex-1 p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 focus:outline-none focus:border-amber-500 font-medium">
+          <button onclick="runSimulation()" class="px-6 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold transition flex items-center justify-center gap-2 shadow-md shadow-amber-500/20">
+            <i data-lucide="zap" class="w-4 h-4"></i>
+            <span>AI Tahlil Qilish</span>
+          </button>
+        </div>
+
+        <!-- Simulator Results Box -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-slate-100">
+          
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <span class="text-[11px] font-mono text-slate-500 block">Aniqlangan Soha:</span>
+            <span class="text-sm font-bold text-slate-900 mt-1 block" id="simIndustry">Tibbiyot / Klinika</span>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <span class="text-[11px] font-mono text-slate-500 block">Kvalifikatsiya Bali (Score):</span>
+            <span class="text-sm font-bold text-emerald-600 mt-1 block" id="simScore">96 / 100 (Issiq Lid)</span>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <span class="text-[11px] font-mono text-slate-500 block">Kanbandagi Bosqich:</span>
+            <span class="text-sm font-bold text-amber-600 mt-1 block" id="simStage">Yangi Leadlar ➔ Qabulga Yozish</span>
+          </div>
+
+        </div>
+
+        <!-- AI Generated Reply -->
+        <div class="mt-6 p-5 rounded-2xl bg-amber-50/60 border border-amber-200/70">
+          <div class="flex items-center gap-2 text-xs font-bold text-amber-900 mb-2">
+            <i data-lucide="bot" class="w-4 h-4 text-amber-600"></i>
+            <span>ILDAM AI Sotuvchining Mijozga Javobi (10 soniyada):</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium italic" id="simReply">
+            "Assalomu alaykum! Klinikamizga murojaatingiz uchun tashakkur. Kardiolog shifokor qabuliga ertaga soat 10:30 va 15:00 da qabul mavjud. Sizga qaysi vaqt qulay? Bemor F.I.SH. yozib yuborsangiz, darhol navbatga kiritamiz."
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== B2B BOZOR INDEKSI (1,200+) ==================== -->
+  <section id="directory" class="py-20 px-6 bg-white border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">B2B Directory</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          O'zbekistondagi 1,200+ Ta Tayyor B2B Korxona Katalogi
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">
+          Ochiq manbalar asosida tuzilgan (O'RQ-547 qonuniga muvofiq). 1 klikda WhatsApp yoki Telegram orqali aloqa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="p-6 rounded-3xl bg-[#faf9f5] border border-slate-200">
+          <div class="text-2xl font-black text-slate-900 font-mono">400 Ta</div>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">Xususiy Klinikalar</h4>
+          <p class="text-xs text-slate-500 mt-1">Akfa Medline, Hayat, Medion, Shox Med va Toshkent/viloyat shifoxonalari.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-[#faf9f5] border border-slate-200">
+          <div class="text-2xl font-black text-slate-900 font-mono">265 Ta</div>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">Ta'lim Markazlari</h4>
+          <p class="text-xs text-slate-500 mt-1">Najot Ta'lim, Cambridge, PDP, IT akademiyalar va tillar maktablari.</p>
+        </div>
+        <div class="p-6 rounded-3xl bg-[#faf9f5] border border-slate-200">
+          <div class="text-2xl font-black text-slate-900 font-mono">275+ Ta</div>
+          <h4 class="text-sm font-bold text-slate-900 mt-1">B2B Servis & Savdo</h4>
+          <p class="text-xs text-slate-500 mt-1">Avtoservislar (160), ishlab chiqarish (60), logistika (40) va ulgurji savdo.</p>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span class="text-xs text-amber-900 font-medium">Barcha korxonalarga 1-klikda shaxsiylashtirilgan taklif va WhatsApp skriptlarini yuboring.</span>
+        <button onclick="openAuditModal()" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold shadow-md transition">
+          Baza bilan tanishish ➔
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REVENUE & ROI CALCULATOR ==================== -->
+  <section id="calculator" class="py-20 px-6 bg-[#faf9f5] border-b border-slate-200/80">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full">Moliyaviy Hisob-Kitob</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Kechikkan javoblar tufayli qancha yo'qotyapsiz?
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">
+          Mijoz kechki payt yozganda javobsiz qolsa, 35% ehtimol bilan raqobatchiga ketadi.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-soft">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+          <!-- Sliders -->
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between text-xs font-bold text-slate-700 mb-2">
+                <span>Kunlik reklama lidlari:</span>
+                <span id="leadCountVal" class="text-amber-600 font-mono text-sm">20 ta / kun</span>
+              </div>
+              <input type="range" id="leadCount" min="5" max="100" value="20" oninput="calcLoss()" class="w-full accent-amber-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-bold text-slate-700 mb-2">
+                <span>O'rtacha chek:</span>
+                <span id="ticketVal" class="text-amber-600 font-mono text-sm">1,500,000 so'm</span>
+              </div>
+              <input type="range" id="ticket" min="300000" max="10000000" step="100000" value="1500000" oninput="calcLoss()" class="w-full accent-amber-500">
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600 leading-relaxed">
+              💡 Soat 19:00 dan keyin murojaat qilgan lidlar o'rtacha <strong>12 soat</strong> kutib qoladi. Ularning 40% dan ko'prog'i qayta javob bermaydi.
+            </div>
+          </div>
+
+          <!-- Result Card -->
+          <div class="p-8 rounded-3xl bg-[#faf9f5] border border-slate-200/80 text-center shadow-md">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block">Oylik Yo'qotilayotgan Daromad</span>
+            <div class="text-3xl sm:text-4xl font-black text-rose-600 font-mono my-3" id="lostTotal">
+              -63,000,000 so'm
+            </div>
+            <p class="text-xs text-slate-500 mb-6">Har oy qo'ldan chiqayotgan tushum miqdori</p>
+
+            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+              <span class="text-xs text-emerald-800 font-bold block">ILDAM 24/7 AI bilan qaytariladigan sof tushum:</span>
+              <span class="text-xl font-extrabold text-emerald-600 font-mono mt-1 block" id="savedTotal">+37,800,000 so'm / oy</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPARISON TABLE ==================== -->
+  <section id="comparison" class="py-20 px-6 bg-white border-b border-slate-200/80">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full">Solishtiruv</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Eskirgan Passiv CRM vs. ILDAM AI Tizimi
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">
+          Nega O'zbekiston tadbirkorlari murakkab chet el tizimlaridan voz kechmoqda?
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-soft">
+          <thead>
+            <tr class="border-b border-slate-200 bg-slate-50 text-xs text-slate-500 font-mono">
+              <th class="p-5 font-bold">Xususiyat & Imkoniyat</th>
+              <th class="p-5 text-rose-600 font-bold">Passiv CRM (AmoCRM / Bitrix24)</th>
+              <th class="p-5 text-emerald-700 bg-amber-50/70 border-l border-amber-200 font-bold">ILDAM All-in-One AI CRM</th>
+            </tr>
+          </thead>
+          <tbody class="text-xs divide-y divide-slate-100">
+            <tr>
+              <td class="p-5 font-bold text-slate-900">1. Oylik To'lov Modeli</td>
+              <td class="p-5 text-slate-500">Har bir xodimga har oy $15-$35 valyutada to'lov (10 xodim = $250+/oy).</td>
+              <td class="p-5 font-bold text-slate-900 bg-amber-50/40 border-l border-amber-200">Xodim boshiga alohida to'lovsiz, butun jamoa uchun qat'iy oylik obuna.</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-bold text-slate-900">2. Kechki Payt va Dam Olish Kunlari</td>
+              <td class="p-5 text-slate-500">Javob berilmaydi. Xodimlar uxlaydi, lidlar 12-14 soat kutadi.</td>
+              <td class="p-5 font-bold text-emerald-700 bg-amber-50/40 border-l border-amber-200">24/7 AI Sotuvchi: 10 soniyada mijozga javob beradi va navbatga yozadi.</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-bold text-slate-900">3. Tayyor B2B Bozor Bazasi</td>
+              <td class="p-5 text-slate-500">Bo'sh varaq. Korxonalarni qo'lda bittalab kiritish shart.</td>
+              <td class="p-5 font-bold text-slate-900 bg-amber-50/40 border-l border-amber-200">1,200+ ta tayyor B2B korxonalar katalogi o'rnatilgan holda taqdim etiladi.</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-bold text-slate-900">4. Savdo Menejeriga Yordam (Copilot)</td>
+              <td class="p-5 text-slate-500">Yo'q. Menejer Word/Excelda soatlab taklif yozadi.</td>
+              <td class="p-5 font-bold text-slate-900 bg-amber-50/40 border-l border-amber-200">1-klikda smeta, tijorat taklifi va e'tirozlarni yopish skriptlari generatsiya qilinadi.</td>
+            </tr>
+            <tr>
+              <td class="p-5 font-bold text-slate-900">5. O'rganish & Ishga Tushish Tezligi</td>
+              <td class="p-5 text-slate-500">1-3 oy sozlanadi, xodimlar tushunmaydi va tashlab qo'yadi.</td>
+              <td class="p-5 font-bold text-slate-900 bg-amber-50/40 border-l border-amber-200">1 haftada tayyor holda topshiriladi. 10 daqiqada o'rganiladigan intuitiv Kanban.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING PACKAGES ==================== -->
+  <section id="pricing" class="py-20 px-6 bg-[#faf9f5] border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full">Shaffof Tariflar</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Biznesingiz hajmiga mos 3 ta paket
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">
+          Xodim boshiga qo'shimcha to'lovlarsiz. Doimiy texnik ta'minot va yangilanishlar ichida.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Package 1: YaTT Starter -->
+        <div class="rounded-3xl p-8 bg-white border border-slate-200/80 flex flex-col justify-between shadow-soft hover:shadow-lg transition">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">YaTT & Kichik Savdo</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Starter AI CRM</h3>
+            <p class="text-xs text-slate-500 mt-2 mb-4">1-3 kishilik xizmat ko'rsatuvchi YaTTlar va kichik savdo jamoalari uchun.</p>
+            <div class="text-4xl font-black text-slate-900 font-mono">$99 <span class="text-xs font-normal text-slate-500">/ oy</span></div>
+            <div class="text-[11px] text-amber-700 font-mono mt-1 mb-6 font-semibold">+ $450 bir martalik o'rnatish</div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Zamonaviy Kanban CRM Platformasi</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>24/7 Telegram Bot AI Sotuvchi</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Cheksiz xodimlar akkauntlari</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Xodimlar uchun 1 kunlik instruktaj</li>
+            </ul>
+          </div>
+          <button onclick="selectPackage('Starter AI CRM ($99/oy)')" class="w-full py-3 text-xs font-bold rounded-2xl bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-300 transition shadow-sm">
+            Tanlash
+          </button>
+        </div>
+
+        <!-- Package 2: B2B Growth Engine (Featured) -->
+        <div class="rounded-3xl p-8 bg-white border-2 border-amber-500 flex flex-col justify-between relative shadow-xl shadow-amber-500/10">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-amber-500 text-[10px] font-black uppercase tracking-wider text-white shadow-md">
+            Eng Ommabop Tanlov
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600">B2B Kompaniyalar & Klinikalar</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Growth Engine</h3>
+            <p class="text-xs text-slate-500 mt-2 mb-4">Mijozlar oqimi yuqori bo'lgan xususiy shifoxona, avtoservis va savdo korxonalari.</p>
+            <div class="text-4xl font-black text-slate-900 font-mono">$250 <span class="text-xs font-normal text-slate-500">/ oy</span></div>
+            <div class="text-[11px] text-emerald-700 font-mono mt-1 mb-6 font-semibold">+ $950 bir martalik o'rnatish</div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><strong>Starter</strong> paketining barcha imkoniyatlari</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Instagram Direct + Telegram AI Triage</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>1,200+ Ochiq B2B Korxona Katalogi & Outreach</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>AI Copilot: Taklifnoma va e'tiroz yopish</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Doimiy server hosting & AI tokenlar</li>
+            </ul>
+          </div>
+          <button onclick="selectPackage('Growth Engine ($250/oy)')" class="w-full py-3.5 text-xs font-black rounded-2xl bg-amber-500 hover:bg-amber-600 text-white shadow-lg shadow-amber-500/25 transition">
+            Ushbu Paketni Tanlash ➔
+          </button>
+        </div>
+
+        <!-- Package 3: Enterprise Fleet -->
+        <div class="rounded-3xl p-8 bg-white border border-slate-200/80 flex flex-col justify-between shadow-soft hover:shadow-lg transition">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Yirik Korporatsiya & Distribyutor</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Enterprise Fleet</h3>
+            <p class="text-xs text-slate-500 mt-2 mb-4">1C / ERP integratsiyasi, ovozli boshqaruv va maxsus talabga ega korxonalar.</p>
+            <div class="text-4xl font-black text-slate-900 font-mono">$500+ <span class="text-xs font-normal text-slate-500">/ oy</span></div>
+            <div class="text-[11px] text-purple-700 font-mono mt-1 mb-6 font-semibold">+ Maxsus integratsiya</div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><strong>Growth</strong> paketining to'liq funksionali</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>1C va maxsus ERP ma'lumotlar bazasi integratsiyasi</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>Ovozli lid qabul qilish va ovozli menejment</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>24/7 Shaxsiy muhandis va maxsus SLA</li>
+            </ul>
+          </div>
+          <button onclick="selectPackage('Enterprise Fleet')" class="w-full py-3 text-xs font-bold rounded-2xl bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-300 transition shadow-sm">
+            Bog'lanish
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT & FOUNDER ==================== -->
+  <section id="about" class="py-16 px-6 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-3 p-2 pr-5 rounded-full bg-[#faf9f5] border border-slate-200 shadow-sm mb-6">
+        <div class="h-9 w-9 rounded-full bg-amber-500 text-white font-black flex items-center justify-center text-sm">
+          SI
+        </div>
+        <div class="text-left text-xs">
+          <strong class="text-slate-900 block">Shukhrat Iskandarov</strong>
+          <span class="text-slate-500">Asoschi: GPTify.co & ILDAM</span>
+        </div>
+      </div>
+      <p class="text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
+        "Biznesingizda har bir lid qadrli. Bizning vazifamiz — O'zbekistondagi tadbirkorlarga ortiqcha xarajat va murakkab dasturlarsiz, haqiqatda sotuvni oshiruvchi ildam tizimni o'rnatib berishdir."
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-white py-12 px-6 text-xs text-slate-600">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3 select-none">
+        <img src="/static/ildam_brand_logo.png" alt="ILDAM Logo" class="h-8 w-auto object-contain">
+        <span class="text-slate-400">|</span>
+        <span class="text-slate-600 font-medium">B2B & YaTT Savdo Platformasi</span>
+      </div>
+      
+      <div class="flex flex-wrap items-center gap-6 font-semibold">
+        <a href="/presentation" class="hover:text-amber-600 transition">16:9 Taqdimot Deck</a>
+        <a href="/crm" class="hover:text-amber-600 transition">Kanban Boshqaruv Doskasi</a>
+        <a href="https://t.me/GPTify_uz_bot" target="_blank" class="hover:text-amber-600 transition">Telegram Bot</a>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-slate-200 text-center text-[11px] text-slate-500 leading-relaxed">
+      * Huquqiy eslatma: ILDAM platformasi ichidagi 1,200+ korxonalar ro'yxati faqat yuridik shaxslarning rasmiy davlat reestrlari, rasmiy veb-saytlari va ommaviy ochiq xaritalaridagi korporativ rekvizitlaridan jamlangan ochiq ma'lumotnoma hisoblanadi (O'zbekiston Respublikasining "Shaxsiy ma'lumotlar to'g'risida"gi O'RQ-547 qonuniga muvofiq).
+    </div>
+  </footer>
+
+  <!-- ==================== LEAD CAPTURE MODAL ==================== -->
+  <div id="leadModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 border border-slate-200 shadow-2xl relative">
+      <button onclick="closeAuditModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-3">
+        <img src="/static/ildam_brand_logo.png" alt="ILDAM Logo" class="h-7 w-auto object-contain">
+      </div>
+      <h3 class="text-xl font-extrabold text-slate-900 mb-1">15 Daqiqalik Bepul Savdo Auditi</h3>
+      <p class="text-xs text-slate-500 mb-6 leading-relaxed">Biznesingizdagi mijoz yo'qotishlarini aniqlaymiz va ILDAM tizimini namoyish qilamiz.</p>
+
+      <form id="auditForm" onsubmit="submitAudit(event)" class="space-y-4">
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Kompaniya yoki YaTT nomi:</label>
+          <input type="text" id="leadCompany" required placeholder="Masalan: MedPro Klinika" class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Ismingiz va lavozimingiz:</label>
+          <input type="text" id="leadContact" required placeholder="Masalan: Sardorbek (Rahbar)" class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Telefon yoki Telegram:</label>
+          <input type="text" id="leadPhone" required placeholder="+998 90 123 45 67 yoki @username" class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Tanlangan paket:</label>
+          <input type="text" id="leadPkg" value="Growth Engine ($250/oy)" class="w-full p-3 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-600 font-medium" readonly>
+        </div>
+
+        <button type="submit" id="submitBtn" class="w-full py-3.5 text-xs font-black rounded-xl bg-amber-500 hover:bg-amber-600 text-white transition flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25">
+          <span>Ariza Qoldirish ➔</span>
+        </button>
+      </form>
+      <div id="formSuccess" class="hidden text-center py-4 text-emerald-600 text-xs font-bold">
+        ✅ Arizangiz qabul qilindi! ILDAM mutaxassisi tez orada siz bilan bog'lanadi.
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Logics -->
+  <script>
+    lucide.createIcons();
+
+    function switchMockupTab(tabId) {
+      const btns = document.querySelectorAll('.mockup-nav-btn');
+      btns.forEach(b => {
+        b.classList.remove('bg-emerald-900/70', 'text-white', 'font-semibold');
+        b.classList.add('text-slate-300');
+      });
+
+      const activeBtn = document.getElementById('mockup-btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-emerald-900/70', 'text-white', 'font-semibold');
+        activeBtn.classList.remove('text-slate-300');
+      }
+
+      const views = document.querySelectorAll('.mockup-tab-view');
+      views.forEach(v => v.classList.add('hidden'));
+
+      const targetView = document.getElementById('tab-view-' + tabId);
+      if (targetView) {
+        targetView.classList.remove('hidden');
+        lucide.createIcons();
+      }
+    }
+
+    function openAuditModal() {
+      document.getElementById('leadModal').classList.remove('hidden');
+    }
+    function closeAuditModal() {
+      document.getElementById('leadModal').classList.add('hidden');
+    }
+
+    function selectPackage(pkgName) {
+      document.getElementById('leadPkg').value = pkgName;
+      openAuditModal();
+    }
+
+    function setSimPreset(type) {
+      const input = document.getElementById('simInput');
+      if (type === 'med') {
+        input.value = "Assalomu alaykum! Akfa Medline klinikasida ertaga kardiolog qabuliga yozilmoqchi edim. Narxi qancha va soat nechida bo'sh vaqt bor?";
+      } else if (type === 'edu') {
+        input.value = "Salom! Najot Ta'limda yangi boshlanayotgan Fullstack dasturlash kursiga sinov darsiga yozilsam bo'ladimi? Narxi va jadvali qanaqa?";
+      } else if (type === 'auto') {
+        input.value = "Assalomu alaykum. Chevrolet Malibu avtomobiliga moy almashtirish va xodovoy qismini diagnostika qilish uchun ertaga soat 14:00 ga joy bormi?";
+      } else if (type === 'b2b') {
+        input.value = "Assalomu alaykum! 500 dona ofis mebellari uchun tijorat taklifi va ulgurji narxlar katalogini taqdim eta olasizmi? Mas'ul bilan gaplashmoqchi edik.";
+      }
+      runSimulation();
+    }
+
+    function runSimulation() {
+      const text = document.getElementById('simInput').value;
+      const simIndustry = document.getElementById('simIndustry');
+      const simScore = document.getElementById('simScore');
+      const simStage = document.getElementById('simStage');
+      const simReply = document.getElementById('simReply');
+
+      if (text.toLowerCase().includes('klinika') || text.toLowerCase().includes('shifokor') || text.toLowerCase().includes('kardiolog') || text.toLowerCase().includes('medline')) {
+        simIndustry.innerText = "Tibbiyot / Xususiy Klinika";
+        simScore.innerText = "96 / 100 (Issiq Bemor Lidi)";
+        simStage.innerText = "Yangi Leadlar ➔ Qabulga Yozish";
+        simReply.innerText = '"Assalomu alaykum! Klinikamizga murojaatingiz uchun tashakkur. Kardiolog shifokor qabuliga ertaga soat 10:30 va 15:00 da qabul mavjud. Sizga qaysi vaqt qulay? Bemor F.I.SH. yozib yuborsangiz, darhol navbatga kiritamiz."';
+      } else if (text.toLowerCase().includes('ta\'lim') || text.toLowerCase().includes('kurs') || text.toLowerCase().includes('dasturlash')) {
+        simIndustry.innerText = "Ta'lim / IT Academy";
+        simScore.innerText = "94 / 100 (Kurs Xaridori)";
+        simStage.innerText = "Yangi Leadlar ➔ Sinov Darsi";
+        simReply.innerText = '"Assalomu alaykum! Najot Ta\'lim kurslariga qiziqishingizdan xursandmiz. Fullstack bootcamp kursi bo\'yicha bepul ochiq dars seshanba soat 18:30 da bo\'lib o\'tadi. Sizni sinov darsiga ro\'yxatdan o\'tkazaylikmi?"';
+      } else if (text.toLowerCase().includes('avto') || text.toLowerCase().includes('moy') || text.toLowerCase().includes('malibu')) {
+        simIndustry.innerText = "Avtoservis & Texnik Xizmat";
+        simScore.innerText = "92 / 100 (Tayyor Buyurtma)";
+        simStage.innerText = "Yangi Leadlar ➔ Boks Band Qilish";
+        simReply.innerText = '"Assalomu alaykum! Chevrolet Malibu uchun original moy va filtrlarimiz mavjud. Ertaga soat 14:00 ga 2-boks bo\'sh. Mashina davlat raqamini qoldirsangiz, joyni sizga band qilamiz."';
+      } else {
+        simIndustry.innerText = "B2B Savdo & Korporativ";
+        simScore.innerText = "98 / 100 (Katta Hajm / Ulgurji)";
+        simStage.innerText = "Yangi Leadlar ➔ Tijorat Taklifi";
+        simReply.innerText = '"Assalomu alaykum! Ofis mebellari bo\'yicha ulgurji katalogimiz va maxsus narxlar ro\'yxatini tayyorladik. PDF faylni ushbu raqamga yuboraylikmi yoki mas\'ul menejerimiz qo\'ng\'iroq qilsinmi?"';
+      }
+    }
+
+    function calcLoss() {
+      const leads = parseInt(document.getElementById('leadCount').value);
+      const ticket = parseInt(document.getElementById('ticket').value);
+
+      document.getElementById('leadCountVal').innerText = leads + " ta / kun";
+      document.getElementById('ticketVal').innerText = Number(ticket).toLocaleString() + " so'm";
+
+      const monthlyLeads = leads * 30;
+      const afterHours = monthlyLeads * 0.35;
+      const lostDeals = afterHours * 0.40 * 0.25;
+      const lostRevenue = Math.round(lostDeals * ticket);
+      const savedRevenue = Math.round(lostRevenue * 0.65);
+
+      document.getElementById('lostTotal').innerText = "-" + Number(lostRevenue).toLocaleString() + " so'm";
+      document.getElementById('savedTotal').innerText = "+" + Number(savedRevenue).toLocaleString() + " so'm / oy";
+    }
+
+    async function submitAudit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const company = document.getElementById('leadCompany').value;
+      const contact = document.getElementById('leadContact').value;
+      const phone = document.getElementById('leadPhone').value;
+      const pkg = document.getElementById('leadPkg').value;
+
+      btn.disabled = true;
+      btn.innerText = "Yuborilmoqda...";
+
+      try {
+        const res = await fetch('/api/inbound/google-sheets', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            first_name: contact,
+            last_name: `(${company})`,
+            phone: phone,
+            industry: 'B2B Client',
+            notes: `Tanlangan paket: ${pkg} | Manba: ILDAM Landing Page`
+          })
+        });
+
+        document.getElementById('auditForm').classList.add('hidden');
+        document.getElementById('formSuccess').classList.remove('hidden');
+      } catch (err) {
+        document.getElementById('auditForm').classList.add('hidden');
+        document.getElementById('formSuccess').classList.remove('hidden');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILDAM • Biznesingiz ildam ishlasin | B2B & YaTT Savdo Platformasi & 24/7 AI Sotuvchi</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brandTeal: '#073B3A',
+            brandAmber: '#F59E0B',
+            brandMint: '#14B8A6',
+            brand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #080b11;
+      color: #f8fafc;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 16:9 Slide Canvas for Presentation Mode */
+    .slide-viewport {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 15%, #073B3A 0%, #061e20 45%, #080b11 85%);
+    }
+
+    .slide-card {
+      width: 1440px;
+      height: 810px;
+      max-width: 96vw;
+      max-height: 54vw;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      background: rgba(11, 19, 32, 0.85);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 28px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 35px 80px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(245, 158, 11, 0.12);
+    }
+
+    /* Print / PDF generation rules */
+    @page {
+      size: 1440px 810px;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #080b11 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .slide-viewport {
+        width: 1440px !important;
+        height: 810px !important;
+        background: radial-gradient(circle at 50% 15%, #073B3A 0%, #061e20 45%, #080b11 85%) !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .slide-card {
+        width: 1440px !important;
+        height: 810px !important;
+        max-width: 1440px !important;
+        max-height: 810px !important;
+        border-radius: 0 !important;
+        border: none !important;
+      }
+      .print-all-slides .slide-page {
+        display: flex !important;
+      }
+    }
+
+    .gradient-accent {
+      background: linear-gradient(135deg, #f59e0b 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gradient-emerald {
+      background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow-dot {
+      box-shadow: 0 0 12px currentColor;
+    }
+
+    /* Animated Data Flow Pipeline */
+    .flow-svg-line {
+      animation: flowStroke 1.2s linear infinite;
+    }
+    @keyframes flowStroke {
+      to {
+        stroke-dashoffset: -36;
+      }
+    }
+    .data-traveler {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: packetTravel 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    @keyframes packetTravel {
+      0% { left: 0%; opacity: 0; transform: translateY(-50%) scale(0.85); }
+      8% { opacity: 1; transform: translateY(-50%) scale(1); }
+      92% { opacity: 1; transform: translateY(-50%) scale(1); }
+      100% { left: 82%; opacity: 0; transform: translateY(-50%) scale(0.85); }
+    }
+    .step-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .step-card:hover, .step-card.active-step {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -10px rgba(245, 158, 11, 0.3);
+      border-color: rgba(245, 158, 11, 0.8) !important;
+      background: rgba(15, 23, 42, 0.95) !important;
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-white">
+
+  <!-- Interactive Controls (Hidden during print) -->
+  <header class="no-print fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-slate-900/90 backdrop-blur-md border border-slate-700/60 rounded-full px-5 py-2 flex items-center gap-4 text-xs font-semibold shadow-2xl">
+    <div class="flex items-center gap-2">
+      <img src="/static/ildam_brand_badge.png" alt="ILDAM" class="h-5 w-auto object-contain">
+      <span class="text-slate-300 font-bold tracking-wide text-[11px] hidden sm:inline">• B2B Savdo Platformasi</span>
+    </div>
+    
+    <div class="h-4 w-px bg-slate-700"></div>
+    
+    <!-- Slide Counter -->
+    <div class="text-slate-400 font-mono" id="slideIndicator">
+      01 / 09
+    </div>
+
+    <div class="h-4 w-px bg-slate-700"></div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex items-center gap-1.5">
+      <button onclick="prevSlide()" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition" title="Oldingi (←)">
+        <i data-lucide="chevron-left" class="w-4 h-4"></i>
+      </button>
+      <button onclick="nextSlide()" class="p-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-white transition shadow-sm font-bold" title="Keyingi (→ / Bo'sh joy)">
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      </button>
+      <button onclick="toggleFullscreen()" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition ml-1" title="To'liq ekran (F)">
+        <i data-lucide="maximize" class="w-4 h-4"></i>
+      </button>
+      <a href="/landing" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 transition flex items-center gap-1.5 text-[11px]" title="Landing Sahifaga o'tish">
+        <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+        <span>Landing</span>
+      </a>
+      <a href="/crm" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-emerald-500/30 transition flex items-center gap-1.5 text-[11px]" title="Jonli CRM ga o'tish">
+        <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i>
+        <span>Jonli CRM</span>
+      </a>
+      <button onclick="window.print()" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition flex items-center gap-1.5 text-[11px]" title="PDF qilib saqlash">
+        <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+        <span>PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Presentation Container -->
+  <main id="presentationRoot">
+
+    <!-- ==================== SLIDE 1: TITLE & COVER (CRM + AI SOTUVCHI) ==================== -->
+    <section class="slide-viewport slide-page" id="slide_1">
+      <div class="slide-card p-16 flex flex-col justify-between relative">
+        <!-- Top decorative row -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="/static/ildam_brand_badge.png" alt="ILDAM" class="h-9 w-auto object-contain">
+          </div>
+          <span class="px-3.5 py-1 rounded-full text-xs font-mono font-semibold uppercase tracking-wider bg-emerald-950/80 text-emerald-300 border border-emerald-800/60 flex items-center gap-1.5">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+            ILDAM Platformasi v2.5
+          </span>
+        </div>
+
+        <!-- Center Hero Headline -->
+        <div class="space-y-6 my-auto max-w-4xl">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-xs font-semibold text-amber-300">
+            <span class="text-amber-400">⚡</span>
+            <span>O'zbekiston B2B & YaTT Uchun • 24/7 AI Sotuvchi • Kanban Boshqaruv</span>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-black tracking-tight text-white leading-tight">
+            ILDAM: Biznesingiz <br/>
+            <span class="gradient-accent">ildam ishlasin.</span>
+          </h1>
+
+          <p class="text-xl text-slate-300 font-normal leading-relaxed max-w-3xl">
+            O'zbekistondagi B2B korxonalar, klinikalar, xizmat ko'rsatish va YaTT tadbirkorlar uchun: reklamadan kelgan har bir mijozni 
+            <strong class="text-white font-semibold">10 soniyada</strong> qabul qiluvchi 24/7 AI Sotuvchi, qulay Kanban boshqaruv hamda 
+            <strong class="text-white font-semibold">1,200+ ta tayyor B2B korxona katalogi</strong> bitta platformada.
+          </p>
+        </div>
+
+        <!-- Bottom stats row (Value-Focused: Speed, Automation, Database, Zero Lead Loss) -->
+        <div class="grid grid-cols-4 gap-6 pt-6 border-t border-slate-800/80">
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-2xl font-black text-amber-400 font-mono">1,200+</div>
+            <div class="text-xs text-slate-300 font-medium">Tayyor B2B korxona bazasi</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-2xl font-black text-emerald-400 font-mono">24/7</div>
+            <div class="text-xs text-slate-400 font-medium">Telegram & Instagram AI sotuvchi</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-2xl font-black text-teal-400 font-mono">10 Soniyada</div>
+            <div class="text-xs text-slate-400 font-medium">Yangi mijozlar javobi</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-2xl font-black text-amber-400 font-mono">0 Yo'qotish</div>
+            <div class="text-xs text-slate-400 font-medium">Kechasi ham savdo to'xtamaydi</div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-4 right-16 text-[11px] text-slate-500 font-mono">
+          Asoschi: Shukhrat Iskandarov • GPTify.co
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 2: THE PROBLEM (WHY OLD CRMS FAIL) ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_2">
+      <div class="slide-card p-16 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-rose-400 uppercase">Bozor Haqiqati & Muammo</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">Nega An'anaviy CRM Tizimlari (Bitrix24, AmoCRM) O'zbekistonda Oqlamayapti?</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-rose-950/60 text-rose-400 border border-rose-800/50 text-xs font-mono font-bold">
+            Legacy CRM Bottlenecks
+          </div>
+        </div>
+
+        <!-- 3 Major Problems Grid -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <!-- Card 1 -->
+          <div class="p-7 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4 hover:border-rose-500/40 transition">
+            <div class="h-12 w-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center">
+              <i data-lucide="moon" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white leading-snug">Passiv Jadval: Kechasi Hech Kim Ishlamaydi</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Klinika va korxona mijozlarining 40% dan ortig'i soat 19:00 dan keyin yoki dam olish kunlari murojaat qiladi. 
+              Oddiy CRM esa passiv bo'lib, xodim ishga kelmaguncha <strong class="text-white">12-14 soat javobsiz</strong> turadi.
+            </p>
+            <div class="pt-2 text-xs font-mono text-rose-400 font-semibold border-t border-slate-800">
+              Oqibat: -35% yangi xaridorlar raqobatchiga ketadi
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-7 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4 hover:border-amber-500/40 transition">
+            <div class="h-12 w-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center">
+              <i data-lucide="credit-card" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white leading-snug">Oylik Valyuta Solig'i ($15-$35 / xodim)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              AmoCRM va Bitrix24 har bir foydalanuvchi uchun har oy qimmat obuna talab qiladi. 10 kishilik savdo bo'limi 
+              uchun har oy <strong class="text-white">$250-$350 to'xtovsiz xarajat</strong> chiqadi, lekin xodimlar uning 10% ini ham ishlatmaydi.
+            </p>
+            <div class="pt-2 text-xs font-mono text-amber-400 font-semibold border-t border-slate-800">
+              Oqibat: Yiliga $3,000-$4,000 ortiqcha sarf-xarajat
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="p-7 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4 hover:border-violet-500/40 transition">
+            <div class="h-12 w-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white leading-snug">Haddan Tashqari Murakkablik & Xodimlar Rad Etishi</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Oddiy CRM 2-3 oy integratsiya qilinadi. Yuzlab ortiqcha tugmalar tufayli sotuvchilar chalkashadi, 
+              lidlarni kiritishni unutadi va oxir-oqibat yana shaxsiy Telegram yoki daftarda ishlashga qaytadi.
+            </p>
+            <div class="pt-2 text-xs font-mono text-violet-400 font-semibold border-t border-slate-800">
+              Oqibat: Rahbariyat nazoratni to'liq yo'qotadi
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Takeaway -->
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+          <span class="text-xs text-slate-300 flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i>
+            <span><strong>Yechim:</strong> B2B va YaTT korxonalarga shunchaki passiv jadval emas, balki <strong>Faol 24/7 AI Sotuvchisi</strong> bo'lgan yaxlit platforma kerak.</span>
+          </span>
+          <span class="text-xs font-mono text-slate-400">ILDAM & GPTify Audit 2026</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 3: 3-PILLAR ALL-IN-ONE ARCHITECTURE ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_3">
+      <div class="slide-card p-16 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-amber-400 uppercase">Tizim Arxitekturasi</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">ILDAM All-in-One: 3 Ta Asosiy Operatsion Ustun</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 text-xs font-mono font-bold">
+            Kanban Core
+          </div>
+        </div>
+
+        <!-- 3-Pillar Visual Architecture -->
+        <div class="grid grid-cols-3 gap-6 my-auto items-stretch">
+          
+          <!-- Pillar 1: Zamonaviy Kanban CRM -->
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-blue-950 text-blue-300 border border-blue-800 font-bold">1-USTUN</span>
+                <i data-lucide="columns-3" class="w-5 h-5 text-blue-400"></i>
+              </div>
+              <h3 class="text-base font-bold text-white">Zamonaviy Kanban CRM Platformasi</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                O'ta tezkor (0.2s), qulay va intuitiv B2B savdo quvuri. Xodimlar 10 daqiqada o'rganadi.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-2 pt-2 border-t border-slate-800 font-mono">
+                <li class="flex items-center gap-2">✓ 5 ta Moslashuvchan Bosqich</li>
+                <li class="flex items-center gap-2">✓ Drag & Drop Kartalar Harakati</li>
+                <li class="flex items-center gap-2">✓ Milestones & To'lovlar Nazorati</li>
+                <li class="flex items-center gap-2">✓ Cheksiz Xodimlar Ish Stoli</li>
+              </ul>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950 text-center text-[11px] font-mono text-blue-400 border border-blue-950">
+              B2B & YaTT Savdo Doskasi
+            </div>
+          </div>
+
+          <!-- Pillar 2: 24/7 AI Inbound Sales Operator -->
+          <div class="p-6 rounded-2xl bg-teal-950/30 border border-teal-500/30 flex flex-col justify-between space-y-4 shadow-lg shadow-teal-950/50">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-teal-900 text-teal-200 border border-teal-700 font-bold">2-USTUN</span>
+                <i data-lucide="bot" class="w-5 h-5 text-teal-400"></i>
+              </div>
+              <h3 class="text-base font-bold text-white">24/7 Avtomatik AI Sotuvchi</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Telegram bot va Instagram Direct ga ulangan, 10 soniyada narx/jadvalni aytib, mijozni qabulga yozuvchi AI.
+              </p>
+              <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-teal-900/60 font-mono">
+                <li class="flex items-center gap-2 text-teal-300">⚡ 10 Soniyada Rasmiy Javob ("Siz")</li>
+                <li class="flex items-center gap-2 text-teal-300">📊 AI Sifat Baholash (0–100 ball)</li>
+                <li class="flex items-center gap-2 text-teal-300">📥 Kanbanga Avtomatik Bitim Ochish</li>
+                <li class="flex items-center gap-2 text-teal-300">📅 Bemor/Mijozni Qabulga Band Qilish</li>
+              </ul>
+            </div>
+            <div class="p-2.5 rounded-lg bg-teal-950 text-center text-[11px] font-mono text-teal-300 border border-teal-800">
+              Nol Yo'qotilgan Lid Konveyeri
+            </div>
+          </div>
+
+          <!-- Pillar 3: AI Copilot for Sales Reps -->
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-950 text-amber-300 border border-amber-800 font-bold">3-USTUN</span>
+                <i data-lucide="sparkles" class="w-5 h-5 text-amber-400"></i>
+              </div>
+              <h3 class="text-base font-bold text-white">AI Copilot Menejer Assistenti</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Menejer va rahbarlar uchun bitim ichida 1-bosishda tijorat taklifi, smeta va e'tirozlarni yopish yordamchisi.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-2 pt-2 border-t border-slate-800 font-mono">
+                <li class="flex items-center gap-2">📋 1-Klikda Loyiha Smetasi & Proposal</li>
+                <li class="flex items-center gap-2">💬 O'zbek/Rus Tilida Follow-Up</li>
+                <li class="flex items-center gap-2">🛡️ Narx/E'tirozlarni Amaliy Yopish</li>
+                <li class="flex items-center gap-2">🎙️ Ovozli Buyruqlar Orqali Boshqarish</li>
+              </ul>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950 text-center text-[11px] font-mono text-amber-400 border border-amber-950">
+              Menejerlar Vaqtini 70% Tejash
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer Info -->
+        <div class="text-center text-xs text-slate-400 font-mono">
+          Natija: Korxonangizda barcha savdo quvuri yagona tizimda jamlanadi va birorta mijoz e'tiborsiz qolmaydi.
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 4: HOW THE WORKFLOW OPERATES (LIVE FLOW) ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_4">
+      <div class="slide-card p-14 flex flex-col justify-between relative overflow-hidden">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono font-bold tracking-wider text-amber-400 uppercase">All-in-One Ish Jarayoni</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-bold flex items-center gap-1.5">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Jonli Ma'lumotlar Oqimi
+              </span>
+            </div>
+            <h2 class="text-3xl font-extrabold text-white mt-1">Lid Kelishidan To Bitim Yopilishigacha: 5 Bosqichli ILDAM Konveyeri</h2>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <button onclick="toggleAgentSimulation()" id="simBtn" class="px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-mono font-black flex items-center gap-2 transition shadow-lg shadow-amber-500/30 cursor-pointer">
+              <i data-lucide="play" class="w-3.5 h-3.5" id="simIcon"></i>
+              <span id="simBtnText">Simulyatsiya: Faol</span>
+            </button>
+            <div class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono text-slate-400">
+              ILDAM Engine
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-Step Pipeline with Animated Connecting Arrows & Moving Data Flow -->
+        <div class="my-auto space-y-6">
+          
+          <!-- Animated Flow Track Overlay -->
+          <div class="relative">
+            
+            <!-- Background Animated Flowing Vector Line -->
+            <div class="absolute top-1/2 left-8 right-8 -translate-y-1/2 h-1 pointer-events-none z-0">
+              <svg class="w-full h-8 -mt-3.5 overflow-visible" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#3b82f6" />
+                    <stop offset="25%" stop-color="#6366f1" />
+                    <stop offset="50%" stop-color="#a855f7" />
+                    <stop offset="75%" stop-color="#f59e0b" />
+                    <stop offset="100%" stop-color="#10b981" />
+                  </linearGradient>
+                </defs>
+                <line x1="0" y1="16" x2="100%" y2="16" stroke="rgba(255,255,255,0.08)" stroke-width="3" />
+                <line x1="0" y1="16" x2="100%" y2="16" stroke="url(#streamGrad)" stroke-width="3" stroke-dasharray="10 8" class="flow-svg-line" />
+              </svg>
+            </div>
+
+            <!-- Traveling Data Packets Animation -->
+            <div class="absolute top-1/2 left-6 right-6 -translate-y-1/2 h-8 pointer-events-none z-10 overflow-hidden">
+              <div class="data-traveler flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500 text-white font-mono text-[10px] font-bold shadow-xl shadow-amber-500/50 border border-amber-300">
+                <i data-lucide="package" class="w-3 h-3 animate-spin"></i>
+                <span id="travelerLabel">Yangi Murojaat: MedPro24 (96 ball)</span>
+              </div>
+            </div>
+
+            <!-- 5 Interactive Step Cards Grid -->
+            <div class="grid grid-cols-5 gap-4 relative z-20">
+              
+              <!-- STEP 1 -->
+              <div onclick="inspectStep(1)" id="stepCard_1" class="step-card p-4 rounded-2xl bg-slate-900/90 border border-blue-500/40 hover:border-blue-400 transition cursor-pointer space-y-2.5 backdrop-blur-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-blue-950 text-blue-300 border border-blue-800">QADAM 1</span>
+                  <div class="h-7 w-7 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Mijoz Murojaati</h4>
+                  <p class="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Telegram, Instagram DM yoki Web orqali so'rov tushadi.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-blue-400 flex items-center justify-between">
+                  <span>Vaqt:</span>
+                  <span class="text-white font-bold">24/7 Rejim</span>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div onclick="inspectStep(2)" id="stepCard_2" class="step-card active-step p-4 rounded-2xl bg-slate-900/90 border border-indigo-500/40 hover:border-indigo-400 transition cursor-pointer space-y-2.5 backdrop-blur-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-indigo-950 text-indigo-300 border border-indigo-800">QADAM 2</span>
+                  <div class="h-7 w-7 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">AI Tezkor Tahlil</h4>
+                  <p class="text-[11px] text-slate-400 mt-1 leading-snug">
+                    AI 10 soniyada sohani tushunib, 0–100 ball beradi.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-indigo-400 flex items-center justify-between">
+                  <span>Tezlik:</span>
+                  <span class="text-white font-bold">&lt; 2 soniya</span>
+                </div>
+              </div>
+
+              <!-- STEP 3 -->
+              <div onclick="inspectStep(3)" id="stepCard_3" class="step-card p-4 rounded-2xl bg-slate-900/90 border border-purple-500/40 hover:border-purple-400 transition cursor-pointer space-y-2.5 backdrop-blur-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-950 text-purple-300 border border-purple-800">QADAM 3</span>
+                  <div class="h-7 w-7 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                    <i data-lucide="columns-3" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">CRM Kanbanga Tushish</h4>
+                  <p class="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Inquiry ustuniga mijoz kartasi va xulosasi avtomat kiritiladi.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-purple-400 flex items-center justify-between">
+                  <span>Baza:</span>
+                  <span class="text-white font-bold">Mahalliy SQLite</span>
+                </div>
+              </div>
+
+              <!-- STEP 4 -->
+              <div onclick="inspectStep(4)" id="stepCard_4" class="step-card p-4 rounded-2xl bg-slate-900/90 border border-amber-500/40 hover:border-amber-400 transition cursor-pointer space-y-2.5 backdrop-blur-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-950 text-amber-300 border border-amber-800">QADAM 4</span>
+                  <div class="h-7 w-7 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">1-Tap Taklif & Smeta</h4>
+                  <p class="text-[11px] text-slate-400 mt-1 leading-snug">
+                    AI Copilot o'zbek/rus tilida to'liq taklifnoma shakllantiradi.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-amber-400 flex items-center justify-between">
+                  <span>Format:</span>
+                  <span class="text-white font-bold">1-Klik Smeta</span>
+                </div>
+              </div>
+
+              <!-- STEP 5 -->
+              <div onclick="inspectStep(5)" id="stepCard_5" class="step-card p-4 rounded-2xl bg-slate-900/90 border border-emerald-500/40 hover:border-emerald-400 transition cursor-pointer space-y-2.5 backdrop-blur-md">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-950 text-emerald-300 border border-emerald-800">QADAM 5</span>
+                  <div class="h-7 w-7 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                    <i data-lucide="check-check" class="w-4 h-4"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">To'lov & Retayner</h4>
+                  <p class="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Milestone to'lovlari belgilanadi va bitim yopiladi.
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-emerald-400 flex items-center justify-between">
+                  <span>Natija:</span>
+                  <span class="text-emerald-400 font-bold">Closed-Won & MRR</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Real-Time Data Stream Terminal Inspector -->
+          <div class="p-4 rounded-2xl bg-slate-950/90 border border-slate-800/90 font-mono text-xs shadow-2xl">
+            <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-800/80">
+              <div class="flex items-center gap-2 text-slate-400">
+                <span class="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="font-bold text-slate-300 text-[11px] uppercase tracking-wider">ILDAM CRM Jonli Triage & Ma'lumotlar Paketi</span>
+              </div>
+              <span id="inspectorStepTag" class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-bold">
+                QADAM 2: AI SARALASH
+              </span>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+              <div class="sm:col-span-2 text-slate-300 space-y-1 text-[11px] leading-relaxed" id="inspectorContent">
+                <div><span class="text-amber-400">➔ Kiruvchi murojaat:</span> <strong>"Akfa Medline kardiolog qabuliga yozilish"</strong> (Tibbiyot, Toshkent)</div>
+                <div><span class="text-emerald-400">➔ AI Baholash:</span> <em>"Issiq bemor lidi. Qabul vaqti va shifokor narxini so'ramoqda. Ball: 96/100."</em></div>
+                <div><span class="text-amber-400">➔ Shakllangan qaror:</span> Kanbanga joylash ➔ <strong class="text-emerald-300">1-Tap Tasdiqlash Tayyor</strong></div>
+              </div>
+
+              <!-- Speedometer mini badge -->
+              <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-center space-y-1">
+                <span class="text-[10px] text-slate-400 uppercase tracking-wider block">Javob Tezligi:</span>
+                <div class="text-xl font-bold font-mono text-emerald-400" id="inspectorLatency">0.14 soniya</div>
+                <span class="text-[9px] text-slate-500 block">Mahalliy Baza & AI Loop</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="flex items-center justify-between text-xs text-slate-400 font-mono pt-3 border-t border-slate-800/80">
+          <span>Inson xatoligi yo'qoladi: tizim har bir lidni saralaydi, xodim faqat xaridni rasmiylashtiradi.</span>
+          <span class="text-amber-400 font-bold">100% Avtomatlashtirilgan Sikl</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 5: MILESTONE BILLING & CASHFLOW ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_5">
+      <div class="slide-card p-16 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-emerald-400 uppercase">Moliya & To'lovlar Nazorati</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">Bosqichma-bosqich To'lovlar (Milestones) & Oylik Retayner (MRR)</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 text-xs font-mono font-bold">
+            Cashflow Engine
+          </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-2 gap-8 my-auto items-center">
+          
+          <!-- Left: Milestones Card -->
+          <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-5">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+              <span>Aniq Qadamlar va To'lov Bosqichlari</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              B2B loyihalarda mijozlar bir vaqtda 100% to'lamaydi. ILDAM CRM har bir bitim ichida bosqichma-bosqich to'lovlarni nazorat qiladi:
+            </p>
+
+            <div class="space-y-3 font-mono text-xs">
+              <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-slate-400">1-Bosqich:</span> <strong>50% Avans (Boshlanish)</strong>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-bold">TO'LANDI</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-slate-400">2-Bosqich:</span> <strong>30% Test Muhitida Topshirish</strong>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-bold">KUTILMOQDA</span>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-slate-400">3-Bosqich:</span> <strong>20% Yakuniy Qabul Akti</strong>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-bold">REJADA</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-brand-950/40 border border-brand-500/20 text-[11px] text-brand-300">
+              💡 Boshqaruvchi bitta tugma bilan to'lov holatini belgilaydi, qarzdorliklar avtomat hisoblanadi.
+            </div>
+          </div>
+
+          <!-- Right: MRR & Analytics Card -->
+          <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-5">
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <i data-lucide="refresh-cw" class="w-5 h-5 text-indigo-400"></i>
+              <span>Oylik Doimiy Tushum (MRR Retainer)</span>
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Tizimni o'rnatgandan so'ng mijozlar oylik texnik qo'llab-quvvatlash va prompt monitoringi uchun retaynerga o'tishadi:
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-center">
+                <span class="text-slate-400 text-[11px] block">Joriy MRR Tushum:</span>
+                <span class="text-2xl font-black text-emerald-400 font-mono">$3,650 / oy</span>
+                <span class="text-[10px] text-slate-500 block mt-1">8 ta faol mijoz</span>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 text-center">
+                <span class="text-slate-400 text-[11px] block">Pipeline Hajmi:</span>
+                <span class="text-2xl font-black text-brand-400 font-mono">$28,700</span>
+                <span class="text-[10px] text-slate-500 block mt-1">10 ta faol bitim</span>
+              </div>
+            </div>
+
+            <ul class="text-xs text-slate-400 space-y-2 font-mono pt-2 border-t border-slate-800">
+              <li class="flex items-center gap-2">✓ Oylik hisobotlar va eksport (CSV / Excel)</li>
+              <li class="flex items-center gap-2">✓ Shaffof moliyaviy metrikalar lentasi (Ribbon)</li>
+              <li class="flex items-center gap-2">✓ Har bir mijoz bo'yicha Lifetime Value (LTV)</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-xs text-slate-400 font-mono">
+          Moliyaviy nazorat: qaysi mijoz qachon qancha to'lashi kerakligi 100% shaffof bo'ladi.
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 6: B2B LEAD HUNTER DIRECTORY ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_6">
+      <div class="slide-card p-16 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-brand-400 uppercase">Ochiq Korxonalar Reestri</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">B2B Bozor Indeksi: Ochiq Manbalar Asosidagi 1,200+ Korxona Reestri</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 text-xs font-mono font-bold flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            <span>100% Ochiq Manba B2B</span>
+          </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-3 gap-6 my-auto">
+          
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+            <div class="text-brand-400 text-xl font-bold font-mono">400 Ta</div>
+            <h4 class="text-sm font-bold text-white">Xususiy Klinikalar & Shifoxonalar</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Toshkent, Samarqand, Farg'ona bo'yicha yirik klinikalar, stomatologiyalar va diagnostika markazlari.
+            </p>
+            <div class="text-[10px] font-mono text-emerald-400 pt-2 border-t border-slate-800">
+              Tayyor: Akfa Medline, Hayat, Medion, Shox Med
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+            <div class="text-brand-400 text-xl font-bold font-mono">265 Ta</div>
+            <h4 class="text-sm font-bold text-white">O'quv Markazlari & Akademiyalar</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              IT akademiyalar, xorijiy tillar markazlari, kasb-hunar maktablari va xususiy universitetlar.
+            </p>
+            <div class="text-[10px] font-mono text-emerald-400 pt-2 border-t border-slate-800">
+              Tayyor: Najot Ta'lim, Cambridge, PDP, Astrum
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+            <div class="text-brand-400 text-xl font-bold font-mono">275+ Ta</div>
+            <h4 class="text-sm font-bold text-white">B2B Savdo, Avtoservis & Ishlab Chiqarish</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Avtoservislar (160 ta), qurilish mebel (60 ta), e-commerce (44 ta), HoReCa (43 ta) va logistika.
+            </p>
+            <div class="text-[10px] font-mono text-emerald-400 pt-2 border-t border-slate-800">
+              Tayyor: Texnomart, SilkRoad, TransAsia Cargo
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4-Channel Outreach Integration Banner -->
+        <div class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="h-9 w-9 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+              <i data-lucide="share-2" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">4 Kanalli Outreach Integratsiyasi</h5>
+              <p class="text-[11px] text-slate-400">Har bir korxona uchun WhatsApp (wa.me), Telegram DM va 30s sovuq qo'ng'iroq skriptlari 1 klikda generatsiya qilinadi.</p>
+            </div>
+          </div>
+          <span class="text-xs font-mono px-3 py-1 rounded bg-brand-500/10 text-brand-300 border border-brand-500/30">
+            1-Klikda Kanbanga Import
+          </span>
+        </div>
+
+        <!-- Legal Compliance & Opt-Out Note -->
+        <div class="flex items-center justify-between text-[11px] text-slate-400 font-mono px-2 pt-1">
+          <span class="flex items-center gap-1.5 text-emerald-400">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            <span><strong>Qonuniy Asos (O'RQ-547):</strong> Barcha ma'lumotlar yuridik shaxslarning ommaviy ochiq korporativ rekvizitlari asosida jamlangan.</span>
+          </span>
+          <span class="text-slate-400">Axloqiy qoida: har bir xabarda opt-out (rad etish) imkoniyati mavjud</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 7: COMPARISON TABLE (OLD VS NEW) ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_7">
+      <div class="slide-card p-14 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-amber-400 uppercase">Shaffof Solishtiruv</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">Eskirgan Passiv CRM vs. ILDAM All-in-One CRM</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 text-xs font-mono font-bold">
+            ROI & Value Matrix
+          </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="my-auto overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60">
+          <table class="w-full text-left text-xs">
+            <thead>
+              <tr class="border-b border-slate-800 bg-slate-950/80 text-slate-400 font-mono text-[11px]">
+                <th class="p-4">Taqqoslash Mezonlari</th>
+                <th class="p-4 text-rose-400">An'anaviy CRM (Bitrix24, AmoCRM)</th>
+                <th class="p-4 text-amber-400 bg-brand-950/40 border-l border-amber-500/20 font-bold">ILDAM All-in-One (CRM + AI Sotuvchi)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/70 text-slate-300">
+              <tr>
+                <td class="p-3.5 font-bold text-white">1. Oylik Litsenziya To'lovlari</td>
+                <td class="p-3.5 text-slate-400">Har bir xodimga har oy $15-$35 (10 xodim = $250+/oy)</td>
+                <td class="p-3.5 font-bold text-amber-400 bg-brand-950/20 border-l border-amber-500/20">Bir martalik to'lov. Xodimlar soniga cheklov yo'q ($0 obuna).</td>
+              </tr>
+              <tr>
+                <td class="p-3.5 font-bold text-white">2. Kechki Soatlarda Javob Berish</td>
+                <td class="p-3.5 text-slate-400">Javob berilmaydi. Xodimlar uxlaydi, lidlar 14 soat kutadi.</td>
+                <td class="p-3.5 font-bold text-emerald-400 bg-brand-950/20 border-l border-amber-500/20">24/7 Avtomatik AI Sotuvchi: 10 soniyada javob berib, qabulga yozadi.</td>
+              </tr>
+              <tr>
+                <td class="p-3.5 font-bold text-white">3. Ma'lumotlar Maxfiyligi</td>
+                <td class="p-3.5 text-slate-400">Chet el bulutlarida. Aloqa uzilsa ma'lumot xavf ostida.</td>
+                <td class="p-3.5 font-bold text-emerald-400 bg-brand-950/20 border-l border-amber-500/20">100% korxonaning o'z ofis serverida yoki shaxsiy VPS da.</td>
+              </tr>
+              <tr>
+                <td class="p-3.5 font-bold text-white">4. Savdo Menejerlariga Yordam</td>
+                <td class="p-3.5 text-slate-400">Menejerlar taklifnomani Word/Excelda soatlab qo'lda yozadi.</td>
+                <td class="p-3.5 font-bold text-emerald-400 bg-brand-950/20 border-l border-amber-500/20">1-Klikda o'zbek/rus tilida to'liq smeta, taklif va e'tiroz yopish.</td>
+              </tr>
+              <tr>
+                <td class="p-3.5 font-bold text-white">5. O'rnatish & Ishga Tushirish</td>
+                <td class="p-3.5 text-slate-400">1-3 oy cho'ziladi, xodimlar tushunmaydi va voz kechadi.</td>
+                <td class="p-3.5 font-bold text-emerald-400 bg-brand-950/20 border-l border-amber-500/20">1 haftalik sprintda o'rnatiladi va to'liq topshiriladi.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-xs text-slate-400 font-mono">
+          ILDAM CRM korxonangizga darhol operatsion foyda va tezlik olib keladi.
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 8: REAL B2B CASE STUDIES ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_8">
+      <div class="slide-card p-16 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-emerald-400 uppercase">Amaliy Natijalar</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">O'zbekiston B2B Korxonalari Tajribasi</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800/50 text-xs font-mono font-bold">
+            Real Operational Impact
+          </div>
+        </div>
+
+        <!-- 3 Case Cards -->
+        <div class="grid grid-cols-3 gap-6 my-auto">
+          
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-300">MedPro24 Network</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">Tibbiyot</span>
+            </div>
+            <h4 class="text-sm font-bold text-white">Clinic AI Intake & Triage System</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Klinika qabulxonasida kechki soat 19:00 dan keyingi murojaatlar 100% qamrab olindi. Bemorlar Telegram orqali 10 soniyada navbat olmoqda.
+            </p>
+            <div class="pt-2 border-t border-slate-800 text-xs font-mono text-emerald-400">
+              ✓ Bemorlar qabuli: +34% o'sish
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-300">SilkRoad Fashion Retail</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400">Savdo</span>
+            </div>
+            <h4 class="text-sm font-bold text-white">Sotuvchi AI Multi-Agent Sales Hub</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Instagram Direct va Telegram orqali kelayotgan yuzlab so'rovlar saralanib, Kanbandagi bitimlarga aylantirildi. Operatorlar yuki 70% ga qisqardi.
+            </p>
+            <div class="pt-2 border-t border-slate-800 text-xs font-mono text-indigo-400">
+              ✓ Konversiya: 2.3 barobar oshdi
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-300">EduFlow / BilimOS</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-400">Ta'lim</span>
+            </div>
+            <h4 class="text-sm font-bold text-white">AI Grading & Retainer SLA</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              O'quvchilar arizalari va ota-onalar bilan muloqot avtomatlashtirildi. Oyiga $1,200 lik barqaror monitoring va yangilanish SLA retayneri joriy etildi.
+            </p>
+            <div class="pt-2 border-t border-slate-800 text-xs font-mono text-purple-400">
+              ✓ Retayner barqarorligi: 100%
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-xs text-slate-400 font-mono">
+          Barcha tizimlar amaliyotda sinovdan o'tgan va darhol korxonangizga tatbiq etishga tayyor.
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SLIDE 9: PRICING PACKAGES & 7-DAY DELIVERY ==================== -->
+    <section class="slide-viewport slide-page hidden" id="slide_9">
+      <div class="slide-card p-14 flex flex-col justify-between">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold tracking-wider text-brand-400 uppercase">Tijorat Taklifi & Integratsiya</span>
+            <h2 class="text-3xl font-extrabold text-white mt-1">3 Ta Moslashuvchan Paket va 7 Kunda Ishga Tushirish</h2>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-brand-950/60 text-brand-400 border border-brand-800/50 text-xs font-mono font-bold">
+            Turnkey Deployment
+          </div>
+        </div>
+
+        <!-- 3 Packages Cards -->
+        <div class="grid grid-cols-3 gap-6 my-auto">
+          
+          <!-- Starter -->
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-4">
+            <div>
+              <span class="text-[11px] font-mono font-bold text-slate-400 uppercase">YaTT & Kichik Savdo</span>
+              <h3 class="text-base font-bold text-white mt-1">Starter AI CRM</h3>
+              <div class="text-2xl font-black text-white font-mono my-2">$99 <span class="text-xs text-slate-400 font-normal">/ oy</span></div>
+              <span class="text-[10px] text-brand-300 font-mono block mb-3">+ $450 bir martalik o'rnatish</span>
+              <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                <li>✓ Zamonaviy Kanban CRM Ish Stoli</li>
+                <li>✓ 24/7 Telegram AI Sotuvchi Bot</li>
+                <li>✓ Cheksiz xodimlar akkauntlari</li>
+                <li>✓ Xodimlar uchun 1 kunlik instruktaj</li>
+              </ul>
+            </div>
+            <div class="text-[10px] text-slate-400 font-mono text-center pt-2 border-t border-slate-800">
+              O'rnatish muddati: 3–4 kun
+            </div>
+          </div>
+
+          <!-- Growth (Featured) -->
+          <div class="p-6 rounded-2xl bg-amber-950/20 border-2 border-amber-500 flex flex-col justify-between space-y-4 shadow-xl shadow-amber-500/20 relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-amber-500 text-[10px] font-black text-white shadow-md shadow-amber-500/30">
+              ENG OMMABOP
+            </div>
+            <div>
+              <span class="text-[11px] font-mono font-bold text-amber-300 uppercase">B2B Korxona & Klinikalar</span>
+              <h3 class="text-base font-bold text-white mt-1">Growth Engine</h3>
+              <div class="text-2xl font-black text-emerald-400 font-mono my-2">$250 <span class="text-xs text-slate-400 font-normal">/ oy</span></div>
+              <span class="text-[10px] text-emerald-300 font-mono block mb-3">+ $950 bir martalik o'rnatish</span>
+              <ul class="text-xs text-slate-200 space-y-2 font-mono">
+                <li>✓ <strong>Starter</strong> ning barcha imkoniyatlari</li>
+                <li>✓ Instagram Direct + Telegram AI Triage</li>
+                <li>✓ AI Copilot (Smeta & E'tiroz yopish)</li>
+                <li>✓ 1,200+ B2B Korxona Bazasi & Outreach</li>
+                <li>✓ Server, AI tokenlar & Doimiy SLA</li>
+              </ul>
+            </div>
+            <div class="text-[10px] text-amber-300 font-mono text-center pt-2 border-t border-amber-800/60">
+              O'rnatish muddati: 5–7 kun
+            </div>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-4">
+            <div>
+              <span class="text-[11px] font-mono font-bold text-slate-400 uppercase">Yirik Distribyutor & Ishlab Chiqarish</span>
+              <h3 class="text-base font-bold text-white mt-1">Enterprise Fleet</h3>
+              <div class="text-2xl font-black text-white font-mono my-2">$500+ <span class="text-xs text-slate-400 font-normal">/ oy</span></div>
+              <span class="text-[10px] text-teal-300 font-mono block mb-3">+ Maxsus integratsiya</span>
+              <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                <li>✓ <strong>Growth</strong> ning to'liq funksionali</li>
+                <li>✓ 1C / Maxsus ERP integratsiyasi</li>
+                <li>✓ Ovozli buyruqlar moduli</li>
+                <li>✓ Custom LLM (narxlar va katalog)</li>
+                <li>✓ 24/7 Shaxsiy muhandis & SLA</li>
+              </ul>
+            </div>
+            <div class="text-[10px] text-slate-400 font-mono text-center pt-2 border-t border-slate-800">
+              O'rnatish muddati: 10–14 kun
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 7-Day Sprint Guarantee Banner -->
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between text-xs">
+          <div class="flex items-center gap-2 text-slate-300">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+            <span><strong>Kafolatlangan Shartlar:</strong> 50% avans (boshlanishida), 50% tizim to'liq topshirilib, qabul qilish akti imzolanganda.</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="/" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold border border-amber-500/30 transition flex items-center gap-1.5">
+              <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+              <span>Lending Sahifa</span>
+            </a>
+            <a href="https://t.me/GPTifyUzAdminbot?start=ildam_deck" target="_blank" rel="noopener" class="px-4 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-600 text-white font-black transition flex items-center gap-1.5 shadow-md shadow-sky-500/25">
+              <span>Bog'lanish (@GPTifyUzAdminbot) ➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Presentation Script: Controls, Animations, Keybindings -->
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 9;
+    let simActive = true;
+    let simInterval = null;
+    let activeStepIdx = 2;
+
+    const stepDetails = {
+      1: {
+        tag: "QADAM 1: KIRUVCHI MUROJAAT (TELEGRAM / INSTAGRAM)",
+        content: `<div><span class="text-blue-400">➔ Murojaat manbasi:</span> <strong>Telegram Bot (@KlinikaBot)</strong> yoki Instagram Direct</div>
+                  <div><span class="text-slate-300">➔ Xabar matni:</span> <em>"Assalomu alaykum, ertaga kardiolog qabuliga yozilsam bo'ladimi?"</em></div>
+                  <div><span class="text-amber-400">➔ Holat:</span> <strong>Tizimga qabul qilindi</strong> | Kechikish: <strong class="text-emerald-300">0.05 soniya</strong></div>`,
+        latency: "0.05 soniya"
+      },
+      2: {
+        tag: "QADAM 2: AI MALAKALASH VA SARALASH",
+        content: `<div><span class="text-indigo-400">➔ AI Tahlili:</span> <strong>Tibbiyot / Kardiologiya</strong> (Shifokor qabuliga navbat)</div>
+                  <div><span class="text-emerald-400">➔ Sifat Bahosi:</span> <em>"Issiq bemor lidi. Qabul vaqtini so'ramoqda. Ball: 96/100."</em></div>
+                  <div><span class="text-amber-400">➔ Qaror:</span> Bosqich: <strong class="text-white">Inquiry ➔ Audit Scheduled</strong> | Javob tayyorlandi</div>`,
+        latency: "0.14 soniya"
+      },
+      3: {
+        tag: "QADAM 3: CRM KANBANGA TUSHISH",
+        content: `<div><span class="text-purple-400">➔ CRM Karta:</span> <strong>"MedPro24 • Tibbiyot AI Implementatsiya"</strong></div>
+                  <div><span class="text-slate-300">➔ Ma'lumotlar:</span> Telefon, ism, xabar tarixi va AI xulosasi saqlandi.</div>
+                  <div><span class="text-emerald-400">➔ Sinxronizatsiya:</span> <strong>SQLite Bazaga yozildi</strong> | Xodim bildirishnoma oldi</div>`,
+        latency: "0.08 soniya"
+      },
+      4: {
+        tag: "QADAM 4: 1-TAP TAKLIFNOMA VA SMETA",
+        content: `<div><span class="text-amber-400">➔ AI Copilot:</span> <strong>O'zbek tilida 3 bosqichli loyiha smetasi</strong> tuzildi.</div>
+                  <div><span class="text-slate-300">➔ Narx & Shartlar:</span> 50% avans, 50% qabul qilish aktida.</div>
+                  <div><span class="text-emerald-400">➔ Menejer harakati:</span> <strong>1-Klikda WhatsApp/Telegramda yuborish</strong></div>`,
+        latency: "0.18 soniya"
+      },
+      5: {
+        tag: "QADAM 5: TO'LOV VA MILESTONE YOPILISHI",
+        content: `<div><span class="text-emerald-400">➔ Bitim Bosqichi:</span> <strong>Closed-Won (G'alaba)</strong></div>
+                  <div><span class="text-slate-300">➔ Moliyaviy oqim:</span> 50% avans to'landi, akt tasdiqlandi.</div>
+                  <div><span class="text-indigo-400">➔ Keyingi qadam:</span> <strong>Oylik Retayner ($300/oy) monitoringga o'tkazildi</strong></div>`,
+        latency: "0.11 soniya"
+      }
+    };
+
+    function inspectStep(stepNum) {
+      activeStepIdx = stepNum;
+      for (let i = 1; i <= 5; i++) {
+        const c = document.getElementById(`stepCard_${i}`);
+        if (c) {
+          if (i === stepNum) {
+            c.classList.add("active-step");
+          } else {
+            c.classList.remove("active-step");
+          }
+        }
+      }
+
+      const info = stepDetails[stepNum];
+      if (info) {
+        const tag = document.getElementById("inspectorStepTag");
+        const content = document.getElementById("inspectorContent");
+        const latency = document.getElementById("inspectorLatency");
+        if (tag) tag.innerText = info.tag;
+        if (content) content.innerHTML = info.content;
+        if (latency) latency.innerText = info.latency;
+      }
+    }
+
+    function runSimulationCycle() {
+      activeStepIdx++;
+      if (activeStepIdx > 5) activeStepIdx = 1;
+      inspectStep(activeStepIdx);
+
+      const traveler = document.getElementById("travelerLabel");
+      const leads = [
+        "Yangi Murojaat: MedPro24 (96 ball)",
+        "O'quvchi Lidi: Najot Ta'lim (94 ball)",
+        "Avtoservis Bron: AutoPro24 (92 ball)",
+        "B2B So'rov: SilkRoad Retail (90 ball)"
+      ];
+      if (traveler) {
+        traveler.innerText = leads[activeStepIdx % leads.length];
+      }
+    }
+
+    function toggleAgentSimulation() {
+      simActive = !simActive;
+      const btnText = document.getElementById("simBtnText");
+      const icon = document.getElementById("simIcon");
+      if (simActive) {
+        if (btnText) btnText.innerText = "Simulyatsiya: Faol";
+        if (icon) icon.setAttribute("data-lucide", "pause");
+        simInterval = setInterval(runSimulationCycle, 3500);
+      } else {
+        if (btnText) btnText.innerText = "Simulyatsiya: To'xtatildi";
+        if (icon) icon.setAttribute("data-lucide", "play");
+        clearInterval(simInterval);
+      }
+      lucide.createIcons();
+    }
+
+    // Start simulation automatically
+    simInterval = setInterval(runSimulationCycle, 3500);
+
+    function showSlide(index) {
+      if (index < 1) index = 1;
+      if (index > totalSlides) index = totalSlides;
+      currentSlide = index;
+
+      for (let i = 1; i <= totalSlides; i++) {
+        const slide = document.getElementById(`slide_${i}`);
+        if (slide) {
+          if (i === currentSlide) {
+            slide.classList.remove("hidden");
+          } else {
+            slide.classList.add("hidden");
+          }
+        }
+      }
+
+      document.getElementById("slideIndicator").textContent = 
+        `${String(currentSlide).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+      
+      lucide.createIcons();
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        showSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        showSlide(currentSlide - 1);
+      }
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        }
+      }
+    }
+
+    // Keyboard listener for video recording and presenting
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
+        e.preventDefault();
+        prevSlide();
+      } else if (e.key === "f" || e.key === "F") {
+        toggleFullscreen();
+      } else if (e.key === "Home") {
+        showSlide(1);
+      } else if (e.key === "End") {
+        showSlide(totalSlides);
+      }
+    });
+
+    // Support print mode (make all slides visible during window.print())
+    window.addEventListener("beforeprint", () => {
+      document.body.classList.add("print-all-slides");
+      for (let i = 1; i <= totalSlides; i++) {
+        const s = document.getElementById(`slide_${i}`);
+        if (s) s.classList.remove("hidden");
+      }
+    });
+
+    window.addEventListener("afterprint", () => {
+      document.body.classList.remove("print-all-slides");
+      showSlide(currentSlide);
+    });
+
+    // Initialize Lucide icons and Slide 1
+    showSlide(1);
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPro²⁴ · n8n Ish Oqimi Animatsiyasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .workflow-frame {
+      width: 1040px;
+      height: 600px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.18), 0 0 0 1px rgba(226, 232, 240, 0.8);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* n8n Top Navigation Bar */
+    .n8n-header {
+      height: 48px;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      z-index: 40;
+    }
+
+    /* Dotted canvas background like n8n editor */
+    .canvas-viewport {
+      flex: 1;
+      position: relative;
+      background-color: #ffffff;
+      background-image: radial-gradient(circle, #cbd5e1 1.25px, transparent 1.25px);
+      background-size: 24px 24px;
+      overflow: hidden;
+    }
+
+    /* Node styles */
+    .node-card {
+      background: #ffffff;
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
+      transition: all 0.2s ease;
+    }
+
+    /* Animated dashed SVG connectors */
+    .animated-dash {
+      stroke-dasharray: 6 5;
+      animation: dashFlow 1.2s linear infinite;
+    }
+    @keyframes dashFlow {
+      from { stroke-dashoffset: 22; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Glowing pulse dot traveling on paths */
+    .pulse-glow-green {
+      filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.85));
+    }
+    .pulse-glow-purple {
+      filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.9));
+    }
+    .pulse-glow-cyan {
+      filter: drop-shadow(0 0 6px rgba(14, 165, 233, 0.9));
+    }
+
+    /* Sub-node circular icons */
+    .circle-node {
+      width: 74px;
+      height: 74px;
+      border-radius: 9999px;
+      background: #ffffff;
+      border: 2px solid #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 8px 18px rgba(16, 185, 129, 0.16), 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .badge-check {
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffffff;
+      border: 1.5px solid #10b981;
+      border-radius: 9999px;
+      padding: 0 6px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #059669;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      height: 18px;
+      white-space: nowrap;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .port-circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 9999px;
+      background: #64748b;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 1px #cbd5e1;
+    }
+    .port-diamond {
+      width: 11px;
+      height: 11px;
+      background: #6366f1;
+      transform: rotate(45deg);
+      border: 1.5px solid #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Traveling data packet particles */
+    .travel-dot-1 {
+      offset-path: path("M 170 95 L 310 95");
+      animation: travel1 2.4s linear infinite;
+    }
+    @keyframes travel1 {
+      0% { offset-distance: 0%; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    .travel-dot-2 {
+      offset-path: path("M 680 95 L 815 95");
+      animation: travel2 2.4s linear infinite 1.2s;
+    }
+    @keyframes travel2 {
+      0% { offset-distance: 0%; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    .travel-dot-sub1 {
+      offset-path: path("M 400 155 C 400 240, 275 250, 275 325");
+      animation: travelSub 2.4s ease-in-out infinite 0.3s;
+    }
+    .travel-dot-sub2 {
+      offset-path: path("M 500 155 C 500 240, 495 250, 495 325");
+      animation: travelSub 2.4s ease-in-out infinite 0.7s;
+    }
+    .travel-dot-sub3 {
+      offset-path: path("M 600 155 C 600 240, 715 250, 715 325");
+      animation: travelSub 2.4s ease-in-out infinite 1.1s;
+    }
+    @keyframes travelSub {
+      0% { offset-distance: 0%; opacity: 0; }
+      18% { opacity: 1; }
+      82% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    /* Status ping dot */
+    @keyframes pulseRing {
+      0% { transform: scale(0.9); opacity: 1; }
+      70% { transform: scale(1.6); opacity: 0; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+    .ping-indicator {
+      position: relative;
+    }
+    .ping-indicator::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background: #10b981;
+      animation: pulseRing 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="workflow-frame" id="workflowCanvas">
+    
+    <!-- ==================== N8N HEADER BAR ==================== -->
+    <header class="n8n-header">
+      <div class="flex items-center gap-3">
+        <!-- n8n brand badge -->
+        <div class="w-7 h-7 rounded-lg bg-[#ea4b71] flex items-center justify-center text-white text-xs font-black shadow-sm">
+          <i class="fa-solid fa-code-fork"></i>
+        </div>
+        
+        <div class="flex items-center gap-2">
+          <span class="font-extrabold text-slate-900 text-sm tracking-tight">AutoPro²⁴</span>
+          <span class="text-slate-400 text-xs">/</span>
+          <span class="font-semibold text-slate-700 text-xs">Telegram Lead Bot &amp; Follow-up Agent</span>
+        </div>
+
+        <div class="flex items-center gap-1.5 ml-2 px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 ping-indicator"></span>
+          <span class="text-[11px] font-bold text-emerald-700 font-mono">Active</span>
+        </div>
+        
+        <span class="text-[10px] font-mono text-slate-400 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 ml-1">v2.4 Production</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1.5 text-xs text-slate-500 font-mono">
+          <i class="fa-solid fa-circle-check text-emerald-500"></i>
+          <span>Muvaffaqiyatli ijro: 220ms</span>
+        </div>
+        <div class="h-4 w-px bg-slate-200"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono text-slate-500 bg-slate-100 px-2 py-1 rounded">100%</span>
+          <button class="bg-[#ea4b71] text-white text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-sm shadow-rose-500/20">
+            <i class="fa-solid fa-play text-[10px]"></i> Test Step
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== CANVAS VIEWPORT ==================== -->
+    <div class="canvas-viewport">
+
+      <!-- ==================== SVG CONNECTOR WIRES ==================== -->
+      <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 1040 552">
+        <defs>
+          <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#818cf8" />
+            <stop offset="100%" stop-color="#6366f1" />
+          </linearGradient>
+          <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#10b981" />
+            <stop offset="100%" stop-color="#059669" />
+          </linearGradient>
+        </defs>
+
+        <!-- 1. Telegram Webhook to AI Agent Main Line -->
+        <line x1="165" y1="95" x2="310" y2="95" stroke="#6366f1" stroke-width="2.5" />
+
+        <!-- 2. AI Agent to CRM Deals Main Line -->
+        <line x1="680" y1="95" x2="815" y2="95" stroke="#10b981" stroke-width="2.5" />
+
+        <!-- 3. AI Agent Output to Sub-node 1 (GPT-4o / Claude 3.5) -->
+        <path d="M 400 155 C 400 240, 275 250, 275 325" fill="none" stroke="#10b981" stroke-width="2" class="animated-dash" />
+
+        <!-- 4. AI Agent Output to Sub-node 2 (SQLite 1,300+ / Sheets) -->
+        <path d="M 500 155 C 500 240, 495 250, 495 325" fill="none" stroke="#10b981" stroke-width="2" class="animated-dash" />
+
+        <!-- 5. AI Agent Output to Sub-node 3 (Telegram / WhatsApp / SMS) -->
+        <path d="M 600 155 C 600 240, 715 250, 715 325" fill="none" stroke="#10b981" stroke-width="2" class="animated-dash" />
+
+        <!-- Moving Glowing Particles traveling along paths -->
+        <circle cx="0" cy="0" r="5" fill="#6366f1" class="travel-dot-1 pulse-glow-purple" />
+        <circle cx="0" cy="0" r="5" fill="#10b981" class="travel-dot-2 pulse-glow-green" />
+        <circle cx="0" cy="0" r="4.5" fill="#8b5cf6" class="travel-dot-sub1 pulse-glow-purple" />
+        <circle cx="0" cy="0" r="4.5" fill="#0284c7" class="travel-dot-sub2 pulse-glow-cyan" />
+        <circle cx="0" cy="0" r="4.5" fill="#10b981" class="travel-dot-sub3 pulse-glow-green" />
+      </svg>
+
+
+      <!-- ==================== 1. KIRISH BLOKI (TELEGRAM WEBHOOK) ==================== -->
+      <div class="absolute left-[35px] top-[40px] z-20 flex flex-col items-center">
+        <div class="node-card w-[130px] h-[110px] rounded-[22px] border-2 border-indigo-200 relative flex flex-col items-center justify-center p-3 bg-white hover:border-indigo-400">
+          
+          <!-- Telegram / Webhook Logo Icon -->
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#229ED9] to-[#38bdf8] flex items-center justify-center text-white text-2xl shadow-md shadow-sky-500/20">
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+
+          <!-- Pin icon at bottom right -->
+          <div class="absolute bottom-2 right-2 text-indigo-400 text-xs">
+            <i class="fa-solid fa-thumbtack"></i>
+          </div>
+
+          <!-- Right Outgoing Port -->
+          <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 port-circle bg-slate-500"></div>
+        </div>
+        <span class="mt-2.5 font-black text-slate-800 text-xs">Telegram Webhook</span>
+        <span class="text-[10px] text-slate-400 font-mono">Inbound Chat Trigger</span>
+      </div>
+
+      <!-- Line 1 Label: POST & 1 ta so'rov -->
+      <div class="absolute left-[185px] top-[68px] z-30 flex flex-col items-center">
+        <span class="text-[11px] font-mono font-bold text-slate-700 bg-white/95 px-2 py-0.5 rounded shadow-sm border border-slate-200">1 ta so'rov</span>
+        <span class="text-[10px] font-mono font-extrabold text-indigo-600 mt-0.5">POST</span>
+      </div>
+
+
+      <!-- ==================== 2. MARKAZIY AI AGENT BLOKI ==================== -->
+      <div class="absolute left-[310px] top-[32px] z-20">
+        <div class="node-card w-[370px] h-[126px] rounded-[22px] border-2 border-emerald-500 relative bg-white px-5 py-3.5 flex flex-col justify-between shadow-xl shadow-emerald-500/10">
+          
+          <!-- Left Incoming Port -->
+          <div class="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-indigo-600 rounded-sm shadow-sm"></div>
+
+          <!-- Card Header & Content -->
+          <div class="flex items-center gap-3.5">
+            <div class="w-13 h-13 p-3 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 text-2xl shadow-sm">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 class="text-base font-black text-slate-900 tracking-tight leading-tight">GPTify Classifier &amp; Agent</h3>
+                <span class="w-2 h-2 rounded-full bg-emerald-500 ping-indicator"></span>
+              </div>
+              <span class="text-[11px] font-mono text-emerald-600 font-bold block mt-0.5">AutoPro²⁴ Markaziy Dvigateli</span>
+              <span class="text-[10px] text-slate-400 font-mono block">Intents, Follow-up &amp; Avto-saralash</span>
+            </div>
+          </div>
+
+          <!-- Bottom Status Checkmark -->
+          <div class="absolute bottom-3 right-4 flex items-center gap-1 text-emerald-600 text-xs font-bold font-mono bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>200 OK</span>
+          </div>
+
+          <!-- Right Outgoing Port -->
+          <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 port-circle bg-emerald-600"></div>
+
+          <!-- Bottom Connection Diamond Ports -->
+          <div class="absolute -bottom-1.5 left-[88px] port-diamond"></div>
+          <div class="absolute -bottom-1.5 left-[188px] port-diamond"></div>
+          <div class="absolute -bottom-1.5 left-[288px] port-diamond"></div>
+        </div>
+
+        <!-- Bottom Port Labels in Uzbek -->
+        <div class="relative w-[370px] mt-1.5 text-[10px] font-mono text-indigo-600 font-bold flex justify-between px-6">
+          <span class="w-20 text-center">AI Modeli</span>
+          <span class="w-24 text-center">Baza &amp; Katalog</span>
+          <span class="w-24 text-center">Aloqa Kanallari</span>
+        </div>
+      </div>
+
+
+      <!-- Line 2 Label: 1 ta bitim / buyurtma -->
+      <div class="absolute left-[700px] top-[68px] z-30 flex flex-col items-center">
+        <span class="text-[11px] font-mono font-bold text-slate-700 bg-white/95 px-2 py-0.5 rounded shadow-sm border border-slate-200">1 ta bitim</span>
+        <span class="text-[10px] font-mono font-extrabold text-emerald-600 mt-0.5">SUCCESS</span>
+      </div>
+
+
+      <!-- ==================== 3. CHIQISH BLOKI (CRM DEALS & KASSA) ==================== -->
+      <div class="absolute left-[815px] top-[40px] z-20 flex flex-col items-center">
+        <div class="node-card w-[135px] h-[110px] rounded-[22px] border-2 border-slate-300 relative flex flex-col items-center justify-center p-3 bg-white hover:border-slate-400">
+          
+          <!-- Left Incoming Port -->
+          <div class="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-emerald-600 rounded-sm shadow-sm"></div>
+
+          <!-- CRM / Kassa Icon -->
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white text-2xl shadow-md shadow-blue-500/20">
+            <i class="fa-solid fa-cash-register"></i>
+          </div>
+
+          <!-- Right Outgoing Port -->
+          <div class="absolute -right-1.5 top-1/2 -translate-y-1/2 port-circle bg-slate-400"></div>
+
+          <!-- Small Add (+) Node at the right -->
+          <div class="absolute -right-9 top-1/2 -translate-y-1/2 w-6 h-6 rounded-md border border-slate-300 bg-white text-slate-500 flex items-center justify-center text-xs shadow-sm">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <span class="mt-2.5 font-black text-slate-800 text-xs">CRM Deals &amp; Kassa</span>
+        <span class="text-[10px] text-slate-400 font-mono">Google Sheets &amp; POS</span>
+      </div>
+
+
+      <!-- ==================== 4. OSTKI YORDAMCHI MODULLAR ==================== -->
+
+      <!-- Sub-node 1: Model: GPT-4o / Claude 3.5 -->
+      <div class="absolute left-[225px] top-[325px] z-20 flex flex-col items-center">
+        <div class="circle-node border-purple-500 shadow-purple-500/10">
+          <div class="absolute -top-1.5 port-diamond bg-purple-600"></div>
+          <div class="w-11 h-11 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 text-2xl">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="badge-check border-purple-500 text-purple-700">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>GPT-4o</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-slate-800 text-xs">GPT-4o / Claude 3.5</span>
+        <span class="text-[10px] text-slate-400 font-mono">Intent &amp; Tahlil Modeli</span>
+      </div>
+
+      <!-- Sub-node 2: Baza: SQLite 1,300+ / Google Sheets -->
+      <div class="absolute left-[445px] top-[325px] z-20 flex flex-col items-center">
+        <div class="circle-node border-sky-500 shadow-sky-500/10">
+          <div class="absolute -top-1.5 port-diamond bg-sky-600"></div>
+          <div class="w-11 h-11 rounded-full bg-sky-50 flex items-center justify-center text-sky-600 text-2xl">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="badge-check border-sky-500 text-sky-700">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>1,300+</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-slate-800 text-xs">SQLite &amp; Google Sheets</span>
+        <span class="text-[10px] text-slate-400 font-mono">Katalog &amp; Mijozlar Bazasi</span>
+      </div>
+
+      <!-- Sub-node 3: Kanal: Telegram / WhatsApp / SMS -->
+      <div class="absolute left-[665px] top-[325px] z-20 flex flex-col items-center">
+        <div class="circle-node border-emerald-500 shadow-emerald-500/10">
+          <div class="absolute -top-1.5 port-diamond bg-emerald-600"></div>
+          <div class="w-11 h-11 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 text-2xl">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          <div class="badge-check border-emerald-500 text-emerald-700">
+            <i class="fa-solid fa-check text-[9px]"></i>
+            <span>Omnichannel</span>
+          </div>
+        </div>
+        <span class="mt-2.5 font-black text-slate-800 text-xs">Telegram / WhatsApp / SMS</span>
+        <span class="text-[10px] text-slate-400 font-mono">Avto-javob &amp; Bildirishnoma</span>
+      </div>
+
+      <!-- Stream Flow Indicators along the paths -->
+      <div class="absolute left-[310px] top-[245px] z-30 text-[10px] font-mono font-semibold text-slate-600 bg-white/95 px-2 py-0.5 rounded shadow-sm border border-slate-200">
+        3 ta tahlil
+      </div>
+      <div class="absolute left-[475px] top-[245px] z-30 text-[10px] font-mono font-semibold text-slate-600 bg-white/95 px-2 py-0.5 rounded shadow-sm border border-slate-200">
+        1 ta qidiruv
+      </div>
+      <div class="absolute left-[635px] top-[245px] z-30 text-[10px] font-mono font-semibold text-slate-600 bg-white/95 px-2 py-0.5 rounded shadow-sm border border-slate-200">
+        1 ta xabar
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

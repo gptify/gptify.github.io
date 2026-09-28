@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARVIS & GPTify // Agentik Animatsiyalar Ko'rgazmasi (7 ta Uslub)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #040711;
+      color: #f8fafc;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .font-orbitron { font-family: 'Orbitron', sans-serif; }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #080d1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+
+    /* Active Tab Glow */
+    .tab-active {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(99, 102, 241, 0.2)) !important;
+      border-color: #38bdf8 !important;
+      color: #38bdf8 !important;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+    }
+
+    /* Glows */
+    .glow-cyan { filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.6)); }
+    .glow-purple { filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.6)); }
+    .glow-emerald { filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.6)); }
+    .glow-rose { filter: drop-shadow(0 0 10px rgba(244, 63, 94, 0.6)); }
+
+    /* Canvas Frame */
+    .viewport-box {
+      width: 100%;
+      height: 580px;
+      border-radius: 20px;
+      background: #090e1a;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), inset 0 0 30px rgba(56, 189, 248, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated dash line */
+    .animated-dash {
+      stroke-dasharray: 6 5;
+      animation: dashFlow 1.2s linear infinite;
+    }
+    @keyframes dashFlow {
+      from { stroke-dashoffset: 22; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Status ping */
+    @keyframes pingSlow {
+      0% { transform: scale(0.9); opacity: 1; }
+      75% { transform: scale(1.6); opacity: 0; }
+      100% { transform: scale(0.9); opacity: 0; }
+    }
+    .ping-circle {
+      animation: pingSlow 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-6 lg:p-8">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between pb-6 border-b border-slate-800/80 gap-4">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-400 text-sm">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <h1 class="text-xl md:text-2xl font-black tracking-tight text-white">
+          JARVIS // Multi-Agent Animatsiya Uslublari
+        </h1>
+        <span class="px-2 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300 text-[10px] font-mono font-bold">
+          7 TA USLUB
+        </span>
+      </div>
+      <p class="text-xs text-slate-400 mt-1 font-mono">
+        Shukhrat Iskandarov | GPTify.co &amp; JARVIS Autonomous Multi-Agent Systems
+      </p>
+    </div>
+
+    <!-- Navigation / Auto-tour buttons -->
+    <div class="flex items-center gap-3">
+      <button id="btnAutoPlay" onclick="toggleAutoTour()" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-mono text-slate-300 flex items-center gap-2 transition">
+        <i class="fa-solid fa-play text-cyan-400" id="playIcon"></i>
+        <span id="playText">Avto-Tur (Ko'rgazma)</span>
+      </button>
+      <a href="Jarvis_Agentic_Fleet_Workflow.gif" target="_blank" class="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-xs font-bold font-mono flex items-center gap-1.5 shadow-md shadow-cyan-500/20">
+        <i class="fa-solid fa-download"></i> GIF Ochish
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== STYLE TABS NAV ==================== -->
+  <nav class="max-w-7xl mx-auto my-6 overflow-x-auto pb-2">
+    <div class="flex items-center gap-2 min-w-max">
+      <button onclick="switchStyle(1)" id="tab1" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2 tab-active">
+        <span>🌌 1. 3D Hologram (JARVIS)</span>
+      </button>
+      <button onclick="switchStyle(2)" id="tab2" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2">
+        <span>⚡ 2. Ketma-ket Pipeline (Sequential)</span>
+      </button>
+      <button onclick="switchStyle(3)" id="tab3" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2">
+        <span>🍱 3. Linear Dark Bento Grid</span>
+      </button>
+      <button onclick="switchStyle(4)" id="tab4" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2">
+        <span>📱 4. Split-Screen (Chat + Agent)</span>
+      </button>
+      <button onclick="switchStyle(5)" id="tab5" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2">
+        <span>🏗️ 5. Izometrik 3D Stack</span>
+      </button>
+      <button onclick="switchStyle(6)" id="tab6" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2">
+        <span>💻 6. Cyber-Terminal CLI</span>
+      </button>
+      <button onclick="switchStyle(7)" id="tab7" class="tab-btn px-4 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-mono font-bold text-slate-400 hover:text-white hover:border-slate-700 transition flex items-center gap-2">
+        <span>🕸️ 7. LangGraph Neural Mesh</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN VIEWPORT STAGE ==================== -->
+  <main class="max-w-7xl mx-auto">
+    
+    <!-- Meta Info Bar for Current Style -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-slate-900/60 border border-slate-800/80 rounded-2xl px-5 py-3.5 mb-4 gap-3">
+      <div>
+        <span class="text-[10px] font-mono uppercase tracking-wider text-cyan-400 font-bold" id="styleCategory">KONSEPT VA ESTETIKA</span>
+        <h2 class="text-base font-extrabold text-white mt-0.5" id="styleTitle">1. 3D Kiber-HUD / JARVIS Hologram Konstellatsiyasi</h2>
+      </div>
+      <div class="flex items-center gap-2 flex-wrap">
+        <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-[11px] font-mono text-slate-300 border border-slate-700" id="styleBestFor">
+          🎯 Eng mos: Veb-sayt bosh sahifasi &amp; Invest-deck
+        </span>
+        <span class="px-2.5 py-1 rounded-lg bg-cyan-950/60 text-[11px] font-mono text-cyan-300 border border-cyan-500/30" id="styleTech">
+          ⚙️ Texnologiya: WebGL / Three.js
+        </span>
+      </div>
+    </div>
+
+    <!-- Container where 7 styles switch -->
+    <div class="viewport-box" id="viewportStage">
+
+      <!-- ======================================================== -->
+      <!-- STYLE 1: 3D SCI-FI HOLOGRAM CONSTELLATION (THREE.JS)     -->
+      <!-- ======================================================== -->
+      <div id="viewStyle1" class="style-view w-full h-full relative">
+        <div id="threeContainer" class="w-full h-full absolute inset-0"></div>
+        
+        <!-- HUD Overlay -->
+        <div class="absolute top-4 left-5 pointer-events-none z-10 flex items-center gap-3">
+          <div class="px-3 py-1 rounded-lg bg-slate-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-bold flex items-center gap-2 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 ping-circle"></span>
+            <span>JARVIS CORE // 3D GALAXY</span>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-slate-300 text-xs font-mono backdrop-blur-md">
+            MRR: <b class="text-cyan-400">$1,180/oy</b>
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-slate-300 text-xs font-mono backdrop-blur-md">
+            NODES: <b class="text-emerald-400">5 ONLINE</b>
+          </div>
+        </div>
+
+        <div class="absolute bottom-4 left-5 pointer-events-none z-10 text-[11px] font-mono text-slate-400 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-slate-800 backdrop-blur-md">
+          💡 Sichqoncha bilan aylantirishingiz va masshtabni o'zgartirishingiz mumkin (3D Orbit)
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- STYLE 2: SEQUENTIAL STAGE PIPELINE (0.0s -> 3.0s FLOW)    -->
+      <!-- ======================================================== -->
+      <div id="viewStyle2" class="style-view w-full h-full relative hidden p-6 flex flex-col justify-between">
+        
+        <!-- Top timeline bar -->
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-mono font-bold text-amber-400 bg-amber-950/60 px-2.5 py-1 rounded border border-amber-500/40">
+              ⚡ BOSQICHMA-BOSQICH IJRO (TIMELINE)
+            </span>
+            <span class="text-xs font-mono text-slate-400" id="seqTimer">0.00s / 3.00s</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="resetSequence()" class="px-2.5 py-1 rounded bg-slate-800 text-xs font-mono text-slate-300 hover:bg-slate-700">
+              <i class="fa-solid fa-rotate-left"></i> Qayta boshlash
+            </button>
+          </div>
+        </div>
+
+        <!-- Progress Track -->
+        <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden my-3">
+          <div id="seqProgressBar" class="h-full bg-gradient-to-r from-cyan-500 via-purple-500 to-emerald-500 w-0 transition-all duration-75"></div>
+        </div>
+
+        <!-- 4 Sequential Stages -->
+        <div class="grid grid-cols-4 gap-4 my-auto">
+          <!-- Step 1 -->
+          <div id="seqStep1" class="p-4 rounded-2xl border-2 border-slate-800 bg-slate-900/60 transition-all duration-300 flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-400 mb-3" id="seqStep1Icon">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Bosqich 1 (0.0s)</span>
+            <h4 class="text-sm font-bold text-white mt-1">Inbound Trigger</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Yangi lid so'rovi qabul qilindi</p>
+            <span class="mt-3 text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400" id="seqStep1Badge">Kutilmoqda</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div id="seqStep2" class="p-4 rounded-2xl border-2 border-slate-800 bg-slate-900/60 transition-all duration-300 flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-400 mb-3" id="seqStep2Icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Bosqich 2 (0.8s)</span>
+            <h4 class="text-sm font-bold text-white mt-1">JARVIS Reasoning</h4>
+            <p class="text-[11px] text-slate-400 mt-1">Gemini 2.0 &amp; Groq LLaMA tahlili</p>
+            <span class="mt-3 text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400" id="seqStep2Badge">Kutilmoqda</span>
+          </div>
+
+          <!-- Step 3 -->
+          <div id="seqStep3" class="p-4 rounded-2xl border-2 border-slate-800 bg-slate-900/60 transition-all duration-300 flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-400 mb-3" id="seqStep3Icon">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Bosqich 3 (1.6s)</span>
+            <h4 class="text-sm font-bold text-white mt-1">Multi-Agent Dispatch</h4>
+            <p class="text-[11px] text-slate-400 mt-1">B2B, Instagram &amp; TG avto-javob</p>
+            <span class="mt-3 text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400" id="seqStep3Badge">Kutilmoqda</span>
+          </div>
+
+          <!-- Step 4 -->
+          <div id="seqStep4" class="p-4 rounded-2xl border-2 border-slate-800 bg-slate-900/60 transition-all duration-300 flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-slate-400 mb-3" id="seqStep4Icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <span class="text-[10px] font-mono text-slate-500 uppercase tracking-wider">Bosqich 4 (2.4s)</span>
+            <h4 class="text-sm font-bold text-white mt-1">CRM Deal Yopildi</h4>
+            <p class="text-[11px] text-slate-400 mt-1">+$400 Bitim Google Sheets ga yozildi</p>
+            <span class="mt-3 text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400" id="seqStep4Badge">Kutilmoqda</span>
+          </div>
+        </div>
+
+        <div class="text-center text-xs font-mono text-slate-400 pt-2 border-t border-slate-800">
+          💡 Tizim har bir qadamni real vaqtda yonuvchi holat bilan ko'rsatadi (Sales demo uchun ideal)
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- STYLE 3: LINEAR / APPLE DARK BENTO GRID                  -->
+      <!-- ======================================================== -->
+      <div id="viewStyle3" class="style-view w-full h-full relative hidden p-6 overflow-y-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-full">
+          
+          <!-- Bento 1: Master Commander (Big card) -->
+          <div class="md:col-span-2 p-5 rounded-2xl bg-slate-900/80 border border-slate-800 relative overflow-hidden flex flex-col justify-between shadow-lg">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center text-cyan-400 text-lg">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                  <h3 class="font-extrabold text-white text-base">JARVIS Master Copilot</h3>
+                  <span class="text-xs font-mono text-cyan-400">Autonomous Orchestrator</span>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-mono font-bold">
+                99.9% Uptime
+              </span>
+            </div>
+
+            <!-- Streaming Thought Generator Simulation -->
+            <div class="my-4 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 font-mono text-xs text-slate-300">
+              <span class="text-slate-500">// Real-time reasoning stream:</span><br>
+              <span class="text-cyan-300">&gt;</span> <span id="bentoTypewriter">Gemini 2.0 tahlili: 1,300+ korxona reestri bo'yicha tibbiyot sohasi saralandi...</span>
+            </div>
+
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span>Model: LLaMA 3.3 70B &amp; Gemini</span>
+              <span>Kechikish: 140ms</span>
+            </div>
+          </div>
+
+          <!-- Bento 2: Telemetry MRR -->
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 uppercase">Oylik Daromad (MRR)</span>
+              <i class="fa-solid fa-arrow-trend-up text-emerald-400"></i>
+            </div>
+            <div class="my-3">
+              <div class="text-3xl font-black text-white font-mono">$1,180<span class="text-slate-500 text-sm">/oy</span></div>
+              <div class="text-xs text-emerald-400 mt-1 font-mono">↑ +24% o'sish bu oyda</div>
+            </div>
+            <div class="w-full bg-slate-800 h-1 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-500 w-3/4"></div>
+            </div>
+          </div>
+
+          <!-- Bento 3: Instagram Growth -->
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-brands fa-instagram text-rose-500 text-lg"></i>
+                <span class="text-xs font-bold text-white">@shukhrat.ai</span>
+              </div>
+              <span class="text-[10px] font-mono text-rose-400 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-500/30">147k+ DM</span>
+            </div>
+            <div class="text-2xl font-black text-white font-mono my-2">94 / 130</div>
+            <span class="text-[11px] text-slate-400">Izohlarga avtonom javoblar (+/KURS)</span>
+          </div>
+
+          <!-- Bento 4: B2B Outreach Closer -->
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-briefcase text-purple-400 text-lg"></i>
+                <span class="text-xs font-bold text-white">B2B Outreach</span>
+              </div>
+              <span class="text-[10px] font-mono text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-500/30">1,300+ Baza</span>
+            </div>
+            <div class="text-2xl font-black text-white font-mono my-2">Day 0 – 14</div>
+            <span class="text-[11px] text-slate-400">WhatsApp &amp; Telegram Cadence</span>
+          </div>
+
+          <!-- Bento 5: ElevenLabs Cinematic Voice -->
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-waveform-lines text-cyan-400 text-lg"></i>
+                <span class="text-xs font-bold text-white">ElevenLabs Voice</span>
+              </div>
+              <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-500/30">George UK</span>
+            </div>
+            <div class="flex items-center gap-1.5 my-3 h-8">
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-4"></span>
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-7"></span>
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-3"></span>
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-8"></span>
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-5"></span>
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-2"></span>
+              <span class="w-1.5 bg-cyan-400 rounded-full animate-pulse h-6"></span>
+            </div>
+            <span class="text-[11px] text-slate-400">Ovozli eslatmalar &amp; Takeover</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- STYLE 4: SPLIT-SCREEN (CHAT MOCKUP + JARVIS BACKEND)     -->
+      <!-- ======================================================== -->
+      <div id="viewStyle4" class="style-view w-full h-full relative hidden p-6 flex flex-col md:flex-row gap-6 items-center justify-between">
+        
+        <!-- Left: Phone / Telegram Chat Mockup -->
+        <div class="w-full md:w-[320px] h-[480px] bg-slate-950 rounded-[32px] border-4 border-slate-800 shadow-2xl p-4 flex flex-col justify-between relative overflow-hidden">
+          <!-- Phone Top Notch -->
+          <div class="w-28 h-4 bg-slate-800 rounded-full mx-auto mb-2"></div>
+          
+          <!-- Chat Header -->
+          <div class="flex items-center gap-2.5 pb-2.5 border-b border-slate-800">
+            <div class="w-8 h-8 rounded-full bg-cyan-500/30 flex items-center justify-center text-cyan-400 text-xs font-bold">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-white">AutoPro²⁴ Assistant</h5>
+              <span class="text-[9.5px] text-emerald-400 font-mono">● Online (AI Agent)</span>
+            </div>
+          </div>
+
+          <!-- Messages Stream -->
+          <div class="flex-1 py-3 flex flex-col gap-3 overflow-y-auto font-sans text-xs">
+            <!-- User message -->
+            <div class="self-end bg-blue-600 text-white p-2.5 rounded-2xl rounded-tr-none max-w-[85%] shadow-sm">
+              Assalomu alaykum! Cobalt mashinasiga moy almashtirish va diagnostika qancha bo'ladi?
+            </div>
+            
+            <!-- Agent Thought Indicator -->
+            <div id="chatThinking" class="self-start bg-slate-900 border border-slate-800 text-cyan-400 px-3 py-1.5 rounded-xl text-[10px] font-mono flex items-center gap-2">
+              <i class="fa-solid fa-spinner animate-spin"></i> JARVIS qidirmoqda...
+            </div>
+
+            <!-- Agent response -->
+            <div id="chatReply" class="self-start bg-slate-800 text-slate-100 p-2.5 rounded-2xl rounded-tl-none max-w-[85%] border border-slate-700 shadow-sm opacity-0 transition-opacity duration-500">
+              Va alaykum assalom! Cobalt uchun to'liq moy almashtirish 280,000 so'm, kompyuter diagnostikasi esa bepul. Bugun soat 15:30 ga qabulga yozib qo'yaymi?
+            </div>
+          </div>
+
+          <!-- Chat Input bar -->
+          <div class="pt-2 border-t border-slate-800 flex items-center gap-2 text-slate-500 text-xs">
+            <span class="flex-1 bg-slate-900 px-3 py-1.5 rounded-full border border-slate-800 text-[11px] text-slate-400">Xabar yozish...</span>
+            <i class="fa-solid fa-paper-plane text-cyan-400"></i>
+          </div>
+        </div>
+
+        <!-- Right: Real-time Workflow Execution Display -->
+        <div class="flex-1 h-[480px] bg-slate-950/80 rounded-2xl border border-slate-800 p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+              <span class="font-mono text-xs font-bold text-white">ORQA FONDA AGENT QANDAY ISHLAYDI?</span>
+            </div>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-500/30">Javob vaqti: 1.2s</span>
+          </div>
+
+          <!-- Step diagram -->
+          <div class="space-y-3 my-auto">
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between" id="splitStep1">
+              <div class="flex items-center gap-3">
+                <i class="fa-brands fa-telegram text-sky-400 text-lg"></i>
+                <div>
+                  <h6 class="text-xs font-bold text-white">1. Webhook orqali xabar tutildi</h6>
+                  <p class="text-[10px] text-slate-400 font-mono">Cobalt, moy, diagnostika</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-400 font-bold">200 OK</span>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between" id="splitStep2">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-database text-purple-400 text-lg"></i>
+                <div>
+                  <h6 class="text-xs font-bold text-white">2. SQLite Narxlar bazasidan qidirildi</h6>
+                  <p class="text-[10px] text-slate-400 font-mono">Moy almashtirish: 280,000 so'm</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-400 font-bold">TOPILDI</span>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between" id="splitStep3">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-robot text-emerald-400 text-lg"></i>
+                <div>
+                  <h6 class="text-xs font-bold text-white">3. B2B Savdo skripti bo'yicha javob berildi</h6>
+                  <p class="text-[10px] text-slate-400 font-mono">Soat 15:30 ga taklif kiritildi</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono text-emerald-400 font-bold">YUBORILDI</span>
+            </div>
+          </div>
+
+          <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-slate-800">
+            🎯 Reels va Shorts videolari uchun eng yuqori konversiya beruvchi format.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- STYLE 5: ISOMETRIC 3D TECH STACK                         -->
+      <!-- ======================================================== -->
+      <div id="viewStyle5" class="style-view w-full h-full relative hidden p-6 flex flex-col justify-between items-center">
+        <div class="text-center">
+          <span class="text-xs font-mono text-cyan-400 font-bold bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-500/30">
+            2.5D ISOMETRIC ARCHITECTURE STACK
+          </span>
+        </div>
+
+        <!-- 3 Floating Isometric Layers -->
+        <div class="relative w-[500px] h-[360px] flex flex-col items-center justify-center">
+          
+          <!-- Layer 1: Interfaces (Top) -->
+          <div class="w-[420px] h-[95px] rounded-2xl bg-gradient-to-r from-blue-900/40 to-cyan-900/40 border border-cyan-400/50 shadow-xl shadow-cyan-500/10 flex items-center justify-between px-6 backdrop-blur-md transform -skew-y-6 hover:translate-y-[-4px] transition duration-300">
+            <div>
+              <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase">1-QAVAT: KIRISH KANALLARI</span>
+              <h5 class="text-sm font-extrabold text-white">Telegram, WhatsApp &amp; Instagram DM</h5>
+            </div>
+            <div class="flex gap-2 text-cyan-300 text-xl">
+              <i class="fa-brands fa-telegram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <!-- Vertical Laser Beam 1 -->
+          <div class="h-8 w-0.5 bg-gradient-to-b from-cyan-400 to-purple-500 my-1 animate-pulse"></div>
+
+          <!-- Layer 2: Intelligence (Middle) -->
+          <div class="w-[440px] h-[105px] rounded-2xl bg-gradient-to-r from-purple-900/40 to-indigo-900/40 border-2 border-purple-400/60 shadow-xl shadow-purple-500/20 flex items-center justify-between px-6 backdrop-blur-md transform -skew-y-6 hover:translate-y-[-4px] transition duration-300">
+            <div>
+              <span class="text-[10px] font-mono text-purple-400 font-bold uppercase">2-QAVAT: MIYA VA ORKESTRATSIYA</span>
+              <h5 class="text-base font-extrabold text-white">JARVIS Copilot + Gemini &amp; Groq LLaMA</h5>
+              <span class="text-[10.5px] text-slate-300 font-mono">140ms qaror qabul qilish</span>
+            </div>
+            <div class="text-purple-300 text-2xl">
+              <i class="fa-solid fa-atom"></i>
+            </div>
+          </div>
+
+          <!-- Vertical Laser Beam 2 -->
+          <div class="h-8 w-0.5 bg-gradient-to-b from-purple-500 to-emerald-500 my-1 animate-pulse"></div>
+
+          <!-- Layer 3: Storage & CRM (Bottom) -->
+          <div class="w-[460px] h-[95px] rounded-2xl bg-gradient-to-r from-emerald-900/40 to-teal-900/40 border border-emerald-400/50 shadow-xl shadow-emerald-500/10 flex items-center justify-between px-6 backdrop-blur-md transform -skew-y-6 hover:translate-y-[-4px] transition duration-300">
+            <div>
+              <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase">3-QAVAT: MA'LUMOTLAR VA CRM</span>
+              <h5 class="text-sm font-extrabold text-white">SQLite Reestr, Google Sheets &amp; POS Kassa</h5>
+            </div>
+            <div class="text-emerald-300 text-xl">
+              <i class="fa-solid fa-database"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-xs font-mono text-slate-400">
+          💡 Korxona direktorlari va investorlar uchun tizim mustahkamligini ko'rsatuvchi arxitektura.
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- STYLE 6: CYBER-TERMINAL CLI HACKER COCKPIT               -->
+      <!-- ======================================================== -->
+      <div id="viewStyle6" class="style-view w-full h-full relative hidden p-6 flex flex-col justify-between font-mono bg-[#030712]">
+        
+        <!-- Terminal Header -->
+        <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+            <span class="ml-2 text-slate-400 font-bold">jarvis@kronos-command-center:~</span>
+          </div>
+          <span class="text-emerald-400 font-bold">● 5 BOTS ACTIVE (PID 4082)</span>
+        </div>
+
+        <!-- Terminal Logs Stream -->
+        <div class="flex-1 my-3 bg-slate-950 p-4 rounded-xl border border-slate-800/80 overflow-y-auto space-y-1.5 text-xs">
+          <div class="text-slate-500">[20:41:01.012] [SYSTEM] Process supervisor initialized. Watching 5 autonomous services.</div>
+          <div class="text-cyan-400">[20:41:01.340] [JARVIS] Voice note captured from @Shukhrat_AI_bot via ElevenLabs George UK.</div>
+          <div class="text-purple-400">[20:41:01.580] [GEMINI 2.0] Intent parsed: "B2B Outreach kampaniyasini ishga tushirish". Confidence: 99.4%</div>
+          <div class="text-amber-400">[20:41:01.890] [DISPATCH] Routing 25 verified leads to B2B Outreach Closer Worker...</div>
+          <div class="text-emerald-400">[20:41:02.140] [OUTREACH] WhatsApp wa.me Day 0 cadence generation completed (25/25).</div>
+          <div class="text-rose-400">[20:41:02.450] [INSTAGRAM] @shukhrat.ai incoming comment (+). Closer auto-dispatched.</div>
+          <div class="text-slate-300 font-bold">[20:41:02.820] [DATABASE] SQLite 1,300+ synced with Google Sheets. Status: 200 OK (140ms).</div>
+          <div class="text-cyan-300 animate-pulse">&gt; _</div>
+        </div>
+
+        <!-- Terminal Footer Stats -->
+        <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-800">
+          <span>CPU: 2.4% | RAM: 184MB</span>
+          <span>LATENCY: 140ms</span>
+          <span>LOG: data/logs/master.log</span>
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- STYLE 7: LANGGRAPH NEURAL FORCE-DIRECTED MESH            -->
+      <!-- ======================================================== -->
+      <div id="viewStyle7" class="style-view w-full h-full relative hidden">
+        <canvas id="meshCanvas" class="w-full h-full absolute inset-0"></canvas>
+        
+        <div class="absolute top-4 left-5 pointer-events-none z-10 flex items-center gap-3">
+          <div class="px-3 py-1 rounded-lg bg-slate-950/80 border border-purple-500/40 text-purple-300 text-xs font-mono font-bold backdrop-blur-md">
+            🕸️ LANGGRAPH NEURAL STATE MESH
+          </div>
+          <div class="px-3 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-slate-300 text-xs font-mono backdrop-blur-md">
+            FORCE-DIRECTED PHYSICS
+          </div>
+        </div>
+
+        <div class="absolute bottom-4 left-5 pointer-events-none z-10 text-[11px] font-mono text-slate-400 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-slate-800 backdrop-blur-md">
+          💡 Tugunlar bir-birini tortish va qaytarish qonuniyati bilan harakatlanadi.
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ==================== LOGIC SCRIPT ==================== -->
+  <script>
+    // Tab switching metadata
+    const stylesMeta = {
+      1: {
+        cat: "KONSEPT VA KIBER-ESTETIKA",
+        title: "1. 3D Kiber-HUD / JARVIS Hologram Konstellatsiyasi",
+        best: "🎯 Eng mos: Veb-sayt bosh sahifasi & Invest-deck",
+        tech: "⚙️ Texnologiya: WebGL / Three.js"
+      },
+      2: {
+        cat: "JARAYON VA TEZLIKNI KO'RSATISH",
+        title: "2. Ketma-ket Bosqichli Ijro Animatsiyasi (Sequential Timeline)",
+        best: "🎯 Eng mos: Mijozlarga jarayonni tushuntirish va sales pitch",
+        tech: "⚙️ Texnologiya: SVG Path & Step CSS Keyframes"
+      },
+      3: {
+        cat: "APPLE / MODERN MINIMALIZM",
+        title: "3. Linear Dark Bento Grid (Ko'p modulli vitrina)",
+        best: "🎯 Eng mos: Portfolio, LinkedIn va B2B audit taqdimoti",
+        tech: "⚙️ Texnologiya: Tailwind CSS Flex/Grid & Glassmorphism"
+      },
+      4: {
+        cat: "REAL HAYOTIY ISBOT (CAUSE & EFFECT)",
+        title: "4. Split-Screen (Telegram Chat + Orqa Fondagi Agent)",
+        best: "🎯 Eng mos: Instagram Reels, YouTube Shorts va Jonli Demo",
+        tech: "⚙️ Texnologiya: Mobile CSS Mockup & Live Trigger State"
+      },
+      5: {
+        cat: "TEXNIK ARXITEKTURA VA ISHONCH",
+        title: "5. Izometrik 3D Stack (2.5D Enterprise Qavatlar)",
+        best: "🎯 Eng mos: Texnik hujjatlar, arxitektura chizmalari",
+        tech: "⚙️ Texnologiya: CSS 3D Transforms (Skew/Rotate3D)"
+      },
+      6: {
+        cat: "HACKER / DEVELOPER TIZIM",
+        title: "6. Cyber-Terminal CLI (Jonli kod va loglar oqimi)",
+        best: "🎯 Eng mos: Dasturchilar va IT-auditoriya kanallari",
+        tech: "⚙️ Texnologiya: Terminal Buffer & Typewriter Stream"
+      },
+      7: {
+        cat: "SUN'IY INTELLEKT NEYRON TO'RI",
+        title: "7. LangGraph Neural Mesh (Force-Directed Graph)",
+        best: "🎯 Eng mos: CrewAI, LangGraph va Multi-Agent ilmiy ko'rgazma",
+        tech: "⚙️ Texnologiya: HTML5 Canvas 2D Physics Engine"
+      }
+    };
+
+    let currentStyle = 1;
+    let autoTourInterval = null;
+
+    function switchStyle(id) {
+      currentStyle = id;
+      // Update tabs styling
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('tab-active'));
+      document.getElementById('tab' + id).classList.add('tab-active');
+
+      // Update meta
+      const meta = stylesMeta[id];
+      document.getElementById('styleCategory').textContent = meta.cat;
+      document.getElementById('styleTitle').textContent = meta.title;
+      document.getElementById('styleBestFor').textContent = meta.best;
+      document.getElementById('styleTech').textContent = meta.tech;
+
+      // Hide all views, show selected
+      document.querySelectorAll('.style-view').forEach(v => v.classList.add('hidden'));
+      document.getElementById('viewStyle' + id).classList.remove('hidden');
+
+      // Trigger specific animations
+      if (id === 1 && !threeInitialized) initThreeJS();
+      if (id === 2) startSequenceTimeline();
+      if (id === 4) triggerChatDemo();
+      if (id === 7 && !meshInitialized) initMeshCanvas();
+    }
+
+    // Auto tour
+    function toggleAutoTour() {
+      if (autoTourInterval) {
+        clearInterval(autoTourInterval);
+        autoTourInterval = null;
+        document.getElementById('playIcon').className = 'fa-solid fa-play text-cyan-400';
+        document.getElementById('playText').textContent = "Avto-Tur (Ko'rgazma)";
+      } else {
+        document.getElementById('playIcon').className = 'fa-solid fa-pause text-amber-400';
+        document.getElementById('playText').textContent = "To'xtatish";
+        autoTourInterval = setInterval(() => {
+          let next = currentStyle + 1;
+          if (next > 7) next = 1;
+          switchStyle(next);
+        }, 5000);
+      }
+    }
+
+    // ==========================================
+    // STYLE 1: THREE.JS 3D CONSTELLATION LOGIC
+    // ==========================================
+    let threeInitialized = false;
+    let scene, camera, renderer, nodesGroup;
+
+    function initThreeJS() {
+      const container = document.getElementById('threeContainer');
+      if (!container || threeInitialized) return;
+      threeInitialized = true;
+
+      const w = container.clientWidth || 1000;
+      const h = container.clientHeight || 580;
+
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 1000);
+      camera.position.set(0, 0, 18);
+
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(w, h);
+      container.appendChild(renderer.domElement);
+
+      nodesGroup = new THREE.Group();
+      scene.add(nodesGroup);
+
+      // Central JARVIS Node
+      const coreGeo = new THREE.SphereGeometry(1.6, 32, 32);
+      const coreMat = new THREE.MeshBasicMaterial({ color: 0x00f0ff, wireframe: true });
+      const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+      nodesGroup.add(coreMesh);
+
+      // Glowing inner nucleus
+      const nucGeo = new THREE.SphereGeometry(0.9, 16, 16);
+      const nucMat = new THREE.MeshBasicMaterial({ color: 0x38bdf8 });
+      nodesGroup.add(new THREE.Mesh(nucGeo, nucMat));
+
+      // 4 Satellite Orbiting Nodes
+      const satelliteData = [
+        { color: 0xa855f7, dist: 6.5, speed: 0.8, size: 0.6 }, // B2B
+        { color: 0xf43f5e, dist: 7.2, speed: 1.1, size: 0.55 }, // Instagram
+        { color: 0x0ea5e9, dist: 8.0, speed: 0.6, size: 0.65 }, // Academy
+        { color: 0xf59e0b, dist: 9.0, speed: 0.9, size: 0.5 }   // News
+      ];
+
+      const satellites = [];
+      satelliteData.forEach((d, i) => {
+        const satGeo = new THREE.SphereGeometry(d.size, 16, 16);
+        const satMat = new THREE.MeshBasicMaterial({ color: d.color });
+        const mesh = new THREE.Mesh(satGeo, satMat);
+        nodesGroup.add(mesh);
+        satellites.push({ mesh, ...d, angle: (i * Math.PI) / 2 });
+      });
+
+      // Background Starfield particles
+      const starGeo = new THREE.BufferGeometry();
+      const starCount = 300;
+      const starPos = new Float32Array(starCount * 3);
+      for (let i = 0; i < starCount * 3; i++) {
+        starPos[i] = (Math.random() - 0.5) * 60;
+      }
+      starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+      const starMat = new THREE.PointsMaterial({ color: 0x334155, size: 0.15 });
+      scene.add(new THREE.Points(starGeo, starMat));
+
+      // Animation Loop
+      function animate() {
+        requestAnimationFrame(animate);
+        coreMesh.rotation.y += 0.008;
+        coreMesh.rotation.x += 0.004;
+
+        satellites.forEach(s => {
+          s.angle += 0.015 * s.speed;
+          s.mesh.position.x = Math.cos(s.angle) * s.dist;
+          s.mesh.position.y = Math.sin(s.angle * 1.5) * 2;
+          s.mesh.position.z = Math.sin(s.angle) * s.dist;
+        });
+
+        nodesGroup.rotation.y += 0.003;
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', () => {
+        const nw = container.clientWidth;
+        const nh = container.clientHeight;
+        camera.aspect = nw / nh;
+        camera.updateProjectionMatrix();
+        renderer.setSize(nw, nh);
+      });
+    }
+
+    // ==========================================
+    // STYLE 2: SEQUENTIAL TIMELINE SCRIPT
+    // ==========================================
+    let seqInterval = null;
+    function startSequenceTimeline() {
+      let time = 0;
+      if (seqInterval) clearInterval(seqInterval);
+      resetSequence();
+
+      seqInterval = setInterval(() => {
+        time += 0.05;
+        if (time > 3.0) time = 0;
+
+        document.getElementById('seqTimer').textContent = time.toFixed(2) + 's / 3.00s';
+        document.getElementById('seqProgressBar').style.width = ((time / 3.0) * 100) + '%';
+
+        // Step 1: 0.0s - 0.8s
+        if (time >= 0.1 && time < 0.8) {
+          activateStep(1, 'border-cyan-400', 'bg-cyan-950/60', 'text-cyan-400', 'Qabul qilindi');
+        } else if (time >= 0.8) {
+          doneStep(1);
+        }
+
+        // Step 2: 0.8s - 1.6s
+        if (time >= 0.8 && time < 1.6) {
+          activateStep(2, 'border-purple-400', 'bg-purple-950/60', 'text-purple-400', 'Tahlil qilinmoqda');
+        } else if (time >= 1.6) {
+          doneStep(2);
+        }
+
+        // Step 3: 1.6s - 2.4s
+        if (time >= 1.6 && time < 2.4) {
+          activateStep(3, 'border-rose-400', 'bg-rose-950/60', 'text-rose-400', 'Yuborilmoqda');
+        } else if (time >= 2.4) {
+          doneStep(3);
+        }
+
+        // Step 4: 2.4s - 3.0s
+        if (time >= 2.4) {
+          activateStep(4, 'border-emerald-400', 'bg-emerald-950/60', 'text-emerald-400', '+$400 Bitim!');
+        }
+      }, 50);
+    }
+
+    function activateStep(idx, borderColor, bgColor, textColor, badgeText) {
+      const box = document.getElementById('seqStep' + idx);
+      box.className = `p-4 rounded-2xl border-2 ${borderColor} ${bgColor} transition-all duration-300 flex flex-col items-center text-center shadow-lg`;
+      const badge = document.getElementById('seqStep' + idx + 'Badge');
+      badge.textContent = badgeText;
+      badge.className = `mt-3 text-[10px] font-mono px-2 py-0.5 rounded font-bold ${textColor} bg-slate-900 border border-slate-700`;
+    }
+
+    function doneStep(idx) {
+      const box = document.getElementById('seqStep' + idx);
+      box.className = `p-4 rounded-2xl border border-slate-800 bg-slate-900/60 flex flex-col items-center text-center opacity-80`;
+      const badge = document.getElementById('seqStep' + idx + 'Badge');
+      badge.textContent = 'Bajarildi ✓';
+      badge.className = `mt-3 text-[10px] font-mono px-2 py-0.5 rounded text-emerald-400 bg-slate-950`;
+    }
+
+    function resetSequence() {
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById('seqStep' + i).className = 'p-4 rounded-2xl border border-slate-800 bg-slate-900/40 flex flex-col items-center text-center';
+        document.getElementById('seqStep' + i + 'Badge').textContent = 'Kutilmoqda';
+        document.getElementById('seqStep' + i + 'Badge').className = 'mt-3 text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-500';
+      }
+    }
+
+    // ==========================================
+    // STYLE 4: CHAT DEMO LOGIC
+    // ==========================================
+    function triggerChatDemo() {
+      const reply = document.getElementById('chatReply');
+      const thinking = document.getElementById('chatThinking');
+      reply.style.opacity = '0';
+      thinking.style.display = 'flex';
+
+      setTimeout(() => {
+        thinking.style.display = 'none';
+        reply.style.opacity = '1';
+      }, 1200);
+    }
+
+    // ==========================================
+    // STYLE 7: LANGGRAPH CANVAS MESH LOGIC
+    // ==========================================
+    let meshInitialized = false;
+    function initMeshCanvas() {
+      const canvas = document.getElementById('meshCanvas');
+      if (!canvas || meshInitialized) return;
+      meshInitialized = true;
+
+      const ctx = canvas.getContext('2d');
+      let w = canvas.width = canvas.parentElement.clientWidth;
+      let h = canvas.height = canvas.parentElement.clientHeight;
+
+      const nodes = [
+        { name: "JARVIS Core", x: w/2, y: h/2, vx: 0, vy: 0, r: 24, color: "#00f0ff" },
+        { name: "B2B Outreach", x: w/2 - 160, y: h/2 - 90, vx: 0.5, vy: -0.3, r: 16, color: "#a855f7" },
+        { name: "Instagram Closer", x: w/2 - 120, y: h/2 + 110, vx: -0.4, vy: 0.4, r: 15, color: "#f43f5e" },
+        { name: "GPTify Academy", x: w/2 + 150, y: h/2 - 80, vx: 0.3, vy: 0.5, r: 16, color: "#0ea5e9" },
+        { name: "News Studio", x: w/2 + 170, y: h/2 + 90, vx: -0.2, vy: -0.4, r: 15, color: "#f59e0b" },
+        { name: "DatabaseHub", x: w/2, y: h/2 + 160, vx: 0.1, vy: 0.2, r: 18, color: "#10b981" }
+      ];
+
+      function renderMesh() {
+        ctx.clearRect(0, 0, w, h);
+
+        // Draw connections
+        ctx.lineWidth = 1.5;
+        for (let i = 1; i < nodes.length; i++) {
+          ctx.beginPath();
+          ctx.strokeStyle = "rgba(56, 189, 248, 0.25)";
+          ctx.moveTo(nodes[0].x, nodes[0].y);
+          ctx.lineTo(nodes[i].x, nodes[i].y);
+          ctx.stroke();
+        }
+
+        // Cross connections
+        ctx.beginPath();
+        ctx.strokeStyle = "rgba(168, 85, 247, 0.15)";
+        ctx.moveTo(nodes[1].x, nodes[1].y);
+        ctx.lineTo(nodes[2].x, nodes[2].y);
+        ctx.moveTo(nodes[3].x, nodes[3].y);
+        ctx.lineTo(nodes[4].x, nodes[4].y);
+        ctx.stroke();
+
+        // Update and draw nodes
+        nodes.forEach((n, idx) => {
+          if (idx !== 0) {
+            n.x += n.vx;
+            n.y += n.vy;
+            // Bounce
+            if (n.x < 80 || n.x > w - 80) n.vx *= -1;
+            if (n.y < 80 || n.y > h - 80) n.vy *= -1;
+          }
+
+          // Node body
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+          ctx.fillStyle = n.color;
+          ctx.shadowColor = n.color;
+          ctx.shadowBlur = 15;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+
+          // Label
+          ctx.font = "bold 11px JetBrains Mono";
+          ctx.fillStyle = "#ffffff";
+          ctx.textAlign = "center";
+          ctx.fillText(n.name, n.x, n.y + n.r + 16);
+        });
+
+        requestAnimationFrame(renderMesh);
+      }
+      renderMesh();
+    }
+
+    // Initialize Default View
+    window.addEventListener('DOMContentLoaded', () => {
+      initThreeJS();
+    });
+  </script>
+
+</body>
+</html>
