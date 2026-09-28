@@ -234,7 +234,7 @@
           <button type="button" onclick="setLang('ru')" id="btn-lang-ru" class="lang-pill-btn">RU</button>
         </div>
 
-        <button type="button" onclick="openDemoModal()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs sm:text-sm font-bold shadow-sm transition-all duration-200 cursor-pointer">
+        <button type="button" id="navBookBtn" onclick="openDemoModal()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white text-xs sm:text-sm font-bold shadow-sm transition-all duration-200 cursor-pointer">
           <span data-t="navBook">Jonli Demo Belgilash</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </button>
@@ -265,7 +265,7 @@
 
         <!-- CTA & Strategy Session Details -->
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
-          <button type="button" onclick="openDemoModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-sm text-center shadow-md transition-all duration-200 flex items-center justify-center gap-2.5 cursor-pointer">
+          <button type="button" id="heroCtaPrimary" onclick="openDemoModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-sm text-center shadow-md transition-all duration-200 flex items-center justify-center gap-2.5 cursor-pointer">
             <span data-t="heroCtaPrimary">Jonli Demo Belgilash</span>
             <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </button>
@@ -1348,33 +1348,25 @@
       </div>
 
       <!-- Success Confirmation State (shown after submission) -->
-      <div id="leadSuccessContainer" class="hidden text-center py-6 space-y-5">
-        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-xs">
+      <div id="leadSuccessContainer" class="hidden text-center py-8 px-2 space-y-5">
+        <div class="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto shadow-xs border border-emerald-100">
           <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
         </div>
 
-        <div>
+        <div class="space-y-2">
           <h3 class="text-2xl font-black text-slateDark" data-t="successTitle">
-            So'rovingiz Muvaffaqiyatli Qabul Qilindi!
+            Thank You! Request Received
           </h3>
-          <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-sm mx-auto leading-relaxed" data-t="successDesc">
-            Ma'lumotlar Shukhrat Iskandarovga yo'naltirildi. 15 daqiqa ichida siz bilan bog'lanamiz.
+          <p class="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto leading-relaxed" data-t="successDesc">
+            Thank you for reaching out. We have received your details and will get back to you shortly (typically within 15 minutes).
           </p>
         </div>
 
-        <div class="pt-2 flex flex-col gap-2.5 max-w-xs mx-auto text-xs font-bold">
-          <a href="https://meet.gptify.uz" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-emeraldBrand hover:bg-emeraldDark text-white shadow-xs transition flex items-center justify-center gap-2 cursor-pointer">
-            <span data-t="successCalendarBtn">Taqvimdan vaqt tanlash (meet.gptify.uz)</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
-          <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl border border-divider hover:bg-subtle text-slateDark transition flex items-center justify-center gap-2 cursor-pointer">
-            <span data-t="successTelegramBtn">Telegramda darhol yozish</span>
-          </a>
+        <div class="pt-4 max-w-xs mx-auto">
+          <button type="button" onclick="closeDemoModal()" class="w-full py-3 px-6 rounded-xl bg-slateDark hover:bg-slate-800 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer" data-t="modalCloseBtn">
+            Close Window
+          </button>
         </div>
-
-        <button type="button" onclick="closeDemoModal()" class="text-[11px] text-slate-400 hover:text-slate-600 font-bold uppercase tracking-wider cursor-pointer">
-          Oynani yopish
-        </button>
       </div>
 
     </div>
@@ -1546,10 +1538,9 @@
         lblModalTeam: "Team Size:",
         modalSubmitBtn: "Confirm & Book Demo",
         modalFooterNote: "Zero spam · 100% confidential · Turnkey deployed in 48h",
-        successTitle: "Demo Request Received!",
-        successDesc: "Your details were delivered directly to Shukhrat Iskandarov. We will contact you within 15 minutes.",
-        successCalendarBtn: "Pick Time on Calendar (meet.gptify.uz)",
-        successTelegramBtn: "Message on Telegram Directly",
+        successTitle: "Thank You! Request Received",
+        successDesc: "Thank you for reaching out. We have received your details and our team will get back to you shortly (typically within 15 minutes).",
+        modalCloseBtn: "Close Window",
 
         footerDesc: "Pragmatic B2B AI operating systems and enterprise workflow automation.",
         footerAcademy: "GPTify Main Site",
@@ -1719,10 +1710,9 @@
         lblModalTeam: "Jamoangiz hajmi:",
         modalSubmitBtn: "Demoni Tasdiqlash",
         modalFooterNote: "Spamsiz · 100% maxfiy · 48 soat ichida kalit ostida ulanadi",
-        successTitle: "So'rovingiz Muvaffaqiyatli Qabul Qilindi!",
-        successDesc: "Ma'lumotlar Shukhrat Iskandarovga yo'naltirildi. 15 daqiqa ichida siz bilan bog'lanamiz.",
-        successCalendarBtn: "Taqvimdan vaqt tanlash (meet.gptify.uz)",
-        successTelegramBtn: "Telegramda darhol yozish",
+        successTitle: "Rahmat! So'rovingiz Qabul Qilindi",
+        successDesc: "GPTify OS tizimiga qiziqish bildirganingiz uchun rahmat. Ma'lumotlaringiz qabul qilindi, mutaxassisimiz tez orada (odatda 15 daqiqa ichida) siz bilan bog'lanadi.",
+        modalCloseBtn: "Oynani yopish",
 
         footerDesc: "Amaliy B2B AI operatsion tizimlari va ish oqimlarini avtomatlashtirish.",
         footerAcademy: "GPTify Bosh Sahifa",
@@ -1895,10 +1885,9 @@
         lblModalTeam: "Размер вашей команды:",
         modalSubmitBtn: "Подтвердить и Получить Демо",
         modalFooterNote: "Без спама · 100% конфиденциально · Запуск под ключ за 48 часов",
-        successTitle: "Заявка Успешно Принята!",
-        successDesc: "Данные переданы основателю Shukhrat Iskandarov. Мы свяжемся с вами в течение 15 минут.",
-        successCalendarBtn: "Выбрать время в календаре (meet.gptify.uz)",
-        successTelegramBtn: "Написать напрямую в Telegram"
+        successTitle: "Спасибо! Заявка Принята",
+        successDesc: "Благодарим за интерес к GPTify OS. Ваши данные получены, наш специалист свяжется с вами в ближайшее время (обычно в течение 15 минут).",
+        modalCloseBtn: "Закрыть окно"
       }
     };
 
@@ -1939,6 +1928,33 @@
           el.innerHTML = TRANSLATIONS[lang][key];
         }
       });
+
+      // Update modal input placeholders and select options
+      const nameInput = document.getElementById('leadName');
+      const companyInput = document.getElementById('leadCompany');
+      const contactInput = document.getElementById('leadContact');
+      const teamSelect = document.getElementById('leadTeamSize');
+
+      if (nameInput) {
+        nameInput.placeholder = lang === 'en' ? 'e.g. Alexander Vance' : (lang === 'ru' ? 'Например: Рустам Ахмедов' : 'Masalan: Jasur Rustamov');
+      }
+      if (companyInput) {
+        companyInput.placeholder = lang === 'en' ? 'e.g. Apex Global (B2B Distribution)' : (lang === 'ru' ? 'Например: Apex Logistics (Дистрибуция)' : 'Masalan: Apex Logistics (B2B savdo)');
+      }
+      if (contactInput) {
+        contactInput.placeholder = lang === 'en' ? '+1 555 123 4567 or @username' : (lang === 'ru' ? '+998 90 123 45 67 или @username' : '+998 90 123 45 67 yoki @username');
+      }
+      if (teamSelect) {
+        const teamOpts = lang === 'en' ? ['1-5 employees', '6-20 employees', '20-50 employees', '50+ employees (Enterprise)'] :
+                         (lang === 'ru' ? ['1-5 сотрудников', '6-20 сотрудников', '20-50 сотрудников', '50+ сотрудников (Enterprise)'] :
+                         ['1-5 xodim', '6-20 xodim', '20-50 xodim', '50+ xodim (Enterprise)']);
+        for (let i = 0; i < teamSelect.options.length; i++) {
+          if (teamOpts[i]) {
+            teamSelect.options[i].text = teamOpts[i];
+            teamSelect.options[i].value = teamOpts[i];
+          }
+        }
+      }
 
       // Update calculator labels & currency based on language
       updateCalculatorCurrency();

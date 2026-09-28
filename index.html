@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPTify Academy — B2B va Professional Sun'iy Intellekt Akademiyasi</title>
-  <meta name="description" content="Sun'iy intellektni noldan o'rganing va ish vaqtingizni haftasiga 10 soatga qisqartiring. 14 ta amaliy B2B darslar, Evergreen modellar va rasmiy QR-Sertifikat.">
+  <title>GPTify Academy (academy.gptify.uz) — B2B va Professional Sun'iy Intellekt Portali</title>
+  <meta name="description" content="GPTify Uzbekistan rasmiy ta'lim portali: 14 ta intensiv amaliy dars, Evergreen LLM tizimlari (Anthropic Claude, OpenAI ChatGPT, Google Gemini, DeepSeek) va rasmiy QR-Sertifikat.">
+  <link rel="canonical" href="https://academy.gptify.uz/">
+  <meta property="og:title" content="GPTify Academy — academy.gptify.uz">
+  <meta property="og:description" content="O'zbekiston kompaniyalari va mutaxassislari uchun amaliy B2B AI akademiyasi. 14 ta dars, amaliyot va sertifikatsiya.">
+  <meta property="og:url" content="https://academy.gptify.uz/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-kit/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/logo-kit/favicon-16.png">
@@ -46,6 +50,178 @@
       color: var(--text-main);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Domain Announcement Bar */
+    .top-domain-bar {
+      background: #0F172A;
+      color: #94A3B8;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 8px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .top-domain-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .top-domain-link {
+      color: #10B981;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+    .top-domain-link:hover {
+      color: #34D399;
+      text-decoration: underline;
+    }
+    .badge-subdomain {
+      font-size: 11px;
+      font-weight: 800;
+      background: var(--brand-emerald-light);
+      color: var(--brand-emerald-dark);
+      border: 1px solid rgba(5, 150, 105, 0.25);
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-left: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    /* Course Catalog Grid (Harmonized with gptify.uz) */
+    .catalog-section {
+      padding: 48px 24px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+    .catalog-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .catalog-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(5, 150, 105, 0.35);
+    }
+    .catalog-card.featured-card {
+      border: 2px solid var(--brand-emerald);
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+    }
+    .catalog-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+    .badge-green { background: #ECFDF5; color: #047857; border: 1px solid rgba(5, 150, 105, 0.25); }
+    .badge-blue { background: #EFF6FF; color: #1D4ED8; border: 1px solid rgba(29, 78, 216, 0.25); }
+    .badge-purple { background: #FAF5FF; color: #7E22CE; border: 1px solid rgba(126, 34, 206, 0.25); }
+    .badge-orange { background: #FFFBEB; color: #B45309; border: 1px solid rgba(180, 83, 9, 0.25); }
+
+    /* Interactive ROI Calculator */
+    .roi-section {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      color: #FFFFFF;
+      padding: 56px 32px;
+      border-radius: 28px;
+      max-width: 1240px;
+      margin: 40px auto;
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.35);
+    }
+    .roi-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 36px;
+      align-items: center;
+      margin-top: 32px;
+    }
+    @media (max-width: 860px) {
+      .roi-grid { grid-template-columns: 1fr; }
+    }
+    .roi-input-group {
+      margin-bottom: 22px;
+    }
+    .roi-input-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .roi-slider {
+      width: 100%;
+      height: 8px;
+      border-radius: 99px;
+      background: #334155;
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    .roi-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #10B981;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+    }
+    .roi-stats-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+    }
+    .roi-stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .roi-stat-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    .roi-stat-val {
+      font-size: 26px;
+      font-weight: 900;
+      color: #10B981;
+      letter-spacing: -0.02em;
+    }
+    .roi-stat-label {
+      font-size: 12.5px;
+      color: #94A3B8;
     }
 
     /* Top Navbar */
@@ -637,21 +813,35 @@
 </head>
 <body>
 
+  <!-- Top Domain Announcement Bar -->
+  <div class="top-domain-bar">
+    <div class="top-domain-inner">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span>🇺🇿</span> <span>GPTify Uzbekistan Rasmiy Ta'lim Portali</span>
+        <span style="color:#64748B;">|</span>
+        <span style="color:#10B981; font-weight:700;">academy.gptify.uz</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <a href="https://gptify.uz" target="_blank" rel="noopener" class="top-domain-link">
+          ← Bosh kompaniya portali: gptify.uz
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-inner">
-      <a href="index.html" class="brand-logo" title="GPTify Academy Bosh Sahifa">
+      <a href="index.html" class="brand-logo" title="GPTify Academy Bosh Sahifa" style="display:flex; align-items:center; gap:10px;">
         <img src="assets/logo-kit/gptify-academy-logo.svg" alt="GPTify Academy" style="height: 38px; width: auto; display: block;">
+        <span class="badge-subdomain">academy.gptify.uz</span>
       </a>
       <nav class="nav-links">
-        <a href="os.html" style="color: #4F35F3; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
-          <span style="width: 7px; height: 7px; border-radius: 50%; background: #10B981; display: inline-block;"></span>
-          GPTify OS Core
-        </a>
-        <a href="#dastur">O'quv Dasturi (14 Dars)</a>
+        <a href="#katalog">Kurslar Katalogi</a>
+        <a href="#dastur">14 Darslik Dastur</a>
+        <a href="#roi-kalkulyator">AI ROI Kalkulyator</a>
         <a href="#mualliflar">Mualliflar</a>
         <a href="#tariflar">Tariflar & B2B</a>
-        <a href="#faq">Savol-Javoblar</a>
       </nav>
       <div class="nav-actions">
         <a href="app.html?lesson=1_1" class="btn btn-ghost">👁️ 1.1-Darsni Bepul Ko'rish</a>
@@ -668,7 +858,7 @@
         Xodimlaringiz va Biznesingiz Uchun <span>Amaliy Sun'iy Intellekt</span> Tizimi
       </h1>
       <p class="hero-subtitle">
-        Quruq nazariya emas — 14 ta intensiv amaliy dars, Evergreen modellar matritsasi (Claude Fable, GPT-6 Astra, Gemini 3), Oltin Prompt Formulasi va haftasiga 10+ soat vaqtingizni tejovchi korporativ ish oqimlari.
+        Quruq nazariya emas — 14 ta intensiv amaliy dars, Evergreen LLM tizimlari (Anthropic Claude, OpenAI ChatGPT, Google Gemini, DeepSeek), Oltin Prompt Formulasi va haftasiga 10+ soat vaqtingizni tejovchi korporativ ish oqimlari.
       </p>
       <div class="hero-cta-group">
         <a href="app.html?lesson=1_1" class="btn btn-primary btn-lg">🚀 1.1-Darsdan Bepul Boshlash</a>
@@ -698,7 +888,7 @@
           <i style="background:#F59E0B;"></i>
           <i style="background:#10B981;"></i>
         </div>
-        <span>app.gptify.co/academy — Yopiq O'quv Kabineti</span>
+        <span>academy.gptify.uz/app.html — Yopiq O'quv Kabineti</span>
         <span>🔒 SSL</span>
       </div>
       <div class="app-preview-body">
@@ -739,102 +929,86 @@
     </div>
   </section>
 
-  <!-- ==================== GPTIFY OS CORE SHOWCASE ==================== -->
-  <section class="section" style="padding-top:20px; padding-bottom:40px; background: linear-gradient(180deg, #F8FAFC 0%, #EEF2F6 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 30px 0;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 28px; flex-wrap:wrap; gap:16px;">
+  <!-- Course Catalog (Harmonized with gptify.uz) -->
+  <section class="catalog-section" id="katalog">
+    <div class="section-header">
+      <span class="catalog-badge badge-green">🎓 Rasmiy O'quv Dasturlari</span>
+      <h2>GPTify Uzbekistan AI Ta'lim Yo'nalishlari</h2>
+      <p>Yangi boshlovchilardan tortib yirik korxonalargacha — sun'iy intellektdan real biznesda foydalanishning 4 ta amaliy yo'nalishi.</p>
+    </div>
+
+    <div class="catalog-grid">
+      <!-- Course 1 (Flagship LMS - Locked Pro Course) -->
+      <div class="catalog-card featured-card">
         <div>
-          <div style="display:inline-flex; align-items:center; gap:6px; background:#ECE9FE; color:#4F35F3; font-size:11px; font-weight:800; font-family:'JetBrains Mono', monospace; padding:4px 12px; border-radius:999px; text-transform:uppercase; margin-bottom:10px;">
-            ⚡ GPTify OS Core • Jonli Platformalar
-          </div>
-          <h2 style="font-size:28px; font-weight:900; color:var(--text-main); letter-spacing:-0.02em;">
-            Biznesingiz Uchun 4 Asosiy Avtonom AI Ustun
-          </h2>
-          <p style="font-size:14px; color:var(--text-muted); margin-top:4px;">
-            Muloqot, faol savdo konveyeri, uchrashuv bayonnomasi va operatsion boshqaruv yagona tizimda.
+          <span class="catalog-badge badge-purple" style="background:#F3E8FF; color:#7E22CE; border:1px solid #D8B4FE;">🔒 Qulflangan / Pro Kurs (199 000 so'm)</span>
+          <h3 style="font-size:18px; font-weight:800; margin-bottom:8px; color:var(--text-main);">B2B Prompt Muhandisligi & Evergreen Modellar</h3>
+          <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
+            14 ta intensiv dars, Anthropic Claude, OpenAI ChatGPT va DeepSeek bilan ishlash, interaktiv testlar, AI uyga vazifa tekshiruvi va rasmiy SHA-256 QR-Sertifikat.
           </p>
+          <div style="font-size:12.5px; font-weight:700; color:#7E22CE; margin-bottom:18px;">
+            🔒 To'liq kurs qulfda · 1.1-Dars bepul preview
+          </div>
         </div>
-        <a href="os.html" class="btn btn-ghost" style="font-weight:700; border-color:#CBD5E1;">
-          To'liq GPTify OS Arxitekturasini Ko'rish →
+        <div style="display:flex; gap:10px;">
+          <a href="app.html?lesson=1_1" class="btn btn-ghost" style="flex:1; text-align:center; font-size:13px; padding:10px;">
+            👁️ 1.1 Preview
+          </a>
+          <a href="#tariflar" class="btn btn-primary" style="flex:1.3; text-align:center; font-size:13px; padding:10px;">
+            🔒 Kursni Ochish (199k) →
+          </a>
+        </div>
+      </div>
+
+      <!-- Course 2 (AI Asoslari & PDF Hub) -->
+      <div class="catalog-card">
+        <div>
+          <span class="catalog-badge badge-blue">🚀 Bepul Boshlovchilar Kursi</span>
+          <h3 style="font-size:18px; font-weight:800; margin-bottom:8px; color:var(--text-main);">"AI Asoslari" Bepul Kursi & PDF Qo'llanmalar</h3>
+          <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
+            Yangi boshlovchilar uchun ChatGPT, Claude va Midjourney formulalari hamda biznesda vaqtni tejovchi 100+ professional AI PDF qo'llanmalar to'plami.
+          </p>
+          <div style="font-size:12.5px; font-weight:700; color:#1D4ED8; margin-bottom:18px;">
+            ✓ Telegram Bot orqali bepul taqdim etiladi
+          </div>
+        </div>
+        <a href="https://t.me/GPTify_uz_bot?start=ai_asoslari" target="_blank" rel="noopener" class="btn btn-ghost" style="width:100%; text-align:center;">
+          Telegram Botda Boshlash ✈️
         </a>
       </div>
 
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
-        <!-- Card 1: Ailo -->
-        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:var(--shadow-sm); position:relative; overflow:hidden;">
-          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#059669;"></div>
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span style="font-size:11px; font-weight:700; color:#059669; font-family:'JetBrains Mono', monospace;">● JONLI SUBDOMAIN</span>
-              <span style="font-size:12px; background:#ECFDF5; color:#059669; padding:2px 8px; border-radius:6px; font-weight:700;">8s Javob</span>
-            </div>
-            <h3 style="font-size:18px; font-weight:800; margin-bottom:6px;">AILO</h3>
-            <p style="font-size:12.5px; color:#475569; line-height:1.5; margin-bottom:16px;">
-              Instagram Direct va Telegram uchun aqlli AI sotuvchi. Mijoz savollariga darhol javob beradi va xaridga yo'naltiradi.
-            </p>
+      <!-- Course 3 (Agents & Automations) -->
+      <div class="catalog-card">
+        <div>
+          <span class="catalog-badge badge-purple">⚡ B2B Integratsiya</span>
+          <h3 style="font-size:18px; font-weight:800; margin-bottom:8px; color:var(--text-main);">AI Agentlar & Jarayonlarni Avtomatlashtirish</h3>
+          <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
+            n8n, Make, Didox, Telegram botlar va CRM tizimlari orqali mijozlar bilan muloqot, savdo voronkasi va hujjat aylanishini avtomatlashtirish.
+          </p>
+          <div style="font-size:12.5px; font-weight:700; color:#7E22CE; margin-bottom:18px;">
+            ✓ Korxona ish jarayonlariga moslashtiriladi
           </div>
-          <a href="https://ailo.gptify.uz" target="_blank" style="display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:#ECFDF5; color:#047857; border-radius:10px; text-decoration:none; font-size:12.5px; font-weight:700; border:1px solid #A7F3D0;">
-            <span>ailo.gptify.uz</span>
-            <span>↗</span>
-          </a>
         </div>
+        <a href="https://gptify.uz/#gptify-services" target="_blank" rel="noopener" class="btn btn-ghost" style="width:100%; text-align:center;">
+          Konsalting Dasturi 🧭
+        </a>
+      </div>
 
-        <!-- Card 2: Ildam CRM & B2B Outreach -->
-        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:var(--shadow-sm); position:relative; overflow:hidden;">
-          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#F59E0B;"></div>
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span style="font-size:11px; font-weight:700; color:#D97706; font-family:'JetBrains Mono', monospace;">● JONLI SUBDOMAIN</span>
-              <span style="font-size:12px; background:#FFFBEB; color:#D97706; padding:2px 8px; border-radius:6px; font-weight:700;">Outreach & Triage</span>
-            </div>
-            <h3 style="font-size:18px; font-weight:800; margin-bottom:6px;">ILDAM CRM & Outreach</h3>
-            <p style="font-size:12.5px; color:#475569; line-height:1.5; margin-bottom:16px;">
-              Telegram, Instagram va Email orqali yangi B2B korxonalarni topib taklif yuboruvchi, 10s triage va savdo konveyeri.
-            </p>
+      <!-- Course 4 (Corporate Training) -->
+      <div class="catalog-card">
+        <div>
+          <span class="catalog-badge badge-orange">🏢 Korporativ Jamoalar</span>
+          <h3 style="font-size:18px; font-weight:800; margin-bottom:8px; color:var(--text-main);">B2B Korporativ Trening (Buyurtma Asosida)</h3>
+          <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;">
+            Kompaniyangiz jamoasi uchun Toshkentdagi ofisingizda yoki onlayn 2 kunlik amaliy intensiv. Xodimlar bilimini baholash va maxsus korporativ promptlar.
+          </p>
+          <div style="font-size:12.5px; font-weight:700; color:#B45309; margin-bottom:18px;">
+            ✓ 10 dan 100+ gacha xodimlar uchun
           </div>
-          <a href="https://ildam.gptify.uz" target="_blank" style="display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:#FFFBEB; color:#B45309; border-radius:10px; text-decoration:none; font-size:12.5px; font-weight:700; border:1px solid #FDE68A;">
-            <span>ildam.gptify.uz</span>
-            <span>↗</span>
-          </a>
         </div>
-
-        <!-- Card 3: GPTify Meet -->
-        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:var(--shadow-sm); position:relative; overflow:hidden;">
-          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#0284C7;"></div>
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span style="font-size:11px; font-weight:700; color:#0284C7; font-family:'JetBrains Mono', monospace;">● JONLI SUBDOMAIN</span>
-              <span style="font-size:12px; background:#F0F9FF; color:#0284C7; padding:2px 8px; border-radius:6px; font-weight:700;">100% Maxfiy</span>
-            </div>
-            <h3 style="font-size:18px; font-weight:800; margin-bottom:6px;">GPTify Meet</h3>
-            <p style="font-size:12.5px; color:#475569; line-height:1.5; margin-bottom:16px;">
-              Zoom, Google Meet va Teams uchun begona botlarsiz AI kotib. O'zbekcha yozib oladi va vazifalarni Telegramga jo'natadi.
-            </p>
-          </div>
-          <a href="https://meet.gptify.uz" target="_blank" style="display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:#F0F9FF; color:#0369A1; border-radius:10px; text-decoration:none; font-size:12.5px; font-weight:700; border:1px solid #BAE6FD;">
-            <span>meet.gptify.uz</span>
-            <span>↗</span>
-          </a>
-        </div>
-
-        <!-- Card 4: Jarvis -->
-        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:18px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:var(--shadow-sm); position:relative; overflow:hidden;">
-          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#8B5CF6;"></div>
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span style="font-size:11px; font-weight:700; color:#7C3AED; font-family:'JetBrains Mono', monospace;">● FLEET CONSOLE</span>
-              <span style="font-size:12px; background:#F5F3FF; color:#7C3AED; padding:2px 8px; border-radius:6px; font-weight:700;">24/7 Ops</span>
-            </div>
-            <h3 style="font-size:18px; font-weight:800; margin-bottom:6px;">JARVIS</h3>
-            <p style="font-size:12.5px; color:#475569; line-height:1.5; margin-bottom:16px;">
-              Ailo, ILDAM va Meet o'rtasidagi ma'lumotlar oqimini kuzatuvchi va fon jarayonlarini boshqaruvchi markaziy konsol.
-            </p>
-          </div>
-          <a href="jarvis_fleet.html" style="display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:#F5F3FF; color:#6D28D9; border-radius:10px; text-decoration:none; font-size:12.5px; font-weight:700; border:1px solid #DDD6FE;">
-            <span>jarvis_fleet.html</span>
-            <span>→</span>
-          </a>
-        </div>
+        <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener" class="btn btn-ghost" style="width:100%; text-align:center;">
+          B2B Taklif Olish 💬
+        </a>
       </div>
     </div>
   </section>
@@ -863,6 +1037,89 @@
           <li><span>🔒</span> <span><b>Ma'lumotlar xavfsizligi:</b> Chat history & training sozlamalarini to'g'ri o'chirib, maxfiylikni kafolatlash.</span></li>
           <li><span>⚡</span> <span><b>Oltin Formula (RTC):</b> 1-urinishdayoq mukammal shartnoma, tahlil va rasmiy xat olish.</span></li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI Calculator Section (Harmonized with gptify.uz) -->
+  <section class="roi-section" id="roi-kalkulyator">
+    <div style="max-width:720px;">
+      <span class="catalog-badge" style="background:rgba(16,185,129,0.2); color:#34D399; border:1px solid rgba(16,185,129,0.3);">
+        📊 Interaktiv Moliyaviy Tahlil
+      </span>
+      <h2 style="font-size:clamp(24px, 3.5vw, 36px); font-weight:800; margin:10px 0 12px; color:#FFFFFF;">
+        Kompaniyangiz AI Bilan Qancha Vaqt va Mablag' Tejashini Hisoblang
+      </h2>
+      <p style="font-size:15px; color:#94A3B8; line-height:1.6;">
+        Tizimli o'qitilgan har bir xodim haftasiga 3.5–4 soat ma'muriy vaqtni tejaydi. Quyidagi slayderlarni harakatlantiring va o'z korxonangiz uchun oylik tejamkorlikni real vaqtda ko'ring:
+      </p>
+    </div>
+
+    <div class="roi-grid">
+      <!-- Controls -->
+      <div>
+        <div class="roi-input-group">
+          <div class="roi-input-head">
+            <span>Xodimlar soni:</span>
+            <span id="roiTeamSizeLabel" style="color:#10B981; font-size:16px;">15 nafar</span>
+          </div>
+          <input type="range" id="roiTeamSize" min="2" max="100" value="15" class="roi-slider" oninput="updateRoiCalc()">
+          <div style="display:flex; justify-content:space-between; font-size:11px; color:#64748B; margin-top:4px;">
+            <span>2 nafar</span>
+            <span>50 nafar</span>
+            <span>100+ nafar</span>
+          </div>
+        </div>
+
+        <div class="roi-input-group">
+          <div class="roi-input-head">
+            <span>O'rtacha oylik maosh:</span>
+            <span id="roiSalaryLabel" style="color:#10B981; font-size:16px;">8 000 000 so'm</span>
+          </div>
+          <input type="range" id="roiSalary" min="4000000" max="25000000" step="500000" value="8000000" class="roi-slider" oninput="updateRoiCalc()">
+          <div style="display:flex; justify-content:space-between; font-size:11px; color:#64748B; margin-top:4px;">
+            <span>4 mln</span>
+            <span>15 mln</span>
+            <span>25 mln so'm</span>
+          </div>
+        </div>
+
+        <div style="margin-top:20px; font-size:13px; color:#94A3B8; background:rgba(255,255,255,0.04); padding:14px 18px; border-radius:14px; border:1px solid rgba(255,255,255,0.08); line-height:1.6;">
+          💡 <em>Hisob-kitob korxona xodimlarining hujjatlar, hisobotlar va mijozlar bilan muloqotda haftasiga o'rtacha 18% ish vaqtini tejashiga asoslangan.</em>
+        </div>
+      </div>
+
+      <!-- Live Results Box -->
+      <div class="roi-stats-card">
+        <div class="roi-stat-row">
+          <div>
+            <div class="roi-stat-label">Oylik tejaladigan jami soatlar:</div>
+            <div class="roi-stat-val" id="roiHoursVal">240 soat</div>
+          </div>
+          <span style="font-size:26px;">⏱️</span>
+        </div>
+
+        <div class="roi-stat-row">
+          <div>
+            <div class="roi-stat-label">Oylik tejaladigan sof mablag':</div>
+            <div class="roi-stat-val" id="roiMonthlySaveVal" style="color:#34D399;">21 600 000 so'm</div>
+          </div>
+          <span style="font-size:26px;">💰</span>
+        </div>
+
+        <div class="roi-stat-row">
+          <div>
+            <div class="roi-stat-label">Yillik iqtisodiy samara:</div>
+            <div class="roi-stat-val" id="roiYearlySaveVal" style="color:#FBBF24;">259 200 000 so'm</div>
+          </div>
+          <span style="font-size:26px;">📈</span>
+        </div>
+
+        <div style="margin-top:22px;">
+          <a href="https://t.me/shukhrat_iskandarov" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; padding:14px; text-align:center; font-size:14px;">
+            🏢 Jamoangiz Uchun B2B Taklif Olish →
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -976,11 +1233,15 @@
 
       <!-- Tier 2 -->
       <div class="price-card featured">
-        <div class="featured-ribbon">Eng Ommabop</div>
+        <div class="featured-ribbon">🔥 60% Launch Chegirmasi</div>
         <div>
           <span class="preview-tag">SHAXSIY KABINET (PRO)</span>
-          <div class="price-amount">490 000 <span style="font-size:15px; font-weight:600; color:var(--text-muted);">so'm</span></div>
-          <p style="font-size:13px; color:var(--text-muted);">Bir martalik to'lov · Doimiy yangilanuvchi kabinet</p>
+          <div class="price-amount" style="display:flex; align-items:baseline; gap:10px; margin:14px 0 6px;">
+            <span style="font-size:20px; text-decoration:line-through; color:var(--text-muted); font-weight:600;">490 000</span>
+            <span style="font-size:36px; font-weight:900; color:#059669;">199 000</span>
+            <span style="font-size:15px; font-weight:700; color:var(--text-secondary);">so'm</span>
+          </div>
+          <p style="font-size:13px; color:var(--text-muted);">Ilk 100 ta ishtirokchi uchun bir martalik to'lov · Doimiy yangilanuvchi kabinet</p>
           <ul class="price-features">
             <li>✅ <b>Barcha 5 ta modul va 14 ta amaliy dars</b></li>
             <li>✅ Har bir darsda interaktiv AI vazifa tekshiruvi</li>
@@ -989,7 +1250,7 @@
             <li>✅ Kelajakdagi yangi modellar darslariga bepul kirish</li>
           </ul>
         </div>
-        <button type="button" onclick="openAppLogin()" class="btn btn-primary" style="width:100%;">🔒 To'liq Kabinetni Ochish →</button>
+        <button type="button" onclick="openAppLogin()" class="btn btn-primary" style="width:100%;">🚀 199 000 so'mga To'liq Kirish →</button>
       </div>
 
       <!-- Tier 3 -->
@@ -999,7 +1260,7 @@
           <div class="price-amount">Shartnoma</div>
           <p style="font-size:13px; color:var(--text-muted);">10 dan 100+ gacha xodimlar va bo'limlar uchun</p>
           <ul class="price-features">
-            <li>✅ <b>Har bir xodim uchun shaxsiy `app.gptify.co` kabineti</b></li>
+            <li>✅ <b>Har bir xodim uchun shaxsiy `academy.gptify.uz` kabineti</b></li>
             <li>✅ HR va rahbar uchun xodimlar progressi hisoboti</li>
             <li>✅ Toshkentdagi ofisingizda 2 kunlik jonli vorkshop</li>
             <li>✅ Kompaniyangiz CRM va hujjatlariga mos promptlar</li>
@@ -1059,49 +1320,71 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <a href="index.html" class="footer-brand" style="text-decoration:none; display:inline-flex; align-items:center;" title="GPTify Academy">
+      <a href="index.html" class="footer-brand" style="text-decoration:none; display:inline-flex; align-items:center; gap:10px;" title="GPTify Academy">
         <img src="assets/logo-kit/gptify-academy-logo-reversed.svg" alt="GPTify Academy" style="height: 32px; width: auto; display: block;">
+        <span class="badge-subdomain">academy.gptify.uz</span>
       </a>
-      <div style="display:flex; gap:20px; font-size:13px;">
+      <div style="display:flex; flex-wrap:wrap; gap:20px; font-size:13px;">
+        <a href="https://gptify.uz" target="_blank" rel="noopener" style="color:#10B981; text-decoration:none; font-weight:700;">🌐 gptify.uz Bosh Portal</a>
+        <a href="#katalog" style="color:#94A3B8; text-decoration:none;">Kurslar</a>
         <a href="app.html" style="color:#94A3B8; text-decoration:none;">O'quv Kabineti (App)</a>
-        <a href="#dastur" style="color:#94A3B8; text-decoration:none;">Dastur</a>
-        <a href="#tariflar" style="color:#94A3B8; text-decoration:none;">Tariflar</a>
-        <a href="https://t.me/gptifyuz" target="_blank" style="color:#10B981; text-decoration:none; font-weight:700;">Telegram: @gptifyuz</a>
+        <a href="#roi-kalkulyator" style="color:#94A3B8; text-decoration:none;">ROI Kalkulyator</a>
+        <a href="https://t.me/GPTify_uz_bot" target="_blank" rel="noopener" style="color:#38BDF8; text-decoration:none; font-weight:700;">🤖 @GPTify_uz_bot</a>
+        <a href="https://t.me/gptifyuz" target="_blank" rel="noopener" style="color:#10B981; text-decoration:none; font-weight:700;">📢 Telegram: @gptifyuz</a>
       </div>
     </div>
     <div class="footer-copy">
-      © 2026 GPTify (GPTify.co). Barcha huquqlar himoyalangan. B2B Sun'iy Intellekt Ish Oqimlari va Tizimlari.
+      © 2026 GPTify (GPTify Uzbekistan · gptify.uz). Barcha huquqlar himoyalangan. B2B Sun'iy Intellekt Ish Oqimlari va Tizimlari.
     </div>
   </footer>
 
-  <!-- App Login Modal -->
+  <!-- App Login Modal (Telegram-First Lead Capture) -->
   <div class="modal-backdrop" id="appLoginModal" onclick="if(event.target===this) closeAppLogin()">
     <div class="login-modal">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-        <span class="preview-tag">🔒 APP.GPTIFY.CO — AVTORIZATSIYA</span>
+        <span class="preview-tag">✈️ TELEGRAM ORQALI BEPUL KIRISH</span>
         <button type="button" onclick="closeAppLogin()" style="background:none; border:none; font-size:20px; cursor:pointer; color:var(--text-muted);">&times;</button>
       </div>
-      <h3 style="font-size:20px; font-weight:800; margin-bottom:6px;">Shaxsiy Kabinetga Kirish</h3>
-      <p style="font-size:13px; color:var(--text-secondary); margin-bottom:18px;">
-        Progressingizni saqlash, uyga vazifalarni tekshirtirish va rasmiy sertifikat olish uchun tizimga kiring:
+      <h3 style="font-size:20px; font-weight:800; margin-bottom:6px;">Darslarni Bepul Sinab Ko'rish</h3>
+      <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+        1.1-Dars, Evergreen modellar bo'yicha maslahatchi va interaktiv testlardan foydalanish uchun rasmiy Telegram botimiz orqali kiring:
       </p>
 
-      <a href="https://t.me/GPTify_uz_bot?start=academy_free" target="_blank" class="btn btn-primary" style="width:100%; background:#0284C7; margin-bottom:14px; padding:12px; text-decoration:none; display:flex; align-items:center; justify-content:center; gap:8px;">
-        ✈️ Telegram orqali kirish (@GPTify_uz_bot)
+      <div style="background:#F0FDF4; border:1px solid rgba(16,185,129,0.3); border-radius:12px; padding:12px 14px; margin-bottom:18px; font-size:12.5px; color:#064E3B;">
+        🎁 <b>100% Bepul Tanishuv:</b> Botga ulanishingiz bilan platforma kabineti siz uchun darhol faollashadi.
+      </div>
+
+      <a href="https://t.me/GPTify_uz_bot?start=academy_free" target="_blank" onclick="loginAndRedirect('Telegram O\'quvchi')" class="btn btn-primary" style="width:100%; background:#0284C7; margin-bottom:12px; padding:14px; font-size:14px; text-decoration:none; display:flex; align-items:center; justify-content:center; gap:8px; box-shadow:0 4px 14px rgba(2,132,199,0.35);">
+        <span>✈️</span> <span>Telegram orqali 1 soniyada kirish (@GPTify_uz_bot)</span>
       </a>
 
-      <div style="text-align:center; font-size:11.5px; color:var(--text-muted); margin-bottom:14px;">— YOKI TELEFON RAQAM ORQALI —</div>
-
-      <input type="text" id="loginUserName" class="input-field" placeholder="Ism va familiyangiz (Sertifikat uchun)" value="Shukhrat Iskandarov">
-      <input type="tel" id="loginUserPhone" class="input-field" placeholder="Telefon raqamingiz (+998 90 ...)" value="+998 90 123 45 67">
-
-      <button type="button" onclick="loginAndRedirect(document.getElementById('loginUserName').value)" class="btn btn-primary" style="width:100%; padding:12px;">
-        🔓 Kabinetni Ochish va Darsga Kirish →
+      <button type="button" onclick="loginAndRedirect('Mehmon O\'quvchi')" class="btn btn-ghost" style="width:100%; font-size:12.5px; padding:10px;">
+        To'g'ridan-to'g'ri darsga o'tish (Saytda davom etish) →
       </button>
     </div>
   </div>
 
   <script>
+    function updateRoiCalc() {
+      const teamEl = document.getElementById('roiTeamSize');
+      const salaryEl = document.getElementById('roiSalary');
+      if (!teamEl || !salaryEl) return;
+      
+      const team = parseInt(teamEl.value, 10);
+      const salary = parseInt(salaryEl.value, 10);
+      
+      document.getElementById('roiTeamSizeLabel').innerText = team + " nafar";
+      document.getElementById('roiSalaryLabel').innerText = Number(salary).toLocaleString('uz-UZ') + " so'm";
+      
+      const hoursSaved = team * 16;
+      const monthlySave = Math.round(team * salary * 0.18);
+      const yearlySave = monthlySave * 12;
+      
+      document.getElementById('roiHoursVal').innerText = hoursSaved.toLocaleString('uz-UZ') + " soat";
+      document.getElementById('roiMonthlySaveVal').innerText = monthlySave.toLocaleString('uz-UZ') + " so'm";
+      document.getElementById('roiYearlySaveVal').innerText = yearlySave.toLocaleString('uz-UZ') + " so'm";
+    }
+
     function openAppLogin() {
       document.getElementById('appLoginModal').classList.add('show');
     }
@@ -1118,6 +1401,9 @@
       const parent = el.parentElement;
       parent.classList.toggle('open');
     }
+
+    // Initialize ROI Calculator
+    document.addEventListener('DOMContentLoaded', updateRoiCalc);
   </script>
 </body>
 </html>
