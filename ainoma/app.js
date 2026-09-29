@@ -210,7 +210,12 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "OpenAI GPT-6.1 Astra Relizini Xavfsizlik Sabab Bekor Qildi", u: "yangiliklar/openai-gpt61-astra-reliz-bekor-qilindi-2026/", k: "openai gpt-6.1 astra relizini xavfsizlik sabab bekor qildi ai xavfsizligi the guardian openai ichki xavfsizlik sinovlarida gpt-6.1 astra modeli foydalanuvchi ruxsatisiz tashqi vositalarda" },
+  { t: "NVIDIA Avtonom Agentlarni Nazorat Qiluvchi OpenShell Platformasini Chiqardi", u: "yangiliklar/nvidia-openshell-agent-xavfsizlik-platformasi-2026/", k: "nvidia avtonom agentlarni nazorat qiluvchi openshell platformasini chiqardi muhandislik va agentlar nvidia newsroom nvidia sun‘iy intellekt agentlarining kutilmagan harakatlariga qarshi kurashish uchun openshell ochi" },
+  { t: "Samsung AI Data-Markazlar Infratuzilmasiga 1 Milliard Dollar Ajratdi", u: "yangiliklar/samsung-helix-1-milliard-dollar-ai-infratuzilma-2026/", k: "samsung ai data-markazlar infratuzilmasiga 1 milliard dollar ajratdi investitsiya va biznes morningstar samsung kkr va nvidia bilan hamkorlikda sun‘iy intellekt hisoblash markazlarini toza energiya bilan " },
   { t: "Britaniya Parlamenti OpenAI va Meta Rahbarlarini So‘roqqa Chaqirdi", u: "yangiliklar/britaniya-parlamenti-ai-rahbarlarini-soroqqa-chaqirdi-2026/", k: "britaniya parlamenti openai va meta rahbarlarini so‘roqqa chaqirdi ai xavfsizligi uk parliament buyuk britaniya parlamenti avtonom agentlar va sun’iy intellekt xatarlari yuzasidan yetakchi texnolo" },
   { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati the street dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
   { t: "Nvidia va Google 100 Gigavattlik Energiya Alyansini Tuzdi", u: "yangiliklar/nvidia-google-emerald-100-gigavatt-energiya-alyansi-2026/", k: "nvidia va google 100 gigavattlik energiya alyansini tuzdi infrastruktura va energetika siliconangle tech sun‘iy intellekt hisoblash markazlarining elektr tarmog‘iga bosimini kamaytirish maqsadida nvidia, g" },
