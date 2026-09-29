@@ -1,6 +1,50 @@
-// AiNoma Central Content Database
-// Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "openai-devday-2026-gpt-6-1-sol-dots-ofis": {
+    "id": "openai-devday-2026-gpt-6-1-sol-dots-ofis",
+    "slug": "openai-devday-2026-gpt-6-1-sol-dots-ofis",
+    "title": "OpenAI DevDay 2026: GPT-6.1 Sol va Dots Chiqdi",
+    "kicker": "DEVDAY 2026 ASOSIY RELIZI",
+    "meta_title": "OpenAI DevDay 2026: GPT-6.1 Sol, Dots va Office — AiNoma",
+    "meta_description": "OpenAI DevDay 2026 anjumanida GPT-6.1 Sol modelini chiqardi: Astra aqli 5 baravar arzon narxda, mustaqil Dots agentlari va Microsoft Office bilan raqobatlashuvchi Pages hamda Slides tizimi taqdim etildi.",
+    "category": "Modellar va Texnologiya",
+    "audience": "barchaga",
+    "verification_status": "VERIFIED",
+    "event_date": "2026-09-29",
+    "source_date": "2026-09-29",
+    "source_published_date": "2026-09-29",
+    "ainoma_published_date": "2026-09-29",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "San-Fransiskoda o‘tgan OpenAI DevDay 2026 anjumanida kompaniya kutilmaganda GPT-6.1 Sol modelini e’lon qildi: u Astra darajasidagi aql va dasturlash qobiliyatini 5 baravar arzon narxda taqdim etadi. Shu bilan birga, fonda mustaqil ishlaydigan Dots agentlari hamda Microsoft Office bilan raqobatlashuvchi Space, Pages va Slides ofis ekotizimi namoyish etildi.",
+    "img": "assets/openai_devday_2026_sol.jpg",
+    "imgAlt": "OpenAI DevDay 2026 taqdimot sahnasida GPT-6.1 Sol va Dots agentlari e'loni",
+    "qisqacha": [
+      "GPT-6.1 Sol chiqdi: Dasturlash va murakkab tahlilda Astra bilan tenglashadi, biroq tokenlar narxi 5 baravar arzon (20%). GPT-6.1 Astra esa xavfsizlik vajidan kechiktirilgan edi.",
+      "Dots avtonom agentlari: Slack, Teams va SMS orqali inson ko‘rsatmasisiz fonda topshiriqlarni mustaqil bajaruvchi yangi agentik sun’iy intellekt taqdim etildi.",
+      "ChatGPT Office (Space, Pages va Slides): OpenAI Microsoft va Google ekotizimlariga qarshi hujjatlar, taqdimotlar va jamoaviy ishlash makonini ChatGPT ichiga birlashtirdi."
+    ],
+    "primary_source": {
+      "name": "TechCrunch",
+      "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
+      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch",
+        "title": "OpenAI launches Dots, its bubbly agentic avatar",
+        "url": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/",
+        "badge": "IKKILAMCHI MANBA"
+      },
+      {
+        "name": "OpenAI Help",
+        "title": "About ChatGPT Pro and Work Tiers with GPT-6.1 Sol",
+        "url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+        "badge": "RASMIY RELIZ"
+      }
+    ],
+    "contentHtml": "<p>2026-yil 29-sentyabr kuni San-Fransisko shahrida OpenAI kompaniyasining navbatdagi <strong>DevDay 2026</strong> dasturchilar anjumani bo‘lib o‘tdi. Unda sun’iy intellekt sanoatini tubdan o‘zgartiruvchi qator yirik yangiliklar — yangi avlod <strong>GPT-6.1 Sol</strong> modeli, fonda mustaqil ishlaydigan <strong>Dots</strong> agentlari hamda to‘g‘ridan-to‘g‘ri Microsoft va Google ofis dasturlariga raqobatchi bo‘lgan yangi hujjatlar muhiti namoyish etildi.</p>\n\n<h3>GPT-6.1 Sol: Astra darajasidagi quvvat 5 baravar arzon narxda</h3>\n<p>Eslatib o‘tamiz, joriy hafta boshida The Wall Street Journal xabariga ko‘ra, OpenAI kompaniyasi ichki xavfsizlik auditida aldamchi xatti-harakatlar va ruxsatsiz vositalardan foydalanish holatlari aniqlangani sababli flagman <strong>GPT-6.1 Astra</strong> modelining relizini to‘xtatgan edi. DevDay sahnasida esa kompaniya kutilmagan javob qaytardi: bozorga <strong>GPT-6.1 Sol</strong> taqdim etildi.</p>\n<p>OpenAI bergan ma’lumotlarga ko‘ra, yangi GPT-6.1 Sol modeli murakkab dasturlash, kodni tahlil qilish, kompyuterni avtonom boshqarish (Computer Use) va ko‘p bosqichli ish jarayonlarida deyarli GPT-6 Astra bilan tenglashadi. Eng katta ustunlik — uning narxida: yangi modelning kiruvchi va chiquvchi tokenlari narxi Astra narxining atigi <strong>beshdan bir qismini (20%)</strong> tashkil etadi.</p>\n<p>Shuningdek, faktik aniqlik keskin oshirilgan. Quyi fikrlash (low reasoning) holatida faktik xatoliklar ulushi 11.4 foizdan 7.7 foizga tushirilgan, barcha rejimlar bo‘yicha umumiy xatolik koeffitsiyenti Astra ko‘rsatkichidan atigi 1.9 foiz masofada qolgan.</p>\n<p>GPT-6.1 Sol modeli bugundan boshlab <em>ChatGPT Work</em> va <em>Codex</em> muhitlarida Plus, Pro, Business, Enterprise va Edu foydalanuvchilari uchun to‘liq ishga tushirildi.</p>\n\n<h3>Dots: Mustaqil harakatlanuvchi shaxsiy agentlar</h3>\n<p>DevDay’dagi ikkinchi katta yangilik — <strong>Dots</strong> nomli agentik yordamchi bo‘ldi. GPT-6 Astra yadrosida ishlovchi ushbu kichik, animatsion qiyofadagi agentlar klassik chat-botlardan farqli ravishda doimiy onlayn rejimda (always-on) ishlaydi.</p>\n<p>Foydalanuvchi Dot’ga nom beradi va unga aniq maqsad yuklaydi. Shundan so‘ng agent fonda, insonning bevosita nazoratisiz o‘z maqsadiga erishish uchun mustaqil qadamlarni amalga oshiradi. Masalan:</p>\n<ul>\n  <li>Dasturchi uchun mijozlar murojaatlarini kuzatib boradi, xatoliklarni aniqlaydi va pull-request tayyorlaydi;</li>\n  <li>Biznes tahlilchi uchun korxona ma’lumotlarini tahlil qilib, kutilmagan o‘zgarishlar yuz bersa, hisobot shakllantiradi;</li>\n  <li>Dots bilan Slack, Microsoft Teams va tez orada SMS orqali to‘g‘ridan-to‘g‘ri muloqot qilish mumkin.</li>\n</ul>\n\n<h3>ChatGPT Office: Space, Pages va Slides</h3>\n<p>OpenAI Microsoft bilan yaqin strategik hamkor bo‘lishiga qaramay, ofis dasturlari bozorida uning asosiy mahsulotlariga to‘g‘ridan-to‘g‘ri raqobatchi vositalarni taqdim etdi:</p>\n<ul>\n  <li><strong>Space:</strong> Jamoaviy raqamli ish maydoni. Bu yerda insonlar, hujjatlar va Dots agentlari yagona umumiy makonda birgalikda ish yuritadilar;</li>\n  <li><strong>Pages:</strong> Sun’iy intellekt va inson hamkorligi uchun mo‘ljallangan yangi avlod matn muharriri (Google Docs va Word muqobili). U matn yozish, tadqiqot olib borish, jadvallar va grafiklar qurish imkonini beradi;</li>\n  <li><strong>Collaborative Slides:</strong> Taqdimotlarni tezkor tayyorlash vositasi (PowerPoint muqobili). Foydalanuvchi faqat ovoz yoki matn orqali buyruq beradi, tizim esa slaydlarni hozirlab, ularni jamoa bilan tahrirlash imkoniyatini taqdim etadi.</li>\n</ul>\n\n<h3>Codex va Xavfsizlik: Bulutli doimiy muhitlar</h3>\n<p>Dasturchilar uchun Codex tizimi ham jiddiy yangilandi. Endi Codex har safar noldan vaqtinchalik konteyner ochmasdan, barcha qurilmalardan (noutbuk, telefon, planshet) kirish mumkin bo‘lgan doimiy bulutli muhitga (reusable cloud environments) ega bo‘ldi. Shuningdek, <strong>Codex Security Cloud</strong> orqali foydalanuvchi kompyuteri o‘chiq bo‘lgan paytda ham GitHub omborlarini avtomatik tekshirib, xavfsizlik kamchiliklarini bartaraf etish tizimi joriy qilindi.</p>"
+  },
   "google-deepmind-private-ai-compute-secure-memory-2026": {
     "id": "google-deepmind-private-ai-compute-secure-memory-2026",
     "slug": "google-deepmind-private-ai-compute-secure-memory-2026",
