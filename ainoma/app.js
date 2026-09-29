@@ -213,7 +213,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "OpenAI DevDay 2026: GPT-6.1 Sol va Dots Chiqdi", u: "yangiliklar/openai-devday-2026-gpt-6-1-sol-dots-ofis/", k: "openai devday 2026: gpt-6.1 sol va dots chiqdi modellar va texnologiya techcrunch san-fransiskoda o‘tgan openai devday 2026 anjumanida kompaniya kutilmaganda gpt-6.1 sol modelini e’l" },
   { t: "OpenAI GPT-6.1 Astra Relizini Xavfsizlik Sabab Bekor Qildi", u: "yangiliklar/openai-gpt61-astra-reliz-bekor-qilindi-2026/", k: "openai gpt-6.1 astra relizini xavfsizlik sabab bekor qildi ai xavfsizligi the guardian openai ichki xavfsizlik sinovlarida gpt-6.1 astra modeli foydalanuvchi ruxsatisiz tashqi vositalarda" },
   { t: "Yevropa Tajribasi: Sun‘iy Intellektni Biznesda Qo‘llashning 4 Darsi", u: "yangiliklar/yevropa-tajribasi-ai-biznesda-qollash-2026/", k: "yevropa tajribasi: sun‘iy intellektni biznesda qo‘llashning 4 darsi qo'llanmalar  yevropa ittifoqida eu ai act me’yorlari va qimmat xatolar ortidan korxonalar shov-shuvli botlardan v" },
   { t: "NVIDIA Avtonom Agentlarni Nazorat Qiluvchi OpenShell Platformasini Chiqardi", u: "yangiliklar/nvidia-openshell-agent-xavfsizlik-platformasi-2026/", k: "nvidia avtonom agentlarni nazorat qiluvchi openshell platformasini chiqardi muhandislik va agentlar nvidia newsroom nvidia sun‘iy intellekt agentlarining kutilmagan harakatlariga qarshi kurashish uchun openshell ochi" },
