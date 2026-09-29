@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="AiNoma — O‘zbekiston biznesi, mutaxassislari va jamoalari uchun sun’iy intellekt texnologiyalarini amaliyotga tatbiq etish bo‘yicha to‘liq tizimli qo‘llanmalar kutubxonasi.">
   <title>Qo‘llanmalar Kutubxonasi — AiNoma</title>
-  <link rel="stylesheet" href="style.css?v=1790664204">
+  <link rel="stylesheet" href="style.css?v=1790668579">
   <link rel="canonical" href="https://ainoma.uz/qollanmalar.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AiNoma">
@@ -65,17 +65,6 @@
       <p>Quruq nazariya emas, aynan O‘zbekiston korxonalari va mutaxassislari bugunoq ishlatishi mumkin bo‘lgan bosqichma-bosqich tizimlar va yo‘riqnomalar to‘plami.</p>
     </div>
 
-    <!-- Workshop Callout Banner -->
-    <div style="background:linear-gradient(135deg, rgba(5, 150, 105, 0.08) 0%, rgba(6, 78, 59, 0.12) 100%); border:1px solid rgba(5, 150, 105, 0.3); border-radius:12px; padding:20px 24px; margin-bottom:32px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
-      <div>
-        <div style="font-weight:700; font-size:16px; margin-bottom:4px; color:var(--ink);">⚡ Tayyor so‘rov qoliplari va prompt generatori kerakmi?</div>
-        <div style="font-size:14px; color:var(--muted);">Kompaniyangiz vazifasiga mos professional so‘rovlarni interaktiv konstruktor yordamida shakllantiring.</div>
-      </div>
-      <a class="btn primary" href="prompt-ustaxonasi.html" style="font-size:13px; padding:8px 18px; display:inline-flex; align-items:center; gap:6px;">
-        <span>Prompt Ustaxonasiga o‘tish</span> →
-      </a>
-    </div>
-
     <!-- Filters -->
     <div class="filters">
       <button class="filter active" data-filter="all">Barchasi (14)</button>
@@ -86,8 +75,10 @@
       <button class="filter" data-filter="tizim">Muhandislik & Xavfsizlik</button>
     </div>
 
-    <!-- Guides Grid -->
-    <div class="pagegrid">
+    <!-- Guides Split Layout -->
+    <div class="guides-split-layout">
+      <div class="guides-main-col">
+        <div class="pagegrid guides-pagegrid">
 
       <!-- Mualliflik Rukni: Yevropa Tajribasi - Shuhrat Iskandarov -->
       <article class="card filter-card" data-cat="biznes tizim" data-search="yevropa tajribasi suniy intellekt biznesda qollash b2b ish jarayonlari workflow eu ai act gdpr shuhrat iskandarov gptify cubeo" style="border: 1px solid rgba(79, 70, 229, 0.35); background: linear-gradient(180deg, rgba(248, 250, 252, 0.9) 0%, rgba(255, 255, 255, 1) 100%); box-shadow: 0 4px 16px rgba(79, 70, 229, 0.08);">
@@ -299,7 +290,40 @@
         </div>
       </article>
 
-    </div>
+        </div><!-- /.pagegrid -->
+      </div><!-- /.guides-main-col -->
+
+      <!-- Sticky Guides Sidebar -->
+      <aside class="guides-sidebar">
+        <!-- Compact Academy CTA Card -->
+        <div class="academy-sidebar-box">
+          <div class="academy-badge-sm">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>GPTify Academy</span>
+          </div>
+          <h4 class="academy-sidebar-title">Sun’iy intellektni 0 dan professionalgacha o‘rganing</h4>
+          <p class="academy-sidebar-desc">
+            Amaliy B2B ish jarayonlari, haftasiga 10 soat tejash usullari va rasmiy QR-Sertifikat.
+          </p>
+          <div class="academy-sidebar-tags">
+            <span>✓ 14 ta amaliy dars</span>
+            <span>✓ QR-Sertifikat</span>
+          </div>
+          <a class="academy-sidebar-btn" href="https://academy.gptify.uz" target="_blank" rel="noopener">
+            <span>Kurslarni ko‘rish</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Prompt Ustaxonasi Quick Card -->
+        <div class="tools-sidebar-card">
+          <div class="tools-sidebar-badge">🛠️ INTERAKTIV</div>
+          <h4 class="tools-sidebar-title">Prompt Ustaxonasi</h4>
+          <p class="tools-sidebar-desc">O‘zbek tilida sohangizga mos master prompt konstruktori.</p>
+          <a class="tools-sidebar-link" href="prompt-ustaxonasi.html">Ustaxonaga o‘tish →</a>
+        </div>
+      </aside>
+    </div><!-- /.guides-split-layout -->
   </main>
 
   <!-- Footer -->
@@ -360,6 +384,6 @@
     </button>
   </nav>
 
-  <script src="app.js?v=1790664204"></script>
+  <script src="app.js?v=1790668579"></script>
 </body>
 </html>
