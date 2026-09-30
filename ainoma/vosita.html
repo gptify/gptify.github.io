@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="AI vosita sharhi va foydalanish bo‘yicha to‘liq qo‘llanma — AiNoma">
   <title id="pageTitle">Gamma AI — AiNoma AI vositalar</title>
-  <link rel="stylesheet" href="style.css?v=1790757878">
+  <link rel="stylesheet" href="style.css">
   <link rel="canonical" href="https://ainoma.uz/vosita.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AiNoma">
@@ -226,13 +226,16 @@
   </nav>
 
   <script src="tools-data.js"></script>
-  <script src="app.js?v=1790757878"></script>
+  <script src="app.js"></script>
   <script>
     const toolsData = window.AINOMA_TOOLS || {};
     const params = new URLSearchParams(window.location.search);
     const toolId = params.get("id") || "gamma";
     if (toolId === "ildam") {
       window.location.replace("vositalar/ildam/");
+    }
+    if (toolId === "meet" || toolId === "mirzo") {
+      window.location.replace("vositalar/meet/");
     }
     const data = toolsData[toolId] || toolsData["gamma"];
 
