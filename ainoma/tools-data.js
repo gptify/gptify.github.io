@@ -602,5 +602,25 @@ window.AINOMA_TOOLS = {
     f3_d: "Yangi veb-platforma orqali rasmlarni tahrirlash, o'lchamini kengaytirish va yangi elementlar qo'shish.",
     benefit: "Grafik dizayn va reklama konseptlarini ishlab chiqish xarajatlarini sezilarli qisqartirish.",
     prompt: "Zamonaviy Toshkent arxitekturasi uslubidagi ekologik osmono'par bino, quyosh botishi, fotorealistik 8K."
+  },
+  cubeo: {
+    id: "cubeo",
+    name: "Cubeo AI",
+    kicker: "AI vosita · Avtonom AI Agentlar & No-Code Jamoa",
+    headline: "Biznes jarayonlari va mijozlar bilan muloqotni avtomatlashtiruvchi, bir necha daqiqada kodsiz shaxsiy avtonom AI agentlar jamoasini qurish platformasi.",
+    category: "AI Agentlar & Avtomatlashtirish",
+    pricing: "Bepul sinov / Obuna",
+    lang: "O‘zbek tili, Rus tili, Ingliz tili",
+    url: "https://cubeo.ai",
+    bg: "#3c409a",
+    initial: "C",
+    f1_t: "Kodsiz AI agentlar qurish (No-Code)",
+    f1_d: "Dasturlash bilimlarisiz o‘z biznesingiz bilimlar bazasi va CRM tizimiga ulangan ixtisoslashgan agentlarni sozlang.",
+    f2_t: "Tayyor AI agentlar kutubxonasi",
+    f2_d: "Mijozlarni qo‘llab-quvvatlash, lido-generatsiya va tahlil uchun darhol ishga tushirish mumkin bo‘lgan tayyor agentlar.",
+    f3_t: "Ko‘p kanalli integratsiya (Omnichannel)",
+    f3_d: "Veb-sayt vidjeti, Telegram, WhatsApp va ichki korporativ tizimlarga uzluksiz ulanish imkoniyati.",
+    benefit: "Biznesdagi takroriy vazifalarni 24/7 avtonom ishlovchi AI agentlar jamoasiga yuklab, inson resursini strategik ishlarga yo‘naltirish.",
+    prompt: "Korxonamiz mijozlariga xizmat ko'rsatish bo'yicha e'tirozlarni yechuvchi va eng ko'p beriladigan savollarga professional javob beruvchi AI agent profilini sozlash."
   }
 };
