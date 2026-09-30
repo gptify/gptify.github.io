@@ -1,4 +1,86 @@
+// AiNoma Central Content Database
+// Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "oq-uy-trump-ai-gigantlari-xavfsizlik-pakti-2026": {
+    "id": "oq-uy-trump-ai-gigantlari-xavfsizlik-pakti-2026",
+    "slug": "oq-uy-trump-ai-gigantlari-xavfsizlik-pakti-2026",
+    "title": "Oq Uyda Super-Intellekt Xavfsizlik Pakti Imzolandi",
+    "kicker": "AQSH · XALQARO TARTIBOT",
+    "meta_title": "Oq Uyda 6 ta AI Giganti Super-Intellekt Xavfsizlik Paktini Imzoladi — AiNoma",
+    "meta_description": "Donald Trump Oq Uyda Meta, Google, Nvidia, Anthropic, OpenAI va xAI rahbarlari bilan uchrashdi. Kompaniyalar xavfsizlik auditini o'z ichiga olgan paktga imzo chekdi.",
+    "category": "AI Siyosati va Tartibot",
+    "audience": "biznes",
+    "verification_status": "VERIFIED",
+    "event_date": "2026-09-30",
+    "source_date": "2026-09-30",
+    "source_published_date": "2026-09-30",
+    "ainoma_published_date": "2026-09-30",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Vashingtondagi sammitda OpenAI, Google, Meta, Anthropic, Nvidia va xAI rahbarlari super-intellekt xavfsizligini ta’minlash, mustaqil tashqi audit va tizimlarni ruxsatsiz buzib kirishdan himoyalash bo‘yicha tarixiy bitimga imzo chekdi.",
+    "img": "assets/white_house_super_intelligence_accord_2026.jpg",
+    "imgAlt": "Oq Uyda texnologiya gigantlari rahbarlari ishtirokida o'tkazilgan xavfsizlik sammiti",
+    "qisqacha": [
+      "Donald Trump Oq Uyda Mark Sukerberg, Sundar Pichai, Jensen Xuang, Dario Amodei, Greg Brokman va Ilon Mask bilan uchrashuv o‘tkazdi.",
+      "Barcha 6 ta yetakchi kompaniya o‘zlarining eng ilg‘or modellarini mustaqil tashqi auditorlar orqali sinovdan o‘tkazish majburiyatini oldi.",
+      "Prezident Trump federal idoralarda 'Sun’iy intellekt' (AI) o‘rniga 'Super-Intellekt' (SI) atamasini rasman qo‘llash to‘g‘risida farmon imzoladi."
+    ],
+    "primary_source": {
+      "name": "Reuters Technology",
+      "title": "White House Secures Historic Super Intelligence Safety Commitments from Top AI Labs",
+      "url": "https://www.reuters.com/technology/white-house-ai-safety-accord-2026/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Wall Street Journal",
+        "title": "Donald Trump Meets Tech Leaders to Sign Super Intelligence Safety Accord",
+        "url": "https://www.wsj.com/tech/ai/white-house-super-intelligence-meeting-2026",
+        "badge": "IKKILAMCHI MANBA"
+      }
+    ],
+    "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: AiNoma / Reuters (<a href=\"https://www.reuters.com/technology/white-house-ai-safety-accord-2026/\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">reuters.com</a>)</em></p>\n\n<p>2026-yil 30-sentabr kuni Vashingtonda sun’iy intellekt sanoati tarixidagi eng muhim voqealardan biri yuz berdi. AQSh Prezidenti Donald Trump Oq Uyda dunyoning barcha yetakchi sun’iy intellekt kompaniyalari rahbarlarini qabul qildi va tomonlar <strong>«Super-Intellekt bo‘yicha Oq Uy Kelishuvi» (White House Accord on Super Intelligence)</strong> deb nomlangan xavfsizlik paktini rasman imzoladi.</p>\n\n<p>Sammitda <strong>Mark Sukerberg (Meta)</strong>, <strong>Sundar Pichai (Google)</strong>, <strong>Jensen Xuang (Nvidia)</strong>, <strong>Dario Amodei (Anthropic)</strong>, <strong>Greg Brokman (OpenAI prezidenti)</strong> hamda <strong>Ilon Mask (xAI asoschisi)</strong> shaxsan ishtirok etdi.</p>\n\n<h3>Kelishuvning asosiy majburiyatlari</h3>\n<p>Ushbu bitim ilg‘or sun’iy intellekt modellari va avtonom agentlar insoniyat nazoratidan chiqib ketishining oldini olishga qaratilgan bo‘lib, quyidagi qat’iy talablarni o‘z ichiga oladi:</p>\n<ul>\n  <li><strong>Mustaqil tashqi audit:</strong> Har bir kompaniya yangi yirik model yoki agentik tizimni ommaga chiqarishdan oldin mustaqil xavfsizlik laboratoriyalari va auditorlar tekshiruvidan o‘tkazadi;</li>\n  <li><strong>Tizimlarni buzib kirishdan himoya:</strong> Avtonom AI agentlarning tashqi serverlar, bank operatsiyalari yoki davlat infratuzilmasiga ruxsatsiz ulanishining (sandbox breakout) oldini olish bo‘yicha qat’iy texnik cheklovlar joriy etiladi;</li>\n  <li><strong>Doimiy xavfsizlik forumi:</strong> Kompaniyalar xavfsizlik xatarlari bo‘yicha har oy yagona standartlar ishlab chiqish uchun birgalikda yig‘iladi.</li>\n</ul>\n\n<h3>«AI» o‘rniga «Super-Intellekt» atamasi</h3>\n<p>Sammit davomida Prezident Trump yangi farmonni imzoladi. Unga ko‘ra, AQSh federal idoralarining barcha rasmiy hujjatlarida oddiy <em>«Sun’iy intellekt» (AI)</em> atamasi o‘rniga <strong>«Super-Intellekt» (Super Intelligence / SI)</strong> atamasi qo‘llanilishi belgilandi. Shuningdek, ma’muriyat AQSh bo‘ylab sun’iy intellekt data-markazlari va energetika infratuzilmasini kengaytirishni to‘liq qo‘llab-quvvatlashini bildirdi.</p>\n\n<p>Kuzatuvchilarning ta’kidlashicha, ushbu pakt bir-biri bilan shafqatsiz raqobatlashayotgan texnologiya gigantlarining xavfsizlik masalasida birlashgan ilk global hujjati bo‘ldi.</p>"
+  },
+  "ai-kod-agentlari-xavfsizlik-xatosi-github-13000-hujjat-2026": {
+    "id": "ai-kod-agentlari-xavfsizlik-xatosi-github-13000-hujjat-2026",
+    "slug": "ai-kod-agentlari-xavfsizlik-xatosi-github-13000-hujjat-2026",
+    "title": "AI Kod Agentlari Sabab 13,000 Maxfiy Hujjat Sizib Chiqdi",
+    "kicker": "KIBER-XAVFSIZLIK VA DASTURLASH",
+    "meta_title": "AI Kod Agentlari Xatosi: 13,000+ Maxfiy Hujjat GitHub'ga Sizib Chiqdi — AiNoma",
+    "meta_description": "Avtonom dasturlash agentlari loyiha keshidagi to'lov cheklari, billing skrinshotlari va API kalitlarni ochiq GitHub repozitoriylariga avtomatik commit qilib yubordi.",
+    "category": "Kiber-xavfsizlik va Muhandislik",
+    "audience": "dasturchilar",
+    "verification_status": "VERIFIED",
+    "event_date": "2026-09-30",
+    "source_date": "2026-09-30",
+    "source_published_date": "2026-09-30",
+    "ainoma_published_date": "2026-09-30",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Dasturchilar tomonidan qo‘llanilayotgan avtonom AI agentlar loyiha katalogidagi maxfiy fayllarni ochiq GitHub repozitoriylariga avtomatik yuklab yuborishi natijasida 13 000 dan ortiq to‘lov cheki, ichki skrinshot va API kalitlar tarmoqda fosh bo‘ldi.",
+    "img": "assets/ai_coding_agents_github_leak_2026.jpg",
+    "imgAlt": "Dasturchi ish stantsiyasida avtonom kod agentlari va kiberxavfsizlik auditi",
+    "qisqacha": [
+      "Kiber-xavfsizlik tadqiqoti ochiq GitHub repozitoriylarida AI agentlar tomonidan avtomatik yuklangan 13 000 dan ziyod maxfiy fayllarni aniqladi.",
+      "Muammo sun'iy intellekt modelida emas, balki agentlarga to'liq avtonom fayl ruxsatlari berilgani va .gitignore e'tibordan chetda qolganida ekani aniqlandi.",
+      "IT jamoalariga avtonom agentlarning avtomatik git commit/push amallarini taqiqlash va maxfiy ma'lumotlar filtrlarini o'rnatish tavsiya qilindi."
+    ],
+    "primary_source": {
+      "name": "Reuters Technology",
+      "title": "Cyber Audit Finds AI Coding Tools Leaked Thousands of Internal Corporate Artifacts to GitHub",
+      "url": "https://www.reuters.com/technology/ai-coding-tools-github-security-breach/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Wall Street Journal",
+        "title": "Autonomous Coding Assistants Accidentally Upload Billing and Secret Keys to Public Repositories",
+        "url": "https://www.wsj.com/tech/cybersecurity/ai-coding-assistants-exposed-github-data-2026",
+        "badge": "IKKILAMCHI MANBA"
+      }
+    ],
+    "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: AiNoma / Tech Security (<a href=\"https://www.reuters.com/technology/ai-coding-tools-github-security-breach/\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">reuters.com</a>)</em></p>\n\n<p>Avtonom sun’iy intellekt agentlarining dasturchilar jamoasiga kirib kelishi jiddiy xavfsizlik muammolarini yuzaga chiqarmoqda. 2026-yil 30-sentabrda e’lon qilingan xalqaro kiber-xavfsizlik auditi natijalariga ko‘ra, ommabop dasturchi AI agentlari (jumladan Claude Code, Cursor va Copilot Workspace) tomonidan ochiq GitHub repozitoriylariga <strong>13 000 dan ortiq maxfiy korporativ fayllar</strong> beixtiyor yuklab yuborilgani ma’lum bo‘ldi.</p>\n\n<h3>Fosh bo‘lgan ma’lumotlar: cheklar, skrinshotlar va kalitlar</h3>\n<p>Tadqiqotchilar ochiq repozitoriylarni skanerlash jarayonida korxonalarning ichki moliyaviy hisobotlari, Stripe va banking to‘lov kvitansiyalari, chiqarilmagan mahsulotlarning ichki skrinshotlari hamda ma’lumotlar bazasining maxfiy kalitlari (API keys) ochiq holda saqlanayotganini aniqlashdi.</p>\n<p>Eng qizig‘i, ushbu ma’lumotlarni dasturchilarning o‘zlari emas, balki ularning buyrug‘i bilan kod yozayotgan <strong>avtonom AI agentlar</strong> qo‘shib yuborgan. Agent kodni tekshirish, testdan o‘tkazish yoki xatolarni skrinshot qilish jarayonida hosil bo‘lgan kesh fayllarni loyiha repozitoriyasiga qo‘shib, avtomatik ravishda <code>git commit</code> va <code>git push</code> qilgan.</p>\n\n<h3>Asosiy sabab: Nazoratsiz ruxsatlar va .gitignore e’tiborsizligi</h3>\n<p>Xavfsizlik mutaxassislari muammo sun’iy intellekt algoritmining o‘zida emas, balki insoniy omilda ekanini ta’kidlamoqda. Dasturchilar AI agentlariga terminal va Git buyruqlarini mustaqil bajarishga cheksiz ruxsat berib qo‘ygan, loyihadagi <code>.gitignore</code> fayli esa kesh va vaqtinchalik media fayllarni himoyalashga to‘g‘ri sozlanmagan.</p>\n\n<h3>O‘zbekiston IT jamoalari va bizneslar uchun 3 ta amaliy saboq:</h3>\n<ol>\n  <li><strong>Avtomatik push amalini taqiqlang:</strong> Hech qachon AI agentlarga <code>git push</code> buyrug‘ini inson tasdig‘isiz bajarish huquqini bermang. Agent kodni yozishi mumkin, ammo commit va push amalini doim dasturchining o‘zi ko‘zdan kechirishi shart;</li>\n  <li><strong>.gitignore faylini qat’iy tekshiring:</strong> Loyiha papkasida <code>.env</code>, <code>*.png</code>, <code>*.jpg</code>, <code>temp/</code>, <code>cache/</code> kabi fayllar Git indeksiga kirmasligi kafolatlansin;</li>\n  <li><strong>Pre-commit secret skanerlarini o‘rnating:</strong> Gitleaks yoki TruffleHog kabi avtomatik himoya vositalari har qanday sirli kalitlar tarmoqqa chiqishini bloklaydi.</li>\n</ol>"
+  },
   "sam-altman-openai-xavfsizlik-va-ipo-2026": {
     "id": "sam-altman-openai-xavfsizlik-va-ipo-2026",
     "slug": "sam-altman-openai-xavfsizlik-va-ipo-2026",
@@ -2066,6 +2148,45 @@ window.AINOMA_ARTICLES = {
     "author": {
       "name": "Shuhrat Iskandarov",
       "job": "GPTify.co asoschisi va Cubeo.ai hammuassisi · B2B sun‘iy intellekt muhandisi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "talabalar-uchun-sunny-intellekt": {
+    "id": "talabalar-uchun-sunny-intellekt",
+    "slug": "talabalar-uchun-sunny-intellekt",
+    "title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash",
+    "kicker": "TALABALAR UCHUN · TA'LIM",
+    "meta_title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash — AiNoma Qo‘llanma",
+    "meta_description": "AI sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi. Referat va taqdimotni to'g'ri, halol tayyorlash yo'li.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-09-30",
+    "source_date": "2026-09-30",
+    "source_published_date": "2026-09-30",
+    "ainoma_published_date": "2026-09-30",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "AI sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi. Referat va taqdimotni to'g'ri, halol tayyorlash yo'li.",
+    "img": "assets/itpark_tashkent.jpg",
+    "imgAlt": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>TALABALAR UCHUN · TA'LIM</p>\n<p><b>Qisqa javob:</b> AI'dan referatni \"yozib berish\" uchun emas, tadqiqotni tezlashtirish, tuzilmani qurish va matnni tahrirlash uchun foydalaning — tayyor matnni o'zingiznikidek topshirish ko'p universitetlarda intizomiy jazoga sabab bo'ladi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">⚠️ Avval bilishingiz kerak bo'lgan narsa</h2>\n<p>Ko'p universitetlar plagiat va AI-yozilgan matnni aniqlash vositalaridan foydalanadi. AI tomonidan to'liq yozilgan referatni o'zingiznikidek topshirish — nafaqat axloqiy muammo, balki real intizomiy xavf. Quyidagi usullar AI'ni <b>yordamchi</b>, o'rinbosar emas, sifatida ishlatishga qaratilgan.</p>\n<h2 class=\"article-section-title\">1-qadam: Mavzuni tushunish va tuzilma qurish</h2>\n<p>Mavzuni AI'ga tushuntirib, undan referat uchun tuzilma (kirish, asosiy qismlar, xulosa) so'rang. Bu — eng ko'p vaqt tejaydigan qadam, chunki bo'sh sahifadan boshlash qiyin.</p>\n<p><i>Misol so'rov:</i> \"Men [mavzu] haqida 5 sahifali referat yozmoqchiman. Menga 4 bosh qism va har biriga 2-3 tayanch fikr taklif qil.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Tadqiqot va manba topish</h2>\n<p>AI'dan mavzu bo'yicha kalit tushunchalar va so'rov so'zlarini so'rang, keyin bu so'zlar bilan kutubxona bazalari va ilmiy maqolalarda <b>o'zingiz</b> qidiring. AI ba'zan mavjud bo'lmagan manbalarni \"to'qib chiqarishi\" mumkin — har bir keltirilgan manbani albatta o'zingiz tekshiring.</p>\n<h2 class=\"article-section-title\">3-qadam: O'z fikringizni yozing, AI'dan tahrir uchun foydalaning</h2>\n<p>Asosiy fikrlarni o'z so'zlaringiz bilan yozib chiqing, keyin AI'dan grammatika, uslub va aniqlik bo'yicha tahrir so'rang. Bu tartib — AI matnni \"qurish\" emas, \"yaxshilash\" uchun ishlatilishini ta'minlaydi.</p>\n<h2 class=\"article-section-title\">4-qadam: Taqdimot uchun tuzilma va dizayn</h2>\n<p>Taqdimot uchun Gamma yoki shunga o'xshash vositalarda AI yordamida tez slayd tuzilmasi qurish mumkin — bu sof texnik ish, halollik masalasi tug'dirmaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Agar o'qituvchi sizdan \"shu joyni tushuntirib bering\" desa va tushuntira olmasangiz — demak, siz AI'ga haddan tashqari tayangan bo'lasiz. Har doim o'z matningizni to'liq tushunganingizga ishonch hosil qiling.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Joriy vazifangiz uchun AI'dan faqat tuzilma va 3 ta savol so'rang — matnni o'zingiz yozib ko'ring, keyin AI'dan faqat tahrir so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Aniq so'rov yozishni o'rganish uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI'dan referat yozishni so'rasam nima bo'ladi?</b> Ko'p universitetlarda bu intizomiy qoidabuzarlik hisoblanadi — aniqlash vositalari tobora yaxshilanmoqda.</p>\n<p><b>AI keltirgan manbalarga ishonsam bo'ladimi?</b> Yo'q — har doim manbani o'zingiz qidirib, mavjudligini tasdiqlang.</p>\n<p><b>Taqdimot dizaynida AI ishlatish muammo emasmi?</b> Yo'q, dizayn va tuzilma — bilim emas, texnik ish, shuning uchun bu halollik masalasiga tegishli emas.</p>",
+    "contentHtml": "<p>TALABALAR UCHUN · TA'LIM</p>\n<p><b>Qisqa javob:</b> AI'dan referatni \"yozib berish\" uchun emas, tadqiqotni tezlashtirish, tuzilmani qurish va matnni tahrirlash uchun foydalaning — tayyor matnni o'zingiznikidek topshirish ko'p universitetlarda intizomiy jazoga sabab bo'ladi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">⚠️ Avval bilishingiz kerak bo'lgan narsa</h2>\n<p>Ko'p universitetlar plagiat va AI-yozilgan matnni aniqlash vositalaridan foydalanadi. AI tomonidan to'liq yozilgan referatni o'zingiznikidek topshirish — nafaqat axloqiy muammo, balki real intizomiy xavf. Quyidagi usullar AI'ni <b>yordamchi</b>, o'rinbosar emas, sifatida ishlatishga qaratilgan.</p>\n<h2 class=\"article-section-title\">1-qadam: Mavzuni tushunish va tuzilma qurish</h2>\n<p>Mavzuni AI'ga tushuntirib, undan referat uchun tuzilma (kirish, asosiy qismlar, xulosa) so'rang. Bu — eng ko'p vaqt tejaydigan qadam, chunki bo'sh sahifadan boshlash qiyin.</p>\n<p><i>Misol so'rov:</i> \"Men [mavzu] haqida 5 sahifali referat yozmoqchiman. Menga 4 bosh qism va har biriga 2-3 tayanch fikr taklif qil.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Tadqiqot va manba topish</h2>\n<p>AI'dan mavzu bo'yicha kalit tushunchalar va so'rov so'zlarini so'rang, keyin bu so'zlar bilan kutubxona bazalari va ilmiy maqolalarda <b>o'zingiz</b> qidiring. AI ba'zan mavjud bo'lmagan manbalarni \"to'qib chiqarishi\" mumkin — har bir keltirilgan manbani albatta o'zingiz tekshiring.</p>\n<h2 class=\"article-section-title\">3-qadam: O'z fikringizni yozing, AI'dan tahrir uchun foydalaning</h2>\n<p>Asosiy fikrlarni o'z so'zlaringiz bilan yozib chiqing, keyin AI'dan grammatika, uslub va aniqlik bo'yicha tahrir so'rang. Bu tartib — AI matnni \"qurish\" emas, \"yaxshilash\" uchun ishlatilishini ta'minlaydi.</p>\n<h2 class=\"article-section-title\">4-qadam: Taqdimot uchun tuzilma va dizayn</h2>\n<p>Taqdimot uchun Gamma yoki shunga o'xshash vositalarda AI yordamida tez slayd tuzilmasi qurish mumkin — bu sof texnik ish, halollik masalasi tug'dirmaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Agar o'qituvchi sizdan \"shu joyni tushuntirib bering\" desa va tushuntira olmasangiz — demak, siz AI'ga haddan tashqari tayangan bo'lasiz. Har doim o'z matningizni to'liq tushunganingizga ishonch hosil qiling.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Joriy vazifangiz uchun AI'dan faqat tuzilma va 3 ta savol so'rang — matnni o'zingiz yozib ko'ring, keyin AI'dan faqat tahrir so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Aniq so'rov yozishni o'rganish uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI'dan referat yozishni so'rasam nima bo'ladi?</b> Ko'p universitetlarda bu intizomiy qoidabuzarlik hisoblanadi — aniqlash vositalari tobora yaxshilanmoqda.</p>\n<p><b>AI keltirgan manbalarga ishonsam bo'ladimi?</b> Yo'q — har doim manbani o'zingiz qidirib, mavjudligini tasdiqlang.</p>\n<p><b>Taqdimot dizaynida AI ishlatish muammo emasmi?</b> Yo'q, dizayn va tuzilma — bilim emas, texnik ish, shuning uchun bu halollik masalasiga tegishli emas.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-09-30",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
   }

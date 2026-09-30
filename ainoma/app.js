@@ -216,9 +216,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Sam Altman: OpenAI Xavfsizlik Kafolatlanmaguncha Birjaga Chiqmaydi", u: "yangiliklar/sam-altman-openai-xavfsizlik-va-ipo-2026/", k: "sam altman: openai xavfsizlik kafolatlanmaguncha birjaga chiqmaydi ai siyosati va strategiya the verge openai rahbari sam altman devday 2026 anjumanidan so‘ng o‘tkazilgan matbuot brifingida kompaniya uol" },
   { t: "AMD Li Fey-Feyning World Labs Startapini Sotib Oldi", u: "yangiliklar/amd-world-labs-ai-8-milliard-dollar-xarid-2026/", k: "amd li fey-feyning world labs startapini sotib oldi investitsiya va biznes amd investor relations yarimo‘tkazgichlar giganti amd sun’iy intellekt sohasining yetakchi tadqiqotchisi li fey-fey (fei-fe" },
+  { t: "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash", u: "yangiliklar/talabalar-uchun-sunny-intellekt/", k: "talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash qo'llanmalar ainoma tahririyati ai sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi. referat va taqdimotni to'g'ri, halol" },
   { t: "OpenAI DevDay 2026: GPT-6.1 Sol va Dots Chiqdi", u: "yangiliklar/openai-devday-2026-gpt-6-1-sol-dots-ofis/", k: "openai devday 2026: gpt-6.1 sol va dots chiqdi modellar va texnologiya openai san-fransiskoda o‘tgan openai devday 2026 anjumanida kompaniya kutilmaganda gpt-6.1 sol modelini e’l" },
   { t: "OpenAI GPT-6.1 Astra Relizini Xavfsizlik Sabab Bekor Qildi", u: "yangiliklar/openai-gpt61-astra-reliz-bekor-qilindi-2026/", k: "openai gpt-6.1 astra relizini xavfsizlik sabab bekor qildi ai xavfsizligi the guardian openai ichki xavfsizlik sinovlarida gpt-6.1 astra modeli foydalanuvchi ruxsatisiz tashqi vositalarda" },
   { t: "Yevropa Tajribasi: Sun‘iy Intellektni Biznesda Qo‘llashning 4 Darsi", u: "yangiliklar/yevropa-tajribasi-ai-biznesda-qollash-2026/", k: "yevropa tajribasi: sun‘iy intellektni biznesda qo‘llashning 4 darsi qo'llanmalar  yevropa ittifoqida eu ai act me’yorlari va qimmat xatolar ortidan korxonalar shov-shuvli botlardan v" },

@@ -151,6 +151,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/yangiliklar/talabalar-uchun-sunny-intellekt/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/yangiliklar/openai-devday-2026-gpt-6-1-sol-dots-ofis/</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -499,6 +505,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/vositalar/cubeo/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/vositalar/cursor/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -601,6 +613,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/vositalar/mirzo/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/vositalar/muxlisa/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -625,15 +643,15 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ainoma.uz/vositalar/cubeo/</loc>
+    <loc>https://ainoma.uz/yangiliklar/oq-uy-trump-ai-gigantlari-xavfsizlik-pakti-2026/</loc>
     <lastmod>2026-09-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ainoma.uz/qollanma-ai-agent.html</loc>
+    <loc>https://ainoma.uz/yangiliklar/ai-kod-agentlari-xavfsizlik-xatosi-github-13000-hujjat-2026/</loc>
     <lastmod>2026-09-30</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>
