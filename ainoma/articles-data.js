@@ -1,4 +1,84 @@
 window.AINOMA_ARTICLES = {
+  "sam-altman-openai-xavfsizlik-va-ipo-2026": {
+    "id": "sam-altman-openai-xavfsizlik-va-ipo-2026",
+    "slug": "sam-altman-openai-xavfsizlik-va-ipo-2026",
+    "title": "Sam Altman: OpenAI Xavfsizlik Kafolatlanmaguncha Birjaga Chiqmaydi",
+    "kicker": "AI SIYOSATI VA INVESTITSIYA",
+    "meta_title": "Sam Altman: OpenAI Xavfsizlik Kafolatlanmaguncha IPO Qilmaydi — AiNoma",
+    "meta_description": "OpenAI bosh direktori Sam Altman DevDay anjumanidan so'ng kompaniya modellar xavfsizligini to'liq kafolatlamaguncha birjaga chiqmasligini ta'kidladi.",
+    "category": "AI Siyosati va Strategiya",
+    "audience": "biznes",
+    "verification_status": "VERIFIED",
+    "event_date": "2026-09-30",
+    "source_date": "2026-09-30",
+    "source_published_date": "2026-09-30",
+    "ainoma_published_date": "2026-09-30",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "OpenAI rahbari Sam Altman DevDay 2026 anjumanidan so‘ng o‘tkazilgan matbuot brifingida kompaniya Uoll-strit investorlari bosimiga uchmasligini va sun’iy intellekt xavfsizligi to‘liq isbotlanmaguncha ommaviy birjaga (IPO) chiqmasligini ma’lum qildi.",
+    "img": "assets/sam_altman_openai_ipo_2026.jpg",
+    "imgAlt": "Sam Altman OpenAI DevDay anjumanida xavfsizlik va IPO haqida bayonot bermoqda",
+    "qisqacha": [
+      "Sam Altman DevDay'dagi brifingda OpenAI modellar xavfsizligini qat'iy isbotlamaguncha birjaga (IPO) chiqmasligini ta'kidladi.",
+      "Bosh direktor Uoll-strit investorlari bosimiga uchmaslik va xavfsizlik chegaralarini modellar qobiliyatidan oldinga qo'yish asosiy tamoyil ekanini aytdi.",
+      "Raqobatchi Anthropic noyabrda IPO o'tkazishni mo'ljallayotgan bir paytda, OpenAI xavfsizlik auditini ustuvor yo'nalish qilib belgiladi."
+    ],
+    "primary_source": {
+      "name": "The Verge",
+      "title": "Sam Altman says OpenAI won't go public until its models are safe",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Reuters",
+        "title": "OpenAI CEO Sam Altman addresses IPO speculation and model safety oversight",
+        "url": "https://www.reuters.com/technology/artificial-intelligence/",
+        "badge": "IKKILAMCHI MANBA"
+      }
+    ],
+    "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: The Verge / Hayden Field (<a href=\"https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">theverge.com</a>)</em></p>\n\n<p>San-Fransiskoda bo‘lib o‘tgan <strong>OpenAI DevDay 2026</strong> anjumanidan so‘ng o‘tkazilgan maxsus matbuot brifingida kompaniya bosh direktori <strong>Sem Altman (Sam Altman)</strong> OpenAI’ning ommaviy birjaga (IPO) chiqishi haqidagi savollarga javob berdi. Uning ta’kidlashicha, kompaniya modellar xavfsizligini to‘liq ta’minlamaguncha birjaga chiqmaydi va buning aniq muddati belgilanmagan.</p>\n\n<h3>\"Xavfsizlikni qobiliyatdan oldinga qo‘yishimiz shart\"</h3>\n<p><em>\"Biz sun’iy intellekt rivojini davom ettirish niyatidamiz. Biroq modellarimiz qobiliyati kutilgandan ham shiddat bilan o‘sib bormoqda va kelajakda bu sur’at yanada tezlashadi. Shunday ekan, biz jamiyat oldida xavfsizlik bo‘yicha to‘liq ishonchli kafolatlarni bera olishimiz shart\"</em>, — dedi Altman jurnalistlar bilan muloqotda.</p>\n<p>Shuningdek, u Uoll-strit (Wall Street) investorlarining bosimi kompaniyani xavfli qarorlar qabul qilishga majburlashiga yo‘l qo‘ymasligini qo‘shimcha qildi. Altmanning so‘zlariga ko‘ra, birja talablariga moslashish jarayonida xavfsizlikni ikkinchi darajaga tushirish — eng noto‘g‘ri qadam bo‘ladi.</p>\n\n<h3>Bozordagi vaziyat va raqobatchilar</h3>\n<p>Eslatib o‘tamiz, OpenAI’ning asosiy raqobatchilaridan biri bo‘lgan <strong>Anthropic</strong> kompaniyasi iyun oyida IPO uchun rasmiy arizasini topshirgan va uning birjaga chiqishi joriy yilning noyabr oyida kutilmoqda. Ilon Maskning SpaceX kompaniyasi esa yozda birjaga chiqib, tarixdagi eng yirik IPO’lardan birini amalga oshirgan edi.</p>\n<p>Shunga qaramay, Altman shoshilish niyatida emasligini bildirdi: <em>\"Kompaniyalar ommaviy birjaga chiqishi yaxshi holat, albatta. Ammo sun’iy intellektning eng xavfli va o‘ta qobiliyatli bosqichiga o‘tayotgan paytimizda shoshqaloqlik qilish butun dunyo uchun xavfli bo‘lishi mumkin\"</em>.</p>"
+  },
+  "amd-world-labs-ai-8-milliard-dollar-xarid-2026": {
+    "id": "amd-world-labs-ai-8-milliard-dollar-xarid-2026",
+    "slug": "amd-world-labs-ai-8-milliard-dollar-xarid-2026",
+    "title": "AMD Li Fey-Feyning World Labs Startapini Sotib Oldi",
+    "kicker": "GLOBAL BIZNES VA CHIPLAR",
+    "meta_title": "AMD Li Fey-Feyning World Labs Startapini $8.2 Milliardga Oldi — AiNoma",
+    "meta_description": "AMD kompaniyasi Stanford professori Li Fey-Fey asos solgan World Labs fazoviy AI startapini $8.2 milliardga sotib olishini rasman e'lon qildi.",
+    "category": "Investitsiya va Biznes",
+    "audience": "barchaga",
+    "verification_status": "VERIFIED",
+    "event_date": "2026-09-30",
+    "source_date": "2026-09-30",
+    "source_published_date": "2026-09-30",
+    "ainoma_published_date": "2026-09-30",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Yarimo‘tkazgichlar giganti AMD sun’iy intellekt sohasining yetakchi tadqiqotchisi Li Fey-Fey (Fei-Fei Li) tomonidan asos solingan World Labs startapini 8.2 milliard dollarga sotib olishini e’lon qildi. Ushbu bitim AMD kompaniyasiga NVIDIA bilan fazoviy modellar poygasida tenglashish imkonini beradi.",
+    "img": "assets/fei_fei_li_amd_world_labs.jpg",
+    "imgAlt": "Stanford professori va World Labs asoschisi Li Fey-Fey",
+    "qisqacha": [
+      "AMD kompaniyasi Li Fey-Fey tomonidan asos solingan World Labs startapini 8.2 milliard dollarga to'liq sotib olish bo'yicha bitim tuzdi.",
+      "World Labs fizik voqelikni va 3D fazoni tushunuvchi 'Large World Models' tizimlarini ishlab chiqish bilan shug'ullanadi.",
+      "Li Fey-Fey AMD vitse-prezidenti va Bosh olimi (Chief Scientist) lavozimiga o'tib, yangi avlod sun'iy intellekt chiplarini yo'lga qo'yadi."
+    ],
+    "primary_source": {
+      "name": "AMD Investor Relations",
+      "title": "AMD to Acquire World Labs to Advance the Future of AI Compute",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+      "badge": "RASMIY RELIZ"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch",
+        "title": "AMD will acquire Fei-Fei Li's World Labs for $8.2B",
+        "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+        "badge": "IKKILAMCHI MANBA"
+      }
+    ],
+    "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: Getty Images / TechCrunch (<a href=\"https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">techcrunch.com</a>)</em></p>\n\n<p>Yarimo‘tkazgichlar ishlab chiqaruvchi <strong>AMD</strong> kompaniyasi sun’iy intellekt bo‘yicha dunyoning eng nufuzli olimlaridan biri, Stanford universiteti professori <strong>Li Fey-Fey (Fei-Fei Li)</strong> asos solgan <strong>World Labs</strong> kompaniyasini <strong>8.2 milliard dollarga</strong> sotib olish bo‘yicha rasmiy bitim tuzilganini e’lon qildi.</p>\n\n<h3>Fazoviy intellekt va \"Katta dunyo modellari\" (Large World Models)</h3>\n<p>Li Fey-Fey sun’iy intellekt sohasida kompyuter ko‘rish (Computer Vision) inqilobiga turtki bergan afsonaviy <em>ImageNet</em> loyihasining muallifi hisoblanadi. U 2024-yilda World Labs kompaniyasiga asos solib, faqat matn bilan ishlovchi modellardan farqli ravishda fizik olamni, uch o‘lchamli (3D) fazoni va jismoniy qonuniyatlarni anglay oladigan <strong>Large World Models (LWM)</strong> ustida tadqiqot boshlagan edi.</p>\n<p>Ushbu modellar robototexnika, avtonom transportlar, fazoviy hisoblash va sanoat simulyatsiyalari uchun hal qiluvchi poydevor hisoblanadi.</p>\n\n<h3>Li Fey-Fey AMD kompaniyasiga Bosh olim bo‘lib o‘tmoqda</h3>\n<p>Kompaniyalar bergan rasmiy bayonotga ko‘ra, Li Fey-Fey AMD korporativ tuzilmasiga vitse-prezident hamda <strong>Bosh olim (Chief Scientist)</strong> sifatida qo‘shiladi. U AMD kompaniyasining kelgusi sun’iy intellekt chiplari arxitekturasini ishlab chiqish va yangi avlod modellariga moslashtirish yo‘nalishiga rahbarlik qiladi.</p>\n<p>Ushbu strategik xarid AMD kompaniyasiga sun’iy intellekt chiplari bozorida yakkahokimlik qilayotgan <strong>NVIDIA</strong> bilan raqobatda kuchli ustunlik taqdim etishi kutilmoqda.</p>"
+  },
   "openai-devday-2026-gpt-6-1-sol-dots-ofis": {
     "id": "openai-devday-2026-gpt-6-1-sol-dots-ofis",
     "slug": "openai-devday-2026-gpt-6-1-sol-dots-ofis",
