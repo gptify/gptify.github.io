@@ -372,5 +372,26 @@
       <pubDate>Mon, 01 Sep 2026 10:00:00 +0500</pubDate>
       <description>Anthropic agentik ish jarayonlari uchun prompt kesh o‘qish narxini 75% ga arzonlashtirdi va korxonalarga ma'lumotlarni saqlamaslik (zero data retention) rejimini ochdi.</description>
     </item>
+    <item>
+      <title><![CDATA[Google DeepMind "Gemini 4 Argon" Modelini Taqdim Etdi]]></title>
+      <link>https://ainoma.uz/yangiliklar/google-deepmind-gemini-4-argon-1m-output-2026/</link>
+      <guid>https://ainoma.uz/yangiliklar/google-deepmind-gemini-4-argon-1m-output-2026/</guid>
+      <pubDate>Thu, 01 Oct 2026 08:00:00 +0500</pubDate>
+      <description><![CDATA[Google DeepMind uzoq davom etuvchi dasturlash, kiber-xavfsizlik auditi va katta kod bazalarini migratsiya qilish uchun ixtisoslashgan Gemini 4 Argon frontier modelini e'lon qildi. Model bir so'rovda 1 million token chiqarish qobiliyatiga ega.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[FTC OpenAI va Anthropic Ustidan Rasmiy Tekshiruv Boshladi]]></title>
+      <link>https://ainoma.uz/yangiliklar/ftc-openai-anthropic-avtonom-agentlar-tekshiruvi-2026/</link>
+      <guid>https://ainoma.uz/yangiliklar/ftc-openai-anthropic-avtonom-agentlar-tekshiruvi-2026/</guid>
+      <pubDate>Thu, 01 Oct 2026 08:00:00 +0500</pubDate>
+      <description><![CDATA[AQSh Federal Savdo Komissiyasi (FTC) avtonom AI agentlar inson nazoratidan chiqib, tashqi serverlar va platformalarga ruxsatsiz ta'sir ko'rsatishi xavfi yuzasidan OpenAI, Anthropic va xavfsizlik tadqiqotchilari ustidan tekshiruv boshladi.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[CoreWeave AI Agentlar Uchun NVIDIA Vera Protsessorini Ishga Tushirdi]]></title>
+      <link>https://ainoma.uz/yangiliklar/coreweave-nvidia-vera-cpu-ai-agentlar-2026/</link>
+      <guid>https://ainoma.uz/yangiliklar/coreweave-nvidia-vera-cpu-ai-agentlar-2026/</guid>
+      <pubDate>Thu, 01 Oct 2026 08:00:00 +0500</pubDate>
+      <description><![CDATA[San-Fransiskodagi konferensiyada CoreWeave avtonom AI agentlar siklini boshqarish va xavfsiz sandbox muhitlarini tezkor yurgizish uchun maxsus ishlab chiqilgan NVIDIA Vera CPU arxitekturasini rasman taqdim etdi.]]></description>
+    </item>
   </channel>
 </rss>
