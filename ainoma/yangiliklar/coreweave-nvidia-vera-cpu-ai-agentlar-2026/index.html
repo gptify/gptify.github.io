@@ -134,24 +134,23 @@
         </div>
 
         <div id="articleDynamicContent">
-          <p class="article-official-credit" style="font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);"><em>Tasvir: Alex Wong / Getty Images (<a href="https://www.businessinsider.com/trump-seating-chart-white-house-meeting-ai-executives-lunch-2026-9" target="_blank" rel="noopener" style="color: var(--primary);">Business Insider orqali</a>)</em></p>
+<p class="article-official-credit" style="font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);"><em>Tasvir: NVIDIA Newsroom (<a href="https://nvidianews.nvidia.com/news/nvidia-vera-cpu-agentic-ai" target="_blank" rel="noopener" style="color: var(--primary);">NVIDIA GB200 NVL72 rasmiy matbuot surati</a>)</em></p>
 
-<p>2026-yil 30-sentabr kuni Vashingtonda sun’iy intellekt sanoati tarixidagi eng muhim voqealardan biri yuz berdi. AQSh Prezidenti Donald Trump Oq Uyda dunyoning barcha yetakchi sun’iy intellekt kompaniyalari rahbarlarini qabul qildi va tomonlar <strong>«Super-Intellekt bo‘yicha Oq Uy Kelishuvi» (White House Accord on Super Intelligence)</strong> deb nomlangan xavfsizlik paktini rasman imzoladi.</p>
+<p>Sun’iy intellekt bulut infratuzilmasi yetakchisi <strong>CoreWeave</strong> San-Fransiskoda o‘tkazilgan <em>Fully Connected</em> konferensiyasida avtonom AI agentlar uchun maxsus ishlangan dunyodagi ilk markaziy protsessor — <strong>NVIDIA Vera CPU</strong> tizimini o‘z platformasiga kiritganini e’lon qildi.</p>
 
-<p>Sammitda <strong>Mark Sukerberg (Meta)</strong>, <strong>Sundar Pichai (Google)</strong>, <strong>Jensen Xuang (Nvidia)</strong>, <strong>Dario Amodei (Anthropic)</strong>, <strong>Greg Brokman (OpenAI prezidenti)</strong> hamda <strong>Ilon Mask (xAI asoschisi)</strong> shaxsan ishtirok etdi.</p>
+<p>Avtonom AI agentlar faoliyatida hisob-kitoblarning salmoqli qismi faqat GPU grafik kartalarida emas, balki izolyatsiya qilingan virtual muhitlar (sandboxes), tashqi asboblar bilan aloqa (tool calling), Python kodini ijro etish va ma’lumotlar quvurlarida amalga oshiriladi. Vera protsessori aynan ushbu bo‘g‘indagi sekinlashuvlarni bartaraf etish uchun qurilgan.</p>
 
-<h3>Kelishuvning asosiy majburiyatlari</h3>
-<p>Ushbu bitim ilg‘or sun’iy intellekt modellari va avtonom agentlar insoniyat nazoratidan chiqib ketishining oldini olishga qaratilgan bo‘lib, quyidagi qat’iy talablarni o‘z ichiga oladi:</p>
+<h3>«Olympus» arxitekturasi va texnik ko‘rsatkichlar</h3>
 <ul>
-  <li><strong>Mustaqil tashqi audit:</strong> Har bir kompaniya yangi yirik model yoki agentik tizimni ommaga chiqarishdan oldin mustaqil xavfsizlik laboratoriyalari va auditorlar tekshiruvidan o‘tkazadi;</li>
-  <li><strong>Tizimlarni buzib kirishdan himoya:</strong> Avtonom AI agentlarning tashqi serverlar, bank operatsiyalari yoki davlat infratuzilmasiga ruxsatsiz ulanishining (sandbox breakout) oldini olish bo‘yicha qat’iy texnik cheklovlar joriy etiladi;</li>
-  <li><strong>Doimiy xavfsizlik forumi:</strong> Kompaniyalar xavfsizlik xatarlari bo‘yicha har oy yagona standartlar ishlab chiqish uchun birgalikda yig‘iladi.</li>
+  <li><strong>88 yadro va 176 potok:</strong> NVIDIA’ning maxsus Olympus mikromuhandisligi negizida ishlab chiqilgan protsessor fazoviy ko‘p oqimlilik (spatial multithreading) texnologiyasiga ega;</li>
+  <li><strong>Tezkor muhitni yuklash:</strong> An’anaviy x86 server protsessorlariga nisbatan AI agentlar uchun virtual konteynerlar va sandbox muhitlarini bir necha barobar tezroq ishga tushiradi;</li>
+  <li><strong>Bare-metal integratsiya:</strong> CoreWeave mijozlari tizimdan mavjud Kubernetes klasterlari va server klasterlari orqali to‘g‘ridan-to‘g‘ri foydalanishlari mumkin.</li>
 </ul>
 
-<h3>«AI» o‘rniga «Super-Intellekt» atamasi</h3>
-<p>Sammit davomida Prezident Trump yangi farmonni imzoladi. Unga ko‘ra, AQSh federal idoralarining barcha rasmiy hujjatlarida oddiy <em>«Sun’iy intellekt» (AI)</em> atamasi o‘rniga <strong>«Super-Intellekt» (Super Intelligence / SI)</strong> atamasi qo‘llanilishi belgilandi. Shuningdek, ma’muriyat AQSh bo‘ylab sun’iy intellekt data-markazlari va energetika infratuzilmasini kengaytirishni to‘liq qo‘llab-quvvatlashini bildirdi.</p>
+<h3>Kompaniyalarning amaliy qo‘llashi</h3>
+<p>Konferensiyada e’lon qilinishicha, dunyoga mashhur avtonom AI dasturchisi Devin’ni ishlab chiqqan <strong>Cognition</strong> jamoasi Vera CPU infratuzilmasida o‘z agentlarini muvaffaqiyatli sinovdan o‘tkazdi va real ishlab chiqarish jarayonlariga to‘liq joriy qildi.</p>
 
-<p>Kuzatuvchilarning ta’kidlashicha, ushbu pakt bir-biri bilan shafqatsiz raqobatlashayotgan texnologiya gigantlarining xavfsizlik masalasida birlashgan ilk global hujjati bo‘ldi.</p>
+<p>Kuzatuvchilarning qayd etishicha, Vera CPU sun’iy intellekt infratuzilmasida faqat grafik chiplar emas, balki agentik dasturlarga ixtisoslashgan yangi avlod markaziy protsessorlari davrini boshlab bermoqda.</p>
         </div>
 
         <div class="article-source-ref">
