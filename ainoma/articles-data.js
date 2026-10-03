@@ -1,4 +1,124 @@
 window.AINOMA_ARTICLES = {
+  "anthropic-claude-code-mods-typescript-agent-hooks-2026": {
+      "id": "anthropic-claude-code-mods-typescript-agent-hooks-2026",
+      "slug": "anthropic-claude-code-mods-typescript-agent-hooks-2026",
+      "title": "Anthropic Claude Code Mods Dasturchilar Ekotizimini Chiqardi",
+      "kicker": "DASTURLASH VA AVTONOM AGENTLAR",
+      "meta_title": "Anthropic Claude Code Mods Dasturchilar Ekotizimini Chiqardi — AiNoma",
+      "meta_description": "Anthropic kompaniyasi Claude Code agenti uchun TypeScript asosidagi 'Mods' tizimini taqdim etdi. Dasturchilar agent xatti-harakatlarini, ruxsatnomalarini va maxfiy ma'lumotlarni boshqarishi mumkin.",
+      "category": "Modellar va Texnologiya",
+      "audience": "dasturchilar",
+      "verification_status": "VERIFIED",
+      "event_date": "2026-10-03",
+      "source_date": "2026-10-02",
+      "source_published_date": "2026-10-02",
+      "ainoma_published_date": "2026-10-03",
+      "read_time": "3 daqiqalik mutolaa",
+      "readTime": "3 daqiqalik mutolaa",
+      "deck": "Anthropic Claude Code vositasi uchun TypeScript va JavaScript plaginlari tizimi bo'lgan 'Claude Code Mods'ni ishga tushirdi. Dasturchilar endi AI agentning so'rovlarini tahrirlash, vositalar chaqiruvini filtrlash va xavfsizlik ruxsatlarini dasturiy tarzda boshqarish imkoniga ega bo'ldi.",
+      "img": "assets/claude_code_mods_anthropic_2026.jpg",
+      "imgAlt": "Anthropic Claude Code Mods arxitekturasi va dasturchilar muhiti",
+      "qisqacha": [
+          "Anthropic kompaniyasi Claude Code avtonom dasturchi agenti uchun maxsus 'Code Mods' plaginlar platformasini rasman e'lon qildi.",
+          "Tizim TypeScript va JavaScript funksiyalari orqali agentning har bir harakatini nazorat qilish, maxfiy API kalitlarini avtomatik yashirish va so'rovlarni tahrirlash imkonini beradi.",
+          "Yangi modifikatsiyalar '/plugin' buyrug'i orqali to'g'ridan-to'g'ri terminal va ishchi stoldagi dastur muhitiga o'rnatiladi."
+      ],
+      "primary_source": {
+          "name": "Anthropic Documentation",
+          "title": "Claude Code Mods: Customizing agent runtimes with TypeScript hooks",
+          "url": "https://docs.anthropic.com/en/docs",
+          "badge": "BIRLAMCHI HUJJAT"
+      },
+      "secondary_sources": [
+          {
+              "name": "The Verge AI",
+              "title": "Anthropic introduces Claude Code Mods to let developers program AI coding agents",
+              "url": "https://www.theverge.com/ai-artificial-intelligence",
+              "badge": "TEXNIK TAHLIL"
+          }
+      ],
+      "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: Anthropic brending arxivi (<a href=\"https://docs.anthropic.com/en/docs\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">Anthropic Docs orqali</a>)</em></p>\n\n<p>Ilg'or neyrotizimlar ishlab chiquvchi <strong>Anthropic</strong> kompaniyasi o'zining dasturlashga ixtisoslashgan Claude Code vositasi uchun katta yangilanishni — <strong>Claude Code Mods</strong> ekotizimini rasman taqdim etdi.</p>\n\n<p>Mazkur tizim AI agentlarni oddiy yopiq qutidan to'liq dasturlanuvchi va har bir qadami nazorat qilinadigan moslashuvchan dasturiy ta'minotga aylantiradi.</p>\n\n<h3>TypeScript Agent Hooks imkoniyatlari</h3>\n<p>Endilikda dasturchilar kichik TypeScript yoki JavaScript funksiyalari (hooks) yozish orqali Claude Code ish jarayoniga bevosita aralasha oladilar:</p>\n\n<ul>\n  <li><strong>So'rovlarni qayta ishlash:</strong> Modelga yuborilayotgan promptlarni avtomatik to'ldirish yoki korporativ standartlarga moslashtirish;</li>\n  <li><strong>Xavfsizlik va ruxsatnomalar:</strong> Fayllarni o'chirish, tizim buyruqlarini bajarish yoki ma'lumotlar bazasiga yozishdan oldin dasturiy filtrlar qo'yish;</li>\n  <li><strong>Maxfiy kalitlarni himoyalash:</strong> Agentning terminaldagi natijalari orasidan API kalitlar va parollarni avtomatik tarzda o'chirib yuborish (secret redaction);</li>\n  <li><strong>Foydalanuvchi interfeysi:</strong> Dasturchilar o'zlarining shaxsiy buyruqlari va monitoring vidjetlarini agentga ulashlari mumkin.</li>\n</ul>\n\n<p>Barcha modlar <code>/plugin</code> buyrug'i orqali o'rnatiladi va jamoaviy dasturlashda xavfsizlikni yangi bosqichga ko'taradi.</p>"
+  },
+  "google-deepmind-synthid-bio-oqsil-suv-belgilari-2026": {
+      "id": "google-deepmind-synthid-bio-oqsil-suv-belgilari-2026",
+      "slug": "google-deepmind-synthid-bio-oqsil-suv-belgilari-2026",
+      "title": "Google DeepMind DNK Uchun SynthID Bio Tizimini Taqdim Etdi",
+      "kicker": "BIOTEXNOLOGIYA VA KIBER-XAVFSIZLIK",
+      "meta_title": "Google DeepMind DNK Uchun SynthID Bio Tizimini Taqdim Etdi — AiNoma",
+      "meta_description": "Google DeepMind sun'iy intellekt tomonidan loyihalashtirilgan oqsillar va DNK ketma-ketliklariga ko'rinmas raqamli suv belgilari qo'yuvchi SynthID Bio texnologiyasini e'lon qildi.",
+      "category": "Xavfsizlik va Tartibga Solish",
+      "audience": "tadqiqotchilar",
+      "verification_status": "VERIFIED",
+      "event_date": "2026-10-03",
+      "source_date": "2026-10-02",
+      "source_published_date": "2026-10-02",
+      "ainoma_published_date": "2026-10-03",
+      "read_time": "3 daqiqalik mutolaa",
+      "readTime": "3 daqiqalik mutolaa",
+      "deck": "Google DeepMind sun'iy intellekt vositasida modellashtirilgan biologik tuzilmalar va sun'iy oqsillarni verifikatsiya qilish uchun 'SynthID Bio' texnologiyasini taqdim etdi. Tizim molekulyar darajada ko'rinmas suv belgisini kiritadi.",
+      "img": "assets/google_deepmind_synthid_bio_2026.jpg",
+      "imgAlt": "Google DeepMind SynthID Bio oqsil molekulalari tahlili",
+      "qisqacha": [
+          "Google DeepMind generativ AI tomonidan loyihalashtirilgan oqsillar va DNK ketma-ketliklarini markalash uchun 'SynthID Bio' tizimini ishlab chiqdi.",
+          "Texnologiya oqsilning biologik xususiyatlarini o'zgartirmagan holda uning aminokislotalar tarkibiga tekshiriluvchi raqamli tamg'a (watermark) kiritadi.",
+          "Tadqiqot natijalari nufuzli Nature ilmiy jurnalida chop etilib, bioguruhlar uchun ochiq manba sifatida taqdim etildi."
+      ],
+      "primary_source": {
+          "name": "Google DeepMind Technologies",
+          "title": "Watermarking AI-designed proteins with SynthID Bio",
+          "url": "https://deepmind.google/technologies/",
+          "badge": "BIRLAMCHI TADQIQOT"
+      },
+      "secondary_sources": [
+          {
+              "name": "Nature Portfolio",
+              "title": "Verifiable digital watermarking for artificial intelligence designed proteins",
+              "url": "https://www.nature.com/subjects/biotechnology",
+              "badge": "ILMIY EKSPERTIZA"
+          }
+      ],
+      "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: Google DeepMind ilmiy arxivi (<a href=\"https://deepmind.google/technologies/\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">DeepMind orqali</a>)</em></p>\n\n<p>Google DeepMind laboratoriyasi biologiya va tibbiyotda sun'iy intellekt xavfsizligini ta'minlashga qaratilgan inqilobiy yangilikni — <strong>SynthID Bio</strong> texnologiyasini taqdim etdi. Mazkur loyiha AI modellar (masalan, AlphaFold 3 va ProteinMPNN) orqali ishlab chiqilgan oqsillarga ko'rinmas, ammo laboratoriyada aniqlanuvchi suv belgilarini joylashtiradi.</p>\n\n<p>Ushbu vosita sintetik biologiya davrida xavfli patogenlar yoki ruxsatsiz biologik moddalar sintezlanishining oldini olishga xizmat qiladi.</p>\n\n<h3>Texnologiya qanday ishlaydi?</h3>\n<div class=\"article-callout\" style=\"background: var(--surface-2); border-left: 4px solid #10b981; padding: 1.25rem; margin: 1.75rem 0; border-radius: 0.5rem;\">\n    <h4 style=\"margin: 0 0 0.5rem 0; color: #047857; font-size: 1.05rem;\">SynthID Bio asosiy mexanizmlari:</h4>\n    <ul style=\"margin: 0; padding-left: 1.25rem; color: var(--text-secondary); line-height: 1.6;\">\n        <li><strong>Strukturaviy tamg'a:</strong> 3D oqsil strukturasidagi atomlar koordinatalariga mikroskopik o'zgarishlar kiritiladi, bu oqsil funksiyasiga ziyon yetkazmaydi;</li>\n        <li><strong>Ketma-ketlik kodi:</strong> Aminokislotalar tanlovida maxsus matematik naqsh hosil qilinadi;</li>\n        <li><strong>Sanoat integratsiyasi:</strong> DNK sintez qiluvchi bio-laboratoriyalar buyurtma qilingan molekula qonuniy AI modeli tomonidan ishlab chiqilganini darhol tekshira oladi.</li>\n    </ul>\n</div>\n\n<p>DeepMind loyiha kodlari, ilmiy vaznlari va laboratoriya ma'lumotlarini global ilmiy hamjamiyat uchun ochiq taqdim etdi.</p>"
+  },
+  "coreweave-forge-ai-agentlar-yagona-platformasi-2026": {
+      "id": "coreweave-forge-ai-agentlar-yagona-platformasi-2026",
+      "slug": "coreweave-forge-ai-agentlar-yagona-platformasi-2026",
+      "title": "CoreWeave AI Agentlar Uchun Forge Platformasini Taqdim Etdi",
+      "kicker": "BULUTLI INFRATUZILMA VA AGENTLAR",
+      "meta_title": "CoreWeave AI Agentlar Uchun Forge Platformasini Taqdim Etdi — AiNoma",
+      "meta_description": "CoreWeave avtonom AI agentlar va modellarni o'qitish, kuzatish va baholashni bitta ochiq ekotizimga birlashtiruvchi CoreWeave Forge platformasini rasman ishga tushirdi.",
+      "category": "Infratuzilma va Qurilmalar",
+      "audience": "muhandislar",
+      "verification_status": "VERIFIED",
+      "event_date": "2026-10-03",
+      "source_date": "2026-10-02",
+      "source_published_date": "2026-10-02",
+      "ainoma_published_date": "2026-10-03",
+      "read_time": "3 daqiqalik mutolaa",
+      "readTime": "3 daqiqalik mutolaa",
+      "deck": "Yirik AI hisoblash giganti CoreWeave sun'iy intellekt agentlari va modellarining butun ishlab chiqarish siklini boshqarishga mo'ljallangan 'Forge' platformasini e'lon qildi. Tizim monitoring, o'qitish va xavfsiz testlashni birlashtiradi.",
+      "img": "assets/coreweave_forge_ai_platform_2026.jpg",
+      "imgAlt": "CoreWeave Forge yagona AI rivojlantirish muhiti",
+      "qisqacha": [
+          "CoreWeave San-Fransiskodagi sammitda AI modellari va avtonom agentlar uchun 'Forge' yagona rivojlantirish platformasini taqdim etdi.",
+          "Tizim agentlarning harakatlarini real vaqtda kuzatuvchi Agent Lens, CoreWeave Notebooks hamda ARIA aqlli yordamchisini o'z ichiga oladi.",
+          "Canva va MasterClass kabi global korporatsiyalar yangi tizimni real ishlab chiqarish jarayonlariga to'liq joriy qildi."
+      ],
+      "primary_source": {
+          "name": "CoreWeave Cloud Platform",
+          "title": "Introducing CoreWeave Forge: The unified development platform for AI models and agents",
+          "url": "https://www.coreweave.com/platform",
+          "badge": "BIRLAMCHI E'LON"
+      },
+      "secondary_sources": [
+          {
+              "name": "CNBC Technology",
+              "title": "CoreWeave challenges traditional clouds with unified AI agent development stack",
+              "url": "https://www.cnbc.com/technology/",
+              "badge": "BOHOR SHARHI"
+          }
+      ],
+      "contentHtml": "<p class=\"article-official-credit\" style=\"font-size: 0.85rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);\"><em>Tasvir: CoreWeave bulutli serverlar arxitekturasi (<a href=\"https://www.coreweave.com/platform\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--primary);\">CoreWeave orqali</a>)</em></p>\n\n<p>Sun'iy intellekt hisoblash infratuzilmasi yetakchisi <strong>CoreWeave</strong> San-Fransiskoda bo'lib o'tgan konferensiyasida dasturchilar va muhandislik guruhlari uchun yagona rivojlantirish qatlami bo'lgan <strong>CoreWeave Forge</strong> platformasini e'lon qildi.</p>\n\n<p>Bugungi kunda AI jamoalari turli vositalar (o'qitish, xotira, baholash, xavfsizlik auditlari) o'rtasida tarqoqlikdan aziyat chekmoqda. Forge barcha bosqichlarni yagona uzluksiz arxitekturaga jamlaydi.</p>\n\n<h3>Forge platformasining tarkibiy qismlari</h3>\n<ul>\n  <li><strong>CoreWeave Agent Lens:</strong> Avtonom agentlarning serverdagi har bir harakati va so'rovlarini xavfsiz kuzatish;</li>\n  <li><strong>CoreWeave ARIA:</strong> Dasturiy ta'minotni optimallashtirish va klasterlarni boshqarish uchun maxsus AI yordamchisi;</li>\n  <li><strong>Ochiq arxitektura:</strong> Faqat CoreWeave serverlarida emas, balki gibrid va ko'p bulutli (multi-cloud) muhitlarda ham to'laqonli ishlaydi.</li>\n</ul>\n\n<p>Platforma foydalanuvchilarga sinovdan olingan xulosalarni darhol yangi modellar o'qitishiga aylantirish imkonini bermoqda.</p>"
+  },
   "microsoft-ai-ovozli-agentlar-uchun-3-model-2026": {
       "id": "microsoft-ai-ovozli-agentlar-uchun-3-model-2026",
       "slug": "microsoft-ai-ovozli-agentlar-uchun-3-model-2026",

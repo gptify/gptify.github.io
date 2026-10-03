@@ -696,4 +696,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://ainoma.uz/yangiliklar/anthropic-claude-code-mods-typescript-agent-hooks-2026/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/yangiliklar/google-deepmind-synthid-bio-oqsil-suv-belgilari-2026/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/yangiliklar/coreweave-forge-ai-agentlar-yagona-platformasi-2026/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
