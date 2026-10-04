@@ -1,7 +1,7 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
-  {
+  "openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026": {
     "id": "openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026",
     "slug": "openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026",
     "title": "OpenAI Xavfsizlik Rahbari David Robinson Iste’foga Chiqdi",
@@ -68,7 +68,7 @@ window.AINOMA_ARTICLES = {
     ]
   },
 
-  {
+  "anthropic-enterprise-frontier-academy-100-million-dollar-2026": {
     "id": "anthropic-enterprise-frontier-academy-100-million-dollar-2026",
     "slug": "anthropic-enterprise-frontier-academy-100-million-dollar-2026",
     "title": "Anthropic Enterprise Muhandislar Uchun $100M Jamg‘arma Ajratdi",
@@ -135,7 +135,7 @@ window.AINOMA_ARTICLES = {
     ]
   },
 
-  {
+  "google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026": {
     "id": "google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026",
     "slug": "google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026",
     "title": "Google Gemini Modellarini Tariflar Bo‘yicha Qat’iy Cheklamoqda",
