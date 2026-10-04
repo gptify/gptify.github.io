@@ -139,6 +139,24 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://ainoma.uz/yangiliklar/openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/yangiliklar/anthropic-enterprise-frontier-academy-100-million-dollar-2026/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ainoma.uz/yangiliklar/google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ainoma.uz/yangiliklar/anthropic-claude-code-mods-typescript-agent-hooks-2026/</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -719,23 +737,5 @@
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/yangiliklar/openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026/</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/yangiliklar/anthropic-enterprise-frontier-academy-100-million-dollar-2026/</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ainoma.uz/yangiliklar/google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026/</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>

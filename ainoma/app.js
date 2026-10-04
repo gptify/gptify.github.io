@@ -219,7 +219,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "OpenAI Xavfsizlik Rahbari David Robinson Iste’foga Chiqdi", u: "yangiliklar/openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026/", k: "openai xavfsizlik rahbari david robinson iste’foga chiqdi modellar va texnologiya the atlantic openai xavfsizlik tizimlari bo'yicha yetakchi tadqiqotchisi devid robinson the atlantic nashrida o't" },
+  { t: "Anthropic Enterprise Muhandislar Uchun $100M Jamg‘arma Ajratdi", u: "yangiliklar/anthropic-enterprise-frontier-academy-100-million-dollar-2026/", k: "anthropic enterprise muhandislar uchun $100m jamg‘arma ajratdi infratuzilma va qurilmalar anthropic newsroom anthropic kompaniyasi global korxonalarda claude modellarini xavfsiz va samarali ishlab chiqarishga " },
+  { t: "Google Gemini Modellarini Tariflar Bo‘yicha Qat’iy Cheklamoqda", u: "yangiliklar/google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026/", k: "google gemini modellarini tariflar bo‘yicha qat’iy cheklamoqda modellar va texnologiya google gemini support google 2026-yil 9-oktabrdan e'tiboran gemini ilovasida modellar mavjudligini qat'iy ta'riflarga ajra" },
   { t: "Anthropic Claude Code Mods Dasturchilar Ekotizimini Chiqardi", u: "yangiliklar/anthropic-claude-code-mods-typescript-agent-hooks-2026/", k: "anthropic claude code mods dasturchilar ekotizimini chiqardi modellar va texnologiya anthropic documentation anthropic claude code vositasi uchun typescript va javascript plaginlari tizimi bo'lgan 'claude code" },
   { t: "Google DeepMind DNK Uchun SynthID Bio Tizimini Taqdim Etdi", u: "yangiliklar/google-deepmind-synthid-bio-oqsil-suv-belgilari-2026/", k: "google deepmind dnk uchun synthid bio tizimini taqdim etdi xavfsizlik va tartibga solish google deepmind technologies google deepmind sun'iy intellekt vositasida modellashtirilgan biologik tuzilmalar va sun'iy oqsillar" },
   { t: "CoreWeave AI Agentlar Uchun Forge Platformasini Taqdim Etdi", u: "yangiliklar/coreweave-forge-ai-agentlar-yagona-platformasi-2026/", k: "coreweave ai agentlar uchun forge platformasini taqdim etdi infratuzilma va qurilmalar coreweave cloud platform yirik ai hisoblash giganti coreweave sun'iy intellekt agentlari va modellarining butun ishlab chiqar" },

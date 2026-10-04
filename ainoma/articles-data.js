@@ -35,7 +35,7 @@ window.AINOMA_ARTICLES = {
       {
         "name": "The Guardian Technology",
         "title": "OpenAI safety researcher resigns warning of flawed industry culture",
-        "url": "https://www.theguardian.com/technology/artificial-intelligence-ai",
+        "url": "https://www.theguardian.com/technology",
         "badge": "XALQARO TAHLIL"
       }
     ],
