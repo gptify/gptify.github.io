@@ -220,7 +220,12 @@ const searchIndex = [
 
 
 
+
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Google DeepMind AI Baholashda «Ikkiyoqlama Ko‘r-Ko‘rona» Tizimni Qo‘llamoqda", u: "yangiliklar/deepmind-double-blind-ai-evaluations/", k: "google deepmind ai baholashda «ikkiyoqlama ko‘r-ko‘rona» tizimni qo‘llamoqda modellar va texnologiya google deepmind google deepmind modellarning haqiqiy imkoniyatlarini baholashda subyektivlik va korporativ yonbosish" },
+  { t: "Microsoft Copilot «Autopilot»: Kompyuterdan Uzoqda Ishlovchi Avtonom Agent", u: "yangiliklar/microsoft-copilot-autopilot-avtonom-agent-2026/", k: "microsoft copilot «autopilot»: kompyuterdan uzoqda ishlovchi avtonom agent infratuzilma va qurilmalar microsoft official blog microsoft o'zining copilot ekotizimini tubdan yangilab, 'autopilot' (scout) avtonom agentini taqdim " },
   { t: "OpenAI Xavfsizlik Rahbari David Robinson Iste’foga Chiqdi", u: "yangiliklar/openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026/", k: "openai xavfsizlik rahbari david robinson iste’foga chiqdi modellar va texnologiya the atlantic openai xavfsizlik tizimlari bo'yicha yetakchi tadqiqotchisi devid robinson the atlantic nashrida o't" },
   { t: "Anthropic Enterprise Muhandislar Uchun $100M Jamg‘arma Ajratdi", u: "yangiliklar/anthropic-enterprise-frontier-academy-100-million-dollar-2026/", k: "anthropic enterprise muhandislar uchun $100m jamg‘arma ajratdi infratuzilma va qurilmalar anthropic newsroom anthropic kompaniyasi global korxonalarda claude modellarini xavfsiz va samarali ishlab chiqarishga " },
   { t: "Google Gemini Modellarini Tariflar Bo‘yicha Qat’iy Cheklamoqda", u: "yangiliklar/google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026/", k: "google gemini modellarini tariflar bo‘yicha qat’iy cheklamoqda modellar va texnologiya google gemini support google 2026-yil 9-oktabrdan e'tiboran gemini ilovasida modellar mavjudligini qat'iy ta'riflarga ajra" },

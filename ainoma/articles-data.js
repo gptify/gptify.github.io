@@ -1,6 +1,84 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "deepmind-double-blind-ai-evaluations": {
+    "id": "deepmind-double-blind-ai-evaluations",
+    "slug": "deepmind-double-blind-ai-evaluations",
+    "title": "Google DeepMind AI Baholashda «Ikkiyoqlama Ko‘r-Ko‘rona» Tizimni Qo‘llamoqda",
+    "kicker": "XALQARO BAHOLASH STANDARTLARI",
+    "meta_title": "Google DeepMind AI Baholashda «Ikkiyoqlama Ko‘r-Ko‘rona» Tizimni Qo‘llamoqda — AiNoma",
+    "meta_description": "Google DeepMind modellarning haqiqiy imkoniyatlarini xolis baholash va subyektivlikni yo'qotish uchun tibbiyot standartidagi 'double-blind' sinov tizimini joriy etmoqda.",
+    "event_date": "2026-10-05",
+    "source_published_date": "2026-10-05",
+    "ainoma_published_date": "2026-10-05",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Modellar va Texnologiya",
+    "audience": "mutaxassislar yetakchilar",
+    "img": "assets/deepmind_double_blind_evals_2026.jpg",
+    "imgAlt": "Google DeepMind laboratoriyasida sun'iy intellekt modellarini baholash jarayoni",
+    "deck": "Google DeepMind modellarning haqiqiy imkoniyatlarini baholashda subyektivlik va korporativ yonbosishlarni bartaraf etuvchi inqilobiy metodologiyani tajribadan o'tkazmoqda. Yangi tizim tibbiyotdagi kabi baholovchi va model o'rtasidagi ma'lumotlarni to'liq yashiradi.",
+    "qisqacha": [
+      "Google DeepMind modellarni baholashda inson omili va brendga moyillikni yo'qotuvchi 'double-blind' (ikkiyoqlama ko'r-ko'rona) tizimni sinovdan o'tkaza boshladi.",
+      "Metodologiya baholovchi ekspertlar va sinalayotgan modellar o'rtasidagi identifikatsiya ma'lumotlarini butunlay yashiradi.",
+      "Tizim sun'iy oshirilgan benchmark reytinglariga barham beradi va korxonalarga aniq foyda keltiradigan modellarni tanlashga yordam beradi."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Piloting the world's first double-blind AI evaluations",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Guardian Technology",
+        "title": "Google DeepMind trials medical-style blind testing for AI models",
+        "url": "https://www.theguardian.com/technology",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "microsoft-copilot-autopilot-avtonom-agent-2026": {
+    "id": "microsoft-copilot-autopilot-avtonom-agent-2026",
+    "slug": "microsoft-copilot-autopilot-avtonom-agent-2026",
+    "title": "Microsoft Copilot «Autopilot»: Kompyuterdan Uzoqda Ishlovchi Avtonom Agent",
+    "kicker": "KORPORATIV AVTONOM AGENTLAR",
+    "meta_title": "Microsoft Copilot Autopilot: Kompyuterdan Uzoqda Ishlovchi Avtonom Agent — AiNoma",
+    "meta_description": "Microsoft Copilot platformasini qayta qurib, 'Autopilot' avtonom agentini taqdim etdi. Tizim xodim ish joyida bo'lmaganda ham Teams va loyihalarni mustaqil boshqaradi.",
+    "event_date": "2026-10-05",
+    "source_published_date": "2026-10-05",
+    "ainoma_published_date": "2026-10-05",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Infratuzilma va Qurilmalar",
+    "audience": "biznes yetakchilar mutaxassislar",
+    "img": "assets/microsoft_copilot_autopilot_agent_2026.jpg",
+    "imgAlt": "Microsoft Copilot Autopilot avtonom korporativ agent arxitekturasi",
+    "deck": "Microsoft o'zining Copilot ekotizimini tubdan yangilab, 'Autopilot' (Scout) avtonom agentini taqdim etdi. Yangi tizim xodim kompyuter qarshisida bo'lmaganda ham Teams yozishmalarini kuzatadi, loyihalarni muvofiqlashtiradi va belgilangan vazifalarni mustaqil bajaradi.",
+    "qisqacha": [
+      "Microsoft Copilot 'Home', 'Code' va 'Autopilot' deb nomlangan uchta asosiy ustunga ega bo'lgan yangi korporativ operatsion tizim sifatida qayta qurildi.",
+      "'Autopilot' doimiy ishlovchi agent bo'lib, bulutda shaxsiy xotira va huquqlarga ega holda xodim kompyuterni o'chirgandan keyin ham ishlashda davom etadi.",
+      "Agent Teams kanallaridagi loyihalarni nazorat qiladi, yetishmayotgan hujjatlarni so'raydi va hisobotlarni avtomatik tayyorlaydi."
+    ],
+    "primary_source": {
+      "name": "Microsoft Official Blog",
+      "title": "Introducing the new Copilot with Home, Code, and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch Enterprise",
+        "title": "Microsoft pushes into proactive enterprise agents with Copilot Autopilot",
+        "url": "https://techcrunch.com/category/artificial-intelligence/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
   "openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026": {
     "id": "openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026",
     "slug": "openai-xavfsizlik-rahbari-david-robinson-istefoga-chiqdi-2026",
@@ -67,7 +145,6 @@ window.AINOMA_ARTICLES = {
       }
     ]
   },
-
   "anthropic-enterprise-frontier-academy-100-million-dollar-2026": {
     "id": "anthropic-enterprise-frontier-academy-100-million-dollar-2026",
     "slug": "anthropic-enterprise-frontier-academy-100-million-dollar-2026",
@@ -134,7 +211,6 @@ window.AINOMA_ARTICLES = {
       }
     ]
   },
-
   "google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026": {
     "id": "google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026",
     "slug": "google-gemini-modellarini-tariflar-boyicha-qat-iy-cheklamoqda-2026",
@@ -201,7 +277,6 @@ window.AINOMA_ARTICLES = {
       }
     ]
   },
-
   "anthropic-claude-code-mods-typescript-agent-hooks-2026": {
     "id": "anthropic-claude-code-mods-typescript-agent-hooks-2026",
     "slug": "anthropic-claude-code-mods-typescript-agent-hooks-2026",
