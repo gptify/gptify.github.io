@@ -2915,5 +2915,83 @@ window.AINOMA_ARTICLES = {
       "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
+  },
+  "kichik-biznes-uchun-ai": {
+    "id": "kichik-biznes-uchun-ai",
+    "slug": "kichik-biznes-uchun-ai",
+    "title": "Kichik biznes uchun sun'iy intellekt: qayerdan boshlash kerak?",
+    "kicker": "BIZNES UNUMDORLIK · KICHIK BIZNES",
+    "meta_title": "Kichik biznes uchun sun'iy intellekt: qayerdan boshlash kerak? — AiNoma Qo‘llanma",
+    "meta_description": "Katta byudjetsiz, bepul va arzon vositalar bilan kichik biznesingizga AI'ni qanday joriy qilish mumkin.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-05",
+    "source_date": "2026-10-05",
+    "source_published_date": "2026-10-05",
+    "ainoma_published_date": "2026-10-05",
+    "read_time": "5 daqiqalik mutolaa",
+    "readTime": "5 daqiqalik mutolaa",
+    "deck": "Katta byudjetsiz, bepul va arzon vositalar bilan kichik biznesingizga AI'ni qanday joriy qilish mumkin.",
+    "img": "assets/retail_ai.jpg",
+    "imgAlt": "Kichik biznes uchun sun'iy intellekt: qayerdan boshlash kerak?",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "Kichik biznes uchun sun'iy intellekt: qayerdan boshlash kerak?",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>BIZNES UNUMDORLIK · KICHIK BIZNES</p>\n<p><b>Qisqa javob:</b> Katta, qimmat tizim sotib olishdan boshlamang — mavjud bepul AI vositalari bilan mijozlar bilan muloqot, kontent va hisobotlarni tezlashtirishdan boshlang.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Nega ko'pchilik kichik biznes AI'dan noto'g'ri boshlaydi</h2>\n<p>Ko'p tadbirkorlar to'g'ridan-to'g'ri qimmat \"AI tizimi\" sotib olishga shoshiladi, holbuki ChatGPT va Claude'ning bepul yoki arzon versiyasi kundalik vazifalarning katta qismini yopadi. Avval bepul vositalarda 2-3 hafta ishlab, real ehtiyojingizni aniqlang.</p>\n<h2 class=\"article-section-title\">Tekshiruv ro'yxati: qaerdan boshlash kerak</h2>\n<p class=\"article-step\"><b>1.</b> <b>Mijozlarga javob berish</b> — tez-tez so'raladigan savollarga tayyor javob shablonlarini AI yordamida tayyorlang.</p>\n<p class=\"article-step\"><b>2.</b> <b>Ijtimoiy tarmoq kontenti</b> — Instagram/Telegram postlarini oldindan bir necha haftaga tayyorlab qo'ying (batafsil: <a href=\"/qollanma-smm.html\">Instagram va Telegram uchun AI</a>).</p>\n<p class=\"article-step\"><b>3.</b> <b>Hisobot va hujjatlar</b> — Excel jadvallarini tahlil qilish, oddiy shartnomalarni tekshirish uchun AI'dan foydalaning.</p>\n<p class=\"article-step\"><b>4.</b> <b>Marketing matnlari</b> — mahsulot tavsiflari, e'lon matnlarini tezroq tayyorlang.</p>\n<h2 class=\"article-section-title\">Bepul vs pullik: qachon to'lash kerak</h2>\n<p>| Vaziyat | Tavsiya |</p>\n<p>| --- | --- |</p>\n<p>| Kuniga 1-2 marta oddiy savol-javob | Bepul versiya yetarli |</p>\n<p>| Har kuni ko'p hujjat/jadval tahlili | Pullik obuna ($20/oy atrofida) o'zini oqlaydi |</p>\n<p>| Bir necha xodim bir vaqtda foydalanadi | Jamoa uchun tarif rejalarini ko'rib chiqing |</p>\n<h2 class=\"article-section-title\">Xodimlarni o'rgatish</h2>\n<p>AI vositasini joriy qilishdan oldin xodimlarga qisqa (30 daqiqalik) amaliy mashg'ulot o'tkazing: qaysi vazifalarda foydalanish mumkin, qaysi ma'lumotlarni AI'ga kiritish mumkin emas (mijozlar shaxsiy ma'lumotlari, moliyaviy hisob raqamlari).</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Eng katta xato — AI'ni \"hamma narsani hal qiladigan\" deb kutish. U — vaqt tejaydigan yordamchi, to'liq avtomatik boshqaruvchi emas. Muhim qarorlarni har doim inson qabul qiladi.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Bugun qaytariladigan bitta vazifani (masalan, mijozga standart javob) tanlang va uni AI yordamida shablon holatiga keltiring.</p>\n<p>💡 <b>Keyingi qadam:</b> Xodimlar uchun batafsil ish oqimlari bo'yicha <a href=\"/qollanma-ishda.html\">Ishda sun'iy intellektdan foydalanish</a> qo'llanmasini o'qing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>Qaysi AI vositasidan boshlash kerak?</b> ChatGPT yoki Claude'ning bepul versiyasi — ko'pchilik kichik biznes ehtiyoji uchun yetarli boshlanish nuqtasi.</p>\n<p><b>Xodimlarga maxfiy ma'lumot kiritishni taqiqlashim kerakmi?</b> Ha — mijozlar shaxsiy ma'lumotlari va moliyaviy raqamlarni ochiq AI chatlariga kiritmaslik qoidasini darhol joriy qiling.</p>\n<p><b>Qachon pullik tarifga o'tish kerak?</b> Kunlik yuklama sezilarli oshganda va bepul limitlar yetmay qolganda.</p>",
+    "contentHtml": "<p>BIZNES UNUMDORLIK · KICHIK BIZNES</p>\n<p><b>Qisqa javob:</b> Katta, qimmat tizim sotib olishdan boshlamang — mavjud bepul AI vositalari bilan mijozlar bilan muloqot, kontent va hisobotlarni tezlashtirishdan boshlang.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Nega ko'pchilik kichik biznes AI'dan noto'g'ri boshlaydi</h2>\n<p>Ko'p tadbirkorlar to'g'ridan-to'g'ri qimmat \"AI tizimi\" sotib olishga shoshiladi, holbuki ChatGPT va Claude'ning bepul yoki arzon versiyasi kundalik vazifalarning katta qismini yopadi. Avval bepul vositalarda 2-3 hafta ishlab, real ehtiyojingizni aniqlang.</p>\n<h2 class=\"article-section-title\">Tekshiruv ro'yxati: qaerdan boshlash kerak</h2>\n<p class=\"article-step\"><b>1.</b> <b>Mijozlarga javob berish</b> — tez-tez so'raladigan savollarga tayyor javob shablonlarini AI yordamida tayyorlang.</p>\n<p class=\"article-step\"><b>2.</b> <b>Ijtimoiy tarmoq kontenti</b> — Instagram/Telegram postlarini oldindan bir necha haftaga tayyorlab qo'ying (batafsil: <a href=\"/qollanma-smm.html\">Instagram va Telegram uchun AI</a>).</p>\n<p class=\"article-step\"><b>3.</b> <b>Hisobot va hujjatlar</b> — Excel jadvallarini tahlil qilish, oddiy shartnomalarni tekshirish uchun AI'dan foydalaning.</p>\n<p class=\"article-step\"><b>4.</b> <b>Marketing matnlari</b> — mahsulot tavsiflari, e'lon matnlarini tezroq tayyorlang.</p>\n<h2 class=\"article-section-title\">Bepul vs pullik: qachon to'lash kerak</h2>\n<p>| Vaziyat | Tavsiya |</p>\n<p>| --- | --- |</p>\n<p>| Kuniga 1-2 marta oddiy savol-javob | Bepul versiya yetarli |</p>\n<p>| Har kuni ko'p hujjat/jadval tahlili | Pullik obuna ($20/oy atrofida) o'zini oqlaydi |</p>\n<p>| Bir necha xodim bir vaqtda foydalanadi | Jamoa uchun tarif rejalarini ko'rib chiqing |</p>\n<h2 class=\"article-section-title\">Xodimlarni o'rgatish</h2>\n<p>AI vositasini joriy qilishdan oldin xodimlarga qisqa (30 daqiqalik) amaliy mashg'ulot o'tkazing: qaysi vazifalarda foydalanish mumkin, qaysi ma'lumotlarni AI'ga kiritish mumkin emas (mijozlar shaxsiy ma'lumotlari, moliyaviy hisob raqamlari).</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Eng katta xato — AI'ni \"hamma narsani hal qiladigan\" deb kutish. U — vaqt tejaydigan yordamchi, to'liq avtomatik boshqaruvchi emas. Muhim qarorlarni har doim inson qabul qiladi.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Bugun qaytariladigan bitta vazifani (masalan, mijozga standart javob) tanlang va uni AI yordamida shablon holatiga keltiring.</p>\n<p>💡 <b>Keyingi qadam:</b> Xodimlar uchun batafsil ish oqimlari bo'yicha <a href=\"/qollanma-ishda.html\">Ishda sun'iy intellektdan foydalanish</a> qo'llanmasini o'qing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>Qaysi AI vositasidan boshlash kerak?</b> ChatGPT yoki Claude'ning bepul versiyasi — ko'pchilik kichik biznes ehtiyoji uchun yetarli boshlanish nuqtasi.</p>\n<p><b>Xodimlarga maxfiy ma'lumot kiritishni taqiqlashim kerakmi?</b> Ha — mijozlar shaxsiy ma'lumotlari va moliyaviy raqamlarni ochiq AI chatlariga kiritmaslik qoidasini darhol joriy qiling.</p>\n<p><b>Qachon pullik tarifga o'tish kerak?</b> Kunlik yuklama sezilarli oshganda va bepul limitlar yetmay qolganda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-05",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "instagram-telegram-ai-kontent": {
+    "id": "instagram-telegram-ai-kontent",
+    "slug": "instagram-telegram-ai-kontent",
+    "title": "Instagram va Telegram uchun AI bilan kontent qurish",
+    "kicker": "AMALIY QO'LLANMA · SMM",
+    "meta_title": "Instagram va Telegram uchun AI bilan kontent qurish — AiNoma Qo‘llanma",
+    "meta_description": "Har kuni post o'ylab topishga vaqt yo'qmi? AI yordamida bir haftalik kontentni bir o'tirishda tayyorlash yo'li.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-05",
+    "source_date": "2026-10-05",
+    "source_published_date": "2026-10-05",
+    "ainoma_published_date": "2026-10-05",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Har kuni post o'ylab topishga vaqt yo'qmi? AI yordamida bir haftalik kontentni bir o'tirishda tayyorlash yo'li.",
+    "img": "assets/presentation_ai.jpg",
+    "imgAlt": "Instagram va Telegram uchun AI bilan kontent qurish",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "Instagram va Telegram uchun AI bilan kontent qurish",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p><b>Qisqa javob:</b> AI'ga bitta batafsil \"brend brifi\" bering, keyin shu asosda bir haftalik post g'oyalarini bir so'rovda oling — har safar noldan boshlamang.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">1-qadam: Brend brifini bir marta tayyorlang</h2>\n<p>AI'ga brendingiz haqida bir marta batafsil ma'lumot bering: kim uchun, qanday ohangda (rasmiy/samimiy), qaysi mavzular taqiqlangan. Bu brifni saqlab qo'ying — har safar qaytadan yozmang.</p>\n<p><i>Misol:</i> \"Biz Toshkentdagi mebel ishlab chiqaruvchi kompanizmiz. Auditoriyamiz — 25-45 yosh oilalar. Ohangimiz — samimiy, ammo professional. Narx haqida to'g'ridan-to'g'ri gapirmaymiz.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Haftalik post rejasini bir so'rovda oling</h2>\n<p>Brifni asos qilib, bir haftalik (5-7 ta) post g'oyasini so'rang — har biriga qisqa mavzu va CTA (harakatga chaqiruv) bilan.</p>\n<h2 class=\"article-section-title\">3-qadam: Har bir postni alohida to'liq matn qiling</h2>\n<p>G'oyalar tayyor bo'lgach, har birini to'liq post matniga aylantiring — lekin har doim o'zingizning haqiqiy mahsulot/xizmat tafsilotlarini qo'shib, tekshirib chiqing.</p>\n<h2 class=\"article-section-title\">4-qadam: Telegram va Instagram uchun formatni moslashtiring</h2>\n<p>Bir xil g'oyani ikki platforma uchun turlicha formatlashtiring: Telegram'da uzunroq, tafsilotli matn qabul qilinadi; Instagram'da qisqa, vizual bilan qo'llab-quvvatlanadigan matn yaxshi ishlaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI g'oya va tuzilmada juda yaxshi yordam beradi, ammo \"jonli\" ovoz — sizning haqiqiy brendingiz tafsilotlari va hazillaringiz. Har bir postni tekshirib, o'z ohangingizga moslashtiring.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Brendingiz haqida 3-4 gaplik brif yozing va AI'dan shu asosda 5 ta post g'oyasi so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Sohangizga mos tayyor prompt andozalari uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI yozgan postni o'zgartirmasdan joylash mumkinmi?</b> Tavsiya etilmaydi — har doim brendingiz ohangiga moslab, faktlarni tekshirib chiqing.</p>\n<p><b>Rasm/video ham AI bilan tayyorlash mumkinmi?</b> Ha, matn bilan bir qatorda AI video/rasm vositalaridan foydalanish mumkin (batafsil: AI bilan video qurish qo'llanmasi).</p>\n<p><b>Har kuni yangi brif kerakmi?</b> Yo'q, bitta yaxshi tayyorlangan brend brifi haftalar davomida qayta ishlatiladi.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> AI'ga bitta batafsil \"brend brifi\" bering, keyin shu asosda bir haftalik post g'oyalarini bir so'rovda oling — har safar noldan boshlamang.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">1-qadam: Brend brifini bir marta tayyorlang</h2>\n<p>AI'ga brendingiz haqida bir marta batafsil ma'lumot bering: kim uchun, qanday ohangda (rasmiy/samimiy), qaysi mavzular taqiqlangan. Bu brifni saqlab qo'ying — har safar qaytadan yozmang.</p>\n<p><i>Misol:</i> \"Biz Toshkentdagi mebel ishlab chiqaruvchi kompanizmiz. Auditoriyamiz — 25-45 yosh oilalar. Ohangimiz — samimiy, ammo professional. Narx haqida to'g'ridan-to'g'ri gapirmaymiz.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Haftalik post rejasini bir so'rovda oling</h2>\n<p>Brifni asos qilib, bir haftalik (5-7 ta) post g'oyasini so'rang — har biriga qisqa mavzu va CTA (harakatga chaqiruv) bilan.</p>\n<h2 class=\"article-section-title\">3-qadam: Har bir postni alohida to'liq matn qiling</h2>\n<p>G'oyalar tayyor bo'lgach, har birini to'liq post matniga aylantiring — lekin har doim o'zingizning haqiqiy mahsulot/xizmat tafsilotlarini qo'shib, tekshirib chiqing.</p>\n<h2 class=\"article-section-title\">4-qadam: Telegram va Instagram uchun formatni moslashtiring</h2>\n<p>Bir xil g'oyani ikki platforma uchun turlicha formatlashtiring: Telegram'da uzunroq, tafsilotli matn qabul qilinadi; Instagram'da qisqa, vizual bilan qo'llab-quvvatlanadigan matn yaxshi ishlaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI g'oya va tuzilmada juda yaxshi yordam beradi, ammo \"jonli\" ovoz — sizning haqiqiy brendingiz tafsilotlari va hazillaringiz. Har bir postni tekshirib, o'z ohangingizga moslashtiring.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Brendingiz haqida 3-4 gaplik brif yozing va AI'dan shu asosda 5 ta post g'oyasi so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Sohangizga mos tayyor prompt andozalari uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI yozgan postni o'zgartirmasdan joylash mumkinmi?</b> Tavsiya etilmaydi — har doim brendingiz ohangiga moslab, faktlarni tekshirib chiqing.</p>\n<p><b>Rasm/video ham AI bilan tayyorlash mumkinmi?</b> Ha, matn bilan bir qatorda AI video/rasm vositalaridan foydalanish mumkin (batafsil: AI bilan video qurish qo'llanmasi).</p>\n<p><b>Har kuni yangi brif kerakmi?</b> Yo'q, bitta yaxshi tayyorlangan brend brifi haftalar davomida qayta ishlatiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-05",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
   }
 };
