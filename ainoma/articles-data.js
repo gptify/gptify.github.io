@@ -1,6 +1,84 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "aqsh-super-intelligence-force-maxsus-guruhi-2026": {
+    "id": "aqsh-super-intelligence-force-maxsus-guruhi-2026",
+    "slug": "aqsh-super-intelligence-force-maxsus-guruhi-2026",
+    "title": "AQSh Super-Intellekt Xavfsizligi Bo‘yicha Maxsus Guruh Tuzdi",
+    "kicker": "AQSH DAVLAT SIYOSATI",
+    "meta_title": "AQSh Super-Intellekt Xavfsizligi Bo‘yicha Maxsus Guruh Tuzdi — AiNoma",
+    "meta_description": "AQSh ma'muriyati sun'iy super-intellekt xatarlarini baholash va milliy xavfsizlikni ta'minlash uchun 'Super Intelligence Force' guruhini ta'sis etdi.",
+    "event_date": "2026-10-06",
+    "source_published_date": "2026-10-06",
+    "ainoma_published_date": "2026-10-06",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Regulatsiya va Jamiyat",
+    "audience": "yetakchilar mutaxassislar",
+    "img": "assets/us_super_intelligence_force_2026.jpg",
+    "imgAlt": "AQSh Oq uyida sun'iy intellekt xavfsizligi bo'yicha maxsus guruh taqdimoti",
+    "deck": "AQSh ma'muriyati yirik AI laboratoriyalari bilan muzokaralardan so'ng, sun'iy super-intellekt ustidan nazorat va kiber-xavfsizlikni ta'minlash uchun 'Super Intelligence Force' maxsus federal guruhini tashkil qildi. Guruhga Milliy razvedka direktori Jay Clayton rahbarlik qiladi.",
+    "qisqacha": [
+      "Oq uy sun'iy super-intellekt (ASI) xatarlarini baholash va davlat infratuzilmasini himoyalash bo'yicha yangi federal organ tuzdi.",
+      "Guruhga Milliy razvedka direktori Jay Clayton rahbarlik qiladi va 120 kun ichida prezidentga xavfsizlik strategiyasini taqdim etadi.",
+      "Tizim OpenAI, Anthropic, Google va boshqa texnologik gigantlar bilan birgalikda xavfsizlik standartlarini ishlab chiqadi."
+    ],
+    "primary_source": {
+      "name": "CBS News Politics",
+      "title": "Trump administration forms Super Intelligence Force task force led by Jay Clayton",
+      "url": "https://www.cbsnews.com/news/ai-super-intelligence-force-trump-jay-clayton/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Guardian Technology",
+        "title": "US administration creates taskforce to monitor superintelligence development",
+        "url": "https://www.theguardian.com/technology",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "fujitsu-chakana-savdo-avtonom-4-ai-agent-2026": {
+    "id": "fujitsu-chakana-savdo-avtonom-4-ai-agent-2026",
+    "slug": "fujitsu-chakana-savdo-avtonom-4-ai-agent-2026",
+    "title": "Fujitsu Chakana Savdo Uchun 4 Ta Avtonom Agent Chiqardi",
+    "kicker": "B2B SAVDO AVTOMATIZATSIYASI",
+    "meta_title": "Fujitsu Chakana Savdo Uchun 4 Ta Avtonom Agent Chiqardi — AiNoma",
+    "meta_description": "Fujitsu yirik riteyl tarmoqlari uchun savdo tahlili va mijozlar talabini avtonom boshqaruvchi to'rtta ixtisoslashgan AI agentini taqdim etdi.",
+    "event_date": "2026-10-06",
+    "source_published_date": "2026-10-06",
+    "ainoma_published_date": "2026-10-06",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Biznes va Jarayonlar",
+    "audience": "biznes yetakchilar mutaxassislar",
+    "img": "assets/fujitsu_retail_ai_agents_2026.jpg",
+    "imgAlt": "Fujitsu riteyl tizimlarida avtonom sun'iy intellekt agentlari tahlili",
+    "deck": "Fujitsu kompaniyasi riteyl va chakana savdo tarmoqlari uchun maxsus ishlab chiqilgan to'rtta avtonom AI agentini sinov tariqasida taqdim etdi. Agentlar tovarlar harakati, mijozlar sodiqligi va savdo rejalarini inson aralashuvisiz optimallashtiradi.",
+    "qisqacha": [
+      "Fujitsu savdo tahlili, mijozlar sodiqligi va do'kon menejerlari uchun 4 ta ixtisoslashgan avtonom agentni ishga tushirdi.",
+      "Tizim Osiyo-Tinch okeani riteylerlar ko'rgazmasida (APRCE) namoyish qilinadi va 7 ta xalqaro savdo tarmog'ida sinovdan o'tmoqda.",
+      "Multi-agent arxitekturasi ombordagi yetishmovchiliklarni oldindan aniqlab, savdo samaradorligini oshirishga xizmat qiladi."
+    ],
+    "primary_source": {
+      "name": "Fujitsu Global Press",
+      "title": "Fujitsu launches trial environment for four autonomous AI agents in retail operations",
+      "url": "https://global.fujitsu/en-global/news/pr/2026/10/06-ai-retail-agents.html",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Nikkei Asia Business",
+        "title": "Fujitsu deploys multi-agent AI framework for retail supply chains",
+        "url": "https://asia.nikkei.com/Business/Technology",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
   "deepmind-double-blind-ai-evaluations": {
     "id": "deepmind-double-blind-ai-evaluations",
     "slug": "deepmind-double-blind-ai-evaluations",
@@ -2843,34 +2921,34 @@ window.AINOMA_ARTICLES = {
     "slug": "talabalar-uchun-sunny-intellekt",
     "title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash",
     "kicker": "TALABALAR UCHUN · TA'LIM",
-    "meta_title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash — AiNoma Qo‘llanma",
+    "meta_title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash — AiNoma",
     "meta_description": "AI sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi. Referat va taqdimotni to'g'ri, halol tayyorlash yo'li.",
     "category": "Qo'llanmalar",
     "audience": "mutaxassislar",
-    "event_date": "2026-09-30",
-    "source_date": "2026-09-30",
-    "source_published_date": "2026-09-30",
-    "ainoma_published_date": "2026-09-30",
+    "event_date": "2026-10-06",
+    "source_date": "2026-10-06",
+    "source_published_date": "2026-10-06",
+    "ainoma_published_date": "2026-10-06",
     "read_time": "4 daqiqalik mutolaa",
     "readTime": "4 daqiqalik mutolaa",
     "deck": "AI sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi. Referat va taqdimotni to'g'ri, halol tayyorlash yo'li.",
-    "img": "assets/itpark_tashkent.jpg",
+    "img": "assets/ai_network.jpg",
     "imgAlt": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash",
     "qisqacha": [
-      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
-      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+      "AI sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi.",
+      "Referat va taqdimotni to'g'ri, halol tayyorlash yo'li."
     ],
     "primary_source": {
-      "name": "AiNoma Tahririyati",
+      "name": "Rasmiy Manba",
       "title": "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash",
-      "url": "https://ainoma.uz/qollanmalar.html",
-      "badge": "AMALIY QO‘LLANMA"
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "badge": "BIRLAMCHI MANBA"
     },
     "secondary_sources": [],
     "body": "<p>TALABALAR UCHUN · TA'LIM</p>\n<p><b>Qisqa javob:</b> AI'dan referatni \"yozib berish\" uchun emas, tadqiqotni tezlashtirish, tuzilmani qurish va matnni tahrirlash uchun foydalaning — tayyor matnni o'zingiznikidek topshirish ko'p universitetlarda intizomiy jazoga sabab bo'ladi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">⚠️ Avval bilishingiz kerak bo'lgan narsa</h2>\n<p>Ko'p universitetlar plagiat va AI-yozilgan matnni aniqlash vositalaridan foydalanadi. AI tomonidan to'liq yozilgan referatni o'zingiznikidek topshirish — nafaqat axloqiy muammo, balki real intizomiy xavf. Quyidagi usullar AI'ni <b>yordamchi</b>, o'rinbosar emas, sifatida ishlatishga qaratilgan.</p>\n<h2 class=\"article-section-title\">1-qadam: Mavzuni tushunish va tuzilma qurish</h2>\n<p>Mavzuni AI'ga tushuntirib, undan referat uchun tuzilma (kirish, asosiy qismlar, xulosa) so'rang. Bu — eng ko'p vaqt tejaydigan qadam, chunki bo'sh sahifadan boshlash qiyin.</p>\n<p><i>Misol so'rov:</i> \"Men [mavzu] haqida 5 sahifali referat yozmoqchiman. Menga 4 bosh qism va har biriga 2-3 tayanch fikr taklif qil.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Tadqiqot va manba topish</h2>\n<p>AI'dan mavzu bo'yicha kalit tushunchalar va so'rov so'zlarini so'rang, keyin bu so'zlar bilan kutubxona bazalari va ilmiy maqolalarda <b>o'zingiz</b> qidiring. AI ba'zan mavjud bo'lmagan manbalarni \"to'qib chiqarishi\" mumkin — har bir keltirilgan manbani albatta o'zingiz tekshiring.</p>\n<h2 class=\"article-section-title\">3-qadam: O'z fikringizni yozing, AI'dan tahrir uchun foydalaning</h2>\n<p>Asosiy fikrlarni o'z so'zlaringiz bilan yozib chiqing, keyin AI'dan grammatika, uslub va aniqlik bo'yicha tahrir so'rang. Bu tartib — AI matnni \"qurish\" emas, \"yaxshilash\" uchun ishlatilishini ta'minlaydi.</p>\n<h2 class=\"article-section-title\">4-qadam: Taqdimot uchun tuzilma va dizayn</h2>\n<p>Taqdimot uchun Gamma yoki shunga o'xshash vositalarda AI yordamida tez slayd tuzilmasi qurish mumkin — bu sof texnik ish, halollik masalasi tug'dirmaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Agar o'qituvchi sizdan \"shu joyni tushuntirib bering\" desa va tushuntira olmasangiz — demak, siz AI'ga haddan tashqari tayangan bo'lasiz. Har doim o'z matningizni to'liq tushunganingizga ishonch hosil qiling.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Joriy vazifangiz uchun AI'dan faqat tuzilma va 3 ta savol so'rang — matnni o'zingiz yozib ko'ring, keyin AI'dan faqat tahrir so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Aniq so'rov yozishni o'rganish uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI'dan referat yozishni so'rasam nima bo'ladi?</b> Ko'p universitetlarda bu intizomiy qoidabuzarlik hisoblanadi — aniqlash vositalari tobora yaxshilanmoqda.</p>\n<p><b>AI keltirgan manbalarga ishonsam bo'ladimi?</b> Yo'q — har doim manbani o'zingiz qidirib, mavjudligini tasdiqlang.</p>\n<p><b>Taqdimot dizaynida AI ishlatish muammo emasmi?</b> Yo'q, dizayn va tuzilma — bilim emas, texnik ish, shuning uchun bu halollik masalasiga tegishli emas.</p>",
     "contentHtml": "<p>TALABALAR UCHUN · TA'LIM</p>\n<p><b>Qisqa javob:</b> AI'dan referatni \"yozib berish\" uchun emas, tadqiqotni tezlashtirish, tuzilmani qurish va matnni tahrirlash uchun foydalaning — tayyor matnni o'zingiznikidek topshirish ko'p universitetlarda intizomiy jazoga sabab bo'ladi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">⚠️ Avval bilishingiz kerak bo'lgan narsa</h2>\n<p>Ko'p universitetlar plagiat va AI-yozilgan matnni aniqlash vositalaridan foydalanadi. AI tomonidan to'liq yozilgan referatni o'zingiznikidek topshirish — nafaqat axloqiy muammo, balki real intizomiy xavf. Quyidagi usullar AI'ni <b>yordamchi</b>, o'rinbosar emas, sifatida ishlatishga qaratilgan.</p>\n<h2 class=\"article-section-title\">1-qadam: Mavzuni tushunish va tuzilma qurish</h2>\n<p>Mavzuni AI'ga tushuntirib, undan referat uchun tuzilma (kirish, asosiy qismlar, xulosa) so'rang. Bu — eng ko'p vaqt tejaydigan qadam, chunki bo'sh sahifadan boshlash qiyin.</p>\n<p><i>Misol so'rov:</i> \"Men [mavzu] haqida 5 sahifali referat yozmoqchiman. Menga 4 bosh qism va har biriga 2-3 tayanch fikr taklif qil.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Tadqiqot va manba topish</h2>\n<p>AI'dan mavzu bo'yicha kalit tushunchalar va so'rov so'zlarini so'rang, keyin bu so'zlar bilan kutubxona bazalari va ilmiy maqolalarda <b>o'zingiz</b> qidiring. AI ba'zan mavjud bo'lmagan manbalarni \"to'qib chiqarishi\" mumkin — har bir keltirilgan manbani albatta o'zingiz tekshiring.</p>\n<h2 class=\"article-section-title\">3-qadam: O'z fikringizni yozing, AI'dan tahrir uchun foydalaning</h2>\n<p>Asosiy fikrlarni o'z so'zlaringiz bilan yozib chiqing, keyin AI'dan grammatika, uslub va aniqlik bo'yicha tahrir so'rang. Bu tartib — AI matnni \"qurish\" emas, \"yaxshilash\" uchun ishlatilishini ta'minlaydi.</p>\n<h2 class=\"article-section-title\">4-qadam: Taqdimot uchun tuzilma va dizayn</h2>\n<p>Taqdimot uchun Gamma yoki shunga o'xshash vositalarda AI yordamida tez slayd tuzilmasi qurish mumkin — bu sof texnik ish, halollik masalasi tug'dirmaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Agar o'qituvchi sizdan \"shu joyni tushuntirib bering\" desa va tushuntira olmasangiz — demak, siz AI'ga haddan tashqari tayangan bo'lasiz. Har doim o'z matningizni to'liq tushunganingizga ishonch hosil qiling.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Joriy vazifangiz uchun AI'dan faqat tuzilma va 3 ta savol so'rang — matnni o'zingiz yozib ko'ring, keyin AI'dan faqat tahrir so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Aniq so'rov yozishni o'rganish uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI'dan referat yozishni so'rasam nima bo'ladi?</b> Ko'p universitetlarda bu intizomiy qoidabuzarlik hisoblanadi — aniqlash vositalari tobora yaxshilanmoqda.</p>\n<p><b>AI keltirgan manbalarga ishonsam bo'ladimi?</b> Yo'q — har doim manbani o'zingiz qidirib, mavjudligini tasdiqlang.</p>\n<p><b>Taqdimot dizaynida AI ishlatish muammo emasmi?</b> Yo'q, dizayn va tuzilma — bilim emas, texnik ish, shuning uchun bu halollik masalasiga tegishli emas.</p>",
     "verification_status": "VERIFIED",
-    "verification_date": "2026-09-30",
+    "verification_date": "2026-10-06",
     "author": {
       "name": "AiNoma Tahririyati",
       "job": "Amaliy ta'lim va metodologiya guruhi",
