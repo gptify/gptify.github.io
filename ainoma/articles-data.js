@@ -1,6 +1,84 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026": {
+    "id": "boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026",
+    "slug": "boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026",
+    "title": "Boston Dynamics Amazon Sobiq Olimini Rahbar Etib Tayinladi",
+    "kicker": "JISMONIY SUN’IY INTELLEKT",
+    "meta_title": "Boston Dynamics Amazon Sobiq Olimini Rahbar Etib Tayinladi — AiNoma",
+    "meta_description": "Boston Dynamics kompaniyasi Amazon kompaniyasining AGI bo'yicha bosh olimi Rohit Prasadni yangi bosh direktor etib tayinladi.",
+    "event_date": "2026-10-07",
+    "source_published_date": "2026-10-07",
+    "ainoma_published_date": "2026-10-07",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Robototexnika va Qurilmalar",
+    "audience": "yetakchilar mutaxassislar",
+    "img": "assets/boston_dynamics_rohit_prasad_ceo_2026.jpg",
+    "imgAlt": "Boston Dynamics gumanoid robotlari va yangi bosh direktor strategiyasi",
+    "deck": "Boston Dynamics kompaniyasi robototexnika sohasini jismoniy sun'iy intellekt (Physical AI) davriga olib chiqish maqsadida Amazon kompaniyasining AGI va Alexa bo'yicha sobiq bosh olimi Rohit Prasadni bosh direktor lavozimiga tayinladi. Yangi rahbar Atlas gumanoid robotlarini ommaviy ishlab chiqarishga yo'naltiradi.",
+    "qisqacha": [
+      "Amazon'da 11 yil davomida Alexa va sun'iy umumiy intellekt (AGI) tadqiqotlariga boshchilik qilgan Rohit Prasad Boston Dynamics bosh direktori bo'ldi.",
+      "Kompaniya laboratoriya tajribalaridan to'liq tijoriy jismoniy AI (Physical AI) agentlarini ishlab chiqarish bosqichiga o'tmoqda.",
+      "Yangi strategiya doirasida Atlas gumanoid robotlari logistika, avtomobilsozlik va og'ir sanoat korxonalarida avtonom ishlashga moslashtiriladi."
+    ],
+    "primary_source": {
+      "name": "Boston Dynamics Official",
+      "title": "Boston Dynamics Appoints Rohit Prasad as Chief Executive Officer",
+      "url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch Robotics",
+        "title": "Former Amazon AGI lead Rohit Prasad takes the helm at Boston Dynamics",
+        "url": "https://techcrunch.com/category/artificial-intelligence/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "mistral-ai-mistral-large-4-flagman-model-2026": {
+    "id": "mistral-ai-mistral-large-4-flagman-model-2026",
+    "slug": "mistral-ai-mistral-large-4-flagman-model-2026",
+    "title": "Mistral AI Yangi «Mistral Large 4» Modelini Chiqardi",
+    "kicker": "YEVROPA SUN’IY INTELLEKTI",
+    "meta_title": "Mistral AI Yangi «Mistral Large 4» Modelini Chiqardi — AiNoma",
+    "meta_description": "Fransiyaning Mistral AI kompaniyasi ko'p tilli fikrlash va dasturlash bo'yicha yangi flagman 'Mistral Large 4' modelini rasman taqdim etdi.",
+    "event_date": "2026-10-06",
+    "source_published_date": "2026-10-06",
+    "ainoma_published_date": "2026-10-07",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Modellar va Texnologiya",
+    "audience": "dasturchilar mutaxassislar",
+    "img": "assets/mistral_large_4_release_2026.jpg",
+    "imgAlt": "Mistral AI flagman arxitekturasi va Mistral Large 4 modeli",
+    "deck": "Fransiyaning yetakchi sun'iy intellekt kompaniyasi Mistral AI o'zining eng qudratli 'Mistral Large 4' flagman modelini taqdim etdi. Yangi arxitektura murakkab kod yozish, matematika va xalqaro tillarda xulosalar chiqarish bo'yicha OpenAI va Anthropic flagmanlari bilan tenglashdi.",
+    "qisqacha": [
+      "Mistral AI kompaniyasi ko'p tilli xulosalash va korporativ agentlar uchun mo'ljallangan Mistral Large 4 modelini ishga tushirdi.",
+      "Model dasturlash va mantiqiy masalalarni yechishda oldingi avlodga nisbatan 40% tezroq va xarajatlar jihatidan ancha tejamkor.",
+      "Korxonalar modelni o'zlarining shaxsiy bulut infratuzilmalarida yoki La Plateforme orqali to'g'ridan-to'g'ri integratsiya qilishlari mumkin."
+    ],
+    "primary_source": {
+      "name": "Mistral AI Official",
+      "title": "Mistral Large 4: Frontier intelligence for enterprise reasoning",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "VentureBeat AI",
+        "title": "Mistral releases Mistral Large 4 rivaling top frontier models",
+        "url": "https://venturebeat.com/category/ai/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
   "aqsh-super-intelligence-force-maxsus-guruhi-2026": {
     "id": "aqsh-super-intelligence-force-maxsus-guruhi-2026",
     "slug": "aqsh-super-intelligence-force-maxsus-guruhi-2026",
@@ -3066,6 +3144,45 @@ window.AINOMA_ARTICLES = {
     "contentHtml": "<p><b>Qisqa javob:</b> AI'ga bitta batafsil \"brend brifi\" bering, keyin shu asosda bir haftalik post g'oyalarini bir so'rovda oling — har safar noldan boshlamang.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">1-qadam: Brend brifini bir marta tayyorlang</h2>\n<p>AI'ga brendingiz haqida bir marta batafsil ma'lumot bering: kim uchun, qanday ohangda (rasmiy/samimiy), qaysi mavzular taqiqlangan. Bu brifni saqlab qo'ying — har safar qaytadan yozmang.</p>\n<p><i>Misol:</i> \"Biz Toshkentdagi mebel ishlab chiqaruvchi kompanizmiz. Auditoriyamiz — 25-45 yosh oilalar. Ohangimiz — samimiy, ammo professional. Narx haqida to'g'ridan-to'g'ri gapirmaymiz.\"</p>\n<h2 class=\"article-section-title\">2-qadam: Haftalik post rejasini bir so'rovda oling</h2>\n<p>Brifni asos qilib, bir haftalik (5-7 ta) post g'oyasini so'rang — har biriga qisqa mavzu va CTA (harakatga chaqiruv) bilan.</p>\n<h2 class=\"article-section-title\">3-qadam: Har bir postni alohida to'liq matn qiling</h2>\n<p>G'oyalar tayyor bo'lgach, har birini to'liq post matniga aylantiring — lekin har doim o'zingizning haqiqiy mahsulot/xizmat tafsilotlarini qo'shib, tekshirib chiqing.</p>\n<h2 class=\"article-section-title\">4-qadam: Telegram va Instagram uchun formatni moslashtiring</h2>\n<p>Bir xil g'oyani ikki platforma uchun turlicha formatlashtiring: Telegram'da uzunroq, tafsilotli matn qabul qilinadi; Instagram'da qisqa, vizual bilan qo'llab-quvvatlanadigan matn yaxshi ishlaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI g'oya va tuzilmada juda yaxshi yordam beradi, ammo \"jonli\" ovoz — sizning haqiqiy brendingiz tafsilotlari va hazillaringiz. Har bir postni tekshirib, o'z ohangingizga moslashtiring.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Brendingiz haqida 3-4 gaplik brif yozing va AI'dan shu asosda 5 ta post g'oyasi so'rang.</p>\n<p>💡 <b>Keyingi qadam:</b> Sohangizga mos tayyor prompt andozalari uchun <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI yozgan postni o'zgartirmasdan joylash mumkinmi?</b> Tavsiya etilmaydi — har doim brendingiz ohangiga moslab, faktlarni tekshirib chiqing.</p>\n<p><b>Rasm/video ham AI bilan tayyorlash mumkinmi?</b> Ha, matn bilan bir qatorda AI video/rasm vositalaridan foydalanish mumkin (batafsil: AI bilan video qurish qo'llanmasi).</p>\n<p><b>Har kuni yangi brif kerakmi?</b> Yo'q, bitta yaxshi tayyorlangan brend brifi haftalar davomida qayta ishlatiladi.</p>",
     "verification_status": "VERIFIED",
     "verification_date": "2026-10-05",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "ai-bilan-video-qurish-2026": {
+    "id": "ai-bilan-video-qurish-2026",
+    "slug": "ai-bilan-video-qurish-2026",
+    "title": "AI bilan video qurish 2026: Sora, Veo va boshqa",
+    "kicker": "TREND · VIDEO GENERATSIYA",
+    "meta_title": "AI bilan video qurish 2026: Sora, Veo va boshqa — AiNoma Qo‘llanma",
+    "meta_description": "Matndan videoga: 2026-yilda eng ko'p ishlatilayotgan AI video vositalari va ularning haqiqiy imkoniyatlari.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-06",
+    "source_date": "2026-10-06",
+    "source_published_date": "2026-10-06",
+    "ainoma_published_date": "2026-10-06",
+    "read_time": "5 daqiqalik mutolaa",
+    "readTime": "5 daqiqalik mutolaa",
+    "deck": "Matndan videoga: 2026-yilda eng ko'p ishlatilayotgan AI video vositalari va ularning haqiqiy imkoniyatlari.",
+    "img": "assets/deepmind_private_ai.jpg",
+    "imgAlt": "AI bilan video qurish 2026: Sora, Veo va boshqa",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "AI bilan video qurish 2026: Sora, Veo va boshqa",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>TREND · VIDEO GENERATSIYA</p>\n<p><b>Qisqa javob:</b> Sora 2 (OpenAI) va Veo 3.1 (Google) — hozirda eng ko'p tilga olinadigan vositalar, Kling va Runway esa muqobil, ba'zi jihatdan arzonroq tanlovlar. Hech biri hali professional film darajasida to'liq ishonchli emas — qisqa, ijodiy kliplar uchun eng mos.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Hozirda mavjud asosiy vositalar</h2>\n<p>| Vosita | Kompaniya | Kuchli tomoni |</p>\n<p>| --- | --- | --- |</p>\n<p>| Sora 2 | OpenAI | Matndan realistik video, ChatGPT ekotizimi bilan integratsiya |</p>\n<p>| Veo 3.1 | Google | Sifatli tasvir, Google vositalari bilan integratsiya |</p>\n<p>| Kling 3.0 | Kuaishou | Uzunroq kliplar, arzonroq tarif |</p>\n<p>| Runway | Runway ML | Professional video muharrirlari uchun qo'shimcha nazorat vositalari |</p>\n<p><i>Eslatma: bu jadval umumiy yo'nalish uchun — narx va aniq imkoniyatlar tez-tez o'zgaradi, xarid qilishdan oldin rasmiy sahifani tekshiring.</i></p>\n<h2 class=\"article-section-title\">Nima uchun mos, nima uchun mos emas</h2>\n<p><b>Mos:</b> qisqa ijtimoiy tarmoq kliplari, mahsulot tanishtiruvi uchun vizual fon, g'oyani tezda \"sinov\" ko'rinishida ko'rsatish.</p>\n<p><b>Hali mos emas:</b> uzun, murakkab syujetli video, aniq yuz/qo'l harakatlari muhim bo'lgan sahnalar, brend uchun 100% nazorat talab qiladigan reklama roliklari — bu hollarda AI video hali xato qilishi (g'alati harakat, nomuvofiq detal) mumkin.</p>\n<h2 class=\"article-section-title\">Amaliy foydalanish qoidalari</h2>\n<p class=\"article-step\"><b>1.</b> <b>Qisqa, aniq so'rov yozing</b> — sahna, kamera harakati, uslubni tasvirlab bering.</p>\n<p class=\"article-step\"><b>2.</b> <b>Bir nechta variant generatsiya qiling</b> — birinchi natija kamdan-kam mukammal bo'ladi.</p>\n<p class=\"article-step\"><b>3.</b> <b>Nashr etishdan oldin ko'rib chiqing</b> — g'alati artefaktlar (noto'g'ri qo'l, nomantiqiy harakat) uchrashi mumkin.</p>\n<p class=\"article-step\"><b>4.</b> <b>Mualliflik huquqiga e'tibor bering</b> — real odamlar yoki brendlarni taqlid qiluvchi video tayyorlashda ehtiyot bo'ling.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI video — hali \"bir tugma bosib tayyor reklama\" darajasida emas. Uni tezkor prototiplash va ijodiy tajriba vositasi sifatida ishlating, yakuniy mahsulot sifatida emas.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Bir jumlalik oddiy sahna tasvirlab, mavjud vositalardan birida bepul/sinov versiyada video generatsiya qilib ko'ring.</p>\n<p>💡 <b>Keyingi qadam:</b> Video uchun matn ssenariysi yozishda <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI video bepulmi?</b> Ko'pchiligida cheklangan bepul sinov mavjud, to'liq foydalanish uchun odatda oylik obuna kerak.</p>\n<p><b>AI video bilan reklama tayyorlash mumkinmi?</b> Mumkin, ammo hozircha qisqa va ijodiy formatlar uchun, to'liq nazoratli professional reklama uchun hali cheklovlar bor.</p>\n<p><b>Qaysi vosita eng yaxshi?</b> Bittasi yo'q — vazifangizga qarab tanlang: tezlik uchun Sora/Veo, uzunroq klip uchun Kling.</p>",
+    "contentHtml": "<p>TREND · VIDEO GENERATSIYA</p>\n<p><b>Qisqa javob:</b> Sora 2 (OpenAI) va Veo 3.1 (Google) — hozirda eng ko'p tilga olinadigan vositalar, Kling va Runway esa muqobil, ba'zi jihatdan arzonroq tanlovlar. Hech biri hali professional film darajasida to'liq ishonchli emas — qisqa, ijodiy kliplar uchun eng mos.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Hozirda mavjud asosiy vositalar</h2>\n<p>| Vosita | Kompaniya | Kuchli tomoni |</p>\n<p>| --- | --- | --- |</p>\n<p>| Sora 2 | OpenAI | Matndan realistik video, ChatGPT ekotizimi bilan integratsiya |</p>\n<p>| Veo 3.1 | Google | Sifatli tasvir, Google vositalari bilan integratsiya |</p>\n<p>| Kling 3.0 | Kuaishou | Uzunroq kliplar, arzonroq tarif |</p>\n<p>| Runway | Runway ML | Professional video muharrirlari uchun qo'shimcha nazorat vositalari |</p>\n<p><i>Eslatma: bu jadval umumiy yo'nalish uchun — narx va aniq imkoniyatlar tez-tez o'zgaradi, xarid qilishdan oldin rasmiy sahifani tekshiring.</i></p>\n<h2 class=\"article-section-title\">Nima uchun mos, nima uchun mos emas</h2>\n<p><b>Mos:</b> qisqa ijtimoiy tarmoq kliplari, mahsulot tanishtiruvi uchun vizual fon, g'oyani tezda \"sinov\" ko'rinishida ko'rsatish.</p>\n<p><b>Hali mos emas:</b> uzun, murakkab syujetli video, aniq yuz/qo'l harakatlari muhim bo'lgan sahnalar, brend uchun 100% nazorat talab qiladigan reklama roliklari — bu hollarda AI video hali xato qilishi (g'alati harakat, nomuvofiq detal) mumkin.</p>\n<h2 class=\"article-section-title\">Amaliy foydalanish qoidalari</h2>\n<p class=\"article-step\"><b>1.</b> <b>Qisqa, aniq so'rov yozing</b> — sahna, kamera harakati, uslubni tasvirlab bering.</p>\n<p class=\"article-step\"><b>2.</b> <b>Bir nechta variant generatsiya qiling</b> — birinchi natija kamdan-kam mukammal bo'ladi.</p>\n<p class=\"article-step\"><b>3.</b> <b>Nashr etishdan oldin ko'rib chiqing</b> — g'alati artefaktlar (noto'g'ri qo'l, nomantiqiy harakat) uchrashi mumkin.</p>\n<p class=\"article-step\"><b>4.</b> <b>Mualliflik huquqiga e'tibor bering</b> — real odamlar yoki brendlarni taqlid qiluvchi video tayyorlashda ehtiyot bo'ling.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI video — hali \"bir tugma bosib tayyor reklama\" darajasida emas. Uni tezkor prototiplash va ijodiy tajriba vositasi sifatida ishlating, yakuniy mahsulot sifatida emas.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Bir jumlalik oddiy sahna tasvirlab, mavjud vositalardan birida bepul/sinov versiyada video generatsiya qilib ko'ring.</p>\n<p>💡 <b>Keyingi qadam:</b> Video uchun matn ssenariysi yozishda <a href=\"/prompt-ustaxonasi.html\">Prompt Ustaxonasi</a>dan foydalaning.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI video bepulmi?</b> Ko'pchiligida cheklangan bepul sinov mavjud, to'liq foydalanish uchun odatda oylik obuna kerak.</p>\n<p><b>AI video bilan reklama tayyorlash mumkinmi?</b> Mumkin, ammo hozircha qisqa va ijodiy formatlar uchun, to'liq nazoratli professional reklama uchun hali cheklovlar bor.</p>\n<p><b>Qaysi vosita eng yaxshi?</b> Bittasi yo'q — vazifangizga qarab tanlang: tezlik uchun Sora/Veo, uzunroq klip uchun Kling.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-06",
     "author": {
       "name": "AiNoma Tahririyati",
       "job": "Amaliy ta'lim va metodologiya guruhi",
