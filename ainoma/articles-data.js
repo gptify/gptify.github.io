@@ -1,6 +1,84 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "atlassian-va-openai-gpt6-rovo-sheriklik-2026": {
+    "id": "atlassian-va-openai-gpt6-rovo-sheriklik-2026",
+    "slug": "atlassian-va-openai-gpt6-rovo-sheriklik-2026",
+    "title": "Atlassian va OpenAI GPT-6 Integratsiyasini E’lon Qildi",
+    "kicker": "KORPORATIV AI AGENTLAR",
+    "meta_title": "Atlassian va OpenAI GPT-6 Integratsiyasini E’lon Qildi — AiNoma",
+    "meta_description": "Atlassian va OpenAI hamkorlikni kengaytirib, Rovo agentlari va Teamwork Graph uchun GPT-6 modellarini to'liq integratsiya qilmoqda.",
+    "event_date": "2026-10-08",
+    "source_published_date": "2026-10-07",
+    "ainoma_published_date": "2026-10-08",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Biznes va Jarayonlar",
+    "audience": "biznes dasturchilar yetakchilar",
+    "img": "assets/atlassian_openai_gpt6_rovo_2026.jpg",
+    "imgAlt": "Atlassian Rovo agenti va OpenAI GPT-6 korporativ integratsiyasi",
+    "deck": "Atlassian va OpenAI o'zlarining strategik hamkorligini kengaytirib, Jira, Confluence va Bitbucket ekotizimiga OpenAI'ning GPT-6 oilasiga mansub yangi modellarini integratsiya qilishini bildirdi. Tizim Rovo agentlari orqali korporativ loyihalarni mustaqil boshqaradi va 220 dan ortiq vositani birlashtiruvchi MCP protokolini taqdim etadi.",
+    "qisqacha": [
+      "Atlassian kompaniyasi o'zining Rovo AI agenti va Teamwork Graph arxitekturasini OpenAI'ning yangi GPT-6 modellari bilan quvvatlamoqda.",
+      "Yangi tizim loyihalardagi o'zgarishlar, hujjatlar va jamoa vazifalarini chuqur tahlil qilib, jamoalarga amaliy qadamlarni bajarishda yordam beradi.",
+      "Jira, Confluence va Bitbucket uchun ishlab chiqilgan 220 dan ortiq vositaga ega MCP (Model Context Protocol) serveri ham taqdim etildi."
+    ],
+    "primary_source": {
+      "name": "Atlassian Official News",
+      "title": "Atlassian and OpenAI Expand Strategic Partnership for Frontier Intelligence",
+      "url": "https://www.atlassian.com/blog/company-news/atlassian-openai-strategic-partnership",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "VentureBeat Enterprise AI",
+        "title": "Atlassian and OpenAI deepen partnership to power Rovo with GPT-6 models",
+        "url": "https://venturebeat.com/category/ai/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "silicon-labs-simplicity-ai-sdk-iot-dasturlash-2026": {
+    "id": "silicon-labs-simplicity-ai-sdk-iot-dasturlash-2026",
+    "slug": "silicon-labs-simplicity-ai-sdk-iot-dasturlash-2026",
+    "title": "Silicon Labs IoT Uchun «Simplicity AI SDK»ni Chiqardi",
+    "kicker": "MIKROKONTROLLERLAR VA AI",
+    "meta_title": "Silicon Labs IoT Uchun «Simplicity AI SDK»ni Chiqardi — AiNoma",
+    "meta_description": "Silicon Labs qurilmalar va mikrokontrollerlar uchun AI dasturlashni avtomatlashtiruvchi Simplicity AI SDK platformasini taqdim etdi.",
+    "event_date": "2026-10-08",
+    "source_published_date": "2026-10-07",
+    "ainoma_published_date": "2026-10-08",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Infratuzilma va Qurilmalar",
+    "audience": "dasturchilar muhandislar",
+    "img": "assets/silicon_labs_simplicity_ai_sdk_2026.jpg",
+    "imgAlt": "Silicon Labs Simplicity AI SDK va IoT mikrosxemalarni dasturlash interfeysi",
+    "deck": "Silicon Labs o'zining yillik Works With 2026 sammitida IoT va mikrokontrollerlar dasturchilari uchun 'Simplicity AI SDK' platformasining ochiq beta-talqinini taqdim etdi. Ushbu tizim Model Context Protocol (MCP) orqali Copilot va Cursor kabi AI agentlarini mikrosxemalar dasturlashiga to'g'ridan-to'g'ri ulaydi.",
+    "qisqacha": [
+      "Silicon Labs sun'iy intellekt agentlari va inson muhandislari o'rtasidagi hamkorlikni ta'minlovchi yangi SDK platformasini ishga tushirdi.",
+      "Tizim MCP serverlari orqali apparat ta'minoti va loyihalarni konfiguratsiya qilish, flesh-xotiraga yozish va test qilishni avtomatlashtiradi.",
+      "Muhandislar oddiy matnli so'rovlar yordamida Bluetooth LE va chekka (Edge AI) modellarini loyihalarga bir necha daqiqada tatbiq etishlari mumkin."
+    ],
+    "primary_source": {
+      "name": "Silicon Labs Documentation",
+      "title": "Getting Started with Simplicity AI SDK: AI Agent Integration for IoT",
+      "url": "https://docs.silabs.com/simplicity-ai-sdk/latest/simplicity-ai-sdk-start/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch Artificial Intelligence",
+        "title": "Silicon Labs showcases next-generation developer tooling at Works With 2026",
+        "url": "https://techcrunch.com/category/artificial-intelligence/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
   "boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026": {
     "id": "boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026",
     "slug": "boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026",

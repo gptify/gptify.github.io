@@ -229,7 +229,11 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Atlassian va OpenAI GPT-6 Integratsiyasini E’lon Qildi", u: "yangiliklar/atlassian-va-openai-gpt6-rovo-sheriklik-2026/", k: "atlassian va openai gpt-6 integratsiyasini e’lon qildi biznes va jarayonlar atlassian official news atlassian va openai o'zlarining strategik hamkorligini kengaytirib, jira, confluence va bitbucket ek" },
+  { t: "Silicon Labs IoT Uchun «Simplicity AI SDK»ni Chiqardi", u: "yangiliklar/silicon-labs-simplicity-ai-sdk-iot-dasturlash-2026/", k: "silicon labs iot uchun «simplicity ai sdk»ni chiqardi infratuzilma va qurilmalar silicon labs documentation silicon labs o'zining yillik works with 2026 sammitida iot va mikrokontrollerlar dasturchilari uchun" },
   { t: "Boston Dynamics Amazon Sobiq Olimini Rahbar Etib Tayinladi", u: "yangiliklar/boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026/", k: "boston dynamics amazon sobiq olimini rahbar etib tayinladi robototexnika va qurilmalar boston dynamics official boston dynamics kompaniyasi robototexnika sohasini jismoniy sun'iy intellekt (physical ai) davriga o" },
   { t: "Mistral AI Yangi «Mistral Large 4» Modelini Chiqardi", u: "yangiliklar/mistral-ai-mistral-large-4-flagman-model-2026/", k: "mistral ai yangi «mistral large 4» modelini chiqardi modellar va texnologiya mistral ai official fransiyaning yetakchi sun'iy intellekt kompaniyasi mistral ai o'zining eng qudratli 'mistral large 4" },
   { t: "AQSh Super-Intellekt Xavfsizligi Bo‘yicha Maxsus Guruh Tuzdi", u: "yangiliklar/aqsh-super-intelligence-force-maxsus-guruhi-2026/", k: "aqsh super-intellekt xavfsizligi bo‘yicha maxsus guruh tuzdi regulatsiya va jamiyat cbs news politics aqsh ma'muriyati yirik ai laboratoriyalari bilan muzokaralardan so'ng, sun'iy super-intellekt ustida" },
