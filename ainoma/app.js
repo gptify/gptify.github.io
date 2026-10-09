@@ -236,9 +236,8 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Oracle ChatGPT va Codex bilan ish vaqtini qisqartirdi", u: "yangiliklar/oracle-chatgpt-codex-ish-vaqtini-qisqartirdi/", k: "oracle chatgpt va codex bilan ish vaqtini qisqartirdi biznes & ai openai blog oracle mutaxassislar bilimini chatgpt work va codex yordamida avtomatlashtirilgan jarayonlarga aylan" },
-  { t: "Google DeepMind Gemini 4 Argon modelini taqdim etdi", u: "yangiliklar/gemini-4-argon-google-deepmind/", k: "google deepmind gemini 4 argon modelini taqdim etdi dunyo texnologiya google deepmind google deepmind tomonidan taqdim etilgan gemini 4 argon mantiqiy mulohaza yuritish va murakkab muhan" },
   { t: "AI yordamida rezyume (CV) va motivatsion xat yozish", u: "yangiliklar/ai-bilan-rezyume-cv-yozish/", k: "ai yordamida rezyume (cv) va motivatsion xat yozish qo'llanmalar rasmiy manba bir xil rezyumeni har joyga yubormang. ai yordamida har bir e'longa moslashtirilgan, kuchli cv va xa" },
   { t: "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi", u: "yangiliklar/anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026/", k: "anthropic eng chaqqon «claude haiku 5.5» modelini chiqardi modellar va foydalanish rasmiy manba anthropic o‘zining eng arzon va chaqqon kichik modeli bo‘lmish claude haiku 5.5 ni taqdim etdi. yang" },
   { t: "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi", u: "yangiliklar/chatgpt-bepul-foydalanuvchilarga-gpt6-luna-ochildi-2026/", k: "chatgpt bepul foydalanuvchilarga gpt-6 luna modelini ochdi modellar va foydalanish rasmiy manba openai o‘zining yangi avlod gpt-6 arxitekturasini barcha chatgpt foydalanuvchilariga, jumladan bepul" },
