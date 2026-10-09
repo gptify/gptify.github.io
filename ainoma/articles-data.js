@@ -1,3 +1,5 @@
+// AiNoma Central Content Database
+// Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
   "it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026": {
     "id": "it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026",
@@ -3387,6 +3389,45 @@ window.AINOMA_ARTICLES = {
     "author": {
       "name": "AiNoma Tahririyati",
       "job": "Texnologik Tahlil",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "ai-xavfsizligi-oila-bolalar": {
+    "id": "ai-xavfsizligi-oila-bolalar",
+    "slug": "ai-xavfsizligi-oila-bolalar",
+    "title": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy",
+    "kicker": "XAVFSIZLIK · OILA",
+    "meta_title": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy — AiNoma Qo‘llanma",
+    "meta_description": "Bolalar ChatGPT va boshqa AI chatbotlardan tobora ko'proq foydalanmoqda. Ota-onalar bilishi kerak bo'lgan 6 amaliy qoida.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-09",
+    "source_date": "2026-10-09",
+    "source_published_date": "2026-10-09",
+    "ainoma_published_date": "2026-10-09",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Bolalar ChatGPT va boshqa AI chatbotlardan tobora ko'proq foydalanmoqda. Ota-onalar bilishi kerak bo'lgan 6 amaliy qoida.",
+    "img": "assets/data_agent.jpg",
+    "imgAlt": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>XAVFSIZLIK · OILA</p>\n<p><b>Qisqa javob:</b> AI chatbotlarni bolalardan butunlay yashirish shart emas — muhimi, ular qanday ishlatilayotganini bilish va oddiy xavfsizlik qoidalarini o'rnatish.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">1. Qaysi AI vositasidan foydalanayotganini bilib oling</h2>\n<p>Ko'p bolalar uy vazifasi yoki qiziqish uchun ChatGPT, Character.AI kabi vositalardan foydalanadi. Qaysi ilovalar telefon/kompyuterda o'rnatilganini bilish — birinchi qadam.</p>\n<h2 class=\"article-section-title\">2. Yosh chegarasi qoidalarini tekshiring</h2>\n<p>Ko'p AI xizmatlari 13 yoki 18 yoshgacha bo'lganlar uchun ota-ona ruxsatini talab qiladi. Xizmatning o'z qoidalarini (foydalanish shartlari) tekshirib, mos yosh chegarasiga rioya qiling.</p>\n<h2 class=\"article-section-title\">3. Maxfiy ma'lumot kiritmaslikni o'rgating</h2>\n<p>Bolangizga uy manzili, maktab nomi, oilaviy moliyaviy ma'lumotlarni hech qachon AI chatga yozmaslikni tushuntiring — xuddi notanish odam bilan gaplashgandagidek ehtiyotkorlik.</p>\n<h2 class=\"article-section-title\">4. \"AI — do'st emas, vosita\" tushunchasini shakllantiring</h2>\n<p>Ba'zi chatbotlar juda \"insoniy\" his qilinishi mumkin. Bolangiz bilan AI'ning haqiqiy do'st yoki maslahatchi emas, matn generatsiya qiluvchi vosita ekanini muhokama qiling — bu his-tuyg'ular haqidagi og'ir suhbatlar uchun ayniqsa muhim.</p>\n<h2 class=\"article-section-title\">5. Og'ir mavzularda AI'ga emas, insonga murojaat qilishni o'rgating</h2>\n<p>Agar bolangiz o'zini yomon his qilish, qo'rquv yoki og'ir shaxsiy muammolar haqida gapirsa — bu AI chatbot bilan hal qilinadigan mavzu emas. Bunday holatlarda albatta o'zingiz bilan yoki mutaxassis (maktab psixologi, shifokor) bilan gaplashishni tushuntiring.</p>\n<h2 class=\"article-section-title\">6. Vaqt-vaqti bilan birga ko'rib chiqing</h2>\n<p>Oyda bir marta bolangiz bilan birga qaysi AI vositalaridan qanday foydalanayotganini ko'rib chiqing — bu nazorat emas, ochiq muloqotni saqlash usuli.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Taqiqlash ko'pincha ishlamaydi — tushuntirish va ochiq muloqot ishlaydi. Bolangiz bilan AI haqida gaplashishdan qo'rqmang.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Bolangiz bilan o'tirib, u qaysi AI ilovalaridan foydalanayotganini so'rang va birga bitta xavfsizlik qoidasini kelishib oling.</p>\n<p>💡 <b>Keyingi qadam:</b> Kompyuter/agentlarga ruxsat berish bilan bog'liq umumiy xavfsizlik qoidalari uchun <a href=\"/qollanma-agent-xavfsizlik.html\">AI agent xavfsizligi qo'llanmasi</a>ni o'qing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>Bolalar AI chatbot ishlatishi umuman xavflimi?</b> O'zi emas, nazoratsiz va tushunchasiz foydalanish xavfli — ochiq muloqot va oddiy qoidalar bilan xavf sezilarli kamayadi.</p>\n<p><b>Qaysi yoshdan boshlab AI ishlatish mumkin?</b> Bu xizmatning o'z qoidalariga bog'liq — ko'pchiligi 13 yoshgacha ota-ona ruxsatini talab qiladi.</p>\n<p><b>Bola og'ir mavzuda AI bilan gaplashsa nima qilish kerak?</b> Bu holatda AI o'rniga darhol o'zingiz bilan yoki mutaxassis bilan suhbatga yo'naltiring.</p>",
+    "contentHtml": "<p>XAVFSIZLIK · OILA</p>\n<p><b>Qisqa javob:</b> AI chatbotlarni bolalardan butunlay yashirish shart emas — muhimi, ular qanday ishlatilayotganini bilish va oddiy xavfsizlik qoidalarini o'rnatish.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">1. Qaysi AI vositasidan foydalanayotganini bilib oling</h2>\n<p>Ko'p bolalar uy vazifasi yoki qiziqish uchun ChatGPT, Character.AI kabi vositalardan foydalanadi. Qaysi ilovalar telefon/kompyuterda o'rnatilganini bilish — birinchi qadam.</p>\n<h2 class=\"article-section-title\">2. Yosh chegarasi qoidalarini tekshiring</h2>\n<p>Ko'p AI xizmatlari 13 yoki 18 yoshgacha bo'lganlar uchun ota-ona ruxsatini talab qiladi. Xizmatning o'z qoidalarini (foydalanish shartlari) tekshirib, mos yosh chegarasiga rioya qiling.</p>\n<h2 class=\"article-section-title\">3. Maxfiy ma'lumot kiritmaslikni o'rgating</h2>\n<p>Bolangizga uy manzili, maktab nomi, oilaviy moliyaviy ma'lumotlarni hech qachon AI chatga yozmaslikni tushuntiring — xuddi notanish odam bilan gaplashgandagidek ehtiyotkorlik.</p>\n<h2 class=\"article-section-title\">4. \"AI — do'st emas, vosita\" tushunchasini shakllantiring</h2>\n<p>Ba'zi chatbotlar juda \"insoniy\" his qilinishi mumkin. Bolangiz bilan AI'ning haqiqiy do'st yoki maslahatchi emas, matn generatsiya qiluvchi vosita ekanini muhokama qiling — bu his-tuyg'ular haqidagi og'ir suhbatlar uchun ayniqsa muhim.</p>\n<h2 class=\"article-section-title\">5. Og'ir mavzularda AI'ga emas, insonga murojaat qilishni o'rgating</h2>\n<p>Agar bolangiz o'zini yomon his qilish, qo'rquv yoki og'ir shaxsiy muammolar haqida gapirsa — bu AI chatbot bilan hal qilinadigan mavzu emas. Bunday holatlarda albatta o'zingiz bilan yoki mutaxassis (maktab psixologi, shifokor) bilan gaplashishni tushuntiring.</p>\n<h2 class=\"article-section-title\">6. Vaqt-vaqti bilan birga ko'rib chiqing</h2>\n<p>Oyda bir marta bolangiz bilan birga qaysi AI vositalaridan qanday foydalanayotganini ko'rib chiqing — bu nazorat emas, ochiq muloqotni saqlash usuli.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>Taqiqlash ko'pincha ishlamaydi — tushuntirish va ochiq muloqot ishlaydi. Bolangiz bilan AI haqida gaplashishdan qo'rqmang.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Bolangiz bilan o'tirib, u qaysi AI ilovalaridan foydalanayotganini so'rang va birga bitta xavfsizlik qoidasini kelishib oling.</p>\n<p>💡 <b>Keyingi qadam:</b> Kompyuter/agentlarga ruxsat berish bilan bog'liq umumiy xavfsizlik qoidalari uchun <a href=\"/qollanma-agent-xavfsizlik.html\">AI agent xavfsizligi qo'llanmasi</a>ni o'qing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>Bolalar AI chatbot ishlatishi umuman xavflimi?</b> O'zi emas, nazoratsiz va tushunchasiz foydalanish xavfli — ochiq muloqot va oddiy qoidalar bilan xavf sezilarli kamayadi.</p>\n<p><b>Qaysi yoshdan boshlab AI ishlatish mumkin?</b> Bu xizmatning o'z qoidalariga bog'liq — ko'pchiligi 13 yoshgacha ota-ona ruxsatini talab qiladi.</p>\n<p><b>Bola og'ir mavzuda AI bilan gaplashsa nima qilish kerak?</b> Bu holatda AI o'rniga darhol o'zingiz bilan yoki mutaxassis bilan suhbatga yo'naltiring.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-09",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
   }
