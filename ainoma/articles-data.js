@@ -1,6 +1,38 @@
-// AiNoma Central Content Database
-// Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "gemini-4-argon-google-deepmind": {
+    "id": "gemini-4-argon-google-deepmind",
+    "slug": "gemini-4-argon-google-deepmind",
+    "title": "Google DeepMind Gemini 4 Argon modelini taqdim etdi",
+    "kicker": "Voqea: 09-Oktyabr, 2026 · Manba: 09-Oktyabr, 2026 · AiNoma: 09-Oktyabr, 2026",
+    "deck": "Google DeepMind tomonidan taqdim etilgan Gemini 4 Argon mantiqiy mulohaza yuritish va murakkab muhandislik vazifalarida yuqori aniqlikni namoyish etmoqda.",
+    "event_date": "2026-10-09",
+    "source_published_date": "2026-10-09",
+    "ainoma_published_date": "2026-10-09",
+    "ainoma_updated_date": "2026-10-09",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/google_gemini_banner.jpg",
+    "imgAlt": "Google Gemini 4 Argon sun’iy intellekt modeli",
+    "qisqacha": [
+      "Google DeepMind o'zining yangi avlod Sun’iy intellekt arxitekturasi bo'lmish Gemini 4 Argon modelini rasman e'lon qildi.",
+      "Model mantiqiy xulosalar chiqarish hamda avtonom dasturlash vazifalarida tezlik va aniqlik ko'rsatkichlarini sezilarli oshirgan.",
+      "Hisoblash resurslarini optimallashtirish orqali bulutli infratuzilma xarajatlarini keskin kamaytirishga erishilgan."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "date": "09.10.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind tadqiqotchilari va muhandislari navbatdagi Sun’iy intellekt bosqichi — Gemini 4 Argon arxitekturasini taqdim etishdi. Ushbu tizim murakkab ko'p bosqichli masalalarni yechish, algoritmlarni optimallashtirish va katta hajmdagi ma'lumotlarni multimodal tahlil qilishda yuqori samaradorlikni namoyish etmoqda.</p>\n<p>Muhandislar modelning mantiqiy mulohaza yuritish zanjirini mukammallashtirib, unga real vaqt rejimida o'z xatolarini tuzatish va avtonom tarzda optimal yechimlarni ishlab chiqish imkoniyatini berishgan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Gemini 4 Argon e’lon qilinishi bilan Sun’iy intellekt sohasidagi raqobat yangi bosqichga ko'tarilmoqda. Tizim nafaqat matn va kod bilan ishlash, balki murakkab muhandislik va ilmiy simulyatsiyalarni o'tkazishda hisoblash resurslarini bir necha barobar tejaydi.</p>\n<p>Bu holat katta hajmdagi ma'lumotlar bilan ishlaydigan tashkilotlar uchun operatsion sarf-xarajatlarni kamaytirish va loyihalarni tezkorroq bozorga olib chiqish imkonini taqdim etadi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Chuqurlashtirilgan mantiqiy zanjirlar (Chain-of-Thought) va avtonom kod generatsiyasi.</li>\n      <li>Kontekst darchasi bilan ishlashda latentlik (latency) darajasining pasaytirilishi.</li>\n      <li>Dasturiy arxitekturalarni avtomatik tahlil qilish va qayta ko'rib chiqish (refactoring) imkoniyati.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Bulutli infratuzilma (GPU/TPU) xarajatlarini sezilarli darajada tejash.</li>\n      <li>Mijozlarga xizmat ko'rsatuvchi murakkab Sun’iy intellekt agentlarini tezroq va arzonroq joriy etish.</li>\n      <li>Biznes jarayonlarini avtomatlashtirishda xatoliklar ulushining keskin kamayishi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Mahalliy IT ekotizimi va autsorsing kompaniyalari uchun Gemini 4 Argon yangi texnologik imkoniyatlarni ochadi. O'zbekistonlik dasturchilar va startaplar ushbu model integratsiyasi orqali moliya, fintex, e-commerce hamda ta'lim sohalarida yuqori aniqlikdagi mahsulotlarni qisqa muddatda taqdim etishlari mumkin.</p>\n  <p>Bulutli xarajatlarning maqbulligi mahalliy bizneslarga ilg'or Sun’iy intellekt vositalarini ortiqcha infratuzilmaviy yuklamasiz tatbiq qilish imkonini beradi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Gemini 4 Argon API imkoniyatlarini o'rganish uchun test muhitini (sandbox) sozlang.</li>\n    <li>Kompaniyangizdagi mavjud Sun’iy intellekt vositalarining samaradorligini yangi model ko'rsatkichlari bilan solishtiring.</li>\n    <li>Dasturchilar jamoangiz uchun avtonom agentlar bilan ishlash bo'yicha ko'nikmalarni oshirish strategiyasini belgilang.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-09"
+  },
   "atlassian-va-openai-gpt6-rovo-sheriklik-2026": {
     "id": "atlassian-va-openai-gpt6-rovo-sheriklik-2026",
     "slug": "atlassian-va-openai-gpt6-rovo-sheriklik-2026",
@@ -3264,6 +3296,100 @@ window.AINOMA_ARTICLES = {
     "author": {
       "name": "AiNoma Tahririyati",
       "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026": {
+    "id": "anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026",
+    "slug": "anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026",
+    "title": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi",
+    "kicker": "TEZKOR KORPORATIV MODELLAR",
+    "meta_title": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi — AiNoma",
+    "meta_description": "Anthropic o‘zining eng arzon va chaqqon kichik modeli bo‘lmish Claude Haiku 5.5 ni taqdim etdi. Yangi arxitektura bulutli platformalarda korporativ agentlar, katta hajmdagi kod tekshiruvlari va tejamkor avtomatlashtirish jarayonlari uchun to‘liq ishga tushirildi.",
+    "category": "Modellar va Foydalanish",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-09",
+    "source_date": "2026-10-08",
+    "source_published_date": "2026-10-08",
+    "ainoma_published_date": "2026-10-09",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Anthropic o‘zining eng arzon va chaqqon kichik modeli bo‘lmish Claude Haiku 5.5 ni taqdim etdi. Yangi arxitektura bulutli platformalarda korporativ agentlar, katta hajmdagi kod tekshiruvlari va tejamkor avtomatlashtirish jarayonlari uchun to‘liq ishga tushirildi.",
+    "img": "assets/anthropic_claude_haiku_55_2026.jpg",
+    "imgAlt": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi",
+    "qisqacha": [
+      "Anthropic kompaniyasi o‘zining eng arzon va yuqori tezlikka ega yangi modeli — Claude Haiku 5.5 ni rasman namoyish qildi.",
+      "Model AWS Bedrock, Google Cloud Vertex AI va Microsoft Azure kabi asosiy xalqaro bulutli provayderlarda darhol faollashtirildi.",
+      "Haiku 5.5 o‘tgan avlodga nisbatan 2 barobar tezroq ishlaydi va korporativ agentlar uchun token xarajatlarini keskin kamaytiradi."
+    ],
+    "primary_source": {
+      "name": "Rasmiy Manba",
+      "title": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi",
+      "url": "https://ainoma.uz",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "VentureBeat Enterprise AI",
+        "title": "Anthropic launches Claude Haiku 5.5 across major cloud hyperscalers",
+        "url": "https://venturebeat.com/category/ai/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "body": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>Anthropic kompaniyasi o‘zining eng arzon va yuqori tezlikka ega yangi modeli — <b>Claude Haiku 5.5</b> ni rasman namoyish qildi.</li>\n  <li>Model AWS Bedrock, Google Cloud Vertex AI va Microsoft Azure kabi asosiy xalqaro bulutli provayderlarda darhol faollashtirildi.</li>\n  <li>Haiku 5.5 o‘tgan avlodga nisbatan 2 barobar tezroq ishlaydi va korporativ agentlar uchun token xarajatlarini keskin kamaytiradi.</li>\n</ul>\n<h3 class=\"article-section-title\">B2B va dasturchilar uchun qulay narx va yuqori tezlik</h3>\n<p>Sun’iy intellekt bozorida raqobat nafaqat yirik modellar (Opus yoki GPT-6 Astra), balki har bir so‘rov narxi arzon bo‘lgan ixcham modellar yo‘nalishida ham kuchaymoqda.</p>\n<p>Anthropic taqdim etgan Claude Haiku 5.5 aynan millionlab so‘rovlar bilan ishlaydigan B2B tizimlar, avtomatlashtirilgan mijozlar qo‘llab-quvvatlash xizmati hamda kod bazalarini muntazam tahlil qiluvchi avtonom agentlar uchun mo‘ljallangan.</p>\n<p>Kompaniya ma’lumotlariga ko‘ra, Haiku 5.5 deyarli oldingi avlod Sonnet darajasidagi mantiqiy xulosalarni ancha arzon narxda va bir necha yuz millisekund ichida chiqarib bera oladi.</p>\n<h3 class=\"article-section-title\">Asosiy texnik afzalliklar</h3>\n<p class=\"article-step\"><b>1.</b> <b>Tezkor javob berish (Kam kechikish):</b> Model chat-botlar va ovozli tizimlarda inson bilan uzluksiz real vaqtda muloqot qilishga moslashtirilgan.</p>\n<p class=\"article-step\"><b>2.</b> <b>Katta kontekst darchasi:</b> 200,000 tokenlik kontekstni qo‘llab-quvvatlaydi, bu esa yuzlab sahifalik korporativ shartnomalar yoki kod omborlarini bir vaqtning o‘zida tahlil qilish imkonini beradi.</p>\n<p class=\"article-step\"><b>3.</b> <b>Kiberxavfsizlik va sinovlar:</b> Yangi model xavfsizlik filtrlari bo‘yicha optimallashtirilib, xakerlik xatarlarini tekshirish uchun ham kengaytirilgan imkoniyatlarga ega.</p>\n<h3 class=\"article-section-title\">Siz uchun amaliy xulosalar</h3>\n<p>Agar siz yoki kompaniyangiz o‘z biznes jarayonlarida (CRM, ma’lumotlar saralash, Telegram botlar) sun’iy intellekt API’laridan foydalanayotgan bo‘lsa, Haiku 5.5 ga o‘tish oylik infratuzilma xarajatlarini 30-50% gacha tejashga yordam beradi.</p>",
+    "contentHtml": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>Anthropic kompaniyasi o‘zining eng arzon va yuqori tezlikka ega yangi modeli — <b>Claude Haiku 5.5</b> ni rasman namoyish qildi.</li>\n  <li>Model AWS Bedrock, Google Cloud Vertex AI va Microsoft Azure kabi asosiy xalqaro bulutli provayderlarda darhol faollashtirildi.</li>\n  <li>Haiku 5.5 o‘tgan avlodga nisbatan 2 barobar tezroq ishlaydi va korporativ agentlar uchun token xarajatlarini keskin kamaytiradi.</li>\n</ul>\n<h3 class=\"article-section-title\">B2B va dasturchilar uchun qulay narx va yuqori tezlik</h3>\n<p>Sun’iy intellekt bozorida raqobat nafaqat yirik modellar (Opus yoki GPT-6 Astra), balki har bir so‘rov narxi arzon bo‘lgan ixcham modellar yo‘nalishida ham kuchaymoqda.</p>\n<p>Anthropic taqdim etgan Claude Haiku 5.5 aynan millionlab so‘rovlar bilan ishlaydigan B2B tizimlar, avtomatlashtirilgan mijozlar qo‘llab-quvvatlash xizmati hamda kod bazalarini muntazam tahlil qiluvchi avtonom agentlar uchun mo‘ljallangan.</p>\n<p>Kompaniya ma’lumotlariga ko‘ra, Haiku 5.5 deyarli oldingi avlod Sonnet darajasidagi mantiqiy xulosalarni ancha arzon narxda va bir necha yuz millisekund ichida chiqarib bera oladi.</p>\n<h3 class=\"article-section-title\">Asosiy texnik afzalliklar</h3>\n<p class=\"article-step\"><b>1.</b> <b>Tezkor javob berish (Kam kechikish):</b> Model chat-botlar va ovozli tizimlarda inson bilan uzluksiz real vaqtda muloqot qilishga moslashtirilgan.</p>\n<p class=\"article-step\"><b>2.</b> <b>Katta kontekst darchasi:</b> 200,000 tokenlik kontekstni qo‘llab-quvvatlaydi, bu esa yuzlab sahifalik korporativ shartnomalar yoki kod omborlarini bir vaqtning o‘zida tahlil qilish imkonini beradi.</p>\n<p class=\"article-step\"><b>3.</b> <b>Kiberxavfsizlik va sinovlar:</b> Yangi model xavfsizlik filtrlari bo‘yicha optimallashtirilib, xakerlik xatarlarini tekshirish uchun ham kengaytirilgan imkoniyatlarga ega.</p>\n<h3 class=\"article-section-title\">Siz uchun amaliy xulosalar</h3>\n<p>Agar siz yoki kompaniyangiz o‘z biznes jarayonlarida (CRM, ma’lumotlar saralash, Telegram botlar) sun’iy intellekt API’laridan foydalanayotgan bo‘lsa, Haiku 5.5 ga o‘tish oylik infratuzilma xarajatlarini 30-50% gacha tejashga yordam beradi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-09",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Texnologik Tahlil",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "chatgpt-bepul-foydalanuvchilarga-gpt6-luna-ochildi-2026": {
+    "id": "chatgpt-bepul-foydalanuvchilarga-gpt6-luna-ochildi-2026",
+    "slug": "chatgpt-bepul-foydalanuvchilarga-gpt6-luna-ochildi-2026",
+    "title": "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi",
+    "kicker": "OMMAVIY SUN’IY INTELLEKT",
+    "meta_title": "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi — AiNoma",
+    "meta_description": "OpenAI o‘zining yangi avlod GPT-6 arxitekturasini barcha ChatGPT foydalanuvchilariga, jumladan bepul (Free) va Go tariflariga rasman taqdim etdi. Yangi GPT-6 Luna modeli tezkor javoblar berish va chat ichida interaktiv vizual vidjetlar qurish imkoniyatiga ega.",
+    "category": "Modellar va Foydalanish",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-09",
+    "source_date": "2026-10-08",
+    "source_published_date": "2026-10-08",
+    "ainoma_published_date": "2026-10-09",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "OpenAI o‘zining yangi avlod GPT-6 arxitekturasini barcha ChatGPT foydalanuvchilariga, jumladan bepul (Free) va Go tariflariga rasman taqdim etdi. Yangi GPT-6 Luna modeli tezkor javoblar berish va chat ichida interaktiv vizual vidjetlar qurish imkoniyatiga ega.",
+    "img": "assets/chatgpt_gpt6_luna_free_2026.jpg",
+    "imgAlt": "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi",
+    "qisqacha": [
+      "OpenAI o‘zining flagman GPT-6 oilasini ChatGPT bepul (Free) va Go tariflaridagi barcha foydalanuvchilar uchun ochdi.",
+      "Bepul foydalanuvchilarga biriktirilgan GPT-6 Luna modeli kundalik muloqot, tezkor izlanish va matn tahriri bo‘yicha yuqori tezlik va barqarorlikni ta’minlaydi.",
+      "Yangilanish bilan birga chat interfeysida bevosita interaktiv jadvallar, kalkulyatorlar va formalar chizib beruvchi «Intelligent UI» funksiyasi ishga tushirildi."
+    ],
+    "primary_source": {
+      "name": "Rasmiy Manba",
+      "title": "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi",
+      "url": "https://ainoma.uz",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch Artificial Intelligence",
+        "title": "OpenAI rolls out GPT-6 Luna with Intelligent UI to all free ChatGPT tiers",
+        "url": "https://techcrunch.com/category/artificial-intelligence/",
+        "badge": "XALQARO TAHLIL"
+      }
+    ],
+    "body": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>OpenAI o‘zining flagman GPT-6 oilasini ChatGPT bepul (Free) va Go tariflaridagi barcha foydalanuvchilar uchun ochdi.</li>\n  <li>Bepul foydalanuvchilarga biriktirilgan <b>GPT-6 Luna</b> modeli kundalik muloqot, tezkor izlanish va matn tahriri bo‘yicha yuqori tezlik va barqarorlikni ta’minlaydi.</li>\n  <li>Yangilanish bilan birga chat interfeysida bevosita interaktiv jadvallar, kalkulyatorlar va formalar chizib beruvchi <b>«Intelligent UI»</b> funksiyasi ishga tushirildi.</li>\n</ul>\n<h3 class=\"article-section-title\">Bepul ChatGPT foydalanuvchilari uchun nimalar o‘zgardi?</h3>\n<p>OpenAI kompaniyasi 2026-yil 8-oktabrdan boshlab ChatGPT platformasining bepul va Go toifasidagi barcha obunachilariga yangi avlod GPT-6 modellariga to‘liq kirish huquqini taqdim etdi.</p>\n<p>Ilgari yangi modellar faqat pullik (Plus, Pro, Business) mijozlarga ochilgan bo‘lsa, ushbu bosqichda kompaniya kundalik vazifalar uchun optimallashtirilgan yengil arxitektura — <b>GPT-6 Luna</b> modelini bepul asosda ommaga ulashdi.</p>\n<p>Ushbu model oldingi GPT-5.6 seriyasiga qaraganda so‘rovlarni tahlil qilish va internetdan yangi ma’lumotlarni qidirishda 2 barobar tezroq ish boshlaydi hamda mantiqiy xulosalarda aniqroq javob qaytaradi.</p>\n<h3 class=\"article-section-title\">Yangi «Intelligent UI» imkoniyati</h3>\n<p>Mazkur relizning eng katta amaliy yangiliklaridan biri — bu <b>«Intelligent UI» (Aqlli interfeys)</b> tizimidir. Endilikda ChatGPT foydalanuvchi so‘roviga faqat oddiy matn orqali emas, balki jonli interaktiv elementlar bilan javob bera oladi:</p>\n<ul class=\"article-list\">\n  <li>Moliyaviy va byudjet hisob-kitoblari uchun chatning o‘zida ishlaydigan interaktiv kalkulyatorlar;</li>\n  <li>Filtrlash va saralash imkoniyatiga ega dinamik ma’lumot jadvallari;</li>\n  <li>Loyiha rejalari uchun to‘g‘ridan-to‘g‘ri to‘ldiriladigan formalar va nazorat ro‘yxatlari.</li>\n</ul>\n<p>Pullik foydalanuvchilar (Plus va Pro) dasturlash va chuqur tahlilga ixtisoslashgan <b>GPT-6 Sol</b> modelidan foydalanishda davom etsa-da, Luna modeli bepul foydalanuvchilarning kundalik ish samaradorligini sezilarli darajada oshiradi.</p>\n<h3 class=\"article-section-title\">Siz uchun amaliy tavsiyalar</h3>\n<p class=\"article-step\"><b>1.</b> <b>ChatGPT ilovasini yangilang:</b> Agar siz mobil yoki desktop ilovadan foydalansangiz, so‘nggi talqinga yangilang yoki veb-sayt orqali kiring.</p>\n<p class=\"article-step\"><b>2.</b> <b>Murakkab topshiriqlarni sinab ko‘ring:</b> Oddiy matn o‘rniga <i>\"Menga oylik xarajatlar kalkulyatorini interaktiv jadval ko‘rinishida chiqarib ber\"</i> deb so‘rov bering va yangi imkoniyatlardan foydalaning.</p>",
+    "contentHtml": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>OpenAI o‘zining flagman GPT-6 oilasini ChatGPT bepul (Free) va Go tariflaridagi barcha foydalanuvchilar uchun ochdi.</li>\n  <li>Bepul foydalanuvchilarga biriktirilgan <b>GPT-6 Luna</b> modeli kundalik muloqot, tezkor izlanish va matn tahriri bo‘yicha yuqori tezlik va barqarorlikni ta’minlaydi.</li>\n  <li>Yangilanish bilan birga chat interfeysida bevosita interaktiv jadvallar, kalkulyatorlar va formalar chizib beruvchi <b>«Intelligent UI»</b> funksiyasi ishga tushirildi.</li>\n</ul>\n<h3 class=\"article-section-title\">Bepul ChatGPT foydalanuvchilari uchun nimalar o‘zgardi?</h3>\n<p>OpenAI kompaniyasi 2026-yil 8-oktabrdan boshlab ChatGPT platformasining bepul va Go toifasidagi barcha obunachilariga yangi avlod GPT-6 modellariga to‘liq kirish huquqini taqdim etdi.</p>\n<p>Ilgari yangi modellar faqat pullik (Plus, Pro, Business) mijozlarga ochilgan bo‘lsa, ushbu bosqichda kompaniya kundalik vazifalar uchun optimallashtirilgan yengil arxitektura — <b>GPT-6 Luna</b> modelini bepul asosda ommaga ulashdi.</p>\n<p>Ushbu model oldingi GPT-5.6 seriyasiga qaraganda so‘rovlarni tahlil qilish va internetdan yangi ma’lumotlarni qidirishda 2 barobar tezroq ish boshlaydi hamda mantiqiy xulosalarda aniqroq javob qaytaradi.</p>\n<h3 class=\"article-section-title\">Yangi «Intelligent UI» imkoniyati</h3>\n<p>Mazkur relizning eng katta amaliy yangiliklaridan biri — bu <b>«Intelligent UI» (Aqlli interfeys)</b> tizimidir. Endilikda ChatGPT foydalanuvchi so‘roviga faqat oddiy matn orqali emas, balki jonli interaktiv elementlar bilan javob bera oladi:</p>\n<ul class=\"article-list\">\n  <li>Moliyaviy va byudjet hisob-kitoblari uchun chatning o‘zida ishlaydigan interaktiv kalkulyatorlar;</li>\n  <li>Filtrlash va saralash imkoniyatiga ega dinamik ma’lumot jadvallari;</li>\n  <li>Loyiha rejalari uchun to‘g‘ridan-to‘g‘ri to‘ldiriladigan formalar va nazorat ro‘yxatlari.</li>\n</ul>\n<p>Pullik foydalanuvchilar (Plus va Pro) dasturlash va chuqur tahlilga ixtisoslashgan <b>GPT-6 Sol</b> modelidan foydalanishda davom etsa-da, Luna modeli bepul foydalanuvchilarning kundalik ish samaradorligini sezilarli darajada oshiradi.</p>\n<h3 class=\"article-section-title\">Siz uchun amaliy tavsiyalar</h3>\n<p class=\"article-step\"><b>1.</b> <b>ChatGPT ilovasini yangilang:</b> Agar siz mobil yoki desktop ilovadan foydalansangiz, so‘nggi talqinga yangilang yoki veb-sayt orqali kiring.</p>\n<p class=\"article-step\"><b>2.</b> <b>Murakkab topshiriqlarni sinab ko‘ring:</b> Oddiy matn o‘rniga <i>\"Menga oylik xarajatlar kalkulyatorini interaktiv jadval ko‘rinishida chiqarib ber\"</i> deb so‘rov bering va yangi imkoniyatlardan foydalaning.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-09",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Texnologik Tahlil",
       "avatar": "assets/brand_sheet_white.png"
     }
   }
