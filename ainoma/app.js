@@ -235,6 +235,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Oracle ChatGPT va Codex bilan ish vaqtini qisqartirdi", u: "yangiliklar/oracle-chatgpt-codex-ish-vaqtini-qisqartirdi/", k: "oracle chatgpt va codex bilan ish vaqtini qisqartirdi biznes & ai openai blog oracle mutaxassislar bilimini chatgpt work va codex yordamida avtomatlashtirilgan jarayonlarga aylan" },
   { t: "Google DeepMind Gemini 4 Argon modelini taqdim etdi", u: "yangiliklar/gemini-4-argon-google-deepmind/", k: "google deepmind gemini 4 argon modelini taqdim etdi dunyo texnologiya google deepmind google deepmind tomonidan taqdim etilgan gemini 4 argon mantiqiy mulohaza yuritish va murakkab muhan" },
