@@ -1,4 +1,82 @@
 window.AINOMA_ARTICLES = {
+  "it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026": {
+    "id": "it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026",
+    "slug": "it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026",
+    "title": "IT Park va Serbiya Startaplar Uchun Jamg‘arma Tuzmoqda",
+    "kicker": "O‘ZBEKISTON · XALQARO VENTUR VA STARTAPLAR",
+    "meta_title": "IT Park va Serbiya Startaplar Uchun Jamg‘arma Tuzmoqda — AiNoma",
+    "meta_description": "IT Park Uzbekistan va Serbiya Innovatsiyalar jamg‘armasi startaplarni qo‘shma moliyalashtirish va Yevropaga olib chiqishni kelishib oldi.",
+    "event_date": "2026-10-09",
+    "source_published_date": "2026-10-08",
+    "ainoma_published_date": "2026-10-09",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Biznes va Jarayonlar",
+    "audience": "biznes dasturchilar yetakchilar",
+    "img": "assets/itpark_serbia_startup_fund_2026.jpg",
+    "imgAlt": "IT Park Uzbekistan va Serbiya Innovatsiyalar jamg‘armasi xalqaro forumi",
+    "deck": "IT Park Uzbekistan va Serbiya Innovatsiyalar jamg‘armasi qo‘shma texnologik loyihalarni moliyalashtirish, sun’iy intellekt va startaplarni Janubi-Sharqiy Yevropa bozoriga olib chiqish bo‘yicha rasmiy hamkorlik mexanizmini kelishib oldi.",
+    "qisqacha": [
+      "Toshkentda IT Park Uzbekistan va Serbiya Innovatsiyalar jamg‘armasi o‘rtasida amaliy sheriklik muzokaralari bo‘lib o‘tdi.",
+      "Kelishuv doirasida texnologik loyihalarni birgalikda moliyalashtirish va mahalliy startaplarni Yevropaning Katapult akseleratoriga ulash ko‘zda tutilgan.",
+      "Tomonlar sun’iy intellekt va IT xizmatlari eksportida mintaqaviy xablar orqali o‘zaro bozorlarga chiqish imkoniyatlarini kengaytirmoqda."
+    ],
+    "primary_source": {
+      "name": "Trend News Agency",
+      "title": "IT Park Uzbekistan and Innovation Fund of Serbia Discuss Co-financing and Startup Support",
+      "url": "https://az.trend.az/other/world/3953530.html",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "IT Park Official Portal",
+        "title": "IT Park Uzbekistan expands international cooperation with European tech hubs",
+        "url": "https://www.it-park.uz/en/itpark/news/",
+        "badge": "RASMIY HISOBOT"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
+  "toshkentda-women-in-tech-leadership-2026-forumi-otkaziladi": {
+    "id": "toshkentda-women-in-tech-leadership-2026-forumi-otkaziladi",
+    "slug": "toshkentda-women-in-tech-leadership-2026-forumi-otkaziladi",
+    "title": "Toshkentda «Women in Tech Leadership 2026» Forumi O‘tkaziladi",
+    "kicker": "TOSHKENT · XALQARO TEXNOLOGIK FORUM",
+    "meta_title": "Toshkentda «Women in Tech Leadership 2026» Forumi O‘tkaziladi — AiNoma",
+    "meta_description": "13-oktabr kuni Toshkentda sun’iy intellektni tartibga solish va kiberxavfsizlikka bag‘ishlangan Women in Tech Leadership Forum bo‘lib o‘tadi.",
+    "event_date": "2026-10-09",
+    "source_published_date": "2026-10-08",
+    "ainoma_published_date": "2026-10-09",
+    "author": "AiNoma Tahririyati",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "category": "Biznes va Jarayonlar",
+    "audience": "yetakchilar mutaxassislar",
+    "img": "assets/women_in_tech_leadership_tashkent_2026.jpg",
+    "imgAlt": "Toshkentda Women in Tech Leadership Forum 2026 anjumani zali",
+    "deck": "13-oktabr kuni Raqamli texnologiyalar vazirligida «Building the Big Future» shiori ostida Women in Tech Leadership Forum 2026 bo‘lib o‘tadi. Anjumanda sun’iy intellektni tartibga solish, kiberxavfsizlik va robototexnika sohalari muhokama qilinadi.",
+    "qisqacha": [
+      "Raqamli texnologiyalar vazirligida 10 dan ortiq davlatlardan 15 dan ziyod xalqaro ekspertlar ishtirokida yetakchilar forumi tashkil etilmoqda.",
+      "Asosiy mavzular: sun’iy intellekt etikasini ishlab chiqish, avtonom tizimlar xavfsizligi va raqamli moliya transformatsiyasi.",
+      "Forum yakunida Kavkaz va Markaziy Osiyo mintaqasi texnologik yetakchilari uchun «Women in Tech CCA Awards» tantanali taqdirlash marosimi o‘tkaziladi."
+    ],
+    "primary_source": {
+      "name": "Women in Tech Official Portal",
+      "title": "Women in Tech Leadership Forum 2026: Building the Big Future in Tashkent",
+      "url": "https://with.women-in-tech.org/c/cca-events/women-in-tech-leadership-forum-baf71e",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Spot.uz Texnologiya",
+        "title": "Toshkentda sun’iy intellekt va kiberxavfsizlikka bag‘ishlangan xalqaro forum e’lon qilindi",
+        "url": "https://www.spot.uz/oz/news/",
+        "badge": "MAHALLIY SHARH"
+      }
+    ],
+    "verification_status": "VERIFIED"
+  },
   "atlassian-va-openai-gpt6-rovo-sheriklik-2026": {
     "id": "atlassian-va-openai-gpt6-rovo-sheriklik-2026",
     "slug": "atlassian-va-openai-gpt6-rovo-sheriklik-2026",
@@ -3262,53 +3340,6 @@ window.AINOMA_ARTICLES = {
     "author": {
       "name": "AiNoma Tahririyati",
       "job": "Amaliy ta'lim va metodologiya guruhi",
-      "avatar": "assets/brand_sheet_white.png"
-    }
-  },
-  "anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026": {
-    "id": "anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026",
-    "slug": "anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026",
-    "title": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi",
-    "kicker": "TEZKOR KORPORATIV MODELLAR",
-    "meta_title": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi — AiNoma",
-    "meta_description": "Anthropic o‘zining eng arzon va chaqqon kichik modeli bo‘lmish Claude Haiku 5.5 ni taqdim etdi. Yangi arxitektura bulutli platformalarda korporativ agentlar, katta hajmdagi kod tekshiruvlari va tejamkor avtomatlashtirish jarayonlari uchun to‘liq ishga tushirildi.",
-    "category": "Modellar va Foydalanish",
-    "audience": "mutaxassislar",
-    "event_date": "2026-10-09",
-    "source_date": "2026-10-08",
-    "source_published_date": "2026-10-08",
-    "ainoma_published_date": "2026-10-09",
-    "read_time": "3 daqiqalik mutolaa",
-    "readTime": "3 daqiqalik mutolaa",
-    "deck": "Anthropic o‘zining eng arzon va chaqqon kichik modeli bo‘lmish Claude Haiku 5.5 ni taqdim etdi. Yangi arxitektura bulutli platformalarda korporativ agentlar, katta hajmdagi kod tekshiruvlari va tejamkor avtomatlashtirish jarayonlari uchun to‘liq ishga tushirildi.",
-    "img": "assets/anthropic_claude_haiku_55_2026.jpg",
-    "imgAlt": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi",
-    "qisqacha": [
-      "Anthropic kompaniyasi o‘zining eng arzon va yuqori tezlikka ega yangi modeli — Claude Haiku 5.5 ni rasman namoyish qildi.",
-      "Model AWS Bedrock, Google Cloud Vertex AI va Microsoft Azure kabi asosiy xalqaro bulutli provayderlarda darhol faollashtirildi.",
-      "Haiku 5.5 o‘tgan avlodga nisbatan 2 barobar tezroq ishlaydi va korporativ agentlar uchun token xarajatlarini keskin kamaytiradi."
-    ],
-    "primary_source": {
-      "name": "Rasmiy Manba",
-      "title": "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi",
-      "url": "https://ainoma.uz",
-      "badge": "BIRLAMCHI MANBA"
-    },
-    "secondary_sources": [
-      {
-        "name": "VentureBeat Enterprise AI",
-        "title": "Anthropic launches Claude Haiku 5.5 across major cloud hyperscalers",
-        "url": "https://venturebeat.com/category/ai/",
-        "badge": "XALQARO TAHLIL"
-      }
-    ],
-    "body": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>Anthropic kompaniyasi o‘zining eng arzon va yuqori tezlikka ega yangi modeli — <b>Claude Haiku 5.5</b> ni rasman namoyish qildi.</li>\n  <li>Model AWS Bedrock, Google Cloud Vertex AI va Microsoft Azure kabi asosiy xalqaro bulutli provayderlarda darhol faollashtirildi.</li>\n  <li>Haiku 5.5 o‘tgan avlodga nisbatan 2 barobar tezroq ishlaydi va korporativ agentlar uchun token xarajatlarini keskin kamaytiradi.</li>\n</ul>\n<h3 class=\"article-section-title\">B2B va dasturchilar uchun qulay narx va yuqori tezlik</h3>\n<p>Sun’iy intellekt bozorida raqobat nafaqat yirik modellar (Opus yoki GPT-6 Astra), balki har bir so‘rov narxi arzon bo‘lgan ixcham modellar yo‘nalishida ham kuchaymoqda.</p>\n<p>Anthropic taqdim etgan Claude Haiku 5.5 aynan millionlab so‘rovlar bilan ishlaydigan B2B tizimlar, avtomatlashtirilgan mijozlar qo‘llab-quvvatlash xizmati hamda kod bazalarini muntazam tahlil qiluvchi avtonom agentlar uchun mo‘ljallangan.</p>\n<p>Kompaniya ma’lumotlariga ko‘ra, Haiku 5.5 deyarli oldingi avlod Sonnet darajasidagi mantiqiy xulosalarni ancha arzon narxda va bir necha yuz millisekund ichida chiqarib bera oladi.</p>\n<h3 class=\"article-section-title\">Asosiy texnik afzalliklar</h3>\n<p class=\"article-step\"><b>1.</b> <b>Tezkor javob berish (Kam kechikish):</b> Model chat-botlar va ovozli tizimlarda inson bilan uzluksiz real vaqtda muloqot qilishga moslashtirilgan.</p>\n<p class=\"article-step\"><b>2.</b> <b>Katta kontekst darchasi:</b> 200,000 tokenlik kontekstni qo‘llab-quvvatlaydi, bu esa yuzlab sahifalik korporativ shartnomalar yoki kod omborlarini bir vaqtning o‘zida tahlil qilish imkonini beradi.</p>\n<p class=\"article-step\"><b>3.</b> <b>Kiberxavfsizlik va sinovlar:</b> Yangi model xavfsizlik filtrlari bo‘yicha optimallashtirilib, xakerlik xatarlarini tekshirish uchun ham kengaytirilgan imkoniyatlarga ega.</p>\n<h3 class=\"article-section-title\">Siz uchun amaliy xulosalar</h3>\n<p>Agar siz yoki kompaniyangiz o‘z biznes jarayonlarida (CRM, ma’lumotlar saralash, Telegram botlar) sun’iy intellekt API’laridan foydalanayotgan bo‘lsa, Haiku 5.5 ga o‘tish oylik infratuzilma xarajatlarini 30-50% gacha tejashga yordam beradi.</p>",
-    "contentHtml": "<h3 class=\"article-section-title\">Qisqacha mazmuni</h3>\n<ul class=\"article-list\">\n  <li>Anthropic kompaniyasi o‘zining eng arzon va yuqori tezlikka ega yangi modeli — <b>Claude Haiku 5.5</b> ni rasman namoyish qildi.</li>\n  <li>Model AWS Bedrock, Google Cloud Vertex AI va Microsoft Azure kabi asosiy xalqaro bulutli provayderlarda darhol faollashtirildi.</li>\n  <li>Haiku 5.5 o‘tgan avlodga nisbatan 2 barobar tezroq ishlaydi va korporativ agentlar uchun token xarajatlarini keskin kamaytiradi.</li>\n</ul>\n<h3 class=\"article-section-title\">B2B va dasturchilar uchun qulay narx va yuqori tezlik</h3>\n<p>Sun’iy intellekt bozorida raqobat nafaqat yirik modellar (Opus yoki GPT-6 Astra), balki har bir so‘rov narxi arzon bo‘lgan ixcham modellar yo‘nalishida ham kuchaymoqda.</p>\n<p>Anthropic taqdim etgan Claude Haiku 5.5 aynan millionlab so‘rovlar bilan ishlaydigan B2B tizimlar, avtomatlashtirilgan mijozlar qo‘llab-quvvatlash xizmati hamda kod bazalarini muntazam tahlil qiluvchi avtonom agentlar uchun mo‘ljallangan.</p>\n<p>Kompaniya ma’lumotlariga ko‘ra, Haiku 5.5 deyarli oldingi avlod Sonnet darajasidagi mantiqiy xulosalarni ancha arzon narxda va bir necha yuz millisekund ichida chiqarib bera oladi.</p>\n<h3 class=\"article-section-title\">Asosiy texnik afzalliklar</h3>\n<p class=\"article-step\"><b>1.</b> <b>Tezkor javob berish (Kam kechikish):</b> Model chat-botlar va ovozli tizimlarda inson bilan uzluksiz real vaqtda muloqot qilishga moslashtirilgan.</p>\n<p class=\"article-step\"><b>2.</b> <b>Katta kontekst darchasi:</b> 200,000 tokenlik kontekstni qo‘llab-quvvatlaydi, bu esa yuzlab sahifalik korporativ shartnomalar yoki kod omborlarini bir vaqtning o‘zida tahlil qilish imkonini beradi.</p>\n<p class=\"article-step\"><b>3.</b> <b>Kiberxavfsizlik va sinovlar:</b> Yangi model xavfsizlik filtrlari bo‘yicha optimallashtirilib, xakerlik xatarlarini tekshirish uchun ham kengaytirilgan imkoniyatlarga ega.</p>\n<h3 class=\"article-section-title\">Siz uchun amaliy xulosalar</h3>\n<p>Agar siz yoki kompaniyangiz o‘z biznes jarayonlarida (CRM, ma’lumotlar saralash, Telegram botlar) sun’iy intellekt API’laridan foydalanayotgan bo‘lsa, Haiku 5.5 ga o‘tish oylik infratuzilma xarajatlarini 30-50% gacha tejashga yordam beradi.</p>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-10-09",
-    "author": {
-      "name": "AiNoma Tahririyati",
-      "job": "Texnologik Tahlil",
       "avatar": "assets/brand_sheet_white.png"
     }
   },

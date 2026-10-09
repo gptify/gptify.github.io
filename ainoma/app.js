@@ -237,9 +237,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "IT Park va Serbiya Startaplar Uchun Jamg‘arma Tuzmoqda", u: "yangiliklar/it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026/", k: "it park va serbiya startaplar uchun jamg‘arma tuzmoqda biznes va jarayonlar trend news agency it park uzbekistan va serbiya innovatsiyalar jamg‘armasi qo‘shma texnologik loyihalarni moliyalashti" },
+  { t: "Toshkentda «Women in Tech Leadership 2026» Forumi O‘tkaziladi", u: "yangiliklar/toshkentda-women-in-tech-leadership-2026-forumi-otkaziladi/", k: "toshkentda «women in tech leadership 2026» forumi o‘tkaziladi biznes va jarayonlar women in tech official portal 13-oktabr kuni raqamli texnologiyalar vazirligida «building the big future» shiori ostida women in t" },
   { t: "AI yordamida rezyume (CV) va motivatsion xat yozish", u: "yangiliklar/ai-bilan-rezyume-cv-yozish/", k: "ai yordamida rezyume (cv) va motivatsion xat yozish qo'llanmalar rasmiy manba bir xil rezyumeni har joyga yubormang. ai yordamida har bir e'longa moslashtirilgan, kuchli cv va xa" },
-  { t: "Anthropic Eng Chaqqon «Claude Haiku 5.5» Modelini Chiqardi", u: "yangiliklar/anthropic-eng-chaqqon-claude-haiku-55-modelini-chiqardi-2026/", k: "anthropic eng chaqqon «claude haiku 5.5» modelini chiqardi modellar va foydalanish rasmiy manba anthropic o‘zining eng arzon va chaqqon kichik modeli bo‘lmish claude haiku 5.5 ni taqdim etdi. yang" },
   { t: "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi", u: "yangiliklar/chatgpt-bepul-foydalanuvchilarga-gpt6-luna-ochildi-2026/", k: "chatgpt bepul foydalanuvchilarga gpt-6 luna modelini ochdi modellar va foydalanish rasmiy manba openai o‘zining yangi avlod gpt-6 arxitekturasini barcha chatgpt foydalanuvchilariga, jumladan bepul" },
   { t: "Atlassian va OpenAI GPT-6 Integratsiyasini E’lon Qildi", u: "yangiliklar/atlassian-va-openai-gpt6-rovo-sheriklik-2026/", k: "atlassian va openai gpt-6 integratsiyasini e’lon qildi biznes va jarayonlar atlassian official news atlassian va openai o'zlarining strategik hamkorligini kengaytirib, jira, confluence va bitbucket ek" },
   { t: "Silicon Labs IoT Uchun «Simplicity AI SDK»ni Chiqardi", u: "yangiliklar/silicon-labs-simplicity-ai-sdk-iot-dasturlash-2026/", k: "silicon labs iot uchun «simplicity ai sdk»ni chiqardi infratuzilma va qurilmalar silicon labs documentation silicon labs o'zining yillik works with 2026 sammitida iot va mikrokontrollerlar dasturchilari uchun" },
