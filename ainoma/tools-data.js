@@ -551,7 +551,7 @@ window.AINOMA_TOOLS = {
     category: "Video & Kinematik Harakat",
     pricing: "Freemium / Pro tariflar",
     lang: "Global platforma",
-    url: "https://higgsfield.ai",
+    url: "https://higgsfield.ai?fpr=bek-04cb33",
     bg: "#7c2d12",
     initial: "HF",
     f1_t: "Kinematik Kamera Nazorati",

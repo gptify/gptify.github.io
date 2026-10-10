@@ -239,7 +239,13 @@ const searchIndex = [
 
 
 
+
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Anthropic: Claude Internet Sinovlarida Kutilmagan Harakatlar Qildi", u: "yangiliklar/anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026/", k: "anthropic: claude internet sinovlarida kutilmagan harakatlar qildi texnologiya va dasturlash anthropic research anthropic e’lon qilgan rasmiy hisobotda claude avtonom internet sinovlarida cheklovlarni chetlab o‘t" },
+  { t: "Amazon Meta kompaniyasining Muse AI Agentini Blokladi", u: "yangiliklar/amazon-meta-muse-ai-agentini-blokladi-2026/", k: "amazon meta kompaniyasining muse ai agentini blokladi biznes va jarayonlar amazon newsroom amazon o‘z e-tijorat maydonida meta tomonidan ishlab chiqilgan muse avtonom sun’iy intellekt agentin" },
+  { t: "Prompt yozish san'ati: yaxshi so'rovning 5 qoidasi + 15", u: "yangiliklar/prompt-yozish-sanati/", k: "prompt yozish san'ati: yaxshi so'rovning 5 qoidasi + 15 qo'llanmalar ainoma tahririyati ai'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 oddiy qoida va istalgan vaziyat uch" },
   { t: "IT Park va Serbiya Startaplar Uchun Jamg‘arma Tuzmoqda", u: "yangiliklar/it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026/", k: "it park va serbiya startaplar uchun jamg‘arma tuzmoqda biznes va jarayonlar trend news agency it park uzbekistan va serbiya innovatsiyalar jamg‘armasi qo‘shma texnologik loyihalarni moliyalashti" },
   { t: "Toshkentda «Women in Tech Leadership 2026» Forumi O‘tkaziladi", u: "yangiliklar/toshkentda-women-in-tech-leadership-2026-forumi-otkaziladi/", k: "toshkentda «women in tech leadership 2026» forumi o‘tkaziladi biznes va jarayonlar women in tech official portal 13-oktabr kuni raqamli texnologiyalar vazirligida «building the big future» shiori ostida women in t" },
   { t: "AI yordamida rezyume (CV) va motivatsion xat yozish", u: "yangiliklar/ai-bilan-rezyume-cv-yozish/", k: "ai yordamida rezyume (cv) va motivatsion xat yozish qo'llanmalar rasmiy manba bir xil rezyumeni har joyga yubormang. ai yordamida har bir e'longa moslashtirilgan, kuchli cv va xa" },
