@@ -1,6 +1,100 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "satya-nadella-ai-favqulodda-tormoz-insider-risk-2026": {
+    "id": "satya-nadella-ai-favqulodda-tormoz-insider-risk-2026",
+    "slug": "satya-nadella-ai-favqulodda-tormoz-insider-risk-2026",
+    "title": "Satya Nadella AI Modellariga Favqulodda Tormoz Tizimini Taklif Qildi",
+    "kicker": "XAVFSIZLIK VA BOSHQARUV · MICROSOFT",
+    "meta_title": "Satya Nadella AI Modellariga Favqulodda Tormoz Tizimini Taklif Qildi — AiNoma",
+    "meta_description": "Microsoft bosh direktori Satya Nadella kuchli sun'iy intellekt modellarini 'insider risk' sifatida ko'rish va ularni favqulodda to'xtatish tizimlari bilan o'rashni taklif qildi.",
+    "category": "Texnologiya",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-10",
+    "source_date": "2026-10-10",
+    "source_published_date": "2026-10-10",
+    "ainoma_published_date": "2026-10-11",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Microsoft bosh direktori Satya Nadella kuchli sun'iy intellekt modellarini tashkilot ichidagi 'insider risk' sifatida ko'rib chiqish va ularni favqulodda to'xtatish tizimlari bilan o'rab olishni taklif qildi.",
+    "img": "assets/ai_safety_containment.jpg",
+    "imgAlt": "Satya Nadella AI Favqulodda Tormoz Tizimi",
+    "qisqacha": [
+      "Satya Nadella kuchli AI modellarining xatti-harakatlarini to'liq bashorat qilib bo'lmasligi sababli, ularga ishonchni ko'r-ko'rona topshirish xavfli ekanini ma'lum qildi.",
+      "Tizimlarga avtonom modellarni to'xtatib qo'yish imkonini beruvchi 'favqulodda tormoz' (emergency brake) mexanizmi kiritilishi taklif etildi.",
+      "Kompaniyalar intellekt ta'minoti va uning vakolatlarini alohida boshqarishi, har bir harakatdan buzib bo'lmas audit izlarini qoldirishi zarurligi ta'kidlandi."
+    ],
+    "primary_source": {
+      "name": "sn scratchpad (Satya Nadella Shaxsiy Blogi)",
+      "title": "Models as Insider Risks in the Super Intelligence Era",
+      "url": "https://snscratchpad.com/posts/models-as-insider-risks/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch AI",
+        "title": "Microsoft’s Satya Nadella says AI models need an 'emergency brake'",
+        "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+        "badge": "TAHLILIY SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Microsoft rahbari Satya Nadella o'zining shaxsiy tahliliy blogida sun'iy intellekt xavfsizligi bo'yicha muhim manifest e'lon qildi. U korxona va tashkilotlarni avtonom frontier modellarga ko'r-ko'rona ishonmaslikka, aksincha ularni xuddi yuqori vakolatga ega xodimlar yoki pudratchilar kabi \"insider risk\" (ichki xavf manbai) sifatida baholashga chaqirdi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy dasturiy ta'minotdan farq: Mexanistik tushunarsizlik</h2>\n<p>Nadellaning ta'kidlashicha, an'anaviy dasturiy tizimlarda muhandislar har bir xatoni kodning aniq qatoriga yoki ma'lumotlar bazasiga bog'lay oladi. Biroq frontier AI modellari tabiatan noaniq (non-deterministic) bo'lib, ularning ichki qatlamlaridagi qaror qabul qilish zanjirini to'liq ko'rib chiqish imkonsizdir.</p>\n<p>Shu sababli, sun'iy intellekt modellariga korporativ tizimlarga to'g'ridan-to'g'ri kirish huquqi berilganda, xatolar yoki manipulyatsiyalar yuzaga kelishi ehtimolini oldindan inobatga olish shart.</p>\n\n<h2 class=\"article-section-title\">Favqulodda to'xtatish tormozi (Emergency Brake) mexanizmi</h2>\n<p>Manifestdagi eng asosiy amaliy taklif — bu avtonom agentlar uchun fizik va dasturiy \"favqulodda tormoz\" tizimini joriy etishdir. Agar AI modeli o'ziga topshirilgan vazifani bajarish paytida kutilmagan, xavfli yoki ruxsat etilmagan harakatlarni amalga oshira boshlasa, inson operatori uni darhol bitta buyruq bilan to'xtata olishi kerak.</p>\n\n<p class=\"article-quote\">\"Biz intellekt ta'minotini ushbu intellekt ustidan vakolat boshqaruvidan ajratishimiz shart. Modellar ustidan nazorat mexanizmlari modelning o'zida emas, balki tashqi, qat'iy tizimda joylashishi kerak.\"</p>\n\n<h2 class=\"article-section-title\">Biznes va IT rahbarlari uchun 3 ta asosiy xulosa</h2>\n<p class=\"article-step\"><b>1.</b> Modellar provayderlariga mas'uliyatni to'liq yuklab bo'lmaydi. Har bir tashkilot o'zining ichki monitoring va cheklov devorlarini mustaqil qurishi kerak.</p>\n<p class=\"article-step\"><b>2.</b> Buzib bo'lmas audit jurnali (tamper-proof logs): AI modeli amalga oshirgan har bir harakat inson o'qiy oladigan va tekshirishi mumkin bo'lgan aniq dalillar bilan qayd etilishi lozim.</p>\n<p class=\"article-step\"><b>3.</b> Agar Siz o'z biznes jarayonlaringizda avtonom AI agentlarini sinovdan o'tkazayotgan bo'lsangiz, ularga moliya va ma'lumotlar bazasiga cheksiz kirish bermasdan, har bir bosqichda inson tasdig'i (human-in-the-loop) filtrlari o'rnatilishi tavsiya etiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-11",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Xalqaro AI tahlili guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Microsoft rahbari Satya Nadella o'zining shaxsiy tahliliy blogida sun'iy intellekt xavfsizligi bo'yicha muhim manifest e'lon qildi. U korxona va tashkilotlarni avtonom frontier modellarga ko'r-ko'rona ishonmaslikka, aksincha ularni xuddi yuqori vakolatga ega xodimlar yoki pudratchilar kabi \"insider risk\" (ichki xavf manbai) sifatida baholashga chaqirdi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy dasturiy ta'minotdan farq: Mexanistik tushunarsizlik</h2>\n<p>Nadellaning ta'kidlashicha, an'anaviy dasturiy tizimlarda muhandislar har bir xatoni kodning aniq qatoriga yoki ma'lumotlar bazasiga bog'lay oladi. Biroq frontier AI modellari tabiatan noaniq (non-deterministic) bo'lib, ularning ichki qatlamlaridagi qaror qabul qilish zanjirini to'liq ko'rib chiqish imkonsizdir.</p>\n<p>Shu sababli, sun'iy intellekt modellariga korporativ tizimlarga to'g'ridan-to'g'ri kirish huquqi berilganda, xatolar yoki manipulyatsiyalar yuzaga kelishi ehtimolini oldindan inobatga olish shart.</p>\n\n<h2 class=\"article-section-title\">Favqulodda to'xtatish tormozi (Emergency Brake) mexanizmi</h2>\n<p>Manifestdagi eng asosiy amaliy taklif — bu avtonom agentlar uchun fizik va dasturiy \"favqulodda tormoz\" tizimini joriy etishdir. Agar AI modeli o'ziga topshirilgan vazifani bajarish paytida kutilmagan, xavfli yoki ruxsat etilmagan harakatlarni amalga oshira boshlasa, inson operatori uni darhol bitta buyruq bilan to'xtata olishi kerak.</p>\n\n<p class=\"article-quote\">\"Biz intellekt ta'minotini ushbu intellekt ustidan vakolat boshqaruvidan ajratishimiz shart. Modellar ustidan nazorat mexanizmlari modelning o'zida emas, balki tashqi, qat'iy tizimda joylashishi kerak.\"</p>\n\n<h2 class=\"article-section-title\">Biznes va IT rahbarlari uchun 3 ta asosiy xulosa</h2>\n<p class=\"article-step\"><b>1.</b> Modellar provayderlariga mas'uliyatni to'liq yuklab bo'lmaydi. Har bir tashkilot o'zining ichki monitoring va cheklov devorlarini mustaqil qurishi kerak.</p>\n<p class=\"article-step\"><b>2.</b> Buzib bo'lmas audit jurnali (tamper-proof logs): AI modeli amalga oshirgan har bir harakat inson o'qiy oladigan va tekshirishi mumkin bo'lgan aniq dalillar bilan qayd etilishi lozim.</p>\n<p class=\"article-step\"><b>3.</b> Agar Siz o'z biznes jarayonlaringizda avtonom AI agentlarini sinovdan o'tkazayotgan bo'lsangiz, ularga moliya va ma'lumotlar bazasiga cheksiz kirish bermasdan, har bir bosqichda inson tasdig'i (human-in-the-loop) filtrlari o'rnatilishi tavsiya etiladi.</p>"
+  },
+  "google-deepmind-embeddinggemma-2-multimodal-model-2026": {
+    "id": "google-deepmind-embeddinggemma-2-multimodal-model-2026",
+    "slug": "google-deepmind-embeddinggemma-2-multimodal-model-2026",
+    "title": "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi",
+    "kicker": "OCHIQ KODLI SUN'IY INTELLEKT · GOOGLE",
+    "meta_title": "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi — AiNoma",
+    "meta_description": "Google DeepMind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashtiruvchi 740M parametrli ochiq EmbeddingGemma 2 modelini chiqardi.",
+    "category": "Texnologiya",
+    "audience": "dasturchilar",
+    "event_date": "2026-10-10",
+    "source_date": "2026-10-10",
+    "source_published_date": "2026-10-10",
+    "ainoma_published_date": "2026-10-11",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Google DeepMind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashtiruvchi 740 million parametrli EmbeddingGemma 2 ochiq modelini rasman chiqardi.",
+    "img": "assets/google_gemini_banner.jpg",
+    "imgAlt": "Google DeepMind EmbeddingGemma 2 Modeli",
+    "qisqacha": [
+      "EmbeddingGemma 2 modeli 4 xil modalni (matn, tasvir, video va audio) 768 o'lchamli yagona vektor maydoniga tushirish imkoniyatiga ega.",
+      "Model iste'molchi qurilmalari (noutbuk va telefonlar) uchun moslashtirilgan bo'lib, Apache 2.0 ochiq tijoriy litsenziyasi ostida taqdim etildi.",
+      "Matryoshka Representation Learning (MRL) texnologiyasi hisobiga xotirani tejash uchun vektorlarni 128 yoki 256 o'lchamgacha qisqartirish mumkin."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind Rasmiy Blogi",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "badge": "RASMIY RELIZ"
+    },
+    "secondary_sources": [
+      {
+        "name": "Hugging Face Model Hub",
+        "title": "Google EmbeddingGemma 2 Open Weights Repository",
+        "url": "https://huggingface.co/google/embeddinggemma-2",
+        "badge": "TEXNIK HUJJATLAR"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Google DeepMind tadqiqot laboratoriyasi ochiq manbali Gemma modellar oilasini kengaytirib, yangi EmbeddingGemma 2 modelini taqdim etdi. Ushbu 740 million parametrli ixcham arxitektura matn, dasturlash kodi, video, audio va tasvirlarni bir vaqtning o'zida yagona vektor maydonida ifodalashga mo'ljallangan.</p>\n\n<h2 class=\"article-section-title\">Modulli arxitektura: Kamroq resurs, yuqori tezlik</h2>\n<p>EmbeddingGemma 2 modeli an'anaviy og'ir modellar singari yirik serverlarni talab qilmaydi. Uning yadrosi 270 million parametrli matn modelidan iborat bo'lib, dasturchi ehtiyojiga qarab tasvir (170M) yoki audio (300M) enkoderlarini alohida yuklashi mumkin.</p>\n<p>Bu yechim oddiy noutbuklar, planshetlar va chekka serverlarda (edge inference) to'liq lokal ravishda ishlash imkonini beradi. Natijada foydalanuvchi ma'lumotlari qurilmadan tashqariga chiqmaydi va qidiruv tezligi sezilarli darajada oshadi.</p>\n\n<h2 class=\"article-section-title\">Oraliq transkripsiyasiz to'g'ridan-to'g'ri qidiruv</h2>\n<p>Avvalgi tizimlarda video yoki audio fayllar ichidan qidirish uchun ularni avval matnga aylantirish (Speech-to-Text) talab etilar edi. EmbeddingGemma 2 esa ovozli yozuv va video lavhalarni bevosita matnli so'rovlar bilan taqqoslay oladi.</p>\n\n<p class=\"article-quote\">\"Matryoshka Representation Learning (MRL) usuli yordamida vektor hajmini 768 o'lchamdan 128 yoki 256 ga tushirish mumkin. Bu esa vektor ma'lumotlar bazalarida xotira xarajatlarini 6 barobargacha kamaytiradi.\"</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va korxonalar uchun amaliy qo'llash sohalari</h2>\n<p class=\"article-step\"><b>1. Multimodal RAG tizimlari:</b> Foydalanuvchi PDF hujjatlar, infografikalar va video darsliklar ichidan aniq javoblarni bir joydan topa oladi.</p>\n<p class=\"article-step\"><b>2. Dasturlash kodlari semantik qidiruvi:</b> Oldingi versiyaga nisbatan kod tahlilida 14% yuqoriroq aniqlik ta'minlangan bo'lib, yuzdan ortiq dasturlash tillarini qo'llab-quvvatlaydi.</p>\n<p class=\"article-step\"><b>3. Tijoriy erkinlik:</b> Model Apache 2.0 litsenziyasi asosida chiqarilgan, bu esa O'zbekistondagi har qanday startap yoki IT korxonasiga uni o'z loyihalarida erkin va bepul tatbiq etish imkonini beradi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-11",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Open Source AI tadqiqot guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Google DeepMind tadqiqot laboratoriyasi ochiq manbali Gemma modellar oilasini kengaytirib, yangi EmbeddingGemma 2 modelini taqdim etdi. Ushbu 740 million parametrli ixcham arxitektura matn, dasturlash kodi, video, audio va tasvirlarni bir vaqtning o'zida yagona vektor maydonida ifodalashga mo'ljallangan.</p>\n\n<h2 class=\"article-section-title\">Modulli arxitektura: Kamroq resurs, yuqori tezlik</h2>\n<p>EmbeddingGemma 2 modeli an'anaviy og'ir modellar singari yirik serverlarni talab qilmaydi. Uning yadrosi 270 million parametrli matn modelidan iborat bo'lib, dasturchi ehtiyojiga qarab tasvir (170M) yoki audio (300M) enkoderlarini alohida yuklashi mumkin.</p>\n<p>Bu yechim oddiy noutbuklar, planshetlar va chekka serverlarda (edge inference) to'liq lokal ravishda ishlash imkonini beradi. Natijada foydalanuvchi ma'lumotlari qurilmadan tashqariga chiqmaydi va qidiruv tezligi sezilarli darajada oshadi.</p>\n\n<h2 class=\"article-section-title\">Oraliq transkripsiyasiz to'g'ridan-to'g'ri qidiruv</h2>\n<p>Avvalgi tizimlarda video yoki audio fayllar ichidan qidirish uchun ularni avval matnga aylantirish (Speech-to-Text) talab etilar edi. EmbeddingGemma 2 esa ovozli yozuv va video lavhalarni bevosita matnli so'rovlar bilan taqqoslay oladi.</p>\n\n<p class=\"article-quote\">\"Matryoshka Representation Learning (MRL) usuli yordamida vektor hajmini 768 o'lchamdan 128 yoki 256 ga tushirish mumkin. Bu esa vektor ma'lumotlar bazalarida xotira xarajatlarini 6 barobargacha kamaytiradi.\"</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va korxonalar uchun amaliy qo'llash sohalari</h2>\n<p class=\"article-step\"><b>1. Multimodal RAG tizimlari:</b> Foydalanuvchi PDF hujjatlar, infografikalar va video darsliklar ichidan aniq javoblarni bir joydan topa oladi.</p>\n<p class=\"article-step\"><b>2. Dasturlash kodlari semantik qidiruvi:</b> Oldingi versiyaga nisbatan kod tahlilida 14% yuqoriroq aniqlik ta'minlangan bo'lib, yuzdan ortiq dasturlash tillarini qo'llab-quvvatlaydi.</p>\n<p class=\"article-step\"><b>3. Tijoriy erkinlik:</b> Model Apache 2.0 litsenziyasi asosida chiqarilgan, bu esa O'zbekistondagi har qanday startap yoki IT korxonasiga uni o'z loyihalarida erkin va bepul tatbiq etish imkonini beradi.</p>"
+  },
   "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026": {
     "id": "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026",
     "slug": "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026",

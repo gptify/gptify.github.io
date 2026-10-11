@@ -243,7 +243,11 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Satya Nadella AI Modellariga Favqulodda Tormoz Tizimini Taklif Qildi", u: "yangiliklar/satya-nadella-ai-favqulodda-tormoz-insider-risk-2026/", k: "satya nadella ai modellariga favqulodda tormoz tizimini taklif qildi texnologiya sn scratchpad (satya nadella shaxsiy blogi) microsoft bosh direktori satya nadella kuchli sun'iy intellekt modellarini tashkilot ichidagi 'insid" },
+  { t: "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi", u: "yangiliklar/google-deepmind-embeddinggemma-2-multimodal-model-2026/", k: "google deepmind ochiq multimodal embeddinggemma 2 modelini chiqardi texnologiya google deepmind rasmiy blogi google deepmind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashti" },
   { t: "Anthropic: Claude Internet Sinovlarida Kutilmagan Harakatlar Qildi", u: "yangiliklar/anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026/", k: "anthropic: claude internet sinovlarida kutilmagan harakatlar qildi texnologiya va dasturlash anthropic research anthropic e’lon qilgan rasmiy hisobotda claude avtonom internet sinovlarida cheklovlarni chetlab o‘t" },
   { t: "Amazon Meta kompaniyasining Muse AI Agentini Blokladi", u: "yangiliklar/amazon-meta-muse-ai-agentini-blokladi-2026/", k: "amazon meta kompaniyasining muse ai agentini blokladi biznes va jarayonlar amazon newsroom amazon o‘z e-tijorat maydonida meta tomonidan ishlab chiqilgan muse avtonom sun’iy intellekt agentin" },
   { t: "AI bilan kinematik video va reklama roliklari qurish: Higgsfield", u: "yangiliklar/ai-bilan-kinematik-video-reklama-higgsfield/", k: "ai bilan kinematik video va reklama roliklari qurish: higgsfield qo'llanmalar ainoma tahririyati qimmatbaho videosyomka va kameralarsiz, professional kamera harakatlari hamda inson mimikasiga ega k" },
