@@ -1,99 +1,99 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
-  "satya-nadella-ai-favqulodda-tormoz-insider-risk-2026": {
-    "id": "satya-nadella-ai-favqulodda-tormoz-insider-risk-2026",
-    "slug": "satya-nadella-ai-favqulodda-tormoz-insider-risk-2026",
-    "title": "Satya Nadella AI Modellariga Favqulodda Tormoz Tizimini Taklif Qildi",
-    "kicker": "XAVFSIZLIK VA BOSHQARUV · MICROSOFT",
-    "meta_title": "Satya Nadella AI Modellariga Favqulodda Tormoz Tizimini Taklif Qildi — AiNoma",
-    "meta_description": "Microsoft bosh direktori Satya Nadella kuchli sun'iy intellekt modellarini 'insider risk' sifatida ko'rish va ularni favqulodda to'xtatish tizimlari bilan o'rashni taklif qildi.",
+  "ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026": {
+    "id": "ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026",
+    "slug": "ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026",
+    "title": "O‘zbekistonlik Talabalarga Google Gemini AI Plus 1 Yil Bepul",
+    "kicker": "MAXSUS IMTIYOZ · GOOGLE & TA'LIM",
+    "meta_title": "O‘zbekistonlik Talabalarga Google Gemini AI Plus 1 Yil Bepul — AiNoma",
+    "meta_description": "O'zbekiston oliy ta'lim muassasalari talabalari uchun Google Gemini AI Plus va 400 GB bulutli xotiradan 1 yil davomida bepul foydalanish imkoniyati ochildi.",
     "category": "Texnologiya",
-    "audience": "mutaxassislar",
-    "event_date": "2026-10-10",
-    "source_date": "2026-10-10",
-    "source_published_date": "2026-10-10",
+    "audience": "talabalar",
+    "event_date": "2026-10-11",
+    "source_date": "2026-10-11",
+    "source_published_date": "2026-10-11",
     "ainoma_published_date": "2026-10-11",
     "read_time": "3 daqiqalik mutolaa",
     "readTime": "3 daqiqalik mutolaa",
-    "deck": "Microsoft bosh direktori Satya Nadella kuchli sun'iy intellekt modellarini tashkilot ichidagi 'insider risk' sifatida ko'rib chiqish va ularni favqulodda to'xtatish tizimlari bilan o'rab olishni taklif qildi.",
-    "img": "assets/ai_safety_containment.jpg",
-    "imgAlt": "Satya Nadella AI Favqulodda Tormoz Tizimi",
+    "deck": "O'zbekistonlik talabalar xalqaro SheerID tizimi va Aileaders platformasi orqali yillik qiymati 60 dollarlik Google Gemini AI Plus tarifini mutlaqo bepul qo'lga kiritishlari mumkin.",
+    "img": "assets/google_gemini_banner.jpg",
+    "imgAlt": "Google Gemini AI Plus Talabalar Bepul Obuna",
     "qisqacha": [
-      "Satya Nadella kuchli AI modellarining xatti-harakatlarini to'liq bashorat qilib bo'lmasligi sababli, ularga ishonchni ko'r-ko'rona topshirish xavfli ekanini ma'lum qildi.",
-      "Tizimlarga avtonom modellarni to'xtatib qo'yish imkonini beruvchi 'favqulodda tormoz' (emergency brake) mexanizmi kiritilishi taklif etildi.",
-      "Kompaniyalar intellekt ta'minoti va uning vakolatlarini alohida boshqarishi, har bir harakatdan buzib bo'lmas audit izlarini qoldirishi zarurligi ta'kidlandi."
+      "O'zbekistonlik talabalar SheerID xalqaro tizimi orqali talabalik maqomini tasdiqlab, 1 yillik Google Gemini AI Plus tarifini bepul faollashtirish imkoniyatiga ega bo'ldi.",
+      "Obuna doirasida Gemini modelida ikki barobar oshirilgan limitlar, ilg'or Flash Thinking tahlil rejimi va Google Flow video vositalari taqdim etiladi.",
+      "Foydalanuvchilarga Google Drive, Gmail va Google Photos xizmatlari uchun jami 400 GB qo'shimcha bulutli xotira biriktiriladi."
     ],
     "primary_source": {
-      "name": "sn scratchpad (Satya Nadella Shaxsiy Blogi)",
-      "title": "Models as Insider Risks in the Super Intelligence Era",
-      "url": "https://snscratchpad.com/posts/models-as-insider-risks/",
-      "badge": "BIRLAMCHI MANBA"
+      "name": "Aileaders.uz Ta'lim Portali",
+      "title": "O‘zbekiston talabalari uchun 1 yillik bepul Google Gemini AI Plus dasturi",
+      "url": "https://aileaders.uz/courses",
+      "badge": "RASMIY LOYIHA"
     },
     "secondary_sources": [
       {
-        "name": "TechCrunch AI",
-        "title": "Microsoft’s Satya Nadella says AI models need an 'emergency brake'",
-        "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+        "name": "Google Gemini Rasmiy Ma'lumot Markazi",
+        "title": "Google One AI Premium and Educational Student Verification Guide",
+        "url": "https://support.google.com/gemini/answer/14517446",
+        "badge": "QO‘LLANMA"
+      }
+    ],
+    "body": "<p class=\"article-lead\">O‘zbekistonlik talabalar va yosh tadqiqotchilar uchun ajoyib imkoniyat: xalqaro SheerID talabalar verifikatsiyasi tizimi O‘zbekiston oliy ta'lim muassasalarini rasman qo‘llab-quvvatlay boshladi. Natijada talabalar xalqaro miqyosda 60 dollarga baholangan <b>Google Gemini AI Plus</b> 1 yillik obunasini mutlaqo bepul faollashtirishlari mumkin.</p>\n\n<h2 class=\"article-section-title\">Google Gemini AI Plus obunasi nimalarni taqdim etadi?</h2>\n<p>Ushbu bepul yillik to‘plam talabalar va ilmiy ish olib boruvchi yoshlar uchun eng muhim vositalarni o‘z ichiga oladi:</p>\n<ul class=\"article-list\">\n  <li><b>400 GB bulutli xotira:</b> Google Drive, Gmail va Google Photos uchun umumiy 400 GB joy beriladi (oddiy bepul tarifdagi 15 GB o‘rniga).</li>\n  <li><b>Kengaytirilgan Gemini imkoniyatlari:</b> So‘rovlar limitlari 2 barobarga oshiriladi hamda murakkab mantiqiy va matematik masalalarni yechuvchi <i>Flash Thinking</i> rejimi ochiladi.</li>\n  <li><b>Google Flow va NotebookLM:</b> Referat, kurs ishi va dissertatsiyalar yozishda yuzlab manbalarni tahlil qiluvchi Gemini Notebook hamda sun'iy intellektli video tahlil modullari to‘liq ishlaydi.</li>\n  <li><b>Gmail va Docs integratsiyasi:</b> Google Docs hujjatlari va elektron pochtaning o‘zida matnlarni tahrirlash hamda tahlil qilish imkoniyati.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Bepul obunani qanday faollashtirish mumkin? Bosqichma-bosqich yo‘riqnoma</h2>\n<p class=\"article-step\"><b>1-qadam:</b> <a href=\"https://aileaders.uz/courses\" target=\"_blank\" rel=\"noopener\">Aileaders.uz</a> platformasiga kiring va talabalar uchun Gemini AI Plus bo‘limini tanlang.</p>\n<p class=\"article-step\"><b>2-qadam:</b> SheerID tizimi sahifasida O‘zbekistondagi o‘z universitetingiz yoki institutingiz nomini qidiring.</p>\n<p class=\"article-step\"><b>3-qadam:</b> Ism-familiyangiz, tug‘ilgan sanangiz va talabalik hujjatingizni (talabalik guvohnomasi, kontrakt ma'lumotnomasi yoki HEMIS tizimidagi talabalik QR-kodli ma'lumotnomani) yuklang.</p>\n<p class=\"article-step\"><b>4-qadam:</b> SheerID talabalik maqomingizni 1–2 daqiqada tasdiqlaydi va Google hisobingizga 1 yillik Gemini AI Plus xizmati avtomatik ulanadi.</p>\n\n<p class=\"article-quote\">\"Talabalar uchun bunday ilg'or sun'iy intellekt qurollari va 400 GB bulutli xotiraning bepul taqdim etilishi — o'qish, ilmiy tadqiqotlar va yangi startap loyihalarini ishlab chiqishda ulkan turtki bo'ladi.\"</p>\n\n<h2 class=\"article-section-title\">Talabalar uchun muhim eslatma</h2>\n<p>Ushbu imtiyozdan faqat O‘zbekistondagi davlat va akkreditatsiyadan o‘tgan xususiy OTMlarning amaldagi talabalari foydalana oladi. Agar Siz talaba bo‘lsangiz, ushbu imkoniyatni qo‘ldan boy bermang hamda guruhdoshlaringiz va do‘stlaringiz bilan ham ulashing.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-11",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Ta'lim va texnologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">O‘zbekistonlik talabalar va yosh tadqiqotchilar uchun ajoyib imkoniyat: xalqaro SheerID talabalar verifikatsiyasi tizimi O‘zbekiston oliy ta'lim muassasalarini rasman qo‘llab-quvvatlay boshladi. Natijada talabalar xalqaro miqyosda 60 dollarga baholangan <b>Google Gemini AI Plus</b> 1 yillik obunasini mutlaqo bepul faollashtirishlari mumkin.</p>\n\n<h2 class=\"article-section-title\">Google Gemini AI Plus obunasi nimalarni taqdim etadi?</h2>\n<p>Ushbu bepul yillik to‘plam talabalar va ilmiy ish olib boruvchi yoshlar uchun eng muhim vositalarni o‘z ichiga oladi:</p>\n<ul class=\"article-list\">\n  <li><b>400 GB bulutli xotira:</b> Google Drive, Gmail va Google Photos uchun umumiy 400 GB joy beriladi (oddiy bepul tarifdagi 15 GB o‘rniga).</li>\n  <li><b>Kengaytirilgan Gemini imkoniyatlari:</b> So‘rovlar limitlari 2 barobarga oshiriladi hamda murakkab mantiqiy va matematik masalalarni yechuvchi <i>Flash Thinking</i> rejimi ochiladi.</li>\n  <li><b>Google Flow va NotebookLM:</b> Referat, kurs ishi va dissertatsiyalar yozishda yuzlab manbalarni tahlil qiluvchi Gemini Notebook hamda sun'iy intellektli video tahlil modullari to‘liq ishlaydi.</li>\n  <li><b>Gmail va Docs integratsiyasi:</b> Google Docs hujjatlari va elektron pochtaning o‘zida matnlarni tahrirlash hamda tahlil qilish imkoniyati.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Bepul obunani qanday faollashtirish mumkin? Bosqichma-bosqich yo‘riqnoma</h2>\n<p class=\"article-step\"><b>1-qadam:</b> <a href=\"https://aileaders.uz/courses\" target=\"_blank\" rel=\"noopener\">Aileaders.uz</a> platformasiga kiring va talabalar uchun Gemini AI Plus bo‘limini tanlang.</p>\n<p class=\"article-step\"><b>2-qadam:</b> SheerID tizimi sahifasida O‘zbekistondagi o‘z universitetingiz yoki institutingiz nomini qidiring.</p>\n<p class=\"article-step\"><b>3-qadam:</b> Ism-familiyangiz, tug‘ilgan sanangiz va talabalik hujjatingizni (talabalik guvohnomasi, kontrakt ma'lumotnomasi yoki HEMIS tizimidagi talabalik QR-kodli ma'lumotnomani) yuklang.</p>\n<p class=\"article-step\"><b>4-qadam:</b> SheerID talabalik maqomingizni 1–2 daqiqada tasdiqlaydi va Google hisobingizga 1 yillik Gemini AI Plus xizmati avtomatik ulanadi.</p>\n\n<p class=\"article-quote\">\"Talabalar uchun bunday ilg'or sun'iy intellekt qurollari va 400 GB bulutli xotiraning bepul taqdim etilishi — o'qish, ilmiy tadqiqotlar va yangi startap loyihalarini ishlab chiqishda ulkan turtki bo'ladi.\"</p>\n\n<h2 class=\"article-section-title\">Talabalar uchun muhim eslatma</h2>\n<p>Ushbu imtiyozdan faqat O‘zbekistondagi davlat va akkreditatsiyadan o‘tgan xususiy OTMlarning amaldagi talabalari foydalana oladi. Agar Siz talaba bo‘lsangiz, ushbu imkoniyatni qo‘ldan boy bermang hamda guruhdoshlaringiz va do‘stlaringiz bilan ham ulashing.</p>"
+  },
+  "apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi": {
+    "id": "apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi",
+    "slug": "apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi",
+    "title": "Apple 13-Oktabrda Yangi Siri AI Taqdimotini E’lon Qildi",
+    "kicker": "RASMIY TAQDIMOT · APPLE INTELLIGENCE",
+    "meta_title": "Apple 13-Oktabrda Yangi Siri AI Taqdimotini E’lon Qildi — AiNoma",
+    "meta_description": "Apple 13-oktabr kuni 'Welcome Home' nomli maxsus taqdimot o'tkazadi. Unda yangi avlod Siri AI va 6 dyuymli displeyga ega aqlli uy markazi ko'rsatiladi.",
+    "category": "Texnologiya",
+    "audience": "barcha foydalanuvchilar",
+    "event_date": "2026-10-11",
+    "source_date": "2026-10-11",
+    "source_published_date": "2026-10-11",
+    "ainoma_published_date": "2026-10-11",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Apple kompaniyasi 13-oktabr sanasida 'Welcome Home' nomli maxsus taqdimot o'tkazishini ma'lum qildi: yangi avlod Siri AI, Apple Intelligence va aqlli uy ekotizimi namoyish etiladi.",
+    "img": "assets/voice_duplex.jpg",
+    "imgAlt": "Apple Siri AI Welcome Home Taqdimoti",
+    "qisqacha": [
+      "Apple 13-oktabr kuni 'Welcome Home' deb nomlangan yangi mahsulotlar taqdimotini rasman e'lon qildi.",
+      "Taqdimot markazida 6 dyuymli ekranga ega bo'lgan, to'liq Siri AI va Apple Intelligence bilan ishlovchi yangi aqlli uy markazi (Smart Home Hub) turadi.",
+      "Kompaniya shuningdek audio sohasida shaxsiy AI ishlab chiquvchi Huxe startapini xarid qilgani (acqui-hire) haqida hisobot berdi."
+    ],
+    "primary_source": {
+      "name": "Apple Rasmiy Taqdimotlar Markazi",
+      "title": "Apple Special Event: Welcome Home Announcement",
+      "url": "https://www.apple.com/apple-events/",
+      "badge": "RASMIY ANONS"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch Global",
+        "title": "Apple discloses deal to hire team and license tech from AI startup Huxe",
+        "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
         "badge": "TAHLILIY SHARH"
       }
     ],
-    "body": "<p class=\"article-lead\">Microsoft rahbari Satya Nadella o'zining shaxsiy tahliliy blogida sun'iy intellekt xavfsizligi bo'yicha muhim manifest e'lon qildi. U korxona va tashkilotlarni avtonom frontier modellarga ko'r-ko'rona ishonmaslikka, aksincha ularni xuddi yuqori vakolatga ega xodimlar yoki pudratchilar kabi \"insider risk\" (ichki xavf manbai) sifatida baholashga chaqirdi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy dasturiy ta'minotdan farq: Mexanistik tushunarsizlik</h2>\n<p>Nadellaning ta'kidlashicha, an'anaviy dasturiy tizimlarda muhandislar har bir xatoni kodning aniq qatoriga yoki ma'lumotlar bazasiga bog'lay oladi. Biroq frontier AI modellari tabiatan noaniq (non-deterministic) bo'lib, ularning ichki qatlamlaridagi qaror qabul qilish zanjirini to'liq ko'rib chiqish imkonsizdir.</p>\n<p>Shu sababli, sun'iy intellekt modellariga korporativ tizimlarga to'g'ridan-to'g'ri kirish huquqi berilganda, xatolar yoki manipulyatsiyalar yuzaga kelishi ehtimolini oldindan inobatga olish shart.</p>\n\n<h2 class=\"article-section-title\">Favqulodda to'xtatish tormozi (Emergency Brake) mexanizmi</h2>\n<p>Manifestdagi eng asosiy amaliy taklif — bu avtonom agentlar uchun fizik va dasturiy \"favqulodda tormoz\" tizimini joriy etishdir. Agar AI modeli o'ziga topshirilgan vazifani bajarish paytida kutilmagan, xavfli yoki ruxsat etilmagan harakatlarni amalga oshira boshlasa, inson operatori uni darhol bitta buyruq bilan to'xtata olishi kerak.</p>\n\n<p class=\"article-quote\">\"Biz intellekt ta'minotini ushbu intellekt ustidan vakolat boshqaruvidan ajratishimiz shart. Modellar ustidan nazorat mexanizmlari modelning o'zida emas, balki tashqi, qat'iy tizimda joylashishi kerak.\"</p>\n\n<h2 class=\"article-section-title\">Biznes va IT rahbarlari uchun 3 ta asosiy xulosa</h2>\n<p class=\"article-step\"><b>1.</b> Modellar provayderlariga mas'uliyatni to'liq yuklab bo'lmaydi. Har bir tashkilot o'zining ichki monitoring va cheklov devorlarini mustaqil qurishi kerak.</p>\n<p class=\"article-step\"><b>2.</b> Buzib bo'lmas audit jurnali (tamper-proof logs): AI modeli amalga oshirgan har bir harakat inson o'qiy oladigan va tekshirishi mumkin bo'lgan aniq dalillar bilan qayd etilishi lozim.</p>\n<p class=\"article-step\"><b>3.</b> Agar Siz o'z biznes jarayonlaringizda avtonom AI agentlarini sinovdan o'tkazayotgan bo'lsangiz, ularga moliya va ma'lumotlar bazasiga cheksiz kirish bermasdan, har bir bosqichda inson tasdig'i (human-in-the-loop) filtrlari o'rnatilishi tavsiya etiladi.</p>",
+    "body": "<p class=\"article-lead\">Apple kompaniyasi 13-oktabr kuni <b>\"Welcome Home\"</b> shiori ostida navbatdagi katta taqdimotini o‘tkazishini rasman e'lon qildi. Ushbu tadbir to‘liq aqlli uy texnologiyalari va Apple Intelligence ekotizimining kundalik hayotga integratsiyasiga bag‘ishlanadi.</p>\n\n<h2 class=\"article-section-title\">Yangi aqlli uy markazi (Home Hub): 6 dyuymli ekran va Siri AI</h2>\n<p>Insayderlar va tahlilchilarning xabar berishicha, taqdimotning bosh yulduzi — bu 6 dyuymli sensorli ekranga va kuchli dinamiklarga ega bo‘lgan yangi avlod <b>Home Hub</b> qurilmasi bo‘ladi.</p>\n<p>Mazkur qurilma xonadondagi barcha aqlli jihozlarni (yorug‘lik, xavfsizlik kameralari, harorat nazorati va musiqa tizimlari) yangilangan Siri AI ovozli yordamchisi orqali to‘liq kontekstda boshqarish imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Huxe startapining xarid qilinishi va shaxsiylashtirilgan audio AI</h2>\n<p>Taqdimot arafasida Apple Google'ning mashhur NotebookLM vositasini qurgan sobiq mutaxassislar tomonidan asos solingan <b>Huxe</b> AI startapi jamoasini o‘z safiga qo‘shib olgani (acqui-hire) ma'lum bo‘ldi.</p>\n<p>Huxe texnologiyasi matnli yangiliklar, elektron xatlar va xabarlarni real vaqt rejimida shaxsiylashtirilgan ovozli podkastlarga aylantirishga ixtisoslashgan. Kutilishicha, bu qobiliyat yangi Home Hub va Siri tizimiga kiritiladi — foydalanuvchi ertalab nonushta paytida uyi va dunyo yangiliklarini o‘ziga moslangan ovozli xulosada eshitishi mumkin bo‘ladi.</p>\n\n<p class=\"article-quote\">\"Apple uy muhitini oddiy buyruqlar bajaruvchi pultdan emas, balki butun oila a'zolarini ovozidan taniydigan va ularning odatlarini tushunadigan sun'iy intellekt markaziga aylantirmoqda.\"</p>\n\n<h2 class=\"article-section-title\">Taqdimot qachon va qayerda bo‘lib o‘tadi?</h2>\n<p>Tadbir 13-oktabr kuni Apple rasmiy veb-saytida hamda YouTube kanalida to‘g‘ridan-to‘g‘ri efirga uzatiladi. AiNoma tahririyati taqdimotdagi barcha yangiliklar va O‘zbekiston foydalanuvchilari uchun ochiladigan imkoniyatlarni tezkorlik bilan yoritib boradi.</p>",
     "verification_status": "VERIFIED",
     "verification_date": "2026-10-11",
     "author": {
       "name": "AiNoma Tahririyati",
-      "job": "Xalqaro AI tahlili guruhi",
+      "job": "Xalqaro texnologiyalar tahlili",
       "avatar": "assets/brand_sheet_white.png"
     },
-    "contentHtml": "<p class=\"article-lead\">Microsoft rahbari Satya Nadella o'zining shaxsiy tahliliy blogida sun'iy intellekt xavfsizligi bo'yicha muhim manifest e'lon qildi. U korxona va tashkilotlarni avtonom frontier modellarga ko'r-ko'rona ishonmaslikka, aksincha ularni xuddi yuqori vakolatga ega xodimlar yoki pudratchilar kabi \"insider risk\" (ichki xavf manbai) sifatida baholashga chaqirdi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy dasturiy ta'minotdan farq: Mexanistik tushunarsizlik</h2>\n<p>Nadellaning ta'kidlashicha, an'anaviy dasturiy tizimlarda muhandislar har bir xatoni kodning aniq qatoriga yoki ma'lumotlar bazasiga bog'lay oladi. Biroq frontier AI modellari tabiatan noaniq (non-deterministic) bo'lib, ularning ichki qatlamlaridagi qaror qabul qilish zanjirini to'liq ko'rib chiqish imkonsizdir.</p>\n<p>Shu sababli, sun'iy intellekt modellariga korporativ tizimlarga to'g'ridan-to'g'ri kirish huquqi berilganda, xatolar yoki manipulyatsiyalar yuzaga kelishi ehtimolini oldindan inobatga olish shart.</p>\n\n<h2 class=\"article-section-title\">Favqulodda to'xtatish tormozi (Emergency Brake) mexanizmi</h2>\n<p>Manifestdagi eng asosiy amaliy taklif — bu avtonom agentlar uchun fizik va dasturiy \"favqulodda tormoz\" tizimini joriy etishdir. Agar AI modeli o'ziga topshirilgan vazifani bajarish paytida kutilmagan, xavfli yoki ruxsat etilmagan harakatlarni amalga oshira boshlasa, inson operatori uni darhol bitta buyruq bilan to'xtata olishi kerak.</p>\n\n<p class=\"article-quote\">\"Biz intellekt ta'minotini ushbu intellekt ustidan vakolat boshqaruvidan ajratishimiz shart. Modellar ustidan nazorat mexanizmlari modelning o'zida emas, balki tashqi, qat'iy tizimda joylashishi kerak.\"</p>\n\n<h2 class=\"article-section-title\">Biznes va IT rahbarlari uchun 3 ta asosiy xulosa</h2>\n<p class=\"article-step\"><b>1.</b> Modellar provayderlariga mas'uliyatni to'liq yuklab bo'lmaydi. Har bir tashkilot o'zining ichki monitoring va cheklov devorlarini mustaqil qurishi kerak.</p>\n<p class=\"article-step\"><b>2.</b> Buzib bo'lmas audit jurnali (tamper-proof logs): AI modeli amalga oshirgan har bir harakat inson o'qiy oladigan va tekshirishi mumkin bo'lgan aniq dalillar bilan qayd etilishi lozim.</p>\n<p class=\"article-step\"><b>3.</b> Agar Siz o'z biznes jarayonlaringizda avtonom AI agentlarini sinovdan o'tkazayotgan bo'lsangiz, ularga moliya va ma'lumotlar bazasiga cheksiz kirish bermasdan, har bir bosqichda inson tasdig'i (human-in-the-loop) filtrlari o'rnatilishi tavsiya etiladi.</p>"
-  },
-  "google-deepmind-embeddinggemma-2-multimodal-model-2026": {
-    "id": "google-deepmind-embeddinggemma-2-multimodal-model-2026",
-    "slug": "google-deepmind-embeddinggemma-2-multimodal-model-2026",
-    "title": "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi",
-    "kicker": "OCHIQ KODLI SUN'IY INTELLEKT · GOOGLE",
-    "meta_title": "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi — AiNoma",
-    "meta_description": "Google DeepMind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashtiruvchi 740M parametrli ochiq EmbeddingGemma 2 modelini chiqardi.",
-    "category": "Texnologiya",
-    "audience": "dasturchilar",
-    "event_date": "2026-10-10",
-    "source_date": "2026-10-10",
-    "source_published_date": "2026-10-10",
-    "ainoma_published_date": "2026-10-11",
-    "read_time": "4 daqiqalik mutolaa",
-    "readTime": "4 daqiqalik mutolaa",
-    "deck": "Google DeepMind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashtiruvchi 740 million parametrli EmbeddingGemma 2 ochiq modelini rasman chiqardi.",
-    "img": "assets/google_gemini_banner.jpg",
-    "imgAlt": "Google DeepMind EmbeddingGemma 2 Modeli",
-    "qisqacha": [
-      "EmbeddingGemma 2 modeli 4 xil modalni (matn, tasvir, video va audio) 768 o'lchamli yagona vektor maydoniga tushirish imkoniyatiga ega.",
-      "Model iste'molchi qurilmalari (noutbuk va telefonlar) uchun moslashtirilgan bo'lib, Apache 2.0 ochiq tijoriy litsenziyasi ostida taqdim etildi.",
-      "Matryoshka Representation Learning (MRL) texnologiyasi hisobiga xotirani tejash uchun vektorlarni 128 yoki 256 o'lchamgacha qisqartirish mumkin."
-    ],
-    "primary_source": {
-      "name": "Google DeepMind Rasmiy Blogi",
-      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "badge": "RASMIY RELIZ"
-    },
-    "secondary_sources": [
-      {
-        "name": "Hugging Face Model Hub",
-        "title": "Google EmbeddingGemma 2 Open Weights Repository",
-        "url": "https://huggingface.co/google/embeddinggemma-2",
-        "badge": "TEXNIK HUJJATLAR"
-      }
-    ],
-    "body": "<p class=\"article-lead\">Google DeepMind tadqiqot laboratoriyasi ochiq manbali Gemma modellar oilasini kengaytirib, yangi EmbeddingGemma 2 modelini taqdim etdi. Ushbu 740 million parametrli ixcham arxitektura matn, dasturlash kodi, video, audio va tasvirlarni bir vaqtning o'zida yagona vektor maydonida ifodalashga mo'ljallangan.</p>\n\n<h2 class=\"article-section-title\">Modulli arxitektura: Kamroq resurs, yuqori tezlik</h2>\n<p>EmbeddingGemma 2 modeli an'anaviy og'ir modellar singari yirik serverlarni talab qilmaydi. Uning yadrosi 270 million parametrli matn modelidan iborat bo'lib, dasturchi ehtiyojiga qarab tasvir (170M) yoki audio (300M) enkoderlarini alohida yuklashi mumkin.</p>\n<p>Bu yechim oddiy noutbuklar, planshetlar va chekka serverlarda (edge inference) to'liq lokal ravishda ishlash imkonini beradi. Natijada foydalanuvchi ma'lumotlari qurilmadan tashqariga chiqmaydi va qidiruv tezligi sezilarli darajada oshadi.</p>\n\n<h2 class=\"article-section-title\">Oraliq transkripsiyasiz to'g'ridan-to'g'ri qidiruv</h2>\n<p>Avvalgi tizimlarda video yoki audio fayllar ichidan qidirish uchun ularni avval matnga aylantirish (Speech-to-Text) talab etilar edi. EmbeddingGemma 2 esa ovozli yozuv va video lavhalarni bevosita matnli so'rovlar bilan taqqoslay oladi.</p>\n\n<p class=\"article-quote\">\"Matryoshka Representation Learning (MRL) usuli yordamida vektor hajmini 768 o'lchamdan 128 yoki 256 ga tushirish mumkin. Bu esa vektor ma'lumotlar bazalarida xotira xarajatlarini 6 barobargacha kamaytiradi.\"</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va korxonalar uchun amaliy qo'llash sohalari</h2>\n<p class=\"article-step\"><b>1. Multimodal RAG tizimlari:</b> Foydalanuvchi PDF hujjatlar, infografikalar va video darsliklar ichidan aniq javoblarni bir joydan topa oladi.</p>\n<p class=\"article-step\"><b>2. Dasturlash kodlari semantik qidiruvi:</b> Oldingi versiyaga nisbatan kod tahlilida 14% yuqoriroq aniqlik ta'minlangan bo'lib, yuzdan ortiq dasturlash tillarini qo'llab-quvvatlaydi.</p>\n<p class=\"article-step\"><b>3. Tijoriy erkinlik:</b> Model Apache 2.0 litsenziyasi asosida chiqarilgan, bu esa O'zbekistondagi har qanday startap yoki IT korxonasiga uni o'z loyihalarida erkin va bepul tatbiq etish imkonini beradi.</p>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-10-11",
-    "author": {
-      "name": "AiNoma Tahririyati",
-      "job": "Open Source AI tadqiqot guruhi",
-      "avatar": "assets/brand_sheet_white.png"
-    },
-    "contentHtml": "<p class=\"article-lead\">Google DeepMind tadqiqot laboratoriyasi ochiq manbali Gemma modellar oilasini kengaytirib, yangi EmbeddingGemma 2 modelini taqdim etdi. Ushbu 740 million parametrli ixcham arxitektura matn, dasturlash kodi, video, audio va tasvirlarni bir vaqtning o'zida yagona vektor maydonida ifodalashga mo'ljallangan.</p>\n\n<h2 class=\"article-section-title\">Modulli arxitektura: Kamroq resurs, yuqori tezlik</h2>\n<p>EmbeddingGemma 2 modeli an'anaviy og'ir modellar singari yirik serverlarni talab qilmaydi. Uning yadrosi 270 million parametrli matn modelidan iborat bo'lib, dasturchi ehtiyojiga qarab tasvir (170M) yoki audio (300M) enkoderlarini alohida yuklashi mumkin.</p>\n<p>Bu yechim oddiy noutbuklar, planshetlar va chekka serverlarda (edge inference) to'liq lokal ravishda ishlash imkonini beradi. Natijada foydalanuvchi ma'lumotlari qurilmadan tashqariga chiqmaydi va qidiruv tezligi sezilarli darajada oshadi.</p>\n\n<h2 class=\"article-section-title\">Oraliq transkripsiyasiz to'g'ridan-to'g'ri qidiruv</h2>\n<p>Avvalgi tizimlarda video yoki audio fayllar ichidan qidirish uchun ularni avval matnga aylantirish (Speech-to-Text) talab etilar edi. EmbeddingGemma 2 esa ovozli yozuv va video lavhalarni bevosita matnli so'rovlar bilan taqqoslay oladi.</p>\n\n<p class=\"article-quote\">\"Matryoshka Representation Learning (MRL) usuli yordamida vektor hajmini 768 o'lchamdan 128 yoki 256 ga tushirish mumkin. Bu esa vektor ma'lumotlar bazalarida xotira xarajatlarini 6 barobargacha kamaytiradi.\"</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va korxonalar uchun amaliy qo'llash sohalari</h2>\n<p class=\"article-step\"><b>1. Multimodal RAG tizimlari:</b> Foydalanuvchi PDF hujjatlar, infografikalar va video darsliklar ichidan aniq javoblarni bir joydan topa oladi.</p>\n<p class=\"article-step\"><b>2. Dasturlash kodlari semantik qidiruvi:</b> Oldingi versiyaga nisbatan kod tahlilida 14% yuqoriroq aniqlik ta'minlangan bo'lib, yuzdan ortiq dasturlash tillarini qo'llab-quvvatlaydi.</p>\n<p class=\"article-step\"><b>3. Tijoriy erkinlik:</b> Model Apache 2.0 litsenziyasi asosida chiqarilgan, bu esa O'zbekistondagi har qanday startap yoki IT korxonasiga uni o'z loyihalarida erkin va bepul tatbiq etish imkonini beradi.</p>"
+    "contentHtml": "<p class=\"article-lead\">Apple kompaniyasi 13-oktabr kuni <b>\"Welcome Home\"</b> shiori ostida navbatdagi katta taqdimotini o‘tkazishini rasman e'lon qildi. Ushbu tadbir to‘liq aqlli uy texnologiyalari va Apple Intelligence ekotizimining kundalik hayotga integratsiyasiga bag‘ishlanadi.</p>\n\n<h2 class=\"article-section-title\">Yangi aqlli uy markazi (Home Hub): 6 dyuymli ekran va Siri AI</h2>\n<p>Insayderlar va tahlilchilarning xabar berishicha, taqdimotning bosh yulduzi — bu 6 dyuymli sensorli ekranga va kuchli dinamiklarga ega bo‘lgan yangi avlod <b>Home Hub</b> qurilmasi bo‘ladi.</p>\n<p>Mazkur qurilma xonadondagi barcha aqlli jihozlarni (yorug‘lik, xavfsizlik kameralari, harorat nazorati va musiqa tizimlari) yangilangan Siri AI ovozli yordamchisi orqali to‘liq kontekstda boshqarish imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Huxe startapining xarid qilinishi va shaxsiylashtirilgan audio AI</h2>\n<p>Taqdimot arafasida Apple Google'ning mashhur NotebookLM vositasini qurgan sobiq mutaxassislar tomonidan asos solingan <b>Huxe</b> AI startapi jamoasini o‘z safiga qo‘shib olgani (acqui-hire) ma'lum bo‘ldi.</p>\n<p>Huxe texnologiyasi matnli yangiliklar, elektron xatlar va xabarlarni real vaqt rejimida shaxsiylashtirilgan ovozli podkastlarga aylantirishga ixtisoslashgan. Kutilishicha, bu qobiliyat yangi Home Hub va Siri tizimiga kiritiladi — foydalanuvchi ertalab nonushta paytida uyi va dunyo yangiliklarini o‘ziga moslangan ovozli xulosada eshitishi mumkin bo‘ladi.</p>\n\n<p class=\"article-quote\">\"Apple uy muhitini oddiy buyruqlar bajaruvchi pultdan emas, balki butun oila a'zolarini ovozidan taniydigan va ularning odatlarini tushunadigan sun'iy intellekt markaziga aylantirmoqda.\"</p>\n\n<h2 class=\"article-section-title\">Taqdimot qachon va qayerda bo‘lib o‘tadi?</h2>\n<p>Tadbir 13-oktabr kuni Apple rasmiy veb-saytida hamda YouTube kanalida to‘g‘ridan-to‘g‘ri efirga uzatiladi. AiNoma tahririyati taqdimotdagi barcha yangiliklar va O‘zbekiston foydalanuvchilari uchun ochiladigan imkoniyatlarni tezkorlik bilan yoritib boradi.</p>"
   },
   "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026": {
     "id": "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026",
