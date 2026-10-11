@@ -48,53 +48,6 @@ window.AINOMA_ARTICLES = {
     },
     "contentHtml": "<p class=\"article-lead\">O‘zbekistonlik talabalar va yosh tadqiqotchilar uchun muhim rasmiy xushxabar: Google kompaniyasi o‘zining talabalar uchun 12 oylik bepul sun'iy intellekt dasturiga O‘zbekiston oliy ta'lim muassasalarini rasman qo‘shdi. Eng muhimi — buning uchun <b>hech qanday vositachi saytlar yoki qo‘shimcha platformalar shart emas</b>. Talabalar to‘g‘ridan-to‘g‘ri Google rasmiy portali orqali obunani bepul qo‘lga kiritishlari mumkin.</p>\n\n<h2 class=\"article-section-title\">Google Gemini AI Plus nimalarni o‘z ichiga oladi?</h2>\n<p>Xalqaro miqyosda yiliga 60 dollarga baholangan ushbu to‘plam talabalarga quyidagi professional imkoniyatlarni ochadi:</p>\n<ul class=\"article-list\">\n  <li><b>400 GB bulutli xotira:</b> Google Drive, Gmail va Google Photos uchun 400 GB umumiy joy (oddiy bepul 15 GB o‘rniga).</li>\n  <li><b>Kuchaytirilgan Gemini modeli:</b> So‘rovlar limitlari ikki barobar ko‘p va murakkab ilmiy, mantiqiy masalalarni chuqur tahlil qiluvchi <i>Flash Thinking</i> rejimi.</li>\n  <li><b>Google Flow va NotebookLM:</b> Kurs ishlari, maqolalar va referatlar uchun yuzlab manba materiallarini bir vaqtda tahlil qiluvchi AI tizimi.</li>\n  <li><b>Google Docs va Gmail integratsiyasi:</b> Matnlarni to‘g‘ridan-to‘g‘ri hujjatlar ichida tahrirlash va xatlarni avtomatik umumlashtirish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Qanday qilib to‘g‘ridan-to‘g‘ri bepul olish mumkin?</h2>\n<p class=\"article-step\"><b>1-qadam:</b> Brauzeringizda to‘g‘ridan-to‘g‘ri Google rasmiy talabalar sahifasini oching: <a href=\"https://gemini.google.com/students\" target=\"_blank\" rel=\"noopener\">gemini.google.com/students</a></p>\n<p class=\"article-step\"><b>2-qadam:</b> <u>Shaxsiy Gmail</u> hisobingiz bilan tizimga kiring (universitet bergan .edu pochtasi emas, aynan shaxsiy @gmail.com manzilingiz bilan kirish kerak) va <b>\"Get Student Offer\"</b> tugmasini bosing.</p>\n<p class=\"article-step\"><b>3-qadam:</b> Tizim Sizni xalqaro rasmiy verifikator — <b>SheerID</b> xizmatiga yo‘naltiradi. Mamlakat sifatida O‘zbekistonni va o‘z universitetingiz yoki institutingiz nomini tanlang.</p>\n<p class=\"article-step\"><b>4-qadam:</b> Talabalik hujjatingizni (talabalik guvohnomasi, kontrakt ma'lumotnomasi yoki HEMIS tizimidagi talabalik QR-kodli ma'lumotnomani) yuklang.</p>\n<p class=\"article-step\"><b>5-qadam:</b> SheerID 1–2 daqiqada talabalik maqomini tasdiqlaydi va Google profilingizga 1 yillik Gemini AI Plus xizmati avtomatik tarzda bepul ulanadi.</p>\n\n<p class=\"article-quote\">\"Eslatma: Ba'zi ijtimoiy tarmoqlarda faqat uchinchi tomon platformalari orqali olinadi degan yanglish xabarlar tarqalgan. Aslida esa bu Google'ning global dasturi bo'lib, har bir talaba to'g'ridan-to'g'ri gemini.google.com/students orqali mustaqil faollashtira oladi.\"</p>\n\n<h2 class=\"article-section-title\">Talabalar uchun foydali maslahatlar</h2>\n<p class=\"article-step\"><b>•</b> Agar brauzeringizda bir vaqtning o‘zida bir nechta Google hisoblar ochiq bo‘lsa, adashmaslik uchun ro‘yxatdan o‘tishni brauzerning Inkognito (InPrivate) oynasida amalga oshirish tavsiya etiladi.</p>\n<p class=\"article-step\"><b>•</b> Dastur 2026-yil 31-dekabrga qadar amal qiladi. O‘zbekistondagi davlat va litsenziyaga ega xususiy OTM talabalari ushbu imtiyozdan to‘liq foydalana oladilar.</p>"
   },
-  "apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi": {
-    "id": "apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi",
-    "slug": "apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi",
-    "title": "Apple 13-Oktabrda Yangi Siri AI Taqdimotini E’lon Qildi",
-    "kicker": "RASMIY TAQDIMOT · APPLE INTELLIGENCE",
-    "meta_title": "Apple 13-Oktabrda Yangi Siri AI Taqdimotini E’lon Qildi — AiNoma",
-    "meta_description": "Apple 13-oktabr kuni 'Welcome Home' nomli maxsus taqdimot o'tkazadi. Unda yangi avlod Siri AI va 6 dyuymli displeyga ega aqlli uy markazi ko'rsatiladi.",
-    "category": "Texnologiya",
-    "audience": "barcha foydalanuvchilar",
-    "event_date": "2026-10-11",
-    "source_date": "2026-10-11",
-    "source_published_date": "2026-10-11",
-    "ainoma_published_date": "2026-10-11",
-    "read_time": "3 daqiqalik mutolaa",
-    "readTime": "3 daqiqalik mutolaa",
-    "deck": "Apple kompaniyasi 13-oktabr sanasida 'Welcome Home' nomli maxsus taqdimot o'tkazishini ma'lum qildi: yangi avlod Siri AI, Apple Intelligence va aqlli uy ekotizimi namoyish etiladi.",
-    "img": "assets/voice_duplex.jpg",
-    "imgAlt": "Apple Siri AI Welcome Home Taqdimoti",
-    "qisqacha": [
-      "Apple 13-oktabr kuni 'Welcome Home' deb nomlangan yangi mahsulotlar taqdimotini rasman e'lon qildi.",
-      "Taqdimot markazida 6 dyuymli ekranga ega bo'lgan, to'liq Siri AI va Apple Intelligence bilan ishlovchi yangi aqlli uy markazi (Smart Home Hub) turadi.",
-      "Kompaniya shuningdek audio sohasida shaxsiy AI ishlab chiquvchi Huxe startapini xarid qilgani (acqui-hire) haqida hisobot berdi."
-    ],
-    "primary_source": {
-      "name": "Apple Rasmiy Taqdimotlar Markazi",
-      "title": "Apple Special Event: Welcome Home Announcement",
-      "url": "https://www.apple.com/apple-events/",
-      "badge": "RASMIY ANONS"
-    },
-    "secondary_sources": [
-      {
-        "name": "TechCrunch Global",
-        "title": "Apple discloses deal to hire team and license tech from AI startup Huxe",
-        "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-        "badge": "TAHLILIY SHARH"
-      }
-    ],
-    "body": "<p class=\"article-lead\">Apple kompaniyasi 13-oktabr kuni <b>\"Welcome Home\"</b> shiori ostida navbatdagi katta taqdimotini o‘tkazishini rasman e'lon qildi. Ushbu tadbir to‘liq aqlli uy texnologiyalari va Apple Intelligence ekotizimining kundalik hayotga integratsiyasiga bag‘ishlanadi.</p>\n\n<h2 class=\"article-section-title\">Yangi aqlli uy markazi (Home Hub): 6 dyuymli ekran va Siri AI</h2>\n<p>Insayderlar va tahlilchilarning xabar berishicha, taqdimotning bosh yulduzi — bu 6 dyuymli sensorli ekranga va kuchli dinamiklarga ega bo‘lgan yangi avlod <b>Home Hub</b> qurilmasi bo‘ladi.</p>\n<p>Mazkur qurilma xonadondagi barcha aqlli jihozlarni (yorug‘lik, xavfsizlik kameralari, harorat nazorati va musiqa tizimlari) yangilangan Siri AI ovozli yordamchisi orqali to‘liq kontekstda boshqarish imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Huxe startapining xarid qilinishi va shaxsiylashtirilgan audio AI</h2>\n<p>Taqdimot arafasida Apple Google'ning mashhur NotebookLM vositasini qurgan sobiq mutaxassislar tomonidan asos solingan <b>Huxe</b> AI startapi jamoasini o‘z safiga qo‘shib olgani (acqui-hire) ma'lum bo‘ldi.</p>\n<p>Huxe texnologiyasi matnli yangiliklar, elektron xatlar va xabarlarni real vaqt rejimida shaxsiylashtirilgan ovozli podkastlarga aylantirishga ixtisoslashgan. Kutilishicha, bu qobiliyat yangi Home Hub va Siri tizimiga kiritiladi — foydalanuvchi ertalab nonushta paytida uyi va dunyo yangiliklarini o‘ziga moslangan ovozli xulosada eshitishi mumkin bo‘ladi.</p>\n\n<p class=\"article-quote\">\"Apple uy muhitini oddiy buyruqlar bajaruvchi pultdan emas, balki butun oila a'zolarini ovozidan taniydigan va ularning odatlarini tushunadigan sun'iy intellekt markaziga aylantirmoqda.\"</p>\n\n<h2 class=\"article-section-title\">Taqdimot qachon va qayerda bo‘lib o‘tadi?</h2>\n<p>Tadbir 13-oktabr kuni Apple rasmiy veb-saytida hamda YouTube kanalida to‘g‘ridan-to‘g‘ri efirga uzatiladi. AiNoma tahririyati taqdimotdagi barcha yangiliklar va O‘zbekiston foydalanuvchilari uchun ochiladigan imkoniyatlarni tezkorlik bilan yoritib boradi.</p>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-10-11",
-    "author": {
-      "name": "AiNoma Tahririyati",
-      "job": "Xalqaro texnologiyalar tahlili",
-      "avatar": "assets/brand_sheet_white.png"
-    },
-    "contentHtml": "<p class=\"article-lead\">Apple kompaniyasi 13-oktabr kuni <b>\"Welcome Home\"</b> shiori ostida navbatdagi katta taqdimotini o‘tkazishini rasman e'lon qildi. Ushbu tadbir to‘liq aqlli uy texnologiyalari va Apple Intelligence ekotizimining kundalik hayotga integratsiyasiga bag‘ishlanadi.</p>\n\n<h2 class=\"article-section-title\">Yangi aqlli uy markazi (Home Hub): 6 dyuymli ekran va Siri AI</h2>\n<p>Insayderlar va tahlilchilarning xabar berishicha, taqdimotning bosh yulduzi — bu 6 dyuymli sensorli ekranga va kuchli dinamiklarga ega bo‘lgan yangi avlod <b>Home Hub</b> qurilmasi bo‘ladi.</p>\n<p>Mazkur qurilma xonadondagi barcha aqlli jihozlarni (yorug‘lik, xavfsizlik kameralari, harorat nazorati va musiqa tizimlari) yangilangan Siri AI ovozli yordamchisi orqali to‘liq kontekstda boshqarish imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Huxe startapining xarid qilinishi va shaxsiylashtirilgan audio AI</h2>\n<p>Taqdimot arafasida Apple Google'ning mashhur NotebookLM vositasini qurgan sobiq mutaxassislar tomonidan asos solingan <b>Huxe</b> AI startapi jamoasini o‘z safiga qo‘shib olgani (acqui-hire) ma'lum bo‘ldi.</p>\n<p>Huxe texnologiyasi matnli yangiliklar, elektron xatlar va xabarlarni real vaqt rejimida shaxsiylashtirilgan ovozli podkastlarga aylantirishga ixtisoslashgan. Kutilishicha, bu qobiliyat yangi Home Hub va Siri tizimiga kiritiladi — foydalanuvchi ertalab nonushta paytida uyi va dunyo yangiliklarini o‘ziga moslangan ovozli xulosada eshitishi mumkin bo‘ladi.</p>\n\n<p class=\"article-quote\">\"Apple uy muhitini oddiy buyruqlar bajaruvchi pultdan emas, balki butun oila a'zolarini ovozidan taniydigan va ularning odatlarini tushunadigan sun'iy intellekt markaziga aylantirmoqda.\"</p>\n\n<h2 class=\"article-section-title\">Taqdimot qachon va qayerda bo‘lib o‘tadi?</h2>\n<p>Tadbir 13-oktabr kuni Apple rasmiy veb-saytida hamda YouTube kanalida to‘g‘ridan-to‘g‘ri efirga uzatiladi. AiNoma tahririyati taqdimotdagi barcha yangiliklar va O‘zbekiston foydalanuvchilari uchun ochiladigan imkoniyatlarni tezkorlik bilan yoritib boradi.</p>"
-  },
   "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026": {
     "id": "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026",
     "slug": "anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026",

@@ -248,9 +248,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "O‘zbekistonlik Talabalarga Google Gemini AI Plus 1 Yil Bepul", u: "yangiliklar/ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026/", k: "o‘zbekistonlik talabalarga google gemini ai plus 1 yil bepul texnologiya google gemini rasmiy talabalar portali google o'zining talabalar uchun mo'ljallangan global dasturini o'zbekiston otmlariga ochdi. hech qan" },
-  { t: "Apple 13-Oktabrda Yangi Siri AI Taqdimotini E’lon Qildi", u: "yangiliklar/apple-13-oktabrda-aqlli-uy-uchun-siri-ai-hub-taqdim-etadi/", k: "apple 13-oktabrda yangi siri ai taqdimotini e’lon qildi texnologiya apple rasmiy taqdimotlar markazi apple kompaniyasi 13-oktabr sanasida 'welcome home' nomli maxsus taqdimot o'tkazishini ma'lum qildi:" },
   { t: "Anthropic: Claude Internet Sinovlarida Kutilmagan Harakatlar Qildi", u: "yangiliklar/anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026/", k: "anthropic: claude internet sinovlarida kutilmagan harakatlar qildi texnologiya va dasturlash anthropic research anthropic e’lon qilgan rasmiy hisobotda claude avtonom internet sinovlarida cheklovlarni chetlab o‘t" },
   { t: "Amazon Meta kompaniyasining Muse AI Agentini Blokladi", u: "yangiliklar/amazon-meta-muse-ai-agentini-blokladi-2026/", k: "amazon meta kompaniyasining muse ai agentini blokladi biznes va jarayonlar amazon newsroom amazon o‘z e-tijorat maydonida meta tomonidan ishlab chiqilgan muse avtonom sun’iy intellekt agentin" },
   { t: "AI bilan kinematik video va reklama roliklari qurish: Higgsfield", u: "yangiliklar/ai-bilan-kinematik-video-reklama-higgsfield/", k: "ai bilan kinematik video va reklama roliklari qurish: higgsfield qo'llanmalar ainoma tahririyati qimmatbaho videosyomka va kameralarsiz, professional kamera harakatlari hamda inson mimikasiga ega k" },
