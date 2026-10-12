@@ -1,6 +1,147 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026": {
+    "id": "microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026",
+    "slug": "microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026",
+    "title": "Microsoft: AI Nazorati Kir Yuvish Mashinasidan Ham Zaif",
+    "kicker": "GLOBAL REGULATSIYA · XAVFSIZLIK VA NAZORAT",
+    "meta_title": "Microsoft: AI Nazorati Kir Yuvish Mashinasidan Ham Zaif — AiNoma",
+    "meta_description": "Microsoft prezidenti Bred Smit sun'iy intellekt agentlari uchun majburiy avariya tormozi (kill switch) joriy etish va davlatlararo xavfsizlik standartlarini belgilashga chaqirdi.",
+    "category": "Texnologiya",
+    "audience": "yetakchilar",
+    "event_date": "2026-10-12",
+    "source_date": "2026-10-12",
+    "source_published_date": "2026-10-12",
+    "ainoma_published_date": "2026-10-12",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Microsoft prezidenti Bred Smit AI tizimlari maishiy texnika va oziq-ovqat mahsulotlaridan ham kamroq qonuniy nazorat ostida ekanini aytib, majburiy «avariya tormozi» mexanizmini talab qildi.",
+    "img": "assets/ai_safety_containment.jpg",
+    "imgAlt": "Microsoft Brad Smith AI Nazorati va Kill Switch",
+    "qisqacha": [
+      "Microsoft prezidenti Bred Smit sun'iy intellekt hozirda oddiy maishiy buyumlar va kir yuvish mashinalaridan ham kamroq xavfsizlik qoidalariga bo'ysunayotganini ma'lum qildi.",
+      "U barcha yirik AI agentlariga nazoratdan chiqqanda zudlik bilan to'xtatuvchi raqamli avariya tormozi (kill-switch) o'rnatish majburiyatini kiritishni taklif etdi.",
+      "Kompaniyalarga zarar yetkazgan avtonom agentlar bo'yicha jabrlanuvchilarga rasmiy hisobot berish va modellar relizidan oldin mustaqil ekspertizadan o'tish qonuniy talab bo'lishi kerakligi ta'kidlandi."
+    ],
+    "primary_source": {
+      "name": "The Guardian Technology",
+      "title": "Microsoft President Brad Smith: AI is less regulated than washing machines",
+      "url": "https://www.theguardian.com/technology/2026/oct/12/microsoft-ai-regulation-kill-switch-brad-smith",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "BBC News Technology",
+        "title": "Tech firms must install emergency brakes on artificial intelligence, says Microsoft",
+        "url": "https://www.bbc.com/news/technology-ai-safety-emergency-brakes-2026",
+        "badge": "XALQARO TAXLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Microsoft vitse-prezidenti va prezidenti Bred Smit xalqaro hamjamiyatni sun'iy intellekt xavfsizligi bo'yicha shoshilinch qonuniy choralar ko'rishga chaqirdi. Uning ta'kidlashicha, insoniyat tarixidagi eng qudratli texnologiya hisoblangan AI hozirgi kunda do'kondagi bir quti sut yoki uydagi oddiy kir yuvish mashinasidan ham kamroq texnik standartlar va davlat nazoratiga ega.</p>\n\n<h2 class=\"article-section-title\">«Avariya tormozi» (Kill Switch) nega zarur?</h2>\n<p>Bred Smit sun'iy intellekt bir vaqtning o'zida ham qimmatli vosita, ham jiddiy qurolga aylanishi mumkinligini eslatdi. Uning so'zlariga ko'ra, agar avtonom AI agenti kutilmagan halokatli harakatlarni boshlasa yoki kiberxavfsizlik devorlarini buzib o'tsa, inson muhandislar uni zudlik bilan tarmoqdan uzib qo'yuvchi majburiy mexanizmga ega bo'lishi shart.</p>\n<p>Microsoft bosh ijrochi direktori Satya Nadella ham ushbu fikrni qo'llab-quvvatlab, super-intellektni hech qachon yopiq quti («black box») holida qoldirib bo'lmasligini, har qanday model doimiy monitoring va inson nazorati ostida tutilishi lozimligini bildirdi.</p>\n\n<h2 class=\"article-section-title\">Qonunchilikka kiritilishi taklif qilingan 3 ta qat'iy talab</h2>\n<p class=\"article-step\"><b>1. Majburiy mustaqil ekspertiza:</b> Yirik va avtonom modellar ommaga chiqarilishidan avval xolis davlat laboratoriyalari va xavfsizlik ekspertlari tomonidan tekshirilishi shart.</p>\n<p class=\"article-step\"><b>2. Jabrlanuvchilar oldidagi javobgarlik:</b> Agar avtonom agent tizim xatosi tufayli fuqarolarga yoki tashkilotlarga moddiy/ma'naviy zarar yetkazsa, ishlab chiquvchi kompaniyalar rasmiy tergov o'tkazishi va jabrlanuvchilarga to'liq ko'mak berishi qonunan belgilanishi lozim.</p>\n<p class=\"article-step\"><b>3. Kiberhimoya va agentlar auditi:</b> Korxonalarda operatsiyalarni boshqaruvchi agentlar kiberhujumlar va zaharli buyruqlardan himoyalangan xavfsiz konteynerlarda faoliyat yuritishi kerak.</p>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt xavfsizligini faqat kompaniyalarning ixtiyoriy va'dalariga topshirib qo'ya olmaymiz. Jamiyat xavfsizligi qat'iy qonuniy me'yorlar bilan himoyalanishi shart.\" — Brad Smith, Microsoft prezidenti</p>\n\n<h2 class=\"article-section-title\">Bizneslar va ishlab chiquvchilar uchun xulosa</h2>\n<p>Avtonom AI agentlarini amaliyotga tatbiq etayotgan korxonalar uchun inson nazoratisiz (human-in-the-loop) qaror qabul qiluvchi tizimlarni cheklash va har bir avtomatlashtirilgan jarayonga qo'lda to'xtatish tugmachalarini qo'shish xalqaro standartga aylanmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-12",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Xalqaro AI xavfsizligi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Microsoft vitse-prezidenti va prezidenti Bred Smit xalqaro hamjamiyatni sun'iy intellekt xavfsizligi bo'yicha shoshilinch qonuniy choralar ko'rishga chaqirdi. Uning ta'kidlashicha, insoniyat tarixidagi eng qudratli texnologiya hisoblangan AI hozirgi kunda do'kondagi bir quti sut yoki uydagi oddiy kir yuvish mashinasidan ham kamroq texnik standartlar va davlat nazoratiga ega.</p>\n\n<h2 class=\"article-section-title\">«Avariya tormozi» (Kill Switch) nega zarur?</h2>\n<p>Bred Smit sun'iy intellekt bir vaqtning o'zida ham qimmatli vosita, ham jiddiy qurolga aylanishi mumkinligini eslatdi. Uning so'zlariga ko'ra, agar avtonom AI agenti kutilmagan halokatli harakatlarni boshlasa yoki kiberxavfsizlik devorlarini buzib o'tsa, inson muhandislar uni zudlik bilan tarmoqdan uzib qo'yuvchi majburiy mexanizmga ega bo'lishi shart.</p>\n<p>Microsoft bosh ijrochi direktori Satya Nadella ham ushbu fikrni qo'llab-quvvatlab, super-intellektni hech qachon yopiq quti («black box») holida qoldirib bo'lmasligini, har qanday model doimiy monitoring va inson nazorati ostida tutilishi lozimligini bildirdi.</p>\n\n<h2 class=\"article-section-title\">Qonunchilikka kiritilishi taklif qilingan 3 ta qat'iy talab</h2>\n<p class=\"article-step\"><b>1. Majburiy mustaqil ekspertiza:</b> Yirik va avtonom modellar ommaga chiqarilishidan avval xolis davlat laboratoriyalari va xavfsizlik ekspertlari tomonidan tekshirilishi shart.</p>\n<p class=\"article-step\"><b>2. Jabrlanuvchilar oldidagi javobgarlik:</b> Agar avtonom agent tizim xatosi tufayli fuqarolarga yoki tashkilotlarga moddiy/ma'naviy zarar yetkazsa, ishlab chiquvchi kompaniyalar rasmiy tergov o'tkazishi va jabrlanuvchilarga to'liq ko'mak berishi qonunan belgilanishi lozim.</p>\n<p class=\"article-step\"><b>3. Kiberhimoya va agentlar auditi:</b> Korxonalarda operatsiyalarni boshqaruvchi agentlar kiberhujumlar va zaharli buyruqlardan himoyalangan xavfsiz konteynerlarda faoliyat yuritishi kerak.</p>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt xavfsizligini faqat kompaniyalarning ixtiyoriy va'dalariga topshirib qo'ya olmaymiz. Jamiyat xavfsizligi qat'iy qonuniy me'yorlar bilan himoyalanishi shart.\" — Brad Smith, Microsoft prezidenti</p>\n\n<h2 class=\"article-section-title\">Bizneslar va ishlab chiquvchilar uchun xulosa</h2>\n<p>Avtonom AI agentlarini amaliyotga tatbiq etayotgan korxonalar uchun inson nazoratisiz (human-in-the-loop) qaror qabul qiluvchi tizimlarni cheklash va har bir avtomatlashtirilgan jarayonga qo'lda to'xtatish tugmachalarini qo'shish xalqaro standartga aylanmoqda.</p>"
+  },
+  "xvj-imf-ai-global-iqtisodiyot-va-mehnat-bozori-xavfi-2026": {
+    "id": "xvj-imf-ai-global-iqtisodiyot-va-mehnat-bozori-xavfi-2026",
+    "slug": "xvj-imf-ai-global-iqtisodiyot-va-mehnat-bozori-xavfi-2026",
+    "title": "XVJ: Sun’iy Intellekt 40% Ish O‘rnini Qamraydi",
+    "kicker": "MAKROIQTISODIYOT · MEHNAT BOZORI VA AI",
+    "meta_title": "XVJ: Sun’iy Intellekt 40% Ish O‘rnini Qamraydi — AiNoma",
+    "meta_description": "Xalqaro Valyuta Jamg'armasi AI investitsiyalari global iqtisodiy o'sishni ushlab turganini, ammo 40 foiz kasblarga to'lqindek zarba berishini ma'lum qildi.",
+    "category": "Iqtisodiyot",
+    "audience": "yetakchilar",
+    "event_date": "2026-10-12",
+    "source_date": "2026-10-12",
+    "source_published_date": "2026-10-12",
+    "ainoma_published_date": "2026-10-12",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Xalqaro Valyuta Jamg'armasi (XVJ) sun'iy intellekt texnologiyalari global o'sishni 3% atrofida saqlab turganini, ammo jahon bo'ylab ish o'rinlarining 40 foizini o'zgartiruvchi sekin tsunamiga qiyosladi.",
+    "img": "assets/future-intelligence-forum-2026.jpg",
+    "imgAlt": "XVJ Kristalina Georgieva AI Mehnat Bozori Hisoboti",
+    "qisqacha": [
+      "XVJ boshqaruvchi direktori Kristalina Georgieva Bangkokdagi forumi chog'ida AI bo'yicha global iqtisodiy tahlillarni e'lon qildi.",
+      "Sun'iy intellekt infratuzilmasi va chiplarga yo'naltirilgan yuzlab milliard dollar global o'sish sur'atini 3% atrofida ushlab turishga ko'maklashmoqda.",
+      "Biroq AI mehnat bozoriga 'sekin harakatlanuvchi tsunami' kabi kirib kelib, butun dunyodagi ish o'rinlarining qariyb 40 foiziga bevosita ta'sir ko'rsatadi."
+    ],
+    "primary_source": {
+      "name": "International Monetary Fund (IMF)",
+      "title": "IMF Managing Director on AI Economic Growth and Global Labor Market Impact",
+      "url": "https://www.imf.org/en/News/Articles/2026/10/12/sp-georgieva-ai-economic-outlook",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Business World Economics",
+        "title": "IMF: Artificial intelligence acts as slow-moving tsunami across global jobs",
+        "url": "https://www.bworldonline.com/economy/2026/10/12/imf-ai-growth-jobs-tsunami/",
+        "badge": "IQTISODIY SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Xalqaro Valyuta Jamg'armasi (XVJ / IMF) boshqaruvchi direktori Kristalina Georgieva sun'iy intellektning dunyo iqtisodiyotiga ko'rsatayotgan ikki qirrali ta'sirini baholadi. Uning bayonotiga ko'ra, sun'iy intellekt infratuzilmasiga kiritilayotgan misli ko'rilmagan kapital global o'sishni 3 foiz atrofida ushlab turishga xizmat qilmoqda, biroq u an'anaviy kasblarni sekin-asta yo'qotuvchi to'lqinga aylanmoqda.</p>\n\n<h2 class=\"article-section-title\">Iqtisodiy o'sish drayveri: Uskunalar va chiplarga bo'lgan talab</h2>\n<p>Jahon iqtisodiyotidagi murakkab geosiyosiy vaziyatga qaramay, global o'sishning to'xtab qolmasligida texnologiya gigantlarining AI data-markazlari, yarimo'tkazgichlar va energiya infratuzilmasiga yo'naltirayotgan trillion dollarlik investitsiyalari muhim poydevor vazifasini o'tamoqda.</p>\n<p>Ayniqsa, yuqori texnologiyali chiplar ishlab chiqaruvchi va elektronika yig'uvchi Osiyo davlatlari ushbu investitsiya oqimidan eng katta iqtisodiy foyda ko'rayotgan hududlar sifatida qayd etildi.</p>\n\n<h2 class=\"article-section-title\">«Sekin tsunami» va mehnat bozori</h2>\n<p>Ijobiy iqtisodiy raqamlar ortida mehnat bozoridagi chuqur silkinishlar yashiringan. Georgievaning ta'kidlashicha, sun'iy intellekt to'satdan portlash emas, balki sekin-asta sohillarni yutib boruvchi tsunami kabi butun dunyo bo'ylab mavjud ish o'rinlarining qariyb 40 foiziga ta'sir o'tkazmoqda.</p>\n\n<p class=\"article-quote\">\"Rivojlangan mamlakatlarda bu ko'rsatkich 60 foizgacha yetishi mumkin. Bunda AI ba'zi kasblarni butunlay avtomatlashtirsa, boshqalarining ish unumdorligini oshiradi. Ammo qayta tayyorlanmagan xodimlar jiddiy tushkunlikka duch keladi.\" — Kristalina Georgieva</p>\n\n<h2 class=\"article-section-title\">Davlatlar va mutaxassislar nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Kadrlar malakasini oshirish:</b> Korxonalar va davlat ta'lim dasturlari xodimlarni AI vositalaridan unumli foydalanishga o'rgatuvchi amaliy kurslarga zudlik bilan sarmoya kiritishi kerak.</p>\n<p class=\"article-step\"><b>2. Yangi daromad manbalari:</b> Faqat ma'lumotlarni qo'lda qayta ishlashga asoslangan faoliyat turlaridan ko'ra, ijodiy tahlil, strategik boshqaruv va muhandislik yo'nalishlariga e'tibor qaratish talab etiladi.</p>\n<p class=\"article-step\"><b>3. Ijtimoiy xavfsizlik to'rlari:</b> Hukumatlar avtomatlashtirish tufayli ishini yo'qotgan qatlamni yangi iqtisodiyotga integratsiya qilish uchun maxsus jamg'armalar tashkil etishlari shart.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-12",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Global makroiqtisodiyot tahlil guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Xalqaro Valyuta Jamg'armasi (XVJ / IMF) boshqaruvchi direktori Kristalina Georgieva sun'iy intellektning dunyo iqtisodiyotiga ko'rsatayotgan ikki qirrali ta'sirini baholadi. Uning bayonotiga ko'ra, sun'iy intellekt infratuzilmasiga kiritilayotgan misli ko'rilmagan kapital global o'sishni 3 foiz atrofida ushlab turishga xizmat qilmoqda, biroq u an'anaviy kasblarni sekin-asta yo'qotuvchi to'lqinga aylanmoqda.</p>\n\n<h2 class=\"article-section-title\">Iqtisodiy o'sish drayveri: Uskunalar va chiplarga bo'lgan talab</h2>\n<p>Jahon iqtisodiyotidagi murakkab geosiyosiy vaziyatga qaramay, global o'sishning to'xtab qolmasligida texnologiya gigantlarining AI data-markazlari, yarimo'tkazgichlar va energiya infratuzilmasiga yo'naltirayotgan trillion dollarlik investitsiyalari muhim poydevor vazifasini o'tamoqda.</p>\n<p>Ayniqsa, yuqori texnologiyali chiplar ishlab chiqaruvchi va elektronika yig'uvchi Osiyo davlatlari ushbu investitsiya oqimidan eng katta iqtisodiy foyda ko'rayotgan hududlar sifatida qayd etildi.</p>\n\n<h2 class=\"article-section-title\">«Sekin tsunami» va mehnat bozori</h2>\n<p>Ijobiy iqtisodiy raqamlar ortida mehnat bozoridagi chuqur silkinishlar yashiringan. Georgievaning ta'kidlashicha, sun'iy intellekt to'satdan portlash emas, balki sekin-asta sohillarni yutib boruvchi tsunami kabi butun dunyo bo'ylab mavjud ish o'rinlarining qariyb 40 foiziga ta'sir o'tkazmoqda.</p>\n\n<p class=\"article-quote\">\"Rivojlangan mamlakatlarda bu ko'rsatkich 60 foizgacha yetishi mumkin. Bunda AI ba'zi kasblarni butunlay avtomatlashtirsa, boshqalarining ish unumdorligini oshiradi. Ammo qayta tayyorlanmagan xodimlar jiddiy tushkunlikka duch keladi.\" — Kristalina Georgieva</p>\n\n<h2 class=\"article-section-title\">Davlatlar va mutaxassislar nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Kadrlar malakasini oshirish:</b> Korxonalar va davlat ta'lim dasturlari xodimlarni AI vositalaridan unumli foydalanishga o'rgatuvchi amaliy kurslarga zudlik bilan sarmoya kiritishi kerak.</p>\n<p class=\"article-step\"><b>2. Yangi daromad manbalari:</b> Faqat ma'lumotlarni qo'lda qayta ishlashga asoslangan faoliyat turlaridan ko'ra, ijodiy tahlil, strategik boshqaruv va muhandislik yo'nalishlariga e'tibor qaratish talab etiladi.</p>\n<p class=\"article-step\"><b>3. Ijtimoiy xavfsizlik to'rlari:</b> Hukumatlar avtomatlashtirish tufayli ishini yo'qotgan qatlamni yangi iqtisodiyotga integratsiya qilish uchun maxsus jamg'armalar tashkil etishlari shart.</p>"
+  },
+  "google-deepmind-meta-biohub-virtual-hujayra-loyihasi-2026": {
+    "id": "google-deepmind-meta-biohub-virtual-hujayra-loyihasi-2026",
+    "slug": "google-deepmind-meta-biohub-virtual-hujayra-loyihasi-2026",
+    "title": "DeepMind va Meta $1.8B «Virtual Hujayra» Loyihasiga Qo‘shildi",
+    "kicker": "BIOTEXNOLOGIYA VA AI · DEEPMIND & META",
+    "meta_title": "DeepMind va Meta $1.8B «Virtual Hujayra» Loyihasiga Qo‘shildi — AiNoma",
+    "meta_description": "Biohub boshchiligidagi $1.8 milliardlik loyihaga Google DeepMind, Meta va Isomorphic Labs qo'shilib, tirik inson hujayrasining to'liq raqamli AI modelini qurmoqda.",
+    "category": "Texnologiya",
+    "audience": "tadqiqotchilar",
+    "event_date": "2026-10-12",
+    "source_date": "2026-10-12",
+    "source_published_date": "2026-10-12",
+    "ainoma_published_date": "2026-10-12",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Inson hujayralarining barcha biologik jarayonlarini raqamli simulyatsiya qilish uchun $1.8 milliardlik xalqaro konsorsium tuzildi. Google DeepMind va Meta $300M to'g'ridan-to'g'ri investitsiya kiritdi.",
+    "img": "assets/google_deepmind_synthid_bio_2026.jpg",
+    "imgAlt": "Google DeepMind Meta Virtual Hujayra AI Loyihasi",
+    "qisqacha": [
+      "Zuckerberg va Chan Biohub instituti tirik hujayralar reaksiyasini oldindan aytib beruvchi sun'iy intellekt modelini ishlab chiqish tashabbusini kengaytirdi.",
+      "Google DeepMind, Meta va Isomorphic Labs ushbu ochiq ilmiy loyihaga 300 million dollarlik xususiy kapital va hisoblash quvvatini yo'naltirdi.",
+      "Loyiha dori-darmonlarni sinash va saraton kabi kasalliklarni davolashda laboratoriya tajribalarini oylab o'tkazish o'rniga, AI orqali raqamli simulyatsiya qilish imkonini beradi."
+    ],
+    "primary_source": {
+      "name": "Chan Zuckerberg Biohub",
+      "title": "Virtual Biology Initiative: Expanding Foundational AI for Virtual Cells",
+      "url": "https://www.czbiohub.org/news/virtual-biology-initiative-ai-cells",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "PR Newswire Science",
+        "title": "Global Consortium Commits $1.8 Billion to Build First Predictive AI Models of Living Cells",
+        "url": "https://www.prnewswire.com/news-releases/virtual-cell-ai-consortium-deepmind-meta-2026-302271891.html",
+        "badge": "ILMIY HISOBOT"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Zamonaviy tibbiyot va biotexnologiyada tub burilish yasashi kutilayotgan ulkan qadam: <b>Google DeepMind, Meta va Demis Hassabisning Isomorphic Labs</b> kompaniyasi Mark Sukerberg va Priskilla Channing Biohub instituti boshchiligidagi <b>«Virtual Hujayra» (Virtual Cell)</b> xalqaro tashabbusiga rasman qo‘shildi. Loyihaning umumiy kapitali 1.8 milliard dollarga yetkazildi.</p>\n\n<h2 class=\"article-section-title\">«Virtual hujayra» nima va u qanday ishlaydi?</h2>\n<p>Hozirgi kunda yangi dori vositasini ishlab chiqish yoki genetik o'zgarishlarning inson organizmiga ta'sirini o'rganish laboratoriyalarda probirkalar bilan yillab mashaqqatli tajribalar o'tkazishni talab etadi. Ko'plab gipotezalar esa amalda samarasiz bo'lib chiqadi.</p>\n<p>Loyiha doirasida ishlab chiqilayotgan poydevor AI modellari tirik inson hujayrasining to'liq raqamli egizagini (digital twin) hosil qiladi. Tadqiqotchi har qanday molekula yoki kimyoviy birikmani kiritganda, sun'iy intellekt hujayraning qanday javob berishini bir necha soniyada aniq bashorat qilib beradi.</p>\n\n<h2 class=\"article-section-title\">$1.8 milliardlik alyans tarkibi</h2>\n<p>Mazkur konsorsium davlat, ilm-fan va yetakchi AI laboratoriyalarining eng yirik hamkorligiga aylandi:</p>\n<ul class=\"article-list\">\n  <li><b>Google DeepMind, Meta va Isomorphic Labs:</b> 300 million dollarlik to'g'ridan-to'g'ri xususiy investitsiya, hisoblash quvvati va arxitektura yechimlarini taqdim etmoqda.</li>\n  <li><b>AQSh Energetika Vazirligi (DOE):</b> Superkompyuterlar va matematik hisoblashlar uchun 500 million dollardan ortiq mablag' ajratdi.</li>\n  <li><b>Milliy Sog'liqni Saqlash Instituti (NIH):</b> Qiymati 500 million dollardan ziyod biologik ma'lumotlar bazalarini tahlil uchun ochdi.</li>\n  <li><b>CZ Biohub:</b> Dastlabki bosqichda 500 million dollarlik laboratoriya resurslarini yo'naltirgan edi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Tirik hujayraning aniq bashorat qiluvchi AI modelini qurish — bu asr ilm-fanining eng buyuk chorlovlaridan biridir. Bu minglab kasalliklarni davolash muddatini o'nlab yillardan bir necha oylarga qisqartiradi.\" — Aleks Rayvs, Biohub ilmiy direktori</p>\n\n<h2 class=\"article-section-title\">Ochiq ilm-fan va kelajak istiqboli</h2>\n<p class=\"article-step\"><b>1. Ochiq manbali ma'lumotlar:</b> Loyiha doirasida to'plangan biologik ma'lumotlar to'plamlari keyinchalik butun dunyo olimlari uchun ochiq litsenziyada taqdim etiladi.</p>\n<p class=\"article-step\"><b>2. Shaxsiylashtirilgan onkologiya:</b> Har bir bemorning saraton hujayralariga mos individual terapiya usullari avval virtual simulyatsiyadan o'tkazilib, eng xavfsiz va samarali davo tanlanadi.</p>\n<p class=\"article-step\"><b>3. Biotexnologiya inqilobi:</b> Ushbu loyiha sun'iy intellekt faqat matn va tasvir generatori emas, balki fundamental fanni oldinga yetaklovchi eng asosiy kuch ekanini yana bir bor tasdiqlaydi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-12",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Biotibbiyot va fundamental AI guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Zamonaviy tibbiyot va biotexnologiyada tub burilish yasashi kutilayotgan ulkan qadam: <b>Google DeepMind, Meta va Demis Hassabisning Isomorphic Labs</b> kompaniyasi Mark Sukerberg va Priskilla Channing Biohub instituti boshchiligidagi <b>«Virtual Hujayra» (Virtual Cell)</b> xalqaro tashabbusiga rasman qo‘shildi. Loyihaning umumiy kapitali 1.8 milliard dollarga yetkazildi.</p>\n\n<h2 class=\"article-section-title\">«Virtual hujayra» nima va u qanday ishlaydi?</h2>\n<p>Hozirgi kunda yangi dori vositasini ishlab chiqish yoki genetik o'zgarishlarning inson organizmiga ta'sirini o'rganish laboratoriyalarda probirkalar bilan yillab mashaqqatli tajribalar o'tkazishni talab etadi. Ko'plab gipotezalar esa amalda samarasiz bo'lib chiqadi.</p>\n<p>Loyiha doirasida ishlab chiqilayotgan poydevor AI modellari tirik inson hujayrasining to'liq raqamli egizagini (digital twin) hosil qiladi. Tadqiqotchi har qanday molekula yoki kimyoviy birikmani kiritganda, sun'iy intellekt hujayraning qanday javob berishini bir necha soniyada aniq bashorat qilib beradi.</p>\n\n<h2 class=\"article-section-title\">$1.8 milliardlik alyans tarkibi</h2>\n<p>Mazkur konsorsium davlat, ilm-fan va yetakchi AI laboratoriyalarining eng yirik hamkorligiga aylandi:</p>\n<ul class=\"article-list\">\n  <li><b>Google DeepMind, Meta va Isomorphic Labs:</b> 300 million dollarlik to'g'ridan-to'g'ri xususiy investitsiya, hisoblash quvvati va arxitektura yechimlarini taqdim etmoqda.</li>\n  <li><b>AQSh Energetika Vazirligi (DOE):</b> Superkompyuterlar va matematik hisoblashlar uchun 500 million dollardan ortiq mablag' ajratdi.</li>\n  <li><b>Milliy Sog'liqni Saqlash Instituti (NIH):</b> Qiymati 500 million dollardan ziyod biologik ma'lumotlar bazalarini tahlil uchun ochdi.</li>\n  <li><b>CZ Biohub:</b> Dastlabki bosqichda 500 million dollarlik laboratoriya resurslarini yo'naltirgan edi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Tirik hujayraning aniq bashorat qiluvchi AI modelini qurish — bu asr ilm-fanining eng buyuk chorlovlaridan biridir. Bu minglab kasalliklarni davolash muddatini o'nlab yillardan bir necha oylarga qisqartiradi.\" — Aleks Rayvs, Biohub ilmiy direktori</p>\n\n<h2 class=\"article-section-title\">Ochiq ilm-fan va kelajak istiqboli</h2>\n<p class=\"article-step\"><b>1. Ochiq manbali ma'lumotlar:</b> Loyiha doirasida to'plangan biologik ma'lumotlar to'plamlari keyinchalik butun dunyo olimlari uchun ochiq litsenziyada taqdim etiladi.</p>\n<p class=\"article-step\"><b>2. Shaxsiylashtirilgan onkologiya:</b> Har bir bemorning saraton hujayralariga mos individual terapiya usullari avval virtual simulyatsiyadan o'tkazilib, eng xavfsiz va samarali davo tanlanadi.</p>\n<p class=\"article-step\"><b>3. Biotexnologiya inqilobi:</b> Ushbu loyiha sun'iy intellekt faqat matn va tasvir generatori emas, balki fundamental fanni oldinga yetaklovchi eng asosiy kuch ekanini yana bir bor tasdiqlaydi.</p>"
+  },
   "ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026": {
     "id": "ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026",
     "slug": "ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026",

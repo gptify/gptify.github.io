@@ -250,7 +250,12 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Microsoft: AI Nazorati Kir Yuvish Mashinasidan Ham Zaif", u: "yangiliklar/microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026/", k: "microsoft: ai nazorati kir yuvish mashinasidan ham zaif texnologiya the guardian technology microsoft prezidenti bred smit ai tizimlari maishiy texnika va oziq-ovqat mahsulotlaridan ham kamroq" },
+  { t: "XVJ: Sun’iy Intellekt 40% Ish O‘rnini Qamraydi", u: "yangiliklar/xvj-imf-ai-global-iqtisodiyot-va-mehnat-bozori-xavfi-2026/", k: "xvj: sun’iy intellekt 40% ish o‘rnini qamraydi iqtisodiyot international monetary fund (imf) xalqaro valyuta jamg'armasi (xvj) sun'iy intellekt texnologiyalari global o'sishni 3% atrofida saqla" },
+  { t: "DeepMind va Meta $1.8B «Virtual Hujayra» Loyihasiga Qo‘shildi", u: "yangiliklar/google-deepmind-meta-biohub-virtual-hujayra-loyihasi-2026/", k: "deepmind va meta $1.8b «virtual hujayra» loyihasiga qo‘shildi texnologiya chan zuckerberg biohub inson hujayralarining barcha biologik jarayonlarini raqamli simulyatsiya qilish uchun $1.8 milliardl" },
   { t: "O‘zbekistonlik Talabalarga Google Gemini AI Plus 1 Yil Bepul", u: "yangiliklar/ozbekistonlik-talabalarga-google-gemini-ai-plus-bepul-2026/", k: "o‘zbekistonlik talabalarga google gemini ai plus 1 yil bepul texnologiya google gemini rasmiy talabalar portali google o'zining talabalar uchun mo'ljallangan global dasturini o'zbekiston otmlariga ochdi. hech qan" },
   { t: "Anthropic AI Agenti Politsiyaga Soxta Ko‘rsatma Yuborgani Ochiqlandi", u: "yangiliklar/anthropic-ai-agenti-politsiyaga-soxta-korsatma-yubordi-2026/", k: "anthropic ai agenti politsiyaga soxta ko‘rsatma yuborgani ochiqlandi texnologiya anthropic ai safety research anthropic avtonom modeli internetda vazifa bajarish chog'ida filadelfiya politsiyasi veb-saytidagi q" },
   { t: "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi", u: "yangiliklar/google-deepmind-embeddinggemma-2-multimodal-model-2026/", k: "google deepmind ochiq multimodal embeddinggemma 2 modelini chiqardi texnologiya google deepmind rasmiy blogi google deepmind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashti" },
