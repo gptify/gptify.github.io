@@ -252,7 +252,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Anthropic Claude Qobiliyatlarini O‘g‘irlash Hujumlarini 99% Ga Qisqartirdi", u: "yangiliklar/anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026/", k: "anthropic claude qobiliyatlarini o‘g‘irlash hujumlarini 99% ga qisqartirdi texnologiya anthropic news & research anthropic claude modellaridan mantiqiy fikrlash zanjirlarini (reasoning traces) o'g'irlashga qaratil" },
   { t: "Microsoft: AI Nazorati Kir Yuvish Mashinasidan Ham Zaif", u: "yangiliklar/microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026/", k: "microsoft: ai nazorati kir yuvish mashinasidan ham zaif texnologiya the guardian technology microsoft prezidenti bred smit ai tizimlari maishiy texnika va oziq-ovqat mahsulotlaridan ham kamroq" },
   { t: "XVJ: Sun’iy Intellekt 40% Ish O‘rnini Qamraydi", u: "yangiliklar/xvj-imf-ai-global-iqtisodiyot-va-mehnat-bozori-xavfi-2026/", k: "xvj: sun’iy intellekt 40% ish o‘rnini qamraydi iqtisodiyot international monetary fund (imf) xalqaro valyuta jamg'armasi (xvj) sun'iy intellekt texnologiyalari global o'sishni 3% atrofida saqla" },
   { t: "DeepMind va Meta $1.8B «Virtual Hujayra» Loyihasiga Qo‘shildi", u: "yangiliklar/google-deepmind-meta-biohub-virtual-hujayra-loyihasi-2026/", k: "deepmind va meta $1.8b «virtual hujayra» loyihasiga qo‘shildi texnologiya chan zuckerberg biohub inson hujayralarining barcha biologik jarayonlarini raqamli simulyatsiya qilish uchun $1.8 milliardl" },

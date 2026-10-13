@@ -1,6 +1,53 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026": {
+    "id": "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026",
+    "slug": "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026",
+    "title": "Anthropic Claude Qobiliyatlarini O‘g‘irlash Hujumlarini 99% Ga Qisqartirdi",
+    "kicker": "KIBERXAVFSIZLIK · FRONTIER AI HIMOYASI",
+    "meta_title": "Anthropic Claude Qobiliyatlarini O‘g‘irlash Hujumlarini 99% Ga Qisqartirdi — AiNoma",
+    "meta_description": "Anthropic Claude modellarining mantiqiy fikrlash zanjirlarini noqonuniy o'g'irlab arzon modellar qurishga qaratilgan distillyatsiya hujumlariga qarshi keng ko'lamli himoyani ishga tushirdi.",
+    "category": "Texnologiya",
+    "audience": "dasturchilar muhandislar",
+    "event_date": "2026-10-13",
+    "source_date": "2026-10-13",
+    "source_published_date": "2026-10-13",
+    "ainoma_published_date": "2026-10-13",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Anthropic Claude modellaridan mantiqiy fikrlash zanjirlarini (reasoning traces) o'g'irlashga qaratilgan distillyatsiya hujumlarini 90-99 foizga kamaytirgan yangi mudofaa tizimini ochiqladi.",
+    "img": "assets/anthropic_claude_banner.jpg",
+    "imgAlt": "Anthropic Claude Distillyatsiya Himoyasi 2026",
+    "qisqacha": [
+      "Anthropic tadqiqotchilari Claude modellariga o'n minglab soxta botlar orqali so'rov yuborib, ularning mantiqiy xulosalarini o'g'irlash (distillyatsiya) holatlarini fosh qildi.",
+      "Yangi ko'p bosqichli sun'iy intellekt klassifikatorlari va 'preserved thinking' mexanizmi noqonuniy ma'lumot sizib chiqishini 99 foizgacha to'xtatdi.",
+      "Tizimli o'g'irlik bilan shug'ullangan o'n minglab proksi akkauntlar bloklandi va xavfli harbiy yoki kiberxavfsizlik kodlarining erkin tarqalishi oldi olindi."
+    ],
+    "primary_source": {
+      "name": "Anthropic News & Research",
+      "title": "Strengthening our defenses against distillation attacks",
+      "url": "https://www.anthropic.com/news/strengthening-our-defenses-against-distillation-attacks",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "AI Weekly Technology",
+        "title": "Anthropic slashes illicit model distillation by up to 99 percent",
+        "url": "https://aiweekly.co/news/anthropic-distillation-defenses-2026",
+        "badge": "XALQARO SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Sun'iy intellekt xavfsizligi bo'yicha yetakchi kompaniya hisoblangan <b>Anthropic</b> o'zining flagman modellari (Claude Opus va Claude Sonnet) atrofida sanoat miqyosida olib borilayotgan <b>«distillyatsiya hujumlari»ga (model distillation)</b> qarshi keng ko'lamli mudofaa tizimini muvaffaqiyatli ishga tushirganini e'lon qildi.</p>\n\n<h2 class=\"article-section-title\">Distillyatsiya nima va u qanday xavf tug'diradi?</h2>\n<p>Sun'iy intellekt sohasida «distillyatsiya» — bu kuchli modelga millionlab murakkab savollar berish orqali uning javoblari va ichki fikrlash jarayonlarini to'plab, o'sha ma'lumotlar asosida arzonroq nusxa modelni o'qitish usulidir.</p>\n<p>Xususan, raqobatchi xorijiy laboratoriyalar Anthropic modellarining bosqichma-bosqich fikrlash zanjirlarini (reasoning traces) yashirincha o'g'irlashga uringan. Tadqiqotlar shuni ko'rsatdiki, Claude'ning to'liq fikrlash qadamlari asosida o'qitilgan nusxa modellar dasturlash testlarida 80.4 foizlik rekord natija ko'rsatgan.</p>\n\n<h2 class=\"article-section-title\">O'g'irlikni 99 foizga kamaytirgan yangi himoya</h2>\n<p>Anthropic noqonuniy ma'lumot yig'ish kanallarini bir zumda to'xtatish uchun bir nechta qat'iy texnik to'siqlarni joriy qildi:</p>\n<ul class=\"article-list\">\n  <li><b>«Preserved Thinking» texnologiyasi:</b> Yangi API hisoblari uchun kontekstni manipulyatsiya qilish va ichki mantiqiy qadamlarni yashirin ajratib olish imkoniyati butunlay yopildi.</li>\n  <li><b>Aqlli klassifikatorlar:</b> Xato qilish ehtimoli 0.1% dan ham past bo'lgan avtomatlashtirilgan xavfsizlik filtrlari sanoat darajasidagi skraperlar va proksi tarmoqlarni zudlik bilan aniqlaydi.</li>\n  <li><b>Ommaviy bloklash:</b> Tizimli distillyatsiya bilan shug'ullangan o'n minglab soxta hisoblar tarmoqdan uzildi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz modellarimizning kiberxavfsizlik va fundamental fan sohasidagi chuqur xulosalari noqonuniy o'zlashtirilib, xavfsizlik cheklovlarisiz qurolga aylantirilishiga yo'l qo'ymaymiz.\" — Anthropic tadqiqot guruhi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va ekotizim uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Halol API foydalanuvchilariga ta'sir qilmaydi:</b> Oddiy ishlab chiquvchilar va bizneslar uchun Claude API ishlash tezligi va aniqligi o'zgarishsiz qoladi.</p>\n<p class=\"article-step\"><b>2. Intellektual mulk himoyasi:</b> Ushbu qadam sun'iy intellekt sohasida modellar intellektual mulkini himoya qilishning yangi xalqaro texnik standartini belgilab berdi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-13",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Kiberxavfsizlik va model arxitekturasi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Sun'iy intellekt xavfsizligi bo'yicha yetakchi kompaniya hisoblangan <b>Anthropic</b> o'zining flagman modellari (Claude Opus va Claude Sonnet) atrofida sanoat miqyosida olib borilayotgan <b>«distillyatsiya hujumlari»ga (model distillation)</b> qarshi keng ko'lamli mudofaa tizimini muvaffaqiyatli ishga tushirganini e'lon qildi.</p>\n\n<h2 class=\"article-section-title\">Distillyatsiya nima va u qanday xavf tug'diradi?</h2>\n<p>Sun'iy intellekt sohasida «distillyatsiya» — bu kuchli modelga millionlab murakkab savollar berish orqali uning javoblari va ichki fikrlash jarayonlarini to'plab, o'sha ma'lumotlar asosida arzonroq nusxa modelni o'qitish usulidir.</p>\n<p>Xususan, raqobatchi xorijiy laboratoriyalar Anthropic modellarining bosqichma-bosqich fikrlash zanjirlarini (reasoning traces) yashirincha o'g'irlashga uringan. Tadqiqotlar shuni ko'rsatdiki, Claude'ning to'liq fikrlash qadamlari asosida o'qitilgan nusxa modellar dasturlash testlarida 80.4 foizlik rekord natija ko'rsatgan.</p>\n\n<h2 class=\"article-section-title\">O'g'irlikni 99 foizga kamaytirgan yangi himoya</h2>\n<p>Anthropic noqonuniy ma'lumot yig'ish kanallarini bir zumda to'xtatish uchun bir nechta qat'iy texnik to'siqlarni joriy qildi:</p>\n<ul class=\"article-list\">\n  <li><b>«Preserved Thinking» texnologiyasi:</b> Yangi API hisoblari uchun kontekstni manipulyatsiya qilish va ichki mantiqiy qadamlarni yashirin ajratib olish imkoniyati butunlay yopildi.</li>\n  <li><b>Aqlli klassifikatorlar:</b> Xato qilish ehtimoli 0.1% dan ham past bo'lgan avtomatlashtirilgan xavfsizlik filtrlari sanoat darajasidagi skraperlar va proksi tarmoqlarni zudlik bilan aniqlaydi.</li>\n  <li><b>Ommaviy bloklash:</b> Tizimli distillyatsiya bilan shug'ullangan o'n minglab soxta hisoblar tarmoqdan uzildi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz modellarimizning kiberxavfsizlik va fundamental fan sohasidagi chuqur xulosalari noqonuniy o'zlashtirilib, xavfsizlik cheklovlarisiz qurolga aylantirilishiga yo'l qo'ymaymiz.\" — Anthropic tadqiqot guruhi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va ekotizim uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Halol API foydalanuvchilariga ta'sir qilmaydi:</b> Oddiy ishlab chiquvchilar va bizneslar uchun Claude API ishlash tezligi va aniqligi o'zgarishsiz qoladi.</p>\n<p class=\"article-step\"><b>2. Intellektual mulk himoyasi:</b> Ushbu qadam sun'iy intellekt sohasida modellar intellektual mulkini himoya qilishning yangi xalqaro texnik standartini belgilab berdi.</p>"
+  },
   "microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026": {
     "id": "microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026",
     "slug": "microsoft-prezidenti-brad-smith-ai-avariya-tormozi-talabi-2026",
