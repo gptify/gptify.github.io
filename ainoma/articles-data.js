@@ -48,6 +48,100 @@ window.AINOMA_ARTICLES = {
     },
     "contentHtml": "<p class=\"article-lead\">Kiberjinoyatchilar oddiy fishing havolalaridan voz kechib, qurbonlarni kunlab psixologik manipulyatsiya qiluvchi murakkab moliyaviy tuzoqlarga o'tayotgan bir paytda, <b>Google DeepMind</b> va Singapur Davlat Texnologiyalari Agentligi (GovTech) inqilobiy yechimni taqdim etdi: <b>to'g'ridan-to'g'ri foydalanuvchi telefonida ishlovchi shaxsiy AI himoyachisi</b>.</p>\n\n<h2 class=\"article-section-title\">Nega an'anaviy himoya tizimlari ojiz qolmoqda?</h2>\n<p>So'nggi yillarda firibgarliklar umumiy jinoyatlarning yarmidan ko'prog'ini tashkil etib, milliardlab dollar zararga sabab bo'lmoqda. Jinoyatchilar soxta investitsiya, yolg'on vakansiyalar yoki davlat idoralari nomidan yozib, qurbonlarni o'z ixtiyori bilan pul o'tkazishga ko'ndirmoqda.</p>\n<p>Zamonaviy messenjerlar (WhatsApp, Signal, Telegram) shifrlangan (end-to-end encryption) bo'lgani sababli, bulutdagi xavfsizlik filtrlari bu yozishmalarni ko'ra olmaydi. Xabarlarni bulutga tekshirish uchun yuborish esa fuqarolarning shaxsiy daxlsizligini qo'pol ravishda buzadi.</p>\n\n<h2 class=\"article-section-title\">Maxfiylikni buzmaydigan «On-Device» sun'iy intellekt</h2>\n<p>Google DeepMind ushbu muammoni hal qilish uchun o'zining yengil <b>Gemma</b> modelini maxsus moslashtirdi. Ushbu tizim barcha tahlillarni smartfonning o'z protsessorida (lokal) bajaradi:</p>\n<ul class=\"article-list\">\n  <li><b>Xabarlar telefondan tashqariga chiqmaydi:</b> Shaxsiy yozishmalar na Google'ga va na hukumat serverlariga jo'natilmaydi. Hamma hisob-kitoblar faqat qurilma xotirasida kechadi.</li>\n  <li><b>Ikki bosqichli tejovchi arxitektura:</b> Batareya quvvatini behuda sarflamaslik uchun dastlab mikro-klassifikator xabarni saralaydi, faqat shubhali suhbat boshlangandagina Gemma modeli kontekstni tahlil qiladi.</li>\n  <li><b>Real vaqtli ogohlantirish:</b> Agar suhbatdosh pul talab qilish, tahdid yoki qalbaki investitsiya alomatlarini boshlasa, tizim ekranga qizil ogohlantirish chiqarib, operatsiyani to'xtatishni maslahat beradi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt insonlarning eng nozik va shaxsiy suhbatlarini himoya qilishda ularning maxfiyligini zarracha qurbon qilmasligini isbotladik.\" — Google DeepMind muhandislari guruhi</p>\n\n<h2 class=\"article-section-title\">Foydalanuvchilar va banklar uchun ahamiyati</h2>\n<p class=\"article-step\"><b>1. Moliyaviy xavfsizlik:</b> Foydalanuvchi aldanib bank kartasi yoki parolini begonalarga yuborishidan oldin to'xtatib qolinadi.</p>\n<p class=\"article-step\"><b>2. Lokal AI davri:</b> Bu tajriba ko'rsatmoqdaki, kelajak sun'iy intellekti faqat gigant data-markazlarda emas, har bir insonning cho'ntagidagi smartfonda to'liq avtonom va bepul xizmat qiladi.</p>"
   },
+  "ntt-data-va-anthropic-yaponiyada-ai-markaz-qurmoqda-2026": {
+    "id": "ntt-data-va-anthropic-yaponiyada-ai-markaz-qurmoqda-2026",
+    "slug": "ntt-data-va-anthropic-yaponiyada-ai-markaz-qurmoqda-2026",
+    "title": "NTT Data Va Anthropic Yaponiyada $6.3B Data-Markaz Qurmoqda",
+    "kicker": "GLOBAL INFRATUZILMA · ANTHROPIC & NTT DATA",
+    "meta_title": "NTT Data Va Anthropic Yaponiyada $6.3B Data-Markaz Qurmoqda — AiNoma",
+    "meta_description": "Yaponiya telekom giganti NTT Data va Anthropic Osiyo-Tinch okeani mintaqasida 500 megavatt quvvatga ega ulkan Claude AI ma'lumotlar markazini qurish bo'yicha $6.3 milliardlik shartnoma tuzdi.",
+    "category": "Biznes",
+    "audience": "yetakchilar va korxonalar",
+    "event_date": "2026-10-13",
+    "source_date": "2026-10-13",
+    "source_published_date": "2026-10-13",
+    "ainoma_published_date": "2026-10-14",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Yaponiya giganti NTT Data va Anthropic Osiyoda Claude modellari uchun maxsus 500 megavattlik super-markaz qurish bo'yicha 1 trillion iyenlik ($6.3 mlrd) bitim imzoladi.",
+    "img": "assets/gpu_datacenter.jpg",
+    "imgAlt": "NTT Data va Anthropic Osaka AI Data Center 2026",
+    "qisqacha": [
+      "NTT Data va Anthropic Yaponiyaning Osaka shahrida Osiyo-Tinch okeani hududidagi eng yirik 500 megavattlik maxsus AI ma'lumotlar markazini qurish bo'yicha rasmiy kelishuvga erishdilar.",
+      "Loyiha qiymati 1 trillion iyen ($6.3 milliard) bo'lib, markaz to'liq qayta tiklanuvchi energiya va to'g'ridan-to'g'ri suyuqlik bilan sovutish tizimlari asosida bunyod etiladi.",
+      "Ushbu infratuzilma Yaponiya korxonalari va hukumatiga suveren ma'lumotlar xavfsizligini ta'minlagan holda Claude modellaridan foydalanish imkonini beradi."
+    ],
+    "primary_source": {
+      "name": "NTT Data Corporation Press Release",
+      "title": "NTT DATA and Anthropic Partner to Build 500MW Dedicated AI Data Center in Osaka",
+      "url": "https://www.nttdata.com/global/en/news/press-release/2026/october/13-anthropic-ai-datacenter-osaka",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Nikkei Asia Business",
+        "title": "NTT Data and Anthropic ink 1 trillion yen pact for Japan AI compute hub",
+        "url": "https://asia.nikkei.com/business/tech/ntt-data-anthropic-1-trillion-yen-ai-hub-2026",
+        "badge": "XALQARO SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Global sun'iy intellekt hisoblash quvvatlariga bo'lgan ehtiyoj misli ko'rilmagan darajada o'sayotgan pallada, Yaponiya telekommunikatsiya giganti <b>NTT Data</b> va AQShning <b>Anthropic</b> kompaniyasi tarixiy bitimni e'lon qildi: <b>Yaponiyaning Osaka shahrida 1 trillion iyen (taxminan 6.3 milliard dollar) qiymatiga ega 500 megavattlik maxsus AI ma'lumotlar markazi quriladi</b>.</p>\n\n<h2 class=\"article-section-title\">Nega aynan Yaponiya va Anthropic?</h2>\n<p>Anthropic o'zining Claude modellari (Opus, Sonnet, Haiku) uchun Shimoliy Amerikadan tashqarida eng yirik mustaqil hisoblash poligonini barpo etishni maqsad qilgan. Yaponiya hukumati esa xorijiy bulutlarga to'liq qaram bo'lmaslik va mahalliy korxonalar ma'lumotlari mamlakat ichida qolishini ta'minlash uchun suveren AI infratuzilmasiga milliardlab dollar subsidiya ajratmoqda.</p>\n<p>NTT Data bilan tuzilgan ushbu strategik kelishuv Osiyo bozorida Claude modellarining korporativ sektorga integratsiyasini tezlashtiradi va kechikish vaqtini (latency) minimal darajaga tushiradi.</p>\n\n<h2 class=\"article-section-title\">Loyihaning asosiy texnik ko'rsatkichlari</h2>\n<p>Mazkur majmua dunyodagi eng ilg'or muhandislik standartlari asosida qad rostlaydi:</p>\n<ul class=\"article-list\">\n  <li><b>500 megavatt umumiy quvvat:</b> Markaz yuz minglab eng yangi avlod GPU va maxsus AI tezlatgichlarini uzluksiz energiya bilan ta'minlay oladi.</li>\n  <li><b>100% yashil energiya:</b> Majmua to'liq quyosh, gidro va atom energiyasi manbalariga ulanib, nol uglerod chiqindisi talablariga javob beradi.</li>\n  <li><b>Suyuqlik orqali sovutish:</b> Haddan tashqari yuqori hisoblash zichligini ushlab turish uchun an'anaviy havoda sovutish o'rniga to'g'ridan-to'g'ri suyuqlikli sovitish (direct-to-chip liquid cooling) tizimi joriy etiladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt kelajagini faqat bitta mintaqada jamlab bo'lmasligini yaxshi tushunamiz. Yaponiya jahon darajasidagi muhandislik va ma'lumotlar madaniyatiga ega, NTT Data bilan hamkorligimiz esa Osiyo uchun eng xavfsiz va qudratli poydevor bo'ladi.\" — Anthropic boshqaruvi bayonotidan</p>\n\n<h2 class=\"article-section-title\">Biznes va mintaqa uchun strategik xulosalar</h2>\n<p class=\"article-step\"><b>1. Suveren AI davri:</b> Korxonalar o'z nozik tijorat sirlarini xorijga jo'natmasdan, bevosita mahalliy xavfsiz serverlarda o'qitish va ishlatish imkoniyatiga ega bo'ladilar.</p>\n<p class=\"article-step\"><b>2. Mintaqaviy raqobat:</b> Yaponiya sun'iy intellekt infratuzilmasi bo'yicha Singapur va boshqa mintaqaviy markazlar bilan raqobatda yetakchi o'ringa chiqmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-14",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Global AI infratuzilmasi va korporativ texnologiyalar guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Global sun'iy intellekt hisoblash quvvatlariga bo'lgan ehtiyoj misli ko'rilmagan darajada o'sayotgan pallada, Yaponiya telekommunikatsiya giganti <b>NTT Data</b> va AQShning <b>Anthropic</b> kompaniyasi tarixiy bitimni e'lon qildi: <b>Yaponiyaning Osaka shahrida 1 trillion iyen (taxminan 6.3 milliard dollar) qiymatiga ega 500 megavattlik maxsus AI ma'lumotlar markazi quriladi</b>.</p>\n\n<h2 class=\"article-section-title\">Nega aynan Yaponiya va Anthropic?</h2>\n<p>Anthropic o'zining Claude modellari (Opus, Sonnet, Haiku) uchun Shimoliy Amerikadan tashqarida eng yirik mustaqil hisoblash poligonini barpo etishni maqsad qilgan. Yaponiya hukumati esa xorijiy bulutlarga to'liq qaram bo'lmaslik va mahalliy korxonalar ma'lumotlari mamlakat ichida qolishini ta'minlash uchun suveren AI infratuzilmasiga milliardlab dollar subsidiya ajratmoqda.</p>\n<p>NTT Data bilan tuzilgan ushbu strategik kelishuv Osiyo bozorida Claude modellarining korporativ sektorga integratsiyasini tezlashtiradi va kechikish vaqtini (latency) minimal darajaga tushiradi.</p>\n\n<h2 class=\"article-section-title\">Loyihaning asosiy texnik ko'rsatkichlari</h2>\n<p>Mazkur majmua dunyodagi eng ilg'or muhandislik standartlari asosida qad rostlaydi:</p>\n<ul class=\"article-list\">\n  <li><b>500 megavatt umumiy quvvat:</b> Markaz yuz minglab eng yangi avlod GPU va maxsus AI tezlatgichlarini uzluksiz energiya bilan ta'minlay oladi.</li>\n  <li><b>100% yashil energiya:</b> Majmua to'liq quyosh, gidro va atom energiyasi manbalariga ulanib, nol uglerod chiqindisi talablariga javob beradi.</li>\n  <li><b>Suyuqlik orqali sovutish:</b> Haddan tashqari yuqori hisoblash zichligini ushlab turish uchun an'anaviy havoda sovutish o'rniga to'g'ridan-to'g'ri suyuqlikli sovitish (direct-to-chip liquid cooling) tizimi joriy etiladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt kelajagini faqat bitta mintaqada jamlab bo'lmasligini yaxshi tushunamiz. Yaponiya jahon darajasidagi muhandislik va ma'lumotlar madaniyatiga ega, NTT Data bilan hamkorligimiz esa Osiyo uchun eng xavfsiz va qudratli poydevor bo'ladi.\" — Anthropic boshqaruvi bayonotidan</p>\n\n<h2 class=\"article-section-title\">Biznes va mintaqa uchun strategik xulosalar</h2>\n<p class=\"article-step\"><b>1. Suveren AI davri:</b> Korxonalar o'z nozik tijorat sirlarini xorijga jo'natmasdan, bevosita mahalliy xavfsiz serverlarda o'qitish va ishlatish imkoniyatiga ega bo'ladilar.</p>\n<p class=\"article-step\"><b>2. Mintaqaviy raqobat:</b> Yaponiya sun'iy intellekt infratuzilmasi bo'yicha Singapur va boshqa mintaqaviy markazlar bilan raqobatda yetakchi o'ringa chiqmoqda.</p>"
+  },
+  "nvidia-va-riverlane-kvant-xatoliklarini-tuzatishda-rekord-2026": {
+    "id": "nvidia-va-riverlane-kvant-xatoliklarini-tuzatishda-rekord-2026",
+    "slug": "nvidia-va-riverlane-kvant-xatoliklarini-tuzatishda-rekord-2026",
+    "title": "Nvidia Va Riverlane Kvant Hisoblashlarda Yangi Rekord O‘rnatdi",
+    "kicker": "KVANT TEXNOLOGIYALARI VA AI · NVIDIA & RIVERLANE",
+    "meta_title": "Nvidia Va Riverlane Kvant Hisoblashlarda Yangi Rekord O‘rnatdi — AiNoma",
+    "meta_description": "Nvidia va Riverlane H100 GPU klasterlari yordamida kvant sirt kodlari xatoliklarini dekodlash vaqtini 3 daqiqadan 2.8 soniyagacha qisqartirib, jahon rekordini qayd etdi.",
+    "category": "Texnologiya",
+    "audience": "muhandislar va tadqiqotchilar",
+    "event_date": "2026-10-13",
+    "source_date": "2026-10-13",
+    "source_published_date": "2026-10-13",
+    "ainoma_published_date": "2026-10-14",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Nvidia va Riverlane sun'iy intellekt chiplaridan foydalanib kvant kompyuterlaridagi eng asosiy to'siq — kubitlar xatoligini real vaqtda tuzatishda 60 barobar tezlashuvga erishdi.",
+    "img": "assets/ai_network.jpg",
+    "imgAlt": "Nvidia va Riverlane Kvant Xatoliklarini Dekodlash Rekordi 2026",
+    "qisqacha": [
+      "Nvidia va Riverlane kompaniyalari kvant sirt kodlarini (surface code) kalibrlash va xatoliklarni tahlil qilish vaqtini 3 daqiqadan 2.8 soniyagacha tushirdilar.",
+      "Kvant hisoblashlaridagi eng katta to'siq bo'lgan dekoherentlik va shovqin Nvidia H100 GPU klasterlaridagi parallel AI algoritmlari orqali hal qilindi.",
+      "Mazkur yutuq kvant protsessorlarini sun'iy intellekt superkompyuterlariga real vaqtda ulash va tijoriy kvant-AI modellarini qurish yo'lini ochadi."
+    ],
+    "primary_source": {
+      "name": "Nvidia Newsroom",
+      "title": "Nvidia and Riverlane Shatter Latency Record for Quantum Error Correction",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-riverlane-quantum-decoding-breakthrough-2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Quantum Computing Report",
+        "title": "Real-time surface code decoding achieved with GPU acceleration",
+        "url": "https://quantumcomputingreport.com/news/nvidia-riverlane-surface-code-2026/",
+        "badge": "ILMIY TAHLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Kvant kompyuterlarining eng zaif nuqtasi bo'lgan shovqin va kubitlar xatoligini to'g'irlashda katta burilish yuz berdi. <b>Nvidia</b> va kvant xatoliklarini tuzatish bo'yicha yetakchi hisoblangan Buyuk Britaniyaning <b>Riverlane</b> laboratoriyasi H100 GPU klasterlari yordamida kvant sirt kodlarini (surface codes) dekodlash va kalibrlash vaqtini <b>3 daqiqadan 2.8 soniyagacha</b> tushirib, yangi jahon rekordini o'rnatdilar.</p>\n\n<h2 class=\"article-section-title\">Kvant xatoliklari nega eng katta to'siq edi?</h2>\n<p>Kvant protsessorlari (QPU) nihoyatda nozik jismoniy tizimlardir. Haroratning eng kichik tebranishi yoki elektromagnit shovqin kubitlardagi superpozitsiyani buzadi (dekoherentlik). Buning oldini olish uchun yuzlab jismoniy kubitlar bitta mantiqiy xavfsiz kubitga birlashtiriladi va uzluksiz xatoliklar tekshiruvi o'tkaziladi.</p>\n<p>Biroq ilgari bu tekshiruv va kalibrlash jarayoni bir necha daqiqa vaqt olar edi. Kvant holatlari esa millisekundlar ichida parchalanib ketgani sababli, an'anaviy hisoblash tizimlari kvant xatolariga real vaqtda yetib kela olmas edi.</p>\n\n<h2 class=\"article-section-title\">GPU tezlatgichlari va parallel dekodlash</h2>\n<p>Nvidia va Riverlane ushbu muammoni hal qilish uchun maxsus tensor algoritmlari va GPU parallelizmidan foydalandilar:</p>\n<ul class=\"article-list\">\n  <li><b>60 barobardan ortiq tezlashuv:</b> Ilgari 180 soniya talab qilgan eng murakkab sirt kodi matritsalari endi atigi 2.8 soniyada to'liq dekodlanadi va xatolar o'rni aniqlanadi.</li>\n  <li><b>Real vaqtli tuzatish:</b> Ushbu tezlik kvant tizimiga hisoblash davomida o'zini o'zi barqarorlashtirish imkonini beradi.</li>\n  <li><b>Gibrid Kvant-AI arxitekturasi:</b> Yangi tizim Nvidia CUDA-Q dasturlash platformasiga to'liq integratsiya qilinib, an'anaviy sun'iy intellekt modellari bilan kvant protsessorlarini to'g'ridan-to'g'ri bog'laydi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Kvant hisoblashlari va sun'iy intellekt endi alohida sohalar emas. GPU klasterlari kvant tizimlarini barqaror ushlab turuvchi asab tizimiga aylanmoqda.\" — Nvidia kvant hisoblashlari bo'limi direktori</p>\n\n<h2 class=\"article-section-title\">Ilm-fan va sanoat uchun amaliy ahamiyati</h2>\n<p class=\"article-step\"><b>1. Yangi materiallar va dori-darmonlar:</b> Molekulyar simulyatsiyalar xatoliksiz kvant tizimlarida bir necha soatda hisoblab chiqilishi mumkin bo'ladi.</p>\n<p class=\"article-step\"><b>2. Tijoriy kvant kompyuterlari:</b> Bu yutuq kvant texnologiyalarini nazariy laboratoriyalardan real sanoat va moliya amaliyotiga ko'chirish muddatini bir necha yilga yaqinlashtirdi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-14",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Kvant texnologiyalari va hisoblash arxitekturasi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Kvant kompyuterlarining eng zaif nuqtasi bo'lgan shovqin va kubitlar xatoligini to'g'irlashda katta burilish yuz berdi. <b>Nvidia</b> va kvant xatoliklarini tuzatish bo'yicha yetakchi hisoblangan Buyuk Britaniyaning <b>Riverlane</b> laboratoriyasi H100 GPU klasterlari yordamida kvant sirt kodlarini (surface codes) dekodlash va kalibrlash vaqtini <b>3 daqiqadan 2.8 soniyagacha</b> tushirib, yangi jahon rekordini o'rnatdilar.</p>\n\n<h2 class=\"article-section-title\">Kvant xatoliklari nega eng katta to'siq edi?</h2>\n<p>Kvant protsessorlari (QPU) nihoyatda nozik jismoniy tizimlardir. Haroratning eng kichik tebranishi yoki elektromagnit shovqin kubitlardagi superpozitsiyani buzadi (dekoherentlik). Buning oldini olish uchun yuzlab jismoniy kubitlar bitta mantiqiy xavfsiz kubitga birlashtiriladi va uzluksiz xatoliklar tekshiruvi o'tkaziladi.</p>\n<p>Biroq ilgari bu tekshiruv va kalibrlash jarayoni bir necha daqiqa vaqt olar edi. Kvant holatlari esa millisekundlar ichida parchalanib ketgani sababli, an'anaviy hisoblash tizimlari kvant xatolariga real vaqtda yetib kela olmas edi.</p>\n\n<h2 class=\"article-section-title\">GPU tezlatgichlari va parallel dekodlash</h2>\n<p>Nvidia va Riverlane ushbu muammoni hal qilish uchun maxsus tensor algoritmlari va GPU parallelizmidan foydalandilar:</p>\n<ul class=\"article-list\">\n  <li><b>60 barobardan ortiq tezlashuv:</b> Ilgari 180 soniya talab qilgan eng murakkab sirt kodi matritsalari endi atigi 2.8 soniyada to'liq dekodlanadi va xatolar o'rni aniqlanadi.</li>\n  <li><b>Real vaqtli tuzatish:</b> Ushbu tezlik kvant tizimiga hisoblash davomida o'zini o'zi barqarorlashtirish imkonini beradi.</li>\n  <li><b>Gibrid Kvant-AI arxitekturasi:</b> Yangi tizim Nvidia CUDA-Q dasturlash platformasiga to'liq integratsiya qilinib, an'anaviy sun'iy intellekt modellari bilan kvant protsessorlarini to'g'ridan-to'g'ri bog'laydi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Kvant hisoblashlari va sun'iy intellekt endi alohida sohalar emas. GPU klasterlari kvant tizimlarini barqaror ushlab turuvchi asab tizimiga aylanmoqda.\" — Nvidia kvant hisoblashlari bo'limi direktori</p>\n\n<h2 class=\"article-section-title\">Ilm-fan va sanoat uchun amaliy ahamiyati</h2>\n<p class=\"article-step\"><b>1. Yangi materiallar va dori-darmonlar:</b> Molekulyar simulyatsiyalar xatoliksiz kvant tizimlarida bir necha soatda hisoblab chiqilishi mumkin bo'ladi.</p>\n<p class=\"article-step\"><b>2. Tijoriy kvant kompyuterlari:</b> Bu yutuq kvant texnologiyalarini nazariy laboratoriyalardan real sanoat va moliya amaliyotiga ko'chirish muddatini bir necha yilga yaqinlashtirdi.</p>"
+  },
   "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026": {
     "id": "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026",
     "slug": "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026",
