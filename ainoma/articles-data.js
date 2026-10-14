@@ -1,6 +1,53 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026": {
+    "id": "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026",
+    "slug": "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026",
+    "title": "DeepMind Telefonlarda Firibgarlikni Aniqlovchi Maxfiy AI Chiqardi",
+    "kicker": "KIBERXAVFSIZLIK · GOOGLE DEEPMIND",
+    "meta_title": "DeepMind Telefonlarda Firibgarlikni Aniqlovchi Maxfiy AI Chiqardi — AiNoma",
+    "meta_description": "Google DeepMind va Singapur hukumati shaxsiy xabarlarni bulutga yubormasdan, to'g'ridan-to'g'ri smartfonning o'zida firibgarlarni fosh qiluvchi Gemma AI modelini taqdim etdi.",
+    "category": "Texnologiya",
+    "audience": "foydalanuvchilar va muhandislar",
+    "event_date": "2026-10-14",
+    "source_date": "2026-10-14",
+    "source_published_date": "2026-10-14",
+    "ainoma_published_date": "2026-10-14",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Google DeepMind smartfonlarda to'liq lokal ishlovchi, shaxsiy yozishmalarni hech qayerga uzatmasdan moliyaviy firibgarlik va psixologik tuzoqlarni real vaqtda to'xtatuvchi AI modelini chiqardi.",
+    "img": "assets/ai_sandbox_security.jpg",
+    "imgAlt": "Google DeepMind Telefonlarda Firibgarlikdan Himoya AI 2026",
+    "qisqacha": [
+      "Google DeepMind va Singapur GovTech agentligi ixcham Gemma modeli asosida to'g'ridan-to'g'ri smartfon ichida ishlovchi (on-device) xavfsizlik tizimini qurdilar.",
+      "Model xabarlarni tashqi serverlarga yubormaydi: u yozishmalardagi shubhali manipulyatsiyani lokal tekshirib, foydalanuvchi pul o'tkazishidan avval ogohlantiradi.",
+      "Ikki bosqichli arxitektura sababli telefon quvvati tejaladi va shifrlangan messenjerlardagi (Telegram, WhatsApp) konfidentsiallik buzilmaydi."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind Blog",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "url": "https://deepmind.google/discover/blog/google-deepmind-and-singapore-government-collaborate-to-build-fine-tuned-ai-model-for-scam-detection/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "FinTech News Singapore",
+        "title": "Google DeepMind and GovTech Partner on Privacy-Preserving AI Scam Detection",
+        "url": "https://fintechnews.sg/ai-scam-detection-deepmind-govtech-2026/",
+        "badge": "XALQARO SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Kiberjinoyatchilar oddiy fishing havolalaridan voz kechib, qurbonlarni kunlab psixologik manipulyatsiya qiluvchi murakkab moliyaviy tuzoqlarga o'tayotgan bir paytda, <b>Google DeepMind</b> va Singapur Davlat Texnologiyalari Agentligi (GovTech) inqilobiy yechimni taqdim etdi: <b>to'g'ridan-to'g'ri foydalanuvchi telefonida ishlovchi shaxsiy AI himoyachisi</b>.</p>\n\n<h2 class=\"article-section-title\">Nega an'anaviy himoya tizimlari ojiz qolmoqda?</h2>\n<p>So'nggi yillarda firibgarliklar umumiy jinoyatlarning yarmidan ko'prog'ini tashkil etib, milliardlab dollar zararga sabab bo'lmoqda. Jinoyatchilar soxta investitsiya, yolg'on vakansiyalar yoki davlat idoralari nomidan yozib, qurbonlarni o'z ixtiyori bilan pul o'tkazishga ko'ndirmoqda.</p>\n<p>Zamonaviy messenjerlar (WhatsApp, Signal, Telegram) shifrlangan (end-to-end encryption) bo'lgani sababli, bulutdagi xavfsizlik filtrlari bu yozishmalarni ko'ra olmaydi. Xabarlarni bulutga tekshirish uchun yuborish esa fuqarolarning shaxsiy daxlsizligini qo'pol ravishda buzadi.</p>\n\n<h2 class=\"article-section-title\">Maxfiylikni buzmaydigan «On-Device» sun'iy intellekt</h2>\n<p>Google DeepMind ushbu muammoni hal qilish uchun o'zining yengil <b>Gemma</b> modelini maxsus moslashtirdi. Ushbu tizim barcha tahlillarni smartfonning o'z protsessorida (lokal) bajaradi:</p>\n<ul class=\"article-list\">\n  <li><b>Xabarlar telefondan tashqariga chiqmaydi:</b> Shaxsiy yozishmalar na Google'ga va na hukumat serverlariga jo'natilmaydi. Hamma hisob-kitoblar faqat qurilma xotirasida kechadi.</li>\n  <li><b>Ikki bosqichli tejovchi arxitektura:</b> Batareya quvvatini behuda sarflamaslik uchun dastlab mikro-klassifikator xabarni saralaydi, faqat shubhali suhbat boshlangandagina Gemma modeli kontekstni tahlil qiladi.</li>\n  <li><b>Real vaqtli ogohlantirish:</b> Agar suhbatdosh pul talab qilish, tahdid yoki qalbaki investitsiya alomatlarini boshlasa, tizim ekranga qizil ogohlantirish chiqarib, operatsiyani to'xtatishni maslahat beradi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt insonlarning eng nozik va shaxsiy suhbatlarini himoya qilishda ularning maxfiyligini zarracha qurbon qilmasligini isbotladik.\" — Google DeepMind muhandislari guruhi</p>\n\n<h2 class=\"article-section-title\">Foydalanuvchilar va banklar uchun ahamiyati</h2>\n<p class=\"article-step\"><b>1. Moliyaviy xavfsizlik:</b> Foydalanuvchi aldanib bank kartasi yoki parolini begonalarga yuborishidan oldin to'xtatib qolinadi.</p>\n<p class=\"article-step\"><b>2. Lokal AI davri:</b> Bu tajriba ko'rsatmoqdaki, kelajak sun'iy intellekti faqat gigant data-markazlarda emas, har bir insonning cho'ntagidagi smartfonda to'liq avtonom va bepul xizmat qiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-14",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Mobil kiberxavfsizlik va On-Device AI guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Kiberjinoyatchilar oddiy fishing havolalaridan voz kechib, qurbonlarni kunlab psixologik manipulyatsiya qiluvchi murakkab moliyaviy tuzoqlarga o'tayotgan bir paytda, <b>Google DeepMind</b> va Singapur Davlat Texnologiyalari Agentligi (GovTech) inqilobiy yechimni taqdim etdi: <b>to'g'ridan-to'g'ri foydalanuvchi telefonida ishlovchi shaxsiy AI himoyachisi</b>.</p>\n\n<h2 class=\"article-section-title\">Nega an'anaviy himoya tizimlari ojiz qolmoqda?</h2>\n<p>So'nggi yillarda firibgarliklar umumiy jinoyatlarning yarmidan ko'prog'ini tashkil etib, milliardlab dollar zararga sabab bo'lmoqda. Jinoyatchilar soxta investitsiya, yolg'on vakansiyalar yoki davlat idoralari nomidan yozib, qurbonlarni o'z ixtiyori bilan pul o'tkazishga ko'ndirmoqda.</p>\n<p>Zamonaviy messenjerlar (WhatsApp, Signal, Telegram) shifrlangan (end-to-end encryption) bo'lgani sababli, bulutdagi xavfsizlik filtrlari bu yozishmalarni ko'ra olmaydi. Xabarlarni bulutga tekshirish uchun yuborish esa fuqarolarning shaxsiy daxlsizligini qo'pol ravishda buzadi.</p>\n\n<h2 class=\"article-section-title\">Maxfiylikni buzmaydigan «On-Device» sun'iy intellekt</h2>\n<p>Google DeepMind ushbu muammoni hal qilish uchun o'zining yengil <b>Gemma</b> modelini maxsus moslashtirdi. Ushbu tizim barcha tahlillarni smartfonning o'z protsessorida (lokal) bajaradi:</p>\n<ul class=\"article-list\">\n  <li><b>Xabarlar telefondan tashqariga chiqmaydi:</b> Shaxsiy yozishmalar na Google'ga va na hukumat serverlariga jo'natilmaydi. Hamma hisob-kitoblar faqat qurilma xotirasida kechadi.</li>\n  <li><b>Ikki bosqichli tejovchi arxitektura:</b> Batareya quvvatini behuda sarflamaslik uchun dastlab mikro-klassifikator xabarni saralaydi, faqat shubhali suhbat boshlangandagina Gemma modeli kontekstni tahlil qiladi.</li>\n  <li><b>Real vaqtli ogohlantirish:</b> Agar suhbatdosh pul talab qilish, tahdid yoki qalbaki investitsiya alomatlarini boshlasa, tizim ekranga qizil ogohlantirish chiqarib, operatsiyani to'xtatishni maslahat beradi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt insonlarning eng nozik va shaxsiy suhbatlarini himoya qilishda ularning maxfiyligini zarracha qurbon qilmasligini isbotladik.\" — Google DeepMind muhandislari guruhi</p>\n\n<h2 class=\"article-section-title\">Foydalanuvchilar va banklar uchun ahamiyati</h2>\n<p class=\"article-step\"><b>1. Moliyaviy xavfsizlik:</b> Foydalanuvchi aldanib bank kartasi yoki parolini begonalarga yuborishidan oldin to'xtatib qolinadi.</p>\n<p class=\"article-step\"><b>2. Lokal AI davri:</b> Bu tajriba ko'rsatmoqdaki, kelajak sun'iy intellekti faqat gigant data-markazlarda emas, har bir insonning cho'ntagidagi smartfonda to'liq avtonom va bepul xizmat qiladi.</p>"
+  },
   "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026": {
     "id": "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026",
     "slug": "anthropic-claude-distillyatsiya-hujumlari-himoyasi-2026",
