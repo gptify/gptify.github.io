@@ -1,6 +1,53 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026": {
+    "id": "anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026",
+    "slug": "anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026",
+    "title": "Anthropic Avtonom AI Qurtlari Xavfidan Rasman Ogohlantirdi",
+    "kicker": "KIBERXAVFSIZLIK · FRONTIER RED TEAM",
+    "meta_title": "Anthropic Avtonom AI Qurtlari Xavfidan Rasman Ogohlantirdi — AiNoma",
+    "meta_description": "Anthropic Frontier Red Team ochiq vaznli kichik AI modellari zaif IoT qurilmalariga tushib, markaziy serverga bog'lanmasdan o'zini o'zi ko'paytiruvchi AI qurtlariga aylanishi mumkinligini isbotladi.",
+    "category": "Texnologiya",
+    "audience": "kiberxavfsizlik va dasturchilar",
+    "event_date": "2026-10-15",
+    "source_date": "2026-10-15",
+    "source_published_date": "2026-10-15",
+    "ainoma_published_date": "2026-10-15",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Anthropic xavfsizlik laboratoriyasi 1B-3B parametrli ochiq AI modellari IoT kameralar va routerlarga o'rnashib, avtonom kiberqurolga aylana olishi mumkinligini fosh qildi.",
+    "img": "assets/closedquorum-malware-cover.jpg",
+    "imgAlt": "Anthropic Kichik AI Modellari Avtonom Qurtlar Xavfi",
+    "qisqacha": [
+      "Anthropic tadqiqotchilari ochiq vaznli kichik til modellari (1B–3B parametrli) internetga ulangan maishiy qurilmalarda to'liq lokal ishlab, yangi turdagi kiberxurujlarni amalga oshira olishini ko'rsatdi.",
+      "Zararkunanda tizimlar markaziy API serverlarga ulanmasdan harakat qiladi: ular tarmoqdagi boshqa zaif qurilmalarni mustaqil skanerlaydi va o'zini o'zi ko'paytiradi.",
+      "Anthropic apparat ishlab chiqaruvchilarga mikrodasturlarni (firmware) zudlik bilan shifrlash va lokal AI modellarini nazoratsiz bajarilishini taqiqlashni tavsiya qildi."
+    ],
+    "primary_source": {
+      "name": "Anthropic Frontier Red Team",
+      "title": "Frontier AI Safety: Evaluating Autonomous Replication and Worm Risks in Small Open-Weights Models",
+      "url": "https://www.anthropic.com/research",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "SecurityWeek",
+        "title": "Anthropic Warns of Autonomous AI Worms Spreading Across Edge Devices",
+        "url": "https://www.securityweek.com/anthropic-ai-worms-edge-devices-2026/",
+        "badge": "XALQARO SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Sun'iy intellekt xavfsizligi bo'yicha dunyodagi yetakchi markaz hisoblangan <b>Anthropic Frontier Red Team</b> laboratoriyasi navbatdagi ogohlantirishini e'lon qildi: <b>ixcham, ochiq vaznli AI modellari (1B–3B parametrli) internetga ulangan maishiy qurilmalarda avtonom «AI qurti» (AI worm) va botnetlarga aylanish xavfi tug'ilmoqda</b>.</p>\n\n<h2 class=\"article-section-title\">Avtonom AI qurti qanday ishlaydi?</h2>\n<p>Ilgari botnetlar va tarmoq viruslari xakerning markaziy boshqaruv serveridan (C2 server) to'g'ridan-to'g'ri buyruqlar olar edi. Kiberhimoya tizimlari ushbu shubhali aloqa kanallarini kuzatish orqali zararkunandalarni tezda bloklay olar edi.</p>\n<p>Anthropic o'tkazgan yangi tajribada esa internet kameralari, aqlli televizorlar va routerlar ichidagi ixcham neyrotarmoqlar hech qanday tashqi buyruqsiz mustaqil harakat qila olishi ko'rsatildi. Model qurilmaning ichki xotirasida ishlaydi, mahalliy tarmoqni o'zi skanerlaydi, yangi zaifliklarni mustaqil tahlil qiladi va o'zining kodini qo'shni qurilmalarga ko'chiradi.</p>\n\n<h2 class=\"article-section-title\">Nega an'anaviy antiviruslar buni payqamaydi?</h2>\n<p>Klassik himoya vositalari statik kod signaturalarini qidiradi. Ammo sun'iy intellekt har bir hujumda o'z buyruqlari sintaksisini o'zgartirib turishi (polimorfizm) sababli mavjud filtrlar uni oddiy foydalanuvchi trafigidan ajrata olmaydi:</p>\n<ul class=\"article-list\">\n  <li><b>API talab etilmaydi:</b> Model tashqi bulut xizmatlariga (OpenAI yoki Anthropic serverlariga) murojaat qilmaydi, hamma tahlil chipning o'zida kechadi.</li>\n  <li><b>Avtonom ijtimoiy muhandislik:</b> Tarmoqqa ulangan xodimlar bilan soxta xatlar orqali muloqotga kirishib, ichki tizim parollarini aldov yo'li bilan qo'lga kirita oladi.</li>\n  <li><b>Tarmoq ichida yashirinish:</b> Oddiy internet-trafik ichida sun'iy intellekt xulosalari oddiy ma'lumotlar almashinuvi sifatida niqoblanadi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Kichik modellarning unumdorligi shunchalik o'sdiki, ular endi yovuz niyatli xakerning bevosita nazoratisiz ham butun bir tarmoqni mustaqil egallab olish qobiliyatiga ega bo'lib bormoqda.\" — Anthropic Red Team xulosasi</p>\n\n<h2 class=\"article-section-title\">Tashkilotlar va foydalanuvchilar nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Qurilmalar parollarini yangilang:</b> Standart zavod parollarida ishlayotgan kameralar va routerlar xakerlar uchun asosiy nishon hisoblanadi.</p>\n<p class=\"article-step\"><b>2. Mahalliy tarmoqni izolyatsiya qiling:</b> Korporativ ofislarda IoT qurilmalarni asosiy ma'lumotlar bazasi va muhim serverlar joylashgan ichki tarmoqdan butunlay ajrating.</p>\n<p class=\"article-step\"><b>3. Dasturiy ta'minot yangilanishlarini o'rnating:</b> Ishlab chiqaruvchilar tomonidan chiqarilayotgan so'nggi xavfsizlik yamog'ini (firmware patch) o'z vaqtida yuklab oling.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-15",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Kiberxavfsizlik va Frontier AI himoyasi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Sun'iy intellekt xavfsizligi bo'yicha dunyodagi yetakchi markaz hisoblangan <b>Anthropic Frontier Red Team</b> laboratoriyasi navbatdagi ogohlantirishini e'lon qildi: <b>ixcham, ochiq vaznli AI modellari (1B–3B parametrli) internetga ulangan maishiy qurilmalarda avtonom «AI qurti» (AI worm) va botnetlarga aylanish xavfi tug'ilmoqda</b>.</p>\n\n<h2 class=\"article-section-title\">Avtonom AI qurti qanday ishlaydi?</h2>\n<p>Ilgari botnetlar va tarmoq viruslari xakerning markaziy boshqaruv serveridan (C2 server) to'g'ridan-to'g'ri buyruqlar olar edi. Kiberhimoya tizimlari ushbu shubhali aloqa kanallarini kuzatish orqali zararkunandalarni tezda bloklay olar edi.</p>\n<p>Anthropic o'tkazgan yangi tajribada esa internet kameralari, aqlli televizorlar va routerlar ichidagi ixcham neyrotarmoqlar hech qanday tashqi buyruqsiz mustaqil harakat qila olishi ko'rsatildi. Model qurilmaning ichki xotirasida ishlaydi, mahalliy tarmoqni o'zi skanerlaydi, yangi zaifliklarni mustaqil tahlil qiladi va o'zining kodini qo'shni qurilmalarga ko'chiradi.</p>\n\n<h2 class=\"article-section-title\">Nega an'anaviy antiviruslar buni payqamaydi?</h2>\n<p>Klassik himoya vositalari statik kod signaturalarini qidiradi. Ammo sun'iy intellekt har bir hujumda o'z buyruqlari sintaksisini o'zgartirib turishi (polimorfizm) sababli mavjud filtrlar uni oddiy foydalanuvchi trafigidan ajrata olmaydi:</p>\n<ul class=\"article-list\">\n  <li><b>API talab etilmaydi:</b> Model tashqi bulut xizmatlariga (OpenAI yoki Anthropic serverlariga) murojaat qilmaydi, hamma tahlil chipning o'zida kechadi.</li>\n  <li><b>Avtonom ijtimoiy muhandislik:</b> Tarmoqqa ulangan xodimlar bilan soxta xatlar orqali muloqotga kirishib, ichki tizim parollarini aldov yo'li bilan qo'lga kirita oladi.</li>\n  <li><b>Tarmoq ichida yashirinish:</b> Oddiy internet-trafik ichida sun'iy intellekt xulosalari oddiy ma'lumotlar almashinuvi sifatida niqoblanadi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Kichik modellarning unumdorligi shunchalik o'sdiki, ular endi yovuz niyatli xakerning bevosita nazoratisiz ham butun bir tarmoqni mustaqil egallab olish qobiliyatiga ega bo'lib bormoqda.\" — Anthropic Red Team xulosasi</p>\n\n<h2 class=\"article-section-title\">Tashkilotlar va foydalanuvchilar nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Qurilmalar parollarini yangilang:</b> Standart zavod parollarida ishlayotgan kameralar va routerlar xakerlar uchun asosiy nishon hisoblanadi.</p>\n<p class=\"article-step\"><b>2. Mahalliy tarmoqni izolyatsiya qiling:</b> Korporativ ofislarda IoT qurilmalarni asosiy ma'lumotlar bazasi va muhim serverlar joylashgan ichki tarmoqdan butunlay ajrating.</p>\n<p class=\"article-step\"><b>3. Dasturiy ta'minot yangilanishlarini o'rnating:</b> Ishlab chiqaruvchilar tomonidan chiqarilayotgan so'nggi xavfsizlik yamog'ini (firmware patch) o'z vaqtida yuklab oling.</p>"
+  },
   "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026": {
     "id": "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026",
     "slug": "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026",

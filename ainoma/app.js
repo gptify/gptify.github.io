@@ -255,7 +255,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Anthropic Avtonom AI Qurtlari Xavfidan Rasman Ogohlantirdi", u: "yangiliklar/anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026/", k: "anthropic avtonom ai qurtlari xavfidan rasman ogohlantirdi texnologiya anthropic frontier red team anthropic xavfsizlik laboratoriyasi 1b-3b parametrli ochiq ai modellari iot kameralar va routerlarga" },
   { t: "DeepMind Telefonlarda Firibgarlikni Aniqlovchi Maxfiy AI Chiqardi", u: "yangiliklar/google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026/", k: "deepmind telefonlarda firibgarlikni aniqlovchi maxfiy ai chiqardi texnologiya google deepmind blog google deepmind smartfonlarda to'liq lokal ishlovchi, shaxsiy yozishmalarni hech qayerga uzatmasdan " },
   { t: "NTT Data Va Anthropic Yaponiyada $6.3B Data-Markaz Qurmoqda", u: "yangiliklar/ntt-data-va-anthropic-yaponiyada-ai-markaz-qurmoqda-2026/", k: "ntt data va anthropic yaponiyada $6.3b data-markaz qurmoqda biznes ntt data corporation press release yaponiya giganti ntt data va anthropic osiyoda claude modellari uchun maxsus 500 megavattlik super-m" },
   { t: "Nvidia Va Riverlane Kvant Hisoblashlarda Yangi Rekord O‘rnatdi", u: "yangiliklar/nvidia-va-riverlane-kvant-xatoliklarini-tuzatishda-rekord-2026/", k: "nvidia va riverlane kvant hisoblashlarda yangi rekord o‘rnatdi texnologiya nvidia newsroom nvidia va riverlane sun'iy intellekt chiplaridan foydalanib kvant kompyuterlaridagi eng asosiy to'si" },
