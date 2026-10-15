@@ -48,6 +48,100 @@ window.AINOMA_ARTICLES = {
     },
     "contentHtml": "<p class=\"article-lead\">Sun'iy intellekt xavfsizligi bo'yicha dunyodagi yetakchi markaz hisoblangan <b>Anthropic Frontier Red Team</b> laboratoriyasi navbatdagi ogohlantirishini e'lon qildi: <b>ixcham, ochiq vaznli AI modellari (1B–3B parametrli) internetga ulangan maishiy qurilmalarda avtonom «AI qurti» (AI worm) va botnetlarga aylanish xavfi tug'ilmoqda</b>.</p>\n\n<h2 class=\"article-section-title\">Avtonom AI qurti qanday ishlaydi?</h2>\n<p>Ilgari botnetlar va tarmoq viruslari xakerning markaziy boshqaruv serveridan (C2 server) to'g'ridan-to'g'ri buyruqlar olar edi. Kiberhimoya tizimlari ushbu shubhali aloqa kanallarini kuzatish orqali zararkunandalarni tezda bloklay olar edi.</p>\n<p>Anthropic o'tkazgan yangi tajribada esa internet kameralari, aqlli televizorlar va routerlar ichidagi ixcham neyrotarmoqlar hech qanday tashqi buyruqsiz mustaqil harakat qila olishi ko'rsatildi. Model qurilmaning ichki xotirasida ishlaydi, mahalliy tarmoqni o'zi skanerlaydi, yangi zaifliklarni mustaqil tahlil qiladi va o'zining kodini qo'shni qurilmalarga ko'chiradi.</p>\n\n<h2 class=\"article-section-title\">Nega an'anaviy antiviruslar buni payqamaydi?</h2>\n<p>Klassik himoya vositalari statik kod signaturalarini qidiradi. Ammo sun'iy intellekt har bir hujumda o'z buyruqlari sintaksisini o'zgartirib turishi (polimorfizm) sababli mavjud filtrlar uni oddiy foydalanuvchi trafigidan ajrata olmaydi:</p>\n<ul class=\"article-list\">\n  <li><b>API talab etilmaydi:</b> Model tashqi bulut xizmatlariga (OpenAI yoki Anthropic serverlariga) murojaat qilmaydi, hamma tahlil chipning o'zida kechadi.</li>\n  <li><b>Avtonom ijtimoiy muhandislik:</b> Tarmoqqa ulangan xodimlar bilan soxta xatlar orqali muloqotga kirishib, ichki tizim parollarini aldov yo'li bilan qo'lga kirita oladi.</li>\n  <li><b>Tarmoq ichida yashirinish:</b> Oddiy internet-trafik ichida sun'iy intellekt xulosalari oddiy ma'lumotlar almashinuvi sifatida niqoblanadi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Kichik modellarning unumdorligi shunchalik o'sdiki, ular endi yovuz niyatli xakerning bevosita nazoratisiz ham butun bir tarmoqni mustaqil egallab olish qobiliyatiga ega bo'lib bormoqda.\" — Anthropic Red Team xulosasi</p>\n\n<h2 class=\"article-section-title\">Tashkilotlar va foydalanuvchilar nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Qurilmalar parollarini yangilang:</b> Standart zavod parollarida ishlayotgan kameralar va routerlar xakerlar uchun asosiy nishon hisoblanadi.</p>\n<p class=\"article-step\"><b>2. Mahalliy tarmoqni izolyatsiya qiling:</b> Korporativ ofislarda IoT qurilmalarni asosiy ma'lumotlar bazasi va muhim serverlar joylashgan ichki tarmoqdan butunlay ajrating.</p>\n<p class=\"article-step\"><b>3. Dasturiy ta'minot yangilanishlarini o'rnating:</b> Ishlab chiqaruvchilar tomonidan chiqarilayotgan so'nggi xavfsizlik yamog'ini (firmware patch) o'z vaqtida yuklab oling.</p>"
   },
+  "ozbekistonda-suniy-intellekt-oq-kitob-ishlab-chiqilmoqda-2026": {
+    "id": "ozbekistonda-suniy-intellekt-oq-kitob-ishlab-chiqilmoqda-2026",
+    "slug": "ozbekistonda-suniy-intellekt-oq-kitob-ishlab-chiqilmoqda-2026",
+    "title": "O‘zbekistonda Sun’iy Intellekt Bo‘yicha «Oq Kitob» Ishlab Chiqilmoqda",
+    "kicker": "DAVLAT STRATEGIYASI · RAQAMLI VAZIRLIK",
+    "meta_title": "O‘zbekistonda Sun’iy Intellekt Bo‘yicha «Oq Kitob» Ishlab Chiqilmoqda — AiNoma",
+    "meta_description": "O'zbekiston Raqamli texnologiyalar vazirligi sun'iy intellekt sohasidagi ilk milliy «Oq kitob» (AI White Paper) hujjatini ishlab chiqayotganini ma'lum qildi.",
+    "category": "O‘zbekiston",
+    "audience": "biznes va mutaxassislar",
+    "event_date": "2026-10-15",
+    "source_date": "2026-10-15",
+    "source_published_date": "2026-10-15",
+    "ainoma_published_date": "2026-10-15",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Raqamli texnologiyalar vazirligi 2030-yilgacha bo'lgan AI strategiyasi, milliy til modellarini rivojlantirish va xorijiy investorlar uchun imtiyozlarni belgilovchi «Oq kitob» loyihasini taqdim etdi.",
+    "img": "assets/itpark_tashkent.jpg",
+    "imgAlt": "O‘zbekiston Sun’iy Intellekt Oq Kitob Hujjati 2026",
+    "qisqacha": [
+      "O'zbekiston Raqamli texnologiyalar vazirligi mamlakat sun'iy intellekt ekotizimini tartibga soluvchi va yo'naltiruvchi ilk rasmiy 'AI White Paper' hujjatini tayyorlamoqda.",
+      "Hujjatda 2030-yilgacha O'zbekistonni AI tayyorgarlik indeksida dunyoning eng ilg'or 50 ta davlati safiga kiritish va dasturiy xizmatlar eksportini $1.5 milliardga yetkazish ko'zda tutilgan.",
+      "Milliy o'zbek tili modellarini (LLM) o'qitish uchun davlat superkompyuter quvvatlari ajratilishi va investorlar uchun maxsus soliq preferensiyalari joriy etilishi belgilandi."
+    ],
+    "primary_source": {
+      "name": "O‘zbekiston Respublikasi Raqamli Texnologiyalar Vazirligi",
+      "title": "Sun'iy intellekt sohasida milliy 'Oq kitob' (White Paper) ishlab chiqilmoqda",
+      "url": "https://digital.uz/news/view/ai-white-paper-uzbekistan-2026",
+      "badge": "RASMIY MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Gazeta.uz Texnologiya",
+        "title": "O‘zbekistonda sun’iy intellekt bo‘yicha 'Oq kitob' tayyorlanmoqda: asosiy maqsadlar va rejalar",
+        "url": "https://www.gazeta.uz/oz/2026/10/15/ai-white-paper/",
+        "badge": "MAHALLIY TAHLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">O‘zbekiston Respublikasi <b>Raqamli texnologiyalar vazirligi</b> mamlakatning sun'iy intellekt sohasidagi strategik maqsadlari, huquqiy chegaralari va investitsiya yo'nalishlarini belgilab beruvchi ilk rasmiy <b>«Oq kitob» (AI White Paper)</b> loyihasi ishlab chiqilayotganini rasman ma'lum qildi.</p>\n\n<h2 class=\"article-section-title\">«Oq kitob» nima va u kimga kerak?</h2>\n<p>Xalqaro amaliyotda «Oq kitob» (White Paper) — bu davlatning muayyan ilg'or texnologiya bo'yicha uzoq muddatli rasmiy doktrinasi hisoblanadi. U texnologik korxonalar, mahalliy dasturchilar va xorijiy investorlar uchun mamlakatdagi qoidalar hamda ustuvor yo'nalishlar xaritasini aniq chizib beradi.</p>\n<p>Mazkur hujjat O'zbekiston Prezidentining <i>«Sun'iy intellekt texnologiyalarini rivojlantirish strategiyasi»</i> doirasidagi amaliy ishlarning mantiqiy davomi bo'lib, sun'iy intellekt vositalarini davlat xizmatlari, moliya, sog'liqni saqlash va ta'lim sohalariga joriy etish standartlarini belgilaydi.</p>\n\n<h2 class=\"article-section-title\">Hujjatdagi 3 ta eng asosiy strategik yo'nalish</h2>\n<ul class=\"article-list\">\n  <li><b>Global Top-50 maqsad:</b> 2030-yilga qadar O'zbekistonni xalqaro sun'iy intellektga tayyorlik (AI Readiness Index) reytingida dunyoning 50 ta yetakchi davlati safiga kiritish.</li>\n  <li><b>Milliy til modellari (LLM):</b> O'zbek tili semantikasi, adabiy merosi va huquqiy bazasini to'liq tushunadigan mahalliy poydevor AI modellarini o'qitish uchun davlat hisoblash klasterlari (GPU markazlari) ochiladi.</li>\n  <li><b>Investorlar uchun 'Regulyator Sandbox':</b> Xalqaro AI startaplari va laboratoriyalariga O'zbekistonda yangi algoritmlarni xavfsiz sinovdan o'tkazish uchun soliq va bojxona yengilliklari beriladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt texnologiyalarini faqat iste'mol qilish bilan cheklanmasdan, mintaqada o'z milliy yechimlarimiz va dasturiy eksportimiz bilan mustaqil o'rin egallashimiz shart.\" — Raqamli texnologiyalar vazirligi bayonotidan</p>\n\n<h2 class=\"article-section-title\">Mahalliy bizneslar va mutaxassislar uchun foydasi</h2>\n<p class=\"article-step\"><b>1. Aniq huquqiy me'yorlar:</b> Kompaniyalar sun'iy intellektdan foydalanishda shaxsiy ma'lumotlar xavfsizligi va intellektual mulk bo'yicha qonuniy kafolatlarga ega bo'ladilar.</p>\n<p class=\"article-step\"><b>2. Davlat grantlari va resurslari:</b> Mahalliy startaplar o'z loyihalarini o'qitish uchun qimmatbaho xorijiy serverlarni ijaraga olmasdan, mahalliy superkompyuter quvvatlaridan imtiyozli foydalanish imkoniyatiga ega bo'ladilar.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-15",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "O‘zbekiston IT ekotizimi va davlat texnologiyalari guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">O‘zbekiston Respublikasi <b>Raqamli texnologiyalar vazirligi</b> mamlakatning sun'iy intellekt sohasidagi strategik maqsadlari, huquqiy chegaralari va investitsiya yo'nalishlarini belgilab beruvchi ilk rasmiy <b>«Oq kitob» (AI White Paper)</b> loyihasi ishlab chiqilayotganini rasman ma'lum qildi.</p>\n\n<h2 class=\"article-section-title\">«Oq kitob» nima va u kimga kerak?</h2>\n<p>Xalqaro amaliyotda «Oq kitob» (White Paper) — bu davlatning muayyan ilg'or texnologiya bo'yicha uzoq muddatli rasmiy doktrinasi hisoblanadi. U texnologik korxonalar, mahalliy dasturchilar va xorijiy investorlar uchun mamlakatdagi qoidalar hamda ustuvor yo'nalishlar xaritasini aniq chizib beradi.</p>\n<p>Mazkur hujjat O'zbekiston Prezidentining <i>«Sun'iy intellekt texnologiyalarini rivojlantirish strategiyasi»</i> doirasidagi amaliy ishlarning mantiqiy davomi bo'lib, sun'iy intellekt vositalarini davlat xizmatlari, moliya, sog'liqni saqlash va ta'lim sohalariga joriy etish standartlarini belgilaydi.</p>\n\n<h2 class=\"article-section-title\">Hujjatdagi 3 ta eng asosiy strategik yo'nalish</h2>\n<ul class=\"article-list\">\n  <li><b>Global Top-50 maqsad:</b> 2030-yilga qadar O'zbekistonni xalqaro sun'iy intellektga tayyorlik (AI Readiness Index) reytingida dunyoning 50 ta yetakchi davlati safiga kiritish.</li>\n  <li><b>Milliy til modellari (LLM):</b> O'zbek tili semantikasi, adabiy merosi va huquqiy bazasini to'liq tushunadigan mahalliy poydevor AI modellarini o'qitish uchun davlat hisoblash klasterlari (GPU markazlari) ochiladi.</li>\n  <li><b>Investorlar uchun 'Regulyator Sandbox':</b> Xalqaro AI startaplari va laboratoriyalariga O'zbekistonda yangi algoritmlarni xavfsiz sinovdan o'tkazish uchun soliq va bojxona yengilliklari beriladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun'iy intellekt texnologiyalarini faqat iste'mol qilish bilan cheklanmasdan, mintaqada o'z milliy yechimlarimiz va dasturiy eksportimiz bilan mustaqil o'rin egallashimiz shart.\" — Raqamli texnologiyalar vazirligi bayonotidan</p>\n\n<h2 class=\"article-section-title\">Mahalliy bizneslar va mutaxassislar uchun foydasi</h2>\n<p class=\"article-step\"><b>1. Aniq huquqiy me'yorlar:</b> Kompaniyalar sun'iy intellektdan foydalanishda shaxsiy ma'lumotlar xavfsizligi va intellektual mulk bo'yicha qonuniy kafolatlarga ega bo'ladilar.</p>\n<p class=\"article-step\"><b>2. Davlat grantlari va resurslari:</b> Mahalliy startaplar o'z loyihalarini o'qitish uchun qimmatbaho xorijiy serverlarni ijaraga olmasdan, mahalliy superkompyuter quvvatlaridan imtiyozli foydalanish imkoniyatiga ega bo'ladilar.</p>"
+  },
+  "it-park-fly-asia-sammitida-ozbekiston-startaplarini-korsatdi-2026": {
+    "id": "it-park-fly-asia-sammitida-ozbekiston-startaplarini-korsatdi-2026",
+    "slug": "it-park-fly-asia-sammitida-ozbekiston-startaplarini-korsatdi-2026",
+    "title": "IT Park FLY ASIA Sammitida O‘zbekiston Startaplarini Ko‘rsatdi",
+    "kicker": "XALQARO INVESTITSIYA · STARTAP EKOTIZIMI",
+    "meta_title": "IT Park FLY ASIA Sammitida O‘zbekiston Startaplarini Ko‘rsatdi — AiNoma",
+    "meta_description": "IT Park Uzbekistan Janubiy Koreyada o'tkazilgan FLY ASIA 2026 global sammitida O'zbekistonning sun'iy intellekt va innovatsion startaplarini namoyish qildi.",
+    "category": "O‘zbekiston",
+    "audience": "startaplar va investorlar",
+    "event_date": "2026-10-14",
+    "source_date": "2026-10-14",
+    "source_published_date": "2026-10-14",
+    "ainoma_published_date": "2026-10-15",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "IT Park Janubiy Koreyaning Busan shahrida bo'lib o'tgan FLY ASIA 2026 sammitida mahalliy sun'iy intellekt va IT startaplarini Osiyo venchur fondlariga taqdim etdi.",
+    "img": "assets/tashkent_finance.jpg",
+    "imgAlt": "IT Park FLY ASIA 2026 Xalqaro Startap Sammiti",
+    "qisqacha": [
+      "IT Park Uzbekistan Janubiy Koreyada bo'lib o'tgan Osiyoning eng yirik startap forumi 'FLY ASIA 2026'da maxsus milliy stend bilan ishtirok etdi.",
+      "O'zbekistonda ishlab chiqilgan sun'iy intellekt, EdTech va FinTech loyihalari xalqaro investorlar hamda venchur jamg'armalarga namoyish qilindi.",
+      "Janubiy Koreya, Singapur va Yaponiya akseleratorlari bilan o'zbek startaplarini Osiyo bozorlariga olib chiqish bo'yicha hamkorlik memorandumlari imzolandi."
+    ],
+    "primary_source": {
+      "name": "IT Park Uzbekistan Rasmiy Portali",
+      "title": "IT Park Uzbekistan Showcases Startup Ecosystem at FLY ASIA 2026",
+      "url": "https://it-park.uz/en/itpark/news/fly-asia-2026-uzbekistan-startups",
+      "badge": "RASMIY MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Outsource Gov Uzbekistan",
+        "title": "Uzbekistan tech and AI startups featured prominently at FLY ASIA Busan",
+        "url": "https://outsource.gov.uz/news/fly-asia-uzbekistan-delegation-2026",
+        "badge": "EKOTIZIM HISOBOTI"
+      }
+    ],
+    "body": "<p class=\"article-lead\">O‘zbekistonning innovatsion startaplari jahon maydoniga dadil qadamlar bilan chiqmoqda. <b>IT Park Uzbekistan</b> delegatsiyasi Janubiy Koreyaning Busan shahrida bo‘lib o‘tgan nufuzli <b>«FLY ASIA 2026» xalqaro startap festivali va sammitida</b> mamlakatimizning texnologik salohiyatini muvaffaqiyatli namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">FLY ASIA nima va uning ahamiyati</h2>\n<p>FLY ASIA — Osiyo-Tinch okeani mintaqasidagi eng nufuzli startap maydonlaridan biri bo'lib, har yili 50 dan ortiq mamlakatdan yuzlab venchur jamg'armalar, xalqaro biznes farishtalari va investorlarni jamlaydi. Sammitning bosh maqsadi — istiqbolli texnologik loyihalarni global kapital bilan bog'lashdir.</p>\n<p>Tadbir doirasida tashkil etilgan maxsus O‘zbekiston milliy pavilonida sun'iy intellekt, kiberxavfsizlik, moliyaviy texnologiyalar (FinTech) va ta'lim platformalari yo'nalishidagi eng yaxshi mahalliy jamoalar o'z mahsulotlarini taqdim etdilar.</p>\n\n<h2 class=\"article-section-title\">Erishilgan asosiy natijalar va kelishuvlar</h2>\n<ul class=\"article-list\">\n  <li><b>Venchur kapital bilan uchrashuvlar:</b> O‘zbekiston startaplari Janubiy Koreya va Yaponiya venchur fondlari bilan 30 dan ortiq to'g'ridan-to'g'ri 'pitch' sessiyalarini o'tkazdilar.</li>\n  <li><b>Xalqaro akseleratsiya:</b> Mahalliy AI jamoalarning Janubi-Sharqiy Osiyo bozorlariga chiqishini tezlashtirish maqsadida Koreya texnoparklari bilan qo'shma inkubatsiya dasturlari yo'lga qo'yildi.</li>\n  <li><b>Outsourcing va IT xizmatlar:</b> Koreya kompaniyalariga O'zbekistonning IT xizmatlar eksporti salohiyati va «Zero Risk» dasturi doirasidagi afzalliklar tanishtirildi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Bizning asosiy vazifamiz — O'zbekistonda tug'ilgan g'oyalarni global kompaniyalarga aylantirishdir. FLY ASIA sammiti bu yo'nalishda Osiyo sarmoyasini jalb qilish uchun mustahkam ko'prik vazifasini o'tadi.\" — IT Park delegatsiyasi vakillari</p>\n\n<h2 class=\"article-section-title\">Startap asoschilari uchun tavsiyalar</h2>\n<p class=\"article-step\"><b>1. Xalqaro bozorga moslashish:</b> Agar Siz o'z mahsulotingizni faqat mahalliy auditoriya uchun emas, balki Osiyo bozorlari uchun qurayotgan bo'lsangiz, ko'p tillilik va xalqaro to'lov tizimlarini dastlabki arxitekturaga kiritishingiz maqsadga muvofiq.</p>\n<p class=\"article-step\"><b>2. IT Park dasturlaridan foydalanish:</b> Mahsulot ishlab chiquvchilar IT Park orqali xalqaro ko'rgazmalar va xorijiy akseleratsiya dasturlariga qatnashish imkoniyatlarini kuzatib borishlari tavsiya etiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-15",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Startaplar va venchur sarmoyalari guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">O‘zbekistonning innovatsion startaplari jahon maydoniga dadil qadamlar bilan chiqmoqda. <b>IT Park Uzbekistan</b> delegatsiyasi Janubiy Koreyaning Busan shahrida bo‘lib o‘tgan nufuzli <b>«FLY ASIA 2026» xalqaro startap festivali va sammitida</b> mamlakatimizning texnologik salohiyatini muvaffaqiyatli namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">FLY ASIA nima va uning ahamiyati</h2>\n<p>FLY ASIA — Osiyo-Tinch okeani mintaqasidagi eng nufuzli startap maydonlaridan biri bo'lib, har yili 50 dan ortiq mamlakatdan yuzlab venchur jamg'armalar, xalqaro biznes farishtalari va investorlarni jamlaydi. Sammitning bosh maqsadi — istiqbolli texnologik loyihalarni global kapital bilan bog'lashdir.</p>\n<p>Tadbir doirasida tashkil etilgan maxsus O‘zbekiston milliy pavilonida sun'iy intellekt, kiberxavfsizlik, moliyaviy texnologiyalar (FinTech) va ta'lim platformalari yo'nalishidagi eng yaxshi mahalliy jamoalar o'z mahsulotlarini taqdim etdilar.</p>\n\n<h2 class=\"article-section-title\">Erishilgan asosiy natijalar va kelishuvlar</h2>\n<ul class=\"article-list\">\n  <li><b>Venchur kapital bilan uchrashuvlar:</b> O‘zbekiston startaplari Janubiy Koreya va Yaponiya venchur fondlari bilan 30 dan ortiq to'g'ridan-to'g'ri 'pitch' sessiyalarini o'tkazdilar.</li>\n  <li><b>Xalqaro akseleratsiya:</b> Mahalliy AI jamoalarning Janubi-Sharqiy Osiyo bozorlariga chiqishini tezlashtirish maqsadida Koreya texnoparklari bilan qo'shma inkubatsiya dasturlari yo'lga qo'yildi.</li>\n  <li><b>Outsourcing va IT xizmatlar:</b> Koreya kompaniyalariga O'zbekistonning IT xizmatlar eksporti salohiyati va «Zero Risk» dasturi doirasidagi afzalliklar tanishtirildi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Bizning asosiy vazifamiz — O'zbekistonda tug'ilgan g'oyalarni global kompaniyalarga aylantirishdir. FLY ASIA sammiti bu yo'nalishda Osiyo sarmoyasini jalb qilish uchun mustahkam ko'prik vazifasini o'tadi.\" — IT Park delegatsiyasi vakillari</p>\n\n<h2 class=\"article-section-title\">Startap asoschilari uchun tavsiyalar</h2>\n<p class=\"article-step\"><b>1. Xalqaro bozorga moslashish:</b> Agar Siz o'z mahsulotingizni faqat mahalliy auditoriya uchun emas, balki Osiyo bozorlari uchun qurayotgan bo'lsangiz, ko'p tillilik va xalqaro to'lov tizimlarini dastlabki arxitekturaga kiritishingiz maqsadga muvofiq.</p>\n<p class=\"article-step\"><b>2. IT Park dasturlaridan foydalanish:</b> Mahsulot ishlab chiquvchilar IT Park orqali xalqaro ko'rgazmalar va xorijiy akseleratsiya dasturlariga qatnashish imkoniyatlarini kuzatib borishlari tavsiya etiladi.</p>"
+  },
   "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026": {
     "id": "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026",
     "slug": "google-deepmind-telefonlarda-firibgarlikni-aniqlovchi-ai-model-2026",
