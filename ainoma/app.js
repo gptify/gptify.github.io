@@ -257,7 +257,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Global Bozorlarda AI Va Chiplar $1T Yo‘qotdi", u: "yangiliklar/ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026/", k: "global bozorlarda ai va chiplar $1t yo‘qotdi iqtisodiyot semafor technology markets yarimo'tkazgich gigantlari aksiyalari birja savdolarida keskin arzonlashdi: qarz yuki va yuqori infl" },
+  { t: "Bank Of America AI Xatolarini Tuzatishga 1000 Muhandis Yolladi", u: "yangiliklar/bank-of-america-ai-xatolarini-tuzatishga-1000-muhandis-yolladi-2026/", k: "bank of america ai xatolarini tuzatishga 1000 muhandis yolladi texnologiya the neuron tech daily sun'iy intellekt bankning millionlab qatorli kod bazasida yillab yashiringan zaifliklarni fosh qildi" },
   { t: "Anthropic Avtonom AI Qurtlari Xavfidan Rasman Ogohlantirdi", u: "yangiliklar/anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026/", k: "anthropic avtonom ai qurtlari xavfidan rasman ogohlantirdi texnologiya anthropic frontier red team anthropic xavfsizlik laboratoriyasi 1b-3b parametrli ochiq ai modellari iot kameralar va routerlarga" },
   { t: "O‘zbekistonda Sun’iy Intellekt Bo‘yicha «Oq Kitob» Ishlab Chiqilmoqda", u: "yangiliklar/ozbekistonda-suniy-intellekt-oq-kitob-ishlab-chiqilmoqda-2026/", k: "o‘zbekistonda sun’iy intellekt bo‘yicha «oq kitob» ishlab chiqilmoqda o‘zbekiston o‘zbekiston respublikasi raqamli texnologiyalar vazirligi raqamli texnologiyalar vazirligi 2030-yilgacha bo'lgan ai strategiyasi, milliy til modellarini rivoj" },
   { t: "IT Park FLY ASIA Sammitida O‘zbekiston Startaplarini Ko‘rsatdi", u: "yangiliklar/it-park-fly-asia-sammitida-ozbekiston-startaplarini-korsatdi-2026/", k: "it park fly asia sammitida o‘zbekiston startaplarini ko‘rsatdi o‘zbekiston it park uzbekistan rasmiy portali it park janubiy koreyaning busan shahrida bo'lib o'tgan fly asia 2026 sammitida mahalliy sun'iy inte" },

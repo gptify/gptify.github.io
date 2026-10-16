@@ -1,6 +1,100 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026": {
+    "id": "ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026",
+    "slug": "ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026",
+    "title": "Global Bozorlarda AI Va Chiplar $1T Yo‘qotdi",
+    "kicker": "BOZORLAR VA MOLIYA · CHIP INQIROZI",
+    "meta_title": "Global Bozorlarda AI Va Chiplar $1T Yo‘qotdi — AiNoma",
+    "meta_description": "Yarimo'tkazgichlar va AI infratuzilmasi aksiyalari keskin pasayib, Samsung, SK Hynix va ASML boshchiligidagi kompaniyalar bir kunda $1 trillion qiymat yo'qotdi.",
+    "category": "Iqtisodiyot",
+    "audience": "investorlar va biznes rahbarlari",
+    "event_date": "2026-10-15",
+    "source_date": "2026-10-15",
+    "source_published_date": "2026-10-15",
+    "ainoma_published_date": "2026-10-16",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Yarimo'tkazgich gigantlari aksiyalari birja savdolarida keskin arzonlashdi: qarz yuki va yuqori inflyatsiya xavotirlari sabab bir kunda $1 trillionlik kapitallashuv yo'qotildi.",
+    "img": "assets/coreweave_nvidia_vera_cpu_2026.jpg",
+    "imgAlt": "Global Bozorlarda AI va Chip Aksiyalari Pasayishi 2026",
+    "qisqacha": [
+      "Samsung, SK Hynix, ASML va Advantest kabi yarimo'tkazgich gigantlarining aksiyalari xalqaro birjalarda ketma-ket keskin pasayishni qayd etdi.",
+      "Bozor tahlilchilari bu to'lqinni texnologiya kompaniyalarining AI data-markazlari uchun olgan yirik qarz majburiyatlari va obligatsiyalar bozoridagi xavotirlar bilan izohlamoqda.",
+      "Shunga qaramay, uzoq muddatli hisoblash quvvatlariga bo'lgan real korporativ talab pasaymagan, pasayish esa asosan spekulyativ baholarni to'g'rilash (korreksiya) hisoblanadi."
+    ],
+    "primary_source": {
+      "name": "Semafor Technology Markets",
+      "title": "The $1 Trillion AI Chip Sell-Off Rattles Tech Investment",
+      "url": "https://www.semafor.com/article/10/15/2026/chip-stocks-fall-1-trillion-debt-concerns",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Bloomberg Markets",
+        "title": "Semiconductor stocks slide as debt and inflation pressure AI infrastructure budgets",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-15/ai-chip-stocks-debt-correction",
+        "badge": "MOLIYAVIY TAHLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Global sun'iy intellekt bumasining asosiy dvigateli bo'lgan yarimo'tkazgichlar bozori so'nggi yillardagi eng jiddiy silkinishni boshdan kechirdi. Xalqaro fond birjalarida <b>Samsung Electronics, SK Hynix, ASML va Advantest</b> kabi chiplar yetkazib beruvchi gigantlar aksiyalari keskin pasayib, umumiy bozor qiymatidan <b>1 trillion dollardan ortiq</b> mablag' bir kunda yo'qotildi.</p>\n\n<h2 class=\"article-section-title\">Bozordagi keskin pasayish sababi nima?</h2>\n<p>Ushbu sotuv to'lqiniga bir vaqtning o'zida bir nechta makroiqtisodiy omillar turtki berdi:</p>\n<ul class=\"article-list\">\n  <li><b>Qarz yukining ko'payishi:</b> AI data-markazlarini qurish uchun olingan o'nlab milliard dollarlik kreditlar va obligatsiyalar xarajatlari texnologiya gigantlarining erkin pul oqimlariga (free cash flow) bosim o'tkazmoqda.</li>\n  <li><b>Obligatsiyalar rentabelligi:</b> Xalqaro obligatsiyalar daromadliligi oshishi ortidan investorlar yuqori xavfli chip aksiyalaridan barqaror aktivlarga mablag' o'tkaza boshladi.</li>\n  <li><b>Haddan tashqari qizigan baholar:</b> So'nggi 18 oy davomida chiplar sektori ko'p karra qimmatlashgan edi, ekspertlar hozirgi holatni sog'lom texnik korreksiya deb atamoqda.</li>\n</ul>\n\n<p class=\"article-quote\">\"Sun'iy intellekt texnologiyasi real va o'sishda davom etmoqda, ammo uning atrofidagi moliyaviy bozorlar haddan tashqari ko'p qarzga tayanib qolgan edi. Bugungi tozalanish sog'lom muvozanatni tiklaydi.\" — Semafor bozorlar tahlilchisi</p>\n\n<h2 class=\"article-section-title\">Kompaniyalar va investorlar uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Real talab saqlanib qolmoqda:</b> AI modellarini o'qitish va ularni korxonalarda ishlatish uchun hisoblash chiplariga bo'lgan jismoniy ehtiyoj pasaygani yo'q.</p>\n<p class=\"article-step\"><b>2. Pragmatik bosqich:</b> Endi bozor quruq va'dalar emas, balki sun'iy intellekt investitsiyalaridan real daromad olayotgan kompaniyalarni rag'batlantiradigan yangi bosqichga o'tmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-16",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Global moliya va texnologiya bozorlari guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Global sun'iy intellekt bumasining asosiy dvigateli bo'lgan yarimo'tkazgichlar bozori so'nggi yillardagi eng jiddiy silkinishni boshdan kechirdi. Xalqaro fond birjalarida <b>Samsung Electronics, SK Hynix, ASML va Advantest</b> kabi chiplar yetkazib beruvchi gigantlar aksiyalari keskin pasayib, umumiy bozor qiymatidan <b>1 trillion dollardan ortiq</b> mablag' bir kunda yo'qotildi.</p>\n\n<h2 class=\"article-section-title\">Bozordagi keskin pasayish sababi nima?</h2>\n<p>Ushbu sotuv to'lqiniga bir vaqtning o'zida bir nechta makroiqtisodiy omillar turtki berdi:</p>\n<ul class=\"article-list\">\n  <li><b>Qarz yukining ko'payishi:</b> AI data-markazlarini qurish uchun olingan o'nlab milliard dollarlik kreditlar va obligatsiyalar xarajatlari texnologiya gigantlarining erkin pul oqimlariga (free cash flow) bosim o'tkazmoqda.</li>\n  <li><b>Obligatsiyalar rentabelligi:</b> Xalqaro obligatsiyalar daromadliligi oshishi ortidan investorlar yuqori xavfli chip aksiyalaridan barqaror aktivlarga mablag' o'tkaza boshladi.</li>\n  <li><b>Haddan tashqari qizigan baholar:</b> So'nggi 18 oy davomida chiplar sektori ko'p karra qimmatlashgan edi, ekspertlar hozirgi holatni sog'lom texnik korreksiya deb atamoqda.</li>\n</ul>\n\n<p class=\"article-quote\">\"Sun'iy intellekt texnologiyasi real va o'sishda davom etmoqda, ammo uning atrofidagi moliyaviy bozorlar haddan tashqari ko'p qarzga tayanib qolgan edi. Bugungi tozalanish sog'lom muvozanatni tiklaydi.\" — Semafor bozorlar tahlilchisi</p>\n\n<h2 class=\"article-section-title\">Kompaniyalar va investorlar uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Real talab saqlanib qolmoqda:</b> AI modellarini o'qitish va ularni korxonalarda ishlatish uchun hisoblash chiplariga bo'lgan jismoniy ehtiyoj pasaygani yo'q.</p>\n<p class=\"article-step\"><b>2. Pragmatik bosqich:</b> Endi bozor quruq va'dalar emas, balki sun'iy intellekt investitsiyalaridan real daromad olayotgan kompaniyalarni rag'batlantiradigan yangi bosqichga o'tmoqda.</p>"
+  },
+  "bank-of-america-ai-xatolarini-tuzatishga-1000-muhandis-yolladi-2026": {
+    "id": "bank-of-america-ai-xatolarini-tuzatishga-1000-muhandis-yolladi-2026",
+    "slug": "bank-of-america-ai-xatolarini-tuzatishga-1000-muhandis-yolladi-2026",
+    "title": "Bank Of America AI Xatolarini Tuzatishga 1000 Muhandis Yolladi",
+    "kicker": "BANK VA KIBERXAVFSIZLIK · KOD AUDITI",
+    "meta_title": "Bank Of America AI Xatolarini Tuzatishga 1000 Muhandis Yolladi — AiNoma",
+    "meta_description": "Anthropic'ning kiberxavfsizlik AI modeli Bank of America ichki dasturlarida jiddiy zaifliklarni aniqlagach, bank kodlarni to'g'rilash uchun 1000 tashqi dasturchini jalb qildi.",
+    "category": "Texnologiya",
+    "audience": "dasturchilar va bankirlar",
+    "event_date": "2026-10-15",
+    "source_date": "2026-10-15",
+    "source_published_date": "2026-10-15",
+    "ainoma_published_date": "2026-10-16",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Sun'iy intellekt bankning millionlab qatorli kod bazasida yillab yashiringan zaifliklarni fosh qildi: Bank of America ularni zudlik bilan tuzatish uchun minglab dasturchilarni ishga soldi.",
+    "img": "assets/coding_workspace.jpg",
+    "imgAlt": "Bank of America Kiberxavfsizlik va Kod Auditi 2026",
+    "qisqacha": [
+      "Bank of America ichki IT tizimlarini audit qilish uchun Anthropic'ning eng yangi kiberxavfsizlik modelidan (Mythos AI) foydalanishni boshladi.",
+      "Sun'iy intellekt inson ko'zi ilg'amagan yuzlab potensial xavfli kod zaifliklarini fosh etgach, bank ularni zudlik bilan yopish uchun 1,000 nafar tashqi pudratchi muhandisni jalb qildi.",
+      "Mazkur holat AI dasturchilar o'rnini to'liq egallashini emas, balki ularga bo'lgan ehtiyojni va sifat talablarini yanada oshirayotganini ko'rsatdi."
+    ],
+    "primary_source": {
+      "name": "The Neuron Tech Daily",
+      "title": "Bank of America Brings in 1,000 Contractors to Fix Vulnerabilities Flagged by Frontier AI",
+      "url": "https://www.theneuron.ai/news/bank-of-america-1000-engineers-ai-code-remediation-2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "American Banker",
+        "title": "Big banks face remediation wave after advanced AI models audit core banking code",
+        "url": "https://www.americanbanker.com/news/bank-of-america-ai-code-audit-remediation-2026",
+        "badge": "SOHA TAHLILI"
+      }
+    ],
+    "body": "<p class=\"article-lead\">AQShning eng yirik moliya institutlaridan biri bo'lgan <b>Bank of America</b> o'zining ichki dasturiy ta'minotlarini keng ko'lamli kiberxavfsizlik tekshiruvidan o'tkazish natijasida kutilmagan vaziyatga duch keldi: <b>sun'iy intellekt fosh qilgan xavfli zaifliklarni to'g'rilash uchun bank mavjud 3,000 xodimiga qo'shimcha tarzda yana 1,000 nafar tashqi dasturchini shoshilinch yollashga majbur bo'ldi</b>.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellekt nimalarni aniqladi?</h2>\n<p>Bank of America asosiy bank tizimlaridagi (core banking) o'n millionlab qatorli kodlarni audit qilish uchun eng ilg'or AI modellaridan foydalangan. Tizim an'anaviy statik tahlil vositalari va inson auditorlari yillab payqay olmagan chuqur mantiqiy xatolar hamda kiberxurujlar uchun ochiq qolgan nozik yo'laklarni fosh qildi.</p>\n<p>AI aniqlagan zaifliklar soni va murakkabligi shu darajada yuqori bo'lib chiqdiki, bankning o'z ichki muhandislar jamoasi ularni zudlik bilan qayta yozishga ulgurmay qoldi.</p>\n\n<h2 class=\"article-section-title\">Dasturchilar kasbi yo'qoladimi yoki ko'payadimi?</h2>\n<p>Ko'plab tahlilchilar sun'iy intellekt kod yozishni o'rgangach dasturchilarga ehtiyoj qolmaydi deb hisoblar edi. Biroq amaliyot mutlaqo teskari manzaranini ko'rsatmoqda:</p>\n<ul class=\"article-list\">\n  <li><b>Audit tezligi oshdi:</b> Sun'iy intellekt zaifliklarni bir necha daqiqada topadi, ammo uni to'g'ri qayta yozish va xavfsiz integratsiya qilish inson muhandislarining chuqur tajribasini talab etadi.</li>\n  <li><b>Sifat me'yorlari keskin ko'tarildi:</b> Moliya va davlat sektorida xavfsizlik talablari bir necha barobar oshmoqda.</li>\n  <li><b>Xatolarni tuzatish (remediation) bumasiga start berildi:</b> Boshqa yirik banklar (JPMorgan, Wells Fargo) ham shunday auditlarni boshlagan bo'lib, IT mutaxassislariga talab yana oshmoqda.</li>\n</ul>\n\n<p class=\"article-quote\">\"Sun'iy intellekt dasturchilar ishini yo'qotmadi, aksincha u yashirin muammolarni shu qadar ko'p yuzaga chiqardiki, endi ularni bartaraf etish uchun har qachongidan ko'proq malakali inson muhandislari zarur bo'lmoqda.\" — The Neuron tahlilchilari guruhi</p>\n\n<h2 class=\"article-section-title\">Muhandislar va biznes uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Kiberxavfsizlikka ixtisoslashish:</b> Oddiy veb-sahifa teruvchilarga qaraganda, kod xavfsizligi, arxitektura va zaifliklarni bartaraf etishni biladigan muhandislarning qadri keskin oshmoqda.</p>\n<p class=\"article-step\"><b>2. Shaxsiy tizimlarni audit qiling:</b> Agar Sizning kompaniyangizda yirik kod bazasi bo'lsa, xakerlar topishidan oldin uni zamonaviy AI vositalari yordamida mustaqil tekshirib olish tavsiya etiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-16",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Kiberxavfsizlik va dasturiy ta'minot arxitekturasi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">AQShning eng yirik moliya institutlaridan biri bo'lgan <b>Bank of America</b> o'zining ichki dasturiy ta'minotlarini keng ko'lamli kiberxavfsizlik tekshiruvidan o'tkazish natijasida kutilmagan vaziyatga duch keldi: <b>sun'iy intellekt fosh qilgan xavfli zaifliklarni to'g'rilash uchun bank mavjud 3,000 xodimiga qo'shimcha tarzda yana 1,000 nafar tashqi dasturchini shoshilinch yollashga majbur bo'ldi</b>.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellekt nimalarni aniqladi?</h2>\n<p>Bank of America asosiy bank tizimlaridagi (core banking) o'n millionlab qatorli kodlarni audit qilish uchun eng ilg'or AI modellaridan foydalangan. Tizim an'anaviy statik tahlil vositalari va inson auditorlari yillab payqay olmagan chuqur mantiqiy xatolar hamda kiberxurujlar uchun ochiq qolgan nozik yo'laklarni fosh qildi.</p>\n<p>AI aniqlagan zaifliklar soni va murakkabligi shu darajada yuqori bo'lib chiqdiki, bankning o'z ichki muhandislar jamoasi ularni zudlik bilan qayta yozishga ulgurmay qoldi.</p>\n\n<h2 class=\"article-section-title\">Dasturchilar kasbi yo'qoladimi yoki ko'payadimi?</h2>\n<p>Ko'plab tahlilchilar sun'iy intellekt kod yozishni o'rgangach dasturchilarga ehtiyoj qolmaydi deb hisoblar edi. Biroq amaliyot mutlaqo teskari manzaranini ko'rsatmoqda:</p>\n<ul class=\"article-list\">\n  <li><b>Audit tezligi oshdi:</b> Sun'iy intellekt zaifliklarni bir necha daqiqada topadi, ammo uni to'g'ri qayta yozish va xavfsiz integratsiya qilish inson muhandislarining chuqur tajribasini talab etadi.</li>\n  <li><b>Sifat me'yorlari keskin ko'tarildi:</b> Moliya va davlat sektorida xavfsizlik talablari bir necha barobar oshmoqda.</li>\n  <li><b>Xatolarni tuzatish (remediation) bumasiga start berildi:</b> Boshqa yirik banklar (JPMorgan, Wells Fargo) ham shunday auditlarni boshlagan bo'lib, IT mutaxassislariga talab yana oshmoqda.</li>\n</ul>\n\n<p class=\"article-quote\">\"Sun'iy intellekt dasturchilar ishini yo'qotmadi, aksincha u yashirin muammolarni shu qadar ko'p yuzaga chiqardiki, endi ularni bartaraf etish uchun har qachongidan ko'proq malakali inson muhandislari zarur bo'lmoqda.\" — The Neuron tahlilchilari guruhi</p>\n\n<h2 class=\"article-section-title\">Muhandislar va biznes uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Kiberxavfsizlikka ixtisoslashish:</b> Oddiy veb-sahifa teruvchilarga qaraganda, kod xavfsizligi, arxitektura va zaifliklarni bartaraf etishni biladigan muhandislarning qadri keskin oshmoqda.</p>\n<p class=\"article-step\"><b>2. Shaxsiy tizimlarni audit qiling:</b> Agar Sizning kompaniyangizda yirik kod bazasi bo'lsa, xakerlar topishidan oldin uni zamonaviy AI vositalari yordamida mustaqil tekshirib olish tavsiya etiladi.</p>"
+  },
   "anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026": {
     "id": "anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026",
     "slug": "anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026",
