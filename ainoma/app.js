@@ -258,7 +258,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "ChatGPT Endi Chrome Tablari Bo‘ylab Mustaqil Ishlaydi", u: "yangiliklar/chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026/", k: "chatgpt endi chrome tablari bo‘ylab mustaqil ishlaydi texnologiya openai product updates openai chrome brauzeri uchun rasmiy chatgpt kengaytmasini chiqardi: endi model barcha ochiq tablarda" },
+  { t: "OpenAI Voice API Jonli Suhbatda Amallarni Bajaradi", u: "yangiliklar/openai-voice-api-jonli-suhbatda-amallarni-bajaradi-2026/", k: "openai voice api jonli suhbatda amallarni bajaradi texnologiya openai platform documentation openai ovozli ai bilan muloqot paytida dasturlarga tashqi amallarni (tool calling) fon rejimida baja" },
+  { t: "Google Turli Do‘konlar Uchun Yagona Savatcha Chiqardi", u: "yangiliklar/google-turli-dokonlar-uchun-yagona-savatcha-chiqardi-2026/", k: "google turli do‘konlar uchun yagona savatcha chiqardi texnologiya google the keyword google onlayn xaridlarni osonlashtiruvchi universal cart tizimini chiqardi: endi turli internet-do'k" },
   { t: "Global Bozorlarda AI Va Chiplar $1T Yo‘qotdi", u: "yangiliklar/ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026/", k: "global bozorlarda ai va chiplar $1t yo‘qotdi iqtisodiyot semafor technology markets yarimo'tkazgich gigantlari aksiyalari birja savdolarida keskin arzonlashdi: qarz yuki va yuqori infl" },
   { t: "Bank Of America AI Xatolarini Tuzatishga 1000 Muhandis Yolladi", u: "yangiliklar/bank-of-america-ai-xatolarini-tuzatishga-1000-muhandis-yolladi-2026/", k: "bank of america ai xatolarini tuzatishga 1000 muhandis yolladi texnologiya the neuron tech daily sun'iy intellekt bankning millionlab qatorli kod bazasida yillab yashiringan zaifliklarni fosh qildi" },
   { t: "Anthropic Avtonom AI Qurtlari Xavfidan Rasman Ogohlantirdi", u: "yangiliklar/anthropic-kichik-ai-modellari-avtonom-qurtlarga-aylanmoqda-2026/", k: "anthropic avtonom ai qurtlari xavfidan rasman ogohlantirdi texnologiya anthropic frontier red team anthropic xavfsizlik laboratoriyasi 1b-3b parametrli ochiq ai modellari iot kameralar va routerlarga" },

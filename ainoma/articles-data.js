@@ -1,6 +1,147 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026": {
+    "id": "chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026",
+    "slug": "chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026",
+    "title": "ChatGPT Endi Chrome Tablari Bo‘ylab Mustaqil Ishlaydi",
+    "kicker": "BRAUZER VA FOYDALI AI · OPENAI CHROME",
+    "meta_title": "ChatGPT Endi Chrome Tablari Bo‘ylab Mustaqil Ishlaydi — AiNoma",
+    "meta_description": "OpenAI Chrome kengaytmasini yangiladi: ChatGPT endi brauzerdagi barcha ochiq tablar bo'ylab ma'lumotlarni solishtiradi, o'qiydi va vazifalarni bajaradi.",
+    "category": "Texnologiya",
+    "audience": "foydalanuvchilar va mutaxassislar",
+    "event_date": "2026-10-17",
+    "source_date": "2026-10-17",
+    "source_published_date": "2026-10-17",
+    "ainoma_published_date": "2026-10-17",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "OpenAI Chrome brauzeri uchun rasmiy ChatGPT kengaytmasini chiqardi: endi model barcha ochiq tablardagi ma'lumotlarni o'qiydi va foydalanuvchi o'rniga amallarni bajaradi.",
+    "img": "assets/openai_gpt_banner.jpg",
+    "imgAlt": "ChatGPT Chrome Tablari Bilan Integratsiya 2026",
+    "qisqacha": [
+      "OpenAI rasmiy Chrome kengaytmasiga 'Chat Mode' va 'Work Mode' rejimlarini qo'shdi: model endi foydalanuvchi brauzeridagi barcha ochiq tablarni ko'ra oladi.",
+      "Tizim turli saytlardagi mahsulot narxlarini, maqolalarni va hujjatlarni nusxalab o'tirmasdan bir zumda o'zaro taqqoslab xulosalar chiqaradi.",
+      "'Work Mode' rejimi orqali sun'iy intellekt shakllarni to'ldirish, chiptalar qidirish va tartibsiz tablarni mavzular bo'yicha saralashni avtomatlashtiradi."
+    ],
+    "primary_source": {
+      "name": "OpenAI Product Updates",
+      "title": "ChatGPT for Google Chrome: Seamless Multi-Tab Context and Computer Use",
+      "url": "https://openai.com/index/chatgpt-chrome-extension-multitab-2026/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Engadget Technology",
+        "title": "ChatGPT now works directly across your open Chrome tabs",
+        "url": "https://www.engadget.com/ai/chatgpt-chrome-multi-tab-assistant-2026.html",
+        "badge": "XALQARO SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Internetda ishlash madaniyatida navbatdagi qulaylik: <b>OpenAI</b> kompaniyasi o‘zining <b>Google Chrome</b> brauzeri uchun rasmiy kengaytmasini yangiladi. Endi <b>ChatGPT bir vaqtning o‘zida brauzeringizda ochiq turgan barcha tablar (oynalar) bo‘ylab erkin ishlay oladi</b> va qo‘lda nusxa ko‘chirish (copy-paste) zaruratini butunlay yo‘qotadi.</p>\n\n<h2 class=\"article-section-title\">Ikkita yangi rejim: «Chat» va «Work»</h2>\n<p>Kengaytma brauzerning o‘ng yon panelida (sidebar) ochiladi va foydalanuvchiga ikkita asosiy ishchi rejimni taqdim etadi:</p>\n<ul class=\"article-list\">\n  <li><b>«Chat Mode» (Ko‘p tabli tahlil):</b> ChatGPT ochiq tablardagi ma’lumotlarni bir vaqtda o‘qiydi. Masalan, 5 ta turli saytda noutbuk qidirayotgan bo‘lsangiz, model barcha ochiq oynalardagi texnik parametrlar va narxlarni jadvalga solib solishtirib beradi.</li>\n  <li><b>«Work Mode» (Kompyuterni boshqarish):</b> Foydalanuvchi ruxsati bilan sun’iy intellekt tablar ichida shakllarni to‘ldirishi, kerakli fayllarni yuklab olishi va tartibsiz to‘plangan o‘nlab tablarni mavzusi bo‘yicha guruhlarga ajratishi mumkin.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Xavfsizlik va shaxsiy daxlsizlik</h2>\n<p>OpenAI foydalanuvchilar maxfiyligini birinchi o‘ringa qo‘yganini ma’lum qildi. Model hech qachon Sizning ruxsatingizsiz bank saytlari yoki shaxsiy pochta oynalariga kirmaydi:</p>\n<ul class=\"article-list\">\n  <li><b>Sayt darajasidagi ruxsatlar:</b> Har bir domen uchun alohida kirish ruxsatnomasi talab etiladi.</li>\n  <li><b>Finansiy amallar bloklanishi:</b> Bank operatsiyalari va shaxsiy parollar kiritiladigan maydonlarda avtomatlashtirish qat’iy taqiqlangan.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun’iy intellektni faqat alohida saytda emas, inson har kuni ishlaydigan haqiqiy raqamli muhit — brauzer oynalarining ichida foydali yordamchiga aylantirdik.\" — OpenAI mahsulot jamoasi</p>\n\n<h2 class=\"article-section-title\">Foydalanuvchilar uchun amaliy tavsiyalar</h2>\n<p class=\"article-step\"><b>1. Tadqiqot va solishtirish:</b> Katta hisobotlar yoki ilmiy maqolalarni bir nechta manbadan o‘rganayotganda, barcha havolalarni ochib, bitta so‘rov bilan umumiy xulosa oling.</p>\n<p class=\"article-step\"><b>2. Bepul foydalanish:</b> Yangilanish bosqichma-bosqich barcha ChatGPT Plus va bepul foydalanuvchilar uchun Chrome Web Store orqali ochilmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-17",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Iste'molchi AI vositalari va mahsuldorlik guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Internetda ishlash madaniyatida navbatdagi qulaylik: <b>OpenAI</b> kompaniyasi o‘zining <b>Google Chrome</b> brauzeri uchun rasmiy kengaytmasini yangiladi. Endi <b>ChatGPT bir vaqtning o‘zida brauzeringizda ochiq turgan barcha tablar (oynalar) bo‘ylab erkin ishlay oladi</b> va qo‘lda nusxa ko‘chirish (copy-paste) zaruratini butunlay yo‘qotadi.</p>\n\n<h2 class=\"article-section-title\">Ikkita yangi rejim: «Chat» va «Work»</h2>\n<p>Kengaytma brauzerning o‘ng yon panelida (sidebar) ochiladi va foydalanuvchiga ikkita asosiy ishchi rejimni taqdim etadi:</p>\n<ul class=\"article-list\">\n  <li><b>«Chat Mode» (Ko‘p tabli tahlil):</b> ChatGPT ochiq tablardagi ma’lumotlarni bir vaqtda o‘qiydi. Masalan, 5 ta turli saytda noutbuk qidirayotgan bo‘lsangiz, model barcha ochiq oynalardagi texnik parametrlar va narxlarni jadvalga solib solishtirib beradi.</li>\n  <li><b>«Work Mode» (Kompyuterni boshqarish):</b> Foydalanuvchi ruxsati bilan sun’iy intellekt tablar ichida shakllarni to‘ldirishi, kerakli fayllarni yuklab olishi va tartibsiz to‘plangan o‘nlab tablarni mavzusi bo‘yicha guruhlarga ajratishi mumkin.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Xavfsizlik va shaxsiy daxlsizlik</h2>\n<p>OpenAI foydalanuvchilar maxfiyligini birinchi o‘ringa qo‘yganini ma’lum qildi. Model hech qachon Sizning ruxsatingizsiz bank saytlari yoki shaxsiy pochta oynalariga kirmaydi:</p>\n<ul class=\"article-list\">\n  <li><b>Sayt darajasidagi ruxsatlar:</b> Har bir domen uchun alohida kirish ruxsatnomasi talab etiladi.</li>\n  <li><b>Finansiy amallar bloklanishi:</b> Bank operatsiyalari va shaxsiy parollar kiritiladigan maydonlarda avtomatlashtirish qat’iy taqiqlangan.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz sun’iy intellektni faqat alohida saytda emas, inson har kuni ishlaydigan haqiqiy raqamli muhit — brauzer oynalarining ichida foydali yordamchiga aylantirdik.\" — OpenAI mahsulot jamoasi</p>\n\n<h2 class=\"article-section-title\">Foydalanuvchilar uchun amaliy tavsiyalar</h2>\n<p class=\"article-step\"><b>1. Tadqiqot va solishtirish:</b> Katta hisobotlar yoki ilmiy maqolalarni bir nechta manbadan o‘rganayotganda, barcha havolalarni ochib, bitta so‘rov bilan umumiy xulosa oling.</p>\n<p class=\"article-step\"><b>2. Bepul foydalanish:</b> Yangilanish bosqichma-bosqich barcha ChatGPT Plus va bepul foydalanuvchilar uchun Chrome Web Store orqali ochilmoqda.</p>"
+  },
+  "openai-voice-api-jonli-suhbatda-amallarni-bajaradi-2026": {
+    "id": "openai-voice-api-jonli-suhbatda-amallarni-bajaradi-2026",
+    "slug": "openai-voice-api-jonli-suhbatda-amallarni-bajaradi-2026",
+    "title": "OpenAI Voice API Jonli Suhbatda Amallarni Bajaradi",
+    "kicker": "DASTURLASH VA OVOZLI AI · OPENAI REALTIME",
+    "meta_title": "OpenAI Voice API Jonli Suhbatda Amallarni Bajaradi — AiNoma",
+    "meta_description": "OpenAI o'zining Realtime Voice API tizimini yangiladi: endi ilovalar foydalanuvchi bilan jonli ovozli suhbat davomida tashqi amallarni mustaqil bajara oladi.",
+    "category": "Texnologiya",
+    "audience": "dasturchilar va startaplar",
+    "event_date": "2026-10-17",
+    "source_date": "2026-10-17",
+    "source_published_date": "2026-10-17",
+    "ainoma_published_date": "2026-10-17",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "OpenAI ovozli AI bilan muloqot paytida dasturlarga tashqi amallarni (tool calling) fon rejimida bajarish imkoniyatini taqdim etdi: endi gaplashib turib operatsiyalar bajarish mumkin.",
+    "img": "assets/voice_duplex.jpg",
+    "imgAlt": "OpenAI Realtime Voice API Tool Calling 2026",
+    "qisqacha": [
+      "OpenAI Realtime Voice API yangilanishi ovozli muloqotni uzmagan holda tashqi ma'lumotlar bazasiga so'rov yuborish va funksiyalarni chaqirish imkonini berdi.",
+      "Foydalanuvchi gapirib turgan paytda model fon rejimida API buyruqlarini bajaradi va natijani tabiiy ovozda suhbat zanjiriga ulaydi.",
+      "Yangilangan asinxron arxitektura va intellektual to'xtatish (interruption) mexanizmi kechikishni (latency) deyarli sezilmas darajaga tushirdi."
+    ],
+    "primary_source": {
+      "name": "OpenAI Platform Documentation",
+      "title": "Realtime API: Live Audio Tool Calling and Asynchronous Execution Updates",
+      "url": "https://platform.openai.com/docs/guides/realtime-model-capabilities",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "VentureBeat AI",
+        "title": "OpenAI’s latest voice API updates allow applications to act during live conversations",
+        "url": "https://venturebeat.com/ai/openai-realtime-voice-api-live-actions-2026/",
+        "badge": "TEXNIK TAHLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Sun'iy intellekt bilan ovozli muloqot qilish yangi bosqichga ko‘tarildi. <b>OpenAI</b> o‘zining dasturchilar uchun mo‘ljallangan <b>Realtime Voice API</b> tizimiga ulkan yangilanish kiritdi: <b>endi ilovalar foydalanuvchi bilan jonli ovozli suhbat davomida tashqi harakatlarni (actions & tool calling) bir lahzada bajara oladi</b>.</p>\n\n<h2 class=\"article-section-title\">Ilgari qanday edi va endi nima o‘zgardi?</h2>\n<p>Avvalgi avlod ovozli botlarda foydalanuvchi avval gapirib bo‘lishi, tizim uni matnga aylantirishi, keyin dasturiy kodni ishga tushirishi va faqat shundan so‘ng javob qaytarishi kerak edi. Har qanday amal suhbatda 3–5 soniyalik noqulay sukunat keltirib chiqarar edi.</p>\n<p>Yangi Realtime API esa to‘liq dupleks (full-duplex) rejimida ishlaydi. Siz sun’iy intellekt bilan gaplashayotganingizda, model Sizning talabingizni bir zumda tushunadi va gapini davom ettirgan holda orqa fonda (backend) kerakli API chaqiriqlarini amalga oshiradi.</p>\n\n<h2 class=\"article-section-title\">Amaliy imkoniyatlar va stsenariylar</h2>\n<ul class=\"article-list\">\n  <li><b>Mijozlarga xizmat ko‘rsatish:</b> Mijoz bank yoki aviakompaniya botiga \"Buyurtmam qayerda qoldi?\" desa, ovozli AI gapni cho‘zmasdan to‘g‘ridan-to‘g‘ri ma’lumotlar bazasiga so‘rov yuboradi va bir soniyada real vaqtdagi statusni ovoz chiqarib aytadi.</li>\n  <li><b>Jonli to‘xtatish (Barge-in):</b> Agar foydalanuvchi bot gapirayotgan paytda gapini bo‘lib yangi ma’lumot kiritsa, model darhol tinglashga o‘tadi va chaqirilayotgan funksiyani yangi parametrlarga moslaydi.</li>\n  <li><b>Asinxron funksiyalar:</b> Og‘ir server hisob-kitoblari ovozli oqimni to‘xtatib qo‘ymaydi — model suhbatni tabiiy davom ettirib, ma’lumot tayyor bo‘lganda natijani e’lon qiladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz ovozli sun’iy intellektni faqat gaplashuvchi modeldan real ishlarni bajaruvchi avtonom agentga aylantirdik.\" — OpenAI API arxitektorlari guruhi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va startaplar uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Qo‘ng‘iroqlar markazlari inqilobi:</b> Ushbu texnologiya har qanday call-markaz xizmatini inson darajasidagi, tezkor va professional ovozli yordamchi bilan to‘liq avtomatlashtirishga yo‘l ochadi.</p>\n<p class=\"article-step\"><b>2. O‘rnatish qulayligi:</b> Yangilanish mavjud WebSocket va WebRTC ulanishlarida standart JSON funksiya ta’riflari (function declarations) orqali ishga tushadi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-17",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Dasturlash va Ovozli AI arxitekturasi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Sun'iy intellekt bilan ovozli muloqot qilish yangi bosqichga ko‘tarildi. <b>OpenAI</b> o‘zining dasturchilar uchun mo‘ljallangan <b>Realtime Voice API</b> tizimiga ulkan yangilanish kiritdi: <b>endi ilovalar foydalanuvchi bilan jonli ovozli suhbat davomida tashqi harakatlarni (actions & tool calling) bir lahzada bajara oladi</b>.</p>\n\n<h2 class=\"article-section-title\">Ilgari qanday edi va endi nima o‘zgardi?</h2>\n<p>Avvalgi avlod ovozli botlarda foydalanuvchi avval gapirib bo‘lishi, tizim uni matnga aylantirishi, keyin dasturiy kodni ishga tushirishi va faqat shundan so‘ng javob qaytarishi kerak edi. Har qanday amal suhbatda 3–5 soniyalik noqulay sukunat keltirib chiqarar edi.</p>\n<p>Yangi Realtime API esa to‘liq dupleks (full-duplex) rejimida ishlaydi. Siz sun’iy intellekt bilan gaplashayotganingizda, model Sizning talabingizni bir zumda tushunadi va gapini davom ettirgan holda orqa fonda (backend) kerakli API chaqiriqlarini amalga oshiradi.</p>\n\n<h2 class=\"article-section-title\">Amaliy imkoniyatlar va stsenariylar</h2>\n<ul class=\"article-list\">\n  <li><b>Mijozlarga xizmat ko‘rsatish:</b> Mijoz bank yoki aviakompaniya botiga \"Buyurtmam qayerda qoldi?\" desa, ovozli AI gapni cho‘zmasdan to‘g‘ridan-to‘g‘ri ma’lumotlar bazasiga so‘rov yuboradi va bir soniyada real vaqtdagi statusni ovoz chiqarib aytadi.</li>\n  <li><b>Jonli to‘xtatish (Barge-in):</b> Agar foydalanuvchi bot gapirayotgan paytda gapini bo‘lib yangi ma’lumot kiritsa, model darhol tinglashga o‘tadi va chaqirilayotgan funksiyani yangi parametrlarga moslaydi.</li>\n  <li><b>Asinxron funksiyalar:</b> Og‘ir server hisob-kitoblari ovozli oqimni to‘xtatib qo‘ymaydi — model suhbatni tabiiy davom ettirib, ma’lumot tayyor bo‘lganda natijani e’lon qiladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz ovozli sun’iy intellektni faqat gaplashuvchi modeldan real ishlarni bajaruvchi avtonom agentga aylantirdik.\" — OpenAI API arxitektorlari guruhi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va startaplar uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Qo‘ng‘iroqlar markazlari inqilobi:</b> Ushbu texnologiya har qanday call-markaz xizmatini inson darajasidagi, tezkor va professional ovozli yordamchi bilan to‘liq avtomatlashtirishga yo‘l ochadi.</p>\n<p class=\"article-step\"><b>2. O‘rnatish qulayligi:</b> Yangilanish mavjud WebSocket va WebRTC ulanishlarida standart JSON funksiya ta’riflari (function declarations) orqali ishga tushadi.</p>"
+  },
+  "google-turli-dokonlar-uchun-yagona-savatcha-chiqardi-2026": {
+    "id": "google-turli-dokonlar-uchun-yagona-savatcha-chiqardi-2026",
+    "slug": "google-turli-dokonlar-uchun-yagona-savatcha-chiqardi-2026",
+    "title": "Google Turli Do‘konlar Uchun Yagona Savatcha Chiqardi",
+    "kicker": "ELEKTRON TIJORAT VA AI · GOOGLE SHOPPING",
+    "meta_title": "Google Turli Do‘konlar Uchun Yagona Savatcha Chiqardi — AiNoma",
+    "meta_description": "Google turli riteylerlar saytidagi tovarlarni bitta savatchaga yig'ish va xarid qilish imkonini beruvchi Universal Cart xizmatini yo'lga qo'ydi.",
+    "category": "Texnologiya",
+    "audience": "onlayn xaridorlar va riteyl",
+    "event_date": "2026-10-17",
+    "source_date": "2026-10-17",
+    "source_published_date": "2026-10-17",
+    "ainoma_published_date": "2026-10-17",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Google onlayn xaridlarni osonlashtiruvchi Universal Cart tizimini chiqardi: endi turli internet-do'konlardagi tovarlarni bitta ekranda saqlab, bir marta to'lash mumkin.",
+    "img": "assets/retail_ai.jpg",
+    "imgAlt": "Google Universal Cart Yagona Savatcha 2026",
+    "qisqacha": [
+      "Google foydalanuvchilarga turli brendlar va internet-do'konlardagi (Walmart, Target, Nike, Sephora) tovarlarni yagona savatchada saqlash imkonini beruvchi tizimni chiqardi.",
+      "Universal Cart sun'iy intellekt orqali narxlar pasayishini, aksiyalarni va eng foydali to'lov usullarini real vaqtda tavsiya qilib boradi.",
+      "Xaridlar to'g'ridan-to'g'ri Google Search, Chrome yoki Gemini ilovasida yakunlanadi, yetkazib berish esa rasmiy do'konlar tomonidan amalga oshiriladi."
+    ],
+    "primary_source": {
+      "name": "Google The Keyword",
+      "title": "Introducing Universal Cart: A unified shopping cart across merchants on Google",
+      "url": "https://blog.google/products/shopping/universal-cart-cross-retailer-experience/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Search Engine Land",
+        "title": "Google launches universal shopping cart across major merchants",
+        "url": "https://searchengineland.com/google-universal-shopping-cart-launch-2026",
+        "badge": "SOHA TAHLILI"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Onlayn xaridlar olamida uzoq kutilgan qulaylik: <b>Google kompaniyasi</b> internet foydalanuvchilari uchun <b>«Universal Cart» (Umumiy savatcha)</b> xizmatini rasman yo‘lga qo‘ydi. Ushbu texnologiya <b>turli xil mustaqil internet-do‘konlardagi tovarlarni bitta yagona savatchaga to‘plash</b> va xaridni bitta tugma orqali yakunlash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Tarqoq do‘konlar muammosi qanday hal qilindi?</h2>\n<p>Ilgari xaridor kiyim-kechakni Nike'dan, uy jihozlarini Target'dan, kosmetikani esa Sephora'dan sotib olmoqchi bo‘lsa, har bir saytda alohida ro‘yxatdan o‘tishi, to‘lov kartalarini kiritishi va alohida savatchalarni kuzatib borishi shart edi.</p>\n<p>Google ishlab chiqqan yangi Universal Commerce Protocol (UCP) tizimi tufayli barcha hamkor riteylerlar va Shopify do‘konlari yagona ekotizimga birlashdi. Foydalanuvchi Google Qidiruv, Chrome brauzeri yoki Gemini chatida qaysi saytdagi mahsulotni ko‘rmasin, uni bir marta bosish bilan o‘zining umumiy Google savatchasiga qo‘shib qo‘ya oladi.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellekt bilan boyitilgan xarid tajribasi</h2>\n<ul class=\"article-list\">\n  <li><b>Avtomatik narx monitoringi:</b> Savatchaga qo‘shilgan mahsulot arzonlashsa yoki chegirmaga tushsa, Google Shopping tizimi darhol xabar yuboradi.</li>\n  <li><b>Keshbek va chegirmalar tahlili:</b> Tizim Google Wallet bilan integratsiya qilingan bo‘lib, to‘lov paytida qaysi bankingiz ko‘proq bonus yoki ball berishini avtomatik ko‘rsatadi.</li>\n  <li><b>Xavfsiz va to‘g‘ridan-to‘g‘ri to‘lov:</b> Foydalanuvchi do‘konlarga o‘z karta raqamlarini qayta-qayta kiritmaydi, hamma amallar Google Pay orqali xavfsiz himoyalangan holda bajariladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz xarid qilish jarayonidagi o‘nlab to‘siqlarni olib tashladik. Endi qaysi brend qayerda sotilayotganidan qat’i nazar, xaridor uchun bitta yagona va ishonchli savatcha xizmat qiladi.\" — Google Shopping vitse-prezidenti</p>\n\n<h2 class=\"article-section-title\">Xaridorlar va savdo biznesi uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Do‘konlar rasmiy sotuvchi bo‘lib qoladi:</b> Mahsulot kafolati, yetkazib berish va qaytarish qoidalari bevosita tovar sotuvchisi bo‘lgan asl do‘kon tomonidan ta’minlanadi.</p>\n<p class=\"article-step\"><b>2. Savdo konversiyasi oshadi:</b> Onlayn do‘konlar uchun xaridorlarning to‘lov sahifasida savatchani tashlab ketish (cart abandonment) ehtimoli keskin kamayadi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-17",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Elektron tijorat va AI texnologiyalari guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Onlayn xaridlar olamida uzoq kutilgan qulaylik: <b>Google kompaniyasi</b> internet foydalanuvchilari uchun <b>«Universal Cart» (Umumiy savatcha)</b> xizmatini rasman yo‘lga qo‘ydi. Ushbu texnologiya <b>turli xil mustaqil internet-do‘konlardagi tovarlarni bitta yagona savatchaga to‘plash</b> va xaridni bitta tugma orqali yakunlash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Tarqoq do‘konlar muammosi qanday hal qilindi?</h2>\n<p>Ilgari xaridor kiyim-kechakni Nike'dan, uy jihozlarini Target'dan, kosmetikani esa Sephora'dan sotib olmoqchi bo‘lsa, har bir saytda alohida ro‘yxatdan o‘tishi, to‘lov kartalarini kiritishi va alohida savatchalarni kuzatib borishi shart edi.</p>\n<p>Google ishlab chiqqan yangi Universal Commerce Protocol (UCP) tizimi tufayli barcha hamkor riteylerlar va Shopify do‘konlari yagona ekotizimga birlashdi. Foydalanuvchi Google Qidiruv, Chrome brauzeri yoki Gemini chatida qaysi saytdagi mahsulotni ko‘rmasin, uni bir marta bosish bilan o‘zining umumiy Google savatchasiga qo‘shib qo‘ya oladi.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellekt bilan boyitilgan xarid tajribasi</h2>\n<ul class=\"article-list\">\n  <li><b>Avtomatik narx monitoringi:</b> Savatchaga qo‘shilgan mahsulot arzonlashsa yoki chegirmaga tushsa, Google Shopping tizimi darhol xabar yuboradi.</li>\n  <li><b>Keshbek va chegirmalar tahlili:</b> Tizim Google Wallet bilan integratsiya qilingan bo‘lib, to‘lov paytida qaysi bankingiz ko‘proq bonus yoki ball berishini avtomatik ko‘rsatadi.</li>\n  <li><b>Xavfsiz va to‘g‘ridan-to‘g‘ri to‘lov:</b> Foydalanuvchi do‘konlarga o‘z karta raqamlarini qayta-qayta kiritmaydi, hamma amallar Google Pay orqali xavfsiz himoyalangan holda bajariladi.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz xarid qilish jarayonidagi o‘nlab to‘siqlarni olib tashladik. Endi qaysi brend qayerda sotilayotganidan qat’i nazar, xaridor uchun bitta yagona va ishonchli savatcha xizmat qiladi.\" — Google Shopping vitse-prezidenti</p>\n\n<h2 class=\"article-section-title\">Xaridorlar va savdo biznesi uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Do‘konlar rasmiy sotuvchi bo‘lib qoladi:</b> Mahsulot kafolati, yetkazib berish va qaytarish qoidalari bevosita tovar sotuvchisi bo‘lgan asl do‘kon tomonidan ta’minlanadi.</p>\n<p class=\"article-step\"><b>2. Savdo konversiyasi oshadi:</b> Onlayn do‘konlar uchun xaridorlarning to‘lov sahifasida savatchani tashlab ketish (cart abandonment) ehtimoli keskin kamayadi.</p>"
+  },
   "ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026": {
     "id": "ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026",
     "slug": "ai-va-chiplar-bozori-bir-kunda-1-trillion-dollar-yoqotdi-2026",
