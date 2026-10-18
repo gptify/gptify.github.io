@@ -137,28 +137,55 @@
           <p class="article-lead">Instagram Reels va TikTok uchun sun'iy intellekt yordamida video tayyorlash juda oson, faqat bitta oltin qoidani bilish kerak: <b>birdaniga 30 soniyalik butun video chiqarishga urinmang</b>. Eng yaxshi va buzilmagan natija — 4–5 soniyalik 3 ta qisqa kadrni tayyorlab, ularni montajda birlashtirish orqali olinadi.</p>
 
 <h2 class="article-section-title">1-qadam: ChatGPT yoki Gemini'da kadrlar ssenariysini oling</h2>
-<p>ChatGPT yoki Gemini'ni oching va quyidagi tayyor promptni nusxalab kiriting:</p>
+<p>Quyidagi tayyor promptni bir marta bosish bilan nusxalang va ChatGPT yoki Gemini'ga kiriting:</p>
 
-<pre class="article-code"><code>Menga Instagram Reels (9:16 vertikal format) uchun 15 soniyalik dinamik video rejasi kerak. Mavzu: [MAVZU: masalan, qahva tayyorlash jarayoni / shinam ish stoli / yangi krossovka taqdimoti].
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:18px; margin:20px 0 24px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding-bottom:10px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 ChatGPT / Gemini Uchun Tayyor Prompt</span>
+    <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('reels-prompt-text').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:8px 16px; font-size:13px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="reels-prompt-text" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:14px; line-height:1.65; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:16px; margin:0; user-select:all;">Menga Instagram Reels (9:16 vertikal format) uchun 15 soniyalik dinamik video rejasi kerak. Mavzu: [MAVZU: quyidagi tayyor misollardan birini tanlang yoki o'z biznesingizni yozing].
 
 Buni ketma-ket 3 ta kadrga (har biri 4-5 soniya) bo'lib bering. Har bir kadr uchun Google Flow'ga kiritishga tayyor, ingliz tilidagi bittadan aniq prompt yozib bering:
 - Qahramon yoki buyumning aniq harakati
 - Joy va yorug'lik
 - Kamera harakati (masalan: slow dolly zoom, smooth pan)
-Uslub: Cinematic, realistic, 4k.</code></pre>
+Uslub: Cinematic, realistic, 4k.</pre>
+</div>
 
-<p>Natijada Siz bir necha soniyada Google Flow uchun tayyor 3 ta aniq inglizcha promptga ega bo'lasiz.</p>
+<h3 class="article-section-title">Prompt ichidagi [MAVZU] o'rniga nima yozish mumkin? (4 ta tayyor g'oya)</h3>
+<p>Qavs ichidagi joyga o'zingizning sohangizga mos real misollardan birini qo'yishingiz mumkin:</p>
+<ul class="article-list">
+  <li><b>☕ 1-misol (Qahvaxona yoki restoran):</b> <i>«Toshkentdagi shinam kafeda barista yangi qahva donalarini maydalab, oq finjonga issiq quyuq espresso quyayotgan jarayon»</i></li>
+  <li><b>👟 2-misol (Kiyim-kechak yoki do'kon):</b> <i>«Yomg'irli zamonaviy shahar ko'chasida qora trench palto va qulay krossovkani namoyish etuvchi qizning silliq yurishi»</i></li>
+  <li><b>💻 3-misol (Ekspert yoki shaxsiy brend):</b> <i>«Ertalabki yorug' ofisda zamonaviy noutbukda yangi loyiha ustida diqqat bilan ishlayotgan mutaxassisning ish stoli»</i></li>
+  <li><b>🏠 4-misol (Ko'chmas mulk yoki interyer):</b> <i>«Yangi xonadon mehmonxonasiga sekin kirib borish: panoramali derazadan quyosh nuri tushishi va shinam divan burchagi»</i></li>
+</ul>
+
+<h3 class="article-section-title">ChatGPT yoki Gemini beradigan tayyor natija qanday ko'rinadi?</h3>
+<p>Yuqoridagi so'rov kiritilgach, AI Sizga Google Flow uchun aynan quyidagi 3 ta inglizcha promptni tayyorlab beradi:</p>
+<div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:16px; margin:14px 0 20px 0; font-size:13px; line-height:1.6;">
+  <p style="margin:0 0 10px 0;"><b>🎬 1-kadr (0–5 sek):</b> <code>Cinematic close-up of a sleek espresso machine pouring rich dark coffee into a white ceramic cup, rising warm steam, morning window sunlight, 4k 24fps.</code></p>
+  <p style="margin:0 0 10px 0;"><b>🎬 2-kadr (5–10 sek):</b> <code>Medium slow dolly-in shot of hands holding the warm steaming cup, peaceful minimalist coffee shop table with an open notebook, soft background blur.</code></p>
+  <p style="margin:0;"><b>🎬 3-kadr (10–15 sek):</b> <code>Slow upward tilt revealing the first warm sip, relaxed natural smile, warm cinematic golden hour lighting, clean film aesthetic.</code></p>
+</div>
 
 <h2 class="article-section-title">2-qadam: Google Flow'da videolarni generatsiya qiling</h2>
-<p class="article-step"><b>1.</b> Google Flow interfeysini oching.</p>
+<p class="article-step"><b>1.</b> Google Flow / Veo interfeysini oching.</p>
 <p class="article-step"><b>2.</b> Video formatini Instagram Reels uchun <b>9:16 (Vertical)</b> ga sozlang.</p>
-<p class="article-step"><b>3.</b> 1-kadr uchun olingan promptni qo'ying va <b>Generate</b> tugmasini bosing.</p>
+<p class="article-step"><b>3.</b> 1-kadr uchun olingan inglizcha promptni nusxalab qo'ying va <b>Generate</b> tugmasini bosing.</p>
 <p class="article-step"><b>4.</b> Xuddi shu tarzda 2-kadr va 3-kadr promptlarini ham kiritib, chiqqan 3 ta qisqa videoni telefoningiz yoki kompyuteringizga yuklab oling.</p>
+
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:14px; margin:16px 0;">
+  <p style="margin:0; font-size:13px; color:#1e3a8a;"><b>💡 Google Flow uchun muhim qoida:</b> Har bir kadrda faqat bitta aniq jismoniy harakat bo'lsin (masalan: faqat quyish yoki faqat yurish). Bir kadr ichida juda ko'p harakatlarni aralashtirmang — shunda video hech qachon xira yoki g'alati chiqmaydi.</p>
+</div>
 
 <h2 class="article-section-title">3-qadam: CapCut'da birlashtiring va yakunlang</h2>
 <p class="article-step"><b>1.</b> <b>CapCut</b> dasturini oching (telefonda yoki kompyuterda) va yangi loyiha boshlang.</p>
 <p class="article-step"><b>2.</b> Yuklab olingan 3 ta videoni ketma-ket joylang va kerak bo'lsa ortiqcha boshlanish/tugash joylarini kesib, silliq holga keltiring.</p>
-<p class="article-step"><b>3.</b> CapCut audio kutubxonasidan yoki Instagram'dan mos trenddagi orqa fon musiqasini qo'shing.</p>
+<p class="article-step"><b>3.</b> CapCut audio kutubxonasidan yoki Instagram'dan mos trenddagi orqa fon musiqasini qo'shing (qidiruvda «Lo-fi Chill» yoki «Cinematic Ambient» deb yozish tavsiya etiladi).</p>
 <p class="article-step"><b>4.</b> <b>Auto Captions (Avto-subtitr)</b> tugmasini bosing — subtitrlar avtomatik yoziladi (chunki Instagram foydalanuvchilarining 70% dan ortig'i videolarni ovozsiz ko'radi).</p>
 <p class="article-step"><b>5.</b> Videoni 1080p sifatda saqlab oling va Instagram Reels'ga joylang.</p>
 

@@ -264,6 +264,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "instagram uchun ai video: chatgpt, gemini va google flow texnologiya google deepmind veo documentation instagram reels uchun oddiy qadamma-qadam yo'riqnoma: chatgpt yoki gemini'da kadrlar rejasini tuzish" },
   { t: "Claude 25 Yillik Global Kriptografiya Sirini Ochdi", u: "yangiliklar/claude-25-yillik-global-kriptografiya-sirini-ochdi-2026/", k: "claude 25 yillik global kriptografiya sirini ochdi texnologiya anthropic research anthropic claude modeli zamonaviy internet xavfsizligida chorak asrdan beri yechilmagan nist p-256 s" },
