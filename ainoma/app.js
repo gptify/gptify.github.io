@@ -261,7 +261,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Matndan Videogacha: Gemini, ChatGPT Va Veo Bilan Roliklar Qurish", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "matndan videogacha: gemini, chatgpt va veo bilan roliklar qurish qo'llanmalar google deepmind veo documentation g'oyadan tayyor videogacha bo'lgan to'liq zanjir: gemini va chatgpt yordamida kadrlar ketma-ketligin" },
   { t: "Claude 25 Yillik Global Kriptografiya Sirini Ochdi", u: "yangiliklar/claude-25-yillik-global-kriptografiya-sirini-ochdi-2026/", k: "claude 25 yillik global kriptografiya sirini ochdi texnologiya anthropic research anthropic claude modeli zamonaviy internet xavfsizligida chorak asrdan beri yechilmagan nist p-256 s" },
   { t: "Xitoy 23 Ta Ilg‘or AI Texnologiyasiga Eksport Cheklovi Qo‘ydi", u: "yangiliklar/xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026/", k: "xitoy 23 ta ilg‘or ai texnologiyasiga eksport cheklovi qo‘ydi texnologiya global times / mofcom announcement pekin strategik texnologiyalar eksportini qat'iy nazoratga oldi: 23 ta ai yo'nalishi bo'yicha mahall" },
   { t: "OpenCode Tizimidan Minglab OpenAI Va Anthropic Kalitlari Sizdi", u: "yangiliklar/opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026/", k: "opencode tizimidan minglab openai va anthropic kalitlari sizdi texnologiya opencode security advisory ommabop ai kod agenti opencode'ning pullik console xizmatidagi zaiflik sababli minglab dasturchilar " },
