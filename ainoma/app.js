@@ -259,7 +259,12 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Claude 25 Yillik Global Kriptografiya Sirini Ochdi", u: "yangiliklar/claude-25-yillik-global-kriptografiya-sirini-ochdi-2026/", k: "claude 25 yillik global kriptografiya sirini ochdi texnologiya anthropic research anthropic claude modeli zamonaviy internet xavfsizligida chorak asrdan beri yechilmagan nist p-256 s" },
+  { t: "Xitoy 23 Ta Ilg‘or AI Texnologiyasiga Eksport Cheklovi Qo‘ydi", u: "yangiliklar/xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026/", k: "xitoy 23 ta ilg‘or ai texnologiyasiga eksport cheklovi qo‘ydi texnologiya global times / mofcom announcement pekin strategik texnologiyalar eksportini qat'iy nazoratga oldi: 23 ta ai yo'nalishi bo'yicha mahall" },
+  { t: "OpenCode Tizimidan Minglab OpenAI Va Anthropic Kalitlari Sizdi", u: "yangiliklar/opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026/", k: "opencode tizimidan minglab openai va anthropic kalitlari sizdi texnologiya opencode security advisory ommabop ai kod agenti opencode'ning pullik console xizmatidagi zaiflik sababli minglab dasturchilar " },
   { t: "ChatGPT Endi Chrome Tablari Bo‘ylab Mustaqil Ishlaydi", u: "yangiliklar/chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026/", k: "chatgpt endi chrome tablari bo‘ylab mustaqil ishlaydi texnologiya openai product updates openai chrome brauzeri uchun rasmiy chatgpt kengaytmasini chiqardi: endi model barcha ochiq tablarda" },
   { t: "OpenAI Voice API Jonli Suhbatda Amallarni Bajaradi", u: "yangiliklar/openai-voice-api-jonli-suhbatda-amallarni-bajaradi-2026/", k: "openai voice api jonli suhbatda amallarni bajaradi texnologiya openai platform documentation openai ovozli ai bilan muloqot paytida dasturlarga tashqi amallarni (tool calling) fon rejimida baja" },
   { t: "Google Turli Do‘konlar Uchun Yagona Savatcha Chiqardi", u: "yangiliklar/google-turli-dokonlar-uchun-yagona-savatcha-chiqardi-2026/", k: "google turli do‘konlar uchun yagona savatcha chiqardi texnologiya google the keyword google onlayn xaridlarni osonlashtiruvchi universal cart tizimini chiqardi: endi turli internet-do'k" },

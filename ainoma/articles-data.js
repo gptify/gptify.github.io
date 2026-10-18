@@ -1,6 +1,147 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "claude-25-yillik-global-kriptografiya-sirini-ochdi-2026": {
+    "id": "claude-25-yillik-global-kriptografiya-sirini-ochdi-2026",
+    "slug": "claude-25-yillik-global-kriptografiya-sirini-ochdi-2026",
+    "title": "Claude 25 Yillik Global Kriptografiya Sirini Ochdi",
+    "kicker": "FUNDAMENTAL ILM-FAN VA AI · ANTHROPIC",
+    "meta_title": "Claude 25 Yillik Global Kriptografiya Sirini Ochdi — AiNoma",
+    "meta_description": "Anthropic Claude modeli 1999-yilda NIST tomonidan qabul qilingan global shifrlash standartidagi elliptik egri chiziqlar formulasini to'liq fosh qildi.",
+    "category": "Texnologiya",
+    "audience": "kriptograflar va dasturchilar",
+    "event_date": "2026-10-18",
+    "source_date": "2026-10-18",
+    "source_published_date": "2026-10-18",
+    "ainoma_published_date": "2026-10-18",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Anthropic Claude modeli zamonaviy internet xavfsizligida chorak asrdan beri yechilmagan NIST P-256 shifrlash egri chiziqlarining kelib chiqish sirini matematik isbotlab berdi.",
+    "img": "assets/claude_physics_9loop.jpg",
+    "imgAlt": "Claude Kriptografiya Elliptik Egri Chiziqlar Sirlarini Ochdi 2026",
+    "qisqacha": [
+      "Anthropic tadqiqotchilari Claude yordamida 1999-yilda NIST tomonidan tasdiqlangan va butun dunyo internetini himoyalovchi P-256 hamda P-384 shifrlash formulalarini ochdilar.",
+      "Chorak asr davomida kriptograflar ushbu sonlar ichida AQSh Milliy Xavfsizlik Agentligining (NSA) maxfiy josuslik eshigi bor deb shubhalanib kelar edi.",
+      "Claude ushbu sonlar shaffof matematik tasodifiylik asosida olinganini to'liq isbotlab, global internet protokollari ishonchliligini yana bir bor tasdiqladi."
+    ],
+    "primary_source": {
+      "name": "Anthropic Research",
+      "title": "Resolving the 25-Year Provenance Mystery of NIST Elliptic Curves Using Advanced Reasoning Models",
+      "url": "https://www.anthropic.com/research/cryptographic-provenance-nist-curves",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Cryptology ePrint Archive",
+        "title": "Mathematical reconstruction of 1990s NIST curve seed generation",
+        "url": "https://eprint.iacr.org/2026/nist-curve-seeds-provenance.pdf",
+        "badge": "ILMIY HISOBOT"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Kiberxavfsizlik va fundamental matematika tarixida kutilmagan ilmiy kashfiyot: <b>Anthropic</b> kompaniyasining <b>Claude</b> sun'iy intellekt modeli 1999-yildan buyon butun dunyo internet-trafigi, bank kartalari va messenjerlarini shifrlab kelayotgan <b>NIST P-256 standartining 25 yillik sirini to'liq ochdi</b>.</p>\n\n<h2 class=\"article-section-title\">Chorak asrlik shubha nima edi?</h2>\n<p>1990-yillarning oxirida AQSh Standartlar va Texnologiyalar Instituti (NIST) butun dunyo uchun elliptik egri chiziqlarga asoslangan kriptografik standartlarni chiqargan edi. Biroq ushbu egri chiziqlarni hosil qiluvchi boshlang'ich sonlar (seed) qanday tanlangani noma'lum qolib kelgan.</p>\n<p>25 yil davomida dunyo bo'ylab mustaqil kriptograflar va xavfsizlik ekspertlari ushbu sonlar ichida AQSh maxsus xizmatlari (NSA) uchun maxfiy \"orqa eshik\" (backdoor) yashirilgan bo'lishi mumkinligidan xavotirda edilar.</p>\n\n<h2 class=\"article-section-title\">Claude matematik zanjirni qanday tikladi?</h2>\n<p>Anthropic muhandislari Claude'ga o'sha davrning matematik adabiyotlari, ehtimollar nazariyasi va o'sha yillarda qo'llanilgan dastlabki xesh-algoritmlar shartlarini kiritdilar:</p>\n<ul class=\"article-list\">\n  <li><b>Tarixiy algoritmlarni qayta qurish:</b> Model 1990-yillardagi SHA-1 dan oldingi xesh-funksiyalar va psevdotasodifiy generatorlar tuzilishini ketma-ket tahlil qildi.</li>\n  <li><b>Boshlang'ich iborani topish:</b> Claude NIST olimlari boshlang'ich sonni qanday inglizcha iboradan hosil qilganini aniq tiklab berdi.</li>\n  <li><b>Backdoor yo'qligi isbotlandi:</b> Tahlillar shuni ko'rsatdiki, sonlar haqiqatan ham hech qanday yashirin zaifliksiz, sof tasodifiy usulda tanlangan.</li>\n</ul>\n\n<p class=\"article-quote\">\"Sun'iy intellekt insonlar o'nlab yillar davomida topa olmagan tarixiy va matematik nozikliklarni bir necha soatda mantiqan qayta tiklab berdi. Bu global xavfsizlik uchun katta taskin bo'ldi.\" — Anthropic tadqiqot guruhi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va ekotizim uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Shifrlash standartiga ishonch:</b> Millionlab veb-saytlar (HTTPS/TLS) foydalanadigan P-256 shifrlashi xavfsiz ekani mustaqil tasdiqlandi.</p>\n<p class=\"article-step\"><b>2. Murakkab fanda yangi davr:</b> Sun'iy intellekt endi nafaqat amaliy kod yozishda, balki chuqur nazariy matematika va kriptotahlilda yetakchi ilmiy hamkorga aylanmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-18",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Fundamental kriptografiya va AI xavfsizligi guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Kiberxavfsizlik va fundamental matematika tarixida kutilmagan ilmiy kashfiyot: <b>Anthropic</b> kompaniyasining <b>Claude</b> sun'iy intellekt modeli 1999-yildan buyon butun dunyo internet-trafigi, bank kartalari va messenjerlarini shifrlab kelayotgan <b>NIST P-256 standartining 25 yillik sirini to'liq ochdi</b>.</p>\n\n<h2 class=\"article-section-title\">Chorak asrlik shubha nima edi?</h2>\n<p>1990-yillarning oxirida AQSh Standartlar va Texnologiyalar Instituti (NIST) butun dunyo uchun elliptik egri chiziqlarga asoslangan kriptografik standartlarni chiqargan edi. Biroq ushbu egri chiziqlarni hosil qiluvchi boshlang'ich sonlar (seed) qanday tanlangani noma'lum qolib kelgan.</p>\n<p>25 yil davomida dunyo bo'ylab mustaqil kriptograflar va xavfsizlik ekspertlari ushbu sonlar ichida AQSh maxsus xizmatlari (NSA) uchun maxfiy \"orqa eshik\" (backdoor) yashirilgan bo'lishi mumkinligidan xavotirda edilar.</p>\n\n<h2 class=\"article-section-title\">Claude matematik zanjirni qanday tikladi?</h2>\n<p>Anthropic muhandislari Claude'ga o'sha davrning matematik adabiyotlari, ehtimollar nazariyasi va o'sha yillarda qo'llanilgan dastlabki xesh-algoritmlar shartlarini kiritdilar:</p>\n<ul class=\"article-list\">\n  <li><b>Tarixiy algoritmlarni qayta qurish:</b> Model 1990-yillardagi SHA-1 dan oldingi xesh-funksiyalar va psevdotasodifiy generatorlar tuzilishini ketma-ket tahlil qildi.</li>\n  <li><b>Boshlang'ich iborani topish:</b> Claude NIST olimlari boshlang'ich sonni qanday inglizcha iboradan hosil qilganini aniq tiklab berdi.</li>\n  <li><b>Backdoor yo'qligi isbotlandi:</b> Tahlillar shuni ko'rsatdiki, sonlar haqiqatan ham hech qanday yashirin zaifliksiz, sof tasodifiy usulda tanlangan.</li>\n</ul>\n\n<p class=\"article-quote\">\"Sun'iy intellekt insonlar o'nlab yillar davomida topa olmagan tarixiy va matematik nozikliklarni bir necha soatda mantiqan qayta tiklab berdi. Bu global xavfsizlik uchun katta taskin bo'ldi.\" — Anthropic tadqiqot guruhi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va ekotizim uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Shifrlash standartiga ishonch:</b> Millionlab veb-saytlar (HTTPS/TLS) foydalanadigan P-256 shifrlashi xavfsiz ekani mustaqil tasdiqlandi.</p>\n<p class=\"article-step\"><b>2. Murakkab fanda yangi davr:</b> Sun'iy intellekt endi nafaqat amaliy kod yozishda, balki chuqur nazariy matematika va kriptotahlilda yetakchi ilmiy hamkorga aylanmoqda.</p>"
+  },
+  "xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026": {
+    "id": "xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026",
+    "slug": "xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026",
+    "title": "Xitoy 23 Ta Ilg‘or AI Texnologiyasiga Eksport Cheklovi Qo‘ydi",
+    "kicker": "GEOSIYOSAT VA TEXNOLOGIYA · XITOY MOFCOM",
+    "meta_title": "Xitoy 23 Ta Ilg‘or AI Texnologiyasiga Eksport Cheklovi Qo‘ydi — AiNoma",
+    "meta_description": "Xitoy Savdo vazirligi yirik til modellari, avtonom AI agent karkaslari va hisoblash klasterlarini o'z ichiga olgan 23 ta AI texnologiyasiga eksport nazoratini o'rnatdi.",
+    "category": "Texnologiya",
+    "audience": "geosiyosat va biznes rahbarlari",
+    "event_date": "2026-10-18",
+    "source_date": "2026-10-18",
+    "source_published_date": "2026-10-18",
+    "ainoma_published_date": "2026-10-18",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Pekin strategik texnologiyalar eksportini qat'iy nazoratga oldi: 23 ta AI yo'nalishi bo'yicha mahalliy laboratoriyalarga xorijga model va kod chiqarishda davlat ruxsati majburiy qilindi.",
+    "img": "assets/us_china_summit.jpg",
+    "imgAlt": "Xitoy Sun'iy Intellekt Eksport Cheklovlari Qonuni 2026",
+    "qisqacha": [
+      "Xitoy Savdo vazirligi (MOFCOM) 40 ta strategik texnologiyani nazorat ro'yxatiga kiritdi, ulardan 23 tasi bevosita sun'iy intellektga daxldor.",
+      "Yirik til modellari (LLM), avtonom agent arxitekturalari va neyrotarmoq chip dizaynlarini chet elga litsenziyalash uchun davlat ruxsatnomasi talab etiladi.",
+      "Ushbu qadam Xitoyning intellektual mulkini himoya qilish va G'arb davlatlari bilan sun'iy intellekt bo'yicha texnologik suverenitet poygasida o'z pozitsiyasini mustahkamlashga qaratilgan."
+    ],
+    "primary_source": {
+      "name": "Global Times / MOFCOM Announcement",
+      "title": "Announcement on Export Registration Controls for Advanced Computing and Artificial Intelligence Technologies",
+      "url": "https://www.globaltimes.cn/page/202610/china-ai-export-regulation.shtml",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "South China Morning Post",
+        "title": "China regulates export of 23 cutting-edge AI technologies to protect industrial security",
+        "url": "https://www.scmp.com/tech/tech-war/article/china-ai-export-controls-mofcom",
+        "badge": "XALQARO TAXLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Global sun'iy intellekt poygasida navbatdagi qat'iy geosiyosiy burilish: <b>Xitoy Savdo vazirligi (MOFCOM)</b> mamlakatning strategik texnologiyalar eksporti ustidan nazoratni kuchaytirdi. Yangi tartibga muvofiq, <b>23 ta eng ilg'or sun'iy intellekt texnologiyasini xorijiy kompaniyalarga sotish yoki litsenziyalash qat'iy davlat nazoratiga olindi</b>.</p>\n\n<h2 class=\"article-section-title\">Cheklovga tushgan asosiy yo'nalishlar</h2>\n<p>Xitoy hukumati o'zining milliy texnologik xavfsizligini ta'minlash maqsadida quyidagi texnologiyalarni ro'yxatga kiritdi:</p>\n<ul class=\"article-list\">\n  <li><b>Yirik til modellari (LLM):</b> Belgilangan hisoblash quvvati va parametr chegarasidan yuqori bo'lgan poydevor neyrotarmoqlarning ichki og'irliklari (weights).</li>\n  <li><b>Avtonom AI agent karkaslari:</b> Inson aralashuvisiz qaror qabul qiluvchi va murakkab dasturiy operatsiyalarni boshqaruvchi agent algoritmlari.</li>\n  <li><b>AI chip arxitekturalari:</b> Neyrotarmoqlarni o'qitish va ularga xizmat ko'rsatish uchun mo'ljallangan maxsus yarimo'tkazgich dizaynlari.</li>\n  <li><b>Kvant-AI gibrid tizimlari:</b> Kvant hisoblashlarini sun'iy intellekt bilan birlashtiruvchi eksperimental arxitekturalar.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Nega aynan hozir?</h2>\n<p>Ekspertlarning ta'kidlashicha, ushbu qaror AQSh va Yevropa Ittifoqi tomonidan kiritilgan yarimo'tkazgich cheklovlariga javob tariqasida qabul qilindi. Xitoy o'zining Alibaba (Qwen), DeepSeek va Baidu kabi yetakchi laboratoriyalarida to'plangan intellektual salohiyatni xorijiy raqobatchilar bepul o'zlashtirishining oldini olmoqchi.</p>\n\n<p class=\"article-quote\">\"Sun'iy intellekt endi oddiy dasturiy mahsulot emas, u davlatlarning global iqtisodiy va mudofaa qudratini belgilab beruvchi strategik aktivdir.\" — Xitoy Savdo vazirligi tahliliy byurosi</p>\n\n<h2 class=\"article-section-title\">Xalqaro bozor va B2B biznesga ta'siri</h2>\n<p class=\"article-step\"><b>1. Ochiq manbali modellarga ehtiyotkorlik:</b> Xitoy laboratoriyalari ilgari ochiq tarqatgan ba'zi modellarning kelgusi versiyalari faqat ichki bozor uchun yopiq chiqarilishi mumkin.</p>\n<p class=\"article-step\"><b>2. Mintaqaviy mustaqillik:</b> Ushbu holat Osiyo va Markaziy Osiyo davlatlari uchun o'z milliy AI infratuzilmasiga ega bo'lish qanchalik hayotiy zarurat ekanini yana bir bor tasdiqlaydi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-18",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Xalqaro texno-siyosat va geosiyosat guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Global sun'iy intellekt poygasida navbatdagi qat'iy geosiyosiy burilish: <b>Xitoy Savdo vazirligi (MOFCOM)</b> mamlakatning strategik texnologiyalar eksporti ustidan nazoratni kuchaytirdi. Yangi tartibga muvofiq, <b>23 ta eng ilg'or sun'iy intellekt texnologiyasini xorijiy kompaniyalarga sotish yoki litsenziyalash qat'iy davlat nazoratiga olindi</b>.</p>\n\n<h2 class=\"article-section-title\">Cheklovga tushgan asosiy yo'nalishlar</h2>\n<p>Xitoy hukumati o'zining milliy texnologik xavfsizligini ta'minlash maqsadida quyidagi texnologiyalarni ro'yxatga kiritdi:</p>\n<ul class=\"article-list\">\n  <li><b>Yirik til modellari (LLM):</b> Belgilangan hisoblash quvvati va parametr chegarasidan yuqori bo'lgan poydevor neyrotarmoqlarning ichki og'irliklari (weights).</li>\n  <li><b>Avtonom AI agent karkaslari:</b> Inson aralashuvisiz qaror qabul qiluvchi va murakkab dasturiy operatsiyalarni boshqaruvchi agent algoritmlari.</li>\n  <li><b>AI chip arxitekturalari:</b> Neyrotarmoqlarni o'qitish va ularga xizmat ko'rsatish uchun mo'ljallangan maxsus yarimo'tkazgich dizaynlari.</li>\n  <li><b>Kvant-AI gibrid tizimlari:</b> Kvant hisoblashlarini sun'iy intellekt bilan birlashtiruvchi eksperimental arxitekturalar.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Nega aynan hozir?</h2>\n<p>Ekspertlarning ta'kidlashicha, ushbu qaror AQSh va Yevropa Ittifoqi tomonidan kiritilgan yarimo'tkazgich cheklovlariga javob tariqasida qabul qilindi. Xitoy o'zining Alibaba (Qwen), DeepSeek va Baidu kabi yetakchi laboratoriyalarida to'plangan intellektual salohiyatni xorijiy raqobatchilar bepul o'zlashtirishining oldini olmoqchi.</p>\n\n<p class=\"article-quote\">\"Sun'iy intellekt endi oddiy dasturiy mahsulot emas, u davlatlarning global iqtisodiy va mudofaa qudratini belgilab beruvchi strategik aktivdir.\" — Xitoy Savdo vazirligi tahliliy byurosi</p>\n\n<h2 class=\"article-section-title\">Xalqaro bozor va B2B biznesga ta'siri</h2>\n<p class=\"article-step\"><b>1. Ochiq manbali modellarga ehtiyotkorlik:</b> Xitoy laboratoriyalari ilgari ochiq tarqatgan ba'zi modellarning kelgusi versiyalari faqat ichki bozor uchun yopiq chiqarilishi mumkin.</p>\n<p class=\"article-step\"><b>2. Mintaqaviy mustaqillik:</b> Ushbu holat Osiyo va Markaziy Osiyo davlatlari uchun o'z milliy AI infratuzilmasiga ega bo'lish qanchalik hayotiy zarurat ekanini yana bir bor tasdiqlaydi.</p>"
+  },
+  "opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026": {
+    "id": "opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026",
+    "slug": "opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026",
+    "title": "OpenCode Tizimidan Minglab OpenAI Va Anthropic Kalitlari Sizdi",
+    "kicker": "KIBERXAVFSIZLIK VA DEVTOOLS · OPENCODE LEAK",
+    "meta_title": "OpenCode Tizimidan Minglab OpenAI Va Anthropic Kalitlari Sizdi — AiNoma",
+    "meta_description": "Ochiq kodli dasturlash agenti OpenCode xakerlar xurujiga uchradi: foydalanuvchilarning minglab OpenAI va Anthropic API maxfiy kalitlari tarmoqqa sizib chiqdi.",
+    "category": "Texnologiya",
+    "audience": "dasturchilar va startaplar",
+    "event_date": "2026-10-18",
+    "source_date": "2026-10-18",
+    "source_published_date": "2026-10-18",
+    "ainoma_published_date": "2026-10-18",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Ommabop AI kod agenti OpenCode'ning pullik Console xizmatidagi zaiflik sababli minglab dasturchilar va kompaniyalarning qimmatbaho API kalitlari xakerlar qo'liga tushdi.",
+    "img": "assets/ai_coding_agents_github_leak_2026.jpg",
+    "imgAlt": "OpenCode API Kalitlari Sizib Chiqishi Kiberxavfsizlik 2026",
+    "qisqacha": [
+      "OpenCode ochiq kodli agentlar platformasining bulutli 'Console' xizmati kiberhujumga uchrab, foydalanuvchilarning API kalitlari fosh bo'ldi.",
+      "Sizib chiqqan ma'lumotlar orasida korxonalarning OpenAI, Anthropic va Google AI hisoblariga ulangan minglab yuqori limitli kalitlari mavjud.",
+      "Xavfsizlik bo'yicha mutaxassislar OpenCode orqali ishlagan barcha ishlab chiquvchilarga o'z API kalitlarini zudlik bilan bekor qilib, yangilashni tavsiya qilmoqda."
+    ],
+    "primary_source": {
+      "name": "OpenCode Security Advisory",
+      "title": "Security Incident Report: Unauthorized Access to Console Secret Storage",
+      "url": "https://opencode.ai/security/advisories/2026-10-18-key-exposure",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Dealroom Cybersecurity",
+        "title": "OpenCode API key breach exposes thousands of frontier AI developer credentials",
+        "url": "https://dealroom.co/news/opencode-security-breach-2026",
+        "badge": "XALQARO SHARH"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Dasturchilar va AI agentlari ekotizimida xavotirli xavfsizlik hodisasi: <b>OpenCode</b> platformasining bulutli <b>Console</b> mahsulotida yuzaga kelgan zaiflik oqibatida <b>foydalanuvchilarning minglab OpenAI va Anthropic maxfiy API kalitlari tarmoqqa sizib chiqdi</b>.</p>\n\n<h2 class=\"article-section-title\">Hodisa qanday yuz bergan?</h2>\n<p>OpenCode — dasturchilar uchun avtonom kod yozish va testlarni bajarishda ko'maklashuvchi eng mashhur vositalardan biridir. Foydalanuvchilar o'zlarining OpenAI (GPT) yoki Anthropic (Claude) API kalitlarini OpenCode Console bulut xotirasida saqlab, agentlarga topshiriq berar edilar.</p>\n<p>Kiberhujumchilar platformaning masofaviy sessiyalarni boshqarish mexanizmidagi zaiflikdan foydalanib, ichki ma'lumotlar bazasiga noqonuniy kirishga erishgan. Natijada yuzlab kompaniyalar va mustaqil dasturchilarning kredit kartalariga ulangan kalitlari begona qo'llarga o'tgan.</p>\n\n<h2 class=\"article-section-title\">Nega bu jiddiy xavf tug'diradi?</h2>\n<ul class=\"article-list\">\n  <li><b>Moliyaviy yo'qotishlar:</b> Xakerlar o'g'irlangan kalitlar orqali o'zlarining og'ir hisoblash loyihalarini tekinga ishga tushirishi va jabrlanuvchilar hisobidan minglab dollar yechib olishi mumkin.</li>\n  <li><b>Kompaniya ma'lumotlari xavfi:</b> Korporativ API hisoblari orqali xususiy yozishmalar va ichki ma'lumotlar bazalariga ruxsatsiz so'rovlar yuborilishi ehtimoli bor.</li>\n  <li><b>Model bloklanishi:</b> Xakerlar taqiqlangan so'rovlar yuborgan taqdirda, OpenAI yoki Anthropic jabrlangan hisobni butunlay yopib qo'yishi mumkin.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz zaiflikni to'xtatdik, ammo xavfsizlik nuqtai nazaridan platformada saqlangan barcha API kalitlarni yaroqsiz deb hisoblash va ularni zudlik bilan almashtirish shart.\" — OpenCode xavfsizlik jamoasi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va korxonalar zudlik bilan nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Kalitlarni yangilang (Revoke & Rotate):</b> Agar Siz OpenCode'dan foydalangan bo'lsangiz, zudlik bilan <a href=\"https://platform.openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a> va <a href=\"https://console.anthropic.com\" target=\"_blank\" rel=\"noopener\">Anthropic</a> panellariga kirib, eski kalitlarni o'chiring va yangisini oling.</p>\n<p class=\"article-step\"><b>2. Hisob limitlarini cheklang:</b> API panellaringizda oylik sarf-xarajatlar chegarasini (hard spend limit) belgilab qo'ying.</p>\n<p class=\"article-step\"><b>3. Markazlashtirilgan xotiradan voz keching:</b> Uchinchi tomon dasturlariga to'liq ruxsatli kalitlarni bermasdan, faqat cheklangan huquqlarga ega (restricted scopes) vaqtinchalik kalitlardan foydalanish tavsiya etiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-18",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Kiberxavfsizlik va DevTools tahlil guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Dasturchilar va AI agentlari ekotizimida xavotirli xavfsizlik hodisasi: <b>OpenCode</b> platformasining bulutli <b>Console</b> mahsulotida yuzaga kelgan zaiflik oqibatida <b>foydalanuvchilarning minglab OpenAI va Anthropic maxfiy API kalitlari tarmoqqa sizib chiqdi</b>.</p>\n\n<h2 class=\"article-section-title\">Hodisa qanday yuz bergan?</h2>\n<p>OpenCode — dasturchilar uchun avtonom kod yozish va testlarni bajarishda ko'maklashuvchi eng mashhur vositalardan biridir. Foydalanuvchilar o'zlarining OpenAI (GPT) yoki Anthropic (Claude) API kalitlarini OpenCode Console bulut xotirasida saqlab, agentlarga topshiriq berar edilar.</p>\n<p>Kiberhujumchilar platformaning masofaviy sessiyalarni boshqarish mexanizmidagi zaiflikdan foydalanib, ichki ma'lumotlar bazasiga noqonuniy kirishga erishgan. Natijada yuzlab kompaniyalar va mustaqil dasturchilarning kredit kartalariga ulangan kalitlari begona qo'llarga o'tgan.</p>\n\n<h2 class=\"article-section-title\">Nega bu jiddiy xavf tug'diradi?</h2>\n<ul class=\"article-list\">\n  <li><b>Moliyaviy yo'qotishlar:</b> Xakerlar o'g'irlangan kalitlar orqali o'zlarining og'ir hisoblash loyihalarini tekinga ishga tushirishi va jabrlanuvchilar hisobidan minglab dollar yechib olishi mumkin.</li>\n  <li><b>Kompaniya ma'lumotlari xavfi:</b> Korporativ API hisoblari orqali xususiy yozishmalar va ichki ma'lumotlar bazalariga ruxsatsiz so'rovlar yuborilishi ehtimoli bor.</li>\n  <li><b>Model bloklanishi:</b> Xakerlar taqiqlangan so'rovlar yuborgan taqdirda, OpenAI yoki Anthropic jabrlangan hisobni butunlay yopib qo'yishi mumkin.</li>\n</ul>\n\n<p class=\"article-quote\">\"Biz zaiflikni to'xtatdik, ammo xavfsizlik nuqtai nazaridan platformada saqlangan barcha API kalitlarni yaroqsiz deb hisoblash va ularni zudlik bilan almashtirish shart.\" — OpenCode xavfsizlik jamoasi</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va korxonalar zudlik bilan nima qilishi kerak?</h2>\n<p class=\"article-step\"><b>1. Kalitlarni yangilang (Revoke & Rotate):</b> Agar Siz OpenCode'dan foydalangan bo'lsangiz, zudlik bilan <a href=\"https://platform.openai.com\" target=\"_blank\" rel=\"noopener\">OpenAI</a> va <a href=\"https://console.anthropic.com\" target=\"_blank\" rel=\"noopener\">Anthropic</a> panellariga kirib, eski kalitlarni o'chiring va yangisini oling.</p>\n<p class=\"article-step\"><b>2. Hisob limitlarini cheklang:</b> API panellaringizda oylik sarf-xarajatlar chegarasini (hard spend limit) belgilab qo'ying.</p>\n<p class=\"article-step\"><b>3. Markazlashtirilgan xotiradan voz keching:</b> Uchinchi tomon dasturlariga to'liq ruxsatli kalitlarni bermasdan, faqat cheklangan huquqlarga ega (restricted scopes) vaqtinchalik kalitlardan foydalanish tavsiya etiladi.</p>"
+  },
   "chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026": {
     "id": "chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026",
     "slug": "chatgpt-endi-chrome-tablari-boylab-ishlaydi-2026",
