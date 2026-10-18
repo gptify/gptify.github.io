@@ -6,7 +6,7 @@ window.AINOMA_ARTICLES = {
     "kicker": "ODDIY QO'LLANMA · INSTAGRAM REELS VA SHORTS",
     "meta_title": "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow — AiNoma",
     "meta_description": "ChatGPT yoki Gemini yordamida kadrlar ssenariysini olish, Google Flow'da 9:16 video chiqarish va CapCut'da musiqa bilan birlashtirish bo'yicha oddiy yo'riqnoma.",
-    "category": "Qo'llanmalar",
+    "category": "Texnologiya",
     "audience": "kontent makerlar va marketologlar",
     "event_date": "2026-10-18",
     "source_date": "2026-10-18",

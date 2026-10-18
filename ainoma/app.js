@@ -263,8 +263,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "instagram uchun ai video: chatgpt, gemini va google flow qo'llanmalar google deepmind veo documentation instagram reels uchun oddiy qadamma-qadam yo'riqnoma: chatgpt yoki gemini'da kadrlar rejasini tuzish" },
+  { t: "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "instagram uchun ai video: chatgpt, gemini va google flow texnologiya google deepmind veo documentation instagram reels uchun oddiy qadamma-qadam yo'riqnoma: chatgpt yoki gemini'da kadrlar rejasini tuzish" },
   { t: "Claude 25 Yillik Global Kriptografiya Sirini Ochdi", u: "yangiliklar/claude-25-yillik-global-kriptografiya-sirini-ochdi-2026/", k: "claude 25 yillik global kriptografiya sirini ochdi texnologiya anthropic research anthropic claude modeli zamonaviy internet xavfsizligida chorak asrdan beri yechilmagan nist p-256 s" },
   { t: "Xitoy 23 Ta Ilg‘or AI Texnologiyasiga Eksport Cheklovi Qo‘ydi", u: "yangiliklar/xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026/", k: "xitoy 23 ta ilg‘or ai texnologiyasiga eksport cheklovi qo‘ydi texnologiya global times / mofcom announcement pekin strategik texnologiyalar eksportini qat'iy nazoratga oldi: 23 ta ai yo'nalishi bo'yicha mahall" },
   { t: "OpenCode Tizimidan Minglab OpenAI Va Anthropic Kalitlari Sizdi", u: "yangiliklar/opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026/", k: "opencode tizimidan minglab openai va anthropic kalitlari sizdi texnologiya opencode security advisory ommabop ai kod agenti opencode'ning pullik console xizmatidagi zaiflik sababli minglab dasturchilar " },
