@@ -1,4 +1,98 @@
 window.AINOMA_ARTICLES = {
+  "ozbekiston-ai-readiness-reytingida-25-pogonaga-kotarildi-2026": {
+    "id": "ozbekiston-ai-readiness-reytingida-25-pogonaga-kotarildi-2026",
+    "slug": "ozbekiston-ai-readiness-reytingida-25-pogonaga-kotarildi-2026",
+    "title": "O‘zbekiston AI Readiness Reytingida 25 Pog‘onaga Ko‘tarildi",
+    "kicker": "O‘ZBEKISTON VA STRATEGIYA · AI READINESS INDEX",
+    "meta_title": "O‘zbekiston AI Readiness Reytingida 25 Pog‘onaga Ko‘tarildi — AiNoma",
+    "meta_description": "O‘zbekiston sun’iy intellektga tayyorlik (AI Readiness) xalqaro indeksida 25 pog‘ona yuqorilab 62-o‘ringa chiqdi, Toshkentda yangi superkompyuter ishga tushirildi.",
+    "category": "Texnologiya",
+    "audience": "iqtisodchilar va IT rahbarlari",
+    "event_date": "2026-10-19",
+    "source_date": "2026-10-19",
+    "source_published_date": "2026-10-19",
+    "ainoma_published_date": "2026-10-19",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "O‘zbekiston global sun’iy intellektga tayyorlik indeksida 62-o‘ringa ko‘tarildi. Raqamli hukumat data-markazida NVIDIA arxitekturasidagi milliy superkompyuter ishga tushirildi.",
+    "img": "assets/ai_datacenter_helix.jpg",
+    "imgAlt": "Ozbekiston AI Readiness Reytingi Superkompyuter 2026",
+    "qisqacha": [
+      "O‘zbekiston global sun’iy intellektga tayyorlik xalqaro indeksida 25 pog‘onaga ko‘tarilib, dunyo bo‘yicha 62-o‘rinni egalladi.",
+      "Raqamli hukumat data-markazida NVIDIA arxitekturasi asosidagi yangi milliy superkompyuter hisoblash klasteri rasman ishga tushirildi.",
+      "Hukumat 2030-yilgacha AI xizmatlari va dasturiy mahsulotlar hajmini $1.5 milliardga yetkazish hamda TOP-50 talikka kirishni maqsad qilgan."
+    ],
+    "primary_source": {
+      "name": "O‘zbekiston Respublikasi Raqamli Texnologiyalar Vazirligi",
+      "title": "O‘zbekiston sun’iy intellektga tayyorlik indeksida 25 pog‘onaga ko‘tarildi va milliy hisoblash klasteri ishga tushirildi",
+      "url": "https://digital.uz/oz/news/view/2026-ai-readiness-supercomputer",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Gov.uz Digital Portal",
+        "title": "O‘zbekiston sun’iy intellekt infratuzilmasi va xalqaro indekslardagi ko‘rsatkichlar hisoboti",
+        "url": "https://gov.uz/oz/digital/news/view/ai-readiness-supercomputer-2026",
+        "badge": "RASMIY AXBOROT"
+      }
+    ],
+    "body": "<p class=\"article-lead\">O‘zbekiston sun’iy intellekt texnologiyalarini rivojlantirish va raqamli infratuzilmani yangilashda muhim strategik bosqichga erishdi: mamlakat global <b>AI Readiness Index (Sun’iy intellektga tayyorlik indeksi)</b> xalqaro reytingida birdaniga <b>25 pog‘onaga ko‘tarilib, dunyo bo‘yicha 62-o‘ringa chiqdi</b>.</p>\n\n<h2 class=\"article-section-title\">Natija qanday omillar hisobiga qo‘lga kiritildi?</h2>\n<p>Xalqaro tahlilchilar O‘zbekistonning so‘nggi yillarda axborot texnologiyalari va raqamli transformatsiya sohasida amalga oshirgan islohotlarini yuqori baholamoqda. Ko‘rsatkichlarning keskin o‘sishiga quyidagi amaliy qadamlar asosiy turtki bo‘ldi:</p>\n<ul class=\"article-list\">\n  <li><b>Milliy superkompyuter klasteri:</b> Toshkentdagi «Raqamli hukumat» data-markazida AQShning <b>NVIDIA</b> texnologiyalari asosidagi yangi yuqori quvvatli hisoblash klasteri rasman ishga tushirildi. Bu mahalliy ilmiy laboratoriyalar va kompaniyalarga og‘ir AI modellarini o‘z infratuzilmasida o‘qitish imkonini bermoqda.</li>\n  <li><b>Inson kapitali va kadrlar:</b> «5 Million AI Leaders» dasturi hamda oliy ta’lim muassasalarida sun’iy intellekt bo‘yicha yo‘lga qo‘yilgan yangi amaliy mutaxassisliklar orqali minglab yoshlar global standartlarga o‘rgatilmoqda.</li>\n  <li><b>Davlat xizmatlariga integratsiya:</b> Bojxona, soliq, sog‘liqni saqlash va jamoat xavfsizligi tizimlariga 100 dan ortiq amaliy neyrotarmoq yechimlari bosqichma-bosqich tatbiq etilmoqda.</li>\n</ul>\n\n<h2 class=\"article-section-title\">2030-yilgacha bo‘lgan strategik marralar</h2>\n<p>Raqamli texnologiyalar vazirligi taqdim etgan strategiyaga ko‘ra, mamlakat oldiga quyidagi ulkan maqsadlar qo‘yilgan:</p>\n<p class=\"article-step\"><b>1. Global TOP-50 talik:</b> 2030-yilga kelib O‘zbekistonni AI Readiness reytingida dunyoning eng ilg‘or 50 ta davlati qatoriga olib chiqish.</p>\n<p class=\"article-step\"><b>2. 1.5 milliard dollarlik bozor:</b> Mamlakatda sun’iy intellektga asoslangan dasturiy mahsulotlar va xizmatlar eksporti hamda ichki aylanmasi hajmini 1.5 milliard dollarga yetkazish.</p>\n<p class=\"article-step\"><b>3. Mahalliy til modellari:</b> O‘zbek tili korpusiga asoslangan milliy fundamental til modellari (LLM) va xavfsiz neyrotarmoq arxitekturalarini ishlab chiqishni kengaytirish.</p>\n\n<p class=\"article-quote\">«Sun’iy intellekt endi kelajak istiqboli emas, balki iqtisodiyotimiz raqobatbardoshligini belgilab beruvchi asosiy ishlab chiqarish omilidir. Milliy hisoblash quvvatlarining ishga tushirilishi startaplarimiz va biznesimiz uchun yangi imkoniyatlar eshigini ochadi.» — Raqamli texnologiyalar vazirligi matbuot xizmati</p>\n\n<h2 class=\"article-section-title\">Mahalliy IT va biznes ekotizimi uchun xulosa</h2>\n<p class=\"article-step\"><b>Infratuzilma xarajatlarining pasayishi:</b> Mahalliy korxonalar chet el bulutli serverlariga millionlab dollar to‘lash o‘rniga, milliy superkompyuter quvvatlaridan arzonroq foydalanish imkoniyatiga ega bo‘ladi.</p>\n<p class=\"article-step\"><b>Xalqaro investorlar ishonchi:</b> Global indeksdagi 25 pog‘onalik o‘sish xorijiy venchur fondlar va venchur studiyalarning O‘zbekiston AI startaplariga sarmoya kiritish qiziqishini sezilarli darajada oshiradi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-19",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Milliy IT va raqamli iqtisodiyot tahlil guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">O‘zbekiston sun’iy intellekt texnologiyalarini rivojlantirish va raqamli infratuzilmani yangilashda muhim strategik bosqichga erishdi: mamlakat global <b>AI Readiness Index (Sun’iy intellektga tayyorlik indeksi)</b> xalqaro reytingida birdaniga <b>25 pog‘onaga ko‘tarilib, dunyo bo‘yicha 62-o‘ringa chiqdi</b>.</p>\n\n<h2 class=\"article-section-title\">Natija qanday omillar hisobiga qo‘lga kiritildi?</h2>\n<p>Xalqaro tahlilchilar O‘zbekistonning so‘nggi yillarda axborot texnologiyalari va raqamli transformatsiya sohasida amalga oshirgan islohotlarini yuqori baholamoqda. Ko‘rsatkichlarning keskin o‘sishiga quyidagi amaliy qadamlar asosiy turtki bo‘ldi:</p>\n<ul class=\"article-list\">\n  <li><b>Milliy superkompyuter klasteri:</b> Toshkentdagi «Raqamli hukumat» data-markazida AQShning <b>NVIDIA</b> texnologiyalari asosidagi yangi yuqori quvvatli hisoblash klasteri rasman ishga tushirildi. Bu mahalliy ilmiy laboratoriyalar va kompaniyalarga og‘ir AI modellarini o‘z infratuzilmasida o‘qitish imkonini bermoqda.</li>\n  <li><b>Inson kapitali va kadrlar:</b> «5 Million AI Leaders» dasturi hamda oliy ta’lim muassasalarida sun’iy intellekt bo‘yicha yo‘lga qo‘yilgan yangi amaliy mutaxassisliklar orqali minglab yoshlar global standartlarga o‘rgatilmoqda.</li>\n  <li><b>Davlat xizmatlariga integratsiya:</b> Bojxona, soliq, sog‘liqni saqlash va jamoat xavfsizligi tizimlariga 100 dan ortiq amaliy neyrotarmoq yechimlari bosqichma-bosqich tatbiq etilmoqda.</li>\n</ul>\n\n<h2 class=\"article-section-title\">2030-yilgacha bo‘lgan strategik marralar</h2>\n<p>Raqamli texnologiyalar vazirligi taqdim etgan strategiyaga ko‘ra, mamlakat oldiga quyidagi ulkan maqsadlar qo‘yilgan:</p>\n<p class=\"article-step\"><b>1. Global TOP-50 talik:</b> 2030-yilga kelib O‘zbekistonni AI Readiness reytingida dunyoning eng ilg‘or 50 ta davlati qatoriga olib chiqish.</p>\n<p class=\"article-step\"><b>2. 1.5 milliard dollarlik bozor:</b> Mamlakatda sun’iy intellektga asoslangan dasturiy mahsulotlar va xizmatlar eksporti hamda ichki aylanmasi hajmini 1.5 milliard dollarga yetkazish.</p>\n<p class=\"article-step\"><b>3. Mahalliy til modellari:</b> O‘zbek tili korpusiga asoslangan milliy fundamental til modellari (LLM) va xavfsiz neyrotarmoq arxitekturalarini ishlab chiqishni kengaytirish.</p>\n\n<p class=\"article-quote\">«Sun’iy intellekt endi kelajak istiqboli emas, balki iqtisodiyotimiz raqobatbardoshligini belgilab beruvchi asosiy ishlab chiqarish omilidir. Milliy hisoblash quvvatlarining ishga tushirilishi startaplarimiz va biznesimiz uchun yangi imkoniyatlar eshigini ochadi.» — Raqamli texnologiyalar vazirligi matbuot xizmati</p>\n\n<h2 class=\"article-section-title\">Mahalliy IT va biznes ekotizimi uchun xulosa</h2>\n<p class=\"article-step\"><b>Infratuzilma xarajatlarining pasayishi:</b> Mahalliy korxonalar chet el bulutli serverlariga millionlab dollar to‘lash o‘rniga, milliy superkompyuter quvvatlaridan arzonroq foydalanish imkoniyatiga ega bo‘ladi.</p>\n<p class=\"article-step\"><b>Xalqaro investorlar ishonchi:</b> Global indeksdagi 25 pog‘onalik o‘sish xorijiy venchur fondlar va venchur studiyalarning O‘zbekiston AI startaplariga sarmoya kiritish qiziqishini sezilarli darajada oshiradi.</p>"
+  },
+  "anthropic-ipo-oldidan-5-foiz-aksiyasini-jamgarmaga-ajratdi-2026": {
+    "id": "anthropic-ipo-oldidan-5-foiz-aksiyasini-jamgarmaga-ajratdi-2026",
+    "slug": "anthropic-ipo-oldidan-5-foiz-aksiyasini-jamgarmaga-ajratdi-2026",
+    "title": "Anthropic IPO Oldidan 5% Aksiyasini Jamg‘armaga Ajratdi",
+    "kicker": "GLOBAL MOLIYA VA AI BOZORI · ANTHROPIC",
+    "meta_title": "Anthropic IPO Oldidan 5% Aksiyasini Jamg‘armaga Ajratdi — AiNoma",
+    "meta_description": "Anthropic fond bozoriga chiqish (IPO) arafasida sun'iy intellektning ijtimoiy ta'sirini yumshatish uchun 5 foiz aksiyalarini jamoat fondiga o'tkazdi.",
+    "category": "Texnologiya",
+    "audience": "investorlar va biznes rahbarlari",
+    "event_date": "2026-10-18",
+    "source_date": "2026-10-18",
+    "source_published_date": "2026-10-18",
+    "ainoma_published_date": "2026-10-19",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Anthropic birjaga chiqish arafasida o'zining 5% aksiyalarini jamoat manfaatiga xizmat qiluvchi mustaqil fondga o'tkazdi. Mablag'lar mehnat bozoridagi ta'sirlarni yumshatishga sarflanadi.",
+    "img": "assets/anthropic_2_trillion_ipo_plan_2026.jpg",
+    "imgAlt": "Anthropic IPO Aksiyalari Jamoat Jamgarmasi 2026",
+    "qisqacha": [
+      "Anthropic birjaga chiqish (IPO) arafasida o'z aksiyalarining 5 foizini (milliardlab dollar qiymatdagi ulushni) maxsus notijorat jamoat fondiga o'tkazishini e'lon qildi.",
+      "Ushbu mablag'lar sun'iy intellekt sabab mehnat bozoridagi o'zgarishlarni yumshatish, kiberxavfsizlik tadqiqotlari va ijtimoiy dasturlarni moliyalashtirishga yo'naltiriladi.",
+      "Bu qadam Anthropic'ning tijoriy o'sish va ijtimoiy xavfsizlik o'rtasidagi muvozanatni saqlashga qaratilgan korporativ strategiyasining muhim qismi hisoblanadi."
+    ],
+    "primary_source": {
+      "name": "Reuters Technology",
+      "title": "Anthropic pledges 5% equity fund to mitigate AI impact ahead of blockbuster IPO",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/anthropic-pledges-equity-fund-ahead-of-ipo-2026-10-18/",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Financial Times Markets",
+        "title": "Anthropic commits multi-billion dollar stake to public benefit trust ahead of public debut",
+        "url": "https://www.ft.com/content/anthropic-public-benefit-pledge-2026",
+        "badge": "XALQARO TAXLIL"
+      }
+    ],
+    "body": "<p class=\"article-lead\">Global sun'iy intellekt bozorida yirik moliyaviy burilish: <b>Anthropic</b> kompaniyasi fond bozoriga chiqish (IPO) arafasida o'zining <b>5 foiz aksiyalarini maxsus notijorat jamoat fondiga (Public Benefit Trust) ajratishini rasman e'lon qildi</b>.</p>\n\n<h2 class=\"article-section-title\">Milliardlab dollarlik ulush nima uchun ajratildi?</h2>\n<p>Anthropic kapitallashuvi so'nggi sarmoya raundlari va yirik korporativ kelishuvlar ortidan yuzlab milliard dollarga baholanmoqda. Kompaniya o'zining dastlabki nizomida belgilangan «Jamoat manfaati korporatsiyasi» (Public Benefit Corporation) maqomiga sodiq qolgan holda, aksiyalarning bir qismini jamiyat uchun xizmat qiluvchi mustaqil tuzilmaga o'tkazmoqda.</p>\n<ul class=\"article-list\">\n  <li><b>Mehnat bozoridagi ta'sirni yumshatish:</b> Sun'iy intellekt avtomatlashtirishi natijasida ish joylarini yo'qotgan yoki kasbini o'zgartirishga majbur bo'lgan xodimlar uchun qayta tayyorlash dasturlarini moliyalashtirish.</li>\n  <li><b>Global xavfsizlik tadqiqotlari:</b> O'ta ilg'or sun'iy intellekt modellarining kiberxavfsizlik va bio-xavfsizlikka daxldor xavflarini mustaqil tekshiruvchi ilmiy laboratoriyalarga grantlar ajratish.</li>\n  <li><b>Bozor muvozanati:</b> Kompaniya birjaga chiqqanidan so'ng (IPO) investorlarning faqat sof foyda ketidan quvishi oqibatida xavfsizlik standartlari pasayib ketishining oldini olish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Katta IPO arafasidagi korporativ qadam</h2>\n<p>Moliyaviy tahlilchilarning ta'kidlashicha, ushbu qadam AQSh Qimmatli qog'ozlar va birjalar komissiyasi (SEC) hamda Federal Savdo Komissiyasining (FTC) sun'iy intellekt startaplariga bo'lgan bosimi fonida qabul qilindi. Anthropic o'zini raqibi OpenAI'dan farqli o'laroq, ijtimoiy jihatdan eng mas'uliyatli va shaffof poydevor model ishlab chiquvchisi sifatida namoyon etmoqda.</p>\n\n<p class=\"article-quote\">«Bizning maqsadimiz — faqatgina dunyoning eng kuchli modellarini ishlab chiqish emas, balki bu texnologiya butun insoniyat farovonligiga xizmat qilishini kafolatlashdir. 5 foizlik ulush — xavfsiz kelajak uchun qo'yilgan aniq moliyaviy garovdir.» — Dario Amodei, Anthropic bosh direktori</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va ekotizim uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Yangi grantlar va tadqiqotlar:</b> Dunyo bo'ylab mustaqil tadqiqotchilar va institutlar Anthropic fondidan katta moliyaviy qo'llab-quvvatlash olish imkoniyatiga ega bo'ladi.</p>\n<p class=\"article-step\"><b>2. Model ishonchliligi:</b> Claude modellarining tijoriylashuvi bilan birga ularning xavfsizlik va axloqiy mezonlari mustaqil vasiylik kengashi tomonidan nazorat qilib boriladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-19",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Global moliya va venchur tahlil guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Global sun'iy intellekt bozorida yirik moliyaviy burilish: <b>Anthropic</b> kompaniyasi fond bozoriga chiqish (IPO) arafasida o'zining <b>5 foiz aksiyalarini maxsus notijorat jamoat fondiga (Public Benefit Trust) ajratishini rasman e'lon qildi</b>.</p>\n\n<h2 class=\"article-section-title\">Milliardlab dollarlik ulush nima uchun ajratildi?</h2>\n<p>Anthropic kapitallashuvi so'nggi sarmoya raundlari va yirik korporativ kelishuvlar ortidan yuzlab milliard dollarga baholanmoqda. Kompaniya o'zining dastlabki nizomida belgilangan «Jamoat manfaati korporatsiyasi» (Public Benefit Corporation) maqomiga sodiq qolgan holda, aksiyalarning bir qismini jamiyat uchun xizmat qiluvchi mustaqil tuzilmaga o'tkazmoqda.</p>\n<ul class=\"article-list\">\n  <li><b>Mehnat bozoridagi ta'sirni yumshatish:</b> Sun'iy intellekt avtomatlashtirishi natijasida ish joylarini yo'qotgan yoki kasbini o'zgartirishga majbur bo'lgan xodimlar uchun qayta tayyorlash dasturlarini moliyalashtirish.</li>\n  <li><b>Global xavfsizlik tadqiqotlari:</b> O'ta ilg'or sun'iy intellekt modellarining kiberxavfsizlik va bio-xavfsizlikka daxldor xavflarini mustaqil tekshiruvchi ilmiy laboratoriyalarga grantlar ajratish.</li>\n  <li><b>Bozor muvozanati:</b> Kompaniya birjaga chiqqanidan so'ng (IPO) investorlarning faqat sof foyda ketidan quvishi oqibatida xavfsizlik standartlari pasayib ketishining oldini olish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Katta IPO arafasidagi korporativ qadam</h2>\n<p>Moliyaviy tahlilchilarning ta'kidlashicha, ushbu qadam AQSh Qimmatli qog'ozlar va birjalar komissiyasi (SEC) hamda Federal Savdo Komissiyasining (FTC) sun'iy intellekt startaplariga bo'lgan bosimi fonida qabul qilindi. Anthropic o'zini raqibi OpenAI'dan farqli o'laroq, ijtimoiy jihatdan eng mas'uliyatli va shaffof poydevor model ishlab chiquvchisi sifatida namoyon etmoqda.</p>\n\n<p class=\"article-quote\">«Bizning maqsadimiz — faqatgina dunyoning eng kuchli modellarini ishlab chiqish emas, balki bu texnologiya butun insoniyat farovonligiga xizmat qilishini kafolatlashdir. 5 foizlik ulush — xavfsiz kelajak uchun qo'yilgan aniq moliyaviy garovdir.» — Dario Amodei, Anthropic bosh direktori</p>\n\n<h2 class=\"article-section-title\">Dasturchilar va ekotizim uchun xulosa</h2>\n<p class=\"article-step\"><b>1. Yangi grantlar va tadqiqotlar:</b> Dunyo bo'ylab mustaqil tadqiqotchilar va institutlar Anthropic fondidan katta moliyaviy qo'llab-quvvatlash olish imkoniyatiga ega bo'ladi.</p>\n<p class=\"article-step\"><b>2. Model ishonchliligi:</b> Claude modellarining tijoriylashuvi bilan birga ularning xavfsizlik va axloqiy mezonlari mustaqil vasiylik kengashi tomonidan nazorat qilib boriladi.</p>"
+  },
   "ai-video-qurish-gemini-chatgpt-veo-2026": {
     "id": "ai-video-qurish-gemini-chatgpt-veo-2026",
     "slug": "ai-video-qurish-gemini-chatgpt-veo-2026",
