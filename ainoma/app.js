@@ -266,7 +266,12 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Prompt Yozish San'ati: 5 Qoida Va 15 Shablon", u: "yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/", k: "prompt yozish san'ati: 5 qoida va 15 shablon qo'llanmalar openai prompt engineering documentation ai'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi " },
+  { t: "NVIDIA Yevropa Sanoati Uchun $10B Investitsiya E’lon Qildi", u: "yangiliklar/nvidia-yevropa-sanoati-uchun-10-milliard-dollar-investitsiya-2026/", k: "nvidia yevropa sanoati uchun $10b investitsiya e’lon qildi texnologiya nvidia official press room nvidia yevropa sanoat gigantlari (siemens, bmw va airbus) bilan hamkorlikda sanoat robototexnikasi v" },
+  { t: "Google Korporativ Muhit Uchun «Gemini Agent»ni Chiqardi", u: "yangiliklar/google-korporativ-muhit-uchun-gemini-agent-chiqardi-2026/", k: "google korporativ muhit uchun «gemini agent»ni chiqardi texnologiya google workspace official announcement google workspace foydalanuvchilari uchun gmail, docs, sheets va korporativ crm tizimlari bo'ylab avt" },
   { t: "O‘zbekiston AI Readiness Reytingida 25 Pog‘onaga Ko‘tarildi", u: "yangiliklar/ozbekiston-ai-readiness-reytingida-25-pogonaga-kotarildi-2026/", k: "o‘zbekiston ai readiness reytingida 25 pog‘onaga ko‘tarildi texnologiya o‘zbekiston respublikasi raqamli texnologiyalar vazirligi o‘zbekiston global sun’iy intellektga tayyorlik indeksida 62-o‘ringa ko‘tarildi. raqamli hukumat dat" },
   { t: "Anthropic IPO Oldidan 5% Aksiyasini Jamg‘armaga Ajratdi", u: "yangiliklar/anthropic-ipo-oldidan-5-foiz-aksiyasini-jamgarmaga-ajratdi-2026/", k: "anthropic ipo oldidan 5% aksiyasini jamg‘armaga ajratdi texnologiya reuters technology anthropic birjaga chiqish arafasida o'zining 5% aksiyalarini jamoat manfaatiga xizmat qiluvchi musta" },
   { t: "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "instagram uchun ai video: chatgpt, gemini va google flow texnologiya google deepmind veo documentation instagram reels uchun oddiy qadamma-qadam yo'riqnoma: chatgpt yoki gemini'da kadrlar rejasini tuzish" },

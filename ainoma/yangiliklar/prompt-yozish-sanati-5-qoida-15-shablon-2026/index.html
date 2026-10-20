@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prompt Yozish San'ati: 5 Qoida Va 15 Shablon — AiNoma</title>
+  <meta name="description" content="AI'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi ishlar uchun 15 ta tayyor nusxa olinadigan shablon.">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="canonical" href="https://ainoma.uz/yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/">
+  <link rel="alternate" type="application/rss+xml" title="AiNoma RSS Tasmasi" href="https://ainoma.uz/feed.xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AiNoma">
+  <meta property="og:title" content="Prompt Yozish San'ati: 5 Qoida Va 15 Shablon — AiNoma">
+  <meta property="og:description" content="AI'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi ishlar uchun 15 ta tayyor nusxa olinadigan shablon.">
+  <meta property="og:url" content="https://ainoma.uz/yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/">
+  <meta property="og:image" content="https://ainoma.uz/assets/presentation_ai.jpg">
+  <meta property="article:published_time" content="2026-10-20T10:00:00+05:00">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prompt Yozish San'ati: 5 Qoida Va 15 Shablon — AiNoma">
+  <meta name="twitter:description" content="AI'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi ishlar uchun 15 ta tayyor nusxa olinadigan shablon.">
+  <meta name="twitter:image" content="https://ainoma.uz/assets/presentation_ai.jpg">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="alternate icon" href="../../favicon.ico">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Prompt Yozish San'ati: 5 Qoida Va 15 Shablon",
+  "description": "AI'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi ishlar uchun 15 ta tayyor nusxa olinadigan shablon.",
+  "datePublished": "2026-10-20T10:00:00+05:00",
+  "dateModified": "2026-10-20T10:00:00+05:00",
+  "mainEntityOfPage": "https://ainoma.uz/yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/",
+  "author": {
+    "@type": "Person",
+    "name": "AiNoma Tahririyati",
+    "jobTitle": "Amaliy ta'lim va prompt metodologiyasi guruhi",
+    "url": "https://ainoma.uz/haqida.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AiNoma",
+    "url": "https://ainoma.uz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ainoma.uz/assets/logo.svg"
+    }
+  },
+  "image": [
+    "https://ainoma.uz/assets/presentation_ai.jpg"
+  ],
+  "articleSection": "Qo'llanmalar",
+  "isBasedOn": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+  "citation": "https://developers.openai.com/api/docs/guides/prompt-engineering"
+}
+  </script>
+  <script>
+    (function(){
+      var t = localStorage.getItem('ainoma-theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (t === 'dark') document.documentElement.dataset.theme = 'dark';
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="../../" aria-label="AiNoma Bosh Sahifa">
+        <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma" width="136" height="48" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/logo.svg';}">
+      </a>
+      <nav class="navlinks">
+        <a class="active" href="../../yangiliklar.html">Yangiliklar</a>
+        <a href="../../vositalar.html">AI vositalar</a>
+        <a href="../../qollanmalar.html">Qo‘llanmalar</a>
+        <a href="../../prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="../../hikoyalar.html">Hikoyalar</a>
+        <a href="../../imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="../../haqida.html">Haqida</a>
+      </nav>
+      <div class="navtools">
+        <button class="iconbtn" id="searchBtn" title="Qidiruv (Ctrl+K)" aria-label="Qidiruv"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button class="iconbtn" id="theme" title="Mavzuni o‘zgartirish" aria-label="Mavzu"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+        <a class="btn-tg-nav" href="https://t.me/ainomauz" target="_blank" rel="noopener">
+          <span>Kanal</span> @ainomauz
+        </a>
+        <button class="iconbtn hamb" id="hamb" aria-label="Menyu"><svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Modal -->
+  <div class="searchbox" id="searchbox">
+    <div class="searchinner">
+      <input id="siteSearch" placeholder="AINoma bo‘ylab qidiring…" autocomplete="off">
+      <button class="btn" id="closeSearch">Yopish (Esc)</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <main>
+    <div id="articleMainShell">
+      <div class="article-shell article-head">
+        <a href="../../yangiliklar.html" class="article-back-nav" aria-label="Barcha yangiliklar tasmasiga qaytish">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          Yangiliklar tasmasi
+        </a>
+        <div class="kicker">AMALIY QO'LLANMA · PROMPT MUHANDISLIGI</div>
+        <h1>Prompt Yozish San'ati: 5 Qoida Va 15 Shablon</h1>
+        <p class="article-deck">AI'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi ishlar uchun 15 ta tayyor nusxa olinadigan shablon.</p>
+        
+        <div class="byline">
+          <div class="avatar">AT</div>
+          <div>
+            <b>AiNoma Tahririyati</b><br>
+            <span style="color:var(--muted)">Muallif: AiNoma Tahririyati · Yangilangan: 20-sentabr, 2026 · 6 daqiqalik mutolaa</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-hero">
+        <picture>
+          <source srcset="../../assets/presentation_ai-1200.webp" type="image/webp">
+          <img src="../../assets/presentation_ai.jpg" alt="Prompt Yozish San'ati: 5 Qoida Va 15 Shablon" width="1200" height="675" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+
+      <article class="article-shell article-body">
+        <div class="qisqacha-box">
+          <div class="qisqacha-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            Qisqacha mazmuni (Executive Summary)
+          </div>
+          <ul style="margin:0; padding-left:20px; color:var(--ink); line-height:1.65; font-size:14px;">
+            <li>Yaxshi prompt tuzishning 5 oltin qoidasi: Rol bering, kontekst va cheklov belgilang, aniq format so'rang, namuna bering va vazifani bosqichlarga bo'ling.</li><li>Maqolada matn tahriri, tezkor o'rganish, ish boshqaruvi, tahlil va ijodkorlik uchun 1-bosishda nusxa olinadigan 15 ta tayyor shablon keltirilgan.</li><li>Har bir shablon uchun qavslar ichidagi o'zgaruvchilarni real hayotiy misollar bilan to'ldirish bo'yicha amaliy yo'riqnoma berilgan.</li>
+          </ul>
+        </div>
+
+        <div id="articleDynamicContent">
+          <p class="article-lead">Sun'iy intellekt (ChatGPT, Claude, Gemini) bilan ishlashda eng katta xato — oddiy va noaniq so'rov berib, undan mukammal natija kutishdir. AI'dan aniq, professional va tahrirtalab bo'lmagan javob olishning o'z qoidalari bor. Quyida — professional prompt yozishning <b>5 oltin qoidasi</b> hamda har kuni ishlatishingiz mumkin bo'lgan <b>15 ta tayyor shablon</b> bilan tanishasiz.</p>
+
+<h2 class="article-section-title">Yaxshi promptning 5 oltin qoidasi</h2>
+<p>Har qanday so'rovni yozishdan oldin quyidagi 5 ta talabni tekshirib oling:</p>
+
+<ul class="article-list">
+  <li><b>1. Rol belgilang (Persona):</b> AI'ga aniq mutaxassis roliga kirishni ayting (masalan: <code>«Sen 10 yillik tajribaga ega B2B savdo strategi sifatida...»</code>). Bu modelning lug'at boyligi va javob chuqurligini bir zumda professional darajaga ko'taradi.</li>
+  <li><b>2. Kontekst va cheklov bering:</b> Vazifa kim uchun, qaysi bozorda va qanday maqsadda bajarilayotganini tushuntiring. «Kichik kafe uchun» beriladigan javob «yirik bank tarmog'i uchun» beriladigan javobdan tubdan farq qiladi.</li>
+  <li><b>3. Aniq format talab qiling:</b> AI'ga natijani qanday ko'rinishda berishni ayting: <i>«Jadval ko'rinishida», «3 ta xatboshi», «punktlar bilan tartiblangan»</i> yoki <i>«har bir punktga misol bilan»</i>. Bu ortiqcha tahrirlash vaqtini tejaydi.</li>
+  <li><b>4. Namuna ko'rsating (Few-Shot):</b> Agar Sizga aniq uslub yoki korporativ ohang kerak bo'lsa, bitta namunaviy matnni ilova qiling: <i>«Mana bu uslub va samimiy ohangda davom ettir: [namuna]»</i>.</li>
+  <li><b>5. Murakkab vazifalarni bo'lib bering:</b> Katta vazifalarni bitta uzun so'rovga tiqishtirmang. Avval rejasini so'rang, ma'qullaganingizdan so'ng har bir qismni alohida ishlab chiqishini buyuring.</li>
+</ul>
+
+<h2 class="article-section-title">1-bo'lim: Matn yozish va tahrirlash (3 shablon)</h2>
+<p>Professional xatlar, maqolalar va ijtimoiy tarmoq postlari uchun tayyor andozalar:</p>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 1. Matnni professional tahrirlash va qisqartirish</span>
+    <button type="button" id="btn-p1" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p1').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p1" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Sen tajribali bosh muharrir sifatida, quyidagi matnni [OHANG: rasmiy / professional / samimiy] ohangda qayta tahrirlab ber. Keraksiz so'zlarni olib tashla, fikrni aniq va lo'nda qil. Hajmi: [SO'Z SONI: masalan, 120 so'zdan oshmasin].\n\nMatn: [BU YERGA MATNINGIZNI QO'YING]</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [OHANG] o'rniga «rasmiy korporativ» yoki «do'stona B2B», [SO'Z SONI] o'rniga «100 so'z» deb yozing.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 2. Mijoz yoki hamkorga professional elektron xat</span>
+    <button type="button" id="btn-p2" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p2').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p2" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Menga [MAQSAD: yangi xizmatni taklif qilish / to'lov kechikkani haqida eslatish / hamkorlik uchrashuviga taklif] bo'yicha professional, ammo samimiy elektron xat yozib ber.\nQabul qiluvchi: [KIM: kompaniya direktori / sotuv bo'limi rahbari].\nAsosiy shart: 3 ta qisqa xatboshidan oshmasin, aniq taklif va aniq harakatga chaqiruv (CTA) bilan yakunlansin.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [MAQSAD] o'rniga masalan «CRM auditini taqdim etish», [KIM] o'rniga «IT kompaniya bosh direktori» deb kiriting.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 3. Ijtimoiy tarmoqlar uchun 3 xil post g'oyasi</span>
+    <button type="button" id="btn-p3" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p3').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p3" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Mavzu: [MAVZU: masalan, O'zbekistonda kuryerlik xizmatini avtomatlashtirish].\nUshbu mavzuda Instagram va Telegram kanali uchun 3 xil post g'oyasi taklif qil:\n1-g'oya: Muammo va uning oqibati haqida;\n2-g'oya: Amaliy qadamlar bo'yicha maslahat;\n3-g'oya: Haqiqiy keys va natija.\nHar biriga jozibador sarlavha va auditoriyani fikr bildirishga undaydigan savol qo'sh.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [MAVZU] o'rniga o'z biznesingiz yoki xizmatingiz mavzusini qo'ying.</div>
+</div>
+
+<h2 class="article-section-title">2-bo'lim: Tez o'rganish va tushunish (3 shablon)</h2>
+<p>Yangi texnologiyalar, murakkab atamalar va qonuniy normalarni 2 daqiqada o'zlashtirish uchun:</p>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 4. Murakkab mavzuni oddiy tilda tushuntirish (Feynman usuli)</span>
+    <button type="button" id="btn-p4" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p4').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p4" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Mavzu: [MAVZU: masalan, Blokcheyn qanday ishlaydi / LLM tokenlari nima].\nUshbu mavzuni 12 yoshli o'quvchiga tushuntirayotgandek, hech qanday qiyin ilmiy atamalarsiz, hayotiy misol yoki o'xshatish orqali 3 ta qisqa xatboshida tushuntirib ber.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [MAVZU] o'rniga Siz tushunmoqchi bo'lgan har qanday murakkab tushunchani kiriting.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 5. Bosqichma-bosqich o'rganish yo'l xaritasi</span>
+    <button type="button" id="btn-p5" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p5').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p5" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Men [SOHA / KO'NIKMA: masalan, Python'da ma'lumotlar tahlili / B2B sotuvlar]ni noldan o'rganmoqchiman. Kuniga 1 soat vaqtim bor.\nMenga 4 haftalik aniq o'quv rejasini jadval ko'rinishida tuzib ber: Hafta raqami | O'rganiladigan asosiy mavzu | Bajariladigan amaliy mashq | Bepul o'rganish manbalari.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [SOHA / KO'NIKMA] o'rniga o'zingiz o'rganmoqchi bo'lgan yo'nalishni yozing.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 6. Tarjimani tekshirish va uslubiy xatolarni tuzatish</span>
+    <button type="button" id="btn-p6" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p6').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p6" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Quyidagi matn [QAYSI TILDAN: masalan, ingliz tilidan] o'zbek tiliga tarjima qilingan:\n[MATN]\n\nSen ona tili filologi va professional muharrir sifatida ushbu tarjimani tekshir: sun'iy yoki kalka bo'lib qolgan jumlalarni aniq ko'rsat va ularning o'rniga tabiiy, jonli o'zbekcha ifodalarni taklif qil.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> AI orqali tarjima qilingan hisobot yoki maqolani joylashtiring.</div>
+</div>
+
+<h2 class="article-section-title">3-bo'lim: Ish va boshqaruv samaradorligi (3 shablon)</h2>
+<p>Rahbarlar, loyiha menejerlari va mutaxassislar uchun ish vaqtini 2 barobar tejovchi promptlar:</p>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 7. Uchrashuv qaydlarini (Meeting Notes) topshiriqlarga aylantirish</span>
+    <button type="button" id="btn-p7" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p7').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p7" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Quyida jamoa uchrashuvining yozib olingan qo'pol qaydlari keltirilgan:\n[UCHRASHUV QAYDLARI]\n\nBularni tozalab, quyidagi formatda tartiblab ber:\n1. Qabul qilingan asosiy qarorlar (3-4 punkt);\n2. Kim nima qiladi (Vazifa | Mas'ul shaxs | Bajarish muddati);\n3. Ochiq qolgan savollar.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Uchrashuvdagi audio transkript yoki shoshilinch yozilgan matnni joylashtiring.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 8. Vazifalarni Eisenhower matritsasi bo'yicha saralash</span>
+    <button type="button" id="btn-p8" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p8').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p8" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Menda bugun bajarilishi kerak bo'lgan quyidagi vazifalar ro'yxati bor:\n[VAZIFALAR RO'YXATI]\n\nBularni Eisenhower matritsasi bo'yicha 4 ta blokga taqsimlab ber:\n1. Shoshilinch va muhim (birinchi navbatda qilinadi);\n2. Muhim, ammo shoshilinch emas (rejalashtiriladi);\n3. Shoshilinch, ammo muhim emas (boshqalarga topshiriladi);\n4. Keraksiz (ro'yxatdan o'chiriladi).\nHar biriga taxminiy vaqt chegarasini qo'sh.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Kuningizdagi barcha mayda-chuyda vazifalar ro'yxatini tashlang.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 9. Haftalik hisobotni professional formatga keltirish</span>
+    <button type="button" id="btn-p9" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p9').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p9" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Mana bu hafta davomida qilingan ishlar xomaki ro'yxati:\n[MA'LUMOTLAR]\n\nRahbar uchun 1 sahifalik professional haftalik hisobot shakllantir: 1) Asosiy yutuqlar va natijalar (raqamlarda); 2) Duch kelingan to'siqlar; 3) Kelgusi haftaning 3 ta asosiy prioriteti.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Hafta davomida qilgan ishlaringizning qisqa nuqtalarini yozing.</div>
+</div>
+
+<h2 class="article-section-title">4-bo'lim: Tahlil va qaror qabul qilish (3 shablon)</h2>
+<p>Raqobatchilarni tahlil qilish, variantlarni solishtirish va to'g'ri qaror tanlash:</p>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 10. Ikki yoki undan ortiq variantni solishtirish jadvali</span>
+    <button type="button" id="btn-p10" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p10').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p10" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Men [VARIANT A: masalan, HubSpot CRM] va [VARIANT B: amoCRM / Kommo] o'rtasida tanlov qilmoqdaman. Bizning biznes: [BIZNES TURI: masalan, 15 kishilik B2B konsalting agentligi].\nUshbu ikki yechimni quyidagi mezonlar bo'yicha solishtirib jadval tuzib ber: Narx siyosati | O'rnatish osonligi | O'zbekiston bozoriga mosligi | Asosiy kamchiliklari | Bizning holatimiz uchun yakuniy tavsiya.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [VARIANT A] va [VARIANT B] o'rniga solishtirmoqchi bo'lgan har qanday vosita yoki yo'lni yozing.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 11. Matndagi ma'lumotlarni asosiy punktlarga ajratish</span>
+    <button type="button" id="btn-p11" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p11').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p11" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Quyidagi tahliliy hisobot yoki maqolani diqqat bilan o'rganib chiq:\n[MATN]\n\nUshbu matndan eng muhim 5 ta xulosani ajratib ber. Har bir xulosa 1 tadan gapdan iborat bo'lsin va quruq gap bo'lmasdan, aniq fakt yoki raqamni aks ettirsin.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Uzun hisobot, yangilik yoki tadqiqot matnini joylashtiring.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 12. Mijozlar fikr-mulohazalarini chuqur tahlil qilish</span>
+    <button type="button" id="btn-p12" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p12').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p12" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Quyida mijozlarimizdan kelgan so'nggi izohlar va sharhlar keltirilgan:\n[SHARHLAR]\n\nBularni tahlil qilib ber: 1) Umumiy kayfiyat (ijobiy / neytral / salbiy foizlarda); 2) Mijozlar eng ko'p shikoyat qilayotgan 3 ta asosiy sabab; 3) Xizmat sifatini oshirish uchun zudlik bilan qilinishi kerak bo'lgan 3 ta aniq amaliy taklif.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Telegram bot, Instagram sharhlari yoki so'rovnomalardagi fikrlarni qo'ying.</div>
+</div>
+
+<h2 class="article-section-title">5-bo'lim: Ijodkorlik va g'oyalar (3 shablon)</h2>
+<p>Kreativ loyihalar, yangi mahsulot nomlari va qiziqarli yondashuvlar ishlab chiqish:</p>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 13. Loyiha yoki mahsulot uchun 5 ta kreativ nom</span>
+    <button type="button" id="btn-p13" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p13').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p13" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Biz yangi mahsulot ishga tushirmoqdamiz. Mahsulot tavsifi: [TAVSIF: masalan, shaxsiy moliyani boshqaruvchi Telegram mini ilovasi]. Auditoriya: [KIM: 20-35 yoshli yosh mutaxassislar].\nMenga 5 xil uslubdagi nom taklif qil: 1) Zamonaviy va qisqa; 2) O'zbekcha mazmunli; 3) Texnologik va global; 4) Metaforik; 5) O'ynoqi va oson esda qoluvchi. Har birining ma'nosini tushuntir.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> [TAVSIF] o'rniga startap yoki xizmatingiz mohiyatini yozing.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 14. Taqdimot yoki nutq uchun kuchli kirish (Hook)</span>
+    <button type="button" id="btn-p14" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p14').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p14" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Mavzu: [MAVZU: masalan, Sun'iy intellekt davrida an'anaviy ta'lim inqirozi]. Auditoriya: [KIM: maktab va universitet rahbarlari].\nTaqdimotning dastlabki 30 soniyasida zalning butun diqqatini jalb qiladigan 3 ta turli kirish variantini yozib ber: 1) Hayratlanarli statistika orqali; 2) Kutilmagan savol orqali; 3) Qisqa hayotiy voqea orqali.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Nutq yoki taqdimotingiz mavzusini kiriting.</div>
+</div>
+
+<div class="article-prompt-box" style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #059669; border-radius:12px; padding:16px 18px; margin:18px 0 22px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px dashed #cbd5e1; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:13px; font-weight:700; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">📋 15. Tanqidiy qarash va zaif nuqtalarni topish</span>
+    <button type="button" id="btn-p15" class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('txt-p15').innerText); this.innerHTML='✓ Nusxalandi!'; this.style.background='#16a34a'; setTimeout(() => { this.innerHTML='📋 Nusxa olish'; this.style.background='#059669'; }, 2500);" style="padding:7px 14px; font-size:12px; background:#059669; color:#ffffff; border:none; border-radius:6px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 4px rgba(5,150,105,0.2); transition:0.2s;">
+      📋 Nusxa olish
+    </button>
+  </div>
+  <pre id="txt-p15" style="font-family:'JetBrains Mono',Menlo,Consolas,monospace; font-size:13.5px; line-height:1.6; color:#0f172a; white-space:pre-wrap !important; word-wrap:break-word !important; word-break:break-word !important; overflow-x:hidden !important; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:14px; margin:0; user-select:all;">Biz quyidagi biznes g'oyani amalga oshirishni rejalashtiryapmiz:\n[G'OYA: masalan, Toshkentda ekologik qog'oz idishlar ishlab chiqarish sexini ochish].\n\nSen qattiqqo'l va tajribali venchur investor hamda biznes tanqidchisi sifatida bu rejadagi barcha zaif nuqtalarni, kutilmagan xavflarni va nega bu g'oya muvaffaqiyatsizlikka uchrashi mumkinligini 5 ta o'tkir savol orqali ko'rsatib ber.</pre>
+  <div style="font-size:12px; color:#475569; margin-top:10px; padding-top:8px; border-top:1px dashed #cbd5e1;"><b>💡 Misol uchun:</b> Rejalashtirayotgan yangi loyihangizni sinovdan o'tkazing.</div>
+</div>
+
+<h2 class="article-section-title">Oltin qoida: Birinchi javob bilan cheklanmang</h2>
+<p>Ko'pchilik foydalanuvchilar birinchi kelgan javobni yakuniy deb biladi. Aslida eng ajoyib natijalar <b>dialog davomida</b> olinadi. AI birinchi javobni berganidan so'ng, quyidagi qisqa aniqlashtiruvchi so'rovlarni bering:</p>
+<ul class="article-list">
+  <li><i>«Buni yanada professionalroq va qisqaroq qilib qayta yoz.»</i></li>
+  <li><i>«Har bir punktga O'zbekiston bozoridan bittadan hayotiy misol qo'sh.»</i></li>
+  <li><i>«Uchinchi variantni batafsilroq yoritib, qadamma-qadam yo'riqnomaga aylantir.»</i></li>
+</ul>
+
+<p class="article-quote">«Sun'iy intellekt — bu oddiy qidiruv tizimi emas, balki Siz bergan yo'nalish bo'yicha fikrlovchi ijodiy intellektdir. So'rovingiz qanchalik aniq bo'lsa, natijangiz shunchalik qimmatli bo'ladi.»</p>
+        </div>
+
+        
+
+        <!-- Telegram Sharing Bar -->
+        <div class="share-bar">
+          <span class="share-label">Maqolani ulashing:</span>
+          <a class="btn telegram" href="https://t.me/share/url?url=https://ainoma.uz/yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/&text=Prompt Yozish San'ati: 5 Qoida Va 15 Shablon" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            Telegram’da ulashish
+          </a>
+          <button class="btn copy-btn" onclick="navigator.clipboard.writeText('https://ainoma.uz/yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/'); window.showToast('Havola nusxalandi!');">
+            Havolani nusxalash
+          </button>
+        </div>
+
+        <!-- Telegram-First Community Banner -->
+        <div class="newsletter" style="margin-top:40px">
+          <div>
+            <h2>Bunday tahlillarni har kuni o‘qishni xohlaysizmi?</h2>
+            <p>Telegram (@ainomauz) kanalimizda eng muhim sun’iy intellekt yangiliklari va amaliy qo‘llanmalarni kuzatib boring.</p>
+          </div>
+          <a class="btn-tg-large" href="https://t.me/ainomauz" target="_blank" rel="noopener">
+            Telegram’da qo‘shilish (@ainomauz)
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <a class="logo" href="../../" aria-label="AiNoma Bosh Sahifa">
+          <img class="brand-logo-img" src="../../assets/logo.svg" alt="AiNoma" width="118" height="42" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='/assets/logo.svg';}">
+        </a>
+        <p style="font-size:13.5px; color:var(--muted); margin:0; max-width:440px; line-height:1.5;">AiNoma — O‘zbekistonda sun’iy intellekt bo‘yicha mustaqil tahliliy nashr, tekshirilgan vositalar katalogi va amaliy B2B qo‘llanmalar.</p>
+      </div>
+      <div class="footerlinks">
+        <a href="../../yangiliklar.html">Yangiliklar</a>
+        <a href="../../vositalar.html">AI vositalar</a>
+        <a href="../../qollanmalar.html">Qo‘llanmalar</a>
+        <a href="../../prompt-ustaxonasi.html">Prompt Ustaxonasi</a>
+        <a href="../../hikoyalar.html">Hikoyalar</a>
+        <a href="../../imkoniyatlar.html">Imkoniyatlar</a>
+        <a href="../../haqida.html">Haqida &amp; Tahririyat</a>
+        <a href="../../feed.xml" target="_blank" rel="alternate" type="application/rss+xml" style="display:inline-flex; align-items:center; gap:4px; color:var(--green); font-weight:700;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg> RSS Lenta
+        </a>
+        <a href="https://t.me/ainomauz" target="_blank" rel="noopener">Telegram (@ainomauz)</a>
+        <a href="https://www.gptify.uz" target="_blank" rel="noopener" style="color:inherit; font-weight:600;">GPTify Uzbekistan ↗</a>
+        <span style="display:block; width:100%; margin-top:8px; font-size:12.5px;">© 2026 AiNoma. Barcha huquqlar himoyalangan.</span>
+      </div>
+      <div class="footer-disclaimer">
+        <p><b>Axborot va tahlil:</b> AiNoma — mustaqil tahliliy axborot nashri. Saytdagi barcha sharhlar, vositalar tahlili va tavsiyalar tahririyatning mustaqil hamda xolis professional qarashlariga asoslanadi.</p>
+        <p><b>Mas’uliyat cheklovi:</b> Saytda e’lon qilingan maqola va qo‘llanmalar faqat tanishuv hamda ta’limiy maqsadlarda taqdim etiladi; ular yakuniy moliyaviy, soliq yoki yuridik maslahat hisoblanmaydi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../app.js"></script>
+</body>
+</html>
