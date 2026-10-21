@@ -1,4 +1,98 @@
 window.AINOMA_ARTICLES = {
+  "openai-1-4-trillion-dollar-baholash-va-30-milliard-dollar-raund-2026": {
+    "id": "openai-1-4-trillion-dollar-baholash-va-30-milliard-dollar-raund-2026",
+    "slug": "openai-1-4-trillion-dollar-baholash-va-30-milliard-dollar-raund-2026",
+    "title": "OpenAI $1.4T Baholash Bilan $30B Sarmoya Raundini Boshladi",
+    "kicker": "GLOBAL BOZOR VA KAPITAL · OPENAI VALUATION",
+    "meta_title": "OpenAI $1.4T Baholash Bilan $30B Sarmoya Raundini Boshladi — AiNoma",
+    "meta_description": "OpenAI Anthropic kutilayotgan IPO'si arafasida SoftBank va MGX bilan $1.4 trilliondan ortiq baholashda $30 milliardlik yirik investitsiya raundini boshladi.",
+    "category": "Texnologiya",
+    "audience": "investorlar, moliya tahlilchilari va texnologiya rahbarlari",
+    "event_date": "2026-10-21",
+    "source_date": "2026-10-21",
+    "source_published_date": "2026-10-21",
+    "ainoma_published_date": "2026-10-21",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "OpenAI raqibi Anthropic'ning noyabr oyidagi ommaviy IPO chiqishi oldidan SoftBank va xalqaro suveren fondlar bilan $1.4 trillionlik baholashda $30 milliard sarmoya jalb qilish muzokaralarini tezlashtirdi.",
+    "img": "assets/sam_altman_openai_ipo_2026.jpg",
+    "imgAlt": "OpenAI 1.4 Trillion Dollar Baholash Sam Altman 2026",
+    "qisqacha": [
+        "OpenAI o'z bozor qiymatini $1.4 trilliondan yuqori baholagan holda yangi $30 milliardlik investitsiya raundini yakunlashga shoshilmoqda.",
+        "Raundning tezlashuviga raqobatchi Anthropic kompaniyasining 2026-yil noyabr oyida rejalashtirilgan ommaviy birja debyuti (IPO) asosiy katalizator bo'ldi.",
+        "Kompaniya yillik daromad sur'atini $50 milliardga yetkazganini ma'lum qilib, yangi mablag'larni hisoblash quvvati va o'ta yirik data-markazlar infratuzilmasiga yo'naltiradi."
+    ],
+    "primary_source": {
+        "name": "Reuters Financial Intelligence",
+        "title": "OpenAI Eyes $1.4 Trillion Valuation in Accelerated $30 Billion Pre-IPO Funding Round",
+        "url": "https://www.reuters.com/technology/artificial-intelligence/openai-eyes-1-4-trillion-valuation-30-billion-funding-2026",
+        "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+        {
+            "name": "The Wall Street Journal",
+            "title": "OpenAI Accelerates Capital Drive Ahead of Anthropic Public Debut",
+            "url": "https://wsj.com/tech/ai/openai-accelerates-funding-round-aiming-for-over-1-trillion-valuation-2026",
+            "badge": "BOZOR TAHLILI"
+        }
+    ],
+    "body": "<p class=\"article-lead\">Sun’iy intellekt olamidagi eng yirik kapitallashuv poygasi yangi cho‘qqiga chiqdi: <b>OpenAI</b> kompaniyasi o‘z bozor qiymatini birdaniga <b>$1.4 trilliondan oshirib</b>, xalqaro institutsional investorlardan <b>$30 milliardlik</b> yangi moliyalashtirish raundini jalb qilish bo‘yicha shoshilinch muzokaralarni boshladi.</p>\n\n<h2 class=\"article-section-title\">OpenAI nega bunchalik shoshilmoqda?</h2>\n<p>Moliyaviy tahlilchilarning ta’kidlashicha, investitsiya raundining kutilmagan tezlashuviga OpenAI’ning asosiy raqibi — <b>Anthropic</b> kompaniyasining rejalari sabab bo‘ldi:</p>\n<ul class=\"article-list\">\n  <li><b>Anthropic IPO bosimi:</b> Claude ishlab chiquvchisi Anthropic joriy yilning noyabr oyida Nyu-York fond birjasida o‘zining rasmiy ommaviy aksiyalarini (IPO) sotuvga chiqarishga tayyorgarlik ko‘rmoqda. Ommaviy bozor oshkorligi boshlanishidan avval OpenAI o‘zining yetakchilik qiymatini xususiy bozorda qat’iy belgilab olmoqchi.</li>\n  <li><b>Hisoblash xarajatlarining keskin o‘sishi:</b> GPT-6 seriyasidagi yangi avlod modellarini o‘qitish va yuz millionlab faol foydalanuvchilarga xizmat ko‘rsatish OpenAI’dan yiliga o‘nlab milliard dollarlik GPU klasterlarini talab qilmoqda.</li>\n  <li><b>Yirik investorlar ittifoqi:</b> Raundda Yaponiya konglomerati <b>SoftBank Group</b> hamda Abu-Dabi davlat investitsiya jamg‘armasi <b>MGX</b> yetakchi ishtirokchilar sifatida qatnashmoqda.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Moliyaviy ko‘rsatkichlar va yillik daromad sur’ati</h2>\n<p>OpenAI investorlarga taqdim etgan yopiq taqdimotiga ko‘ra, kompaniyaning operatsion o‘sishi rekord darajaga yetgan:</p>\n<p class=\"article-step\"><b>1. $50 milliardlik yillik daromad sur’ati:</b> Korporativ ChatGPT obunalari va ishlab chiquvchilar uchun API xizmatlaridan tushum o‘tgan yilga nisbatan 2 barobardan ko‘proqqa oshgan.</p>\n<p class=\"article-step\"><b>2. Kapital talabi:</b> Sam Altman boshchiligidagi jamoa kelgusi 3 yil ichida global data-markazlar va maxsus AI chiplari ishlab chiqarish zanjiriga jami $100 milliarddan ortiq sarmoya kiritishni maqsad qilgan.</p>\n<p class=\"article-step\"><b>3. Korporativ qayta tuzilma:</b> Kompaniya to‘liq notijorat boshqaruv modelidan klassik aksiyadorlik korporatsiyasiga o‘tish jarayonini yakunlamoqda, bu esa unga global moliya bozorlaridan cheklovlarsiz kapital jalb qilish imkonini beradi.</p>\n\n<p class=\"article-quote\">«Biz shunchaki yana bir model ishlab chiqmayapmiz, balki insoniyat tarixidagi eng yirik hisoblash infratuzilmasiga poydevor qo‘ymoqdamiz. $1.4 trillionlik baholash sun’iy intellektning global iqtisodiyotdagi o‘rniga bozor bergan haqiqiy bahodir.» — OpenAI boshqaruv kengashiga yaqin moliyaviy manba</p>\n\n<h2 class=\"article-section-title\">Bozor va foydalanuvchilar uchun xulosa</h2>\n<p class=\"article-step\"><b>Raqobat iste’molchilar foydasiga:</b> OpenAI va Anthropic o‘rtasidagi gigant kapital jangi modellar narxining arzonlashishiga va ilg‘or funksiyalarning tezroq ommalashishiga olib keladi.</p>\n<p class=\"article-step\"><b>Infratuzilma xavfi:</b> Tahlilchilar $1.4 trillionlik baholash AI bozorida o‘ta yuqori kutilmalarni shakllantirayotgani, agar real daromadlar bu marrani oqlamasa, texnologik sektorda moliyaviy to‘g‘rilanish (korreksiya) bo‘lishi mumkinligidan ogohlantirmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-21",
+    "author": {
+        "name": "AiNoma Tahririyati",
+        "job": "Global venchur kapitali va sun'iy intellekt moliyasi guruhi",
+        "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Sun’iy intellekt olamidagi eng yirik kapitallashuv poygasi yangi cho‘qqiga chiqdi: <b>OpenAI</b> kompaniyasi o‘z bozor qiymatini birdaniga <b>$1.4 trilliondan oshirib</b>, xalqaro institutsional investorlardan <b>$30 milliardlik</b> yangi moliyalashtirish raundini jalb qilish bo‘yicha shoshilinch muzokaralarni boshladi.</p>\n\n<h2 class=\"article-section-title\">OpenAI nega bunchalik shoshilmoqda?</h2>\n<p>Moliyaviy tahlilchilarning ta’kidlashicha, investitsiya raundining kutilmagan tezlashuviga OpenAI’ning asosiy raqibi — <b>Anthropic</b> kompaniyasining rejalari sabab bo‘ldi:</p>\n<ul class=\"article-list\">\n  <li><b>Anthropic IPO bosimi:</b> Claude ishlab chiquvchisi Anthropic joriy yilning noyabr oyida Nyu-York fond birjasida o‘zining rasmiy ommaviy aksiyalarini (IPO) sotuvga chiqarishga tayyorgarlik ko‘rmoqda. Ommaviy bozor oshkorligi boshlanishidan avval OpenAI o‘zining yetakchilik qiymatini xususiy bozorda qat’iy belgilab olmoqchi.</li>\n  <li><b>Hisoblash xarajatlarining keskin o‘sishi:</b> GPT-6 seriyasidagi yangi avlod modellarini o‘qitish va yuz millionlab faol foydalanuvchilarga xizmat ko‘rsatish OpenAI’dan yiliga o‘nlab milliard dollarlik GPU klasterlarini talab qilmoqda.</li>\n  <li><b>Yirik investorlar ittifoqi:</b> Raundda Yaponiya konglomerati <b>SoftBank Group</b> hamda Abu-Dabi davlat investitsiya jamg‘armasi <b>MGX</b> yetakchi ishtirokchilar sifatida qatnashmoqda.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Moliyaviy ko‘rsatkichlar va yillik daromad sur’ati</h2>\n<p>OpenAI investorlarga taqdim etgan yopiq taqdimotiga ko‘ra, kompaniyaning operatsion o‘sishi rekord darajaga yetgan:</p>\n<p class=\"article-step\"><b>1. $50 milliardlik yillik daromad sur’ati:</b> Korporativ ChatGPT obunalari va ishlab chiquvchilar uchun API xizmatlaridan tushum o‘tgan yilga nisbatan 2 barobardan ko‘proqqa oshgan.</p>\n<p class=\"article-step\"><b>2. Kapital talabi:</b> Sam Altman boshchiligidagi jamoa kelgusi 3 yil ichida global data-markazlar va maxsus AI chiplari ishlab chiqarish zanjiriga jami $100 milliarddan ortiq sarmoya kiritishni maqsad qilgan.</p>\n<p class=\"article-step\"><b>3. Korporativ qayta tuzilma:</b> Kompaniya to‘liq notijorat boshqaruv modelidan klassik aksiyadorlik korporatsiyasiga o‘tish jarayonini yakunlamoqda, bu esa unga global moliya bozorlaridan cheklovlarsiz kapital jalb qilish imkonini beradi.</p>\n\n<p class=\"article-quote\">«Biz shunchaki yana bir model ishlab chiqmayapmiz, balki insoniyat tarixidagi eng yirik hisoblash infratuzilmasiga poydevor qo‘ymoqdamiz. $1.4 trillionlik baholash sun’iy intellektning global iqtisodiyotdagi o‘rniga bozor bergan haqiqiy bahodir.» — OpenAI boshqaruv kengashiga yaqin moliyaviy manba</p>\n\n<h2 class=\"article-section-title\">Bozor va foydalanuvchilar uchun xulosa</h2>\n<p class=\"article-step\"><b>Raqobat iste’molchilar foydasiga:</b> OpenAI va Anthropic o‘rtasidagi gigant kapital jangi modellar narxining arzonlashishiga va ilg‘or funksiyalarning tezroq ommalashishiga olib keladi.</p>\n<p class=\"article-step\"><b>Infratuzilma xavfi:</b> Tahlilchilar $1.4 trillionlik baholash AI bozorida o‘ta yuqori kutilmalarni shakllantirayotgani, agar real daromadlar bu marrani oqlamasa, texnologik sektorda moliyaviy to‘g‘rilanish (korreksiya) bo‘lishi mumkinligidan ogohlantirmoqda.</p>"
+},
+  "ozbekiston-xitoy-suniy-intellekt-ekspertlar-kengashi-toshkent-2026": {
+    "id": "ozbekiston-xitoy-suniy-intellekt-ekspertlar-kengashi-toshkent-2026",
+    "slug": "ozbekiston-xitoy-suniy-intellekt-ekspertlar-kengashi-toshkent-2026",
+    "title": "O‘zbekiston Va Xitoy Toshkentda AI Forumini O‘tkazdi",
+    "kicker": "XALQARO HAMKORLIK · O‘ZBEKISTON VA XITOY",
+    "meta_title": "O‘zbekiston Va Xitoy Toshkentda AI Forumini O‘tkazdi — AiNoma",
+    "meta_description": "Toshkentda «Raqamli sheriklik: sun'iy intellekt va yangi avlod ma'lumotlar iqtisodiyoti» mavzusida O'zbekiston-Xitoy II Ekspertlar kengashi bo'lib o'tdi.",
+    "category": "Texnologiya",
+    "audience": "davlat xizmatchilari, iqtisodchilar va IT tadbirkorlar",
+    "event_date": "2026-10-21",
+    "source_date": "2026-10-21",
+    "source_published_date": "2026-10-21",
+    "ainoma_published_date": "2026-10-21",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Toshkent shahrida O'zbekiston-Xitoy II Ekspertlar kengashi yig'ilishi o'tkazilib, sun'iy intellekt infratuzilmasi, ma'lumotlar iqtisodiyoti va qo'shma hisoblash markazlarini qurish masalalari kelishib olindi.",
+    "img": "assets/registan_real.jpg",
+    "imgAlt": "Ozbekiston Xitoy Suniy Intellekt Ekspertlar Kengashi Toshkent 2026",
+    "qisqacha": [
+        "Toshkentda «Raqamli sheriklik: sun'iy intellekt va yangi avlod ma'lumotlar iqtisodiyoti» mavzusida O'zbekiston-Xitoy II Ekspertlar kengashi yig'ilishi bo'lib o'tdi.",
+        "Tomonlar Butunjahon sun'iy intellekt hamkorligi tashkiloti (WAICO) doirasida respublikamizni mintaqaviy AI xabiga aylantirish va xitoylik texnologik gigantlarni jalb qilishga kelishib oldi.",
+        "Iqtisodiyot tarmoqlarida amaliy neyrotarmoq yechimlarini joriy etish, milliy ma'lumotlar bazalarini shakllantirish va qo'shma ilmiy kadrlar tayyorlash dasturlari tasdiqlandi."
+    ],
+    "primary_source": {
+        "name": "O‘zbekiston Milliy Axborot Agentligi (O‘zA)",
+        "title": "Raqamli sheriklik: sunʼiy intellekt va yangi avlod maʼlumotlar iqtisodiyoti forumi",
+        "url": "https://uza.uz/oz/posts/raqamli-sheriklik-suniy-intellekt-va-yangi-avlod-malumotlar-iqtisodiyoti-2026",
+        "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+        {
+            "name": "Dunyo Axborot Agentligi",
+            "title": "O‘zbekiston–Xitoy ekspertlar kengashining ikkinchi yig‘ilishi tafsilotlari",
+            "url": "https://dunyo.info/cyrl/site/inner/raqamli-sheriklik-suniy-intellekt-va-yangi-avlod-malumotlar-iqtisodiyoti-2026",
+            "badge": "RASMIY AXBOROT"
+        }
+    ],
+    "body": "<p class=\"article-lead\">Toshkent shahrida O‘zbekiston va Xitoy Xalq Respublikasi vakillari ishtirokida <b>«Raqamli sheriklik: sun’iy intellekt va yangi avlod ma’lumotlar iqtisodiyoti»</b> mavzusidagi O‘zbekiston–Xitoy Ekspertlar kengashining ikkinchi nufuzli yig‘ilishi bo‘lib o‘tdi.</p>\n\n<h2 class=\"article-section-title\">Anjumanda qanday strategik masalalar ko‘rib chiqildi?</h2>\n<p>Kengash doirasida ikki davlat o‘rtasida raqamli transformatsiya, sun’iy intellekt modellarini real iqtisodiyot tarmoqlariga joriy qilish va ma’lumotlar infratuzilmasini kengaytirishga oid muhim masalalar muhokama qilindi:</p>\n<ul class=\"article-list\">\n  <li><b>Hisoblash quvvatlari va data-markazlar:</b> Toshkent va viloyatlarda energiya tejamkor, yashil texnologiyalarga asoslangan yangi avlod hisoblash markazlarini (Green Data Centers) qurish bo‘yicha qo‘shma investitsiya loyihalari belgilab olindi.</li>\n  <li><b>WAICO platformasi va xalqaro maqom:</b> Butunjahon sun’iy intellekt hamkorligi tashkiloti (WAICO) doirasidagi aloqalarni mustahkamlab, O‘zbekistonni butun Markaziy Osiyo mintaqasining asosiy AI va raqamli eksport xabiga aylantirish vazifasi qo‘yildi.</li>\n  <li><b>Kadrlar va ilmiy almashinuv:</b> Ikki mamlakat yetakchi universitetlari va ilmiy laboratoriyalari o‘rtasida sun’iy intellekt arxitekturasi hamda katta ma’lumotlar (Big Data) muhandisligi bo‘yicha qo‘shma magistratura va amaliyot dasturlari yo‘lga qo‘yilmoqda.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Iqtisodiyot tarmoqlari uchun amaliy ahamiyati</h2>\n<p>Ekspertlar ta’kidlashicha, Xitoyning sanoat AI va shahar boshqaruvi bo‘yicha to‘plagan tajribasi O‘zbekiston uchun nihoyatda qimmatli hisoblanadi:</p>\n<p class=\"article-step\"><b>1. Aqlli transport va logistika:</b> Yirik shaharlarda yo‘l harakatini optimallashtiruvchi neyrotarmoq boshqaruv tizimlari joriy etiladi.</p>\n<p class=\"article-step\"><b>2. Qishloq xo‘jaligi monitoringi:</b> Sun’iy yo‘ldosh tasvirlari va dronlar yordamida ekinlar holati, suv resurslari sarfi hamda hosildorlikni bashorat qiluvchi AI modellari sinovdan o‘tkaziladi.</p>\n<p class=\"article-step\"><b>3. Bojxona va elektron savdo:</b> Xitoy bilan tovar ayirboshlash jarayonlarida hujjatlarni avtomatlashtirilgan tahlil qilish tizimlari ishga tushiriladi.</p>\n\n<p class=\"article-quote\">«O‘zbekiston va Xitoy o‘rtasidagi raqamli sheriklik faqat savdo bilan cheklanib qolmay, kelajak texnologiyalari va hisoblash quvvatlarini birgalikda rivojlantirishga xizmat qiladi. Mintaqamizda sun’iy intellekt infratuzilmasini mustahkamlash barcha sohalar samaradorligini oshiradi.» — Kengash yalpi majlisi xulosasi</p>\n\n<h2 class=\"article-section-title\">Mahalliy IT sohasi uchun xulosa</h2>\n<p class=\"article-step\"><b>Xitoy texnologik gigantlari kirib kelishi:</b> Huawei, Alibaba Cloud va Baidu kabi yirik brendlar bilan hamkorlikda mahalliy startaplar uchun arzon hisoblash resurslari va grantlar ajratiladi.</p>\n<p class=\"article-step\"><b>Mahalliy mutaxassislar uchun imkoniyat:</b> O‘zbekistonlik yosh dasturchilar global darajadagi og‘ir AI modellarini o‘qitish va infratuzilma boshqaruvida to‘g‘ridan-to‘g‘ri amaliyot o‘tash imkoniyatiga ega bo‘ladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-21",
+    "author": {
+        "name": "AiNoma Tahririyati",
+        "job": "Xalqaro hamkorlik va raqamli diplomatiya tahlil guruhi",
+        "avatar": "assets/brand_sheet_white.png"
+    },
+    "contentHtml": "<p class=\"article-lead\">Toshkent shahrida O‘zbekiston va Xitoy Xalq Respublikasi vakillari ishtirokida <b>«Raqamli sheriklik: sun’iy intellekt va yangi avlod ma’lumotlar iqtisodiyoti»</b> mavzusidagi O‘zbekiston–Xitoy Ekspertlar kengashining ikkinchi nufuzli yig‘ilishi bo‘lib o‘tdi.</p>\n\n<h2 class=\"article-section-title\">Anjumanda qanday strategik masalalar ko‘rib chiqildi?</h2>\n<p>Kengash doirasida ikki davlat o‘rtasida raqamli transformatsiya, sun’iy intellekt modellarini real iqtisodiyot tarmoqlariga joriy qilish va ma’lumotlar infratuzilmasini kengaytirishga oid muhim masalalar muhokama qilindi:</p>\n<ul class=\"article-list\">\n  <li><b>Hisoblash quvvatlari va data-markazlar:</b> Toshkent va viloyatlarda energiya tejamkor, yashil texnologiyalarga asoslangan yangi avlod hisoblash markazlarini (Green Data Centers) qurish bo‘yicha qo‘shma investitsiya loyihalari belgilab olindi.</li>\n  <li><b>WAICO platformasi va xalqaro maqom:</b> Butunjahon sun’iy intellekt hamkorligi tashkiloti (WAICO) doirasidagi aloqalarni mustahkamlab, O‘zbekistonni butun Markaziy Osiyo mintaqasining asosiy AI va raqamli eksport xabiga aylantirish vazifasi qo‘yildi.</li>\n  <li><b>Kadrlar va ilmiy almashinuv:</b> Ikki mamlakat yetakchi universitetlari va ilmiy laboratoriyalari o‘rtasida sun’iy intellekt arxitekturasi hamda katta ma’lumotlar (Big Data) muhandisligi bo‘yicha qo‘shma magistratura va amaliyot dasturlari yo‘lga qo‘yilmoqda.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Iqtisodiyot tarmoqlari uchun amaliy ahamiyati</h2>\n<p>Ekspertlar ta’kidlashicha, Xitoyning sanoat AI va shahar boshqaruvi bo‘yicha to‘plagan tajribasi O‘zbekiston uchun nihoyatda qimmatli hisoblanadi:</p>\n<p class=\"article-step\"><b>1. Aqlli transport va logistika:</b> Yirik shaharlarda yo‘l harakatini optimallashtiruvchi neyrotarmoq boshqaruv tizimlari joriy etiladi.</p>\n<p class=\"article-step\"><b>2. Qishloq xo‘jaligi monitoringi:</b> Sun’iy yo‘ldosh tasvirlari va dronlar yordamida ekinlar holati, suv resurslari sarfi hamda hosildorlikni bashorat qiluvchi AI modellari sinovdan o‘tkaziladi.</p>\n<p class=\"article-step\"><b>3. Bojxona va elektron savdo:</b> Xitoy bilan tovar ayirboshlash jarayonlarida hujjatlarni avtomatlashtirilgan tahlil qilish tizimlari ishga tushiriladi.</p>\n\n<p class=\"article-quote\">«O‘zbekiston va Xitoy o‘rtasidagi raqamli sheriklik faqat savdo bilan cheklanib qolmay, kelajak texnologiyalari va hisoblash quvvatlarini birgalikda rivojlantirishga xizmat qiladi. Mintaqamizda sun’iy intellekt infratuzilmasini mustahkamlash barcha sohalar samaradorligini oshiradi.» — Kengash yalpi majlisi xulosasi</p>\n\n<h2 class=\"article-section-title\">Mahalliy IT sohasi uchun xulosa</h2>\n<p class=\"article-step\"><b>Xitoy texnologik gigantlari kirib kelishi:</b> Huawei, Alibaba Cloud va Baidu kabi yirik brendlar bilan hamkorlikda mahalliy startaplar uchun arzon hisoblash resurslari va grantlar ajratiladi.</p>\n<p class=\"article-step\"><b>Mahalliy mutaxassislar uchun imkoniyat:</b> O‘zbekistonlik yosh dasturchilar global darajadagi og‘ir AI modellarini o‘qitish va infratuzilma boshqaruvida to‘g‘ridan-to‘g‘ri amaliyot o‘tash imkoniyatiga ega bo‘ladi.</p>"
+},
   "prompt-yozish-sanati-5-qoida-15-shablon-2026": {
     "id": "prompt-yozish-sanati-5-qoida-15-shablon-2026",
     "slug": "prompt-yozish-sanati-5-qoida-15-shablon-2026",

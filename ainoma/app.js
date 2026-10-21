@@ -268,7 +268,11 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "OpenAI $1.4T Baholash Bilan $30B Sarmoya Raundini Boshladi", u: "yangiliklar/openai-1-4-trillion-dollar-baholash-va-30-milliard-dollar-raund-2026/", k: "openai $1.4t baholash bilan $30b sarmoya raundini boshladi texnologiya reuters financial intelligence openai raqibi anthropic'ning noyabr oyidagi ommaviy ipo chiqishi oldidan softbank va xalqaro suveren" },
+  { t: "O‘zbekiston Va Xitoy Toshkentda AI Forumini O‘tkazdi", u: "yangiliklar/ozbekiston-xitoy-suniy-intellekt-ekspertlar-kengashi-toshkent-2026/", k: "o‘zbekiston va xitoy toshkentda ai forumini o‘tkazdi texnologiya o‘zbekiston milliy axborot agentligi (o‘za) toshkent shahrida o'zbekiston-xitoy ii ekspertlar kengashi yig'ilishi o'tkazilib, sun'iy intellekt i" },
   { t: "Prompt Yozish San'ati: 5 Qoida Va 15 Shablon", u: "yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/", k: "prompt yozish san'ati: 5 qoida va 15 shablon qo'llanmalar openai prompt engineering documentation ai'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi " },
   { t: "NVIDIA Yevropa Sanoati Uchun $10B Investitsiya E’lon Qildi", u: "yangiliklar/nvidia-yevropa-sanoati-uchun-10-milliard-dollar-investitsiya-2026/", k: "nvidia yevropa sanoati uchun $10b investitsiya e’lon qildi texnologiya nvidia official press room nvidia yevropa sanoat gigantlari (siemens, bmw va airbus) bilan hamkorlikda sanoat robototexnikasi v" },
   { t: "Google Korporativ Muhit Uchun «Gemini Agent»ni Chiqardi", u: "yangiliklar/google-korporativ-muhit-uchun-gemini-agent-chiqardi-2026/", k: "google korporativ muhit uchun «gemini agent»ni chiqardi texnologiya google workspace official announcement google workspace foydalanuvchilari uchun gmail, docs, sheets va korporativ crm tizimlari bo'ylab avt" },
