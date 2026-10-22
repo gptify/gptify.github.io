@@ -270,7 +270,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "AI Bilan Real Pul Topish: 5 Amaliy Yo‘nalish", u: "yangiliklar/ai-bilan-real-pul-topish-5-yonalish-shablonlar-2026/", k: "ai bilan real pul topish: 5 amaliy yo‘nalish qo'llanmalar upwork freelance economic research ai o'zi pul ishlab bermaydi — u boshqa bizneslar ishini 5 barobar tezlashtirib berish imkonini berad" },
+  { t: "OpenAI Va Google Cloud Kutilmagan Hamkorlik E’lon Qildi", u: "yangiliklar/openai-va-google-cloud-kutilmagan-sheriklik-elon-qildi-2026/", k: "openai va google cloud kutilmagan hamkorlik e’lon qildi texnologiya google cloud blog openai va google cloud kutilmagan ittifoq tuzdi: openai’ning ilg'or modellari va agentlik arxitektur" },
+  { t: "O‘zbekiston Startaplariga Bepul AI Infratuzilmasi Va Tokenlar Beriladi", u: "yangiliklar/ozbekiston-startaplariga-bepul-ai-infratuzilmasi-va-tokenlar-2026/", k: "o‘zbekiston startaplariga bepul ai infratuzilmasi va tokenlar beriladi texnologiya uzdaily axborot agentligi o'zbekiston hukumati startaplar, universitet laboratoriyalari va ilmiy jamoalarga davlat data-markaz" },
   { t: "OpenAI $1.4T Baholash Bilan $30B Sarmoya Raundini Boshladi", u: "yangiliklar/openai-1-4-trillion-dollar-baholash-va-30-milliard-dollar-raund-2026/", k: "openai $1.4t baholash bilan $30b sarmoya raundini boshladi texnologiya reuters financial intelligence openai raqibi anthropic'ning noyabr oyidagi ommaviy ipo chiqishi oldidan softbank va xalqaro suveren" },
   { t: "O‘zbekiston Va Xitoy Toshkentda AI Forumini O‘tkazdi", u: "yangiliklar/ozbekiston-xitoy-suniy-intellekt-ekspertlar-kengashi-toshkent-2026/", k: "o‘zbekiston va xitoy toshkentda ai forumini o‘tkazdi texnologiya o‘zbekiston milliy axborot agentligi (o‘za) toshkent shahrida o'zbekiston-xitoy ii ekspertlar kengashi yig'ilishi o'tkazilib, sun'iy intellekt i" },
   { t: "Prompt Yozish San'ati: 5 Qoida Va 15 Shablon", u: "yangiliklar/prompt-yozish-sanati-5-qoida-15-shablon-2026/", k: "prompt yozish san'ati: 5 qoida va 15 shablon qo'llanmalar openai prompt engineering documentation ai'dan sifatli javob olishning siri — to'g'ri so'rov yozishda. 5 ta professional qoida va har kungi " },

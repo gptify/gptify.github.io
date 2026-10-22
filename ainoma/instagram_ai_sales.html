@@ -2785,7 +2785,7 @@
       if (document.getElementById('summaryPlan')) document.getElementById('summaryPlan').innerText = plan;
 
       // Send alert directly to Shukhrat's master account via @Shukhrat_AI_bot
-      const botToken = '8790364601:AAHfCWsscwKkgPIWdoKNtKGSboo3C2xpWuw';
+      const botToken = window.__TG_BOT_TOKEN || '';
       const adminChatIds = ['327216340', '5077641672'];
       const now = new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' });
 
