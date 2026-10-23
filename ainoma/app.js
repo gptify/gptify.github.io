@@ -272,7 +272,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Sun’iy Intellekt Davrida Kiberxavfsizlik: Ma’lumotlarni Himoyalash Qoidalari", u: "yangiliklar/suniy-intellekt-davrida-kiberxavfsizlik-va-malumotlar-himoyasi-2026/", k: "sun’iy intellekt davrida kiberxavfsizlik: ma’lumotlarni himoyalash qoidalari qo'llanmalar cisa & ncsc guidelines global xakerliklar fonida biznes va shaxsiy ma'lumotlarni neyrotarmoqlarda xavfsiz saqlash, maxfiyli" },
+  { t: "Anthropic «Claude Duet» Va Yangi «Opus 5.5» Modelini Chiqardi", u: "yangiliklar/anthropic-claude-duet-va-yangi-opus-5-5-modelini-chiqardi-2026/", k: "anthropic «claude duet» va yangi «opus 5.5» modelini chiqardi texnologiya anthropic newsroom anthropic o'zining eng kuchli flagman modeli claude opus 5.5 asosidagi birinchi avtonom tizimi claud" },
+  { t: "PHP2Shell Va Sun’iy Intellekt Kalitlari Bo‘yicha Global Xakerlik", u: "yangiliklar/php2shell-va-suniy-intellekt-kalitlari-global-kiberxavfsizlik-inqirozi-2026/", k: "php2shell va sun’iy intellekt kalitlari bo‘yicha global xakerlik texnologiya the guardian technology news sun’iy intellekt tadqiqotlari dunyodagi veb-saytlarning 70 foiziga taalluqli 10 yillik kritik zaifli" },
   { t: "Sun’iy Intellekt Bilan Real Pul Topish: 5 Yo‘nalish", u: "yangiliklar/ai-bilan-real-pul-topish-5-yonalish-shablonlar-2026/", k: "sun’iy intellekt bilan real pul topish: 5 yo‘nalish qo'llanmalar upwork freelance economic research sun’iy intellekt o'zi pul ishlab bermaydi — u boshqa bizneslar ishini 5 barobar tezlashtirib berish " },
   { t: "OpenAI Va Google Cloud Kutilmagan Hamkorlik E’lon Qildi", u: "yangiliklar/openai-va-google-cloud-kutilmagan-sheriklik-elon-qildi-2026/", k: "openai va google cloud kutilmagan hamkorlik e’lon qildi texnologiya google cloud blog openai va google cloud kutilmagan ittifoq tuzdi: openai’ning ilg'or modellari va agentlik arxitektur" },
   { t: "O‘zbekiston Startaplariga Bepul Sun’iy Intellekt Infratuzilmasi Beriladi", u: "yangiliklar/ozbekiston-startaplariga-bepul-ai-infratuzilmasi-va-tokenlar-2026/", k: "o‘zbekiston startaplariga bepul sun’iy intellekt infratuzilmasi beriladi texnologiya uzdaily axborot agentligi o'zbekiston hukumati startaplar, universitet laboratoriyalari va ilmiy jamoalarga davlat data-markaz" },
