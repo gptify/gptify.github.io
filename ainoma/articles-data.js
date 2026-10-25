@@ -1,6 +1,132 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "suniy-intellekt-bilan-ingliz-tilini-organish-5-amaliy-usul-2026": {
+    "title": "Sun’iy Intellekt Bilan Ingliz Tilini O‘rganish: 5 Amaliy Usul",
+    "kicker": "AMALIY QO'LLANMA · TIL VA TA'LIM",
+    "category": "Qo'llanmalar",
+    "read_time": "5 daqiqa",
+    "event_date": "2026-10-25",
+    "verified_date": "2026-10-25",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "Qimmat repetitorsiz, sun’iy intellekt yordamida jonli muloqot qilish, talaffuz va grammatikani to‘g‘rilash hamda so‘z boyligini oshirish bo‘yicha 5 ta sinovdan o‘tgan prompt.",
+    "qisqacha": [
+      "Sun’iy intellektni shaxsiy sabrli ona tili sohibi (native speaker) va repetitorga aylantirish usullari.",
+      "Grammatika xatolarini jazolamasdan, ularning sababini sodda tushuntirib beruvchi interaktiv suhbat formati.",
+      "IELTS, CEFR va ish yuzasidan muzokaralarga tayyorlanish uchun 5 ta darhol ishlatish mumkin bo‘lgan prompt."
+    ],
+    "why_it_matters": "Ko‘pchilik til o‘rganuvchilar xato qilishdan qo‘rqib gapirishni kechiktiradilar. Sun’iy intellekt esa hech qachon koyimaydi, charchamaydi va har qanday vaqtda 24/7 rejimida bepul mashg‘ulot o‘tishga tayyor.",
+    "contentHtml": "<p>Til o‘rganishdagi eng katta to‘siq — bu jonli muloqot amaliyotining yetishmasligi va xato gapirib qo‘yishdan cho‘chish hissi. Oddiy darsliklar grammatik qoidalarni o‘rgatsa-da, haqiqiy hayotiy suhbatlarda tez va ishonch bilan fikr bildirish ko‘nikmasini bermaydi.</p>\n<p>Bugungi kunda zamonaviy sun’iy intellekt modellari (ChatGPT, Claude, Gemini) Siz uchun eng sabrli, 24 soat xizmatingizda bo‘lgan shaxsiy til repetitoriga aylana oladi. Quyidagi 5 ta sinovdan o‘tgan amaliy prompt yordamida Siz o‘z xatolaringiz ustida ishlab, til bilish darajangizni bir necha oyda sezilarli oshirishingiz mumkin.</p>\n\n<div class=\"methodology-card\">\n  <div class=\"methodology-header\">\n    <span class=\"methodology-badge\">1-QADAM</span>\n    <h3 class=\"methodology-title\">1. Shaxsiy Sabrli Muloqot Doshingiz (Speaking Partner)</h3>\n  </div>\n  <p class=\"methodology-desc\">Oddiy suhbatlashish bilan birga, yuborgan har bir jumlangingizdagi xatolarni muloyimlik bilan to‘g‘rilab, muqobil chiroyliroq variantlarni ko‘rsatuvchi format.</p>\n  <div style=\"position: relative; margin: 16px 0;\">\n    <button onclick=\"copyPrompt('eng-prompt-1', this)\" style=\"position: absolute; right: 12px; top: 12px; z-index: 10; background: #4f46e5; color: white; border: none; border-radius: 6px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);\">📋 Nusxa olish</button>\n    <pre id=\"eng-prompt-1\" style=\"background: #0f172a; color: #e2e8f0; padding: 18px; border-radius: 10px; font-size: 14px; line-height: 1.6; white-space: pre-wrap !important; word-wrap: break-word !important; overflow-x: auto; margin: 0;\"><code>Siz ingliz tilini o‘rgatish bo‘yicha do‘stona va juda sabrli repetitorsiz. \nMening darajam: [B1 / Intermediate]. \n\nBiz Siz bilan qiziqarli mavzuda ([Sayohat / Ish / Texnologiya]) erkin suhbat quramiz. \nQoidalarimiz:\n1. Har safar faqat 1 ta yoki 2 ta qisqa jumla bilan javob bering va orqasidan suhbatni davom ettiruvchi bitta qiziq savol bering.\n2. Agar mening javobimda grammatik yoki uslubiy xato bo‘lsa, avval uni chiroyli tarzda to‘g‘rilang va sababini o‘zbek tilida qisqa tushuntiring.\n3. So‘ngra ingliz tilida suhbatni davom ettiring.\n\nKeling, salomlashishdan boshlaylik!</code></pre>\n  </div>\n</div>\n\n<div class=\"methodology-card\">\n  <div class=\"methodology-header\">\n    <span class=\"methodology-badge\">2-QADAM</span>\n    <h3 class=\"methodology-title\">2. Murakkab Grammatikani 10 Yashar Bolaga Tushuntirgandek O‘rganish</h3>\n  </div>\n  <p class=\"methodology-desc\">Darsliklardagi chalkash qoidalar (masalan, Present Perfect Continuous yoki Conditional)ni kundalik hayotiy misollar orqali bir umrga esda qoladigan qilib o‘zlashtirish.</p>\n  <div style=\"position: relative; margin: 16px 0;\">\n    <button onclick=\"copyPrompt('eng-prompt-2', this)\" style=\"position: absolute; right: 12px; top: 12px; z-index: 10; background: #4f46e5; color: white; border: none; border-radius: 6px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);\">📋 Nusxa olish</button>\n    <pre id=\"eng-prompt-2\" style=\"background: #0f172a; color: #e2e8f0; padding: 18px; border-radius: 10px; font-size: 14px; line-height: 1.6; white-space: pre-wrap !important; word-wrap: break-word !important; overflow-x: auto; margin: 0;\"><code>Menga ingliz tilidagi quyidagi grammatik mavzuni tushuntirib bering: [Mavzu nomi, masalan: Past Simple vs Present Perfect].\n\nIltimos, darsliklardagi quruq qoidalarni ishlatmang:\n1. Xuddi 10 yoshli bolaga tushuntirgandek, hayotiy va qiziqarli o‘xshatishlar orqali mohiyatini ochib bering.\n2. Kundalik muloqotda eng ko‘p ishlatiladigan 3 ta aniq misol keltiring (o‘zbekcha tarjimasi bilan).\n3. Ushbu mavzuda eng ko‘p qilinadigan 2 ta odatiy xatoni ko‘rsating.\n4. Tushunganimni tekshirish uchun menga bitta kichik amaliy test topshirig‘i bering.</code></pre>\n  </div>\n</div>\n\n<div class=\"methodology-card\">\n  <div class=\"methodology-header\">\n    <span class=\"methodology-badge\">3-QADAM</span>\n    <h3 class=\"methodology-title\">3. Yangi So‘zlarni Kontekstda Va Assotsiatsiya Bilan Yodlash</h3>\n  </div>\n  <p class=\"methodology-desc\">So‘zlarni shunchaki lug‘atdan yodlab keyin unutib yubormaslik uchun ularni qiziqarli hikoya va iboralar zanjiriga kiritish usuli.</p>\n  <div style=\"position: relative; margin: 16px 0;\">\n    <button onclick=\"copyPrompt('eng-prompt-3', this)\" style=\"position: absolute; right: 12px; top: 12px; z-index: 10; background: #4f46e5; color: white; border: none; border-radius: 6px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);\">📋 Nusxa olish</button>\n    <pre id=\"eng-prompt-3\" style=\"background: #0f172a; color: #e2e8f0; padding: 18px; border-radius: 10px; font-size: 14px; line-height: 1.6; white-space: pre-wrap !important; word-wrap: break-word !important; overflow-x: auto; margin: 0;\"><code>Men quyidagi 5 ta yangi inglizcha so‘zni mustahkam yodlamoqchiman:\n[So‘zlar ro‘yxati, masalan: reluctant, perceive, inevitable, trigger, subtle]\n\nVazifangiz:\n1. Ushbu barcha so‘zlarni o‘z ichiga olgan qiziqarli va kulgili 4-5 jumlali qisqa hikoya to‘qing.\n2. Hikoyada ishlatilgan har bir so‘zning ma’nosini kontekstdagi tarjimasi bilan ko‘rsating.\n3. Har bir so‘z uchun esda qolishni osonlashtiruvchi bittadan ajoyib ibora yoki kollokatsiya (collocation) yozing.</code></pre>\n  </div>\n</div>\n\n<div class=\"methodology-card\">\n  <div class=\"methodology-header\">\n    <span class=\"methodology-badge\">4-QADAM</span>\n    <h3 class=\"methodology-title\">4. Xalqaro Imtihonlar (IELTS / CEFR) Speaking Bo‘yicha Mock Test</h3>\n  </div>\n  <p class=\"methodology-desc\">Imtihonga tayyorgarlik ko‘rayotganlar uchun qat’iy imtihon oluvchi (examiner) rolida javoblarni tekshirib, ball va tavsiyalar beruvchi tizim.</p>\n  <div style=\"position: relative; margin: 16px 0;\">\n    <button onclick=\"copyPrompt('eng-prompt-4', this)\" style=\"position: absolute; right: 12px; top: 12px; z-index: 10; background: #4f46e5; color: white; border: none; border-radius: 6px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);\">📋 Nusxa olish</button>\n    <pre id=\"eng-prompt-4\" style=\"background: #0f172a; color: #e2e8f0; padding: 18px; border-radius: 10px; font-size: 14px; line-height: 1.6; white-space: pre-wrap !important; word-wrap: break-word !important; overflow-x: auto; margin: 0;\"><code>Siz qat’iy va professional IELTS Speaking imtihonchisisiz. \nMening maqsadim: [Band 7.0+].\n\nBiz IELTS Speaking Part 2 / Part 3 bo‘yicha sinov o‘tkazamiz. \n1. Menga bitta murakkab imtihon savolini bering.\n2. Men javob yozganimdan so‘ng, javobimni 4 mezon bo‘yicha baholang: Fluency, Lexical Resource, Grammar, Pronunciation/Coherence.\n3. Javobimni Band 8.5 darajasiga ko‘tarish uchun qaysi ibora va sinonimlarni qo‘shish mumkinligini aniq ko‘rsatib bering.\n\nSavolni berishingiz mumkin.</code></pre>\n  </div>\n</div>\n\n<div class=\"methodology-card\">\n  <div class=\"methodology-header\">\n    <span class=\"methodology-badge\">5-QADAM</span>\n    <h3 class=\"methodology-title\">5. Xorijiy Hamkorlar Bilan Rasmiy Biznes Yozishmalari</h3>\n  </div>\n  <p class=\"methodology-desc\">Chet ellik mijozlar, investorlar va sheriklar bilan xat yozishganda quruq yoki noo‘rin ohangdan qochib, yuksak diplomatik ingliz tilida yozish mahorati.</p>\n  <div style=\"position: relative; margin: 16px 0;\">\n    <button onclick=\"copyPrompt('eng-prompt-5', this)\" style=\"position: absolute; right: 12px; top: 12px; z-index: 10; background: #4f46e5; color: white; border: none; border-radius: 6px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);\">📋 Nusxa olish</button>\n    <pre id=\"eng-prompt-5\" style=\"background: #0f172a; color: #e2e8f0; padding: 18px; border-radius: 10px; font-size: 14px; line-height: 1.6; white-space: pre-wrap !important; word-wrap: break-word !important; overflow-x: auto; margin: 0;\"><code>Siz xalqaro kompaniyada tajribali biznes kommunikatsiya bo‘yicha mutaxassissiz. \nMen Sizga xorijiy hamkorimizga yuborilishi kerak bo‘lgan qoralama xat matnini taqdim etaman.\n\nQoralama:\n«[O‘zbekcha yoki oddiy inglizcha yozilgan fikringiz]»\n\nVazifangiz:\n1. Ushbu xatni xalqaro korporativ etiketga to‘liq mos keladigan, hurmatli va professional ingliz tilida qayta yozing.\n2. Xatning mavzu satri (Subject Line) uchun e’tiborni tortuvchi 2 ta variant taklif qiling.\n3. Agar xatda rad etish, to‘lovni so‘rash yoki muddatni surish kerak bo‘lsa, buni hamkorlik munosabatlariga putur yetkazmagan holda muloyim ifodalang.</code></pre>\n  </div>\n</div>",
+    "img": "assets/europe_ai_workflow.jpg",
+    "primary_source": {
+      "name": "AiNoma Ta’lim Markazi",
+      "title": "English Language Mastery and Practical Frameworks",
+      "url": "https://ainoma.uz/qollanmalar.html"
+    },
+    "secondary_sources": []
+  },
+
+  "meta-dasturchilar-uchun-yangi-muse-spark-modelini-chiqardi-2026": {
+    "title": "Meta Dasturchilar Uchun Yangi «Muse Spark» Modelini Chiqardi",
+    "kicker": "OCHIQ KODLI MODEL · META",
+    "category": "Texnologiya",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-25",
+    "verified_date": "2026-10-25",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "Meta ochiq manbali yangi avlod modelini taqdim etib, dasturchilarga shaxsiy kompyuterlarda to‘liq oflayn ishlash imkonini berdi.",
+    "qisqacha": [
+      "Meta ochiq kodli ekotizim uchun mo‘ljallangan yangi «Muse Spark» modelini rasman foydalanishga topshirdi.",
+      "Model kod yozish, tahlil qilish va dasturiy arxitektura qurishda yopiq tijoriy tizimlar bilan teng darajada raqobatlasha oladi.",
+      "Maxsus siqish va optimallashtirish tufayli yangi tizimni standart ofis kompyuterlarida ham mahalliy ishga tushirish mumkin."
+    ],
+    "why_it_matters": "Ochiq kodli modellar dasturchilar va startaplarga tashqi API to‘lovlarisiz hamda maxfiy kodlarni uchinchi tomon serverlariga yubormasdan ishlash erkinligini beradi.",
+    "contentHtml": "<p>Meta kompaniyasi dasturchilar va erkin makerlar hamjamiyati uchun ishlab chiqilgan yangi <strong>«Muse Spark»</strong> ochiq kodli modelini taqdim etdi. Mazkur reliz dasturlash bo‘yicha eng talabchan testlarda yuqori natija ko‘rsatib, yopiq pullik modellarga jiddiy raqobatchi sifatida baholanmoqda.</p>\n<p>Kompaniya vakillarining ta’kidlashicha, Muse Spark modeli ko‘p bosqichli mantiqiy mulohaza yuritish, kod bazalarini refaktoring qilish va xatolarni avtomatik tuzatish qobiliyatiga ega. Model to‘liq ochiq litsenziya asosida tarqatilmoqda, bu esa jamoalarga uni o‘z ehtiyojlariga moslab qayta o‘qitish imkonini beradi.</p>\n<h3>Mahalliy qurilmalarda xavfsiz ishlash</h3>\n<p>Ko‘plab dasturiy ta’minot kompaniyalari maxfiy kodlar tashqi serverlarga sizib chiqishidan xavotirda edi. Yangi Muse Spark arxitekturasi kuchli apparat talab qilmaydi va lokal ish stansiyalarida internetga ulanmagan holda ham barqaror ishlay oladi.</p>\n<p>Ushbu yangilik kichik dasturchilar jamoalariga o‘z ichki infratuzilmalarida to‘liq mustaqil sun’iy intellekt assistentlarini qurish uchun qulay imkoniyat ochmoqda.</p>",
+    "img": "assets/meta_ai_banner.jpg",
+    "primary_source": {
+      "name": "Meta Newsroom",
+      "title": "Open Source AI Is the Path Forward: Expanding Developer Ecosystem",
+      "url": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    "secondary_sources": [
+      {
+        "name": "Meta AI Connect",
+        "title": "Developer Highlights and Advanced Model Architectures",
+        "url": "https://about.fb.com/news/2024/09/meta-connect-2024-all-the-news/"
+      }
+    ]
+  },
+
+  "nvidia-va-reliance-katta-suniy-intellekt-alyansini-tuzdi-2026": {
+    "title": "NVIDIA Va Reliance Katta Sun’iy Intellekt Alyansini Tuzdi",
+    "kicker": "GLOBAL INFRASTRUKTURA · NVIDIA",
+    "category": "Texnologiya",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-25",
+    "verified_date": "2026-10-25",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "Jensen Huang o‘z ma’lumotlarini eksport qilmaslikka chaqirib, Hindistonda gigavatt quvvatli milliy hisoblash tarmog‘i qurilishini boshladi.",
+    "qisqacha": [
+      "NVIDIA va Reliance Industries Hindistonda ulkan milliy sun’iy intellekt hisoblash infratuzilmasini qurish bo‘yicha kelishuv tuzdi.",
+      "Jensen Huang: «Non import qilish uchun unni chetga sotmang. Har bir davlat o‘z sun’iy intellektini o‘zida ishlab chiqarishi lozim».",
+      "Yangi data-markazlar mahalliy tillar, sanoat va davlat xizmatlari uchun arzon hamda xavfsiz hisoblash quvvatlarini taqdim etadi."
+    ],
+    "why_it_matters": "Suveren sun’iy intellekt tushunchasi global miqyosda kuchaymoqda. Mamlakatlar o‘z ma’lumotlarini chetga chiqarmasdan, milliy infratuzilmaga sarmoya kiritish zarurligini tushunib yetmoqda.",
+    "contentHtml": "<p>Mumbayda bo‘lib o‘tgan global texnologiya forumi doirasida NVIDIA bosh direktori Jensen Huang va Reliance rahbari Mukesh Ambani ulkan strategik hamkorlikni rasman e’lon qildi. Ushbu alyans Janubiy Osiyoda eng yirik sun’iy intellekt hisoblash klasterini qurishni maqsad qilgan.</p>\n<p>Nutq davomida Jensen Huang suveren infratuzilma haqida gapirib shunday dedi: <em>«O‘z xalqingiz ma’lumotlarini xorijga chiqarib, tayyor aql-zakovatni qimmat narxda chetdan sotib olish xatodir. Siz non sotib olish uchun uningizni arzon narxda chetga eksport qilmasligingiz kerak»</em>.</p>\n<h3>Gigavatt quvvatli yashil data-markazlar</h3>\n<p>Loyiha doirasida qayta tiklanuvchi energiya manbalaridan foydalanuvchi bir necha gigavatt quvvatga ega server markazlari barpo etiladi. Reliance kompaniyasining <code>Jio</code> tarmog‘i bilan integratsiya qilingan mazkur quvvatlar yuz millionlab foydalanuvchilarga milliy tillardagi sun’iy intellekt xizmatlarini arzon narxlarda yetkazib beradi.</p>\n<p>Shuningdek, mazkur infratuzilma asosida mahalliy ishlab chiqaruvchilar, startaplar va xususiy bizneslar uchun maxsus avtonom agent platformalari taqdim etiladi.</p>",
+    "img": "assets/aema_power_grid.jpg",
+    "primary_source": {
+      "name": "NVIDIA Newsroom",
+      "title": "NVIDIA and Reliance to Build Supercomputing Infrastructure in India",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-reliance-to-build-supercomputing-infrastructure-in-india"
+    },
+    "secondary_sources": [
+      {
+        "name": "NVIDIA Blog",
+        "title": "Sovereign AI Infrastructure and Partnerships at India Summit",
+        "url": "https://blogs.nvidia.com/blog/ai-summit-india-reliance/"
+      }
+    ]
+  },
+
+  "openai-modeli-700-dan-ortiq-ilmiy-teoremani-isbotladi-2026": {
+    "title": "OpenAI Modeli 700 Dan Ortiq Ilmiy Teoremani Isbotladi",
+    "kicker": "FUNDAMENTAL FAN · SUN’IY INTELLEKT",
+    "category": "Texnologiya",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-25",
+    "verified_date": "2026-10-25",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "OpenAI yangi mantiqiy model yordamida 722 ta murakkab matematik teoremani muvaffaqiyatli isbotlab, xalqaro e’tirofga erishdi.",
+    "qisqacha": [
+      "OpenAI yangi mantiqiy tahlil modeli orqali birdaniga 722 ta ilmiy maqola va ochiq qolgan matematik muammolarni isbotladi.",
+      "Barcha isbotlar «Lean» formal dasturlash tili vositasida to‘liq tekshirildi va ularda xatolik yo‘qligi tasdiqlandi.",
+      "Kompaniya ilmiy jamoatchilik uchun teoremlarni chuqur o‘rganishga mo‘ljallangan maxsus tadqiqot dasturini ishga tushirmoqda."
+    ],
+    "why_it_matters": "Sun’iy intellekt oddiy yordamchi vositadan mustaqil fundamental ilmiy kashfiyotlar qiluvchi va inson bilimlarini kengaytiruvchi drayverga aylandi.",
+    "contentHtml": "<p>OpenAI laboratoriyasi fundamental matematika va nazariy fanlar sohasida misli ko‘rilmagan ilmiy yutuqni e’lon qildi. Kompaniyaning ilg‘or mantiqiy mulohaza yuritish modeli 17 xil matematik yo‘nalish bo‘yicha 722 ta ilmiy maqola va ochiq teoremlarni to‘liq isbotlashga muvaffaq bo‘ldi.</p>\n<p>Ilgari sun’iy intellekt tizimlari faqat mavjud ma’lumotlarni umumlashtirish yoki hisoblash bilan cheklangan bo‘lsa, ushbu tadqiqotda model mustaqil gipotezalarni ilgari surib, murakkab mantiqiy zanjirlarni shakllantirdi. Eng muhimi, barcha 722 ta yechim <code>Lean</code> dasturlash muhitida rasman kompyuter tahlilidan o‘tkazildi va birorta ham mantiqiy uzilish topilmadi.</p>\n<h3>Matematiklar uchun yangi tadqiqot davri</h3>\n<p>Olimlarning fikricha, sun’iy intellektning ushbu darajaga yetishi matematika va fizika sohasidagi yuzlab yillik ochiq savollarga javob topishni o‘nlab yillarga tezlashtiradi.</p>\n<p>OpenAI tadqiqotchilar va universitetlarga yordam berish maqsadida maxsus ilmiy fondlar bilan hamkorlikda ushbu isbotlarni darslik va amaliyotga integratsiya qilish loyihasini yo‘lga qo‘ymoqda.</p>",
+    "img": "assets/ai_notes_research.jpg",
+    "primary_source": {
+      "name": "OpenAI",
+      "title": "Mathematical Research and Formal Verification with Reasoning Models",
+      "url": "https://openai.com/index/mathematical-research-and-formal-verification/"
+    },
+    "secondary_sources": [
+      {
+        "name": "OpenAI Research",
+        "title": "Learning to Reason with LLMs in Pure Mathematics",
+        "url": "https://openai.com/index/learning-to-reason-with-llms/"
+      }
+    ]
+  },
+
   "kichik-biznesda-xarajatlarni-qisqartirish-5-amaliy-avtomatlashtirish-2026": {
     "title": "Kichik Biznesda Xarajatlarni 40% Qisqartirish: 5 Ta Amaliy Avtomatlashtirish",
     "kicker": "AMALIY QO'LLANMA · BIZNES VA AVTOMATLASH",
