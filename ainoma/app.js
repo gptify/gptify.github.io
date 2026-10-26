@@ -275,7 +275,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "O‘zbekistonda Sun’iy Intellekt Startaplari Uchun Maxsus Grantlar Ajratilmoqda", u: "yangiliklar/ozbekistonda-suniy-intellekt-startaplari-uchun-maxsus-grantlar-ajratilmoqda-2026/", k: "o‘zbekistonda sun’iy intellekt startaplari uchun maxsus grantlar ajratilmoqda o'zbekiston it park uzbekistan o‘zbekistonda milliy sun’iy intellekt loyihalarini qo‘llab-quvvatlash uchun yuqori quvvatli serverla" },
+  { t: "Apple Tizimlariga «Apple Intelligence» Imkoniyatlari Rasman Kiritildi", u: "yangiliklar/apple-tizimlariga-apple-intelligence-imkoniyatlari-rasman-kiritildi-2026/", k: "apple tizimlariga «apple intelligence» imkoniyatlari rasman kiritildi texnologiya apple newsroom apple iphone, ipad va mac foydalanuvchilari uchun shaxsiy maxfiylikka asoslangan sun’iy intellekt ti" },
   { t: "Sun’iy Intellekt Bilan Ingliz Tilini O‘rganish: 5 Amaliy Usul", u: "yangiliklar/suniy-intellekt-bilan-ingliz-tilini-organish-5-amaliy-usul-2026/", k: "sun’iy intellekt bilan ingliz tilini o‘rganish: 5 amaliy usul qo'llanmalar ainoma ta’lim markazi qimmat repetitorsiz, sun’iy intellekt yordamida jonli muloqot qilish, talaffuz va grammatikani to‘g‘" },
   { t: "Meta Dasturchilar Uchun Yangi «Muse Spark» Modelini Chiqardi", u: "yangiliklar/meta-dasturchilar-uchun-yangi-muse-spark-modelini-chiqardi-2026/", k: "meta dasturchilar uchun yangi «muse spark» modelini chiqardi texnologiya meta newsroom meta ochiq manbali yangi avlod modelini taqdim etib, dasturchilarga shaxsiy kompyuterlarda to‘liq of" },
   { t: "NVIDIA Va Reliance Katta Sun’iy Intellekt Alyansini Tuzdi", u: "yangiliklar/nvidia-va-reliance-katta-suniy-intellekt-alyansini-tuzdi-2026/", k: "nvidia va reliance katta sun’iy intellekt alyansini tuzdi texnologiya nvidia newsroom jensen huang o‘z ma’lumotlarini eksport qilmaslikka chaqirib, hindistonda gigavatt quvvatli milliy h" },

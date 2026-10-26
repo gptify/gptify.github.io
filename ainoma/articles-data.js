@@ -1,6 +1,72 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "ozbekistonda-suniy-intellekt-startaplari-uchun-maxsus-grantlar-ajratilmoqda-2026": {
+    "title": "O‘zbekistonda Sun’iy Intellekt Startaplari Uchun Maxsus Grantlar Ajratilmoqda",
+    "kicker": "O‘ZBEKISTON · STARTAPLAR VA INVESTITSIYA",
+    "category": "O'zbekiston",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-26",
+    "verified_date": "2026-10-26",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "O‘zbekistonda milliy sun’iy intellekt loyihalarini qo‘llab-quvvatlash uchun yuqori quvvatli serverlar va bepul infratuzilma ajratiladi.",
+    "qisqacha": [
+      "Raqamli texnologiyalar vazirligi va IT Park startaplar uchun yangi rag‘batlantirish dasturini e’lon qildi.",
+      "Lokal sun’iy intellekt modellarini o‘qituvchi jamoalarga yuqori hisoblash quvvatiga ega GPU klasterlari bepul beriladi.",
+      "Dastur milliy tilda ishlovchi yordamchilar, qishloq xo‘jaligi va tibbiy diagnostika startaplarini rivojlantirishga qaratilgan."
+    ],
+    "why_it_matters": "Hisoblash quvvatlarining qimmatligi yosh startaplar uchun asosiy to‘siq edi. Davlat granti orqali ushbu xarajatlarning qoplanishi milliy loyihalar sonini keskin oshiradi.",
+    "contentHtml": "<p>O‘zbekiston Respublikasi Raqamli texnologiyalar vazirligi hamda IT Park sun’iy intellekt yo‘nalishida faoliyat olib borayotgan mahalliy startap jamoalari va ilmiy guruhlar uchun maxsus qo‘llab-quvvatlash mexanizmini ishga tushirdi.</p>\n<p>Ushbu tashabbus doirasida milliy loyihalar mualliflariga zamonaviy GPU grafik protsessorlari bilan jihozlangan yuqori hisoblash klasterlaridan bepul foydalanish huquqi va bulutli infratuzilma grantlari taqdim etiladi. Bu startaplarga qimmat serverlarni xorijdan ijaraga olmasdan, o‘z neyrotarmoqlarini mahalliy platformada o‘qitish imkonini beradi.</p>\n<h3>Mahalliy yechimlar va iqtisodiy o‘sish</h3>\n<p>Grant dasturida ustuvorlik o‘zbek tilida so‘zlashuvchi nutqiy modellar, ta’lim platformalari, bank skoring tizimlari hamda qishloq xo‘jaligida hosildorlikni bashorat qiluvchi loyihalarga beriladi.</p>\n<p>Mutasaddilarning ta’kidlashicha, grant oluvchi har bir startapga xalqaro mentorlar va IT Park mutaxassislari tomonidan texnik ko‘mak ko‘rsatiladi hamda ularning eksport salohiyatini oshirish choralari ko‘riladi.</p>",
+    "img": "assets/registan.jpg",
+    "primary_source": {
+      "name": "IT Park Uzbekistan",
+      "title": "Strategy for the Development of Artificial Intelligence Technologies Until 2030",
+      "url": "https://it-park.uz/en/itpark/news/strategy-for-the-development-of-artificial-intelligence-technologies-until-2030"
+    },
+    "secondary_sources": [
+      {
+        "name": "Lex.uz",
+        "title": "Sun’iy intellekt texnologiyalarini rivojlantirish to‘g‘risida",
+        "url": "https://lex.uz/docs/-7162608"
+      }
+    ]
+  },
+
+  "apple-tizimlariga-apple-intelligence-imkoniyatlari-rasman-kiritildi-2026": {
+    "title": "Apple Tizimlariga «Apple Intelligence» Imkoniyatlari Rasman Kiritildi",
+    "kicker": "MOBIL TEXNOLOGIYA · APPLE",
+    "category": "Texnologiya",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-26",
+    "verified_date": "2026-10-26",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "Apple iPhone, iPad va Mac foydalanuvchilari uchun shaxsiy maxfiylikka asoslangan sun’iy intellekt tizimini rasman ishga tushirdi.",
+    "qisqacha": [
+      "Apple o‘zining operatsion tizimlariga «Apple Intelligence» funksiyalar to‘plamini rasman taqdim etdi.",
+      "Foydalanuvchilar matnlarni qayta tahrirlash, rasmlardan ortiqcha narsalarni o‘chirish va aqlli xabarnomalar olish imkoniyatiga ega bo‘ldi.",
+      "Barcha shaxsiy ma’lumotlar to‘g‘ridan-to‘g‘ri qurilmaning o‘zida tahlil qilinib, to‘liq maxfiylik kafolatlanadi."
+    ],
+    "why_it_matters": "Apple o‘z ekotizimiga sun’iy intellektni xavfsiz va kundalik ehtiyojlarga mos ravishda integratsiya qilib, ommaviy foydalanuvchilar uchun qulay standart o‘rnatdi.",
+    "contentHtml": "<p>Apple kompaniyasi uzoq kutilgan <strong>«Apple Intelligence»</strong> tizimini o‘zining flagman qurilmalari foydalanuvchilariga taqdim etdi. Yangi yangilanish iPhone, iPad va Mac platformalarida shaxsiy ma’lumotlar xavfsizligini ta’minlagan holda kundalik vazifalarni soddalashtirishga xizmat qiladi.</p>\n<p>Yangi tizim doirasida foydalanuvchilar istalgan matnni bir zumda professional, do‘stona yoki qisqa shaklda qayta yozish, imlo xatolarini tekshirish hamda katta xatlardan muhim mazmunni ajratib olish (Writing Tools) imkoniyatidan foydalanishlari mumkin. Shuningdek, fotogalereyada suratlarning fonidagi keraksiz elementlarni avtomatik tozalovchi «Clean Up» vositasi ishga tushirildi.</p>\n<h3>Shaxsiy ma’lumotlar daxlsizligi va aqlli Siri</h3>\n<p>Apple bosh direktori Tim Kukning ta’kidlashicha, yangi tizim foydalanuvchi ma’lumotlarini bulutli serverlarga jo‘natmasdan, bevosita qurilmaning o‘zidagi neyron protsessorlar yordamida qayta ishlaydi. Bu foydalanuvchilarning fotosuratlari, yozishmalari va shaxsiy hujjatlari maxfiyligini 100 foiz himoya qiladi.</p>\n<p>Ovozli yordamchi Siri ham yangi dizayn va chuqur kontekstli tushunish qobiliyatiga ega bo‘ldi. Endi Siri foydalanuvchining ekrandagi amallarini to‘g‘ri idrok etib, ilovalararo murakkab so‘rovlarni erkin bajara oladi.</p>",
+    "img": "assets/social_commerce.jpg",
+    "primary_source": {
+      "name": "Apple Newsroom",
+      "title": "Apple Intelligence Is Available Today on iPhone, iPad, and Mac",
+      "url": "https://www.apple.com/newsroom/2024/10/apple-intelligence-is-available-today-on-iphone-ipad-and-mac/"
+    },
+    "secondary_sources": [
+      {
+        "name": "Apple",
+        "title": "Apple Intelligence: Personal, Private, Powerful",
+        "url": "https://www.apple.com/apple-intelligence/"
+      }
+    ]
+  },
+
   "suniy-intellekt-bilan-ingliz-tilini-organish-5-amaliy-usul-2026": {
     "title": "Sun’iy Intellekt Bilan Ingliz Tilini O‘rganish: 5 Amaliy Usul",
     "kicker": "AMALIY QO'LLANMA · TIL VA TA'LIM",
