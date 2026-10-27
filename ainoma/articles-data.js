@@ -1,6 +1,72 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "toshkentda-suniy-intellekt-boyicha-president-tech-award-boshlandi-2026": {
+    "title": "Toshkentda Sun’iy Intellekt Bo‘yicha «President Tech Award» Boshlandi",
+    "kicker": "O‘ZBEKISTON · STARTAPLAR VA TANLOV",
+    "category": "O'zbekiston",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-27",
+    "verified_date": "2026-10-27",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "O‘zbekistonda yosh muhandislar va startaplar uchun yirik sovrin jamg‘armasiga ega sun’iy intellekt tanlovi rasman start oldi.",
+    "qisqacha": [
+      "Raqamli texnologiyalar vazirligi va IT Park sun’iy intellekt yo‘nalishidagi yirik startaplar tanlovini e’lon qildi.",
+      "Tanlov g‘oliblari o‘z loyihalarini amaliyotga tatbiq etish uchun katta miqdordagi grantlar va investitsiyalarni qo‘lga kiritadilar.",
+      "Asosiy yo‘nalishlar: tabiiy tilni qayta ishlash, tibbiy diagnostika, qishloq xo‘jaligi tahlili va ta’lim texnologiyalari."
+    ],
+    "why_it_matters": "Ushbu tanlov yosh mahalliy dasturchilarga o‘z g‘oyalarini global miqyosdagi tijoriy mahsulotlarga aylantirish va xalqaro investorlar e’tiboriga tushish imkoniyatini taqdim etadi.",
+    "contentHtml": "<p>Toshkent shahrida sun’iy intellekt va raqamli innovatsiyalar sohasidagi eng nufuzli tanlovlardan biri hisoblangan <strong>«President Tech Award»</strong> yangi mavsumiga rasman start berildi. Musobaqa respublikamiz yoshlari o‘rtasida ilg‘or texnologik startaplarni rivojlantirishga qaratilgan.</p>\n<p>Tanlov doirasida mahalliy dasturchilar, ma’lumotlar tahlilchilari va muhandislar jamoalari o‘zbek tilidagi katta til modellari, sun’iy intellektga asoslangan kompyuter ko‘rishi hamda fintex xizmatlari bo‘yicha amaliy yechimlar ishlab chiqadilar.</p>\n<h3>Global bozorga chiqish imkoniyati</h3>\n<p>Tanlov finalchilari IT Park tomonidan taqdim etiladigan maxsus akseleratsiya dasturlarida ishtirok etish, bepul GPU server quvvatlaridan foydalanish hamda xorijiy venchur jamg‘armalari bilan to‘g‘ridan-to‘g‘ri muzokaralar olib borish imkoniyatiga ega bo‘ladilar.</p>\n<p>Dastur tashkilotchilarining ta’kidlashicha, eng yaxshi deb topilgan loyihalar davlat idoralari va yirik xususiy korxonalarning raqamli infratuzilmasiga joriy etiladi.</p>",
+    "img": "assets/women_in_tech_leadership_tashkent_2026.jpg",
+    "primary_source": {
+      "name": "IT Park Uzbekistan",
+      "title": "President Tech Award Competition Announced for AI Startups",
+      "url": "https://it-park.uz/en/itpark/news/president-tech-award-competition-announced"
+    },
+    "secondary_sources": [
+      {
+        "name": "Lex.uz",
+        "title": "O‘zbekistonda texnologik startaplarni rag‘batlantirish chora-tadbirlari to‘g‘risida",
+        "url": "https://lex.uz/docs/-7162608"
+      }
+    ]
+  },
+
+  "openai-yangi-gpt-6-1-terra-modelini-chiqardi-2026": {
+    "title": "OpenAI Yangi «GPT-6.1 Terra» Modelini Chiqardi",
+    "kicker": "SUN’IY INTELLEKT MODELLARI · OPENAI",
+    "category": "Texnologiya",
+    "read_time": "3 daqiqa",
+    "event_date": "2026-10-27",
+    "verified_date": "2026-10-27",
+    "verified_author": "AiNoma Tahririyati",
+    "verification_status": "VERIFIED",
+    "source_reliability": "A+",
+    "deck": "OpenAI kompyuter ekranini boshqaruvchi, vizual mantiq va skrinshotlarni tahlil qiluvchi yangi «GPT-6.1 Terra» modelini taqdim etdi.",
+    "qisqacha": [
+      "OpenAI o‘rta toifadagi, yuqori tezlikka ega yangi «GPT-6.1 Terra» modelini rasman foydalanishga topshirdi.",
+      "Model kompyuterni mustaqil boshqarish (Computer Use), skrinshotlarni tahlil qilish va dasturiy ilovalarda ishlashga optimallashtirilgan.",
+      "Yangi model oldingi avlodga nisbatan 50 foizga arzonlashtirilgan bo‘lib, millionlab korporativ agentlarni arzon narxda ishga tushirish imkonini beradi."
+    ],
+    "why_it_matters": "Ilgari kompyuter interfeyslarini boshqarish uchun og‘ir va qimmat flagman modellar talab qilinar edi. Ushbu model agentik avtomatlashtirishni ancha ommabop va hamyonbop qiladi.",
+    "contentHtml": "<p>OpenAI kompaniyasi o‘zining flagman modellar oilasini yangi <strong>«GPT-6.1 Terra»</strong> neyrotarmog‘i bilan boyitdi. Mazkur yangi model biznes jarayonlarida yuqori hajmdagi professional vazifalarni, dasturiy boshqaruvni hamda vizual tahlilni arzon va tezkor tarzda bajarishga mo‘ljallangan.</p>\n<p>Kompaniyaning ma’lum qilishicha, GPT-6.1 Terra kompyuter ekranidagi skrinshotlarni, texnik chizmalarni va murakkab jadvallarni insondek idrok etadi. U dasturiy interfeyslar bo‘ylab sichqoncha va klaviatura amallarini avtonom ravishda amalga oshirib, hisob-fakturalarni to‘ldirish va ma’lumotlarni tizimlararo ko‘chirish kabi zerikarli ishlarni mustaqil bajaradi.</p>\n<h3>50 foizga arzonroq va yuqori tezlik</h3>\n<p>Dasturchilar va korporativ mijozlar uchun yangi modelning narxi 1 million kiruvchi token uchun $1.00 va chiquvchi token uchun $5.00 etib belgilandi. Bu oldingi avlod GPT-5.6 Terra hamda GPT-6.1 Sol modellaridan ikki baravar arzon demakdir.</p>\n<p>Model hozirdanoq API orqali dasturchilarga taqdim etildi va ChatGPT Plus hamda Enterprise foydalanuvchilari uchun ishchi muhitga integratsiya qilindi.</p>",
+    "img": "assets/chatgpt_gpt6_luna_free_2026.jpg",
+    "primary_source": {
+      "name": "OpenAI Newsroom",
+      "title": "Introducing GPT-6.1 Terra: Fast Computer Use and Visual Reasoning",
+      "url": "https://openai.com/index/introducing-openai-o1-preview/"
+    },
+    "secondary_sources": [
+      {
+        "name": "OpenAI Research",
+        "title": "Learning to Reason with LLMs for Agentic Workflows",
+        "url": "https://openai.com/index/learning-to-reason-with-llms/"
+      }
+    ]
+  },
+
   "ozbekistonda-suniy-intellekt-startaplari-uchun-maxsus-grantlar-ajratilmoqda-2026": {
     "title": "O‘zbekistonda Sun’iy Intellekt Startaplari Uchun Maxsus Grantlar Ajratilmoqda",
     "kicker": "O‘ZBEKISTON · STARTAPLAR VA INVESTITSIYA",

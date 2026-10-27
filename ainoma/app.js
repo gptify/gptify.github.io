@@ -276,7 +276,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Toshkentda Sun’iy Intellekt Bo‘yicha «President Tech Award» Boshlandi", u: "yangiliklar/toshkentda-suniy-intellekt-boyicha-president-tech-award-boshlandi-2026/", k: "toshkentda sun’iy intellekt bo‘yicha «president tech award» boshlandi o'zbekiston it park uzbekistan o‘zbekistonda yosh muhandislar va startaplar uchun yirik sovrin jamg‘armasiga ega sun’iy intellekt t" },
+  { t: "OpenAI Yangi «GPT-6.1 Terra» Modelini Chiqardi", u: "yangiliklar/openai-yangi-gpt-6-1-terra-modelini-chiqardi-2026/", k: "openai yangi «gpt-6.1 terra» modelini chiqardi texnologiya openai newsroom openai kompyuter ekranini boshqaruvchi, vizual mantiq va skrinshotlarni tahlil qiluvchi yangi «gpt-6" },
   { t: "O‘zbekistonda Sun’iy Intellekt Startaplari Uchun Maxsus Grantlar Ajratilmoqda", u: "yangiliklar/ozbekistonda-suniy-intellekt-startaplari-uchun-maxsus-grantlar-ajratilmoqda-2026/", k: "o‘zbekistonda sun’iy intellekt startaplari uchun maxsus grantlar ajratilmoqda o'zbekiston it park uzbekistan o‘zbekistonda milliy sun’iy intellekt loyihalarini qo‘llab-quvvatlash uchun yuqori quvvatli serverla" },
   { t: "Apple Tizimlariga «Apple Intelligence» Imkoniyatlari Rasman Kiritildi", u: "yangiliklar/apple-tizimlariga-apple-intelligence-imkoniyatlari-rasman-kiritildi-2026/", k: "apple tizimlariga «apple intelligence» imkoniyatlari rasman kiritildi texnologiya apple newsroom apple iphone, ipad va mac foydalanuvchilari uchun shaxsiy maxfiylikka asoslangan sun’iy intellekt ti" },
   { t: "Sun’iy Intellekt Bilan Ingliz Tilini O‘rganish: 5 Amaliy Usul", u: "yangiliklar/suniy-intellekt-bilan-ingliz-tilini-organish-5-amaliy-usul-2026/", k: "sun’iy intellekt bilan ingliz tilini o‘rganish: 5 amaliy usul qo'llanmalar ainoma ta’lim markazi qimmat repetitorsiz, sun’iy intellekt yordamida jonli muloqot qilish, talaffuz va grammatikani to‘g‘" },
