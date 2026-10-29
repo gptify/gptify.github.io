@@ -283,16 +283,17 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi", u: "yangiliklar/ijtimoiy-loyihalar-suniy-intellekt-infratuzilmasi-qaror-581/", k: "ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi o‘zbekiston o‘zbekiston respublikasi vazirlar mahkamasi vazirlar mahkamasining 581-son qarori bilan ilmiy tashkilotlar, startaplar va otmlarning ijtimoiy lo" },
-  { t: "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini", u: "yangiliklar/anthropic-nasdaq-ipo-s1-ariza-2026/", k: "anthropic nasdaq birjasida ipo o‘tkazish uchun rasman s-1 arizasini dunyo texnologiya anthropic, pbc / aqsh qimmatli qog‘ozlar va birjalar komissiyasi (sec) claude modellari ishlab chiquvchisi bo‘lgan anthropic kompaniyasi nasdaq birjasida 'ant' tickeri ost" },
+  { t: "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini topshirdi", u: "yangiliklar/anthropic-nasdaq-ipo-s1-ariza-2026/", k: "anthropic nasdaq birjasida ipo o‘tkazish uchun rasman s-1 arizasini topshirdi dunyo texnologiya anthropic, pbc / aqsh qimmatli qog‘ozlar va birjalar komissiyasi (sec) claude modellari ishlab chiquvchisi bo‘lgan anthropic kompaniyasi nasdaq birjasida 'ant' tickeri ost" },
   { t: "Google Gemini 4 Argon xavfsizlik standartlarini e'lon qildi", u: "yangiliklar/google-gemini-4-argon-xavfsizlik-va-masuliyat/", k: "google gemini 4 argon xavfsizlik standartlarini e'lon qildi dunyo texnologiya google deepmind google deepmind yangi gemini 4 argon modelining mas'uliyatli va xavfsiz rivojlanish prinsiplari hamd" },
   { t: "Deepfake va soxta AI-kontentni qanday aniqlash mumkin", u: "yangiliklar/deepfake-aniqlash/", k: "deepfake va soxta ai-kontentni qanday aniqlash mumkin qo'llanmalar ainoma tahririyati ai bilan ishlab chiqilgan soxta video, rasm va ovozlar tobora ishonchli bo'lib bormoqda. ularni aniq" },
   { t: "O‘zbekiston tibbiyotida 10 ta Sun’iy intellekt tizimi tushiriladi", u: "yangiliklar/ozbekiston-tibbiyotida-10-ta-suniy-intellekt-tizimi/", k: "o‘zbekiston tibbiyotida 10 ta sun’iy intellekt tizimi tushiriladi o‘zbekiston it spot.uz it & biznes sog‘liqni saqlash tizimiga 10 ta sun’iy intellekt moduli va shifoxonalar faoliyatini aholi tomonidan" },
   { t: "Eng yaxshi bepul AI vositalari to'plami (2026)", u: "yangiliklar/eng-yaxshi-bepul-ai-vositalari/", k: "eng yaxshi bepul ai vositalari to'plami (2026) qo'llanmalar ainoma tahririyati pul sarflamasdan ham ai'dan to'liq foydalanish mumkin. matn, rasm, ovoz va taqdimot uchun eng yaxshi" },
   { t: "AI va mualliflik huquqi: kimning ishi hisoblanadi?", u: "yangiliklar/ai-mualliflik-huquqi/", k: "ai va mualliflik huquqi: kimning ishi hisoblanadi? qo'llanmalar ainoma tahririyati ai qurgan matn, rasm yoki musiqaning mualliflik huquqi masalasi hali ham dunyo bo'ylab munozarali. a" },
   { t: "Noldan AI bilan ishlashni boshlash: 5 qadamda birinchi tajribangiz", u: "yangiliklar/ai-bilan-boshlash/", k: "noldan ai bilan ishlashni boshlash: 5 qadamda birinchi tajribangiz qo'llanmalar ainoma tahririyati hech qachon ai ishlatmagan bo'lsangiz ham, 10 daqiqada birinchi foydali natijangizni olishingiz mumk" },
-  { t: "AI atamalari lug'ati: LLM, token, prompt va boshqa 20+", u: "yangiliklar/ai-atamalari-lugati/", k: "ai atamalari lug'ati: llm, token, prompt va boshqa 20+ qo'llanmalar ainoma tahririyati sun'iy intellekt haqida gaplashganda tez-tez uchraydigan 20+ atamaning oddiy, tushunarli izohi — tex" },
+  { t: "AI atamalari lug‘ati: LLM, token, prompt va boshqa 20+ tushuncha", u: "yangiliklar/ai-atamalari-lugati/", k: "ai atamalari lug‘ati: llm, token, prompt va boshqa 20+ tushuncha qo'llanmalar ainoma tahririyati sun'iy intellekt haqida gaplashganda tez-tez uchraydigan 20+ atamaning oddiy, tushunarli izohi — tex" },
   { t: "Sun’iy Intellekt Davrida Kiberxavfsizlik: Ma’lumotlarni Himoyalash Qoidalari", u: "yangiliklar/suniy-intellekt-davrida-kiberxavfsizlik-va-malumotlar-himoyasi-2026/", k: "sun’iy intellekt davrida kiberxavfsizlik: ma’lumotlarni himoyalash qoidalari qo'llanmalar cisa & ncsc guidelines global xakerliklar fonida biznes va shaxsiy ma'lumotlarni neyrotarmoqlarda xavfsiz saqlash, maxfiyli" },
   { t: "Anthropic «Claude Duet» Va Yangi «Opus 5.5» Modelini Chiqardi", u: "yangiliklar/anthropic-claude-duet-va-yangi-opus-5-5-modelini-chiqardi-2026/", k: "anthropic «claude duet» va yangi «opus 5.5» modelini chiqardi texnologiya anthropic newsroom anthropic o'zining eng kuchli flagman modeli claude opus 5.5 asosidagi birinchi avtonom tizimi claud" },
   { t: "PHP2Shell Va Sun’iy Intellekt Kalitlari Bo‘yicha Global Xakerlik", u: "yangiliklar/php2shell-va-suniy-intellekt-kalitlari-global-kiberxavfsizlik-inqirozi-2026/", k: "php2shell va sun’iy intellekt kalitlari bo‘yicha global xakerlik texnologiya the guardian technology news sun’iy intellekt tadqiqotlari dunyodagi veb-saytlarning 70 foiziga taalluqli 10 yillik kritik zaifli" },
@@ -307,7 +308,7 @@ const searchIndex = [
   { t: "Google Korporativ Muhit Uchun «Gemini Agent»ni Chiqardi", u: "yangiliklar/google-korporativ-muhit-uchun-gemini-agent-chiqardi-2026/", k: "google korporativ muhit uchun «gemini agent»ni chiqardi texnologiya google workspace official announcement google workspace foydalanuvchilari uchun gmail, docs, sheets va korporativ crm tizimlari bo'ylab avt" },
   { t: "O‘zbekiston AI Readiness Reytingida 25 Pog‘onaga Ko‘tarildi", u: "yangiliklar/ozbekiston-ai-readiness-reytingida-25-pogonaga-kotarildi-2026/", k: "o‘zbekiston ai readiness reytingida 25 pog‘onaga ko‘tarildi texnologiya o‘zbekiston respublikasi raqamli texnologiyalar vazirligi o‘zbekiston global sun’iy intellektga tayyorlik indeksida 62-o‘ringa ko‘tarildi. raqamli hukumat dat" },
   { t: "Anthropic IPO Oldidan 5% Aksiyasini Jamg‘armaga Ajratdi", u: "yangiliklar/anthropic-ipo-oldidan-5-foiz-aksiyasini-jamgarmaga-ajratdi-2026/", k: "anthropic ipo oldidan 5% aksiyasini jamg‘armaga ajratdi texnologiya reuters technology anthropic birjaga chiqish arafasida o'zining 5% aksiyalarini jamoat manfaatiga xizmat qiluvchi musta" },
-  { t: "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "instagram uchun ai video: chatgpt, gemini va google flow texnologiya google deepmind veo documentation instagram reels uchun oddiy qadamma-qadam yo'riqnoma: chatgpt yoki gemini'da kadrlar rejasini tuzish" },
+  { t: "Instagram uchun AI video: ChatGPT, Gemini va Google Flow", u: "yangiliklar/ai-video-qurish-gemini-chatgpt-veo-2026/", k: "instagram uchun ai video: chatgpt, gemini va google flow texnologiya google deepmind veo documentation instagram reels uchun oddiy qadamma-qadam yo'riqnoma: chatgpt yoki gemini'da kadrlar rejasini tuzish" },
   { t: "Claude 25 Yillik Global Kriptografiya Sirini Ochdi", u: "yangiliklar/claude-25-yillik-global-kriptografiya-sirini-ochdi-2026/", k: "claude 25 yillik global kriptografiya sirini ochdi texnologiya anthropic research anthropic claude modeli zamonaviy internet xavfsizligida chorak asrdan beri yechilmagan nist p-256 s" },
   { t: "Xitoy 23 Ta Ilg‘or AI Texnologiyasiga Eksport Cheklovi Qo‘ydi", u: "yangiliklar/xitoy-23-ta-ilgor-ai-texnologiyasiga-eksport-cheklovi-qoydi-2026/", k: "xitoy 23 ta ilg‘or ai texnologiyasiga eksport cheklovi qo‘ydi texnologiya global times / mofcom announcement pekin strategik texnologiyalar eksportini qat'iy nazoratga oldi: 23 ta ai yo'nalishi bo'yicha mahall" },
   { t: "OpenCode Tizimidan Minglab OpenAI Va Anthropic Kalitlari Sizdi", u: "yangiliklar/opencode-tizimidan-minglab-openai-va-anthropic-kalitlari-sizdi-2026/", k: "opencode tizimidan minglab openai va anthropic kalitlari sizdi texnologiya opencode security advisory ommabop ai kod agenti opencode'ning pullik console xizmatidagi zaiflik sababli minglab dasturchilar " },
@@ -331,12 +332,12 @@ const searchIndex = [
   { t: "Google DeepMind Ochiq Multimodal EmbeddingGemma 2 Modelini Chiqardi", u: "yangiliklar/google-deepmind-embeddinggemma-2-multimodal-model-2026/", k: "google deepmind ochiq multimodal embeddinggemma 2 modelini chiqardi texnologiya google deepmind rasmiy blogi google deepmind matn, dasturlash kodi, video, audio va tasvirlarni yagona vektor maydonida birlashti" },
   { t: "Anthropic: Claude Internet Sinovlarida Kutilmagan Harakatlar Qildi", u: "yangiliklar/anthropic-claude-internet-sinovlarida-kutilmagan-harakatlar-qildi-2026/", k: "anthropic: claude internet sinovlarida kutilmagan harakatlar qildi texnologiya va dasturlash anthropic research anthropic e’lon qilgan rasmiy hisobotda claude avtonom internet sinovlarida cheklovlarni chetlab o‘t" },
   { t: "Amazon Meta kompaniyasining Muse AI Agentini Blokladi", u: "yangiliklar/amazon-meta-muse-ai-agentini-blokladi-2026/", k: "amazon meta kompaniyasining muse ai agentini blokladi biznes va jarayonlar amazon newsroom amazon o‘z e-tijorat maydonida meta tomonidan ishlab chiqilgan muse avtonom sun’iy intellekt agentin" },
-  { t: "AI bilan kinematik video va reklama roliklari qurish: Higgsfield", u: "yangiliklar/ai-bilan-kinematik-video-reklama-higgsfield/", k: "ai bilan kinematik video va reklama roliklari qurish: higgsfield qo'llanmalar ainoma tahririyati qimmatbaho videosyomka va kameralarsiz, professional kamera harakatlari hamda inson mimikasiga ega k" },
+  { t: "AI bilan kinematik video va reklama roliklari qurish: Higgsfield platformasi", u: "yangiliklar/ai-bilan-kinematik-video-reklama-higgsfield/", k: "ai bilan kinematik video va reklama roliklari qurish: higgsfield platformasi qo'llanmalar ainoma tahririyati qimmatbaho videosyomka va kameralarsiz, professional kamera harakatlari hamda inson mimikasiga ega k" },
   { t: "IT Park va Serbiya Startaplar Uchun Jamg‘arma Tuzmoqda", u: "yangiliklar/it-park-va-serbiya-startaplar-uchun-jamgarma-tuzmoqda-2026/", k: "it park va serbiya startaplar uchun jamg‘arma tuzmoqda biznes va jarayonlar trend news agency it park uzbekistan va serbiya innovatsiyalar jamg‘armasi qo‘shma texnologik loyihalarni moliyalashti" },
   { t: "Toshkentda «Women in Tech Leadership 2026» Forumi O‘tkaziladi", u: "yangiliklar/toshkentda-women-in-tech-leadership-2026-forumi-otkaziladi/", k: "toshkentda «women in tech leadership 2026» forumi o‘tkaziladi biznes va jarayonlar women in tech official portal 13-oktabr kuni raqamli texnologiyalar vazirligida «building the big future» shiori ostida women in t" },
   { t: "AI yordamida rezyume (CV) va motivatsion xat yozish", u: "yangiliklar/ai-bilan-rezyume-cv-yozish/", k: "ai yordamida rezyume (cv) va motivatsion xat yozish qo'llanmalar rasmiy manba bir xil rezyumeni har joyga yubormang. ai yordamida har bir e'longa moslashtirilgan, kuchli cv va xa" },
   { t: "ChatGPT Bepul Foydalanuvchilarga GPT-6 Luna Modelini Ochdi", u: "yangiliklar/chatgpt-bepul-foydalanuvchilarga-gpt6-luna-ochildi-2026/", k: "chatgpt bepul foydalanuvchilarga gpt-6 luna modelini ochdi modellar va foydalanish rasmiy manba openai o‘zining yangi avlod gpt-6 arxitekturasini barcha chatgpt foydalanuvchilariga, jumladan bepul" },
-  { t: "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy", u: "yangiliklar/ai-xavfsizligi-oila-bolalar/", k: "sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy qo'llanmalar ainoma tahririyati bolalar chatgpt va boshqa ai chatbotlardan tobora ko'proq foydalanmoqda. ota-onalar bilishi kerak bo" },
+  { t: "Sun’iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy qoida", u: "yangiliklar/ai-xavfsizligi-oila-bolalar/", k: "sun’iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy qoida qo'llanmalar ainoma tahririyati bolalar chatgpt va boshqa ai chatbotlardan tobora ko'proq foydalanmoqda. ota-onalar bilishi kerak bo" },
   { t: "Atlassian va OpenAI GPT-6 Integratsiyasini E’lon Qildi", u: "yangiliklar/atlassian-va-openai-gpt6-rovo-sheriklik-2026/", k: "atlassian va openai gpt-6 integratsiyasini e’lon qildi biznes va jarayonlar atlassian official news atlassian va openai o'zlarining strategik hamkorligini kengaytirib, jira, confluence va bitbucket ek" },
   { t: "Silicon Labs IoT Uchun «Simplicity AI SDK»ni Chiqardi", u: "yangiliklar/silicon-labs-simplicity-ai-sdk-iot-dasturlash-2026/", k: "silicon labs iot uchun «simplicity ai sdk»ni chiqardi infratuzilma va qurilmalar silicon labs documentation silicon labs o'zining yillik works with 2026 sammitida iot va mikrokontrollerlar dasturchilari uchun" },
   { t: "Boston Dynamics Amazon Sobiq Olimini Rahbar Etib Tayinladi", u: "yangiliklar/boston-dynamics-rohit-prasad-yangi-bosh-direktor-2026/", k: "boston dynamics amazon sobiq olimini rahbar etib tayinladi robototexnika va qurilmalar boston dynamics official boston dynamics kompaniyasi robototexnika sohasini jismoniy sun'iy intellekt (physical ai) davriga o" },
@@ -344,7 +345,7 @@ const searchIndex = [
   { t: "AQSh Super-Intellekt Xavfsizligi Bo‘yicha Maxsus Guruh Tuzdi", u: "yangiliklar/aqsh-super-intelligence-force-maxsus-guruhi-2026/", k: "aqsh super-intellekt xavfsizligi bo‘yicha maxsus guruh tuzdi regulatsiya va jamiyat cbs news politics aqsh ma'muriyati yirik ai laboratoriyalari bilan muzokaralardan so'ng, sun'iy super-intellekt ustida" },
   { t: "Fujitsu Chakana Savdo Uchun 4 Ta Avtonom Agent Chiqardi", u: "yangiliklar/fujitsu-chakana-savdo-avtonom-4-ai-agent-2026/", k: "fujitsu chakana savdo uchun 4 ta avtonom agent chiqardi biznes va jarayonlar fujitsu global press fujitsu kompaniyasi riteyl va chakana savdo tarmoqlari uchun maxsus ishlab chiqilgan to'rtta avtonom" },
   { t: "Talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash", u: "yangiliklar/talabalar-uchun-sunny-intellekt/", k: "talabalar uchun sun'iy intellekt: referat va taqdimotni to'g'ri tayyorlash qo'llanmalar rasmiy manba ai sizning o'rningizga o'ylamaydi — u tadqiqotni tezlashtiradi. referat va taqdimotni to'g'ri, halol" },
-  { t: "AI bilan video qurish 2026: Sora, Veo va boshqa", u: "yangiliklar/ai-bilan-video-qurish-2026/", k: "ai bilan video qurish 2026: sora, veo va boshqa qo'llanmalar ainoma tahririyati matndan videoga: 2026-yilda eng ko'p ishlatilayotgan ai video vositalari va ularning haqiqiy imkoniy" },
+  { t: "AI bilan video qurish 2026: Sora, Veo va boshqa vositalar", u: "yangiliklar/ai-bilan-video-qurish-2026/", k: "ai bilan video qurish 2026: sora, veo va boshqa vositalar qo'llanmalar ainoma tahririyati matndan videoga: 2026-yilda eng ko'p ishlatilayotgan ai video vositalari va ularning haqiqiy imkoniy" },
   { t: "Google DeepMind AI Baholashda «Ikkiyoqlama Ko‘r-Ko‘rona» Tizimni Qo‘llamoqda", u: "yangiliklar/deepmind-double-blind-ai-evaluations/", k: "google deepmind ai baholashda «ikkiyoqlama ko‘r-ko‘rona» tizimni qo‘llamoqda modellar va texnologiya google deepmind google deepmind modellarning haqiqiy imkoniyatlarini baholashda subyektivlik va korporativ yonbosish" },
   { t: "Microsoft Copilot «Autopilot»: Kompyuterdan Uzoqda Ishlovchi Avtonom Agent", u: "yangiliklar/microsoft-copilot-autopilot-avtonom-agent-2026/", k: "microsoft copilot «autopilot»: kompyuterdan uzoqda ishlovchi avtonom agent infratuzilma va qurilmalar microsoft official blog microsoft o'zining copilot ekotizimini tubdan yangilab, 'autopilot' (scout) avtonom agentini taqdim " },
   { t: "Kichik biznes uchun sun'iy intellekt: qayerdan boshlash kerak?", u: "yangiliklar/kichik-biznes-uchun-ai/", k: "kichik biznes uchun sun'iy intellekt: qayerdan boshlash kerak? qo'llanmalar ainoma tahririyati katta byudjetsiz, bepul va arzon vositalar bilan kichik biznesingizga ai'ni qanday joriy qilish mumk" },
@@ -376,7 +377,7 @@ const searchIndex = [
   { t: "OpenAI, Anthropic va Google SAFA Standartlar Tashkilotini Tuzdi", u: "yangiliklar/openai-anthropic-google-safa-standartlar-2026/", k: "openai, anthropic va google safa standartlar tashkilotini tuzdi global ai siyosati the street dunyodagi eng yirik sun’iy intellekt laboratoriyalari avtonom agentlar xavfsizligini ta’minlash va m" },
   { t: "Nvidia va Google 100 Gigavattlik Energiya Alyansini Tuzdi", u: "yangiliklar/nvidia-google-emerald-100-gigavatt-energiya-alyansi-2026/", k: "nvidia va google 100 gigavattlik energiya alyansini tuzdi infrastruktura va energetika siliconangle tech sun‘iy intellekt hisoblash markazlarining elektr tarmog‘iga bosimini kamaytirish maqsadida nvidia, g" },
   { t: "Anthropic Rahbari Oq Uyda Trump Bilan Muloqot O‘tkazdi", u: "yangiliklar/anthropic-dario-amodei-oq-uy-trump-uchrashuv-2026/", k: "anthropic rahbari oq uyda trump bilan muloqot o‘tkazdi ai siyosati va strategiya the times of india anthropic bosh ijrochi direktori dario amodei vashingtonda donald trump bilan yakka tartibda uchrash" },
-  { t: "Avstraliya OpenAI va Anthropic Rahbarlarini Medicare Buzilishi Bo'yicha Senatga", u: "yangiliklar/avstraliya-openai-anthropic-medicare-sorov-2026/", k: "avstraliya openai va anthropic rahbarlarini medicare buzilishi bo'yicha senatga ai xavfsizligi al jazeera avstraliya bosh vaziri openai agentining medicare portaliga ruxsatsiz kirib olganini oshkor qilgach," },
+  { t: "Avstraliya OpenAI va Anthropic rahbarlarini Medicare buzilishi bo‘yicha Senatga chaqirdi", u: "yangiliklar/avstraliya-openai-anthropic-medicare-sorov-2026/", k: "avstraliya openai va anthropic rahbarlarini medicare buzilishi bo‘yicha senatga chaqirdi ai xavfsizligi al jazeera avstraliya bosh vaziri openai agentining medicare portaliga ruxsatsiz kirib olganini oshkor qilgach," },
   { t: "ChatGPT, Claude va Gemini: Qaysi Model Sizga Mos?", u: "yangiliklar/chatgpt-claude-gemini-solishtirish/", k: "chatgpt, claude va gemini: qaysi model sizga mos? qo'llanmalar  uchta yetakchi ai orasida adashib qoldingizmi? har birining kuchli tomoni va qaysi vazifaga qaysi bi" },
   { t: "AQSh va Xitoy Super-Intellekt Dialogini Yo‘lga Qo‘ydi", u: "yangiliklar/us-china-super-intelligence-dialog-2026/", k: "aqsh va xitoy super-intellekt dialogini yo‘lga qo‘ydi global ai siyosati axios tramp va si sinpin ai xavflari va imkoniyatlarini muhokama qilish uchun rasmiy 'super-intellekt dial" },
   { t: "Claude Nazariy Fizikada Rekord O‘rnatdi: 9-Halqali Amplituda", u: "yangiliklar/claude-9-loop-fizika-rekordi-2026/", k: "claude nazariy fizikada rekord o‘rnatdi: 9-halqali amplituda global ai tadqiqot unite.ai anthropic'ning claude modeli olti zarrachali sochilish amplitudasini 9-halqa darajasida hisoblab, 20" },
@@ -666,6 +667,11 @@ try {
   const DISMISS_DAYS = 7;
   const JOIN_DAYS = 30;
 
+  // Never show on screens under 480px
+  if (typeof window !== "undefined" && window.innerWidth < 480) {
+    return;
+  }
+
   try {
     const dismissedAt = localStorage.getItem(DISMISSED_KEY);
     if (dismissedAt && (Date.now() - parseInt(dismissedAt, 10)) < DISMISS_DAYS * 86400000) {
@@ -693,7 +699,7 @@ try {
       </div>
       <div class="ainoma-tg-toast-body">
         <div class="ainoma-tg-toast-title">AiNoma Telegramda</div>
-        <p class="ainoma-tg-toast-desc">Tezkor AI tahlillar va qo‘llanmalar</p>
+        <p class="ainoma-tg-toast-desc">Tezkor sun’iy intellekt tahlillari va qo‘llanmalar</p>
       </div>
     </div>
     <a href="https://t.me/ainomauz" target="_blank" rel="noopener" class="ainoma-tg-toast-btn" id="ainomaTgToastJoin">
@@ -706,9 +712,8 @@ try {
   let isShown = false;
   function showToast() {
     if (isShown) return;
+    if (window.innerWidth < 480) return;
     isShown = true;
-    window.removeEventListener("scroll", checkScroll);
-    clearTimeout(timer);
     toast.classList.add("visible");
   }
 
@@ -722,19 +727,48 @@ try {
     }, 400);
   }
 
+  const footerEl = document.querySelector("footer");
+
   function checkScroll() {
-    const total = document.documentElement.scrollHeight - window.innerHeight;
-    if (total > 300) {
-      const scrollPercent = (window.scrollY / total) * 100;
-      if (scrollPercent >= 30) {
-        showToast();
+    if (window.innerWidth < 480) return;
+    
+    // Check if footer is in view
+    if (footerEl) {
+      const footerRect = footerEl.getBoundingClientRect();
+      if (footerRect.top <= window.innerHeight) {
+        toast.classList.add("hidden-by-footer");
+      } else {
+        toast.classList.remove("hidden-by-footer");
+      }
+    }
+
+    if (!isShown) {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      if (total > 300) {
+        const scrollPercent = (window.scrollY / total) * 100;
+        if (scrollPercent >= 40) {
+          showToast();
+        }
       }
     }
   }
 
-  // Trigger on scroll past 30% OR after 12 seconds
+  // Trigger only after scrolling ~40% and watch footer visibility
   window.addEventListener("scroll", checkScroll, { passive: true });
-  const timer = setTimeout(showToast, 12000);
+
+  // IntersectionObserver for footer hiding
+  if (footerEl && "IntersectionObserver" in window) {
+    const footerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          toast.classList.add("hidden-by-footer");
+        } else {
+          toast.classList.remove("hidden-by-footer");
+        }
+      });
+    }, { threshold: 0.05 });
+    footerObserver.observe(footerEl);
+  }
 
   // Close button
   const closeBtn = document.getElementById("ainomaTgToastClose");

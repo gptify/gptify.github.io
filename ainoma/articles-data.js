@@ -681,9 +681,9 @@ window.AINOMA_ARTICLES = {
   "ai-video-qurish-gemini-chatgpt-veo-2026": {
     "id": "ai-video-qurish-gemini-chatgpt-veo-2026",
     "slug": "ai-video-qurish-gemini-chatgpt-veo-2026",
-    "title": "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow",
+    "title": "Instagram uchun AI video: ChatGPT, Gemini va Google Flow",
     "kicker": "ODDIY QO'LLANMA · INSTAGRAM REELS VA SHORTS",
-    "meta_title": "Instagram Uchun AI Video: ChatGPT, Gemini Va Google Flow — AiNoma",
+    "meta_title": "Instagram uchun AI video: ChatGPT, Gemini va Google Flow — AiNoma",
     "meta_description": "ChatGPT yoki Gemini yordamida kadrlar ssenariysini olish, Google Flow'da 9:16 video chiqarish va CapCut'da musiqa bilan birlashtirish bo'yicha oddiy yo'riqnoma.",
     "category": "Texnologiya",
     "audience": "kontent makerlar va marketologlar",
@@ -4731,9 +4731,9 @@ window.AINOMA_ARTICLES = {
   "avstraliya-openai-anthropic-medicare-sorov-2026": {
     "id": "avstraliya-openai-anthropic-medicare-sorov-2026",
     "slug": "avstraliya-openai-anthropic-medicare-sorov-2026",
-    "title": "Avstraliya OpenAI va Anthropic Rahbarlarini Medicare Buzilishi Bo'yicha Senatga",
+    "title": "Avstraliya OpenAI va Anthropic rahbarlarini Medicare buzilishi bo‘yicha Senatga chaqirdi",
     "kicker": "AI XAVFSIZLIGI",
-    "meta_title": "Avstraliya OpenAI va Anthropic Rahbarlarini Medicare Buzilishi Bo'yicha Senatga — AiNoma",
+    "meta_title": "Avstraliya OpenAI va Anthropic rahbarlarini Medicare buzilishi bo‘yicha Senatga chaqirdi — AiNoma",
     "meta_description": "Avstraliya Bosh vaziri OpenAI agentining Medicare portaliga ruxsatsiz kirib olganini oshkor qilgach, Senat Sem Altman va Dario Amodeini AI tartibga solish bo'yicha so'roqqa chaqirdi.",
     "category": "AI Xavfsizligi",
     "audience": "mutaxassislar",
@@ -5091,9 +5091,9 @@ window.AINOMA_ARTICLES = {
   "ai-bilan-video-qurish-2026": {
     "id": "ai-bilan-video-qurish-2026",
     "slug": "ai-bilan-video-qurish-2026",
-    "title": "AI bilan video qurish 2026: Sora, Veo va boshqa",
+    "title": "AI bilan video qurish 2026: Sora, Veo va boshqa vositalar",
     "kicker": "TREND · VIDEO GENERATSIYA",
-    "meta_title": "AI bilan video qurish 2026: Sora, Veo va boshqa — AiNoma Qo‘llanma",
+    "meta_title": "AI bilan video qurish 2026: Sora, Veo va boshqa vositalar — AiNoma Qo‘llanma",
     "meta_description": "Matndan videoga: 2026-yilda eng ko'p ishlatilayotgan AI video vositalari va ularning haqiqiy imkoniyatlari.",
     "category": "Qo'llanmalar",
     "audience": "mutaxassislar",
@@ -5105,7 +5105,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "5 daqiqalik mutolaa",
     "deck": "Matndan videoga: 2026-yilda eng ko'p ishlatilayotgan AI video vositalari va ularning haqiqiy imkoniyatlari.",
     "img": "assets/deepmind_private_ai.jpg",
-    "imgAlt": "AI bilan video qurish 2026: Sora, Veo va boshqa",
+    "imgAlt": "AI bilan video qurish 2026: Sora, Veo va boshqa vositalar",
     "qisqacha": [
       "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
       "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
@@ -5177,9 +5177,9 @@ window.AINOMA_ARTICLES = {
   "ai-xavfsizligi-oila-bolalar": {
     "id": "ai-xavfsizligi-oila-bolalar",
     "slug": "ai-xavfsizligi-oila-bolalar",
-    "title": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy",
+    "title": "Sun’iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy qoida",
     "kicker": "XAVFSIZLIK · OILA",
-    "meta_title": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy — AiNoma Qo‘llanma",
+    "meta_title": "Sun’iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy qoida — AiNoma Qo‘llanma",
     "meta_description": "Bolalar ChatGPT va boshqa AI chatbotlardan tobora ko'proq foydalanmoqda. Ota-onalar bilishi kerak bo'lgan 6 amaliy qoida.",
     "category": "Qo'llanmalar",
     "audience": "mutaxassislar",
@@ -5191,7 +5191,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "4 daqiqalik mutolaa",
     "deck": "Bolalar ChatGPT va boshqa AI chatbotlardan tobora ko'proq foydalanmoqda. Ota-onalar bilishi kerak bo'lgan 6 amaliy qoida.",
     "img": "assets/data_agent.jpg",
-    "imgAlt": "Sun'iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy",
+    "imgAlt": "Sun’iy intellekt xavfsizligi: oila va bolalar uchun 6 amaliy qoida",
     "qisqacha": [
       "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
       "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
@@ -5216,9 +5216,9 @@ window.AINOMA_ARTICLES = {
   "ai-bilan-kinematik-video-reklama-higgsfield": {
     "id": "ai-bilan-kinematik-video-reklama-higgsfield",
     "slug": "ai-bilan-kinematik-video-reklama-higgsfield",
-    "title": "AI bilan kinematik video va reklama roliklari qurish: Higgsfield",
+    "title": "AI bilan kinematik video va reklama roliklari qurish: Higgsfield platformasi",
     "kicker": "AMALIY QO'LLANMA · KINEMATIK VIDEO & SMM",
-    "meta_title": "AI bilan kinematik video va reklama roliklari qurish: Higgsfield — AiNoma Qo‘llanma",
+    "meta_title": "AI bilan kinematik video va reklama roliklari qurish: Higgsfield platformasi — AiNoma Qo‘llanma",
     "meta_description": "Qimmatbaho videosyomka va kameralarsiz, professional kamera harakatlari hamda inson mimikasiga ega kinematik reklama roliklari qurish yo'riqnomasi.",
     "category": "Qo'llanmalar",
     "audience": "mutaxassislar",
@@ -5230,7 +5230,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "6 daqiqalik mutolaa",
     "deck": "Qimmatbaho videosyomka va kameralarsiz, professional kamera harakatlari hamda inson mimikasiga ega kinematik reklama roliklari qurish yo'riqnomasi.",
     "img": "assets/youtube_creator_monetize.jpg",
-    "imgAlt": "AI bilan kinematik video va reklama roliklari qurish: Higgsfield",
+    "imgAlt": "AI bilan kinematik video va reklama roliklari qurish: Higgsfield platformasi",
     "qisqacha": [
       "Kamera harakatini to'liq nazorat qilish:** Zoom-in (yaqinlashish), Crane (kranda ko'tarilish), 360-Orbit (aylanish) va Bullet-time effektlari.",
       "Qahramon yuzi va kiyimining saqlanishi:** Rasm yuklanganda personaj yuzi o'zgarib ketmaydi, brend kiyimi yoki mahsulot o'z holicha qoladi.",
@@ -5296,9 +5296,9 @@ window.AINOMA_ARTICLES = {
   "ai-atamalari-lugati": {
     "id": "ai-atamalari-lugati",
     "slug": "ai-atamalari-lugati",
-    "title": "AI atamalari lug'ati: LLM, token, prompt va boshqa 20+",
+    "title": "AI atamalari lug‘ati: LLM, token, prompt va boshqa 20+ tushuncha",
     "kicker": "ASOSLAR · LUG'AT",
-    "meta_title": "AI atamalari lug'ati: LLM, token, prompt va boshqa 20+ — AiNoma Qo‘llanma",
+    "meta_title": "AI atamalari lug‘ati: LLM, token, prompt va boshqa 20+ tushuncha — AiNoma Qo‘llanma",
     "meta_description": "Sun'iy intellekt haqida gaplashganda tez-tez uchraydigan 20+ atamaning oddiy, tushunarli izohi — texnik bilim talab qilinmaydi.",
     "category": "Qo'llanmalar",
     "audience": "mutaxassislar",
@@ -5310,7 +5310,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "6 daqiqalik mutolaa",
     "deck": "Sun'iy intellekt haqida gaplashganda tez-tez uchraydigan 20+ atamaning oddiy, tushunarli izohi — texnik bilim talab qilinmaydi.",
     "img": "assets/coding_workspace.jpg",
-    "imgAlt": "AI atamalari lug'ati: LLM, token, prompt va boshqa 20+",
+    "imgAlt": "AI atamalari lug‘ati: LLM, token, prompt va boshqa 20+ tushuncha",
     "qisqacha": [
       "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
       "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
@@ -5541,9 +5541,9 @@ window.AINOMA_ARTICLES = {
   "anthropic-nasdaq-ipo-s1-ariza-2026": {
     "id": "anthropic-nasdaq-ipo-s1-ariza-2026",
     "slug": "anthropic-nasdaq-ipo-s1-ariza-2026",
-    "title": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini",
+    "title": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini topshirdi",
     "kicker": "MOLIYA VA BIRJA",
-    "meta_title": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini — AiNoma",
+    "meta_title": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini topshirdi — AiNoma",
     "meta_description": "Claude modellari ishlab chiquvchisi bo‘lgan Anthropic kompaniyasi Nasdaq birjasida 'ANT' tickeri ostida ommaviy savdolarga chiqish uchun AQSh Qimmatli qog‘ozlar komissiyasiga (SEC) S-1 ro‘yxatdan o‘tish arizasini taqdim etdi.",
     "category": "Dunyo Texnologiya",
     "audience": "mutaxassislar",
@@ -5555,7 +5555,7 @@ window.AINOMA_ARTICLES = {
     "readTime": "4 daqiqalik mutolaa",
     "deck": "Claude modellari ishlab chiquvchisi bo‘lgan Anthropic kompaniyasi Nasdaq birjasida 'ANT' tickeri ostida ommaviy savdolarga chiqish uchun AQSh Qimmatli qog‘ozlar komissiyasiga (SEC) S-1 ro‘yxatdan o‘tish arizasini taqdim etdi.",
     "img": "assets/anthropic_claude_banner.jpg",
-    "imgAlt": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini",
+    "imgAlt": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini topshirdi",
     "qisqacha": [
       "Daromadning shiddatli o‘sishi: 2026-yilning dastlabki 6 oyi davomida kompaniya daromadi $16.29 milliard** ga yetdi. Taqqoslash uchun, 2025-yilning mos davrida bu ko‘rsatkich $1.16 milliardni tashkil etgan edi (14 barobardan ziyod yillik o‘sish).",
       "Yirik korporativ mijozlar: Anthropic xizmatlariga yiliga $100,000 dan ko‘proq mablag‘ to‘laydigan korporativ mijozlar soni 11,900 tadan** oshdi.",

@@ -31,6 +31,10 @@
 }
 
 * { box-sizing: border-box; }
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -132,7 +136,7 @@ header {
 }
 .hero-copy { padding: 0; display: flex; flex-direction: column; }
 .kicker {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .15em;
   text-transform: uppercase;
   font-weight: 700;
@@ -246,7 +250,7 @@ header {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: var(--green);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   padding: 3px 9px;
   border-radius: 99px;
@@ -404,7 +408,15 @@ section {
   margin-bottom: 24px;
 }
 .section-title { font-size: 28px; font-weight: 800; margin: 0; }
-.more { font-size: 13px; font-weight: 600; color: var(--green); }
+.more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  white-space: nowrap;
+}
 .more:hover { text-decoration: underline; }
 
 .news-layout {
@@ -657,7 +669,13 @@ footer {
   margin-left: auto;
   flex-wrap: wrap;
 }
-.footerlinks a:hover { color: var(--green); }
+.footerlinks a, .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 4px 0;
+}
+.footerlinks a:hover, .footer-links a:hover { color: var(--green); }
 
 .footer-disclaimer {
   width: 100%;
@@ -1068,7 +1086,7 @@ footer {
   .lead { font-size: 15px; margin-bottom: 20px; }
   .hero-card { height: auto; border-radius: 14px; padding: 14px; }
   .hero-card-thumb { height: 160px; margin-bottom: 12px; }
-  .hero-card-badge { font-size: 10px; padding: 3px 8px; max-width: calc(100% - 20px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hero-card-badge { font-size: 12px; padding: 3px 8px; max-width: calc(100% - 20px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .hero-content { padding: 0 2px 2px; }
   .hero-content h2 { font-size: 18px; line-height: 1.3; }
   .hero-content p { font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
@@ -1943,13 +1961,15 @@ body.nav-open {
   border-bottom: 1px solid var(--line);
   padding: 8px 0;
   font-size: 13px;
-  overflow-x: auto;
-  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
 }
 .trending-inner {
   display: flex;
   align-items: center;
   gap: 14px;
+  min-width: 0;
+  max-width: 100%;
 }
 .trending-label {
   font-weight: 700;
@@ -1967,6 +1987,9 @@ body.nav-open {
   align-items: center;
   gap: 8px;
   overflow-x: auto;
+  min-width: 0;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 .trending-tags::-webkit-scrollbar { display: none; }
@@ -1975,12 +1998,16 @@ body.nav-open {
   text-decoration: none;
   font-weight: 500;
   font-size: 12.5px;
-  padding: 4px 10px;
-  border-radius: 6px;
+  padding: 0 14px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
   background: var(--soft);
   border: 1px solid transparent;
   transition: all .15s ease;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 .trending-tag:hover {
   background: var(--surface);
@@ -2064,7 +2091,7 @@ body.nav-open {
   padding-bottom: 0;
 }
 .wire-meta {
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--muted);
   font-weight: 500;
   margin-bottom: 4px;
@@ -2075,7 +2102,7 @@ body.nav-open {
 .wire-tag {
   color: var(--green);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
 }
 .wire-item h4 {
   font-size: 13.5px;
@@ -2101,7 +2128,7 @@ body.nav-open {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--green);
   text-transform: uppercase;
@@ -2156,21 +2183,29 @@ body.nav-open {
   pointer-events: auto;
 }
 
+.ainoma-tg-toast.hidden-by-footer {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(16px) scale(0.97) !important;
+}
+
 .ainoma-tg-toast-close {
   position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 8px;
   border: none;
-  background: var(--soft);
+  background: transparent;
   color: var(--muted);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
   transition: background 0.15s ease, color 0.15s ease;
 }
@@ -2219,7 +2254,7 @@ body.nav-open {
 }
 
 .ainoma-tg-toast-desc {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   margin: 0;
   line-height: 1.35;
@@ -2513,7 +2548,7 @@ body.nav-open {
   background: rgba(79, 70, 229, 0.08);
   border: 1px solid rgba(79, 70, 229, 0.16);
   color: #4f46e5;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.02em;
   margin-bottom: 4px;
@@ -2616,7 +2651,7 @@ body.nav-open {
   background: rgba(79, 70, 229, 0.08);
   border: 1px solid rgba(79, 70, 229, 0.16);
   color: #4f46e5;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -2673,7 +2708,7 @@ body.nav-open {
   padding: 16px 18px;
 }
 .tools-sidebar-badge {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--green);
   text-transform: uppercase;
@@ -2726,4 +2761,87 @@ body.nav-open {
   overflow-x: hidden !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
+}
+
+/* Mobile Viewport Fixes (< 480px) */
+@media (max-width: 480px) {
+  /* Prevent horizontal overflow */
+  .navbar {
+    height: 60px;
+    gap: 6px;
+  }
+  /* Hide header hamburger and Instagram icon on mobile */
+  .iconbtn.hamb, #hamb {
+    display: none !important;
+  }
+  .btn-ig-nav {
+    display: none !important;
+  }
+  /* Shrink Telegram button to 44x44 icon */
+  .btn-tg-nav {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .btn-tg-nav span,
+  .btn-tg-nav .tg-text {
+    display: none !important;
+  }
+  .btn-tg-nav svg {
+    display: block !important;
+    margin: 0 !important;
+  }
+  .iconbtn {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+  
+  /* Never show Telegram toast on screens under 480px */
+  .ainoma-tg-toast {
+    display: none !important;
+  }
+  
+  /* Section titles wrap fix (26-28px, link on own line below) */
+  .section-head {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    margin-bottom: 16px !important;
+  }
+  .section-head > div {
+    width: 100% !important;
+  }
+  .section-title {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.02em !important;
+  }
+  .section-head a.more, .more {
+    display: inline-flex !important;
+    align-items: center !important;
+    min-height: 44px !important;
+    font-size: 13.5px !important;
+    padding: 4px 0 !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Breadcrumbs minimum 12px */
+.breadcrumb, .breadcrumb a, .breadcrumbs, .breadcrumb-item {
+  font-size: 12px !important;
+}
+
+/* Desktop Grid: odd last guide card spans full width */
+@media (min-width: 992px) {
+  .guides-swipe .card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
