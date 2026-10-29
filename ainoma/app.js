@@ -281,7 +281,11 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi", u: "yangiliklar/ijtimoiy-loyihalar-suniy-intellekt-infratuzilmasi-qaror-581/", k: "ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi o‘zbekiston o‘zbekiston respublikasi vazirlar mahkamasi vazirlar mahkamasining 581-son qarori bilan ilmiy tashkilotlar, startaplar va otmlarning ijtimoiy lo" },
+  { t: "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini", u: "yangiliklar/anthropic-nasdaq-ipo-s1-ariza-2026/", k: "anthropic nasdaq birjasida ipo o‘tkazish uchun rasman s-1 arizasini dunyo texnologiya anthropic, pbc / aqsh qimmatli qog‘ozlar va birjalar komissiyasi (sec) claude modellari ishlab chiquvchisi bo‘lgan anthropic kompaniyasi nasdaq birjasida 'ant' tickeri ost" },
   { t: "Google Gemini 4 Argon xavfsizlik standartlarini e'lon qildi", u: "yangiliklar/google-gemini-4-argon-xavfsizlik-va-masuliyat/", k: "google gemini 4 argon xavfsizlik standartlarini e'lon qildi dunyo texnologiya google deepmind google deepmind yangi gemini 4 argon modelining mas'uliyatli va xavfsiz rivojlanish prinsiplari hamd" },
   { t: "Deepfake va soxta AI-kontentni qanday aniqlash mumkin", u: "yangiliklar/deepfake-aniqlash/", k: "deepfake va soxta ai-kontentni qanday aniqlash mumkin qo'llanmalar ainoma tahririyati ai bilan ishlab chiqilgan soxta video, rasm va ovozlar tobora ishonchli bo'lib bormoqda. ularni aniq" },
   { t: "O‘zbekiston tibbiyotida 10 ta Sun’iy intellekt tizimi tushiriladi", u: "yangiliklar/ozbekiston-tibbiyotida-10-ta-suniy-intellekt-tizimi/", k: "o‘zbekiston tibbiyotida 10 ta sun’iy intellekt tizimi tushiriladi o‘zbekiston it spot.uz it & biznes sog‘liqni saqlash tizimiga 10 ta sun’iy intellekt moduli va shifoxonalar faoliyatini aholi tomonidan" },

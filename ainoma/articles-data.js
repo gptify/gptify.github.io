@@ -5490,5 +5490,99 @@ window.AINOMA_ARTICLES = {
       "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
+  },
+  "ijtimoiy-loyihalar-suniy-intellekt-infratuzilmasi-qaror-581": {
+    "id": "ijtimoiy-loyihalar-suniy-intellekt-infratuzilmasi-qaror-581",
+    "slug": "ijtimoiy-loyihalar-suniy-intellekt-infratuzilmasi-qaror-581",
+    "title": "Ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi",
+    "kicker": "HUKUMAT QARORI",
+    "meta_title": "Ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi — AiNoma",
+    "meta_description": "Vazirlar Mahkamasining 581-son qarori bilan ilmiy tashkilotlar, startaplar va OTMlarning ijtimoiy loyihalari uchun oyiga 10 million bepul token hamda 120 GB video xotira ajratish tartibi tasdiqlandi.",
+    "category": "O‘zbekiston",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-29",
+    "source_date": "2026-10-20",
+    "source_published_date": "2026-10-20",
+    "ainoma_published_date": "2026-10-29",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Vazirlar Mahkamasining 581-son qarori bilan ilmiy tashkilotlar, startaplar va OTMlarning ijtimoiy loyihalari uchun oyiga 10 million bepul token hamda 120 GB video xotira ajratish tartibi tasdiqlandi.",
+    "img": "assets/itpark_tashkent.jpg",
+    "imgAlt": "Ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi",
+    "qisqacha": [
+      "Oylik bepul hajm: 6 oygacha bo‘lgan muddatda har bir kalendar oy uchun 10 million token** miqdoridagi ma’lumotlarni qayta ishlashga to‘liq bepul ruxsat beriladi.",
+      "50% chegirmali tarif: Agar loyiha ehtiyoji bir oyda 10 million tokendan oshsa, qo‘shimcha 50 million tokengacha** bo‘lgan hajm uchun to‘lovlarga 50 foiz miqdorida maxsus imtiyozli chegirma qo‘llaniladi.",
+      "Muddat sharti:** Belgilangan oyda foydalanilmay qolgan token qoldiqlari keyingi oylarga o‘tkazilmaydi."
+    ],
+    "primary_source": {
+      "name": "O‘zbekiston Respublikasi Vazirlar Mahkamasi",
+      "title": "Hukumat qarori (581-son, 20.10.2026 y.)",
+      "url": "https://lex.uz/docs/-8548630",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Raqamli texnologiyalar vazirligi",
+        "title": "Sun’iy intellekt infratuzilmasidan foydalanish tartibi to‘g‘risidagi nizom",
+        "url": "https://gov.uz/oz/digital/news/view/1742/",
+        "badge": "RASMIY NIZOM"
+      }
+    ],
+    "body": "<p>O‘zbekiston hukumati ijtimoiy ahamiyatga ega bo‘lgan texnologik tashabbuslarni qo‘llab-quvvatlash maqsadida muhim tartibni rasman tasdiqladi. Vazirlar Mahkamasining 2026-yil 20-oktabrdagi 581-son qaroriga asosan, Oliy ta’lim muassasalari, ilmiy-tadqiqot tashkilotlari, startap jamoalari hamda hokimlarning raqamli texnologiyalar va sun’iy intellekt bo‘yicha maslahatchilari ishlab chiqayotgan ijtimoiy loyihalar uchun Raqamli texnologiyalar vazirligining hisoblash quvvatlaridan bepul va imtiyozli asosda foydalanish imkoniyati yo‘lga qo‘yildi.</p>\n<p>Ushbu qaror mahalliy dasturchilar, olimlar va talabalar uchun yuqori hisoblash quvvatlariga bo‘lgan moliyaviy to‘siqlarni qisqartirish hamda davlat xizmatlarida sun’iy intellekt yechimlarini jadal joriy etishga qaratilgan.</p>\n<h3 class=\"article-section-title\">Katta til modellari uchun bepul tokenlar va 50 foizlik chegirma</h3>\n<p>Qaror bilan tasdiqlangan nizomga ko‘ra, katta til modellari (LLM) texnologiyasiga asoslangan loyihalar uchun dasturiy interfeys (API) orqali bepul hisoblash kvotalari ajratiladi:</p>\n<ul class=\"article-list\">\n  <li><b>Oylik bepul hajm:</b> 6 oygacha bo‘lgan muddatda har bir kalendar oy uchun <b>10 million token</b> miqdoridagi ma’lumotlarni qayta ishlashga to‘liq bepul ruxsat beriladi.</li>\n  <li><b>50% chegirmali tarif:</b> Agar loyiha ehtiyoji bir oyda 10 million tokendan oshsa, qo‘shimcha <b>50 million tokengacha</b> bo‘lgan hajm uchun to‘lovlarga 50 foiz miqdorida maxsus imtiyozli chegirma qo‘llaniladi.</li>\n  <li><b>Muddat sharti:</b> Belgilangan oyda foydalanilmay qolgan token qoldiqlari keyingi oylarga o‘tkazilmaydi.</li>\n</ul>\n<h3 class=\"article-section-title\">120 GB video xotira (GPU) va server infratuzilmasi</h3>\n<p>Katta til modellariga kirmaydigan boshqa murakkab sun’iy intellekt yo‘nalishlari — kompyuter ko‘rishi, tibbiy tasvirlar tahlili, nutqni qayta ishlash va tasniflash tizimlari uchun ham alohida hisoblash resurslari ajratilmoqda.</p>\n<p>Loyiha modellarni o‘rgatish, sinovdan o‘tkazish, tekshirish (validatsiya) va inferens qilish bosqichlarida 6 oygacha muddatga jami <b>120 gigabaytgacha bo‘lgan video xotira (GPU VRAM)</b> quvvatini arizaga asosan bepul jalb qilishi mumkin. Bu esa qimmatbaho server xarid qilmasdan mustaqil modellarni ishlab chiqish imkonini beradi.</p>\n<h3 class=\"article-section-title\">Saralash tanlovi va qat’iy talablar</h3>\n<p>Resurslardan samarali va maqsadli foydalanishni ta’minlash maqsadida arizalar ochiq tanlov orqali saralanadi:</p>\n<ul class=\"article-list\">\n  <li><b>O‘tkazilish vaqti:</b> Tanlov yiliga ikki marta — <b>iyul va noyabr oylarida</b> tashkil etiladi.</li>\n  <li><b>Baholash tizimi:</b> Taqdim etilgan loyihalar ekspertlar tomonidan 100 ballik tizim asosida baholanadi.</li>\n  <li><b>Shikoyat qilish huquqi:</b> Natijalardan norozi bo‘lgan ishtirokchilar natija chiqqan kundan boshlab uch ish kuni ichida elektron shaklda apellyatsiya komissiyasiga murojaat qilishlari mumkin bo‘lib, shikoyat 5 ish kuni ichida ko‘rib chiqiladi.</li>\n  <li><b>Faqat bitta loyiha:</b> Bitta foydalanuvchiga bir vaqtning o‘zida faqat bitta loyihani amalga oshirishga ruxsat etiladi.</li>\n</ul>",
+    "contentHtml": "<p>O‘zbekiston hukumati ijtimoiy ahamiyatga ega bo‘lgan texnologik tashabbuslarni qo‘llab-quvvatlash maqsadida muhim tartibni rasman tasdiqladi. Vazirlar Mahkamasining 2026-yil 20-oktabrdagi 581-son qaroriga asosan, Oliy ta’lim muassasalari, ilmiy-tadqiqot tashkilotlari, startap jamoalari hamda hokimlarning raqamli texnologiyalar va sun’iy intellekt bo‘yicha maslahatchilari ishlab chiqayotgan ijtimoiy loyihalar uchun Raqamli texnologiyalar vazirligining hisoblash quvvatlaridan bepul va imtiyozli asosda foydalanish imkoniyati yo‘lga qo‘yildi.</p>\n<p>Ushbu qaror mahalliy dasturchilar, olimlar va talabalar uchun yuqori hisoblash quvvatlariga bo‘lgan moliyaviy to‘siqlarni qisqartirish hamda davlat xizmatlarida sun’iy intellekt yechimlarini jadal joriy etishga qaratilgan.</p>\n<h3 class=\"article-section-title\">Katta til modellari uchun bepul tokenlar va 50 foizlik chegirma</h3>\n<p>Qaror bilan tasdiqlangan nizomga ko‘ra, katta til modellari (LLM) texnologiyasiga asoslangan loyihalar uchun dasturiy interfeys (API) orqali bepul hisoblash kvotalari ajratiladi:</p>\n<ul class=\"article-list\">\n  <li><b>Oylik bepul hajm:</b> 6 oygacha bo‘lgan muddatda har bir kalendar oy uchun <b>10 million token</b> miqdoridagi ma’lumotlarni qayta ishlashga to‘liq bepul ruxsat beriladi.</li>\n  <li><b>50% chegirmali tarif:</b> Agar loyiha ehtiyoji bir oyda 10 million tokendan oshsa, qo‘shimcha <b>50 million tokengacha</b> bo‘lgan hajm uchun to‘lovlarga 50 foiz miqdorida maxsus imtiyozli chegirma qo‘llaniladi.</li>\n  <li><b>Muddat sharti:</b> Belgilangan oyda foydalanilmay qolgan token qoldiqlari keyingi oylarga o‘tkazilmaydi.</li>\n</ul>\n<h3 class=\"article-section-title\">120 GB video xotira (GPU) va server infratuzilmasi</h3>\n<p>Katta til modellariga kirmaydigan boshqa murakkab sun’iy intellekt yo‘nalishlari — kompyuter ko‘rishi, tibbiy tasvirlar tahlili, nutqni qayta ishlash va tasniflash tizimlari uchun ham alohida hisoblash resurslari ajratilmoqda.</p>\n<p>Loyiha modellarni o‘rgatish, sinovdan o‘tkazish, tekshirish (validatsiya) va inferens qilish bosqichlarida 6 oygacha muddatga jami <b>120 gigabaytgacha bo‘lgan video xotira (GPU VRAM)</b> quvvatini arizaga asosan bepul jalb qilishi mumkin. Bu esa qimmatbaho server xarid qilmasdan mustaqil modellarni ishlab chiqish imkonini beradi.</p>\n<h3 class=\"article-section-title\">Saralash tanlovi va qat’iy talablar</h3>\n<p>Resurslardan samarali va maqsadli foydalanishni ta’minlash maqsadida arizalar ochiq tanlov orqali saralanadi:</p>\n<ul class=\"article-list\">\n  <li><b>O‘tkazilish vaqti:</b> Tanlov yiliga ikki marta — <b>iyul va noyabr oylarida</b> tashkil etiladi.</li>\n  <li><b>Baholash tizimi:</b> Taqdim etilgan loyihalar ekspertlar tomonidan 100 ballik tizim asosida baholanadi.</li>\n  <li><b>Shikoyat qilish huquqi:</b> Natijalardan norozi bo‘lgan ishtirokchilar natija chiqqan kundan boshlab uch ish kuni ichida elektron shaklda apellyatsiya komissiyasiga murojaat qilishlari mumkin bo‘lib, shikoyat 5 ish kuni ichida ko‘rib chiqiladi.</li>\n  <li><b>Faqat bitta loyiha:</b> Bitta foydalanuvchiga bir vaqtning o‘zida faqat bitta loyihani amalga oshirishga ruxsat etiladi.</li>\n</ul>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-29",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Davlat va Texnologiya Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "anthropic-nasdaq-ipo-s1-ariza-2026": {
+    "id": "anthropic-nasdaq-ipo-s1-ariza-2026",
+    "slug": "anthropic-nasdaq-ipo-s1-ariza-2026",
+    "title": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini",
+    "kicker": "MOLIYA VA BIRJA",
+    "meta_title": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini — AiNoma",
+    "meta_description": "Claude modellari ishlab chiquvchisi bo‘lgan Anthropic kompaniyasi Nasdaq birjasida 'ANT' tickeri ostida ommaviy savdolarga chiqish uchun AQSh Qimmatli qog‘ozlar komissiyasiga (SEC) S-1 ro‘yxatdan o‘tish arizasini taqdim etdi.",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar",
+    "event_date": "2026-10-28",
+    "source_date": "2026-10-28",
+    "source_published_date": "2026-10-28",
+    "ainoma_published_date": "2026-10-29",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Claude modellari ishlab chiquvchisi bo‘lgan Anthropic kompaniyasi Nasdaq birjasida 'ANT' tickeri ostida ommaviy savdolarga chiqish uchun AQSh Qimmatli qog‘ozlar komissiyasiga (SEC) S-1 ro‘yxatdan o‘tish arizasini taqdim etdi.",
+    "img": "assets/anthropic_claude_banner.jpg",
+    "imgAlt": "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini",
+    "qisqacha": [
+      "Daromadning shiddatli o‘sishi: 2026-yilning dastlabki 6 oyi davomida kompaniya daromadi $16.29 milliard** ga yetdi. Taqqoslash uchun, 2025-yilning mos davrida bu ko‘rsatkich $1.16 milliardni tashkil etgan edi (14 barobardan ziyod yillik o‘sish).",
+      "Yirik korporativ mijozlar: Anthropic xizmatlariga yiliga $100,000 dan ko‘proq mablag‘ to‘laydigan korporativ mijozlar soni 11,900 tadan** oshdi.",
+      "Operatsion pul oqimi: Kompaniya yarim yil yakuni bo‘yicha qariyb $3.9 milliardlik ijobiy operatsion pul oqimini (positive operating cash flow)** qayd etdi."
+    ],
+    "primary_source": {
+      "name": "Anthropic, PBC / AQSh Qimmatli qog‘ozlar va birjalar komissiyasi (SEC)",
+      "title": "Form S-1 Registration Statement — Anthropic, PBC",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "AQSh Qimmatli qog‘ozlar va birjalar komissiyasi (SEC)",
+        "title": "Anthropic Form S-1 Prospectus Registration",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=anthropic",
+        "badge": "BIRLAMCHI HUJJAT"
+      }
+    ],
+    "body": "<p>Sun’iy intellekt bozorida eng kutilgan moliyaviy voqea rasman start oldi. Mashhur Claude modellar oilasi ishlab chiquvchisi bo‘lgan <b>Anthropic, PBC</b> kompaniyasi AQSh Qimmatli qog‘ozlar va birjalar komissiyasiga (SEC) <b>Form S-1</b> ro‘yxatdan o‘tish arizasini topshirdi. Kompaniya o‘zining A toifadagi oddiy aksiyalarini <b>Nasdaq Global Select Market</b> birjasida <b>«ANT»</b> tickeri ostida listing qilishni rejalashtirmoqda.</p>\n<p>Ushbu qadam Anthropic kompaniyasini global fond bozoriga mustaqil chiqayotgan birinchi yirik frontier sun’iy intellekt laboratoriyasiga aylantiradi. IPO jarayonini boshqarish uchun Goldman Sachs, Morgan Stanley, Citigroup va J.P. Morgan kabi Wall Street gigantlari jalb etilgan.</p>\n<h3 class=\"article-section-title\">Birinchi yarim yillik: $16.3 milliard daromad va 11,900 ta yirik mijoz</h3>\n<p>Taqdim etilgan prospekt jamoatchilikka kompaniyaning real moliyaviy ko‘rsatkichlarini birinchi marta to‘liq oshkor qildi:</p>\n<ul class=\"article-list\">\n  <li><b>Daromadning shiddatli o‘sishi:</b> 2026-yilning dastlabki 6 oyi davomida kompaniya daromadi <b>$16.29 milliard</b> ga yetdi. Taqqoslash uchun, 2025-yilning mos davrida bu ko‘rsatkich $1.16 milliardni tashkil etgan edi (14 barobardan ziyod yillik o‘sish).</li>\n  <li><b>Yirik korporativ mijozlar:</b> Anthropic xizmatlariga yiliga $100,000 dan ko‘proq mablag‘ to‘laydigan korporativ mijozlar soni <b>11,900 tadan</b> oshdi.</li>\n  <li><b>Operatsion pul oqimi:</b> Kompaniya yarim yil yakuni bo‘yicha qariyb <b>$3.9 milliardlik ijobiy operatsion pul oqimini (positive operating cash flow)</b> qayd etdi.</li>\n  <li><b>Xavflar va kiberxavfsizlik:</b> 90 sahifalik xavf bayonnomasida davlat homiyligidagi kiberhujumlar va Claude Code kabi avtonom vositalarni himoyalash bilan bog‘liq texnik chaqiriqlar ochiq tahlil qilib berilgan.</li>\n</ul>\n<h3 class=\"article-section-title\">Dual-Lens: Mutaxassislar va Biznes uchun nima o‘zgaradi?</h3>\n<p>Anthropic kompaniyasining ommaviy aksiyadorlik jamiyatiga aylanishi sohadagi barcha ishtirokchilar uchun yangi bosqichni boshlab bermoqda:</p>\n<ul class=\"article-list\">\n  <li><b>👤 Dasturchilar va muhandislar uchun:</b> Ommaviy birjaga chiqish kompaniyani modellar xavfsizligi, API barqarorligi va infratuzilma shaffofligi bo‘yicha qat’iy davlat auditi ostiga oladi. Dasturchilar uchun kutilmagan to‘xtalishlar kamayadi, korporativ SLA shartnomalari esa qonuniy kuchayadi.</li>\n  <li><b>🏢 Biznes va investorlar uchun:</b> Sun’iy intellekt bo‘yicha baholashlar spekulyativ taxminlardan real birja narxlariga o‘tadi. Fortune 500 kompaniyalari yopiq xususiy startap bilan emas, balki choraklik moliyaviy hisobot beradigan ochiq korporatsiya bilan uzoq muddatli shartnomalar tuza oladi.</li>\n</ul>\n<h3 class=\"article-section-title\">O‘zbekiston IT va startap ekotizimi uchun xulosa</h3>\n<p>Mahalliy texnologiya kompaniyalari va IT jamoalari uchun Anthropic tajribasi muhim saboqdir. Bir necha yil oldin kichik tadqiqot guruhi sifatida ajralib chiqqan jamoa pragmatik yechimlar, Claude modellarining aniq ish mantig‘i va korporativ xavfsizlikka tayangan holda 16 milliard dollarlik biznes qurish mumkinligini isbotladi.</p>\n<p>O‘zbekistonlik dasturchilar uchun bu sun’iy intellekt vositalaridan nafaqat oddiy foydalanuvchi sifatida qolish, balki yirik korporativ API larni mahalliy bank, logistika va tibbiyot jarayonlariga integratsiya qiluvchi xavfsiz tizimlarni ishlab chiqish fursati ekanligini anglatadi.</p>",
+    "contentHtml": "<p>Sun’iy intellekt bozorida eng kutilgan moliyaviy voqea rasman start oldi. Mashhur Claude modellar oilasi ishlab chiquvchisi bo‘lgan <b>Anthropic, PBC</b> kompaniyasi AQSh Qimmatli qog‘ozlar va birjalar komissiyasiga (SEC) <b>Form S-1</b> ro‘yxatdan o‘tish arizasini topshirdi. Kompaniya o‘zining A toifadagi oddiy aksiyalarini <b>Nasdaq Global Select Market</b> birjasida <b>«ANT»</b> tickeri ostida listing qilishni rejalashtirmoqda.</p>\n<p>Ushbu qadam Anthropic kompaniyasini global fond bozoriga mustaqil chiqayotgan birinchi yirik frontier sun’iy intellekt laboratoriyasiga aylantiradi. IPO jarayonini boshqarish uchun Goldman Sachs, Morgan Stanley, Citigroup va J.P. Morgan kabi Wall Street gigantlari jalb etilgan.</p>\n<h3 class=\"article-section-title\">Birinchi yarim yillik: $16.3 milliard daromad va 11,900 ta yirik mijoz</h3>\n<p>Taqdim etilgan prospekt jamoatchilikka kompaniyaning real moliyaviy ko‘rsatkichlarini birinchi marta to‘liq oshkor qildi:</p>\n<ul class=\"article-list\">\n  <li><b>Daromadning shiddatli o‘sishi:</b> 2026-yilning dastlabki 6 oyi davomida kompaniya daromadi <b>$16.29 milliard</b> ga yetdi. Taqqoslash uchun, 2025-yilning mos davrida bu ko‘rsatkich $1.16 milliardni tashkil etgan edi (14 barobardan ziyod yillik o‘sish).</li>\n  <li><b>Yirik korporativ mijozlar:</b> Anthropic xizmatlariga yiliga $100,000 dan ko‘proq mablag‘ to‘laydigan korporativ mijozlar soni <b>11,900 tadan</b> oshdi.</li>\n  <li><b>Operatsion pul oqimi:</b> Kompaniya yarim yil yakuni bo‘yicha qariyb <b>$3.9 milliardlik ijobiy operatsion pul oqimini (positive operating cash flow)</b> qayd etdi.</li>\n  <li><b>Xavflar va kiberxavfsizlik:</b> 90 sahifalik xavf bayonnomasida davlat homiyligidagi kiberhujumlar va Claude Code kabi avtonom vositalarni himoyalash bilan bog‘liq texnik chaqiriqlar ochiq tahlil qilib berilgan.</li>\n</ul>\n<h3 class=\"article-section-title\">Dual-Lens: Mutaxassislar va Biznes uchun nima o‘zgaradi?</h3>\n<p>Anthropic kompaniyasining ommaviy aksiyadorlik jamiyatiga aylanishi sohadagi barcha ishtirokchilar uchun yangi bosqichni boshlab bermoqda:</p>\n<ul class=\"article-list\">\n  <li><b>👤 Dasturchilar va muhandislar uchun:</b> Ommaviy birjaga chiqish kompaniyani modellar xavfsizligi, API barqarorligi va infratuzilma shaffofligi bo‘yicha qat’iy davlat auditi ostiga oladi. Dasturchilar uchun kutilmagan to‘xtalishlar kamayadi, korporativ SLA shartnomalari esa qonuniy kuchayadi.</li>\n  <li><b>🏢 Biznes va investorlar uchun:</b> Sun’iy intellekt bo‘yicha baholashlar spekulyativ taxminlardan real birja narxlariga o‘tadi. Fortune 500 kompaniyalari yopiq xususiy startap bilan emas, balki choraklik moliyaviy hisobot beradigan ochiq korporatsiya bilan uzoq muddatli shartnomalar tuza oladi.</li>\n</ul>\n<h3 class=\"article-section-title\">O‘zbekiston IT va startap ekotizimi uchun xulosa</h3>\n<p>Mahalliy texnologiya kompaniyalari va IT jamoalari uchun Anthropic tajribasi muhim saboqdir. Bir necha yil oldin kichik tadqiqot guruhi sifatida ajralib chiqqan jamoa pragmatik yechimlar, Claude modellarining aniq ish mantig‘i va korporativ xavfsizlikka tayangan holda 16 milliard dollarlik biznes qurish mumkinligini isbotladi.</p>\n<p>O‘zbekistonlik dasturchilar uchun bu sun’iy intellekt vositalaridan nafaqat oddiy foydalanuvchi sifatida qolish, balki yirik korporativ API larni mahalliy bank, logistika va tibbiyot jarayonlariga integratsiya qiluvchi xavfsiz tizimlarni ishlab chiqish fursati ekanligini anglatadi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-29",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Bozorlar va Moliya Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    }
   }
 };
