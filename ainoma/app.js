@@ -284,7 +284,13 @@ const searchIndex = [
 
 
 
+
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Mistral AI 1 trillion parametrli large 4 ochiq modelini chiqardi", u: "yangiliklar/mistral-ai-large-4-le-chonk-ochiq-model-2026/", k: "mistral ai 1 trillion parametrli large 4 ochiq modelini chiqardi dunyo texnologiya mistral ai fransiyaning mistral ai kompaniyasi 1.05 trillion parametrli va 1 million token kontekstga ega suver" },
+  { t: "O‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi", u: "yangiliklar/ozbekiston-superkompyuter-nvidia-infratuzilma-2026/", k: "o‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi o‘zbekiston it raqamli texnologiyalar vazirligi davlat va xususiy sektor loyihalarini tezlashtirish uchun nvidia texnologiyalariga asoslangan milliy" },
+  { t: "Reuters institute: Generativ sun’iy intellektdan haftalik foydalanish 51% ga yetdi", u: "yangiliklar/reuters-institute-generative-ai-news-51-foiz-2026/", k: "reuters institute: generativ sun’iy intellektdan haftalik foydalanish 51% ga yetdi dunyo texnologiya reuters institute for the study of journalism oksford universiteti tadqiqotiga ko'ra dunyo aholisining yarmidan ko'pi muntazam generativ vositalar" },
   { t: "Ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi", u: "yangiliklar/ijtimoiy-loyihalar-suniy-intellekt-infratuzilmasi-qaror-581/", k: "ijtimoiy loyihalar uchun bepul sun’iy intellekt infratuzilmasi ajratiladi o‘zbekiston o‘zbekiston respublikasi vazirlar mahkamasi vazirlar mahkamasining 581-son qarori bilan ilmiy tashkilotlar, startaplar va otmlarning ijtimoiy lo" },
   { t: "Anthropic Nasdaq birjasida IPO o‘tkazish uchun rasman S-1 arizasini topshirdi", u: "yangiliklar/anthropic-nasdaq-ipo-s1-ariza-2026/", k: "anthropic nasdaq birjasida ipo o‘tkazish uchun rasman s-1 arizasini topshirdi dunyo texnologiya anthropic, pbc / aqsh qimmatli qog‘ozlar va birjalar komissiyasi (sec) claude modellari ishlab chiquvchisi bo‘lgan anthropic kompaniyasi nasdaq birjasida 'ant' tickeri ost" },
   { t: "Google Gemini 4 Argon xavfsizlik standartlarini e'lon qildi", u: "yangiliklar/google-gemini-4-argon-xavfsizlik-va-masuliyat/", k: "google gemini 4 argon xavfsizlik standartlarini e'lon qildi dunyo texnologiya google deepmind google deepmind yangi gemini 4 argon modelining mas'uliyatli va xavfsiz rivojlanish prinsiplari hamd" },

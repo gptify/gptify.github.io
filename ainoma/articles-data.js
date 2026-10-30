@@ -1,4 +1,106 @@
 window.AINOMA_ARTICLES = {
+  "mistral-ai-large-4-le-chonk-ochiq-model-2026": {
+    "id": "mistral-ai-large-4-le-chonk-ochiq-model-2026",
+    "slug": "mistral-ai-large-4-le-chonk-ochiq-model-2026",
+    "title": "Mistral AI 1 trillion parametrli large 4 ochiq modelini chiqardi",
+    "kicker": "Voqea: 30-Oktabr, 2026 · Manba: 30-Oktabr, 2026 · AiNoma: 30.10.2026",
+    "deck": "Fransiyaning Mistral AI kompaniyasi 1.05 trillion parametrli va 1 million token kontekstga ega suveren flagman model og'irliklarini ommaga taqdim etdi.",
+    "event_date": "2026-10-30",
+    "source_published_date": "2026-10-30",
+    "ainoma_published_date": "2026-10-30",
+    "ainoma_updated_date": "2026-10-30",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/mistral_large_4_release_2026.jpg",
+    "imgAlt": "Mistral Large 4 Le Chonk ochiq modeli",
+    "qisqacha": [
+      "Mistral AI yangi Large 4 ('Le Chonk') arxitekturasi og'irliklarini Hugging Face va o'z platformasida ochiqladi.",
+      "Model 1.05 trillion umumiy parametrga ega bo'lib, Mixture-of-Experts yordamida har bir so'rovda 52 milliard parametr faollashadi.",
+      "Dasturlash, kiberxavfsizlik tahlili va 1 million tokenli kontekst drayveri bo'yicha yopiq xususiy modellarga jiddiy raqobatchi hisoblanadi."
+    ],
+    "primary_source": {
+      "name": "Mistral AI",
+      "title": "Announcing Mistral Large 4 open weights and frontier performance",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "date": "30.10.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Fransiyaning yetakchi sun’iy intellekt laboratoriyasi bo‘lgan Mistral AI o‘zining navbatdagi flagman neyrotarmog‘i — <strong>Mistral Large 4</strong> (muhandislar orasidagi norasmiy laqabi <em>“Le Chonk”</em>) modelining og‘irliklarini (weights) dasturchilar hamjamiyati uchun rasman ochiq tarzda taqdim etdi. Yevropa Ittifoqining suveren ma’lumotlar infratuzilmasida noldan boshlab o‘qitilgan ushbu arxitektura to‘liq Mixture-of-Experts (MoE) prinsipi asosida qurilgan.</p>\n<p>Taqdim etilgan texnik hisobotga muvofiq, model jami 1.05 trillion parametrni o‘z ichiga oladi. Biroq har bir alohida token yoki so‘rovni qayta ishlash vaqtida faqat 52 milliard parametr ishga tushadi, bu esa uning hisoblash samaradorligini keskin oshiradi. Bundan tashqari, tizim 1.6 milliard parametrli o‘rnatilgan multimodal ko‘rish (vision encoder) qatlamiga va 1 million tokengacha bo‘lgan ulkan kontekst oynasiga ega bo‘lib, 160 dan ortiq tillarda erkin muloqot qila oladi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Hozirgi kunda eng quvvatli intellektual tizimlar (OpenAI, Anthropic va Google modellari) asosan yopiq API interfeyslari orqali taqdim etilmoqda. Mistral AI esa yuqori darajadagi xavfsizlik va mustaqillikni talab qiluvchi korporatsiyalarga modelni o‘zlarining xususiy serverlariga (on-premise) o‘rnatish va nozik ma’lumotlarni tashqi tarmoqqa chiqarmasdan mustaqil yechimlar qurish imkoniyatini taqdim etmoqda.</p>\n<p>Model kiberxavfsizlik, dasturiy kodlarni tahlil qilish hamda avtonom agentlik vazifalarida Terminal-Bench va FrontierCode mezonlari bo‘yicha ochiq kodli modellar orasida eng yuqori pog‘onalarni egalladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Suveren Infratuzilma:</strong> Yevropaning o‘zida NVIDIA Grace Blackwell klasterlarida o‘qitilgan toza ochiq arxitektura.</li>\n      <li><strong>Arxitektura:</strong> 1.05T jami parametr, 52B faol parametr (MoE), FP8 va NVFP4 kvantlash nazorati.</li>\n      <li><strong>Kiberhimoya:</strong> Zaifliklarni avtomatik aniqlash va himoyalangan kod yozish bo‘yicha ixtisoslashtirilgan Red-Teaming xususiyatlari.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Ma’lumotlar Maxfiyligi:</strong> Korporativ ma’lumotlarni uchinchi tomon serverlariga jo‘natmasdan, xavfsiz ichki tarmoqda ishlatish kafolati.</li>\n      <li><strong>Litsenziyalash:</strong> Modifikatsiyalangan MIT litsenziyasi asosida tijoriy loyihalarda erkin qo‘llash va moslashtirish imkoniyati.</li>\n      <li><strong>Tejamkorlik:</strong> MoE tufayli yuqori aniqlikni saqlagan holda server infratuzilmasi xarajatlarini sezilarli darajada pasaytirish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston davlat tashkilotlari, banklari va yirik IT-kompaniyalari qonuniy me’yorlarga ko‘ra fuqarolarning shaxsiy ma’lumotlarini mamlakat hududidagi serverlarda saqlashga majbur. Mistral Large 4 kabi kuchli ochiq modelning paydo bo‘lishi milliy data-markazlarda xalqaro darajadagi suveren sun’iy intellekt xizmatlarini yo‘lga qo‘yish va xorijiy litsenziyalarga ortiqcha valyuta sarflamaslik uchun katta imkoniyatlar ochib beradi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Hugging Face platformasidagi Mistral Large 4 repozitoriyasi va texnik oq qog‘ozi (whitepaper) bilan tanishib chiqing.</li>\n    <li>Kompaniyangizdagi lokal hisoblash serverlarida modelning kvantlangan (FP8/NVFP4) sinov versiyasini ishga tushirib ko‘ring.</li>\n    <li>Dasturiy xavfsizlik va kod auditini avtomatlashtirishda yangi model imkoniyatlarini amalda sinab ko‘ring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-30"
+  },
+  "reuters-institute-generative-ai-news-51-foiz-2026": {
+    "id": "reuters-institute-generative-ai-news-51-foiz-2026",
+    "slug": "reuters-institute-generative-ai-news-51-foiz-2026",
+    "title": "Reuters institute: Generativ sun’iy intellektdan haftalik foydalanish 51% ga yetdi",
+    "kicker": "Voqea: 29-Oktabr, 2026 · Manba: 30-Oktabr, 2026 · AiNoma: 30.10.2026",
+    "deck": "Oksford universiteti tadqiqotiga ko'ra dunyo aholisining yarmidan ko'pi muntazam generativ vositalardan foydalanmoqda, biroq sun’iy intellekt yangiliklariga ishonch past.",
+    "event_date": "2026-10-29",
+    "source_published_date": "2026-10-30",
+    "ainoma_published_date": "2026-10-30",
+    "ainoma_updated_date": "2026-10-30",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_notes_research.jpg",
+    "imgAlt": "Reuters Institute sun’iy intellekt global tadqiqoti",
+    "qisqacha": [
+      "Reuters Institute xalqaro hisobotida ChatGPT, Gemini va Claude kabi vositalardan haftalik foydalanish 51% ga chiqqani ma'lum qilindi.",
+      "O'tgan yilgi 34% ko'rsatkich bilan solishtirganda texnologiyaning kundalik hayotga kirib borish sur'ati keskin tezlashgan.",
+      "Shu bilan birga, so'ralganlarning 62% dan ortig'i sun’iy intellekt tomonidan ishlab chiqilgan yangiliklarga ishonchsizlik bildirgan."
+    ],
+    "primary_source": {
+      "name": "Reuters Institute for the Study of Journalism",
+      "title": "Generative AI and News Report 2026: Public attitudes and adoption patterns",
+      "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026",
+      "date": "30.10.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Oksford universiteti qoshidagi <strong>Reuters Institute for the Study of Journalism</strong> sun’iy intellektning ommalashuvi va jamiyatdagi o‘rniga bag‘ishlangan <em>“Generative AI and News Report 2026”</em> nomli keng qamrovli tadqiqotini e’lon qildi. Bir nechta qit’alar bo‘ylab muntazam o‘tkazib kelinayotgan ushbu so‘rov natijalari sun’iy intellekt vositalari qisqa vaqt ichida ommaviy hayot tarziga aylanganini ko‘rsatdi.</p>\n<p>Hisobotga ko‘ra, kuzatuv olib borilayotgan mamlakatlardagi aholining <strong>51 foizi</strong> kamida haftada bir marta ChatGPT, Google Gemini yoki Claude kabi generativ chat-botlar va yordamchilardan foydalanadi. Taqqoslash uchun, 2025-yilda mazkur ko‘rsatkich atigi 34 foizni tashkil etgan edi. Eng yuqori o‘sish sur’atlari professional matn tahriri, dasturlash va ta’lim yo‘nalishlarida qayd etilgan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Foydalanish darajasi rekord darajada o‘sayotganiga qaramay, hisobot jiddiy paradoksni yuzaga chiqardi: aholining <strong>62 foizdan ortig‘i</strong> axborot va yangiliklarning sun’iy intellekt tomonidan to‘liq avtomatlashtirilgan tarzda yozilishiga ishonmasligini va bunga shubha bilan qarashini ta’kidlagan. Foydalanuvchilar matn va tahlillarda professional inson-muharrirlarning faktcheking va mas’uliyat nazorati saqlanib qolishini talab qilmoqda.</p>\n<p>Buyuk Britaniya kabi ayrim rivojlangan mamlakatlarda esa sun’iy intellekt ishlab chiqqan kontentga nisbatan shubhalanish darajasi yanada yuqori bo‘lib, axborotning birlamchi rasmiy manbasiga tayanuvchi ommaviy axborot vositalarining obro‘si qayta mustahkamlanmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Ommaviy Qabul:</strong> 51% haftalik faol foydalanuvchilar qatlami neyrotarmoqlarning keng integratsiyasini isbotlaydi.</li>\n      <li><strong>Faktcheking & Manba:</strong> Generativ gallyutsinatsiyalarning oldini oluvchi RAG (Retrieval-Augmented Generation) tizimlariga talab oshmoqda.</li>\n      <li><strong>Shaffoflik:</strong> AI tomonidan ishlab chiqilgan kontentni belgilash (watermarking) va kontent kelib chiqishini tekshirish standartlari shart qilib qo‘yilmoqda.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Ishonch Standarti:</strong> Mijozlar bilan muloqotda va marketingda sun’iy intellektdan foydalanishda shaffoflikni ko‘rsatish nufuzni oshiradi.</li>\n      <li><strong>Muntazam Jarayon:</strong> Xodimlar ish unumdorligini oshirish uchun generativ vositalar korporativ ekotizimga kiritilishi zarur.</li>\n      <li><strong>Tahririyat Sifati:</strong> Har qanday yakuniy tijoriy material inson ekspertizasi va tahriridan o‘tishi shart.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston yoshlari va mutaxassislari orasida generativ vositalardan foydalanish shiddat bilan oshmoqda. Shu bilan birga, ijtimoiy tarmoqlarda deepfake va tekshirilmagan sun’iy kontent tarqalishi jamiyatda xolis axborot saralash ko‘nikmasini talab etadi. Mahalliy media va korxonalar uchun birlamchi manbaga tayangan holda sifatli va mas’uliyatli kontent yetkazish asosiy raqobat ustunligiga aylanmoqda.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Reuters instituti taqdim etgan to‘liq hisobot va tahliliy jadvallar bilan tanishing.</li>\n    <li>Kompaniyangizda sun’iy intellekt ishlab chiqqan matn va tasvirlarni tekshirish (audit) yo‘riqnomasini joriy qiling.</li>\n    <li>Mijozlarga axborot taqdim etishda doimo tasdiqlangan birlamchi havolalarni ko‘rsatish odatini shakllantiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-30"
+  },
+  "ozbekiston-superkompyuter-nvidia-infratuzilma-2026": {
+    "id": "ozbekiston-superkompyuter-nvidia-infratuzilma-2026",
+    "slug": "ozbekiston-superkompyuter-nvidia-infratuzilma-2026",
+    "title": "O‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi",
+    "kicker": "Voqea: 30-Oktabr, 2026 · Manba: 30-Oktabr, 2026 · AiNoma: 30.10.2026",
+    "deck": "Davlat va xususiy sektor loyihalarini tezlashtirish uchun NVIDIA texnologiyalariga asoslangan milliy superkompyuter klasterlari kengaytirilmoqda.",
+    "event_date": "2026-10-30",
+    "source_published_date": "2026-10-30",
+    "ainoma_published_date": "2026-10-30",
+    "ainoma_updated_date": "2026-10-30",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "O‘zbekiston IT",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/gpu_datacenter.jpg",
+    "imgAlt": "O‘zbekiston sun’iy intellekt superkompyuteri data markazi",
+    "qisqacha": [
+      "«Raqamli hukumat» data-markazidagi NVIDIA texnologiyalariga asoslangan superkompyuterga talab 90% dan oshdi.",
+      "Strategik reja doirasida umumiy quvvati 1 megavattgacha bo'lgan yangi sun’iy intellekt hisoblash klasterlari ishga tushirilmoqda.",
+      "Ushbu infratuzilma milliy til modellarini o'qitish va davlat elektron xizmatlarini optimallashtirishga xizmat qiladi."
+    ],
+    "primary_source": {
+      "name": "Raqamli texnologiyalar vazirligi",
+      "title": "Sun’iy intellekt klasterlari va superkompyuter infratuzilmasini rivojlantirish hisoboti",
+      "url": "https://digital.uz/news/view/ai-supercomputer-infrastructure-2026/",
+      "date": "30.10.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekiston Respublikasida 2030-yilgacha sun’iy intellekt texnologiyalarini rivojlantirish strategiyasida belgilangan ustuvor vazifalar doirasida milliy data-markazlarning hisoblash quvvatlariga talab keskin oshdi. «Raqamli hukumat» markazi ma’lumotlariga ko‘ra, AQShning <strong>NVIDIA</strong> texnologiyalari asosida faoliyat yurituvchi superkompyuter klasterlarining amaldagi quvvatlaridan foydalanish ko‘rsatkichi <strong>90 foizdan</strong> oshgan.</p>\n<p>O‘sib borayotgan ehtiyojni qondirish hamda ta’lim, sog‘liqni saqlash, agrotex va sanoat tarmoqlaridagi istiqbolli sun’iy intellekt tashabbuslarini qo‘llab-quvvatlash maqsadida umumiy quvvati 1 megavattgacha yetadigan ikkita yirik yangi hisoblash klasteri bosqichma-bosqich tarmoqqa ulanmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt modellarini o‘qitish va ularni keng miqyosda ishlatish (inference) ulkan hisoblash resurslarini — ixtisoslashgan GPU serverlarini talab qiladi. Bugungi kunga qadar ko‘plab mahalliy tadqiqot guruhlari va startaplar yuqori narxlarda xorijiy bulutli platformalarga (AWS, Google Cloud, Azure) murojaat qilishga majbur edi.</p>\n<p>Mamlakat ichida arzon va yuqori tezlikdagi davlat hisoblash infratuzilmasining kengaytirilishi nafaqat xorijiy valyuta chiqib ketishini kamaytiradi, balki o‘zbek tilidagi katta til modellarini (LLM) o‘qitish sur’atini bir necha barobarga tezlashtiradi hamda strategik ma’lumotlarning milliy chegaralar ichida xavfsiz qolishini ta’minlaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Hisoblash Quvvati:</strong> NVIDIA Tensor Core arxitekturasiga tayangan zamonaviy GPU hisoblash bloklari.</li>\n      <li><strong>Lokal Katta Modellar:</strong> O‘zbek tilidagi korpuslarni qayta ishlash va milliy yordamchilarni (masalan, Salom AI) mustaqil serverlarda o‘qitish imkoniyati.</li>\n      <li><strong>Tarmoq Tezligi:</strong> Kam kechikish (low latency) bilan ishlovchi ichki magistral aloqa kanallari.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Tejamkorlik:</strong> Xorijiy bulut xizmatlariga nisbatan qulay narxlarda mahalliy server resurslaridan foydalanish imkoniyati.</li>\n      <li><strong>Qonuniy Moslik:</strong> Korporativ ma’lumotlar va mijozlar bazasini mamlakat ichidagi serverlarda xavfsiz saqlash.</li>\n      <li><strong>Davlat Xizmatlari Integratsiyasi:</strong> Sun’iy intellekt agentlarini davlat axborot tizimlari va reyestrlari bilan to‘g‘ridan-to‘g‘ri bog‘lash.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Hisoblash quvvatlarining yetarli bo‘lishi O‘zbekistonning sun’iy intellektga tayyorlik (AI Readiness) global reytingida yuqori 50 ta davlat qatoriga kirish maqsadini amalda ta’minlovchi eng muhim tayanchdir. Bu orqali xususiy startaplar va davlat tashkilotlari amaliy loyihalarni tezroq ishga tushirish hamda iqtisodiyotning real tarmoqlarida tejamkorlikka erishish imkoniga ega bo‘ladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>IT Park va Raqamli texnologiyalar vazirligining server quvvatlarini ajratish dasturlari va grantlari bilan tanishing.</li>\n    <li>Kompaniyangizdagi AI modellarini mahalliy data-markazlarga ko‘chirish (migratsiya) imkoniyatlarini baholang.</li>\n    <li>O‘zbekiston qonunchiligiga muvofiq korporativ ma’lumotlar xavfsizligi siyosatini qayta ko‘rib chiqing.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-30"
+  },
   "google-gemini-4-argon-xavfsizlik-va-masuliyat": {
     "id": "google-gemini-4-argon-xavfsizlik-va-masuliyat",
     "slug": "google-gemini-4-argon-xavfsizlik-va-masuliyat",
