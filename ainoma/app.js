@@ -287,6 +287,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Mistral AI 1 trillion parametrli large 4 ochiq modelini chiqardi", u: "yangiliklar/mistral-ai-large-4-le-chonk-ochiq-model-2026/", k: "mistral ai 1 trillion parametrli large 4 ochiq modelini chiqardi dunyo texnologiya mistral ai fransiyaning mistral ai kompaniyasi 1.05 trillion parametrli va 1 million token kontekstga ega suver" },
   { t: "O‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi", u: "yangiliklar/ozbekiston-superkompyuter-nvidia-infratuzilma-2026/", k: "o‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi o‘zbekiston it raqamli texnologiyalar vazirligi davlat va xususiy sektor loyihalarini tezlashtirish uchun nvidia texnologiyalariga asoslangan milliy" },
