@@ -288,7 +288,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Google DeepMind «gemini 4 carbon» frontier modelini taqdim etdi: Kiberxavfsizlik va uzoq davomli agentlik vazifalari", u: "yangiliklar/google-deepmind-gemini-4-carbon-frontier-model-2026/", k: "google deepmind «gemini 4 carbon» frontier modelini taqdim etdi: kiberxavfsizlik va uzoq davomli agentlik vazifalari  google deepmind google deepmind kiberxavfsizlik himoyasi va ko‘p soatlik dasturiy injiniring vazifalarini bajaruvchi" },
+  { t: "Block ochiq kodli «goose» AI agentini chiqardi: Claude code uchun bepul muqobil", u: "yangiliklar/block-goose-ochiq-kodli-bepul-ai-dasturchi-agenti-2026/", k: "block ochiq kodli «goose» ai agentini chiqardi: claude code uchun bepul muqobil  venturebeat square va cash app egasi bo‘lgan block kompaniyasi dasturchilar uchun oylik $200 gacha turadigan cla" },
   { t: "Mistral AI 1 trillion parametrli large 4 ochiq modelini chiqardi", u: "yangiliklar/mistral-ai-large-4-le-chonk-ochiq-model-2026/", k: "mistral ai 1 trillion parametrli large 4 ochiq modelini chiqardi dunyo texnologiya mistral ai fransiyaning mistral ai kompaniyasi 1.05 trillion parametrli va 1 million token kontekstga ega suver" },
   { t: "O‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi", u: "yangiliklar/ozbekiston-superkompyuter-nvidia-infratuzilma-2026/", k: "o‘zbekiston data-markazlarida sun’iy intellekt hisoblash quvvatlariga talab 90% dan oshdi o‘zbekiston it raqamli texnologiyalar vazirligi davlat va xususiy sektor loyihalarini tezlashtirish uchun nvidia texnologiyalariga asoslangan milliy" },
   { t: "Reuters institute: Generativ sun’iy intellektdan haftalik foydalanish 51% ga yetdi", u: "yangiliklar/reuters-institute-generative-ai-news-51-foiz-2026/", k: "reuters institute: generativ sun’iy intellektdan haftalik foydalanish 51% ga yetdi dunyo texnologiya reuters institute for the study of journalism oksford universiteti tadqiqotiga ko'ra dunyo aholisining yarmidan ko'pi muntazam generativ vositalar" },

@@ -1,4 +1,77 @@
+// AiNoma Knowledge Base - Maqolalar va Yangiliklar
 window.AINOMA_ARTICLES = {
+  "google-deepmind-gemini-4-carbon-frontier-model-2026": {
+    "id": "google-deepmind-gemini-4-carbon-frontier-model-2026",
+    "slug": "google-deepmind-gemini-4-carbon-frontier-model-2026",
+    "title": "Google DeepMind «gemini 4 carbon» frontier modelini taqdim etdi: Kiberxavfsizlik va uzoq davomli agentlik vazifalari",
+    "kicker": "Voqea: 31-Oktabr, 2026 · Manba: 31-Oktabr, 2026 · AiNoma: 31-Oktabr, 2026",
+    "deck": "Google DeepMind kiberxavfsizlik himoyasi va ko‘p soatlik dasturiy injiniring vazifalarini bajaruvchi yangi flagman Gemini 4 Carbon modelini chiqardi hamda sun’iy intellekt xavfsizligi bo‘yicha yangi standart o‘rnatdi.",
+    "event_date": "2026-10-31",
+    "source_published_date": "2026-10-31",
+    "ainoma_published_date": "2026-10-31",
+    "img": "assets/gemini_4_argon_deepmind_2026.jpg",
+    "imgAlt": "Google DeepMind Gemini 4 Carbon arxitekturasi va kiberxavfsizlik tahlili",
+    "qisqacha": [
+      "Gemini 4 Carbon modeli Artificial Analysis Intelligence Index reytingida 59 ball bilan jahonda 1-o‘rinni egalladi.",
+      "SEC-bench Pro sinovida 88.2% zaifliklarni aniqlash va CWE-bench orqali 71% dasturiy xatolarni avtomatlashtirilgan tarzda tuzatish ko‘rsatkichini qayd etdi.",
+      "Model ko‘p soatlik murakkab kod bazalarini tahlil qilish va avtonom tuzatish vazifalariga mo‘ljallangan bo‘lib, Fairwind dasturi orqali xavfsizlik mutaxassislariga taqdim etilmoqda."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "date": "31.10.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "VentureBeat",
+        "title": "Google DeepMind unveils Gemini 4 Carbon for enterprise cybersecurity",
+        "url": "https://venturebeat.com/ai/google-deepmind-unveils-gemini-4-carbon/",
+        "date": "31.10.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind o‘zining navbatdagi flagman sun’iy intellekt modeli — <strong>Gemini 4 Carbon</strong>ni rasman taqdim etdi. Yangi arxitektura mustaqil <em>Artificial Analysis Intelligence Index (v5.0)</em> benchmarkida 59 ball to‘plab, xalqaro reytingda 1-o‘rinni egalladi. Model avvalgi versiyalardan farqli ravishda ko‘p soatlik uzoq muddatli agentlik operatsiyalari, dasturiy injiniring va global kiberxavfsizlik himoyasiga ixtisoslashtirilgan.</p>\n<p>DeepMind taqdim etgan rasmiy hisobotga ko‘ra, model xavfsizlik sinovlarida yuqori natijalarni qayd etdi: zaifliklarni aniqlash bo‘yicha <em>SEC-bench Pro</em> reytingida 88.2%, dasturiy xatoliklarni avtomatlashtirilgan tuzatish (root-cause fixing) bo‘yicha <em>CWE-bench</em> sinovida esa 71.0% aniqlik ko‘rsatdi. Siz ushbu model orqali murakkab korporativ tizimlardagi zaif nuqtalarni inson omilisiz tekshirish imkoniyatiga ega bo‘lasiz.</p>\n\n<h2>Nega muhim?</h2>\n<p>Zamonaviy korporativ infratuzilmalarda dasturiy ta’minot hajmi va arxitektura murakkabligi oshib bormoqda. Bir necha daqiqalik qisqa kontekstda ishlaydigan oldingi modellardan farqli o‘laroq, Gemini 4 Carbon soatlab yoki kunlab uzluksiz ishlay oladigan avtonom dasturchi agentlar uchun barqaror poydevor quradi. Model kod bazalaridagi arxitektura buzilishlarini oldindan tahlil qilib, tizimlar xavfsizligini ta’minlaydi.</p>\n<p>Kuchli imkoniyatlari sababli model dastlab <em>Fairwind Program</em> orqali kiberhimoya mutaxassislari va davlat tashkilotlariga taqdim etilmoqda. Kirish tokenlari narxi 1 million token uchun $2, chiqish esa $10 qilib belgilangan bo‘lib, kesh xotira (prompt caching) orqali 95% tejamkorlikka erishish mumkin.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Dasturchilar va DevOps mutaxassislari uchun</div>\n    <ul>\n      <li><strong>Avtonom audit:</strong> Repozitoriylarni statik va dinamik zaifliklarga tekshirish uchun agentlik skriptlarni ulash.</li>\n      <li><strong>Uzoq kontekstli refaktoring:</strong> Butun mikroxizmatlar arxitekturasini sinxron tarzda yangilash va testlarni avtomatlashtirish.</li>\n      <li><strong>Prompt keshidan foydalanish:</strong> Katta kod bazalarini keshga yuklash orqali API xarajatlarini 95% gacha qisqartirish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes va IT rahbarlari uchun</div>\n    <ul>\n      <li><strong>Xavfsizlik xatarlarini minimallashtirish:</strong> Tizimlarni xakerlik xurujlariga chidamliligini avtonom tekshirish.</li>\n      <li><strong>Operatsion samaradorlik:</strong> Dasturiy ta’minotni tekshirish va reliz sikllarini bir necha barobarga tezlashtirish.</li>\n      <li><strong>Infratuzilma xarajatlarini nazorat qilish:</strong> Bitta model orqali ham dasturchi, ham xavfsizlik auditi vazifalarini optimallashtirish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston IT bozori uchun nimani anglatadi?</div>\n  <p>Mahalliy banklar, fintex platformalari va davlat axborot tizimlari uchun axborot xavfsizligi eng muhim ustuvor vazifa hisoblanadi. Gemini 4 Carbon sinfidagi modellar O‘zbekistondagi axborot xavfsizligi markazlariga (SOC) kiberxurujlarni real vaqt rejimida aniqlash va dasturiy ta’minot xatolarini zudlik bilan bartaraf etish imkonini beradi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Siz uchun amaliy tavsiyalar</div>\n  <ol>\n    <li><strong>Kod auditi vositalarini qayta ko‘rib chiqing:</strong> Loyihalaringizda zaifliklarni qidiruvchi avtonom tahlil tizimlarini joriy etishni rejalashtiring.</li>\n    <li><strong>Prompt keshini yoqib qo‘ying:</strong> Google AI Studio yoki Vertex AI orqali katta loyihalarni tahlil qilishda kesh mexanizmidan foydalaning.</li>\n    <li><strong>Xavfsizlik protokollarini yangilang:</strong> CI/CD konveyeringizga avtomatlashtirilgan sun’iy intellekt xavfsizlik sinovlarini qo‘shing.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-31"
+  },
+  "block-goose-ochiq-kodli-bepul-ai-dasturchi-agenti-2026": {
+    "id": "block-goose-ochiq-kodli-bepul-ai-dasturchi-agenti-2026",
+    "slug": "block-goose-ochiq-kodli-bepul-ai-dasturchi-agenti-2026",
+    "title": "Block ochiq kodli «goose» AI agentini chiqardi: Claude code uchun bepul muqobil",
+    "kicker": "Voqea: 31-Oktabr, 2026 · Manba: 31-Oktabr, 2026 · AiNoma: 31-Oktabr, 2026",
+    "deck": "Square va Cash App egasi bo‘lgan Block kompaniyasi dasturchilar uchun oylik $200 gacha turadigan Claude Code kabi tizimlarga raqobatchi bo‘lgan bepul va ochiq kodli Goose avtonom agentini taqdim etdi.",
+    "event_date": "2026-10-31",
+    "source_published_date": "2026-10-31",
+    "ainoma_published_date": "2026-10-31",
+    "img": "assets/claude_code_mods_anthropic_2026.jpg",
+    "imgAlt": "Block Goose ochiq kodli dasturchi agenti va terminal muhiti",
+    "qisqacha": [
+      "Goose agenti terminal va operatsion tizim darajasida mustaqil ishlaydi, testlarni o‘tkazadi hamda refaktoring vazifalarini to‘liq bajaradi.",
+      "Istalgan LLM (Claude, GPT, Gemini yoki lokal Ollama) bilan ishlaydi hamda Anthropic ishlab chiqqan ochiq Model Context Protocol (MCP) standartini to‘liq qo‘llab-quvvatlaydi.",
+      "Linux Foundation qoshidagi Agentic AI Foundation boshqaruviga topshirildi va Apache 2.0 litsenziyasi ostida har qanday korxona uchun bepul taqdim etilmoqda."
+    ],
+    "primary_source": {
+      "name": "VentureBeat",
+      "title": "Claude Code costs up to $200 a month. Goose does the same thing for free",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free/",
+      "date": "31.10.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Block Open Source",
+        "title": "Goose: An open source, extensible AI agent that supercharges your developer experience",
+        "url": "https://github.com/block/goose",
+        "date": "31.10.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Square va Cash App ekotizimlarini birlashtirgan <strong>Block</strong> kompaniyasi dasturchilar uchun mo‘ljallangan to‘liq avtonom va ochiq kodli <strong>Goose</strong> sun’iy intellekt agentini taqdim etdi. So‘nggi paytlarda oylik obuna narxi $200 gacha yetgan <em>Claude Code</em> kabi tijoriy dasturchi vositalariga qarshi ishlab chiqilgan ushbu tizim Linux Foundation qoshidagi <em>Agentic AI Foundation (AAIF)</em> boshqaruviga topshirildi.</p>\n<p>Goose oddiy kod to‘ldirish (autocompletion) vositalaridan farq qilib, terminal va kompyuter muhitida to‘liq avtonom harakatlanadi. U dasturiy ta’minot testlarini ishga tushirish, repozitoriylarni klonlash, kutubxonalar migratsiyasini amalga oshirish va murakkab sintaksis xatolarini mustaqil tahrirlash qobiliyatiga ega. Siz ushbu agentni terminal, maxsus desktop ilova yoki dasturchilar uchun SDK orqali ishlatishingiz mumkin.</p>\n\n<h2>Nega muhim?</h2>\n<p>Bugungi kunda xususiy sun’iy intellekt modellari foydalanuvchini faqat bitta provayderga (vendor lock-in) bog‘lab qo‘ymoqda. Goose esa to‘liq neytral platforma bo‘lib, dasturchilarga xohlagan til modelini tanlash erkinligini beradi: Claude 3.7, GPT-4o, Gemini 1.5/2.0, DeepSeek yoki hatto <em>Ollama</em> orqali lokal kompyuterda ishlovchi ochiq modellarni ulash mumkin.</p>\n<p>Shuningdek, Goose Anthropic tomonidan ilgari surilgan ochiq <strong>Model Context Protocol (MCP)</strong> standartini to‘liq qo‘llab-quvvatlaydi. Bu orqali siz agentni GitHub, Jira, PostgreSQL ma’lumotlar bazalari va maxsus ichki API’lar bilan bir zumda sinxronlashtirishingiz mumkin bo‘ladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Muhandislar va dasturchilar uchun</div>\n    <ul>\n      <li><strong>To‘liq erkinlik:</strong> Apache 2.0 litsenziyasi ostida mutlaqo bepul foydalanish va kodini moslashtirish.</li>\n      <li><strong>Provayder erkinligi:</strong> Istalgan API kalitini ulash yoki oflayn tarzda lokal modellar bilan ishlash.</li>\n      <li><strong>MCP kengaytmalari:</strong> Mavjud vositalar va ma’lumotlar bazalariga standart protokollar orqali ulanish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Startaplar va IT kompaniyalar uchun</div>\n    <ul>\n      <li><strong>Dasturchi litsenziyalari tejami:</strong> Har bir xodim uchun oyiga $100–$200 to‘lash o‘rniga ochiq kodli agentdan foydalanish.</li>\n      <li><strong>Ma’lumotlar maxfiyligi:</strong> Maxfiy kod bazalarini uchinchi tomon serverlariga yubormasdan lokal serverda ishlatish.</li>\n      <li><strong>Agentik avtomatlashtirish:</strong> Yangi dasturchilarni loyihaga jalb qilish va kod bazasini o‘rganish vaqtini qisqartirish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston dasturchilar jamoasi uchun nimani anglatadi?</div>\n  <p>Mahalliy startaplar va autsorsing kompaniyalari uchun yuqori oylik AI obuna xarajatlari jiddiy to‘siq bo‘lib kelayotgan edi. Goose orqali mahalliy dasturchilar jahon darajasidagi avtonom agentlik imkoniyatlaridan tekinga foydalanishlari va o‘z loyihalariga sun’iy intellektni xavfsiz tatbiq etishlari mumkin bo‘ladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Siz uchun amaliy tavsiyalar</div>\n  <ol>\n    <li><strong>Goose repozitoriysini tekshiring:</strong> GitHub orqali rasmiy loyihani ko‘rib chiqing va CLI vositasini o‘rnatib sinab ko‘ring.</li>\n    <li><strong>Lokal LLM bilan sinang:</strong> Ollama orqali ochiq modellarni ulab, maxfiy loyihalaringizda xavfsiz test o‘tkazing.</li>\n    <li><strong>Jamoangizga MCP vositalarini tanishtiring:</strong> Ma’lumotlar bazalari va kod bazangizni agent bilan birlashtiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-10-31"
+  },
   "mistral-ai-large-4-le-chonk-ochiq-model-2026": {
     "id": "mistral-ai-large-4-le-chonk-ochiq-model-2026",
     "slug": "mistral-ai-large-4-le-chonk-ochiq-model-2026",
