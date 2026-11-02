@@ -1,4 +1,133 @@
 window.AINOMA_ARTICLES = {
+  "sietl-va-toshkent-suniy-intellekt-hamkorlik-2026": {
+    "id": "sietl-va-toshkent-suniy-intellekt-hamkorlik-2026",
+    "slug": "sietl-va-toshkent-suniy-intellekt-hamkorlik-2026",
+    "title": "Sietl va Toshkent sun’iy intellekt sohasida keng ko‘lamli hamkorlikni yo‘lga qo‘ymoqda",
+    "kicker": "O‘ZBEKISTON · AQSH HAMKORLIGI",
+    "category": "O‘zbekiston IT & AI",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-02",
+    "source_date": "2026-11-02",
+    "source_published_date": "2026-11-02",
+    "ainoma_published_date": "2026-11-02",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "AQSh va O‘zbekiston forumi doirasida Sietl hamda Toshkent o‘rtasida sun’iy intellekt va kadrlar almashinuvi bo‘yicha kelishuv imzolandi.",
+    "img": "assets/b2b_sales.jpg",
+    "imgAlt": "Sietl va Toshkent sun'iy intellekt hamkorligi",
+    "qisqacha": [
+      "Vashingtondagi Bosh konsulxonada O‘zbekiston va AQSh o‘rtasida sun’iy intellekt hamkorligi bo‘yicha xalqaro forum o‘tkazildi.",
+      "Sietl va Toshkent o‘rtasida IT startaplar almashinuvi, akseleratsiya va malaka oshirish dasturlari yo‘lga qo‘yiladi.",
+      "O‘zbekistonlik muhandislar AQSh kompaniyalari bilan sun’iy intellekt yechimlarini birgalikda ishlab chiqish imkoniyatiga ega bo‘lmoqda."
+    ],
+    "primary_source": {
+      "name": "Daryo.uz",
+      "title": "Sietl va Toshkent sun’iy intellekt sohasida hamkorlik qiladi",
+      "url": "https://daryo.uz/2026/11/02/sietl-va-toshkent-suniy-intellekt-sohasida-hamkorlik-qiladi/",
+      "date": "02.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "IT Park Uzbekistan",
+        "title": "AQSh va O‘zbekiston IT hamkorlik forumi",
+        "url": "https://it-park.uz/en/itpark/news/fly-asia-2026-uzbekistan-startups"
+      }
+    ],
+    "body": "<p>Vashingtondagi O‘zbekiston Bosh konsulxonasida sun’iy intellekt sohasidagi aloqalarni mustahkamlashga bag‘ishlangan AQSh–O‘zbekiston xalqaro forumi bo‘lib o‘tdi. Unda Amerika–O‘zbekiston biznes va investitsiya kengashi, IT Park Uzbekistan hamda xalqaro raqamli texnologiyalar tashkilotlari vakillari qatnashib, global texnologik markaz bo‘lgan Sietl shahri bilan Toshkent o‘rtasida yangi sun’iy intellekt koridorini qurish bo‘yicha kelishuvga erishdilar.</p>\n<h2>Sietl va Toshkent o‘rtasidagi yangi texnologik ko‘prik</h2>\n<p>Sietl — Amazon, Microsoft kabi global sun’iy intellekt gigantlari qarorgohi joylashgan dunyodagi eng yirik texnologik markazlardan biri hisoblanadi. Forum doirasida erishilgan bitimlarga muvofiq, O‘zbekistondagi iqtidorli muhandislar va startaplar AQSh bozoriga integratsiya qilinadi, qo‘shma akseleratsiya dasturlari yo‘lga qo‘yiladi hamda katta hajmdagi sun’iy intellekt loyihalarini birgalikda ishlab chiqish imkoniyati ochiladi.</p>\n<p>Shuningdek, tomonlar ta’lim va malaka oshirish yo‘nalishida hamkorlik qilib, o‘zbekistonlik mutaxassislarni ilg‘or til modellari (LLM), neyrotarmoqlar arxitekturasi va korporativ sun’iy intellekt agentlarini boshqarish bo‘yicha o‘qitishni rejalashtirmoqda.</p>\n<h2>Mahalliy bozor va tadbirkorlar uchun amaliy foyda</h2>\n<p>Ushbu hamkorlik O‘zbekiston IT ekotizimi uchun xalqaro buyurtmalar oqimini kengaytirishga xizmat qiladi. Mahalliy autsorsing va mahsulot kompaniyalari AQSh korxonalari bilan bevosita shartnomalar tuzib, sun’iy intellekt injiniringi xizmatlarini eksport qilish imkoniga ega bo‘ladi.</p>\n<p>Agar Siz IT yoki sun’iy intellekt sohasida xizmat ko‘rsatuvchi jamoa boshqarayotgan bo‘lsangiz, xalqaro texnoparklar va konsullik tashabbuslari orqali taqdim etilayotgan B2B platformalaridan foydalanib, AQSh bozoridagi hamkorlar bilan to‘g‘ridan-to‘g‘ri aloqa o‘rnatishingiz mumkin.</p>",
+    "contentHtml": "<p>Vashingtondagi O‘zbekiston Bosh konsulxonasida sun’iy intellekt sohasidagi aloqalarni mustahkamlashga bag‘ishlangan AQSh–O‘zbekiston xalqaro forumi bo‘lib o‘tdi. Unda Amerika–O‘zbekiston biznes va investitsiya kengashi, IT Park Uzbekistan hamda xalqaro raqamli texnologiyalar tashkilotlari vakillari qatnashib, global texnologik markaz bo‘lgan Sietl shahri bilan Toshkent o‘rtasida yangi sun’iy intellekt koridorini qurish bo‘yicha kelishuvga erishdilar.</p>\n<h2>Sietl va Toshkent o‘rtasidagi yangi texnologik ko‘prik</h2>\n<p>Sietl — Amazon, Microsoft kabi global sun’iy intellekt gigantlari qarorgohi joylashgan dunyodagi eng yirik texnologik markazlardan biri hisoblanadi. Forum doirasida erishilgan bitimlarga muvofiq, O‘zbekistondagi iqtidorli muhandislar va startaplar AQSh bozoriga integratsiya qilinadi, qo‘shma akseleratsiya dasturlari yo‘lga qo‘yiladi hamda katta hajmdagi sun’iy intellekt loyihalarini birgalikda ishlab chiqish imkoniyati ochiladi.</p>\n<p>Shuningdek, tomonlar ta’lim va malaka oshirish yo‘nalishida hamkorlik qilib, o‘zbekistonlik mutaxassislarni ilg‘or til modellari (LLM), neyrotarmoqlar arxitekturasi va korporativ sun’iy intellekt agentlarini boshqarish bo‘yicha o‘qitishni rejalashtirmoqda.</p>\n<h2>Mahalliy bozor va tadbirkorlar uchun amaliy foyda</h2>\n<p>Ushbu hamkorlik O‘zbekiston IT ekotizimi uchun xalqaro buyurtmalar oqimini kengaytirishga xizmat qiladi. Mahalliy autsorsing va mahsulot kompaniyalari AQSh korxonalari bilan bevosita shartnomalar tuzib, sun’iy intellekt injiniringi xizmatlarini eksport qilish imkoniga ega bo‘ladi.</p>\n<p>Agar Siz IT yoki sun’iy intellekt sohasida xizmat ko‘rsatuvchi jamoa boshqarayotgan bo‘lsangiz, xalqaro texnoparklar va konsullik tashabbuslari orqali taqdim etilayotgan B2B platformalaridan foydalanib, AQSh bozoridagi hamkorlar bilan to‘g‘ridan-to‘g‘ri aloqa o‘rnatishingiz mumkin.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-02",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "role": "Axborot texnologiyalari va tahlil bo‘limi",
+      "avatar": "assets/author_ainoma.png"
+    }
+  },
+  "marketing-mutaxassislari-uchun-ai": {
+    "id": "marketing-mutaxassislari-uchun-ai",
+    "slug": "marketing-mutaxassislari-uchun-ai",
+    "title": "Marketing mutaxassislari uchun AI: Kontent ishlab chiqish, reklama matnlari va A/B testlar",
+    "kicker": "KASB BO‘YICHA · MARKETING",
+    "category": "Qo'llanmalar",
+    "audience": "Marketing mutaxassislari",
+    "event_date": "2026-11-02",
+    "source_date": "2026-11-02",
+    "source_published_date": "2026-11-02",
+    "ainoma_published_date": "2026-11-02",
+    "read_time": "5 daqiqalik mutolaa",
+    "readTime": "5 daqiqalik mutolaa",
+    "deck": "Kontent kalendari, reklama matnlari va A/B test g‘oyalarini sun’iy intellekt bilan sifatli va tezkor ishlab chiqish bo‘yicha amaliy yo‘riqnoma.",
+    "img": "assets/retail_ai.jpg",
+    "imgAlt": "Marketing mutaxassislari uchun AI kontent",
+    "qisqacha": [
+      "Sun’iy intellekt marketingda kontent g‘oyalarini topish va qoralama matnlarni tayyorlash tezligini bir necha barobarga oshiradi.",
+      "AIDA va PAS formulalari asosida yozilgan promptlar reklama konversiyasini oshirishga va maqsadli auditoriyaga aniq yetib borishga xizmat qiladi.",
+      "Har bir matnni brend ovoziga moslab insoniy tahrirdan o‘tkazish va noaniq raqamlarni tekshirib borish shart."
+    ],
+    "primary_source": {
+      "name": "AiNoma Metodologiya",
+      "title": "Marketing mutaxassislari uchun AI: Kontent ishlab chiqish",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "date": "02.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "body": "<p><strong>Qisqa javob:</strong> Sun’iy intellekt marketingda kontent ishlab chiqarish tezligini 4–5 barobarga oshiradi va ma’lumotlarni tezroq tahlil qilishga ko‘maklashadi — biroq brend ovozi, strategik maqsadlar va auditoriya bilan chuqur hissiy aloqa hali ham mutaxassisning shaxsiy nazorati hamda tahririga bog‘liq.</p>\n<h2>1. Kontent rejalashtirish va 30 kunlik kalendar arxitekturasi</h2>\n<p>Marketingda eng ko‘p vaqt oladigan jarayon — haftalik yoki oylik g‘oyalarni topishdir. AI bu yerda bo‘sh varaq qo‘rquvini bartaraf etadi. Modelga aniq brif (sohangiz, mahsulotingiz, maqsadli auditoriyangiz va oyning asosiy voqealari) berilsa, u bir necha daqiqada quyidagi toifalar bo‘yicha kontent to‘rini ishlab chiqadi:</p>\n<ul>\n<li><strong>Ekspertlik va ta’limiy postlar:</strong> Mijozlar duch keladigan muammolar tahlili va amaliy yechimlar.</li>\n<li><strong>Mahsulot va keyslar:</strong> Haqiqiy mijozlar tajribasi, oldin-keyin (before-after) natijalari.</li>\n<li><strong>Interaktiv va jalb qiluvchi formatlar:</strong> Muhokama savollari, viktorinalar va jamoatchilik fikri.</li>\n</ul>\n<h2>2. Reklama matnlari: AIDA va PAS formulalari bo‘yicha promptlar</h2>\n<p>Umumiy va quruq matnlar o‘rniga, aniq marketing formulalari asosida prompt qurish lozim:</p>\n<ul>\n<li><strong>PAS (Muammo — Keskinlashtirish — Yechim):</strong> «Sizning sohangizdagi B2B mijozlar vaqt yetishmasligi muammosini hal qiluvchi 3 ta reklama matni yozib ber. Birinchi gap diqqatni tortsin, ikkinchi qism muammo ko‘lamini ko‘rsatsin, so‘nggi qism bizning tizimga havola bersin.»</li>\n<li><strong>AIDA (Diqqat — Qiziqish — Xohish — Harakat):</strong> Instagram Stories yoki Telegram postlari uchun qisqa, harakatga chaqiruvchi (CTA) variantlarni generatsiya qilish.</li>\n</ul>\n<h2>3. Video va Reels ssenariylari: Dastlabki 3 soniya (Hook)</h2>\n<p>Qisqa videolarda eng muhim qism — dastlabki 3 soniyalik kirish jumlasi hisoblanadi. AI yordamida bitta mavzu uchun 10 xil provokatsion yoki savolli kirish qismlarini (hook) tayyorlab olish va eng jozibadorini tanlash mumkin.</p>\n<h2>4. Qayerda ehtiyot bo‘lish lozim?</h2>\n<p>⚠️ <strong>Muhim eslatma:</strong> Sun’iy intellekt yozgan xom matnlarda ko‘pincha shablon iboralar («zamonaviy dunyoda», «shiddat bilan rivojlanayotgan») va soxta optimizm uchraydi. Brendingizning o‘ziga xos samimiy ohangini saqlash uchun har bir matnni jonli tilda qayta tahrirlab chiqing.</p>\n<p>Shuningdek, AI taqdim etgan raqamlar va statistikalarni hech qachon tekshiruvsiz reklamaga kiritmang — noaniq da’volar brend obro‘siga jiddiy putur yetkazishi mumkin.</p>\n<h2>Amaliy mashq: Bugunoq sinab ko‘ring</h2>\n<p>Joriy haftadagi asosiy taklifingiz uchun AI vositasiga mahsulotingiz afzalliklarini tushuntiring va 3 xil auditoriya (masalan, rahbarlar, amaliyotchilar va talabalar) uchun 3 ta alohida matn varianti tuzishni buyuring. Natijalarni solishtirib, qaysi biri samimiyroq chiqqanini baholang.</p>\n<hr/>\n<h3>FAQ: Ko‘p beriladigan savollar</h3>\n<p><strong>AI yozgan matnni to‘g‘ridan-to‘g‘ri kanalga joylasa bo‘ladimi?</strong> Tavsiya etilmaydi — inson tahriri va brendga xos so‘zlashuv ohangi har doim zarur.</p>\n<p><strong>A/B testlarni qanday o‘tkazish kerak?</strong> AI yordamida bitta taklifning 4 xil sarlavhasini tayyorlab, kichik byudjet bilan qaysi biri ko‘proq bosilishini (CTR) sinab ko‘ring.</p>",
+    "contentHtml": "<p><strong>Qisqa javob:</strong> Sun’iy intellekt marketingda kontent ishlab chiqarish tezligini 4–5 barobarga oshiradi va ma’lumotlarni tezroq tahlil qilishga ko‘maklashadi — biroq brend ovozi, strategik maqsadlar va auditoriya bilan chuqur hissiy aloqa hali ham mutaxassisning shaxsiy nazorati hamda tahririga bog‘liq.</p>\n<h2>1. Kontent rejalashtirish va 30 kunlik kalendar arxitekturasi</h2>\n<p>Marketingda eng ko‘p vaqt oladigan jarayon — haftalik yoki oylik g‘oyalarni topishdir. AI bu yerda bo‘sh varaq qo‘rquvini bartaraf etadi. Modelga aniq brif (sohangiz, mahsulotingiz, maqsadli auditoriyangiz va oyning asosiy voqealari) berilsa, u bir necha daqiqada quyidagi toifalar bo‘yicha kontent to‘rini ishlab chiqadi:</p>\n<ul>\n<li><strong>Ekspertlik va ta’limiy postlar:</strong> Mijozlar duch keladigan muammolar tahlili va amaliy yechimlar.</li>\n<li><strong>Mahsulot va keyslar:</strong> Haqiqiy mijozlar tajribasi, oldin-keyin (before-after) natijalari.</li>\n<li><strong>Interaktiv va jalb qiluvchi formatlar:</strong> Muhokama savollari, viktorinalar va jamoatchilik fikri.</li>\n</ul>\n<h2>2. Reklama matnlari: AIDA va PAS formulalari bo‘yicha promptlar</h2>\n<p>Umumiy va quruq matnlar o‘rniga, aniq marketing formulalari asosida prompt qurish lozim:</p>\n<ul>\n<li><strong>PAS (Muammo — Keskinlashtirish — Yechim):</strong> «Sizning sohangizdagi B2B mijozlar vaqt yetishmasligi muammosini hal qiluvchi 3 ta reklama matni yozib ber. Birinchi gap diqqatni tortsin, ikkinchi qism muammo ko‘lamini ko‘rsatsin, so‘nggi qism bizning tizimga havola bersin.»</li>\n<li><strong>AIDA (Diqqat — Qiziqish — Xohish — Harakat):</strong> Instagram Stories yoki Telegram postlari uchun qisqa, harakatga chaqiruvchi (CTA) variantlarni generatsiya qilish.</li>\n</ul>\n<h2>3. Video va Reels ssenariylari: Dastlabki 3 soniya (Hook)</h2>\n<p>Qisqa videolarda eng muhim qism — dastlabki 3 soniyalik kirish jumlasi hisoblanadi. AI yordamida bitta mavzu uchun 10 xil provokatsion yoki savolli kirish qismlarini (hook) tayyorlab olish va eng jozibadorini tanlash mumkin.</p>\n<h2>4. Qayerda ehtiyot bo‘lish lozim?</h2>\n<p>⚠️ <strong>Muhim eslatma:</strong> Sun’iy intellekt yozgan xom matnlarda ko‘pincha shablon iboralar («zamonaviy dunyoda», «shiddat bilan rivojlanayotgan») va soxta optimizm uchraydi. Brendingizning o‘ziga xos samimiy ohangini saqlash uchun har bir matnni jonli tilda qayta tahrirlab chiqing.</p>\n<p>Shuningdek, AI taqdim etgan raqamlar va statistikalarni hech qachon tekshiruvsiz reklamaga kiritmang — noaniq da’volar brend obro‘siga jiddiy putur yetkazishi mumkin.</p>\n<h2>Amaliy mashq: Bugunoq sinab ko‘ring</h2>\n<p>Joriy haftadagi asosiy taklifingiz uchun AI vositasiga mahsulotingiz afzalliklarini tushuntiring va 3 xil auditoriya (masalan, rahbarlar, amaliyotchilar va talabalar) uchun 3 ta alohida matn varianti tuzishni buyuring. Natijalarni solishtirib, qaysi biri samimiyroq chiqqanini baholang.</p>\n<hr/>\n<h3>FAQ: Ko‘p beriladigan savollar</h3>\n<p><strong>AI yozgan matnni to‘g‘ridan-to‘g‘ri kanalga joylasa bo‘ladimi?</strong> Tavsiya etilmaydi — inson tahriri va brendga xos so‘zlashuv ohangi har doim zarur.</p>\n<p><strong>A/B testlarni qanday o‘tkazish kerak?</strong> AI yordamida bitta taklifning 4 xil sarlavhasini tayyorlab, kichik byudjet bilan qaysi biri ko‘proq bosilishini (CTR) sinab ko‘ring.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-02",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "role": "Amaliy ta’lim va metodologiya guruhi",
+      "avatar": "assets/author_ainoma.png"
+    }
+  },
+  "google-deepmind-gemini-38-live-avatar-2026": {
+    "id": "google-deepmind-gemini-38-live-avatar-2026",
+    "slug": "google-deepmind-gemini-38-live-avatar-2026",
+    "title": "Google DeepMind «Gemini 3.8 Live» bilan fotorealistik jonli AI avatarlarini chiqardi",
+    "kicker": "MULTIMODAL AI · REAL VAQT",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-02",
+    "source_date": "2026-11-02",
+    "source_published_date": "2026-11-02",
+    "ainoma_published_date": "2026-11-02",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Google DeepMind past kechikishli ovozli suhbat va real vaqtda yuz mimikalarini boshqaruvchi Gemini 3.8 Live modelini taqdim etdi.",
+    "img": "assets/ai_agents.jpg",
+    "imgAlt": "Google DeepMind Gemini 3.8 Live Avatar",
+    "qisqacha": [
+      "Google DeepMind real vaqtda ovoz va yuz mimikasini sinxronlashtiruvchi Gemini 3.8 Live avatarlarini chiqardi.",
+      "Tizim ultra-past kechikish bilan inson nutqidagi tanaffuslar va ohangni hisobga olgan holda tabiiy muloqot quradi.",
+      "Kompaniyalar endilikda mijozlarga 24/7 xizmat ko‘rsatuvchi interaktiv video va ovozli maslahatchilarni joriy etishi mumkin."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "date": "02.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Google DeepMind Blog",
+        "title": "Gemini 3.8 Text-to-Speech",
+        "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
+      }
+    ],
+    "body": "<p>Google DeepMind kompaniyasi real vaqt rejimida inson bilan jonli muloqot qiluvchi va his-tuyg‘ularni ifodalovchi yangi avlod «Gemini 3.8 Live» modelini taqdim etdi. Mazkur tizim audio, video va interaktiv yuz mimikalarini birlashtirib, foydalanuvchilar bilan kechikishlarsiz erkin muloqot qila oladigan fotorealistik raqamli avatarlarni boshqarish imkonini beradi.</p>\n<h2>Ultra-past kechikish va tabiiy nutq dinamikasi</h2>\n<p>DeepMind muhandislarining ta’kidlashicha, yangi arxitektura inson nutqidagi to‘xtalishlar, nafas olish maromi va ovoz ohangini soniyaning yuzdan bir qismida qayta ishlaydi. Muloqot vaqtida tizim inson gapini bo‘lmasdan tinglaydi, kerakli o‘rinda darhol munosabat bildiradi va yuz mushaklari harakatini nutq bilan to‘liq moslashtiradi.</p>\n<p>Tadqiqot hisobotida qayd etilishicha, Gemini 3.8 Live modeli onlayn mijozlarga xizmat ko‘rsatish, masofaviy ta’lim va tibbiy maslahat sohalarida inson operatorlari bilan bir qatorda mustaqil jonli muloqot o‘tkazish darajasiga yetgan.</p>\n<h2>Kompaniyalar va foydalanuvchilar uchun imkoniyatlar</h2>\n<p>Avvallari interaktiv virtual yordamchilar sun’iy va robotik ovozda gapirgan bo‘lsa, yangi model yordamida tashkilotlar o‘z brendining haqiqiy ovoziga ega bo‘lgan interaktiv xizmat ko‘rsatish tizimlarini qurishi mumkin.</p>\n<p>Siz o‘z mijozlaringiz bilan muloqotni avtomatlashtirishda 24/7 rejimda ishlovchi jonli audio va video yordamchilarni integratsiya qilish orqali xizmat ko‘rsatish sifatini yangi bosqichga ko‘tarishingiz mumkin.</p>",
+    "contentHtml": "<p>Google DeepMind kompaniyasi real vaqt rejimida inson bilan jonli muloqot qiluvchi va his-tuyg‘ularni ifodalovchi yangi avlod «Gemini 3.8 Live» modelini taqdim etdi. Mazkur tizim audio, video va interaktiv yuz mimikalarini birlashtirib, foydalanuvchilar bilan kechikishlarsiz erkin muloqot qila oladigan fotorealistik raqamli avatarlarni boshqarish imkonini beradi.</p>\n<h2>Ultra-past kechikish va tabiiy nutq dinamikasi</h2>\n<p>DeepMind muhandislarining ta’kidlashicha, yangi arxitektura inson nutqidagi to‘xtalishlar, nafas olish maromi va ovoz ohangini soniyaning yuzdan bir qismida qayta ishlaydi. Muloqot vaqtida tizim inson gapini bo‘lmasdan tinglaydi, kerakli o‘rinda darhol munosabat bildiradi va yuz mushaklari harakatini nutq bilan to‘liq moslashtiradi.</p>\n<p>Tadqiqot hisobotida qayd etilishicha, Gemini 3.8 Live modeli onlayn mijozlarga xizmat ko‘rsatish, masofaviy ta’lim va tibbiy maslahat sohalarida inson operatorlari bilan bir qatorda mustaqil jonli muloqot o‘tkazish darajasiga yetgan.</p>\n<h2>Kompaniyalar va foydalanuvchilar uchun imkoniyatlar</h2>\n<p>Avvallari interaktiv virtual yordamchilar sun’iy va robotik ovozda gapirgan bo‘lsa, yangi model yordamida tashkilotlar o‘z brendining haqiqiy ovoziga ega bo‘lgan interaktiv xizmat ko‘rsatish tizimlarini qurishi mumkin.</p>\n<p>Siz o‘z mijozlaringiz bilan muloqotni avtomatlashtirishda 24/7 rejimda ishlovchi jonli audio va video yordamchilarni integratsiya qilish orqali xizmat ko‘rsatish sifatini yangi bosqichga ko‘tarishingiz mumkin.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-02",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "role": "Axborot texnologiyalari va tahlil bo‘limi",
+      "avatar": "assets/author_ainoma.png"
+    }
+  },
   "ozbekiston-suniy-intellekt-startaplari-xalqaro-bozor-grantlar-2026": {
     "id": "ozbekiston-suniy-intellekt-startaplari-xalqaro-bozor-grantlar-2026",
     "slug": "ozbekiston-suniy-intellekt-startaplari-xalqaro-bozor-grantlar-2026",
