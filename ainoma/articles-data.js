@@ -1,4 +1,133 @@
 window.AINOMA_ARTICLES = {
+  "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026": {
+    "id": "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026",
+    "slug": "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026",
+    "title": "Apple, OpenAI va TikTok 9 oyda O‘zbekistonda 232 mlrd so‘mdan ortiq soliq to‘ladi",
+    "kicker": "O‘ZBEKISTON · RAQAMLI IQTISODIYOT",
+    "category": "O‘zbekiston IT & AI",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-03",
+    "source_date": "2026-11-03",
+    "source_published_date": "2026-11-03",
+    "ainoma_published_date": "2026-11-03",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "O‘zbekistonda elektron xizmat ko‘rsatuvchi xorijiy texnologiya kompaniyalari to‘lagan soliqlar hajmi 1,5 barobarga oshdi.",
+    "img": "assets/ai_datacenter_helix.jpg",
+    "imgAlt": "OpenAI va Apple O'zbekistonda soliq to'lovlari",
+    "qisqacha": [
+      "2026-yilning 9 oyida xorijiy internet kompaniyalari O‘zbekiston byudjetiga 232,7 mlrd so‘m QQS to‘ladi.",
+      "OpenAI ChatGPT obunalarining ommalashuvi hisobiga soliq to‘lovlari hajmi eng tez o‘sayotgan texnologik brendga aylandi.",
+      "O‘zbekistonda rasmiy soliq to‘lovchi xorijiy elektron kompaniyalar soni 60 tadan oshdi."
+    ],
+    "primary_source": {
+      "name": "Gazeta.uz IT",
+      "title": "Apple, OpenAI va TikTok 9 oyda O‘zbekistonda 232 mlrd so‘mdan ortiq soliq to‘ladi",
+      "url": "https://www.gazeta.uz/oz/2026/11/03/google-tax/",
+      "date": "03.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Soliq qo‘mitasi",
+        "title": "Xorijiy elektron xizmatlar ko‘rsatuvchi kompaniyalar soliq hisoboti",
+        "url": "https://digital.uz/news/view/ai-supercomputer-infrastructure-2026/"
+      }
+    ],
+    "body": "<p>O‘zbekiston Respublikasi Soliq qo‘mitasi ma’lumotlariga ko‘ra, 2026-yilning yanvar-sentyabr oylarida mamlakatda elektron xizmatlar ko‘rsatuvchi xorijiy kompaniyalar tomonidan 232,7 milliard so‘mdan ortiq qo‘shilgan qiymat solig‘i (QQS) to‘landi. Bu ko‘rsatkich o‘tgan yilning mos davriga nisbatan 1,5 barobarga ko‘pdir.</p>\n<h2>Sun’iy intellekt xizmatlariga bo‘lgan talabning keskin o‘sishi</h2>\n<p>Hisobotda qayd etilishicha, soliq to‘lovlarining eng yuqori dinamikasi sun’iy intellekt texnologiyalariga to‘g‘ri kelmoqda. Xususan, ChatGPT ishlab chiqaruvchisi bo‘lgan OpenAI kompaniyasi O‘zbekistondagi pullik obunachilar sonining ko‘payishi hisobiga eng tez o‘sayotgan soliq to‘lovchi kompaniyalardan biriga aylandi.</p>\n<p>Shuningdek, eng yirik soliq to‘lovchilar safida an’anaviy yetakchilar bo‘lgan Meta, Google, Apple, Booking.com hamda TikTok kompaniyalari joy olgan. Ro‘yxatga olingan xorijiy internet kompaniyalari soni esa 60 tadan oshdi.</p>\n<h2>Mahalliy bozor va tadbirkorlar uchun amaliy xulosa</h2>\n<p>Raqamli xizmatlar solig‘i bo‘yicha tushumlarning ortishi O‘zbekistonda xususiy biznes, dasturchilar va mutaxassislarning global sun’iy intellekt dasturlariga (ChatGPT Plus, Team obunalari, API kalitlari) faol sarmoya kiritayotganini ko‘rsatadi.</p>\n<p>Siz o‘z biznesingizda xorijiy dasturiy ta’minot va sun’iy intellekt vositalaridan foydalanayotgan bo‘lsangiz, rasmiy shartnomalar va soliq imtiyozlari asosida xarajatlarni qonuniy rasmiylashtirish imkoniyatlaridan to‘liq foydalanishingiz mumkin.</p>",
+    "contentHtml": "<p>O‘zbekiston Respublikasi Soliq qo‘mitasi ma’lumotlariga ko‘ra, 2026-yilning yanvar-sentyabr oylarida mamlakatda elektron xizmatlar ko‘rsatuvchi xorijiy kompaniyalar tomonidan 232,7 milliard so‘mdan ortiq qo‘shilgan qiymat solig‘i (QQS) to‘landi. Bu ko‘rsatkich o‘tgan yilning mos davriga nisbatan 1,5 barobarga ko‘pdir.</p>\n<h2>Sun’iy intellekt xizmatlariga bo‘lgan talabning keskin o‘sishi</h2>\n<p>Hisobotda qayd etilishicha, soliq to‘lovlarining eng yuqori dinamikasi sun’iy intellekt texnologiyalariga to‘g‘ri kelmoqda. Xususan, ChatGPT ishlab chiqaruvchisi bo‘lgan OpenAI kompaniyasi O‘zbekistondagi pullik obunachilar sonining ko‘payishi hisobiga eng tez o‘sayotgan soliq to‘lovchi kompaniyalardan biriga aylandi.</p>\n<p>Shuningdek, eng yirik soliq to‘lovchilar safida an’anaviy yetakchilar bo‘lgan Meta, Google, Apple, Booking.com hamda TikTok kompaniyalari joy olgan. Ro‘yxatga olingan xorijiy internet kompaniyalari soni esa 60 tadan oshdi.</p>\n<h2>Mahalliy bozor va tadbirkorlar uchun amaliy xulosa</h2>\n<p>Raqamli xizmatlar solig‘i bo‘yicha tushumlarning ortishi O‘zbekistonda xususiy biznes, dasturchilar va mutaxassislarning global sun’iy intellekt dasturlariga (ChatGPT Plus, Team obunalari, API kalitlari) faol sarmoya kiritayotganini ko‘rsatadi.</p>\n<p>Siz o‘z biznesingizda xorijiy dasturiy ta’minot va sun’iy intellekt vositalaridan foydalanayotgan bo‘lsangiz, rasmiy shartnomalar va soliq imtiyozlari asosida xarajatlarni qonuniy rasmiylashtirish imkoniyatlaridan to‘liq foydalanishingiz mumkin.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-03",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "role": "Axborot texnologiyalari va tahlil bo‘limi",
+      "avatar": "assets/author_ainoma.png"
+    }
+  },
+  "anthropic-claude-ai-video-game-clones-ip-himoyasi-2026": {
+    "id": "anthropic-claude-ai-video-game-clones-ip-himoyasi-2026",
+    "slug": "anthropic-claude-ai-video-game-clones-ip-himoyasi-2026",
+    "title": "Anthropic Claude orqali ruxsatsiz video o‘yinlar klonlanishiga qarshi cheklovlar kiritdi",
+    "kicker": "INTELLEKTUAL MULK · AI REGULATSIYA",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-03",
+    "source_date": "2026-11-03",
+    "source_published_date": "2026-11-03",
+    "ainoma_published_date": "2026-11-03",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Anthropic tijoriy o‘yinlarni sun’iy intellekt bilan to‘liq ko‘chirib olish holatlari ko‘paygani sabab intellektual mulk himoyasi filtrlarini faollashtirdi.",
+    "img": "assets/anthropic_unintended_actions_2026.jpg",
+    "imgAlt": "Anthropic Claude intellektual mulk cheklovlari",
+    "qisqacha": [
+      "Dasturchilar Claude Code orqali mashhur tijoriy o‘yinlarni bir necha soatda to‘liq klonlay boshlagach, Anthropic yangi filtrlar o‘rnatdi.",
+      "Kompaniyaning yangi qoidalariga binoan mavjud o‘yinlarni 1:1 ko‘chirishga qaratilgan promptlar avtomatik to‘xtatiladi.",
+      "Anthropic muhandislarni tayyor o‘yinlarni nusxalash o‘rniga yangi va original dasturiy arxitekturalarni ishlab chiqishga chaqirmoqda."
+    ],
+    "primary_source": {
+      "name": "The Verge AI",
+      "title": "Anthropic clamps down on Claude AI video game clones",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "date": "03.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Anthropic Trust & Safety",
+        "title": "Acceptable Use Policy updates on Intellectual Property",
+        "url": "https://www.anthropic.com/news/s1-sec"
+      }
+    ],
+    "body": "<p>Anthropic kompaniyasi o‘zining Claude sun’iy intellekt modellari (xususan, Claude Code va Claude 3.5 Sonnet) orqali mashhur tijoriy video o‘yinlarning to‘liq nusxalari (klonlari) ishlab chiqilishiga qarshi yangi xavfsizlik va intellektual mulk himoyasi filtrlarini kuchaytirdi.</p>\n<h2>Avtonom kod generatsiyasi va mualliflik huquqi to‘qnashuvi</h2>\n<p>So‘nggi oylarda dasturchilar Claude modellariga o‘yin mexanikasi skrinshotlari va qoidalarini taqdim etib, Nintendo, Valve va mustaqil studiyalarning mashhur o‘yinlarini bir necha soat ichida qayta yozdirish amaliyotini ommalashtirgan edi. Tizim nafaqat o‘yin mantig‘ini, balki original grafik elementlar va interfeys tuzilishini ham deyarli bir xil nusxalab bergan.</p>\n<p>Bunday ommaviy klonlash yirik o‘yin kompaniyalari tomonidan mualliflik huquqi buzilishi bo‘yicha e’tirozlarga sabab bo‘ldi. Bunga javoban Anthropic o‘zining foydalanish qoidalariga (Acceptable Use Policy) o‘zgartirish kiritib, mavjud tijoriy o‘yinlarni ruxsatsiz to‘g‘ridan-to‘g‘ri ko‘chirishga qaratilgan promptlarni avtomatik bloklashni boshladi.</p>\n<h2>Dasturchilar va AI muhandislari uchun yangi talablar</h2>\n<p>Kompaniyaning ta’kidlashicha, yangi cheklovlar dasturchilarning ijodiy erkinligini cheklamaydi, balki ularni original g‘oyalar va mustaqil mexanikalarni qurishga undaydi. Claude endi mavjud o‘yinni 1:1 formatda ko‘chirib berishdan bosh tortadi, biroq yangi o‘yin arxitekturasini loyihalashda texnik maslahatchi sifatida yordam berishda davom etadi.</p>\n<p>Siz sun’iy intellekt agentlaridan dasturiy ta’minot yoki o‘yin loyihalarida foydalanayotgan bo‘lsangiz, xalqaro platformalar intellektual mulk himoyasini kuchaytirayotganini inobatga olib, boshidanoq o‘ziga xos original arxitektura qurishingiz tavsiya etiladi.</p>",
+    "contentHtml": "<p>Anthropic kompaniyasi o‘zining Claude sun’iy intellekt modellari (xususan, Claude Code va Claude 3.5 Sonnet) orqali mashhur tijoriy video o‘yinlarning to‘liq nusxalari (klonlari) ishlab chiqilishiga qarshi yangi xavfsizlik va intellektual mulk himoyasi filtrlarini kuchaytirdi.</p>\n<h2>Avtonom kod generatsiyasi va mualliflik huquqi to‘qnashuvi</h2>\n<p>So‘nggi oylarda dasturchilar Claude modellariga o‘yin mexanikasi skrinshotlari va qoidalarini taqdim etib, Nintendo, Valve va mustaqil studiyalarning mashhur o‘yinlarini bir necha soat ichida qayta yozdirish amaliyotini ommalashtirgan edi. Tizim nafaqat o‘yin mantig‘ini, balki original grafik elementlar va interfeys tuzilishini ham deyarli bir xil nusxalab bergan.</p>\n<p>Bunday ommaviy klonlash yirik o‘yin kompaniyalari tomonidan mualliflik huquqi buzilishi bo‘yicha e’tirozlarga sabab bo‘ldi. Bunga javoban Anthropic o‘zining foydalanish qoidalariga (Acceptable Use Policy) o‘zgartirish kiritib, mavjud tijoriy o‘yinlarni ruxsatsiz to‘g‘ridan-to‘g‘ri ko‘chirishga qaratilgan promptlarni avtomatik bloklashni boshladi.</p>\n<h2>Dasturchilar va AI muhandislari uchun yangi talablar</h2>\n<p>Kompaniyaning ta’kidlashicha, yangi cheklovlar dasturchilarning ijodiy erkinligini cheklamaydi, balki ularni original g‘oyalar va mustaqil mexanikalarni qurishga undaydi. Claude endi mavjud o‘yinni 1:1 formatda ko‘chirib berishdan bosh tortadi, biroq yangi o‘yin arxitekturasini loyihalashda texnik maslahatchi sifatida yordam berishda davom etadi.</p>\n<p>Siz sun’iy intellekt agentlaridan dasturiy ta’minot yoki o‘yin loyihalarida foydalanayotgan bo‘lsangiz, xalqaro platformalar intellektual mulk himoyasini kuchaytirayotganini inobatga olib, boshidanoq o‘ziga xos original arxitektura qurishingiz tavsiya etiladi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-03",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "role": "Axborot texnologiyalari va tahlil bo‘limi",
+      "avatar": "assets/author_ainoma.png"
+    }
+  },
+  "ai-video-modellari-higgsfield-google-veo-kling-solishtirish-2026": {
+    "id": "ai-video-modellari-higgsfield-google-veo-kling-solishtirish-2026",
+    "slug": "ai-video-modellari-higgsfield-google-veo-kling-solishtirish-2026",
+    "title": "AI video modellari solishtiruvi: Higgsfield, Google Veo, Kling AI va video ortidagi LLM arxitekturasi",
+    "kicker": "AMALIY QO‘LLANMA · VIDEO GENERATSIYA",
+    "category": "Qo'llanmalar",
+    "audience": "Kontent ijodkorlari va marketologlar",
+    "event_date": "2026-11-03",
+    "source_date": "2026-11-03",
+    "source_published_date": "2026-11-03",
+    "ainoma_published_date": "2026-11-03",
+    "read_time": "6 daqiqalik mutolaa",
+    "readTime": "6 daqiqalik mutolaa",
+    "deck": "Higgsfield, Google Veo, Kling AI vositalarining kuchli tomonlari hamda video neyrotarmoqlari ortidagi Diffusion Transformers (DiT) va LLM arxitekturasi tahlili.",
+    "img": "assets/ai_image_generation_leak.jpg",
+    "imgAlt": "AI video modellari solishtiruvi",
+    "qisqacha": [
+      "Zamonaviy AI video vositalari matnli promptlarni LLM orqali tahlil qilib, Diffusion Transformers (DiT) texnologiyasi bilan harakatga keltiradi.",
+      "Higgsfield personaj harakatlari va dinamik kamera rakurslarida, Kling AI uzoq uzluksiz sahnalarda, Google Veo esa kinematik fotorealizmda ustunlik qiladi.",
+      "Professional natijaga erishish uchun butun rolikni bittada generatsiya qilmasdan, kadrlar bo‘yicha alohida harakatlantirib montaj qilish tavsiya etiladi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Metodologiya",
+      "title": "AI video modellari solishtiruvi va neyrotarmoq arxitekturasi",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "date": "03.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "body": "<p><strong>Qisqa javob:</strong> Zamonaviy AI video generatorlari endi oddiy piksellarni taxmin qiluvchi vositalar emas — ular matnni chuqur tahlil qiluvchi yirik til modellari (LLM) hamda fazoviy-vaqtinchalik qonuniyatlarni hisoblovchi Diffusion Transformer (DiT) neyrotarmoqlari asosida ishlaydi. To‘g‘ri modelni tanlash reklama, SMM va kinematik loyihalarda vaqt va xarajatni 10 barobargacha tejaydi.</p>\n<h2>1. Asosiy AI video platformalari solishtiruvi</h2>\n<p>Bugungi kunda jahon bozorida yetakchilik qilayotgan video generatsiya tizimlari bir-biridan o‘zining ixtisoslashuvi va texnik imkoniyatlari bilan farqlanadi:</p>\n<ul>\n<li><strong><a href=\"https://higgsfield.ai?fpr=bek-04cb33\">Higgsfield</a>:</strong> Mobil kontent, SMM va kinematik personajlar harakatini boshqarish bo‘yicha yetakchi platformalardan biri. <a href=\"https://higgsfield.ai?fpr=bek-04cb33\">Higgsfield</a> orqali kamera harakatlarini (pan, zoom, orbit) aniq nazorat qilish, personajlarning yuz ifodasini buzmasdan saqlash va dinamik harakatlarni (yugurish, sakrash) yuqori sifatda tayyorlash mumkin.</li>\n<li><strong>Google Veo (Flow AI / VideoFX):</strong> Google DeepMind tomonidan ishlab chiqilgan ushbu tizim 1080p va 4K formatdagi yuqori aniqlikdagi tasvirlarni, kinematik yorug‘lik effektlarini va tabiiy fizika qonuniyatlarini eng chuqur tushunadigan model hisoblanadi.</li>\n<li><strong>Kling AI (Kuaishou):</strong> Murakkab 3D harakatlar va fizik to‘qnashuvlarni yuqori barqarorlikda modellashtiradi. Uning asosiy kuchi — 2 daqiqagacha bo‘lgan uzoq kadrlarda obyektlarning yaxlitligini buzmasdan ushlab turishidir.</li>\n<li><strong>Runway Gen-3 Alpha:</strong> Kinematik rejissura vositalari (Motion Brush, Camera Control) orqali kadrning alohida hududlaridagi harakat yo‘nalishini mustaqil belgilash imkonini beradi.</li>\n</ul>\n<h2>2. Video ortidagi arxitektura: LLM va DiT qanday ishlaydi?</h2>\n<p>Video ishlab chiqarish modellari qanday qilib oddiy matnli promptdan jonli harakatlanuvchi videoni quradi? Bu jarayon 4 ta asosiy bosqichdan iborat:</p>\n<ul>\n<li><strong>1. Matnni chuqur tahlil qilish (LLM / Multimodal Text Encoders):</strong> Siz kiritgan murakkab so‘rov (masalan: <em>«Yomg‘ir ostida neon chiroqlari aks etgan tungi Toshkent ko‘chasi, sekin kamera harakati»</em>) T5 yoki Gemini asosidagi multimodal kodlovchilar orqali tahlil qilinadi. Tizim obyektlar, sifatlar, harakat fe’llari va yorug‘lik tushunchalarini matematik vektorlarga ajratadi.</li>\n<li><strong>2. Diffusion Transformers (DiT) texnologiyasi:</strong> Avvalgi klassik U-Net arxitekturalari o‘rnini bosgan DiT tizimi videoni matn tokenlari kabi kichik fazoviy-vaqtinchalik kubiklar (spacetime patches) shaklida qayta ishlaydi. Bu modelga keng ko‘lamli ma’lumotlarni o‘zlashtirish va kadrlar orasidagi silliq o‘tishni ta’minlash imkonini beradi.</li>\n<li><strong>3. Fazoviy va vaqtinchalik diqqat (Spatial-Temporal Attention):</strong> Neyrotarmoq bitta kadr ichidagi obyektlar tuzilishini (fazoviy diqqat) hamda soniyalar davomida ularning mantiqiy siljishini (vaqtinchalik diqqat) bir vaqtda tekshiradi. Shu sababli yangi modellarda qo‘llar yoki obyektlarning kutilmaganda erib ketish holatlari keskin kamaygan.</li>\n<li><strong>4. Yashirin fazoda (Latent Space) qayta ishlash:</strong> Katta hajmdagi videolarni to‘g‘ridan-to‘g‘ri piksellarda hisoblash juda og‘ir hisoblash quvvatini talab qiladi. VAE (Variational Autoencoder) videoni siqilgan yashirin makonda generatsiya qilib, yakuniy bosqichda to‘liq aniqlikdagi videoga aylantiradi.</li>\n</ul>\n<h2>3. Amaliy tanlov: Qaysi vazifaga qaysi vosita to‘g‘ri keladi?</h2>\n<ul>\n<li><strong>Reklama roliklari, Reels va mahsulot namoyishi uchun:</strong> Personajlarning aniq harakatlanishi va mobil formatdagi qulaylik uchun <a href=\"https://higgsfield.ai?fpr=bek-04cb33\">Higgsfield</a> eng optimal tanlov hisoblanadi.</li>\n<li><strong>Uzoq muddatli dinamik sahnalar va 3D harakatlar uchun:</strong> Kling AI tizimidan foydalanish tavsiya etiladi.</li>\n<li><strong>Haqiqiy fotorealistik kinematika va yorug‘lik uchun:</strong> Google Veo va Runway Gen-3 eng yuqori natijani beradi.</li>\n</ul>\n<h2>Amaliy tavsiya va oltin qoida</h2>\n<p>AI video bilan ishlashda har doim bitta yaxlit prompt bilan butun rolikni olishga urinmang. Professional video ishlab chiquvchilar avval asosiy kadrni (Image-to-Video) rasm generatorida sifatli tayyorlab oladilar, so‘ngra video modellari yordamida unga aniq kamera va dinamik harakat beradilar.</p>\n<hr/>\n<h3>FAQ: Ko‘p beriladigan savollar</h3>\n<p><strong>Nega AI videolarida ba’zan obyektlar o‘zgarib ketadi?</strong> Bu vaqtinchalik diqqat mexanizmining kadrlararo nomuvofiqligi tufayli yuz beradi — buni kamaytirish uchun qisqaroq (3–5 soniyalik) qismlar generatsiya qilib, keyin montaj qilish kerak.</p>\n<p><strong>Video generatsiya qilish uchun qanday kompyuter kerak?</strong> Yuqoridagi barcha platformalar to‘liq bulutli serverlarda ishlaydi, shuning uchun oddiy noutbuk yoki smartfon orqali ham ishlashingiz mumkin.</p>",
+    "contentHtml": "<p><strong>Qisqa javob:</strong> Zamonaviy AI video generatorlari endi oddiy piksellarni taxmin qiluvchi vositalar emas — ular matnni chuqur tahlil qiluvchi yirik til modellari (LLM) hamda fazoviy-vaqtinchalik qonuniyatlarni hisoblovchi Diffusion Transformer (DiT) neyrotarmoqlari asosida ishlaydi. To‘g‘ri modelni tanlash reklama, SMM va kinematik loyihalarda vaqt va xarajatni 10 barobargacha tejaydi.</p>\n<h2>1. Asosiy AI video platformalari solishtiruvi</h2>\n<p>Bugungi kunda jahon bozorida yetakchilik qilayotgan video generatsiya tizimlari bir-biridan o‘zining ixtisoslashuvi va texnik imkoniyatlari bilan farqlanadi:</p>\n<ul>\n<li><strong><a href=\"https://higgsfield.ai?fpr=bek-04cb33\">Higgsfield</a>:</strong> Mobil kontent, SMM va kinematik personajlar harakatini boshqarish bo‘yicha yetakchi platformalardan biri. <a href=\"https://higgsfield.ai?fpr=bek-04cb33\">Higgsfield</a> orqali kamera harakatlarini (pan, zoom, orbit) aniq nazorat qilish, personajlarning yuz ifodasini buzmasdan saqlash va dinamik harakatlarni (yugurish, sakrash) yuqori sifatda tayyorlash mumkin.</li>\n<li><strong>Google Veo (Flow AI / VideoFX):</strong> Google DeepMind tomonidan ishlab chiqilgan ushbu tizim 1080p va 4K formatdagi yuqori aniqlikdagi tasvirlarni, kinematik yorug‘lik effektlarini va tabiiy fizika qonuniyatlarini eng chuqur tushunadigan model hisoblanadi.</li>\n<li><strong>Kling AI (Kuaishou):</strong> Murakkab 3D harakatlar va fizik to‘qnashuvlarni yuqori barqarorlikda modellashtiradi. Uning asosiy kuchi — 2 daqiqagacha bo‘lgan uzoq kadrlarda obyektlarning yaxlitligini buzmasdan ushlab turishidir.</li>\n<li><strong>Runway Gen-3 Alpha:</strong> Kinematik rejissura vositalari (Motion Brush, Camera Control) orqali kadrning alohida hududlaridagi harakat yo‘nalishini mustaqil belgilash imkonini beradi.</li>\n</ul>\n<h2>2. Video ortidagi arxitektura: LLM va DiT qanday ishlaydi?</h2>\n<p>Video ishlab chiqarish modellari qanday qilib oddiy matnli promptdan jonli harakatlanuvchi videoni quradi? Bu jarayon 4 ta asosiy bosqichdan iborat:</p>\n<ul>\n<li><strong>1. Matnni chuqur tahlil qilish (LLM / Multimodal Text Encoders):</strong> Siz kiritgan murakkab so‘rov (masalan: <em>«Yomg‘ir ostida neon chiroqlari aks etgan tungi Toshkent ko‘chasi, sekin kamera harakati»</em>) T5 yoki Gemini asosidagi multimodal kodlovchilar orqali tahlil qilinadi. Tizim obyektlar, sifatlar, harakat fe’llari va yorug‘lik tushunchalarini matematik vektorlarga ajratadi.</li>\n<li><strong>2. Diffusion Transformers (DiT) texnologiyasi:</strong> Avvalgi klassik U-Net arxitekturalari o‘rnini bosgan DiT tizimi videoni matn tokenlari kabi kichik fazoviy-vaqtinchalik kubiklar (spacetime patches) shaklida qayta ishlaydi. Bu modelga keng ko‘lamli ma’lumotlarni o‘zlashtirish va kadrlar orasidagi silliq o‘tishni ta’minlash imkonini beradi.</li>\n<li><strong>3. Fazoviy va vaqtinchalik diqqat (Spatial-Temporal Attention):</strong> Neyrotarmoq bitta kadr ichidagi obyektlar tuzilishini (fazoviy diqqat) hamda soniyalar davomida ularning mantiqiy siljishini (vaqtinchalik diqqat) bir vaqtda tekshiradi. Shu sababli yangi modellarda qo‘llar yoki obyektlarning kutilmaganda erib ketish holatlari keskin kamaygan.</li>\n<li><strong>4. Yashirin fazoda (Latent Space) qayta ishlash:</strong> Katta hajmdagi videolarni to‘g‘ridan-to‘g‘ri piksellarda hisoblash juda og‘ir hisoblash quvvatini talab qiladi. VAE (Variational Autoencoder) videoni siqilgan yashirin makonda generatsiya qilib, yakuniy bosqichda to‘liq aniqlikdagi videoga aylantiradi.</li>\n</ul>\n<h2>3. Amaliy tanlov: Qaysi vazifaga qaysi vosita to‘g‘ri keladi?</h2>\n<ul>\n<li><strong>Reklama roliklari, Reels va mahsulot namoyishi uchun:</strong> Personajlarning aniq harakatlanishi va mobil formatdagi qulaylik uchun <a href=\"https://higgsfield.ai?fpr=bek-04cb33\">Higgsfield</a> eng optimal tanlov hisoblanadi.</li>\n<li><strong>Uzoq muddatli dinamik sahnalar va 3D harakatlar uchun:</strong> Kling AI tizimidan foydalanish tavsiya etiladi.</li>\n<li><strong>Haqiqiy fotorealistik kinematika va yorug‘lik uchun:</strong> Google Veo va Runway Gen-3 eng yuqori natijani beradi.</li>\n</ul>\n<h2>Amaliy tavsiya va oltin qoida</h2>\n<p>AI video bilan ishlashda har doim bitta yaxlit prompt bilan butun rolikni olishga urinmang. Professional video ishlab chiquvchilar avval asosiy kadrni (Image-to-Video) rasm generatorida sifatli tayyorlab oladilar, so‘ngra video modellari yordamida unga aniq kamera va dinamik harakat beradilar.</p>\n<hr/>\n<h3>FAQ: Ko‘p beriladigan savollar</h3>\n<p><strong>Nega AI videolarida ba’zan obyektlar o‘zgarib ketadi?</strong> Bu vaqtinchalik diqqat mexanizmining kadrlararo nomuvofiqligi tufayli yuz beradi — buni kamaytirish uchun qisqaroq (3–5 soniyalik) qismlar generatsiya qilib, keyin montaj qilish kerak.</p>\n<p><strong>Video generatsiya qilish uchun qanday kompyuter kerak?</strong> Yuqoridagi barcha platformalar to‘liq bulutli serverlarda ishlaydi, shuning uchun oddiy noutbuk yoki smartfon orqali ham ishlashingiz mumkin.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-03",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "role": "Amaliy ta’lim va metodologiya guruhi",
+      "avatar": "assets/author_ainoma.png"
+    }
+  },
   "sietl-va-toshkent-suniy-intellekt-hamkorlik-2026": {
     "id": "sietl-va-toshkent-suniy-intellekt-hamkorlik-2026",
     "slug": "sietl-va-toshkent-suniy-intellekt-hamkorlik-2026",
