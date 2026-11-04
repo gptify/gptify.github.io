@@ -105,6 +105,45 @@ window.AINOMA_ARTICLES = {
       "avatar": "assets/brand_sheet_white.png"
     }
   },
+  "oqituvchilar-uchun-ai": {
+    "id": "oqituvchilar-uchun-ai",
+    "slug": "oqituvchilar-uchun-ai",
+    "title": "O'qituvchilar uchun AI: Dars rejasi, testlar va vaqtni tejash",
+    "kicker": "KASB BO'YICHA · TA'LIM",
+    "meta_title": "O'qituvchilar uchun AI: Dars rejasi, testlar va vaqtni tejash — AiNoma Qo‘llanma",
+    "meta_description": "Dars rejasi tuzish, testlar tayyorlash va uyga vazifalarni tekshirishga ketadigan vaqtni AI yordamida qanday qisqartirish mumkin.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-04",
+    "source_date": "2026-11-04",
+    "source_published_date": "2026-11-04",
+    "ainoma_published_date": "2026-11-04",
+    "read_time": "5 daqiqalik mutolaa",
+    "readTime": "5 daqiqalik mutolaa",
+    "deck": "Dars rejasi tuzish, testlar tayyorlash va uyga vazifalarni tekshirishga ketadigan vaqtni AI yordamida qanday qisqartirish mumkin.",
+    "img": "assets/presentation_ai.jpg",
+    "imgAlt": "O'qituvchilar uchun AI: Dars rejasi, testlar va vaqtni tejash",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "O'qituvchilar uchun AI: Dars rejasi, testlar va vaqtni tejash",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>KASB BO'YICHA · TA'LIM</p>\n<p><b>Qisqa javob:</b> AI o'qituvchining ijodiy va tayyorgarlik ishlarini (dars rejasi, test savollari, misollar) tezlashtiradi — ammo o'quvchi bilan haqiqiy muloqot va baholashning yakuniy qarori har doim o'qituvchida qoladi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Qayerda eng ko'p vaqt tejaydi</h2>\n<p><b>1. Dars rejasi tuzish.</b> Mavzu, sinf darajasi va davomiylikni aytib, boshlang'ich dars rejasi taxminini oling, keyin o'zingizning tajribangiz bilan moslashtiring.</p>\n<p><i>Misol so'rov:</i> \"7-sinf uchun 'Fotosintez' mavzusida 45 daqiqalik dars rejasi tuzib ber: kirish, asosiy qism, mustahkamlash bosqichlari bilan.\"</p>\n<p><b>2. Test va savollar tayyorlash.</b> Mavzu bo'yicha turli qiyinlik darajasidagi savollarni tezda generatsiya qilish, keyin o'zingiz tanlab, tahrirlab foydalanish.</p>\n<p><b>3. Murakkab mavzuni sodda tushuntirish.</b> O'quvchilar tushunmagan mavzuni turli yosh darajasi uchun qanday sodda tushuntirish mumkinligi bo'yicha g'oya olish.</p>\n<p><b>4. Ota-onalar bilan muloqot.</b> Xabarlar, xatlar yoki umumiy e'lonlarni tezroq, aniqroq yozish.</p>\n<h2 class=\"article-section-title\">Qayerda ehtiyot bo'lish kerak</h2>\n<p>⚠️ <b>Diqqat:</b> AI tarixiy sanalar, ilmiy raqamlar yoki formulalar kabi faktlarni ba'zan noto'g'ri berishi mumkin — o'quvchilarga taqdim etishdan oldin, darslikda yoki ishonchli manbada tekshirib chiqing.</p>\n<p>O'quvchilarning shaxsiy ma'lumotlari (ism-familiya, baholar, sog'liq holati)ni ochiq AI xizmatlariga kiritishdan saqlaning — bu maxfiylik talablariga zid bo'lishi mumkin.</p>\n<p>👤 <b>AI va o'quvchilarning o'zi AI ishlatishi</b></p>\n<p>Bugungi kunda o'quvchilar ham uyga vazifalarni AI yordamida bajarishi keng tarqalgan holat. Buni to'liq taqiqlash o'rniga, qachon va qanday ishlatish mumkinligi haqida aniq qoidalar belgilash (masalan, \"g'oya olish uchun mumkin, lekin yakuniy matnni o'zingiz yozing\") ko'proq amaliy natija beradi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI — sizning tayyorgarlik vaqtingizni qisqartiruvchi yordamchi, ammo sinfda haqiqiy muloqot, o'quvchini tushunish va moslashuvchan baholash — bu, faqat inson o'qituvchi qila oladigan ish.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Keyingi darsingiz uchun AI'dan boshlang'ich reja yoki 5 ta test savoli so'rang, so'ngra o'zingizning tajribangiz asosida tahrirlab, sinfda qo'llang.</p>\n<p>💡 <b>Keyingi qadam:</b> So'rovlaringizni yanada aniqroq va samaraliroq yozish uchun <a href=\"/qollanma-prompt-yozish.html\">Prompt yozish san'ati</a> qo'llanmasini o'qib chiqing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>O'quvchilarga AI ishlatishni ruxsat berish kerakmi?</b> Bu — ko'p ta'lim muassasalarida hali munozarali masala; aniq qoidalar belgilab, qachon foydalanish mumkin va qachon mumkin emasligini o'quvchilarga tushuntirish tavsiya etiladi.</p>\n<p><b>AI tayyorlagan test savollarini o'zgartirmasdan ishlatish mumkinmi?</b> Tavsiya etilmaydi — har doim darslik va o'quv dasturi bilan solishtirib, kerak bo'lsa tahrirlab foydalaning.</p>\n<p><b>Qaysi AI vositasi o'qituvchilar uchun eng mos?</b> Aniq bir vosita yo'q — ChatGPT va Claude'ning bepul versiyalari ko'pchilik kundalik vazifalar uchun yetarli.</p>",
+    "contentHtml": "<p>KASB BO'YICHA · TA'LIM</p>\n<p><b>Qisqa javob:</b> AI o'qituvchining ijodiy va tayyorgarlik ishlarini (dars rejasi, test savollari, misollar) tezlashtiradi — ammo o'quvchi bilan haqiqiy muloqot va baholashning yakuniy qarori har doim o'qituvchida qoladi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Qayerda eng ko'p vaqt tejaydi</h2>\n<p><b>1. Dars rejasi tuzish.</b> Mavzu, sinf darajasi va davomiylikni aytib, boshlang'ich dars rejasi taxminini oling, keyin o'zingizning tajribangiz bilan moslashtiring.</p>\n<p><i>Misol so'rov:</i> \"7-sinf uchun 'Fotosintez' mavzusida 45 daqiqalik dars rejasi tuzib ber: kirish, asosiy qism, mustahkamlash bosqichlari bilan.\"</p>\n<p><b>2. Test va savollar tayyorlash.</b> Mavzu bo'yicha turli qiyinlik darajasidagi savollarni tezda generatsiya qilish, keyin o'zingiz tanlab, tahrirlab foydalanish.</p>\n<p><b>3. Murakkab mavzuni sodda tushuntirish.</b> O'quvchilar tushunmagan mavzuni turli yosh darajasi uchun qanday sodda tushuntirish mumkinligi bo'yicha g'oya olish.</p>\n<p><b>4. Ota-onalar bilan muloqot.</b> Xabarlar, xatlar yoki umumiy e'lonlarni tezroq, aniqroq yozish.</p>\n<h2 class=\"article-section-title\">Qayerda ehtiyot bo'lish kerak</h2>\n<p>⚠️ <b>Diqqat:</b> AI tarixiy sanalar, ilmiy raqamlar yoki formulalar kabi faktlarni ba'zan noto'g'ri berishi mumkin — o'quvchilarga taqdim etishdan oldin, darslikda yoki ishonchli manbada tekshirib chiqing.</p>\n<p>O'quvchilarning shaxsiy ma'lumotlari (ism-familiya, baholar, sog'liq holati)ni ochiq AI xizmatlariga kiritishdan saqlaning — bu maxfiylik talablariga zid bo'lishi mumkin.</p>\n<p>👤 <b>AI va o'quvchilarning o'zi AI ishlatishi</b></p>\n<p>Bugungi kunda o'quvchilar ham uyga vazifalarni AI yordamida bajarishi keng tarqalgan holat. Buni to'liq taqiqlash o'rniga, qachon va qanday ishlatish mumkinligi haqida aniq qoidalar belgilash (masalan, \"g'oya olish uchun mumkin, lekin yakuniy matnni o'zingiz yozing\") ko'proq amaliy natija beradi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI — sizning tayyorgarlik vaqtingizni qisqartiruvchi yordamchi, ammo sinfda haqiqiy muloqot, o'quvchini tushunish va moslashuvchan baholash — bu, faqat inson o'qituvchi qila oladigan ish.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Keyingi darsingiz uchun AI'dan boshlang'ich reja yoki 5 ta test savoli so'rang, so'ngra o'zingizning tajribangiz asosida tahrirlab, sinfda qo'llang.</p>\n<p>💡 <b>Keyingi qadam:</b> So'rovlaringizni yanada aniqroq va samaraliroq yozish uchun <a href=\"/qollanma-prompt-yozish.html\">Prompt yozish san'ati</a> qo'llanmasini o'qib chiqing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>O'quvchilarga AI ishlatishni ruxsat berish kerakmi?</b> Bu — ko'p ta'lim muassasalarida hali munozarali masala; aniq qoidalar belgilab, qachon foydalanish mumkin va qachon mumkin emasligini o'quvchilarga tushuntirish tavsiya etiladi.</p>\n<p><b>AI tayyorlagan test savollarini o'zgartirmasdan ishlatish mumkinmi?</b> Tavsiya etilmaydi — har doim darslik va o'quv dasturi bilan solishtirib, kerak bo'lsa tahrirlab foydalaning.</p>\n<p><b>Qaysi AI vositasi o'qituvchilar uchun eng mos?</b> Aniq bir vosita yo'q — ChatGPT va Claude'ning bepul versiyalari ko'pchilik kundalik vazifalar uchun yetarli.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-04",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
   "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026": {
     "id": "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026",
     "slug": "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026",
