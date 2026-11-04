@@ -1,4 +1,110 @@
+// AiNoma Central Content Database
+// Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "kompaniyalar-suniy-intellekt-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda-2026": {
+    "id": "kompaniyalar-suniy-intellekt-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda-2026",
+    "slug": "kompaniyalar-suniy-intellekt-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda-2026",
+    "title": "«SI bumerang»: Kompaniyalar sun’iy intellekt tufayli ishdan bo‘shatilgan xodimlarni qayta ishga olmoqda",
+    "kicker": "DUNYO · BIZNES VA MEHNAT BOZORI",
+    "category": "Dunyo IT & AI",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-04",
+    "source_date": "2026-11-02",
+    "source_published_date": "2026-11-02",
+    "ainoma_published_date": "2026-11-04",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Avtomatlashtirish kutilgan sifatni bermagach, Klarna, Ford va boshqa korporatsiyalar insoniy tajriba hamda nazoratga qaytmoqda.",
+    "img": "assets/coding_workspace.jpg",
+    "imgAlt": "Kompaniyalar xodimlarni qayta ishga olmoqda",
+    "qisqacha": [
+      "Texnologiyalar kutilgan samaradorlikni bermagach, Shvetsiyaning Klarna to‘lov giganti qo‘llab-quvvatlash bo‘limiga xodimlarni qayta yollashni boshladi.",
+      "Ford avtokompaniyasi sun’iy intellekt sifat nazoratida oqsayotgani sababli 350 nafar tajribali muhandisni qaytardi yoki yuqoriroq lavozimga tayinladi.",
+      "Mehnat bozorida «SI bumerang» fenomeni kuzatilmoqda: sun’iy intellekt inson o‘rnini to‘liq bosa olmasligi va doimiy insoniy ekspertiza talab etilishi oydinlashdi."
+    ],
+    "primary_source": {
+      "name": "Associated Press",
+      "title": "Companies rehire workers after AI tools fail to deliver promised productivity gains",
+      "url": "https://daryo.uz/2026/11/02/kompaniyalar-si-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda/",
+      "date": "02.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Daryo.uz",
+        "title": "Kompaniyalar SI tufayli bo‘shatilgan xodimlarni qayta ishga olmoqda",
+        "url": "https://daryo.uz/2026/11/02/kompaniyalar-si-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda/",
+        "date": "02.11.2026"
+      },
+      {
+        "name": "Klarna & Ford bayonotlari",
+        "title": "Corporate AI integration & workforce balance reports",
+        "url": "https://daryo.uz/2026/11/02/kompaniyalar-si-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda/",
+        "date": "02.11.2026"
+      }
+    ],
+    "body": "\n<p>Katta korporatsiyalarda sun’iy intellekt vositalarini ko‘r-ko‘rona joriy etish orqali xarajatlarni qisqartirish to‘lqini jiddiy to‘siqqa duch keldi. Texnologiyalar amaliyotda kutilgan sifatni ta’minlay olmagani sababli, ilgari ommaviy qisqartirishlarni e’lon qilgan kompaniyalar o‘z mutaxassislarini qayta ishga chaqirishga majbur bo‘lmoqda. Tahlilchilar ushbu yangi tendensiyani <strong>«SI bumerang» (AI boomerang)</strong> deb atamoqda.</p>\n\n<h3>Klarna va Ford misolida: nima uchun chatbotlar yetarli bo‘lmadi?</h3>\n<p>Xodimlarni faol ravishda qaytarayotgan kompaniyalar qatorida Shvetsiyaning mashhur fintex giganti <strong>Klarna</strong> alohida e’tibor qozondi. Kompaniya bosh direktori Sebastyan Semiatkovski xarajatlarni kamaytirish maqsadida mijozlarga xizmat ko‘rsatishda sun’iy intellektga haddan tashqari qattiq tayanilganini tan oldi. Chatbotlar standart savollarga javob berishda tezkor bo‘lsa-da, murakkab moliyaviy muammolar, shikoyatlar va nozik mijozlar muloqotida insoniy empatiya hamda moslashuvchanlik yetishmasligi ma’lum bo‘ldi. Natijada Klarna qo‘llab-quvvatlash bo‘limiga tajribali xodimlarni qayta qabul qilishni boshladi.</p>\n<p>Shuningdek, jahon avtomobilsozlik peshqadami <strong>Ford</strong> ham zavodlarda sifat nazorati (quality assurance) jarayoniga kiritilgan sun’iy intellekt algoritmlari kutilgan natijani bermaganini bildirdi. Kompaniya ishlab chiqarishdagi xatolarni o‘z vaqtida aniqlash va tuzatish uchun 350 nafar tajribali muhandisni qaytadan jalb qildi hamda ularning lavozimini oshirdi.</p>\n\n<h3>«SI bumerang» biznes rahbarlariga qanday saboq bermoqda?</h3>\n<p>Korporativ boshqaruv bo‘yicha ekspertlarning ta’kidlashicha, ushbu jarayon sun’iy intellektning real imkoniyatlari haqida muhim xulosalarni beradi:</p>\n<ul>\n  <li><strong>Insoniy nazoratning zarurati:</strong> Har qanday ilg‘or model gallyutsinatsiya va noaniqliklarga moyil. Yakuniy sifat uchun mas’ul bo‘lgan inson omilisiz jarayonlarni to‘liq avtomatlashtirish biznes obro‘siga putur yetkazadi.</li>\n  <li><strong>Xodimlarning mehnat bozori pozitsiyasi:</strong> Qayta ishga olinayotgan mutaxassislar endilikda yanada yuqori maosh va kafolatlangan mehnat sharoitlarini talab qilmoqda. Kompaniyalar ularni o‘z safida saqlab qolish uchun yangi shartlarga rozi bo‘lishga majbur.</li>\n  <li><strong>Haqiqiy samaradorlik muvozanati:</strong> Muvaffaqiyatli bizneslar xodimlarni butunlay almashtirish emas, balki ularning ishini sun’iy intellekt vositalari bilan kuchaytirish (augmentation) strategiyasini tanlamoqda.</li>\n</ul>\n\n<p>Xulosa qilib aytganda, 2026-yilgi korporativ tajriba shuni ko‘rsatmoqdaki, sun’iy intellekt — inson o‘rnini bosuvchi sehrli tayoqcha emas, balki malakali mutaxassis qo‘lidagi qudratli ish qurolidir.</p>\n",
+    "contentHtml": "\n<p>Katta korporatsiyalarda sun’iy intellekt vositalarini ko‘r-ko‘rona joriy etish orqali xarajatlarni qisqartirish to‘lqini jiddiy to‘siqqa duch keldi. Texnologiyalar amaliyotda kutilgan sifatni ta’minlay olmagani sababli, ilgari ommaviy qisqartirishlarni e’lon qilgan kompaniyalar o‘z mutaxassislarini qayta ishga chaqirishga majbur bo‘lmoqda. Tahlilchilar ushbu yangi tendensiyani <strong>«SI bumerang» (AI boomerang)</strong> deb atamoqda.</p>\n\n<h3>Klarna va Ford misolida: nima uchun chatbotlar yetarli bo‘lmadi?</h3>\n<p>Xodimlarni faol ravishda qaytarayotgan kompaniyalar qatorida Shvetsiyaning mashhur fintex giganti <strong>Klarna</strong> alohida e’tibor qozondi. Kompaniya bosh direktori Sebastyan Semiatkovski xarajatlarni kamaytirish maqsadida mijozlarga xizmat ko‘rsatishda sun’iy intellektga haddan tashqari qattiq tayanilganini tan oldi. Chatbotlar standart savollarga javob berishda tezkor bo‘lsa-da, murakkab moliyaviy muammolar, shikoyatlar va nozik mijozlar muloqotida insoniy empatiya hamda moslashuvchanlik yetishmasligi ma’lum bo‘ldi. Natijada Klarna qo‘llab-quvvatlash bo‘limiga tajribali xodimlarni qayta qabul qilishni boshladi.</p>\n<p>Shuningdek, jahon avtomobilsozlik peshqadami <strong>Ford</strong> ham zavodlarda sifat nazorati (quality assurance) jarayoniga kiritilgan sun’iy intellekt algoritmlari kutilgan natijani bermaganini bildirdi. Kompaniya ishlab chiqarishdagi xatolarni o‘z vaqtida aniqlash va tuzatish uchun 350 nafar tajribali muhandisni qaytadan jalb qildi hamda ularning lavozimini oshirdi.</p>\n\n<h3>«SI bumerang» biznes rahbarlariga qanday saboq bermoqda?</h3>\n<p>Korporativ boshqaruv bo‘yicha ekspertlarning ta’kidlashicha, ushbu jarayon sun’iy intellektning real imkoniyatlari haqida muhim xulosalarni beradi:</p>\n<ul>\n  <li><strong>Insoniy nazoratning zarurati:</strong> Har qanday ilg‘or model gallyutsinatsiya va noaniqliklarga moyil. Yakuniy sifat uchun mas’ul bo‘lgan inson omilisiz jarayonlarni to‘liq avtomatlashtirish biznes obro‘siga putur yetkazadi.</li>\n  <li><strong>Xodimlarning mehnat bozori pozitsiyasi:</strong> Qayta ishga olinayotgan mutaxassislar endilikda yanada yuqori maosh va kafolatlangan mehnat sharoitlarini talab qilmoqda. Kompaniyalar ularni o‘z safida saqlab qolish uchun yangi shartlarga rozi bo‘lishga majbur.</li>\n  <li><strong>Haqiqiy samaradorlik muvozanati:</strong> Muvaffaqiyatli bizneslar xodimlarni butunlay almashtirish emas, balki ularning ishini sun’iy intellekt vositalari bilan kuchaytirish (augmentation) strategiyasini tanlamoqda.</li>\n</ul>\n\n<p>Xulosa qilib aytganda, 2026-yilgi korporativ tajriba shuni ko‘rsatmoqdaki, sun’iy intellekt — inson o‘rnini bosuvchi sehrli tayoqcha emas, balki malakali mutaxassis qo‘lidagi qudratli ish qurolidir.</p>\n",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-04",
+    "author": {
+      "name": "AiNoma Biznes Tahlil",
+      "job": "Mehnat bozori va texnologiyalar",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "openai-lifeval-amaliy-baholash-standarti-2026": {
+    "id": "openai-lifeval-amaliy-baholash-standarti-2026",
+    "slug": "openai-lifeval-amaliy-baholash-standarti-2026",
+    "title": "OpenAI «LifeVal» mezonini e’lon qildi: Modellar abstrakt testlar emas, real hayotiy vazifalar bilan baholanadi",
+    "kicker": "DUNYO · SUN’IY INTELLEKT STANDARTLARI",
+    "category": "Dunyo IT & AI",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-04",
+    "source_date": "2026-11-04",
+    "source_published_date": "2026-11-04",
+    "ainoma_published_date": "2026-11-04",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "OpenAI sun’iy intellekt modellarini baholashda nazariy benchmarklardan voz kechib, shaxsiy va kundalik muammolarni hal etish qobiliyatini o‘lchovchi yangi tizimni yo‘lga qo‘ydi.",
+    "img": "assets/chatgpt_gpt6_luna_free_2026.jpg",
+    "imgAlt": "OpenAI LifeVal yangi amaliy mezon",
+    "qisqacha": [
+      "OpenAI yangi «LifeVal» metodologiyasini taqdim etdi: u modellarning shaxsiy byudjet tuzish, ta’lim dasturlarini rejalashtirish va kundalik xizmatlar bilan ishlash samaradorligini o‘lchaydi.",
+      "An’anaviy MMLU yoki GSM8K kabi akademik testlar sun’iy intellektning real hayotda insonga qanchalik foyda keltirishini to‘liq aks ettira olmayotgani tan olindi.",
+      "Ushbu standart ChatGPT tizimini oddiy javob beruvchi chatbotdan mustaqil harakatlanuvchi shaxsiy AI agentga aylantirish yo‘lidagi asosiy sinov maydonchasi hisoblanadi."
+    ],
+    "primary_source": {
+      "name": "OpenAI Research",
+      "title": "Evaluating Everyday Utility: Introducing the LifeVal Benchmark for Autonomous Assistance",
+      "url": "https://openai.com/index/evaluating-everyday-utility/",
+      "date": "04.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "VentureBeat AI",
+        "title": "Why OpenAI is moving beyond academic benchmarks to LifeVal",
+        "url": "https://openai.com/index/evaluating-everyday-utility/",
+        "date": "04.11.2026"
+      },
+      {
+        "name": "TechCrunch Enterprise",
+        "title": "AI benchmark reality check: Measuring real-world agent actions",
+        "url": "https://openai.com/index/evaluating-everyday-utility/",
+        "date": "04.11.2026"
+      }
+    ],
+    "body": "\n<p>Sun’iy intellekt sanoatida ko‘p yillardan buyon modellarning «aqllilik» darajasi MMLU (ko‘p tarmoqli bilimlar), GSM8K (matematika) yoki HumanEval (dasturlash) kabi akademik benchmarklar orqali o‘lchab kelinar edi. Biroq OpenAI tahlilchilarining fikricha, ushbu testlar modellarning real hayotda oddiy foydalanuvchiga qanchalik amaliy foyda keltirayotganini aniqlashda o‘z ahamiyatini yo‘qotmoqda. Shu sababli, OpenAI <strong>«LifeVal»</strong> nomli yangi amaliy baholash tizimini taqdim etdi.</p>\n\n<h3>«LifeVal» nimani o‘lchaydi?</h3>\n<p>Yangi mezon sun’iy intellektning nazariy bilimlarini emas, balki real insoniy vazifalarni ko‘p bosqichli tarzda bajarish qobiliyatini tekshiradi. Asosiy e’tibor quyidagi amaliy sohalarga qaratilgan:</p>\n<ul>\n  <li><strong>Shaxsiy moliya va xarajatlarni boshqarish:</strong> Kirim-chiqim kvitansiyalarini tahlil qilish, tejamkor xaridlar strategiyasini ishlab chiqish va oilaviy byudjetni taqsimlash;</li>\n  <li><strong>Davlat va ijtimoiy xizmatlar bilan ishlash:</strong> Hujjatlar to‘plash tartibini tushuntirish, shakllarni to‘g‘ri to‘ldirish va huquqiy me’yorlarni amalda qo‘llash;</li>\n  <li><strong>Ta’lim va rivojlanish rejalarini tuzish:</strong> Foydalanuvchining bo‘sh vaqti va tayyorgarlik darajasiga moslashtirilgan o‘quv grafigini ishlab chiqish;</li>\n  <li><strong>Kundalik logistika va rejalashtirish:</strong> Turli manbalardan (pochta, taqvim, eslatmalar) ma’lumotlarni umumlashtirib, uzluksiz harakatlar rejasini tuzish.</li>\n</ul>\n\n<h3>Chatbotdan shaxsiy agentlik sari qadam</h3>\n<p>OpenAI tadqiqotchilarining qayd etishicha, sun’iy intellektning kelajagi faqat savol-javob berish bilan cheklanmaydi. Foydalanuvchilar o‘z vaqtini tejaydigan, topshiriqlarni mustaqil bajaruvchi va real hayotdagi to‘siqlarni hal qiluvchi <em>avtonom agentlarga</em> ehtiyoj sezmoqda.</p>\n<p>LifeVal standarti kompaniya ishlab chiquvchilariga modellarning xatolik darajasi, qaror qabul qilish mantiqi va foydali natija berish samaradorligini o‘lchash imkonini beradi. Ushbu yangilik OpenAI modellarining keyingi avlodlarida ko‘proq amaliy yordamchi funksiyalar paydo bo‘lishidan dalolat beradi.</p>\n",
+    "contentHtml": "\n<p>Sun’iy intellekt sanoatida ko‘p yillardan buyon modellarning «aqllilik» darajasi MMLU (ko‘p tarmoqli bilimlar), GSM8K (matematika) yoki HumanEval (dasturlash) kabi akademik benchmarklar orqali o‘lchab kelinar edi. Biroq OpenAI tahlilchilarining fikricha, ushbu testlar modellarning real hayotda oddiy foydalanuvchiga qanchalik amaliy foyda keltirayotganini aniqlashda o‘z ahamiyatini yo‘qotmoqda. Shu sababli, OpenAI <strong>«LifeVal»</strong> nomli yangi amaliy baholash tizimini taqdim etdi.</p>\n\n<h3>«LifeVal» nimani o‘lchaydi?</h3>\n<p>Yangi mezon sun’iy intellektning nazariy bilimlarini emas, balki real insoniy vazifalarni ko‘p bosqichli tarzda bajarish qobiliyatini tekshiradi. Asosiy e’tibor quyidagi amaliy sohalarga qaratilgan:</p>\n<ul>\n  <li><strong>Shaxsiy moliya va xarajatlarni boshqarish:</strong> Kirim-chiqim kvitansiyalarini tahlil qilish, tejamkor xaridlar strategiyasini ishlab chiqish va oilaviy byudjetni taqsimlash;</li>\n  <li><strong>Davlat va ijtimoiy xizmatlar bilan ishlash:</strong> Hujjatlar to‘plash tartibini tushuntirish, shakllarni to‘g‘ri to‘ldirish va huquqiy me’yorlarni amalda qo‘llash;</li>\n  <li><strong>Ta’lim va rivojlanish rejalarini tuzish:</strong> Foydalanuvchining bo‘sh vaqti va tayyorgarlik darajasiga moslashtirilgan o‘quv grafigini ishlab chiqish;</li>\n  <li><strong>Kundalik logistika va rejalashtirish:</strong> Turli manbalardan (pochta, taqvim, eslatmalar) ma’lumotlarni umumlashtirib, uzluksiz harakatlar rejasini tuzish.</li>\n</ul>\n\n<h3>Chatbotdan shaxsiy agentlik sari qadam</h3>\n<p>OpenAI tadqiqotchilarining qayd etishicha, sun’iy intellektning kelajagi faqat savol-javob berish bilan cheklanmaydi. Foydalanuvchilar o‘z vaqtini tejaydigan, topshiriqlarni mustaqil bajaruvchi va real hayotdagi to‘siqlarni hal qiluvchi <em>avtonom agentlarga</em> ehtiyoj sezmoqda.</p>\n<p>LifeVal standarti kompaniya ishlab chiquvchilariga modellarning xatolik darajasi, qaror qabul qilish mantiqi va foydali natija berish samaradorligini o‘lchash imkonini beradi. Ushbu yangilik OpenAI modellarining keyingi avlodlarida ko‘proq amaliy yordamchi funksiyalar paydo bo‘lishidan dalolat beradi.</p>\n",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-04",
+    "author": {
+      "name": "AiNoma Yangiliklar Tahririyati",
+      "job": "Texnologik Tahlil",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
   "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026": {
     "id": "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026",
     "slug": "apple-openai-tiktok-ozbekistonda-232-milliard-som-soliq-2026",
