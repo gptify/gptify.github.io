@@ -1,6 +1,162 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026": {
+    "id": "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026",
+    "slug": "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026",
+    "title": "ChatGPT davrida bolalar qanday ta’lim olishi kerak? AQSH maktablarining yangi tajribasi",
+    "kicker": "DUNYO · TA’LIM VA TEXNOLOGIYALAR",
+    "category": "Dunyo IT & AI",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-05",
+    "source_date": "2026-11-02",
+    "source_published_date": "2026-11-02",
+    "ainoma_published_date": "2026-11-05",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "AQSH maktablari sun’iy intellektni taqiqlash o‘rniga, bolalarga uning xatolarini aniqlash va tanqidiy tekshirishni o‘rgatmoqda.",
+    "img": "assets/data_agent.jpg",
+    "imgAlt": "AQSH maktablarida sun'iy intellekt ta'limi",
+    "qisqacha": [
+      "AQSH maktablari o‘quvchilarga sun’iy intellektdan foydalanishni taqiqlash o‘rniga, uning xatolarini aniqlash va ma’lumotlarni faktchek qilishni o‘rgatishga o‘tdi.",
+      "Treninglarda SI modellariga oddiy dunyo xaritasini chizish topshirilganda, ko‘plab davlatlar nomlari xato yoki chalkash yozilgani o‘quvchilarga ko‘rgazmali saboq bo‘ldi.",
+      "YUNESKO tavsiyalariga ko‘ra, sun’iy intellekt bolalarning mustaqil fikrlash qobiliyatini susaytirmasligi uchun maktablarda tanqidiy fikrlash darslari kengaytirilmoqda."
+    ],
+    "primary_source": {
+      "name": "Associated Press",
+      "title": "Schools rethink AI bans: Teaching kids to spot chatbot hallucinations and check facts",
+      "url": "https://daryo.uz/2026/11/02/chatgpt-davrida-bolalar-qanday-talim-olishi-kerak-aqsh-maktablarining-yangi-tajribasi/",
+      "date": "02.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Daryo.uz",
+        "title": "ChatGPT davrida bolalar qanday ta’lim olishi kerak? AQSH maktablarining yangi tajribasi",
+        "url": "https://daryo.uz/2026/11/02/chatgpt-davrida-bolalar-qanday-talim-olishi-kerak-aqsh-maktablarining-yangi-tajribasi/",
+        "date": "02.11.2026"
+      },
+      {
+        "name": "YUNESKO hisoboti",
+        "title": "Guidance for generative AI in education and research",
+        "url": "https://daryo.uz/2026/11/02/chatgpt-davrida-bolalar-qanday-talim-olishi-kerak-aqsh-maktablarining-yangi-tajribasi/",
+        "date": "02.11.2026"
+      }
+    ],
+    "body": "\n<p>Generativ sun’iy intellekt ta’lim tizimiga shiddat bilan kirib kelishi ortidan ko‘plab mamlakatlar dastlab taqiqlash yo‘lini tanlagan edi. Biroq AQSH maktablarida o‘tkazilgan yangi tajribalar taqiqlar samarasiz ekanini ko‘rsatdi. Bugungi kunda amerikalik pedagoglar o‘quvchilarga sun’iy intellektni cheklash o‘rniga, uning xatolarini fosh qilish va axborotni mustaqil tekshirish (faktcheking) ko‘nikmalarini singdirmoqda.</p>\n\n<h3>Ko‘rgazmali saboq: neyrotarmoq xatolari bilan ishlash</h3>\n<p>Janubiy Karolina shtatidagi maktablarda o‘tkazilgan tajribalardan birida sun’iy intellektga oddiy topshiriq berildi: dunyo xaritasining sxemasini chizish. Katta ekranda paydo bo‘lgan xaritada Mali davlati «Mail», Misr esa «Sopth» deb noto‘g‘ri yozilgani, Liviya o‘rnida shunchaki «Afrika» degan chalkash yozuv paydo bo‘lgani o‘quvchilarda katta qiziqish uyg‘otdi.</p>\n<p>Ushbu ko‘rgazmali mashg‘ulot bolalarga sun’iy intellekt qanchalik ishonchli va jozibali ko‘rinmasin, u jiddiy mantiqiy xatolar va gallyutsinatsiyalarga yo‘l qo‘yishi mumkinligini amalda isbotladi. O‘quvchilar chatbot bergan har bir javobni birlamchi ensiklopediya va nufuzli manbalar orqali solishtirishni o‘rgandi.</p>\n\n<h3>YUNESKO tavsiyalari va tanqidiy fikrlash</h3>\n<p>YUNESKO va xalqaro ta’lim ekspertlari sun’iy intellektdan foydalanishda uchta asosiy tamoyilga amal qilishni tavsiya qilmoqda:</p>\n<ul>\n  <li><strong>Tayyor javoblarni ko‘chirib olmaslik:</strong> Neyrotarmoq bergan javob yakuniy haqiqat emas, balki shunchaki boshlang‘ich qoralama hisoblanadi;</li>\n  <li><strong>Manbalarni tekshirish madaniyati:</strong> Bolalarga AI keltirgan raqamlar, sanalar va iqtiboslarning asl manbasini qidirib topish o‘rgatilishi lozim;</li>\n  <li><strong>Mustaqil tahlilni saqlash:</strong> Esse va insholarda shaxsiy fikr, shaxsiy tajriba va individual mulohazalar ustuvor bo‘lishi shart.</li>\n</ul>\n\n<p>AQSH tajribasi shuni ko‘rsatmoqdaki, zamonaviy avlodni sun’iy intellektdan to‘sib qo‘yish emas, balki uni tushunadigan, kamchiliklarini ko‘ra oladigan va vosita sifatida to‘g‘ri boshqara oladigan ongli foydalanuvchi qilib tarbiyalash eng to‘g‘ri yo‘ldir.</p>\n",
+    "contentHtml": "\n<p>Generativ sun’iy intellekt ta’lim tizimiga shiddat bilan kirib kelishi ortidan ko‘plab mamlakatlar dastlab taqiqlash yo‘lini tanlagan edi. Biroq AQSH maktablarida o‘tkazilgan yangi tajribalar taqiqlar samarasiz ekanini ko‘rsatdi. Bugungi kunda amerikalik pedagoglar o‘quvchilarga sun’iy intellektni cheklash o‘rniga, uning xatolarini fosh qilish va axborotni mustaqil tekshirish (faktcheking) ko‘nikmalarini singdirmoqda.</p>\n\n<h3>Ko‘rgazmali saboq: neyrotarmoq xatolari bilan ishlash</h3>\n<p>Janubiy Karolina shtatidagi maktablarda o‘tkazilgan tajribalardan birida sun’iy intellektga oddiy topshiriq berildi: dunyo xaritasining sxemasini chizish. Katta ekranda paydo bo‘lgan xaritada Mali davlati «Mail», Misr esa «Sopth» deb noto‘g‘ri yozilgani, Liviya o‘rnida shunchaki «Afrika» degan chalkash yozuv paydo bo‘lgani o‘quvchilarda katta qiziqish uyg‘otdi.</p>\n<p>Ushbu ko‘rgazmali mashg‘ulot bolalarga sun’iy intellekt qanchalik ishonchli va jozibali ko‘rinmasin, u jiddiy mantiqiy xatolar va gallyutsinatsiyalarga yo‘l qo‘yishi mumkinligini amalda isbotladi. O‘quvchilar chatbot bergan har bir javobni birlamchi ensiklopediya va nufuzli manbalar orqali solishtirishni o‘rgandi.</p>\n\n<h3>YUNESKO tavsiyalari va tanqidiy fikrlash</h3>\n<p>YUNESKO va xalqaro ta’lim ekspertlari sun’iy intellektdan foydalanishda uchta asosiy tamoyilga amal qilishni tavsiya qilmoqda:</p>\n<ul>\n  <li><strong>Tayyor javoblarni ko‘chirib olmaslik:</strong> Neyrotarmoq bergan javob yakuniy haqiqat emas, balki shunchaki boshlang‘ich qoralama hisoblanadi;</li>\n  <li><strong>Manbalarni tekshirish madaniyati:</strong> Bolalarga AI keltirgan raqamlar, sanalar va iqtiboslarning asl manbasini qidirib topish o‘rgatilishi lozim;</li>\n  <li><strong>Mustaqil tahlilni saqlash:</strong> Esse va insholarda shaxsiy fikr, shaxsiy tajriba va individual mulohazalar ustuvor bo‘lishi shart.</li>\n</ul>\n\n<p>AQSH tajribasi shuni ko‘rsatmoqdaki, zamonaviy avlodni sun’iy intellektdan to‘sib qo‘yish emas, balki uni tushunadigan, kamchiliklarini ko‘ra oladigan va vosita sifatida to‘g‘ri boshqara oladigan ongli foydalanuvchi qilib tarbiyalash eng to‘g‘ri yo‘ldir.</p>\n",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-05",
+    "author": {
+      "name": "AiNoma Ta’lim Tahririyati",
+      "job": "Ta’lim va metodologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "apple-uy-va-ofis-uchun-suniy-intellektli-stol-ustidagi-robotini-chiqarmoqda-2026": {
+    "id": "apple-uy-va-ofis-uchun-suniy-intellektli-stol-ustidagi-robotini-chiqarmoqda-2026",
+    "slug": "apple-uy-va-ofis-uchun-suniy-intellektli-stol-ustidagi-robotini-chiqarmoqda-2026",
+    "title": "Apple ilk stol usti sun’iy intellekt robotini ishlab chiqmoqda: iMac G4 dizayni va aqlli datchiklar",
+    "kicker": "DUNYO · ROBOTOTEXNIKA VA QURILMALAR",
+    "category": "Dunyo IT & AI",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-05",
+    "source_date": "2026-11-04",
+    "source_published_date": "2026-11-04",
+    "ainoma_published_date": "2026-11-05",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Apple 2027-yilda HomeView seriyasidagi 9 dyuymli aylanuvchi ekran va intellektual kameralarga ega avtonom stol usti robotini taqdim etishga tayyorgarlik ko‘rmoqda.",
+    "img": "assets/amazon_blocks_meta_muse_2026.jpg",
+    "imgAlt": "Apple stol usti sun'iy intellekt roboti",
+    "qisqacha": [
+      "The Information ma’lumotlariga ko‘ra, Apple o‘zining ilk stol usti uy robotini faol ishlab chiqmoqda va uni 2027-yilda bozorga chiqarishni rejalashtirmoqda.",
+      "Qurilma ichki kod nomi bilan HomeView Ultra yoki HomeView Max deb atalmoqda va Pixar filmlaridagi chiroq hamda klassik iMac G4 arxitekturasini eslatadi.",
+      "Robot 9 dyuymli aylanuvchi sensorli ekran, aqlli sensorlar va sun’iy intellekt kameralari yordamida xona muhitini mustaqil tahlil qiladi hamda FaceTime qo‘ng‘iroqlarida foydalanuvchini kuzatib boradi."
+    ],
+    "primary_source": {
+      "name": "The Information",
+      "title": "Apple develops tabletop home robot with robotic limb and AI sensors",
+      "url": "https://daryo.uz/2026/11/04/apple-stol-ustidagi-mushukni-hayday-oladigan-ekranli-uy-robotini-ishlab-chiqmoqda/",
+      "date": "04.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Bloomberg",
+        "title": "Apple explores robotics push as next major consumer hardware category",
+        "url": "https://daryo.uz/2026/11/04/apple-stol-ustidagi-mushukni-hayday-oladigan-ekranli-uy-robotini-ishlab-chiqmoqda/",
+        "date": "04.11.2026"
+      },
+      {
+        "name": "Daryo.uz",
+        "title": "Apple stol ustidagi mushukni hayday oladigan ekranli uy robotini ishlab chiqmoqda",
+        "url": "https://daryo.uz/2026/11/04/apple-stol-ustidagi-mushukni-hayday-oladigan-ekranli-uy-robotini-ishlab-chiqmoqda/",
+        "date": "04.11.2026"
+      }
+    ],
+    "body": "\n<p>Apple korporatsiyasi smartfon va planshetlar bozoridan tashqariga chiqib, uy xo‘jaligi va ofislar uchun mo‘ljallangan apparatli sun’iy intellekt qurilmalari sohasiga kirib bormoqda. Nufuzli <em>The Information</em> nashrining insayderlik ma’lumotlariga ko‘ra, Kupertinodagi muhandislar guruhi hozirda maxsus robotik qo‘l ustiga o‘rnatilgan aqlli displey prototipini faol sinovdan o‘tkazmoqda.</p>\n\n<h3>Dizayn merosi: zamonaviy «Jobs chirog‘i»</h3>\n<p>Kompaniya ichida <strong>HomeView Ultra</strong> yoki <strong>HomeView Max</strong> nomi bilan yuritilayotgan yangi qurilma aylanuvchi mexanik tayanchga mahkamlangan 9 dyuymli yuqori aniqlikdagi displey bilan jihozlangan. Qurilmaning tashqi ko‘rinishi texnologiya ixlosmandlari orasida mashhur bo‘lgan, 2002-yildagi afsonaviy iMac G4 kompyuteri va Pixar animatsion studiyasining ramzi bo‘lgan «sakrovchi chiroq»ni eslatadi.</p>\n<p>Oddiy planshetlardan farqli o‘laroq, robotik oyoq ekranni 360 darajaga burish va yuqoriga-pastga egish imkonini beradi. Bu esa xona ichida harakatlanayotgan foydalanuvchini FaceTime orqali video muloqot paytida avtomatik ravishda kadrdan chiqarmasdan kuzatib borishni ta’minlaydi.</p>\n\n<h3>Sun’iy intellekt datchiklari va xona xavfsizligi</h3>\n<p>Yangi qurilma Apple Intelligence sun’iy intellekt modellari bilan to‘liq integratsiya qilingan bo‘lib, quyidagi avtonom imkoniyatlarga ega bo‘ladi:</p>\n<ul>\n  <li><strong>Atrof-muhitni tanish:</strong> Kameralar va LiDAR datchiklari orqali robot xonada kim borligini taniydi, odam kirganda chiroqlarni yoqadi yoki stol ustidagi begona harakatlarni (masalan, uy hayvonlarini) aniqlaydi;</li>\n  <li><strong>Aqlli uy markazi:</strong> HomeKit ekotizimidagi barcha aqlli maishiy texnikalarni bitta qulay ovozli va vizual interfeys orqali boshqaradi;</li>\n  <li><strong>Xavfsiz harakatlanish:</strong> Sensorlar robotik boshqaruv atrofidagi stakanlar, kitoblar va buyumlarga urilib ketmasligi uchun masofani millisekundlarda hisoblab boradi.</li>\n</ul>\n\n<p>Kompaniya ushbu yangi mahsulotni 2027-yil boshlarida taqdim etishni rejalashtirmoqda. Mutaxassislarning fikricha, Apple stol usti roboti kelajakda Amazon Echo Show va Google Nest Hub kabi statsionar displeylarning asosiy raqobatchisiga aylanadi.</p>\n",
+    "contentHtml": "\n<p>Apple korporatsiyasi smartfon va planshetlar bozoridan tashqariga chiqib, uy xo‘jaligi va ofislar uchun mo‘ljallangan apparatli sun’iy intellekt qurilmalari sohasiga kirib bormoqda. Nufuzli <em>The Information</em> nashrining insayderlik ma’lumotlariga ko‘ra, Kupertinodagi muhandislar guruhi hozirda maxsus robotik qo‘l ustiga o‘rnatilgan aqlli displey prototipini faol sinovdan o‘tkazmoqda.</p>\n\n<h3>Dizayn merosi: zamonaviy «Jobs chirog‘i»</h3>\n<p>Kompaniya ichida <strong>HomeView Ultra</strong> yoki <strong>HomeView Max</strong> nomi bilan yuritilayotgan yangi qurilma aylanuvchi mexanik tayanchga mahkamlangan 9 dyuymli yuqori aniqlikdagi displey bilan jihozlangan. Qurilmaning tashqi ko‘rinishi texnologiya ixlosmandlari orasida mashhur bo‘lgan, 2002-yildagi afsonaviy iMac G4 kompyuteri va Pixar animatsion studiyasining ramzi bo‘lgan «sakrovchi chiroq»ni eslatadi.</p>\n<p>Oddiy planshetlardan farqli o‘laroq, robotik oyoq ekranni 360 darajaga burish va yuqoriga-pastga egish imkonini beradi. Bu esa xona ichida harakatlanayotgan foydalanuvchini FaceTime orqali video muloqot paytida avtomatik ravishda kadrdan chiqarmasdan kuzatib borishni ta’minlaydi.</p>\n\n<h3>Sun’iy intellekt datchiklari va xona xavfsizligi</h3>\n<p>Yangi qurilma Apple Intelligence sun’iy intellekt modellari bilan to‘liq integratsiya qilingan bo‘lib, quyidagi avtonom imkoniyatlarga ega bo‘ladi:</p>\n<ul>\n  <li><strong>Atrof-muhitni tanish:</strong> Kameralar va LiDAR datchiklari orqali robot xonada kim borligini taniydi, odam kirganda chiroqlarni yoqadi yoki stol ustidagi begona harakatlarni (masalan, uy hayvonlarini) aniqlaydi;</li>\n  <li><strong>Aqlli uy markazi:</strong> HomeKit ekotizimidagi barcha aqlli maishiy texnikalarni bitta qulay ovozli va vizual interfeys orqali boshqaradi;</li>\n  <li><strong>Xavfsiz harakatlanish:</strong> Sensorlar robotik boshqaruv atrofidagi stakanlar, kitoblar va buyumlarga urilib ketmasligi uchun masofani millisekundlarda hisoblab boradi.</li>\n</ul>\n\n<p>Kompaniya ushbu yangi mahsulotni 2027-yil boshlarida taqdim etishni rejalashtirmoqda. Mutaxassislarning fikricha, Apple stol usti roboti kelajakda Amazon Echo Show va Google Nest Hub kabi statsionar displeylarning asosiy raqobatchisiga aylanadi.</p>\n",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-05",
+    "author": {
+      "name": "AiNoma Texnologiyalar Tahririyati",
+      "job": "Apparat ta’minoti va gadjetlar tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "prompt-yozish-sanati": {
+    "id": "prompt-yozish-sanati",
+    "slug": "prompt-yozish-sanati",
+    "title": "Prompt yozish san’ati: yaxshi so‘rovning 5 qoidasi va 15 tayyor shablon",
+    "kicker": "AMALIY QO‘LLANMA · PROMPTING",
+    "category": "Qo'llanmalar",
+    "audience": "Barcha foydalanuvchilar",
+    "event_date": "2026-11-05",
+    "source_date": "2026-11-05",
+    "source_published_date": "2026-11-05",
+    "ainoma_published_date": "2026-11-05",
+    "read_time": "6 daqiqalik mutolaa",
+    "readTime": "6 daqiqalik mutolaa",
+    "deck": "Sun’iy intellektdan yuqori aniqlikdagi natija olish siri — to‘g‘ri so‘rovda. 5 amaliy qoida va nusxa olib ishlatishga tayyor 15 ta shablon.",
+    "img": "assets/deepmind_private_ai.jpg",
+    "imgAlt": "Prompt yozish san'ati va tayyor shablonlar",
+    "qisqacha": [
+      "Sun’iy intellektning javob sifati 80% holatda berilgan so‘rovning (prompt) aniqligi, konteksti va kutilayotgan formatiga bog‘liq.",
+      "Professional prompt muhandisligining 5 oltin qoidasi: aniq rol berish, kontekst kiritish, formatni belgilash, namunalar ko‘rsatish va murakkab vazifalarni bosqichlarga ajratish.",
+      "Ish, ta’lim, marketing va kundalik vazifalar uchun nusxa olib darhol ishlatish mumkin bo‘lgan 15 ta tekshirilgan o‘zbekcha shablon taqdim etildi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Metodologiya",
+      "title": "Prompt Engineering Framework: 5 Core Principles and Structured Templates",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "date": "05.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "OpenAI Prompt Guide",
+        "title": "Best practices for prompt engineering with OpenAI API",
+        "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+        "date": "05.11.2026"
+      },
+      {
+        "name": "Anthropic Interactive Tutoring",
+        "title": "Interactive prompt engineering and contextual steering tutorial",
+        "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+        "date": "05.11.2026"
+      }
+    ],
+    "body": "\n<p>Ko‘pchilik foydalanuvchilar ChatGPT, Claude yoki Gemini bilan muloqot qilganda umumiy va noaniq javoblardan shikoyat qiladi. Biroq muammo ko‘pincha modelda emas, balki unga berilgan so‘rovning (prompt) tuzilishida bo‘ladi. Sun’iy intellekt — fikringizni o‘qiydigan sehrgar emas, balki berilgan yo‘riqnoma bo‘yicha harakatlanuvchi yuqori intellektual tizimdir.</p>\n\n<p>Ushbu amaliy qo‘llanmada sifatli natija kafolatlaydigan <strong>5 ta fundamental qoida</strong> va kundalik amaliyotda darhol nusxa olib ishlatish mumkin bo‘lgan <strong>15 ta tayyor shablonni</strong> jamladik.</p>\n\n<h3>Yaxshi promptning 5 ta oltin qoidasi</h3>\n\n<ol>\n  <li><strong>Rol bering (Persona):</strong> Modelga aniq mutaxassislik rolini belgilang. Masalan: <code>«Siz 10 yillik tajribaga ega B2B marketologsiz...»</code>. Bu modelning leksikasi va javob chuqurligini darhol professional darajaga ko‘taradi;</li>\n  <li><strong>Kontekst bering (Context):</strong> Vazifaning maqsadi va maqsadli auditoriyasini tushuntiring. «Kichik novvoyxona uchun taklif» va «Yirik bank uchun taklif» butunlay boshqa yondashuvni talab qiladi;</li>\n  <li><strong>Formatni aniq belgilang (Output Format):</strong> Shunchaki matn emas, balki <code>«3 ta punktli ro‘yxat»</code>, <code>«solishtirma jadval»</code> yoki <code>«maksimum 150 so‘zdan iborat xulosa»</code> deb aniq talab qo‘ying;</li>\n  <li><strong>Namuna ko‘rsating (Few-Shot Prompting):</strong> Agar sizga muayyan uslub kerak bo‘lsa, o‘zingiz yoqtirgan 1-2 ta namunani prompt ichiga ilova qiling: <code>«Mana bu namunadagi professional ohangda yozing: [namuna]»</code>;</li>\n  <li><strong>Bosqichlarga ajrating (Chain-of-Thought):</strong> Bitta ulkan vazifani bitta so‘rovga jamlamang. Avval reja tuzishni, keyin har bir qismni alohida tahlil qilishni so‘rang.</li>\n</ol>\n\n<h3>15 ta tayyor prompt shabloni</h3>\n\n<h4>1. Matn yozish va tahrirlash</h4>\n<ul>\n  <li><code>«Siz tajribali bosh muharrirsiz. Quyidagi matnni professional, ammo o‘quvchiga samimiy ohangda, ortiqcha suv so‘zlardan tozalab, 300 so‘zga qisqartirib bering: [matn]»</code></li>\n  <li><code>«Mijoz bilan shartnoma kechikishi bo‘yicha xushmuomala, ammo qat’iy rasmiy elektron xat yozing. Maqsad: hujjatni ertaga soat 17:00 gacha imzolashni so‘rash.»</code></li>\n  <li><code>«[Mavzu] bo‘yicha ijtimoiy tarmoqlar uchun 3 ta qiziqarli post g‘oyasini ishlab chiqing. Har biriga kuchli ilmoq (hook), asosiy fikr va harakatga chaqiruv (CTA) qo‘shing.»</code></li>\n</ul>\n\n<h4>2. Murakkab narsalarni o‘rganish va tahlil</h4>\n<ul>\n  <li><code>«[Murakkab tushuncha/atama]ni 12 yoshli maktab o‘quvchisiga tushuntirgandek, hayotiy misol va o‘xshatishlar orqali 3 xatboshida sodda qilib tushuntirib bering.»</code></li>\n  <li><code>«Menga [soha/mavzu] bo‘yicha 4 haftalik bosqichma-bosqich o‘rganish rejasini (roadmap) ishlab chiqing. Har bir haftaga 3 ta aniq amaliy topshiriq biriktiring.»</code></li>\n  <li><code>«Quyidagi ikki yondashuvni [Variant A va Variant B] solishtiring. Afzalliklari, kamchiliklari va xatarlari ko‘rsatilgan qulay taqqoslash jadvalini tuzing.»</code></li>\n</ul>\n\n<h4>3. B2B va biznes vazifalari</h4>\n<ul>\n  <li><code>«Ushbu haftalik hisobot ma’lumotlari asosida rahbar uchun 1 sahifalik boshqaruv xulosasi (Executive Summary) tayyorlang: asosiy yutuqlar, to‘siqlar va 3 ta tavsiya: [ma’lumotlar]»</code></li>\n  <li><code>«Biz [mahsulot/xizmat] taklif qilayotgan B2B kompaniyamiz. Potentsial korporativ mijoz uchun 75 so‘zdan oshmaydigan, muammoni aniq ko‘rsatuvchi sovuq email (cold email) yozing.»</code></li>\n  <li><code>«Quyidagi loyiha rejasidagi 5 ta eng katta operatsion va moliyaviy xatarni aniqlang hamda ularni yumshatish (mitigation) bo‘yicha amaliy qadamlar bering: [reja]»</code></li>\n</ul>\n\n<h4>4. Dasturlash va ma’lumotlar bilan ishlash</h4>\n<ul>\n  <li><code>«Ushbu Python/JavaScript kodini tahlil qiling. Undagi xatoliklarni, sekin ishlovchi qismlarni va xavfsizlik zaifliklarini ko‘rsatib, tozalangan optimal variantni bering: [kod]»</code></li>\n  <li><code>«Quyidagi matnli ma’lumotlardan asosiy ko‘rsatkichlarni (ism, sana, summa, status) ajratib olib, toza JSON formatida chiqaring: [ma’lumot]»</code></li>\n  <li><code>«Menga [topshiriq]ni bajaruvchi funksiya uchun qadamma-qadam test ssenariylari (unit testlar) ro‘yxatini tuzib bering.»</code></li>\n</ul>\n\n<h4>5. Ijodiy fikrlash va «Qarama-qarshi tomon» (Devil's Advocate)</h4>\n<ul>\n  <li><code>«Mening yangi biznes g‘oyam quyidagicha: [g‘oya]. Endi siz ushbu sohaga shubha bilan qaraydigan tajribali investor rolini bajaring va g‘oyamning 3 ta eng zaif nuqtasini ayovsiz tanqid qiling.»</code></li>\n  <li><code>«[Mavzu] bo‘yicha o‘tkaziladigan taqdimot uchun 7 ta slayd strukturasini ishlab chiqing: har bir slayd sarlavhasi, asosiy tezis va vizual tavsiyasi bilan.»</code></li>\n  <li><code>«Quyidagi e’tirozga (»Sizning xizmatingiz juda qimmat«) professional sotuvchi sifatida mijozni ranjitmasdan qiymatni ko‘rsatuvchi 3 xil javob varianti bering.»</code></li>\n</ul>\n\n<p>Ushbu qoidalar va shablonlarni o‘z ishingizda muntazam qo‘llasangiz, sun’iy intellekt siz uchun shunchaki qidiruv tizimi emas, balki kundalik ishonchli professional hamkorga aylanadi.</p>\n",
+    "contentHtml": "\n<p>Ko‘pchilik foydalanuvchilar ChatGPT, Claude yoki Gemini bilan muloqot qilganda umumiy va noaniq javoblardan shikoyat qiladi. Biroq muammo ko‘pincha modelda emas, balki unga berilgan so‘rovning (prompt) tuzilishida bo‘ladi. Sun’iy intellekt — fikringizni o‘qiydigan sehrgar emas, balki berilgan yo‘riqnoma bo‘yicha harakatlanuvchi yuqori intellektual tizimdir.</p>\n\n<p>Ushbu amaliy qo‘llanmada sifatli natija kafolatlaydigan <strong>5 ta fundamental qoida</strong> va kundalik amaliyotda darhol nusxa olib ishlatish mumkin bo‘lgan <strong>15 ta tayyor shablonni</strong> jamladik.</p>\n\n<h3>Yaxshi promptning 5 ta oltin qoidasi</h3>\n\n<ol>\n  <li><strong>Rol bering (Persona):</strong> Modelga aniq mutaxassislik rolini belgilang. Masalan: <code>«Siz 10 yillik tajribaga ega B2B marketologsiz...»</code>. Bu modelning leksikasi va javob chuqurligini darhol professional darajaga ko‘taradi;</li>\n  <li><strong>Kontekst bering (Context):</strong> Vazifaning maqsadi va maqsadli auditoriyasini tushuntiring. «Kichik novvoyxona uchun taklif» va «Yirik bank uchun taklif» butunlay boshqa yondashuvni talab qiladi;</li>\n  <li><strong>Formatni aniq belgilang (Output Format):</strong> Shunchaki matn emas, balki <code>«3 ta punktli ro‘yxat»</code>, <code>«solishtirma jadval»</code> yoki <code>«maksimum 150 so‘zdan iborat xulosa»</code> deb aniq talab qo‘ying;</li>\n  <li><strong>Namuna ko‘rsating (Few-Shot Prompting):</strong> Agar sizga muayyan uslub kerak bo‘lsa, o‘zingiz yoqtirgan 1-2 ta namunani prompt ichiga ilova qiling: <code>«Mana bu namunadagi professional ohangda yozing: [namuna]»</code>;</li>\n  <li><strong>Bosqichlarga ajrating (Chain-of-Thought):</strong> Bitta ulkan vazifani bitta so‘rovga jamlamang. Avval reja tuzishni, keyin har bir qismni alohida tahlil qilishni so‘rang.</li>\n</ol>\n\n<h3>15 ta tayyor prompt shabloni</h3>\n\n<h4>1. Matn yozish va tahrirlash</h4>\n<ul>\n  <li><code>«Siz tajribali bosh muharrirsiz. Quyidagi matnni professional, ammo o‘quvchiga samimiy ohangda, ortiqcha suv so‘zlardan tozalab, 300 so‘zga qisqartirib bering: [matn]»</code></li>\n  <li><code>«Mijoz bilan shartnoma kechikishi bo‘yicha xushmuomala, ammo qat’iy rasmiy elektron xat yozing. Maqsad: hujjatni ertaga soat 17:00 gacha imzolashni so‘rash.»</code></li>\n  <li><code>«[Mavzu] bo‘yicha ijtimoiy tarmoqlar uchun 3 ta qiziqarli post g‘oyasini ishlab chiqing. Har biriga kuchli ilmoq (hook), asosiy fikr va harakatga chaqiruv (CTA) qo‘shing.»</code></li>\n</ul>\n\n<h4>2. Murakkab narsalarni o‘rganish va tahlil</h4>\n<ul>\n  <li><code>«[Murakkab tushuncha/atama]ni 12 yoshli maktab o‘quvchisiga tushuntirgandek, hayotiy misol va o‘xshatishlar orqali 3 xatboshida sodda qilib tushuntirib bering.»</code></li>\n  <li><code>«Menga [soha/mavzu] bo‘yicha 4 haftalik bosqichma-bosqich o‘rganish rejasini (roadmap) ishlab chiqing. Har bir haftaga 3 ta aniq amaliy topshiriq biriktiring.»</code></li>\n  <li><code>«Quyidagi ikki yondashuvni [Variant A va Variant B] solishtiring. Afzalliklari, kamchiliklari va xatarlari ko‘rsatilgan qulay taqqoslash jadvalini tuzing.»</code></li>\n</ul>\n\n<h4>3. B2B va biznes vazifalari</h4>\n<ul>\n  <li><code>«Ushbu haftalik hisobot ma’lumotlari asosida rahbar uchun 1 sahifalik boshqaruv xulosasi (Executive Summary) tayyorlang: asosiy yutuqlar, to‘siqlar va 3 ta tavsiya: [ma’lumotlar]»</code></li>\n  <li><code>«Biz [mahsulot/xizmat] taklif qilayotgan B2B kompaniyamiz. Potentsial korporativ mijoz uchun 75 so‘zdan oshmaydigan, muammoni aniq ko‘rsatuvchi sovuq email (cold email) yozing.»</code></li>\n  <li><code>«Quyidagi loyiha rejasidagi 5 ta eng katta operatsion va moliyaviy xatarni aniqlang hamda ularni yumshatish (mitigation) bo‘yicha amaliy qadamlar bering: [reja]»</code></li>\n</ul>\n\n<h4>4. Dasturlash va ma’lumotlar bilan ishlash</h4>\n<ul>\n  <li><code>«Ushbu Python/JavaScript kodini tahlil qiling. Undagi xatoliklarni, sekin ishlovchi qismlarni va xavfsizlik zaifliklarini ko‘rsatib, tozalangan optimal variantni bering: [kod]»</code></li>\n  <li><code>«Quyidagi matnli ma’lumotlardan asosiy ko‘rsatkichlarni (ism, sana, summa, status) ajratib olib, toza JSON formatida chiqaring: [ma’lumot]»</code></li>\n  <li><code>«Menga [topshiriq]ni bajaruvchi funksiya uchun qadamma-qadam test ssenariylari (unit testlar) ro‘yxatini tuzib bering.»</code></li>\n</ul>\n\n<h4>5. Ijodiy fikrlash va «Qarama-qarshi tomon» (Devil's Advocate)</h4>\n<ul>\n  <li><code>«Mening yangi biznes g‘oyam quyidagicha: [g‘oya]. Endi siz ushbu sohaga shubha bilan qaraydigan tajribali investor rolini bajaring va g‘oyamning 3 ta eng zaif nuqtasini ayovsiz tanqid qiling.»</code></li>\n  <li><code>«[Mavzu] bo‘yicha o‘tkaziladigan taqdimot uchun 7 ta slayd strukturasini ishlab chiqing: har bir slayd sarlavhasi, asosiy tezis va vizual tavsiyasi bilan.»</code></li>\n  <li><code>«Quyidagi e’tirozga (»Sizning xizmatingiz juda qimmat«) professional sotuvchi sifatida mijozni ranjitmasdan qiymatni ko‘rsatuvchi 3 xil javob varianti bering.»</code></li>\n</ul>\n\n<p>Ushbu qoidalar va shablonlarni o‘z ishingizda muntazam qo‘llasangiz, sun’iy intellekt siz uchun shunchaki qidiruv tizimi emas, balki kundalik ishonchli professional hamkorga aylanadi.</p>\n",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-05",
+    "author": {
+      "name": "AiNoma Metodologiya Guruhi",
+      "job": "Amaliy ta’lim va sun’iy intellekt metodologiyasi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
   "kompaniyalar-suniy-intellekt-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda-2026": {
     "id": "kompaniyalar-suniy-intellekt-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda-2026",
     "slug": "kompaniyalar-suniy-intellekt-tufayli-boshatilgan-xodimlarni-qayta-ishga-olmoqda-2026",
