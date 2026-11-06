@@ -1,40 +1,6 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
-  "bmt-aksilterror-mintaqaviy-ofisi-uzbekiston": {
-    "id": "bmt-aksilterror-mintaqaviy-ofisi-uzbekiston",
-    "slug": "bmt-aksilterror-mintaqaviy-ofisi-uzbekiston",
-    "title": "Mirziyoyev O‘zbekistonda BMT aksilterror mintaqaviy ofisini ochishni taklif etdi",
-    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
-    "deck": "O‘zbekiston Prezidenti BMT Aksilterror boshqarmasi mintaqaviy ofisini tashkil etish va Sun’iy intellekt yordamida kiberxavfsizlikni kuchaytirish tashabbusini ilgari surdi.",
-    "event_date": "2026-11-06",
-    "source_published_date": "2026-11-06",
-    "ainoma_published_date": "2026-11-06",
-    "ainoma_updated_date": "2026-11-06",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
-    "readTime": "4 daqiqalik mutolaa",
-    "category": "O‘zbekiston IT",
-    "audience": "mutaxassislar biznes",
-    "img": "assets/un-security-council-ai-cover.jpg",
-    "imgAlt": "BMT va xalqaro kiberxavfsizlik hamda Sun’iy intellekt texnologiyalari",
-    "qisqacha": [
-      "O‘zbekiston Prezidenti Shavkat Mirziyoyev BMT Aksilterror boshqarmasining mintaqaviy ofisini mamlakatda ochish bo‘yicha taklif bildirdi.",
-      "Mintaqaviy markaz Markaziy Osiyo davlatlariga kiberxavfsizlik va xavflarni tahlil qilishda Sun’iy intellekt texnologiyalarini tatbiq etishda amaliy yordam beradi.",
-      "Ushbu qadam O‘zbekistonning mintaqaviy xavfsizlik va raqamli infratuzilmani himoya qilish borasidagi pozitsiyasini mustahkamlaydi."
-    ],
-    "primary_source": {
-      "name": "Daryo.uz",
-      "title": "Shavkat Mirziyoyev O‘zbekistonda BMTning Aksilterror boshqarmasi mintaqaviy ofisini ochishni taklif qildi",
-      "url": "https://daryo.uz/2026/11/06/shavkat-mirziyoyev-ozbekistonda-bmtning-aksilterror-boshqarmasi-mintaqaviy-ofisini-ochishni-taklif-qildi/",
-      "date": "06.11.2026",
-      "badge": "BIRLAMCHI MANBA"
-    },
-    "secondary_sources": [],
-    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev BMTning Aksilterror boshqarmasi mintaqaviy ofisini O‘zbekistonda tashkil etish tashabbusi bilan chiqdi. Mazkur tuzilma Markaziy Osiyo davlatlarida xavfsizlikni ta’minlash, kiberxavflarga qarshi kurashish hamda eng so‘nggi Sun’iy intellekt texnologiyalarini joriy etish yo‘nalishida amaliy yordam ko‘rsatishi ko‘zda tutilmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>Zamonaviy tahdidlar tez fursatda raqamli makonga ko‘chmoqda. Kiberhujumlar va axborot manipulyatsiyasiga qarshi kurashda an’anaviy usullar yetarsiz bo‘lib qolayotgan bir paytda, Sun’iy intellekt algoritmlari asosida ishlaydigan tahliliy tizimlar muhim ahamiyat kasb etadi. Mintaqaviy ofisning ochilishi Markaziy Osiyoda yagona kiberxavfsizlik va tahlil markazini shakllantirish imkonini beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Kiberxavfsizlik sohasida real vaqt rejimida anomal faoliyatni aniqlovchi Sun’iy intellekt modellarini ishlab chiqish va ulashish.</li>\n      <li>Mintaqaviy darajada ma’lumotlar xavfsizligi va standartlashtirilgan tahlil protokollarini joriy etish.</li>\n      <li>Kibertahdidlarni prognoz qilish uchun ilg‘or mashinaviy o‘rgatish algoritmlaridan foydalanish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Raqamli infratuzilma va investitsion muhitning barqarorligini ta’minlash orqali xususiy biznes xavflarini kamaytirish.</li>\n      <li>Mahalliy fintex va IT kompaniyalar uchun xavfsiz elektron tijorat hamda tranzaksiyalar muhitini ta’minlash.</li>\n      <li>Xalqaro standartlarga mos kiberhimoya tizimlarini korporativ sektorda tatbiq etish imkoniyati.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Ushbu tashabbus O‘zbekistonni Markaziy Osiyoda raqamli xavfsizlik va Sun’iy intellekt tahlili bo‘yicha asosiy habga aylantiradi. Mahalliy mutaxassislar xalqaro ekspertlar bilan hamkorlikda ilg‘or xavfsizlik tizimlarini shakllantirish, kiberxavflarga qarshi algoritmlarni amaliyotga joriy etish imkoniyatiga ega bo‘ladilar. Bu esa mamlakatning raqamli iqtisodiyotini kiberhujumlardan ishonchli himoya qilishga xizmat qiladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Axborot xavfsizligi strategiyangizda Sun’iy intellektga asoslangan monitoring vositalarini ko‘rib chiqing va joriy eting.</li>\n    <li>Korxonangizda kiberxavfsizlik standartlarini xalqaro talablarga moslashtirish ishlarini jadallashtiring.</li>\n    <li>Xodimlaringizning raqamli gigiyena va kibertahdidlarni aniqlash bo‘yicha malakasini oshiring.</li>\n  </ol>\n</div>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-11-06"
-  },
   "google-gemini-4-argon-taqdim-etildi": {
     "id": "google-gemini-4-argon-taqdim-etildi",
     "slug": "google-gemini-4-argon-taqdim-etildi",

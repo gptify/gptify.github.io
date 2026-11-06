@@ -306,8 +306,8 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Mirziyoyev O‘zbekistonda BMT aksilterror mintaqaviy ofisini ochishni taklif etdi", u: "yangiliklar/bmt-aksilterror-mintaqaviy-ofisi-uzbekiston/", k: "mirziyoyev o‘zbekistonda bmt aksilterror mintaqaviy ofisini ochishni taklif etdi o‘zbekiston it daryo.uz o‘zbekiston prezidenti bmt aksilterror boshqarmasi mintaqaviy ofisini tashkil etish va sun’iy intell" },
   { t: "Google Gemini 4 argon modelini rasman e’lon qildi", u: "yangiliklar/google-gemini-4-argon-taqdim-etildi/", k: "google gemini 4 argon modelini rasman e’lon qildi dunyo texnologiya google deepmind google deepmind yangi avlod gemini 4 argon intellektual arxitekturasini taqdim etib, murakkab mantiq" },
   { t: "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish", u: "yangiliklar/frilanserlar-uchun-ai/", k: "frilanserlar uchun ai: tezroq ishlash va ko'proq mijoz olish qo'llanmalar ainoma tahririyati taklif yozishdan mijozlar bilan muloqotgacha — ai frilanserning kundalik ishini qanday tezlashtirish" },
   { t: "Italiyada AI 20 yil avval o‘g‘irlangan kartinani topdi", u: "yangiliklar/italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026/", k: "italiyada ai 20 yil avval o‘g‘irlangan kartinani topdi dunyo it & ai daryo.uz xvii asrga tegishli san’at asari jinoyatchilar tomonidan o‘zgartirilgan bo‘lsa-da, kompyuter ko‘rish" },
