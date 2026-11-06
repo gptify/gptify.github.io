@@ -1,40 +1,6 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
-  "google-gemini-4-argon-taqdim-etildi": {
-    "id": "google-gemini-4-argon-taqdim-etildi",
-    "slug": "google-gemini-4-argon-taqdim-etildi",
-    "title": "Google Gemini 4 argon modelini rasman e’lon qildi",
-    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
-    "deck": "Google DeepMind yangi avlod Gemini 4 Argon intellektual arxitekturasini taqdim etib, murakkab mantiqiy fikrlash va agentlik imkoniyatlarini yangi bosqichga olib chiqdi.",
-    "event_date": "2026-11-06",
-    "source_published_date": "2026-11-06",
-    "ainoma_published_date": "2026-11-06",
-    "ainoma_updated_date": "2026-11-06",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
-    "readTime": "4 daqiqalik mutolaa",
-    "category": "Dunyo Texnologiya",
-    "audience": "mutaxassislar biznes",
-    "img": "assets/google_gemini_banner.jpg",
-    "imgAlt": "Google DeepMind Gemini 4 Argon taqdimoti",
-    "qisqacha": [
-      "Google DeepMind frontier darajadagi Gemini 4 Argon intellektual modelini rasman namoyish qildi.",
-      "Model mantiqiy xulosalar chiqarish, koding va multimodal hisoblash bo'yicha tarmoq mezonlarida yetakchilikni qo'lga kiritdi.",
-      "Yangi arxitektura samaradorlikni oshirish va hisoblash resurslarini tejash orqali bizneslar uchun hisoblash xarajatlarini kamaytiradi."
-    ],
-    "primary_source": {
-      "name": "Google DeepMind",
-      "title": "Gemini 4 Argon: our next era of frontier intelligence",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "date": "06.11.2026",
-      "badge": "BIRLAMCHI MANBA"
-    },
-    "secondary_sources": [],
-    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind o‘zining navbatdagi eng kuchli platformasi — <strong>Gemini 4 Argon</strong> modelini rasman e’lon qildi. Ushbu yangi avlod Sun’iy intellekt tizimi mantiqiy mulohaza yuritish (deep reasoning), ko‘p modalli (multimodal) ma’lumotlarni bir vaqtning o‘zida tahlil qilish hamda avtonom agentlik funksiyalarida sezilarli sakrashni amalga oshirdi.</p>\n<p>Google muhandislari modelni loyihalashda o‘qitish samaradorligi va xarajatlarni optimallashtirishga alohida e’tibor qaratishgan. Gemini 4 Argon murakkab ilmiy, matematik va dasturlash topshiriqlarini bajarishda ilgari kuzatilgan infratuzilma yuklamalarini kamaytirgan holda yuqori aniqlikni namoyish etmoqda. Siz ushbu vosita orqali keng ko‘lamli matn, audio, video va kod strukturasi bilan uzluksiz ishlashingiz mumkin.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt poygasida e’tibor faqat parametrlarning soniga emas, balki modelning amaliy samaradorligiga qaratilmoqda. Argon arxitekturasi katta hajmdagi ma’lumotlarni qayta ishlash jarayonida kechikishlarni (latency) kamaytirish va hisoblash quvvatini tejash bo‘yicha yangi mezonni belgilaydi. Bu esa korporativ mijozlar va dasturchilar hamjamiyatiga murakkab agentlik tizimlarini moslashuvchan shakllantirish imkonini beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Chuqurlashtirilgan mantiqiy fikrlash va ko'p bosqichli masalalarni yechish qobiliyati ortdi.</li>\n      <li>Kontekst oynasi yanada barqarorlashtirilib, xotira yo'qolishi va gallyutsinatsiya holatlari keskin kamaytirildi.</li>\n      <li>Native multimodal arxitektura tufayli matn, visual va kod ma'lumotlari yagona qatlamda qayta ishlanadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>So‘rovlar narxining arzonlashuvi va hisoblash resurslarining optimallashuvi natijasida ROI ko‘rsatkichi oshadi.</li>\n      <li>Mijozlarga xizmat ko‘rsatish va ichki jarayonlarni avtonom agentlar yordamida to‘liq avtomatlashtirish imkoniyati yaxshilanadi.</li>\n      <li>Kiberxavfsizlik va korporativ ma’lumotlar maxfiyligi standartlari eng yuqori darajada ta’minlangan.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT ekotizimi hamda mahalliy startaplar uchun Gemini 4 Argon kabi ilg‘or modellar infratuzilma xarajatlarini tejashga xizmat qiladi. Mahalliy dasturchilar va fintex kompaniyalari Google Cloud va Vertex AI ekotizimi orqali ushbu texnologiyani o‘z mahsulotlariga integratsiya qilishlari, mijozlarga xizmat ko‘rsatuvchi aqlli botlar hamda avtonom tahlil tizimlarini tezkor loyihalashtirishlari mumkin. Siz uchun bu xalqaro bozorda raqobatbardosh raqamli xizmatlarni taqdim etishda katta zamin bo‘ladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Google AI Studio hamda Vertex AI platformalaridagi hujjatlar bilan tanishib chiqing.</li>\n    <li>Ichki biznes jarayonlaringizda agentlik funksiyalaridan foydalanish imkoniyatlarini baholang.</li>\n    <li>Mavjud infratuzilmangizni yangi avlod modellariga o‘tkazish bo‘yicha texnik audit o‘tkazing.</li>\n  </ol>\n</div>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-11-06"
-  },
   "frilanserlar-uchun-ai": {
     "id": "frilanserlar-uchun-ai",
     "slug": "frilanserlar-uchun-ai",
@@ -73,6 +39,40 @@ window.AINOMA_ARTICLES = {
       "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
+  },
+  "openai-gpt-6-cyber-xavfsizlik-modeli-2026": {
+    "id": "openai-gpt-6-cyber-xavfsizlik-modeli-2026",
+    "slug": "openai-gpt-6-cyber-xavfsizlik-modeli-2026",
+    "title": "OpenAI kiberxavfsizlik uchun GPT-6 Cyber modelini chiqardi",
+    "kicker": "Voqea: 05-Noyabr, 2026 · Manba: 05-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
+    "deck": "OpenAI zaifliklarni aniqlash va tizimlarni himoyalashga ixtisoslashgan yangi GPT-6 Cyber modelining rasmiy tizim hujjatini e’lon qildi.",
+    "event_date": "2026-11-05",
+    "source_published_date": "2026-11-05",
+    "ainoma_published_date": "2026-11-06",
+    "ainoma_updated_date": "2026-11-06",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Kiberxavfsizlik",
+    "readTime": "5 daqiqalik mutolaa",
+    "category": "Dunyo IT & AI",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_safety_containment.jpg",
+    "imgAlt": "OpenAI GPT-6 Cyber xavfsizlik modeli relizi",
+    "qisqacha": [
+      "OpenAI dasturlardagi zaifliklarni topish va patch ishlab chiqish uchun maxsus GPT-6 Cyber modelini taqdim etdi.",
+      "Model sinovlar davomida Firefox brauzerida 81 ta va Linux yadrosida 948 ta jiddiy kamchilikni aniqlashga muvaffaq bo‘ldi.",
+      "Yuqori quvvati sababli modelga «Critical» darajasi berildi va kirish Daybreak Red dasturi orqali qat’iy cheklandi."
+    ],
+    "primary_source": {
+      "name": "OpenAI Deployment Safety Hub",
+      "title": "GPT-6 Cyber System Card",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "date": "05.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>OpenAI jamoasi kiberxavfsizlik va dasturiy ta’minot auditiga ixtisoslashgan yangi <strong>GPT-6 Cyber</strong> modelining rasmiy tizim hujjatini (System Card) e’lon qildi. Ushbu model GPT-6 Astra arxitekturasi asosida maxsus qo‘shimcha o‘qitilgan bo‘lib, dasturlardagi zaifliklarni aniqlash (vulnerability discovery), kirib borish sinovlari (pentesting) hamda xavfsizlik kamchiliklarini bartaraf etishga mo‘ljallangan.</p>\n<p>OpenAI o‘tkazgan amaliy baholashlarda GPT-6 Cyber <em>ExploitGym</em> xavfsizlik mezonida <strong>48.5%</strong> natija ko‘rsatdi (oldingi GPT-5.6 Cyber modelida bu ko‘rsatkich 32.1% edi). Sinov davrida model ochiq kodli yirik tizimlarda, jumladan Mozilla Firefox brauzerida 81 ta o‘ta jiddiy yangi zaiflikni hamda Linux yadrosida 948 ta mahalliy huquqlarni kengaytirish (privilege escalation) kamchiliklarini aniqlashga va ularni tuzatish bo‘yicha takliflar berishga muvaffaq bo‘ldi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Kiberxavfsizlik sohasida sun’iy intellektdan foydalanishda asosiy muammo modellarning chegaralardan chiqib ketishi yoki ruxsat etilmagan resurslarga zarar yetkazishi edi. GPT-6 Cyber modelida xavfsizlik va maqsad chegaralariga qat’iy rioya qilish bo‘yicha yangi mexanizmlar joriy etildi: model foydalanuvchi belgilagan ruxsat doirasidan tashqaridagi tizimlarga hujum qilishdan <strong>99.9%</strong> holatlarda o‘zini tiyadi.</p>\n<p>Modelning kuchli salohiyati sababli, OpenAI o‘zining <em>Preparedness Framework</em> qoidalari doirasida GPT-6 Cyber modeliga kiberxavfsizlik bo‘yicha eng yuqori — <strong>«Critical»</strong> xavf darajasini berdi. Shu bois, modelga kirish ommaviy emas, balki qat’iy tekshiruvdan o‘tgan xavfsizlik mutaxassislari uchun <em>Daybreak Red</em> dasturi orqali taqdim etilmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Dastur kodlarini avtomatlashtirilgan tarzda o‘qish, fuzzer hisobotlarini tahlil qilish va xatolarni takrorlash qobiliyati sezilarli darajada oshirildi.</li>\n      <li>Avtonom xavfsizlik agenti zaiflikni aniqlabgina qolmay, uni to‘g‘rilash uchun tayyor patch va tuzatish kodini taklif qiladi.</li>\n      <li>Model qat’iy IP allowlisting, bir martalik autentifikatsiya (SSO) va Zero Data Retention shartlari asosida API orqali ishlaydi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Korporativ dasturlar va veb-platformalarda xavfsizlik auditini o‘tkazish vaqti va xarajatlari sezilarli darajada qisqaradi.</li>\n      <li>Nol kunlik (0-day) zaifliklar tajovuzkorlar tomonidan topilishidan oldin aniqlanib, biznes xavflari minimallashtiriladi.</li>\n      <li>Axborot xavfsizligi bo‘yicha kadrlar yetishmovchiligi sharoitida ichki xavfsizlik jamoalari uchun kuchli tahliliy tayanch shakllanadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistonning bank-moliya sektori, elektron hukumat infratuzilmasi va IT kompaniyalari uchun kiberxavfsizlik auditida avtonom AI vositalaridan foydalanish yangi bosqichga ko‘tariladi. Mahalliy xavfsizlik markazlari (SOC) va dasturiy ta’minot ishlab chiquvchilari xalqaro Daybreak Red kabi dasturlar orqali o‘z infratuzilmalarini zaifliklardan oldindan himoyalash metodologiyasini o‘zlashtirishlari mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy tavsiyalar)</div>\n  <ol>\n    <li>OpenAI e’lon qilgan rasmiy GPT-6 Cyber System Card hujjatidagi zaifliklarni tahlil qilish metodikasini ko‘rib chiqing.</li>\n    <li>Kompaniyangiz dasturiy ta’minotida kod auditini avtomatlashtirilgan AI tekshiruv vositalari bilan sinab ko‘ring.</li>\n    <li>Axborot tizimlaringizda ruxsat chegaralari (least privilege) va xavfsizlik devori konfiguratsiyalarini qayta ko‘rib chiqing.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-06"
   },
   "italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026": {
     "id": "italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026",

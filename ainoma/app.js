@@ -307,9 +307,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Google Gemini 4 argon modelini rasman e’lon qildi", u: "yangiliklar/google-gemini-4-argon-taqdim-etildi/", k: "google gemini 4 argon modelini rasman e’lon qildi dunyo texnologiya google deepmind google deepmind yangi avlod gemini 4 argon intellektual arxitekturasini taqdim etib, murakkab mantiq" },
   { t: "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish", u: "yangiliklar/frilanserlar-uchun-ai/", k: "frilanserlar uchun ai: tezroq ishlash va ko'proq mijoz olish qo'llanmalar ainoma tahririyati taklif yozishdan mijozlar bilan muloqotgacha — ai frilanserning kundalik ishini qanday tezlashtirish" },
+  { t: "OpenAI kiberxavfsizlik uchun GPT-6 Cyber modelini chiqardi", u: "yangiliklar/openai-gpt-6-cyber-xavfsizlik-modeli-2026/", k: "openai kiberxavfsizlik uchun gpt-6 cyber modelini chiqardi dunyo it & ai openai deployment safety hub openai zaifliklarni aniqlash va tizimlarni himoyalashga ixtisoslashgan yangi gpt-6 cyber modelining " },
   { t: "Italiyada AI 20 yil avval o‘g‘irlangan kartinani topdi", u: "yangiliklar/italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026/", k: "italiyada ai 20 yil avval o‘g‘irlangan kartinani topdi dunyo it & ai daryo.uz xvii asrga tegishli san’at asari jinoyatchilar tomonidan o‘zgartirilgan bo‘lsa-da, kompyuter ko‘rish" },
   { t: "ChatGPT davrida bolalar qanday ta’lim olishi kerak? AQSH maktablarining yangi tajribasi", u: "yangiliklar/chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026/", k: "chatgpt davrida bolalar qanday ta’lim olishi kerak? aqsh maktablarining yangi tajribasi dunyo it & ai associated press aqsh maktablari sun’iy intellektni taqiqlash o‘rniga, bolalarga uning xatolarini aniqlash va tanqidi" },
   { t: "Apple ilk stol usti sun’iy intellekt robotini ishlab chiqmoqda: iMac G4 dizayni va aqlli datchiklar", u: "yangiliklar/apple-uy-va-ofis-uchun-suniy-intellektli-stol-ustidagi-robotini-chiqarmoqda-2026/", k: "apple ilk stol usti sun’iy intellekt robotini ishlab chiqmoqda: imac g4 dizayni va aqlli datchiklar dunyo it & ai the information apple 2027-yilda homeview seriyasidagi 9 dyuymli aylanuvchi ekran va intellektual kameralarga ega av" },
