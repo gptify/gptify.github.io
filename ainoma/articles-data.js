@@ -69,40 +69,6 @@ window.AINOMA_ARTICLES = {
     "verification_status": "VERIFIED",
     "verification_date": "2026-11-06"
   },
-  "gemini-omni-1-2-flash-model-elon-qilindi": {
-    "id": "gemini-omni-1-2-flash-model-elon-qilindi",
-    "slug": "gemini-omni-1-2-flash-model-elon-qilindi",
-    "title": "Gemini Omni 1.2 Flash modeli e’lon qilindi",
-    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
-    "deck": "Google DeepMind uzun klip va audiolarni tezroq va arzonroq qayta ishlovchi yangi Sun’iy intellekt modelini taqdim etdi.",
-    "event_date": "2026-11-06",
-    "source_published_date": "2026-11-06",
-    "ainoma_published_date": "2026-11-06",
-    "ainoma_updated_date": "2026-11-06",
-    "author": "AiNoma Tahririyati",
-    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
-    "readTime": "4 daqiqalik mutolaa",
-    "category": "Dunyo Texnologiya",
-    "audience": "mutaxassislar biznes",
-    "img": "assets/google_gemini_video_workflow_2026.jpg",
-    "imgAlt": "Google Gemini Omni 1.2 Flash taqdimoti banneri",
-    "qisqacha": [
-      "Google DeepMind uzoq davomiylikdagi video va audio fayllarni tezkor tahlil qiluvchi Gemini Omni 1.2 Flash modelini taqdim etdi.",
-      "Yangi arxitektura sababli hisoblash kechikishi (latency) kamaytirildi va API xarajatlari sezilarli darajada arzonlashdi.",
-      "Ishlab chiquvchilar endi katta hajmdagi multimodal ma’lumotlarni past rentabellik xatarlarsiz qayta ishlashlari mumkin."
-    ],
-    "primary_source": {
-      "name": "Google DeepMind",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://deepmind.google/blog/gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips/",
-      "date": "06.11.2026",
-      "badge": "BIRLAMCHI MANBA"
-    },
-    "secondary_sources": [],
-    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind jamoasi uzun videokliplar va audio oqimlarni tez hamda tejamkor qayta ishlashga moslashtirilgan Gemini Omni 1.2 Flash Sun’iy intellekt modelini rasman taqdim etdi. Ushbu yangilanish multimodal ma’lumotlarni tahlil qilish tezligini 2 baravarga oshirib, bulutli infratuzilma xarajatlarini keskin kamaytirish imkonini beradi.</p>\n<p>Asoschilar va dasturchilar uchun model API orqali taqdim etilgan bo‘lib, u katta hajmdagi konteksli fayllar bilan real vaqt rejimiga yaqin tezlikda ishlash qobiliyatiga ega.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ko‘plab korxonalar uchun multimodal Sun’iy intellekt modellarini joriy etishdagi eng katta to‘siq yuqori hisoblash xarajatlari va ishlov berishdagi sekinlik edi. Katta hajmli video va audio fayllarni tahlil qilish uchun ko‘p miqdorda GPU quvvati talab qilinardi. Gemini Omni 1.2 Flash ushbu muammoni samarali tokenizatsiya va optimallashtirilgan neyron tarmoq arxitekturasi yordamida hal qilmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Uzun kontekstli video va audio ma’lumotlarni past latency bilan qayta ishlash imkoniyati.</li>\n      <li>Tokenlar tejamkorligi va ko‘p modalli (multimodal) so‘rovlar uchun optimallashtirilgan API arxitekturasi.</li>\n      <li>Ovoz va tasvir ketma-ketligini yuqori aniqlikda tahlil qiluvchi takomillashtirilgan neyron mexanizmlari.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Media va video tahlili sohasidagi infratuzilma xarajatlarini 40-50% gacha tejash imkoniyati.</li>\n      <li>Mijozlar bilan ovozli va videoli muloqot qiluvchi avtomatlashtirilgan tizimlar narxining arzonlashishi.</li>\n      <li>Kompaniya arxivlaridagi katta hajmli media kontentni tezkor transkripsiyalash va tahlil qilish orqali ROI'ni oshirish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Mahalliy IT kompaniyalari, ta’lim platformalari va media brendlar Gemini Omni 1.2 Flash orqali katta hajmdagi o‘zbek tilidagi audio hamda video kontentni tejamkor shaklda tahlil qilish imkoniga ega bo‘lishadi. Ayniqsa, online ta’lim va call-markazlar texnologik infratuzilma xarajatlarini keskin kamaytirgan holda Sun’iy intellekt agentlarini o‘z tizimlariga integratsiya qilishlari mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Google DeepMind taqdim etgan yangi API hujjatlarini ko‘rib chiqing va test muhitida sinab ko‘ring.</li>\n    <li>Mavjud media tahlil loyihalaringizning hisoblash xarajatlarini yangi model tariflari bo‘yicha qayta hisoblang.</li>\n    <li>Uzun video va audio oqimlari bilan ishlaydigan yangi avlod servislarini ishlab chiqish strategiyasini tuzing.</li>\n  </ol>\n</div>",
-    "verification_status": "VERIFIED",
-    "verification_date": "2026-11-06"
-  },
   "frilanserlar-uchun-ai": {
     "id": "frilanserlar-uchun-ai",
     "slug": "frilanserlar-uchun-ai",
@@ -141,6 +107,40 @@ window.AINOMA_ARTICLES = {
       "job": "Amaliy ta'lim va metodologiya guruhi",
       "avatar": "assets/brand_sheet_white.png"
     }
+  },
+  "italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026": {
+    "id": "italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026",
+    "slug": "italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026",
+    "title": "Italiyada AI 20 yil avval o‘g‘irlangan kartinani topdi",
+    "kicker": "Voqea: 01-Noyabr, 2026 · Manba: 01-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
+    "deck": "XVII asrga tegishli san’at asari jinoyatchilar tomonidan o‘zgartirilgan bo‘lsa-da, kompyuter ko‘rishi tizimi uni aniqlab berdi.",
+    "event_date": "2026-11-01",
+    "source_published_date": "2026-11-01",
+    "ainoma_published_date": "2026-11-06",
+    "ainoma_updated_date": "2026-11-06",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Madaniy Meros",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo IT & AI",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/appeals_court_defense.jpg",
+    "imgAlt": "Italiyada sun’iy intellekt o‘g‘irlangan kartinani topdi",
+    "qisqacha": [
+      "Italiya politsiyasi XVII asrda chizilgan va 20 yil avval o‘g‘irlangan Avliyo Agnes kartinasini AI yordamida aniqladi.",
+      "Jinoyatchilar asarning ayrim detallarini bo‘yab o‘zgartirgan bo‘lsa-da, kompyuter ko‘rishi kompozitsiyani tanib oldi.",
+      "Swoads AI tizimi 2023-yildan buyon qiymati 203 million yevrodan ortiq bo‘lgan 300 dan ziyod asarlarni topishga ko‘maklashgan."
+    ],
+    "primary_source": {
+      "name": "Daryo.uz",
+      "title": "Italiyada sun’iy intellekt 20 yil avval o‘g‘irlangan kartinani topdi",
+      "url": "https://daryo.uz/2026/11/01/italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi/",
+      "date": "01.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Italiya politsiyasi (Carabinieri) madaniy merosni himoya qilish bo‘limi <strong>Swoads</strong> nomli sun’iy intellekt tizimidan foydalangan holda 2004-yilda Sulmona shahridagi cherkovdan o‘g‘irlab ketilgan XVII asrga oid noyob kartinani topishga muvaffaq bo‘ldi.</p>\n<p>Asarda Rimlik Avliyo Agnes tasvirlangan bo‘lib, jinoyatchilar asarni tanib bo‘lmas holatga keltirish uchun uning ayrim asosiy qismlarini ataylab o‘zgartirgan: avliyoning qo‘lidagi ramziy qo‘zichoq o‘rniga bitik chizib qo‘yilgan, boshidagi nurli halqa va palma novdasi esa bo‘yoq bilan yashirilgan. Shunga qaramay, Parma shahridagi qadimiy buyumlar yarmarkasida olingan suratlarni tahlil qilgan sun’iy intellekt kompozitsiya va ranglar uyg‘unligini aniqlab, asarni topdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>2023-yil noyabr oyidan buyon Swoads algoritmi yordamida umumiy qiymati 203 million yevrodan ortiq bo‘lgan 300 dan ziyod yirik kartina va haykallar hamda 165 mingdan ortiq nodir tanga va qo‘lyozmalar qonuniy egalariga qaytarildi. Bu holat kompyuter ko‘rishi (computer vision) va neyron tarmoqlarning tasvirlar jiddiy tahrirlangan bo‘lsa ham, chuqur qatlamlardagi vizual imzoni taniy olish salohiyatini amalda isbotlaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Kompyuter ko‘rishi modellari shakllar, ranglar nisbati va geometrik nisbatlarni o‘zgartirilgan yuzaki qatlamlardan mustaqil ravishda tahlil qiladi.</li>\n      <li>Tasvir fragmentlari buzilgan yoki bo‘yalgan holatda ham o‘xshashlik vektorlari (embedding vectors) orqali asarni identifikatsiyalash mumkin.</li>\n      <li>Katta hajmdagi arxiv ma’lumotlar bazasi va yarmarka fotosuratlari o‘rtasida real vaqt rejimida qidiruv amalga oshiriladi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>San’at bozori, auksionlar va galereyalar uchun soxta yoki o‘g‘irlangan asarlarni avtomatlashtirilgan tekshirish xizmatlari rivojlanmoqda.</li>\n      <li>Sug‘urta kompaniyalari qimmatbaho aktivlar xavfini baholashda Sun’iy intellekt audit tizimlaridan foydalanishni boshlamoqda.</li>\n      <li>Madaniy merosni raqamlashtirish va kataloglashtirishda hisoblash xarajatlari hamda inson omiliga bog‘liqlik keskin qisqaradi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston boy tarixiy va madaniy merosga ega mamlakat sifatida muzeylar, kutubxonalar va qadimiy obidalardagi eksponatlarni raqamlashtirishda shunday sun’iy intellekt modellarini joriy etishi mumkin. Bu nodir qo‘lyozmalar va tarixiy ashyolarni xalqaro reyestrlarda himoya qilish hamda noqonuniy olib chiqib ketilishining oldini olishda muhim amaliy vosita hisoblanadi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy tavsiyalar)</div>\n  <ol>\n    <li>Tashkilotingizdagi noyob vizual aktivlar yoki mahsulotlar uchun raqamli pasport va embedding arxivi shakllantiring.</li>\n    <li>Kompyuter ko‘rishi (Computer Vision) texnologiyalarini arxiv va inventarizatsiya jarayonlariga integratsiya qilish imkoniyatlarini o‘rganing.</li>\n    <li>Vizual aktivlarni himoyalashda xalqaro standartlar va ochiq ma’lumotlar bazalari bilan integratsiyani rejalashtiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-06"
   },
   "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026": {
     "id": "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026",
