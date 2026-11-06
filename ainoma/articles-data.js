@@ -1,6 +1,147 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "bmt-aksilterror-mintaqaviy-ofisi-uzbekiston": {
+    "id": "bmt-aksilterror-mintaqaviy-ofisi-uzbekiston",
+    "slug": "bmt-aksilterror-mintaqaviy-ofisi-uzbekiston",
+    "title": "Mirziyoyev O‘zbekistonda BMT aksilterror mintaqaviy ofisini ochishni taklif etdi",
+    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
+    "deck": "O‘zbekiston Prezidenti BMT Aksilterror boshqarmasi mintaqaviy ofisini tashkil etish va Sun’iy intellekt yordamida kiberxavfsizlikni kuchaytirish tashabbusini ilgari surdi.",
+    "event_date": "2026-11-06",
+    "source_published_date": "2026-11-06",
+    "ainoma_published_date": "2026-11-06",
+    "ainoma_updated_date": "2026-11-06",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "O‘zbekiston IT",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/un-security-council-ai-cover.jpg",
+    "imgAlt": "BMT va xalqaro kiberxavfsizlik hamda Sun’iy intellekt texnologiyalari",
+    "qisqacha": [
+      "O‘zbekiston Prezidenti Shavkat Mirziyoyev BMT Aksilterror boshqarmasining mintaqaviy ofisini mamlakatda ochish bo‘yicha taklif bildirdi.",
+      "Mintaqaviy markaz Markaziy Osiyo davlatlariga kiberxavfsizlik va xavflarni tahlil qilishda Sun’iy intellekt texnologiyalarini tatbiq etishda amaliy yordam beradi.",
+      "Ushbu qadam O‘zbekistonning mintaqaviy xavfsizlik va raqamli infratuzilmani himoya qilish borasidagi pozitsiyasini mustahkamlaydi."
+    ],
+    "primary_source": {
+      "name": "Daryo.uz",
+      "title": "Shavkat Mirziyoyev O‘zbekistonda BMTning Aksilterror boshqarmasi mintaqaviy ofisini ochishni taklif qildi",
+      "url": "https://daryo.uz/2026/11/06/shavkat-mirziyoyev-ozbekistonda-bmtning-aksilterror-boshqarmasi-mintaqaviy-ofisini-ochishni-taklif-qildi/",
+      "date": "06.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev BMTning Aksilterror boshqarmasi mintaqaviy ofisini O‘zbekistonda tashkil etish tashabbusi bilan chiqdi. Mazkur tuzilma Markaziy Osiyo davlatlarida xavfsizlikni ta’minlash, kiberxavflarga qarshi kurashish hamda eng so‘nggi Sun’iy intellekt texnologiyalarini joriy etish yo‘nalishida amaliy yordam ko‘rsatishi ko‘zda tutilmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>Zamonaviy tahdidlar tez fursatda raqamli makonga ko‘chmoqda. Kiberhujumlar va axborot manipulyatsiyasiga qarshi kurashda an’anaviy usullar yetarsiz bo‘lib qolayotgan bir paytda, Sun’iy intellekt algoritmlari asosida ishlaydigan tahliliy tizimlar muhim ahamiyat kasb etadi. Mintaqaviy ofisning ochilishi Markaziy Osiyoda yagona kiberxavfsizlik va tahlil markazini shakllantirish imkonini beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Kiberxavfsizlik sohasida real vaqt rejimida anomal faoliyatni aniqlovchi Sun’iy intellekt modellarini ishlab chiqish va ulashish.</li>\n      <li>Mintaqaviy darajada ma’lumotlar xavfsizligi va standartlashtirilgan tahlil protokollarini joriy etish.</li>\n      <li>Kibertahdidlarni prognoz qilish uchun ilg‘or mashinaviy o‘rgatish algoritmlaridan foydalanish.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Raqamli infratuzilma va investitsion muhitning barqarorligini ta’minlash orqali xususiy biznes xavflarini kamaytirish.</li>\n      <li>Mahalliy fintex va IT kompaniyalar uchun xavfsiz elektron tijorat hamda tranzaksiyalar muhitini ta’minlash.</li>\n      <li>Xalqaro standartlarga mos kiberhimoya tizimlarini korporativ sektorda tatbiq etish imkoniyati.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Ushbu tashabbus O‘zbekistonni Markaziy Osiyoda raqamli xavfsizlik va Sun’iy intellekt tahlili bo‘yicha asosiy habga aylantiradi. Mahalliy mutaxassislar xalqaro ekspertlar bilan hamkorlikda ilg‘or xavfsizlik tizimlarini shakllantirish, kiberxavflarga qarshi algoritmlarni amaliyotga joriy etish imkoniyatiga ega bo‘ladilar. Bu esa mamlakatning raqamli iqtisodiyotini kiberhujumlardan ishonchli himoya qilishga xizmat qiladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Axborot xavfsizligi strategiyangizda Sun’iy intellektga asoslangan monitoring vositalarini ko‘rib chiqing va joriy eting.</li>\n    <li>Korxonangizda kiberxavfsizlik standartlarini xalqaro talablarga moslashtirish ishlarini jadallashtiring.</li>\n    <li>Xodimlaringizning raqamli gigiyena va kibertahdidlarni aniqlash bo‘yicha malakasini oshiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-06"
+  },
+  "google-gemini-4-argon-taqdim-etildi": {
+    "id": "google-gemini-4-argon-taqdim-etildi",
+    "slug": "google-gemini-4-argon-taqdim-etildi",
+    "title": "Google Gemini 4 argon modelini rasman e’lon qildi",
+    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
+    "deck": "Google DeepMind yangi avlod Gemini 4 Argon intellektual arxitekturasini taqdim etib, murakkab mantiqiy fikrlash va agentlik imkoniyatlarini yangi bosqichga olib chiqdi.",
+    "event_date": "2026-11-06",
+    "source_published_date": "2026-11-06",
+    "ainoma_published_date": "2026-11-06",
+    "ainoma_updated_date": "2026-11-06",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/google_gemini_banner.jpg",
+    "imgAlt": "Google DeepMind Gemini 4 Argon taqdimoti",
+    "qisqacha": [
+      "Google DeepMind frontier darajadagi Gemini 4 Argon intellektual modelini rasman namoyish qildi.",
+      "Model mantiqiy xulosalar chiqarish, koding va multimodal hisoblash bo'yicha tarmoq mezonlarida yetakchilikni qo'lga kiritdi.",
+      "Yangi arxitektura samaradorlikni oshirish va hisoblash resurslarini tejash orqali bizneslar uchun hisoblash xarajatlarini kamaytiradi."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "date": "06.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind o‘zining navbatdagi eng kuchli platformasi — <strong>Gemini 4 Argon</strong> modelini rasman e’lon qildi. Ushbu yangi avlod Sun’iy intellekt tizimi mantiqiy mulohaza yuritish (deep reasoning), ko‘p modalli (multimodal) ma’lumotlarni bir vaqtning o‘zida tahlil qilish hamda avtonom agentlik funksiyalarida sezilarli sakrashni amalga oshirdi.</p>\n<p>Google muhandislari modelni loyihalashda o‘qitish samaradorligi va xarajatlarni optimallashtirishga alohida e’tibor qaratishgan. Gemini 4 Argon murakkab ilmiy, matematik va dasturlash topshiriqlarini bajarishda ilgari kuzatilgan infratuzilma yuklamalarini kamaytirgan holda yuqori aniqlikni namoyish etmoqda. Siz ushbu vosita orqali keng ko‘lamli matn, audio, video va kod strukturasi bilan uzluksiz ishlashingiz mumkin.</p>\n\n<h2>Nega muhim?</h2>\n<p>Sun’iy intellekt poygasida e’tibor faqat parametrlarning soniga emas, balki modelning amaliy samaradorligiga qaratilmoqda. Argon arxitekturasi katta hajmdagi ma’lumotlarni qayta ishlash jarayonida kechikishlarni (latency) kamaytirish va hisoblash quvvatini tejash bo‘yicha yangi mezonni belgilaydi. Bu esa korporativ mijozlar va dasturchilar hamjamiyatiga murakkab agentlik tizimlarini moslashuvchan shakllantirish imkonini beradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Chuqurlashtirilgan mantiqiy fikrlash va ko'p bosqichli masalalarni yechish qobiliyati ortdi.</li>\n      <li>Kontekst oynasi yanada barqarorlashtirilib, xotira yo'qolishi va gallyutsinatsiya holatlari keskin kamaytirildi.</li>\n      <li>Native multimodal arxitektura tufayli matn, visual va kod ma'lumotlari yagona qatlamda qayta ishlanadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>So‘rovlar narxining arzonlashuvi va hisoblash resurslarining optimallashuvi natijasida ROI ko‘rsatkichi oshadi.</li>\n      <li>Mijozlarga xizmat ko‘rsatish va ichki jarayonlarni avtonom agentlar yordamida to‘liq avtomatlashtirish imkoniyati yaxshilanadi.</li>\n      <li>Kiberxavfsizlik va korporativ ma’lumotlar maxfiyligi standartlari eng yuqori darajada ta’minlangan.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT ekotizimi hamda mahalliy startaplar uchun Gemini 4 Argon kabi ilg‘or modellar infratuzilma xarajatlarini tejashga xizmat qiladi. Mahalliy dasturchilar va fintex kompaniyalari Google Cloud va Vertex AI ekotizimi orqali ushbu texnologiyani o‘z mahsulotlariga integratsiya qilishlari, mijozlarga xizmat ko‘rsatuvchi aqlli botlar hamda avtonom tahlil tizimlarini tezkor loyihalashtirishlari mumkin. Siz uchun bu xalqaro bozorda raqobatbardosh raqamli xizmatlarni taqdim etishda katta zamin bo‘ladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Google AI Studio hamda Vertex AI platformalaridagi hujjatlar bilan tanishib chiqing.</li>\n    <li>Ichki biznes jarayonlaringizda agentlik funksiyalaridan foydalanish imkoniyatlarini baholang.</li>\n    <li>Mavjud infratuzilmangizni yangi avlod modellariga o‘tkazish bo‘yicha texnik audit o‘tkazing.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-06"
+  },
+  "gemini-omni-1-2-flash-model-elon-qilindi": {
+    "id": "gemini-omni-1-2-flash-model-elon-qilindi",
+    "slug": "gemini-omni-1-2-flash-model-elon-qilindi",
+    "title": "Gemini Omni 1.2 Flash modeli e’lon qilindi",
+    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 06-Noyabr, 2026",
+    "deck": "Google DeepMind uzun klip va audiolarni tezroq va arzonroq qayta ishlovchi yangi Sun’iy intellekt modelini taqdim etdi.",
+    "event_date": "2026-11-06",
+    "source_published_date": "2026-11-06",
+    "ainoma_published_date": "2026-11-06",
+    "ainoma_updated_date": "2026-11-06",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/google_gemini_video_workflow_2026.jpg",
+    "imgAlt": "Google Gemini Omni 1.2 Flash taqdimoti banneri",
+    "qisqacha": [
+      "Google DeepMind uzoq davomiylikdagi video va audio fayllarni tezkor tahlil qiluvchi Gemini Omni 1.2 Flash modelini taqdim etdi.",
+      "Yangi arxitektura sababli hisoblash kechikishi (latency) kamaytirildi va API xarajatlari sezilarli darajada arzonlashdi.",
+      "Ishlab chiquvchilar endi katta hajmdagi multimodal ma’lumotlarni past rentabellik xatarlarsiz qayta ishlashlari mumkin."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-1-2-flash-fast-and-cost-effective-with-longer-clips/",
+      "date": "06.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind jamoasi uzun videokliplar va audio oqimlarni tez hamda tejamkor qayta ishlashga moslashtirilgan Gemini Omni 1.2 Flash Sun’iy intellekt modelini rasman taqdim etdi. Ushbu yangilanish multimodal ma’lumotlarni tahlil qilish tezligini 2 baravarga oshirib, bulutli infratuzilma xarajatlarini keskin kamaytirish imkonini beradi.</p>\n<p>Asoschilar va dasturchilar uchun model API orqali taqdim etilgan bo‘lib, u katta hajmdagi konteksli fayllar bilan real vaqt rejimiga yaqin tezlikda ishlash qobiliyatiga ega.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ko‘plab korxonalar uchun multimodal Sun’iy intellekt modellarini joriy etishdagi eng katta to‘siq yuqori hisoblash xarajatlari va ishlov berishdagi sekinlik edi. Katta hajmli video va audio fayllarni tahlil qilish uchun ko‘p miqdorda GPU quvvati talab qilinardi. Gemini Omni 1.2 Flash ushbu muammoni samarali tokenizatsiya va optimallashtirilgan neyron tarmoq arxitekturasi yordamida hal qilmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Uzun kontekstli video va audio ma’lumotlarni past latency bilan qayta ishlash imkoniyati.</li>\n      <li>Tokenlar tejamkorligi va ko‘p modalli (multimodal) so‘rovlar uchun optimallashtirilgan API arxitekturasi.</li>\n      <li>Ovoz va tasvir ketma-ketligini yuqori aniqlikda tahlil qiluvchi takomillashtirilgan neyron mexanizmlari.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Media va video tahlili sohasidagi infratuzilma xarajatlarini 40-50% gacha tejash imkoniyati.</li>\n      <li>Mijozlar bilan ovozli va videoli muloqot qiluvchi avtomatlashtirilgan tizimlar narxining arzonlashishi.</li>\n      <li>Kompaniya arxivlaridagi katta hajmli media kontentni tezkor transkripsiyalash va tahlil qilish orqali ROI'ni oshirish.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Mahalliy IT kompaniyalari, ta’lim platformalari va media brendlar Gemini Omni 1.2 Flash orqali katta hajmdagi o‘zbek tilidagi audio hamda video kontentni tejamkor shaklda tahlil qilish imkoniga ega bo‘lishadi. Ayniqsa, online ta’lim va call-markazlar texnologik infratuzilma xarajatlarini keskin kamaytirgan holda Sun’iy intellekt agentlarini o‘z tizimlariga integratsiya qilishlari mumkin.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Google DeepMind taqdim etgan yangi API hujjatlarini ko‘rib chiqing va test muhitida sinab ko‘ring.</li>\n    <li>Mavjud media tahlil loyihalaringizning hisoblash xarajatlarini yangi model tariflari bo‘yicha qayta hisoblang.</li>\n    <li>Uzun video va audio oqimlari bilan ishlaydigan yangi avlod servislarini ishlab chiqish strategiyasini tuzing.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-06"
+  },
+  "frilanserlar-uchun-ai": {
+    "id": "frilanserlar-uchun-ai",
+    "slug": "frilanserlar-uchun-ai",
+    "title": "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish",
+    "kicker": "KASB BO'YICHA · FRILANS",
+    "meta_title": "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish — AiNoma Qo‘llanma",
+    "meta_description": "Taklif yozishdan mijozlar bilan muloqotgacha — AI frilanserning kundalik ishini qanday tezlashtirishi mumkin.",
+    "category": "Qo'llanmalar",
+    "audience": "mutaxassislar",
+    "event_date": "2026-11-06",
+    "source_date": "2026-11-06",
+    "source_published_date": "2026-11-06",
+    "ainoma_published_date": "2026-11-06",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Taklif yozishdan mijozlar bilan muloqotgacha — AI frilanserning kundalik ishini qanday tezlashtirishi mumkin.",
+    "img": "assets/agents_workflow.jpg",
+    "imgAlt": "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish",
+    "qisqacha": [
+      "Amaliyotda sinovdan o'tgan qadamlar va professional metodologiya.",
+      "O'zbekiston korxonalari va mutaxassislari uchun to'g'ridan-to'g'ri tatbiq etish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>KASB BO'YICHA · FRILANS</p>\n<p><b>Qisqa javob:</b> AI frilanserning \"ma'muriy\" ishlarini (taklif yozish, muloqot, hisob-kitob) tezlashtiradi — bu esa asosiy ishga (haqiqiy mahsulot yoki xizmat) ko'proq vaqt qoldirish imkonini beradi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi</h2>\n<p><b>1. Taklif (proposal) yozish.</b> Loyiha e'lonini AI'ga berib, unga moslashtirilgan, kasbiy taklif matnining boshlang'ich variantini tezda olish.</p>\n<p><b>2. Mijozlar bilan muloqot.</b> Xabar va emaillarni tezroq, aniqroq va professional ohangda yozish.</p>\n<p><b>3. Narx va shartnoma tushunchalari.</b> Oddiy shartnoma yoki narx taklifi shablonini tayyorlash (yakuniy versiyani albatta o'zingiz tekshirib chiqing).</p>\n<p><b>4. Portfolio va tanishtiruv matnlari.</b> O'z xizmatlaringizni turli platformalar (LinkedIn, Upwork va boshqalar) uchun moslashtirilgan tarzda tasvirlab berish.</p>\n<h2 class=\"article-section-title\">Qayerda ehtiyot bo'lish kerak</h2>\n<p>⚠️ <b>Diqqat:</b> Har bir taklifni AI'ga \"avtomatik\" yozdirib, o'zgarishsiz yuborish — mijozga sezilishi va ishonchni pasaytirishi mumkin. AI'ni boshlang'ich qoralama uchun ishlating, keyin o'zingizning haqiqiy tajriba va shaxsiy ohangingizni qo'shing.</p>\n<p>Narx va shartnoma bilan bog'liq muhim bandlarni AI'ga to'liq ishonib topshirmang — bu, kelajakda tushunmovchiliklarga olib kelishi mumkin.</p>\n<p>👤 <b>Amaliy tavsiya</b></p>\n<p>O'z xizmatlaringiz haqida qisqa \"brif\" tayyorlab (kim uchun, qanday xizmat, narx diapazoni), uni AI'ga har safar taklif yozishda asos qilib bering — bu, vaqtni tejaydi va izchillikni saqlaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI sizga tezroq boshlash imkonini beradi, ammo mijoz bilan haqiqiy ishonch — sizning shaxsiy muloqotingiz va ishning sifati orqali quriladi.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Keyingi safar loyiha e'loniga taklif yozishdan oldin, AI'dan boshlang'ich variant so'rang, keyin uni o'z tajribangiz va shaxsiy ohangingiz bilan tahrirlang.</p>\n<p>💡 <b>Keyingi qadam:</b> Taklif va xabarlarni yanada samarali yozish uchun <a href=\"/qollanma-prompt-yozish.html\">Prompt yozish san'ati</a> qo'llanmasini o'qing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI yozgan taklif bilan ko'proq loyiha yutish mumkinmi?</b> AI tezlikni oshiradi, ammo yutish ehtimoli ko'proq taklifning mijoz ehtiyojiga qanchalik mos kelishiga bog'liq — buni shaxsiylashtirish muhim.</p>\n<p><b>Mijozga AI ishlatganimni aytishim kerakmi?</b> Bu vaziyatga bog'liq — ba'zi mijozlar buni so'rashi mumkin, ochiq va halol bo'lish odatda ishonchni oshiradi.</p>\n<p><b>AI bilan qancha vaqt tejash mumkin?</b> Bu ishning turiga bog'liq, ammo ko'pchilik frilanserlar ma'muriy ishlarga ketadigan vaqtni sezilarli qisqartirganini qayd etadi.</p>",
+    "contentHtml": "<p>KASB BO'YICHA · FRILANS</p>\n<p><b>Qisqa javob:</b> AI frilanserning \"ma'muriy\" ishlarini (taklif yozish, muloqot, hisob-kitob) tezlashtiradi — bu esa asosiy ishga (haqiqiy mahsulot yoki xizmat) ko'proq vaqt qoldirish imkonini beradi.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 4 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi</h2>\n<p><b>1. Taklif (proposal) yozish.</b> Loyiha e'lonini AI'ga berib, unga moslashtirilgan, kasbiy taklif matnining boshlang'ich variantini tezda olish.</p>\n<p><b>2. Mijozlar bilan muloqot.</b> Xabar va emaillarni tezroq, aniqroq va professional ohangda yozish.</p>\n<p><b>3. Narx va shartnoma tushunchalari.</b> Oddiy shartnoma yoki narx taklifi shablonini tayyorlash (yakuniy versiyani albatta o'zingiz tekshirib chiqing).</p>\n<p><b>4. Portfolio va tanishtiruv matnlari.</b> O'z xizmatlaringizni turli platformalar (LinkedIn, Upwork va boshqalar) uchun moslashtirilgan tarzda tasvirlab berish.</p>\n<h2 class=\"article-section-title\">Qayerda ehtiyot bo'lish kerak</h2>\n<p>⚠️ <b>Diqqat:</b> Har bir taklifni AI'ga \"avtomatik\" yozdirib, o'zgarishsiz yuborish — mijozga sezilishi va ishonchni pasaytirishi mumkin. AI'ni boshlang'ich qoralama uchun ishlating, keyin o'zingizning haqiqiy tajriba va shaxsiy ohangingizni qo'shing.</p>\n<p>Narx va shartnoma bilan bog'liq muhim bandlarni AI'ga to'liq ishonib topshirmang — bu, kelajakda tushunmovchiliklarga olib kelishi mumkin.</p>\n<p>👤 <b>Amaliy tavsiya</b></p>\n<p>O'z xizmatlaringiz haqida qisqa \"brif\" tayyorlab (kim uchun, qanday xizmat, narx diapazoni), uni AI'ga har safar taklif yozishda asos qilib bering — bu, vaqtni tejaydi va izchillikni saqlaydi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI sizga tezroq boshlash imkonini beradi, ammo mijoz bilan haqiqiy ishonch — sizning shaxsiy muloqotingiz va ishning sifati orqali quriladi.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Keyingi safar loyiha e'loniga taklif yozishdan oldin, AI'dan boshlang'ich variant so'rang, keyin uni o'z tajribangiz va shaxsiy ohangingiz bilan tahrirlang.</p>\n<p>💡 <b>Keyingi qadam:</b> Taklif va xabarlarni yanada samarali yozish uchun <a href=\"/qollanma-prompt-yozish.html\">Prompt yozish san'ati</a> qo'llanmasini o'qing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI yozgan taklif bilan ko'proq loyiha yutish mumkinmi?</b> AI tezlikni oshiradi, ammo yutish ehtimoli ko'proq taklifning mijoz ehtiyojiga qanchalik mos kelishiga bog'liq — buni shaxsiylashtirish muhim.</p>\n<p><b>Mijozga AI ishlatganimni aytishim kerakmi?</b> Bu vaziyatga bog'liq — ba'zi mijozlar buni so'rashi mumkin, ochiq va halol bo'lish odatda ishonchni oshiradi.</p>\n<p><b>AI bilan qancha vaqt tejash mumkin?</b> Bu ishning turiga bog'liq, ammo ko'pchilik frilanserlar ma'muriy ishlarga ketadigan vaqtni sezilarli qisqartirganini qayd etadi.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-06",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
   "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026": {
     "id": "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026",
     "slug": "chatgpt-davrida-bolalar-talimi-aqsh-maktablari-tajribasi-2026",
