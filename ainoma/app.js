@@ -308,7 +308,13 @@ const searchIndex = [
 
 
 
+
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar", u: "yangiliklar/dizaynerlar-uchun-ai/", k: "dizaynerlar uchun ai vositalari: midjourney, canva ai va boshqalar qo'llanmalar ainoma tahririyati g'oyadan tayyor vizualga tezroq o'tish uchun eng ko'p ishlatiladigan ai dizayn vositalari va ularni " },
+  { t: "Yirik AI kompaniyalari yagona robots.txt standartini qabul qildi", u: "yangiliklar/yagona-robots-txt-ai-oqitish-standarti-2026/", k: "yirik ai kompaniyalari yagona robots.txt standartini qabul qildi dunyo texnologiya the next web (tnw) openai, google, microsoft va anthropic sayt egalariga o‘z kontentini sun’iy intellekt o‘qitilishidan" },
+  { t: "Google arzon va tezkor Gemini omni modelini chiqardi", u: "yangiliklar/gemini-omni-1-2-flash-relizi/", k: "google arzon va tezkor gemini omni modelini chiqardi dunyo texnologiya google deepmind google deepmind uzoq video va audio oqimlarini ancha arzon narxda qayta ishlovchi gemini omni 1.2 fl" },
   { t: "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish", u: "yangiliklar/frilanserlar-uchun-ai/", k: "frilanserlar uchun ai: tezroq ishlash va ko'proq mijoz olish qo'llanmalar ainoma tahririyati taklif yozishdan mijozlar bilan muloqotgacha — ai frilanserning kundalik ishini qanday tezlashtirish" },
   { t: "OpenAI kiberxavfsizlik uchun GPT-6 Cyber modelini chiqardi", u: "yangiliklar/openai-gpt-6-cyber-xavfsizlik-modeli-2026/", k: "openai kiberxavfsizlik uchun gpt-6 cyber modelini chiqardi dunyo it & ai openai deployment safety hub openai zaifliklarni aniqlash va tizimlarni himoyalashga ixtisoslashgan yangi gpt-6 cyber modelining " },
   { t: "Italiyada AI 20 yil avval o‘g‘irlangan kartinani topdi", u: "yangiliklar/italiyada-suniy-intellekt-20-yil-avval-ogirlangan-kartinani-topdi-2026/", k: "italiyada ai 20 yil avval o‘g‘irlangan kartinani topdi dunyo it & ai daryo.uz xvii asrga tegishli san’at asari jinoyatchilar tomonidan o‘zgartirilgan bo‘lsa-da, kompyuter ko‘rish" },

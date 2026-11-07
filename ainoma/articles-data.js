@@ -1,6 +1,121 @@
 // AiNoma Central Content Database
 // Generated & Synchronized automatically
 window.AINOMA_ARTICLES = {
+  "dizaynerlar-uchun-ai": {
+    "id": "dizaynerlar-uchun-ai",
+    "slug": "dizaynerlar-uchun-ai",
+    "title": "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar",
+    "kicker": "KASB BO'YICHA · DIZAYN",
+    "meta_title": "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar — AiNoma Qo‘llanma",
+    "meta_description": "G'oyadan tayyor vizualga tezroq o'tish uchun eng ko'p ishlatiladigan AI dizayn vositalari va ularni qanday to'g'ri qo'llash haqida.",
+    "category": "Qo'llanmalar",
+    "audience": "Dizaynerlar, mutaxassislar",
+    "event_date": "2026-11-07",
+    "source_date": "2026-11-07",
+    "source_published_date": "2026-11-07",
+    "ainoma_published_date": "2026-11-07",
+    "read_time": "5 daqiqalik mutolaa",
+    "readTime": "5 daqiqalik mutolaa",
+    "deck": "G'oyadan tayyor vizualga tezroq o'tish uchun eng ko'p ishlatiladigan AI dizayn vositalari va ularni qanday to'g'ri qo'llash haqida.",
+    "img": "assets/youtube_creator_monetize.jpg",
+    "imgAlt": "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar",
+    "qisqacha": [
+      "G'oyadan tayyor vizualga o'tishni tezlashtiruvchi amaliy usullar.",
+      "Midjourney va Canva AI vositalarini dizayn ish oqimiga integratsiya qilish yo'riqnomasi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Tahririyati",
+      "title": "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar",
+      "url": "https://ainoma.uz/qollanmalar.html",
+      "badge": "AMALIY QO‘LLANMA"
+    },
+    "secondary_sources": [],
+    "body": "<p>KASB BO'YICHA · DIZAYN</p>\n<p><b>Qisqa javob:</b> AI rasm va dizayn vositalari g'oyani tezda vizuallashtirishga yordam beradi — ammo brend izchilligi, aniq detallar va yakuniy sifat nazorati hali ham dizaynerning qo'lida.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Asosiy vosita turlari</h2>\n<p><b>Rasm generatorlari (Midjourney, va boshqalar)</b> — matn tasviridan (prompt) yangi, original rasm ishlab chiqadi. Konsept san'at, ilhom uchun moodboard, ijtimoiy tarmoq vizuallari uchun mos.</p>\n<p><b>Canva AI</b> — tayyor shablonlar ustida ishlaydigan dizayn platformasiga integratsiyalangan AI: fon o'chirish, matn generatsiyasi, avtomatik o'lcham moslashtirish kabi funksiyalar.</p>\n<p><b>Rasm tahrirlash AI vositalari</b> — mavjud rasmni kengaytirish, fonini o'zgartirish, sifatini oshirish (upscale) kabi vazifalar uchun.</p>\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi</h2>\n<p class=\"article-step\"><b>1.</b> <b>Tezkor konsept vizuallashtirish</b> — mijozga g'oyani tushuntirish uchun tezda bir necha variant qurish.</p>\n<p class=\"article-step\"><b>2.</b> <b>Ijtimoiy tarmoq kontenti</b> — post va story uchun fon, illyustratsiya qurish.</p>\n<p class=\"article-step\"><b>3.</b> <b>Moodboard va ilhom</b> — loyiha boshida turli uslub va yo'nalishlarni tezda ko'rib chiqish.</p>\n<p class=\"article-step\"><b>4.</b> <b>Takrorlanuvchi vazifalar</b> — fon o'chirish, o'lchamlarni moslashtirish kabi texnik ishlarni tezlashtirish.</p>\n<h2 class=\"article-section-title\">Qayerda ehtiyot bo'lish kerak</h2>\n<p>⚠️ <b>Diqqat:</b> AI generatsiya qilgan rasmlarda ba'zan mantiqsiz detallar (masalan, noto'g'ri qo'l, nomuvofiq matn) uchrashi mumkin — nashr etishdan oldin diqqat bilan ko'rib chiqing.</p>\n<p>Mualliflik huquqi masalasi hali ham munozarali — real, tanilgan brend yoki shaxslarni taqlid qiluvchi rasm qurishda ehtiyot bo'ling (batafsil: <a href=\"/qollanma-ai-mualliflik-huquqi.html\">AI va mualliflik huquqi</a>).</p>\n<p>Brend uchun rasmiy, izchil vizual uslub kerak bo'lganda, AI generatsiyasi ko'pincha yetarli nazoratni bermaydi — bunday holatlarda AI'ni faqat boshlang'ich g'oya bosqichida ishlatib, yakuniy ishni professional tarzda yakunlash tavsiya etiladi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI — tezkor ilhom va prototiplash vositasi, yakuniy, brend darajasidagi mahsulot emas. Uni ishlatgandan keyin har doim inson ko'zi bilan sifat va mos kelishni tekshirib chiqing.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Joriy loyihangiz uchun bir necha kalit so'z bilan AI rasm generatoridan 3-4 variant so'rang va ularni mijoz yoki jamoa bilan ilhom manbai sifatida muhokama qiling.</p>\n<p>💡 <b>Keyingi qadam:</b> AI generatsiya qilgan kontentning mualliflik huquqi masalasi bo'yicha <a href=\"/qollanma-ai-mualliflik-huquqi.html\">AI va mualliflik huquqi</a> qo'llanmasini o'qib chiqing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI qurgan rasmni tijorat maqsadida ishlatish mumkinmi?</b> Bu, ishlatilgan vositaning shartlariga bog'liq — har bir xizmatning o'z litsenziya shartlarini oldin o'qib chiqing.</p>\n<p><b>AI dizayner o'rnini bosadimi?</b> Yo'q — u tezkor g'oya va prototip qurishga yordam beradi, ammo brend strategiyasi va yakuniy nazoratni inson dizayner amalga oshiradi.</p>\n<p><b>Qaysi vosita eng yaxshi?</b> Bittasi yo'q — tezkor ijtimoiy tarmoq kontenti uchun Canva AI, original konsept san'at uchun Midjourney kabi vositalar ko'proq mos.</p>",
+    "contentHtml": "<p>KASB BO'YICHA · DIZAYN</p>\n<p><b>Qisqa javob:</b> AI rasm va dizayn vositalari g'oyani tezda vizuallashtirishga yordam beradi — ammo brend izchilligi, aniq detallar va yakuniy sifat nazorati hali ham dizaynerning qo'lida.</p>\n<p>Amaliy ta'lim va metodologiya guruhi · 5 daqiqalik mutolaa</p>\n<h2 class=\"article-section-title\">Asosiy vosita turlari</h2>\n<p><b>Rasm generatorlari (Midjourney, va boshqalar)</b> — matn tasviridan (prompt) yangi, original rasm ishlab chiqadi. Konsept san'at, ilhom uchun moodboard, ijtimoiy tarmoq vizuallari uchun mos.</p>\n<p><b>Canva AI</b> — tayyor shablonlar ustida ishlaydigan dizayn platformasiga integratsiyalangan AI: fon o'chirish, matn generatsiyasi, avtomatik o'lcham moslashtirish kabi funksiyalar.</p>\n<p><b>Rasm tahrirlash AI vositalari</b> — mavjud rasmni kengaytirish, fonini o'zgartirish, sifatini oshirish (upscale) kabi vazifalar uchun.</p>\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi</h2>\n<p class=\"article-step\"><b>1.</b> <b>Tezkor konsept vizuallashtirish</b> — mijozga g'oyani tushuntirish uchun tezda bir necha variant qurish.</p>\n<p class=\"article-step\"><b>2.</b> <b>Ijtimoiy tarmoq kontenti</b> — post va story uchun fon, illyustratsiya qurish.</p>\n<p class=\"article-step\"><b>3.</b> <b>Moodboard va ilhom</b> — loyiha boshida turli uslub va yo'nalishlarni tezda ko'rib chiqish.</p>\n<p class=\"article-step\"><b>4.</b> <b>Takrorlanuvchi vazifalar</b> — fon o'chirish, o'lchamlarni moslashtirish kabi texnik ishlarni tezlashtirish.</p>\n<h2 class=\"article-section-title\">Qayerda ehtiyot bo'lish kerak</h2>\n<p>⚠️ <b>Diqqat:</b> AI generatsiya qilgan rasmlarda ba'zan mantiqsiz detallar (masalan, noto'g'ri qo'l, nomuvofiq matn) uchrashi mumkin — nashr etishdan oldin diqqat bilan ko'rib chiqing.</p>\n<p>Mualliflik huquqi masalasi hali ham munozarali — real, tanilgan brend yoki shaxslarni taqlid qiluvchi rasm qurishda ehtiyot bo'ling (batafsil: <a href=\"/qollanma-ai-mualliflik-huquqi.html\">AI va mualliflik huquqi</a>).</p>\n<p>Brend uchun rasmiy, izchil vizual uslub kerak bo'lganda, AI generatsiyasi ko'pincha yetarli nazoratni bermaydi — bunday holatlarda AI'ni faqat boshlang'ich g'oya bosqichida ishlatib, yakuniy ishni professional tarzda yakunlash tavsiya etiladi.</p>\n<p>🎯 <b>Oltin qoida</b></p>\n<p>AI — tezkor ilhom va prototiplash vositasi, yakuniy, brend darajasidagi mahsulot emas. Uni ishlatgandan keyin har doim inson ko'zi bilan sifat va mos kelishni tekshirib chiqing.</p>\n<h2 class=\"article-section-title\">Amaliy mashq: Bugunoq sinab ko'ring</h2>\n<p>Joriy loyihangiz uchun bir necha kalit so'z bilan AI rasm generatoridan 3-4 variant so'rang va ularni mijoz yoki jamoa bilan ilhom manbai sifatida muhokama qiling.</p>\n<p>💡 <b>Keyingi qadam:</b> AI generatsiya qilgan kontentning mualliflik huquqi masalasi bo'yicha <a href=\"/qollanma-ai-mualliflik-huquqi.html\">AI va mualliflik huquqi</a> qo'llanmasini o'qib chiqing.</p>\n<hr class=\"article-divider\">\n<h3 class=\"article-section-title\">FAQ</h3>\n<p><b>AI qurgan rasmni tijorat maqsadida ishlatish mumkinmi?</b> Bu, ishlatilgan vositaning shartlariga bog'liq — har bir xizmatning o'z litsenziya shartlarini oldin o'qib chiqing.</p>\n<p><b>AI dizayner o'rnini bosadimi?</b> Yo'q — u tezkor g'oya va prototip qurishga yordam beradi, ammo brend strategiyasi va yakuniy nazoratni inson dizayner amalga oshiradi.</p>\n<p><b>Qaysi vosita eng yaxshi?</b> Bittasi yo'q — tezkor ijtimoiy tarmoq kontenti uchun Canva AI, original konsept san'at uchun Midjourney kabi vositalar ko'proq mos.</p>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-07",
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Amaliy ta'lim va metodologiya guruhi",
+      "avatar": "assets/brand_sheet_white.png"
+    }
+  },
+  "yagona-robots-txt-ai-oqitish-standarti-2026": {
+    "id": "yagona-robots-txt-ai-oqitish-standarti-2026",
+    "slug": "yagona-robots-txt-ai-oqitish-standarti-2026",
+    "title": "Yirik AI kompaniyalari yagona robots.txt standartini qabul qildi",
+    "kicker": "Voqea: 06-Noyabr, 2026 · Manba: 06-Noyabr, 2026 · AiNoma: 07-Noyabr, 2026",
+    "deck": "OpenAI, Google, Microsoft va Anthropic sayt egalariga o‘z kontentini sun’iy intellekt o‘qitilishidan bitta qoida orqali himoyalash imkonini beruvchi yagona standartni tasdiqladi.",
+    "event_date": "2026-11-06",
+    "source_published_date": "2026-11-06",
+    "ainoma_published_date": "2026-11-07",
+    "ainoma_updated_date": "2026-11-07",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Veb Standartlari",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/ai_sandbox_security.jpg",
+    "imgAlt": "Yagona robots.txt AI o‘qitish standarti",
+    "qisqacha": [
+      "OpenAI, Google, Microsoft va Anthropic sayt egalari uchun yagona robots.txt standartiga kelishib oldi.",
+      "Yangi qoida orqali har bir botni alohida yozmasdan, __usage_ai-training orqali AI o‘qitilishini cheklash mumkin.",
+      "Standart qidiruv tizimlarida indeksatsiyani saqlagan holda modellarni o‘qitishni alohida to‘xtatadi."
+    ],
+    "primary_source": {
+      "name": "The Next Web (TNW)",
+      "title": "AI training opt-out robots.txt standard agreed by Google, OpenAI, Microsoft, and Anthropic",
+      "url": "https://thenextweb.com/news/ai-training-opt-out-robots-txt-google-openai-microsoft-anthropic",
+      "date": "06.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Sun’iy intellekt sohasidagi eng yirik to‘rtta texnologiya giganti — <strong>OpenAI, Google, Microsoft va Anthropic</strong> veb-sayt egalariga o‘z kontentlarini AI modellarini o‘qitishda ishlatilishidan himoyalash imkonini beruvchi yagona <code>robots.txt</code> standartini qabul qilish bo‘yicha kelishuvga erishdi.</p>\n<p>Ilgari sayt ma’murlari har bir kompaniyaning alohida qidiruv botini (masalan, OpenAI uchun <code>GPTBot</code>, Anthropic uchun <code>ClaudeBot</code>, Google uchun <code>Google-Extended</code>) qo‘lda bloklashi talab etilar edi. Yangi kelishuvga ko‘ra, Internet Engineering Task Force (IETF) qoshidagi AIPREF ishchi guruhi tomonidan ishlab chiqilgan yagona <code>__usage_ai-training</code> direktivasi barcha yetakchi modellar uchun umumiy qoida sifatida amal qiladi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ushbu qadam veb-noshirlar, media platformalar va mualliflar bilan generativ AI kompaniyalari o‘rtasidagi ko‘p yillik ma’lumotlar yig‘ish (scraping) mojarolariga barham berishga qaratilgan. Yangi standart ma’lumotlarni o‘qitish (training) jarayoni bilan chat-yordamchilarining jonli faktlarni qidirishi (grounding) o‘rtasidagi chegarani aniq belgilab beradi.</p>\n<p>Masalan, agar sayt egasi o‘z kontentini o‘qitishdan cheklasa, qidiruv tizimlari (Google Search yoki Bing) sayt sahifalarini qidiruv natijalarida ko‘rsatishda davom etadi, biroq ushbu ma’lumotlar kelajakdagi katta til modellarining parametrlarini yangilash uchun olinmaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li>Endi <code>robots.txt</code> faylida o‘nlab crawler nomlarini yozish o‘rniga yagona <code>User-Agent: __usage_ai-training</code> direktivasini qo‘llash kifoya.</li>\n      <li>Standart faqat bazaviy modellarni o‘qitishga taalluqli bo‘lib, API orqali qidiruv indeksatsiyasiga xalaqit bermaydi.</li>\n      <li>Anthropic standartni darhol joriy etdi, Microsoft va Google esa 2027-yil boshidan to‘liq o‘tishini ma’lum qildi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li>Kompaniya veb-resurslari, intellektual mulki va maqolalari begona AI tizimlari tomonidan tekinga o‘zlashtirilishining oldi olinadi.</li>\n      <li>Raqamli media va bloglar uchun o‘z auditoriyasi va trafik oqimini himoyalashning rasmiy huquqiy va texnik dastagi paydo bo‘ldi.</li>\n      <li>IT ma’murlari va veb-ustalar uchun doimiy ravishda yangilanib turuvchi botlar ro‘yxatini nazorat qilish yuklamasi keskin kamayadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistondagi axborot nashrlari, tahliliy portallar va mualliflik platformalari o‘zbek tilidagi qimmatli ma’lumotlar bazasini himoyalashda ushbu standartdan foydalanishlari mumkin. Veb-sayt ma’murlari o‘zlarining <code>robots.txt</code> fayliga yangi tokeni kiritish orqali qidiruv tizimlaridagi reytingni yo‘qotmagan holda AI o‘qitilishini to‘xtatib qo‘ya oladilar.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy tavsiyalar)</div>\n  <ol>\n    <li>Saytingizning <code>robots.txt</code> faylini tekshiring va <code>User-Agent: __usage_ai-training</code> direktivasini rejalashtiring.</li>\n    <li>Kompaniyangiz ochiq ma’lumotlari qaysi sun’iy intellekt tizimlari tomonidan o‘qitilayotganini tahlil qiling.</li>\n    <li>Qidiruv indeksatsiyasi va AI o‘qitilishi o‘rtasidagi farqni tushunib, marketing jamoangiz bilan siyosatni muvofiqlashtiring.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-07"
+  },
+  "gemini-omni-1-2-flash-relizi": {
+    "id": "gemini-omni-1-2-flash-relizi",
+    "slug": "gemini-omni-1-2-flash-relizi",
+    "title": "Google arzon va tezkor Gemini omni modelini chiqardi",
+    "kicker": "Voqea: 05-Noyabr, 2026 · Manba: 05-Noyabr, 2026 · AiNoma: 07-Noyabr, 2026",
+    "deck": "Google DeepMind uzoq video va audio oqimlarini ancha arzon narxda qayta ishlovchi Gemini Omni 1.2 Flash modelini taqdim etdi.",
+    "event_date": "2026-11-05",
+    "source_published_date": "2026-11-05",
+    "ainoma_published_date": "2026-11-07",
+    "ainoma_updated_date": "2026-11-07",
+    "author": "AiNoma Tahririyati",
+    "authorRole": "Frontier AI & Tizimlar Arxitekturasi",
+    "readTime": "4 daqiqalik mutolaa",
+    "category": "Dunyo Texnologiya",
+    "audience": "mutaxassislar biznes",
+    "img": "assets/google_gemini_video_workflow_2026.jpg",
+    "imgAlt": "Google Gemini Omni 1.2 Flash banneri",
+    "qisqacha": [
+      "Google DeepMind multimodal ma'lumotlarni qayta ishlashga ixtisoslashgan Gemini Omni 1.2 Flash modelini chiqardi.",
+      "Yangi arxitektura uzoq video va audio kliplarni tahlil qilish kechikishini keskin qisqartirdi va hisoblash tannarxini pasaytirdi.",
+      "Model real vaqt rejimidagi ko'rish va ovozli o'zaro aloqa stsenariylari uchun maxsus optimallashtirilgan."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "date": "07.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Google for Developers",
+        "title": "Gemini 1.2 Flash API Documentation & Latency Benchmarks",
+        "url": "https://ai.google.dev/docs/gemini-1-2-flash",
+        "date": "07.11.2026",
+        "badge": "TEXNIK HUJJAT"
+      }
+    ],
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind tadqiqotchilari uzoq video, audio va vizual oqimlarni tezkor tahlil qilishga qodir yangi <strong>Gemini Omni 1.2 Flash</strong> modelini ommaga taqdim etdi. Mazkur model avvalgi avlodlarga qaraganda hisoblash resurslarini ancha kam sarflaydi va uzluksiz multimodal kiritmalarni real vaqt rejimida qayta ishlash imkonini beradi.</p>\n<p>Ishlab chiquvchilarning ta’kidlashicha, yangi arxitektura multimodal ma’lumotlarni fragmentlash va siqish algoritmlarini yangilagan. Natijada yirik video fayllarni yoki o‘nlab daqiqalik audio yozuvlarni qabul qilishda kechikish (latency) minimal darajaga tushirilgan, API orqali so‘rov yuborish xarajatlari esa sezilarli pasaygan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Hozirgacha uzoq videolarni Sun’iy intellekt orqali tahlil qilish korxonalar uchun juda qimmatga tushar, ko‘plab kadrlar tahlili hisoblash quvvatlarini haddan tashqari band qilar edi. Gemini Omni 1.2 Flash aynan shu muammoni hal etib, multimodal vositalarni keng ko‘lamli amaliyotga joriy etish yo‘lini ochmoqda.</p>\n<p>Bu orqali Siz real vaqtda videokuzatuv tahlili, jonli efirlarni sinxron tarjima qilish va murakkab media arxivlarni arzon narxda avtomatlashtirish imkoniyatiga ega bo‘lasiz.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>Kengaytirilgan kontekst darchasi:</strong> Ko‘p soatlik video va audio oqimlarini semantik xatolarsiz tahlil qilish.</li>\n      <li><strong>Sub-soniya kechikish:</strong> Multimodal stream kiritmalarida javob qaytarish tezligi amaliy real vaqt rejimiga moslashtirilgan.</li>\n      <li><strong>Optimallashtirilgan tokenizatsiya:</strong> Video kadrlarni kamroq token sarflagan holda yuqori aniqlikda kodlash mexanizmi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Infratuzilma tannarxining pasayishi:</strong> Har bir soatlik video yoki audio tahlili narxining sezilarli darajada arzonlashuvi.</li>\n      <li><strong>Yangi mijozlar tajribasi:</strong> Ovoz va tasvirni bir zumda tushunadigan interaktiv virtual maslahatchilarni yo‘lga qo‘yish imkoni.</li>\n      <li><strong>Avtomatlashgan sifat nazorati:</strong> Do‘konlar, omborlar yoki xizmat ko‘rsatish nuqtalaridagi videotasvirlarni real vaqtda qayta ishlash.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston bozorida xavfsizlik kameralari tahlili, banklardagi mijozlarga xizmat ko‘rsatish zallari monitoringi hamda ta’lim platformalaridagi video-darslarni tahlil qilish ehtiyoji yuqori. Ilgari yuqori hisoblash xarajatlari tufayli to‘xtab turgan ko‘plab startap va loyihalar endi Gemini Omni 1.2 Flash modeli orqali o‘z biznes modellarini iqtisodiy jihatdan foydali ko‘rinishga keltira oladi.</p>\n</div>\n\n<div class=\"action-checklist\">\n  <div class=\"action-checklist-title\">🎯 Endi nima qilish kerak? (Siz uchun amaliy qadamlar)</div>\n  <ol>\n    <li>Google AI Studio orqali Gemini Omni 1.2 Flash API parametrlarini sinovdan o‘tkazing.</li>\n    <li>Kompaniyangizdagi audio va video arxivlarni qayta ishlash xarajatlarini yangi tariflar bo‘yicha qayta hisoblab chiqing.</li>\n    <li>Jonli efir yoki videoni matnga o‘girish tizimlaringizda kechikish vaqtini yangi model yordamida benchmark qiling.</li>\n  </ol>\n</div>",
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-07"
+  },
   "frilanserlar-uchun-ai": {
     "id": "frilanserlar-uchun-ai",
     "slug": "frilanserlar-uchun-ai",
