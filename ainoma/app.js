@@ -313,11 +313,12 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
-  { t: "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar", u: "yangiliklar/dizaynerlar-uchun-ai/", k: "dizaynerlar uchun ai vositalari: midjourney, canva ai va boshqalar qo'llanmalar ainoma tahririyati g'oyadan tayyor vizualga tezroq o'tish uchun eng ko'p ishlatiladigan ai dizayn vositalari va ularni " },
   { t: "Mustaqil METR hisoboti: Anthropic AI o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi", u: "yangiliklar/metr-anthropic-ai-tadqiqot-tezligi-2x-2026/", k: "mustaqil metr hisoboti: anthropic ai o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi xalqaro metr (model evaluation and threat research) " },
   { t: "Kvant hisoblashdagi 20 yillik jumboq AI tomonidan Lean 4 tizimida isbotlandi", u: "yangiliklar/aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026/", k: "kvant hisoblashdagi 20 yillik jumboq ai tomonidan lean 4 tizimida isbotlandi texnologiya physical superintelligence (psi) " },
   { t: "Kanadada 10 milliard dollarlik AI data-markazi loyihasiga qarshi ommaviy namoyishlar bo'lib o'tdi", u: "yangiliklar/kanada-nova-scotia-ai-data-markaz-noroziliklar-2026/", k: "kanadada 10 milliard dollarlik ai data-markazi loyihasiga qarshi ommaviy namoyishlar bo'lib o'tdi dunyo cbc news " },
+  { t: "Dizaynerlar uchun AI vositalari: Midjourney, Canva AI va boshqalar", u: "yangiliklar/dizaynerlar-uchun-ai/", k: "dizaynerlar uchun ai vositalari: midjourney, canva ai va boshqalar qo'llanmalar ainoma tahririyati g'oyadan tayyor vizualga tezroq o'tish uchun eng ko'p ishlatiladigan ai dizayn vositalari va ularni " },
   { t: "Yirik AI kompaniyalari yagona robots.txt standartini qabul qildi", u: "yangiliklar/yagona-robots-txt-ai-oqitish-standarti-2026/", k: "yirik ai kompaniyalari yagona robots.txt standartini qabul qildi dunyo texnologiya the next web (tnw) openai, google, microsoft va anthropic sayt egalariga o‘z kontentini sun’iy intellekt o‘qitilishidan" },
   { t: "Frilanserlar uchun AI: Tezroq ishlash va ko'proq mijoz olish", u: "yangiliklar/frilanserlar-uchun-ai/", k: "frilanserlar uchun ai: tezroq ishlash va ko'proq mijoz olish qo'llanmalar ainoma tahririyati taklif yozishdan mijozlar bilan muloqotgacha — ai frilanserning kundalik ishini qanday tezlashtirish" },
   { t: "OpenAI kiberxavfsizlik uchun GPT-6 Cyber modelini chiqardi", u: "yangiliklar/openai-gpt-6-cyber-xavfsizlik-modeli-2026/", k: "openai kiberxavfsizlik uchun gpt-6 cyber modelini chiqardi dunyo it & ai openai deployment safety hub openai zaifliklarni aniqlash va tizimlarni himoyalashga ixtisoslashgan yangi gpt-6 cyber modelining " },
