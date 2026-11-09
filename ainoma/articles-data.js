@@ -6743,5 +6743,83 @@ window.AINOMA_ARTICLES = {
     "contentHtml": "<p><b>Qisqa javob:</b> Kanadaning Nova Scotia provinsiyasida yuzlab mahalliy fuqarolar ko'chalarga chiqib, Anthropic kompaniyasi ehtiyojlari uchun mo'ljallangan 10 milliard dollarlik AI ma'lumotlar markazi qurilishiga qarshi ommaviy norozilik bildirdi. Aholi tabiiy resurslar kamayishi va elektr narxi oshishidan xavotirda.</p>\n\n<h2 class=\"article-section-title\">Point Tupper loyihasi nima uchun norozilik keltirib chiqardi?</h2>\n<p>EverWind Fuels kompaniyasi tomonidan taqdim etilgan loyihaga ko'ra, Cape Breton hududida bahosi 10 milliard dollarga teng bo'lgan yirik sun'iy intellekt ma'lumot markazi shaharchasi qurilishi ko'zda tutilgan. Ushbu majmua Claude chatbotining muallifi bo'lgan Anthropic bilan 20 yillik eksklyuziv ijara shartnomasiga ega bo'lib, uning birinchi bosqichi 2027-yilda 95 megavatt, 2028-yil o'rtalarida esa qo'shimcha 325 megavatt elektr energiyasini talab qiladi.</p>\n\n<h2 class=\"article-section-title\">Suv va elektr tarmog'i tahlikasi</h2>\n<p>Yomg'irli ob-havoga qaramay, provinsiya poytaxti Galifaksda 1 000 ga yaqin odam parlament binosi oldiga yig'ildi. Aholining asosiy e'tirozi — serverlarni sovitish uchun butun shahar ichimlik suvi oladigan Landrie Lake ko'lidan ulkan hajmda suv tortib olinishi hamda umumiy energetika tizimining zo'riqishidir.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellektning real hayotdagi to'qnashuvi</h2>\n<p>Hukumat vakillari loyiha mahalliy aholiga moliyaviy yuk bo'lmasligi va kelajakda shamol turbinalari orqali ta'minlanishini bildirayotgan bo'lsa-da, faollar va jamoatchilik loyihaga qat'iy moratoriy e'lon qilishni talab qilmoqda. Ushbu voqea AI modellarining quvvati oshgani sari real dunyo ekologiyasi va infratuzilmasi bilan to'qnashuvlar yanada keskinlashib borayotganini ko'rsatmoqda.</p>",
     "verification_status": "VERIFIED",
     "ainoma_published_date": "2026-11-08"
+  },
+  "mit-worldparticle-universal-ai-fizika-simulyatori-2026": {
+    "id": "mit-worldparticle-universal-ai-fizika-simulyatori-2026",
+    "slug": "mit-worldparticle-universal-ai-fizika-simulyatori-2026",
+    "title": "MIT universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda",
+    "kicker": "FUNDAMENTAL FAN · FIZIKA VA AI",
+    "meta_title": "MIT WorldParticle: Barcha moddalarni bitta modelda simulyatsiya qiluvchi universal AI — AiNoma",
+    "meta_description": "MIT va Britaniya Kolumbiyasi universiteti olimlari suyuqlik, qum, oqsil va qattiq jismlar dinamikasini yagona neyron tarmoq orqali modellashtiruvchi WorldParticle tizimini ishlab chiqdi.",
+    "category": "Texnologiya",
+    "audience": "Olimlar, fiziklar, muhandislar, tadqiqotchilar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-09",
+    "source_published_date": "2026-11-09",
+    "date": "2026-11-09",
+    "publish_date": "2026-11-09",
+    "ainoma_published_date": "2026-11-09",
+    "img": "assets/banner_mit_worldparticle_universal_ai_fizika_si.jpg",
+    "imgAlt": "MIT WorldParticle universal fizika sun'iy intellekt modeli",
+    "qisqacha": [
+      "MIT va Britaniya Kolumbiyasi universiteti barcha turdagi moddalarni bitta arxitekturada modellashtiruvchi WorldParticle tizimini taqdim etdi.",
+      "Ilgari har bir fizik hodisa uchun alohida dasturiy kod talab qilingan bo'lsa, yangi model 3D zarrachalar harakatini yagona tamoyil asosida hisoblaydi.",
+      "Texnologiya yangi dori vositalarini ishlab chiqish hamda robotlarning turli tuproq qatlamlari bilan o'zaro ta'sirini o'rganishni o'nlab barobar tezlashtiradi."
+    ],
+    "primary_source": {
+      "name": "MIT News (Massachusetts Institute of Technology)",
+      "title": "WorldParticle: A unified deep-learning architecture for simulating diverse physical matter",
+      "url": "https://news.mit.edu/2026/worldparticle-universal-ai-physics-simulator-1109",
+      "badge": "ILMIY KASHFIYOT"
+    },
+    "secondary_sources": [
+      {
+        "name": "Superpower Daily",
+        "title": "MIT researchers unveil unified physics simulator for solids, fluids and granular media",
+        "url": "https://superpowerdaily.com/mit-universal-physics-worldparticle-2026"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Massachusets texnologiya instituti (MIT) olimlari Britaniya Kolumbiyasi universiteti bilan hamkorlikda fizika olamida inqilobiy yutuq bo'lgan <b>WorldParticle</b> sun'iy intellekt modelini taqdim etdi. Ushbu tizim oqayotgan suv, to'kilayotgan qum, bukiluvchi oqsillar va qattiq jismlar dinamikasini alohida-alohida emas, balki bitta yagona neyron tarmoq orqali aniq hisoblab bera oladi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy fizika simulyatorlarining cheklovlari</h2>\n<p>Shu paytgacha modellashtirish sohasida ishlovchi muhandis va olimlar har bir jism uchun alohida dasturlangan raqamli algoritmlardan foydalanishga majbur edilar. Masalan, aerodinamika va gidrodinamika uchun bir tenglamalar to'plami, polimer va biologik molekulalar uchun butunlay boshqa dasturiy ta'minot talab qilinar edi. Bu esa murakkab ko'p komponentli tajribalarni tahlil qilishni juda sekin va qimmat jarayonga aylantirgan.</p>\n\n<h2 class=\"article-section-title\">WorldParticle qanday ishlaydi?</h2>\n<p>WorldParticle har qanday moddani fazodagi o'zaro harakatlanuvchi 3D zarrachalar to'plami sifatida qabul qiladi. Xuddi zamonaviy til modellari (LLM) keyingi so'z yoki belgini bashorat qilgani kabi, WorldParticle neyron tarmog'i zarrachalarning keyingi millisekunddagi holati, tezligi va energiyasini bashorat qiladi. 6 xil asosiy fizik xatti-harakatlar bo'yicha o'tkazilgan testlarda model klassik hisoblash usullariga qaraganda yuzlab barobar yuqori tezlik va hayratlanarli barqarorlikni namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">Amaliy sohalardagi ahamiyati</h2>\n<p>Olimlarning ta'kidlashicha, ushbu yondashuv birinchi navbatda tibbiyotda oqsil strukturalarini modellashtirish va yangi dori vositalarini ishlab chiqish jarayonini tezlashtiradi. Shuningdek, murakkab relefda harakatlanuvchi yumshoq robotlar (soft robotics) hamda kosmik zondlarning begona sayyoralar tuprog'i bilan aloqasini simulyatsiya qilishda yangi davrni ochib beradi.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Massachusets texnologiya instituti (MIT) olimlari Britaniya Kolumbiyasi universiteti bilan hamkorlikda fizika olamida inqilobiy yutuq bo'lgan <b>WorldParticle</b> sun'iy intellekt modelini taqdim etdi. Ushbu tizim oqayotgan suv, to'kilayotgan qum, bukiluvchi oqsillar va qattiq jismlar dinamikasini alohida-alohida emas, balki bitta yagona neyron tarmoq orqali aniq hisoblab bera oladi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy fizika simulyatorlarining cheklovlari</h2>\n<p>Shu paytgacha modellashtirish sohasida ishlovchi muhandis va olimlar har bir jism uchun alohida dasturlangan raqamli algoritmlardan foydalanishga majbur edilar. Masalan, aerodinamika va gidrodinamika uchun bir tenglamalar to'plami, polimer va biologik molekulalar uchun butunlay boshqa dasturiy ta'minot talab qilinar edi. Bu esa murakkab ko'p komponentli tajribalarni tahlil qilishni juda sekin va qimmat jarayonga aylantirgan.</p>\n\n<h2 class=\"article-section-title\">WorldParticle qanday ishlaydi?</h2>\n<p>WorldParticle har qanday moddani fazodagi o'zaro harakatlanuvchi 3D zarrachalar to'plami sifatida qabul qiladi. Xuddi zamonaviy til modellari (LLM) keyingi so'z yoki belgini bashorat qilgani kabi, WorldParticle neyron tarmog'i zarrachalarning keyingi millisekunddagi holati, tezligi va energiyasini bashorat qiladi. 6 xil asosiy fizik xatti-harakatlar bo'yicha o'tkazilgan testlarda model klassik hisoblash usullariga qaraganda yuzlab barobar yuqori tezlik va hayratlanarli barqarorlikni namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">Amaliy sohalardagi ahamiyati</h2>\n<p>Olimlarning ta'kidlashicha, ushbu yondashuv birinchi navbatda tibbiyotda oqsil strukturalarini modellashtirish va yangi dori vositalarini ishlab chiqish jarayonini tezlashtiradi. Shuningdek, murakkab relefda harakatlanuvchi yumshoq robotlar (soft robotics) hamda kosmik zondlarning begona sayyoralar tuprog'i bilan aloqasini simulyatsiya qilishda yangi davrni ochib beradi.</p>",
+    "verification_status": "VERIFIED"
+  },
+  "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026": {
+    "id": "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026",
+    "slug": "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026",
+    "title": "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma",
+    "kicker": "GLOBAL SANOAT · SUVEREN AI",
+    "meta_title": "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi — AiNoma",
+    "meta_description": "Nvidia va Janubiy Koreya hukumati milliy Suveren AI doirasida yangi keng qamrovli bitim imzoladi: mahalliy NPU chiplari Nvidia tizimiga qo'shiladi va sanoat robotlari avtonomlashtiriladi.",
+    "category": "Biznes",
+    "audience": "Biznes rahbarlari, investorlar, IT mutaxassislari, muhandislar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-08",
+    "source_published_date": "2026-11-08",
+    "date": "2026-11-09",
+    "publish_date": "2026-11-09",
+    "ainoma_published_date": "2026-11-09",
+    "img": "assets/banner_nvidia_janubiy_koreya_suveren_ai_ittifoq.jpg",
+    "imgAlt": "Nvidia va Janubiy Koreya Suveren AI alyansi",
+    "qisqacha": [
+      "Nvidia va Janubiy Koreya Fan vazirligi milliy Suveren AI infratuzilmasini rivojlantirish bo'yicha hamkorlikni yangi bosqichga olib chiqdi.",
+      "Koreyaning mahalliy NPU va XPU chip ishlab chiqaruvchilari Nvidia Dynamo inferens platformasi bilan integratsiya qilinadi.",
+      "SK Telecom va LG Electronics bilan birgalikda sanoat korxonalarida avtonom harakatlanuvchi Physical AI tizimlari ishga tushiriladi."
+    ],
+    "primary_source": {
+      "name": "Nvidia Newsroom",
+      "title": "NVIDIA and South Korea Advance Sovereign AI Infrastructure and Industrial Physical AI",
+      "url": "https://nvidianews.nvidia.com/news/south-korea-sovereign-ai-physical-ai-expansion-2026",
+      "badge": "RASMIY ALYANS"
+    },
+    "secondary_sources": [
+      {
+        "name": "Yonhap News Agency",
+        "title": "South Korea partners with Nvidia to scale local AI semiconductors and smart robotics",
+        "url": "https://en.yna.co.kr/view/AEN20261108003100320"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
+    "verification_status": "VERIFIED"
   }
 };

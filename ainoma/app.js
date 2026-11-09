@@ -314,7 +314,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "MIT universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda", u: "yangiliklar/mit-worldparticle-universal-ai-fizika-simulyatori-2026/", k: "mit universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda texnologiya mit news (massachusetts institute of technology) " },
+  { t: "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma", u: "yangiliklar/nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026/", k: "nvidia va janubiy koreya suveren ai alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma biznes nvidia newsroom " },
   { t: "Mustaqil METR hisoboti: Anthropic AI o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi", u: "yangiliklar/metr-anthropic-ai-tadqiqot-tezligi-2x-2026/", k: "mustaqil metr hisoboti: anthropic ai o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi xalqaro metr (model evaluation and threat research) " },
   { t: "Kvant hisoblashdagi 20 yillik jumboq AI tomonidan Lean 4 tizimida isbotlandi", u: "yangiliklar/aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026/", k: "kvant hisoblashdagi 20 yillik jumboq ai tomonidan lean 4 tizimida isbotlandi texnologiya physical superintelligence (psi) " },
   { t: "Kanadada 10 milliard dollarlik AI data-markazi loyihasiga qarshi ommaviy namoyishlar bo'lib o'tdi", u: "yangiliklar/kanada-nova-scotia-ai-data-markaz-noroziliklar-2026/", k: "kanadada 10 milliard dollarlik ai data-markazi loyihasiga qarshi ommaviy namoyishlar bo'lib o'tdi dunyo cbc news " },
