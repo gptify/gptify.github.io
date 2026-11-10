@@ -6821,5 +6821,122 @@ window.AINOMA_ARTICLES = {
     "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
     "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
     "verification_status": "VERIFIED"
+  },
+  "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026": {
+    "id": "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026",
+    "slug": "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026",
+    "title": "Anthropic Claude Fable 5.2 va Mythos 5.2 modellarini chiqardi: GPT-6 Astraga qarshi 20% arzon narxlar",
+    "kicker": "AI MODELLARI · ANTHROPIC",
+    "meta_title": "Anthropic Claude Fable 5.2 va Mythos 5.2: GPT-6 Astra raqobatchisi — AiNoma",
+    "meta_description": "Anthropic yangi Claude Fable 5.2 va Mythos 5.2 modellarini e'lon qildi: modellar OpenAI GPT-6 Astra bilan tenglashib, token narxi bo'yicha 20 foiz ustunlikni taqdim etmoqda.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar, IT rahbarlari, tadqiqotchilar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-09",
+    "source_published_date": "2026-11-09",
+    "date": "2026-11-10",
+    "publish_date": "2026-11-10",
+    "ainoma_published_date": "2026-11-10",
+    "img": "assets/banner_anthropic_claude_fable_mythos_5_2_modell.jpg",
+    "imgAlt": "Anthropic Claude Fable 5.2 va Mythos 5.2 relizi",
+    "qisqacha": [
+      "Anthropic yangi avlod Claude Fable 5.2 va Mythos 5.2 sun'iy intellekt modellarini rasman taqdim etdi.",
+      "Yangi arxitektura OpenAI'ning GPT-6 Astra modeliga to'g'ridan-to'g'ri raqobatchi bo'lib, unumdorlik bo'yicha yetakchi benchmarklarda teng natija ko'rsatdi.",
+      "Modellar narxi raqobatchilardan qariyb 20 foiz arzonlashtirildi: 1 million kirish tokeni 8 dollar, chiqish tokeni esa 40 dollar qilib belgilandi."
+    ],
+    "primary_source": {
+      "name": "Fortune Tech",
+      "title": "Anthropic debuts Claude Fable 5.2 and Mythos 5.2 to challenge OpenAI with 20% lower pricing",
+      "url": "https://fortune.com/2026/11/09/anthropic-claude-fable-mythos-release/",
+      "badge": "RASMIY RELIZ"
+    },
+    "secondary_sources": [
+      {
+        "name": "AI Weekly",
+        "title": "Anthropic counters OpenAI Astra with high-efficiency enterprise reasoning models",
+        "url": "https://aiweekly.co/news/2026-11-09-anthropic-fable-mythos/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt xavfsizligi va yetakchi tadqiqotlar bo'yicha gigant hisoblangan Anthropic o'zining yangi flagman modellari — <b>Claude Fable 5.2</b> hamda <b>Mythos 5.2</b> tizimlarini rasman e'lon qildi. Ushbu yangi modellar OpenAI'ning GPT-6 Astra modeliga munosib javob bo'lib, korxonalarga 20 foiz arzonroq narxda yuqori mantiqiy fikrlash quvvatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Astra bilan kuchlar tenglashuvi</h2>\n<p>Kuz mavsumida OpenAI GPT-6 Astra modelini taqdim etgach, dasturlash va murakkab agentlik vazifalarida bozor yetakchiligini o'ziga qaratgan edi. Anthropic tomonidan taqdim etilgan Fable 5.2 va Mythos 5.2 aynan ushbu bo'shliqni to'ldiradi. Mustaqil benchmarklar ko'rsatishicha, yangi Claude modellari kod tahlili, huquqiy va ilmiy matnlarni qayta ishlash hamda ko'p bosqichli matematik xulosalashda OpenAI flagmani bilan mutlaqo teng natijalarni qayd etgan.</p>\n\n<h2 class=\"article-section-title\">20% arzon narx siyosati</h2>\n<p>Anthropic jamoasi yangi modellarni tarqatishda korporativ mijozlar uchun jozibador narx taklifini ilgari surmoqda. 1 million kirish tokeni bahosi <b>8 dollar</b>, chiqish tokeni esa <b>40 dollar</b> etib belgilandi. Bu OpenAI Astra modelining rasmiy API narxlaridan taxminan 20 foiz pastroq deganidir. Yirik korxonalar va SaaS kompaniyalar uchun bu hisoblash byudjetini yuz minglab dollarga tejash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Nasdaq IPO arafasidagi strategik qadam</h2>\n<p>Ushbu yangilik Anthropic kompaniyasining Nasdaq birjasida kutilayotgan ommaviy birlamchi aksiyalar savdosi (IPO, ticker: <code>ANT</code>) arafasida e'lon qilindi. Kompaniyaning 1 trillion dollardan oshiq baholanishi kutilayotgan bir paytda, yangi modellar Anthropic nafaqat ilmiy xavfsizlik, balki tijoriy samaradorlik bo'yicha ham sanoat yetakchisi ekanligini isbotlamoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt xavfsizligi va yetakchi tadqiqotlar bo'yicha gigant hisoblangan Anthropic o'zining yangi flagman modellari — <b>Claude Fable 5.2</b> hamda <b>Mythos 5.2</b> tizimlarini rasman e'lon qildi. Ushbu yangi modellar OpenAI'ning GPT-6 Astra modeliga munosib javob bo'lib, korxonalarga 20 foiz arzonroq narxda yuqori mantiqiy fikrlash quvvatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Astra bilan kuchlar tenglashuvi</h2>\n<p>Kuz mavsumida OpenAI GPT-6 Astra modelini taqdim etgach, dasturlash va murakkab agentlik vazifalarida bozor yetakchiligini o'ziga qaratgan edi. Anthropic tomonidan taqdim etilgan Fable 5.2 va Mythos 5.2 aynan ushbu bo'shliqni to'ldiradi. Mustaqil benchmarklar ko'rsatishicha, yangi Claude modellari kod tahlili, huquqiy va ilmiy matnlarni qayta ishlash hamda ko'p bosqichli matematik xulosalashda OpenAI flagmani bilan mutlaqo teng natijalarni qayd etgan.</p>\n\n<h2 class=\"article-section-title\">20% arzon narx siyosati</h2>\n<p>Anthropic jamoasi yangi modellarni tarqatishda korporativ mijozlar uchun jozibador narx taklifini ilgari surmoqda. 1 million kirish tokeni bahosi <b>8 dollar</b>, chiqish tokeni esa <b>40 dollar</b> etib belgilandi. Bu OpenAI Astra modelining rasmiy API narxlaridan taxminan 20 foiz pastroq deganidir. Yirik korxonalar va SaaS kompaniyalar uchun bu hisoblash byudjetini yuz minglab dollarga tejash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Nasdaq IPO arafasidagi strategik qadam</h2>\n<p>Ushbu yangilik Anthropic kompaniyasining Nasdaq birjasida kutilayotgan ommaviy birlamchi aksiyalar savdosi (IPO, ticker: <code>ANT</code>) arafasida e'lon qilindi. Kompaniyaning 1 trillion dollardan oshiq baholanishi kutilayotgan bir paytda, yangi modellar Anthropic nafaqat ilmiy xavfsizlik, balki tijoriy samaradorlik bo'yicha ham sanoat yetakchisi ekanligini isbotlamoqda.</p>",
+    "verification_status": "VERIFIED"
+  },
+  "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026": {
+    "id": "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026",
+    "slug": "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026",
+    "title": "Google yangi TPU 8tx va 8i Max chiplarini taqdim etdi: Nvidia bilan raqobatda 30% tejash imkoniyati",
+    "kicker": "HISOB-KITOBLAR · APPARATURA",
+    "meta_title": "Google TPU 8tx va 8i Max chiplarini chiqardi: Nvidia GPU'laridan 30% arzon — AiNoma",
+    "meta_description": "Google o'zining yangi avlod TPU 8tx va TPU 8i Max neyron protsessorlarini e'lon qildi: yangi chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkonini beradi.",
+    "category": "Texnologiya",
+    "audience": "Cloud arxitektorlari, IT kompaniyalar, investorlar, muhandislar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-09",
+    "source_published_date": "2026-11-09",
+    "date": "2026-11-10",
+    "publish_date": "2026-11-10",
+    "ainoma_published_date": "2026-11-10",
+    "img": "assets/banner_google_tpu_8tx_8i_max_chiplarini_chiqard.jpg",
+    "imgAlt": "Google TPU 8tx va 8i Max sun'iy intellekt chiplari",
+    "qisqacha": [
+      "Google sun'iy intellekt hisob-kitoblari uchun mo'ljallangan navbatdagi TPU 8tx va TPU 8i Max neyron protsessorlarini namoyish qildi.",
+      "Yangi chiplar Nvidia'ning yetakchi GPU modellariga qaraganda 30 foiz arzon narxda taqdim etilmoqda va energiya tejamkorligi 1.4 baravarga oshirilgan.",
+      "Tizimdan allaqachon Anthropic, Meta va Oracle foydalana boshladi, shuningdek OpenAI ham TPU klasterlarini xarid qilish bo'yicha muzokaralar olib bormoqda."
+    ],
+    "primary_source": {
+      "name": "Google Cloud Press",
+      "title": "Google Cloud announces next-generation TPU 8tx and 8i Max AI accelerators",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-tpu-8tx-8i-max-accelerators/",
+      "badge": "TEXNOLOGIK YUTUQ"
+    },
+    "secondary_sources": [
+      {
+        "name": "BeInCrypto",
+        "title": "Google escalates AI chip wars with TPU 8tx rollout priced 30% below Nvidia GPUs",
+        "url": "https://beincrypto.com/google-tpu-8tx-ai-chips-nvidia-competition-2026/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Google bulutli hisoblash va sun'iy intellekt infratuzilmasi sohasida muhim qadam tashlab, o'zining navbatdagi maxsus neyron protsessorlari — <b>TPU 8tx</b> hamda <b>TPU 8i Max</b> chiplarini namoyish etdi. Ushbu chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkoniyatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Nvidia apparat monopoliyasiga to'g'ridan-to'g'ri zarba</h2>\n<p>Bozorda Nvidia GPU chiplari (ayniqsa Blackwell va undan keyingi arxitekturalar) taqchilligi va haddan tashqari qimmatligi IT kompaniyalarini muqobil yo'llar qidirishga majbur qilmoqda. Google tomonidan taqdim etilgan TPU 8tx katta hajmdagi parametrlarga ega til modellarini o'qitish uchun, 8i Max esa past kechikish vaqti (latency) bilan keng ko'lamli so'rovlarni qayta ishlashga (inferens) ixtisoslashgan.</p>\n\n<h2 class=\"article-section-title\">Energiya tejamkorligi va optik kommutatsiya</h2>\n<p>Google yangi TPU podlarida o'zining ilg'or Optical Circuit Switching (OCS) texnologiyasini yangi bosqichga olib chiqdi. Bu chiplararo ma'lumot uzatishda elektr energiyasini 40 foizga tejash, ma'lumotlar uzatish kechikishini esa deyarli nolga tushirish imkonini beradi. Natijada yirik klasterlarda hisoblash samaradorligi 1.4 baravarga oshgan.</p>\n\n<h2 class=\"article-section-title\">Bozor yetakchilari TPU klasterlariga o'tmoqda</h2>\n<p>E'tiborli jihati, Google TPU chiplaridan faqat o'zining Gemini modellari uchun emas, balki boshqa AI gigantlari ham keng foydalanmoqda. Anthropic, Meta va Oracle korporatsiyalari yangi TPU 8tx klasterlarini buyurtma qilib bo'lgan. Wall Street tahlilchilari prognoziga ko'ra, OpenAI ham xavflarni diversifikatsiya qilish maqsadida Google TPU quvvatlaridan foydalanish bo'yicha muzokaralar olib bormoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Google bulutli hisoblash va sun'iy intellekt infratuzilmasi sohasida muhim qadam tashlab, o'zining navbatdagi maxsus neyron protsessorlari — <b>TPU 8tx</b> hamda <b>TPU 8i Max</b> chiplarini namoyish etdi. Ushbu chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkoniyatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Nvidia apparat monopoliyasiga to'g'ridan-to'g'ri zarba</h2>\n<p>Bozorda Nvidia GPU chiplari (ayniqsa Blackwell va undan keyingi arxitekturalar) taqchilligi va haddan tashqari qimmatligi IT kompaniyalarini muqobil yo'llar qidirishga majbur qilmoqda. Google tomonidan taqdim etilgan TPU 8tx katta hajmdagi parametrlarga ega til modellarini o'qitish uchun, 8i Max esa past kechikish vaqti (latency) bilan keng ko'lamli so'rovlarni qayta ishlashga (inferens) ixtisoslashgan.</p>\n\n<h2 class=\"article-section-title\">Energiya tejamkorligi va optik kommutatsiya</h2>\n<p>Google yangi TPU podlarida o'zining ilg'or Optical Circuit Switching (OCS) texnologiyasini yangi bosqichga olib chiqdi. Bu chiplararo ma'lumot uzatishda elektr energiyasini 40 foizga tejash, ma'lumotlar uzatish kechikishini esa deyarli nolga tushirish imkonini beradi. Natijada yirik klasterlarda hisoblash samaradorligi 1.4 baravarga oshgan.</p>\n\n<h2 class=\"article-section-title\">Bozor yetakchilari TPU klasterlariga o'tmoqda</h2>\n<p>E'tiborli jihati, Google TPU chiplaridan faqat o'zining Gemini modellari uchun emas, balki boshqa AI gigantlari ham keng foydalanmoqda. Anthropic, Meta va Oracle korporatsiyalari yangi TPU 8tx klasterlarini buyurtma qilib bo'lgan. Wall Street tahlilchilari prognoziga ko'ra, OpenAI ham xavflarni diversifikatsiya qilish maqsadida Google TPU quvvatlaridan foydalanish bo'yicha muzokaralar olib bormoqda.</p>",
+    "verification_status": "VERIFIED"
+  },
+  "huquqshunoslar-uchun-ai": {
+    "id": "huquqshunoslar-uchun-ai",
+    "slug": "huquqshunoslar-uchun-ai",
+    "title": "Huquqshunoslar uchun AI: shartnoma tahlili va hujjat tayyorlashda yordam",
+    "kicker": "KASB BO'YICHA · HUQUQ",
+    "meta_title": "Huquqshunoslar uchun AI: Shartnoma tahlili va xavfsiz foydalanish — AiNoma",
+    "meta_description": "Sun'iy intellekt shartnoma va yuridik hujjatlarni tezroq ko'rib chiqishga qanday yordam beradi? Gallyutsinatsiyalar, maxfiylik va amaliy tavsiyalar haqida batafsil.",
+    "category": "Qo'llanmalar",
+    "audience": "Huquqshunoslar, advokatlar, yurist-konsultantlar",
+    "event_date": "2026-11-10",
+    "source_date": "2026-11-10",
+    "source_published_date": "2026-11-10",
+    "date": "2026-11-10",
+    "publish_date": "2026-11-10",
+    "ainoma_published_date": "2026-11-10",
+    "img": "assets/banner_huquqshunoslar_uchun_ai.jpg",
+    "imgAlt": "Huquqshunoslar va yuristlar uchun AI qo'llanmasi",
+    "qisqacha": [
+      "AI yirik hajmdagi shartnomalar, da'vo arizalari va qonunchilik hujjatlarini tezkor tahlil qilib, asosiy bandlarni ajratishda yordam beradi.",
+      "Til modellari mavjud bo'lmagan qonun moddalari yoki soxta sud amaliyotini to'qib chiqarishi (gallyutsinatsiya) mumkinligi sababli barcha havolalarni rasmiy manbada tekshirish shart.",
+      "Mijozlarning konfidentsial ma'lumotlarini ochiq AI platformalariga kiritish tavsiya etilmaydi; yakuniy huquqiy xulosa har doim yuristning o'zida qoladi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Amaliy Tadqiqotlar Guruhi",
+      "title": "Yuridik sohada sun'iy intellekt vositalaridan unumli va xavfsiz foydalanish metodologiyasi",
+      "url": "https://ainoma.uz/qollanmalar/huquqshunoslar-uchun-ai/",
+      "badge": "AMALIY METODOLOGIYA"
+    },
+    "secondary_sources": [
+      {
+        "name": "LegalTech Journal",
+        "title": "AI in Contract Review and Document Due Diligence: Best Practices and Pitfalls",
+        "url": "https://legaltechjournal.org/ai-contract-review-2026/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt katta hajmdagi hujjatlarni tezda ko'rib chiqish, asosiy bandlarni ajratib olish va birinchi qoralamalarni tayyorlashda vaqtni sezilarli tejaydi — ammo yakuniy huquqiy xulosa va mas'uliyat har doim inson yuristning o'zida qoladi.</p>\n\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi?</h2>\n<p><b>1. Uzun hujjatlarni tezda ko'rib chiqish.</b> Ko'p sahifali shartnoma yoki qonun hujjatini AI tizimiga berib, asosiy bandlar, muddatlar, jarimalar va majburiyatlarni qisqa tahliliy ro'yxat shaklida olishingiz mumkin.</p>\n<p><b>2. Birinchi qoralama tayyorlash.</b> Standart xat, e'tiroznomalar, da'vo arizalari yoki oddiy shartnoma shablonining boshlang'ich qoralamasini bir necha daqiqada tayyorlash — keyin uni o'zingiz to'liq tahrirlash imkoniyati taqdim etiladi.</p>\n<p><b>3. Til va uslubni yaxshilash.</b> Yuridik hujjatni aniqroq, tushunarliroq tilda qayta bayon qilish (ayniqsa mijozga yuboriladigan tushuntirish xatlari uchun juda qulay).</p>\n<p><b>4. Solishtirish (Redline tahlil).</b> Ikki shartnoma variantini (masalan, eski va yangi tahrir) solishtirib, yashirin o'zgarishlar va asosiy farqlarni bir zumda topish.</p>\n\n<h2 class=\"article-section-title\">Qayerda AI'ga ishonib bo'lmaydi?</h2>\n<p>⚠️ <b>Gallyutsinatsiyalar va qonun normalari:</b> AI amaldagi qonunchilikni har doim to'liq va aniq bilmasligi mumkin — ayniqsa O'zbekiston Respublikasi qonunchiligidagi so'nggi tahrirlar bo'yicha. AI ba'zan ishonchli ohangda, ammo aslida mavjud bo'lmagan qonun moddalari yoki sud pretsedentlarini to'qib chiqarishi (hallucination) mumkin. Har qanday huquqiy havola yoki modda raqamini <code>Lex.uz</code> kabi rasmiy davlat bazalarida tekshirish shart.</p>\n\n<p>🔒 <b>Mijoz sirlari va konfidentsiallik:</b> Mijozlarning tijorat sirlari, shartnoma summalari va shaxsiy ma'lumotlarini ochiq umumiy AI platformalariga kiritish taqiqlanadi. Agar enterprise darajasidagi xavfsiz klaster bo'lmasa, maxfiy ma'lumotlar ochiqlanishi xavfi mavjud.</p>\n\n<h2 class=\"article-section-title\">Oltin qoida: Junior yordamchi tamoyili</h2>\n<p>Sun'iy intellektdan malakali yordamchi sifatida foydalaning: u sizga qoralama va tahlil tezligini beradi, biroq hujjatga qo'yiladigan har bir imzo va professional xulosa — sizning shaxsiy mas'uliyatingizdir.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt katta hajmdagi hujjatlarni tezda ko'rib chiqish, asosiy bandlarni ajratib olish va birinchi qoralamalarni tayyorlashda vaqtni sezilarli tejaydi — ammo yakuniy huquqiy xulosa va mas'uliyat har doim inson yuristning o'zida qoladi.</p>\n\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi?</h2>\n<p><b>1. Uzun hujjatlarni tezda ko'rib chiqish.</b> Ko'p sahifali shartnoma yoki qonun hujjatini AI tizimiga berib, asosiy bandlar, muddatlar, jarimalar va majburiyatlarni qisqa tahliliy ro'yxat shaklida olishingiz mumkin.</p>\n<p><b>2. Birinchi qoralama tayyorlash.</b> Standart xat, e'tiroznomalar, da'vo arizalari yoki oddiy shartnoma shablonining boshlang'ich qoralamasini bir necha daqiqada tayyorlash — keyin uni o'zingiz to'liq tahrirlash imkoniyati taqdim etiladi.</p>\n<p><b>3. Til va uslubni yaxshilash.</b> Yuridik hujjatni aniqroq, tushunarliroq tilda qayta bayon qilish (ayniqsa mijozga yuboriladigan tushuntirish xatlari uchun juda qulay).</p>\n<p><b>4. Solishtirish (Redline tahlil).</b> Ikki shartnoma variantini (masalan, eski va yangi tahrir) solishtirib, yashirin o'zgarishlar va asosiy farqlarni bir zumda topish.</p>\n\n<h2 class=\"article-section-title\">Qayerda AI'ga ishonib bo'lmaydi?</h2>\n<p>⚠️ <b>Gallyutsinatsiyalar va qonun normalari:</b> AI amaldagi qonunchilikni har doim to'liq va aniq bilmasligi mumkin — ayniqsa O'zbekiston Respublikasi qonunchiligidagi so'nggi tahrirlar bo'yicha. AI ba'zan ishonchli ohangda, ammo aslida mavjud bo'lmagan qonun moddalari yoki sud pretsedentlarini to'qib chiqarishi (hallucination) mumkin. Har qanday huquqiy havola yoki modda raqamini <code>Lex.uz</code> kabi rasmiy davlat bazalarida tekshirish shart.</p>\n\n<p>🔒 <b>Mijoz sirlari va konfidentsiallik:</b> Mijozlarning tijorat sirlari, shartnoma summalari va shaxsiy ma'lumotlarini ochiq umumiy AI platformalariga kiritish taqiqlanadi. Agar enterprise darajasidagi xavfsiz klaster bo'lmasa, maxfiy ma'lumotlar ochiqlanishi xavfi mavjud.</p>\n\n<h2 class=\"article-section-title\">Oltin qoida: Junior yordamchi tamoyili</h2>\n<p>Sun'iy intellektdan malakali yordamchi sifatida foydalaning: u sizga qoralama va tahlil tezligini beradi, biroq hujjatga qo'yiladigan har bir imzo va professional xulosa — sizning shaxsiy mas'uliyatingizdir.</p>",
+    "verification_status": "VERIFIED"
   }
 };

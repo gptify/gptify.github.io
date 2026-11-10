@@ -315,7 +315,13 @@ const searchIndex = [
 
 
 
+
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Huquqshunoslar uchun AI: shartnoma tahlili va hujjat tayyorlashda yordam", u: "yangiliklar/huquqshunoslar-uchun-ai/", k: "huquqshunoslar uchun ai: shartnoma tahlili va hujjat tayyorlashda yordam qo'llanmalar ainoma amaliy tadqiqotlar guruhi " },
+  { t: "Anthropic Claude Fable 5.2 va Mythos 5.2 modellarini chiqardi: GPT-6 Astraga qarshi 20% arzon narxlar", u: "yangiliklar/anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026/", k: "anthropic claude fable 5.2 va mythos 5.2 modellarini chiqardi: gpt-6 astraga qarshi 20% arzon narxlar texnologiya fortune tech " },
+  { t: "Google yangi TPU 8tx va 8i Max chiplarini taqdim etdi: Nvidia bilan raqobatda 30% tejash imkoniyati", u: "yangiliklar/google-tpu-8tx-8i-max-chiplarini-chiqardi-2026/", k: "google yangi tpu 8tx va 8i max chiplarini taqdim etdi: nvidia bilan raqobatda 30% tejash imkoniyati texnologiya google cloud press " },
   { t: "MIT universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda", u: "yangiliklar/mit-worldparticle-universal-ai-fizika-simulyatori-2026/", k: "mit universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda texnologiya mit news (massachusetts institute of technology) " },
   { t: "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma", u: "yangiliklar/nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026/", k: "nvidia va janubiy koreya suveren ai alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma biznes nvidia newsroom " },
   { t: "Mustaqil METR hisoboti: Anthropic AI o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi", u: "yangiliklar/metr-anthropic-ai-tadqiqot-tezligi-2x-2026/", k: "mustaqil metr hisoboti: anthropic ai o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi xalqaro metr (model evaluation and threat research) " },
