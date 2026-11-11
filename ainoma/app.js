@@ -319,6 +319,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "Claude va Google AI Studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma", u: "yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/", k: "claude va google ai studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma qo'llanmalar ainoma amaliy laboratoriyasi " },
   { t: "OpenAI «Businesses in ChatGPT»ni ishga tushirdi: kompaniyalar endi ChatGPT ichida o‘z brend agenti va do‘koniga ega bo‘ladi", u: "yangiliklar/openai-businesses-in-chatgpt-business-hub-2026/", k: "openai «businesses in chatgpt»ni ishga tushirdi: kompaniyalar endi chatgpt ichida o‘z brend agenti va do‘koniga ega bo‘ladi biznes openai business news " },

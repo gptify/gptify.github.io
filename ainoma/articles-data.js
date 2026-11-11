@@ -6925,7 +6925,7 @@ window.AINOMA_ARTICLES = {
     "primary_source": {
       "name": "AiNoma Amaliy Tadqiqotlar Guruhi",
       "title": "Yuridik sohada sun'iy intellekt vositalaridan unumli va xavfsiz foydalanish metodologiyasi",
-      "url": "https://ainoma.uz/qollanmalar/huquqshunoslar-uchun-ai/",
+      "url": "https://ainoma.uz/yangiliklar/huquqshunoslar-uchun-ai/",
       "badge": "AMALIY METODOLOGIYA"
     },
     "secondary_sources": [
@@ -7042,7 +7042,7 @@ window.AINOMA_ARTICLES = {
     "primary_source": {
       "name": "AiNoma Amaliy Laboratoriyasi",
       "title": "Sun'iy intellekt yordamida professional video ishlab chiqarish va multimodal tahlil metodologiyasi",
-      "url": "https://ainoma.uz/qollanmalar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/",
+      "url": "https://ainoma.uz/yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/",
       "badge": "AMALIY QO'LLANMA"
     },
     "secondary_sources": [
