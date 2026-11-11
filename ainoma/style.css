@@ -32,7 +32,7 @@
 
 * { box-sizing: border-box; }
 html, body {
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 html { scroll-behavior: smooth; }
@@ -947,13 +947,25 @@ footer {
   font-weight: 700;
 }
 .article-hero {
-  width: min(1100px, calc(100% - 40px));
-  height: 480px;
+  width: min(980px, calc(100% - 40px));
+  max-width: 980px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 520px;
   margin: 0 auto 36px;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
+  box-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e2e8f0;
+  background: var(--surface);
 }
-.article-hero img { width: 100%; height: 100%; object-fit: cover; }
+.article-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #f8fafc;
+  display: block;
+}
 .article-body { font-size: 17px; line-height: 1.8; }
 .article-body h2 { font: 800 28px "Space Grotesk", sans-serif; margin-top: 36px; margin-bottom: 14px; }
 .article-body p { margin: 0 0 20px; }
