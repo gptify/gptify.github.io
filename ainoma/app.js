@@ -318,7 +318,11 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Claude va Google AI Studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma", u: "yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/", k: "claude va google ai studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma qo'llanmalar ainoma amaliy laboratoriyasi " },
+  { t: "OpenAI «Businesses in ChatGPT»ni ishga tushirdi: kompaniyalar endi ChatGPT ichida o‘z brend agenti va do‘koniga ega bo‘ladi", u: "yangiliklar/openai-businesses-in-chatgpt-business-hub-2026/", k: "openai «businesses in chatgpt»ni ishga tushirdi: kompaniyalar endi chatgpt ichida o‘z brend agenti va do‘koniga ega bo‘ladi biznes openai business news " },
+  { t: "Anthropic ofis dasturlari bozoriga kirdi: Claude Sheets va Whiteboards orqali Google va Microsoft’ga raqobatchi taqdim etildi", u: "yangiliklar/anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026/", k: "anthropic ofis dasturlari bozoriga kirdi: claude sheets va whiteboards orqali google va microsoft’ga raqobatchi taqdim etildi texnologiya anthropic product news " },
   { t: "Huquqshunoslar uchun AI: shartnoma tahlili va hujjat tayyorlashda yordam", u: "yangiliklar/huquqshunoslar-uchun-ai/", k: "huquqshunoslar uchun ai: shartnoma tahlili va hujjat tayyorlashda yordam qo'llanmalar ainoma amaliy tadqiqotlar guruhi " },
   { t: "Anthropic Claude Fable 5.2 va Mythos 5.2 modellarini chiqardi: GPT-6 Astraga qarshi 20% arzon narxlar", u: "yangiliklar/anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026/", k: "anthropic claude fable 5.2 va mythos 5.2 modellarini chiqardi: gpt-6 astraga qarshi 20% arzon narxlar texnologiya fortune tech " },
   { t: "Google yangi TPU 8tx va 8i Max chiplarini taqdim etdi: Nvidia bilan raqobatda 30% tejash imkoniyati", u: "yangiliklar/google-tpu-8tx-8i-max-chiplarini-chiqardi-2026/", k: "google yangi tpu 8tx va 8i max chiplarini taqdim etdi: nvidia bilan raqobatda 30% tejash imkoniyati texnologiya google cloud press " },
