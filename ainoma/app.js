@@ -324,9 +324,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "NVIDIA bosh direktori Jensen Huang kutilmaganda iste’foga chiqdi", u: "yangiliklar/nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026/", k: "nvidia bosh direktori jensen huang kutilmaganda iste’foga chiqdi biznes nvidia newsroom 33 yildan buyon kompaniyani boshqarib kelgan jensen huang prezident va bosh direktor lavozimidan dar" },
-  { t: "O‘zbekistonda jinoyatchilikni sun’iy intellekt bilan bashorat qilish tizimi", u: "yangiliklar/ozbekistonda-jinoyatchilik-xavfini-bashorat-qiluvchi-ai-tizimi-2026/", k: "o‘zbekistonda jinoyatchilikni sun’iy intellekt bilan bashorat qilish tizimi o‘zbekiston spot.uz davlat organlari ma’lumotlari yagona raqamli platformaga birlashtirilib, hududlar kesimida kriminoge" },
   { t: "Claude va Google AI Studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma", u: "yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/", k: "claude va google ai studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma qo'llanmalar ainoma amaliy laboratoriyasi " },
   { t: "OpenAI «Businesses in ChatGPT»ni ishga tushirdi: kompaniyalar endi ChatGPT ichida o‘z brend agenti va do‘koniga ega bo‘ladi", u: "yangiliklar/openai-businesses-in-chatgpt-business-hub-2026/", k: "openai «businesses in chatgpt»ni ishga tushirdi: kompaniyalar endi chatgpt ichida o‘z brend agenti va do‘koniga ega bo‘ladi biznes openai business news " },
   { t: "Anthropic ofis dasturlari bozoriga kirdi: Claude Sheets va Whiteboards orqali Google va Microsoft’ga raqobatchi taqdim etildi", u: "yangiliklar/anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026/", k: "anthropic ofis dasturlari bozoriga kirdi: claude sheets va whiteboards orqali google va microsoft’ga raqobatchi taqdim etildi texnologiya anthropic product news " },
