@@ -323,6 +323,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "NVIDIA bosh direktori Jensen Huang kutilmaganda iste’foga chiqdi", u: "yangiliklar/nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026/", k: "nvidia bosh direktori jensen huang kutilmaganda iste’foga chiqdi biznes nvidia newsroom 33 yildan buyon kompaniyani boshqarib kelgan jensen huang prezident va bosh direktor lavozimidan dar" },
   { t: "O‘zbekistonda jinoyatchilikni sun’iy intellekt bilan bashorat qilish tizimi", u: "yangiliklar/ozbekistonda-jinoyatchilik-xavfini-bashorat-qiluvchi-ai-tizimi-2026/", k: "o‘zbekistonda jinoyatchilikni sun’iy intellekt bilan bashorat qilish tizimi o‘zbekiston spot.uz davlat organlari ma’lumotlari yagona raqamli platformaga birlashtirilib, hududlar kesimida kriminoge" },
