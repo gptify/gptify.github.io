@@ -1,4 +1,104 @@
 window.AINOMA_ARTICLES = {
+  "nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026": {
+    "id": "nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026",
+    "slug": "nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026",
+    "title": "NVIDIA bosh direktori Jensen Huang kutilmaganda iste’foga chiqdi",
+    "kicker": "BOZORLAR VA RAHBARIYAT",
+    "meta_title": "NVIDIA bosh direktori Jensen Huang kutilmaganda iste’foga chiqdi — AiNoma",
+    "meta_description": "33 yildan buyon kompaniyani boshqarib kelgan Jensen Huang prezident va bosh direktor lavozimidan darhol ketishini ma’lum qildi; Colette Kress vaqtinchalik bosh direktor etib tayinlandi.",
+    "category": "Biznes",
+    "audience": "Investorlar, tizim muhandislari, texnologiya rahbarlari va bozor tahlilchilari",
+    "event_date": "2026-11-12",
+    "source_date": "2026-11-12",
+    "source_published_date": "2026-11-12",
+    "date": "2026-11-12",
+    "publish_date": "2026-11-12",
+    "ainoma_published_date": "2026-11-12",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "33 yildan buyon kompaniyani boshqarib kelgan Jensen Huang prezident va bosh direktor lavozimidan darhol ketishini ma’lum qildi; Colette Kress vaqtinchalik bosh direktor etib tayinlandi.",
+    "img": "assets/banner_nvidia_bosh_direktori_jensen_huang_istef.jpg",
+    "imgAlt": "NVIDIA bosh direktori Jensen Huang iste’fosi",
+    "qisqacha": [
+      "33 yildan buyon NVIDIA kompaniyasini boshqarib kelgan asoschi va bosh direktor Jensen Huang zudlik bilan lavozimidan ketdi.",
+      "Kompaniya direktorlar kengashi moliya direktori Colette Kressni vaqtinchalik bosh direktor etib tayinladi va yangi rahbar qidiruvini boshladi.",
+      "Bozorlarda AI apparat ta'minoti va chiplar sektorida keskin tebranishlar boshlandi, NVIDIA aksiyalari savdodan oldin 8% dan ko‘proq pasaydi."
+    ],
+    "primary_source": {
+      "name": "NVIDIA Newsroom",
+      "title": "NVIDIA Announces CEO Transition: Jensen Huang Steps Down",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "date": "12.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Wall Street Journal / Financial Times",
+        "title": "NVIDIA Leadership Shakeup Shakes AI Hardware Markets",
+        "url": "https://www.theverge.com/ai-artificial-intelligence",
+        "date": "12.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Bozorlar va Moliya Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-12",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Global sun’iy intellekt sanoatida kutilmagan eng katta kadrlar o‘zgarishi yuz berdi. 1993-yilda NVIDIA kompaniyasiga asos solib, 33 yildan buyon uni boshqarib kelgan afsonaviy rahbar <b>Jensen Huang</b> kompaniya prezidenti, bosh direktori va direktorlar kengashi a’zosi lavozimidan zudlik bilan iste’foga chiqishini rasman ma’lum qildi.</p>\n<p>Kompaniya direktorlar kengashi favqulodda yig‘ilish o‘tkazib, 2013-yildan buyon moliya direktori (CFO) sifatida ishlab kelayotgan <b>Colette Kress</b>ni vaqtinchalik bosh direktor etib tayinladi. Shu bilan birga, kengash a’zosi Harvey C. Jones kompaniya tarixidagi birinchi mustaqil kengash raisi lavozimini egalladi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Jensen Huang faqatgina kompaniya rahbari emas, balki CUDA dasturiy platformasi va Blackwell/Vera arxitekturalarining bosh mafkurachisi bo‘lgan. Kengash ichki tekshiruvlar ortidan ushbu qaror qabul qilinganini ta’kidlamoqda. Xabar ortidan jahon fond bozorlarida sun’iy intellekt chiplari va texnologiya aksiyalari bo‘yicha jiddiy tebranishlar boshlandi: savdodan oldingi sessiyada kompaniya aksiyalari 8 foizdan ko‘proq pasaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Muhandislar va arxitektorlar uchun</div>\n    <ul>\n      <li>NVIDIA’ning uzoq muddatli chiplar yo‘l xaritasi (GPU roadmap) va dasturiy ta’minot ta’minoti o‘z kuchida qoladi.</li>\n      <li>Biroq korporativ boshqaruvning qayta ko‘rib chiqilishi OpenAI, Anthropic va Microsoft kabi eng yirik buyurtmachilar bilan uzoq muddatli yetkazib berish shartnomalarining shartlariga ta’sir qilishi mumkin.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes va investorlar uchun</div>\n    <ul>\n      <li>Sun’iy intellekt infratuzilmasiga milliardlab dollar tikkan korxonalar uchun yagona yetkazib beruvchiga haddan tashqari qaram bo‘lish xatarlari yaqqol namoyon bo‘ldi.</li>\n      <li>Bu esa Google (TPU), AMD va maxsus ichki chiplarga talabni yanada tezlashtiradi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Mahalliy data-markazlar, bulutli hisoblash quvvatlari va sun’iy intellekt infratuzilmasini qurayotgan tashkilotlar uchun ushbu voqea apparat ta’minotida diversifikatsiyaning naqadar muhimligini ko‘rsatadi. Kelgusi yillarda apparat mustaqilligini oshirish, faqat bitta chip ishlab chiqaruvchisiga tayanib qolmasdan ochiq dasturiy kutubxonalar va muqobil hisoblash platformalarini o‘zlashtirish IT sohasidagi eng to‘g‘ri strategiya bo‘lib qoladi.</p>\n</div>"
+  },
+  "ozbekistonda-jinoyatchilik-xavfini-bashorat-qiluvchi-ai-tizimi-2026": {
+    "id": "ozbekistonda-jinoyatchilik-xavfini-bashorat-qiluvchi-ai-tizimi-2026",
+    "slug": "ozbekistonda-jinoyatchilik-xavfini-bashorat-qiluvchi-ai-tizimi-2026",
+    "title": "O‘zbekistonda jinoyatchilikni sun’iy intellekt bilan bashorat qilish tizimi",
+    "kicker": "DAVLAT VA XAVFSIZLIK",
+    "meta_title": "O‘zbekistonda jinoyatchilikni sun’iy intellekt bilan bashorat qilish tizimi — AiNoma",
+    "meta_description": "Davlat organlari ma’lumotlari yagona raqamli platformaga birlashtirilib, hududlar kesimida kriminogen barqarorlik indeksi va xavflar xaritasi avtomatik shakllantiriladi.",
+    "category": "O‘zbekiston",
+    "audience": "Davlat xizmatchilari, shaharsozlar, kiberxavfsizlik mutaxassislari, data tahlilchilar",
+    "event_date": "2026-11-04",
+    "source_date": "2026-11-04",
+    "source_published_date": "2026-11-04",
+    "date": "2026-11-12",
+    "publish_date": "2026-11-12",
+    "ainoma_published_date": "2026-11-12",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Davlat organlari ma’lumotlari yagona raqamli platformaga birlashtirilib, hududlar kesimida kriminogen barqarorlik indeksi va xavflar xaritasi avtomatik shakllantiriladi.",
+    "img": "assets/banner_ozbekistonda_jinoyatchilik_xavfini_basho.jpg",
+    "imgAlt": "O‘zbekistonda jinoyatchilikni AI bilan bashorat qilish",
+    "qisqacha": [
+      "Sud, ichki ishlar, adliya va soliq idoralarining ma’lumotlari yagona raqamli platformaga integratsiya qilinmoqda.",
+      "Tuman va mahallalar kesimida dinamik «kriminogen barqarorlik indeksi» va xatarlar xaritasi avtomatik shakllantiriladi.",
+      "Tizim faqat umumlashtirilgan ijtimoiy-kriminologik tendensiyalarni baholaydi va qat'iy ma'lumotlar xavfsizligi ostida ishlaydi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz",
+      "title": "O‘zbekistonda jinoyatchilik xavfini sun’iy intellekt yordamida prognoz qilish tizimi joriy etiladi",
+      "url": "https://www.spot.uz/oz/2026/11/04/anticrime-ai/",
+      "date": "04.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "O‘zbekiston Respublikasi Huquqni muhofaza qilish organlari",
+        "title": "Huquqbuzarliklar profilaktikasida zamonaviy tahliliy tizimlar konsepsiyasi",
+        "url": "https://gov.uz/oz/iiv/news/view/1742/",
+        "date": "04.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Davlat va Texnologiya Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-12",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekistonda huquqbuzarliklar profilaktikasi va jamoat xavfsizligini ta’minlash jarayonlariga zamonaviy tahliliy sun’iy intellekt texnologiyalarini keng tatbiq etish bo‘yicha yangi bosqich boshlanmoqda. Vazirlik va idoralarning idoralararo axborot tizimlari bazasini yagona raqamli platformaga integratsiya qilish orqali jinoyatchilik xavfini oldindan prognoz qilish tizimi ishlab chiqilmoqda.</p>\n<p>Loyiha huquqbuzarlik sodir etilgandan keyin unga javob qaytarish tamoyilidan voz kechib, kriminogen holatni keltirib chiqaruvchi ijtimoiy va iqtisodiy omillarni erta aniqlash va xatarlarning oldini olishga qaratilgan.</p>\n\n<h2>Nega muhim?</h2>\n<p>Yangi tizim doirasida bir necha muhim tahliliy mexanizmlar ishga tushiriladi: har bir tuman, shahar va mahalla kesimida xavfsizlik darajasini baholovchi dinamik <b>«kriminogen barqarorlik indeksi»</b> hamda aholi punktlarining raqamli <b>«xatarlar xaritasi»</b> shakllantiriladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Tizim muhandislari va data tahlilchilar uchun</div>\n    <ul>\n      <li>Sud, ichki ishlar, adliya, soliq va ijtimoiy himoya tizimlaridagi xolis statistik ma’lumotlar yagona tahliliy markazda qayta ishlanadi.</li>\n      <li>Mahalliy ishlab chiquvchilar uchun katta hajmdagi geofazoviy (GIS) va statistik ma’lumotlarni qayta ishlovchi murakkab bashorat modellarini qurish imkoniyati tug‘iladi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Jamiyat va biznes uchun</div>\n    <ul>\n      <li>Savdo markazlari, banklar, logistika obyektlari va turar-joy majmualari joylashgan hududlarda kriminogen barqarorlikning oshishi xususiy mulk xavfsizligini ta’minlashga xizmat qiladi.</li>\n      <li>Tizim faqat umumlashtirilgan ijtimoiy tendensiyalarni baholaydi va shaxsiy ma’lumotlar daxlsizligi qonunchilik talablariga muvofiq ta’minlanadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Kelgusi amaliy qadamlar</div>\n  <p>Mutaxassislar fikricha, sun’iy intellekt yordamida prognoz qilish tizimining muvaffaqiyati kiritilayotgan birlamchi ma’lumotlarning sifati, algoritmlarning xolisligi va inson huquqlari standartlariga qat’iy rioya qilinishiga bevosita bog‘liqdir. Ushbu tajriba muvaffaqiyatli yo‘lga qo‘yilsa, transport oqimlarini boshqarish va shahar infratuzilmasini rejalashtirishda ham keng qo‘llaniladi.</p>\n</div>"
+  },
   "dizaynerlar-uchun-ai": {
     "id": "dizaynerlar-uchun-ai",
     "slug": "dizaynerlar-uchun-ai",
