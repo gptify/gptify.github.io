@@ -326,6 +326,7 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
   { t: "San-Fransiskoda 5 ta AI gigantiga qarshi favqulodda da’vo qo‘zg‘atildi", u: "yangiliklar/san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026/", k: "san-fransiskoda 5 ta ai gigantiga qarshi favqulodda da’vo qo‘zg‘atildi texnologiya california superior court / legal filings xalqaro fuqarolik koalitsiyasi openai, google, anthropic, meta va xai/spacex ustidan sudga murojaat " },
   { t: "Perplexity «Teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar", u: "yangiliklar/perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026/", k: "perplexity «teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar biznes perplexity ai blog perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «teamma" },

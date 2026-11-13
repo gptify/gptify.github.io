@@ -17,7 +17,7 @@ window.AINOMA_ARTICLES = {
     "read_time": "4 daqiqalik mutolaa",
     "readTime": "4 daqiqalik mutolaa",
     "deck": "Xalqaro fuqarolik koalitsiyasi OpenAI, Google, Anthropic, Meta va xAI/SpaceX ustidan sudga murojaat qilib, yangi avlod modellarini o‘qitishni favqulodda muzlatishni talab qildi.",
-    "img": "assets/banner_san_fransiskoda_5_ta_ai_gigantiga_qarshi.jpg",
+    "img": "assets/editorial_sf_ai_giants_lawsuit.jpg",
     "imgAlt": "5 ta AI gigantiga qarshi sud da’vosi",
     "qisqacha": [
       "San-Fransisko Oliy sudiga OpenAI, Google, Anthropic, Meta va xAI/SpaceX ustidan favqulodda kollektiv da’vo arizasi kiritildi.",
@@ -67,7 +67,7 @@ window.AINOMA_ARTICLES = {
     "read_time": "3 daqiqalik mutolaa",
     "readTime": "3 daqiqalik mutolaa",
     "deck": "Perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «Teammates» nomli avtonom raqamli hamkasblar platformasini ishga tushirdi.",
-    "img": "assets/banner_perplexity_teammates_avtonom_hamkasb_age.jpg",
+    "img": "assets/editorial_perplexity_teammates_agent_ui.jpg",
     "imgAlt": "Perplexity Teammates avtonom agentlar tizimi",
     "qisqacha": [
       "Perplexity oddiy qidiruv qatoridan tashqariga chiqib, korxona xodimlari kabi mustaqil ishlay oladigan «Teammates» agentlarini e’lon qildi.",
@@ -117,7 +117,7 @@ window.AINOMA_ARTICLES = {
     "read_time": "4 daqiqalik mutolaa",
     "readTime": "4 daqiqalik mutolaa",
     "deck": "33 yildan buyon kompaniyani boshqarib kelgan Jensen Huang prezident va bosh direktor lavozimidan darhol ketishini ma’lum qildi; Colette Kress vaqtinchalik bosh direktor etib tayinlandi.",
-    "img": "assets/banner_nvidia_bosh_direktori_jensen_huang_istef.jpg",
+    "img": "assets/editorial_nvidia_jensen_huang_transition.jpg",
     "imgAlt": "NVIDIA bosh direktori Jensen Huang iste’fosi",
     "qisqacha": [
       "33 yildan buyon NVIDIA kompaniyasini boshqarib kelgan asoschi va bosh direktor Jensen Huang zudlik bilan lavozimidan ketdi.",
