@@ -1,4 +1,104 @@
 window.AINOMA_ARTICLES = {
+  "san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026": {
+    "id": "san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026",
+    "slug": "san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026",
+    "title": "San-Fransiskoda 5 ta AI gigantiga qarshi favqulodda da’vo qo‘zg‘atildi",
+    "kicker": "QONUNCHILIK VA XAVFSIZLIK",
+    "meta_title": "San-Fransiskoda 5 ta AI gigantiga qarshi favqulodda da’vo qo‘zg‘atildi — AiNoma",
+    "meta_description": "Xalqaro fuqarolik koalitsiyasi OpenAI, Google, Anthropic, Meta va xAI/SpaceX ustidan sudga murojaat qilib, yangi avlod modellarini o‘qitishni favqulodda muzlatishni talab qildi.",
+    "category": "Texnologiya",
+    "audience": "Huquqshunoslar, siyosatchilar, IT rahbarlari, xavfsizlik muhandislari va tahlilchilar",
+    "event_date": "2026-11-13",
+    "source_date": "2026-11-13",
+    "source_published_date": "2026-11-13",
+    "date": "2026-11-13",
+    "publish_date": "2026-11-13",
+    "ainoma_published_date": "2026-11-13",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Xalqaro fuqarolik koalitsiyasi OpenAI, Google, Anthropic, Meta va xAI/SpaceX ustidan sudga murojaat qilib, yangi avlod modellarini o‘qitishni favqulodda muzlatishni talab qildi.",
+    "img": "assets/banner_san_fransiskoda_5_ta_ai_gigantiga_qarshi.jpg",
+    "imgAlt": "5 ta AI gigantiga qarshi sud da’vosi",
+    "qisqacha": [
+      "San-Fransisko Oliy sudiga OpenAI, Google, Anthropic, Meta va xAI/SpaceX ustidan favqulodda kollektiv da’vo arizasi kiritildi.",
+      "Da’vogarlar yangi avlod modellarini o‘qitish va ularni tijoriy tarqatishni xavfsizlik auditlari yakunlangunga qadar sud qarori bilan to‘xtatishni talab qilmoqda.",
+      "Bu global sun’iy intellekt bozoridagi eng yirik beshta raqib kompaniyani bir vaqtda nishonga olgan tarixdagi ilk umumiy da’vodir."
+    ],
+    "primary_source": {
+      "name": "California Superior Court / Legal Filings",
+      "title": "Emergency Injunction Request Against Frontier AI Model Training and Deployment",
+      "url": "https://www.cbsnews.com/news/ai-lawsuit-openai-google-anthropic-meta-court/",
+      "date": "13.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Al Jazeera / Technology Policy",
+        "title": "Major tech firms face landmark lawsuit seeking emergency freeze on AI development",
+        "url": "https://www.aljazeera.com/news/2026/11/12/ai-giants-face-lawsuit-in-california",
+        "date": "13.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Qonunchilik va Global Siyosat Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-13",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>San-Fransisko Oliy sudida global sun’iy intellekt sanoati tarixidagi eng yirik huquqiy qarama-qarshilik boshlandi. Raqamli xavfsizlik, iste’molchilar huquqlari va ta’lim sohasidagi xalqaro nodavlat tashkilotlar koalitsiyasi (jumladan, Public Citizen va Alliance for Secure AI) sohaning yetakchi besh kompaniyasi — <b>OpenAI, Google, Anthropic, Meta va xAI/SpaceX</b> ustidan favqulodda kollektiv da’vo kiritdi.</p>\n<p>Da’vo arizasida sudga favqulodda taqiq (emergency injunction) chiqarish talabi qo‘yilgan bo‘lib, unda barcha keyingi avlod katta modellarini o‘qitish va ularni ommaviy infratuzilmaga joriy qilish jarayonini xolis mustaqil auditdan o‘tkazilgunga qadar vaqtincha to‘xtatish talab qilinmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ushbu sud jarayoni avvalgi intellektual mulk yoki mualliflik huquqi bo‘yicha nizolardan tubdan farq qiladi. Da’vogarlar birinchi marta <b>avtonom kompyuter boshqaruvi va avtomatlashgan kiberhujumlar</b> xavfini qonuniy javobgarlik darajasiga olib chiqdi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box business\">\n    <div class=\"lens-title\">💼 Texnologik kompaniyalar va bozor uchun</div>\n    <ul>\n      <li>Yetakchi laboratoriyalar endi o‘zlarining yangi modellarini faqat texnik samaradorlik emas, mustaqil sud ekspertizasi talablari asosida ham tekshirishga majbur bo‘lishi mumkin.</li>\n      <li>Agar sud arizani qanoatlantirsa yoki vaqtinchalik cheklov joriy qilsa, bu global model relizlari grafigini sekinlashtirishi mumkin.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">🛠️ Ishlab chiquvchilar va arxitektorlar uchun</div>\n    <ul>\n      <li>Avtonom agentlar uchun xavfsizlik devorlari va monitoring protokollarini o‘rnatish majburiy standartga aylanadi.</li>\n      <li>Tizimlarni qurishda inson aralashuvisiz qaror qabul qiluvchi API chaqiruvlari bo‘yicha qo‘shimcha nazorat mexanizmlari talab etiladi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT ekotizimi va mahalliy korxonalar uchun ushbu voqea xalqaro xavfsizlik standartlariga oldindan moslashish zarurligini bildiradi. Agar siz o‘z tashkilotingizda avtonom agentlar va sun’iy intellekt modellaridan foydalanayotgan bo‘lsangiz, ma’lumotlar xavfsizligi va qat’iy kirish huquqlarini belgilovchi ichki korporativ qoidalarni hozirdan joriy etish eng xavfsiz yo‘ldir.</p>\n</div>"
+  },
+  "perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026": {
+    "id": "perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026",
+    "slug": "perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026",
+    "title": "Perplexity «Teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar",
+    "kicker": "KOMPANIYALAR VA MAHSULOTLAR",
+    "meta_title": "Perplexity «Teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar — AiNoma",
+    "meta_description": "Perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «Teammates» nomli avtonom raqamli hamkasblar platformasini ishga tushirdi.",
+    "category": "Biznes",
+    "audience": "Mahsulot boshqaruvchilari, marketing jamoalari, tadqiqotchilar va biznes egalari",
+    "event_date": "2026-11-13",
+    "source_date": "2026-11-13",
+    "source_published_date": "2026-11-13",
+    "date": "2026-11-13",
+    "publish_date": "2026-11-13",
+    "ainoma_published_date": "2026-11-13",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «Teammates» nomli avtonom raqamli hamkasblar platformasini ishga tushirdi.",
+    "img": "assets/banner_perplexity_teammates_avtonom_hamkasb_age.jpg",
+    "imgAlt": "Perplexity Teammates avtonom agentlar tizimi",
+    "qisqacha": [
+      "Perplexity oddiy qidiruv qatoridan tashqariga chiqib, korxona xodimlari kabi mustaqil ishlay oladigan «Teammates» agentlarini e’lon qildi.",
+      "Agentlar jamoaviy Slack, Notion, Google Drive va CRM tizimlariga ulanib, real vaqt rejimida bozor tahlili va monitoringni olib boradi.",
+      "Tizim har bir xodimga alohida buyruq bermasdan turib, oldindan belgilangan maqsadlar bo‘yicha doimiy tahliliy hisobotlarni yetkazib turadi."
+    ],
+    "primary_source": {
+      "name": "Perplexity AI Blog",
+      "title": "Introducing Perplexity Teammates: Autonomous Digital Coworkers for Teams",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-teammates",
+      "date": "13.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch / Enterprise AI",
+        "title": "Perplexity moves beyond search to autonomous background teammates",
+        "url": "https://techcrunch.com/category/artificial-intelligence/",
+        "date": "13.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Kompaniyalar va Avtomatlashtirish Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-13",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Sun’iy intellektga asoslangan qidiruv tizimlari yetakchisi Perplexity o‘z rivojlanishidagi eng katta bosqichni e’lon qildi: kompaniya <b>«Teammates»</b> nomli avtonom raqamli hamkasblar platformasini rasman ishga tushirdi.</p>\n<p>Yangi xizmat foydalanuvchining har bir savoliga alohida javob qaytaruvchi an’anaviy chat-botlardan farqli ravishda, jamoaning doimiy a’zosi kabi fonda mustaqil ishlaydi. U korporativ ma’lumotlar bazasi, loyiha boshqaruvi tizimlari va tashqi bozor signallarini 24/7 rejimda monitoring qilib boradi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ushbu qadam butun AI sanoatida qidiruvdan «vazifalarni to‘liq bajarish» (task completion) erasiga o‘tilganini ko‘rsatadi. «Teammates» orqali jamoalar bitta xodimning bir necha kunlik qo‘l mehnatini talab qiladigan jarayonlarni avtomatlashtirish imkoniga ega bo‘lmoqda.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box business\">\n    <div class=\"lens-title\">💼 Biznes rahbarlari va menejerlar uchun</div>\n    <ul>\n      <li>Har bir loyiha va mahsulot bo‘yicha raqobatchilar harakati, yangi relizlar va narx o‘zgarishlarini avtomatik kuzatuvchi agentlar biriktiriladi.</li>\n      <li>Jamoa a’zolari ma’lumot qidirishga vaqt sarflamaydi, tizim yangilanishlarni tayyor xulosa va tahlil shaklida taqdim etadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">🛠️ Dasturchilar va mahsulot jamoalari uchun</div>\n    <ul>\n      <li>Slack, Google Docs, Notion, GitHub va korporativ CRM tizimlari bilan tayyor ikki tomonlama integratsiya mavjud.</li>\n      <li>Agentlar uchun maxsus ruxsatnomalar va ma’lumotlar himoyasi (Enterprise Access Controls) o‘rnatilgan.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Mahalliy startaplar, agentliklar va xalqaro bozorga xizmat ko‘rsatuvchi kompaniyalar uchun «Teammates» kabi avtonom agentlar shtatni ko‘paytirmasdan ish unumdorligini keskin oshirish imkoniyatini beradi. Kichik jamoalar bir necha tahlilchi va tadqiqotchi o‘rnini bosuvchi raqamli tizimlarni o‘z ish jarayoniga kiritib, xalqaro raqobatbardoshlikni sezilarli darajada kuchaytirishi mumkin.</p>\n</div>"
+  },
   "nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026": {
     "id": "nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026",
     "slug": "nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026",

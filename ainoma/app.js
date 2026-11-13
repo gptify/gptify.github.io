@@ -325,7 +325,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "San-Fransiskoda 5 ta AI gigantiga qarshi favqulodda da’vo qo‘zg‘atildi", u: "yangiliklar/san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026/", k: "san-fransiskoda 5 ta ai gigantiga qarshi favqulodda da’vo qo‘zg‘atildi texnologiya california superior court / legal filings xalqaro fuqarolik koalitsiyasi openai, google, anthropic, meta va xai/spacex ustidan sudga murojaat " },
+  { t: "Perplexity «Teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar", u: "yangiliklar/perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026/", k: "perplexity «teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar biznes perplexity ai blog perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «teamma" },
   { t: "NVIDIA bosh direktori Jensen Huang kutilmaganda iste’foga chiqdi", u: "yangiliklar/nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026/", k: "nvidia bosh direktori jensen huang kutilmaganda iste’foga chiqdi biznes nvidia newsroom 33 yildan buyon kompaniyani boshqarib kelgan jensen huang prezident va bosh direktor lavozimidan dar" },
   { t: "Claude va Google AI Studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma", u: "yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/", k: "claude va google ai studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma qo'llanmalar ainoma amaliy laboratoriyasi " },
   { t: "OpenAI «Businesses in ChatGPT»ni ishga tushirdi: kompaniyalar endi ChatGPT ichida o‘z brend agenti va do‘koniga ega bo‘ladi", u: "yangiliklar/openai-businesses-in-chatgpt-business-hub-2026/", k: "openai «businesses in chatgpt»ni ishga tushirdi: kompaniyalar endi chatgpt ichida o‘z brend agenti va do‘koniga ega bo‘ladi biznes openai business news " },
