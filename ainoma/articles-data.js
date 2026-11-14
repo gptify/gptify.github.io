@@ -1,4 +1,54 @@
 window.AINOMA_ARTICLES = {
+  "google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026": {
+    "id": "google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026",
+    "slug": "google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026",
+    "title": "Mercedes-Benz zavodlarida Gemini Robotics 2.5 tizimi ishga tushirildi",
+    "kicker": "ROBOTOTEXNIKA VA SANOAT",
+    "meta_title": "Mercedes-Benz zavodlarida Gemini Robotics 2.5 tizimi ishga tushirildi — AiNoma",
+    "meta_description": "Google DeepMind kompaniyasining yangi sanoat modeli Mercedes-Benz avtomobil konveyerlarida detallarni 96% avtonom aniqlik bilan yig‘ishni muvaffaqiyatli bajardi.",
+    "category": "Texnologiya",
+    "audience": "Sanoat korxonalari rahbarlari, muhandislar, IT direktorlar va texnologiya ixlosmandlari",
+    "event_date": "2026-11-14",
+    "source_date": "2026-11-14",
+    "source_published_date": "2026-11-14",
+    "date": "2026-11-14",
+    "publish_date": "2026-11-14",
+    "ainoma_published_date": "2026-11-14",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Google DeepMind kompaniyasining yangi sanoat modeli Mercedes-Benz avtomobil konveyerlarida detallarni 96% avtonom aniqlik bilan yig‘ishni muvaffaqiyatli bajardi.",
+    "img": "assets/editorial_gemini_robotics_mercedes_benz.jpg",
+    "imgAlt": "Mercedes-Benz zavodida Gemini Robotics 2.5 robotlari",
+    "qisqacha": [
+      "Google DeepMind sanoat korxonalari uchun maxsus moslashtirilgan «Gemini Robotics 2.5» modelini e’lon qildi.",
+      "Mercedes-Benz zavodlarida o‘tkazilgan amaliy sinovlarda tizim murakkab avtomobil qismlarini 96% aniqlik bilan saralab, montaj qildi.",
+      "Tizim oldindan dasturlangan harakatlar bilan emas, balki fazoviy ko‘rish sensorlari orqali real vaqtda vaziyatga moslashib ishlaydi."
+    ],
+    "primary_source": {
+      "name": "Google DeepMind Official Blog",
+      "title": "Deploying Gemini Robotics 2.5 to Automotive Manufacturing Lines",
+      "url": "https://deepmind.google/discover/blog/gemini-robotics-automotive-manufacturing-2026/",
+      "date": "14.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Automotive News / Industrial AI",
+        "title": "Mercedes-Benz integrates Google DeepMind robotics with 96% autonomous precision",
+        "url": "https://www.theverge.com/ai-artificial-intelligence",
+        "date": "14.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sanoat va Robototexnika Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-14",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Google DeepMind sanoat ishlab chiqarish jarayonlari uchun maxsus ishlab chiqilgan yangi avlod sun’iy intellekt modeli — <b>Gemini Robotics 2.5</b> tizimini rasman taqdim etdi. Germaniyaning yetakchi avtomobilsozlik giganti <b>Mercedes-Benz</b> o‘zining zamonaviy yig‘uv konveyerlarida ushbu platformani real ishlab chiqarish rejimida muvaffaqiyatli sinovdan o‘tkazdi.</p>\n<p>Dastlabki hisobotlarga ko‘ra, robotlashtirilgan manipulyatorlar mikron darajasidagi nozik ehtiyot qismlarni saralash, tekshirish va kuzovga o‘rnatish jarayonlarida <b>96% dan ortiq avtonom aniqlik</b> ko‘rsatkichini qayd etdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Avvalgi an’anaviy sanoat robotlari qat’iy belgilangan trayektoriya bo‘yicha harakatlangan va har bir yangi detal uchun ularni dasturchilar qayta kodlashi talab etilgan. Gemini Robotics 2.5 esa ko‘p modalli fazoviy ko‘rish (multimodal spatial vision) orqali kutilmagan vaziyatlarni, detalning egri turishini yoki nuqsonlarini inson ko‘zi kabi tezda payqab, o‘z harakatini darhol moslashtira oladi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box business\">\n    <div class=\"lens-title\">💼 Ishlab chiqaruvchilar va korxonalar uchun</div>\n    <ul>\n      <li>Konveyerni yangi mahsulot turiga moslashtirish vaqti oylardan bir necha soatga qisqaradi.</li>\n      <li>Inson xatosi bilan bog‘liq brak va qayta ishlash xarajatlari keskin kamayadi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">🛠️ Muhandislar va robototexniklar uchun</div>\n    <ul>\n      <li>Har bir robotga millionlab qator statik kod yozish shart emas; tizim yuqori darajadagi tabiiy til ko‘rsatmalari orqali boshqariladi.</li>\n      <li>Fabrika datchiklari va xavfsizlik kameralari bilan to‘liq real vaqt rejimida integratsiya qilingan.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekistonda avtomobilsozlik, elektrotexnika va to‘qimachilik sohalarida ishlab chiqarish quvvatlarini modernizatsiya qilayotgan korxonalar uchun ushbu tajriba muhim namunadir. Kelgusi yillarda sun’iy intellekt bilan jihozlangan aqlli konveyer tizimlarini o‘zlashtirish mahalliy mahsulotlarning jahon bozoridagi raqobatbardoshligini ta’minlashning asosiy omili bo‘lib xizmat qiladi.</p>\n</div>"
+  },
   "san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026": {
     "id": "san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026",
     "slug": "san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026",

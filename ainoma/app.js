@@ -327,7 +327,9 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Mercedes-Benz zavodlarida Gemini Robotics 2.5 tizimi ishga tushirildi", u: "yangiliklar/google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026/", k: "mercedes-benz zavodlarida gemini robotics 2.5 tizimi ishga tushirildi texnologiya google deepmind official blog google deepmind kompaniyasining yangi sanoat modeli mercedes-benz avtomobil konveyerlarida detallarn" },
   { t: "San-Fransiskoda 5 ta AI gigantiga qarshi favqulodda da’vo qo‘zg‘atildi", u: "yangiliklar/san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026/", k: "san-fransiskoda 5 ta ai gigantiga qarshi favqulodda da’vo qo‘zg‘atildi texnologiya california superior court / legal filings xalqaro fuqarolik koalitsiyasi openai, google, anthropic, meta va xai/spacex ustidan sudga murojaat " },
   { t: "Perplexity «Teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar", u: "yangiliklar/perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026/", k: "perplexity «teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar biznes perplexity ai blog perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «teamma" },
   { t: "NVIDIA bosh direktori Jensen Huang kutilmaganda iste’foga chiqdi", u: "yangiliklar/nvidia-bosh-direktori-jensen-huang-istefoga-chiqdi-2026/", k: "nvidia bosh direktori jensen huang kutilmaganda iste’foga chiqdi biznes nvidia newsroom 33 yildan buyon kompaniyani boshqarib kelgan jensen huang prezident va bosh direktor lavozimidan dar" },
