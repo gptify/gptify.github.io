@@ -328,7 +328,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Anthropic 1.4 trillion dollarlik IPO aksiyalar savdosini boshladi", u: "yangiliklar/anthropic-1-4-trillion-dollar-ipo-savdosi-2026/", k: "anthropic 1.4 trillion dollarlik ipo aksiyalar savdosini boshladi biznes financial times / nasdaq markets claude modelining ishlab chiquvchisi anthropic kompaniyasi $1.4t kapitallashuv maqsadi bilan nasdaq " },
+  { t: "O‘zbekistonda startaplar uchun bepul AI infratuzilmasi tanlovi boshlandi", u: "yangiliklar/ozbekistonda-startaplar-uchun-bepul-ai-infratuzilmasi-tanlovi-2026/", k: "o‘zbekistonda startaplar uchun bepul ai infratuzilmasi tanlovi boshlandi o‘zbekiston o‘zbekiston respublikasi raqamli texnologiyalar vazirligi vazirlar mahkamasining 581-son qarori asosida ijtimoiy startaplar va otmlar uchun bepul 10 mln token" },
   { t: "Mercedes-Benz zavodlarida Gemini Robotics 2.5 tizimi ishga tushirildi", u: "yangiliklar/google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026/", k: "mercedes-benz zavodlarida gemini robotics 2.5 tizimi ishga tushirildi texnologiya google deepmind official blog google deepmind kompaniyasining yangi sanoat modeli mercedes-benz avtomobil konveyerlarida detallarn" },
   { t: "San-Fransiskoda 5 ta AI gigantiga qarshi favqulodda da’vo qo‘zg‘atildi", u: "yangiliklar/san-fransiskoda-5-ta-ai-gigantiga-qarshi-favqulodda-davo-2026/", k: "san-fransiskoda 5 ta ai gigantiga qarshi favqulodda da’vo qo‘zg‘atildi texnologiya california superior court / legal filings xalqaro fuqarolik koalitsiyasi openai, google, anthropic, meta va xai/spacex ustidan sudga murojaat " },
   { t: "Perplexity «Teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar", u: "yangiliklar/perplexity-teammates-avtonom-hamkasb-agentlar-tizimi-2026/", k: "perplexity «teammates» tizimini chiqardi: doimiy ishlovchi avtonom agentlar biznes perplexity ai blog perplexity oddiy qidiruvdan voz kechib, jamoalar uchun fonda 24/7 rejimda mustaqil ishlovchi «teamma" },

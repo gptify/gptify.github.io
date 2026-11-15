@@ -1,4 +1,104 @@
 window.AINOMA_ARTICLES = {
+  "anthropic-1-4-trillion-dollar-ipo-savdosi-2026": {
+    "id": "anthropic-1-4-trillion-dollar-ipo-savdosi-2026",
+    "slug": "anthropic-1-4-trillion-dollar-ipo-savdosi-2026",
+    "title": "Anthropic 1.4 trillion dollarlik IPO aksiyalar savdosini boshladi",
+    "kicker": "MOLIYA VA BOZORLAR",
+    "meta_title": "Anthropic 1.4 trillion dollarlik IPO aksiyalar savdosini boshladi — AiNoma",
+    "meta_description": "Claude modelining ishlab chiquvchisi Anthropic kompaniyasi $1.4T kapitallashuv maqsadi bilan Nasdaq birjasidagi eng yirik IPO taqdimotlarini boshladi.",
+    "category": "Biznes",
+    "audience": "Investorlar, moliya tahlilchilari, IT rahbarlari va bozor ishtirokchilari",
+    "event_date": "2026-11-15",
+    "source_date": "2026-11-15",
+    "source_published_date": "2026-11-15",
+    "date": "2026-11-15",
+    "publish_date": "2026-11-15",
+    "ainoma_published_date": "2026-11-15",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Claude modelining ishlab chiquvchisi Anthropic kompaniyasi $1.4T kapitallashuv maqsadi bilan Nasdaq birjasidagi eng yirik IPO taqdimotlarini boshladi.",
+    "img": "assets/editorial_anthropic_1_4_trillion_ipo.jpg",
+    "imgAlt": "Anthropic Nasdaq $1.4 Trillion IPO",
+    "qisqacha": [
+      "Anthropic kompaniyasi Wall Street va xalqaro moliya markazlarida o‘z aksiyalarini ommaviy birjaga chiqarish (IPO) taqdimotlarini boshladi.",
+      "Kompaniyaning kutilayotgan umumiy bozor qiymati 1.4 trillion dollarga baholanmoqda, bu sun’iy intellekt sohasi uchun yangi rekorddir.",
+      "Yillik daromadi 4.6 milliard dollardan oshgan Anthropic korporativ mijozlar va xavfsiz B2B modellar segmentida yetakchilik qilmoqda."
+    ],
+    "primary_source": {
+      "name": "Financial Times / Nasdaq Markets",
+      "title": "Anthropic Launches $1.4T IPO Roadshow on Wall Street Ahead of Historic Public Listing",
+      "url": "https://www.ft.com/technology",
+      "date": "15.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Fortune / Tech Analysis",
+        "title": "Anthropic roadshow heavily oversubscribed as institutional investors queue for Claude shares",
+        "url": "https://fortune.com/technology/artificial-intelligence/",
+        "date": "15.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Moliya va Bozorlar Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-15",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Sun’iy intellekt xavfsizligi va Claude modellari oilasi bilan tanilgan <b>Anthropic</b> kompaniyasi global moliya bozorlarida o‘z tarixidagi eng katta qadamni qo‘ydi: kompaniya <b>1.4 trillion dollarlik</b> kutilayotgan kapitallashuv bilan Nasdaq birjasida aksiyalarni birlamchi joylashtirish (IPO) jarayonini rasman boshladi.</p>\n<p>Nyu-York, London va Tokio moliya markazlarida o‘tkazilayotgan taqdimotlarda yirik institutsional fondlarning talabi taklif qilingan kvotadan bir necha barobarga oshib ketdi. Bu so‘nggi yillarda texnologik sektor tarixidagi eng yirik ommaviy aksiyadorlik relizlaridan biri bo‘lmoqda.</p>\n\n<h2>Nega muhim?</h2>\n<p>Ushbu IPO sun’iy intellekt startaplarining uzoq yillik venchur investitsiyalaridan mustaqil ommaviy korporatsiya maqomiga o‘tishining yangi davrini boshlab beradi. Anthropic olingan mablag‘larni yangi gigavattlik superkompyuter markazlarini qurish va hisoblash infratuzilmasini kengaytirishga yo‘naltiradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box business\">\n    <div class=\"lens-title\">💼 Moliya va investorlar uchun</div>\n    <ul>\n      <li>Anthropic’ning 2026-yilgi yillik tushumi 4.6 milliard dollarga yetdi, uning asosiy qismi korporativ obunalarga to‘g‘ri keladi.</li>\n      <li>Bozorda OpenAI va Anthropic o‘rtasidagi raqobat endi xususiy investorlar doirasidan chiqib, ochiq birja maydoniga ko‘chmoqda.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">🛠️ Dasturchilar va korxonalar uchun</div>\n    <ul>\n      <li>Uzoq muddatli moliyaviy barqarorlik Claude API xizmatlarining yanada arzonlashishi va uzluksiz ishlash kafolatini oshiradi.</li>\n      <li>Keyingi avlod modellarini o‘qitish va tadqiqotlar tezligi sezilarli darajada kuchayadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>O‘zbekiston IT biznesi va xalqaro bozorga dasturiy mahsulotlar eksport qiluvchi jamoalar uchun Claude ekotizimining mustahkamlanishi juda muhim. Anthropic aksiyadorlik kompaniyasiga aylanishi bilan global ma’lumotlar markazlarini mintaqaviy kengaytirish va yangi davlatlar uchun to‘g‘ridan-to‘g‘ri korporativ shartnomalarni taqdim etish imkoniyatlari ochiladi.</p>\n</div>"
+  },
+  "ozbekistonda-startaplar-uchun-bepul-ai-infratuzilmasi-tanlovi-2026": {
+    "id": "ozbekistonda-startaplar-uchun-bepul-ai-infratuzilmasi-tanlovi-2026",
+    "slug": "ozbekistonda-startaplar-uchun-bepul-ai-infratuzilmasi-tanlovi-2026",
+    "title": "O‘zbekistonda startaplar uchun bepul AI infratuzilmasi tanlovi boshlandi",
+    "kicker": "DAVLAT VA STARTAPLAR",
+    "meta_title": "O‘zbekistonda startaplar uchun bepul AI infratuzilmasi tanlovi boshlandi — AiNoma",
+    "meta_description": "Vazirlar Mahkamasining 581-son qarori asosida ijtimoiy startaplar va OTMlar uchun bepul 10 mln token hamda 120 GB GPU quvvatiga arizalar qabuli ochildi.",
+    "category": "O‘zbekiston",
+    "audience": "Startap asoschilari, oliy ta’lim tadqiqotchilari, yosh olimlar va dasturchilar",
+    "event_date": "2026-11-15",
+    "source_date": "2026-11-15",
+    "source_published_date": "2026-11-15",
+    "date": "2026-11-15",
+    "publish_date": "2026-11-15",
+    "ainoma_published_date": "2026-11-15",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Vazirlar Mahkamasining 581-son qarori asosida ijtimoiy startaplar va OTMlar uchun bepul 10 mln token hamda 120 GB GPU quvvatiga arizalar qabuli ochildi.",
+    "img": "assets/editorial_ozbekiston_ai_infratuzilma_581.jpg",
+    "imgAlt": "O‘zbekistonda sun’iy intellekt infratuzilmasi tanlovi",
+    "qisqacha": [
+      "Hukumat qaroriga muvofiq, noyabr oyida ijtimoiy ahamiyatga ega sun’iy intellekt loyihalari uchun davlat infratuzilmasidan bepul foydalanish tanlovi boshlandi.",
+      "G‘olib loyihalarga dasturiy interfeys (API) orqali oyiga 10 million bepul token va 120 GB gacha video xotira (GPU) 6 oy muddatga ajratiladi.",
+      "Qo‘shimcha 50 million tokengacha bo‘lgan hajm uchun rasmiy tariflarga nisbatan 50 foizlik imtiyozli chegirma taqdim etiladi."
+    ],
+    "primary_source": {
+      "name": "O‘zbekiston Respublikasi Raqamli texnologiyalar vazirligi",
+      "title": "Hukumatning 581-son qarori ijrosi: sun’iy intellekt infratuzilmasidan bepul foydalanish tanlovi",
+      "url": "https://digital.uz/news/view/ai-infrastructure-grant-581/",
+      "date": "15.11.2026",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Spot.uz / O‘zbekiston Biznesi",
+        "title": "Startaplar va OTMlar uchun bepul 10 mln token va 120 GB GPU quvvati ajratilmoqda",
+        "url": "https://www.spot.uz/oz/2026/10/22/ai-tokens/",
+        "date": "15.11.2026",
+        "badge": "MUSTAQIL MANBA"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Davlat va Texnologiya Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-15",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>O‘zbekiston Respublikasi Vazirlar Mahkamasining 581-son qarori (20.10.2026 y.) ijrosi doirasida Raqamli texnologiyalar vazirligi tomonidan <b>noyabr oyi bo‘yicha sun’iy intellekt infratuzilmasidan bepul va imtiyozli foydalanish tanlovi</b> rasman boshlandi.</p>\n<p>Tanlovda oliy ta’lim muassasalari, ilmiy tashkilotlar, startaplar hamda hokimlarning raqamlashtirish bo‘yicha maslahatchilarining ijtimoiy ahamiyatga ega bo‘lgan amaliy dasturiy loyihalari ishtirok etishi mumkin.</p>\n\n<h2>Qanday imtiyozlar taqdim etiladi?</h2>\n<p>Qarorga binoan, saralashdan o‘tgan loyihalar uchun davlat hisoblash klasterlari hisobidan quyidagi amaliy imkoniyatlar ochiladi:</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">💡 LLM modellaridan foydalanuvchi loyihalar uchun</div>\n    <ul>\n      <li>Dasturiy interfeys (API) orqali 6 oygacha muddatda, bir kalendar oy davomida <b>10 million token</b> bepul qayta ishlash huquqi beriladi.</li>\n      <li>Oyiga 10 million tokendan oshgan qo‘shimcha 50 million tokengacha bo‘lgan hajm uchun <b>50% chegirma</b> qo‘llaniladi.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box business\">\n    <div class=\"lens-title\">🖥️ Modellar o‘qituvchi jamoalar uchun</div>\n    <ul>\n      <li>Katta til modellari hisoblanmaydigan neyrotizimlarni o‘rgatish, testlash va baholash maqsadlarida <b>120 GB gacha video xotira (GPU)</b> ajratiladi.</li>\n      <li>Arizalar 100 ballik shaffof tizim orqali mustaqil ekspert komissiyasi tomonidan baholanadi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Arizani qanday topshirish mumkin?</div>\n  <p>Tanlovda ishtirok etish uchun arizalar Raqamli texnologiyalar vazirligining yagona elektron portali orqali qabul qilinadi. Har bir ishtirokchi bir vaqtning o‘zida faqat bitta loyiha bilan qatnashishi mumkin bo‘lib, olingan hisoblash quvvatlari va ma’lumotlarni faqat belgilangan ijtimoiy maqsadlarda qo‘llash shart qilib qo‘yilgan.</p>\n</div>"
+  },
   "google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026": {
     "id": "google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026",
     "slug": "google-gemini-robotics-2-5-mercedes-benz-zavodlari-2026",
