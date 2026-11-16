@@ -1,4 +1,154 @@
 window.AINOMA_ARTICLES = {
+  "alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026": {
+    "id": "alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026",
+    "slug": "alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026",
+    "title": "Alibaba 2.4 trillion parametrli Qwen4-Max modelini taqdim etdi",
+    "kicker": "GLOBAL MODELLAR",
+    "meta_title": "Alibaba 2.4 trillion parametrli Qwen4-Max modelini taqdim etdi — AiNoma",
+    "meta_description": "Xitoyning Alibaba kompaniyasi korporativ agentlar va dasturlash vazifalari uchun 2.4T parametrli eng yangi Qwen4-Max modelini namoyish qildi.",
+    "category": "Biznes",
+    "audience": "Dasturchilar, texnologik rahbarlar, AI mutaxassislari va korporativ mijozlar",
+    "event_date": "2026-11-16",
+    "source_date": "2026-11-16",
+    "source_published_date": "2026-11-16",
+    "date": "2026-11-16",
+    "publish_date": "2026-11-16",
+    "ainoma_published_date": "2026-11-16",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Xitoyning Alibaba kompaniyasi korporativ agentlar va dasturlash vazifalari uchun 2.4T parametrli eng yangi Qwen4-Max modelini namoyish qildi.",
+    "img": "assets/editorial_alibaba_qwen4_max_2_4t.jpg",
+    "imgAlt": "Alibaba Cloud Qwen4-Max 2.4T Model Presentation",
+    "qisqacha": [
+      "Alibaba Cloud o‘zining yangi avlod flagman modeli bo‘lgan Qwen4-Max arxitekturasini rasman taqdim etdi.",
+      "Yangi model 2.4 trillion umumiy parametrga ega bo‘lib, korporativ agentlik vazifalarida hisoblash xarajatlarini 40 foizgacha qisqartiradi.",
+      "Model kod yozish, vizual tahlil va ko‘p bosqichli biznes jarayonlarini avtomatlashtirishda jahon yetakchilari bilan raqobatlasha oladi."
+    ],
+    "primary_source": {
+      "name": "Alibaba Cloud Rasmiy Xabari",
+      "title": "Alibaba Cloud Unveils Qwen4-Max Frontier Intelligence Model",
+      "url": "https://www.alibabacloud.com/blog/alibaba-qwen4-max-2-4t-launch-2026",
+      "date": "2026-11-16",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Morningstar Tech",
+        "title": "Alibaba Qwen4-Max Sets New Benchmark for Enterprise LLM Inference",
+        "url": "https://www.morningstar.com/news/pr-newswire/20261116/alibaba-qwen4-max",
+        "date": "2026-11-16",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Global Modellar va Bozor Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-16",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Xitoyning texnologik giganti <b>Alibaba</b> o‘zining sun’iy intellekt bo‘yicha eng yirik muvaffaqiyatini e’lon qildi: kompaniya <b>2.4 trillion parametrga</b> ega bo‘lgan yangi <b>Qwen4-Max</b> modelini ommaga taqdim etdi. Mazkur model avvalgi avlodlarga qaraganda hisoblash resurslarini ancha tejamkor sarflaydi va korxonalarga agentlik arxitekturasini keng ko‘lamda tatbiq etish imkonini beradi.</p>\n\n<h2>Murakkab dasturlash va agentlik tizimlar</h2>\n<p>Alibaba Cloud muhandislarining ta’kidlashicha, Qwen4-Max faqatgina matn bilan ishlash emas, balki mustaqil dasturiy kod yozish, ma’lumotlar bazalarini boshqarish va ko‘p qadamli tahliliy hisobotlarni inson aralashuvisiz bajarish qobiliyatiga ega. Mustaqil benchmark sinovlarida yangi arxitektura o‘z segmentida xalqaro ilg‘or modellar bilan tenglashdi.</p>\n\n<h2>Global bozorda raqobat va narxlar inqilobi</h2>\n<p>Xitoy texnologiya kompaniyalari yuqori unumdorlikka ega AI modellarini ancha past narxda taqdim etish orqali xalqaro bulut bozorida o‘z ulushini oshirmoqda. Qwen4-Max chiqarilishi bizneslar uchun yirik modellardan foydalanish xarajatlarini sezilarli darajada kamaytiradi.</p>"
+  },
+  "ozbekiston-suniy-intellekt-global-indeksida-rekord-natija-korsatdi-2026": {
+    "id": "ozbekiston-suniy-intellekt-global-indeksida-rekord-natija-korsatdi-2026",
+    "slug": "ozbekiston-suniy-intellekt-global-indeksida-rekord-natija-korsatdi-2026",
+    "title": "O‘zbekiston sun’iy intellekt global indeksida rekord natija ko‘rsatdi",
+    "kicker": "DAVLAT VA STRATEGIYA",
+    "meta_title": "O‘zbekiston sun’iy intellekt global indeksida rekord natija ko‘rsatdi — AiNoma",
+    "meta_description": "O‘zbekiston hisoblash infratuzilmasi va davlat boshqaruvida sun’iy intellektga tayyorgarlik bo‘yicha xalqaro reytingda eng tez o‘sgan davlatlar safiga kirdi.",
+    "category": "O‘zbekiston",
+    "audience": "Davlat organlari xodimlari, IT tadbirkorlar, tahlilchilar va texnologiya ixlosmandlari",
+    "event_date": "2026-11-16",
+    "source_date": "2026-11-16",
+    "source_published_date": "2026-11-16",
+    "date": "2026-11-16",
+    "publish_date": "2026-11-16",
+    "ainoma_published_date": "2026-11-16",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "O‘zbekiston hisoblash infratuzilmasi va davlat boshqaruvida sun’iy intellektga tayyorgarlik bo‘yicha xalqaro reytingda eng tez o‘sgan davlatlar safiga kirdi.",
+    "img": "assets/editorial_ozbekiston_ai_global_index_2026.jpg",
+    "imgAlt": "Uzbekistan Government AI Readiness Global Index Record",
+    "qisqacha": [
+      "Government AI Readiness Index hisobotiga ko‘ra, O‘zbekiston mintaqada sun’iy intellektga tayyorgarlik bo‘yicha eng yuqori ko‘rsatkichlardan birini egalladi.",
+      "Hukumat tomonidan ishga tushirilgan NVIDIA superkompyuter klasteri va startaplar uchun bepul tokenlar dasturi mamlakat reytingini keskin ko‘tardi.",
+      "IT Park rezidentlari soni 4 200 dan oshgani va 160 dan ortiq kompaniya AI xizmatlarini eksport qilayotgani xalqaro tahlilchilar tomonidan alohida e’tirof etildi."
+    ],
+    "primary_source": {
+      "name": "Raqamli Texnologiyalar Vazirligi",
+      "title": "O‘zbekiston Global Sun’iy Intellektga Tayyorgarlik Indeksida yuqori o‘rinlarga ko‘tarildi",
+      "url": "https://digital.uz/news/view/ai-readiness-index-record-2026/",
+      "date": "2026-11-16",
+      "badge": "RASMIY DAVLAT AXBOROTI"
+    },
+    "secondary_sources": [
+      {
+        "name": "Spot.uz",
+        "title": "O‘zbekiston sun’iy intellekt bo‘yicha mintaqaviy yetakchilikni mustahkamlamoqda",
+        "url": "https://www.spot.uz/oz/2026/11/16/ai-index/",
+        "date": "2026-11-16",
+        "badge": "MUSTAQIL IQTISODIY TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Davlat va Siyosat Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-16",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Dunyo bo‘yicha hukumatlarning sun’iy intellektga tayyorgarlik darajasini baholovchi nufuzli <b>Government AI Readiness Index</b> yangi hisobotida <b>O‘zbekiston</b> eng yuqori o‘sish dinamikasini ko‘rsatgan mamlakatlar qatoridan joy oldi. Mamlakatning hisoblash quvvatlari, qonunchilik bazasi va raqamli infratuzilmasi xalqaro ekspertlar tomonidan yuqori baholandi.</p>\n\n<h2>NVIDIA superkompyuter klasteri va 581-qaror samarasi</h2>\n<p>Reytingdagi ijobiy o‘zgarishlarga Raqamli hukumat ma’lumotlar markazida zamonaviy superkompyuter klasterining yo‘lga qo‘yilishi hamda Vazirlar Mahkamasining 581-sonli qarori doirasida startaplar va oliygoh laboratoriyalariga bepul hisoblash resurslari ajratilishi kuchli turtki bo‘ldi.</p>\n\n<h2>IT Park eksport salohiyati va mintaqaviy xab</h2>\n<p>Bugungi kunda IT Park rezidentlari soni 4 200 dan ortgan bo‘lib, 160 dan ziyod korxona xorijiy bozorlarga sun’iy intellekt va ma’lumotlar tahlili xizmatlarini eksport qilmoqda. O‘zbekiston Markaziy Yevroosiyoning asosiy sun’iy intellekt va texnologiya markaziga aylanish yo‘lida qat’iy qadam tashlamoqda.</p>"
+  },
+  "my-gov-uz-davlat-xizmatlari-uchun-ai-yordamchi-tizimini-boshladi-2026": {
+    "id": "my-gov-uz-davlat-xizmatlari-uchun-ai-yordamchi-tizimini-boshladi-2026",
+    "slug": "my-gov-uz-davlat-xizmatlari-uchun-ai-yordamchi-tizimini-boshladi-2026",
+    "title": "My.gov.uz davlat xizmatlari uchun AI yordamchi tizimini boshladi",
+    "kicker": "RAQAMLI HUKUMAT",
+    "meta_title": "My.gov.uz davlat xizmatlari uchun AI yordamchi tizimini boshladi — AiNoma",
+    "meta_description": "Yagona interaktiv davlat xizmatlari portalida 600 dan ortiq xizmatni tabiiy o‘zbek tilida avtomatik bajaruvchi aqlli yordamchi ish boshladi.",
+    "category": "O‘zbekiston",
+    "audience": "O‘zbekiston fuqarolari, tadbirkorlar va davlat xizmatlaridan foydalanuvchilar",
+    "event_date": "2026-11-16",
+    "source_date": "2026-11-16",
+    "source_published_date": "2026-11-16",
+    "date": "2026-11-16",
+    "publish_date": "2026-11-16",
+    "ainoma_published_date": "2026-11-16",
+    "read_time": "3 daqiqalik mutolaa",
+    "readTime": "3 daqiqalik mutolaa",
+    "deck": "Yagona interaktiv davlat xizmatlari portalida 600 dan ortiq xizmatni tabiiy o‘zbek tilida avtomatik bajaruvchi aqlli yordamchi ish boshladi.",
+    "img": "assets/editorial_mygov_uz_ai_yordamchi_2026.jpg",
+    "imgAlt": "My.gov.uz Public Services AI Assistant Kiosk",
+    "qisqacha": [
+      "My.gov.uz portalida arizalarni avtomatik to‘ldiruvchi va kerakli ma’lumotnomalarni soniyalar ichida taqdim etuvchi «AI Yordamchi» moduli yo‘lga qo‘yildi.",
+      "Tizim o‘zbek tilidagi yozma va ovozli murojaatlarni aniq tushunib, fuqarolarga ortiqcha idoralararo ovoragarchiliklarsiz xizmat ko‘rsatadi.",
+      "Yangi yechim navbatlarni qisqartirish, byurokratiyani kamaytirish va barcha davlat xizmatlaridan foydalanishni yanada soddalashtirishga xizmat qiladi."
+    ],
+    "primary_source": {
+      "name": "My.gov.uz Rasmiy Portal",
+      "title": "Yagona portalda sun’iy intellektga asoslangan aqlli yordamchi ish boshladi",
+      "url": "https://my.gov.uz/oz/news/ai-assistant-launch-2026",
+      "date": "2026-11-16",
+      "badge": "RASMIY DAVLAT PORTALI"
+    },
+    "secondary_sources": [
+      {
+        "name": "Raqamli Texnologiyalar Vazirligi",
+        "title": "Aholiga davlat xizmatlarini ko‘rsatishda sun’iy intellekt texnologiyalari joriy etilmoqda",
+        "url": "https://digital.uz/news/view/mygov-ai-assistant/",
+        "date": "2026-11-16",
+        "badge": "RASMIY HAMKOR"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Raqamli Xizmatlar Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-16",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Yagona interaktiv davlat xizmatlari portali (<b>My.gov.uz</b>) fuqarolar uchun navbatdagi qulaylikni taqdim etdi: portalda <b>600 dan ortiq davlat xizmati</b> uchun sun’iy intellektga asoslangan yangi «AI Yordamchi» tizimi rasman ish boshladi. Endilikda foydalanuvchilar murakkab shakllarni qo‘lda to‘ldirish o‘rniga, aqlli yordamchiga oddiy o‘zbek tilida yozma yoki ovozli so‘rov berishlari mumkin.</p>\n\n<h2>Tabiiy tilda muloqot va hujjatlarni shakllantirish</h2>\n<p>Aqlli yordamchi fuqaroning shaxsiy hisobidagi ochiq ma’lumotlarni avtomatik hisobga olgan holda turar joy ma’lumotnomalari, soliq to‘lovlari, pensiya hisoblari va kommunal xizmatlar bo‘yicha so‘rovlarni daqiqalar ichida shakllantirib beradi.</p>\n\n<h2>Ovoragarchilik va navbatlarga chek qo‘yish</h2>\n<p>Yangi raqamli modul nafaqat internet foydalanuvchilariga, balki Davlat xizmatlari markazlariga tashrif buyuruvchilarga ham intellektual kiosklar orqali xizmat ko‘rsatadi. Bu esa xizmat ko‘rsatish tezligini bir necha barobar oshirib, byurokratik to‘siqlarni bartaraf etadi.</p>"
+  },
   "anthropic-1-4-trillion-dollar-ipo-savdosi-2026": {
     "id": "anthropic-1-4-trillion-dollar-ipo-savdosi-2026",
     "slug": "anthropic-1-4-trillion-dollar-ipo-savdosi-2026",
