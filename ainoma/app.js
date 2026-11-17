@@ -330,7 +330,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi", u: "yangiliklar/baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026/", k: "baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi biznes bloomberg markets baidu bosh direktori robin li apec forumida ilovalar kutilgan daromad keltirmayotgani va ai pufagi x" },
+  { t: "AQSh va ittifoqchilar San-Fransisko AI deklaratsiyasini imzoladi", u: "yangiliklar/aqsh-va-ittifoqchilar-san-fransisko-ai-deklaratsiyasini-imzoladi-2026/", k: "aqsh va ittifoqchilar san-fransisko ai deklaratsiyasini imzoladi texnologiya us state department aqsh va 9 ta davlat pax silica tashabbusi doirasida chiplar hamda ai infratuzilmasini himoyalash pak" },
   { t: "Alibaba 2.4 trillion parametrli Qwen4-Max modelini taqdim etdi", u: "yangiliklar/alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026/", k: "alibaba 2.4 trillion parametrli qwen4-max modelini taqdim etdi biznes alibaba cloud rasmiy xabari xitoyning alibaba kompaniyasi korporativ agentlar va dasturlash vazifalari uchun 2.4t parametrli eng" },
   { t: "O‘zbekiston sun’iy intellekt global indeksida rekord natija ko‘rsatdi", u: "yangiliklar/ozbekiston-suniy-intellekt-global-indeksida-rekord-natija-korsatdi-2026/", k: "o‘zbekiston sun’iy intellekt global indeksida rekord natija ko‘rsatdi o‘zbekiston raqamli texnologiyalar vazirligi o‘zbekiston hisoblash infratuzilmasi va davlat boshqaruvida sun’iy intellektga tayyorgarlik bo‘yicha" },
   { t: "My.gov.uz davlat xizmatlari uchun AI yordamchi tizimini boshladi", u: "yangiliklar/my-gov-uz-davlat-xizmatlari-uchun-ai-yordamchi-tizimini-boshladi-2026/", k: "my.gov.uz davlat xizmatlari uchun ai yordamchi tizimini boshladi o‘zbekiston my.gov.uz rasmiy portal yagona interaktiv davlat xizmatlari portalida 600 dan ortiq xizmatni tabiiy o‘zbek tilida avtomatik " },

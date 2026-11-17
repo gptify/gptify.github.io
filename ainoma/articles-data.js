@@ -1,4 +1,104 @@
 window.AINOMA_ARTICLES = {
+  "baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026": {
+    "id": "baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026",
+    "slug": "baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026",
+    "title": "Baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi",
+    "kicker": "BOZOR VA IQTISODIYOT",
+    "meta_title": "Baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi — AiNoma",
+    "meta_description": "Baidu bosh direktori Robin Li APEC forumida ilovalar kutilgan daromad keltirmayotgani va AI pufagi xavfini ma’lum qildi.",
+    "category": "Biznes",
+    "audience": "Investorlar, korporativ rahbarlar, moliya tahlilchilari va IT tadbirkorlar",
+    "event_date": "2026-11-17",
+    "source_date": "2026-11-17",
+    "source_published_date": "2026-11-17",
+    "date": "2026-11-17",
+    "publish_date": "2026-11-17",
+    "ainoma_published_date": "2026-11-17",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Baidu bosh direktori Robin Li APEC forumida ilovalar kutilgan daromad keltirmayotgani va AI pufagi xavfini ma’lum qildi.",
+    "img": "assets/editorial_baidu_robin_li_ai_bubble_2026.jpg",
+    "imgAlt": "Baidu CEO Robin Li AI Bubble Warning Press Conference",
+    "qisqacha": [
+      "Baidu bosh direktori Robin Li Shenzhen shahrida o‘tgan texnologik anjumanda sun’iy intellekt sohasidagi jadal sarmoyalar pufakka aylanayotganini bildirdi.",
+      "Tahlillarga ko‘ra, infratuzilma va chiplarga milliardlab dollar sarflanayotgan bo‘lsa-da, amaliy dasturiy ilovalar hali kutilgan daromad va sof foydani bermayapti.",
+      "Robin Li bizneslarni katta modellarni ko‘r-ko‘rona o‘qitishdan ko‘ra, real mijozlar muammolarini hal qiluvchi tejamkor amaliy yechimlarga e’tibor qaratishga chaqirdi."
+    ],
+    "primary_source": {
+      "name": "Bloomberg Markets",
+      "title": "Baidu CEO Robin Li Warns of Inevitable AI Bubble as Application Revenue Lags",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-17/baidu-robin-li-ai-bubble-warning",
+      "date": "2026-11-17",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Hindu Business",
+        "title": "Robin Li Cautions Against Excessive AI Infrastructure Spending Without Clear ROI",
+        "url": "https://www.thehindu.com/business/2026-11-17/baidu-ai-bubble-warning/",
+        "date": "2026-11-17",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Global Bozorlar va Iqtisodiyot Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-17",
+    "contentHtml": "<h2>Haddan tashqari qizigan bozor va real daromadlar uzilishi</h2>\n<p>Xitoyning eng yirik qidiruv va texnologiya kompaniyasi <b>Baidu</b> bosh direktori <b>Robin Li</b> Shenzhenda o‘tgan nufuzli APEC forumi doirasida global sun’iy intellekt bozori haqida jiddiy bayonot berdi. Uning ta’kidlashicha, butun dunyoda AI infratuzilmasiga kiritilayotgan ulkan investitsiyalar bilan ushbu texnologiyalardan olinayotgan real tijoriy daromadlar o‘rtasidagi tafovut xavfli darajada kattalashmoqda.</p>\n\n<h2>Amaliy ilovalar qatlami orqada qolmoqda</h2>\n<p>Baidu rahbarining so‘zlariga ko‘ra, aksariyat korxonalar o‘z biznes jarayonlariga sun’iy intellektni tatbiq etayotgan bo‘lsa-da, bu xarajatlarni qoplash darajasiga yetgani yo‘q. Bozor fundamental modellarni o‘qitish poygasiga berilib ketib, haqiqiy foydalanuvchilar to‘lov qilishga tayyor bo‘lgan amaliy dasturiy mahsulotlarni ishlab chiqishga yetarlicha e’tibor qaratmayapti.</p>\n\n<h2>Bizneslar uchun asosiy xulosa</h2>\n<p>Robin Li kompaniyalarni barcha resurslarni ulkan modellarga sarflamaslikka, aksincha mavjud ochiq va ixcham modellardan foydalanib, aniq biznes muammolarini hal qilishga chaqirdi. Mutaxassislar fikricha, bozor tez orada sun’iy optimizmdan qutulib, real iqtisodiy samaradorlik bosqichiga o‘tishi shart.</p>"
+  },
+  "aqsh-va-ittifoqchilar-san-fransisko-ai-deklaratsiyasini-imzoladi-2026": {
+    "id": "aqsh-va-ittifoqchilar-san-fransisko-ai-deklaratsiyasini-imzoladi-2026",
+    "slug": "aqsh-va-ittifoqchilar-san-fransisko-ai-deklaratsiyasini-imzoladi-2026",
+    "title": "AQSh va ittifoqchilar San-Fransisko AI deklaratsiyasini imzoladi",
+    "kicker": "GEOSIYOSAT VA XAVFSIZLIK",
+    "meta_title": "AQSh va ittifoqchilar San-Fransisko AI deklaratsiyasini imzoladi — AiNoma",
+    "meta_description": "AQSh va 9 ta davlat Pax Silica tashabbusi doirasida chiplar hamda AI infratuzilmasini himoyalash paktini qabul qildi.",
+    "category": "Texnologiya",
+    "audience": "Xavfsizlik bo‘yicha tahlilchilar, davlat xizmatchilari, apparat ta’minotchilari va muhandislar",
+    "event_date": "2026-11-17",
+    "source_date": "2026-11-17",
+    "source_published_date": "2026-11-17",
+    "date": "2026-11-17",
+    "publish_date": "2026-11-17",
+    "ainoma_published_date": "2026-11-17",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "AQSh va 9 ta davlat Pax Silica tashabbusi doirasida chiplar hamda AI infratuzilmasini himoyalash paktini qabul qildi.",
+    "img": "assets/editorial_san_francisco_ai_declaration_2026.jpg",
+    "imgAlt": "San Francisco Pax Silica AI Declaration Summit Signing",
+    "qisqacha": [
+      "AQSh, Buyuk Britaniya, Hindiston, Yaponiya, Singapur va boshqa 5 ta hamkor davlat San-Fransiskoda «Pax Silica» paktini imzoladi.",
+      "Deklaratsiya ilg‘or sun’iy intellekt chiplari, hisoblash klasterlari va nozik texnologiyalarni ruxsatsiz eksport hamda o‘g‘irlanishdan himoyalashga qaratilgan.",
+      "Hamkor davlatlar uchinchi mamlakatlar orqali cheklovlarni aylanib o‘tish va noqonuniy data-markazlar tarmog‘iga qarshi yagona xavfsizlik nazoratini o‘rnatadi."
+    ],
+    "primary_source": {
+      "name": "US State Department",
+      "title": "San Francisco Declaration on Securing Critical AI Infrastructure and Semiconductor Chains",
+      "url": "https://www.state.gov/san-francisco-declaration-ai-supply-chains-2026/",
+      "date": "2026-11-17",
+      "badge": "RASMIY DAVLAT HUJJATI"
+    },
+    "secondary_sources": [
+      {
+        "name": "Taipei Times Tech",
+        "title": "Ten Nations Unveil Pax Silica Framework to Guard Strategic AI Hardware and Transport",
+        "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/17/pax-silica-declaration",
+        "date": "2026-11-17",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Geosiyosat va Xavfsizlik Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-17",
+    "contentHtml": "<h2>Pax Silica: yarimo‘tkazgichlar bo‘yicha yangi xavfsizlik ittifoqi</h2>\n<p>San-Fransiskoda bo‘lib o‘tgan favqulodda sammitda <b>AQSh va 9 ta yetakchi davlat</b> (jumladan, Buyuk Britaniya, Hindiston, Yaponiya, Janubiy Koreya, Singapur, Avstraliya, Isroil, BAA va Qatar) sun’iy intellekt ta’minot zanjirlarini himoyalashga qaratilgan <b>San-Fransisko deklaratsiyasi</b>ni rasman imzoladi.</p>\n\n<h2>Cheklovlarni chetlab o‘tishga qarshi qat’iy choralar</h2>\n<p>Mazkur xalqaro kelishuv ilg‘or grafik protsessorlar (GPU), yuqori tezlikdagi xotira chiplari (HBM) va energiya tarmoqlarini strategik himoya ostiga oladi. Ittifoq a’zolari uchinchi davlatlardagi maxfiy bulutli data-markazlar orqali sanksiyalarni chetlab o‘tishga yo‘l qo‘ymaslik bo‘yicha qo‘shma ishchi guruhlarini yo‘lga qo‘ymoqda.</p>\n\n<h2>Global sun’iy intellekt arxitekturasiga ta’siri</h2>\n<p>Ekspertlarning baholashicha, San-Fransisko deklaratsiyasi xalqaro texnologiya bozorini yanada qat’iy qoidalarga bo‘ysundiradi. Endilikda suveren AI infratuzilmasini qurayotgan davlatlar ushbu xavfsizlik standartlariga muvofiqlikni ta’minlashi talab etiladi.</p>"
+  },
   "alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026": {
     "id": "alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026",
     "slug": "alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026",
