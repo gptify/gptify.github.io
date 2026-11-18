@@ -1,4 +1,104 @@
 window.AINOMA_ARTICLES = {
+  "nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026": {
+    "id": "nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026",
+    "slug": "nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026",
+    "title": "Nvidia Xitoyga AI chiplari eksportini to‘xtatdi",
+    "kicker": "APPARAT VA GEOSIYOSAT",
+    "meta_title": "Nvidia Xitoyga AI chiplari eksportini to‘xtatdi — AiNoma",
+    "meta_description": "AQShning yangi cheklovlari fonida Nvidia Xitoyga ayrim chiplar yetkazishni to‘xtatib, xavfsizlik qo‘mitasini tuzdi.",
+    "category": "Biznes",
+    "audience": "Texnologiya investorlari, yarimo‘tkazgich muhandislari, IT rahbarlar va xalqaro tahlilchilar",
+    "event_date": "2026-11-18",
+    "source_date": "2026-11-18",
+    "source_published_date": "2026-11-18",
+    "date": "2026-11-18",
+    "publish_date": "2026-11-18",
+    "ainoma_published_date": "2026-11-18",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "AQShning yangi cheklovlari fonida Nvidia Xitoyga ayrim chiplar yetkazishni to‘xtatib, xavfsizlik qo‘mitasini tuzdi.",
+    "img": "assets/editorial_nvidia_china_export_freeze_2026.jpg",
+    "imgAlt": "Nvidia Cleanroom AI Chip Production Inspection",
+    "qisqacha": [
+      "Nvidia korporatsiyasi ilgari ruxsat berilgan bo‘lishiga qaramay, Xitoy bozoriga ayrim maxsus AI chiplarini sotishni to‘xtatganini e’lon qildi.",
+      "Qaror AQSh hukumati tomonidan xorijdagi ma’lumotlar markazlariga masofaviy kirish va chiplar oqimi bo‘yicha yangi cheklovlar kiritilishi ortidan qabul qilindi.",
+      "Kompaniya direktorlar kengashi qoshida eksport nazorati va milliy xavfsizlik talablariga rioya qilishni nazorat qiluvchi mustaqil qo‘mita tuzildi."
+    ],
+    "primary_source": {
+      "name": "Reuters Technology",
+      "title": "Nvidia Halts Sales of Advanced AI Processors to China and Sets Up Oversight Board",
+      "url": "https://www.reuters.com/technology/nvidia-halts-ai-chip-exports-china-security-committee-2026-11-18/",
+      "date": "2026-11-18",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Edge Singapore",
+        "title": "Nvidia Tightens Export Curbs as US Restricts Offshore Data Centers",
+        "url": "https://www.theedgesingapore.com/news/tech/nvidia-china-export-freeze-2026",
+        "date": "2026-11-18",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Apparat va Geosiyosat Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-18",
+    "contentHtml": "<h2>Eksport nazorati va yangi to‘siqlar</h2>\n<p>Dunyodagi eng yirik grafik protsessorlar ishlab chiqaruvchisi <b>Nvidia</b> geosiyosiy bosimlar ostida navbatdagi qat’iy qadamni qo‘ydi: kompaniya Xitoy kompaniyalariga ilgari AQSh hukumati ruxsati bilan sotib kelingan ayrim sun’iy intellekt chiplarini yetkazib berishni bir tomonlama to‘xtatdi.</p>\n\n<h2>Direktorlar kengashi qoshidagi xavfsizlik qo‘mitasi</h2>\n<p>Kompaniya rahbariyati vujudga kelayotgan xatarlarni boshqarish maqsadida o‘z direktorlar kengashi tarkibida faqat eksport nazorati va milliy xavfsizlik masalalari bilan shug‘ullanuvchi maxsus qo‘mita tuzilganini e’lon qildi. Ushbu qo‘mita har bir yirik xalqaro buyurtmani sinchiklab tekshiradi.</p>\n\n<h2>Global yarimo‘tkazgich bozoridagi oqibatlar</h2>\n<p>Ekspertlarning fikricha, Nvidia’ning ushbu cheklovlari Xitoydagi yirik texnologik kompaniyalarni o‘zlarining ichki mikroelektronika ishlab chiqarish tizimlarini tezlashtirishga undaydi, biroq qisqa muddatda ilg‘or hisoblash quvvatlarida jiddiy taqchillikni keltirib chiqarishi mumkin.</p>"
+  },
+  "ibm-tadqiqoti-bosh-ai-rahbarlarining-byudjet-nazorati-muammosi-2026": {
+    "id": "ibm-tadqiqoti-bosh-ai-rahbarlarining-byudjet-nazorati-muammosi-2026",
+    "slug": "ibm-tadqiqoti-bosh-ai-rahbarlarining-byudjet-nazorati-muammosi-2026",
+    "title": "IBM: Bosh AI rahbarlarining faqat 18 foizi byudjetni boshqaradi",
+    "kicker": "KORPORATIV BOSHQARUV",
+    "meta_title": "IBM: Bosh AI rahbarlarining faqat 18 foizi byudjetni boshqaradi — AiNoma",
+    "meta_description": "IBM hisobotiga ko‘ra, korxonalardagi Chief AI Officer lavozimining 82 foizi real sarmoyaviy vakolatlarga ega emas.",
+    "category": "Biznes",
+    "audience": "Biznes egalari, korporativ rahbarlar, CAIO, CTO va moliyaviy direktorlar",
+    "event_date": "2026-11-18",
+    "source_date": "2026-11-18",
+    "source_published_date": "2026-11-18",
+    "date": "2026-11-18",
+    "publish_date": "2026-11-18",
+    "ainoma_published_date": "2026-11-18",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "IBM hisobotiga ko‘ra, korxonalardagi Chief AI Officer lavozimining 82 foizi real sarmoyaviy vakolatlarga ega emas.",
+    "img": "assets/editorial_ibm_caio_budget_governance_2026.jpg",
+    "imgAlt": "Corporate Boardroom Chief AI Officer Strategy Review",
+    "qisqacha": [
+      "IBM Institute for Business Value xalqaro tadqiqotida 2 000 dan ortiq yirik korxonalardagi sun’iy intellekt bo‘yicha rahbarlar (CAIO) faoliyati tahlil qilindi.",
+      "Bosh AI rahbarlari loyihalarning qiymatini aniq bilsa-da, ularning faqat 18 foizi real byudjet va investitsiya qarorlarini mustaqil qabul qila oladi.",
+      "Tadqiqot korxonalarda an’anaviy moliya va IT bo‘limlari AI loyihalarini moliyalashtirishda to‘siq bo‘layotganini va bu sohadagi o‘sishni sekinlashtirayotganini ko‘rsatdi."
+    ],
+    "primary_source": {
+      "name": "IBM Institute for Business Value",
+      "title": "The CAIO Dilemma: Why Enterprise AI Leaders Struggle for Budget Empowerment",
+      "url": "https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/chief-ai-officer-study-2026",
+      "date": "2026-11-18",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "CIO Magazine",
+        "title": "Why 82% of Chief AI Officers Cannot Directly Allocate Enterprise Spending",
+        "url": "https://www.cio.com/article/caio-budget-empowerment-crisis-2026",
+        "date": "2026-11-18",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Korporativ Boshqaruv Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-18",
+    "contentHtml": "<h2>Nom bor, lekin vakolat yetarli emas</h2>\n<p>Bugungi kunda jahonning eng yirik korporatsiyalari <b>Chief AI Officer (CAIO)</b> — Bosh sun’iy intellekt direktori lavozimini faol joriy qilmoqda. Ammo <b>IBM Institute for Business Value</b> tomonidan o‘tkazilgan keng ko‘lamli xalqaro tadqiqot ushbu sohadagi jiddiy muammoni fosh etdi: bunday rahbarlarning <b>faqat 18 foizigina</b> o‘z loyihalari uchun to‘g‘ridan-to‘g‘ri byudjet ajratish vakolatiga ega.</p>\n\n<h2>An’anaviy IT va moliya bo‘limlari bilan ziddiyat</h2>\n<p>Hisobotga ko‘ra, qolgan 82 foiz CAIOlar har bir yirik texnologik xarid yoki modellar integratsiyasini bosh moliya direktori (CFO) yoki axborot texnologiyalari direktori (CIO) bilan kelishishga majbur. Bu esa korporativ qarorlar qabul qilish jarayonini oylab cho‘zib yubormoqda va kompaniyani bozor raqobatida orqada qoldirmoqda.</p>\n\n<h2>Samarali integratsiya uchun nima zarur?</h2>\n<p>IBM tahlilchilari kompaniya direktorlar kengashiga AI strategiyasini muvaffaqiyatli amalga oshirish uchun CAIO lavozimiga mustaqil byudjet ajratishni va uning vakolatlarini oddiy maslahatchi maqomidan to‘laqonli ijrochi darajasiga ko‘tarishni tavsiya qilmoqda.</p>"
+  },
   "baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026": {
     "id": "baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026",
     "slug": "baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026",

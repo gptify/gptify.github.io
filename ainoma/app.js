@@ -331,7 +331,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Nvidia Xitoyga AI chiplari eksportini to‘xtatdi", u: "yangiliklar/nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026/", k: "nvidia xitoyga ai chiplari eksportini to‘xtatdi biznes reuters technology aqshning yangi cheklovlari fonida nvidia xitoyga ayrim chiplar yetkazishni to‘xtatib, xavfsizlik qo‘" },
+  { t: "IBM: Bosh AI rahbarlarining faqat 18 foizi byudjetni boshqaradi", u: "yangiliklar/ibm-tadqiqoti-bosh-ai-rahbarlarining-byudjet-nazorati-muammosi-2026/", k: "ibm: bosh ai rahbarlarining faqat 18 foizi byudjetni boshqaradi biznes ibm institute for business value ibm hisobotiga ko‘ra, korxonalardagi chief ai officer lavozimining 82 foizi real sarmoyaviy vakolatl" },
   { t: "Baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi", u: "yangiliklar/baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026/", k: "baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi biznes bloomberg markets baidu bosh direktori robin li apec forumida ilovalar kutilgan daromad keltirmayotgani va ai pufagi x" },
   { t: "AQSh va ittifoqchilar San-Fransisko AI deklaratsiyasini imzoladi", u: "yangiliklar/aqsh-va-ittifoqchilar-san-fransisko-ai-deklaratsiyasini-imzoladi-2026/", k: "aqsh va ittifoqchilar san-fransisko ai deklaratsiyasini imzoladi texnologiya us state department aqsh va 9 ta davlat pax silica tashabbusi doirasida chiplar hamda ai infratuzilmasini himoyalash pak" },
   { t: "Alibaba 2.4 trillion parametrli Qwen4-Max modelini taqdim etdi", u: "yangiliklar/alibaba-2-4-trillion-parametrli-qwen4-max-modelini-chiqardi-2026/", k: "alibaba 2.4 trillion parametrli qwen4-max modelini taqdim etdi biznes alibaba cloud rasmiy xabari xitoyning alibaba kompaniyasi korporativ agentlar va dasturlash vazifalari uchun 2.4t parametrli eng" },
