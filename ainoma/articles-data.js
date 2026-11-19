@@ -1,4 +1,154 @@
 window.AINOMA_ARTICLES = {
+  "meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026": {
+    "id": "meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026",
+    "slug": "meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026",
+    "title": "Meta 60% algoritm kodlarini AI agentlarga topshirdi",
+    "kicker": "AGENTLAR VA DASTURLASH",
+    "meta_title": "Meta 60% algoritm kodlarini AI agentlarga topshirdi — AiNoma",
+    "meta_description": "Meta reklama va tavsiya tizimlaridagi yangi kodlarning aksariyatini inson emas, sun’iy intellekt agentlari yozmoqda.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar, texnologik startaplar va AI mutaxassislari",
+    "event_date": "2026-11-19",
+    "source_date": "2026-11-19",
+    "source_published_date": "2026-11-19",
+    "date": "2026-11-19",
+    "publish_date": "2026-11-19",
+    "ainoma_published_date": "2026-11-19",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Meta reklama va tavsiya tizimlaridagi yangi kodlarning aksariyatini inson emas, sun’iy intellekt agentlari yozmoqda.",
+    "img": "assets/editorial_meta_ranking_engineer_agents_2026.jpg",
+    "imgAlt": "Meta Engineering Campus Autonomous AI Agents",
+    "qisqacha": [
+      "Meta kompaniyasi o‘zining reklama va kontent tavsiya algoritmlarini yangilash jarayonining 60 foizdan ortig‘ini avtonom agentlarga topshirdi.",
+      "«Ranking Engineer Agents» deb nomlangan tizim kod yozish, gipotezalarni sinash va ishlab chiqarishga kiritishni to‘liq mustaqil bajarmoqda.",
+      "Yangi arxitektura hisoblash quvvatlarini sezilarli darajada tejash va modellar samaradorligini 4 barobarga oshirish imkonini berdi."
+    ],
+    "primary_source": {
+      "name": "Meta Engineering",
+      "title": "Scaling Autonomous Ranking Engineer Agents Across Production Workflows",
+      "url": "https://engineering.fb.com/2026/11/19/ai-ranking-engineer-agents/",
+      "date": "2026-11-19",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "TechCrunch",
+        "title": "Meta Confirms Autonomous Agents Now Write Most of Its Ad Ranking Code",
+        "url": "https://techcrunch.com/2026/11/19/meta-autonomous-coding-agents/",
+        "date": "2026-11-19",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Dasturiy Arxitektura va Agentlar Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-19",
+    "contentHtml": "<h2>Dasturlashda yangi bosqich: avtonom muhandislar</h2>\n<p>Dunyodagi eng yirik ijtimoiy tarmoqlar egasi <b>Meta</b> sun’iy intellekt agentlarini ishlab chiqarish muhitiga tatbiq etish bo‘yicha muhim yutuqqa erishganini e’lon qildi. Kompaniyaning reklama va foydalanuvchilarga kontent tavsiya qilish algoritmlarining <b>60 foizdan ortig‘i</b> endilikda inson dasturchilar tomonidan emas, maxsus avtonom agentlar tomonidan ishlab chiqilmoqda.</p>\n\n<h2>Ranking Engineer Agents qanday ishlaydi?</h2>\n<p>«Ranking Engineer Agents» deb nomlangan ushbu agentlik tizimi tavsiya modellarining ish unumdorligini oshirish bo‘yicha mustaqil ravishda gipotezalar ilgari suradi, Python va C++ tillarida yangi kodlar yozadi, sinovlarni o‘tkazadi hamda ularni jonli tizimga integratsiya qiladi. Bu inson muhandislarini bir xil takrorlanuvchi texnik ishlardan ozod qilib, strategik tadqiqotlarga e’tibor qaratishga imkon beradi.</p>\n\n<h2>Millionlab dollarlik resurslar tejalishi</h2>\n<p>Kompaniya hisobotiga ko‘ra, mazkur agentlik yondashuvi yirik ma’lumotlar markazlaridagi server xarajatlarini millionlab dollarga qisqartirdi va algoritmlarni yangilash tezligini to‘rt barobarga oshirdi. Bu dasturiy ta’minot ishlab chiqish sohasida agentlar amaliy samara bera boshlaganining eng yorqin dalilidir.</p>"
+  },
+  "tramp-apec-sammitida-super-intelligence-cheklovlariga-qarshi-chiqdi-2026": {
+    "id": "tramp-apec-sammitida-super-intelligence-cheklovlariga-qarshi-chiqdi-2026",
+    "slug": "tramp-apec-sammitida-super-intelligence-cheklovlariga-qarshi-chiqdi-2026",
+    "title": "Tramp APECda AI cheklovlariga qarshi chiqdi",
+    "kicker": "GEOSIYOSAT VA TARTIBGA SOLISH",
+    "meta_title": "Tramp APECda AI cheklovlariga qarshi chiqdi — AiNoma",
+    "meta_description": "AQSh prezidenti APEC sammitida sun’iy intellekt rivojlanishini to‘xtatib qo‘yuvchi qat’iy qonunlarga qarshi ekanini bildirdi.",
+    "category": "Siyosat",
+    "audience": "Siyosatshunoslar, diplomatlar, korporativ huquqshunoslar va xalqaro bozor ishtirokchilari",
+    "event_date": "2026-11-19",
+    "source_date": "2026-11-19",
+    "source_published_date": "2026-11-19",
+    "date": "2026-11-19",
+    "publish_date": "2026-11-19",
+    "ainoma_published_date": "2026-11-19",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "AQSh prezidenti APEC sammitida sun’iy intellekt rivojlanishini to‘xtatib qo‘yuvchi qat’iy qonunlarga qarshi ekanini bildirdi.",
+    "img": "assets/editorial_apec_super_intelligence_2026.jpg",
+    "imgAlt": "APEC Leaders Summit Tech Policy Plenary",
+    "qisqacha": [
+      "Shenzhenda o‘tgan APEC sammitida AQSh prezidenti Donald Tramp sun’iy intellekt sohasidagi ortiqcha cheklovlarga qarshi chiqdi.",
+      "Uning ta’kidlashicha, «Super Intelligence» (SI) davrida qat’iy byurokratik to‘siqlar o‘rnatish texnologik taraqqiyotni bo‘g‘ib qo‘yadi.",
+      "AQSh tomonining ushbu pozitsiyasi Yevropa Ittifoqining qat’iy tartibga solish qoidalari fonida global bozorlarda yangi munozaralarni uyg‘otdi."
+    ],
+    "primary_source": {
+      "name": "Reuters World",
+      "title": "Trump Opposes Robust AI Regulations at APEC Summit, Warning Against Innovation Roadblocks",
+      "url": "https://www.reuters.com/technology/trump-opposes-robust-ai-regulations-apec-summit-2026-11-19/",
+      "date": "2026-11-19",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Business Standard",
+        "title": "APEC Summit 2026: US Takes Stand for Deregulated Super Intelligence Development",
+        "url": "https://www.business-standard.com/world-news/trump-apec-super-intelligence-2026",
+        "date": "2026-11-19",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Xalqaro Siyosat va Huquq Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-19",
+    "contentHtml": "<h2>APEC doirasidagi muhim bayonot</h2>\n<p>Osiyo-Tinch okeani iqtisodiy hamkorligi (<b>APEC</b>) sammiti doirasida <b>AQSh prezidenti Donald Tramp</b> sun’iy intellektning kelajagi bo‘yicha Vashingtonning rasmiy pozitsiyasini ochiqladi. Uning bayonotiga ko‘ra, AQSh hukumati yangi avlod sun’iy intellektini — «Super Intelligence» (SI) sohasini haddan ortiq qat’iy tartibga solishga qat’iyan qarshidir.</p>\n\n<h2>Innovatsiyalar va byurokratiya to‘qnashuvi</h2>\n<p>Tramp o‘z chiqishida murakkab qonuniy cheklovlar texnologik kompaniyalarning raqobatbardoshligiga zarba berishini va infratuzilmaviy rivojlanishni to‘xtatib qo‘yishini ta’kidladi. AQSh texnologik yetakchilikni saqlab qolish uchun bozor ishtirokchilariga erkin faoliyat yuritish imkonini berish niyatida.</p>\n\n<h2>Global tartibga solishdagi tafovut</h2>\n<p>Ushbu bayonot Yevropa Ittifoqining qat’iy litsenziyalash talablari bilan ziddiyatga kirishmoqda. Xalqaro ekspertlar dunyo bo‘yicha ikki xil yondashuv — AQShning erkin innovatsiyalar modeli va Yevropaning xavfsizlik nazorati modeli o‘rtasidagi raqobat yanada keskinlashishini bashorat qilmoqda.</p>"
+  },
+  "allianz-hisoboti-korxonalarda-ai-hodisalari-150-foizga-oshdi-2026": {
+    "id": "allianz-hisoboti-korxonalarda-ai-hodisalari-150-foizga-oshdi-2026",
+    "slug": "allianz-hisoboti-korxonalarda-ai-hodisalari-150-foizga-oshdi-2026",
+    "title": "Allianz: Korxonalarda AI hodisalari 150 foizga oshdi",
+    "kicker": "XAVFSIZLIK VA SUG‘URTA",
+    "meta_title": "Allianz: Korxonalarda AI hodisalari 150 foizga oshdi — AiNoma",
+    "meta_description": "Allianz hisoboti korporativ avtonom AI tizimlaridagi xatoliklar yuz millionlab dollarlik da’volarga sabab bo‘layotganini ko‘rsatdi.",
+    "category": "Biznes",
+    "audience": "Korxona xavfsizlik rahbarlari, xatar tahlilchilari, yuristlar va sug‘urta mutaxassislari",
+    "event_date": "2026-11-19",
+    "source_date": "2026-11-19",
+    "source_published_date": "2026-11-19",
+    "date": "2026-11-19",
+    "publish_date": "2026-11-19",
+    "ainoma_published_date": "2026-11-19",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Allianz hisoboti korporativ avtonom AI tizimlaridagi xatoliklar yuz millionlab dollarlik da’volarga sabab bo‘layotganini ko‘rsatdi.",
+    "img": "assets/editorial_allianz_enterprise_ai_liability_2026.jpg",
+    "imgAlt": "Corporate Risk Management Actuarial AI Review",
+    "qisqacha": [
+      "Allianz Commercial global sug‘urta giganti so‘nggi ikki yilda yirik korxonalarda AI bilan bog‘liq favqulodda hodisalar 150 foizga oshganini ma’lum qildi.",
+      "Tizimli xatoliklar, ma’lumotlar sizib chiqishi va noto‘g‘ri avtomatlashtirish yuz millionlab dollarlik kompensatsiya da’volariga sabab bo‘lmoqda.",
+      "Sug‘urtalovchilar bizneslarni avtonom modellarni joriy etishdan oldin mustaqil xavfsizlik auditini yo‘lga qo‘yishga chaqirmoqda."
+    ],
+    "primary_source": {
+      "name": "Allianz Commercial",
+      "title": "AI Liability and Critical Incident Trends: Navigating Emerging Systemic Enterprise Risks",
+      "url": "https://commercial.allianz.com/news-and-insights/reports/ai-liability-and-incident-trends-2026.html",
+      "date": "2026-11-19",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Reuters",
+        "title": "Surge in Enterprise AI Incidents Triggers Major Liability Review Across Commercial Insurers",
+        "url": "https://www.reuters.com/technology/allianz-enterprise-ai-liability-report-2026/",
+        "date": "2026-11-19",
+        "badge": "MUSTAQIL TAHLIL"
+      }
+    ],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Xatarlar va Korporativ Xavfsizlik Tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-19",
+    "contentHtml": "<h2>Sun’iy intellekt va korporativ javobgarlik inqirozi</h2>\n<p>Jahonning eng nufuzli sug‘urta kompaniyalaridan biri bo‘lgan <b>Allianz Commercial</b> korxonalarda sun’iy intellekt xatarlariga bag‘ishlangan yangi hisobotini e’lon qildi. Unda ko‘rsatilishicha, so‘nggi ikki yil ichida avtonom modellar va avtomatlashtirilgan qaror qabul qilish tizimlari sababli kelib chiqqan jiddiy texnologik hodisalar <b>150 foizga ortgan</b>.</p>\n\n<h2>Yuz millionlab dollarlik da’volar</h2>\n<p>Hisobotda qayd etilishicha, moliyaviy hisobotlardagi xatolar, mijozlar ma’lumotlarining xavfsizligi buzilishi va ta’minot zanjirlaridagi noto‘g‘ri avtonom buyurtmalar kompaniyalarga katta moliyaviy zarar yetkazmoqda. Ayrim xalqaro da’volar miqdori yuzlab million dollarga yetib, an’anaviy korporativ sug‘urta polislarining chegarasidan chiqib ketmoqda.</p>\n\n<h2>Bizneslar uchun xavfsizlik tavsiyalari</h2>\n<p>Allianz mutaxassislari kompaniyalarga avtonom agentlarni faqat qat’iy inson nazorati (human-in-the-loop) ostida ishlatishni va har bir modelni ishlab chiqarishga kiritishdan oldin kiberxavfsizlik hamda yuridik tekshiruvdan o‘tkazishni qat’iy tavsiya qilmoqda.</p>"
+  },
   "nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026": {
     "id": "nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026",
     "slug": "nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026",

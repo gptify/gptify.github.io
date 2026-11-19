@@ -332,7 +332,12 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Meta 60% algoritm kodlarini AI agentlarga topshirdi", u: "yangiliklar/meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026/", k: "meta 60% algoritm kodlarini ai agentlarga topshirdi texnologiya meta engineering meta reklama va tavsiya tizimlaridagi yangi kodlarning aksariyatini inson emas, sun’iy intellekt age" },
+  { t: "Tramp APECda AI cheklovlariga qarshi chiqdi", u: "yangiliklar/tramp-apec-sammitida-super-intelligence-cheklovlariga-qarshi-chiqdi-2026/", k: "tramp apecda ai cheklovlariga qarshi chiqdi siyosat reuters world aqsh prezidenti apec sammitida sun’iy intellekt rivojlanishini to‘xtatib qo‘yuvchi qat’iy qonunlarga" },
+  { t: "Allianz: Korxonalarda AI hodisalari 150 foizga oshdi", u: "yangiliklar/allianz-hisoboti-korxonalarda-ai-hodisalari-150-foizga-oshdi-2026/", k: "allianz: korxonalarda ai hodisalari 150 foizga oshdi biznes allianz commercial allianz hisoboti korporativ avtonom ai tizimlaridagi xatoliklar yuz millionlab dollarlik da’volarga " },
   { t: "Nvidia Xitoyga AI chiplari eksportini to‘xtatdi", u: "yangiliklar/nvidia-xitoyga-ai-chiplari-eksportini-toxtatdi-2026/", k: "nvidia xitoyga ai chiplari eksportini to‘xtatdi biznes reuters technology aqshning yangi cheklovlari fonida nvidia xitoyga ayrim chiplar yetkazishni to‘xtatib, xavfsizlik qo‘" },
   { t: "IBM: Bosh AI rahbarlarining faqat 18 foizi byudjetni boshqaradi", u: "yangiliklar/ibm-tadqiqoti-bosh-ai-rahbarlarining-byudjet-nazorati-muammosi-2026/", k: "ibm: bosh ai rahbarlarining faqat 18 foizi byudjetni boshqaradi biznes ibm institute for business value ibm hisobotiga ko‘ra, korxonalardagi chief ai officer lavozimining 82 foizi real sarmoyaviy vakolatl" },
   { t: "Baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi", u: "yangiliklar/baidu-rahbari-suniy-intellekt-pufagi-yorilishi-haqida-ogohlantirdi-2026/", k: "baidu rahbari sun’iy intellekt pufagi haqida ogohlantirdi biznes bloomberg markets baidu bosh direktori robin li apec forumida ilovalar kutilgan daromad keltirmayotgani va ai pufagi x" },
