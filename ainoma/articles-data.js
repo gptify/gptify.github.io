@@ -44,6 +44,50 @@ window.AINOMA_ARTICLES = {
     "body": "<h2>Nima bo‘ldi?</h2><p>O'zbekistondagi talabalar uchun ilg‘or sun’iy intellekt xizmatlaridan foydalanishda muhim qadam tashlandi. Unga ko'ra, talabalar Gemini AI Plus obunasidan bir yil davomida mutlaqo bepul foydalanishlari mumkinligi e'lon qilindi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur imkoniyatdan foydalanish uchun Sizdan murakkab amallar bajarish talab etilmaydi. Buning uchun HEMIS ilovasidan talabalik guvohnomasi hamda o'qish joyidan ma'lumotnomani yuklab olib, so'ngra Gemini ilovasi orqali maxsus taklifga ariza yuborish kifoya qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ta'lim jarayonida zamonaviy texnologiyalar va sun'iy intellekt vositalarini joriy etish kelgusida malakali kadrlar tayyorlash tizimini yangi bosqichga olib chiqadi. Siz bu imkoniyatdan o'z vaqtida foydalanib, o'qish va loyihalaringiz samaradorligini oshirishingiz mumkin.</p>",
     "contentHtml": "<h2>Nima bo‘ldi?</h2><p>O'zbekistondagi talabalar uchun ilg‘or sun’iy intellekt xizmatlaridan foydalanishda muhim qadam tashlandi. Unga ko'ra, talabalar Gemini AI Plus obunasidan bir yil davomida mutlaqo bepul foydalanishlari mumkinligi e'lon qilindi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur imkoniyatdan foydalanish uchun Sizdan murakkab amallar bajarish talab etilmaydi. Buning uchun HEMIS ilovasidan talabalik guvohnomasi hamda o'qish joyidan ma'lumotnomani yuklab olib, so'ngra Gemini ilovasi orqali maxsus taklifga ariza yuborish kifoya qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ta'lim jarayonida zamonaviy texnologiyalar va sun'iy intellekt vositalarini joriy etish kelgusida malakali kadrlar tayyorlash tizimini yangi bosqichga olib chiqadi. Siz bu imkoniyatdan o'z vaqtida foydalanib, o'qish va loyihalaringiz samaradorligini oshirishingiz mumkin.</p>"
   },
+  "anthropic-ipo-orqali-milliardlab-dollarlarni-jalb-qildi-2026": {
+    "id": "anthropic-ipo-orqali-milliardlab-dollarlarni-jalb-qildi-2026",
+    "slug": "anthropic-ipo-orqali-milliardlab-dollarlarni-jalb-qildi-2026",
+    "title": "Anthropic IPO orqali ulkan mablag' jalb qildi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "Anthropic IPO orqali ulkan mablag' jalb qildi — AiNoma",
+    "meta_description": "Claude ishlab chiqaruvchisi bo'lgan Anthropic kompaniyasining Nasdaq'dagi ilk savdolari global sun'iy intellekt bozorida yangi moliyaviy marralarni ochib berdi.",
+    "category": "Biznes",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-20",
+    "source_date": "2026-11-20",
+    "source_published_date": "2026-11-20",
+    "date": "2026-11-20",
+    "publish_date": "2026-11-20",
+    "ainoma_published_date": "2026-11-20",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Claude ishlab chiqaruvchisi bo'lgan Anthropic kompaniyasining Nasdaq'dagi ilk savdolari global sun'iy intellekt bozorida yangi moliyaviy marralarni ochib berdi.",
+    "img": "assets/editorial_anthropic-ipo-orqali-milliardlab-dollarlarni-jalb-qildi-2026.jpg",
+    "imgAlt": "Anthropic IPO orqali ulkan mablag' jalb qildi",
+    "qisqacha": [
+      "Anthropic IPO orqali 81,3 milliard dollar mablag' jalb qilishga muvaffaq bo'ldi.",
+      "Nasdaq'dagi dastlabki savdolarda kompaniya aksiyalari 111,5 dollardan ochildi.",
+      "Bozor qiymati qariyb 2 trillion dollarga yetib, texnologiya olamida muhim voqeaga aylandi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz IT & Biznes",
+      "title": "Claude ishlab chiquvchisi Anthropic IPO orqali $81,3 mlrd jalb qildi",
+      "url": "https://www.spot.uz/oz/2026/11/20/anthropic-ipo/",
+      "date": "2026-11-20",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-20",
+    "body": "<h2>Nima boʻldi?</h2><p>Claude sun'iy intellekt modeli mualliflari bo'lgan Anthropic kompaniyasi Nasdaq birjasida o'zining IPO jarayonini muvaffaqiyatli yakunladi. Rasmiy ma'lumotlarga ko'ra, mazkur birlamchi ommaviy taklif doirasida 81,3 milliard dollar mablag' to'plandi. Birjadagi ilk savdo sessiyalarida kompaniya aksiyalarining boshlang'ich narxi 111,5 dollarni tashkil etdi va bu holat umumiy bozor qiymatini qariyb 2 trillion dollarga yetkazdi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Sizga ma'lumki, sun'iy intellekt texnologiyalarini rivojlantirish ulkan hisoblash quvvatlari va moliyaviy resurslarni talab etadi. Anthropic tomonidan amalga oshirilgan ushbu yirik moliyaviy qadam global miqyosdagi investorlarning ilg'or til modellari va raqamli innovatsiyalarga bo'lgan ishonchi naqadar balandligini ko'rsatib beradi. Biznes rahbarlari va muhandislar uchun bu jarayon kelgusidagi texnologik hamkorliklar va bozor tendentsiyalarini belgilab beruvchi asosiy omilga aylanmoqda.</p><h2>Oʻzbekiston bozori uchun xulosa</h2><p>Mamlakatimizdagi IT va biznes hamjamiyati vakillari uchun bunday global o'zgarishlar yangi imkoniyatlarni ochadi. Sun'iy intellekt bozorining kengayishi va yirik o'yinchilarning kapitallashuvi O'zbekistonda ham raqamli xizmatlarni eksport qilish, ilg'or dasturiy mahsulotlarni joriy etish hamda xalqaro tajribalarni o'zlashtirish jarayonlarini yanada tezlashtiradi.</p>",
+    "contentHtml": "<h2>Nima boʻldi?</h2><p>Claude sun'iy intellekt modeli mualliflari bo'lgan Anthropic kompaniyasi Nasdaq birjasida o'zining IPO jarayonini muvaffaqiyatli yakunladi. Rasmiy ma'lumotlarga ko'ra, mazkur birlamchi ommaviy taklif doirasida 81,3 milliard dollar mablag' to'plandi. Birjadagi ilk savdo sessiyalarida kompaniya aksiyalarining boshlang'ich narxi 111,5 dollarni tashkil etdi va bu holat umumiy bozor qiymatini qariyb 2 trillion dollarga yetkazdi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Sizga ma'lumki, sun'iy intellekt texnologiyalarini rivojlantirish ulkan hisoblash quvvatlari va moliyaviy resurslarni talab etadi. Anthropic tomonidan amalga oshirilgan ushbu yirik moliyaviy qadam global miqyosdagi investorlarning ilg'or til modellari va raqamli innovatsiyalarga bo'lgan ishonchi naqadar balandligini ko'rsatib beradi. Biznes rahbarlari va muhandislar uchun bu jarayon kelgusidagi texnologik hamkorliklar va bozor tendentsiyalarini belgilab beruvchi asosiy omilga aylanmoqda.</p><h2>Oʻzbekiston bozori uchun xulosa</h2><p>Mamlakatimizdagi IT va biznes hamjamiyati vakillari uchun bunday global o'zgarishlar yangi imkoniyatlarni ochadi. Sun'iy intellekt bozorining kengayishi va yirik o'yinchilarning kapitallashuvi O'zbekistonda ham raqamli xizmatlarni eksport qilish, ilg'or dasturiy mahsulotlarni joriy etish hamda xalqaro tajribalarni o'zlashtirish jarayonlarini yanada tezlashtiradi.</p>",
+    "manual_approval": true
+  },
   "openai-performance-factory-chatgpt-tezligini-saqlaydi-2026": {
     "id": "openai-performance-factory-chatgpt-tezligini-saqlaydi-2026",
     "slug": "openai-performance-factory-chatgpt-tezligini-saqlaydi-2026",
