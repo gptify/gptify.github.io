@@ -1,4 +1,92 @@
+// AiNoma Central Content Database
+// Managed atomically by src.ainoma_autopilot.store
 window.AINOMA_ARTICLES = {
+  "ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026": {
+    "id": "ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026",
+    "slug": "ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026",
+    "title": "O'zbekistonlik talabalar Gemini obunasini bepul oladi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "O'zbekistonlik talabalar Gemini obunasini bepul oladi — AiNoma",
+    "meta_description": "O'zbekistondagi talabalar uchun Gemini AI Plus xizmatidan bir yil davomida bepul foydalanish imkoniyati taqdim etildi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-20",
+    "source_date": "2026-11-20",
+    "source_published_date": "2026-11-20",
+    "date": "2026-11-20",
+    "publish_date": "2026-11-20",
+    "ainoma_published_date": "2026-11-20",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "O'zbekistondagi talabalar uchun Gemini AI Plus xizmatidan bir yil davomida bepul foydalanish imkoniyati taqdim etildi.",
+    "img": "assets/editorial_ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026.jpg",
+    "imgAlt": "O'zbekistonlik talabalar Gemini obunasini bepul oladi",
+    "qisqacha": [
+      "Talabalar Gemini AI Plus xizmatidan bir yil davomida bepul foydalanishi mumkin.",
+      "HEMIS ilovasidan talabalik guvohnomasi va o'qish joyidan ma'lumotnoma yuklab olinadi.",
+      "Gemini ilovasi orqali maxsus taklifga ariza yuborish talab etiladi."
+    ],
+    "primary_source": {
+      "name": "Gazeta.uz IT",
+      "title": "O‘zbekistonda talabalar qanday qilib Gemini AI Plus obunasidan bir yil davomida bepul foydalanishi mumkin?",
+      "url": "https://www.gazeta.uz/oz/2026/11/20/gemini-plus/",
+      "date": "2026-11-20",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-20",
+    "body": "<h2>Nima bo‘ldi?</h2><p>O'zbekistondagi talabalar uchun ilg‘or sun’iy intellekt xizmatlaridan foydalanishda muhim qadam tashlandi. Unga ko'ra, talabalar Gemini AI Plus obunasidan bir yil davomida mutlaqo bepul foydalanishlari mumkinligi e'lon qilindi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur imkoniyatdan foydalanish uchun Sizdan murakkab amallar bajarish talab etilmaydi. Buning uchun HEMIS ilovasidan talabalik guvohnomasi hamda o'qish joyidan ma'lumotnomani yuklab olib, so'ngra Gemini ilovasi orqali maxsus taklifga ariza yuborish kifoya qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ta'lim jarayonida zamonaviy texnologiyalar va sun'iy intellekt vositalarini joriy etish kelgusida malakali kadrlar tayyorlash tizimini yangi bosqichga olib chiqadi. Siz bu imkoniyatdan o'z vaqtida foydalanib, o'qish va loyihalaringiz samaradorligini oshirishingiz mumkin.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>O'zbekistondagi talabalar uchun ilg‘or sun’iy intellekt xizmatlaridan foydalanishda muhim qadam tashlandi. Unga ko'ra, talabalar Gemini AI Plus obunasidan bir yil davomida mutlaqo bepul foydalanishlari mumkinligi e'lon qilindi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur imkoniyatdan foydalanish uchun Sizdan murakkab amallar bajarish talab etilmaydi. Buning uchun HEMIS ilovasidan talabalik guvohnomasi hamda o'qish joyidan ma'lumotnomani yuklab olib, so'ngra Gemini ilovasi orqali maxsus taklifga ariza yuborish kifoya qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ta'lim jarayonida zamonaviy texnologiyalar va sun'iy intellekt vositalarini joriy etish kelgusida malakali kadrlar tayyorlash tizimini yangi bosqichga olib chiqadi. Siz bu imkoniyatdan o'z vaqtida foydalanib, o'qish va loyihalaringiz samaradorligini oshirishingiz mumkin.</p>"
+  },
+  "openai-performance-factory-chatgpt-tezligini-saqlaydi-2026": {
+    "id": "openai-performance-factory-chatgpt-tezligini-saqlaydi-2026",
+    "slug": "openai-performance-factory-chatgpt-tezligini-saqlaydi-2026",
+    "title": "OpenAI ChatGPT tezligini saqlab qolish siri",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "OpenAI ChatGPT tezligini saqlab qolish siri — AiNoma",
+    "meta_description": "OpenAI muhandislari tomonidan ishlab chiqilgan Performance Factory tizimi ChatGPT tezligini ta'minlashda qanday muhim rol o'ynashi tahlil qilindi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-19",
+    "source_date": "2026-11-19",
+    "source_published_date": "2026-11-19",
+    "date": "2026-11-20",
+    "publish_date": "2026-11-20",
+    "ainoma_published_date": "2026-11-20",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "OpenAI muhandislari tomonidan ishlab chiqilgan Performance Factory tizimi ChatGPT tezligini ta'minlashda qanday muhim rol o'ynashi tahlil qilindi.",
+    "img": "assets/aaronson_ambainis_quantum_lean4_2026.jpg",
+    "imgAlt": "OpenAI ChatGPT tezligini saqlab qolish siri",
+    "qisqacha": [
+      "OpenAI Performance Factory deb nomlangan maxsus tizimni ishga tushirdi.",
+      "Tizim Codex asosidagi ish jarayonlaridan foydalangan holda unumdorlik muammolarini aniqlaydi va tuzatadi.",
+      "Mazkur yechim ChatGPT platformasining barqaror va tezkor ishlashini ta'minlashga qaratilgan."
+    ],
+    "primary_source": {
+      "name": "OpenAI News",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "date": "2026-11-19",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-20",
+    "body": "<h2>Nima bo‘ldi?</h2><p>OpenAI kompaniyasi ChatGPT platformasining tezligini doimiy ravishda ta'minlab borish maqsadida Performance Factory deb nomlangan tizimni jamoatchilikka tanishtirdi. Ushbu tizim samaradorlikni oshirish uchun maxsus Codex asosidagi ish jarayonlariga tayanadi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Dasturiy ta'minot va sun'iy intellekt xizmatlarini ko'rsatishda foydalanuvchi tajribasi birinchi o'rinda turadi. Performance Factory tizimi kodlar bazasidagi sekinlashishlarni avtomatik ravishda topish va ularni bartaraf etish imkonini beradi. Bu esa muhandislarga qo'shimcha vaqt va resurs tejash imkonini berib, biznes jarayonlarini optimallashtiradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz ham o'z biznesingiz yoki loyihalaringizda ChatGPT kabi yirik tizimlarning ish unumdorligini oshirish tajribasidan foydalanishingiz mumkin. Dasturiy ta'minot tezligini avtomatlashtirilgan tarzda nazorat qilish va muammolarni oldindan bartaraf etish amaliyoti mahalliy IT-kompaniyalari uchun ham muhim ahamiyat kasb etadi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>OpenAI kompaniyasi ChatGPT platformasining tezligini doimiy ravishda ta'minlab borish maqsadida Performance Factory deb nomlangan tizimni jamoatchilikka tanishtirdi. Ushbu tizim samaradorlikni oshirish uchun maxsus Codex asosidagi ish jarayonlariga tayanadi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Dasturiy ta'minot va sun'iy intellekt xizmatlarini ko'rsatishda foydalanuvchi tajribasi birinchi o'rinda turadi. Performance Factory tizimi kodlar bazasidagi sekinlashishlarni avtomatik ravishda topish va ularni bartaraf etish imkonini beradi. Bu esa muhandislarga qo'shimcha vaqt va resurs tejash imkonini berib, biznes jarayonlarini optimallashtiradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz ham o'z biznesingiz yoki loyihalaringizda ChatGPT kabi yirik tizimlarning ish unumdorligini oshirish tajribasidan foydalanishingiz mumkin. Dasturiy ta'minot tezligini avtomatlashtirilgan tarzda nazorat qilish va muammolarni oldindan bartaraf etish amaliyoti mahalliy IT-kompaniyalari uchun ham muhim ahamiyat kasb etadi.</p>"
+  },
   "meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026": {
     "id": "meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026",
     "slug": "meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026",
@@ -798,6 +886,441 @@ window.AINOMA_ARTICLES = {
     "verification_status": "VERIFIED",
     "verification_date": "2026-11-12",
     "contentHtml": "<h2>Nima bo‘ldi?</h2>\n<p>Global sun’iy intellekt sanoatida kutilmagan eng katta kadrlar o‘zgarishi yuz berdi. 1993-yilda NVIDIA kompaniyasiga asos solib, 33 yildan buyon uni boshqarib kelgan afsonaviy rahbar <b>Jensen Huang</b> kompaniya prezidenti, bosh direktori va direktorlar kengashi a’zosi lavozimidan zudlik bilan iste’foga chiqishini rasman ma’lum qildi.</p>\n<p>Kompaniya direktorlar kengashi favqulodda yig‘ilish o‘tkazib, 2013-yildan buyon moliya direktori (CFO) sifatida ishlab kelayotgan <b>Colette Kress</b>ni vaqtinchalik bosh direktor etib tayinladi. Shu bilan birga, kengash a’zosi Harvey C. Jones kompaniya tarixidagi birinchi mustaqil kengash raisi lavozimini egalladi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Jensen Huang faqatgina kompaniya rahbari emas, balki CUDA dasturiy platformasi va Blackwell/Vera arxitekturalarining bosh mafkurachisi bo‘lgan. Kengash ichki tekshiruvlar ortidan ushbu qaror qabul qilinganini ta’kidlamoqda. Xabar ortidan jahon fond bozorlarida sun’iy intellekt chiplari va texnologiya aksiyalari bo‘yicha jiddiy tebranishlar boshlandi: savdodan oldingi sessiyada kompaniya aksiyalari 8 foizdan ko‘proq pasaydi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Muhandislar va arxitektorlar uchun</div>\n    <ul>\n      <li>NVIDIA’ning uzoq muddatli chiplar yo‘l xaritasi (GPU roadmap) va dasturiy ta’minot ta’minoti o‘z kuchida qoladi.</li>\n      <li>Biroq korporativ boshqaruvning qayta ko‘rib chiqilishi OpenAI, Anthropic va Microsoft kabi eng yirik buyurtmachilar bilan uzoq muddatli yetkazib berish shartnomalarining shartlariga ta’sir qilishi mumkin.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes va investorlar uchun</div>\n    <ul>\n      <li>Sun’iy intellekt infratuzilmasiga milliardlab dollar tikkan korxonalar uchun yagona yetkazib beruvchiga haddan tashqari qaram bo‘lish xatarlari yaqqol namoyon bo‘ldi.</li>\n      <li>Bu esa Google (TPU), AMD va maxsus ichki chiplarga talabni yanada tezlashtiradi.</li>\n    </ul>\n  </div>\n</div>\n\n<div class=\"uz-impact-box\">\n  <div class=\"uz-impact-title\">Bu O‘zbekiston uchun nimani anglatadi?</div>\n  <p>Mahalliy data-markazlar, bulutli hisoblash quvvatlari va sun’iy intellekt infratuzilmasini qurayotgan tashkilotlar uchun ushbu voqea apparat ta’minotida diversifikatsiyaning naqadar muhimligini ko‘rsatadi. Kelgusi yillarda apparat mustaqilligini oshirish, faqat bitta chip ishlab chiqaruvchisiga tayanib qolmasdan ochiq dasturiy kutubxonalar va muqobil hisoblash platformalarini o‘zlashtirish IT sohasidagi eng to‘g‘ri strategiya bo‘lib qoladi.</p>\n</div>"
+  },
+  "claude-va-google-ai-studio-bilan-video-qurish-qollanma": {
+    "id": "claude-va-google-ai-studio-bilan-video-qurish-qollanma",
+    "slug": "claude-va-google-ai-studio-bilan-video-qurish-qollanma",
+    "title": "Claude va Google AI Studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma",
+    "kicker": "AMALIY QO'LLANMA · VIDEO VA AI",
+    "meta_title": "Claude va Google AI Studio bilan video qurish qo'llanmasi — AiNoma",
+    "meta_description": "Ssenariydan tortib kinematik kadrlargacha: Claude orqali shot-by-shot prompt arxitekturasini tuzish va Google AI Studio multimodal tahlili bilan professional video qurish bo'yicha amaliy qo'llanma.",
+    "category": "Qo'llanmalar",
+    "audience": "Kontent-meykerlar, marketologlar, video muharrirlar, SMM mutaxassislari, startap asoschilari",
+    "event_date": "2026-11-11",
+    "source_date": "2026-11-11",
+    "source_published_date": "2026-11-11",
+    "date": "2026-11-11",
+    "publish_date": "2026-11-11",
+    "ainoma_published_date": "2026-11-11",
+    "img": "assets/banner_claude_va_google_ai_studio_bilan_video_q.jpg",
+    "imgAlt": "Claude va Google AI Studio yordamida video qurish qo'llanmasi",
+    "qisqacha": [
+      "Video qurishda eng katta to'siq tasodifiy promptlar emas, balki kadrlar o'rtasidagi uzluksiz mantiq va uslubiy izchillik (consistency) hisoblanadi.",
+      "Claude orqali professional ssenariy, vaqt belgilari (timestamps), kamera harakatlari va video generatorlar uchun mo'ljallangan aniq kinematik promptlar arxitekturasini ishlab chiqasiz.",
+      "Google AI Studio (Gemini) esa 2 million tokenlik multimodal tahlili orqali tayyorlangan kadrlar dinamikasini tekshirish, ritm xatolarini aniqlash va Google Veo uchun render parametrlarini optimallashtirishda xizmat qiladi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Amaliy Laboratoriyasi",
+      "title": "Sun'iy intellekt yordamida professional video ishlab chiqarish va multimodal tahlil metodologiyasi",
+      "url": "https://ainoma.uz/yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/",
+      "badge": "AMALIY QO'LLANMA"
+    },
+    "secondary_sources": [
+      {
+        "name": "Google AI Studio & DeepMind Docs",
+        "title": "Multimodal Video Understanding and Prompt Directing with Gemini 2.0 and Veo",
+        "url": "https://ai.google.dev/gemini-api/docs/vision"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Ko'pchilik foydalanuvchilar sun'iy intellektda video ishlab chiqarishda bir xil xatoga yo'l qo'yadi: bitta umumiy prompt yozib, video generatoridan mo'jiza kutadi. Professional natijaga erishish uchun esa ikki bosqichli tizimli arxitektura zarur: <b>Claude</b> — mantiqiy ssenariy, kadrlar vaqti va rejissyorlik rejasi uchun javob beradi; <b>Google AI Studio (Gemini)</b> esa multimodal tahlil, vizual izchillik va Google Veo modeliga kiritiladigan optik ko'rsatkichlarni boshqaradi.</p>\n\n<h2 class=\"article-section-title\">1-bosqich: Claude bilan rejissyorlik rejasi va promptlar arxitekturasi</h2>\n<p>Rolik qurishni boshlashdan oldin Claude'ga aniq kontekst bering. Sun'iy intellekt video generatorlari (Google Veo, Runway, Kling, Sora) uchun har bir kadr alohida va batafsil yozilishi shart. Claude'ga quyidagi tizimli promptni yuboring:</p>\n\n<pre class=\"article-code-block\"><code>Siz xalqaro darajadagi kino rejissyori va video direktorsiz.\nMavzu: [Mavzuni yozing, masalan: Toshkentdagi yangi IT-park faoliyati]\nFormat: 30 soniyalik vertikal rolik (9:16)\nAuditoriya: Yosh mutaxassislar va xorijiy investorlar\n\nMenga 5 ta ketma-ket kadr (Shot-by-Shot) uchun quyidagi jadvalni taqdim eting:\n1. Kadr raqami va vaqti (masalan, Shot 1: 00:00 - 00:04);\n2. Vizual tavsif (qahramon harakati, muhit);\n3. Kamera optikasi va harakati (masalan: 35mm lens, dolly-in, shallow depth of field);\n4. Rang va yorug'lik harorati (masalan: cinematic golden hour, volumetric haze);\n5. AI Video generatori (Google Veo / Kling) uchun sof ingliz tilidagi yakuniy prompt.</code></pre>\n\n<p>Natijada Claude sizga tasodifiy gaplar emas, balki montajchining ishchi rejasiga o'xshash professional arxitekturani ishlab beradi.</p>\n\n<h2 class=\"article-section-title\">2-bosqich: Google AI Studio'da multimodal tahlil va izchillik nazorati</h2>\n<p>Kadrlar bo'yicha promptlar tayyor bo'lgach, ikkinchi muhim qadam — Google AI Studio (aistudio.google.com) platformasiga o'tishdir. Google AI Studio quyidagi vazifalarda tengsiz imkoniyat taqdim etadi:</p>\n<ul>\n  <li><b>Qahramon va rang izchilligi (Visual Consistency):</b> Agar sizda bosh qahramonning surati yoki brend ranglar palitrasi bo'lsa, uni Google AI Studio'ga yuklang va Gemini 2.0 Flash / Pro modeliga tahlil qildiring: <i>«Ushbu personaj kiyimi, yuz tuzilishi va atrof-muhit ranglarini keyingi barcha video promptlarida o'zgarmas saqlash uchun qaysi asosiy deskriptorlarni kiritish lozim?»</i></li>\n  <li><b>Video kadrlarni tekshirish:</b> Generatsiya qilingan dastlabki 3-5 soniyalik sinov parchalarini Google AI Studio'ga yuklab, harakat ritmi, kadrlar chalkashligi va fizik buzilishlarni aniqlashingiz mumkin.</li>\n</ul>\n\n<h2 class=\"article-section-title\">3-bosqich: Kadrlar bo'yicha generatsiya va Veo prompt qoidalari</h2>\n<p>Google Veo yoki yetakchi video generatorlariga prompt berishda quyidagi 4 elementli oltin qoidaga rioya qiling:</p>\n<ol>\n  <li><b>Subyekt va asosiy harakat:</b> Kadr markazida kim yoki nima bor va u aniq nima qilyapti (masalan, <i>«A software engineer walking through a futuristic glass-walled office»</i>);</li>\n  <li><b>Kamera va kompozitsiya:</b> Kamera qayerda va qanday harakatlanadi (masalan, <i>«Low-angle slow tracking shot, 50mm anamorphic lens, subtle motion blur»</i>);</li>\n  <li><b>Yorug'lik va atmosfera:</b> Ranglar va nur yo'nalishi (masalan, <i>«Soft morning cinematic sunlight streaming through floor-to-ceiling windows, dust motes floating»</i>);</li>\n  <li><b>Texnik sifat parametrlari:</b> <i>«Photorealistic, 8k resolution, cinematic color grading, hyper-detailed textures, 24fps»</i>.</li>\n</ol>\n\n<h2 class=\"article-section-title\">4-bosqich: Montaj, ovoz va subtitrlarni birlashtirish</h2>\n<p>Barcha 5 ta kadr tayyor bo'lgach, ularni CapCut, Premiere Pro yoki DaVinci Resolve dasturiga joylang:</p>\n<ul>\n  <li><b>Kadrlar o'tishi:</b> Har bir kadr davomiyligini ssenariydagi vaqt bilan moslang. AI videolarda eng yaxshi o'tish — bu oddiy kesish (hard cut) yoki sekin xiralashish (cross dissolve). Ortiqcha murakkab 3D o'tishlardan saqlaning;</li>\n  <li><b>Ovozlashtirish:</b> Claude orqali ssenariy diktor matnini (voiceover) ElevenLabs kabi neyron ovoz platformasida o'zbek yoki ingliz tilida professional yozib oling;</li>\n  <li><b>Dinamik subtitrlar:</b> Mobil auditoriya uchun subtitrlar judayam muhim. Kadr markazini to'smaydigan, qisqa va qulay shriftlardan foydalaning.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Xulosa: Tizimli yondashuv — kafolatlangan sifat</h2>\n<p>Professional darajadagi video tayyorlashda sun'iy intellekt sehrli tugma emas, balki puxta boshqariladigan ijodiy guruhdir. Claude — ssenariy muallifi va bosh rejissyor vazifasini bajarsa, Google AI Studio — texnik tahlilchi va sifat nazoratchisi vazifasini o'taydi. Ushbu tizimli zanjir orqali siz minimal vaqt sarflab, yuqori sifatli vizual loyihalarni muvaffaqiyatli qurishingiz mumkin.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Ko'pchilik foydalanuvchilar sun'iy intellektda video ishlab chiqarishda bir xil xatoga yo'l qo'yadi: bitta umumiy prompt yozib, video generatoridan mo'jiza kutadi. Professional natijaga erishish uchun esa ikki bosqichli tizimli arxitektura zarur: <b>Claude</b> — mantiqiy ssenariy, kadrlar vaqti va rejissyorlik rejasi uchun javob beradi; <b>Google AI Studio (Gemini)</b> esa multimodal tahlil, vizual izchillik va Google Veo modeliga kiritiladigan optik ko'rsatkichlarni boshqaradi.</p>\n\n<h2 class=\"article-section-title\">1-bosqich: Claude bilan rejissyorlik rejasi va promptlar arxitekturasi</h2>\n<p>Rolik qurishni boshlashdan oldin Claude'ga aniq kontekst bering. Sun'iy intellekt video generatorlari (Google Veo, Runway, Kling, Sora) uchun har bir kadr alohida va batafsil yozilishi shart. Claude'ga quyidagi tizimli promptni yuboring:</p>\n\n<pre class=\"article-code-block\"><code>Siz xalqaro darajadagi kino rejissyori va video direktorsiz.\nMavzu: [Mavzuni yozing, masalan: Toshkentdagi yangi IT-park faoliyati]\nFormat: 30 soniyalik vertikal rolik (9:16)\nAuditoriya: Yosh mutaxassislar va xorijiy investorlar\n\nMenga 5 ta ketma-ket kadr (Shot-by-Shot) uchun quyidagi jadvalni taqdim eting:\n1. Kadr raqami va vaqti (masalan, Shot 1: 00:00 - 00:04);\n2. Vizual tavsif (qahramon harakati, muhit);\n3. Kamera optikasi va harakati (masalan: 35mm lens, dolly-in, shallow depth of field);\n4. Rang va yorug'lik harorati (masalan: cinematic golden hour, volumetric haze);\n5. AI Video generatori (Google Veo / Kling) uchun sof ingliz tilidagi yakuniy prompt.</code></pre>\n\n<p>Natijada Claude sizga tasodifiy gaplar emas, balki montajchining ishchi rejasiga o'xshash professional arxitekturani ishlab beradi.</p>\n\n<h2 class=\"article-section-title\">2-bosqich: Google AI Studio'da multimodal tahlil va izchillik nazorati</h2>\n<p>Kadrlar bo'yicha promptlar tayyor bo'lgach, ikkinchi muhim qadam — Google AI Studio (aistudio.google.com) platformasiga o'tishdir. Google AI Studio quyidagi vazifalarda tengsiz imkoniyat taqdim etadi:</p>\n<ul>\n  <li><b>Qahramon va rang izchilligi (Visual Consistency):</b> Agar sizda bosh qahramonning surati yoki brend ranglar palitrasi bo'lsa, uni Google AI Studio'ga yuklang va Gemini 2.0 Flash / Pro modeliga tahlil qildiring: <i>«Ushbu personaj kiyimi, yuz tuzilishi va atrof-muhit ranglarini keyingi barcha video promptlarida o'zgarmas saqlash uchun qaysi asosiy deskriptorlarni kiritish lozim?»</i></li>\n  <li><b>Video kadrlarni tekshirish:</b> Generatsiya qilingan dastlabki 3-5 soniyalik sinov parchalarini Google AI Studio'ga yuklab, harakat ritmi, kadrlar chalkashligi va fizik buzilishlarni aniqlashingiz mumkin.</li>\n</ul>\n\n<h2 class=\"article-section-title\">3-bosqich: Kadrlar bo'yicha generatsiya va Veo prompt qoidalari</h2>\n<p>Google Veo yoki yetakchi video generatorlariga prompt berishda quyidagi 4 elementli oltin qoidaga rioya qiling:</p>\n<ol>\n  <li><b>Subyekt va asosiy harakat:</b> Kadr markazida kim yoki nima bor va u aniq nima qilyapti (masalan, <i>«A software engineer walking through a futuristic glass-walled office»</i>);</li>\n  <li><b>Kamera va kompozitsiya:</b> Kamera qayerda va qanday harakatlanadi (masalan, <i>«Low-angle slow tracking shot, 50mm anamorphic lens, subtle motion blur»</i>);</li>\n  <li><b>Yorug'lik va atmosfera:</b> Ranglar va nur yo'nalishi (masalan, <i>«Soft morning cinematic sunlight streaming through floor-to-ceiling windows, dust motes floating»</i>);</li>\n  <li><b>Texnik sifat parametrlari:</b> <i>«Photorealistic, 8k resolution, cinematic color grading, hyper-detailed textures, 24fps»</i>.</li>\n</ol>\n\n<h2 class=\"article-section-title\">4-bosqich: Montaj, ovoz va subtitrlarni birlashtirish</h2>\n<p>Barcha 5 ta kadr tayyor bo'lgach, ularni CapCut, Premiere Pro yoki DaVinci Resolve dasturiga joylang:</p>\n<ul>\n  <li><b>Kadrlar o'tishi:</b> Har bir kadr davomiyligini ssenariydagi vaqt bilan moslang. AI videolarda eng yaxshi o'tish — bu oddiy kesish (hard cut) yoki sekin xiralashish (cross dissolve). Ortiqcha murakkab 3D o'tishlardan saqlaning;</li>\n  <li><b>Ovozlashtirish:</b> Claude orqali ssenariy diktor matnini (voiceover) ElevenLabs kabi neyron ovoz platformasida o'zbek yoki ingliz tilida professional yozib oling;</li>\n  <li><b>Dinamik subtitrlar:</b> Mobil auditoriya uchun subtitrlar judayam muhim. Kadr markazini to'smaydigan, qisqa va qulay shriftlardan foydalaning.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Xulosa: Tizimli yondashuv — kafolatlangan sifat</h2>\n<p>Professional darajadagi video tayyorlashda sun'iy intellekt sehrli tugma emas, balki puxta boshqariladigan ijodiy guruhdir. Claude — ssenariy muallifi va bosh rejissyor vazifasini bajarsa, Google AI Studio — texnik tahlilchi va sifat nazoratchisi vazifasini o'taydi. Ushbu tizimli zanjir orqali siz minimal vaqt sarflab, yuqori sifatli vizual loyihalarni muvaffaqiyatli qurishingiz mumkin.</p>",
+    "verification_status": "VERIFIED",
+    "banner_title": "Multimodal Video Directing"
+  },
+  "openai-businesses-in-chatgpt-business-hub-2026": {
+    "id": "openai-businesses-in-chatgpt-business-hub-2026",
+    "slug": "openai-businesses-in-chatgpt-business-hub-2026",
+    "title": "OpenAI «Businesses in ChatGPT»ni ishga tushirdi: kompaniyalar endi ChatGPT ichida o‘z brend agenti va do‘koniga ega bo‘ladi",
+    "kicker": "TIJORAT VA AI · OPENAI",
+    "meta_title": "OpenAI Businesses in ChatGPT: Brendlar uchun rasmiy do'kon va agentlar — AiNoma",
+    "meta_description": "OpenAI 800 million faol foydalanuvchiga ega ChatGPT ichida bizneslar uchun rasmiy profil, mahsulot katalogi va interaktiv xarid agentlarini birlashtiruvchi 'Businesses in ChatGPT' platformasini taqdim etdi.",
+    "category": "Biznes",
+    "audience": "Biznes egalari, marketologlar, e-commerce mutaxassislari, riteylerlar",
+    "event_date": "2026-11-10",
+    "source_date": "2026-11-10",
+    "source_published_date": "2026-11-10",
+    "date": "2026-11-11",
+    "publish_date": "2026-11-11",
+    "ainoma_published_date": "2026-11-11",
+    "img": "assets/banner_openai_businesses_in_chatgpt_business_hu.jpg",
+    "imgAlt": "OpenAI Businesses in ChatGPT biznes ekotizimi",
+    "qisqacha": [
+      "OpenAI korxonalar uchun ChatGPT platformasi ichida rasmiy biznes profili, xizmat ko'rsatish agentlari va tovar kataloglarini joylashtirish imkonini beruvchi 'Businesses in ChatGPT' markazini ochdi.",
+      "Har haftada 800 milliondan ortiq inson foydalanadigan ChatGPT endi to'g'ridan-to'g'ri elektron tijorat va mijozlar bilan interaktiv muloqot vitrinasiga aylanmoqda.",
+      "Tizim Stripe va yirik to'lov shlyuzlari bilan integratsiyalangan bo'lib, xaridorlar muloqot oynasidan chiqmasdan buyurtma rasmiylashtirishi va to'lovni amalga oshirishi mumkin."
+    ],
+    "primary_source": {
+      "name": "OpenAI Business News",
+      "title": "Introducing Businesses in ChatGPT: Verified Brand Hubs, Product Catalogs, and Native Checkout",
+      "url": "https://openai.com/index/businesses-in-chatgpt/",
+      "badge": "RASMIY RELIZ"
+    },
+    "secondary_sources": [
+      {
+        "name": "PYMNTS Enterprise",
+        "title": "OpenAI opens ChatGPT marketplace for verified merchant profiles and conversational commerce",
+        "url": "https://pymnts.com/artificial-intelligence-ai/2026/openai-launches-businesses-in-chatgpt-beta/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> OpenAI sun'iy intellekt orqali qidiruv va muloqot bozoridan so'ng endi global elektron tijorat markaziga aylanmoqda. Yangi taqdim etilgan <b>«Businesses in ChatGPT»</b> dasturi orqali kompaniyalar ChatGPT interfeysi ichida rasmiy tasdiqlangan biznes profilini ochish, mahsulotlar katalogini ulash va avtonom savdo agentlarini ishga tushirish imkoniyatiga ega bo'ldi.</p>\n\n<h2 class=\"article-section-title\">800 million auditoriya uchun to'g'ridan-to'g'ri vitrina</h2>\n<p>ChatGPT'ning haftalik faol foydalanuvchilari soni 800 milliondan oshgan bir paytda, foydalanuvchilar har kuni millionlab xarid bo'yicha tavsiyalar, mahsulot taqqoslashlari va xizmat qidiruvlarini amalga oshirmoqda. OpenAI yangi funksiya orqali an'anaviy veb-saytga o'tish zaruriyatini yo'qotib, barcha xarid jarayonini bevosita chat oqimida yakunlash muhitini shakllantirdi.</p>\n\n<h2 class=\"article-section-title\">Xususiy brend agenti va katalog integratsiyasi</h2>\n<p>Bizneslar endi o'z ERP, CRM va ombor tizimlarini ChatGPT bilan xavfsiz API protokollari orqali bog'lashi mumkin. Kompaniyaning maxsus sun'iy intellekt agenti quyidagi vazifalarni avtomatlashtiradi:</p>\n<ul>\n  <li>Mijozning o'lchami, didi va byudjetiga mos tovarlarni real vaqt rejimida tavsiya qilish;</li>\n  <li>Ombordagi qoldiqlarni tekshirish va yetkazib berish muddatlarini hisoblash;</li>\n  <li>To'lovni muloqot oynasining o'zida xavfsiz qabul qilish va chek taqdim etish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Google qidiruvi va an'anaviy e-commerce uchun chaqiruv</h2>\n<p>Ushbu yangilik an'anaviy qidiruv tizimlari (Google Search reklamalari) hamda Amazon, Shopify kabi onlayn platformalar uchun jiddiy raqobat muhitini paydo qilmoqda. Kompaniyalar endi mijozni qidiruv natijalaridan o'z saytiga jalb qilish o'rniga, uning muloqot qilayotgan joyida — sun'iy intellekt agenti orqali to'g'ridan-to'g'ri savdoni yo'lga qo'ymoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> OpenAI sun'iy intellekt orqali qidiruv va muloqot bozoridan so'ng endi global elektron tijorat markaziga aylanmoqda. Yangi taqdim etilgan <b>«Businesses in ChatGPT»</b> dasturi orqali kompaniyalar ChatGPT interfeysi ichida rasmiy tasdiqlangan biznes profilini ochish, mahsulotlar katalogini ulash va avtonom savdo agentlarini ishga tushirish imkoniyatiga ega bo'ldi.</p>\n\n<h2 class=\"article-section-title\">800 million auditoriya uchun to'g'ridan-to'g'ri vitrina</h2>\n<p>ChatGPT'ning haftalik faol foydalanuvchilari soni 800 milliondan oshgan bir paytda, foydalanuvchilar har kuni millionlab xarid bo'yicha tavsiyalar, mahsulot taqqoslashlari va xizmat qidiruvlarini amalga oshirmoqda. OpenAI yangi funksiya orqali an'anaviy veb-saytga o'tish zaruriyatini yo'qotib, barcha xarid jarayonini bevosita chat oqimida yakunlash muhitini shakllantirdi.</p>\n\n<h2 class=\"article-section-title\">Xususiy brend agenti va katalog integratsiyasi</h2>\n<p>Bizneslar endi o'z ERP, CRM va ombor tizimlarini ChatGPT bilan xavfsiz API protokollari orqali bog'lashi mumkin. Kompaniyaning maxsus sun'iy intellekt agenti quyidagi vazifalarni avtomatlashtiradi:</p>\n<ul>\n  <li>Mijozning o'lchami, didi va byudjetiga mos tovarlarni real vaqt rejimida tavsiya qilish;</li>\n  <li>Ombordagi qoldiqlarni tekshirish va yetkazib berish muddatlarini hisoblash;</li>\n  <li>To'lovni muloqot oynasining o'zida xavfsiz qabul qilish va chek taqdim etish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Google qidiruvi va an'anaviy e-commerce uchun chaqiruv</h2>\n<p>Ushbu yangilik an'anaviy qidiruv tizimlari (Google Search reklamalari) hamda Amazon, Shopify kabi onlayn platformalar uchun jiddiy raqobat muhitini paydo qilmoqda. Kompaniyalar endi mijozni qidiruv natijalaridan o'z saytiga jalb qilish o'rniga, uning muloqot qilayotgan joyida — sun'iy intellekt agenti orqali to'g'ridan-to'g'ri savdoni yo'lga qo'ymoqda.</p>",
+    "verification_status": "VERIFIED",
+    "banner_title": "Businesses in ChatGPT"
+  },
+  "anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026": {
+    "id": "anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026",
+    "slug": "anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026",
+    "title": "Anthropic ofis dasturlari bozoriga kirdi: Claude Sheets va Whiteboards orqali Google va Microsoft’ga raqobatchi taqdim etildi",
+    "kicker": "MAHSULDORLIK · CLAUDE",
+    "meta_title": "Anthropic Claude Sheets va Whiteboards: Yangi avlod ofis maydoni — AiNoma",
+    "meta_description": "Anthropic kompaniyasi korporativ jamoalar uchun 'Claude Sheets' interaktiv hisob-kitob jadvallari va 'Claude Whiteboards' vizual fikrlash doskasini taqdim etdi: vositalar sun'iy intellekt bilan real vaqt rejimida ishlaydi.",
+    "category": "Texnologiya",
+    "audience": "Moliyachilar, tahlilchilar, loyiha menejerlari, rahbarlar, dasturchilar",
+    "event_date": "2026-11-10",
+    "source_date": "2026-11-10",
+    "source_published_date": "2026-11-10",
+    "date": "2026-11-11",
+    "publish_date": "2026-11-11",
+    "ainoma_published_date": "2026-11-11",
+    "img": "assets/banner_anthropic_claude_sheets_whiteboards_ofis.jpg",
+    "imgAlt": "Anthropic Claude Sheets va Claude Whiteboards ofis dasturlari",
+    "qisqacha": [
+      "Anthropic faqat matnli chat doirasidan chiqib, Google Sheets va Miro platformalariga raqobatchi bo'lgan 'Claude Sheets' va 'Claude Whiteboards' mahsulotlarini chiqardi.",
+      "Claude Sheets murakkab formulalar va moliyaviy modellarni avtomatik hisoblab, jadval ichida real vaqtda sun'iy intellekt tahlilini olib boradi.",
+      "Whiteboards esa jamoaviy aqliy hujum, arxitektura diagrammalari va tizim chizmalarini bevosita Claude muloqotidan avtomatik chizib beradi."
+    ],
+    "primary_source": {
+      "name": "Anthropic Product News",
+      "title": "Introducing Claude Sheets and Claude Whiteboards: Next-Generation Collaborative Workspaces",
+      "url": "https://anthropic.com/news/claude-sheets-whiteboards-launch/",
+      "badge": "YANGI MAHSULOT"
+    },
+    "secondary_sources": [
+      {
+        "name": "Silicon Republic",
+        "title": "Anthropic targets Microsoft and Google workplace dominance with Claude Sheets and Whiteboards",
+        "url": "https://siliconrepublic.com/enterprise/anthropic-claude-sheets-whiteboards-workspace-launch/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Anthropic kompaniyasi generativ sun'iy intellekt modellarini amaliy ish oqimlariga chuqur integratsiya qilish strategiyasining yangi bosqichini boshladi. Taqdim etilgan <b>Claude Sheets</b> va <b>Claude Whiteboards</b> bevosita Google Workspace hamda Microsoft 365 ekotizimlarining eng ommabop vositalari bilan raqobatga kirishmoqda.</p>\n\n<h2 class=\"article-section-title\">Claude Sheets: Faol ma'lumotlar bilan hisob-kitob</h2>\n<p>An'anaviy elektron jadvallarda foydalanuvchilar murakkab formulalar (VLOOKUP, INDEX MATCH) yozishi yoki skriptlar tuzishi talab etiladi. Claude Sheets esa har bir katakchani sun'iy intellekt qobiliyati bilan jihozlaydi. Foydalanuvchi oddiy so'zlar bilan moliyaviy hisobotni tahlil qilish, daromadlar kaskadini hisoblash yoki bozor ko'rsatkichlarini taqqoslashni buyurishi mumkin — tizim formulalarni avtomatik qo'llab, to'liq diagrammalarni shakllantiradi.</p>\n\n<h2 class=\"article-section-title\">Claude Whiteboards: Murakkab tizimlarni vizual tushunish</h2>\n<p>Dasturiy arxitektura, biznes jarayonlar va mahsulot rejalari bilan ishlovchi jamoalar uchun Whiteboards interaktiv maydon taqdim etadi. Matnli talablar yoki mijoz bilan suhbat stenogrammasi Claude Whiteboards'ga yuklanganda, tizim bir zumda blok-sxemalar, foydalanuvchi yo'llari (user journeys) va tizimli modullarni vizual doskada tartiblab beradi.</p>\n\n<h2 class=\"article-section-title\">Korporativ bozor uchun yangi standart</h2>\n<p>Mazkur qadam Anthropic kompaniyasining dasturchilar va tadqiqotchilar doirasidan chiqib, millionlab ofis xodimlari va tahlilchilarning kundalik asosiy ish maydoniga aylanish maqsadini ko'rsatadi. Korxona xavfsizligi va maxfiylik standartlari to'liq saqlangan holda jamoaviy hamkorlik funksiyalari taqdim etilmoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Anthropic kompaniyasi generativ sun'iy intellekt modellarini amaliy ish oqimlariga chuqur integratsiya qilish strategiyasining yangi bosqichini boshladi. Taqdim etilgan <b>Claude Sheets</b> va <b>Claude Whiteboards</b> bevosita Google Workspace hamda Microsoft 365 ekotizimlarining eng ommabop vositalari bilan raqobatga kirishmoqda.</p>\n\n<h2 class=\"article-section-title\">Claude Sheets: Faol ma'lumotlar bilan hisob-kitob</h2>\n<p>An'anaviy elektron jadvallarda foydalanuvchilar murakkab formulalar (VLOOKUP, INDEX MATCH) yozishi yoki skriptlar tuzishi talab etiladi. Claude Sheets esa har bir katakchani sun'iy intellekt qobiliyati bilan jihozlaydi. Foydalanuvchi oddiy so'zlar bilan moliyaviy hisobotni tahlil qilish, daromadlar kaskadini hisoblash yoki bozor ko'rsatkichlarini taqqoslashni buyurishi mumkin — tizim formulalarni avtomatik qo'llab, to'liq diagrammalarni shakllantiradi.</p>\n\n<h2 class=\"article-section-title\">Claude Whiteboards: Murakkab tizimlarni vizual tushunish</h2>\n<p>Dasturiy arxitektura, biznes jarayonlar va mahsulot rejalari bilan ishlovchi jamoalar uchun Whiteboards interaktiv maydon taqdim etadi. Matnli talablar yoki mijoz bilan suhbat stenogrammasi Claude Whiteboards'ga yuklanganda, tizim bir zumda blok-sxemalar, foydalanuvchi yo'llari (user journeys) va tizimli modullarni vizual doskada tartiblab beradi.</p>\n\n<h2 class=\"article-section-title\">Korporativ bozor uchun yangi standart</h2>\n<p>Mazkur qadam Anthropic kompaniyasining dasturchilar va tadqiqotchilar doirasidan chiqib, millionlab ofis xodimlari va tahlilchilarning kundalik asosiy ish maydoniga aylanish maqsadini ko'rsatadi. Korxona xavfsizligi va maxfiylik standartlari to'liq saqlangan holda jamoaviy hamkorlik funksiyalari taqdim etilmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "banner_title": "Claude Sheets & Whiteboards"
+  },
+  "huquqshunoslar-uchun-ai": {
+    "id": "huquqshunoslar-uchun-ai",
+    "slug": "huquqshunoslar-uchun-ai",
+    "title": "Huquqshunoslar uchun AI: shartnoma tahlili va hujjat tayyorlashda yordam",
+    "kicker": "KASB BO'YICHA · HUQUQ",
+    "meta_title": "Huquqshunoslar uchun AI: Shartnoma tahlili va xavfsiz foydalanish — AiNoma",
+    "meta_description": "Sun'iy intellekt shartnoma va yuridik hujjatlarni tezroq ko'rib chiqishga qanday yordam beradi? Gallyutsinatsiyalar, maxfiylik va amaliy tavsiyalar haqida batafsil.",
+    "category": "Qo'llanmalar",
+    "audience": "Huquqshunoslar, advokatlar, yurist-konsultantlar",
+    "event_date": "2026-11-10",
+    "source_date": "2026-11-10",
+    "source_published_date": "2026-11-10",
+    "date": "2026-11-10",
+    "publish_date": "2026-11-10",
+    "ainoma_published_date": "2026-11-10",
+    "img": "assets/banner_huquqshunoslar_uchun_ai.jpg",
+    "imgAlt": "Huquqshunoslar va yuristlar uchun AI qo'llanmasi",
+    "qisqacha": [
+      "AI yirik hajmdagi shartnomalar, da'vo arizalari va qonunchilik hujjatlarini tezkor tahlil qilib, asosiy bandlarni ajratishda yordam beradi.",
+      "Til modellari mavjud bo'lmagan qonun moddalari yoki soxta sud amaliyotini to'qib chiqarishi (gallyutsinatsiya) mumkinligi sababli barcha havolalarni rasmiy manbada tekshirish shart.",
+      "Mijozlarning konfidentsial ma'lumotlarini ochiq AI platformalariga kiritish tavsiya etilmaydi; yakuniy huquqiy xulosa har doim yuristning o'zida qoladi."
+    ],
+    "primary_source": {
+      "name": "AiNoma Amaliy Tadqiqotlar Guruhi",
+      "title": "Yuridik sohada sun'iy intellekt vositalaridan unumli va xavfsiz foydalanish metodologiyasi",
+      "url": "https://ainoma.uz/yangiliklar/huquqshunoslar-uchun-ai/",
+      "badge": "AMALIY METODOLOGIYA"
+    },
+    "secondary_sources": [
+      {
+        "name": "LegalTech Journal",
+        "title": "AI in Contract Review and Document Due Diligence: Best Practices and Pitfalls",
+        "url": "https://legaltechjournal.org/ai-contract-review-2026/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt katta hajmdagi hujjatlarni tezda ko'rib chiqish, asosiy bandlarni ajratib olish va birinchi qoralamalarni tayyorlashda vaqtni sezilarli tejaydi — ammo yakuniy huquqiy xulosa va mas'uliyat har doim inson yuristning o'zida qoladi.</p>\n\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi?</h2>\n<p><b>1. Uzun hujjatlarni tezda ko'rib chiqish.</b> Ko'p sahifali shartnoma yoki qonun hujjatini AI tizimiga berib, asosiy bandlar, muddatlar, jarimalar va majburiyatlarni qisqa tahliliy ro'yxat shaklida olishingiz mumkin.</p>\n<p><b>2. Birinchi qoralama tayyorlash.</b> Standart xat, e'tiroznomalar, da'vo arizalari yoki oddiy shartnoma shablonining boshlang'ich qoralamasini bir necha daqiqada tayyorlash — keyin uni o'zingiz to'liq tahrirlash imkoniyati taqdim etiladi.</p>\n<p><b>3. Til va uslubni yaxshilash.</b> Yuridik hujjatni aniqroq, tushunarliroq tilda qayta bayon qilish (ayniqsa mijozga yuboriladigan tushuntirish xatlari uchun juda qulay).</p>\n<p><b>4. Solishtirish (Redline tahlil).</b> Ikki shartnoma variantini (masalan, eski va yangi tahrir) solishtirib, yashirin o'zgarishlar va asosiy farqlarni bir zumda topish.</p>\n\n<h2 class=\"article-section-title\">Qayerda AI'ga ishonib bo'lmaydi?</h2>\n<p>⚠️ <b>Gallyutsinatsiyalar va qonun normalari:</b> AI amaldagi qonunchilikni har doim to'liq va aniq bilmasligi mumkin — ayniqsa O'zbekiston Respublikasi qonunchiligidagi so'nggi tahrirlar bo'yicha. AI ba'zan ishonchli ohangda, ammo aslida mavjud bo'lmagan qonun moddalari yoki sud pretsedentlarini to'qib chiqarishi (hallucination) mumkin. Har qanday huquqiy havola yoki modda raqamini <code>Lex.uz</code> kabi rasmiy davlat bazalarida tekshirish shart.</p>\n\n<p>🔒 <b>Mijoz sirlari va konfidentsiallik:</b> Mijozlarning tijorat sirlari, shartnoma summalari va shaxsiy ma'lumotlarini ochiq umumiy AI platformalariga kiritish taqiqlanadi. Agar enterprise darajasidagi xavfsiz klaster bo'lmasa, maxfiy ma'lumotlar ochiqlanishi xavfi mavjud.</p>\n\n<h2 class=\"article-section-title\">Oltin qoida: Junior yordamchi tamoyili</h2>\n<p>Sun'iy intellektdan malakali yordamchi sifatida foydalaning: u sizga qoralama va tahlil tezligini beradi, biroq hujjatga qo'yiladigan har bir imzo va professional xulosa — sizning shaxsiy mas'uliyatingizdir.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt katta hajmdagi hujjatlarni tezda ko'rib chiqish, asosiy bandlarni ajratib olish va birinchi qoralamalarni tayyorlashda vaqtni sezilarli tejaydi — ammo yakuniy huquqiy xulosa va mas'uliyat har doim inson yuristning o'zida qoladi.</p>\n\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi?</h2>\n<p><b>1. Uzun hujjatlarni tezda ko'rib chiqish.</b> Ko'p sahifali shartnoma yoki qonun hujjatini AI tizimiga berib, asosiy bandlar, muddatlar, jarimalar va majburiyatlarni qisqa tahliliy ro'yxat shaklida olishingiz mumkin.</p>\n<p><b>2. Birinchi qoralama tayyorlash.</b> Standart xat, e'tiroznomalar, da'vo arizalari yoki oddiy shartnoma shablonining boshlang'ich qoralamasini bir necha daqiqada tayyorlash — keyin uni o'zingiz to'liq tahrirlash imkoniyati taqdim etiladi.</p>\n<p><b>3. Til va uslubni yaxshilash.</b> Yuridik hujjatni aniqroq, tushunarliroq tilda qayta bayon qilish (ayniqsa mijozga yuboriladigan tushuntirish xatlari uchun juda qulay).</p>\n<p><b>4. Solishtirish (Redline tahlil).</b> Ikki shartnoma variantini (masalan, eski va yangi tahrir) solishtirib, yashirin o'zgarishlar va asosiy farqlarni bir zumda topish.</p>\n\n<h2 class=\"article-section-title\">Qayerda AI'ga ishonib bo'lmaydi?</h2>\n<p>⚠️ <b>Gallyutsinatsiyalar va qonun normalari:</b> AI amaldagi qonunchilikni har doim to'liq va aniq bilmasligi mumkin — ayniqsa O'zbekiston Respublikasi qonunchiligidagi so'nggi tahrirlar bo'yicha. AI ba'zan ishonchli ohangda, ammo aslida mavjud bo'lmagan qonun moddalari yoki sud pretsedentlarini to'qib chiqarishi (hallucination) mumkin. Har qanday huquqiy havola yoki modda raqamini <code>Lex.uz</code> kabi rasmiy davlat bazalarida tekshirish shart.</p>\n\n<p>🔒 <b>Mijoz sirlari va konfidentsiallik:</b> Mijozlarning tijorat sirlari, shartnoma summalari va shaxsiy ma'lumotlarini ochiq umumiy AI platformalariga kiritish taqiqlanadi. Agar enterprise darajasidagi xavfsiz klaster bo'lmasa, maxfiy ma'lumotlar ochiqlanishi xavfi mavjud.</p>\n\n<h2 class=\"article-section-title\">Oltin qoida: Junior yordamchi tamoyili</h2>\n<p>Sun'iy intellektdan malakali yordamchi sifatida foydalaning: u sizga qoralama va tahlil tezligini beradi, biroq hujjatga qo'yiladigan har bir imzo va professional xulosa — sizning shaxsiy mas'uliyatingizdir.</p>",
+    "verification_status": "VERIFIED",
+    "banner_title": "Huquqshunoslar Uchun AI"
+  },
+  "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026": {
+    "id": "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026",
+    "slug": "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026",
+    "title": "Anthropic Claude Fable 5.2 va Mythos 5.2 modellarini chiqardi: GPT-6 Astraga qarshi 20% arzon narxlar",
+    "kicker": "AI MODELLARI · ANTHROPIC",
+    "meta_title": "Anthropic Claude Fable 5.2 va Mythos 5.2: GPT-6 Astra raqobatchisi — AiNoma",
+    "meta_description": "Anthropic yangi Claude Fable 5.2 va Mythos 5.2 modellarini e'lon qildi: modellar OpenAI GPT-6 Astra bilan tenglashib, token narxi bo'yicha 20 foiz ustunlikni taqdim etmoqda.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar, IT rahbarlari, tadqiqotchilar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-09",
+    "source_published_date": "2026-11-09",
+    "date": "2026-11-10",
+    "publish_date": "2026-11-10",
+    "ainoma_published_date": "2026-11-10",
+    "img": "assets/banner_anthropic_claude_fable_mythos_5_2_modell.jpg",
+    "imgAlt": "Anthropic Claude Fable 5.2 va Mythos 5.2 relizi",
+    "qisqacha": [
+      "Anthropic yangi avlod Claude Fable 5.2 va Mythos 5.2 sun'iy intellekt modellarini rasman taqdim etdi.",
+      "Yangi arxitektura OpenAI'ning GPT-6 Astra modeliga to'g'ridan-to'g'ri raqobatchi bo'lib, unumdorlik bo'yicha yetakchi benchmarklarda teng natija ko'rsatdi.",
+      "Modellar narxi raqobatchilardan qariyb 20 foiz arzonlashtirildi: 1 million kirish tokeni 8 dollar, chiqish tokeni esa 40 dollar qilib belgilandi."
+    ],
+    "primary_source": {
+      "name": "Fortune Tech",
+      "title": "Anthropic debuts Claude Fable 5.2 and Mythos 5.2 to challenge OpenAI with 20% lower pricing",
+      "url": "https://fortune.com/2026/11/09/anthropic-claude-fable-mythos-release/",
+      "badge": "RASMIY RELIZ"
+    },
+    "secondary_sources": [
+      {
+        "name": "AI Weekly",
+        "title": "Anthropic counters OpenAI Astra with high-efficiency enterprise reasoning models",
+        "url": "https://aiweekly.co/news/2026-11-09-anthropic-fable-mythos/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt xavfsizligi va yetakchi tadqiqotlar bo'yicha gigant hisoblangan Anthropic o'zining yangi flagman modellari — <b>Claude Fable 5.2</b> hamda <b>Mythos 5.2</b> tizimlarini rasman e'lon qildi. Ushbu yangi modellar OpenAI'ning GPT-6 Astra modeliga munosib javob bo'lib, korxonalarga 20 foiz arzonroq narxda yuqori mantiqiy fikrlash quvvatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Astra bilan kuchlar tenglashuvi</h2>\n<p>Kuz mavsumida OpenAI GPT-6 Astra modelini taqdim etgach, dasturlash va murakkab agentlik vazifalarida bozor yetakchiligini o'ziga qaratgan edi. Anthropic tomonidan taqdim etilgan Fable 5.2 va Mythos 5.2 aynan ushbu bo'shliqni to'ldiradi. Mustaqil benchmarklar ko'rsatishicha, yangi Claude modellari kod tahlili, huquqiy va ilmiy matnlarni qayta ishlash hamda ko'p bosqichli matematik xulosalashda OpenAI flagmani bilan mutlaqo teng natijalarni qayd etgan.</p>\n\n<h2 class=\"article-section-title\">20% arzon narx siyosati</h2>\n<p>Anthropic jamoasi yangi modellarni tarqatishda korporativ mijozlar uchun jozibador narx taklifini ilgari surmoqda. 1 million kirish tokeni bahosi <b>8 dollar</b>, chiqish tokeni esa <b>40 dollar</b> etib belgilandi. Bu OpenAI Astra modelining rasmiy API narxlaridan taxminan 20 foiz pastroq deganidir. Yirik korxonalar va SaaS kompaniyalar uchun bu hisoblash byudjetini yuz minglab dollarga tejash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Nasdaq IPO arafasidagi strategik qadam</h2>\n<p>Ushbu yangilik Anthropic kompaniyasining Nasdaq birjasida kutilayotgan ommaviy birlamchi aksiyalar savdosi (IPO, ticker: <code>ANT</code>) arafasida e'lon qilindi. Kompaniyaning 1 trillion dollardan oshiq baholanishi kutilayotgan bir paytda, yangi modellar Anthropic nafaqat ilmiy xavfsizlik, balki tijoriy samaradorlik bo'yicha ham sanoat yetakchisi ekanligini isbotlamoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt xavfsizligi va yetakchi tadqiqotlar bo'yicha gigant hisoblangan Anthropic o'zining yangi flagman modellari — <b>Claude Fable 5.2</b> hamda <b>Mythos 5.2</b> tizimlarini rasman e'lon qildi. Ushbu yangi modellar OpenAI'ning GPT-6 Astra modeliga munosib javob bo'lib, korxonalarga 20 foiz arzonroq narxda yuqori mantiqiy fikrlash quvvatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Astra bilan kuchlar tenglashuvi</h2>\n<p>Kuz mavsumida OpenAI GPT-6 Astra modelini taqdim etgach, dasturlash va murakkab agentlik vazifalarida bozor yetakchiligini o'ziga qaratgan edi. Anthropic tomonidan taqdim etilgan Fable 5.2 va Mythos 5.2 aynan ushbu bo'shliqni to'ldiradi. Mustaqil benchmarklar ko'rsatishicha, yangi Claude modellari kod tahlili, huquqiy va ilmiy matnlarni qayta ishlash hamda ko'p bosqichli matematik xulosalashda OpenAI flagmani bilan mutlaqo teng natijalarni qayd etgan.</p>\n\n<h2 class=\"article-section-title\">20% arzon narx siyosati</h2>\n<p>Anthropic jamoasi yangi modellarni tarqatishda korporativ mijozlar uchun jozibador narx taklifini ilgari surmoqda. 1 million kirish tokeni bahosi <b>8 dollar</b>, chiqish tokeni esa <b>40 dollar</b> etib belgilandi. Bu OpenAI Astra modelining rasmiy API narxlaridan taxminan 20 foiz pastroq deganidir. Yirik korxonalar va SaaS kompaniyalar uchun bu hisoblash byudjetini yuz minglab dollarga tejash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Nasdaq IPO arafasidagi strategik qadam</h2>\n<p>Ushbu yangilik Anthropic kompaniyasining Nasdaq birjasida kutilayotgan ommaviy birlamchi aksiyalar savdosi (IPO, ticker: <code>ANT</code>) arafasida e'lon qilindi. Kompaniyaning 1 trillion dollardan oshiq baholanishi kutilayotgan bir paytda, yangi modellar Anthropic nafaqat ilmiy xavfsizlik, balki tijoriy samaradorlik bo'yicha ham sanoat yetakchisi ekanligini isbotlamoqda.</p>",
+    "verification_status": "VERIFIED",
+    "banner_title": "Claude Fable 5.2 & Mythos 5.2"
+  },
+  "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026": {
+    "id": "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026",
+    "slug": "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026",
+    "title": "Google yangi TPU 8tx va 8i Max chiplarini taqdim etdi: Nvidia bilan raqobatda 30% tejash imkoniyati",
+    "kicker": "HISOB-KITOBLAR · APPARATURA",
+    "meta_title": "Google TPU 8tx va 8i Max chiplarini chiqardi: Nvidia GPU'laridan 30% arzon — AiNoma",
+    "meta_description": "Google o'zining yangi avlod TPU 8tx va TPU 8i Max neyron protsessorlarini e'lon qildi: yangi chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkonini beradi.",
+    "category": "Texnologiya",
+    "audience": "Cloud arxitektorlari, IT kompaniyalar, investorlar, muhandislar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-09",
+    "source_published_date": "2026-11-09",
+    "date": "2026-11-10",
+    "publish_date": "2026-11-10",
+    "ainoma_published_date": "2026-11-10",
+    "img": "assets/banner_google_tpu_8tx_8i_max_chiplarini_chiqard.jpg",
+    "imgAlt": "Google TPU 8tx va 8i Max sun'iy intellekt chiplari",
+    "qisqacha": [
+      "Google sun'iy intellekt hisob-kitoblari uchun mo'ljallangan navbatdagi TPU 8tx va TPU 8i Max neyron protsessorlarini namoyish qildi.",
+      "Yangi chiplar Nvidia'ning yetakchi GPU modellariga qaraganda 30 foiz arzon narxda taqdim etilmoqda va energiya tejamkorligi 1.4 baravarga oshirilgan.",
+      "Tizimdan allaqachon Anthropic, Meta va Oracle foydalana boshladi, shuningdek OpenAI ham TPU klasterlarini xarid qilish bo'yicha muzokaralar olib bormoqda."
+    ],
+    "primary_source": {
+      "name": "Google Cloud Press",
+      "title": "Google Cloud announces next-generation TPU 8tx and 8i Max AI accelerators",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-tpu-8tx-8i-max-accelerators/",
+      "badge": "TEXNOLOGIK YUTUQ"
+    },
+    "secondary_sources": [
+      {
+        "name": "BeInCrypto",
+        "title": "Google escalates AI chip wars with TPU 8tx rollout priced 30% below Nvidia GPUs",
+        "url": "https://beincrypto.com/google-tpu-8tx-ai-chips-nvidia-competition-2026/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Google bulutli hisoblash va sun'iy intellekt infratuzilmasi sohasida muhim qadam tashlab, o'zining navbatdagi maxsus neyron protsessorlari — <b>TPU 8tx</b> hamda <b>TPU 8i Max</b> chiplarini namoyish etdi. Ushbu chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkoniyatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Nvidia apparat monopoliyasiga to'g'ridan-to'g'ri zarba</h2>\n<p>Bozorda Nvidia GPU chiplari (ayniqsa Blackwell va undan keyingi arxitekturalar) taqchilligi va haddan tashqari qimmatligi IT kompaniyalarini muqobil yo'llar qidirishga majbur qilmoqda. Google tomonidan taqdim etilgan TPU 8tx katta hajmdagi parametrlarga ega til modellarini o'qitish uchun, 8i Max esa past kechikish vaqti (latency) bilan keng ko'lamli so'rovlarni qayta ishlashga (inferens) ixtisoslashgan.</p>\n\n<h2 class=\"article-section-title\">Energiya tejamkorligi va optik kommutatsiya</h2>\n<p>Google yangi TPU podlarida o'zining ilg'or Optical Circuit Switching (OCS) texnologiyasini yangi bosqichga olib chiqdi. Bu chiplararo ma'lumot uzatishda elektr energiyasini 40 foizga tejash, ma'lumotlar uzatish kechikishini esa deyarli nolga tushirish imkonini beradi. Natijada yirik klasterlarda hisoblash samaradorligi 1.4 baravarga oshgan.</p>\n\n<h2 class=\"article-section-title\">Bozor yetakchilari TPU klasterlariga o'tmoqda</h2>\n<p>E'tiborli jihati, Google TPU chiplaridan faqat o'zining Gemini modellari uchun emas, balki boshqa AI gigantlari ham keng foydalanmoqda. Anthropic, Meta va Oracle korporatsiyalari yangi TPU 8tx klasterlarini buyurtma qilib bo'lgan. Wall Street tahlilchilari prognoziga ko'ra, OpenAI ham xavflarni diversifikatsiya qilish maqsadida Google TPU quvvatlaridan foydalanish bo'yicha muzokaralar olib bormoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Google bulutli hisoblash va sun'iy intellekt infratuzilmasi sohasida muhim qadam tashlab, o'zining navbatdagi maxsus neyron protsessorlari — <b>TPU 8tx</b> hamda <b>TPU 8i Max</b> chiplarini namoyish etdi. Ushbu chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkoniyatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Nvidia apparat monopoliyasiga to'g'ridan-to'g'ri zarba</h2>\n<p>Bozorda Nvidia GPU chiplari (ayniqsa Blackwell va undan keyingi arxitekturalar) taqchilligi va haddan tashqari qimmatligi IT kompaniyalarini muqobil yo'llar qidirishga majbur qilmoqda. Google tomonidan taqdim etilgan TPU 8tx katta hajmdagi parametrlarga ega til modellarini o'qitish uchun, 8i Max esa past kechikish vaqti (latency) bilan keng ko'lamli so'rovlarni qayta ishlashga (inferens) ixtisoslashgan.</p>\n\n<h2 class=\"article-section-title\">Energiya tejamkorligi va optik kommutatsiya</h2>\n<p>Google yangi TPU podlarida o'zining ilg'or Optical Circuit Switching (OCS) texnologiyasini yangi bosqichga olib chiqdi. Bu chiplararo ma'lumot uzatishda elektr energiyasini 40 foizga tejash, ma'lumotlar uzatish kechikishini esa deyarli nolga tushirish imkonini beradi. Natijada yirik klasterlarda hisoblash samaradorligi 1.4 baravarga oshgan.</p>\n\n<h2 class=\"article-section-title\">Bozor yetakchilari TPU klasterlariga o'tmoqda</h2>\n<p>E'tiborli jihati, Google TPU chiplaridan faqat o'zining Gemini modellari uchun emas, balki boshqa AI gigantlari ham keng foydalanmoqda. Anthropic, Meta va Oracle korporatsiyalari yangi TPU 8tx klasterlarini buyurtma qilib bo'lgan. Wall Street tahlilchilari prognoziga ko'ra, OpenAI ham xavflarni diversifikatsiya qilish maqsadida Google TPU quvvatlaridan foydalanish bo'yicha muzokaralar olib bormoqda.</p>",
+    "verification_status": "VERIFIED",
+    "banner_title": "Google TPU 8tx & 8i Max"
+  },
+  "mit-worldparticle-universal-ai-fizika-simulyatori-2026": {
+    "id": "mit-worldparticle-universal-ai-fizika-simulyatori-2026",
+    "slug": "mit-worldparticle-universal-ai-fizika-simulyatori-2026",
+    "title": "MIT universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda",
+    "kicker": "FUNDAMENTAL FAN · FIZIKA VA AI",
+    "meta_title": "MIT WorldParticle: Barcha moddalarni bitta modelda simulyatsiya qiluvchi universal AI — AiNoma",
+    "meta_description": "MIT va Britaniya Kolumbiyasi universiteti olimlari suyuqlik, qum, oqsil va qattiq jismlar dinamikasini yagona neyron tarmoq orqali modellashtiruvchi WorldParticle tizimini ishlab chiqdi.",
+    "category": "Texnologiya",
+    "audience": "Olimlar, fiziklar, muhandislar, tadqiqotchilar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-09",
+    "source_published_date": "2026-11-09",
+    "date": "2026-11-09",
+    "publish_date": "2026-11-09",
+    "ainoma_published_date": "2026-11-09",
+    "img": "assets/banner_mit_worldparticle_universal_ai_fizika_si.jpg",
+    "imgAlt": "MIT WorldParticle universal fizika sun'iy intellekt modeli",
+    "qisqacha": [
+      "MIT va Britaniya Kolumbiyasi universiteti barcha turdagi moddalarni bitta arxitekturada modellashtiruvchi WorldParticle tizimini taqdim etdi.",
+      "Ilgari har bir fizik hodisa uchun alohida dasturiy kod talab qilingan bo'lsa, yangi model 3D zarrachalar harakatini yagona tamoyil asosida hisoblaydi.",
+      "Texnologiya yangi dori vositalarini ishlab chiqish hamda robotlarning turli tuproq qatlamlari bilan o'zaro ta'sirini o'rganishni o'nlab barobar tezlashtiradi."
+    ],
+    "primary_source": {
+      "name": "MIT News (Massachusetts Institute of Technology)",
+      "title": "WorldParticle: A unified deep-learning architecture for simulating diverse physical matter",
+      "url": "https://news.mit.edu/2026/worldparticle-universal-ai-physics-simulator-1109",
+      "badge": "ILMIY KASHFIYOT"
+    },
+    "secondary_sources": [
+      {
+        "name": "Superpower Daily",
+        "title": "MIT researchers unveil unified physics simulator for solids, fluids and granular media",
+        "url": "https://superpowerdaily.com/mit-universal-physics-worldparticle-2026"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Massachusets texnologiya instituti (MIT) olimlari Britaniya Kolumbiyasi universiteti bilan hamkorlikda fizika olamida inqilobiy yutuq bo'lgan <b>WorldParticle</b> sun'iy intellekt modelini taqdim etdi. Ushbu tizim oqayotgan suv, to'kilayotgan qum, bukiluvchi oqsillar va qattiq jismlar dinamikasini alohida-alohida emas, balki bitta yagona neyron tarmoq orqali aniq hisoblab bera oladi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy fizika simulyatorlarining cheklovlari</h2>\n<p>Shu paytgacha modellashtirish sohasida ishlovchi muhandis va olimlar har bir jism uchun alohida dasturlangan raqamli algoritmlardan foydalanishga majbur edilar. Masalan, aerodinamika va gidrodinamika uchun bir tenglamalar to'plami, polimer va biologik molekulalar uchun butunlay boshqa dasturiy ta'minot talab qilinar edi. Bu esa murakkab ko'p komponentli tajribalarni tahlil qilishni juda sekin va qimmat jarayonga aylantirgan.</p>\n\n<h2 class=\"article-section-title\">WorldParticle qanday ishlaydi?</h2>\n<p>WorldParticle har qanday moddani fazodagi o'zaro harakatlanuvchi 3D zarrachalar to'plami sifatida qabul qiladi. Xuddi zamonaviy til modellari (LLM) keyingi so'z yoki belgini bashorat qilgani kabi, WorldParticle neyron tarmog'i zarrachalarning keyingi millisekunddagi holati, tezligi va energiyasini bashorat qiladi. 6 xil asosiy fizik xatti-harakatlar bo'yicha o'tkazilgan testlarda model klassik hisoblash usullariga qaraganda yuzlab barobar yuqori tezlik va hayratlanarli barqarorlikni namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">Amaliy sohalardagi ahamiyati</h2>\n<p>Olimlarning ta'kidlashicha, ushbu yondashuv birinchi navbatda tibbiyotda oqsil strukturalarini modellashtirish va yangi dori vositalarini ishlab chiqish jarayonini tezlashtiradi. Shuningdek, murakkab relefda harakatlanuvchi yumshoq robotlar (soft robotics) hamda kosmik zondlarning begona sayyoralar tuprog'i bilan aloqasini simulyatsiya qilishda yangi davrni ochib beradi.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Massachusets texnologiya instituti (MIT) olimlari Britaniya Kolumbiyasi universiteti bilan hamkorlikda fizika olamida inqilobiy yutuq bo'lgan <b>WorldParticle</b> sun'iy intellekt modelini taqdim etdi. Ushbu tizim oqayotgan suv, to'kilayotgan qum, bukiluvchi oqsillar va qattiq jismlar dinamikasini alohida-alohida emas, balki bitta yagona neyron tarmoq orqali aniq hisoblab bera oladi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy fizika simulyatorlarining cheklovlari</h2>\n<p>Shu paytgacha modellashtirish sohasida ishlovchi muhandis va olimlar har bir jism uchun alohida dasturlangan raqamli algoritmlardan foydalanishga majbur edilar. Masalan, aerodinamika va gidrodinamika uchun bir tenglamalar to'plami, polimer va biologik molekulalar uchun butunlay boshqa dasturiy ta'minot talab qilinar edi. Bu esa murakkab ko'p komponentli tajribalarni tahlil qilishni juda sekin va qimmat jarayonga aylantirgan.</p>\n\n<h2 class=\"article-section-title\">WorldParticle qanday ishlaydi?</h2>\n<p>WorldParticle har qanday moddani fazodagi o'zaro harakatlanuvchi 3D zarrachalar to'plami sifatida qabul qiladi. Xuddi zamonaviy til modellari (LLM) keyingi so'z yoki belgini bashorat qilgani kabi, WorldParticle neyron tarmog'i zarrachalarning keyingi millisekunddagi holati, tezligi va energiyasini bashorat qiladi. 6 xil asosiy fizik xatti-harakatlar bo'yicha o'tkazilgan testlarda model klassik hisoblash usullariga qaraganda yuzlab barobar yuqori tezlik va hayratlanarli barqarorlikni namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">Amaliy sohalardagi ahamiyati</h2>\n<p>Olimlarning ta'kidlashicha, ushbu yondashuv birinchi navbatda tibbiyotda oqsil strukturalarini modellashtirish va yangi dori vositalarini ishlab chiqish jarayonini tezlashtiradi. Shuningdek, murakkab relefda harakatlanuvchi yumshoq robotlar (soft robotics) hamda kosmik zondlarning begona sayyoralar tuprog'i bilan aloqasini simulyatsiya qilishda yangi davrni ochib beradi.</p>",
+    "verification_status": "VERIFIED"
+  },
+  "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026": {
+    "id": "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026",
+    "slug": "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026",
+    "title": "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma",
+    "kicker": "GLOBAL SANOAT · SUVEREN AI",
+    "meta_title": "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi — AiNoma",
+    "meta_description": "Nvidia va Janubiy Koreya hukumati milliy Suveren AI doirasida yangi keng qamrovli bitim imzoladi: mahalliy NPU chiplari Nvidia tizimiga qo'shiladi va sanoat robotlari avtonomlashtiriladi.",
+    "category": "Biznes",
+    "audience": "Biznes rahbarlari, investorlar, IT mutaxassislari, muhandislar",
+    "event_date": "2026-11-09",
+    "source_date": "2026-11-08",
+    "source_published_date": "2026-11-08",
+    "date": "2026-11-09",
+    "publish_date": "2026-11-09",
+    "ainoma_published_date": "2026-11-09",
+    "img": "assets/banner_nvidia_janubiy_koreya_suveren_ai_ittifoq.jpg",
+    "imgAlt": "Nvidia va Janubiy Koreya Suveren AI alyansi",
+    "qisqacha": [
+      "Nvidia va Janubiy Koreya Fan vazirligi milliy Suveren AI infratuzilmasini rivojlantirish bo'yicha hamkorlikni yangi bosqichga olib chiqdi.",
+      "Koreyaning mahalliy NPU va XPU chip ishlab chiqaruvchilari Nvidia Dynamo inferens platformasi bilan integratsiya qilinadi.",
+      "SK Telecom va LG Electronics bilan birgalikda sanoat korxonalarida avtonom harakatlanuvchi Physical AI tizimlari ishga tushiriladi."
+    ],
+    "primary_source": {
+      "name": "Nvidia Newsroom",
+      "title": "NVIDIA and South Korea Advance Sovereign AI Infrastructure and Industrial Physical AI",
+      "url": "https://nvidianews.nvidia.com/news/south-korea-sovereign-ai-physical-ai-expansion-2026",
+      "badge": "RASMIY ALYANS"
+    },
+    "secondary_sources": [
+      {
+        "name": "Yonhap News Agency",
+        "title": "South Korea partners with Nvidia to scale local AI semiconductors and smart robotics",
+        "url": "https://en.yna.co.kr/view/AEN20261108003100320"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
+    "verification_status": "VERIFIED"
+  },
+  "metr-anthropic-ai-tadqiqot-tezligi-2x-2026": {
+    "id": "metr-anthropic-ai-tadqiqot-tezligi-2x-2026",
+    "slug": "metr-anthropic-ai-tadqiqot-tezligi-2x-2026",
+    "title": "Mustaqil METR hisoboti: Anthropic AI o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi",
+    "kicker": "AI R&D VA TEZLIK · ANTHROPIC",
+    "meta_title": "METR hisoboti: Anthropic AI modellari o'zini o'zi o'qitish hisobiga 2x tezlashdi — AiNoma",
+    "meta_description": "Mustaqil METR tashkiloti baholashiga ko'ra, Anthropic modellarining yangi vazifalarni o'zlashtirish tezligi 1.9 barobarga o'sgan va uning asosiy qismini sun'iy intellekt agentlari bajargan.",
+    "category": "Xalqaro",
+    "audience": "Dasturchilar, muhandislar, tadqiqotchilar",
+    "event_date": "2026-11-07",
+    "source_date": "2026-11-07",
+    "source_published_date": "2026-11-07",
+    "date": "2026-11-08",
+    "publish_date": "2026-11-08",
+    "img": "assets/metr_anthropic_research_speedup_2026.jpg",
+    "imgAlt": "METR hisoboti: Anthropic AI tadqiqotlarida 1.9x tezlanish",
+    "qisqacha": [
+      "METR mustaqil baholashiga ko'ra, Anthropic modellarining takomillashish sur'ati 1.9x (deyarli 2 barobar) tezlashgan.",
+      "Tadqiqotdagi tezlanishning taxminan 80 foizi bevosita AI tizimlari orqali avtomatlashtirilgan ilmiy ishlanmalarga tayanadi.",
+      "Anthropic raqobat xavfsizligi vajidan bir qator ichki dalillarni yopiq qoldirgani jamoatchilikda savollar uyg'otdi."
+    ],
+    "primary_source": {
+      "name": "METR (Model Evaluation and Threat Research)",
+      "title": "Evaluating the Pace of AI Research at Anthropic",
+      "url": "https://metr.org/blog/2026-11-07-anthropic-progress-rate/",
+      "badge": "MUSTAQIL AUDIT"
+    },
+    "secondary_sources": [
+      {
+        "name": "Washington Times Tech",
+        "title": "Independent evaluators find AI systems driving rapid R&D acceleration at frontier labs",
+        "url": "https://www.washingtontimes.com/news/2026/nov/07/anthropic-metr-ai-evaluation-speedup/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Xavfsizlik va baholash bo'yicha mustaqil METR tashkiloti hisobotiga ko'ra, Anthropic laboratoriyasida modellar takomillashuvi taxminan 2 barobar tezlashgan. Muhimi, ushbu sur'at faqat hisoblash quvvati (compute) oshgani tufayli emas, balki sun'iy intellekt tizimlari tadqiqot jarayonlarining 80 foizini o'zi bajarayotgani sababli yuzaga kelmoqda.</p>\n\n<h2 class=\"article-section-title\">METR mustaqil auditi nimani ko'rsatdi?</h2>\n<p>METR jamoasi 11 hafta davomida Anthropic kompaniyasining ichki tadqiqot ma'lumotlari va muhandislar faoliyatini tahlil qilib chiqdi. Benchmark natijalariga ko'ra, modellar imkoniyatlarining o'sish koeffitsiyenti o'tgan davrlarga nisbatan <b>1.9x</b> ni tashkil qilgan (95 foizlik ishonch oralig'i: 1.5x dan 2.8x gacha). Bu oddiy qilib aytganda, ilgari ikki yil vaqt olgan texnologik marra endi bir yil ichida bosib o'tilayotganini bildiradi.</p>\n\n<h2 class=\"article-section-title\">Insonlar emas, AI o'zini o'zi tadqiq qilmoqda</h2>\n<p>Hisobotdagi eng muhim xulosa — ushbu sakrashning asosiy omilidir. Tahlilchilarning hisob-kitoblariga ko'ra, ilmiy-tadqiqot (R&D) tezlanishining qariyb 80 foizi muhandislar tomonidan dastur kodlarini tahlil qilish, arxitektura farazlarini tekshirish va tajribalarni avtomatlashtirishda bevosita AI agentlaridan foydalanilayotgani hisobiga erishilgan.</p>\n\n<h2 class=\"article-section-title\">Yashirin dalillar va noaniqliklar</h2>\n<p>Hisobot e'lon qilinishi bilan ilmiy doiralarda jiddiy munozara boshlandi. Bunga sabab — Anthropic tijoriy raqobatchilardan himoyalanish maqsadida xom texnik dalillarning asosiy qismini tahrirlab, yopiq shaklda taqdim etganidir. Shunga qaramay, METR mutaxassislari bu to'liq rekursiv o'z-o'zini rivojlantirish bo'lmasa-da, sun'iy intellekt vositalari bilan ilmiy izlanishlar tubdan o'zgarganini ta'kidlamoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Xavfsizlik va baholash bo'yicha mustaqil METR tashkiloti hisobotiga ko'ra, Anthropic laboratoriyasida modellar takomillashuvi taxminan 2 barobar tezlashgan. Muhimi, ushbu sur'at faqat hisoblash quvvati (compute) oshgani tufayli emas, balki sun'iy intellekt tizimlari tadqiqot jarayonlarining 80 foizini o'zi bajarayotgani sababli yuzaga kelmoqda.</p>\n\n<h2 class=\"article-section-title\">METR mustaqil auditi nimani ko'rsatdi?</h2>\n<p>METR jamoasi 11 hafta davomida Anthropic kompaniyasining ichki tadqiqot ma'lumotlari va muhandislar faoliyatini tahlil qilib chiqdi. Benchmark natijalariga ko'ra, modellar imkoniyatlarining o'sish koeffitsiyenti o'tgan davrlarga nisbatan <b>1.9x</b> ni tashkil qilgan (95 foizlik ishonch oralig'i: 1.5x dan 2.8x gacha). Bu oddiy qilib aytganda, ilgari ikki yil vaqt olgan texnologik marra endi bir yil ichida bosib o'tilayotganini bildiradi.</p>\n\n<h2 class=\"article-section-title\">Insonlar emas, AI o'zini o'zi tadqiq qilmoqda</h2>\n<p>Hisobotdagi eng muhim xulosa — ushbu sakrashning asosiy omilidir. Tahlilchilarning hisob-kitoblariga ko'ra, ilmiy-tadqiqot (R&D) tezlanishining qariyb 80 foizi muhandislar tomonidan dastur kodlarini tahlil qilish, arxitektura farazlarini tekshirish va tajribalarni avtomatlashtirishda bevosita AI agentlaridan foydalanilayotgani hisobiga erishilgan.</p>\n\n<h2 class=\"article-section-title\">Yashirin dalillar va noaniqliklar</h2>\n<p>Hisobot e'lon qilinishi bilan ilmiy doiralarda jiddiy munozara boshlandi. Bunga sabab — Anthropic tijoriy raqobatchilardan himoyalanish maqsadida xom texnik dalillarning asosiy qismini tahrirlab, yopiq shaklda taqdim etganidir. Shunga qaramay, METR mutaxassislari bu to'liq rekursiv o'z-o'zini rivojlantirish bo'lmasa-da, sun'iy intellekt vositalari bilan ilmiy izlanishlar tubdan o'zgarganini ta'kidlamoqda.</p>",
+    "verification_status": "VERIFIED",
+    "ainoma_published_date": "2026-11-08"
+  },
+  "aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026": {
+    "id": "aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026",
+    "slug": "aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026",
+    "title": "Kvant hisoblashdagi 20 yillik jumboq AI tomonidan Lean 4 tizimida isbotlandi",
+    "kicker": "FUNDAMENTAL FAN · KVANT FIZIKASI",
+    "meta_title": "Aaronson-Ambainis kvant gipotezasi AI tomonidan Lean 4 da isbotlandi — AiNoma",
+    "meta_description": "Physical Superintelligence laboratoriyasi maxsus AI tadqiqot tizimi yordamida 2008-yildan beri ochiq turgan Aaronson-Ambainis kvant gipotezasini to'liq isbotladi.",
+    "category": "Texnologiya",
+    "audience": "Olimlar, fiziklar, dasturchilar",
+    "event_date": "2026-11-07",
+    "source_date": "2026-11-07",
+    "source_published_date": "2026-11-07",
+    "date": "2026-11-08",
+    "publish_date": "2026-11-08",
+    "img": "assets/aaronson_ambainis_quantum_lean4_2026.jpg",
+    "imgAlt": "Aaronson-Ambainis kvant gipotezasi Lean 4 tizimida isbotlandi",
+    "qisqacha": [
+      "Scott Aaronson va Andris Ambainis tomonidan 2008-yilda shakllantirilgan mashhur kvant gipotezasi AI tomonidan to'liq yechildi.",
+      "Avtonom AI tizimi 3 kunlik izlanishdan so'ng Lean 4 isbotlash dasturida qadamma-qadam tekshirilgan rasmiy yechimni hosil qildi.",
+      "Natija kvant kompyuterlarining tasodifiy ma'lumotlarda oddiy kompyuterlardan cheksiz ustun bo'la olmasligi chegarasini qat'iy belgilab beradi."
+    ],
+    "primary_source": {
+      "name": "Physical Superintelligence (PSI)",
+      "title": "AI Solves the Aaronson-Ambainis Conjecture via Lean 4 Formal Verification",
+      "url": "https://psi.inc/research/aaronson-ambainis-proof",
+      "badge": "ILMIY KASHFIYOT"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Quantum Insider",
+        "title": "Autonomous AI Proves Decades-Old Quantum Complexity Conjecture",
+        "url": "https://thequantuminsider.com/2026/11/07/ai-solves-aaronson-ambainis-conjecture/"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Kvant hisoblash sohasida 2008-yildan buyon eng katta ochiq muammolardan biri bo'lgan <i>Aaronson-Ambainis gipotezasi</i> sun'iy intellekt yordamida to'liq isbotlandi. Tadqiqot guruhi shunchaki matnli izoh bilan cheklanmasdan, har bir matematik mantiqiy qadamni Lean 4 rasmiy isbotlash dasturida xatosiz tekshiruvdan o'tkazdi.</p>\n\n<h2 class=\"article-section-title\">Aaronson-Ambainis gipotezasi nimani anglatadi?</h2>\n<p>Olimlar Scott Aaronson va Andris Ambainis 2008-yilda kvant algoritmlarining real chegaralarini aniqlash bo'yicha muhim savolni o'rtaga tashlagan edilar: kvant kompyuterlari hech qanday ichki qonuniyat yoki tuzilishga ega bo'lmagan tasodifiy ma'lumotlar to'plamida ham oddiy (klassik) kompyuterlardan eksponentsial darajada tez ishlay oladimi? Yangi isbot shuni ko'rsatdiki, javob — <b>yo'q</b>. Kvant ustunligi faqat yashirin matematik qonuniyatlar (masalan, Shor algoritmidagi davriy chastotalar) mavjud bo'lgandagina yuzaga chiqadi; aks holda, kvant tezligi polinom chegarasidan oshmaydi.</p>\n\n<h2 class=\"article-section-title\">Lean 4: Matematik xatolarga o'rin yo'q</h2>\n<p>Physical Superintelligence (PSI) laboratoriyasi ushbu kashfiyotni amalga oshirish uchun AI agentlarini Lean 4 interaktiv isbotlash muhitiga uladi. Bu yondashuv til modellariga xos \"gallyutsinatsiya\" yoki xato mantiqiy xulosalarni butunlay istisno qiladi, chunki Lean kompyuter dasturi har bir formulani qat'iy matematik qoidalar bo'yicha tekshirib boradi.</p>\n\n<h2 class=\"article-section-title\">Fan uchun amaliy ahamiyati</h2>\n<p>Ushbu ilmiy natija kvant fizikasi uchun qaysi muammolarni kvant hisoblashga topshirish foydali, qaysilarida esa klassik usullar yetarli ekanini aniq ko'rsatib beradi. Shu bilan birga, bu voqea sun'iy intellekt fundamental nazariy fanda inson aqli yetmagan murakkab jumbonqlarni mustaqil yecha olishining yorqin isbotiga aylandi.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Kvant hisoblash sohasida 2008-yildan buyon eng katta ochiq muammolardan biri bo'lgan <i>Aaronson-Ambainis gipotezasi</i> sun'iy intellekt yordamida to'liq isbotlandi. Tadqiqot guruhi shunchaki matnli izoh bilan cheklanmasdan, har bir matematik mantiqiy qadamni Lean 4 rasmiy isbotlash dasturida xatosiz tekshiruvdan o'tkazdi.</p>\n\n<h2 class=\"article-section-title\">Aaronson-Ambainis gipotezasi nimani anglatadi?</h2>\n<p>Olimlar Scott Aaronson va Andris Ambainis 2008-yilda kvant algoritmlarining real chegaralarini aniqlash bo'yicha muhim savolni o'rtaga tashlagan edilar: kvant kompyuterlari hech qanday ichki qonuniyat yoki tuzilishga ega bo'lmagan tasodifiy ma'lumotlar to'plamida ham oddiy (klassik) kompyuterlardan eksponentsial darajada tez ishlay oladimi? Yangi isbot shuni ko'rsatdiki, javob — <b>yo'q</b>. Kvant ustunligi faqat yashirin matematik qonuniyatlar (masalan, Shor algoritmidagi davriy chastotalar) mavjud bo'lgandagina yuzaga chiqadi; aks holda, kvant tezligi polinom chegarasidan oshmaydi.</p>\n\n<h2 class=\"article-section-title\">Lean 4: Matematik xatolarga o'rin yo'q</h2>\n<p>Physical Superintelligence (PSI) laboratoriyasi ushbu kashfiyotni amalga oshirish uchun AI agentlarini Lean 4 interaktiv isbotlash muhitiga uladi. Bu yondashuv til modellariga xos \"gallyutsinatsiya\" yoki xato mantiqiy xulosalarni butunlay istisno qiladi, chunki Lean kompyuter dasturi har bir formulani qat'iy matematik qoidalar bo'yicha tekshirib boradi.</p>\n\n<h2 class=\"article-section-title\">Fan uchun amaliy ahamiyati</h2>\n<p>Ushbu ilmiy natija kvant fizikasi uchun qaysi muammolarni kvant hisoblashga topshirish foydali, qaysilarida esa klassik usullar yetarli ekanini aniq ko'rsatib beradi. Shu bilan birga, bu voqea sun'iy intellekt fundamental nazariy fanda inson aqli yetmagan murakkab jumbonqlarni mustaqil yecha olishining yorqin isbotiga aylandi.</p>",
+    "verification_status": "VERIFIED",
+    "ainoma_published_date": "2026-11-08"
+  },
+  "kanada-nova-scotia-ai-data-markaz-noroziliklar-2026": {
+    "id": "kanada-nova-scotia-ai-data-markaz-noroziliklar-2026",
+    "slug": "kanada-nova-scotia-ai-data-markaz-noroziliklar-2026",
+    "title": "Kanadada 10 milliard dollarlik AI data-markazi loyihasiga qarshi ommaviy namoyishlar bo'lib o'tdi",
+    "kicker": "EKOLOGIYA VA ENERGETIKA · KANADA",
+    "meta_title": "Kanada Nova Scotia provinsiyasida gigant AI data-markaziga qarshi namoyishlar — AiNoma",
+    "meta_description": "Kanadaning Nova Scotia provinsiyasida yuzlab aholi Anthropic bilan 20 yillik shartnomaga ega ulkan AI ma'lumot markazi loyihasiga qarshi namoyish o'tkazib, moratoriy talab qildi.",
+    "category": "Dunyo",
+    "audience": "Siyosatchilar, tahlilchilar, tadbirkorlar",
+    "event_date": "2026-11-07",
+    "source_date": "2026-11-07",
+    "source_published_date": "2026-11-07",
+    "date": "2026-11-08",
+    "publish_date": "2026-11-08",
+    "img": "assets/canada_nova_scotia_datacenter_protest_2026.jpg",
+    "imgAlt": "Kanada Nova Scotia AI data-markaz loyihasiga qarshi namoyishlar",
+    "qisqacha": [
+      "Kanadaning Nova Scotia provinsiyasida yetti xil nuqtada AI ma'lumot markazlari qurilishiga qarshi norozilik aksiyalari o'tkazildi.",
+      "Point Tupper shaharchasidagi 10 milliard dollarlik markaz Anthropic bilan 20 yillik ijara kelishuviga ega va dastlab 95 MVt energiya sarflaydi.",
+      "Namoyishchilar toza ichimlik suvi zaxiralari va elektr tarmog'ining zo'riqishi tufayli loyihaga to'liq moratoriy e'lon qilishni talab qilmoqda."
+    ],
+    "primary_source": {
+      "name": "CBC News",
+      "title": "Hundreds protest proposed Point Tupper AI data centre across Nova Scotia",
+      "url": "https://www.cbc.ca/news/canada/nova-scotia/protests-cape-breton-ai-data-centre-point-tupper-2026",
+      "badge": "XALQARO AXBOROT"
+    },
+    "secondary_sources": [
+      {
+        "name": "CTV News Atlantic",
+        "title": "Protesters call for moratorium on massive Cape Breton AI infrastructure project",
+        "url": "https://atlantic.ctvnews.ca/protesters-call-for-moratorium-on-cape-breton-ai-data-centre-2026"
+      }
+    ],
+    "body": "<p><b>Qisqa javob:</b> Kanadaning Nova Scotia provinsiyasida yuzlab mahalliy fuqarolar ko'chalarga chiqib, Anthropic kompaniyasi ehtiyojlari uchun mo'ljallangan 10 milliard dollarlik AI ma'lumotlar markazi qurilishiga qarshi ommaviy norozilik bildirdi. Aholi tabiiy resurslar kamayishi va elektr narxi oshishidan xavotirda.</p>\n\n<h2 class=\"article-section-title\">Point Tupper loyihasi nima uchun norozilik keltirib chiqardi?</h2>\n<p>EverWind Fuels kompaniyasi tomonidan taqdim etilgan loyihaga ko'ra, Cape Breton hududida bahosi 10 milliard dollarga teng bo'lgan yirik sun'iy intellekt ma'lumot markazi shaharchasi qurilishi ko'zda tutilgan. Ushbu majmua Claude chatbotining muallifi bo'lgan Anthropic bilan 20 yillik eksklyuziv ijara shartnomasiga ega bo'lib, uning birinchi bosqichi 2027-yilda 95 megavatt, 2028-yil o'rtalarida esa qo'shimcha 325 megavatt elektr energiyasini talab qiladi.</p>\n\n<h2 class=\"article-section-title\">Suv va elektr tarmog'i tahlikasi</h2>\n<p>Yomg'irli ob-havoga qaramay, provinsiya poytaxti Galifaksda 1 000 ga yaqin odam parlament binosi oldiga yig'ildi. Aholining asosiy e'tirozi — serverlarni sovitish uchun butun shahar ichimlik suvi oladigan Landrie Lake ko'lidan ulkan hajmda suv tortib olinishi hamda umumiy energetika tizimining zo'riqishidir.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellektning real hayotdagi to'qnashuvi</h2>\n<p>Hukumat vakillari loyiha mahalliy aholiga moliyaviy yuk bo'lmasligi va kelajakda shamol turbinalari orqali ta'minlanishini bildirayotgan bo'lsa-da, faollar va jamoatchilik loyihaga qat'iy moratoriy e'lon qilishni talab qilmoqda. Ushbu voqea AI modellarining quvvati oshgani sari real dunyo ekologiyasi va infratuzilmasi bilan to'qnashuvlar yanada keskinlashib borayotganini ko'rsatmoqda.</p>",
+    "contentHtml": "<p><b>Qisqa javob:</b> Kanadaning Nova Scotia provinsiyasida yuzlab mahalliy fuqarolar ko'chalarga chiqib, Anthropic kompaniyasi ehtiyojlari uchun mo'ljallangan 10 milliard dollarlik AI ma'lumotlar markazi qurilishiga qarshi ommaviy norozilik bildirdi. Aholi tabiiy resurslar kamayishi va elektr narxi oshishidan xavotirda.</p>\n\n<h2 class=\"article-section-title\">Point Tupper loyihasi nima uchun norozilik keltirib chiqardi?</h2>\n<p>EverWind Fuels kompaniyasi tomonidan taqdim etilgan loyihaga ko'ra, Cape Breton hududida bahosi 10 milliard dollarga teng bo'lgan yirik sun'iy intellekt ma'lumot markazi shaharchasi qurilishi ko'zda tutilgan. Ushbu majmua Claude chatbotining muallifi bo'lgan Anthropic bilan 20 yillik eksklyuziv ijara shartnomasiga ega bo'lib, uning birinchi bosqichi 2027-yilda 95 megavatt, 2028-yil o'rtalarida esa qo'shimcha 325 megavatt elektr energiyasini talab qiladi.</p>\n\n<h2 class=\"article-section-title\">Suv va elektr tarmog'i tahlikasi</h2>\n<p>Yomg'irli ob-havoga qaramay, provinsiya poytaxti Galifaksda 1 000 ga yaqin odam parlament binosi oldiga yig'ildi. Aholining asosiy e'tirozi — serverlarni sovitish uchun butun shahar ichimlik suvi oladigan Landrie Lake ko'lidan ulkan hajmda suv tortib olinishi hamda umumiy energetika tizimining zo'riqishidir.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellektning real hayotdagi to'qnashuvi</h2>\n<p>Hukumat vakillari loyiha mahalliy aholiga moliyaviy yuk bo'lmasligi va kelajakda shamol turbinalari orqali ta'minlanishini bildirayotgan bo'lsa-da, faollar va jamoatchilik loyihaga qat'iy moratoriy e'lon qilishni talab qilmoqda. Ushbu voqea AI modellarining quvvati oshgani sari real dunyo ekologiyasi va infratuzilmasi bilan to'qnashuvlar yanada keskinlashib borayotganini ko'rsatmoqda.</p>",
+    "verification_status": "VERIFIED",
+    "ainoma_published_date": "2026-11-08"
   },
   "dizaynerlar-uchun-ai": {
     "id": "dizaynerlar-uchun-ai",
@@ -7424,440 +7947,5 @@ window.AINOMA_ARTICLES = {
     ],
     "contentHtml": "\n<h2>Nima bo‘ldi?</h2>\n<p>Anthropic 2026-yil 1-sentabrda o‘zining eng yangi flagman <strong>Claude Fable 5.1</strong> modelini hamda kiberxavfsizlik va biologiya sohasidagi maxsus loyihalar uchun mo‘ljallangan <strong>Claude Mythos 5.1</strong> modelini taqdim etdi. Yangilanish agentik tizimlar foydalanadigan prompt kesh narxini 75% ga kamaytirish bilan birga, yirik korxonalarga ma’lumotlarni nol saqlash (zero data retention) rejimini taqdim etdi.</p>\n\n<h2>Nega muhim?</h2>\n<p>Agentik tizimlar har safar butun loyiha kodini yoki 100 sahifalik hujjatni qayta o‘qiganda kesh xizmatidan foydalanadi. Kesh narxining $0.25 gacha tushishi korxonalar uchun yillik operatsion xarajatlarni 3-4 barobarga qisqartiradi.</p>\n\n<div class=\"audience-grid\">\n  <div class=\"lens-box tech\">\n    <div class=\"lens-title\">👤 Mutaxassislar uchun</div>\n    <ul>\n      <li><strong>128k tokenlik chiqish:</strong> Bir so‘rovda to‘liq dasturiy arxitekturalar yoki kitob hajmida kod generatsiyasi.</li>\n      <li><strong>Kesh optimallashtirish:</strong> Takroriy so‘rovlarda sezilarli iqtisod va yuqori tezlik.</li>\n    </ul>\n  </div>\n  <div class=\"lens-box biz\">\n    <div class=\"lens-title\">🏢 Biznes uchun</div>\n    <ul>\n      <li><strong>Zero Data Retention:</strong> Bank va tibbiyot sirlari model xotirasida mutlaqo saqlanmaydi.</li>\n      <li><strong>Agentlar xarajati arzonlashuvi:</strong> Katta jamoalar uchun agentlarni saqlash osonlashadi.</li>\n    </ul>\n  </div>\n</div>\n",
     "body": ""
-  },
-  "metr-anthropic-ai-tadqiqot-tezligi-2x-2026": {
-    "id": "metr-anthropic-ai-tadqiqot-tezligi-2x-2026",
-    "slug": "metr-anthropic-ai-tadqiqot-tezligi-2x-2026",
-    "title": "Mustaqil METR hisoboti: Anthropic AI o'zini o'zi tadqiq qilish hisobiga 2 barobar tezlashdi",
-    "kicker": "AI R&D VA TEZLIK · ANTHROPIC",
-    "meta_title": "METR hisoboti: Anthropic AI modellari o'zini o'zi o'qitish hisobiga 2x tezlashdi — AiNoma",
-    "meta_description": "Mustaqil METR tashkiloti baholashiga ko'ra, Anthropic modellarining yangi vazifalarni o'zlashtirish tezligi 1.9 barobarga o'sgan va uning asosiy qismini sun'iy intellekt agentlari bajargan.",
-    "category": "Xalqaro",
-    "audience": "Dasturchilar, muhandislar, tadqiqotchilar",
-    "event_date": "2026-11-07",
-    "source_date": "2026-11-07",
-    "source_published_date": "2026-11-07",
-    "date": "2026-11-08",
-    "publish_date": "2026-11-08",
-    "img": "assets/metr_anthropic_research_speedup_2026.jpg",
-    "imgAlt": "METR hisoboti: Anthropic AI tadqiqotlarida 1.9x tezlanish",
-    "qisqacha": [
-      "METR mustaqil baholashiga ko'ra, Anthropic modellarining takomillashish sur'ati 1.9x (deyarli 2 barobar) tezlashgan.",
-      "Tadqiqotdagi tezlanishning taxminan 80 foizi bevosita AI tizimlari orqali avtomatlashtirilgan ilmiy ishlanmalarga tayanadi.",
-      "Anthropic raqobat xavfsizligi vajidan bir qator ichki dalillarni yopiq qoldirgani jamoatchilikda savollar uyg'otdi."
-    ],
-    "primary_source": {
-      "name": "METR (Model Evaluation and Threat Research)",
-      "title": "Evaluating the Pace of AI Research at Anthropic",
-      "url": "https://metr.org/blog/2026-11-07-anthropic-progress-rate/",
-      "badge": "MUSTAQIL AUDIT"
-    },
-    "secondary_sources": [
-      {
-        "name": "Washington Times Tech",
-        "title": "Independent evaluators find AI systems driving rapid R&D acceleration at frontier labs",
-        "url": "https://www.washingtontimes.com/news/2026/nov/07/anthropic-metr-ai-evaluation-speedup/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Xavfsizlik va baholash bo'yicha mustaqil METR tashkiloti hisobotiga ko'ra, Anthropic laboratoriyasida modellar takomillashuvi taxminan 2 barobar tezlashgan. Muhimi, ushbu sur'at faqat hisoblash quvvati (compute) oshgani tufayli emas, balki sun'iy intellekt tizimlari tadqiqot jarayonlarining 80 foizini o'zi bajarayotgani sababli yuzaga kelmoqda.</p>\n\n<h2 class=\"article-section-title\">METR mustaqil auditi nimani ko'rsatdi?</h2>\n<p>METR jamoasi 11 hafta davomida Anthropic kompaniyasining ichki tadqiqot ma'lumotlari va muhandislar faoliyatini tahlil qilib chiqdi. Benchmark natijalariga ko'ra, modellar imkoniyatlarining o'sish koeffitsiyenti o'tgan davrlarga nisbatan <b>1.9x</b> ni tashkil qilgan (95 foizlik ishonch oralig'i: 1.5x dan 2.8x gacha). Bu oddiy qilib aytganda, ilgari ikki yil vaqt olgan texnologik marra endi bir yil ichida bosib o'tilayotganini bildiradi.</p>\n\n<h2 class=\"article-section-title\">Insonlar emas, AI o'zini o'zi tadqiq qilmoqda</h2>\n<p>Hisobotdagi eng muhim xulosa — ushbu sakrashning asosiy omilidir. Tahlilchilarning hisob-kitoblariga ko'ra, ilmiy-tadqiqot (R&D) tezlanishining qariyb 80 foizi muhandislar tomonidan dastur kodlarini tahlil qilish, arxitektura farazlarini tekshirish va tajribalarni avtomatlashtirishda bevosita AI agentlaridan foydalanilayotgani hisobiga erishilgan.</p>\n\n<h2 class=\"article-section-title\">Yashirin dalillar va noaniqliklar</h2>\n<p>Hisobot e'lon qilinishi bilan ilmiy doiralarda jiddiy munozara boshlandi. Bunga sabab — Anthropic tijoriy raqobatchilardan himoyalanish maqsadida xom texnik dalillarning asosiy qismini tahrirlab, yopiq shaklda taqdim etganidir. Shunga qaramay, METR mutaxassislari bu to'liq rekursiv o'z-o'zini rivojlantirish bo'lmasa-da, sun'iy intellekt vositalari bilan ilmiy izlanishlar tubdan o'zgarganini ta'kidlamoqda.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Xavfsizlik va baholash bo'yicha mustaqil METR tashkiloti hisobotiga ko'ra, Anthropic laboratoriyasida modellar takomillashuvi taxminan 2 barobar tezlashgan. Muhimi, ushbu sur'at faqat hisoblash quvvati (compute) oshgani tufayli emas, balki sun'iy intellekt tizimlari tadqiqot jarayonlarining 80 foizini o'zi bajarayotgani sababli yuzaga kelmoqda.</p>\n\n<h2 class=\"article-section-title\">METR mustaqil auditi nimani ko'rsatdi?</h2>\n<p>METR jamoasi 11 hafta davomida Anthropic kompaniyasining ichki tadqiqot ma'lumotlari va muhandislar faoliyatini tahlil qilib chiqdi. Benchmark natijalariga ko'ra, modellar imkoniyatlarining o'sish koeffitsiyenti o'tgan davrlarga nisbatan <b>1.9x</b> ni tashkil qilgan (95 foizlik ishonch oralig'i: 1.5x dan 2.8x gacha). Bu oddiy qilib aytganda, ilgari ikki yil vaqt olgan texnologik marra endi bir yil ichida bosib o'tilayotganini bildiradi.</p>\n\n<h2 class=\"article-section-title\">Insonlar emas, AI o'zini o'zi tadqiq qilmoqda</h2>\n<p>Hisobotdagi eng muhim xulosa — ushbu sakrashning asosiy omilidir. Tahlilchilarning hisob-kitoblariga ko'ra, ilmiy-tadqiqot (R&D) tezlanishining qariyb 80 foizi muhandislar tomonidan dastur kodlarini tahlil qilish, arxitektura farazlarini tekshirish va tajribalarni avtomatlashtirishda bevosita AI agentlaridan foydalanilayotgani hisobiga erishilgan.</p>\n\n<h2 class=\"article-section-title\">Yashirin dalillar va noaniqliklar</h2>\n<p>Hisobot e'lon qilinishi bilan ilmiy doiralarda jiddiy munozara boshlandi. Bunga sabab — Anthropic tijoriy raqobatchilardan himoyalanish maqsadida xom texnik dalillarning asosiy qismini tahrirlab, yopiq shaklda taqdim etganidir. Shunga qaramay, METR mutaxassislari bu to'liq rekursiv o'z-o'zini rivojlantirish bo'lmasa-da, sun'iy intellekt vositalari bilan ilmiy izlanishlar tubdan o'zgarganini ta'kidlamoqda.</p>",
-    "verification_status": "VERIFIED",
-    "ainoma_published_date": "2026-11-08"
-  },
-  "aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026": {
-    "id": "aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026",
-    "slug": "aaronson-ambainis-kvant-nazariyasi-ai-isboti-2026",
-    "title": "Kvant hisoblashdagi 20 yillik jumboq AI tomonidan Lean 4 tizimida isbotlandi",
-    "kicker": "FUNDAMENTAL FAN · KVANT FIZIKASI",
-    "meta_title": "Aaronson-Ambainis kvant gipotezasi AI tomonidan Lean 4 da isbotlandi — AiNoma",
-    "meta_description": "Physical Superintelligence laboratoriyasi maxsus AI tadqiqot tizimi yordamida 2008-yildan beri ochiq turgan Aaronson-Ambainis kvant gipotezasini to'liq isbotladi.",
-    "category": "Texnologiya",
-    "audience": "Olimlar, fiziklar, dasturchilar",
-    "event_date": "2026-11-07",
-    "source_date": "2026-11-07",
-    "source_published_date": "2026-11-07",
-    "date": "2026-11-08",
-    "publish_date": "2026-11-08",
-    "img": "assets/aaronson_ambainis_quantum_lean4_2026.jpg",
-    "imgAlt": "Aaronson-Ambainis kvant gipotezasi Lean 4 tizimida isbotlandi",
-    "qisqacha": [
-      "Scott Aaronson va Andris Ambainis tomonidan 2008-yilda shakllantirilgan mashhur kvant gipotezasi AI tomonidan to'liq yechildi.",
-      "Avtonom AI tizimi 3 kunlik izlanishdan so'ng Lean 4 isbotlash dasturida qadamma-qadam tekshirilgan rasmiy yechimni hosil qildi.",
-      "Natija kvant kompyuterlarining tasodifiy ma'lumotlarda oddiy kompyuterlardan cheksiz ustun bo'la olmasligi chegarasini qat'iy belgilab beradi."
-    ],
-    "primary_source": {
-      "name": "Physical Superintelligence (PSI)",
-      "title": "AI Solves the Aaronson-Ambainis Conjecture via Lean 4 Formal Verification",
-      "url": "https://psi.inc/research/aaronson-ambainis-proof",
-      "badge": "ILMIY KASHFIYOT"
-    },
-    "secondary_sources": [
-      {
-        "name": "The Quantum Insider",
-        "title": "Autonomous AI Proves Decades-Old Quantum Complexity Conjecture",
-        "url": "https://thequantuminsider.com/2026/11/07/ai-solves-aaronson-ambainis-conjecture/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Kvant hisoblash sohasida 2008-yildan buyon eng katta ochiq muammolardan biri bo'lgan <i>Aaronson-Ambainis gipotezasi</i> sun'iy intellekt yordamida to'liq isbotlandi. Tadqiqot guruhi shunchaki matnli izoh bilan cheklanmasdan, har bir matematik mantiqiy qadamni Lean 4 rasmiy isbotlash dasturida xatosiz tekshiruvdan o'tkazdi.</p>\n\n<h2 class=\"article-section-title\">Aaronson-Ambainis gipotezasi nimani anglatadi?</h2>\n<p>Olimlar Scott Aaronson va Andris Ambainis 2008-yilda kvant algoritmlarining real chegaralarini aniqlash bo'yicha muhim savolni o'rtaga tashlagan edilar: kvant kompyuterlari hech qanday ichki qonuniyat yoki tuzilishga ega bo'lmagan tasodifiy ma'lumotlar to'plamida ham oddiy (klassik) kompyuterlardan eksponentsial darajada tez ishlay oladimi? Yangi isbot shuni ko'rsatdiki, javob — <b>yo'q</b>. Kvant ustunligi faqat yashirin matematik qonuniyatlar (masalan, Shor algoritmidagi davriy chastotalar) mavjud bo'lgandagina yuzaga chiqadi; aks holda, kvant tezligi polinom chegarasidan oshmaydi.</p>\n\n<h2 class=\"article-section-title\">Lean 4: Matematik xatolarga o'rin yo'q</h2>\n<p>Physical Superintelligence (PSI) laboratoriyasi ushbu kashfiyotni amalga oshirish uchun AI agentlarini Lean 4 interaktiv isbotlash muhitiga uladi. Bu yondashuv til modellariga xos \"gallyutsinatsiya\" yoki xato mantiqiy xulosalarni butunlay istisno qiladi, chunki Lean kompyuter dasturi har bir formulani qat'iy matematik qoidalar bo'yicha tekshirib boradi.</p>\n\n<h2 class=\"article-section-title\">Fan uchun amaliy ahamiyati</h2>\n<p>Ushbu ilmiy natija kvant fizikasi uchun qaysi muammolarni kvant hisoblashga topshirish foydali, qaysilarida esa klassik usullar yetarli ekanini aniq ko'rsatib beradi. Shu bilan birga, bu voqea sun'iy intellekt fundamental nazariy fanda inson aqli yetmagan murakkab jumbonqlarni mustaqil yecha olishining yorqin isbotiga aylandi.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Kvant hisoblash sohasida 2008-yildan buyon eng katta ochiq muammolardan biri bo'lgan <i>Aaronson-Ambainis gipotezasi</i> sun'iy intellekt yordamida to'liq isbotlandi. Tadqiqot guruhi shunchaki matnli izoh bilan cheklanmasdan, har bir matematik mantiqiy qadamni Lean 4 rasmiy isbotlash dasturida xatosiz tekshiruvdan o'tkazdi.</p>\n\n<h2 class=\"article-section-title\">Aaronson-Ambainis gipotezasi nimani anglatadi?</h2>\n<p>Olimlar Scott Aaronson va Andris Ambainis 2008-yilda kvant algoritmlarining real chegaralarini aniqlash bo'yicha muhim savolni o'rtaga tashlagan edilar: kvant kompyuterlari hech qanday ichki qonuniyat yoki tuzilishga ega bo'lmagan tasodifiy ma'lumotlar to'plamida ham oddiy (klassik) kompyuterlardan eksponentsial darajada tez ishlay oladimi? Yangi isbot shuni ko'rsatdiki, javob — <b>yo'q</b>. Kvant ustunligi faqat yashirin matematik qonuniyatlar (masalan, Shor algoritmidagi davriy chastotalar) mavjud bo'lgandagina yuzaga chiqadi; aks holda, kvant tezligi polinom chegarasidan oshmaydi.</p>\n\n<h2 class=\"article-section-title\">Lean 4: Matematik xatolarga o'rin yo'q</h2>\n<p>Physical Superintelligence (PSI) laboratoriyasi ushbu kashfiyotni amalga oshirish uchun AI agentlarini Lean 4 interaktiv isbotlash muhitiga uladi. Bu yondashuv til modellariga xos \"gallyutsinatsiya\" yoki xato mantiqiy xulosalarni butunlay istisno qiladi, chunki Lean kompyuter dasturi har bir formulani qat'iy matematik qoidalar bo'yicha tekshirib boradi.</p>\n\n<h2 class=\"article-section-title\">Fan uchun amaliy ahamiyati</h2>\n<p>Ushbu ilmiy natija kvant fizikasi uchun qaysi muammolarni kvant hisoblashga topshirish foydali, qaysilarida esa klassik usullar yetarli ekanini aniq ko'rsatib beradi. Shu bilan birga, bu voqea sun'iy intellekt fundamental nazariy fanda inson aqli yetmagan murakkab jumbonqlarni mustaqil yecha olishining yorqin isbotiga aylandi.</p>",
-    "verification_status": "VERIFIED",
-    "ainoma_published_date": "2026-11-08"
-  },
-  "kanada-nova-scotia-ai-data-markaz-noroziliklar-2026": {
-    "id": "kanada-nova-scotia-ai-data-markaz-noroziliklar-2026",
-    "slug": "kanada-nova-scotia-ai-data-markaz-noroziliklar-2026",
-    "title": "Kanadada 10 milliard dollarlik AI data-markazi loyihasiga qarshi ommaviy namoyishlar bo'lib o'tdi",
-    "kicker": "EKOLOGIYA VA ENERGETIKA · KANADA",
-    "meta_title": "Kanada Nova Scotia provinsiyasida gigant AI data-markaziga qarshi namoyishlar — AiNoma",
-    "meta_description": "Kanadaning Nova Scotia provinsiyasida yuzlab aholi Anthropic bilan 20 yillik shartnomaga ega ulkan AI ma'lumot markazi loyihasiga qarshi namoyish o'tkazib, moratoriy talab qildi.",
-    "category": "Dunyo",
-    "audience": "Siyosatchilar, tahlilchilar, tadbirkorlar",
-    "event_date": "2026-11-07",
-    "source_date": "2026-11-07",
-    "source_published_date": "2026-11-07",
-    "date": "2026-11-08",
-    "publish_date": "2026-11-08",
-    "img": "assets/canada_nova_scotia_datacenter_protest_2026.jpg",
-    "imgAlt": "Kanada Nova Scotia AI data-markaz loyihasiga qarshi namoyishlar",
-    "qisqacha": [
-      "Kanadaning Nova Scotia provinsiyasida yetti xil nuqtada AI ma'lumot markazlari qurilishiga qarshi norozilik aksiyalari o'tkazildi.",
-      "Point Tupper shaharchasidagi 10 milliard dollarlik markaz Anthropic bilan 20 yillik ijara kelishuviga ega va dastlab 95 MVt energiya sarflaydi.",
-      "Namoyishchilar toza ichimlik suvi zaxiralari va elektr tarmog'ining zo'riqishi tufayli loyihaga to'liq moratoriy e'lon qilishni talab qilmoqda."
-    ],
-    "primary_source": {
-      "name": "CBC News",
-      "title": "Hundreds protest proposed Point Tupper AI data centre across Nova Scotia",
-      "url": "https://www.cbc.ca/news/canada/nova-scotia/protests-cape-breton-ai-data-centre-point-tupper-2026",
-      "badge": "XALQARO AXBOROT"
-    },
-    "secondary_sources": [
-      {
-        "name": "CTV News Atlantic",
-        "title": "Protesters call for moratorium on massive Cape Breton AI infrastructure project",
-        "url": "https://atlantic.ctvnews.ca/protesters-call-for-moratorium-on-cape-breton-ai-data-centre-2026"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Kanadaning Nova Scotia provinsiyasida yuzlab mahalliy fuqarolar ko'chalarga chiqib, Anthropic kompaniyasi ehtiyojlari uchun mo'ljallangan 10 milliard dollarlik AI ma'lumotlar markazi qurilishiga qarshi ommaviy norozilik bildirdi. Aholi tabiiy resurslar kamayishi va elektr narxi oshishidan xavotirda.</p>\n\n<h2 class=\"article-section-title\">Point Tupper loyihasi nima uchun norozilik keltirib chiqardi?</h2>\n<p>EverWind Fuels kompaniyasi tomonidan taqdim etilgan loyihaga ko'ra, Cape Breton hududida bahosi 10 milliard dollarga teng bo'lgan yirik sun'iy intellekt ma'lumot markazi shaharchasi qurilishi ko'zda tutilgan. Ushbu majmua Claude chatbotining muallifi bo'lgan Anthropic bilan 20 yillik eksklyuziv ijara shartnomasiga ega bo'lib, uning birinchi bosqichi 2027-yilda 95 megavatt, 2028-yil o'rtalarida esa qo'shimcha 325 megavatt elektr energiyasini talab qiladi.</p>\n\n<h2 class=\"article-section-title\">Suv va elektr tarmog'i tahlikasi</h2>\n<p>Yomg'irli ob-havoga qaramay, provinsiya poytaxti Galifaksda 1 000 ga yaqin odam parlament binosi oldiga yig'ildi. Aholining asosiy e'tirozi — serverlarni sovitish uchun butun shahar ichimlik suvi oladigan Landrie Lake ko'lidan ulkan hajmda suv tortib olinishi hamda umumiy energetika tizimining zo'riqishidir.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellektning real hayotdagi to'qnashuvi</h2>\n<p>Hukumat vakillari loyiha mahalliy aholiga moliyaviy yuk bo'lmasligi va kelajakda shamol turbinalari orqali ta'minlanishini bildirayotgan bo'lsa-da, faollar va jamoatchilik loyihaga qat'iy moratoriy e'lon qilishni talab qilmoqda. Ushbu voqea AI modellarining quvvati oshgani sari real dunyo ekologiyasi va infratuzilmasi bilan to'qnashuvlar yanada keskinlashib borayotganini ko'rsatmoqda.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Kanadaning Nova Scotia provinsiyasida yuzlab mahalliy fuqarolar ko'chalarga chiqib, Anthropic kompaniyasi ehtiyojlari uchun mo'ljallangan 10 milliard dollarlik AI ma'lumotlar markazi qurilishiga qarshi ommaviy norozilik bildirdi. Aholi tabiiy resurslar kamayishi va elektr narxi oshishidan xavotirda.</p>\n\n<h2 class=\"article-section-title\">Point Tupper loyihasi nima uchun norozilik keltirib chiqardi?</h2>\n<p>EverWind Fuels kompaniyasi tomonidan taqdim etilgan loyihaga ko'ra, Cape Breton hududida bahosi 10 milliard dollarga teng bo'lgan yirik sun'iy intellekt ma'lumot markazi shaharchasi qurilishi ko'zda tutilgan. Ushbu majmua Claude chatbotining muallifi bo'lgan Anthropic bilan 20 yillik eksklyuziv ijara shartnomasiga ega bo'lib, uning birinchi bosqichi 2027-yilda 95 megavatt, 2028-yil o'rtalarida esa qo'shimcha 325 megavatt elektr energiyasini talab qiladi.</p>\n\n<h2 class=\"article-section-title\">Suv va elektr tarmog'i tahlikasi</h2>\n<p>Yomg'irli ob-havoga qaramay, provinsiya poytaxti Galifaksda 1 000 ga yaqin odam parlament binosi oldiga yig'ildi. Aholining asosiy e'tirozi — serverlarni sovitish uchun butun shahar ichimlik suvi oladigan Landrie Lake ko'lidan ulkan hajmda suv tortib olinishi hamda umumiy energetika tizimining zo'riqishidir.</p>\n\n<h2 class=\"article-section-title\">Sun'iy intellektning real hayotdagi to'qnashuvi</h2>\n<p>Hukumat vakillari loyiha mahalliy aholiga moliyaviy yuk bo'lmasligi va kelajakda shamol turbinalari orqali ta'minlanishini bildirayotgan bo'lsa-da, faollar va jamoatchilik loyihaga qat'iy moratoriy e'lon qilishni talab qilmoqda. Ushbu voqea AI modellarining quvvati oshgani sari real dunyo ekologiyasi va infratuzilmasi bilan to'qnashuvlar yanada keskinlashib borayotganini ko'rsatmoqda.</p>",
-    "verification_status": "VERIFIED",
-    "ainoma_published_date": "2026-11-08"
-  },
-  "mit-worldparticle-universal-ai-fizika-simulyatori-2026": {
-    "id": "mit-worldparticle-universal-ai-fizika-simulyatori-2026",
-    "slug": "mit-worldparticle-universal-ai-fizika-simulyatori-2026",
-    "title": "MIT universal sun’iy intellekt fizika simulyatorini taqdim etdi: barcha turdagi moddalar bitta modelda",
-    "kicker": "FUNDAMENTAL FAN · FIZIKA VA AI",
-    "meta_title": "MIT WorldParticle: Barcha moddalarni bitta modelda simulyatsiya qiluvchi universal AI — AiNoma",
-    "meta_description": "MIT va Britaniya Kolumbiyasi universiteti olimlari suyuqlik, qum, oqsil va qattiq jismlar dinamikasini yagona neyron tarmoq orqali modellashtiruvchi WorldParticle tizimini ishlab chiqdi.",
-    "category": "Texnologiya",
-    "audience": "Olimlar, fiziklar, muhandislar, tadqiqotchilar",
-    "event_date": "2026-11-09",
-    "source_date": "2026-11-09",
-    "source_published_date": "2026-11-09",
-    "date": "2026-11-09",
-    "publish_date": "2026-11-09",
-    "ainoma_published_date": "2026-11-09",
-    "img": "assets/banner_mit_worldparticle_universal_ai_fizika_si.jpg",
-    "imgAlt": "MIT WorldParticle universal fizika sun'iy intellekt modeli",
-    "qisqacha": [
-      "MIT va Britaniya Kolumbiyasi universiteti barcha turdagi moddalarni bitta arxitekturada modellashtiruvchi WorldParticle tizimini taqdim etdi.",
-      "Ilgari har bir fizik hodisa uchun alohida dasturiy kod talab qilingan bo'lsa, yangi model 3D zarrachalar harakatini yagona tamoyil asosida hisoblaydi.",
-      "Texnologiya yangi dori vositalarini ishlab chiqish hamda robotlarning turli tuproq qatlamlari bilan o'zaro ta'sirini o'rganishni o'nlab barobar tezlashtiradi."
-    ],
-    "primary_source": {
-      "name": "MIT News (Massachusetts Institute of Technology)",
-      "title": "WorldParticle: A unified deep-learning architecture for simulating diverse physical matter",
-      "url": "https://news.mit.edu/2026/worldparticle-universal-ai-physics-simulator-1109",
-      "badge": "ILMIY KASHFIYOT"
-    },
-    "secondary_sources": [
-      {
-        "name": "Superpower Daily",
-        "title": "MIT researchers unveil unified physics simulator for solids, fluids and granular media",
-        "url": "https://superpowerdaily.com/mit-universal-physics-worldparticle-2026"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Massachusets texnologiya instituti (MIT) olimlari Britaniya Kolumbiyasi universiteti bilan hamkorlikda fizika olamida inqilobiy yutuq bo'lgan <b>WorldParticle</b> sun'iy intellekt modelini taqdim etdi. Ushbu tizim oqayotgan suv, to'kilayotgan qum, bukiluvchi oqsillar va qattiq jismlar dinamikasini alohida-alohida emas, balki bitta yagona neyron tarmoq orqali aniq hisoblab bera oladi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy fizika simulyatorlarining cheklovlari</h2>\n<p>Shu paytgacha modellashtirish sohasida ishlovchi muhandis va olimlar har bir jism uchun alohida dasturlangan raqamli algoritmlardan foydalanishga majbur edilar. Masalan, aerodinamika va gidrodinamika uchun bir tenglamalar to'plami, polimer va biologik molekulalar uchun butunlay boshqa dasturiy ta'minot talab qilinar edi. Bu esa murakkab ko'p komponentli tajribalarni tahlil qilishni juda sekin va qimmat jarayonga aylantirgan.</p>\n\n<h2 class=\"article-section-title\">WorldParticle qanday ishlaydi?</h2>\n<p>WorldParticle har qanday moddani fazodagi o'zaro harakatlanuvchi 3D zarrachalar to'plami sifatida qabul qiladi. Xuddi zamonaviy til modellari (LLM) keyingi so'z yoki belgini bashorat qilgani kabi, WorldParticle neyron tarmog'i zarrachalarning keyingi millisekunddagi holati, tezligi va energiyasini bashorat qiladi. 6 xil asosiy fizik xatti-harakatlar bo'yicha o'tkazilgan testlarda model klassik hisoblash usullariga qaraganda yuzlab barobar yuqori tezlik va hayratlanarli barqarorlikni namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">Amaliy sohalardagi ahamiyati</h2>\n<p>Olimlarning ta'kidlashicha, ushbu yondashuv birinchi navbatda tibbiyotda oqsil strukturalarini modellashtirish va yangi dori vositalarini ishlab chiqish jarayonini tezlashtiradi. Shuningdek, murakkab relefda harakatlanuvchi yumshoq robotlar (soft robotics) hamda kosmik zondlarning begona sayyoralar tuprog'i bilan aloqasini simulyatsiya qilishda yangi davrni ochib beradi.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Massachusets texnologiya instituti (MIT) olimlari Britaniya Kolumbiyasi universiteti bilan hamkorlikda fizika olamida inqilobiy yutuq bo'lgan <b>WorldParticle</b> sun'iy intellekt modelini taqdim etdi. Ushbu tizim oqayotgan suv, to'kilayotgan qum, bukiluvchi oqsillar va qattiq jismlar dinamikasini alohida-alohida emas, balki bitta yagona neyron tarmoq orqali aniq hisoblab bera oladi.</p>\n\n<h2 class=\"article-section-title\">An'anaviy fizika simulyatorlarining cheklovlari</h2>\n<p>Shu paytgacha modellashtirish sohasida ishlovchi muhandis va olimlar har bir jism uchun alohida dasturlangan raqamli algoritmlardan foydalanishga majbur edilar. Masalan, aerodinamika va gidrodinamika uchun bir tenglamalar to'plami, polimer va biologik molekulalar uchun butunlay boshqa dasturiy ta'minot talab qilinar edi. Bu esa murakkab ko'p komponentli tajribalarni tahlil qilishni juda sekin va qimmat jarayonga aylantirgan.</p>\n\n<h2 class=\"article-section-title\">WorldParticle qanday ishlaydi?</h2>\n<p>WorldParticle har qanday moddani fazodagi o'zaro harakatlanuvchi 3D zarrachalar to'plami sifatida qabul qiladi. Xuddi zamonaviy til modellari (LLM) keyingi so'z yoki belgini bashorat qilgani kabi, WorldParticle neyron tarmog'i zarrachalarning keyingi millisekunddagi holati, tezligi va energiyasini bashorat qiladi. 6 xil asosiy fizik xatti-harakatlar bo'yicha o'tkazilgan testlarda model klassik hisoblash usullariga qaraganda yuzlab barobar yuqori tezlik va hayratlanarli barqarorlikni namoyish etdi.</p>\n\n<h2 class=\"article-section-title\">Amaliy sohalardagi ahamiyati</h2>\n<p>Olimlarning ta'kidlashicha, ushbu yondashuv birinchi navbatda tibbiyotda oqsil strukturalarini modellashtirish va yangi dori vositalarini ishlab chiqish jarayonini tezlashtiradi. Shuningdek, murakkab relefda harakatlanuvchi yumshoq robotlar (soft robotics) hamda kosmik zondlarning begona sayyoralar tuprog'i bilan aloqasini simulyatsiya qilishda yangi davrni ochib beradi.</p>",
-    "verification_status": "VERIFIED"
-  },
-  "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026": {
-    "id": "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026",
-    "slug": "nvidia-janubiy-koreya-suveren-ai-ittifoqi-2026",
-    "title": "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi: mahalliy chiplar va sanoat robotlari uchun yangi platforma",
-    "kicker": "GLOBAL SANOAT · SUVEREN AI",
-    "meta_title": "Nvidia va Janubiy Koreya Suveren AI alyansini kengaytirdi — AiNoma",
-    "meta_description": "Nvidia va Janubiy Koreya hukumati milliy Suveren AI doirasida yangi keng qamrovli bitim imzoladi: mahalliy NPU chiplari Nvidia tizimiga qo'shiladi va sanoat robotlari avtonomlashtiriladi.",
-    "category": "Biznes",
-    "audience": "Biznes rahbarlari, investorlar, IT mutaxassislari, muhandislar",
-    "event_date": "2026-11-09",
-    "source_date": "2026-11-08",
-    "source_published_date": "2026-11-08",
-    "date": "2026-11-09",
-    "publish_date": "2026-11-09",
-    "ainoma_published_date": "2026-11-09",
-    "img": "assets/banner_nvidia_janubiy_koreya_suveren_ai_ittifoq.jpg",
-    "imgAlt": "Nvidia va Janubiy Koreya Suveren AI alyansi",
-    "qisqacha": [
-      "Nvidia va Janubiy Koreya Fan vazirligi milliy Suveren AI infratuzilmasini rivojlantirish bo'yicha hamkorlikni yangi bosqichga olib chiqdi.",
-      "Koreyaning mahalliy NPU va XPU chip ishlab chiqaruvchilari Nvidia Dynamo inferens platformasi bilan integratsiya qilinadi.",
-      "SK Telecom va LG Electronics bilan birgalikda sanoat korxonalarida avtonom harakatlanuvchi Physical AI tizimlari ishga tushiriladi."
-    ],
-    "primary_source": {
-      "name": "Nvidia Newsroom",
-      "title": "NVIDIA and South Korea Advance Sovereign AI Infrastructure and Industrial Physical AI",
-      "url": "https://nvidianews.nvidia.com/news/south-korea-sovereign-ai-physical-ai-expansion-2026",
-      "badge": "RASMIY ALYANS"
-    },
-    "secondary_sources": [
-      {
-        "name": "Yonhap News Agency",
-        "title": "South Korea partners with Nvidia to scale local AI semiconductors and smart robotics",
-        "url": "https://en.yna.co.kr/view/AEN20261108003100320"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt chiplari bo'yicha jahon yetakchisi Nvidia va Janubiy Koreya Fan va axborot texnologiyalari vazirligi milliy 'Suveren AI' (Sovereign AI) alyansini kengaytirish bo'yicha keng qamrovli kelishuvga erishdi. Hamkorlik doirasida koreys yarimo'tkazgichlari Nvidia ekotizimiga ulanadi va mamlakatning yetakchi ishlab chiqarish korxonalarida avtonom robotlar sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Mahalliy chiplar Nvidia dasturiy ta'minotiga ulanadi</h2>\n<p>Kelishuvning eng diqqatga sazovor jihati — Janubiy Koreyaning Rebellions, FuriosaAI va boshqa mahalliy NPU/XPU ishlab chiqaruvchilari chiplarining Nvidia tizimlari bilan uyg'unlashtirilishidir. <b>Nvidia Dynamo</b> deb nomlangan yangi dasturiy qatlam orqali turli arxitekturadagi neyron protsessorlar umumiy klasterda parallel ravishda inferens (xulosalash) vazifalarini bajarish imkoniga ega bo'ladi.</p>\n\n<h2 class=\"article-section-title\">SK Telecom va LG Electronics bilan Physical AI integratsiyasi</h2>\n<p>Alyans faqat raqamli serverlar bilan cheklanib qolmaydi. SK Telecom telekom giganti hamda LG Electronics kompaniyalari bilan hamkorlikda zavod va logistika markazlari uchun 'Physical AI' (jismoniy muhitda ishlovchi sun'iy intellekt) tizimlari joriy qilinadi. Nvidia Omniverse va Isaac robototexnika platformasi orqali raqamli egizaklar (digital twins) qurilib, robotlarning real zavod sharoitlaridagi avtonom harakati to'liq sinovdan o'tkaziladi.</p>\n\n<h2 class=\"article-section-title\">Global suveren texnologiyalar poygasi</h2>\n<p>Ushbu qadam dunyo davlatlari o'z ma'lumotlari, hisoblash quvvatlari va madaniy algoritmlarini boshqa mamlakatlarga qaram bo'lmagan holda o'z hududida saqlashga intilayotgan 'Suveren AI' harakatining yorqin namunasidir. Janubiy Koreya o'zining kuchli xotira chiplari (HBM) ishlab chiqarish bazasini Nvidia dasturiy ta'minoti bilan birlashtirib, Osiyo mintaqasida yetakchi sun'iy intellekt markaziga aylanishni maqsad qilgan.</p>",
-    "verification_status": "VERIFIED"
-  },
-  "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026": {
-    "id": "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026",
-    "slug": "anthropic-claude-fable-mythos-5-2-modellarini-chiqardi-2026",
-    "title": "Anthropic Claude Fable 5.2 va Mythos 5.2 modellarini chiqardi: GPT-6 Astraga qarshi 20% arzon narxlar",
-    "kicker": "AI MODELLARI · ANTHROPIC",
-    "meta_title": "Anthropic Claude Fable 5.2 va Mythos 5.2: GPT-6 Astra raqobatchisi — AiNoma",
-    "meta_description": "Anthropic yangi Claude Fable 5.2 va Mythos 5.2 modellarini e'lon qildi: modellar OpenAI GPT-6 Astra bilan tenglashib, token narxi bo'yicha 20 foiz ustunlikni taqdim etmoqda.",
-    "category": "Texnologiya",
-    "audience": "Dasturchilar, muhandislar, IT rahbarlari, tadqiqotchilar",
-    "event_date": "2026-11-09",
-    "source_date": "2026-11-09",
-    "source_published_date": "2026-11-09",
-    "date": "2026-11-10",
-    "publish_date": "2026-11-10",
-    "ainoma_published_date": "2026-11-10",
-    "img": "assets/banner_anthropic_claude_fable_mythos_5_2_modell.jpg",
-    "imgAlt": "Anthropic Claude Fable 5.2 va Mythos 5.2 relizi",
-    "qisqacha": [
-      "Anthropic yangi avlod Claude Fable 5.2 va Mythos 5.2 sun'iy intellekt modellarini rasman taqdim etdi.",
-      "Yangi arxitektura OpenAI'ning GPT-6 Astra modeliga to'g'ridan-to'g'ri raqobatchi bo'lib, unumdorlik bo'yicha yetakchi benchmarklarda teng natija ko'rsatdi.",
-      "Modellar narxi raqobatchilardan qariyb 20 foiz arzonlashtirildi: 1 million kirish tokeni 8 dollar, chiqish tokeni esa 40 dollar qilib belgilandi."
-    ],
-    "primary_source": {
-      "name": "Fortune Tech",
-      "title": "Anthropic debuts Claude Fable 5.2 and Mythos 5.2 to challenge OpenAI with 20% lower pricing",
-      "url": "https://fortune.com/2026/11/09/anthropic-claude-fable-mythos-release/",
-      "badge": "RASMIY RELIZ"
-    },
-    "secondary_sources": [
-      {
-        "name": "AI Weekly",
-        "title": "Anthropic counters OpenAI Astra with high-efficiency enterprise reasoning models",
-        "url": "https://aiweekly.co/news/2026-11-09-anthropic-fable-mythos/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt xavfsizligi va yetakchi tadqiqotlar bo'yicha gigant hisoblangan Anthropic o'zining yangi flagman modellari — <b>Claude Fable 5.2</b> hamda <b>Mythos 5.2</b> tizimlarini rasman e'lon qildi. Ushbu yangi modellar OpenAI'ning GPT-6 Astra modeliga munosib javob bo'lib, korxonalarga 20 foiz arzonroq narxda yuqori mantiqiy fikrlash quvvatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Astra bilan kuchlar tenglashuvi</h2>\n<p>Kuz mavsumida OpenAI GPT-6 Astra modelini taqdim etgach, dasturlash va murakkab agentlik vazifalarida bozor yetakchiligini o'ziga qaratgan edi. Anthropic tomonidan taqdim etilgan Fable 5.2 va Mythos 5.2 aynan ushbu bo'shliqni to'ldiradi. Mustaqil benchmarklar ko'rsatishicha, yangi Claude modellari kod tahlili, huquqiy va ilmiy matnlarni qayta ishlash hamda ko'p bosqichli matematik xulosalashda OpenAI flagmani bilan mutlaqo teng natijalarni qayd etgan.</p>\n\n<h2 class=\"article-section-title\">20% arzon narx siyosati</h2>\n<p>Anthropic jamoasi yangi modellarni tarqatishda korporativ mijozlar uchun jozibador narx taklifini ilgari surmoqda. 1 million kirish tokeni bahosi <b>8 dollar</b>, chiqish tokeni esa <b>40 dollar</b> etib belgilandi. Bu OpenAI Astra modelining rasmiy API narxlaridan taxminan 20 foiz pastroq deganidir. Yirik korxonalar va SaaS kompaniyalar uchun bu hisoblash byudjetini yuz minglab dollarga tejash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Nasdaq IPO arafasidagi strategik qadam</h2>\n<p>Ushbu yangilik Anthropic kompaniyasining Nasdaq birjasida kutilayotgan ommaviy birlamchi aksiyalar savdosi (IPO, ticker: <code>ANT</code>) arafasida e'lon qilindi. Kompaniyaning 1 trillion dollardan oshiq baholanishi kutilayotgan bir paytda, yangi modellar Anthropic nafaqat ilmiy xavfsizlik, balki tijoriy samaradorlik bo'yicha ham sanoat yetakchisi ekanligini isbotlamoqda.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt xavfsizligi va yetakchi tadqiqotlar bo'yicha gigant hisoblangan Anthropic o'zining yangi flagman modellari — <b>Claude Fable 5.2</b> hamda <b>Mythos 5.2</b> tizimlarini rasman e'lon qildi. Ushbu yangi modellar OpenAI'ning GPT-6 Astra modeliga munosib javob bo'lib, korxonalarga 20 foiz arzonroq narxda yuqori mantiqiy fikrlash quvvatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Astra bilan kuchlar tenglashuvi</h2>\n<p>Kuz mavsumida OpenAI GPT-6 Astra modelini taqdim etgach, dasturlash va murakkab agentlik vazifalarida bozor yetakchiligini o'ziga qaratgan edi. Anthropic tomonidan taqdim etilgan Fable 5.2 va Mythos 5.2 aynan ushbu bo'shliqni to'ldiradi. Mustaqil benchmarklar ko'rsatishicha, yangi Claude modellari kod tahlili, huquqiy va ilmiy matnlarni qayta ishlash hamda ko'p bosqichli matematik xulosalashda OpenAI flagmani bilan mutlaqo teng natijalarni qayd etgan.</p>\n\n<h2 class=\"article-section-title\">20% arzon narx siyosati</h2>\n<p>Anthropic jamoasi yangi modellarni tarqatishda korporativ mijozlar uchun jozibador narx taklifini ilgari surmoqda. 1 million kirish tokeni bahosi <b>8 dollar</b>, chiqish tokeni esa <b>40 dollar</b> etib belgilandi. Bu OpenAI Astra modelining rasmiy API narxlaridan taxminan 20 foiz pastroq deganidir. Yirik korxonalar va SaaS kompaniyalar uchun bu hisoblash byudjetini yuz minglab dollarga tejash imkonini beradi.</p>\n\n<h2 class=\"article-section-title\">Nasdaq IPO arafasidagi strategik qadam</h2>\n<p>Ushbu yangilik Anthropic kompaniyasining Nasdaq birjasida kutilayotgan ommaviy birlamchi aksiyalar savdosi (IPO, ticker: <code>ANT</code>) arafasida e'lon qilindi. Kompaniyaning 1 trillion dollardan oshiq baholanishi kutilayotgan bir paytda, yangi modellar Anthropic nafaqat ilmiy xavfsizlik, balki tijoriy samaradorlik bo'yicha ham sanoat yetakchisi ekanligini isbotlamoqda.</p>",
-    "verification_status": "VERIFIED",
-    "banner_title": "Claude Fable 5.2 & Mythos 5.2"
-  },
-  "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026": {
-    "id": "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026",
-    "slug": "google-tpu-8tx-8i-max-chiplarini-chiqardi-2026",
-    "title": "Google yangi TPU 8tx va 8i Max chiplarini taqdim etdi: Nvidia bilan raqobatda 30% tejash imkoniyati",
-    "kicker": "HISOB-KITOBLAR · APPARATURA",
-    "meta_title": "Google TPU 8tx va 8i Max chiplarini chiqardi: Nvidia GPU'laridan 30% arzon — AiNoma",
-    "meta_description": "Google o'zining yangi avlod TPU 8tx va TPU 8i Max neyron protsessorlarini e'lon qildi: yangi chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkonini beradi.",
-    "category": "Texnologiya",
-    "audience": "Cloud arxitektorlari, IT kompaniyalar, investorlar, muhandislar",
-    "event_date": "2026-11-09",
-    "source_date": "2026-11-09",
-    "source_published_date": "2026-11-09",
-    "date": "2026-11-10",
-    "publish_date": "2026-11-10",
-    "ainoma_published_date": "2026-11-10",
-    "img": "assets/banner_google_tpu_8tx_8i_max_chiplarini_chiqard.jpg",
-    "imgAlt": "Google TPU 8tx va 8i Max sun'iy intellekt chiplari",
-    "qisqacha": [
-      "Google sun'iy intellekt hisob-kitoblari uchun mo'ljallangan navbatdagi TPU 8tx va TPU 8i Max neyron protsessorlarini namoyish qildi.",
-      "Yangi chiplar Nvidia'ning yetakchi GPU modellariga qaraganda 30 foiz arzon narxda taqdim etilmoqda va energiya tejamkorligi 1.4 baravarga oshirilgan.",
-      "Tizimdan allaqachon Anthropic, Meta va Oracle foydalana boshladi, shuningdek OpenAI ham TPU klasterlarini xarid qilish bo'yicha muzokaralar olib bormoqda."
-    ],
-    "primary_source": {
-      "name": "Google Cloud Press",
-      "title": "Google Cloud announces next-generation TPU 8tx and 8i Max AI accelerators",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-tpu-8tx-8i-max-accelerators/",
-      "badge": "TEXNOLOGIK YUTUQ"
-    },
-    "secondary_sources": [
-      {
-        "name": "BeInCrypto",
-        "title": "Google escalates AI chip wars with TPU 8tx rollout priced 30% below Nvidia GPUs",
-        "url": "https://beincrypto.com/google-tpu-8tx-ai-chips-nvidia-competition-2026/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Google bulutli hisoblash va sun'iy intellekt infratuzilmasi sohasida muhim qadam tashlab, o'zining navbatdagi maxsus neyron protsessorlari — <b>TPU 8tx</b> hamda <b>TPU 8i Max</b> chiplarini namoyish etdi. Ushbu chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkoniyatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Nvidia apparat monopoliyasiga to'g'ridan-to'g'ri zarba</h2>\n<p>Bozorda Nvidia GPU chiplari (ayniqsa Blackwell va undan keyingi arxitekturalar) taqchilligi va haddan tashqari qimmatligi IT kompaniyalarini muqobil yo'llar qidirishga majbur qilmoqda. Google tomonidan taqdim etilgan TPU 8tx katta hajmdagi parametrlarga ega til modellarini o'qitish uchun, 8i Max esa past kechikish vaqti (latency) bilan keng ko'lamli so'rovlarni qayta ishlashga (inferens) ixtisoslashgan.</p>\n\n<h2 class=\"article-section-title\">Energiya tejamkorligi va optik kommutatsiya</h2>\n<p>Google yangi TPU podlarida o'zining ilg'or Optical Circuit Switching (OCS) texnologiyasini yangi bosqichga olib chiqdi. Bu chiplararo ma'lumot uzatishda elektr energiyasini 40 foizga tejash, ma'lumotlar uzatish kechikishini esa deyarli nolga tushirish imkonini beradi. Natijada yirik klasterlarda hisoblash samaradorligi 1.4 baravarga oshgan.</p>\n\n<h2 class=\"article-section-title\">Bozor yetakchilari TPU klasterlariga o'tmoqda</h2>\n<p>E'tiborli jihati, Google TPU chiplaridan faqat o'zining Gemini modellari uchun emas, balki boshqa AI gigantlari ham keng foydalanmoqda. Anthropic, Meta va Oracle korporatsiyalari yangi TPU 8tx klasterlarini buyurtma qilib bo'lgan. Wall Street tahlilchilari prognoziga ko'ra, OpenAI ham xavflarni diversifikatsiya qilish maqsadida Google TPU quvvatlaridan foydalanish bo'yicha muzokaralar olib bormoqda.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Google bulutli hisoblash va sun'iy intellekt infratuzilmasi sohasida muhim qadam tashlab, o'zining navbatdagi maxsus neyron protsessorlari — <b>TPU 8tx</b> hamda <b>TPU 8i Max</b> chiplarini namoyish etdi. Ushbu chiplar Nvidia apparaturasiga nisbatan 30 foiz arzon narxda inferens va trening imkoniyatini taqdim etadi.</p>\n\n<h2 class=\"article-section-title\">Nvidia apparat monopoliyasiga to'g'ridan-to'g'ri zarba</h2>\n<p>Bozorda Nvidia GPU chiplari (ayniqsa Blackwell va undan keyingi arxitekturalar) taqchilligi va haddan tashqari qimmatligi IT kompaniyalarini muqobil yo'llar qidirishga majbur qilmoqda. Google tomonidan taqdim etilgan TPU 8tx katta hajmdagi parametrlarga ega til modellarini o'qitish uchun, 8i Max esa past kechikish vaqti (latency) bilan keng ko'lamli so'rovlarni qayta ishlashga (inferens) ixtisoslashgan.</p>\n\n<h2 class=\"article-section-title\">Energiya tejamkorligi va optik kommutatsiya</h2>\n<p>Google yangi TPU podlarida o'zining ilg'or Optical Circuit Switching (OCS) texnologiyasini yangi bosqichga olib chiqdi. Bu chiplararo ma'lumot uzatishda elektr energiyasini 40 foizga tejash, ma'lumotlar uzatish kechikishini esa deyarli nolga tushirish imkonini beradi. Natijada yirik klasterlarda hisoblash samaradorligi 1.4 baravarga oshgan.</p>\n\n<h2 class=\"article-section-title\">Bozor yetakchilari TPU klasterlariga o'tmoqda</h2>\n<p>E'tiborli jihati, Google TPU chiplaridan faqat o'zining Gemini modellari uchun emas, balki boshqa AI gigantlari ham keng foydalanmoqda. Anthropic, Meta va Oracle korporatsiyalari yangi TPU 8tx klasterlarini buyurtma qilib bo'lgan. Wall Street tahlilchilari prognoziga ko'ra, OpenAI ham xavflarni diversifikatsiya qilish maqsadida Google TPU quvvatlaridan foydalanish bo'yicha muzokaralar olib bormoqda.</p>",
-    "verification_status": "VERIFIED",
-    "banner_title": "Google TPU 8tx & 8i Max"
-  },
-  "huquqshunoslar-uchun-ai": {
-    "id": "huquqshunoslar-uchun-ai",
-    "slug": "huquqshunoslar-uchun-ai",
-    "title": "Huquqshunoslar uchun AI: shartnoma tahlili va hujjat tayyorlashda yordam",
-    "kicker": "KASB BO'YICHA · HUQUQ",
-    "meta_title": "Huquqshunoslar uchun AI: Shartnoma tahlili va xavfsiz foydalanish — AiNoma",
-    "meta_description": "Sun'iy intellekt shartnoma va yuridik hujjatlarni tezroq ko'rib chiqishga qanday yordam beradi? Gallyutsinatsiyalar, maxfiylik va amaliy tavsiyalar haqida batafsil.",
-    "category": "Qo'llanmalar",
-    "audience": "Huquqshunoslar, advokatlar, yurist-konsultantlar",
-    "event_date": "2026-11-10",
-    "source_date": "2026-11-10",
-    "source_published_date": "2026-11-10",
-    "date": "2026-11-10",
-    "publish_date": "2026-11-10",
-    "ainoma_published_date": "2026-11-10",
-    "img": "assets/banner_huquqshunoslar_uchun_ai.jpg",
-    "imgAlt": "Huquqshunoslar va yuristlar uchun AI qo'llanmasi",
-    "qisqacha": [
-      "AI yirik hajmdagi shartnomalar, da'vo arizalari va qonunchilik hujjatlarini tezkor tahlil qilib, asosiy bandlarni ajratishda yordam beradi.",
-      "Til modellari mavjud bo'lmagan qonun moddalari yoki soxta sud amaliyotini to'qib chiqarishi (gallyutsinatsiya) mumkinligi sababli barcha havolalarni rasmiy manbada tekshirish shart.",
-      "Mijozlarning konfidentsial ma'lumotlarini ochiq AI platformalariga kiritish tavsiya etilmaydi; yakuniy huquqiy xulosa har doim yuristning o'zida qoladi."
-    ],
-    "primary_source": {
-      "name": "AiNoma Amaliy Tadqiqotlar Guruhi",
-      "title": "Yuridik sohada sun'iy intellekt vositalaridan unumli va xavfsiz foydalanish metodologiyasi",
-      "url": "https://ainoma.uz/yangiliklar/huquqshunoslar-uchun-ai/",
-      "badge": "AMALIY METODOLOGIYA"
-    },
-    "secondary_sources": [
-      {
-        "name": "LegalTech Journal",
-        "title": "AI in Contract Review and Document Due Diligence: Best Practices and Pitfalls",
-        "url": "https://legaltechjournal.org/ai-contract-review-2026/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Sun'iy intellekt katta hajmdagi hujjatlarni tezda ko'rib chiqish, asosiy bandlarni ajratib olish va birinchi qoralamalarni tayyorlashda vaqtni sezilarli tejaydi — ammo yakuniy huquqiy xulosa va mas'uliyat har doim inson yuristning o'zida qoladi.</p>\n\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi?</h2>\n<p><b>1. Uzun hujjatlarni tezda ko'rib chiqish.</b> Ko'p sahifali shartnoma yoki qonun hujjatini AI tizimiga berib, asosiy bandlar, muddatlar, jarimalar va majburiyatlarni qisqa tahliliy ro'yxat shaklida olishingiz mumkin.</p>\n<p><b>2. Birinchi qoralama tayyorlash.</b> Standart xat, e'tiroznomalar, da'vo arizalari yoki oddiy shartnoma shablonining boshlang'ich qoralamasini bir necha daqiqada tayyorlash — keyin uni o'zingiz to'liq tahrirlash imkoniyati taqdim etiladi.</p>\n<p><b>3. Til va uslubni yaxshilash.</b> Yuridik hujjatni aniqroq, tushunarliroq tilda qayta bayon qilish (ayniqsa mijozga yuboriladigan tushuntirish xatlari uchun juda qulay).</p>\n<p><b>4. Solishtirish (Redline tahlil).</b> Ikki shartnoma variantini (masalan, eski va yangi tahrir) solishtirib, yashirin o'zgarishlar va asosiy farqlarni bir zumda topish.</p>\n\n<h2 class=\"article-section-title\">Qayerda AI'ga ishonib bo'lmaydi?</h2>\n<p>⚠️ <b>Gallyutsinatsiyalar va qonun normalari:</b> AI amaldagi qonunchilikni har doim to'liq va aniq bilmasligi mumkin — ayniqsa O'zbekiston Respublikasi qonunchiligidagi so'nggi tahrirlar bo'yicha. AI ba'zan ishonchli ohangda, ammo aslida mavjud bo'lmagan qonun moddalari yoki sud pretsedentlarini to'qib chiqarishi (hallucination) mumkin. Har qanday huquqiy havola yoki modda raqamini <code>Lex.uz</code> kabi rasmiy davlat bazalarida tekshirish shart.</p>\n\n<p>🔒 <b>Mijoz sirlari va konfidentsiallik:</b> Mijozlarning tijorat sirlari, shartnoma summalari va shaxsiy ma'lumotlarini ochiq umumiy AI platformalariga kiritish taqiqlanadi. Agar enterprise darajasidagi xavfsiz klaster bo'lmasa, maxfiy ma'lumotlar ochiqlanishi xavfi mavjud.</p>\n\n<h2 class=\"article-section-title\">Oltin qoida: Junior yordamchi tamoyili</h2>\n<p>Sun'iy intellektdan malakali yordamchi sifatida foydalaning: u sizga qoralama va tahlil tezligini beradi, biroq hujjatga qo'yiladigan har bir imzo va professional xulosa — sizning shaxsiy mas'uliyatingizdir.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Sun'iy intellekt katta hajmdagi hujjatlarni tezda ko'rib chiqish, asosiy bandlarni ajratib olish va birinchi qoralamalarni tayyorlashda vaqtni sezilarli tejaydi — ammo yakuniy huquqiy xulosa va mas'uliyat har doim inson yuristning o'zida qoladi.</p>\n\n<h2 class=\"article-section-title\">Qayerda eng ko'p yordam beradi?</h2>\n<p><b>1. Uzun hujjatlarni tezda ko'rib chiqish.</b> Ko'p sahifali shartnoma yoki qonun hujjatini AI tizimiga berib, asosiy bandlar, muddatlar, jarimalar va majburiyatlarni qisqa tahliliy ro'yxat shaklida olishingiz mumkin.</p>\n<p><b>2. Birinchi qoralama tayyorlash.</b> Standart xat, e'tiroznomalar, da'vo arizalari yoki oddiy shartnoma shablonining boshlang'ich qoralamasini bir necha daqiqada tayyorlash — keyin uni o'zingiz to'liq tahrirlash imkoniyati taqdim etiladi.</p>\n<p><b>3. Til va uslubni yaxshilash.</b> Yuridik hujjatni aniqroq, tushunarliroq tilda qayta bayon qilish (ayniqsa mijozga yuboriladigan tushuntirish xatlari uchun juda qulay).</p>\n<p><b>4. Solishtirish (Redline tahlil).</b> Ikki shartnoma variantini (masalan, eski va yangi tahrir) solishtirib, yashirin o'zgarishlar va asosiy farqlarni bir zumda topish.</p>\n\n<h2 class=\"article-section-title\">Qayerda AI'ga ishonib bo'lmaydi?</h2>\n<p>⚠️ <b>Gallyutsinatsiyalar va qonun normalari:</b> AI amaldagi qonunchilikni har doim to'liq va aniq bilmasligi mumkin — ayniqsa O'zbekiston Respublikasi qonunchiligidagi so'nggi tahrirlar bo'yicha. AI ba'zan ishonchli ohangda, ammo aslida mavjud bo'lmagan qonun moddalari yoki sud pretsedentlarini to'qib chiqarishi (hallucination) mumkin. Har qanday huquqiy havola yoki modda raqamini <code>Lex.uz</code> kabi rasmiy davlat bazalarida tekshirish shart.</p>\n\n<p>🔒 <b>Mijoz sirlari va konfidentsiallik:</b> Mijozlarning tijorat sirlari, shartnoma summalari va shaxsiy ma'lumotlarini ochiq umumiy AI platformalariga kiritish taqiqlanadi. Agar enterprise darajasidagi xavfsiz klaster bo'lmasa, maxfiy ma'lumotlar ochiqlanishi xavfi mavjud.</p>\n\n<h2 class=\"article-section-title\">Oltin qoida: Junior yordamchi tamoyili</h2>\n<p>Sun'iy intellektdan malakali yordamchi sifatida foydalaning: u sizga qoralama va tahlil tezligini beradi, biroq hujjatga qo'yiladigan har bir imzo va professional xulosa — sizning shaxsiy mas'uliyatingizdir.</p>",
-    "verification_status": "VERIFIED",
-    "banner_title": "Huquqshunoslar Uchun AI"
-  },
-  "openai-businesses-in-chatgpt-business-hub-2026": {
-    "id": "openai-businesses-in-chatgpt-business-hub-2026",
-    "slug": "openai-businesses-in-chatgpt-business-hub-2026",
-    "title": "OpenAI «Businesses in ChatGPT»ni ishga tushirdi: kompaniyalar endi ChatGPT ichida o‘z brend agenti va do‘koniga ega bo‘ladi",
-    "kicker": "TIJORAT VA AI · OPENAI",
-    "meta_title": "OpenAI Businesses in ChatGPT: Brendlar uchun rasmiy do'kon va agentlar — AiNoma",
-    "meta_description": "OpenAI 800 million faol foydalanuvchiga ega ChatGPT ichida bizneslar uchun rasmiy profil, mahsulot katalogi va interaktiv xarid agentlarini birlashtiruvchi 'Businesses in ChatGPT' platformasini taqdim etdi.",
-    "category": "Biznes",
-    "audience": "Biznes egalari, marketologlar, e-commerce mutaxassislari, riteylerlar",
-    "event_date": "2026-11-10",
-    "source_date": "2026-11-10",
-    "source_published_date": "2026-11-10",
-    "date": "2026-11-11",
-    "publish_date": "2026-11-11",
-    "ainoma_published_date": "2026-11-11",
-    "img": "assets/banner_openai_businesses_in_chatgpt_business_hu.jpg",
-    "imgAlt": "OpenAI Businesses in ChatGPT biznes ekotizimi",
-    "qisqacha": [
-      "OpenAI korxonalar uchun ChatGPT platformasi ichida rasmiy biznes profili, xizmat ko'rsatish agentlari va tovar kataloglarini joylashtirish imkonini beruvchi 'Businesses in ChatGPT' markazini ochdi.",
-      "Har haftada 800 milliondan ortiq inson foydalanadigan ChatGPT endi to'g'ridan-to'g'ri elektron tijorat va mijozlar bilan interaktiv muloqot vitrinasiga aylanmoqda.",
-      "Tizim Stripe va yirik to'lov shlyuzlari bilan integratsiyalangan bo'lib, xaridorlar muloqot oynasidan chiqmasdan buyurtma rasmiylashtirishi va to'lovni amalga oshirishi mumkin."
-    ],
-    "primary_source": {
-      "name": "OpenAI Business News",
-      "title": "Introducing Businesses in ChatGPT: Verified Brand Hubs, Product Catalogs, and Native Checkout",
-      "url": "https://openai.com/index/businesses-in-chatgpt/",
-      "badge": "RASMIY RELIZ"
-    },
-    "secondary_sources": [
-      {
-        "name": "PYMNTS Enterprise",
-        "title": "OpenAI opens ChatGPT marketplace for verified merchant profiles and conversational commerce",
-        "url": "https://pymnts.com/artificial-intelligence-ai/2026/openai-launches-businesses-in-chatgpt-beta/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> OpenAI sun'iy intellekt orqali qidiruv va muloqot bozoridan so'ng endi global elektron tijorat markaziga aylanmoqda. Yangi taqdim etilgan <b>«Businesses in ChatGPT»</b> dasturi orqali kompaniyalar ChatGPT interfeysi ichida rasmiy tasdiqlangan biznes profilini ochish, mahsulotlar katalogini ulash va avtonom savdo agentlarini ishga tushirish imkoniyatiga ega bo'ldi.</p>\n\n<h2 class=\"article-section-title\">800 million auditoriya uchun to'g'ridan-to'g'ri vitrina</h2>\n<p>ChatGPT'ning haftalik faol foydalanuvchilari soni 800 milliondan oshgan bir paytda, foydalanuvchilar har kuni millionlab xarid bo'yicha tavsiyalar, mahsulot taqqoslashlari va xizmat qidiruvlarini amalga oshirmoqda. OpenAI yangi funksiya orqali an'anaviy veb-saytga o'tish zaruriyatini yo'qotib, barcha xarid jarayonini bevosita chat oqimida yakunlash muhitini shakllantirdi.</p>\n\n<h2 class=\"article-section-title\">Xususiy brend agenti va katalog integratsiyasi</h2>\n<p>Bizneslar endi o'z ERP, CRM va ombor tizimlarini ChatGPT bilan xavfsiz API protokollari orqali bog'lashi mumkin. Kompaniyaning maxsus sun'iy intellekt agenti quyidagi vazifalarni avtomatlashtiradi:</p>\n<ul>\n  <li>Mijozning o'lchami, didi va byudjetiga mos tovarlarni real vaqt rejimida tavsiya qilish;</li>\n  <li>Ombordagi qoldiqlarni tekshirish va yetkazib berish muddatlarini hisoblash;</li>\n  <li>To'lovni muloqot oynasining o'zida xavfsiz qabul qilish va chek taqdim etish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Google qidiruvi va an'anaviy e-commerce uchun chaqiruv</h2>\n<p>Ushbu yangilik an'anaviy qidiruv tizimlari (Google Search reklamalari) hamda Amazon, Shopify kabi onlayn platformalar uchun jiddiy raqobat muhitini paydo qilmoqda. Kompaniyalar endi mijozni qidiruv natijalaridan o'z saytiga jalb qilish o'rniga, uning muloqot qilayotgan joyida — sun'iy intellekt agenti orqali to'g'ridan-to'g'ri savdoni yo'lga qo'ymoqda.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> OpenAI sun'iy intellekt orqali qidiruv va muloqot bozoridan so'ng endi global elektron tijorat markaziga aylanmoqda. Yangi taqdim etilgan <b>«Businesses in ChatGPT»</b> dasturi orqali kompaniyalar ChatGPT interfeysi ichida rasmiy tasdiqlangan biznes profilini ochish, mahsulotlar katalogini ulash va avtonom savdo agentlarini ishga tushirish imkoniyatiga ega bo'ldi.</p>\n\n<h2 class=\"article-section-title\">800 million auditoriya uchun to'g'ridan-to'g'ri vitrina</h2>\n<p>ChatGPT'ning haftalik faol foydalanuvchilari soni 800 milliondan oshgan bir paytda, foydalanuvchilar har kuni millionlab xarid bo'yicha tavsiyalar, mahsulot taqqoslashlari va xizmat qidiruvlarini amalga oshirmoqda. OpenAI yangi funksiya orqali an'anaviy veb-saytga o'tish zaruriyatini yo'qotib, barcha xarid jarayonini bevosita chat oqimida yakunlash muhitini shakllantirdi.</p>\n\n<h2 class=\"article-section-title\">Xususiy brend agenti va katalog integratsiyasi</h2>\n<p>Bizneslar endi o'z ERP, CRM va ombor tizimlarini ChatGPT bilan xavfsiz API protokollari orqali bog'lashi mumkin. Kompaniyaning maxsus sun'iy intellekt agenti quyidagi vazifalarni avtomatlashtiradi:</p>\n<ul>\n  <li>Mijozning o'lchami, didi va byudjetiga mos tovarlarni real vaqt rejimida tavsiya qilish;</li>\n  <li>Ombordagi qoldiqlarni tekshirish va yetkazib berish muddatlarini hisoblash;</li>\n  <li>To'lovni muloqot oynasining o'zida xavfsiz qabul qilish va chek taqdim etish.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Google qidiruvi va an'anaviy e-commerce uchun chaqiruv</h2>\n<p>Ushbu yangilik an'anaviy qidiruv tizimlari (Google Search reklamalari) hamda Amazon, Shopify kabi onlayn platformalar uchun jiddiy raqobat muhitini paydo qilmoqda. Kompaniyalar endi mijozni qidiruv natijalaridan o'z saytiga jalb qilish o'rniga, uning muloqot qilayotgan joyida — sun'iy intellekt agenti orqali to'g'ridan-to'g'ri savdoni yo'lga qo'ymoqda.</p>",
-    "verification_status": "VERIFIED",
-    "banner_title": "Businesses in ChatGPT"
-  },
-  "anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026": {
-    "id": "anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026",
-    "slug": "anthropic-claude-sheets-whiteboards-ofis-dasturlari-2026",
-    "title": "Anthropic ofis dasturlari bozoriga kirdi: Claude Sheets va Whiteboards orqali Google va Microsoft’ga raqobatchi taqdim etildi",
-    "kicker": "MAHSULDORLIK · CLAUDE",
-    "meta_title": "Anthropic Claude Sheets va Whiteboards: Yangi avlod ofis maydoni — AiNoma",
-    "meta_description": "Anthropic kompaniyasi korporativ jamoalar uchun 'Claude Sheets' interaktiv hisob-kitob jadvallari va 'Claude Whiteboards' vizual fikrlash doskasini taqdim etdi: vositalar sun'iy intellekt bilan real vaqt rejimida ishlaydi.",
-    "category": "Texnologiya",
-    "audience": "Moliyachilar, tahlilchilar, loyiha menejerlari, rahbarlar, dasturchilar",
-    "event_date": "2026-11-10",
-    "source_date": "2026-11-10",
-    "source_published_date": "2026-11-10",
-    "date": "2026-11-11",
-    "publish_date": "2026-11-11",
-    "ainoma_published_date": "2026-11-11",
-    "img": "assets/banner_anthropic_claude_sheets_whiteboards_ofis.jpg",
-    "imgAlt": "Anthropic Claude Sheets va Claude Whiteboards ofis dasturlari",
-    "qisqacha": [
-      "Anthropic faqat matnli chat doirasidan chiqib, Google Sheets va Miro platformalariga raqobatchi bo'lgan 'Claude Sheets' va 'Claude Whiteboards' mahsulotlarini chiqardi.",
-      "Claude Sheets murakkab formulalar va moliyaviy modellarni avtomatik hisoblab, jadval ichida real vaqtda sun'iy intellekt tahlilini olib boradi.",
-      "Whiteboards esa jamoaviy aqliy hujum, arxitektura diagrammalari va tizim chizmalarini bevosita Claude muloqotidan avtomatik chizib beradi."
-    ],
-    "primary_source": {
-      "name": "Anthropic Product News",
-      "title": "Introducing Claude Sheets and Claude Whiteboards: Next-Generation Collaborative Workspaces",
-      "url": "https://anthropic.com/news/claude-sheets-whiteboards-launch/",
-      "badge": "YANGI MAHSULOT"
-    },
-    "secondary_sources": [
-      {
-        "name": "Silicon Republic",
-        "title": "Anthropic targets Microsoft and Google workplace dominance with Claude Sheets and Whiteboards",
-        "url": "https://siliconrepublic.com/enterprise/anthropic-claude-sheets-whiteboards-workspace-launch/"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Anthropic kompaniyasi generativ sun'iy intellekt modellarini amaliy ish oqimlariga chuqur integratsiya qilish strategiyasining yangi bosqichini boshladi. Taqdim etilgan <b>Claude Sheets</b> va <b>Claude Whiteboards</b> bevosita Google Workspace hamda Microsoft 365 ekotizimlarining eng ommabop vositalari bilan raqobatga kirishmoqda.</p>\n\n<h2 class=\"article-section-title\">Claude Sheets: Faol ma'lumotlar bilan hisob-kitob</h2>\n<p>An'anaviy elektron jadvallarda foydalanuvchilar murakkab formulalar (VLOOKUP, INDEX MATCH) yozishi yoki skriptlar tuzishi talab etiladi. Claude Sheets esa har bir katakchani sun'iy intellekt qobiliyati bilan jihozlaydi. Foydalanuvchi oddiy so'zlar bilan moliyaviy hisobotni tahlil qilish, daromadlar kaskadini hisoblash yoki bozor ko'rsatkichlarini taqqoslashni buyurishi mumkin — tizim formulalarni avtomatik qo'llab, to'liq diagrammalarni shakllantiradi.</p>\n\n<h2 class=\"article-section-title\">Claude Whiteboards: Murakkab tizimlarni vizual tushunish</h2>\n<p>Dasturiy arxitektura, biznes jarayonlar va mahsulot rejalari bilan ishlovchi jamoalar uchun Whiteboards interaktiv maydon taqdim etadi. Matnli talablar yoki mijoz bilan suhbat stenogrammasi Claude Whiteboards'ga yuklanganda, tizim bir zumda blok-sxemalar, foydalanuvchi yo'llari (user journeys) va tizimli modullarni vizual doskada tartiblab beradi.</p>\n\n<h2 class=\"article-section-title\">Korporativ bozor uchun yangi standart</h2>\n<p>Mazkur qadam Anthropic kompaniyasining dasturchilar va tadqiqotchilar doirasidan chiqib, millionlab ofis xodimlari va tahlilchilarning kundalik asosiy ish maydoniga aylanish maqsadini ko'rsatadi. Korxona xavfsizligi va maxfiylik standartlari to'liq saqlangan holda jamoaviy hamkorlik funksiyalari taqdim etilmoqda.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Anthropic kompaniyasi generativ sun'iy intellekt modellarini amaliy ish oqimlariga chuqur integratsiya qilish strategiyasining yangi bosqichini boshladi. Taqdim etilgan <b>Claude Sheets</b> va <b>Claude Whiteboards</b> bevosita Google Workspace hamda Microsoft 365 ekotizimlarining eng ommabop vositalari bilan raqobatga kirishmoqda.</p>\n\n<h2 class=\"article-section-title\">Claude Sheets: Faol ma'lumotlar bilan hisob-kitob</h2>\n<p>An'anaviy elektron jadvallarda foydalanuvchilar murakkab formulalar (VLOOKUP, INDEX MATCH) yozishi yoki skriptlar tuzishi talab etiladi. Claude Sheets esa har bir katakchani sun'iy intellekt qobiliyati bilan jihozlaydi. Foydalanuvchi oddiy so'zlar bilan moliyaviy hisobotni tahlil qilish, daromadlar kaskadini hisoblash yoki bozor ko'rsatkichlarini taqqoslashni buyurishi mumkin — tizim formulalarni avtomatik qo'llab, to'liq diagrammalarni shakllantiradi.</p>\n\n<h2 class=\"article-section-title\">Claude Whiteboards: Murakkab tizimlarni vizual tushunish</h2>\n<p>Dasturiy arxitektura, biznes jarayonlar va mahsulot rejalari bilan ishlovchi jamoalar uchun Whiteboards interaktiv maydon taqdim etadi. Matnli talablar yoki mijoz bilan suhbat stenogrammasi Claude Whiteboards'ga yuklanganda, tizim bir zumda blok-sxemalar, foydalanuvchi yo'llari (user journeys) va tizimli modullarni vizual doskada tartiblab beradi.</p>\n\n<h2 class=\"article-section-title\">Korporativ bozor uchun yangi standart</h2>\n<p>Mazkur qadam Anthropic kompaniyasining dasturchilar va tadqiqotchilar doirasidan chiqib, millionlab ofis xodimlari va tahlilchilarning kundalik asosiy ish maydoniga aylanish maqsadini ko'rsatadi. Korxona xavfsizligi va maxfiylik standartlari to'liq saqlangan holda jamoaviy hamkorlik funksiyalari taqdim etilmoqda.</p>",
-    "verification_status": "VERIFIED",
-    "banner_title": "Claude Sheets & Whiteboards"
-  },
-  "claude-va-google-ai-studio-bilan-video-qurish-qollanma": {
-    "id": "claude-va-google-ai-studio-bilan-video-qurish-qollanma",
-    "slug": "claude-va-google-ai-studio-bilan-video-qurish-qollanma",
-    "title": "Claude va Google AI Studio bilan video qurish: g'oyadan tayyor rolikgacha to'liq qo'llanma",
-    "kicker": "AMALIY QO'LLANMA · VIDEO VA AI",
-    "meta_title": "Claude va Google AI Studio bilan video qurish qo'llanmasi — AiNoma",
-    "meta_description": "Ssenariydan tortib kinematik kadrlargacha: Claude orqali shot-by-shot prompt arxitekturasini tuzish va Google AI Studio multimodal tahlili bilan professional video qurish bo'yicha amaliy qo'llanma.",
-    "category": "Qo'llanmalar",
-    "audience": "Kontent-meykerlar, marketologlar, video muharrirlar, SMM mutaxassislari, startap asoschilari",
-    "event_date": "2026-11-11",
-    "source_date": "2026-11-11",
-    "source_published_date": "2026-11-11",
-    "date": "2026-11-11",
-    "publish_date": "2026-11-11",
-    "ainoma_published_date": "2026-11-11",
-    "img": "assets/banner_claude_va_google_ai_studio_bilan_video_q.jpg",
-    "imgAlt": "Claude va Google AI Studio yordamida video qurish qo'llanmasi",
-    "qisqacha": [
-      "Video qurishda eng katta to'siq tasodifiy promptlar emas, balki kadrlar o'rtasidagi uzluksiz mantiq va uslubiy izchillik (consistency) hisoblanadi.",
-      "Claude orqali professional ssenariy, vaqt belgilari (timestamps), kamera harakatlari va video generatorlar uchun mo'ljallangan aniq kinematik promptlar arxitekturasini ishlab chiqasiz.",
-      "Google AI Studio (Gemini) esa 2 million tokenlik multimodal tahlili orqali tayyorlangan kadrlar dinamikasini tekshirish, ritm xatolarini aniqlash va Google Veo uchun render parametrlarini optimallashtirishda xizmat qiladi."
-    ],
-    "primary_source": {
-      "name": "AiNoma Amaliy Laboratoriyasi",
-      "title": "Sun'iy intellekt yordamida professional video ishlab chiqarish va multimodal tahlil metodologiyasi",
-      "url": "https://ainoma.uz/yangiliklar/claude-va-google-ai-studio-bilan-video-qurish-qollanma/",
-      "badge": "AMALIY QO'LLANMA"
-    },
-    "secondary_sources": [
-      {
-        "name": "Google AI Studio & DeepMind Docs",
-        "title": "Multimodal Video Understanding and Prompt Directing with Gemini 2.0 and Veo",
-        "url": "https://ai.google.dev/gemini-api/docs/vision"
-      }
-    ],
-    "body": "<p><b>Qisqa javob:</b> Ko'pchilik foydalanuvchilar sun'iy intellektda video ishlab chiqarishda bir xil xatoga yo'l qo'yadi: bitta umumiy prompt yozib, video generatoridan mo'jiza kutadi. Professional natijaga erishish uchun esa ikki bosqichli tizimli arxitektura zarur: <b>Claude</b> — mantiqiy ssenariy, kadrlar vaqti va rejissyorlik rejasi uchun javob beradi; <b>Google AI Studio (Gemini)</b> esa multimodal tahlil, vizual izchillik va Google Veo modeliga kiritiladigan optik ko'rsatkichlarni boshqaradi.</p>\n\n<h2 class=\"article-section-title\">1-bosqich: Claude bilan rejissyorlik rejasi va promptlar arxitekturasi</h2>\n<p>Rolik qurishni boshlashdan oldin Claude'ga aniq kontekst bering. Sun'iy intellekt video generatorlari (Google Veo, Runway, Kling, Sora) uchun har bir kadr alohida va batafsil yozilishi shart. Claude'ga quyidagi tizimli promptni yuboring:</p>\n\n<pre class=\"article-code-block\"><code>Siz xalqaro darajadagi kino rejissyori va video direktorsiz.\nMavzu: [Mavzuni yozing, masalan: Toshkentdagi yangi IT-park faoliyati]\nFormat: 30 soniyalik vertikal rolik (9:16)\nAuditoriya: Yosh mutaxassislar va xorijiy investorlar\n\nMenga 5 ta ketma-ket kadr (Shot-by-Shot) uchun quyidagi jadvalni taqdim eting:\n1. Kadr raqami va vaqti (masalan, Shot 1: 00:00 - 00:04);\n2. Vizual tavsif (qahramon harakati, muhit);\n3. Kamera optikasi va harakati (masalan: 35mm lens, dolly-in, shallow depth of field);\n4. Rang va yorug'lik harorati (masalan: cinematic golden hour, volumetric haze);\n5. AI Video generatori (Google Veo / Kling) uchun sof ingliz tilidagi yakuniy prompt.</code></pre>\n\n<p>Natijada Claude sizga tasodifiy gaplar emas, balki montajchining ishchi rejasiga o'xshash professional arxitekturani ishlab beradi.</p>\n\n<h2 class=\"article-section-title\">2-bosqich: Google AI Studio'da multimodal tahlil va izchillik nazorati</h2>\n<p>Kadrlar bo'yicha promptlar tayyor bo'lgach, ikkinchi muhim qadam — Google AI Studio (aistudio.google.com) platformasiga o'tishdir. Google AI Studio quyidagi vazifalarda tengsiz imkoniyat taqdim etadi:</p>\n<ul>\n  <li><b>Qahramon va rang izchilligi (Visual Consistency):</b> Agar sizda bosh qahramonning surati yoki brend ranglar palitrasi bo'lsa, uni Google AI Studio'ga yuklang va Gemini 2.0 Flash / Pro modeliga tahlil qildiring: <i>«Ushbu personaj kiyimi, yuz tuzilishi va atrof-muhit ranglarini keyingi barcha video promptlarida o'zgarmas saqlash uchun qaysi asosiy deskriptorlarni kiritish lozim?»</i></li>\n  <li><b>Video kadrlarni tekshirish:</b> Generatsiya qilingan dastlabki 3-5 soniyalik sinov parchalarini Google AI Studio'ga yuklab, harakat ritmi, kadrlar chalkashligi va fizik buzilishlarni aniqlashingiz mumkin.</li>\n</ul>\n\n<h2 class=\"article-section-title\">3-bosqich: Kadrlar bo'yicha generatsiya va Veo prompt qoidalari</h2>\n<p>Google Veo yoki yetakchi video generatorlariga prompt berishda quyidagi 4 elementli oltin qoidaga rioya qiling:</p>\n<ol>\n  <li><b>Subyekt va asosiy harakat:</b> Kadr markazida kim yoki nima bor va u aniq nima qilyapti (masalan, <i>«A software engineer walking through a futuristic glass-walled office»</i>);</li>\n  <li><b>Kamera va kompozitsiya:</b> Kamera qayerda va qanday harakatlanadi (masalan, <i>«Low-angle slow tracking shot, 50mm anamorphic lens, subtle motion blur»</i>);</li>\n  <li><b>Yorug'lik va atmosfera:</b> Ranglar va nur yo'nalishi (masalan, <i>«Soft morning cinematic sunlight streaming through floor-to-ceiling windows, dust motes floating»</i>);</li>\n  <li><b>Texnik sifat parametrlari:</b> <i>«Photorealistic, 8k resolution, cinematic color grading, hyper-detailed textures, 24fps»</i>.</li>\n</ol>\n\n<h2 class=\"article-section-title\">4-bosqich: Montaj, ovoz va subtitrlarni birlashtirish</h2>\n<p>Barcha 5 ta kadr tayyor bo'lgach, ularni CapCut, Premiere Pro yoki DaVinci Resolve dasturiga joylang:</p>\n<ul>\n  <li><b>Kadrlar o'tishi:</b> Har bir kadr davomiyligini ssenariydagi vaqt bilan moslang. AI videolarda eng yaxshi o'tish — bu oddiy kesish (hard cut) yoki sekin xiralashish (cross dissolve). Ortiqcha murakkab 3D o'tishlardan saqlaning;</li>\n  <li><b>Ovozlashtirish:</b> Claude orqali ssenariy diktor matnini (voiceover) ElevenLabs kabi neyron ovoz platformasida o'zbek yoki ingliz tilida professional yozib oling;</li>\n  <li><b>Dinamik subtitrlar:</b> Mobil auditoriya uchun subtitrlar judayam muhim. Kadr markazini to'smaydigan, qisqa va qulay shriftlardan foydalaning.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Xulosa: Tizimli yondashuv — kafolatlangan sifat</h2>\n<p>Professional darajadagi video tayyorlashda sun'iy intellekt sehrli tugma emas, balki puxta boshqariladigan ijodiy guruhdir. Claude — ssenariy muallifi va bosh rejissyor vazifasini bajarsa, Google AI Studio — texnik tahlilchi va sifat nazoratchisi vazifasini o'taydi. Ushbu tizimli zanjir orqali siz minimal vaqt sarflab, yuqori sifatli vizual loyihalarni muvaffaqiyatli qurishingiz mumkin.</p>",
-    "contentHtml": "<p><b>Qisqa javob:</b> Ko'pchilik foydalanuvchilar sun'iy intellektda video ishlab chiqarishda bir xil xatoga yo'l qo'yadi: bitta umumiy prompt yozib, video generatoridan mo'jiza kutadi. Professional natijaga erishish uchun esa ikki bosqichli tizimli arxitektura zarur: <b>Claude</b> — mantiqiy ssenariy, kadrlar vaqti va rejissyorlik rejasi uchun javob beradi; <b>Google AI Studio (Gemini)</b> esa multimodal tahlil, vizual izchillik va Google Veo modeliga kiritiladigan optik ko'rsatkichlarni boshqaradi.</p>\n\n<h2 class=\"article-section-title\">1-bosqich: Claude bilan rejissyorlik rejasi va promptlar arxitekturasi</h2>\n<p>Rolik qurishni boshlashdan oldin Claude'ga aniq kontekst bering. Sun'iy intellekt video generatorlari (Google Veo, Runway, Kling, Sora) uchun har bir kadr alohida va batafsil yozilishi shart. Claude'ga quyidagi tizimli promptni yuboring:</p>\n\n<pre class=\"article-code-block\"><code>Siz xalqaro darajadagi kino rejissyori va video direktorsiz.\nMavzu: [Mavzuni yozing, masalan: Toshkentdagi yangi IT-park faoliyati]\nFormat: 30 soniyalik vertikal rolik (9:16)\nAuditoriya: Yosh mutaxassislar va xorijiy investorlar\n\nMenga 5 ta ketma-ket kadr (Shot-by-Shot) uchun quyidagi jadvalni taqdim eting:\n1. Kadr raqami va vaqti (masalan, Shot 1: 00:00 - 00:04);\n2. Vizual tavsif (qahramon harakati, muhit);\n3. Kamera optikasi va harakati (masalan: 35mm lens, dolly-in, shallow depth of field);\n4. Rang va yorug'lik harorati (masalan: cinematic golden hour, volumetric haze);\n5. AI Video generatori (Google Veo / Kling) uchun sof ingliz tilidagi yakuniy prompt.</code></pre>\n\n<p>Natijada Claude sizga tasodifiy gaplar emas, balki montajchining ishchi rejasiga o'xshash professional arxitekturani ishlab beradi.</p>\n\n<h2 class=\"article-section-title\">2-bosqich: Google AI Studio'da multimodal tahlil va izchillik nazorati</h2>\n<p>Kadrlar bo'yicha promptlar tayyor bo'lgach, ikkinchi muhim qadam — Google AI Studio (aistudio.google.com) platformasiga o'tishdir. Google AI Studio quyidagi vazifalarda tengsiz imkoniyat taqdim etadi:</p>\n<ul>\n  <li><b>Qahramon va rang izchilligi (Visual Consistency):</b> Agar sizda bosh qahramonning surati yoki brend ranglar palitrasi bo'lsa, uni Google AI Studio'ga yuklang va Gemini 2.0 Flash / Pro modeliga tahlil qildiring: <i>«Ushbu personaj kiyimi, yuz tuzilishi va atrof-muhit ranglarini keyingi barcha video promptlarida o'zgarmas saqlash uchun qaysi asosiy deskriptorlarni kiritish lozim?»</i></li>\n  <li><b>Video kadrlarni tekshirish:</b> Generatsiya qilingan dastlabki 3-5 soniyalik sinov parchalarini Google AI Studio'ga yuklab, harakat ritmi, kadrlar chalkashligi va fizik buzilishlarni aniqlashingiz mumkin.</li>\n</ul>\n\n<h2 class=\"article-section-title\">3-bosqich: Kadrlar bo'yicha generatsiya va Veo prompt qoidalari</h2>\n<p>Google Veo yoki yetakchi video generatorlariga prompt berishda quyidagi 4 elementli oltin qoidaga rioya qiling:</p>\n<ol>\n  <li><b>Subyekt va asosiy harakat:</b> Kadr markazida kim yoki nima bor va u aniq nima qilyapti (masalan, <i>«A software engineer walking through a futuristic glass-walled office»</i>);</li>\n  <li><b>Kamera va kompozitsiya:</b> Kamera qayerda va qanday harakatlanadi (masalan, <i>«Low-angle slow tracking shot, 50mm anamorphic lens, subtle motion blur»</i>);</li>\n  <li><b>Yorug'lik va atmosfera:</b> Ranglar va nur yo'nalishi (masalan, <i>«Soft morning cinematic sunlight streaming through floor-to-ceiling windows, dust motes floating»</i>);</li>\n  <li><b>Texnik sifat parametrlari:</b> <i>«Photorealistic, 8k resolution, cinematic color grading, hyper-detailed textures, 24fps»</i>.</li>\n</ol>\n\n<h2 class=\"article-section-title\">4-bosqich: Montaj, ovoz va subtitrlarni birlashtirish</h2>\n<p>Barcha 5 ta kadr tayyor bo'lgach, ularni CapCut, Premiere Pro yoki DaVinci Resolve dasturiga joylang:</p>\n<ul>\n  <li><b>Kadrlar o'tishi:</b> Har bir kadr davomiyligini ssenariydagi vaqt bilan moslang. AI videolarda eng yaxshi o'tish — bu oddiy kesish (hard cut) yoki sekin xiralashish (cross dissolve). Ortiqcha murakkab 3D o'tishlardan saqlaning;</li>\n  <li><b>Ovozlashtirish:</b> Claude orqali ssenariy diktor matnini (voiceover) ElevenLabs kabi neyron ovoz platformasida o'zbek yoki ingliz tilida professional yozib oling;</li>\n  <li><b>Dinamik subtitrlar:</b> Mobil auditoriya uchun subtitrlar judayam muhim. Kadr markazini to'smaydigan, qisqa va qulay shriftlardan foydalaning.</li>\n</ul>\n\n<h2 class=\"article-section-title\">Xulosa: Tizimli yondashuv — kafolatlangan sifat</h2>\n<p>Professional darajadagi video tayyorlashda sun'iy intellekt sehrli tugma emas, balki puxta boshqariladigan ijodiy guruhdir. Claude — ssenariy muallifi va bosh rejissyor vazifasini bajarsa, Google AI Studio — texnik tahlilchi va sifat nazoratchisi vazifasini o'taydi. Ushbu tizimli zanjir orqali siz minimal vaqt sarflab, yuqori sifatli vizual loyihalarni muvaffaqiyatli qurishingiz mumkin.</p>",
-    "verification_status": "VERIFIED",
-    "banner_title": "Multimodal Video Directing"
   }
 };

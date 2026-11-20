@@ -334,7 +334,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "O'zbekistonlik talabalar Gemini obunasini bepul oladi", u: "yangiliklar/ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026/", k: "o'zbekistonlik talabalar gemini obunasini bepul oladi texnologiya gazeta.uz it o'zbekistondagi talabalar uchun gemini ai plus xizmatidan bir yil davomida bepul foydalanish imkoniy" },
+  { t: "OpenAI ChatGPT tezligini saqlab qolish siri", u: "yangiliklar/openai-performance-factory-chatgpt-tezligini-saqlaydi-2026/", k: "openai chatgpt tezligini saqlab qolish siri texnologiya openai news openai muhandislari tomonidan ishlab chiqilgan performance factory tizimi chatgpt tezligini ta'minla" },
   { t: "Meta 60% algoritm kodlarini AI agentlarga topshirdi", u: "yangiliklar/meta-60-foiz-algoritm-kodlarini-avtonom-ai-agentlarga-topshirdi-2026/", k: "meta 60% algoritm kodlarini ai agentlarga topshirdi texnologiya meta engineering meta reklama va tavsiya tizimlaridagi yangi kodlarning aksariyatini inson emas, sun’iy intellekt age" },
   { t: "Tramp APECda AI cheklovlariga qarshi chiqdi", u: "yangiliklar/tramp-apec-sammitida-super-intelligence-cheklovlariga-qarshi-chiqdi-2026/", k: "tramp apecda ai cheklovlariga qarshi chiqdi siyosat reuters world aqsh prezidenti apec sammitida sun’iy intellekt rivojlanishini to‘xtatib qo‘yuvchi qat’iy qonunlarga" },
   { t: "Allianz: Korxonalarda AI hodisalari 150 foizga oshdi", u: "yangiliklar/allianz-hisoboti-korxonalarda-ai-hodisalari-150-foizga-oshdi-2026/", k: "allianz: korxonalarda ai hodisalari 150 foizga oshdi biznes allianz commercial allianz hisoboti korporativ avtonom ai tizimlaridagi xatoliklar yuz millionlab dollarlik da’volarga " },
