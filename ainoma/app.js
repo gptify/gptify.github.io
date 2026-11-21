@@ -336,7 +336,11 @@ const searchIndex = [
 
 
 
+
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "Bitcoin bir oyda qariyb o'ttiz foizga arzonlashdi", u: "yangiliklar/bitcoin-bir-oyda-29-foizga-arzonlashdi-2026/", k: "bitcoin bir oyda qariyb o'ttiz foizga arzonlashdi biznes daryo.uz texnologiya kriptobozordagi keskin pasayish investorlarning mablag'larni boshqa aktivlarga yo'naltirayotgani bil" },
+  { t: "OpenAI sun'iy intellekt modellarini ruxsatsiz nusxalashdan himoyalaydi", u: "yangiliklar/openai-adversarial-distillation-himoya-choralari-2026/", k: "openai sun'iy intellekt modellarini ruxsatsiz nusxalashdan himoyalaydi texnologiya openai news openai sun'iy intellekt modellarining imkoniyatlarini ruxsatsiz ko'chirish va tortib olish holatlari" },
   { t: "O'zbekistonlik talabalar Gemini obunasini bepul oladi", u: "yangiliklar/ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026/", k: "o'zbekistonlik talabalar gemini obunasini bepul oladi texnologiya gazeta.uz it o'zbekistondagi talabalar uchun gemini ai plus xizmatidan bir yil davomida bepul foydalanish imkoniy" },
   { t: "Anthropic IPO orqali ulkan mablag' jalb qildi", u: "yangiliklar/anthropic-ipo-orqali-milliardlab-dollarlarni-jalb-qildi-2026/", k: "anthropic ipo orqali ulkan mablag' jalb qildi biznes spot.uz it & biznes claude ishlab chiqaruvchisi bo'lgan anthropic kompaniyasining nasdaq'dagi ilk savdolari global sun'i" },
   { t: "OpenAI ChatGPT tezligini saqlab qolish siri", u: "yangiliklar/openai-performance-factory-chatgpt-tezligini-saqlaydi-2026/", k: "openai chatgpt tezligini saqlab qolish siri texnologiya openai news openai muhandislari tomonidan ishlab chiqilgan performance factory tizimi chatgpt tezligini ta'minla" },
