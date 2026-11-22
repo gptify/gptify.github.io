@@ -340,7 +340,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "O'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi", u: "yangiliklar/ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026/", k: "o'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi texnologiya aniq.uz / raqamli texnologiyalar vazirligi raqamli texnologiyalar vazirligi tomonidan o'zbek tilidagi yirik ochiq ma'lumotlar korpusi ishlab ch" },
+  { t: "Signal ilovasi sun'iy intellekt agentlarini blokladi", u: "yangiliklar/signal-suniy-intellekt-agentlaridan-himoyalanishni-boshladi-2026/", k: "signal ilovasi sun'iy intellekt agentlarini blokladi texnologiya the verge ai signal ilovasi foydalanuvchilar maxfiyligini ta'minlash maqsadida ekran skrinshotlarini cheklab, sun" },
   { t: "OpenAI sun'iy intellekt modellarini ruxsatsiz nusxalashdan himoyalaydi", u: "yangiliklar/openai-adversarial-distillation-himoya-choralari-2026/", k: "openai sun'iy intellekt modellarini ruxsatsiz nusxalashdan himoyalaydi texnologiya openai news openai sun'iy intellekt modellarining imkoniyatlarini ruxsatsiz ko'chirish va tortib olish holatlari" },
   { t: "Apple kompaniyasi o'z sun'iy intellekt agentini ishga tushirmoqda", u: "yangiliklar/apple-suniy-intellekt-agentini-ishlab-chiqishni-boshladi-2026/", k: "apple kompaniyasi o'z sun'iy intellekt agentini ishga tushirmoqda texnologiya the verge ai apple kompaniyasi foydalanuvchilar uchun turli vazifalarni bajarishga qodir bo'lgan o'zining sun'iy " },
   { t: "O'zbekistonlik talabalar Gemini obunasini bepul oladi", u: "yangiliklar/ozbekistonda-talabalar-uchun-gemini-ai-plus-bepul-2026/", k: "o'zbekistonlik talabalar gemini obunasini bepul oladi texnologiya gazeta.uz it o'zbekistondagi talabalar uchun gemini ai plus xizmatidan bir yil davomida bepul foydalanish imkoniy" },

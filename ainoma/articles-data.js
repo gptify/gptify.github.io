@@ -1,6 +1,92 @@
 // AiNoma Central Content Database
 // Managed atomically by src.ainoma_autopilot.store
 window.AINOMA_ARTICLES = {
+  "ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026": {
+    "id": "ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026",
+    "slug": "ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026",
+    "title": "O'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "O'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi — AiNoma",
+    "meta_description": "Raqamli texnologiyalar vazirligi tomonidan o'zbek tilidagi yirik ochiq ma'lumotlar korpusi ishlab chiqilib, sun'iy intellekt modellarini o'qitish uchun Hugging Face platformasiga joylashtirildi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-22",
+    "source_date": "2026-11-22",
+    "source_published_date": "2026-11-22",
+    "date": "2026-11-22",
+    "publish_date": "2026-11-22",
+    "ainoma_published_date": "2026-11-22",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Raqamli texnologiyalar vazirligi tomonidan o'zbek tilidagi yirik ochiq ma'lumotlar korpusi ishlab chiqilib, sun'iy intellekt modellarini o'qitish uchun Hugging Face platformasiga joylashtirildi.",
+    "img": "assets/editorial_ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026.jpg",
+    "imgAlt": "O'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi",
+    "qisqacha": [
+      "Ma'lumotlar korpusi 5,6 millionta hujjat va qariyb 6 milliard so'zni qamrab oladi.",
+      "Baza lotin va kirill alifbolaridagi kitoblar, arxivlar, gazetalar hamda qonunchilik hujjatlarini o'z ichiga oladi.",
+      "Asosiy maqsad yirik til modellarining o'zbek tilini chuqur tushunishini ta'minlashdan iborat."
+    ],
+    "primary_source": {
+      "name": "Aniq.uz / Raqamli texnologiyalar vazirligi",
+      "title": "O'zbek tilidagi 6 milliard so'zli sun'iy intellekt korpusi taqdim etildi",
+      "url": "https://aniq.uz/uz/yangiliklar/uzbek-tilidagi-6-mlrd-suzli-ochiq-korpus-elon-qilindi",
+      "date": "2026-11-22",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-22",
+    "body": "<h2>Nima bo‘ldi?</h2><p>Raqamli texnologiyalar vazirligi o'zbek tilidagi yirik ochiq ma'lumotlar korpusini muvaffaqiyatli ishlab chiqib, xalqaro Hugging Face platformasiga joylashtirdi. Mazkur tashabbus mamlakatimizda sun'iy intellekt texnologiyalarini rivojlantirish yo'lidagi muhim qadamlardan biri hisoblanadi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Taqdim etilgan bazada 5,6 millionta hujjat va qariyb 6 milliard so'z jamlangan bo'lib, ular lotin hamda kirill alifbolarini qamrab oladi. Korpus tarkibidan kitoblar, arxiv materiallari, davriy nashrlar, qonunchilik hujjatlari, Vikipediya maqolalari va ochiq Telegram postlari joy olgan. Ushbu ma'lumotlar to'plami yirik til modellari, jumladan Qwen kabi modellarning o'zbek tilini chuqur tushunishi hamda sifatli matnlar ishlab chiqishida muhim manba bo'lib xizmat qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz o'z biznes jarayonlaringizda sun'iy intellekt va til modellarini tatbiq etishni rejalashtirayotgan bo'lsangiz, ushbu ochiq korpus mahalliylashtirilgan yechimlarni tezroq va sifatliroq yo'lga qo'yish imkonini beradi. Dasturchilar va muhandislar endilikda o'zbek tilidagi aniq ma'lumotlarga tayanib, yanada mukammal raqamli mahsulotlarni ishga tushirishlari mumkin.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>Raqamli texnologiyalar vazirligi o'zbek tilidagi yirik ochiq ma'lumotlar korpusini muvaffaqiyatli ishlab chiqib, xalqaro Hugging Face platformasiga joylashtirdi. Mazkur tashabbus mamlakatimizda sun'iy intellekt texnologiyalarini rivojlantirish yo'lidagi muhim qadamlardan biri hisoblanadi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Taqdim etilgan bazada 5,6 millionta hujjat va qariyb 6 milliard so'z jamlangan bo'lib, ular lotin hamda kirill alifbolarini qamrab oladi. Korpus tarkibidan kitoblar, arxiv materiallari, davriy nashrlar, qonunchilik hujjatlari, Vikipediya maqolalari va ochiq Telegram postlari joy olgan. Ushbu ma'lumotlar to'plami yirik til modellari, jumladan Qwen kabi modellarning o'zbek tilini chuqur tushunishi hamda sifatli matnlar ishlab chiqishida muhim manba bo'lib xizmat qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz o'z biznes jarayonlaringizda sun'iy intellekt va til modellarini tatbiq etishni rejalashtirayotgan bo'lsangiz, ushbu ochiq korpus mahalliylashtirilgan yechimlarni tezroq va sifatliroq yo'lga qo'yish imkonini beradi. Dasturchilar va muhandislar endilikda o'zbek tilidagi aniq ma'lumotlarga tayanib, yanada mukammal raqamli mahsulotlarni ishga tushirishlari mumkin.</p>"
+  },
+  "signal-suniy-intellekt-agentlaridan-himoyalanishni-boshladi-2026": {
+    "id": "signal-suniy-intellekt-agentlaridan-himoyalanishni-boshladi-2026",
+    "slug": "signal-suniy-intellekt-agentlaridan-himoyalanishni-boshladi-2026",
+    "title": "Signal ilovasi sun'iy intellekt agentlarini blokladi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "Signal ilovasi sun'iy intellekt agentlarini blokladi — AiNoma",
+    "meta_description": "Signal ilovasi foydalanuvchilar maxfiyligini ta'minlash maqsadida ekran skrinshotlarini cheklab, sun'iy intellekt agentlarining ekrandagi ma'lumotlarni o'qishini to'xtatdi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-21",
+    "source_date": "2026-11-21",
+    "source_published_date": "2026-11-21",
+    "date": "2026-11-22",
+    "publish_date": "2026-11-22",
+    "ainoma_published_date": "2026-11-22",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Signal ilovasi foydalanuvchilar maxfiyligini ta'minlash maqsadida ekran skrinshotlarini cheklab, sun'iy intellekt agentlarining ekrandagi ma'lumotlarni o'qishini to'xtatdi.",
+    "img": "assets/editorial_signal-suniy-intellekt-agentlaridan-himoyalanishni-boshladi-.jpg",
+    "imgAlt": "Signal ilovasi sun'iy intellekt agentlarini blokladi",
+    "qisqacha": [
+      "Signal ilovasi Apple Intelligence va Google Gemini kabi sun'iy intellekt agentlariga qarshi choralar ko'rdi.",
+      "Mobil qurilmalarda skrinshot olish va avtomatlashtirilgan ekran tahlil qilish jarayonlari cheklandi.",
+      "Mazkur yangilanish foydalanuvchilarning shaxsiy ma'lumotlarini himoya qilish darajasini oshiradi."
+    ],
+    "primary_source": {
+      "name": "The Verge AI",
+      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "date": "2026-11-21",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-22",
+    "body": "<h2>Nima bo‘ldi?</h2><p>Signal messenjeri foydalanuvchilarning maxfiyligini mustahkamlash maqsadida muhim xavfsizlik choralarini ishga tushirdi. Unga ko'ra, Apple Intelligence va Google Gemini kabi avtonom sun'iy intellekt agentlari hamda yordamchilarining foydalanuvchi ekranidagi ma'lumotlarni o'qish urinishlari bloklanmoqda. Shuningdek, mobil ilovada skrinshot olish imkoniyatlari cheklab qo'yildi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Hozirgi kunda sun'iy intellekt tizimlari ekraningizdagi har qanday ma'lumotni tahlil qilish imkoniyatiga ega bo'lmoqda. Bu esa maxfiy yozishmalar va shaxsiy ma'lumotlarning xavfsizligiga jiddiy tahdid tug'diradi. Signal tomonidan qo'llanilgan ushbu cheklovlar raqamli maxfiylik standartlarini yangi bosqichga ko'tarib, xavfsizlikka yo'naltirilgan dasturiy ta'minotlar uchun muhim namuna bo'lib xizmat qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz o'z biznesingiz yoki kundalik muloqotlaringizda xavfsizlik masalalariga jiddiy yondashsangiz, xususiy ma'lumotlarni himoya qiluvchi bunday texnologik o'zgarishlarni kuzatib borishingiz zarur. Agar sun'iy intellekt vositalari barcha ilovalar ekranini nazorat qila boshlasa, korporativ sirlar va shaxsiy maxfiylikni saqlash qiyinlashadi. Shuning uchun xavfsizlikka ixtisoslashgan vositalar bilan ishlashni yo'lga qo'yishni tavsiya etamiz.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>Signal messenjeri foydalanuvchilarning maxfiyligini mustahkamlash maqsadida muhim xavfsizlik choralarini ishga tushirdi. Unga ko'ra, Apple Intelligence va Google Gemini kabi avtonom sun'iy intellekt agentlari hamda yordamchilarining foydalanuvchi ekranidagi ma'lumotlarni o'qish urinishlari bloklanmoqda. Shuningdek, mobil ilovada skrinshot olish imkoniyatlari cheklab qo'yildi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Hozirgi kunda sun'iy intellekt tizimlari ekraningizdagi har qanday ma'lumotni tahlil qilish imkoniyatiga ega bo'lmoqda. Bu esa maxfiy yozishmalar va shaxsiy ma'lumotlarning xavfsizligiga jiddiy tahdid tug'diradi. Signal tomonidan qo'llanilgan ushbu cheklovlar raqamli maxfiylik standartlarini yangi bosqichga ko'tarib, xavfsizlikka yo'naltirilgan dasturiy ta'minotlar uchun muhim namuna bo'lib xizmat qiladi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz o'z biznesingiz yoki kundalik muloqotlaringizda xavfsizlik masalalariga jiddiy yondashsangiz, xususiy ma'lumotlarni himoya qiluvchi bunday texnologik o'zgarishlarni kuzatib borishingiz zarur. Agar sun'iy intellekt vositalari barcha ilovalar ekranini nazorat qila boshlasa, korporativ sirlar va shaxsiy maxfiylikni saqlash qiyinlashadi. Shuning uchun xavfsizlikka ixtisoslashgan vositalar bilan ishlashni yo'lga qo'yishni tavsiya etamiz.</p>"
+  },
   "openai-adversarial-distillation-himoya-choralari-2026": {
     "id": "openai-adversarial-distillation-himoya-choralari-2026",
     "slug": "openai-adversarial-distillation-himoya-choralari-2026",
