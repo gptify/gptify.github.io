@@ -341,7 +341,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "OpenAI sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi", u: "yangiliklar/openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026/", k: "openai sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi texnologiya openai news openai yetakchi sun'iy intellekt dasturchilari uchun perpleksiyani universal o'lchov mezoni sifatida" },
+  { t: "Sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi", u: "yangiliklar/vibe-coding-inqilobi-qurilmalar-va-gadjetlarga-kirib-kelmoqda-2026/", k: "sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi texnologiya the verge ai sun'iy intellekt vositalari yordamida tabiiy tilda dasturlash endilikda faqat kompyuterlar bilan che" },
   { t: "O'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi", u: "yangiliklar/ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026/", k: "o'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi texnologiya aniq.uz / raqamli texnologiyalar vazirligi raqamli texnologiyalar vazirligi tomonidan o'zbek tilidagi yirik ochiq ma'lumotlar korpusi ishlab ch" },
   { t: "Signal ilovasi sun'iy intellekt agentlarini blokladi", u: "yangiliklar/signal-suniy-intellekt-agentlaridan-himoyalanishni-boshladi-2026/", k: "signal ilovasi sun'iy intellekt agentlarini blokladi texnologiya the verge ai signal ilovasi foydalanuvchilar maxfiyligini ta'minlash maqsadida ekran skrinshotlarini cheklab, sun" },
   { t: "OpenAI sun'iy intellekt modellarini ruxsatsiz nusxalashdan himoyalaydi", u: "yangiliklar/openai-adversarial-distillation-himoya-choralari-2026/", k: "openai sun'iy intellekt modellarini ruxsatsiz nusxalashdan himoyalaydi texnologiya openai news openai sun'iy intellekt modellarining imkoniyatlarini ruxsatsiz ko'chirish va tortib olish holatlari" },

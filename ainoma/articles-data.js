@@ -1,6 +1,92 @@
 // AiNoma Central Content Database
 // Managed atomically by src.ainoma_autopilot.store
 window.AINOMA_ARTICLES = {
+  "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026": {
+    "id": "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026",
+    "slug": "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026",
+    "title": "OpenAI sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "OpenAI sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi — AiNoma",
+    "meta_description": "OpenAI yetakchi sun'iy intellekt dasturchilari uchun perpleksiyani universal o'lchov mezoni sifatida joriy etishni targ'ib qilmoqda.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-23",
+    "source_date": "2026-11-23",
+    "source_published_date": "2026-11-23",
+    "date": "2026-11-23",
+    "publish_date": "2026-11-23",
+    "ainoma_published_date": "2026-11-23",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "OpenAI yetakchi sun'iy intellekt dasturchilari uchun perpleksiyani universal o'lchov mezoni sifatida joriy etishni targ'ib qilmoqda.",
+    "img": "assets/editorial_openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026.jpg",
+    "imgAlt": "OpenAI sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi",
+    "qisqacha": [
+      "OpenAI bosh olimi Yakub Pachocki perpleksiyani umumiy mezon sifatida taqdim etdi.",
+      "Kompaniya GPT-3.5 davridan beri to'plangan ichki o'qitish tendentsiyalarini e'lon qildi.",
+      "Tashabbus sanoat miqyosida ilmiy xavfsizlik standartlarini o'rnatishga qaratilgan."
+    ],
+    "primary_source": {
+      "name": "OpenAI News",
+      "title": "OpenAI proposes perplexity as shared benchmark for model intelligence and safety",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "date": "2026-11-23",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-23",
+    "body": "<h2>Nima bo‘ldi?</h2><p>OpenAI bosh olimi Yakub Pachocki ilg'or sun'iy intellekt dasturchilari o'rtasida perpleksiyani (cross-entropy loss) universal va o'zaro ulashilgan o'lchov mezoni sifatida qo'llashni targ'ib qiluvchi muhim taklifni e'lon qildi. Ushbu yondashuv sanoat miqyosida ilmiy xavfsizlik standartlari hamda taraqqiyot mezonlarini shakllantirishga xizmat qiladi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur tashabbus doirasida OpenAI GPT-3.5 avlodidan boshlab o'zining ichki oldindan o'qitish perpleksiyasi tendentsiyalarini shaffof tarzda taqdim etdi. Bu Sizga va boshqa soha vakillariga modellarning intellektual darajasi hamda xavfsizligini obyektiv baholash imkonini beradi. Universal metrikalarni yo'lga qo'yish texnologik bozorning yanada shaffof va tizimlashgan bo'lishini ta'minlaydi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O'zbekistonning tez rivojlanayotgan IT va biznes hamjamiyati uchun xalqaro darajada tan olingan ilmiy standartlarga tayanish muhim ahamiyat kasb etadi. Sun'iy intellekt modellarini baholashda shunday umumiy o'lchovlardan foydalanish mahalliy loyihalar samaradorligini oshirish va xavfsiz texnologiyalarni joriy etishga zamin tayyorlaydi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>OpenAI bosh olimi Yakub Pachocki ilg'or sun'iy intellekt dasturchilari o'rtasida perpleksiyani (cross-entropy loss) universal va o'zaro ulashilgan o'lchov mezoni sifatida qo'llashni targ'ib qiluvchi muhim taklifni e'lon qildi. Ushbu yondashuv sanoat miqyosida ilmiy xavfsizlik standartlari hamda taraqqiyot mezonlarini shakllantirishga xizmat qiladi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur tashabbus doirasida OpenAI GPT-3.5 avlodidan boshlab o'zining ichki oldindan o'qitish perpleksiyasi tendentsiyalarini shaffof tarzda taqdim etdi. Bu Sizga va boshqa soha vakillariga modellarning intellektual darajasi hamda xavfsizligini obyektiv baholash imkonini beradi. Universal metrikalarni yo'lga qo'yish texnologik bozorning yanada shaffof va tizimlashgan bo'lishini ta'minlaydi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O'zbekistonning tez rivojlanayotgan IT va biznes hamjamiyati uchun xalqaro darajada tan olingan ilmiy standartlarga tayanish muhim ahamiyat kasb etadi. Sun'iy intellekt modellarini baholashda shunday umumiy o'lchovlardan foydalanish mahalliy loyihalar samaradorligini oshirish va xavfsiz texnologiyalarni joriy etishga zamin tayyorlaydi.</p>"
+  },
+  "vibe-coding-inqilobi-qurilmalar-va-gadjetlarga-kirib-kelmoqda-2026": {
+    "id": "vibe-coding-inqilobi-qurilmalar-va-gadjetlarga-kirib-kelmoqda-2026",
+    "slug": "vibe-coding-inqilobi-qurilmalar-va-gadjetlarga-kirib-kelmoqda-2026",
+    "title": "Sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "Sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi — AiNoma",
+    "meta_description": "Sun'iy intellekt vositalari yordamida tabiiy tilda dasturlash endilikda faqat kompyuterlar bilan cheklanmay, jismoniy gadjetlar va qurilmalarni ham qamrab olmoqda.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-23",
+    "source_date": "2026-11-23",
+    "source_published_date": "2026-11-23",
+    "date": "2026-11-23",
+    "publish_date": "2026-11-23",
+    "ainoma_published_date": "2026-11-23",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Sun'iy intellekt vositalari yordamida tabiiy tilda dasturlash endilikda faqat kompyuterlar bilan cheklanmay, jismoniy gadjetlar va qurilmalarni ham qamrab olmoqda.",
+    "img": "assets/editorial_vibe-coding-inqilobi-qurilmalar-va-gadjetlarga-kirib-kelmoqd.jpg",
+    "imgAlt": "Sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi",
+    "qisqacha": [
+      "Claude Code kabi sun'iy intellekt modellari yordamida dasturlash imkoniyatlari kengaymoqda.",
+      "Texnologiya endi kompyuter ekranlaridan chiqib, jismoniy gadjetlar, televizorlar va kameralarga tatbiq etilmoqda.",
+      "Foydalanuvchilar tabiiy til ko'rsatmalari orqali qurilmalar interfeysi va dasturiy ta'minotini o'zgartirish imkoniga ega bo'lmoqdalar."
+    ],
+    "primary_source": {
+      "name": "The Verge AI",
+      "title": "The vibe-coding revolution is coming to all the gadgets",
+      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "date": "2026-11-23",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-23",
+    "body": "<h2>Nima bo‘ldi?</h2><p>Sun'iy intellekt yordamida kodlash inqilobi endi faqat shaxsiy kompyuterlar va matn muharrirlari bilan cheklanib qolmayapti. Claude Code kabi ilg'or vositalar ta'siri ostida bu yondashuv jismoniy gadjetlar, televizorlar, kameralar va turli xil IoT jihozlariga kirib bormoqda. Endilikda Siz o'zingizga qulay bo'lgan tabiiy til ko'rsatmalari orqali jismoniy qurilmalarning dasturiy ta'minotini va interfeysini sozlab chiqishingiz mumkin.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Bu o'zgarishlar apparat ta'minoti va gadjetlar bozorida yangi imkoniyatlar ochmoqda. Biznes rahbarlari va muhandislar uchun mahsulotlarni mijoz talabiga moslashtirish jarayoni sezilarli darajada soddalashmoqda. Dasturlashni murakkab kodlarsiz, oddiy til ko'rsatmalari orqali amalga oshirish imkoniyati qurilmalarni moslashuvchan qilishda muhim qadamdir.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz uchun bu texnologik yangilik mahalliy bozorda aqlli qurilmalar va IoT yechimlarini ishlab chiqishda qo'l kelishi mumkin. Sun'iy intellekt vositalarining jismoniy jihozlar bilan integratsiyalashuvi O'zbekistondagi dasturchilar va muhandislarga xalqaro standartlarga mos mahsulotlarni tezroq va samaraliroq yo'lga qo'yish imkonini beradi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>Sun'iy intellekt yordamida kodlash inqilobi endi faqat shaxsiy kompyuterlar va matn muharrirlari bilan cheklanib qolmayapti. Claude Code kabi ilg'or vositalar ta'siri ostida bu yondashuv jismoniy gadjetlar, televizorlar, kameralar va turli xil IoT jihozlariga kirib bormoqda. Endilikda Siz o'zingizga qulay bo'lgan tabiiy til ko'rsatmalari orqali jismoniy qurilmalarning dasturiy ta'minotini va interfeysini sozlab chiqishingiz mumkin.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Bu o'zgarishlar apparat ta'minoti va gadjetlar bozorida yangi imkoniyatlar ochmoqda. Biznes rahbarlari va muhandislar uchun mahsulotlarni mijoz talabiga moslashtirish jarayoni sezilarli darajada soddalashmoqda. Dasturlashni murakkab kodlarsiz, oddiy til ko'rsatmalari orqali amalga oshirish imkoniyati qurilmalarni moslashuvchan qilishda muhim qadamdir.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz uchun bu texnologik yangilik mahalliy bozorda aqlli qurilmalar va IoT yechimlarini ishlab chiqishda qo'l kelishi mumkin. Sun'iy intellekt vositalarining jismoniy jihozlar bilan integratsiyalashuvi O'zbekistondagi dasturchilar va muhandislarga xalqaro standartlarga mos mahsulotlarni tezroq va samaraliroq yo'lga qo'yish imkonini beradi.</p>"
+  },
   "ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026": {
     "id": "ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026",
     "slug": "ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026",
