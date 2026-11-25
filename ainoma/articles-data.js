@@ -87,6 +87,49 @@ window.AINOMA_ARTICLES = {
     "body": "<h2>Nima bo‘ldi?</h2><p>OpenAI tomonidan taqdim etilgan GPT-6 modellari biologik oqsillarni loyihalashda yangi bosqichni boshlab berdi. An’anaviy usullardan farqli o‘laroq, ushbu modellar maxsus biologik ma’lumotlar bazalariga tayanmasdan, sof mantiqiy fikrlash va dasturlash algoritmlari orqali murakkab oqsil tuzilmalarini shakllantira oladi. Onava bilan hamkorlikda o‘tkazilgan laboratoriya sinovlari ushbu yondashuvning amaliy qiymatini tasdiqladi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Siz uchun bu yangilik biotexnologiya sohasida xarajatlarni qisqartirish va tadqiqot jarayonlarini tezlashtirish imkonini anglatadi. GPT-6 modellari oqsil muhandisligini avtomatlashtirish orqali farmatsevtika va materialshunoslik sohalarida inqilobiy o‘zgarishlarni va’da qilmoqda. Dasturchilar va muhandislar uchun bu sun'iy intellektning nafaqat matn, balki molekulyar darajadagi murakkab tizimlarni modellashtirishdagi salohiyatidan dalolat beradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O‘zbekistonning texnologik ekotizimi uchun ushbu yutuq ilmiy-tadqiqot ishlarini raqamlashtirishda yangi yo‘nalishlarni ochadi. Mahalliy biotexnologiya kompaniyalari va ilmiy muassasalar GPT-6 kabi universal modellarni o‘z ish jarayonlariga integratsiya qilish orqali xalqaro standartlardagi tadqiqotlarni yo‘lga qo‘yishlari mumkin. Bu texnologik taraqqiyot kelajakda mahalliy farmatsevtika sanoatining raqobatbardoshligini oshirishga xizmat qiladi.</p>",
     "contentHtml": "<h2>Nima bo‘ldi?</h2><p>OpenAI tomonidan taqdim etilgan GPT-6 modellari biologik oqsillarni loyihalashda yangi bosqichni boshlab berdi. An’anaviy usullardan farqli o‘laroq, ushbu modellar maxsus biologik ma’lumotlar bazalariga tayanmasdan, sof mantiqiy fikrlash va dasturlash algoritmlari orqali murakkab oqsil tuzilmalarini shakllantira oladi. Onava bilan hamkorlikda o‘tkazilgan laboratoriya sinovlari ushbu yondashuvning amaliy qiymatini tasdiqladi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Siz uchun bu yangilik biotexnologiya sohasida xarajatlarni qisqartirish va tadqiqot jarayonlarini tezlashtirish imkonini anglatadi. GPT-6 modellari oqsil muhandisligini avtomatlashtirish orqali farmatsevtika va materialshunoslik sohalarida inqilobiy o‘zgarishlarni va’da qilmoqda. Dasturchilar va muhandislar uchun bu sun'iy intellektning nafaqat matn, balki molekulyar darajadagi murakkab tizimlarni modellashtirishdagi salohiyatidan dalolat beradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O‘zbekistonning texnologik ekotizimi uchun ushbu yutuq ilmiy-tadqiqot ishlarini raqamlashtirishda yangi yo‘nalishlarni ochadi. Mahalliy biotexnologiya kompaniyalari va ilmiy muassasalar GPT-6 kabi universal modellarni o‘z ish jarayonlariga integratsiya qilish orqali xalqaro standartlardagi tadqiqotlarni yo‘lga qo‘yishlari mumkin. Bu texnologik taraqqiyot kelajakda mahalliy farmatsevtika sanoatining raqobatbardoshligini oshirishga xizmat qiladi.</p>"
   },
+  "riman-gipotezasi-suniy-intellekt-yordamida-isbotlandi-2026": {
+    "id": "riman-gipotezasi-suniy-intellekt-yordamida-isbotlandi-2026",
+    "slug": "riman-gipotezasi-suniy-intellekt-yordamida-isbotlandi-2026",
+    "title": "Sun'iy intellekt riman gipotezasini to'liq isbotladi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "Sun'iy intellekt riman gipotezasini to'liq isbotladi — AiNoma",
+    "meta_description": "Matematika tarixidagi 167 yillik jumboq Claude modeli va Lean tizimi yordamida uzil-kesil hal etildi.",
+    "category": "Ilm-fan",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-25",
+    "source_date": "2026-11-25",
+    "source_published_date": "2026-11-25",
+    "date": "2026-11-25",
+    "publish_date": "2026-11-25",
+    "ainoma_published_date": "2026-11-25",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Matematika tarixidagi 167 yillik jumboq Claude modeli va Lean tizimi yordamida uzil-kesil hal etildi.",
+    "img": "assets/editorial_riman-gipotezasi-suniy-intellekt-yordamida-isbotlandi-2026.jpg",
+    "imgAlt": "Sun'iy intellekt Riman gipotezasini to'liq isbotladi",
+    "qisqacha": [
+      "Levent Alpo'ge Claude sun'iy intellektidan foydalanib, Riman gipotezasini Lean tizimida rasmiylashtirdi.",
+      "Lean FRO va Mathlib Initiative 17 million qatorli kodni tekshirib, isbotning to'g'riligini tasdiqladi.",
+      "Ushbu yutuq murakkab matematik muammolarni yechishda sun'iy intellektning yangi davrini boshlab berdi."
+    ],
+    "primary_source": {
+      "name": "Lean Community & Anthropic",
+      "title": "Anthropic Claude yordamida Riman gipotezasi to‘liq isbotlandi",
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "date": "2026-11-25",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-25",
+    "body": "<h2>Nima bo‘ldi?</h2><p>Matematika olamida 167 yildan buyon javobsiz qolgan Riman gipotezasi nihoyat isbotlandi. Anthropic tadqiqotchisi va matematik Levent Alpo'ge Claude sun'iy intellekt modelini jalb etgan holda, ushbu murakkab masalani Lean isbotlash tizimida to‘liq rasmiylashtirishga muvaffaq bo‘ldi. Lean FRO va Mathlib Initiative mutaxassislari 17 million qatorli kodni tahlil qilib, isbotning matematik jihatdan mukammal ekanligini sertifikatlashdi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Ushbu voqea sun'iy intellektning shunchaki matn yozish yoki kodlash vositasi emas, balki fundamental fanlardagi eng murakkab muammolarni yechishda ishonchli hamkor bo‘la olishini ko‘rsatdi. Biznes rahbarlari va muhandislar uchun bu texnologiya murakkab tizimlarni modellashtirish va xatolarni minimallashtirishda yangi imkoniyatlar eshigini ochadi. Claude modelining isbot jarayonidagi hal qiluvchi roli, kelajakda ilmiy tadqiqotlar tezligini bir necha barobar oshirishi mumkin.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O‘zbekistonlik dasturchilar va ilmiy jamoatchilik uchun bu yangilik katta ahamiyatga ega. Lean kabi rasmiy isbotlash tizimlarini o‘rganish va sun'iy intellekt bilan integratsiya qilish, mahalliy texnologik yechimlarning sifatini xalqaro standartlarga olib chiqishda muhim qadam bo‘ladi. Biznes sektorida esa, sun'iy intellektga asoslangan tahliliy vositalarni joriy etish orqali qaror qabul qilish jarayonlarini yanada aniqroq yo‘lga qo‘yish imkoniyati paydo bo‘lmoqda.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>Matematika olamida 167 yildan buyon javobsiz qolgan Riman gipotezasi nihoyat isbotlandi. Anthropic tadqiqotchisi va matematik Levent Alpo'ge Claude sun'iy intellekt modelini jalb etgan holda, ushbu murakkab masalani Lean isbotlash tizimida to‘liq rasmiylashtirishga muvaffaq bo‘ldi. Lean FRO va Mathlib Initiative mutaxassislari 17 million qatorli kodni tahlil qilib, isbotning matematik jihatdan mukammal ekanligini sertifikatlashdi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Ushbu voqea sun'iy intellektning shunchaki matn yozish yoki kodlash vositasi emas, balki fundamental fanlardagi eng murakkab muammolarni yechishda ishonchli hamkor bo‘la olishini ko‘rsatdi. Biznes rahbarlari va muhandislar uchun bu texnologiya murakkab tizimlarni modellashtirish va xatolarni minimallashtirishda yangi imkoniyatlar eshigini ochadi. Claude modelining isbot jarayonidagi hal qiluvchi roli, kelajakda ilmiy tadqiqotlar tezligini bir necha barobar oshirishi mumkin.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O‘zbekistonlik dasturchilar va ilmiy jamoatchilik uchun bu yangilik katta ahamiyatga ega. Lean kabi rasmiy isbotlash tizimlarini o‘rganish va sun'iy intellekt bilan integratsiya qilish, mahalliy texnologik yechimlarning sifatini xalqaro standartlarga olib chiqishda muhim qadam bo‘ladi. Biznes sektorida esa, sun'iy intellektga asoslangan tahliliy vositalarni joriy etish orqali qaror qabul qilish jarayonlarini yanada aniqroq yo‘lga qo‘yish imkoniyati paydo bo‘lmoqda.</p>"
+  },
   "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026": {
     "id": "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026",
     "slug": "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026",
