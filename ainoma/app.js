@@ -342,7 +342,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "O‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi", u: "yangiliklar/ozbekiston-tibbiyotida-suniy-intellekt-tizimlari-ishga-tushadi-2026/", k: "o‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi texnologiya spot.uz it & biznes sog‘liqni saqlash vazirligi tibbiy diagnostika sifatini oshirish maqsadida yil yakuniga qadar oltita" },
+  { t: "GPT-6 modellari yangi oqsil tuzilmalarini loyihalamoqda", u: "yangiliklar/gpt-6-biologik-oqsil-loyihalash-qobiliyati-2026/", k: "gpt-6 modellari yangi oqsil tuzilmalarini loyihalamoqda texnologiya openai news openai yangi gpt-6 modellari maxsus biologik vositalarsiz oqsil tuzilmalarini loyihalashda yuqori sa" },
   { t: "OpenAI sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi", u: "yangiliklar/openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026/", k: "openai sun'iy intellekt xavfsizligi uchun umumiy mezonni taklif etdi texnologiya openai news openai yetakchi sun'iy intellekt dasturchilari uchun perpleksiyani universal o'lchov mezoni sifatida" },
   { t: "Sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi", u: "yangiliklar/vibe-coding-inqilobi-qurilmalar-va-gadjetlarga-kirib-kelmoqda-2026/", k: "sun'iy intellekt asosidagi dasturlash gadjetlarga yetib keldi texnologiya the verge ai sun'iy intellekt vositalari yordamida tabiiy tilda dasturlash endilikda faqat kompyuterlar bilan che" },
   { t: "O'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi", u: "yangiliklar/ozbek-tilidagi-6-milliard-sozli-korpus-elon-qilindi-2026/", k: "o'zbek tilidagi 6 milliard so'zli ochiq korpus taqdim etildi texnologiya aniq.uz / raqamli texnologiyalar vazirligi raqamli texnologiyalar vazirligi tomonidan o'zbek tilidagi yirik ochiq ma'lumotlar korpusi ishlab ch" },

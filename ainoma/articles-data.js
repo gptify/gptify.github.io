@@ -1,6 +1,92 @@
 // AiNoma Central Content Database
 // Managed atomically by src.ainoma_autopilot.store
 window.AINOMA_ARTICLES = {
+  "ozbekiston-tibbiyotida-suniy-intellekt-tizimlari-ishga-tushadi-2026": {
+    "id": "ozbekiston-tibbiyotida-suniy-intellekt-tizimlari-ishga-tushadi-2026",
+    "slug": "ozbekiston-tibbiyotida-suniy-intellekt-tizimlari-ishga-tushadi-2026",
+    "title": "O‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "O‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi — AiNoma",
+    "meta_description": "Sog‘liqni saqlash vazirligi tibbiy diagnostika sifatini oshirish maqsadida yil yakuniga qadar oltita ilg‘or sun'iy intellekt tizimini to‘liq joriy etishni rejalashtirmoqda.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-25",
+    "source_date": "2026-11-25",
+    "source_published_date": "2026-11-25",
+    "date": "2026-11-25",
+    "publish_date": "2026-11-25",
+    "ainoma_published_date": "2026-11-25",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Sog‘liqni saqlash vazirligi tibbiy diagnostika sifatini oshirish maqsadida yil yakuniga qadar oltita ilg‘or sun'iy intellekt tizimini to‘liq joriy etishni rejalashtirmoqda.",
+    "img": "assets/editorial_ozbekiston-tibbiyotida-suniy-intellekt-tizimlari-ishga-tusha.jpg",
+    "imgAlt": "O‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi",
+    "qisqacha": [
+      "AI MAMMO tizimi 54 mingdan ortiq mammografiya tekshiruvini tahlil qilishga muvaffaq bo‘ldi.",
+      "AI Stroke tizimi insult bilan bog‘liq 2,5 mingta holatni tahlil qilish orqali diagnostika tezligini oshirdi.",
+      "AI TOP3-CDSS va AI Med-STT kabi yangi yechimlar shifokorlar ishini tizimlashtirishga xizmat qiladi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz IT & Biznes",
+      "title": "Yil oxirigacha O'zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi",
+      "url": "https://www.spot.uz/oz/2026/11/25/ai-medicine/",
+      "date": "2026-11-25",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-25",
+    "body": "<h2>Nima bo‘ldi?</h2><p>O‘zbekiston Sog‘liqni saqlash vazirligi tibbiyot sohasini raqamlashtirish doirasida muhim qadam tashlamoqda. 2026-yil yakuniga qadar mamlakatimizdagi tibbiyot muassasalarida jami oltita sun'iy intellekt (AI) tizimini to‘liq ishga tushirish ko‘zda tutilgan. Hozirgi kunda ushbu texnologiyalar sinov va amaliyot jarayonida yuqori samaradorlik ko‘rsatmoqda.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Texnologik yechimlar diagnostika jarayonini sezilarli darajada tezlashtirmoqda. Xususan, AI MAMMO tizimi 54 mingdan ortiq tekshiruvni tahlil qilib, inson omili xatolarini kamaytirishda muhim rol o‘ynadi. Shuningdek, AI Stroke tizimi insult holatlarini aniqlashda 2,5 mingta tahlilni amalga oshirib, shoshilinch tibbiy yordam ko‘rsatishda yangi standartlarni belgilamoqda. AI TOP3-CDSS va nutqni matnga aylantiruvchi AI Med-STT tizimlarining joriy etilishi shifokorlarning hujjatlar bilan ishlash vaqtini qisqartirib, bemorlarga ko‘proq e'tibor qaratish imkonini beradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ushbu loyihalar O‘zbekiston tibbiyot texnologiyalari bozorida sun'iy intellekt yechimlariga bo‘lgan talabni oshirmoqda. Dasturchilar va muhandislar uchun sog‘liqni saqlash sohasida mahalliy ehtiyojlarga moslashgan tizimlarni ishlab chiqish va ularni kengaytirish uchun katta imkoniyatlar ochilmoqda. Davlat tomonidan qo‘llab-quvvatlanayotgan ushbu tashabbus kelgusida tibbiy xizmatlar sifatini tubdan yaxshilashga xizmat qiladi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>O‘zbekiston Sog‘liqni saqlash vazirligi tibbiyot sohasini raqamlashtirish doirasida muhim qadam tashlamoqda. 2026-yil yakuniga qadar mamlakatimizdagi tibbiyot muassasalarida jami oltita sun'iy intellekt (AI) tizimini to‘liq ishga tushirish ko‘zda tutilgan. Hozirgi kunda ushbu texnologiyalar sinov va amaliyot jarayonida yuqori samaradorlik ko‘rsatmoqda.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Texnologik yechimlar diagnostika jarayonini sezilarli darajada tezlashtirmoqda. Xususan, AI MAMMO tizimi 54 mingdan ortiq tekshiruvni tahlil qilib, inson omili xatolarini kamaytirishda muhim rol o‘ynadi. Shuningdek, AI Stroke tizimi insult holatlarini aniqlashda 2,5 mingta tahlilni amalga oshirib, shoshilinch tibbiy yordam ko‘rsatishda yangi standartlarni belgilamoqda. AI TOP3-CDSS va nutqni matnga aylantiruvchi AI Med-STT tizimlarining joriy etilishi shifokorlarning hujjatlar bilan ishlash vaqtini qisqartirib, bemorlarga ko‘proq e'tibor qaratish imkonini beradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ushbu loyihalar O‘zbekiston tibbiyot texnologiyalari bozorida sun'iy intellekt yechimlariga bo‘lgan talabni oshirmoqda. Dasturchilar va muhandislar uchun sog‘liqni saqlash sohasida mahalliy ehtiyojlarga moslashgan tizimlarni ishlab chiqish va ularni kengaytirish uchun katta imkoniyatlar ochilmoqda. Davlat tomonidan qo‘llab-quvvatlanayotgan ushbu tashabbus kelgusida tibbiy xizmatlar sifatini tubdan yaxshilashga xizmat qiladi.</p>"
+  },
+  "gpt-6-biologik-oqsil-loyihalash-qobiliyati-2026": {
+    "id": "gpt-6-biologik-oqsil-loyihalash-qobiliyati-2026",
+    "slug": "gpt-6-biologik-oqsil-loyihalash-qobiliyati-2026",
+    "title": "GPT-6 modellari yangi oqsil tuzilmalarini loyihalamoqda",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "GPT-6 modellari yangi oqsil tuzilmalarini loyihalamoqda — AiNoma",
+    "meta_description": "OpenAI yangi GPT-6 modellari maxsus biologik vositalarsiz oqsil tuzilmalarini loyihalashda yuqori samaradorlikka erishganini rasman tasdiqladi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-25",
+    "source_date": "2026-11-25",
+    "source_published_date": "2026-11-25",
+    "date": "2026-11-25",
+    "publish_date": "2026-11-25",
+    "ainoma_published_date": "2026-11-25",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "OpenAI yangi GPT-6 modellari maxsus biologik vositalarsiz oqsil tuzilmalarini loyihalashda yuqori samaradorlikka erishganini rasman tasdiqladi.",
+    "img": "assets/editorial_gpt-6-biologik-oqsil-loyihalash-qobiliyati-2026.jpg",
+    "imgAlt": "GPT-6 modellari yangi oqsil tuzilmalarini loyihalamoqda",
+    "qisqacha": [
+      "GPT-6 modellari maxsus biologik modellar yordamisiz yangi oqsil ketma-ketliklarini ishlab chiqishga qodir.",
+      "Onava laboratoriyasida o‘tkazilgan sinovlar beshta nishon bo‘yicha yuqori biologik bog‘lanish samaradorligini ko‘rsatdi.",
+      "Ushbu yutuq sun'iy intellektning fundamental ilmiy tadqiqotlar va biotexnologiya sohasidagi imkoniyatlarini kengaytiradi."
+    ],
+    "primary_source": {
+      "name": "OpenAI News",
+      "title": "OpenAI GPT-6 modellarida biologik oqsillarni loyihalash qobiliyatini namoyish etdi",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "date": "2026-11-25",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-25",
+    "body": "<h2>Nima bo‘ldi?</h2><p>OpenAI tomonidan taqdim etilgan GPT-6 modellari biologik oqsillarni loyihalashda yangi bosqichni boshlab berdi. An’anaviy usullardan farqli o‘laroq, ushbu modellar maxsus biologik ma’lumotlar bazalariga tayanmasdan, sof mantiqiy fikrlash va dasturlash algoritmlari orqali murakkab oqsil tuzilmalarini shakllantira oladi. Onava bilan hamkorlikda o‘tkazilgan laboratoriya sinovlari ushbu yondashuvning amaliy qiymatini tasdiqladi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Siz uchun bu yangilik biotexnologiya sohasida xarajatlarni qisqartirish va tadqiqot jarayonlarini tezlashtirish imkonini anglatadi. GPT-6 modellari oqsil muhandisligini avtomatlashtirish orqali farmatsevtika va materialshunoslik sohalarida inqilobiy o‘zgarishlarni va’da qilmoqda. Dasturchilar va muhandislar uchun bu sun'iy intellektning nafaqat matn, balki molekulyar darajadagi murakkab tizimlarni modellashtirishdagi salohiyatidan dalolat beradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O‘zbekistonning texnologik ekotizimi uchun ushbu yutuq ilmiy-tadqiqot ishlarini raqamlashtirishda yangi yo‘nalishlarni ochadi. Mahalliy biotexnologiya kompaniyalari va ilmiy muassasalar GPT-6 kabi universal modellarni o‘z ish jarayonlariga integratsiya qilish orqali xalqaro standartlardagi tadqiqotlarni yo‘lga qo‘yishlari mumkin. Bu texnologik taraqqiyot kelajakda mahalliy farmatsevtika sanoatining raqobatbardoshligini oshirishga xizmat qiladi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>OpenAI tomonidan taqdim etilgan GPT-6 modellari biologik oqsillarni loyihalashda yangi bosqichni boshlab berdi. An’anaviy usullardan farqli o‘laroq, ushbu modellar maxsus biologik ma’lumotlar bazalariga tayanmasdan, sof mantiqiy fikrlash va dasturlash algoritmlari orqali murakkab oqsil tuzilmalarini shakllantira oladi. Onava bilan hamkorlikda o‘tkazilgan laboratoriya sinovlari ushbu yondashuvning amaliy qiymatini tasdiqladi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Siz uchun bu yangilik biotexnologiya sohasida xarajatlarni qisqartirish va tadqiqot jarayonlarini tezlashtirish imkonini anglatadi. GPT-6 modellari oqsil muhandisligini avtomatlashtirish orqali farmatsevtika va materialshunoslik sohalarida inqilobiy o‘zgarishlarni va’da qilmoqda. Dasturchilar va muhandislar uchun bu sun'iy intellektning nafaqat matn, balki molekulyar darajadagi murakkab tizimlarni modellashtirishdagi salohiyatidan dalolat beradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>O‘zbekistonning texnologik ekotizimi uchun ushbu yutuq ilmiy-tadqiqot ishlarini raqamlashtirishda yangi yo‘nalishlarni ochadi. Mahalliy biotexnologiya kompaniyalari va ilmiy muassasalar GPT-6 kabi universal modellarni o‘z ish jarayonlariga integratsiya qilish orqali xalqaro standartlardagi tadqiqotlarni yo‘lga qo‘yishlari mumkin. Bu texnologik taraqqiyot kelajakda mahalliy farmatsevtika sanoatining raqobatbardoshligini oshirishga xizmat qiladi.</p>"
+  },
   "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026": {
     "id": "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026",
     "slug": "openai-perpleksiyani-umumiy-baza-sifatida-taklif-qildi-2026",
