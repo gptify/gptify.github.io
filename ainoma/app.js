@@ -344,7 +344,10 @@ const searchIndex = [
 
 
 
+
   // Yangiliklar & Maqolalar (Verifikatsiya qilingan Sentabr 2026)
+  { t: "O'zbekiston 20 milliard tokenli til korpusini ulashdi", u: "yangiliklar/ozbekiston-20-mlrd-tokenli-til-korpusini-taqdim-etdi-2026/", k: "o'zbekiston 20 milliard tokenli til korpusini ulashdi texnologiya gazeta.uz o'zbekiston global sun'iy intellekt modellariga o'zbek tilini mukammal o'rganish imkonini beruvchi 2" },
+  { t: "Sun'iy intellekt modellari ommaga taqdim etish uchun juda kuchli", u: "yangiliklar/suniy-intellekt-modellari-juda-kuchli-va-xavfli-2026/", k: "sun'iy intellekt modellari ommaga taqdim etish uchun juda kuchli texnologiya axios yangi avlod sun'iy intellekt modellari o'ta yuqori qobiliyatlari sababli xavfsizlik va nazorat boras" },
   { t: "O‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi", u: "yangiliklar/ozbekiston-tibbiyotida-suniy-intellekt-tizimlari-ishga-tushadi-2026/", k: "o‘zbekiston shifoxonalarida oltita sun'iy intellekt tizimi ishga tushadi texnologiya spot.uz it & biznes sog‘liqni saqlash vazirligi tibbiy diagnostika sifatini oshirish maqsadida yil yakuniga qadar oltita" },
   { t: "GPT-6 modellari yangi oqsil tuzilmalarini loyihalamoqda", u: "yangiliklar/gpt-6-biologik-oqsil-loyihalash-qobiliyati-2026/", k: "gpt-6 modellari yangi oqsil tuzilmalarini loyihalamoqda texnologiya openai news openai yangi gpt-6 modellari maxsus biologik vositalarsiz oqsil tuzilmalarini loyihalashda yuqori sa" },
   { t: "Sun'iy intellekt riman gipotezasini to'liq isbotladi", u: "yangiliklar/riman-gipotezasi-suniy-intellekt-yordamida-isbotlandi-2026/", k: "sun'iy intellekt riman gipotezasini to'liq isbotladi ilm-fan lean community & anthropic matematika tarixidagi 167 yillik jumboq claude modeli va lean tizimi yordamida uzil-kesil hal etildi" },
