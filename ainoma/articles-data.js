@@ -1,6 +1,92 @@
 // AiNoma Central Content Database
 // Managed atomically by src.ainoma_autopilot.store
 window.AINOMA_ARTICLES = {
+  "ozbekfilm-neyrotarmoqlar-yordamida-filmlar-ishlab-chiqishni-boshlaydi-2026": {
+    "id": "ozbekfilm-neyrotarmoqlar-yordamida-filmlar-ishlab-chiqishni-boshlaydi-2026",
+    "slug": "ozbekfilm-neyrotarmoqlar-yordamida-filmlar-ishlab-chiqishni-boshlaydi-2026",
+    "title": "O‘zbekfilm neyrotarmoqlar yordamida filmlar ishlab chiqadi",
+    "kicker": "TEXNOLOGIYA VA SUN'IY INTELLEKT",
+    "meta_title": "O‘zbekfilm neyrotarmoqlar yordamida filmlar ishlab chiqadi — AiNoma",
+    "meta_description": "O‘zbekistonda milliy kino sanoatini rivojlantirish doirasida sun'iy intellekt texnologiyalarini joriy etish va maxsus laboratoriya tashkil qilish ishlari boshlandi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-27",
+    "source_date": "2026-11-27",
+    "source_published_date": "2026-11-27",
+    "date": "2026-11-27",
+    "publish_date": "2026-11-27",
+    "ainoma_published_date": "2026-11-27",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "O‘zbekistonda milliy kino sanoatini rivojlantirish doirasida sun'iy intellekt texnologiyalarini joriy etish va maxsus laboratoriya tashkil qilish ishlari boshlandi.",
+    "img": "assets/editorial_ozbekfilm-neyrotarmoqlar-yordamida-filmlar-ishlab-chiqishni-.jpg",
+    "imgAlt": "O‘zbekfilm neyrotarmoqlar yordamida filmlar ishlab chiqadi",
+    "qisqacha": [
+      "O‘zbekfilm AI Lab laboratoriyasi tashkil etilib, milliy madaniy meros asosida maxsus dataset ishlab chiqiladi.",
+      "Neyrotarmoqlar orqali film tayyorlaydigan mutaxassislarni o‘qitish yo‘lga qo‘yiladi.",
+      "President AI Award va Toshkent xalqaro kinofestivalida sun'iy intellekt filmlari uchun alohida yo‘nalish ochiladi."
+    ],
+    "primary_source": {
+      "name": "Spot.uz IT & Biznes",
+      "title": "O‘zbekfilm neyrotarmoqlar yordamida filmlar suratga olishni boshlaydi",
+      "url": "https://www.spot.uz/oz/2026/11/24/ai-cinema/",
+      "date": "2026-11-27",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-27",
+    "body": "<h2>Nima bo‘ldi?</h2><p>O‘zbekistonda milliy kino sanoatini zamonaviy texnologiyalar asosida rivojlantirish maqsadida 'O‘zbekfilm AI Lab' laboratoriyasi tashkil etilmoqda. Ushbu tashabbus doirasida milliy madaniy meros, tarix va vizual arxivlar asosida maxsus dataset ishlab chiqiladi hamda neyrotarmoqlar orqali film tayyorlaydigan mutaxassislarni o‘qitish ishlari boshlanadi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mamlakatimizda kino ishlab chiqarish jarayonlarini avtomatlashtirish va raqamlashtirish uchun sun'iy intellekt imkoniyatlaridan keng foydalanish ko‘zda tutilgan. Shuningdek, 'President AI Award' va Toshkent xalqaro kinofestivalida sun'iy intellekt yordamida tayyorlangan filmlar uchun alohida yo‘nalish joriy etilishi rejalashtirilmoqda. Bu esa Sizga va soha mutaxassislariga o‘z ijodiy ishlanmalaringizni xalqaro darajada namoyish etish uchun keng imkoniyatlar ochadi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ushbu loyihaning hayotga tatbiq etilishi mahalliy IT va media bozorini yangi bosqichga olib chiqadi. Sun'iy intellekt texnologiyalarini milliy kontent bilan boyitish orqali mamlakatimizda raqamli iqtisodiyot va ijodiy industriyani jadal rivojlantirishga erishiladi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>O‘zbekistonda milliy kino sanoatini zamonaviy texnologiyalar asosida rivojlantirish maqsadida 'O‘zbekfilm AI Lab' laboratoriyasi tashkil etilmoqda. Ushbu tashabbus doirasida milliy madaniy meros, tarix va vizual arxivlar asosida maxsus dataset ishlab chiqiladi hamda neyrotarmoqlar orqali film tayyorlaydigan mutaxassislarni o‘qitish ishlari boshlanadi.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mamlakatimizda kino ishlab chiqarish jarayonlarini avtomatlashtirish va raqamlashtirish uchun sun'iy intellekt imkoniyatlaridan keng foydalanish ko‘zda tutilgan. Shuningdek, 'President AI Award' va Toshkent xalqaro kinofestivalida sun'iy intellekt yordamida tayyorlangan filmlar uchun alohida yo‘nalish joriy etilishi rejalashtirilmoqda. Bu esa Sizga va soha mutaxassislariga o‘z ijodiy ishlanmalaringizni xalqaro darajada namoyish etish uchun keng imkoniyatlar ochadi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Ushbu loyihaning hayotga tatbiq etilishi mahalliy IT va media bozorini yangi bosqichga olib chiqadi. Sun'iy intellekt texnologiyalarini milliy kontent bilan boyitish orqali mamlakatimizda raqamli iqtisodiyot va ijodiy industriyani jadal rivojlantirishga erishiladi.</p>"
+  },
+  "shveysariyada-suniy-intellekt-kiberhujum-uyushtirdi-2026": {
+    "id": "shveysariyada-suniy-intellekt-kiberhujum-uyushtirdi-2026",
+    "slug": "shveysariyada-suniy-intellekt-kiberhujum-uyushtirdi-2026",
+    "title": "Avtonom sun'iy intellekt muhim infratuzilmaga hujum qildi",
+    "kicker": "TEXNOLOGIYA VA KIBERXAVFSIZLIK",
+    "meta_title": "Avtonom sun'iy intellekt muhim infratuzilmaga hujum qildi — AiNoma",
+    "meta_description": "Shveysariyada sun'iy intellekt vositalari ishtirokidagi ilk avtonom kiberhujumlar qayd etilib, muhim infratuzilmalarga jiddiy xavf solingani rasman tasdiqlandi.",
+    "category": "Texnologiya",
+    "audience": "Dasturchilar, muhandislar va biznes rahbarlari",
+    "event_date": "2026-11-27",
+    "source_date": "2026-11-27",
+    "source_published_date": "2026-11-27",
+    "date": "2026-11-27",
+    "publish_date": "2026-11-27",
+    "ainoma_published_date": "2026-11-27",
+    "read_time": "4 daqiqalik mutolaa",
+    "readTime": "4 daqiqalik mutolaa",
+    "deck": "Shveysariyada sun'iy intellekt vositalari ishtirokidagi ilk avtonom kiberhujumlar qayd etilib, muhim infratuzilmalarga jiddiy xavf solingani rasman tasdiqlandi.",
+    "img": "assets/editorial_shveysariyada-suniy-intellekt-kiberhujum-uyushtirdi-2026.jpg",
+    "imgAlt": "Avtonom sun'iy intellekt muhim infratuzilmaga hujum qildi",
+    "qisqacha": [
+      "Shveysariya Milliy kiberxavfsizlik markazi (NCSC) avtonom sun'iy intellekt yordamidagi kiberhujumlarni tasdiqladi.",
+      "Kritik infratuzilmalarga qaratilgan beshta hujumdan ikkitasida AI agentlar zaifliklarni mustaqil tahlil qilib, tizimlarga kirishga erishdi.",
+      "Hujumlar tezligi an'anaviy kiberhimoya imkoniyatlaridan sezilarli darajada ilgarilab ketgani aniqlandi."
+    ],
+    "primary_source": {
+      "name": "The Hacker News",
+      "title": "Avtonom sun'iy intellekt Shveysariya infratuzilmasiga kiberhujum uyushtirdi",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "date": "2026-11-27",
+      "badge": "BIRLAMCHI MANBA"
+    },
+    "secondary_sources": [],
+    "author": {
+      "name": "AiNoma Tahririyati",
+      "job": "Sun'iy intellekt va texnologiya tahlili",
+      "avatar": "assets/brand_sheet_white.png"
+    },
+    "verification_status": "VERIFIED",
+    "verification_date": "2026-11-27",
+    "body": "<h2>Nima bo‘ldi?</h2><p>Shveysariya Milliy kiberxavfsizlik markazi (NCSC) mamlakat tarixida ilk bor avtonom sun'iy intellekt agentlari yordamida uyushtirilgan kiberhujumlarni rasman tasdiqladi. Elektr, suv ta'minoti va telekommunikatsiya kabi kritik infratuzilmalarga qaratilgan beshta hujum qayd etilgan bo'lib, ulardan ikkitasida AI agentlar zaifliklarni mustaqil tahlil qilib, tizimlarga muvaffaqiyatli kirishga erishgan. Mutaxassislar ushbu holat kiberxavfsizlik sohasida tub burilish yasayotganini ta'kidlamoqda.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur voqea kiberxavfsizlik yo'nalishidagi tahdidlar landshafti keskin o'zgarganini ko'rsatadi. Avtonom sun'iy intellekt tizimlari hujumlarni inson aralashuvisiz, juda yuqori tezlikda amalga oshirmoqda. Mutaxassislarning fikricha, hujumlarning bunday tezligi an'anaviy kiberhimoya vositalari imkoniyatlaridan ancha ilgarilab ketgan va bu zamonaviy tashkilotlar uchun jiddiy xavf tug'diradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz rahbarlik qilayotgan yoki faoliyat yuritayotgan korxona va muhim infratuzilma obyektlari ham kelgusida shunday avtonom tahdidlarga duch kelishi mumkin. Shu sababli, O'zbekiston kiberxavfsizlik mutaxassislari va biznes rahbarlari himoya tizimlarini zamonaviy sun'iy intellekt texnologiyalari va avtomatlashtirilgan tahlil vositalari yordamida kuchaytirishlari, shuningdek, xavfsizlik strategiyalarini zudlik bilan qayta ko'rib chiqishlari talab etiladi.</p>",
+    "contentHtml": "<h2>Nima bo‘ldi?</h2><p>Shveysariya Milliy kiberxavfsizlik markazi (NCSC) mamlakat tarixida ilk bor avtonom sun'iy intellekt agentlari yordamida uyushtirilgan kiberhujumlarni rasman tasdiqladi. Elektr, suv ta'minoti va telekommunikatsiya kabi kritik infratuzilmalarga qaratilgan beshta hujum qayd etilgan bo'lib, ulardan ikkitasida AI agentlar zaifliklarni mustaqil tahlil qilib, tizimlarga muvaffaqiyatli kirishga erishgan. Mutaxassislar ushbu holat kiberxavfsizlik sohasida tub burilish yasayotganini ta'kidlamoqda.</p><h2>Mutaxassislar va biznes uchun ahamiyati</h2><p>Mazkur voqea kiberxavfsizlik yo'nalishidagi tahdidlar landshafti keskin o'zgarganini ko'rsatadi. Avtonom sun'iy intellekt tizimlari hujumlarni inson aralashuvisiz, juda yuqori tezlikda amalga oshirmoqda. Mutaxassislarning fikricha, hujumlarning bunday tezligi an'anaviy kiberhimoya vositalari imkoniyatlaridan ancha ilgarilab ketgan va bu zamonaviy tashkilotlar uchun jiddiy xavf tug'diradi.</p><h2>O‘zbekiston bozori uchun xulosa</h2><p>Siz rahbarlik qilayotgan yoki faoliyat yuritayotgan korxona va muhim infratuzilma obyektlari ham kelgusida shunday avtonom tahdidlarga duch kelishi mumkin. Shu sababli, O'zbekiston kiberxavfsizlik mutaxassislari va biznes rahbarlari himoya tizimlarini zamonaviy sun'iy intellekt texnologiyalari va avtomatlashtirilgan tahlil vositalari yordamida kuchaytirishlari, shuningdek, xavfsizlik strategiyalarini zudlik bilan qayta ko'rib chiqishlari talab etiladi.</p>"
+  },
   "ozbekiston-20-mlrd-tokenli-til-korpusini-taqdim-etdi-2026": {
     "id": "ozbekiston-20-mlrd-tokenli-til-korpusini-taqdim-etdi-2026",
     "slug": "ozbekiston-20-mlrd-tokenli-til-korpusini-taqdim-etdi-2026",
